@@ -1,8 +1,19 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight py-2">
-            {{ __('Crear Pago') }}
-        </h2>
+        {{-- Añadimos 'relative' al contenedor flex para posicionamiento --}}
+        <div class="flex justify-between items-center **relative**">
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight py-2">
+                {{ __('Crear Pago') }}
+            </h2>
+            {{-- Botón para mostrar las instrucciones de este formulario --}}
+            {{-- Lo posicionamos 'absolute' y lo movemos a la derecha, centrado verticalmente --}}
+            <button type="button" id="show-create-invoice-instructions-btn"
+                class="inline-flex items-center px-4 py-2 border border-transparent text-lg leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150
+                       **absolute top-1/2 right-4 -translate-y-1/2**">
+                {{-- Clases de posicionamiento absoluto --}}
+                <i class="fas fa-question-circle"></i> {{-- Icono de interrogación --}}
+            </button>
+        </div>
     </x-slot>
 
     <div class="py-2">
@@ -177,11 +188,10 @@
                         </div>
                     </div>
 
-                    {{-- Sección: Representante (Paso 2) - Aplica la misma lógica aquí --}}
+                    {{-- Sección: Representante (Paso 2) --}}
                     <div id="step-2" style="display: none;">
                         <h3 class="text-lg font-semibold mb-4">Representante</h3>
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-2 mb-6">
-                            {{-- Ejemplo para el CIF/NIF del representante --}}
                             <div>
                                 <label for="rep_cif_nif"
                                     class="block text-sm font-medium text-gray-700">CIF/NIF</label>
@@ -196,7 +206,6 @@
                                     <p class="text-red-500 text-xs mt-1" style="height: 15px; overflow: hidden;"></p>
                                 @enderror
                             </div>
-                            {{-- Repite para rep_name, rep_phone, etc. --}}
                             <div class="md:col-span-2">
                                 <label for="rep_name" class="block text-sm font-medium text-gray-700">Nombre</label>
                                 <input type="text" name="representative[name]" id="rep_name"
@@ -433,25 +442,6 @@
                                 @enderror
                             </div>
                             <div>
-                                <label for="total_fee" class="block text-sm font-medium text-gray-700">Cuota
-                                    Total</label>
-                                <div class="relative">
-                                    <input type="text" name="liquidation[total_fee]" id="total_fee"
-                                        class="mt-1 block w-full pr-10 rounded-md border-gray-300 shadow-sm text-sm @error('liquidation.total_fee') border-red-500 @enderror"
-                                        value="{{ old('liquidation.total_fee', '0,00') }}" readonly />
-                                    <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none">
-                                        <span class="text-gray-500 text-sm">€</span>
-                                    </div>
-                                </div>
-                                {{-- Añadir CSS para asegurar espacio fijo --}}
-                                @error('liquidation.total_fee')
-                                    <p class="text-red-500 text-xs mt-1" style="height: 15px; overflow: hidden;">
-                                        {{ $message }}</p>
-                                @else
-                                    <p class="text-red-500 text-xs mt-1" style="height: 15px; overflow: hidden;"></p>
-                                @enderror
-                            </div>
-                            <div>
                                 <label for="bond" class="block text-sm font-medium text-gray-700">Fianza</label>
                                 <div class="relative">
                                     <input type="text" name="liquidation[bond]" id="bond"
@@ -518,21 +508,41 @@
         }
     </style>
 
+    {{-- Estructura del Modal de Instrucciones de Creación de Pago --}}
+    <div id="create-invoice-instructions-modal"
+        class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
+        <div class="relative top-20 mx-auto p-5 border max-w-3xl shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900" id="create-invoice-instructions-modal-title">
+                    {{ __('Instrucciones: Crear Pago') }}</h3>
+                <div class="mt-2 px-7 py-3 text-left">
+                    <p class="text-sm text-gray-500" id="create-invoice-instructions-modal-body">
+                        {{-- El texto de las instrucciones se insertará aquí --}}
+                    </p>
+                </div>
+                <div class="items-center px-4 py-3 mt-4 flex justify-end">
+                    <button type="button" id="close-create-invoice-modal-btn"
+                        class="px-4 py-2 bg-gray-300 text-gray-700 text-base font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2">
+                        {{ __('Cerrar') }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     {{-- Incluir tus scripts JS aquí --}}
     @push('scripts')
         {{-- Asegúrate de incluir jQuery si aún no está en tu layout principal --}}
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        {{-- Asegúrate de incluir Font Awesome si aún no está en tu layout principal --}}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
         <script>
-            // Incluye aquí la función initializeInvoiceFormJs que unimos antes
-            // Asegúrate de que los scripts de manejo de pasos (step-1, step-2, step-3)
-            // también manejen la visibilidad de los pasos correctamente al cargar la página
-            // con errores de validación (Laravel redirige al URL anterior, que es /invoices/create,
-            // pero el JS podría reiniciar al step-1 si no se le indica lo contrario).
-            // Una forma de manejar esto es comprobar si hay errores en el DOM al cargar
-            // y navegar al paso donde está el primer error.
+            // Envuelve toda la lógica JS en una función para poder reinicializarla con Livewire
+            function initializeCreateInvoiceForm() {
 
-            function initializeInvoiceFormJs() {
                 // --- Funciones de utilidad ---
                 function calcularLetraDni(dni) {
                     const letras = "TRWAGMYFPDXBNJZSQVHLCKET";
@@ -569,13 +579,12 @@
                     });
                 }
 
-                // NOTA: Sin prepareForValidation, esta función convierte a mayúsculas
-                // SOLO si el usuario escribe en el campo. Los valores antiguos (old)
-                // NO serán convertidos a mayúsculas automáticamente al recargar la página
-                // a menos que apliques la conversión en el bucle inicial de abajo.
+                // Convierte a mayúsculas al escribir (para todos los campos de texto)
+                // Esto es una alternativa si no se usa prepareForValidation en el Request/FormRequest
                 function convertirAMayusculas() {
                     const camposTexto = document.querySelectorAll('input[type="text"]');
                     camposTexto.forEach(campo => {
+                        // Limpiar listeners previos si existen
                         const oldHandler = campo._toUpperCaseHandler;
                         if (oldHandler) {
                             campo.removeEventListener('input', oldHandler);
@@ -585,6 +594,7 @@
                             this.value = this.value.toUpperCase();
                         };
                         campo.addEventListener('input', newHandler);
+                        // Almacenar el nuevo handler para poder limpiarlo después
                         campo._toUpperCaseHandler = newHandler;
                     });
                 }
@@ -603,6 +613,7 @@
                     $(`#${prefix}_email`).val(data.email || '');
 
                     // Convertir a mayúsculas los campos rellenados por populateFormFields
+                    // Esto es importante si no usas prepareForValidation en el backend
                     document.querySelectorAll(`#step-1 input[type="text"], #step-2 input[type="text"]`).forEach(campo => {
                         campo.value = campo.value.toUpperCase();
                     });
@@ -625,11 +636,12 @@
                     const inputElement = $(`#${inputId}`);
                     if (!inputElement.length) return;
 
+                    // Limpiar listeners previos
                     inputElement.off('input.autocomplete');
                     inputElement.off('change.autocomplete');
 
                     let debounceTimer;
-                    const minLength = 8;
+                    const minLength = 8; // Mínimo 8 caracteres para CIF/NIF
 
                     inputElement.on('input.autocomplete', function() {
                         clearTimeout(debounceTimer);
@@ -640,10 +652,18 @@
                             return;
                         }
 
+                        // Opcional: Si quieres limpiar los campos de autocompletado
+                        // inmediatamente al escribir antes de alcanzar minLength
+                        if (cifNif.length < minLength) {
+                            clearFormFields(prefix);
+                        }
+
+
                         debounceTimer = setTimeout(() => {
+                            // Convertir a mayúsculas antes de la llamada AJAX
                             if (cifNif.length >= minLength) {
                                 $.ajax({
-                                    url: `/clients/find-by-cif-nif/${cifNif}`,
+                                    url: `/clients/find-by-cif-nif/${cifNif.toUpperCase()}`, // Usar toUpperCase() aquí
                                     method: 'GET',
                                     success: function(response) {
                                         populateFormFields(prefix, response);
@@ -656,15 +676,17 @@
                                         } else {
                                             console.error('Error searching client:', xhr);
                                         }
-                                        clearFormFields(prefix);
+                                        // Solo limpiar campos si no se encontró el cliente o hubo otro error
+                                        if (xhr.status === 404 || xhr.status >= 400) {
+                                            clearFormFields(prefix);
+                                        }
                                     }
                                 });
-                            } else {
-                                clearFormFields(prefix);
                             }
-                        }, 500);
+                        }, 500); // Retardo de 500ms después de la última pulsación
                     });
 
+                    // Asegurarse de limpiar campos si el campo queda vacío (e.g. cortar/pegar o borrar todo)
                     inputElement.on('change.autocomplete', function() {
                         if ($(this).val().trim() === '') {
                             clearFormFields(prefix);
@@ -680,65 +702,81 @@
                         return;
                     }
 
+                    // Limpiar listeners previos
                     fileNumberInput.off('input.concept_autocomplete');
                     fileNumberInput.off('change.concept_autocomplete');
 
                     let debounceTimer;
+                    const minLength = 1; // Mínimo 1 caracter para buscar expediente? (Ajustar si es necesario)
 
-                    conceptInput.prop('readonly', false);
-                    conceptInput.removeClass('bg-gray-100 cursor-not-allowed');
 
-                    // NOTA: Sin prepareForValidation, la conversión a mayúsculas del número de expediente
-                    // debe ocurrir aquí antes de usarlo en la URL de la API si es necesario.
+                    conceptInput.prop('readonly', false); // Asegurarse de que sea editable inicialmente
+                    conceptInput.removeClass(
+                    'bg-gray-100 cursor-not-allowed'); // Asegurarse de quitar clases visuales de readonly
+
+
                     fileNumberInput.on('input.concept_autocomplete', function() {
                         clearTimeout(debounceTimer);
 
                         const fileNumber = $(this).val().trim().toUpperCase(); // Convertir a mayúsculas aquí
 
+                        // Establecer el valor por defecto del concepto al empezar a escribir el expediente
                         if (fileNumber === '') {
                             conceptInput.val('');
                             conceptInput.prop('readonly', false);
                             conceptInput.removeClass('bg-gray-100 cursor-not-allowed');
                             return;
+                        } else {
+                            // Solo establecer el valor por defecto si el campo de concepto está vacío
+                            // o si ya tenía un valor por defecto anterior de expediente
+                            if (!conceptInput.val() || conceptInput.val().startsWith('EXPEDIENTE ')) {
+                                conceptInput.val(`EXPEDIENTE ${fileNumber} - `);
+                                conceptInput.prop('readonly', false);
+                                conceptInput.removeClass('bg-gray-100 cursor-not-allowed');
+                            }
                         }
-
-                        conceptInput.val(`EXPEDIENTE ${fileNumber} - `);
-                        conceptInput.prop('readonly', false);
-                        conceptInput.removeClass('bg-gray-100 cursor-not-allowed');
 
 
                         debounceTimer = setTimeout(() => {
-                            $.ajax({
-                                url: `/proceedings/find-concept-by-file-number/${fileNumber}`, // Usar fileNumber en mayúsculas
-                                method: 'GET',
-                                success: function(response) {
-                                    if (response && response.concept) {
-                                        conceptInput.val(response.concept);
-                                        conceptInput.prop('readonly', true);
-                                        conceptInput.addClass('bg-gray-100 cursor-not-allowed');
-                                    } else {
-                                        console.log(
-                                            `Concept for file number ${fileNumber} not found. Keeping default and editable.`
-                                        );
+                            // Convertir a mayúsculas antes de la llamada AJAX (ya se hace en el input handler)
+                            if (fileNumber.length >= minLength) {
+                                $.ajax({
+                                    url: `/proceedings/find-concept-by-file-number/${fileNumber}`, // Usar fileNumber en mayúsculas
+                                    method: 'GET',
+                                    success: function(response) {
+                                        if (response && response.concept) {
+                                            conceptInput.val(response.concept);
+                                            conceptInput.prop('readonly', true);
+                                            conceptInput.addClass('bg-gray-100 cursor-not-allowed');
+                                        } else {
+                                            console.log(
+                                                `Concept for file number ${fileNumber} not found. Keeping current value and editable.`
+                                            );
+                                            // Si no se encuentra, mantener el valor actual del campo (que puede ser el por defecto "EXPEDIENTE X - ")
+                                            conceptInput.prop('readonly', false);
+                                            conceptInput.removeClass(
+                                                'bg-gray-100 cursor-not-allowed');
+                                        }
+                                    },
+                                    error: function(xhr) {
+                                        if (xhr.status === 404) {
+                                            console.log(
+                                                `Proceeding with file number ${fileNumber} not found. Keeping current value and editable.`
+                                            );
+                                        } else {
+                                            console.error('Error searching proceeding concept:',
+                                                xhr);
+                                        }
+                                        // En caso de error, asegurarse de que el campo sea editable y no tenga estilo de readonly
                                         conceptInput.prop('readonly', false);
                                         conceptInput.removeClass('bg-gray-100 cursor-not-allowed');
                                     }
-                                },
-                                error: function(xhr) {
-                                    if (xhr.status === 404) {
-                                        console.log(
-                                            `Proceeding with file number ${fileNumber} not found. Keeping default concept and editable.`
-                                        );
-                                    } else {
-                                        console.error('Error searching proceeding concept:', xhr);
-                                    }
-                                    conceptInput.prop('readonly', false);
-                                    conceptInput.removeClass('bg-gray-100 cursor-not-allowed');
-                                }
-                            });
-                        }, 500);
+                                });
+                            }
+                        }, 500); // Retardo de 500ms
                     });
 
+                    // Asegurarse de limpiar el concepto si el campo del expediente queda vacío
                     fileNumberInput.on('change.concept_autocomplete', function() {
                         if ($(this).val().trim() === '') {
                             conceptInput.val('');
@@ -748,49 +786,49 @@
                     });
                 }
 
+
                 function calcularCuotaTotalYTotalAPagar() {
                     const baseInput = document.getElementById('taxable_base');
                     const tipoInput = document.getElementById('tax_rate');
-                    const totalFeeInput = document.getElementById('total_fee');
+                    // Eliminar total_feeInput ya que total_fee no está en el HTML
+                    // const totalFeeInput = document.getElementById('total_fee');
                     const bondInput = document.getElementById('bond');
                     const totalToPayInput = document.getElementById('total_to_pay');
 
-                    if (!baseInput || !tipoInput || !totalFeeInput || !bondInput || !totalToPayInput) {
+                    if (!baseInput || !tipoInput || /*!totalFeeInput ||*/ !bondInput || !totalToPayInput) {
                         console.error("Missing calculation inputs");
                         return;
                     }
 
-                    // Limpiar listeners previos
-                    if (baseInput._calculationHandler) baseInput.removeEventListener('input', baseInput._calculationHandler);
-                    if (tipoInput._calculationHandler) tipoInput.removeEventListener('input', tipoInput._calculationHandler);
-                    if (bondInput._calculationHandler) bondInput.removeEventListener('input', bondInput._calculationHandler);
+                    // Limpiar listeners previos (usando jQuery para off)
+                    $(baseInput).off('input.calculation');
+                    $(tipoInput).off('input.calculation');
+                    $(bondInput).off('input.calculation');
 
 
                     function actualizarCuotaYTotal() {
                         // NOTA: En el frontend, parseFloat() puede manejar comas o puntos.
                         // Sin embargo, la validación en el backend espera puntos si no usas prepareForValidation.
-                        // Podrías añadir un listener 'change' aquí para convertir la coma a punto antes de que se envíe el formulario,
-                        // o confiar en la conversión que añadimos en el controlador.
+                        // La conversión de coma a punto al parsear aquí es correcta para el cálculo JS.
                         const base = parseFloat(baseInput.value.replace(',', '.')) || 0;
                         const tipo = parseFloat(tipoInput.value.replace(',', '.')) || 0;
                         const bond = parseFloat(bondInput.value.replace(',', '.')) || 0;
 
-                        const totalFee = base + (base * tipo / 100);
-                        totalFeeInput.value = totalFee.toFixed(2).replace('.', ','); // Formatear para visualización
+                        // Calcula la cuota total (Base + IVA) - parece que el HTML no tiene un campo para mostrar solo la cuota total, solo el total a pagar
+                        // const totalFee = base + (base * tipo / 100);
+                        // if (totalFeeInput) totalFeeInput.value = totalFee.toFixed(2).replace('.', ','); // Formatear para visualización
 
-                        const totalToPay = totalFee + bond;
-                        totalToPayInput.value = totalToPay.toFixed(2).replace('.', ','); // Formatear para visualización
+                        // Calcula el total a pagar (Base + IVA + Fianza)
+                        const totalToPay = base + (base * tipo / 100) + bond;
+                        totalToPayInput.value = totalToPay.toFixed(2).replace('.',
+                        ','); // Formatear para visualización con coma
                     }
 
                     // Escuchar cambios en base, tipo y fianza
-                    baseInput.addEventListener('input', actualizarCuotaYTotal);
-                    tipoInput.addEventListener('input', actualizarCuotaYTotal);
-                    bondInput.addEventListener('input', actualizarCuotaYTotal);
-
-                    // Almacenar los handlers
-                    baseInput._calculationHandler = actualizarCuotaYTotal;
-                    tipoInput._calculationHandler = actualizarCuotaYTotal;
-                    bondInput._calculationHandler = actualizarCuotaYTotal;
+                    // Usar namespace .calculation para evitar conflictos
+                    $(baseInput).on('input.calculation', actualizarCuotaYTotal);
+                    $(tipoInput).on('input.calculation', actualizarCuotaYTotal);
+                    $(bondInput).on('input.calculation', actualizarCuotaYTotal);
 
                     // Ejecutar el cálculo inicial si hay valores antiguos
                     actualizarCuotaYTotal();
@@ -807,57 +845,62 @@
                 const next2 = document.getElementById('next-step-2');
                 const prev3 = document.getElementById('prev-step-3');
 
-                // Limpiar listeners previos para los botones de navegación
-                if (next1) next1.onclick = null;
-                if (prev2) prev2.onclick = null;
-                if (next2) next2.onclick = null;
-                if (prev3) prev3.onclick = null;
+                // Limpiar listeners previos para los botones de navegación (usando jQuery para off)
+                $(next1).off('click');
+                $(prev2).off('click');
+                $(next2).off('click');
+                $(prev3).off('click');
 
 
-                if (next1) next1.onclick = () => {
+                if (next1) $(next1).on('click', () => {
                     step1.style.display = 'none';
                     step2.style.display = 'block';
                     // Opcional: enfocar el primer campo del siguiente paso
                     step2.querySelector('input, select, textarea')?.focus();
-                };
-                if (prev2) prev2.onclick = () => {
+                });
+                if (prev2) $(prev2).on('click', () => {
                     step2.style.display = 'none';
                     step1.style.display = 'block';
                     step1.querySelector('input, select, textarea')?.focus();
-                };
-                if (next2) next2.onclick = () => {
+                });
+                if (next2) $(next2).on('click', () => {
                     step2.style.display = 'none';
                     step3.style.display = 'block';
                     step3.querySelector('input, select, textarea')?.focus();
-                };
-                if (prev3) prev3.onclick = () => {
+                    // Ejecutar cálculo inicial al mostrar el paso 3 por si los valores old() ya estaban presentes
+                    calcularCuotaTotalYTotalAPagar();
+                });
+                if (prev3) $(prev3).on('click', () => {
                     step3.style.display = 'none';
                     step2.style.display = 'block';
                     step2.querySelector('input, select, textarea')?.focus();
-                };
+                });
 
                 // Función para determinar qué paso mostrar al cargar
                 function showCorrectStep() {
                     // Comprobar si hay errores de validación. La variable $errors existe en la vista Blade
                     // y contendrá los errores si los hay. En JS, podemos buscar elementos con la clase 'text-red-500'
-                    // o que tengan el párrafo de error asociado.
-                    const hasErrors = document.querySelectorAll('.text-red-500.text-xs.mt-1').length > 0;
+                    // que Laravel añade a los mensajes de error.
+                    const firstErrorField = document.querySelector('.text-red-500.text-xs.mt-1');
 
-                    if (hasErrors) {
-                        // Encontrar el primer campo con error y mostrar su paso
-                        const firstErrorField = document.querySelector('.text-red-500.text-xs.mt-1');
-                        if (firstErrorField) {
-                            const errorStep = firstErrorField.closest('[id^="step-"]');
-                            if (errorStep) {
-                                // Ocultar todos los pasos primero
-                                if (step1) step1.style.display = 'none';
-                                if (step2) step2.style.display = 'none';
-                                if (step3) step3.style.display = 'none';
-                                // Mostrar el paso que contiene el primer error
-                                errorStep.style.display = 'block';
-                                console.log("Showing step with first validation error:", errorStep.id);
-                                return; // Salir después de mostrar el paso con errores
+                    if (firstErrorField) {
+                        // Encontrar el ancestro más cercano que sea un paso (con id que empieza por 'step-')
+                        const errorStep = firstErrorField.closest('[id^="step-"]');
+                        if (errorStep) {
+                            // Ocultar todos los pasos primero
+                            if (step1) step1.style.display = 'none';
+                            if (step2) step2.style.display = 'none';
+                            if (step3) step3.style.display = 'none';
+                            // Mostrar el paso que contiene el primer error
+                            errorStep.style.display = 'block';
+                            console.log("Showing step with first validation error:", errorStep.id);
+
+                            // Si el paso 3 es el que tiene errores, ejecutar el cálculo inicial
+                            if (errorStep.id === 'step-3') {
+                                calcularCuotaTotalYTotalAPagar();
                             }
+
+                            return; // Salir después de mostrar el paso con errores
                         }
                     }
 
@@ -869,10 +912,64 @@
                 }
 
 
+                // --- Manejo del Modal de Instrucciones de Creación ---
+                const createInvoiceInstructionsModal = $('#create-invoice-instructions-modal');
+                const showCreateInvoiceInstructionsBtn = $('#show-create-invoice-instructions-btn');
+                const closeCreateInvoiceModalBtn = $('#close-create-invoice-modal-btn');
+                const createInvoiceInstructionsModalBody = $('#create-invoice-instructions-modal-body');
+
+                // Texto de las instrucciones para este formulario
+                const createInvoiceInstructionsText = `
+                    <p>Este formulario te permite crear un nuevo pago siguiendo 3 pasos:</p>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">Paso 1: Interesado</h4>
+                    <p>Introduce los datos del interesado. Al escribir el CIF/NIF, el sistema intentará rellenar automáticamente otros campos si el cliente ya existe.</p>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">Paso 2: Representante</h4>
+                    <p>Introduce los datos del representante, si aplica. También hay autocompletado por CIF/NIF aquí.</p>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">Paso 3: Liquidación</h4>
+                    <p>Introduce los detalles de la liquidación.</p>
+                    <ul class="list-disc list-inside ml-4 text-gray-700">
+                        <li><i class="fas fa-file-alt fa-fw"></i> **Nº Expediente:** Al escribir el número de expediente, se autocompletará el campo 'Concepto' si el expediente existe.</li> {{-- Añadido fa-fw para iconos de ancho fijo --}}
+                        <li><i class="fas fa-calendar-alt fa-fw"></i> **Fecha Liquidación:** Se rellena automáticamente con la fecha actual.</li> {{-- Añadido fa-fw --}}
+                        <li><i class="fas fa-euro-sign fa-fw"></i> **Base Imponible / Tipo Impositivo / Fianza:** Introduce los valores. El campo 'Total a Pagar' (<i class="fas fa-calculator fa-fw"></i>) se calculará automáticamente a medida que escribes.</li> {{-- Añadido fa-fw --}}
+                    </ul>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">Navegación y Envío</h4>
+                    <p>Usa los botones "Siguiente" y "Atrás" para moverte entre los pasos. Una vez completado el Paso 3, usa el botón "Crear Pago" para guardar la información.</p>
+                    <p class="mt-3 text-gray-600">Si hay errores al enviar, el formulario te mostrará automáticamente el paso con el primer error.</p>
+                    <p class="mt-3 text-gray-600"><strong>Consejo Rápido:</strong> Cierra esta ventana o cualquier otra emergente presionando la tecla <code>Escape</code>.</p>
+                `;
+
+                // Función para mostrar el modal de instrucciones
+                function showCreateInvoiceInstructionsModal() {
+                    createInvoiceInstructionsModalBody.html(
+                    createInvoiceInstructionsText); // Inserta el texto HTML de las instrucciones
+                    createInvoiceInstructionsModal.removeClass('hidden');
+                }
+
+                // Función para ocultar el modal de instrucciones
+                function hideCreateInvoiceInstructionsModal() {
+                    createInvoiceInstructionsModal.addClass('hidden');
+                    createInvoiceInstructionsModalBody.html(''); // Limpia el contenido del cuerpo al cerrar
+                }
+
+                // Manejar clic en el botón de instrucciones
+                showCreateInvoiceInstructionsBtn.on('click', showCreateInvoiceInstructionsModal);
+
+                // Manejar clic en el botón "Cerrar" dentro del modal de instrucciones
+                closeCreateInvoiceModalBtn.on('click', hideCreateInvoiceInstructionsModal);
+
+                // Manejar clics fuera del modal de instrucciones
+                createInvoiceInstructionsModal.on('click', function(e) {
+                    if ($(e.target).is(createInvoiceInstructionsModal)) {
+                        hideCreateInvoiceInstructionsModal();
+                    }
+                });
+                // --- FIN Manejo del Modal de Instrucciones de Creación ---
+
+
                 // --- Inicialización ---
 
                 // Asegurarse de que los campos existentes con old() se conviertan a mayúsculas al cargar
-                // Esto es necesario si eliminaste la conversión de mayúsculas en prepareForValidation
+                // Esto es necesario si no usas prepareForValidation en el Request/FormRequest
                 document.querySelectorAll('input[type="text"]').forEach(campo => {
                     if (campo.value) { // Solo si el campo tiene valor (si hay old() data)
                         campo.value = campo.value.toUpperCase();
@@ -883,41 +980,70 @@
                 // 1. Para la carga inicial de la página (sin wire:navigate)
                 $(document).ready(function() {
                     showCorrectStep(); // Decidir qué paso mostrar basado en errores
-                    initializeInvoiceFormJsLogic(); // Llamar a una función separada para la lógica de setup
-                    console.log("Invoice form JS initialized via document.ready");
-                });
-
-                // Extraer la lógica principal de JS a una función aparte para evitar duplicación con Livewire hook
-                function initializeInvoiceFormJsLogic() {
+                    // Llamar a las funciones de setup de listeners después de determinar el paso
                     aplicarCalculoDniAutomatico('client_cif_nif');
                     aplicarCalculoDniAutomatico('rep_cif_nif');
-                    convertirAMayusculas();
+                    convertirAMayusculas(); // Aplicar conversión a mayúsculas al escribir
                     setupCifNifAutocomplete('client_cif_nif', 'client');
                     setupCifNifAutocomplete('rep_cif_nif', 'rep');
                     setupConceptAutocompleteByFileNumber('file_number', 'concept');
-                    calcularCuotaTotalYTotalAPagar();
+                    // El cálculo del total se ejecutará automáticamente si step-3 se muestra inicialmente
+                    // o cuando se navegue a step-3.
+
+                    console.log("Create Invoice form JS initialized via document.ready");
+                });
+
+
+                // 2. Para las navegaciones de Livewire (si usas wire:navigate en tu app)
+                // Este hook asegura que el JS se reinicialice después de las actualizaciones del DOM por Livewire.
+                // Si no usas wire:navigate o no hay Livewire en esta página, este hook puede ser ignorado o eliminado.
+                if (typeof Livewire !== 'undefined') {
+                    Livewire.hook('morph.finished', ({
+                        component,
+                        finish,
+                        children
+                    }) => {
+                        // Re-aplicar los listeners y configuraciones después de que Livewire actualice el DOM.
+                        // No necesitamos showCorrectStep() aquí si Livewire maneja el estado visual de los pasos.
+                        // Sin embargo, los listeners de input y autocomplete necesitan ser re-enganchados.
+                        aplicarCalculoDniAutomatico('client_cif_nif');
+                        aplicarCalculoDniAutomatico('rep_cif_nif');
+                        convertirAMayusculas(); // Re-aplicar al escribir
+                        setupCifNifAutocomplete('client_cif_nif', 'client');
+                        setupCifNifAutocomplete('rep_cif_nif', 'rep');
+                        setupConceptAutocompleteByFileNumber('file_number', 'concept');
+                        calcularCuotaTotalYTotalAPagar(); // Re-aplicar cálculo
+
+                        console.log("Create Invoice form JS initialized via Livewire morph.finished");
+                    });
+                    // Limpiar el manejador de tecla Escape cuando el componente es removido
+                    Livewire.hook('beforeNavigateOut', ({
+                        detail: {
+                            visit
+                        }
+                    }) => {
+                        $(document).off('keydown.createinvoice');
+                    });
                 }
 
 
-                // 2. Para las navegaciones de Livewire (con wire:navigate)
-                Livewire.hook('morph.finished', ({
-                    component,
-                    finish,
-                    children
-                }) => {
-                    // No necesitamos showCorrectStep() aquí si Livewire mantiene el estado de los pasos.
-                    // Si Livewire NO mantiene el estado visual de los pasos, tendrías que re-implementar
-                    // la lógica de mostrar el paso correcto aquí también.
-                    // Asumiendo que Livewire podría necesitar re-aplicar listeners a los elementos actualizados:
-                    initializeInvoiceFormJsLogic();
-                    console.log("Invoice form JS initialized via Livewire morph.finished");
-
+                // Manejar la tecla Escape para cerrar modales en esta página
+                // Usamos un namespace '.createinvoice' para que este manejador solo se aplique a esta página.
+                $(document).on('keydown.createinvoice', function(e) {
+                    if (e.key === 'Escape') {
+                        // Solo comprobamos el modal de instrucciones de creación en esta página
+                        if (!createInvoiceInstructionsModal.hasClass('hidden')) {
+                            hideCreateInvoiceInstructionsModal();
+                        }
+                        // Si hubiera otros modales específicos de esta página, se añadirían aquí.
+                    }
                 });
 
-            } // Fin de initializeInvoiceFormJs
 
-            // Llamar a la función principal de inicialización
-            initializeInvoiceFormJs();
+            } // Fin de initializeCreateInvoiceForm
+
+            // Llamar a la función principal de inicialización al final del script
+            initializeCreateInvoiceForm();
         </script>
     @endpush
 

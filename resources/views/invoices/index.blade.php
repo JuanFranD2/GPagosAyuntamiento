@@ -4,21 +4,29 @@
             <h2 class="font-semibold text-xl text-gray-800 leading-tight py-2">
                 {{ __('Gestión de Pagos') }}
             </h2>
-            {{-- Contenedor para el selector y el botón --}}
+            {{-- Contenedor para el botón de instrucciones, selector y botones de acción --}}
             <div class="flex items-center space-x-2">
-                {{-- Selector para filtrar (visible solo para admin) --}}
-                @if (auth()->user()?->isAdmin())
-                    <label for="invoice-view-filter" class="block text-sm font-medium text-gray-700 sr-only">
-                        {{ __('Ver') }} {{-- Texto para accesibilidad, visualmente oculto --}}
-                    </label>
-                    <select id="invoice-view-filter" name="view"
-                        class="block rounded-md border-gray-300 shadow-sm text-sm py-2">
-                        <option value="all">{{ __('Todos los Pagos') }}</option>
-                        <option value="my">{{ __('Mis Pagos') }}</option>
-                    </select>
-                @endif
+                {{-- Botón para mostrar las instrucciones (AHORA UN POCO MÁS GRANDE con text-lg) --}}
+                <button type="button" id="show-instructions-modal-btn"
+                    class="inline-flex items-center px-4 py-2 border border-transparent text-lg leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                    <i class="fas fa-question-circle"></i> {{-- Icono de interrogación --}}
+                </button>
 
-                {{-- Botón para crear nueva factura (comentado en el original) --}}
+                {{-- Contenedor para el selector y el botón (existente) --}}
+                <div class="flex items-center space-x-2">
+                    {{-- Selector para filtrar (visible solo para admin) --}}
+                    @if (auth()->user()?->isAdmin())
+                        <label for="invoice-view-filter" class="block text-sm font-medium text-gray-700 sr-only">
+                            {{ __('Ver') }} {{-- Texto para accesibilidad, visualmente oculto --}}
+                        </label>
+                        <select id="invoice-view-filter" name="view"
+                            class="block rounded-md border-gray-300 shadow-sm text-sm py-2">
+                            <option value="all">{{ __('Todos los Pagos') }}</option>
+                            <option value="my">{{ __('Mis Pagos') }}</option>
+                        </select>
+                    @endif
+                    {{-- Botón para crear nueva factura (comentado en el original) --}}
+                </div>
             </div>
         </div>
     </x-slot>
@@ -160,6 +168,29 @@
         </div>
     </div>
 
+    {{-- Estructura del Modal de Instrucciones --}}
+    <div id="instructions-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
+        {{-- Usamos max-w-3xl como en la página de creación --}}
+        <div class="relative top-20 mx-auto p-5 border max-w-3xl shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900" id="instructions-modal-title">
+                    {{ __('Instrucciones de Uso') }}</h3>
+                <div class="mt-2 px-7 py-3 text-left modal-instructions-content"> {{-- Añadida clase para scroll --}}
+                    <p class="text-sm text-gray-500" id="instructions-modal-body">
+                        {{-- El texto de las instrucciones se insertará aquí --}}
+                    </p>
+                </div>
+                <div class="items-center px-4 py-3 mt-4 flex justify-end">
+                    <button type="button" id="close-instructions-modal-btn"
+                        class="px-4 py-2 bg-gray-300 text-gray-700 text-base font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2">
+                        {{ __('Cerrar') }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     @push('scripts')
         {{-- Incluir CSS de Font Awesome --}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -178,18 +209,6 @@
                 margin-bottom: 10px;
             }
 
-            /* Oculta el contenedor de la tabla por completo hasta que DataTables esté listo */
-            /* NOTA: Esta regla CSS 'display: none;' inicial está duplicada con el style inline condicional en el div,
-                         pero se mantiene para mayor claridad de que el JS la hará 'display: block;'
-                         Si prefieres eliminar la regla CSS y confiar solo en el inline, puedes hacerlo.
-                         Si prefieres eliminar el inline y confiar solo en la regla CSS, asegúrate de que
-                         si $invoices->isEmpty() el div tenga alguna clase que oculte el display.
-                         La lógica actual en el JS de initComplete sobreescribe ambas con display: block
-                         si hay datos. Dejemos el inline condicional para que el estado inicial sin JS
-                         sea correcto cuando no hay datos. */
-            /* #invoices-datatable-wrapper { display: none; } -- Eliminada esta regla CSS*/
-
-
             /* Asegurarse de que las filas vacías tengan el mismo estilo de borde que las filas activas */
             .empty-row td {
                 border: 1px solid #e5e7eb;
@@ -199,6 +218,16 @@
             /* Hacer que el contenido de las celdas vacías sea invisible pero ocupe espacio */
             .empty-row td span.invisible {
                 visibility: hidden;
+            }
+
+            /* ESTILO PARA EL CONTENEDOR DEL TEXTO DE INSTRUCCIONES CON SCROLL */
+            .modal-instructions-content {
+                max-height: 400px;
+                /* Altura máxima antes de que aparezca la barra de scroll */
+                overflow-y: auto;
+                /* Añade scroll vertical si el contenido excede la altura máxima */
+                padding-right: 1rem;
+                /* Añade un poco de padding a la derecha para que el scrollbar no pise el texto */
             }
         </style>
 
@@ -297,8 +326,8 @@
                         // Muestra/oculta el contenedor de la tabla y el mensaje basado en el conteo de datos filtrados
                         if (api.data().count() > 0) {
                             $('#no-invoices-message').hide();
-                            $('#invoices-datatable-wrapper').show().removeClass(
-                            'opacity-0'); // Asegura que esté visible si antes estaba oculto por filtro
+                            // Asegura que esté visible si antes estaba oculto por filtro o paginación
+                            $('#invoices-datatable-wrapper').show().removeClass('opacity-0');
                         } else {
                             $('#no-invoices-message').show();
                             $('#invoices-datatable-wrapper').hide();
@@ -308,16 +337,15 @@
 
                         // Lógica para añadir filas vacías para rellenar la página
                         // *** NOTA: Esta lógica de filas vacías es para estética cuando HAY DATOS pero menos que pageLength.
-                        //           Si la tabla está totalmente vacía, DataTables mostrará el mensaje emptyTable.
-                        //           Esta parte NO debe ejecutarse si api.data().count() === 0.
-                        //           La condición actual `rowsOnCurrentPage > 0` ya lo maneja. ***
+                        //     Si la tabla está totalmente vacía, DataTables mostrará el mensaje emptyTable.
+                        //     Esta parte NO debe ejecutarse si api.data().count() === 0.
+                        //     La condición actual `rowsOnCurrentPage > 0` ya lo maneja. ***
                         const rowsOnCurrentPage = api.rows({
                             page: 'current'
                         }).nodes().length;
                         const pageLength = api.page.len();
                         const tableId = '#' + settings.sTableId;
                         const currentBody = $(tableId + ' tbody');
-
                         currentBody.find('.empty-row').remove(); // Elimina las filas vacías existentes
 
                         if (rowsOnCurrentPage > 0 && rowsOnCurrentPage < pageLength) {
@@ -371,6 +399,8 @@
 
                 // --- Invoice View Filter (Admin only) ---
                 const invoiceViewFilter = $('#invoice-view-filter');
+                const dataTableWrapper = $('#invoices-datatable-wrapper'); // Obtener el wrapper de la tabla
+
 
                 if (invoiceViewFilter.length) { // Check if the select element exists (i.e., user is admin)
                     // Get current URL parameters to set initial select state
@@ -380,12 +410,9 @@
                     if (currentView) {
                         invoiceViewFilter.val(currentView);
                     } else {
-                        // Si no hay parámetro 'view', y el usuario es admin, por defecto se muestran 'Todos'
-                        // Si no hay parámetro 'view' y el usuario NO es admin, el selector no existe y el backend filtra por su usuario.
-                        // Si el usuario es admin, aseguramos que 'Todos' esté seleccionado si no hay parámetro.
-                        invoiceViewFilter.val('all'); // Por defecto 'all' si no hay parámetro y el selector existe
+                        // Si no hay parámetro 'view' y el selector existe (es admin), el valor por defecto es 'all'
+                        invoiceViewFilter.val('all');
                     }
-
 
                     // Add change listener
                     invoiceViewFilter.on('change', function() {
@@ -398,8 +425,17 @@
                             currentUrl.searchParams.set('view', selectedView); // Set parameter for 'my'
                         }
 
-                        // Navigate to the new URL
-                        window.location.href = currentUrl.toString();
+                        // --- Añadir una pequeña transición visual antes de recargar ---
+                        // Atenuar la tabla
+                        dataTableWrapper.css('opacity', 0.5);
+                        // Opcional: podrías deshabilitar temporalmente los botones aquí también
+
+                        // Esperar un momento antes de redirigir para que la transición sea visible
+                        setTimeout(function() {
+                            // Navigate to the new URL
+                            window.location.href = currentUrl.toString();
+                        }, 200); // 200ms de espera, ajusta si es necesario
+                        // --- Fin de la transición visual ---
                     });
                 }
                 // --- End Invoice View Filter ---
@@ -475,7 +511,7 @@
                                 $('#invoices-datatable-wrapper')
                                     .hide(); // Oculta el contenedor de la tabla
                                 $('#no-invoices-message')
-                            .show(); // Muestra el mensaje de tabla vacía
+                                    .show(); // Muestra el mensaje de tabla vacía
                             }
                             // *******************************************************************
 
@@ -545,15 +581,71 @@
                 });
                 // --- FIN Manejo del Modal de Mensaje Genérico ---
 
+                // --- Manejo del Modal de Instrucciones ---
+                const instructionsModal = $('#instructions-modal');
+                const showInstructionsModalBtn = $('#show-instructions-modal-btn');
+                const closeInstructionsModalBtn = $('#close-instructions-modal-btn');
+                const instructionsModalBody = $('#instructions-modal-body');
+
+                // Texto de las instrucciones (versión reducida para trabajadores)
+                const instructionsText = `
+                    <p>Esta guía te ayudará a usar la sección de Gestión de Pagos.</p>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">1. Ver tus Pagos</h4>
+                    <p>Al entrar, verás una lista de pagos en una tabla.</p>
+                    <p>Usa el campo "Buscar:" para encontrar pagos rápidamente escribiendo parte del número de factura, expediente o CIF/NIF del cliente.</p>
+                    <p>Navega entre páginas con los botones de paginación debajo de la tabla.</p>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">2. Acciones Disponibles</h4>
+                    <p>En la columna "Acciones" de cada pago, encontrarás:</p>
+                    <ul class="list-disc list-inside ml-4 text-gray-700">
+                        <li><i class="fas fa-eye"></i> (Azul): **Ver Detalles.** Haz clic aquí para ver toda la información de ese pago.</li>
+                        <li><i class="fas fa-file-pdf"></i> (Morado): **Descargar PDF.** Haz clic aquí para obtener el archivo PDF del pago (se abrirá en una nueva pestaña).</li>
+                        <li><i class="fas fa-trash-alt"></i> (Rojo): **Eliminar.** Haz clic aquí para borrar el pago.</li>
+                    </ul>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">3. Eliminar un Pago</h4>
+                    <p>Si haces clic en el botón <i class="fas fa-trash-alt"></i>, aparecerá una ventana para confirmar que quieres eliminarlo. Confirma o cancela según corresponda.</p>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">4. Mensajes del Sistema</h4>
+                    <p>Las ventanas pequeñas te informan (éxito o error) y se cierran solas.</p>
+                    <p class="mt-3 text-gray-600"><strong>Consejo Rápido:</strong> Cierra cualquier ventana emergente presionando la tecla <code>Escape</code>.</p>
+                `;
+
+
+                // Función para mostrar el modal de instrucciones
+                function showInstructionsModal() {
+                    instructionsModalBody.html(instructionsText); // Inserta el texto HTML de las instrucciones
+                    instructionsModal.removeClass('hidden');
+                }
+
+                // Función para ocultar el modal de instrucciones
+                function hideInstructionsModal() {
+                    instructionsModal.addClass('hidden');
+                    instructionsModalBody.html(''); // Limpia el contenido del cuerpo al cerrar
+                }
+
+                // Manejar clic en el botón de instrucciones
+                showInstructionsModalBtn.on('click', showInstructionsModal);
+
+                // Manejar clic en el botón "Cerrar" dentro del modal de instrucciones
+                closeInstructionsModalBtn.on('click', hideInstructionsModal);
+
+                // Manejar clics fuera del modal de instrucciones
+                instructionsModal.on('click', function(e) {
+                    if ($(e.target).is(instructionsModal)) {
+                        hideInstructionsModal();
+                    }
+                });
+                // --- FIN Manejo del Modal de Instrucciones ---
+
 
                 // Manejar la tecla Escape para cerrar modales
-                // Incluimos el modal de mensaje si se quiere cerrar con ESC, aunque también se cierra solo.
+                // Ahora incluimos el modal de instrucciones
                 $(document).on('keydown', function(e) {
                     if (e.key === 'Escape') {
                         if (!deleteConfirmationModal.hasClass('hidden')) {
                             hideDeleteConfirmationModal();
                         } else if (!messageModal.hasClass('hidden')) {
                             hideMessageModal();
+                        } else if (!instructionsModal.hasClass('hidden')) { // Agregamos esta condición
+                            hideInstructionsModal();
                         }
                     }
                 });

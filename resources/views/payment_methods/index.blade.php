@@ -4,11 +4,20 @@
             <h2 class="font-semibold text-xl text-gray-800 leading-tight py-2">
                 {{ __('Gestión de Métodos de Pago') }}
             </h2>
-            {{-- Botón para abrir el modal de crear nuevo método de pago --}}
-            <button id="create-payment-method-btn"
-                class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm">
-                {{ __('Nuevo Método de Pago') }}
-            </button>
+            {{-- Contenedor para el botón de instrucciones y el botón de crear --}}
+            <div class="flex items-center space-x-2">
+                {{-- Botón para mostrar las instrucciones (igual que en la vista de pagos) --}}
+                <button type="button" id="show-payment-method-instructions-modal-btn"
+                    class="inline-flex items-center px-4 py-2 border border-transparent text-lg leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                    <i class="fas fa-question-circle"></i> {{-- Icono de interrogación --}}
+                </button>
+
+                {{-- Botón para abrir el modal de crear nuevo método de pago --}}
+                <button id="create-payment-method-btn"
+                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm">
+                    {{ __('Nuevo Método de Pago') }}
+                </button>
+            </div>
         </div>
     </x-slot>
 
@@ -17,15 +26,16 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
 
-                    {{-- El mensaje "No hay métodos de pago registrados." y su lógica Blade han sido eliminados.
-                         DataTables mostrará su propio mensaje emptyTable si no hay datos. --}}
+                    {{-- DataTables mostrará su propio mensaje emptyTable si no hay datos.
+                    Hemos eliminado el mensaje y lógica blade condicional anterior. --}}
 
-                    {{-- Contenedor con scroll vertical cuando hay muchas filas --}}
-                    {{-- Inicialmente oculta la opacidad, DataTables la controlará en initComplete --}}
-                    {{-- NOTA: El display: none condicional de Blade ha sido eliminado.
-                             La tabla siempre estará en el DOM, DataTables gestiona el mensaje de vacío. --}}
+                    {{-- Contenedor con scroll vertical cuando hay muchas filas
+                    Inicialmente oculto con CSS visibility: hidden para evitar destellos --}}
+                    {{-- *** MODIFICADO: Usamos opacity y transition de Tailwind en lugar de visibility: hidden *** --}}
                     <div id="payment-methods-datatable-wrapper"
-                        class="opacity-0 transition-opacity duration-300 overflow-y-auto" style="max-height: 500px;">
+                        class="overflow-y-auto opacity-0 transition ease-in-out duration-500"
+                        style="max-height: 500px;">
+                        {{-- La opacidad y transición Tailwind se gestionarán en el CSS, no aquí --}}
                         <table id="payment-methods-table" class="display w-full table-fixed">
                             <thead>
                                 <tr>
@@ -43,8 +53,8 @@
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200">
-                                {{-- Los métodos de pago se mostrarán aquí inicialmente con Blade --}}
-                                {{-- DataTables tomará estos datos al inicializarse --}}
+                                {{-- Los métodos de pago se mostrarán aquí inicialmente con Blade
+                                    DataTables tomará estos datos al inicializarse --}}
                                 @foreach ($paymentMethods as $method)
                                     <tr>
                                         {{-- Solo mostramos los campos deseados y las acciones --}}
@@ -217,6 +227,31 @@
         </div>
     </div>
 
+    {{-- Estructura del Modal de Instrucciones (Ahora con max-w-3xl y comportamiento similar a create) --}}
+    {{-- Asegúrate de que este ID es único para este modal en esta vista --}}
+    <div id="payment-method-instructions-modal"
+        class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
+        {{-- Usamos max-w-3xl como en la página de creación --}}
+        <div class="relative top-20 mx-auto p-5 border max-w-3xl shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900" id="payment-method-instructions-modal-title">
+                    {{ __('Instrucciones de Uso - Gestión de Métodos de Pago') }}</h3> {{-- Título específico --}}
+                {{-- CONTENEDOR DEL TEXTO DE INSTRUCCIONES CON SCROLL --}}
+                <div class="mt-2 px-7 py-3 text-left modal-instructions-content">
+                    <p class="text-sm text-gray-500" id="payment-method-instructions-modal-body">
+                        {{-- El texto de las instrucciones se insertará aquí via JS --}}
+                    </p>
+                </div>
+                <div class="items-center px-4 py-3 mt-4 flex justify-end">
+                    <button type="button" id="close-payment-method-instructions-modal-btn"
+                        class="px-4 py-2 bg-gray-300 text-gray-700 text-base font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2">
+                        {{ __('Cerrar') }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     @push('scripts')
         {{-- Incluir CSS de Font Awesome si se usan iconos --}}
@@ -229,7 +264,7 @@
         {{-- Incluir JS de DataTables --}}
         <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 
-        {{-- CSS para el espacio entre el filtro y la tabla, y ocultar la opacidad inicial --}}
+        {{-- CSS para el espacio entre el filtro y la tabla, y ocultar la tabla inicialmente --}}
         <style>
             /* Añade un margen inferior al contenedor del filtro de búsqueda de DataTables */
             .dataTables_filter {
@@ -248,7 +283,27 @@
                 visibility: hidden;
             }
 
-            /* Eliminada la regla display: none; inicial para payment-methods-datatable-wrapper */
+            /* *** ELIMINADO: visibility: hidden; ahora se maneja con opacity y clases de Tailwind en el HTML *** */
+            /*
+                #payment-methods-datatable-wrapper {
+                    visibility: hidden;
+                }
+                */
+
+            /* ESTILO PARA EL CONTENEDOR DEL TEXTO DE INSTRUCCIONES CON SCROLL */
+            .modal-instructions-content {
+                max-height: 400px;
+                /* Altura máxima antes de que aparezca la barra de scroll */
+                overflow-y: auto;
+                /* Añade scroll vertical si el contenido excede la altura máxima */
+                padding-right: 1rem;
+                /* Añade un poco de padding a la derecha para que el scrollbar no pise el texto */
+            }
+
+            /* Asegúrate de que el texto en los inputs en mayúsculas se muestre correctamente */
+            input[type="text"] {
+                text-transform: uppercase;
+            }
         </style>
 
         <script>
@@ -313,16 +368,20 @@
                             api.page.len(5).draw(false);
                         }
 
-                        // Simply make the table wrapper visible once DataTables is ready
-                        // DataTables will handle showing the emptyTable message if there's no data
-                        $('#payment-methods-datatable-wrapper').removeClass('opacity-0').show();
+                        // Make the table wrapper visible once DataTables is ready
+                        // *** MODIFICADO: Remove opacity-0 class for transition ***
+                        $('#payment-methods-datatable-wrapper').removeClass('opacity-0');
+                        // OLD: $('#payment-methods-datatable-wrapper').css('visibility', 'visible');
+
 
                         // Adjust columns after ensuring the wrapper is displayed
+                        // Keeping the timeout is a good practice for DataTables column adjustment
                         setTimeout(function() {
                             table.columns.adjust().draw(false);
-                        }, 10); // Small delay to ensure display: block has rendered
+                        }, 10); // Small delay to ensure display: block/visible has rendered
 
                         // Removed the logic that hides/shows the message element
+                        // DataTables emptyTable message handles this.
                     },
                     drawCallback: function(settings) {
                         const api = this.api();
@@ -330,6 +389,7 @@
                         // Removed the logic that hides/shows the message element
 
                         // Logic to add empty rows to fill the page
+                        // This only runs if there are FILTERED results but less than a full page
                         const rowsOnCurrentPage = api.rows({
                             page: 'current'
                         }).nodes().length;
@@ -339,6 +399,7 @@
 
                         currentBody.find('.empty-row').remove(); // Remove existing empty rows
 
+                        // Only add empty rows if there are SOME filtered results
                         if (rowsOnCurrentPage > 0 && rowsOnCurrentPage < pageLength) {
                             let emptyRows = pageLength - rowsOnCurrentPage;
                             let emptyRowHtml = '';
@@ -355,25 +416,25 @@
 
                                 // Actions cell (disabled buttons)
                                 emptyRowHtml += `<td class="border px-4 py-2 text-center text-sm font-medium">
-                                            <div class="flex space-x-2 justify-center">
-                                                {{-- Botón Modificar (deshabilitado) --}}
-                                                <button type="button" disabled
-                                                    class="inline-flex items-center px-4 py-2 bg-gray-300 text-gray-700 rounded-md font-semibold text-xs uppercase tracking-widest focus:outline-none cursor-not-allowed"
-                                                    style="pointer-events: none;">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-
-                                                {{-- Formulario y Botón Eliminar (deshabilitado) --}}
-                                                <form action="#" method="POST" class="disabled-form">
-                                                    <input type="hidden" name="_token" value="${csrfToken}">
-                                                    <input type="hidden" name="_method" value="DELETE">
+                                                <div class="flex space-x-2 justify-center">
+                                                    {{-- Botón Modificar (deshabilitado) --}}
                                                     <button type="button" disabled
-                                                        class="inline-flex items-center px-4 py-2 bg-gray-300 text-gray-700 rounded-md font-semibold text-xs uppercase tracking-widest focus:outline-none cursor-not-allowed">
-                                                        <i class="fas fa-trash-alt"></i>
+                                                        class="inline-flex items-center px-4 py-2 bg-gray-300 text-gray-700 rounded-md font-semibold text-xs uppercase tracking-widest focus:outline-none cursor-not-allowed"
+                                                        style="pointer-events: none;">
+                                                        <i class="fas fa-edit"></i>
                                                     </button>
-                                                </form>
-                                            </div>
-                                        </td>`; // Col 2
+
+                                                    {{-- Formulario y Botón Eliminar (deshabilitado) --}}
+                                                    <form action="#" method="POST" class="disabled-form">
+                                                        <input type="hidden" name="_token" value="${csrfToken}">
+                                                        <input type="hidden" name="_method" value="DELETE">
+                                                        <button type="button" disabled
+                                                            class="inline-flex items-center px-4 py-2 bg-gray-300 text-gray-700 rounded-md font-semibold text-xs uppercase tracking-widest focus:outline-none cursor-not-allowed">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>`; // Col 2
 
                                 emptyRowHtml += '</tr>';
                             }
@@ -680,7 +741,10 @@
 
                             // After adding a row, ensure the table wrapper is visible
                             // This is already handled by initComplete, but doesn't hurt to be explicit
-                            $('#payment-methods-datatable-wrapper').show().removeClass('opacity-0');
+                            // *** MODIFICADO: Remove opacity-0 class for transition ***
+                            $('#payment-methods-datatable-wrapper').removeClass('opacity-0');
+                            // OLD: $('#payment-methods-datatable-wrapper').show().removeClass('opacity-0'); // Note: .show() might interfere with transition, prefer just removing class
+
                             // We removed the custom message, so no need to hide it here
 
 
@@ -740,6 +804,65 @@
                 // --- FIN Añadido Manejo del Modal de Mensaje Genérico ---
 
 
+                // --- Manejo del Modal de Instrucciones de Método de Pago ---
+                // Usamos IDs diferentes para evitar conflictos con otras vistas
+                const paymentMethodInstructionsModal = $('#payment-method-instructions-modal');
+                const showPaymentMethodInstructionsModalBtn = $('#show-payment-method-instructions-modal-btn');
+                const closePaymentMethodInstructionsModalBtn = $('#close-payment-method-instructions-modal-btn');
+                const paymentMethodInstructionsModalBody = $('#payment-method-instructions-modal-body');
+
+                // Texto de las instrucciones específico para Métodos de Pago
+                const paymentMethodInstructionsText = `
+                    <p>Esta guía te ayudará a usar la sección de Gestión de Métodos de Pago.</p>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">1. Ver tus Métodos de Pago</h4>
+                    <p>Al entrar, verás una lista de los métodos de pago registrados en una tabla.</p>
+                    <p>Usa el campo "Buscar:" para encontrar métodos de pago rápidamente escribiendo parte del nombre del banco o número de cuenta.</p>
+                    <p>Navega entre páginas con los botones de paginación debajo de la tabla.</p>
+                    <p class="mt-3 text-gray-600">**Nota:** Los métodos de pago que registres aquí se cargarán automáticamente al generar PDFs de pagos o facturas.</p> {{-- Instrucción añadida --}}
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">2. Crear un Nuevo Método de Pago</h4>
+                    <p>Haz clic en el botón "<strong class="text-green-600">Nuevo Método de Pago</strong>" para abrir un formulario. Rellena el nombre del banco y el número de cuenta y guarda los cambios.</p>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">3. Acciones Disponibles</h4>
+                    <p>En la columna de acciones de cada método de pago, encontrarás:</p>
+                    <ul class="list-disc list-inside ml-4 text-gray-700">
+                        <li><i class="fas fa-edit"></i> (Amarillo): **Modificar.** Haz clic aquí para editar el nombre del banco o el número de cuenta.</li>
+                        <li><i class="fas fa-trash-alt"></i> (Rojo): **Eliminar.** Haz clic aquí para borrar el método de pago.</li>
+                    </ul>
+                    <h4 class="font-semibold mt-3 mb-1 text-gray-800">4. Eliminar un Método de Pago</h4>
+                    <p>Si haces clic en el botón <i class="fas fa-trash-alt"></i>, aparecerá una ventana para confirmar que quieres eliminarlo. Confirma o cancela según corresponda.</p>
+                     <h4 class="font-semibold mt-3 mb-1 text-gray-800">5. Mensajes del Sistema</h4>
+                    <p>Las ventanas pequeñas te informan (éxito o error) y se cierran solas.</p>
+                    <p class="mt-3 text-gray-600"><strong>Consejo Rápido:</strong> Cierra cualquier ventana emergente presionando la tecla <code>Escape</code>.</p>
+                `;
+
+
+                // Función para mostrar el modal de instrucciones
+                function showPaymentMethodInstructionsModal() {
+                    paymentMethodInstructionsModalBody.html(
+                        paymentMethodInstructionsText); // Inserta el texto HTML de las instrucciones
+                    paymentMethodInstructionsModal.removeClass('hidden');
+                }
+
+                // Función para ocultar el modal de instrucciones
+                function hidePaymentMethodInstructionsModal() {
+                    paymentMethodInstructionsModal.addClass('hidden');
+                    paymentMethodInstructionsModalBody.html(''); // Limpia el contenido del cuerpo al cerrar
+                }
+
+                // Manejar clic en el botón de instrucciones
+                showPaymentMethodInstructionsModalBtn.on('click', showPaymentMethodInstructionsModal);
+
+                // Manejar clic en el botón "Cerrar" dentro del modal de instrucciones
+                closePaymentMethodInstructionsModalBtn.on('click', hidePaymentMethodInstructionsModal);
+
+                // Manejar clics fuera del modal de instrucciones
+                paymentMethodInstructionsModal.on('click', function(e) {
+                    if ($(e.target).is(paymentMethodInstructionsModal)) {
+                        hidePaymentMethodInstructionsModal();
+                    }
+                });
+                // --- FIN Manejo del Modal de Instrucciones de Método de Pago ---
+
+
                 // Keep global escape handler, but check which modal is open
                 $(document).on('keydown', function(e) {
                     if (e.key === 'Escape') {
@@ -751,6 +874,9 @@
                             hideDeleteConfirmationModal();
                         } else if (!messageModal.hasClass('hidden')) { // Check message modal
                             hideMessageModal();
+                        } else if (!paymentMethodInstructionsModal.hasClass(
+                                'hidden')) { // Check instructions modal with new ID
+                            hidePaymentMethodInstructionsModal();
                         }
                     }
                 });
