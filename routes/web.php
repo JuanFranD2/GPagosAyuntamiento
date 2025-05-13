@@ -23,7 +23,7 @@ Route::view('profile', 'profile')
 Route::middleware(['auth'])->group(function () {
 
     // Rutas de invoices (accesibles para usuarios autenticados, incluyendo 'oper')
-    Route::resource('invoices', InvoiceController::class);
+    Route::resource('invoices', InvoiceController::class)->except(['show']);
     Route::get('/invoices', [InvoiceController::class, 'index'])->name('invoices.index');
     Route::get('/invoices/show/{invoice}', [InvoiceController::class, 'show'])->name('invoices.show');
     Route::get('/invoices/create', [InvoiceController::class, 'create'])->name('invoices.create');
