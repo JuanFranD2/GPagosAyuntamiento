@@ -428,7 +428,7 @@
                                 <div class="relative">
                                     <input type="text" name="liquidation[tax_rate]" id="tax_rate"
                                         class="mt-1 block w-full pr-10 rounded-md border-gray-300 shadow-sm text-sm @error('liquidation.tax_rate') border-red-500 @enderror"
-                                        placeholder="0.00" value="{{ old('liquidation.tax_rate') }}" />
+                                        placeholder="0.00" value="{{ old('liquidation.tax_rate', '0') }}" />
                                     <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none">
                                         <span class="text-gray-500 text-sm">%</span>
                                     </div>
@@ -712,7 +712,7 @@
 
                     conceptInput.prop('readonly', false); // Asegurarse de que sea editable inicialmente
                     conceptInput.removeClass(
-                    'bg-gray-100 cursor-not-allowed'); // Asegurarse de quitar clases visuales de readonly
+                        'bg-gray-100 cursor-not-allowed'); // Asegurarse de quitar clases visuales de readonly
 
 
                     fileNumberInput.on('input.concept_autocomplete', function() {
@@ -821,7 +821,7 @@
                         // Calcula el total a pagar (Base + IVA + Fianza)
                         const totalToPay = base + (base * tipo / 100) + bond;
                         totalToPayInput.value = totalToPay.toFixed(2).replace('.',
-                        ','); // Formatear para visualización con coma
+                            ','); // Formatear para visualización con coma
                     }
 
                     // Escuchar cambios en base, tipo y fianza
@@ -941,7 +941,7 @@
                 // Función para mostrar el modal de instrucciones
                 function showCreateInvoiceInstructionsModal() {
                     createInvoiceInstructionsModalBody.html(
-                    createInvoiceInstructionsText); // Inserta el texto HTML de las instrucciones
+                        createInvoiceInstructionsText); // Inserta el texto HTML de las instrucciones
                     createInvoiceInstructionsModal.removeClass('hidden');
                 }
 
