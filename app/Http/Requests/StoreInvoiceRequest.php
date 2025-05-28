@@ -110,4 +110,19 @@ class StoreInvoiceRequest extends FormRequest
             // ... agregar mensajes para otros campos de liquidación
         ];
     }
+
+    protected function prepareForValidation()
+    {
+        $liquidation = $this->input('liquidation', []);
+
+        foreach (['taxable_base', 'tax_rate', 'bond'] as $field) {
+            if (isset($liquidation[$field])) {
+                $liquidation[$field] = str_replace(',', '.', $liquidation[$field]);
+            }
+        }
+
+        $this->merge([
+            'liquidation' => $liquidation,
+        ]);
+    }
 }

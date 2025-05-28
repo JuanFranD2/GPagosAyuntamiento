@@ -199,7 +199,13 @@ class InvoiceController extends Controller
 
             DB::commit();
 
-            // Redirigir con mensaje de éxito y la ID de la factura para posible descarga de PDF
+            if ($request->expectsJson()) {
+                return response()->json([
+                    'message' => 'Factura creada correctamente.',
+                    'invoice_id' => $invoice->id
+                ], 201);
+            }
+
             return redirect()->route('invoices.index')
                 ->with('success', 'Factura creada correctamente.')
                 ->with('download_invoice_id', $invoice->id);
@@ -207,7 +213,12 @@ class InvoiceController extends Controller
             DB::rollBack();
             Log::error('Error creating invoice: ' . $e->getMessage(), ['exception' => $e]);
 
-            // Redirigir con mensaje de error y los datos antiguos
+            if ($request->expectsJson()) {
+                return response()->json([
+                    'error' => 'Ocurrió un error al crear la factura: ' . $e->getMessage()
+                ], 500);
+            }
+
             return redirect()->back()->withInput()->with('error', 'Ocurrió un error al crear la factura: ' . $e->getMessage());
         }
     }

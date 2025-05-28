@@ -446,7 +446,7 @@
                                 <div class="relative">
                                     <input type="text" name="liquidation[bond]" id="bond"
                                         class="mt-1 block w-full pr-10 rounded-md border-gray-300 shadow-sm text-sm @error('liquidation.bond') border-red-500 @enderror"
-                                        placeholder="0.00" value="{{ old('liquidation.bond') }}" />
+                                        placeholder="0.00" value="{{ old('liquidation.bond', '0') }}" />
                                     <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none">
                                         <span class="text-gray-500 text-sm">€</span>
                                     </div>
@@ -492,6 +492,20 @@
                         </div>
                     </div>
                 </form>
+
+                {{-- Bloque general de errores debajo del formulario --}}
+                @if ($errors->any())
+                    <div class="mt-6 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+                         role="alert"
+                         style="height: 100px; overflow-y: auto;">
+                        <strong class="font-bold">Se han encontrado los siguientes errores:</strong>
+                        <ul class="mt-2 list-disc list-inside text-sm">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
