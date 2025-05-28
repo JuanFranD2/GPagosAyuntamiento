@@ -8,10 +8,9 @@
     <div class="py-2">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 flex justify-center"> {{-- Añadido flex justify-center para centrar la imagen --}}
-                    {{-- Aquí insertamos la imagen usando asset() --}}
+                <div class="p-6 text-gray-900 flex justify-center">
                     <img src="{{ asset('imgs/LOGOAYUNTAMIENTOHINOJOS.jpg') }}" alt="Logo del Ayuntamiento de Hinojos"
-                        class="max-w-full h-auto"> {{-- Añadidas clases para que la imagen sea responsiva y grande --}}
+                        class="w-100% h-auto"> {{-- Ejemplo de ancho fijo: w-64 (256px) --}}
                 </div>
             </div>
         </div>

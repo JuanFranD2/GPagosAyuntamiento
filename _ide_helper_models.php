@@ -62,6 +62,7 @@ namespace App\Models{
  * @property int $liquidation_id
  * @property int $user_id
  * @property string|null $invoice_number
+ * @property string|null $pdf_url
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Models\Client $client
@@ -76,6 +77,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Invoice whereInvoiceId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Invoice whereInvoiceNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Invoice whereLiquidationId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Invoice wherePdfUrl($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Invoice whereRepresentativeId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Invoice whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Invoice whereUserId($value)
