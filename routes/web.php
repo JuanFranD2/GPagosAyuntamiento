@@ -31,7 +31,9 @@ Route::middleware(['auth'])->group(function () {
 
     // Rutas AJAX de soporte para invoices (necesarias para el formulario de creación/edición, accesibles a 'oper')
     Route::get('/clients/find-by-cif-nif/{cif_nif}', [InvoiceController::class, 'findClientByCifNif'])->name('clients.find-by-cif-nif');
-    Route::get('/proceedings/find-concept-by-file-number/{file_number}', [InvoiceController::class, 'findConceptByFileNumber'])->name('proceedings.find-concept-by-file-number');
+    Route::get('/proceedings/find-concept-by-file-number/{fileNumber}', [InvoiceController::class, 'findConceptByFileNumber'])
+        ->where('fileNumber', '.*')
+        ->name('proceedings.find-concept-by-file-number');
 
     // Rutas de payment-methods: Restringir acceso a 'oper' (solo 'admin' puede acceder)
     // Aplicar el middleware 'role:admin'

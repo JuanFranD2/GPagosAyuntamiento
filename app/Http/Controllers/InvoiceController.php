@@ -22,38 +22,18 @@ class InvoiceController extends Controller
     /**
      * Display a listing of the invoices.
      */
-    public function index(Request $request) // Inyectar Request
+    public function index(Request $request)
     {
-        // Start with the base query
         $query = Invoice::with(['client', 'liquidation', 'user'])->orderBy('invoice_number', 'desc');
-
-        // Check for the 'view' query parameter
         $view = $request->query('view');
-        $user = Auth::user(); // Obtener el usuario autenticado
-
-        // Si el usuario es 'oper' o si es 'admin' y el filtro es 'my', filtrar por el usuario actual
-        // Si es 'admin' y el filtro es 'all' (o no hay filtro), no aplicamos filtro de usuario.
-        // NOTA: La vista invoices/index.blade.php reestructurada ya NO usa este filtro,
-        // pero lo mantenemos aquí si quieres reactivarlo o usarlo para otra cosa.
-        // Si no lo necesitas, puedes simplificar esta parte.
+        $user = Auth::user();
         if ($user && ($user->isOper() || ($user->isAdmin() && $view === 'my'))) {
             $query->where('user_id', $user->id);
         }
-        // Si es 'admin' y $view es 'all' o null, no se añade la cláusula where('user_id').
-
-        $invoices = $query->get(); // Execute the query
-
-        // *** NECESARIO para los selectores en los modales definidos en index.blade.php ***
+        $invoices = $query->get();
         $clients = Client::all();
         $liquidations = Liquidation::all();
-        // Si tus modales necesitan otros datos (ej. PaymentMethods, Users), cárgalos aquí también
-        // $paymentMethods = PaymentMethod::all();
-        // $users = User::all();
-        // *********************************************************************************
-
-        // Pass the invoices AND the necessary data for modals to the view
         return view('invoices.index', compact('invoices', 'clients', 'liquidations'));
-        // Si cargaste más datos, inclúyelos aquí: compact('invoices', 'clients', 'liquidations', 'paymentMethods', 'users')
     }
 
     /**
@@ -61,14 +41,10 @@ class InvoiceController extends Controller
      */
     public function create()
     {
-        // NOTA: Este método `create` ya no es estrictamente necesario si solo usas el modal
-        // de creación en el index.blade.php. Si mantienes una ruta separada para /invoices/create,
-        // este método sigue siendo útil. Asegúrate de que tu ruteo sea coherente.
         $clients = Client::all();
         $liquidations = Liquidation::all();
         $paymentMethods = PaymentMethod::all();
-        $users = User::all(); // O puedes filtrar usuarios si es necesario
-
+        $users = User::all();
         return view('invoices.create', compact('clients', 'liquidations', 'paymentMethods', 'users'));
     }
 
@@ -199,13 +175,7 @@ class InvoiceController extends Controller
 
             DB::commit();
 
-            if ($request->expectsJson()) {
-                return response()->json([
-                    'message' => 'Factura creada correctamente.',
-                    'invoice_id' => $invoice->id
-                ], 201);
-            }
-
+            // Redirigir con mensaje de éxito y la ID de la factura para posible descarga de PDF
             return redirect()->route('invoices.index')
                 ->with('success', 'Factura creada correctamente.')
                 ->with('download_invoice_id', $invoice->id);
@@ -213,12 +183,7 @@ class InvoiceController extends Controller
             DB::rollBack();
             Log::error('Error creating invoice: ' . $e->getMessage(), ['exception' => $e]);
 
-            if ($request->expectsJson()) {
-                return response()->json([
-                    'error' => 'Ocurrió un error al crear la factura: ' . $e->getMessage()
-                ], 500);
-            }
-
+            // Redirigir con mensaje de error y los datos antiguos
             return redirect()->back()->withInput()->with('error', 'Ocurrió un error al crear la factura: ' . $e->getMessage());
         }
     }

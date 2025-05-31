@@ -754,8 +754,9 @@
                         debounceTimer = setTimeout(() => {
                             // Convertir a mayúsculas antes de la llamada AJAX (ya se hace en el input handler)
                             if (fileNumber.length >= minLength) {
+                                const safeFileNumber = encodeURIComponent(fileNumber);
                                 $.ajax({
-                                    url: `/proceedings/find-concept-by-file-number/${fileNumber}`, // Usar fileNumber en mayúsculas
+                                    url: `/proceedings/find-concept-by-file-number/${safeFileNumber}`,
                                     method: 'GET',
                                     success: function(response) {
                                         if (response && response.concept) {
