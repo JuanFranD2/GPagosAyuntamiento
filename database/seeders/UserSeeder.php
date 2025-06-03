@@ -26,6 +26,16 @@ class UserSeeder extends Seeder
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
+            [
+                'name' => 'UsuarioOper',
+                'email' => 'oper@hinojos.es',
+                'email_verified_at' => Carbon::now(),
+                'password' => Hash::make('12345678'),
+                'remember_token' => Str::random(10),
+                'role' => 'admin',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
             // Add more user data as needed
         ]);
     }

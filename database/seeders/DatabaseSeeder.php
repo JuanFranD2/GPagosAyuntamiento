@@ -13,11 +13,10 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UserSeeder::class,
-            /*ClientSeeder::class,
+            ClientSeeder::class,
             LiquidationSeeder::class,
             InvoiceSeeder::class,
             PaymentMethodSeeder::class,
-            */
         ]);
     }
 }

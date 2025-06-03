@@ -16,7 +16,7 @@ class ClientSeeder extends Seeder
     {
         Client::insert([
             [
-                'cif_nif' => 'B12345678',
+                'cif_nif' => '00000000T',
                 'name' => 'Acme Corp S.L.',
                 'address' => 'Calle Falsa, 123',
                 'number' => null,
@@ -31,7 +31,7 @@ class ClientSeeder extends Seeder
                 'updated_at' => Carbon::now(),
             ],
             [
-                'cif_nif' => 'A98765432',
+                'cif_nif' => '11111111H',
                 'name' => 'Global Services SA',
                 'address' => 'Avenida Principal, 45',
                 'number' => '2',

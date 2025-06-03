@@ -15,7 +15,7 @@ class LiquidationSeeder extends Seeder
     {
         Liquidation::insert([
             [
-                'file_number' => 'EXP-2024-001',
+                'file_number' => '19/2025',
                 'liquidation_date' => Carbon::parse('2024-12-15'),
                 'concept' => 'Impuesto sobre Sociedades 2023',
                 'taxable_base' => 100000.00,
@@ -27,7 +27,7 @@ class LiquidationSeeder extends Seeder
                 'updated_at' => Carbon::now(),
             ],
             [
-                'file_number' => 'EXP-2025-002',
+                'file_number' => '898/2026',
                 'liquidation_date' => Carbon::parse('2025-03-20'),
                 'concept' => 'IVA Trimestre 1 - 2025',
                 'taxable_base' => 50000.00,
@@ -39,7 +39,7 @@ class LiquidationSeeder extends Seeder
                 'updated_at' => Carbon::now(),
             ],
             [
-                'file_number' => 'EXP-2025-003',
+                'file_number' => '56/789',
                 'liquidation_date' => Carbon::parse('2025-06-10'),
                 'concept' => 'IRPF Mensual - Mayo 2025',
                 'taxable_base' => 3000.00,

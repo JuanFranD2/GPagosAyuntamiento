@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\PaymentMethod;
+use App\Http\Requests\StorePaymentMethodRequest; // Importar el Store Request
+use App\Http\Requests\UpdatePaymentMethodRequest; // Importar el Update Request
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator; // Import the Validator facade
+// use Illuminate\Support\Facades\Validator; // Ya no es necesario importar el Validator facade directamente
 
 class PaymentMethodController extends Controller
 {
@@ -22,33 +24,24 @@ class PaymentMethodController extends Controller
      */
     public function create()
     {
-        // This method is not needed for the modal approach,
-        // but kept for completeness if you ever need a dedicated create page.
+        // Este método no es necesario para el enfoque modal,
+        // pero se mantiene para completar si alguna vez necesitas una página de creación dedicada.
         // return view('payment_methods.create');
     }
 
     /**
      * Store a newly created payment method in storage.
      */
-    public function store(Request $request)
+    public function store(StorePaymentMethodRequest $request) // Inyectar StorePaymentMethodRequest
     {
-        // Define validation rules
-        $validator = Validator::make($request->all(), [
-            'bank_name' => 'required|string|max:255', // Made required based on typical form
-            'account_number' => 'required|string|max:255', // Made required
-            // Add any other validation rules as needed
-        ]);
+        // La validación se realiza automáticamente por StorePaymentMethodRequest.
+        // Si la validación falla, Laravel automáticamente redirige de vuelta con los errores
+        // o devuelve una respuesta JSON 422 para peticiones AJAX.
 
-        // Check if validation fails
-        if ($validator->fails()) {
-            // Return validation errors as JSON with a 422 status code
-            return response()->json(['errors' => $validator->errors()], 422);
-        }
+        // Crea el nuevo método de pago usando los datos validados
+        $paymentMethod = PaymentMethod::create($request->validated());
 
-        // Validation passed, create the new payment method
-        $paymentMethod = PaymentMethod::create($validator->validated());
-
-        // Return the newly created payment method as JSON with a 201 status code
+        // Retorna el método de pago recién creado como JSON con un código de estado 201
         return response()->json($paymentMethod, 201); // 201 Created
     }
 
@@ -58,8 +51,8 @@ class PaymentMethodController extends Controller
      */
     public function show(PaymentMethod $paymentMethod)
     {
-        // Method to display the details of a payment method
-        // You will need a 'payment_methods.show' view for this
+        // Método para mostrar los detalles de un método de pago
+        // Necesitarás una vista 'payment_methods.show' para esto
         return view('payment_methods.show', compact('paymentMethod'));
     }
 
@@ -68,35 +61,26 @@ class PaymentMethodController extends Controller
      */
     public function edit(PaymentMethod $paymentMethod)
     {
-        // This method is not needed for an AJAX edit modal,
-        // but kept for completeness if you ever need a dedicated edit page.
+        // Este método no es necesario para un modal de edición AJAX,
+        // pero se mantiene para completar si alguna vez necesitas una página de edición dedicada.
         // return view('payment_methods.edit', compact('paymentMethod'));
     }
 
     /**
      * Update the specified payment method in storage.
      */
-    public function update(Request $request, PaymentMethod $paymentMethod)
+    public function update(UpdatePaymentMethodRequest $request, PaymentMethod $paymentMethod) // Inyectar UpdatePaymentMethodRequest
     {
-        // Define validation rules for update
-        $validator = Validator::make($request->all(), [
-            'bank_name' => 'required|string|max:255', // Assuming required for update too
-            'account_number' => 'required|string|max:255', // Assuming required for update too
-            // Add any other validation rules as needed for update
-        ]);
+        // La validación se realiza automáticamente por UpdatePaymentMethodRequest.
+        // Si la validación falla, Laravel automáticamente redirige de vuelta con los errores
+        // o devuelve una respuesta JSON 422 para peticiones AJAX.
 
-        // Check if validation fails
-        if ($validator->fails()) {
-            // Return validation errors as JSON with a 422 status code
-            return response()->json(['errors' => $validator->errors()], 422);
-        }
+        // Actualiza el método de pago usando los datos validados
+        $paymentMethod->update($request->validated());
 
-        // Validation passed, update the payment method
-        $paymentMethod->update($validator->validated());
-
-        // Return the updated payment method as JSON
-        // Returning the updated model allows the frontend to easily update the DataTables row
-        return response()->json($paymentMethod); // 200 OK is default
+        // Retorna el método de pago actualizado como JSON
+        // Retornar el modelo actualizado permite que el frontend actualice fácilmente la fila de DataTables
+        return response()->json($paymentMethod); // 200 OK es el predeterminado
     }
 
     /**
@@ -104,15 +88,15 @@ class PaymentMethodController extends Controller
      */
     public function destroy(PaymentMethod $paymentMethod)
     {
-        // Method to delete a payment method
+        // Método para eliminar un método de pago
         try {
             $paymentMethod->delete();
-            // Return an empty or success JSON response for the AJAX request
+            // Retorna una respuesta JSON vacía o de éxito para la solicitud AJAX
             return response()->json(['success' => 'Método de pago eliminado correctamente.']);
         } catch (\Exception $e) {
-            // Optional: Log the error
+            // Opcional: Registrar el error
             // \Log::error('Error deleting payment method: ' . $e->getMessage());
-            // Return a JSON error for the AJAX request
+            // Retorna un error JSON para la solicitud AJAX
             return response()->json(['error' => 'Ocurrió un error al eliminar el método de pago.'], 500);
         }
     }

@@ -15,18 +15,18 @@ class PaymentMethodSeeder extends Seeder
         PaymentMethod::insert([
             [
                 'bank_name' => 'CAJA RURAL',
-                'account_number' => 'ES7531870028361088066327',
+                'account_number' => 'ES454555454544545',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
                 'bank_name' => 'CAIXABANK',
-                'account_number' => 'ES2421008379392200039998', // Ejemplo de número de tarjeta (no guardar datos reales así)
+                'account_number' => 'ES898989898989898', // Ejemplo de número de tarjeta (no guardar datos reales así)
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bank_name' => 'AYUNTAMIENTO HINOJOS',
+                'bank_name' => 'AYUNTAMIENTO',
                 'account_number' => 'TARJETA',
                 'created_at' => now(),
                 'updated_at' => now(),

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreInvoiceRequest;
+use App\Http\Requests\UpdateInvoiceRequest;
 use App\Models\Client;
 use App\Models\Invoice;
 use App\Models\Liquidation;
@@ -218,53 +219,35 @@ class InvoiceController extends Controller
     /**
      * Update the specified invoice in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\UpdateInvoiceRequest  $request // Usamos el Form Request aquí
      * @param  \App\Models\Invoice  $invoice
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Invoice $invoice)
+    public function update(UpdateInvoiceRequest $request, Invoice $invoice) // Modificado para usar UpdateInvoiceRequest
     {
-        // Ajustar validación para los campos esperados por el modal de edición del index
-        try {
-            $request->validate([
-                'invoice_number' => 'nullable|string|max:255|unique:invoices,invoice_number,' . $invoice->id, // Validar número único excluyendo el actual
-                'liquidation_id' => 'required|exists:liquidations,id',
-                'client_id' => 'required|exists:clients,id',
-                'issue_date' => 'nullable|date', // O requerida
-                'total_amount' => 'nullable|numeric|min:0', // O requerida si se edita
-                'status' => 'nullable|string|max:50', // O requerida
-                // Agregar validación para otros campos del modal si los agregaste
-            ]);
-        } catch (ValidationException $e) {
-            // Para peticiones AJAX (desde el modal), retornar JSON con errores
-            if ($request->expectsJson()) {
-                return response()->json(['errors' => $e->errors()], 422);
-            }
-            // Para peticiones no-AJAX, redirigir
-            return redirect()->back()->withErrors($e->errors())->withInput();
-        }
-
+        // La validación se ejecuta automáticamente por UpdateInvoiceRequest
+        // Si falla, se redirige con errores o retorna JSON si es una petición AJAX (422 Unprocessable Entity)
 
         try {
-            // NOTA: Similar al store, si el modal solo envía client_id y liquidation_id,
-            // no debes esperar datos anidados como $request->client_id directamente si
-            // la validación anterior espera 'client.cif_nif'.
-            // Ajusta la lógica de actualización según lo que realmente envía tu modal.
-            // Basado en el modal Blade reestructurado, se envían 'client_id', 'liquidation_id', 'invoice_number', etc. directamente.
+            // No es estrictamente necesario DB::beginTransaction() para una sola actualización,
+            // pero lo mantenemos si la lógica se vuelve más compleja en el futuro.
+            // Si no hay otras operaciones de base de datos que necesiten atomizar,
+            // puedes quitar el beginTransaction/commit/rollback.
 
             $invoice->update([
                 'client_id' => $request->client_id,
                 'liquidation_id' => $request->liquidation_id,
-                'invoice_number' => $request->invoice_number, // Permitir actualizar el número si es editable
-                'issue_date' => $request->issue_date, // Permitir actualizar la fecha si es editable
-                'total_amount' => $request->total_amount, // Permitir actualizar el monto si es editable
-                'status' => $request->status, // Permitir actualizar el estado
+                'invoice_number' => $request->invoice_number,
+                'issue_date' => $request->issue_date,
+                'total_amount' => $request->total_amount,
+                'status' => $request->status,
                 // Actualizar otros campos si los agregaste al modal de edición
             ]);
 
-            DB::commit(); // Aunque no hay transacción explícita iniciada aquí, es buena práctica si la lógica se vuelve más compleja
+            // Si no hay beginTransaction, no hay commit. La actualización es atómica por sí misma.
+            // DB::commit();
 
-            // Para peticiones AJAX, retornar JSON con el pago actualizado
+            // Para peticiones AJAX, retornar JSON con la factura actualizada
             if ($request->expectsJson()) {
                 // Recargar relaciones necesarias para la respuesta AJAX
                 $invoice->load(['client', 'liquidation']);
@@ -274,16 +257,17 @@ class InvoiceController extends Controller
             // Para peticiones no-AJAX, redirigir
             return redirect()->route('invoices.index')->with('success', 'Factura actualizada correctamente.');
         } catch (\Exception $e) {
-            DB::rollBack();
+            // Si no hay beginTransaction, no hay rollback.
+            // DB::rollBack();
             Log::error('Error updating invoice: ' . $e->getMessage(), ['exception' => $e]);
 
             // Para peticiones AJAX, retornar JSON con error
             if ($request->expectsJson()) {
-                return response()->json(['message' => 'Ocurrió un error al actualizar el pago: ' . $e->getMessage()], 500);
+                return response()->json(['message' => 'Ocurrió un error al actualizar la factura: ' . $e->getMessage()], 500);
             }
 
             // Para peticiones no-AJAX, redirigir con error
-            return redirect()->back()->withInput()->with('error', 'Ocurrió un error al actualizar el pago: ' . $e->getMessage());
+            return redirect()->back()->withInput()->with('error', 'Ocurrió un error al actualizar la factura: ' . $e->getMessage());
         }
     }
 
