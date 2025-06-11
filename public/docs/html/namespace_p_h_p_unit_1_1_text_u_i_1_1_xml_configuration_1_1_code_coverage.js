@@ -1,0 +1,5 @@
+var namespace_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage =
+[
+    [ "Report", "namespace_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_report.html", "namespace_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_report" ],
+    [ "CodeCoverage", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_code_coverage.html", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_code_coverage" ]
+];

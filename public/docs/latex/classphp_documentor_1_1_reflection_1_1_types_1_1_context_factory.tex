@@ -1,0 +1,45 @@
+\doxysection{Context\+Factory Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_context_factory}{}\label{classphp_documentor_1_1_reflection_1_1_types_1_1_context_factory}\index{ContextFactory@{ContextFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context_factory_a3556d8fe103f00db1579597d03238fef}{create\+For\+Namespace}} (string \$namespace, string \$file\+Contents)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Convenience class to create a \doxylink{class_context}{Context} for Doc\+Blocks when not using the Reflection \doxylink{class_component}{Component} of php\+Documentor.
+
+For a Doc\+Block to be able to resolve types that use partial namespace names or rely on namespace imports we need to provide a bit of context so that the Doc\+Block can read that and based on it decide how to resolve the types to Fully Qualified names.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_context}{Context} for more information. 
+\end{DoxySeeAlso}
+
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_context_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_context_factory_a3556d8fe103f00db1579597d03238fef}\index{ContextFactory@{ContextFactory}!createForNamespace@{createForNamespace}}
+\index{createForNamespace@{createForNamespace}!ContextFactory@{ContextFactory}}
+\doxysubsubsection{\texorpdfstring{createForNamespace()}{createForNamespace()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_context_factory_a3556d8fe103f00db1579597d03238fef} 
+create\+For\+Namespace (\begin{DoxyParamCaption}\item[{string}]{\$namespace}{, }\item[{string}]{\$file\+Contents}{}\end{DoxyParamCaption})}
+
+Build a \doxylink{class_context}{Context} for a namespace in the provided file contents.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_context}{Context} for more information on Contexts.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & It does not matter if a {\ttfamily \textbackslash{}} precedes the namespace name, this method first normalizes. \\
+\hline
+string & {\em \$file\+Contents} & The file\textquotesingle{}s contents to retrieve the aliases from with the given namespace. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/type-\/resolver/src/\+Types/\mbox{\hyperlink{phpdocumentor_2type-resolver_2src_2_types_2_context_factory_8php}{Context\+Factory.\+php}}\end{DoxyCompactItemize}

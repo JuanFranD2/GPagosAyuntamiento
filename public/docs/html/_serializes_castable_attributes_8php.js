@@ -1,0 +1,4 @@
+var _serializes_castable_attributes_8php =
+[
+    [ "SerializesCastableAttributes", "interface_illuminate_1_1_contracts_1_1_database_1_1_eloquent_1_1_serializes_castable_attributes.html", "interface_illuminate_1_1_contracts_1_1_database_1_1_eloquent_1_1_serializes_castable_attributes" ]
+];

@@ -1,0 +1,132 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/fidry/cpu-\/core-\/counter Directory Reference}
+\hypertarget{dir_4e63e831aed8e59f0abfc4192ddd64ce}{}\label{dir_4e63e831aed8e59f0abfc4192ddd64ce}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/fidry/cpu-\/core-\/counter Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/fidry/cpu-\/core-\/counter Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_f924493792779d78cb255558cb3a7886}{bin}}
+\item 
+directory \mbox{\hyperlink{dir_ef88a21540e777dc206bf89263d2629b}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md8973}{}\doxysubsection{\texorpdfstring{CPU Core Counter}{CPU Core Counter}}\label{README.md_autotoc_md8973}
+This package is a tiny utility to get the number of CPU cores.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ fidry/cpu-\/core-\/counter}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8974}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md8974}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter}{Fidry\(\backslash\)CpuCoreCounter\(\backslash\)CpuCoreCounter}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_number_of_cpu_core_not_found}{Fidry\(\backslash\)CpuCoreCounter\(\backslash\)NumberOfCpuCoreNotFound}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_dummy_cpu_core_finder}{Fidry\(\backslash\)CpuCoreCounter\(\backslash\)Finder\(\backslash\)DummyCpuCoreFinder}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$counter\ =\ \textcolor{keyword}{new}\ CpuCoreCounter();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ For\ knowing\ the\ number\ of\ cores\ you\ can\ use\ for\ launching\ parallel\ processes:}}
+\DoxyCodeLine{\$counter-\/>getAvailableForParallelisation()-\/>availableCpus;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Get\ the\ number\ of\ CPU\ cores\ (by\ default\ it\ will\ use\ the\ logical\ cores\ count):}}
+\DoxyCodeLine{\textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \$counter-\/>getCount();\ \ \ \textcolor{comment}{//\ e.g.\ 8}}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{catch}\ (NumberOfCpuCoreNotFound)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 1;\ \ \ \textcolor{comment}{//\ Fallback\ value}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ An\ alternative\ form\ where\ we\ not\ want\ to\ catch\ the\ exception:}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$counter\ =\ \textcolor{keyword}{new}\ CpuCoreCounter([}
+\DoxyCodeLine{\ \ \ \ ...CpuCoreCounter::getDefaultFinders(),}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ DummyCpuCoreFinder(1),\ \ \textcolor{comment}{//\ Fallback\ value}}
+\DoxyCodeLine{]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ A\ type-\/safe\ alternative\ form:}}
+\DoxyCodeLine{\$counter-\/>getCountWithFallback(1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Note\ that\ the\ result\ is\ memoized.}}
+\DoxyCodeLine{\$counter-\/>getCount();\ \ \ \textcolor{comment}{//\ e.g.\ 8}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8975}{}\doxysubsection{\texorpdfstring{Advanced usage}{Advanced usage}}\label{README.md_autotoc_md8975}
+\hypertarget{README.md_autotoc_md8976}{}\doxysubsubsection{\texorpdfstring{Changing the finders}{Changing the finders}}\label{README.md_autotoc_md8976}
+When creating {\ttfamily Cpu\+Core\+Counter}, you may want to change the order of the finders used or disable a specific finder. You can easily do so by passing the finders you want
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Remove\ WindowsWmicFinder\ }}
+\DoxyCodeLine{\$finders\ =\ array\_filter(}
+\DoxyCodeLine{\ \ \ \ CpuCoreCounter::getDefaultFinders(),}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{static}\ fn\ (CpuCoreFinder\ \mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a09e2431392e2622b64213879a14257e6}{\$finder}})\ =>\ !(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a09e2431392e2622b64213879a14257e6}{\$finder}}\ instanceof\ WindowsWmicFinder)}
+\DoxyCodeLine{);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$cores\ =\ (\textcolor{keyword}{new}\ CpuCoreCounter(\$finders))-\/>getCount();}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Use\ CPUInfo\ first\ \&\ don't\ use\ Nproc}}
+\DoxyCodeLine{\$finders\ =\ [}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ CpuInfoFinder(),}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ WindowsWmicFinder(),}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ HwLogicalFinder(),}
+\DoxyCodeLine{];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$cores\ =\ (\textcolor{keyword}{new}\ CpuCoreCounter(\$finders))-\/>getCount();}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8977}{}\doxysubsubsection{\texorpdfstring{Choosing only logical or physical finders}{Choosing only logical or physical finders}}\label{README.md_autotoc_md8977}
+{\ttfamily Finder\+Registry} provides two helpful entries\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \+::get\+Default\+Logical\+Finders()}\+: gives an ordered list of finders that will look for the {\itshape logical} CPU cores count.
+\item {\ttfamily \+::get\+Default\+Physical\+Finders()}\+: gives an ordered list of finders that will look for the {\itshape physical} CPU cores count.
+\end{DoxyItemize}
+
+By default, when using {\ttfamily Cpu\+Core\+Counter}, it will use the logical finders since it is more likely what you are looking for and is what is used by PHP source to build the PHP binary.\hypertarget{README.md_autotoc_md8978}{}\doxysubsubsection{\texorpdfstring{Checks what finders find what on your system}{Checks what finders find what on your system}}\label{README.md_autotoc_md8978}
+You have three scrips available that provides insight about what the finders can find\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Checks\ what\ each\ given\ finder\ will\ find\ on\ your\ system\ with\ details\ about\ the}
+\DoxyCodeLine{\#\ information\ it\ had.}
+\DoxyCodeLine{make\ diagnose\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ From\ this\ repository}
+\DoxyCodeLine{./vendor/fidry/cpu-\/core-\/counter/bin/diagnose.php\ \ \#\ From\ the\ library}
+
+\end{DoxyCode}
+
+
+And\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Execute\ all\ finders\ and\ display\ the\ result\ they\ found.}
+\DoxyCodeLine{make\ execute\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#\ From\ this\ repository}
+\DoxyCodeLine{./vendor/fidry/cpu-\/core-\/counter/bin/execute.php\ \ \#\ From\ the\ library}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8979}{}\doxysubsubsection{\texorpdfstring{Debug the results found}{Debug the results found}}\label{README.md_autotoc_md8979}
+You have 3 methods available to help you find out what happened\+:
+
+
+\begin{DoxyEnumerate}
+\item If you are using the default configuration of finder registries, you can check the previous section which will provide plenty of information.
+\item If what you are interested in is how many CPU cores were found, you can use the {\ttfamily Cpu\+Core\+Counter\+::trace()} method.
+\item If what you are interested in is how the calculation of CPU cores available for parallelisation was done, you can inspect the values of {\ttfamily Parallelisation\+Result} returned by {\ttfamily Cpu\+Core\+Counter\+::get\+Available\+For\+Parallelisation()}.
+\end{DoxyEnumerate}\hypertarget{README.md_autotoc_md8980}{}\doxysubsection{\texorpdfstring{Backward Compatibility Promise (BCP)}{Backward Compatibility Promise (BCP)}}\label{README.md_autotoc_md8980}
+The policy is for the major part following the same as \href{https://symfony.com/doc/current/contributing/code/bc.html}{\texttt{Symfony\textquotesingle{}s one}}. Note that the code marked as {\ttfamily @private} or {\ttfamily @internal} are excluded from the BCP.
+
+The following elements are also excluded\+:
+
+
+\begin{DoxyItemize}
+\item The {\ttfamily diagnose} and {\ttfamily execute} commands\+: those are for debugging/inspection purposes only
+\item {\ttfamily Finder\+Registry\+::get\texorpdfstring{$\ast$}{*}\+Finders()}\+: new finders may be added or the order of finders changed at any time
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md8981}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md8981}
+This package is licensed using the MIT License.
+
+Please have a look at \doxysectlink{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2fidry_2cpu-core-counter_2_l_i_c_e_n_s_e}{{\ttfamily LICENSE.md}}{0}. 

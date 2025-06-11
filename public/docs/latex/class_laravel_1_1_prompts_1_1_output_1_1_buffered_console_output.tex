@@ -1,0 +1,90 @@
+\doxysection{Buffered\+Console\+Output Class Reference}
+\hypertarget{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output}{}\label{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output}\index{BufferedConsoleOutput@{BufferedConsoleOutput}}
+Inheritance diagram for Buffered\+Console\+Output\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_ae48cc10bd727774bb36203986ce3b176}{fetch}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_a9b80bb36f89498eac4f43bf08461240d}{content}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_a571705a0ad3bf4257934cba7714c6f89}{write\+Directly}} (string \$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_console_output}{Console\+Output}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_console_output_a62507ed11698eaa500def06d857f5220}{new\+Lines\+Written}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_a163a7460b70afa04e4eaa4da0b393974}{do\+Write}} (string \$message, bool \$newline)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_af99e7e433d5a9108244fb58d3b3fca54}{\$buffer}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_console_output}{Console\+Output}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_console_output_ab65b181102140b442a8793aa72b00fd1}{\$new\+Lines\+Written}} = 1
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_a9b80bb36f89498eac4f43bf08461240d}\index{BufferedConsoleOutput@{BufferedConsoleOutput}!content@{content}}
+\index{content@{content}!BufferedConsoleOutput@{BufferedConsoleOutput}}
+\doxysubsubsection{\texorpdfstring{content()}{content()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_a9b80bb36f89498eac4f43bf08461240d} 
+content (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the content of the buffer. \Hypertarget{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_a163a7460b70afa04e4eaa4da0b393974}\index{BufferedConsoleOutput@{BufferedConsoleOutput}!doWrite@{doWrite}}
+\index{doWrite@{doWrite}!BufferedConsoleOutput@{BufferedConsoleOutput}}
+\doxysubsubsection{\texorpdfstring{doWrite()}{doWrite()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_a163a7460b70afa04e4eaa4da0b393974} 
+do\+Write (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{bool}]{\$newline}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Write to the output buffer. 
+
+Reimplemented from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_console_output_a163a7460b70afa04e4eaa4da0b393974}{Console\+Output}}.
+
+\Hypertarget{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_ae48cc10bd727774bb36203986ce3b176}\index{BufferedConsoleOutput@{BufferedConsoleOutput}!fetch@{fetch}}
+\index{fetch@{fetch}!BufferedConsoleOutput@{BufferedConsoleOutput}}
+\doxysubsubsection{\texorpdfstring{fetch()}{fetch()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_ae48cc10bd727774bb36203986ce3b176} 
+fetch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Empties the buffer and returns its content. \Hypertarget{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_a571705a0ad3bf4257934cba7714c6f89}\index{BufferedConsoleOutput@{BufferedConsoleOutput}!writeDirectly@{writeDirectly}}
+\index{writeDirectly@{writeDirectly}!BufferedConsoleOutput@{BufferedConsoleOutput}}
+\doxysubsubsection{\texorpdfstring{writeDirectly()}{writeDirectly()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_a571705a0ad3bf4257934cba7714c6f89} 
+write\+Directly (\begin{DoxyParamCaption}\item[{string}]{\$message}{}\end{DoxyParamCaption})}
+
+Write output directly, bypassing newline capture. 
+
+Reimplemented from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_output_1_1_console_output_a571705a0ad3bf4257934cba7714c6f89}{Console\+Output}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_af99e7e433d5a9108244fb58d3b3fca54}\index{BufferedConsoleOutput@{BufferedConsoleOutput}!\$buffer@{\$buffer}}
+\index{\$buffer@{\$buffer}!BufferedConsoleOutput@{BufferedConsoleOutput}}
+\doxysubsubsection{\texorpdfstring{\$buffer}{\$buffer}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_output_1_1_buffered_console_output_af99e7e433d5a9108244fb58d3b3fca54} 
+string \$buffer = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+The output buffer. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/prompts/src/\+Output/\mbox{\hyperlink{prompts_2src_2_output_2_buffered_console_output_8php}{Buffered\+Console\+Output.\+php}}\end{DoxyCompactItemize}

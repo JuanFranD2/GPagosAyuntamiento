@@ -1,0 +1,126 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/@tailwindcss/forms Directory Reference}
+\hypertarget{dir_1cdb954bc3fdd9c7aadceea008aadffe}{}\label{dir_1cdb954bc3fdd9c7aadceea008aadffe}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/"@tailwindcss/forms Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/"@tailwindcss/forms Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md1074}{}\doxysubsection{\texorpdfstring{@tailwindcss/forms}{@tailwindcss/forms}}\label{README.md_autotoc_md1074}
+A plugin that provides a basic reset for form styles that makes form elements easy to override with utilities.\hypertarget{README.md_autotoc_md1075}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md1075}
+Install the plugin from npm\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ install\ -\/D\ @tailwindcss/forms}
+
+\end{DoxyCode}
+
+
+Then add the plugin to your {\ttfamily tailwind.\+config.\+js} file\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ tailwind.config.js}
+\DoxyCodeLine{module.exports\ =\ \{}
+\DoxyCodeLine{\ \ theme:\ \{}
+\DoxyCodeLine{\ \ \ \ //\ ...}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ plugins:\ [}
+\DoxyCodeLine{\ \ \ \ require('@tailwindcss/forms'),}
+\DoxyCodeLine{\ \ \ \ //\ ...}
+\DoxyCodeLine{\ \ ],}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md1076}{}\doxysubsection{\texorpdfstring{Basic usage}{Basic usage}}\label{README.md_autotoc_md1076}
+\href{https://tailwindcss-forms.vercel.app/}{\texttt{{\bfseries{View the live demo}}}}
+
+All of the basic form elements you use will now have some simple default styles that are easy to override with utilities.
+
+Currently we add basic utility-\/friendly form styles for the following form element types\+:
+
+
+\begin{DoxyItemize}
+\item `input\mbox{[}type=\textquotesingle{}text'\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}password\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}email\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}number\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}url\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}date\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}datetime-\/local\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}month\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}week\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}time\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}search\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}tel\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}checkbox\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }input\mbox{[}type=\textquotesingle{}radio\textquotesingle{}\mbox{]}{\ttfamily }
+\item {\ttfamily }select{\ttfamily }
+\item {\ttfamily }select\mbox{[}multiple\mbox{]}{\ttfamily }
+\item {\ttfamily }textarea\`{}
+\end{DoxyItemize}
+
+Every element has been normalized/reset to a simple visually consistent style that is easy to customize with utilities, even elements like {\ttfamily \texorpdfstring{$<$}{<}select\texorpdfstring{$>$}{>}} or {\ttfamily \texorpdfstring{$<$}{<}input type="{}checkbox"{}\texorpdfstring{$>$}{>}} that normally need to be reset with {\ttfamily appearance\+: none} and customized using custom CSS\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<!-\/-\/\ You\ can\ actually\ customize\ padding\ on\ a\ select\ element\ now:\ -\/-\/>}
+\DoxyCodeLine{<select\ class="{}rounded-\/full\ px-\/4\ py-\/3"{}>}
+\DoxyCodeLine{\ \ <!-\/-\/\ ...\ -\/-\/>}
+\DoxyCodeLine{</select>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<!-\/-\/\ Or\ change\ a\ checkbox\ color\ using\ text\ color\ utilities:\ -\/-\/>}
+\DoxyCodeLine{<input\ type="{}checkbox"{}\ class="{}rounded\ text-\/pink-\/500"{}\ />}
+
+\end{DoxyCode}
+
+
+More customization examples and best practices coming soon.\hypertarget{README.md_autotoc_md1077}{}\doxysubsubsection{\texorpdfstring{Using classes to style}{Using classes to style}}\label{README.md_autotoc_md1077}
+In addition to the global styles, we also generate a set of corresponding classes which can be used to explicitly apply the form styles to an element. This can be useful in situations where you need to make a non-\/form element, such as a {\ttfamily \texorpdfstring{$<$}{<}div\texorpdfstring{$>$}{>}}, look like a form element.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<input\ type="{}email"{}\ class="{}form-\/input\ rounded-\/full\ px-\/4\ py-\/3"{}\ />}
+\DoxyCodeLine{}
+\DoxyCodeLine{<select\ class="{}form-\/select\ rounded-\/full\ px-\/4\ py-\/3"{}>}
+\DoxyCodeLine{\ \ <!-\/-\/\ ...\ -\/-\/>}
+\DoxyCodeLine{</select>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<input\ type="{}checkbox"{}\ class="{}form-\/checkbox\ rounded\ text-\/pink-\/500"{}\ />}
+
+\end{DoxyCode}
+
+
+Here is a complete table of the provided {\ttfamily form-\/\texorpdfstring{$\ast$}{*}} classes for reference\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Base  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Class  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Base  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Class  }\\\cline{1-2}
+\endhead
+`\mbox{[}type=\textquotesingle{}text'\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Even"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}email\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Odd"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}url\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Even"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}password\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Odd"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}number\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Even"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}date\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Odd"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}datetime-\/local\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Even"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}month\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Odd"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}search\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Even"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}tel\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Odd"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}time\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Even"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}week\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/input{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Odd"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }textarea{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/textarea{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Even"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }select{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/select{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Odd"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }select\mbox{[}multiple\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/multiselect{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Even"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}checkbox\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/checkbox{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Odd"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }\mbox{[}type=\textquotesingle{}radio\textquotesingle{}\mbox{]}{\ttfamily  \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} }form-\/radio\`{}  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{README.md_autotoc_md1078}{}\doxysubsubsection{\texorpdfstring{Using only global styles or only classes}{Using only global styles or only classes}}\label{README.md_autotoc_md1078}
+Although we recommend thinking of this plugin as a "{}form reset"{} rather than a collection of form component styles, in some cases our default approach may be too heavy-\/handed, especially when integrating this plugin into existing projects.
+
+If generating both the global (base) styles and classes doesn\textquotesingle{}t work well with your project, you can use the {\ttfamily strategy} option to limit the plugin to just one of these approaches.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ tailwind.config.js}
+\DoxyCodeLine{plugins:\ [}
+\DoxyCodeLine{\ \ require("{}@tailwindcss/forms"{})(\{}
+\DoxyCodeLine{\ \ \ \ strategy:\ 'base',\ //\ only\ generate\ global\ styles}
+\DoxyCodeLine{\ \ \ \ strategy:\ 'class',\ //\ only\ generate\ classes}
+\DoxyCodeLine{\ \ \}),}
+\DoxyCodeLine{],}
+
+\end{DoxyCode}
+
+
+When using the {\ttfamily base} strategy, form elements are styled globally, and no {\ttfamily form-\/\{name\}} classes are generated.
+
+When using the {\ttfamily class} strategy, form elements are not styled globally, and instead must be styled using the generated {\ttfamily form-\/\{name\}} classes. 

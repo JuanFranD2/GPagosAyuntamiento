@@ -1,0 +1,210 @@
+\doxysection{Regex Class Reference}
+\hypertarget{class_composer_1_1_pcre_1_1_regex}{}\label{class_composer_1_1_pcre_1_1_regex}\index{Regex@{Regex}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_a9f1b1cc6ec083cbc9a4677d534675ab5}{is\+Match}} (string \$pattern, string \$subject, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_a1d9f196e2cef75a292fde7554556fa36}{match}} (string \$pattern, string \$subject, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_ae2c1f0fd7a1f3c40d905d8427e0f8b10}{match\+Strict\+Groups}} (string \$pattern, string \$subject, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_afb1fbea5d793e666a48fd63354d615d5}{match\+With\+Offsets}} (string \$pattern, string \$subject, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_ab049461bb7f537721b4f7c1347889085}{match\+All}} (string \$pattern, string \$subject, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_a53aa841dd3055addce9564e2e1268ffa}{match\+All\+Strict\+Groups}} (string \$pattern, string \$subject, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_a049d304161a357872adbcbf832c1e8f9}{match\+All\+With\+Offsets}} (string \$pattern, string \$subject, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_a72802b6cd71af59648510008a424e902}{replace}} (\$pattern, \$replacement, \$subject, int \$limit=-\/1)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_a50a2aa36bb225eee6fa420ed0e7ec108}{replace\+Callback}} (\$pattern, callable \$replacement, \$subject, int \$limit=-\/1, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_a66f07b28ebb95615a553a8a1eac46b1f}{replace\+Callback\+Strict\+Groups}} (\$pattern, callable \$replacement, \$subject, int \$limit=-\/1, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex_a36107e45fe067babdfd14d89d38a7c4e}{replace\+Callback\+Array}} (array \$pattern, \$subject, int \$limit=-\/1, int \$flags=0)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_a9f1b1cc6ec083cbc9a4677d534675ab5}\index{Regex@{Regex}!isMatch@{isMatch}}
+\index{isMatch@{isMatch}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{isMatch()}{isMatch()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_a9f1b1cc6ec083cbc9a4677d534675ab5} 
+is\+Match (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_a1d9f196e2cef75a292fde7554556fa36}\index{Regex@{Regex}!match@{match}}
+\index{match@{match}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_a1d9f196e2cef75a292fde7554556fa36} 
+match (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_ab049461bb7f537721b4f7c1347889085}\index{Regex@{Regex}!matchAll@{matchAll}}
+\index{matchAll@{matchAll}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{matchAll()}{matchAll()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_ab049461bb7f537721b4f7c1347889085} 
+match\+All (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_a53aa841dd3055addce9564e2e1268ffa}\index{Regex@{Regex}!matchAllStrictGroups@{matchAllStrictGroups}}
+\index{matchAllStrictGroups@{matchAllStrictGroups}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{matchAllStrictGroups()}{matchAllStrictGroups()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_a53aa841dd3055addce9564e2e1268ffa} 
+match\+All\+Strict\+Groups (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of {\ttfamily match\+All()} which returns non-\/null matches (or throws)
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Null\+Match\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_a049d304161a357872adbcbf832c1e8f9}\index{Regex@{Regex}!matchAllWithOffsets@{matchAllWithOffsets}}
+\index{matchAllWithOffsets@{matchAllWithOffsets}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{matchAllWithOffsets()}{matchAllWithOffsets()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_a049d304161a357872adbcbf832c1e8f9} 
+match\+All\+With\+Offsets (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Runs preg\+\_\+match\+\_\+all with PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL and PREG\+\_\+\+MATCH\+\_\+\+OFFSET are always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_ae2c1f0fd7a1f3c40d905d8427e0f8b10}\index{Regex@{Regex}!matchStrictGroups@{matchStrictGroups}}
+\index{matchStrictGroups@{matchStrictGroups}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{matchStrictGroups()}{matchStrictGroups()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_ae2c1f0fd7a1f3c40d905d8427e0f8b10} 
+match\+Strict\+Groups (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of {\ttfamily match()} which returns non-\/null matches (or throws)
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Null\+Match\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_afb1fbea5d793e666a48fd63354d615d5}\index{Regex@{Regex}!matchWithOffsets@{matchWithOffsets}}
+\index{matchWithOffsets@{matchWithOffsets}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{matchWithOffsets()}{matchWithOffsets()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_afb1fbea5d793e666a48fd63354d615d5} 
+match\+With\+Offsets (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Runs preg\+\_\+match with PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL and PREG\+\_\+\+MATCH\+\_\+\+OFFSET are always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_a72802b6cd71af59648510008a424e902}\index{Regex@{Regex}!replace@{replace}}
+\index{replace@{replace}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_a72802b6cd71af59648510008a424e902} 
+replace (\begin{DoxyParamCaption}\item[{}]{\$pattern}{, }\item[{}]{\$replacement}{, }\item[{}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$pattern} & \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} & {\em \$replacement} & \\
+\hline
+string & {\em \$subject} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_a50a2aa36bb225eee6fa420ed0e7ec108}\index{Regex@{Regex}!replaceCallback@{replaceCallback}}
+\index{replaceCallback@{replaceCallback}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{replaceCallback()}{replaceCallback()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_a50a2aa36bb225eee6fa420ed0e7ec108} 
+replace\+Callback (\begin{DoxyParamCaption}\item[{}]{\$pattern}{, }\item[{callable}]{\$replacement}{, }\item[{}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$pattern} & \\
+\hline
+ & {\em (\$flags} & is PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE ? (callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, array\{string\texorpdfstring{$\vert$}{|}null, int\texorpdfstring{$<$}{<}-\/1, max\texorpdfstring{$>$}{>}\}\texorpdfstring{$>$}{>})\+: string) \+: callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>})\+: string) \$replacement \\
+\hline
+string & {\em \$subject} & \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE is supported, PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_a36107e45fe067babdfd14d89d38a7c4e}\index{Regex@{Regex}!replaceCallbackArray@{replaceCallbackArray}}
+\index{replaceCallbackArray@{replaceCallbackArray}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{replaceCallbackArray()}{replaceCallbackArray()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_a36107e45fe067babdfd14d89d38a7c4e} 
+replace\+Callback\+Array (\begin{DoxyParamCaption}\item[{array}]{\$pattern}{, }\item[{}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em (\$flags} & is PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE ? (array\texorpdfstring{$<$}{<}string, callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, array\{string\texorpdfstring{$\vert$}{|}null, int\texorpdfstring{$<$}{<}-\/1, max\texorpdfstring{$>$}{>}\}\texorpdfstring{$>$}{>})\+: string\texorpdfstring{$>$}{>}) \+: array\texorpdfstring{$<$}{<}string, callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>})\+: string\texorpdfstring{$>$}{>}) \$pattern \\
+\hline
+string & {\em \$subject} & \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE is supported, PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_regex_a66f07b28ebb95615a553a8a1eac46b1f}\index{Regex@{Regex}!replaceCallbackStrictGroups@{replaceCallbackStrictGroups}}
+\index{replaceCallbackStrictGroups@{replaceCallbackStrictGroups}!Regex@{Regex}}
+\doxysubsubsection{\texorpdfstring{replaceCallbackStrictGroups()}{replaceCallbackStrictGroups()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_regex_a66f07b28ebb95615a553a8a1eac46b1f} 
+replace\+Callback\+Strict\+Groups (\begin{DoxyParamCaption}\item[{}]{\$pattern}{, }\item[{callable}]{\$replacement}{, }\item[{}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of {\ttfamily replace\+Callback()} which outputs non-\/null matches (or throws)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & \\
+\hline
+ & {\em (\$flags} & is PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE ? (callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, array\{string, int$<$0, max$>$\}\texorpdfstring{$>$}{>})\+: string) \+: callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$>$}{>})\+: string) \$replacement \\
+\hline
+string & {\em \$subject} & \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE is supported, PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/composer/pcre/src/\mbox{\hyperlink{composer_2pcre_2src_2_regex_8php}{Regex.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,225 @@
+\doxysection{Route\+Service\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider}{}\label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider}\index{RouteServiceProvider@{RouteServiceProvider}}
+Inheritance diagram for Route\+Service\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a8814ea4b5beba763c570b4818980814e}{boot}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_ac565bd6a9d062c73a0a0db7afe0ffea9}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a9a73984ef9488211604924b697432fd7}{load\+Routes\+Using}} (?Closure \$routes\+Callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_aeb7b0ea7f593338e47e5fea597b7dd28}{load\+Cached\+Routes\+Using}} (?Closure \$routes\+Callback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_af0ef9558345cc802aeef12c680fdc384}{routes}} (Closure \$routes\+Callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_af76a6c120e27108bc4221582ccf149e4}{set\+Root\+Controller\+Namespace}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a9934219186f2278bd49cea94394c4403}{routes\+Are\+Cached}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a52e5bf793d58ea76406bdd42502be9d0}{load\+Cached\+Routes}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_aaa5fe15b2ccd820c0a220bb309ee00bc}{load\+Routes}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a3825c9b9060c2d6ef594385997cd60aa}{\$namespace}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_ad7f82b27b10d24d7ecc2092e13b9f3ff}{\$load\+Routes\+Using}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_acb0a43ec44c334de4a4f8be67ebb3fdc}{\$always\+Load\+Routes\+Using}}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a7b0e7a7bec3b5bd5c25dc16954dd4661}{\$always\+Load\+Cached\+Routes\+Using}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Router 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_ac565bd6a9d062c73a0a0db7afe0ffea9}\index{RouteServiceProvider@{RouteServiceProvider}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_ac565bd6a9d062c73a0a0db7afe0ffea9} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Pass dynamic methods onto the router instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a8814ea4b5beba763c570b4818980814e}\index{RouteServiceProvider@{RouteServiceProvider}!boot@{boot}}
+\index{boot@{boot}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{boot()}{boot()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a8814ea4b5beba763c570b4818980814e} 
+boot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Bootstrap any application services.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a52e5bf793d58ea76406bdd42502be9d0}\index{RouteServiceProvider@{RouteServiceProvider}!loadCachedRoutes@{loadCachedRoutes}}
+\index{loadCachedRoutes@{loadCachedRoutes}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{loadCachedRoutes()}{loadCachedRoutes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a52e5bf793d58ea76406bdd42502be9d0} 
+load\+Cached\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Load the cached routes for the application.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_aeb7b0ea7f593338e47e5fea597b7dd28}\index{RouteServiceProvider@{RouteServiceProvider}!loadCachedRoutesUsing@{loadCachedRoutesUsing}}
+\index{loadCachedRoutesUsing@{loadCachedRoutesUsing}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{loadCachedRoutesUsing()}{loadCachedRoutesUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_aeb7b0ea7f593338e47e5fea597b7dd28} 
+load\+Cached\+Routes\+Using (\begin{DoxyParamCaption}\item[{?Closure}]{\$routes\+Callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Register the callback that will be used to load the application\textquotesingle{}s cached routes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | null & {\em \$routes\+Callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_aaa5fe15b2ccd820c0a220bb309ee00bc}\index{RouteServiceProvider@{RouteServiceProvider}!loadRoutes@{loadRoutes}}
+\index{loadRoutes@{loadRoutes}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{loadRoutes()}{loadRoutes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_aaa5fe15b2ccd820c0a220bb309ee00bc} 
+load\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Load the application routes.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a9a73984ef9488211604924b697432fd7}\index{RouteServiceProvider@{RouteServiceProvider}!loadRoutesUsing@{loadRoutesUsing}}
+\index{loadRoutesUsing@{loadRoutesUsing}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{loadRoutesUsing()}{loadRoutesUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a9a73984ef9488211604924b697432fd7} 
+load\+Routes\+Using (\begin{DoxyParamCaption}\item[{?Closure}]{\$routes\+Callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Register the callback that will be used to load the application\textquotesingle{}s routes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | null & {\em \$routes\+Callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_acc294a6cc8e69743746820e3d15e3f78}\index{RouteServiceProvider@{RouteServiceProvider}!register@{register}}
+\index{register@{register}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_acc294a6cc8e69743746820e3d15e3f78} 
+register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register any application services.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_af0ef9558345cc802aeef12c680fdc384}\index{RouteServiceProvider@{RouteServiceProvider}!routes@{routes}}
+\index{routes@{routes}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{routes()}{routes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_af0ef9558345cc802aeef12c680fdc384} 
+routes (\begin{DoxyParamCaption}\item[{Closure}]{\$routes\+Callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the callback that will be used to load the application\textquotesingle{}s routes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$routes\+Callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a9934219186f2278bd49cea94394c4403}\index{RouteServiceProvider@{RouteServiceProvider}!routesAreCached@{routesAreCached}}
+\index{routesAreCached@{routesAreCached}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{routesAreCached()}{routesAreCached()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a9934219186f2278bd49cea94394c4403} 
+routes\+Are\+Cached (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the application routes are cached.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_af76a6c120e27108bc4221582ccf149e4}\index{RouteServiceProvider@{RouteServiceProvider}!setRootControllerNamespace@{setRootControllerNamespace}}
+\index{setRootControllerNamespace@{setRootControllerNamespace}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{setRootControllerNamespace()}{setRootControllerNamespace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_af76a6c120e27108bc4221582ccf149e4} 
+set\+Root\+Controller\+Namespace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the root controller namespace for the application.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a7b0e7a7bec3b5bd5c25dc16954dd4661}\index{RouteServiceProvider@{RouteServiceProvider}!\$alwaysLoadCachedRoutesUsing@{\$alwaysLoadCachedRoutesUsing}}
+\index{\$alwaysLoadCachedRoutesUsing@{\$alwaysLoadCachedRoutesUsing}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$alwaysLoadCachedRoutesUsing}{\$alwaysLoadCachedRoutesUsing}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a7b0e7a7bec3b5bd5c25dc16954dd4661} 
+\$always\+Load\+Cached\+Routes\+Using\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_acb0a43ec44c334de4a4f8be67ebb3fdc}\index{RouteServiceProvider@{RouteServiceProvider}!\$alwaysLoadRoutesUsing@{\$alwaysLoadRoutesUsing}}
+\index{\$alwaysLoadRoutesUsing@{\$alwaysLoadRoutesUsing}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$alwaysLoadRoutesUsing}{\$alwaysLoadRoutesUsing}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_acb0a43ec44c334de4a4f8be67ebb3fdc} 
+\$always\+Load\+Routes\+Using\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_ad7f82b27b10d24d7ecc2092e13b9f3ff}\index{RouteServiceProvider@{RouteServiceProvider}!\$loadRoutesUsing@{\$loadRoutesUsing}}
+\index{\$loadRoutesUsing@{\$loadRoutesUsing}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$loadRoutesUsing}{\$loadRoutesUsing}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_ad7f82b27b10d24d7ecc2092e13b9f3ff} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a9a73984ef9488211604924b697432fd7}{load\+Routes\+Using}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a3825c9b9060c2d6ef594385997cd60aa}\index{RouteServiceProvider@{RouteServiceProvider}!\$namespace@{\$namespace}}
+\index{\$namespace@{\$namespace}!RouteServiceProvider@{RouteServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$namespace}{\$namespace}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_route_service_provider_a3825c9b9060c2d6ef594385997cd60aa} 
+\$namespace\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Support/\+Providers/\mbox{\hyperlink{_route_service_provider_8php}{Route\+Service\+Provider.\+php}}\end{DoxyCompactItemize}

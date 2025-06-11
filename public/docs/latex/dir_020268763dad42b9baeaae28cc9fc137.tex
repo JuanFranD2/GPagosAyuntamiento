@@ -1,0 +1,39 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/slash Directory Reference}
+\hypertarget{dir_020268763dad42b9baeaae28cc9fc137}{}\label{dir_020268763dad42b9baeaae28cc9fc137}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/slash Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/slash Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md6671}{}\doxysubsection{\texorpdfstring{slash \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/slash.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/slash.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/slash}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/slash}})}{slash \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/slash.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/slash.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/slash}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/slash}})}}\label{readme.md_autotoc_md6671}
+\begin{quote}
+Convert Windows backslash paths to slash paths\+: {\ttfamily foo\textbackslash{}\textbackslash{}bar} ➔ {\ttfamily foo/bar} \end{quote}
+
+
+\href{http://superuser.com/a/176395/6877}{\texttt{Forward-\/slash paths can be used in Windows}} as long as they\textquotesingle{}re not extended-\/length paths and don\textquotesingle{}t contain any non-\/ascii characters.
+
+This was created since the {\ttfamily path} methods in Node.\+js outputs {\ttfamily \textbackslash{}\textbackslash{}} paths on Windows.\hypertarget{readme.md_autotoc_md6672}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md6672}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ slash}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md6673}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md6673}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ path\ =\ require('path');}
+\DoxyCodeLine{const\ slash\ =\ require('slash');}
+\DoxyCodeLine{}
+\DoxyCodeLine{const\ string\ =\ path.join('foo',\ 'bar');}
+\DoxyCodeLine{//\ Unix\ \ \ \ =>\ foo/bar}
+\DoxyCodeLine{//\ Windows\ =>\ foo\(\backslash\)\(\backslash\)bar}
+\DoxyCodeLine{}
+\DoxyCodeLine{slash(string);}
+\DoxyCodeLine{//\ Unix\ \ \ \ =>\ foo/bar}
+\DoxyCodeLine{//\ Windows\ =>\ foo/bar}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md6674}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md6674}
+\hypertarget{readme.md_autotoc_md6675}{}\doxysubsubsection{\texorpdfstring{slash(path)}{slash(path)}}\label{readme.md_autotoc_md6675}
+Type\+: {\ttfamily string}
+
+Accepts a Windows backslash path and returns a path with forward slashes.\hypertarget{readme.md_autotoc_md6676}{}\doxysubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md6676}
+MIT © \href{https://sindresorhus.com}{\texttt{Sindre Sorhus}} 

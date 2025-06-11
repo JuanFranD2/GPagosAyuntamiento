@@ -1,0 +1,95 @@
+\doxysection{Database\+Job\+Record Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record}{}\label{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record}\index{DatabaseJobRecord@{DatabaseJobRecord}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a1f44579d94d944c851b4894c635f6267}{\+\_\+\+\_\+construct}} (\$record)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a034519cde7831e47d7f8300417021d3f}{increment}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a505316d8bc0ea0cef673657c463ebfee}{touch}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a4537dad3b44254124991341cc91b28fb}{\+\_\+\+\_\+get}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_acbcb6dcb11c8755d5ffab0b45aac7a22}{\$record}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a1f44579d94d944c851b4894c635f6267}\index{DatabaseJobRecord@{DatabaseJobRecord}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DatabaseJobRecord@{DatabaseJobRecord}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a1f44579d94d944c851b4894c635f6267} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$record}{}\end{DoxyParamCaption})}
+
+Create a new job record instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}std\+Class & {\em \$record} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a4537dad3b44254124991341cc91b28fb}\index{DatabaseJobRecord@{DatabaseJobRecord}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!DatabaseJobRecord@{DatabaseJobRecord}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a4537dad3b44254124991341cc91b28fb} 
+\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Dynamically access the underlying job information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a034519cde7831e47d7f8300417021d3f}\index{DatabaseJobRecord@{DatabaseJobRecord}!increment@{increment}}
+\index{increment@{increment}!DatabaseJobRecord@{DatabaseJobRecord}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a034519cde7831e47d7f8300417021d3f} 
+increment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Increment the number of times the job has been attempted.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a505316d8bc0ea0cef673657c463ebfee}\index{DatabaseJobRecord@{DatabaseJobRecord}!touch@{touch}}
+\index{touch@{touch}!DatabaseJobRecord@{DatabaseJobRecord}}
+\doxysubsubsection{\texorpdfstring{touch()}{touch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_a505316d8bc0ea0cef673657c463ebfee} 
+touch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Update the "{}reserved at"{} timestamp of the job.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_acbcb6dcb11c8755d5ffab0b45aac7a22}\index{DatabaseJobRecord@{DatabaseJobRecord}!\$record@{\$record}}
+\index{\$record@{\$record}!DatabaseJobRecord@{DatabaseJobRecord}}
+\doxysubsubsection{\texorpdfstring{\$record}{\$record}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_jobs_1_1_database_job_record_acbcb6dcb11c8755d5ffab0b45aac7a22} 
+\$record\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Queue/\+Jobs/\mbox{\hyperlink{_database_job_record_8php}{Database\+Job\+Record.\+php}}\end{DoxyCompactItemize}

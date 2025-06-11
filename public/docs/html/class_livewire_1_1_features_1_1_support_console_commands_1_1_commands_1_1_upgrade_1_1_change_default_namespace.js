@@ -1,0 +1,5 @@
+var class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_change_default_namespace =
+[
+    [ "handle", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_change_default_namespace.html#a9930acdf09509c095728c44243f8ac76", null ],
+    [ "hasOldNamespace", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_change_default_namespace.html#a61259aeb70097583dc7c807952f2baa6", null ]
+];

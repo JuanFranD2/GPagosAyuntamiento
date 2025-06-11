@@ -1,0 +1,150 @@
+\doxysection{Abstract\+Node\+Visitor Class Reference}
+\hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor}{}\label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor}\index{AbstractNodeVisitor@{AbstractNodeVisitor}}
+Inheritance diagram for Abstract\+Node\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a61cf9be18190b38cbe8e0778f4cb2fd8}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (\mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a560dafbb8615947e1fbfa5565bbb832c}{leave\+Node}} (\mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a85d622872e004eec9219c62ed111a79b}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Inspired by \href{https://github.com/nikic/PHP-Parser/tree/36a6dcd04e7b0285e8f0868f44bd4927802f7df1}{\texttt{https\+://github.\+com/nikic/\+PHP-\/\+Parser/tree/36a6dcd04e7b0285e8f0868f44bd4927802f7df1}}
+
+Copyright (c) 2011, Nikita Popov All rights reserved. 
+
+\label{doc-func-members}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a85d622872e004eec9219c62ed111a79b}\index{AbstractNodeVisitor@{AbstractNodeVisitor}!afterTraverse@{afterTraverse}}
+\index{afterTraverse@{afterTraverse}!AbstractNodeVisitor@{AbstractNodeVisitor}}
+\doxysubsubsection{\texorpdfstring{afterTraverse()}{afterTraverse()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a85d622872e004eec9219c62ed111a79b} 
+after\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+Called once after traversal.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null\+: \$nodes stays as-\/is
+\item otherwise\+: \$nodes is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Array of nodes 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_visitor_a85d622872e004eec9219c62ed111a79b}{Node\+Visitor}}.
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a61cf9be18190b38cbe8e0778f4cb2fd8}\index{AbstractNodeVisitor@{AbstractNodeVisitor}!beforeTraverse@{beforeTraverse}}
+\index{beforeTraverse@{beforeTraverse}!AbstractNodeVisitor@{AbstractNodeVisitor}}
+\doxysubsubsection{\texorpdfstring{beforeTraverse()}{beforeTraverse()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a61cf9be18190b38cbe8e0778f4cb2fd8} 
+before\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+Called once before traversal.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null\+: \$nodes stays as-\/is
+\item otherwise\+: \$nodes is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Array of nodes 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_visitor_a61cf9be18190b38cbe8e0778f4cb2fd8}{Node\+Visitor}}.
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}\index{AbstractNodeVisitor@{AbstractNodeVisitor}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!AbstractNodeVisitor@{AbstractNodeVisitor}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a72d9ab2b97095f3bf1c97eb453a386d1} 
+enter\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})}
+
+Called when entering a node.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null =\texorpdfstring{$>$}{>} \$node stays as-\/is
+\item array (of Nodes) =\texorpdfstring{$>$}{>} The return value is merged into the parent array (at the position of the \$node)
+\item Node\+Traverser\+::\+REMOVE\+\_\+\+NODE =\texorpdfstring{$>$}{>} \$node is removed from the parent array
+\item Node\+Traverser\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN =\texorpdfstring{$>$}{>} Children of \$node are not traversed. \$node stays as-\/is
+\item Node\+Traverser\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN =\texorpdfstring{$>$}{>} Further visitors for the current node are skipped, and its children are not traversed. \$node stays as-\/is.
+\item Node\+Traverser\+::\+STOP\+\_\+\+TRAVERSAL =\texorpdfstring{$>$}{>} Traversal is aborted. \$node stays as-\/is
+\item otherwise =\texorpdfstring{$>$}{>} \$node is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & Node\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}\+Node\+Traverser\+::\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}{Node\+Visitor}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_visitor_1_1_cloning_visitor_a2234fefbe9e91693795e15ea22b135d4}{Cloning\+Visitor}}.
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a560dafbb8615947e1fbfa5565bbb832c}\index{AbstractNodeVisitor@{AbstractNodeVisitor}!leaveNode@{leaveNode}}
+\index{leaveNode@{leaveNode}!AbstractNodeVisitor@{AbstractNodeVisitor}}
+\doxysubsubsection{\texorpdfstring{leaveNode()}{leaveNode()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_abstract_node_visitor_a560dafbb8615947e1fbfa5565bbb832c} 
+leave\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})}
+
+Called when leaving a node.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null =\texorpdfstring{$>$}{>} \$node stays as-\/is
+\item Node\+Traverser\+::\+REMOVE\+\_\+\+NODE =\texorpdfstring{$>$}{>} \$node is removed from the parent array
+\item Node\+Traverser\+::\+STOP\+\_\+\+TRAVERSAL =\texorpdfstring{$>$}{>} Traversal is aborted. \$node stays as-\/is
+\item array (of Nodes) =\texorpdfstring{$>$}{>} The return value is merged into the parent array (at the position of the \$node)
+\item otherwise =\texorpdfstring{$>$}{>} \$node is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & Node\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}\+Node\+Traverser\+::\+REMOVE\+\_\+\+NODE\texorpdfstring{$\vert$}{|}\+Node\+Traverser\+::\+STOP\+\_\+\+TRAVERSAL\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_visitor_a560dafbb8615947e1fbfa5565bbb832c}{Node\+Visitor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpstan/phpdoc-\/parser/src/\+Ast/\mbox{\hyperlink{_abstract_node_visitor_8php}{Abstract\+Node\+Visitor.\+php}}\end{DoxyCompactItemize}

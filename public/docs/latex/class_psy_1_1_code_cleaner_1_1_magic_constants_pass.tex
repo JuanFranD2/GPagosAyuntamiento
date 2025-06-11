@@ -1,0 +1,67 @@
+\doxysection{Magic\+Constants\+Pass Class Reference}
+\hypertarget{class_psy_1_1_code_cleaner_1_1_magic_constants_pass}{}\label{class_psy_1_1_code_cleaner_1_1_magic_constants_pass}\index{MagicConstantsPass@{MagicConstantsPass}}
+Inheritance diagram for Magic\+Constants\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_psy_1_1_code_cleaner_1_1_magic_constants_pass}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_magic_constants_pass_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (Node \$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{Node\+Visitor\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a61cf9be18190b38cbe8e0778f4cb2fd8}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a560dafbb8615947e1fbfa5565bbb832c}{leave\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a85d622872e004eec9219c62ed111a79b}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a6d11bd165a2ecd3a965f1a64df677f96}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a48cbae280b53266294ddbc517de2e59b}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae379b14ba14de6999485d1e6bc22c94f}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae5987b64591d5fb77abdcf3c51cbb238}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_afc3479fd9ddf97109031fee9751f6234}{REPLACE\+\_\+\+WITH\+\_\+\+NULL}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Swap out {\bfseries{DIR}} and {\bfseries{FILE}} magic constants with our best guess? 
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_magic_constants_pass_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_magic_constants_pass_a72d9ab2b97095f3bf1c97eb453a386d1}\index{MagicConstantsPass@{MagicConstantsPass}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!MagicConstantsPass@{MagicConstantsPass}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_magic_constants_pass_a72d9ab2b97095f3bf1c97eb453a386d1} 
+enter\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+Swap out {\bfseries{DIR}} and {\bfseries{FILE}} constants, because the default ones when calling eval() don\textquotesingle{}t make sense.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Func\+Call\texorpdfstring{$\vert$}{|}\+String\+\_\+\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Code\+Cleaner/\mbox{\hyperlink{_magic_constants_pass_8php}{Magic\+Constants\+Pass.\+php}}\end{DoxyCompactItemize}

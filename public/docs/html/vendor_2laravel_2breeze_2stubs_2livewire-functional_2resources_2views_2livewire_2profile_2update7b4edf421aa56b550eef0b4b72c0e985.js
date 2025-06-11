@@ -1,0 +1,5 @@
+var vendor_2laravel_2breeze_2stubs_2livewire_functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985 =
+[
+    [ "$sendVerification", "vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985.html#a122762eeb22084fa96eed61a8bded301", null ],
+    [ "$updateProfileInformation", "vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985.html#accd3721805a4b96e4873cd695fe03bd7", null ]
+];

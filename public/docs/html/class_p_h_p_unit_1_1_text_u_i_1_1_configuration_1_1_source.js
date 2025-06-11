@@ -1,0 +1,26 @@
+var class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source =
+[
+    [ "__construct", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#affa2cb43e8dfeba0fd943502541d8e14", null ],
+    [ "baseline", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a0a6d1503a573d4eeef636f516fddbd7b", null ],
+    [ "deprecationTriggers", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#ac6d5fcc5d0457ae8c0ef4620cf57c15d", null ],
+    [ "excludeDirectories", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#aaf81ff9d33e38e6716e668dc0573e0c8", null ],
+    [ "excludeFiles", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#aded13b616b463f3ad5f24f39f8649b03", null ],
+    [ "hasBaseline", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a1d079c18268296744743e86969289d7d", null ],
+    [ "ignoreDirectDeprecations", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a73d177687adbdba54e01f11a1642fc02", null ],
+    [ "ignoreIndirectDeprecations", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#aba01787e9e3dad2cc5fdc1c04728edbd", null ],
+    [ "ignoreSelfDeprecations", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a609e7cdcddc9d66fc1360a16cfde6322", null ],
+    [ "ignoreSuppressionOfDeprecations", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#aaedb81f2d89677def06fd29b4b3cb2a1", null ],
+    [ "ignoreSuppressionOfErrors", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a19fc26ad6be9593a7ff437af6c881c4e", null ],
+    [ "ignoreSuppressionOfNotices", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a0b21f536a589ef832f10e1de8b7c2127", null ],
+    [ "ignoreSuppressionOfPhpDeprecations", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a50c521d8977aaf995f5be3085477e42f", null ],
+    [ "ignoreSuppressionOfPhpNotices", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a890e57ab58b48a9653ae69014975d6e4", null ],
+    [ "ignoreSuppressionOfPhpWarnings", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a99d73133caf17e4481c4e1df4366a7b8", null ],
+    [ "ignoreSuppressionOfWarnings", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a22fac31c8a5778aa8a919d29113327ac", null ],
+    [ "includeDirectories", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#ad5a3e31ca0e1b15328a76040a9cf750c", null ],
+    [ "includeFiles", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#ab1a8e549e4d5b04e09b8d6307697fd9a", null ],
+    [ "notEmpty", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a3604719b7c07c40e50129a2ca6ce790f", null ],
+    [ "restrictDeprecations", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a8e53f4fed5cb6be7e3be777a678f2562", null ],
+    [ "restrictNotices", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#aedeb250b02676868a818e0e7123dcaa6", null ],
+    [ "restrictWarnings", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#aad6cadd6766b49349943bcb82b3e74ed", null ],
+    [ "useBaseline", "class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_source.html#a69e37863a99f766e7ef86e92cf449cb5", null ]
+];

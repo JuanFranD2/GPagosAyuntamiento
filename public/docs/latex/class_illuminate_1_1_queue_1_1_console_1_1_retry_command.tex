@@ -1,0 +1,225 @@
+\doxysection{Retry\+Command Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command}{}\label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command}\index{RetryCommand@{RetryCommand}}
+Inheritance diagram for Retry\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_queue_1_1_console_1_1_retry_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a66eb7514ea7f7f8a5738a180b14e9b48}{handle}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acc17fc4b2880856deb16661a443fe08e}{run}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a645d49a93702949a651360c7bdc0a0b0}{fail}} (Throwable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$exception=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acbd42dc98fc1c0649ae7b1aeaf842b3d}{is\+Hidden}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a352b564237d3f16ca19a07d6ac036196}{set\+Hidden}} (bool \$hidden=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aab7aca3854218cb065a030769a143418}{get\+Laravel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a94bbb27e66c6b8dafd84410ede30c6af}{set\+Laravel}} (\$laravel)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a35b7b0d1889bd1a6b197d4958c37c2cb}{get\+Job\+Ids}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a8ec96b44a0710e102383494a1be329c7}{get\+Job\+Ids\+By\+Queue}} (\$queue)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_ad3a8f08b041efcf2a79d8bf1daa85618}{get\+Job\+Ids\+By\+Ranges}} (array \$ranges)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a559995dc4564738b7a47f5349ba1a072}{retry\+Job}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_adc2a65f47c3ff725770e97c1fd82b9a4}{reset\+Attempts}} (\$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a647bbdcbbca64a37bc89c3c6cb8ce23b}{refresh\+Retry\+Until}} (\$payload)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aef18ba6dc42644207c37bf5de362a4bd}{configure\+Using\+Fluent\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a05e39d241c3e3400b03d3b63dfbd8929}{configure\+Isolation}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab31c72b72ddaf7116db5d84c055d3c0b}{execute}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac8094b40d2f975480f91e5a3b7040769}{command\+Isolation\+Mutex}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac1aba88abc23023836393a7f4ea231ca}{resolve\+Command}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a87b032cba06009e3467abf1c8018d960}{\$description}} = \textquotesingle{}Retry a failed queue job\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a2483b0a3df07768a50dd53f90fd7ae4b}{\$laravel}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a87b032cba06009e3467abf1c8018d960}{\$description}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ae8c606891eb7e59cb0674a2dd63c5498}{\$help}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a4a374564d2858d8ae869a8fb890aad56}{\$hidden}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a568541fc9a0d312709894fe344c5aa13}{\$isolated}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a11ba5862b76c657e950bdde51f6e54b0}{\$isolated\+Exit\+Code}} = self\+::\+SUCCESS
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a7e6d29edbd9ec5d8ec9d478cf98fba03}{\$aliases}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a35b7b0d1889bd1a6b197d4958c37c2cb}\index{RetryCommand@{RetryCommand}!getJobIds@{getJobIds}}
+\index{getJobIds@{getJobIds}!RetryCommand@{RetryCommand}}
+\doxysubsubsection{\texorpdfstring{getJobIds()}{getJobIds()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a35b7b0d1889bd1a6b197d4958c37c2cb} 
+get\+Job\+Ids (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the job IDs to be retried.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a8ec96b44a0710e102383494a1be329c7}\index{RetryCommand@{RetryCommand}!getJobIdsByQueue@{getJobIdsByQueue}}
+\index{getJobIdsByQueue@{getJobIdsByQueue}!RetryCommand@{RetryCommand}}
+\doxysubsubsection{\texorpdfstring{getJobIdsByQueue()}{getJobIdsByQueue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a8ec96b44a0710e102383494a1be329c7} 
+get\+Job\+Ids\+By\+Queue (\begin{DoxyParamCaption}\item[{}]{\$queue}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the job IDs by queue, if applicable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_ad3a8f08b041efcf2a79d8bf1daa85618}\index{RetryCommand@{RetryCommand}!getJobIdsByRanges@{getJobIdsByRanges}}
+\index{getJobIdsByRanges@{getJobIdsByRanges}!RetryCommand@{RetryCommand}}
+\doxysubsubsection{\texorpdfstring{getJobIdsByRanges()}{getJobIdsByRanges()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_ad3a8f08b041efcf2a79d8bf1daa85618} 
+get\+Job\+Ids\+By\+Ranges (\begin{DoxyParamCaption}\item[{array}]{\$ranges}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the job IDs ranges, if applicable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$ranges} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a66eb7514ea7f7f8a5738a180b14e9b48}\index{RetryCommand@{RetryCommand}!handle@{handle}}
+\index{handle@{handle}!RetryCommand@{RetryCommand}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a66eb7514ea7f7f8a5738a180b14e9b48} 
+handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Execute the console command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a647bbdcbbca64a37bc89c3c6cb8ce23b}\index{RetryCommand@{RetryCommand}!refreshRetryUntil@{refreshRetryUntil}}
+\index{refreshRetryUntil@{refreshRetryUntil}!RetryCommand@{RetryCommand}}
+\doxysubsubsection{\texorpdfstring{refreshRetryUntil()}{refreshRetryUntil()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a647bbdcbbca64a37bc89c3c6cb8ce23b} 
+refresh\+Retry\+Until (\begin{DoxyParamCaption}\item[{}]{\$payload}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Refresh the "{}retry until"{} timestamp for the job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_adc2a65f47c3ff725770e97c1fd82b9a4}\index{RetryCommand@{RetryCommand}!resetAttempts@{resetAttempts}}
+\index{resetAttempts@{resetAttempts}!RetryCommand@{RetryCommand}}
+\doxysubsubsection{\texorpdfstring{resetAttempts()}{resetAttempts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_adc2a65f47c3ff725770e97c1fd82b9a4} 
+reset\+Attempts (\begin{DoxyParamCaption}\item[{}]{\$payload}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reset the payload attempts.
+
+Applicable to Redis and other jobs which store attempts in their payload.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a559995dc4564738b7a47f5349ba1a072}\index{RetryCommand@{RetryCommand}!retryJob@{retryJob}}
+\index{retryJob@{retryJob}!RetryCommand@{RetryCommand}}
+\doxysubsubsection{\texorpdfstring{retryJob()}{retryJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a559995dc4564738b7a47f5349ba1a072} 
+retry\+Job (\begin{DoxyParamCaption}\item[{}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retry the queue job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}std\+Class & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a87b032cba06009e3467abf1c8018d960}\index{RetryCommand@{RetryCommand}!\$description@{\$description}}
+\index{\$description@{\$description}!RetryCommand@{RetryCommand}}
+\doxysubsubsection{\texorpdfstring{\$description}{\$description}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a87b032cba06009e3467abf1c8018d960} 
+\$description = \textquotesingle{}Retry a failed queue job\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a8f34ca1e46a621ab10a3a40addb794f5}\index{RetryCommand@{RetryCommand}!\$signature@{\$signature}}
+\index{\$signature@{\$signature}!RetryCommand@{RetryCommand}}
+\doxysubsubsection{\texorpdfstring{\$signature}{\$signature}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_retry_command_a8f34ca1e46a621ab10a3a40addb794f5} 
+\$signature\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Queue/\+Console/\mbox{\hyperlink{_retry_command_8php}{Retry\+Command.\+php}}\end{DoxyCompactItemize}

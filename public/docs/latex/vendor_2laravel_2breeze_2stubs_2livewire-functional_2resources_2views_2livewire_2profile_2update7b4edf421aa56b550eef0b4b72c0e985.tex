@@ -1,0 +1,65 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/breeze/stubs/livewire-\/functional/resources/views/livewire/profile/update-\/profile-\/information-\/form.blade.\+php File Reference}
+\hypertarget{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985}{}\label{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/breeze/stubs/livewire-\/functional/resources/views/livewire/profile/update-\/profile-\/information-\/form.blade.php@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/breeze/stubs/livewire-\/functional/resources/views/livewire/profile/update-\/profile-\/information-\/form.blade.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985_accd3721805a4b96e4873cd695fe03bd7}{\$update\+Profile\+Information}}
+\item 
+\mbox{\hyperlink{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985_a122762eeb22084fa96eed61a8bded301}{\$send\+Verification}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985_a122762eeb22084fa96eed61a8bded301}\index{update-\/profile-\/information-\/form.blade.php@{update-\/profile-\/information-\/form.blade.php}!\$sendVerification@{\$sendVerification}}
+\index{\$sendVerification@{\$sendVerification}!update-\/profile-\/information-\/form.blade.php@{update-\/profile-\/information-\/form.blade.php}}
+\doxysubsubsection{\texorpdfstring{\$sendVerification}{\$sendVerification}}
+{\footnotesize\ttfamily \label{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985_a122762eeb22084fa96eed61a8bded301} 
+\$send\+Verification}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \$user\ =\ Auth::user();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\$user-\/>hasVerifiedEmail())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>redirectIntended(\textcolor{keywordflow}{default}:\ route(\textcolor{stringliteral}{'dashboard'},\ absolute:\ \textcolor{keyword}{false}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$user-\/>sendEmailVerificationNotification();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ Session::flash(\textcolor{stringliteral}{'status'},\ \textcolor{stringliteral}{'verification-\/link-\/sent'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985_accd3721805a4b96e4873cd695fe03bd7}\index{update-\/profile-\/information-\/form.blade.php@{update-\/profile-\/information-\/form.blade.php}!\$updateProfileInformation@{\$updateProfileInformation}}
+\index{\$updateProfileInformation@{\$updateProfileInformation}!update-\/profile-\/information-\/form.blade.php@{update-\/profile-\/information-\/form.blade.php}}
+\doxysubsubsection{\texorpdfstring{\$updateProfileInformation}{\$updateProfileInformation}}
+{\footnotesize\ttfamily \label{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update7b4edf421aa56b550eef0b4b72c0e985_accd3721805a4b96e4873cd695fe03bd7} 
+\$update\+Profile\+Information}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \$user\ =\ Auth::user();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$validated\ =\ \$this-\/>validate([}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'name'}\ =>\ [\textcolor{stringliteral}{'required'},\ \textcolor{stringliteral}{'string'},\ \textcolor{stringliteral}{'max:255'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'email'}\ =>\ [\textcolor{stringliteral}{'required'},\ \textcolor{stringliteral}{'string'},\ \textcolor{stringliteral}{'lowercase'},\ \textcolor{stringliteral}{'email'},\ \textcolor{stringliteral}{'max:255'},\ Rule::unique(User::class)-\/>ignore(\$user-\/>id)],}
+\DoxyCodeLine{\ \ \ \ ]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$user-\/>fill(\$validated);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\$user-\/>isDirty(\textcolor{stringliteral}{'email'}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$user-\/>email\_verified\_at\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$user-\/>save();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$this-\/>dispatch(\textcolor{stringliteral}{'profile-\/updated'},\ name:\ \$user-\/>name);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

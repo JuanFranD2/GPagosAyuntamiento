@@ -1,0 +1,4 @@
+var _garbage_collection_disabled_subscriber_8php =
+[
+    [ "GarbageCollectionDisabledSubscriber", "interface_p_h_p_unit_1_1_event_1_1_test_runner_1_1_garbage_collection_disabled_subscriber.html", "interface_p_h_p_unit_1_1_event_1_1_test_runner_1_1_garbage_collection_disabled_subscriber" ]
+];

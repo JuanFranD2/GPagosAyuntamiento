@@ -1,0 +1,26 @@
+var class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#af4143599b4a27e918a8d9730d47085f0", null ],
+    [ "clear", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#aa821bec12eaa7e0f649397c9675ff505", null ],
+    [ "getBag", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a09c4fdf6807b7bc13b9d2ec6465834d2", null ],
+    [ "getId", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a12251d0c022e9e21c137a105ff683f13", null ],
+    [ "getMetadataBag", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a9a1b173d31b64c649accf679f98ce93c", null ],
+    [ "getName", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a3d0963e68bb313b163a73f2803c64600", null ],
+    [ "getSaveHandler", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#adc6d560399f90c08a9d699ed07f7abdf", null ],
+    [ "isStarted", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a1ffe0e26cd53b764f58c5bbed489c278", null ],
+    [ "loadSession", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a13992db63dcc5fe0ee24431738bbd76c", null ],
+    [ "regenerate", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a00f734744fd92f5a59a7f59f61121f9b", null ],
+    [ "registerBag", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a2024067b6a9efc942ee5dfe06d5b1ac5", null ],
+    [ "save", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#afc8a3c62679cf00ade9f15fb2a6d6132", null ],
+    [ "setId", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#affd9498dffcc29e4cef5b266615c8521", null ],
+    [ "setMetadataBag", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#ae007273e81099b53b572a9699ab609be", null ],
+    [ "setName", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a392752b62c4f6aacea5c269690921ef3", null ],
+    [ "setOptions", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a673b5e9db470a52ea28b56a44e23e2d0", null ],
+    [ "setSaveHandler", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a115c653483e8789859188e247a88096f", null ],
+    [ "start", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#af8fa59992209e36dccb3eefb0f75531f", null ],
+    [ "$bags", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a4fa1cabbad6c43e72052e523bb45d088", null ],
+    [ "$closed", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a1da28eb6d73991eee54810b4b465ed3c", null ],
+    [ "$metadataBag", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#ae9f8ae87016b2f56fa277a6c6195e058", null ],
+    [ "$saveHandler", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a453063ce3374e984be42394a5a0a4b3f", null ],
+    [ "$started", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage.html#a3611925efb4427d27bcf2a005a15bd08", null ]
+];

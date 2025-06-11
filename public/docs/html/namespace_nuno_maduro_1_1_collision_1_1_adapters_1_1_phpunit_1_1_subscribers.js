@@ -1,0 +1,4 @@
+var namespace_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_subscribers =
+[
+    [ "Subscriber", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_subscribers_1_1_subscriber.html", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_subscribers_1_1_subscriber" ]
+];

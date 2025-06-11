@@ -1,0 +1,312 @@
+\doxysection{Queue\+Service\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider}{}\label{class_illuminate_1_1_queue_1_1_queue_service_provider}\index{QueueServiceProvider@{QueueServiceProvider}}
+Inheritance diagram for Queue\+Service\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_queue_1_1_queue_service_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_abb03a6a358c250777b20278ae2af69a9}{register\+Connectors}} (\$manager)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a121c1b201a74841aa007403c17e87c0b}{provides}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a927e8c62004aea0c6160873ae6ea4afe}{configure\+Serializable\+Closure\+Uses}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a07b7418e056c2b243f313b8028703ed0}{register\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a7a303c78ce822c1f4819f00a6a81e9eb}{register\+Connection}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a2c84e2607e81b6648095a2213b07a0e7}{register\+Null\+Connector}} (\$manager)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a6ec7c9d34df1a722a5a74d6ee561886a}{register\+Sync\+Connector}} (\$manager)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_ae60a21e27b42bfa08356fe8b3e4b50d5}{register\+Database\+Connector}} (\$manager)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a1b1fae06dbe72fdd2d50f4b7474be15f}{register\+Redis\+Connector}} (\$manager)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_aa2c3713346bdaf5c51f2e3cd778b1196}{register\+Beanstalkd\+Connector}} (\$manager)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a50e9e00d9e2753776a39290974582da3}{register\+Sqs\+Connector}} (\$manager)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a42ae982b8c48c9bf2b67877f730777bd}{register\+Worker}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_aa24d7d22f9a86e0e9d8ee3df01b4f67d}{register\+Listener}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_ab60b0ec13b5e8a7736cc513ca6fc78d1}{register\+Failed\+Job\+Services}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a2420aaea98e2bb0303f417512324439d}{database\+Failed\+Job\+Provider}} (\$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a383f09f8e2ba2083d95d826b7b3da53b}{database\+Uuid\+Failed\+Job\+Provider}} (\$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider_a6eb7dcfaa74ead263d10de6c1f0a04d9}{dynamo\+Failed\+Job\+Provider}} (\$config)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a927e8c62004aea0c6160873ae6ea4afe}\index{QueueServiceProvider@{QueueServiceProvider}!configureSerializableClosureUses@{configureSerializableClosureUses}}
+\index{configureSerializableClosureUses@{configureSerializableClosureUses}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{configureSerializableClosureUses()}{configureSerializableClosureUses()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a927e8c62004aea0c6160873ae6ea4afe} 
+configure\+Serializable\+Closure\+Uses (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Configure serializable closures uses.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a2420aaea98e2bb0303f417512324439d}\index{QueueServiceProvider@{QueueServiceProvider}!databaseFailedJobProvider@{databaseFailedJobProvider}}
+\index{databaseFailedJobProvider@{databaseFailedJobProvider}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{databaseFailedJobProvider()}{databaseFailedJobProvider()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a2420aaea98e2bb0303f417512324439d} 
+database\+Failed\+Job\+Provider (\begin{DoxyParamCaption}\item[{}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new database failed job provider.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a383f09f8e2ba2083d95d826b7b3da53b}\index{QueueServiceProvider@{QueueServiceProvider}!databaseUuidFailedJobProvider@{databaseUuidFailedJobProvider}}
+\index{databaseUuidFailedJobProvider@{databaseUuidFailedJobProvider}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{databaseUuidFailedJobProvider()}{databaseUuidFailedJobProvider()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a383f09f8e2ba2083d95d826b7b3da53b} 
+database\+Uuid\+Failed\+Job\+Provider (\begin{DoxyParamCaption}\item[{}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new database failed job provider that uses UUIDs as IDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Uuid\+Failed\+Job\+Provider 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a6eb7dcfaa74ead263d10de6c1f0a04d9}\index{QueueServiceProvider@{QueueServiceProvider}!dynamoFailedJobProvider@{dynamoFailedJobProvider}}
+\index{dynamoFailedJobProvider@{dynamoFailedJobProvider}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{dynamoFailedJobProvider()}{dynamoFailedJobProvider()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a6eb7dcfaa74ead263d10de6c1f0a04d9} 
+dynamo\+Failed\+Job\+Provider (\begin{DoxyParamCaption}\item[{}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new Dynamo\+Db failed job provider.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Dynamo\+Db\+Failed\+Job\+Provider 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a121c1b201a74841aa007403c17e87c0b}\index{QueueServiceProvider@{QueueServiceProvider}!provides@{provides}}
+\index{provides@{provides}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{provides()}{provides()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a121c1b201a74841aa007403c17e87c0b} 
+provides (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the services provided by the provider.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_support_1_1_deferrable_provider_a121c1b201a74841aa007403c17e87c0b}{Deferrable\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_acc294a6cc8e69743746820e3d15e3f78}\index{QueueServiceProvider@{QueueServiceProvider}!register@{register}}
+\index{register@{register}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_acc294a6cc8e69743746820e3d15e3f78} 
+register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the service provider.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_aa2c3713346bdaf5c51f2e3cd778b1196}\index{QueueServiceProvider@{QueueServiceProvider}!registerBeanstalkdConnector@{registerBeanstalkdConnector}}
+\index{registerBeanstalkdConnector@{registerBeanstalkdConnector}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerBeanstalkdConnector()}{registerBeanstalkdConnector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_aa2c3713346bdaf5c51f2e3cd778b1196} 
+register\+Beanstalkd\+Connector (\begin{DoxyParamCaption}\item[{}]{\$manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the Beanstalkd queue connector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a7a303c78ce822c1f4819f00a6a81e9eb}\index{QueueServiceProvider@{QueueServiceProvider}!registerConnection@{registerConnection}}
+\index{registerConnection@{registerConnection}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerConnection()}{registerConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a7a303c78ce822c1f4819f00a6a81e9eb} 
+register\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the default queue connection binding.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_abb03a6a358c250777b20278ae2af69a9}\index{QueueServiceProvider@{QueueServiceProvider}!registerConnectors@{registerConnectors}}
+\index{registerConnectors@{registerConnectors}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerConnectors()}{registerConnectors()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_abb03a6a358c250777b20278ae2af69a9} 
+register\+Connectors (\begin{DoxyParamCaption}\item[{}]{\$manager}{}\end{DoxyParamCaption})}
+
+Register the connectors on the queue manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_ae60a21e27b42bfa08356fe8b3e4b50d5}\index{QueueServiceProvider@{QueueServiceProvider}!registerDatabaseConnector@{registerDatabaseConnector}}
+\index{registerDatabaseConnector@{registerDatabaseConnector}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerDatabaseConnector()}{registerDatabaseConnector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_ae60a21e27b42bfa08356fe8b3e4b50d5} 
+register\+Database\+Connector (\begin{DoxyParamCaption}\item[{}]{\$manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the database queue connector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_ab60b0ec13b5e8a7736cc513ca6fc78d1}\index{QueueServiceProvider@{QueueServiceProvider}!registerFailedJobServices@{registerFailedJobServices}}
+\index{registerFailedJobServices@{registerFailedJobServices}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerFailedJobServices()}{registerFailedJobServices()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_ab60b0ec13b5e8a7736cc513ca6fc78d1} 
+register\+Failed\+Job\+Services (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the failed job services.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_aa24d7d22f9a86e0e9d8ee3df01b4f67d}\index{QueueServiceProvider@{QueueServiceProvider}!registerListener@{registerListener}}
+\index{registerListener@{registerListener}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerListener()}{registerListener()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_aa24d7d22f9a86e0e9d8ee3df01b4f67d} 
+register\+Listener (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the queue listener.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a07b7418e056c2b243f313b8028703ed0}\index{QueueServiceProvider@{QueueServiceProvider}!registerManager@{registerManager}}
+\index{registerManager@{registerManager}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerManager()}{registerManager()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a07b7418e056c2b243f313b8028703ed0} 
+register\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the queue manager.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a2c84e2607e81b6648095a2213b07a0e7}\index{QueueServiceProvider@{QueueServiceProvider}!registerNullConnector@{registerNullConnector}}
+\index{registerNullConnector@{registerNullConnector}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerNullConnector()}{registerNullConnector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a2c84e2607e81b6648095a2213b07a0e7} 
+register\+Null\+Connector (\begin{DoxyParamCaption}\item[{}]{\$manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the Null queue connector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a1b1fae06dbe72fdd2d50f4b7474be15f}\index{QueueServiceProvider@{QueueServiceProvider}!registerRedisConnector@{registerRedisConnector}}
+\index{registerRedisConnector@{registerRedisConnector}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerRedisConnector()}{registerRedisConnector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a1b1fae06dbe72fdd2d50f4b7474be15f} 
+register\+Redis\+Connector (\begin{DoxyParamCaption}\item[{}]{\$manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the Redis queue connector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a50e9e00d9e2753776a39290974582da3}\index{QueueServiceProvider@{QueueServiceProvider}!registerSqsConnector@{registerSqsConnector}}
+\index{registerSqsConnector@{registerSqsConnector}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerSqsConnector()}{registerSqsConnector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a50e9e00d9e2753776a39290974582da3} 
+register\+Sqs\+Connector (\begin{DoxyParamCaption}\item[{}]{\$manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the Amazon SQS queue connector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a6ec7c9d34df1a722a5a74d6ee561886a}\index{QueueServiceProvider@{QueueServiceProvider}!registerSyncConnector@{registerSyncConnector}}
+\index{registerSyncConnector@{registerSyncConnector}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerSyncConnector()}{registerSyncConnector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a6ec7c9d34df1a722a5a74d6ee561886a} 
+register\+Sync\+Connector (\begin{DoxyParamCaption}\item[{}]{\$manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the Sync queue connector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_queue_service_provider_a42ae982b8c48c9bf2b67877f730777bd}\index{QueueServiceProvider@{QueueServiceProvider}!registerWorker@{registerWorker}}
+\index{registerWorker@{registerWorker}!QueueServiceProvider@{QueueServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerWorker()}{registerWorker()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_queue_service_provider_a42ae982b8c48c9bf2b67877f730777bd} 
+register\+Worker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the queue worker.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Queue/\mbox{\hyperlink{_queue_service_provider_8php}{Queue\+Service\+Provider.\+php}}\end{DoxyCompactItemize}

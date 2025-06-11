@@ -1,0 +1,187 @@
+\chapter{rules }
+\hypertarget{rules}{}\label{rules}\index{rules@{rules}}
+
+\begin{DoxyItemize}
+\item Supports most presentational HTML 4.\+0 attributes
+\item Supports external stylesheets, either local or through http/ftp (via fopen-\/wrappers)
+\item Supports complex tables, including row \& column spans, separate \& collapsed border models, individual cell styling
+\item \doxylink{namespace_dompdf_1_1_image}{Image} support (gif, png (8, 24 and 32 bit with alpha channel), bmp \& jpeg)
+\item No dependencies on external \doxylink{class_p_d_f}{PDF} libraries, thanks to the R\&OS \doxylink{class_p_d_f}{PDF} class
+\item \doxylink{class_dompdf_1_1_renderer_1_1_inline}{Inline} PHP support
+\item Basic SVG support (see "{}\+Limitations"{} below)
+\end{DoxyItemize}\hypertarget{rules_autotoc_md8813}{}\doxysection{\texorpdfstring{Requirements}{Requirements}}\label{rules_autotoc_md8813}
+
+\begin{DoxyItemize}
+\item PHP version 7.\+1 or higher
+\item DOM extension
+\item MBString extension
+\item php-\/font-\/lib
+\item php-\/svg-\/lib
+\end{DoxyItemize}
+
+Note that some required dependencies may have further dependencies (notably php-\/svg-\/lib requires sabberworm/php-\/css-\/parser).\hypertarget{rules_autotoc_md8814}{}\doxysubsection{\texorpdfstring{Recommendations}{Recommendations}}\label{rules_autotoc_md8814}
+
+\begin{DoxyItemize}
+\item GD (for image processing)
+\begin{DoxyItemize}
+\item Additionally, the IMagick or GMagick extension improves image processing performance for certain image types
+\end{DoxyItemize}
+\item OPcache (OPcache, XCache, APC, etc.)\+: improves performance
+\end{DoxyItemize}
+
+Visit the wiki for more information\+: \href{https://github.com/dompdf/dompdf/wiki/Requirements}{\texttt{https\+://github.\+com/dompdf/dompdf/wiki/\+Requirements}}\hypertarget{rules_autotoc_md8815}{}\doxysection{\texorpdfstring{About Fonts \& Character Encoding}{About Fonts \& Character Encoding}}\label{rules_autotoc_md8815}
+\doxylink{class_p_d_f}{PDF} documents internally support the following fonts\+: Helvetica, Times-\/\+Roman, Courier, Zapf-\/\+Dingbats, \& Symbol. These fonts only support Windows ANSI encoding. In order for a \doxylink{class_p_d_f}{PDF} to display characters that are not available in Windows ANSI, you must supply an external font. \doxylink{class_dompdf_1_1_dompdf}{Dompdf} will embed any referenced font in the \doxylink{class_p_d_f}{PDF} so long as it has been pre-\/loaded or is accessible to dompdf and reference in CSS @font-\/face rules. See the \href{https://github.com/dompdf/dompdf/wiki/About-Fonts-and-Character-Encoding}{\texttt{font overview}} for more information on how to use fonts.
+
+The \href{https://dejavu-fonts.github.io/}{\texttt{Deja\+Vu True\+Type fonts}} have been pre-\/installed to give dompdf decent Unicode character coverage by default. To use the Deja\+Vu fonts reference the font in your stylesheet, e.\+g. {\ttfamily body \{ font-\/family\+: Deja\+Vu Sans; \}} (for Deja\+Vu Sans). The following Deja\+Vu 2.\+34 fonts are available\+: Deja\+Vu Sans, Deja\+Vu Serif, and Deja\+Vu Sans Mono.\hypertarget{rules_autotoc_md8816}{}\doxysection{\texorpdfstring{Easy Installation}{Easy Installation}}\label{rules_autotoc_md8816}
+\hypertarget{rules_autotoc_md8817}{}\doxysubsection{\texorpdfstring{Install with composer}{Install with composer}}\label{rules_autotoc_md8817}
+To install with \href{https://getcomposer.org/}{\texttt{Composer}}, simply require the latest version of this package.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ dompdf/dompdf}
+
+\end{DoxyCode}
+
+
+Make sure that the autoload file from \doxylink{namespace_composer}{Composer} is loaded.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ somewhere\ early\ in\ your\ project's\ loading,\ require\ the\ Composer\ autoloader}}
+\DoxyCodeLine{\textcolor{comment}{//\ see:\ http://getcomposer.org/doc/00-\/intro.md}}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'vendor/autoload.php'};}
+
+\end{DoxyCode}
+\hypertarget{rules_autotoc_md8818}{}\doxysubsection{\texorpdfstring{Download and install}{Download and install}}\label{rules_autotoc_md8818}
+Download a packaged archive of dompdf and extract it into the directory where dompdf will reside
+
+
+\begin{DoxyItemize}
+\item You can download stable copies of dompdf from \href{https://github.com/dompdf/dompdf/releases}{\texttt{https\+://github.\+com/dompdf/dompdf/releases}}
+\item Or download a nightly (the latest, unreleased code) from \href{http://eclecticgeek.com/dompdf}{\texttt{http\+://eclecticgeek.\+com/dompdf}}
+\end{DoxyItemize}
+
+Use the packaged release autoloader to load dompdf, libraries, and helper functions in your PHP\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ include\ autoloader}}
+\DoxyCodeLine{require\_once\ \textcolor{stringliteral}{'dompdf/autoload.inc.php'};}
+
+\end{DoxyCode}
+
+
+Note\+: packaged releases are named according using semantic versioning ({\itshape dompdf\+\_\+\+MAJOR-\/\+MINOR-\/\+PATCH.\+zip}). So the 1.\+0.\+0 release would be dompdf\+\_\+1-\/0-\/0.\+zip. This is the only download that includes the autoloader for \doxylink{class_dompdf_1_1_dompdf}{Dompdf} and all its dependencies.\hypertarget{rules_autotoc_md8819}{}\doxysubsection{\texorpdfstring{Install with git}{Install with git}}\label{rules_autotoc_md8819}
+From the command line, switch to the directory where dompdf will reside and run the following commands\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ https://github.com/dompdf/dompdf.git}
+\DoxyCodeLine{cd\ dompdf/lib}
+\DoxyCodeLine{}
+\DoxyCodeLine{git\ clone\ https://github.com/PhenX/php-\/font-\/lib.git\ php-\/font-\/lib}
+\DoxyCodeLine{cd\ php-\/font-\/lib}
+\DoxyCodeLine{git\ checkout\ 0.5.1}
+\DoxyCodeLine{cd\ ..}
+\DoxyCodeLine{}
+\DoxyCodeLine{git\ clone\ https://github.com/PhenX/php-\/svg-\/lib.git\ php-\/svg-\/lib}
+\DoxyCodeLine{cd\ php-\/svg-\/lib}
+\DoxyCodeLine{git\ checkout\ v0.3.2}
+\DoxyCodeLine{cd\ ..}
+\DoxyCodeLine{}
+\DoxyCodeLine{git\ clone\ https://github.com/sabberworm/PHP-\/CSS-\/Parser.git\ php-\/css-\/parser}
+\DoxyCodeLine{cd\ php-\/css-\/parser}
+\DoxyCodeLine{git\ checkout\ 8.1.0}
+
+\end{DoxyCode}
+
+
+Require dompdf and it\textquotesingle{}s dependencies in your PHP. For details see the \href{https://github.com/dompdf/utils/blob/master/autoload.inc.php}{\texttt{autoloader in the utils project}}.\hypertarget{rules_autotoc_md8820}{}\doxysection{\texorpdfstring{Framework Integration}{Framework Integration}}\label{rules_autotoc_md8820}
+
+\begin{DoxyItemize}
+\item For Symfony\+: \href{https://github.com/nucleos/NucleosDompdfBundle}{\texttt{nucleos/dompdf-\/bundle}}
+\item For Laravel\+: \href{https://github.com/barryvdh/laravel-dompdf}{\texttt{barryvdh/laravel-\/dompdf}}
+\item For Redaxo\+: \href{https://github.com/FriendsOfREDAXO/pdfout}{\texttt{Pdf\+Out}}
+\end{DoxyItemize}\hypertarget{rules_autotoc_md8821}{}\doxysection{\texorpdfstring{Quick Start}{Quick Start}}\label{rules_autotoc_md8821}
+Just pass your HTML in to dompdf and stream the output\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ reference\ the\ Dompdf\ namespace}}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf\(\backslash\)Dompdf}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ instantiate\ and\ use\ the\ dompdf\ class}}
+\DoxyCodeLine{\$dompdf\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{namespace_dompdf}{Dompdf}}();}
+\DoxyCodeLine{\$dompdf-\/>loadHtml(\textcolor{stringliteral}{'hello\ world'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ (Optional)\ Setup\ the\ paper\ size\ and\ orientation}}
+\DoxyCodeLine{\$dompdf-\/>setPaper(\textcolor{stringliteral}{'A4'},\ \textcolor{stringliteral}{'landscape'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Render\ the\ HTML\ as\ PDF}}
+\DoxyCodeLine{\$dompdf-\/>render();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Output\ the\ generated\ PDF\ to\ Browser}}
+\DoxyCodeLine{\$dompdf-\/>stream();}
+
+\end{DoxyCode}
+\hypertarget{rules_autotoc_md8822}{}\doxysubsection{\texorpdfstring{Setting Options}{Setting Options}}\label{rules_autotoc_md8822}
+Set options during dompdf instantiation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf\(\backslash\)Dompdf}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_dompdf_1_1_options}{Dompdf\(\backslash\)Options}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$options\ =\ \textcolor{keyword}{new}\ Options();}
+\DoxyCodeLine{\$options-\/>set(\textcolor{stringliteral}{'defaultFont'},\ \textcolor{stringliteral}{'Courier'});}
+\DoxyCodeLine{\$dompdf\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{namespace_dompdf}{Dompdf}}(\$options);}
+
+\end{DoxyCode}
+
+
+or at run time
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf\(\backslash\)Dompdf}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dompdf\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{namespace_dompdf}{Dompdf}}();}
+\DoxyCodeLine{\$options\ =\ \$dompdf-\/>getOptions();}
+\DoxyCodeLine{\$options-\/>setDefaultFont(\textcolor{stringliteral}{'Courier'});}
+\DoxyCodeLine{\$dompdf-\/>setOptions(\$options);}
+
+\end{DoxyCode}
+
+
+See \href{src/Options.php}{\texttt{Dompdf\textbackslash{}\+Options}} for a list of available options.\hypertarget{rules_autotoc_md8823}{}\doxysubsection{\texorpdfstring{Resource Reference Requirements}{Resource Reference Requirements}}\label{rules_autotoc_md8823}
+In order to protect potentially sensitive information \doxylink{class_dompdf_1_1_dompdf}{Dompdf} imposes restrictions on files referenced from the local file system or the web.
+
+Files accessed through web-\/based protocols have the following requirements\+:
+\begin{DoxyItemize}
+\item The \doxylink{class_dompdf_1_1_dompdf}{Dompdf} option "{}is\+Remote\+Enabled"{} must be set to "{}true"{}
+\item PHP must either have the curl extension enabled or the allow\+\_\+url\+\_\+fopen setting set to true
+\end{DoxyItemize}
+
+Files accessed through the local file system have the following requirement\+:
+\begin{DoxyItemize}
+\item The file must fall within the path(s) specified for the \doxylink{class_dompdf_1_1_dompdf}{Dompdf} "{}chroot"{} option
+\end{DoxyItemize}\hypertarget{rules_autotoc_md8824}{}\doxysection{\texorpdfstring{Limitations (Known Issues)}{Limitations (Known Issues)}}\label{rules_autotoc_md8824}
+
+\begin{DoxyItemize}
+\item Table cells are not pageable, meaning a table row must fit on a single page.
+\item \doxylink{class_masterminds_1_1_h_t_m_l5_1_1_elements}{Elements} are rendered on the active page when they are parsed.
+\item Embedding "{}raw"{} SVG\textquotesingle{}s ({\ttfamily \texorpdfstring{$<$}{<}svg\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}path...\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}/svg\texorpdfstring{$>$}{>}}) isn\textquotesingle{}t working yet, you need to either link to an external SVG file, or use a Data\+URI like this\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$html\ =\ \textcolor{stringliteral}{'<img\ src="{}data:image/svg+xml;base64,'}\ .\ base64\_encode(\$svg)\ .\ \textcolor{stringliteral}{'"{}\ ...>'};}
+
+\end{DoxyCode}
+ Watch \href{https://github.com/dompdf/dompdf/issues/320}{\texttt{https\+://github.\+com/dompdf/dompdf/issues/320}} for progress
+\item Does not support CSS flexbox.
+\item Does not support CSS Grid.
+\item A single \doxylink{class_dompdf_1_1_dompdf}{Dompdf} instance should not be used to render more than one HTML document 
+\end{DoxyItemize}\hypertarget{rules_autotoc_md8825}{}\doxysection{\texorpdfstring{because persisted parsing and rendering artifacts can impact future renders.}{because persisted parsing and rendering artifacts can impact future renders.}}\label{rules_autotoc_md8825}
+\href{http://goo.gl/DSvWf}{\texttt{}}
+
+{\itshape If you find this project useful, please consider making a donation. Any funds donated will be used to help further development on this project.)}
+
+The styles defined by   

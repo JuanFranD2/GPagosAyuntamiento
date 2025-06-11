@@ -1,0 +1,4 @@
+var nunomaduro_2collision_2src_2_contracts_2_adapters_2_phpunit_2_has_printable_test_case_name_8php =
+[
+    [ "HasPrintableTestCaseName", "interface_nuno_maduro_1_1_collision_1_1_contracts_1_1_adapters_1_1_phpunit_1_1_has_printable_test_case_name.html", "interface_nuno_maduro_1_1_collision_1_1_contracts_1_1_adapters_1_1_phpunit_1_1_has_printable_test_case_name" ]
+];

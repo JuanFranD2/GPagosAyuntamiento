@@ -1,0 +1,4 @@
+var phpunit_2phpunit_2src_2_runner_2_deprecation_collector_2_subscriber_2_test_prepared_subscriber_8php =
+[
+    [ "TestPreparedSubscriber", "class_p_h_p_unit_1_1_runner_1_1_deprecation_collector_1_1_test_prepared_subscriber.html", "class_p_h_p_unit_1_1_runner_1_1_deprecation_collector_1_1_test_prepared_subscriber" ]
+];

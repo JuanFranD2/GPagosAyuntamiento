@@ -1,0 +1,79 @@
+\doxysection{Remove\+Unserialize\+For\+Internal\+Serializable\+Classes\+Pass Class Reference}
+\hypertarget{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass}{}\label{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass}\index{RemoveUnserializeForInternalSerializableClassesPass@{RemoveUnserializeForInternalSerializableClassesPass}}
+Inheritance diagram for Remove\+Unserialize\+For\+Internal\+Serializable\+Classes\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_a2f25d1c949009b154d77c4ce6f7587b6}{apply}} (\$code, \mbox{\hyperlink{class_mockery_1_1_generator_1_1_mock_configuration}{Mock\+Configuration}} \$config)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_abbb29208d5f1ee41be755af2896b86d1}{DUMMY\+\_\+\+METHOD\+\_\+\+DEFINITION}} = \textquotesingle{}public \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} unserialize(string \$data)\+: void \{\} \textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_a826350e08d96ed56f32a6fa0b2a50619}{DUMMY\+\_\+\+METHOD\+\_\+\+DEFINITION\+\_\+\+LEGACY}} = \textquotesingle{}public \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} unserialize(\$string) \{\} \textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_aa67fe43aada5aa44405f2840f63178ba}{append\+To\+Class}} (\$class, \$code)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Internal classes can not be instantiated with the new\+Instance\+Without\+Args reflection method, so need the serialization hack. If the class also implements Serializable, we need to replace the standard unserialize method definition with a dummy 
+
+\label{doc-func-members}
+\Hypertarget{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_aa67fe43aada5aa44405f2840f63178ba}\index{RemoveUnserializeForInternalSerializableClassesPass@{RemoveUnserializeForInternalSerializableClassesPass}!appendToClass@{appendToClass}}
+\index{appendToClass@{appendToClass}!RemoveUnserializeForInternalSerializableClassesPass@{RemoveUnserializeForInternalSerializableClassesPass}}
+\doxysubsubsection{\texorpdfstring{appendToClass()}{appendToClass()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_aa67fe43aada5aa44405f2840f63178ba} 
+append\+To\+Class (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{}]{\$code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_a2f25d1c949009b154d77c4ce6f7587b6}\index{RemoveUnserializeForInternalSerializableClassesPass@{RemoveUnserializeForInternalSerializableClassesPass}!apply@{apply}}
+\index{apply@{apply}!RemoveUnserializeForInternalSerializableClassesPass@{RemoveUnserializeForInternalSerializableClassesPass}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_a2f25d1c949009b154d77c4ce6f7587b6} 
+apply (\begin{DoxyParamCaption}\item[{}]{\$code}{, }\item[{\mbox{\hyperlink{class_mockery_1_1_generator_1_1_mock_configuration}{Mock\+Configuration}}}]{\$config}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_pass_a2f25d1c949009b154d77c4ce6f7587b6}{Pass}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_abbb29208d5f1ee41be755af2896b86d1}\index{RemoveUnserializeForInternalSerializableClassesPass@{RemoveUnserializeForInternalSerializableClassesPass}!DUMMY\_METHOD\_DEFINITION@{DUMMY\_METHOD\_DEFINITION}}
+\index{DUMMY\_METHOD\_DEFINITION@{DUMMY\_METHOD\_DEFINITION}!RemoveUnserializeForInternalSerializableClassesPass@{RemoveUnserializeForInternalSerializableClassesPass}}
+\doxysubsubsection{\texorpdfstring{DUMMY\_METHOD\_DEFINITION}{DUMMY\_METHOD\_DEFINITION}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_abbb29208d5f1ee41be755af2896b86d1} 
+const DUMMY\+\_\+\+METHOD\+\_\+\+DEFINITION = \textquotesingle{}public \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} unserialize(string \$data)\+: void \{\} \textquotesingle{}}
+
+\Hypertarget{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_a826350e08d96ed56f32a6fa0b2a50619}\index{RemoveUnserializeForInternalSerializableClassesPass@{RemoveUnserializeForInternalSerializableClassesPass}!DUMMY\_METHOD\_DEFINITION\_LEGACY@{DUMMY\_METHOD\_DEFINITION\_LEGACY}}
+\index{DUMMY\_METHOD\_DEFINITION\_LEGACY@{DUMMY\_METHOD\_DEFINITION\_LEGACY}!RemoveUnserializeForInternalSerializableClassesPass@{RemoveUnserializeForInternalSerializableClassesPass}}
+\doxysubsubsection{\texorpdfstring{DUMMY\_METHOD\_DEFINITION\_LEGACY}{DUMMY\_METHOD\_DEFINITION\_LEGACY}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass_a826350e08d96ed56f32a6fa0b2a50619} 
+const DUMMY\+\_\+\+METHOD\+\_\+\+DEFINITION\+\_\+\+LEGACY = \textquotesingle{}public \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} unserialize(\$string) \{\} \textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/mockery/mockery/library/\+Mockery/\+Generator/\+String\+Manipulation/\+Pass/\mbox{\hyperlink{_remove_unserialize_for_internal_serializable_classes_pass_8php}{Remove\+Unserialize\+For\+Internal\+Serializable\+Classes\+Pass.\+php}}\end{DoxyCompactItemize}

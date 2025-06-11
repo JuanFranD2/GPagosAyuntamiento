@@ -1,0 +1,78 @@
+\chapter{CHANGELOG }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g}\index{CHANGELOG@{CHANGELOG}}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11204}{}\doxysection{\texorpdfstring{6.\+0}{6.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11204}
+
+\begin{DoxyItemize}
+\item Remove {\ttfamily Legacy\+Event\+Dispatcher\+Proxy}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11205}{}\doxysection{\texorpdfstring{5.\+4}{5.\+4}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11205}
+
+\begin{DoxyItemize}
+\item Allow {\ttfamily \#\mbox{[}As\+Event\+Listener\mbox{]}} attribute on methods
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11206}{}\doxysection{\texorpdfstring{5.\+3}{5.\+3}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11206}
+
+\begin{DoxyItemize}
+\item Add {\ttfamily \#\mbox{[}As\+Event\+Listener\mbox{]}} attribute for declaring listeners on PHP 8
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11207}{}\doxysection{\texorpdfstring{5.\+1.\+0}{5.\+1.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11207}
+
+\begin{DoxyItemize}
+\item The {\ttfamily Legacy\+Event\+Dispatcher\+Proxy} class has been deprecated.
+\item Added an optional {\ttfamily dispatcher} attribute to the listener and subscriber tags in {\ttfamily Register\+Listener\+Pass}.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11208}{}\doxysection{\texorpdfstring{5.\+0.\+0}{5.\+0.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11208}
+
+\begin{DoxyItemize}
+\item The signature of the {\ttfamily Event\+Dispatcher\+Interface\+::dispatch()} method has been changed to {\ttfamily dispatch(\$event, string \$event\+Name = null)\+: object}.
+\item The {\ttfamily \doxylink{class_event}{Event}} class has been removed in favor of {\ttfamily Symfony\textbackslash{}Contracts\textbackslash{}Event\+Dispatcher\textbackslash{}\doxylink{class_event}{Event}}.
+\item The {\ttfamily Traceable\+Event\+Dispatcher\+Interface} has been removed.
+\item The {\ttfamily Wrapped\+Listener} class is now final.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11209}{}\doxysection{\texorpdfstring{4.\+4.\+0}{4.\+4.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11209}
+
+\begin{DoxyItemize}
+\item {\ttfamily Add\+Event\+Aliases\+Pass} has been added, allowing applications and bundles to extend the event alias mapping used by {\ttfamily Register\+Listeners\+Pass}.
+\item Made the {\ttfamily event} attribute of the {\ttfamily kernel.\+event\+\_\+listener} tag optional for FQCN events.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11210}{}\doxysection{\texorpdfstring{4.\+3.\+0}{4.\+3.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11210}
+
+\begin{DoxyItemize}
+\item The signature of the {\ttfamily Event\+Dispatcher\+Interface\+::dispatch()} method should be updated to {\ttfamily dispatch(\$event, string \$event\+Name = null)}, not doing so is deprecated
+\item deprecated the {\ttfamily \doxylink{class_event}{Event}} class, use {\ttfamily Symfony\textbackslash{}Contracts\textbackslash{}Event\+Dispatcher\textbackslash{}\doxylink{class_event}{Event}} instead
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11211}{}\doxysection{\texorpdfstring{4.\+1.\+0}{4.\+1.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11211}
+
+\begin{DoxyItemize}
+\item added support for invokable event listeners tagged with {\ttfamily kernel.\+event\+\_\+listener} by default
+\item The {\ttfamily Traceable\+Event\+Dispatcher\+::get\+Orphaned\+Events()} method has been added.
+\item The {\ttfamily Traceable\+Event\+Dispatcher\+Interface} has been deprecated.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11212}{}\doxysection{\texorpdfstring{4.\+0.\+0}{4.\+0.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11212}
+
+\begin{DoxyItemize}
+\item removed the {\ttfamily Container\+Aware\+Event\+Dispatcher} class
+\item added the {\ttfamily reset()} method to the {\ttfamily Traceable\+Event\+Dispatcher\+Interface}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11213}{}\doxysection{\texorpdfstring{3.\+4.\+0}{3.\+4.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11213}
+
+\begin{DoxyItemize}
+\item Implementing {\ttfamily Traceable\+Event\+Dispatcher\+Interface} without the {\ttfamily reset()} method has been deprecated.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11214}{}\doxysection{\texorpdfstring{3.\+3.\+0}{3.\+3.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11214}
+
+\begin{DoxyItemize}
+\item The Container\+Aware\+Event\+Dispatcher class has been deprecated. Use Event\+Dispatcher with closure factories instead.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11215}{}\doxysection{\texorpdfstring{3.\+0.\+0}{3.\+0.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11215}
+
+\begin{DoxyItemize}
+\item The method {\ttfamily get\+Listener\+Priority(\$event\+Name, \$listener)} has been added to the {\ttfamily Event\+Dispatcher\+Interface}.
+\item The methods {\ttfamily Event\+::set\+Dispatcher()}, {\ttfamily Event\+::get\+Dispatcher()}, {\ttfamily Event\+::set\+Name()} and {\ttfamily Event\+::get\+Name()} have been removed. The event dispatcher and the event name are passed to the listener call.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11216}{}\doxysection{\texorpdfstring{2.\+5.\+0}{2.\+5.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11216}
+
+\begin{DoxyItemize}
+\item added Debug\textbackslash{}\+Traceable\+Event\+Dispatcher (originally in Http\+Kernel)
+\item changed Debug\textbackslash{}\+Traceable\+Event\+Dispatcher\+Interface to extend Event\+Dispatcher\+Interface
+\item added Register\+Listeners\+Pass (originally in Http\+Kernel)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11217}{}\doxysection{\texorpdfstring{2.\+1.\+0}{2.\+1.\+0}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2symfony_2event-dispatcher_2_c_h_a_n_g_e_l_o_g_autotoc_md11217}
+
+\begin{DoxyItemize}
+\item added Traceable\+Event\+Dispatcher\+Interface
+\item added Container\+Aware\+Event\+Dispatcher
+\item added a reference to the Event\+Dispatcher on the \doxylink{class_event}{Event}
+\item added a reference to the \doxylink{class_event}{Event} name on the event
+\item added fluid interface to the dispatch() method which now returns the \doxylink{class_event}{Event} object
+\item added Generic\+Event event class
+\item added the possibility for subscribers to subscribe several times for the same event
+\item added Immutable\+Event\+Dispatcher 
+\end{DoxyItemize}

@@ -1,0 +1,69 @@
+\doxysection{Abstract\+PHPStan\+Factory Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory}{}\label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory}\index{AbstractPHPStanFactory@{AbstractPHPStanFactory}}
+Inheritance diagram for Abstract\+PHPStan\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory_a677ad8152fcbe182c6793a1d319183cb}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_p_h_p_stan_factory}{PHPStan\+Factory}} ... \$factories)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory_acd6cf6c525ed41b9359da491c7d70aa1}{create}} (string \$tag\+Line, ?Type\+Context \$context=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory class creating tags using phpstan\textquotesingle{}s parser
+
+This class uses \{\begin{DoxySeeAlso}{See also}
+PHPStan\+Factory\} implementations to create tags from the ast of the phpstan docblock parser. 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory_a677ad8152fcbe182c6793a1d319183cb}\index{AbstractPHPStanFactory@{AbstractPHPStanFactory}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AbstractPHPStanFactory@{AbstractPHPStanFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory_a677ad8152fcbe182c6793a1d319183cb} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_p_h_p_stan_factory}{PHPStan\+Factory}} ...}]{\$factories}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory_acd6cf6c525ed41b9359da491c7d70aa1}\index{AbstractPHPStanFactory@{AbstractPHPStanFactory}!create@{create}}
+\index{create@{create}!AbstractPHPStanFactory@{AbstractPHPStanFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_abstract_p_h_p_stan_factory_acd6cf6c525ed41b9359da491c7d70aa1} 
+create (\begin{DoxyParamCaption}\item[{string}]{\$tag\+Line}{, }\item[{?Type\+Context}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Factory method responsible for instantiating the correct sub type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag\+Line} & The text for this tag, including description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tag A new tag object.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If an invalid tag line was presented. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_factory_acd6cf6c525ed41b9359da491c7d70aa1}{Factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock/src/\+Doc\+Block/\+Tags/\+Factory/\mbox{\hyperlink{_abstract_p_h_p_stan_factory_8php}{Abstract\+PHPStan\+Factory.\+php}}\end{DoxyCompactItemize}

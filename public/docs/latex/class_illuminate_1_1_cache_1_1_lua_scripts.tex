@@ -1,0 +1,45 @@
+\doxysection{Lua\+Scripts Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_lua_scripts}{}\label{class_illuminate_1_1_cache_1_1_lua_scripts}\index{LuaScripts@{LuaScripts}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lua_scripts_a1615e55776673d70fa92be252eb451f1}{add}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lua_scripts_ab8924ff5ea8c748c175328104efc5090}{release\+Lock}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_cache_1_1_lua_scripts_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_lua_scripts_a1615e55776673d70fa92be252eb451f1}\index{LuaScripts@{LuaScripts}!add@{add}}
+\index{add@{add}!LuaScripts@{LuaScripts}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_lua_scripts_a1615e55776673d70fa92be252eb451f1} 
+add (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the Lua script that sets a key only when it does not yet exist.
+
+KEYS\mbox{[}1\mbox{]} -\/ The name of the key ARGV\mbox{[}1\mbox{]} -\/ The value of the key ARGV\mbox{[}2\mbox{]} -\/ The number of seconds the key should be valid
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_lua_scripts_ab8924ff5ea8c748c175328104efc5090}\index{LuaScripts@{LuaScripts}!releaseLock@{releaseLock}}
+\index{releaseLock@{releaseLock}!LuaScripts@{LuaScripts}}
+\doxysubsubsection{\texorpdfstring{releaseLock()}{releaseLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_lua_scripts_ab8924ff5ea8c748c175328104efc5090} 
+release\+Lock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the Lua script to atomically release a lock.
+
+KEYS\mbox{[}1\mbox{]} -\/ The name of the lock ARGV\mbox{[}1\mbox{]} -\/ The owner key of the lock instance trying to release it
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Cache/\mbox{\hyperlink{_cache_2_lua_scripts_8php}{Lua\+Scripts.\+php}}\end{DoxyCompactItemize}

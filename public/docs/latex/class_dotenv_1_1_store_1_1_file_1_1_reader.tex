@@ -1,0 +1,46 @@
+\doxysection{Reader Class Reference}
+\hypertarget{class_dotenv_1_1_store_1_1_file_1_1_reader}{}\label{class_dotenv_1_1_store_1_1_file_1_1_reader}\index{Reader@{Reader}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_store_1_1_file_1_1_reader_a583f627fdb3cbf213fa3882fe209539e}{read}} (array \$file\+Paths, bool \$short\+Circuit=true, ?string \$file\+Encoding=null)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dotenv_1_1_store_1_1_file_1_1_reader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dotenv_1_1_store_1_1_file_1_1_reader_a583f627fdb3cbf213fa3882fe209539e}\index{Reader@{Reader}!read@{read}}
+\index{read@{read}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_store_1_1_file_1_1_reader_a583f627fdb3cbf213fa3882fe209539e} 
+read (\begin{DoxyParamCaption}\item[{array}]{\$file\+Paths}{, }\item[{bool}]{\$short\+Circuit}{ = {\ttfamily true}, }\item[{?string}]{\$file\+Encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Read the file(s), and return their raw content.
+
+We provide the file path as the key, and its content as the value. If short circuit mode is enabled, then the returned array with have length at most one. \doxylink{class_file}{File} paths that couldn\textquotesingle{}t be read are omitted entirely.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$file\+Paths} & \\
+\hline
+bool & {\em \$short\+Circuit} & \\
+\hline
+string | null & {\em \$file\+Encoding} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{namespace_dotenv}{Dotenv}\textbackslash{}\+Exception\textbackslash{}\+Invalid\+Encoding\+Exception
+
+\begin{DoxyReturn}{Returns}
+array$<$string,string$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/vlucas/phpdotenv/src/\+Store/\+File/\mbox{\hyperlink{vlucas_2phpdotenv_2src_2_store_2_file_2_reader_8php}{Reader.\+php}}\end{DoxyCompactItemize}

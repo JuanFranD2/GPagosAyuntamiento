@@ -1,0 +1,29 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/escape-\/string-\/regexp Directory Reference}
+\hypertarget{dir_82f384590c6a8f6f1baa7160ff599255}{}\label{dir_82f384590c6a8f6f1baa7160ff599255}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/escape-\/string-\/regexp Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/escape-\/string-\/regexp Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md2670}{}\doxysubsection{\texorpdfstring{escape-\/string-\/regexp \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/escape-string-regexp.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/escape-\/string-\/regexp.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/escape-string-regexp}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/escape-\/string-\/regexp}})}{escape-\/string-\/regexp \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/escape-string-regexp.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/escape-\/string-\/regexp.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/escape-string-regexp}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/escape-\/string-\/regexp}})}}\label{readme.md_autotoc_md2670}
+\begin{quote}
+Escape Reg\+Exp special characters \end{quote}
+\hypertarget{readme.md_autotoc_md2671}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md2671}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ escape-\/string-\/regexp}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md2672}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md2672}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ escapeStringRegexp\ =\ require('escape-\/string-\/regexp');}
+\DoxyCodeLine{}
+\DoxyCodeLine{const\ escapedString\ =\ escapeStringRegexp('How\ much\ \$\ for\ a\ 🦄?');}
+\DoxyCodeLine{//=>\ 'How\ much\ \(\backslash\)\(\backslash\)\$\ for\ a\ 🦄\(\backslash\)\(\backslash\)?'}
+\DoxyCodeLine{}
+\DoxyCodeLine{new\ RegExp(escapedString);}
+
+\end{DoxyCode}
+
+
+You can also use this to escape a string that is inserted into the middle of a regex, for example, into a character class.\hypertarget{readme.md_autotoc_md2673}{}\doxysubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md2673}
+MIT © \href{https://sindresorhus.com}{\texttt{Sindre Sorhus}} 

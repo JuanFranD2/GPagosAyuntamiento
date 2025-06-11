@@ -1,0 +1,478 @@
+\doxysection{Stylesheet Class Reference}
+\hypertarget{class_dompdf_1_1_css_1_1_stylesheet}{}\label{class_dompdf_1_1_css_1_1_stylesheet}\index{Stylesheet@{Stylesheet}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a7cd48df4f2198e8af47619bf8acc6411}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf}} \$dompdf)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_ac3d7ce5b89bdbabf9f32ab1fa10b3adc}{set\+\_\+protocol}} (string \$protocol)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_ae58a531e50631f76e09a9685878b5fd6}{set\+\_\+host}} (string \$host)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a60c323638a626b37a3359af92c02d3c9}{set\+\_\+base\+\_\+path}} (string \$path)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a566e3aab55d194c8ab4af51fc8dbe9fa}{get\+\_\+dompdf}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a614215fa95fe4b83fa11b4436d109aef}{get\+\_\+protocol}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_af4db1526f8ad21cc9635663f68488bb1}{get\+\_\+host}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a52a9998ee3365253886defddcd87ae4c}{get\+\_\+base\+\_\+path}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a6cb57394b799c36cb54237a30710de7e}{get\+\_\+styles}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a23df6ebf50a8df9206768ff12c22250f}{get\+\_\+page\+\_\+styles}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a160a63731b8372106ddcb4c6652db1ef}{create\+\_\+style}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_ae33e485958cf56594e6a89c2f153376d}{add\+\_\+style}} (string \$key, \mbox{\hyperlink{class_dompdf_1_1_css_1_1_style}{Style}} \$style)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_aeaeb28097599d77a4e7dcce33bae83c8}{load\+\_\+css}} (\&\$css, \$origin=self\+::\+ORIG\+\_\+\+AUTHOR)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a8580e73172fc4db7f7c507811768718b}{load\+\_\+css\+\_\+file}} (\$file, \$origin=self\+::\+ORIG\+\_\+\+AUTHOR)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a09f5f522ee0ff73d19ab262f585f07a1}{resolve\+\_\+url}} (\$val, \$resolve\+\_\+blobs=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_af158f5c0a81d7f850a1a7cb55ad6fcae}{parse\+\_\+string}} (string \$string)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_ae7c9cc6f374e4baba72a719ed37ced04}{get\+Default\+Stylesheet}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_ae0ecaa863eb8923656b2ee3f950d06cd}{set\+Font\+Metrics}} (\mbox{\hyperlink{class_dompdf_1_1_font_metrics}{Font\+Metrics}} \$font\+Metrics)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a30005c77915affe30f5a80e6498d311f}{get\+Font\+Metrics}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a218997678079a18cd64886bc7b94f5c7}{DEFAULT\+\_\+\+STYLESHEET}} = "{}/lib/res/html.\+css"{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a3ae8dd0d24ea247f2291d83aa22c4d76}{ORIG\+\_\+\+UA}} = 1
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_ab0014814b1f5eabfdd6a7e3a139ce3b3}{ORIG\+\_\+\+USER}} = 2
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_ad23124447fddc5a57045aabf6c865b5e}{ORIG\+\_\+\+AUTHOR}} = 3
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a68b9b9143109aa323586d4257b1fe05c}{PATTERN\+\_\+\+CSS\+\_\+\+STRING}} = \textquotesingle{}(?$<$CSS\+\_\+\+STRING$>$(?$<$CSS\+\_\+\+STRING\+\_\+\+QUOTE$>$\mbox{[}\textbackslash{}\textquotesingle{}"{}\mbox{]})(?$<$CSS\+\_\+\+STRING\+\_\+\+VALUE$>$.\texorpdfstring{$\ast$}{*}?)(?$<$!\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{})\textbackslash{}g\{CSS\+\_\+\+STRING\+\_\+\+QUOTE\})\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a1f7d2b6ff20dfb871a00dd69c7cdfa71}{PATTERN\+\_\+\+CSS\+\_\+\+VAR\+\_\+\+FN}} = "{}var\textbackslash{}(((\mbox{[}\texorpdfstring{$^\wedge$}{\string^}()\mbox{]}\texorpdfstring{$\vert$}{|}(?R))\texorpdfstring{$\ast$}{*})\textbackslash{})"{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_aa689b90b5cebd185cde235229ab079e4}{PATTERN\+\_\+\+CSS\+\_\+\+URL\+\_\+\+FN}} = \textquotesingle{}(?$<$CSS\+\_\+\+URL\+\_\+\+FN$>$url\textbackslash{}(\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$CSS\+\_\+\+URL\+\_\+\+FN\+\_\+\+QUOTE$>$\mbox{[}\textbackslash{}\textquotesingle{}"{}\mbox{]}?)(?$<$CSS\+\_\+\+URL\+\_\+\+FN\+\_\+\+VALUE$>$.\texorpdfstring{$\ast$}{*}?)(?(CSS\+\_\+\+URL\+\_\+\+FN\+\_\+\+QUOTE)(?$<$!\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{})\textbackslash{}g\{CSS\+\_\+\+URL\+\_\+\+FN\+\_\+\+QUOTE\})\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}))\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a96ea8c00947e7bc4002924dfd9921e66}{PATTERN\+\_\+\+CSS\+\_\+\+LOCAL\+\_\+\+FN}} = \textquotesingle{}(?$<$CSS\+\_\+\+LOCAL\+\_\+\+FN$>$local\textbackslash{}(\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$CSS\+\_\+\+LOCAL\+\_\+\+FN\+\_\+\+QUOTE$>$\mbox{[}\textbackslash{}\textquotesingle{}"{}\mbox{]}?)(?$<$CSS\+\_\+\+LOCAL\+\_\+\+FN\+\_\+\+VALUE$>$.\texorpdfstring{$\ast$}{*}?)(?(CSS\+\_\+\+LOCAL\+\_\+\+FN\+\_\+\+QUOTE)(?$<$!\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{})\textbackslash{}g\{CSS\+\_\+\+LOCAL\+\_\+\+FN\+\_\+\+QUOTE\})\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}))\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a0c5c0480b0819644bf7d0e4da26ebe26}{PATTERN\+\_\+\+MEDIA\+\_\+\+QUERY}} = \textquotesingle{}(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY$>$(?\+:(?\+:(?\+:(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY\+\_\+\+OP$>$only\texorpdfstring{$\vert$}{|}not)\textbackslash{}s+)?(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY\+\_\+\+TYPE$>$all\texorpdfstring{$\vert$}{|}aural\texorpdfstring{$\vert$}{|}bitmap\texorpdfstring{$\vert$}{|}braille\texorpdfstring{$\vert$}{|}dompdf\texorpdfstring{$\vert$}{|}embossed\texorpdfstring{$\vert$}{|}handheld\texorpdfstring{$\vert$}{|}paged\texorpdfstring{$\vert$}{|}print\texorpdfstring{$\vert$}{|}projection\texorpdfstring{$\vert$}{|}screen\texorpdfstring{$\vert$}{|}speech\texorpdfstring{$\vert$}{|}static\texorpdfstring{$\vert$}{|}tty\texorpdfstring{$\vert$}{|}tv\texorpdfstring{$\vert$}{|}visual))\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}(\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY\+\_\+\+FEATURE$>$(?\+:(?\+:(?\+:min\texorpdfstring{$\vert$}{|}max)-\/)?(?\+:width\texorpdfstring{$\vert$}{|}height))\texorpdfstring{$\vert$}{|}orientation\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\mbox{]}\texorpdfstring{$\ast$}{*}?)\textbackslash{}s\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}\+:\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY\+\_\+\+CONDITION$>$.\texorpdfstring{$\ast$}{*}?)\textbackslash{}s\texorpdfstring{$\ast$}{*})?\textbackslash{}))))\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_ae55ab1b10dfede552bc27d80aa68c542}{SPEC\+\_\+\+NON\+\_\+\+CSS}} = 0x20000000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_abdd14fe74da62f10815531cec12f9ee3}{\$\+ACCEPTED\+\_\+\+DEFAULT\+\_\+\+MEDIA\+\_\+\+TYPE}} = "{}print"{}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a49080dfae7b25a668f24c98b79bbfd22}{\$\+ACCEPTED\+\_\+\+GENERIC\+\_\+\+MEDIA\+\_\+\+TYPES}} = \mbox{[}"{}all"{}, "{}static"{}, "{}visual"{}, "{}bitmap"{}, "{}paged"{}, "{}dompdf"{}\mbox{]}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a95239b802a8f67c1a0646ad68182e9b5}{\$\+VALID\+\_\+\+MEDIA\+\_\+\+TYPES}} = \mbox{[}"{}all"{}, "{}aural"{}, "{}bitmap"{}, "{}braille"{}, "{}dompdf"{}, "{}embossed"{}, "{}handheld"{}, "{}paged"{}, "{}print"{}, "{}projection"{}, "{}screen"{}, "{}speech"{}, "{}static"{}, "{}tty"{}, "{}tv"{}, "{}visual"{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a5b33e5b0066a58093280585c41de551e}{specificity}} (string \$selector, int \$origin=self\+::\+ORIG\+\_\+\+AUTHOR)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_add876d9b11f4f2e9a03769ea9de93c2c}{selector\+To\+Xpath}} (string \$selector, bool \$first\+Pass=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_css_1_1_stylesheet_a59f2928639ce12a4010e790059e0dbaf}{selector\+An\+PlusB}} (string \$expr, string \$position)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a7cd48df4f2198e8af47619bf8acc6411}\index{Stylesheet@{Stylesheet}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a7cd48df4f2198e8af47619bf8acc6411} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf}}}]{\$dompdf}{}\end{DoxyParamCaption})}
+
+The class constructor.
+
+The base protocol, host \& path are initialized to those of the current script. 
+
+\label{doc-func-members}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a7516ca30af0db3cdbf9a7739b48ce91d}\index{Stylesheet@{Stylesheet}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+dumps the entire stylesheet as a string
+
+Generates a string of each selector and associated style in the Stylesheet. Useful for debugging.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_ae33e485958cf56594e6a89c2f153376d}\index{Stylesheet@{Stylesheet}!add\_style@{add\_style}}
+\index{add\_style@{add\_style}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{add\_style()}{add\_style()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_ae33e485958cf56594e6a89c2f153376d} 
+add\+\_\+style (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{\mbox{\hyperlink{class_dompdf_1_1_css_1_1_style}{Style}}}]{\$style}{}\end{DoxyParamCaption})}
+
+Add a new Style object to the stylesheet
+
+The style\textquotesingle{}s origin is changed to the current origin of the stylesheet.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & the Style\textquotesingle{}s selector \\
+\hline
+Style & {\em \$style} & the Style to be added \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a160a63731b8372106ddcb4c6652db1ef}\index{Stylesheet@{Stylesheet}!create\_style@{create\_style}}
+\index{create\_style@{create\_style}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{create\_style()}{create\_style()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a160a63731b8372106ddcb4c6652db1ef} 
+create\+\_\+style (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a new Style object associated with this stylesheet
+
+\begin{DoxyReturn}{Returns}
+Style 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a52a9998ee3365253886defddcd87ae4c}\index{Stylesheet@{Stylesheet}!get\_base\_path@{get\_base\_path}}
+\index{get\_base\_path@{get\_base\_path}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{get\_base\_path()}{get\_base\_path()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a52a9998ee3365253886defddcd87ae4c} 
+get\+\_\+base\+\_\+path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the base path for this stylesheet
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a566e3aab55d194c8ab4af51fc8dbe9fa}\index{Stylesheet@{Stylesheet}!get\_dompdf@{get\_dompdf}}
+\index{get\_dompdf@{get\_dompdf}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{get\_dompdf()}{get\_dompdf()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a566e3aab55d194c8ab4af51fc8dbe9fa} 
+get\+\_\+dompdf (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the \doxylink{namespace_dompdf}{Dompdf} object
+
+\begin{DoxyReturn}{Returns}
+\doxylink{namespace_dompdf}{Dompdf} 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_af4db1526f8ad21cc9635663f68488bb1}\index{Stylesheet@{Stylesheet}!get\_host@{get\_host}}
+\index{get\_host@{get\_host}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{get\_host()}{get\_host()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_af4db1526f8ad21cc9635663f68488bb1} 
+get\+\_\+host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the base host for this stylesheet
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a23df6ebf50a8df9206768ff12c22250f}\index{Stylesheet@{Stylesheet}!get\_page\_styles@{get\_page\_styles}}
+\index{get\_page\_styles@{get\_page\_styles}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{get\_page\_styles()}{get\_page\_styles()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a23df6ebf50a8df9206768ff12c22250f} 
+get\+\_\+page\+\_\+styles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the array of page styles
+
+\begin{DoxyReturn}{Returns}
+Style\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a614215fa95fe4b83fa11b4436d109aef}\index{Stylesheet@{Stylesheet}!get\_protocol@{get\_protocol}}
+\index{get\_protocol@{get\_protocol}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{get\_protocol()}{get\_protocol()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a614215fa95fe4b83fa11b4436d109aef} 
+get\+\_\+protocol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the base protocol for this stylesheet
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a6cb57394b799c36cb54237a30710de7e}\index{Stylesheet@{Stylesheet}!get\_styles@{get\_styles}}
+\index{get\_styles@{get\_styles}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{get\_styles()}{get\_styles()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a6cb57394b799c36cb54237a30710de7e} 
+get\+\_\+styles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all registered styles as an associative array, indexed by selector.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, Style\mbox{[}$\,$\mbox{]}$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_ae7c9cc6f374e4baba72a719ed37ced04}\index{Stylesheet@{Stylesheet}!getDefaultStylesheet@{getDefaultStylesheet}}
+\index{getDefaultStylesheet@{getDefaultStylesheet}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{getDefaultStylesheet()}{getDefaultStylesheet()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_ae7c9cc6f374e4baba72a719ed37ced04} 
+get\+Default\+Stylesheet (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a30005c77915affe30f5a80e6498d311f}\index{Stylesheet@{Stylesheet}!getFontMetrics@{getFontMetrics}}
+\index{getFontMetrics@{getFontMetrics}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{getFontMetrics()}{getFontMetrics()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a30005c77915affe30f5a80e6498d311f} 
+get\+Font\+Metrics (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Font\+Metrics 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_aeaeb28097599d77a4e7dcce33bae83c8}\index{Stylesheet@{Stylesheet}!load\_css@{load\_css}}
+\index{load\_css@{load\_css}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{load\_css()}{load\_css()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_aeaeb28097599d77a4e7dcce33bae83c8} 
+load\+\_\+css (\begin{DoxyParamCaption}\item[{\&}]{\$css}{, }\item[{}]{\$origin}{ = {\ttfamily self\+:\+:ORIG\+\_\+AUTHOR}}\end{DoxyParamCaption})}
+
+load and parse a CSS string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$css} & \\
+\hline
+int & {\em \$origin} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a8580e73172fc4db7f7c507811768718b}\index{Stylesheet@{Stylesheet}!load\_css\_file@{load\_css\_file}}
+\index{load\_css\_file@{load\_css\_file}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{load\_css\_file()}{load\_css\_file()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a8580e73172fc4db7f7c507811768718b} 
+load\+\_\+css\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$file}{, }\item[{}]{\$origin}{ = {\ttfamily self\+:\+:ORIG\+\_\+AUTHOR}}\end{DoxyParamCaption})}
+
+load and parse a CSS file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & \\
+\hline
+int & {\em \$origin} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_af158f5c0a81d7f850a1a7cb55ad6fcae}\index{Stylesheet@{Stylesheet}!parse\_string@{parse\_string}}
+\index{parse\_string@{parse\_string}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{parse\_string()}{parse\_string()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_af158f5c0a81d7f850a1a7cb55ad6fcae} 
+parse\+\_\+string (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})}
+
+Parses a CSS string containing quotes and escaped hex characters. \href{https://www.w3.org/TR/CSS21/syndata.html\#characters}{\texttt{https\+://www.\+w3.\+org/\+TR/\+CSS21/syndata.\+html\#characters}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The string to parse.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a09f5f522ee0ff73d19ab262f585f07a1}\index{Stylesheet@{Stylesheet}!resolve\_url@{resolve\_url}}
+\index{resolve\_url@{resolve\_url}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{resolve\_url()}{resolve\_url()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a09f5f522ee0ff73d19ab262f585f07a1} 
+resolve\+\_\+url (\begin{DoxyParamCaption}\item[{}]{\$val}{, }\item[{}]{\$resolve\+\_\+blobs}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Resolve the given {\ttfamily url()} declaration to an absolute \doxylink{class_u_r_l}{URL}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$val} & The declaration to resolve in the context of the stylesheet. \\
+\hline
+bool | null & {\em \$resolve\+\_\+blobs} & Indicates whether or not to resolve blob URLs to their final value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The resolved \doxylink{class_u_r_l}{URL}, or {\ttfamily none}, if the value is {\ttfamily none}, invalid, or points to a non-\/existent local file. 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a59f2928639ce12a4010e790059e0dbaf}\index{Stylesheet@{Stylesheet}!selectorAnPlusB@{selectorAnPlusB}}
+\index{selectorAnPlusB@{selectorAnPlusB}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{selectorAnPlusB()}{selectorAnPlusB()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a59f2928639ce12a4010e790059e0dbaf} 
+selector\+An\+PlusB (\begin{DoxyParamCaption}\item[{string}]{\$expr}{, }\item[{string}]{\$position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse an {\ttfamily nth-\/child} expression of the form {\ttfamily an+b}, {\ttfamily odd}, or {\ttfamily even}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expr} & \\
+\hline
+string & {\em \$position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\doxylink{}{https\+://www.\+w3.\+org/\+TR/selectors-\/3/\#nth-\/child-\/pseudo}\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_add876d9b11f4f2e9a03769ea9de93c2c}\index{Stylesheet@{Stylesheet}!selectorToXpath@{selectorToXpath}}
+\index{selectorToXpath@{selectorToXpath}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{selectorToXpath()}{selectorToXpath()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_add876d9b11f4f2e9a03769ea9de93c2c} 
+selector\+To\+Xpath (\begin{DoxyParamCaption}\item[{string}]{\$selector}{, }\item[{bool}]{\$first\+Pass}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converts a CSS selector to an XPath query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$selector} & \\
+\hline
+bool & {\em \$first\+Pass} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+@noinspection Php\+Missing\+Break\+Statement\+Inspection
+
+@noinspection Php\+Missing\+Break\+Statement\+Inspection\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a60c323638a626b37a3359af92c02d3c9}\index{Stylesheet@{Stylesheet}!set\_base\_path@{set\_base\_path}}
+\index{set\_base\_path@{set\_base\_path}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{set\_base\_path()}{set\_base\_path()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a60c323638a626b37a3359af92c02d3c9} 
+set\+\_\+base\+\_\+path (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+Set the base path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_ae58a531e50631f76e09a9685878b5fd6}\index{Stylesheet@{Stylesheet}!set\_host@{set\_host}}
+\index{set\_host@{set\_host}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{set\_host()}{set\_host()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_ae58a531e50631f76e09a9685878b5fd6} 
+set\+\_\+host (\begin{DoxyParamCaption}\item[{string}]{\$host}{}\end{DoxyParamCaption})}
+
+Set the base host
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_ac3d7ce5b89bdbabf9f32ab1fa10b3adc}\index{Stylesheet@{Stylesheet}!set\_protocol@{set\_protocol}}
+\index{set\_protocol@{set\_protocol}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{set\_protocol()}{set\_protocol()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_ac3d7ce5b89bdbabf9f32ab1fa10b3adc} 
+set\+\_\+protocol (\begin{DoxyParamCaption}\item[{string}]{\$protocol}{}\end{DoxyParamCaption})}
+
+Set the base protocol
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$protocol} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_ae0ecaa863eb8923656b2ee3f950d06cd}\index{Stylesheet@{Stylesheet}!setFontMetrics@{setFontMetrics}}
+\index{setFontMetrics@{setFontMetrics}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{setFontMetrics()}{setFontMetrics()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_ae0ecaa863eb8923656b2ee3f950d06cd} 
+set\+Font\+Metrics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dompdf_1_1_font_metrics}{Font\+Metrics}}}]{\$font\+Metrics}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Font\+Metrics & {\em \$font\+Metrics} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a5b33e5b0066a58093280585c41de551e}\index{Stylesheet@{Stylesheet}!specificity@{specificity}}
+\index{specificity@{specificity}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{specificity()}{specificity()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a5b33e5b0066a58093280585c41de551e} 
+specificity (\begin{DoxyParamCaption}\item[{string}]{\$selector}{, }\item[{int}]{\$origin}{ = {\ttfamily self\+:\+:ORIG\+\_\+AUTHOR}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{}{string \$selector  int \$originStylesheet\+::\+ORIG\+\_\+\+UA\+: user agent style sheetStylesheet\+::\+ORIG\+\_\+\+USER\+: user style sheetStylesheet\+::\+ORIG\+\_\+\+AUTHOR\+: author style sheet  int }
+
+\label{doc-variable-members}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_abdd14fe74da62f10815531cec12f9ee3}\index{Stylesheet@{Stylesheet}!\$ACCEPTED\_DEFAULT\_MEDIA\_TYPE@{\$ACCEPTED\_DEFAULT\_MEDIA\_TYPE}}
+\index{\$ACCEPTED\_DEFAULT\_MEDIA\_TYPE@{\$ACCEPTED\_DEFAULT\_MEDIA\_TYPE}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{\$ACCEPTED\_DEFAULT\_MEDIA\_TYPE}{\$ACCEPTED\_DEFAULT\_MEDIA\_TYPE}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_abdd14fe74da62f10815531cec12f9ee3} 
+\$ACCEPTED\+\_\+\+DEFAULT\+\_\+\+MEDIA\+\_\+\+TYPE = "{}print"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Accepted CSS media types List of types and parsing rules for future extensions\+: \href{http://www.w3.org/TR/REC-html40/types.html}{\texttt{http\+://www.\+w3.\+org/\+TR/\+REC-\/html40/types.\+html}} screen, tty, tv, projection, handheld, print, braille, aural, all The following are non standard extensions for undocumented specific environments. static, visual, bitmap, paged, dompdf Note, even though the generated pdf file is intended for print output, the desired content might be different (e.\+g. screen or projection view of html file). Therefore allow specification of content by dompdf setting Options\+::default\+Media\+Type. If given, replace media "{}print"{} by Options\+::default\+Media\+Type. (Previous version \$\+ACCEPTED\+\_\+\+MEDIA\+\_\+\+TYPES = \$\+ACCEPTED\+\_\+\+GENERIC\+\_\+\+MEDIA\+\_\+\+TYPES + \$\+ACCEPTED\+\_\+\+DEFAULT\+\_\+\+MEDIA\+\_\+\+TYPE) \Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a49080dfae7b25a668f24c98b79bbfd22}\index{Stylesheet@{Stylesheet}!\$ACCEPTED\_GENERIC\_MEDIA\_TYPES@{\$ACCEPTED\_GENERIC\_MEDIA\_TYPES}}
+\index{\$ACCEPTED\_GENERIC\_MEDIA\_TYPES@{\$ACCEPTED\_GENERIC\_MEDIA\_TYPES}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{\$ACCEPTED\_GENERIC\_MEDIA\_TYPES}{\$ACCEPTED\_GENERIC\_MEDIA\_TYPES}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a49080dfae7b25a668f24c98b79bbfd22} 
+\$ACCEPTED\+\_\+\+GENERIC\+\_\+\+MEDIA\+\_\+\+TYPES = \mbox{[}"{}all"{}, "{}static"{}, "{}visual"{}, "{}bitmap"{}, "{}paged"{}, "{}dompdf"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a95239b802a8f67c1a0646ad68182e9b5}\index{Stylesheet@{Stylesheet}!\$VALID\_MEDIA\_TYPES@{\$VALID\_MEDIA\_TYPES}}
+\index{\$VALID\_MEDIA\_TYPES@{\$VALID\_MEDIA\_TYPES}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{\$VALID\_MEDIA\_TYPES}{\$VALID\_MEDIA\_TYPES}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a95239b802a8f67c1a0646ad68182e9b5} 
+\$VALID\+\_\+\+MEDIA\+\_\+\+TYPES = \mbox{[}"{}all"{}, "{}aural"{}, "{}bitmap"{}, "{}braille"{}, "{}dompdf"{}, "{}embossed"{}, "{}handheld"{}, "{}paged"{}, "{}print"{}, "{}projection"{}, "{}screen"{}, "{}speech"{}, "{}static"{}, "{}tty"{}, "{}tv"{}, "{}visual"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a218997678079a18cd64886bc7b94f5c7}\index{Stylesheet@{Stylesheet}!DEFAULT\_STYLESHEET@{DEFAULT\_STYLESHEET}}
+\index{DEFAULT\_STYLESHEET@{DEFAULT\_STYLESHEET}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_STYLESHEET}{DEFAULT\_STYLESHEET}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a218997678079a18cd64886bc7b94f5c7} 
+const DEFAULT\+\_\+\+STYLESHEET = "{}/lib/res/html.\+css"{}}
+
+The location of the default built-\/in CSS file. \Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_ad23124447fddc5a57045aabf6c865b5e}\index{Stylesheet@{Stylesheet}!ORIG\_AUTHOR@{ORIG\_AUTHOR}}
+\index{ORIG\_AUTHOR@{ORIG\_AUTHOR}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{ORIG\_AUTHOR}{ORIG\_AUTHOR}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_ad23124447fddc5a57045aabf6c865b5e} 
+const ORIG\+\_\+\+AUTHOR = 3}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a3ae8dd0d24ea247f2291d83aa22c4d76}\index{Stylesheet@{Stylesheet}!ORIG\_UA@{ORIG\_UA}}
+\index{ORIG\_UA@{ORIG\_UA}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{ORIG\_UA}{ORIG\_UA}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a3ae8dd0d24ea247f2291d83aa22c4d76} 
+const ORIG\+\_\+\+UA = 1}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_ab0014814b1f5eabfdd6a7e3a139ce3b3}\index{Stylesheet@{Stylesheet}!ORIG\_USER@{ORIG\_USER}}
+\index{ORIG\_USER@{ORIG\_USER}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{ORIG\_USER}{ORIG\_USER}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_ab0014814b1f5eabfdd6a7e3a139ce3b3} 
+const ORIG\+\_\+\+USER = 2}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a96ea8c00947e7bc4002924dfd9921e66}\index{Stylesheet@{Stylesheet}!PATTERN\_CSS\_LOCAL\_FN@{PATTERN\_CSS\_LOCAL\_FN}}
+\index{PATTERN\_CSS\_LOCAL\_FN@{PATTERN\_CSS\_LOCAL\_FN}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_CSS\_LOCAL\_FN}{PATTERN\_CSS\_LOCAL\_FN}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a96ea8c00947e7bc4002924dfd9921e66} 
+const PATTERN\+\_\+\+CSS\+\_\+\+LOCAL\+\_\+\+FN = \textquotesingle{}(?$<$CSS\+\_\+\+LOCAL\+\_\+\+FN$>$local\textbackslash{}(\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$CSS\+\_\+\+LOCAL\+\_\+\+FN\+\_\+\+QUOTE$>$\mbox{[}\textbackslash{}\textquotesingle{}"{}\mbox{]}?)(?$<$CSS\+\_\+\+LOCAL\+\_\+\+FN\+\_\+\+VALUE$>$.\texorpdfstring{$\ast$}{*}?)(?(CSS\+\_\+\+LOCAL\+\_\+\+FN\+\_\+\+QUOTE)(?$<$!\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{})\textbackslash{}g\{CSS\+\_\+\+LOCAL\+\_\+\+FN\+\_\+\+QUOTE\})\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}))\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a68b9b9143109aa323586d4257b1fe05c}\index{Stylesheet@{Stylesheet}!PATTERN\_CSS\_STRING@{PATTERN\_CSS\_STRING}}
+\index{PATTERN\_CSS\_STRING@{PATTERN\_CSS\_STRING}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_CSS\_STRING}{PATTERN\_CSS\_STRING}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a68b9b9143109aa323586d4257b1fe05c} 
+const PATTERN\+\_\+\+CSS\+\_\+\+STRING = \textquotesingle{}(?$<$CSS\+\_\+\+STRING$>$(?$<$CSS\+\_\+\+STRING\+\_\+\+QUOTE$>$\mbox{[}\textbackslash{}\textquotesingle{}"{}\mbox{]})(?$<$CSS\+\_\+\+STRING\+\_\+\+VALUE$>$.\texorpdfstring{$\ast$}{*}?)(?$<$!\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{})\textbackslash{}g\{CSS\+\_\+\+STRING\+\_\+\+QUOTE\})\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_aa689b90b5cebd185cde235229ab079e4}\index{Stylesheet@{Stylesheet}!PATTERN\_CSS\_URL\_FN@{PATTERN\_CSS\_URL\_FN}}
+\index{PATTERN\_CSS\_URL\_FN@{PATTERN\_CSS\_URL\_FN}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_CSS\_URL\_FN}{PATTERN\_CSS\_URL\_FN}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_aa689b90b5cebd185cde235229ab079e4} 
+const PATTERN\+\_\+\+CSS\+\_\+\+URL\+\_\+\+FN = \textquotesingle{}(?$<$CSS\+\_\+\+URL\+\_\+\+FN$>$url\textbackslash{}(\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$CSS\+\_\+\+URL\+\_\+\+FN\+\_\+\+QUOTE$>$\mbox{[}\textbackslash{}\textquotesingle{}"{}\mbox{]}?)(?$<$CSS\+\_\+\+URL\+\_\+\+FN\+\_\+\+VALUE$>$.\texorpdfstring{$\ast$}{*}?)(?(CSS\+\_\+\+URL\+\_\+\+FN\+\_\+\+QUOTE)(?$<$!\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{})\textbackslash{}g\{CSS\+\_\+\+URL\+\_\+\+FN\+\_\+\+QUOTE\})\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}))\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a1f7d2b6ff20dfb871a00dd69c7cdfa71}\index{Stylesheet@{Stylesheet}!PATTERN\_CSS\_VAR\_FN@{PATTERN\_CSS\_VAR\_FN}}
+\index{PATTERN\_CSS\_VAR\_FN@{PATTERN\_CSS\_VAR\_FN}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_CSS\_VAR\_FN}{PATTERN\_CSS\_VAR\_FN}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a1f7d2b6ff20dfb871a00dd69c7cdfa71} 
+const PATTERN\+\_\+\+CSS\+\_\+\+VAR\+\_\+\+FN = "{}var\textbackslash{}(((\mbox{[}\texorpdfstring{$^\wedge$}{\string^}()\mbox{]}\texorpdfstring{$\vert$}{|}(?R))\texorpdfstring{$\ast$}{*})\textbackslash{})"{}}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_a0c5c0480b0819644bf7d0e4da26ebe26}\index{Stylesheet@{Stylesheet}!PATTERN\_MEDIA\_QUERY@{PATTERN\_MEDIA\_QUERY}}
+\index{PATTERN\_MEDIA\_QUERY@{PATTERN\_MEDIA\_QUERY}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{PATTERN\_MEDIA\_QUERY}{PATTERN\_MEDIA\_QUERY}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_a0c5c0480b0819644bf7d0e4da26ebe26} 
+const PATTERN\+\_\+\+MEDIA\+\_\+\+QUERY = \textquotesingle{}(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY$>$(?\+:(?\+:(?\+:(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY\+\_\+\+OP$>$only\texorpdfstring{$\vert$}{|}not)\textbackslash{}s+)?(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY\+\_\+\+TYPE$>$all\texorpdfstring{$\vert$}{|}aural\texorpdfstring{$\vert$}{|}bitmap\texorpdfstring{$\vert$}{|}braille\texorpdfstring{$\vert$}{|}dompdf\texorpdfstring{$\vert$}{|}embossed\texorpdfstring{$\vert$}{|}handheld\texorpdfstring{$\vert$}{|}paged\texorpdfstring{$\vert$}{|}print\texorpdfstring{$\vert$}{|}projection\texorpdfstring{$\vert$}{|}screen\texorpdfstring{$\vert$}{|}speech\texorpdfstring{$\vert$}{|}static\texorpdfstring{$\vert$}{|}tty\texorpdfstring{$\vert$}{|}tv\texorpdfstring{$\vert$}{|}visual))\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}(\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY\+\_\+\+FEATURE$>$(?\+:(?\+:(?\+:min\texorpdfstring{$\vert$}{|}max)-\/)?(?\+:width\texorpdfstring{$\vert$}{|}height))\texorpdfstring{$\vert$}{|}orientation\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\mbox{]}\texorpdfstring{$\ast$}{*}?)\textbackslash{}s\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}\+:\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$CSS\+\_\+\+MEDIA\+\_\+\+QUERY\+\_\+\+CONDITION$>$.\texorpdfstring{$\ast$}{*}?)\textbackslash{}s\texorpdfstring{$\ast$}{*})?\textbackslash{}))))\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_css_1_1_stylesheet_ae55ab1b10dfede552bc27d80aa68c542}\index{Stylesheet@{Stylesheet}!SPEC\_NON\_CSS@{SPEC\_NON\_CSS}}
+\index{SPEC\_NON\_CSS@{SPEC\_NON\_CSS}!Stylesheet@{Stylesheet}}
+\doxysubsubsection{\texorpdfstring{SPEC\_NON\_CSS}{SPEC\_NON\_CSS}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_css_1_1_stylesheet_ae55ab1b10dfede552bc27d80aa68c542} 
+const SPEC\+\_\+\+NON\+\_\+\+CSS = 0x20000000}
+
+Non-\/\+CSS presentational hints (i.\+e. HTML 4 attributes) are handled as if added to the beginning of an author stylesheet, i.\+e. anything in author stylesheets should override them. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/dompdf/src/\+Css/\mbox{\hyperlink{_stylesheet_8php}{Stylesheet.\+php}}\end{DoxyCompactItemize}

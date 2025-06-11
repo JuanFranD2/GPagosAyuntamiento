@@ -1,0 +1,139 @@
+\doxysection{Data\+Table Interface Reference}
+\hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table}{}\label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table}\index{DataTable@{DataTable}}
+Inheritance diagram for Data\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a81532ad36ede4bfc6cd5e69a321f3df4}{results}} ()
+\item 
+\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\item 
+\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_acc537352437bffcca1b0796461cc0b91}{total\+Count}} ()
+\item 
+\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a5fd43d1edf3046a1a00f1a6fecb2c3e1}{filter}} (callable \$callback, bool \$global\+Search=false)
+\item 
+\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_aeb101868e338fd62871ddf8b930e6b85}{filtering}} ()
+\item 
+\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_abcd912630fcfe95fac53b99cb51105e1}{column\+Search}} ()
+\item 
+\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_ac3e1c547bae96d4977f6acfeb29b475c}{paging}} ()
+\item 
+\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a17349944f47d5c16015b211648b397e3}{ordering}} ()
+\item 
+\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a18b8231cd590e579e96a9a2f33b19b6f}{make}} (bool \$m\+Data\+Support=true)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_abcd912630fcfe95fac53b99cb51105e1}\index{DataTable@{DataTable}!columnSearch@{columnSearch}}
+\index{columnSearch@{columnSearch}!DataTable@{DataTable}}
+\doxysubsubsection{\texorpdfstring{columnSearch()}{columnSearch()}}
+{\footnotesize\ttfamily \label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_abcd912630fcfe95fac53b99cb51105e1} 
+column\+Search (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Perform column search. 
+
+Implemented in \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_abcd912630fcfe95fac53b99cb51105e1}{Query\+Data\+Table}}.
+
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_ac751e87b3d4c4bf2feb03bee8b092755}\index{DataTable@{DataTable}!count@{count}}
+\index{count@{count}!DataTable@{DataTable}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Count results. 
+
+Implemented in \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_collection_data_table_ac751e87b3d4c4bf2feb03bee8b092755}{Collection\+Data\+Table}}, and \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ac751e87b3d4c4bf2feb03bee8b092755}{Query\+Data\+Table}}.
+
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a5fd43d1edf3046a1a00f1a6fecb2c3e1}\index{DataTable@{DataTable}!filter@{filter}}
+\index{filter@{filter}!DataTable@{DataTable}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a5fd43d1edf3046a1a00f1a6fecb2c3e1} 
+filter (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{, }\item[{bool}]{\$global\+Search}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Set auto filter off and run your own filter. Overrides global search.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a5fd43d1edf3046a1a00f1a6fecb2c3e1}{Data\+Table\+Abstract}}.
+
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_aeb101868e338fd62871ddf8b930e6b85}\index{DataTable@{DataTable}!filtering@{filtering}}
+\index{filtering@{filtering}!DataTable@{DataTable}}
+\doxysubsubsection{\texorpdfstring{filtering()}{filtering()}}
+{\footnotesize\ttfamily \label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_aeb101868e338fd62871ddf8b930e6b85} 
+filtering (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Perform global search. 
+
+Implemented in \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_aeb101868e338fd62871ddf8b930e6b85}{Data\+Table\+Abstract}}.
+
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a18b8231cd590e579e96a9a2f33b19b6f}\index{DataTable@{DataTable}!make@{make}}
+\index{make@{make}!DataTable@{DataTable}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily \label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a18b8231cd590e579e96a9a2f33b19b6f} 
+make (\begin{DoxyParamCaption}\item[{bool}]{\$m\+Data\+Support}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Organizes works. 
+
+Implemented in \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_collection_data_table_a18b8231cd590e579e96a9a2f33b19b6f}{Collection\+Data\+Table}}, and \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a18b8231cd590e579e96a9a2f33b19b6f}{Query\+Data\+Table}}.
+
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a17349944f47d5c16015b211648b397e3}\index{DataTable@{DataTable}!ordering@{ordering}}
+\index{ordering@{ordering}!DataTable@{DataTable}}
+\doxysubsubsection{\texorpdfstring{ordering()}{ordering()}}
+{\footnotesize\ttfamily \label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a17349944f47d5c16015b211648b397e3} 
+ordering (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Perform sorting of columns. 
+
+Implemented in \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a17349944f47d5c16015b211648b397e3}{Data\+Table\+Abstract}}, and \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a17349944f47d5c16015b211648b397e3}{Query\+Data\+Table}}.
+
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_ac3e1c547bae96d4977f6acfeb29b475c}\index{DataTable@{DataTable}!paging@{paging}}
+\index{paging@{paging}!DataTable@{DataTable}}
+\doxysubsubsection{\texorpdfstring{paging()}{paging()}}
+{\footnotesize\ttfamily \label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_ac3e1c547bae96d4977f6acfeb29b475c} 
+paging (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Perform pagination. 
+
+Implemented in \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_collection_data_table_ac3e1c547bae96d4977f6acfeb29b475c}{Collection\+Data\+Table}}, and \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ac3e1c547bae96d4977f6acfeb29b475c}{Query\+Data\+Table}}.
+
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a81532ad36ede4bfc6cd5e69a321f3df4}\index{DataTable@{DataTable}!results@{results}}
+\index{results@{results}!DataTable@{DataTable}}
+\doxysubsubsection{\texorpdfstring{results()}{results()}}
+{\footnotesize\ttfamily \label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a81532ad36ede4bfc6cd5e69a321f3df4} 
+results (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get results.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, \textbackslash{}std\+Class\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}array-\/key, array\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_collection_data_table_a81532ad36ede4bfc6cd5e69a321f3df4}{Collection\+Data\+Table}}, and \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a81532ad36ede4bfc6cd5e69a321f3df4}{Query\+Data\+Table}}.
+
+\Hypertarget{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_acc537352437bffcca1b0796461cc0b91}\index{DataTable@{DataTable}!totalCount@{totalCount}}
+\index{totalCount@{totalCount}!DataTable@{DataTable}}
+\doxysubsubsection{\texorpdfstring{totalCount()}{totalCount()}}
+{\footnotesize\ttfamily \label{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_acc537352437bffcca1b0796461cc0b91} 
+total\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Count total items. 
+
+Implemented in \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_acc537352437bffcca1b0796461cc0b91}{Data\+Table\+Abstract}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/yajra/laravel-\/datatables-\/oracle/src/\+Contracts/\mbox{\hyperlink{_data_table_8php}{Data\+Table.\+php}}\end{DoxyCompactItemize}

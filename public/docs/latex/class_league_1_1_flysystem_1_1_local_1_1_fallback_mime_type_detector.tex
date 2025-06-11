@@ -1,0 +1,87 @@
+\doxysection{Fallback\+Mime\+Type\+Detector Class Reference}
+\hypertarget{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector}{}\label{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector}\index{FallbackMimeTypeDetector@{FallbackMimeTypeDetector}}
+Inheritance diagram for Fallback\+Mime\+Type\+Detector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_a15800d29296a22f09b41d1d03169e2d1}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{interface_league_1_1_mime_type_detection_1_1_mime_type_detector}{Mime\+Type\+Detector}} \$detector, private array \$inconclusive\+Mimetypes=self\+::\+INCONCLUSIVE\+\_\+\+MIME\+\_\+\+TYPES, private bool \$use\+Inconclusive\+Mime\+Type\+Fallback=false,)
+\item 
+\mbox{\hyperlink{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_a6e812a1c8f1d43dbcc5158fb5c80571d}{detect\+Mime\+Type}} (string \$path, \$contents)
+\item 
+\mbox{\hyperlink{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_abc3cfcfb4dfac61f217aa8a0b56095a7}{detect\+Mime\+Type\+From\+Buffer}} (string \$contents)
+\item 
+\mbox{\hyperlink{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_adf486665932111efc52835ef51742f47}{detect\+Mime\+Type\+From\+Path}} (string \$path)
+\item 
+\mbox{\hyperlink{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_a26a3556b34103cd42701499379204978}{detect\+Mime\+Type\+From\+File}} (string \$path)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_a15800d29296a22f09b41d1d03169e2d1}\index{FallbackMimeTypeDetector@{FallbackMimeTypeDetector}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!FallbackMimeTypeDetector@{FallbackMimeTypeDetector}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_a15800d29296a22f09b41d1d03169e2d1} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \mbox{\hyperlink{interface_league_1_1_mime_type_detection_1_1_mime_type_detector}{Mime\+Type\+Detector}}}]{\$detector}{, }\item[{private array}]{\$inconclusive\+Mimetypes}{ = {\ttfamily self\+:\+:INCONCLUSIVE\+\_\+MIME\+\_\+TYPES}, }\item[{private bool}]{\$use\+Inconclusive\+Mime\+Type\+Fallback}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_a6e812a1c8f1d43dbcc5158fb5c80571d}\index{FallbackMimeTypeDetector@{FallbackMimeTypeDetector}!detectMimeType@{detectMimeType}}
+\index{detectMimeType@{detectMimeType}!FallbackMimeTypeDetector@{FallbackMimeTypeDetector}}
+\doxysubsubsection{\texorpdfstring{detectMimeType()}{detectMimeType()}}
+{\footnotesize\ttfamily \label{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_a6e812a1c8f1d43dbcc5158fb5c80571d} 
+detect\+Mime\+Type (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{}]{\$contents}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | resource & {\em \$contents} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_league_1_1_mime_type_detection_1_1_mime_type_detector_a6e812a1c8f1d43dbcc5158fb5c80571d}{Mime\+Type\+Detector}}.
+
+\Hypertarget{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_abc3cfcfb4dfac61f217aa8a0b56095a7}\index{FallbackMimeTypeDetector@{FallbackMimeTypeDetector}!detectMimeTypeFromBuffer@{detectMimeTypeFromBuffer}}
+\index{detectMimeTypeFromBuffer@{detectMimeTypeFromBuffer}!FallbackMimeTypeDetector@{FallbackMimeTypeDetector}}
+\doxysubsubsection{\texorpdfstring{detectMimeTypeFromBuffer()}{detectMimeTypeFromBuffer()}}
+{\footnotesize\ttfamily \label{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_abc3cfcfb4dfac61f217aa8a0b56095a7} 
+detect\+Mime\+Type\+From\+Buffer (\begin{DoxyParamCaption}\item[{string}]{\$contents}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_league_1_1_mime_type_detection_1_1_mime_type_detector_abc3cfcfb4dfac61f217aa8a0b56095a7}{Mime\+Type\+Detector}}.
+
+\Hypertarget{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_a26a3556b34103cd42701499379204978}\index{FallbackMimeTypeDetector@{FallbackMimeTypeDetector}!detectMimeTypeFromFile@{detectMimeTypeFromFile}}
+\index{detectMimeTypeFromFile@{detectMimeTypeFromFile}!FallbackMimeTypeDetector@{FallbackMimeTypeDetector}}
+\doxysubsubsection{\texorpdfstring{detectMimeTypeFromFile()}{detectMimeTypeFromFile()}}
+{\footnotesize\ttfamily \label{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_a26a3556b34103cd42701499379204978} 
+detect\+Mime\+Type\+From\+File (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_league_1_1_mime_type_detection_1_1_mime_type_detector_a26a3556b34103cd42701499379204978}{Mime\+Type\+Detector}}.
+
+\Hypertarget{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_adf486665932111efc52835ef51742f47}\index{FallbackMimeTypeDetector@{FallbackMimeTypeDetector}!detectMimeTypeFromPath@{detectMimeTypeFromPath}}
+\index{detectMimeTypeFromPath@{detectMimeTypeFromPath}!FallbackMimeTypeDetector@{FallbackMimeTypeDetector}}
+\doxysubsubsection{\texorpdfstring{detectMimeTypeFromPath()}{detectMimeTypeFromPath()}}
+{\footnotesize\ttfamily \label{class_league_1_1_flysystem_1_1_local_1_1_fallback_mime_type_detector_adf486665932111efc52835ef51742f47} 
+detect\+Mime\+Type\+From\+Path (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_league_1_1_mime_type_detection_1_1_mime_type_detector_adf486665932111efc52835ef51742f47}{Mime\+Type\+Detector}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/flysystem-\/local/\mbox{\hyperlink{_fallback_mime_type_detector_8php}{Fallback\+Mime\+Type\+Detector.\+php}}\end{DoxyCompactItemize}

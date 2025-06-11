@@ -1,0 +1,500 @@
+\doxysection{Helpers Class Reference}
+\hypertarget{class_dompdf_1_1_helpers}{}\label{class_dompdf_1_1_helpers}\index{Helpers@{Helpers}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a9115933409fcfb13d0d21dc7e248a5a7}{pre\+\_\+r}} (\$mixed, \$\mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}}=false)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a00aab91c5e39bb8d3114dde27899dac9}{build\+\_\+url}} (\$protocol, \$host, \$base\+\_\+path, \$url, \$chroot\+Dirs=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a672e44ce6d71af4a9ae09e9f1bda4b80}{build\+Content\+Disposition\+Header}} (\$disposition\+Type, \$filename)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a040613e7d11da745910faf002e80ff1d}{dec2roman}} (\$num)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a744fb2256704fdade43f0b55bc841828}{clamp}} (float \$length, float \$min, float \$max)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_aabf52e9310c1802926e0d94a7a3ab88d}{is\+\_\+percent}} (\$value)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a77feb36d7c6a1fa3cffdedb68577737f}{parse\+\_\+data\+\_\+uri}} (\$data\+\_\+uri)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_aeece2a39109d661454050da0fbd33ff0}{encode\+URI}} (\$uri)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_aa360943a5a457466da53a68ed21f248d}{rle8\+\_\+decode}} (\$str, \$width)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a58b5c92f8930ad7ca3c5a07b225a3d51}{rle4\+\_\+decode}} (\$str, \$width)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_ae2737d8eff1968f97d337939cee65823}{explode\+\_\+url}} (\$url)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_aab8cb5798d0021447662127a726a8726}{dompdf\+\_\+debug}} (\$type, \$msg)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_ac7b66f25ad3a1af8ecfacf38159b2809}{record\+\_\+warnings}} (\$errno, \$errstr, \$errfile, \$errline)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a617ff5671d9139238c27dc2a88e7bc52}{uniord}} (string \$c, ?string \$encoding=null)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_acc41ef13c271e92a993e217f03fa8a4c}{unichr}} (int \$c, ?string \$encoding=null)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_aa2360593f822d8a275dc20569253090b}{cmyk\+\_\+to\+\_\+rgb}} (\$c, \$m=null, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}=null, \$k=null)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a302576b4c8558b96d61a16fb971188c6}{dompdf\+\_\+getimagesize}} (\$filename, \$context=null)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_ae11edc8a6304884091d4e7aad66634fd}{imagecreatefrombmp}} (\$filename)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_ac731216bd84b6fc563035beb6aeaea70}{get\+File\+Content}} (\$uri, \$context=null, \$offset=0, \$maxlen=null)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_ab5edbb3da8abd4f3015eda103f000b08}{mb\+\_\+ucwords}} (string \$str)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a92b5be6ccf82c849208a00643cfe7080}{length\+Equal}} (float \$a, float \$b)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a5ecd62eac6fefcb42d60355b7d0a4ceb}{length\+Less}} (float \$a, float \$b)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a6f566a0ceac2e65237b9d915940693a1}{length\+Less\+Or\+Equal}} (float \$a, float \$b)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a975bbd71e4432a5443510f8fc78983e3}{length\+Greater}} (float \$a, float \$b)
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_helpers_a9db0529689e48d7966963021b1f138fe}{length\+Greater\+Or\+Equal}} (float \$a, float \$b)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dompdf_1_1_helpers_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dompdf_1_1_helpers_a00aab91c5e39bb8d3114dde27899dac9}\index{Helpers@{Helpers}!build\_url@{build\_url}}
+\index{build\_url@{build\_url}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{build\_url()}{build\_url()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a00aab91c5e39bb8d3114dde27899dac9} 
+build\+\_\+url (\begin{DoxyParamCaption}\item[{}]{\$protocol}{, }\item[{}]{\$host}{, }\item[{}]{\$base\+\_\+path}{, }\item[{}]{\$url}{, }\item[{}]{\$chroot\+Dirs}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Builds a full url given a protocol, hostname, base path and \doxylink{class_u_r_l}{URL}.
+
+When the \doxylink{class_u_r_l}{URL} provided is a local file reference from the root of the filesystem (i.\+e., beginning with a "{}/"{}) and the file does not resolve to a valid path, the path is validated against the chroot paths (if provided).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$protocol} & \\
+\hline
+string & {\em \$host} & \\
+\hline
+string & {\em \$base\+\_\+path} & \\
+\hline
+string & {\em \$url} & \\
+\hline
+array & {\em \$chroot\+Dirs} & array of strings representing the chroot paths \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_a672e44ce6d71af4a9ae09e9f1bda4b80}\index{Helpers@{Helpers}!buildContentDispositionHeader@{buildContentDispositionHeader}}
+\index{buildContentDispositionHeader@{buildContentDispositionHeader}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{buildContentDispositionHeader()}{buildContentDispositionHeader()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a672e44ce6d71af4a9ae09e9f1bda4b80} 
+build\+Content\+Disposition\+Header (\begin{DoxyParamCaption}\item[{}]{\$disposition\+Type}{, }\item[{}]{\$filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Builds a HTTP Content-\/\+Disposition header string using {\ttfamily \$disposition\+Type} and {\ttfamily \$filename}.
+
+If the filename contains any characters not in the ISO-\/8859-\/1 character set, a fallback filename will be included for clients not supporting the {\ttfamily filename\texorpdfstring{$\ast$}{*}} parameter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$disposition\+Type} & \\
+\hline
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_a744fb2256704fdade43f0b55bc841828}\index{Helpers@{Helpers}!clamp@{clamp}}
+\index{clamp@{clamp}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{clamp()}{clamp()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a744fb2256704fdade43f0b55bc841828} 
+clamp (\begin{DoxyParamCaption}\item[{float}]{\$length}{, }\item[{float}]{\$min}{, }\item[{float}]{\$max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Restrict a length to the given range.
+
+If min \texorpdfstring{$>$}{>} max, the result is min.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$length} & \\
+\hline
+float & {\em \$min} & \\
+\hline
+float & {\em \$max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_aa2360593f822d8a275dc20569253090b}\index{Helpers@{Helpers}!cmyk\_to\_rgb@{cmyk\_to\_rgb}}
+\index{cmyk\_to\_rgb@{cmyk\_to\_rgb}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{cmyk\_to\_rgb()}{cmyk\_to\_rgb()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_aa2360593f822d8a275dc20569253090b} 
+cmyk\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{}]{\$c}{, }\item[{}]{\$m}{ = {\ttfamily null}, }\item[{}]{\$y}{ = {\ttfamily null}, }\item[{}]{\$k}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts a CMYK color to RGB
+
+
+\begin{DoxyParams}[1]{Parameters}
+float | float\mbox{[}$\,$\mbox{]} & {\em \$c} & \\
+\hline
+float & {\em \$m} & \\
+\hline
+float & {\em \$y} & \\
+\hline
+float & {\em \$k} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_a040613e7d11da745910faf002e80ff1d}\index{Helpers@{Helpers}!dec2roman@{dec2roman}}
+\index{dec2roman@{dec2roman}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{dec2roman()}{dec2roman()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a040613e7d11da745910faf002e80ff1d} 
+dec2roman (\begin{DoxyParamCaption}\item[{}]{\$num}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts decimal numbers to roman numerals.
+
+As numbers larger than 3999 (and smaller than 1) cannot be represented in the standard form of roman numerals, those are left in decimal form.
+
+See \href{https://en.wikipedia.org/wiki/Roman_numerals\#Standard_form}{\texttt{https\+://en.\+wikipedia.\+org/wiki/\+Roman\+\_\+numerals\#\+Standard\+\_\+form}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$num} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+@noinspection Php\+Missing\+Break\+Statement\+Inspection
+
+@noinspection Php\+Missing\+Break\+Statement\+Inspection
+
+@noinspection Php\+Missing\+Break\+Statement\+Inspection
+
+@noinspection Php\+Missing\+Break\+Statement\+Inspection\Hypertarget{class_dompdf_1_1_helpers_aab8cb5798d0021447662127a726a8726}\index{Helpers@{Helpers}!dompdf\_debug@{dompdf\_debug}}
+\index{dompdf\_debug@{dompdf\_debug}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{dompdf\_debug()}{dompdf\_debug()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_aab8cb5798d0021447662127a726a8726} 
+dompdf\+\_\+debug (\begin{DoxyParamCaption}\item[{}]{\$type}{, }\item[{}]{\$msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Print debug messages
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & The type of debug messages to print \\
+\hline
+string & {\em \$msg} & The message to show \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_helpers_a302576b4c8558b96d61a16fb971188c6}\index{Helpers@{Helpers}!dompdf\_getimagesize@{dompdf\_getimagesize}}
+\index{dompdf\_getimagesize@{dompdf\_getimagesize}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{dompdf\_getimagesize()}{dompdf\_getimagesize()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a302576b4c8558b96d61a16fb971188c6} 
+dompdf\+\_\+getimagesize (\begin{DoxyParamCaption}\item[{}]{\$filename}{, }\item[{}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+getimagesize doesn\textquotesingle{}t give a good size for 32bit BMP image v5
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+resource & {\em \$context} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array An array of three elements\+: width and height as {\ttfamily float\texorpdfstring{$\vert$}{|}int}, and image type as {\ttfamily string\texorpdfstring{$\vert$}{|}null}. 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_aeece2a39109d661454050da0fbd33ff0}\index{Helpers@{Helpers}!encodeURI@{encodeURI}}
+\index{encodeURI@{encodeURI}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{encodeURI()}{encodeURI()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_aeece2a39109d661454050da0fbd33ff0} 
+encode\+URI (\begin{DoxyParamCaption}\item[{}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encodes a Uniform Resource Identifier (URI) by replacing non-\/alphanumeric characters with a percent (\%) sign followed by two hex digits, excepting characters in the URI reserved character set.
+
+Assumes that the URI is a complete URI, so does not encode reserved characters that have special meaning in the URI.
+
+Simulates the encode\+URI function available in Java\+Script \href{https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/encodeURI}{\texttt{https\+://developer.\+mozilla.\+org/en/\+Java\+Script/\+Reference/\+Global\+\_\+\+Objects/encode\+URI}}
+
+Source\+: \href{http://stackoverflow.com/q/4929584/264628}{\texttt{http\+://stackoverflow.\+com/q/4929584/264628}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & The URI to encode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The original \doxylink{class_u_r_l}{URL} with special characters encoded 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_ae2737d8eff1968f97d337939cee65823}\index{Helpers@{Helpers}!explode\_url@{explode\_url}}
+\index{explode\_url@{explode\_url}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{explode\_url()}{explode\_url()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_ae2737d8eff1968f97d337939cee65823} 
+explode\+\_\+url (\begin{DoxyParamCaption}\item[{}]{\$url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+parse a full url or pathname and return an array(protocol, host, path, file + query + fragment)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_ac731216bd84b6fc563035beb6aeaea70}\index{Helpers@{Helpers}!getFileContent@{getFileContent}}
+\index{getFileContent@{getFileContent}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{getFileContent()}{getFileContent()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_ac731216bd84b6fc563035beb6aeaea70} 
+get\+File\+Content (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$context}{ = {\ttfamily null}, }\item[{}]{\$offset}{ = {\ttfamily 0}, }\item[{}]{\$maxlen}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the content of the file at the specified path using one of the following methods, in preferential order\+:
+\begin{DoxyItemize}
+\item file\+\_\+get\+\_\+contents\+: if allow\+\_\+url\+\_\+fopen is true or the file is local
+\item curl\+: if allow\+\_\+url\+\_\+fopen is false and curl is available
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+resource & {\em \$context} & \\
+\hline
+int & {\em \$offset} & \\
+\hline
+int & {\em \$maxlen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_ae11edc8a6304884091d4e7aad66634fd}\index{Helpers@{Helpers}!imagecreatefrombmp@{imagecreatefrombmp}}
+\index{imagecreatefrombmp@{imagecreatefrombmp}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{imagecreatefrombmp()}{imagecreatefrombmp()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_ae11edc8a6304884091d4e7aad66634fd} 
+imagecreatefrombmp (\begin{DoxyParamCaption}\item[{}]{\$filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Credit goes to mgutt \href{http://www.programmierer-forum.de/function-imagecreatefrombmp-welche-variante-laeuft-t143137.htm}{\texttt{http\+://www.\+programmierer-\/forum.\+de/function-\/imagecreatefrombmp-\/welche-\/variante-\/laeuft-\/t143137.\+htm}} Modified by Fabien Menager to support RGB555 BMP format \Hypertarget{class_dompdf_1_1_helpers_aabf52e9310c1802926e0d94a7a3ab88d}\index{Helpers@{Helpers}!is\_percent@{is\_percent}}
+\index{is\_percent@{is\_percent}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{is\_percent()}{is\_percent()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_aabf52e9310c1802926e0d94a7a3ab88d} 
+is\+\_\+percent (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines whether \$value is a percentage or not
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | float | int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_a92b5be6ccf82c849208a00643cfe7080}\index{Helpers@{Helpers}!lengthEqual@{lengthEqual}}
+\index{lengthEqual@{lengthEqual}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{lengthEqual()}{lengthEqual()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a92b5be6ccf82c849208a00643cfe7080} 
+length\+Equal (\begin{DoxyParamCaption}\item[{float}]{\$a}{, }\item[{float}]{\$b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether two lengths should be considered equal, accounting for inaccuracies in float computation.
+
+The implementation relies on the fact that we are neither dealing with very large, nor with very small numbers in layout. Adapted from \href{https://floating-point-gui.de/errors/comparison/}{\texttt{https\+://floating-\/point-\/gui.\+de/errors/comparison/}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$a} & \\
+\hline
+float & {\em \$b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_a975bbd71e4432a5443510f8fc78983e3}\index{Helpers@{Helpers}!lengthGreater@{lengthGreater}}
+\index{lengthGreater@{lengthGreater}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{lengthGreater()}{lengthGreater()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a975bbd71e4432a5443510f8fc78983e3} 
+length\+Greater (\begin{DoxyParamCaption}\item[{float}]{\$a}{, }\item[{float}]{\$b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check {\ttfamily \$a \texorpdfstring{$>$}{>} \$b}, accounting for inaccuracies in float computation. \Hypertarget{class_dompdf_1_1_helpers_a9db0529689e48d7966963021b1f138fe}\index{Helpers@{Helpers}!lengthGreaterOrEqual@{lengthGreaterOrEqual}}
+\index{lengthGreaterOrEqual@{lengthGreaterOrEqual}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{lengthGreaterOrEqual()}{lengthGreaterOrEqual()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a9db0529689e48d7966963021b1f138fe} 
+length\+Greater\+Or\+Equal (\begin{DoxyParamCaption}\item[{float}]{\$a}{, }\item[{float}]{\$b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check {\ttfamily \$a \texorpdfstring{$>$}{>}= \$b}, accounting for inaccuracies in float computation. \Hypertarget{class_dompdf_1_1_helpers_a5ecd62eac6fefcb42d60355b7d0a4ceb}\index{Helpers@{Helpers}!lengthLess@{lengthLess}}
+\index{lengthLess@{lengthLess}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{lengthLess()}{lengthLess()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a5ecd62eac6fefcb42d60355b7d0a4ceb} 
+length\+Less (\begin{DoxyParamCaption}\item[{float}]{\$a}{, }\item[{float}]{\$b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check {\ttfamily \$a \texorpdfstring{$<$}{<} \$b}, accounting for inaccuracies in float computation. \Hypertarget{class_dompdf_1_1_helpers_a6f566a0ceac2e65237b9d915940693a1}\index{Helpers@{Helpers}!lengthLessOrEqual@{lengthLessOrEqual}}
+\index{lengthLessOrEqual@{lengthLessOrEqual}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{lengthLessOrEqual()}{lengthLessOrEqual()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a6f566a0ceac2e65237b9d915940693a1} 
+length\+Less\+Or\+Equal (\begin{DoxyParamCaption}\item[{float}]{\$a}{, }\item[{float}]{\$b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check {\ttfamily \$a \texorpdfstring{$<$}{<}= \$b}, accounting for inaccuracies in float computation. \Hypertarget{class_dompdf_1_1_helpers_ab5edbb3da8abd4f3015eda103f000b08}\index{Helpers@{Helpers}!mb\_ucwords@{mb\_ucwords}}
+\index{mb\_ucwords@{mb\_ucwords}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{mb\_ucwords()}{mb\_ucwords()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_ab5edbb3da8abd4f3015eda103f000b08} 
+mb\+\_\+ucwords (\begin{DoxyParamCaption}\item[{string}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_a77feb36d7c6a1fa3cffdedb68577737f}\index{Helpers@{Helpers}!parse\_data\_uri@{parse\_data\_uri}}
+\index{parse\_data\_uri@{parse\_data\_uri}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{parse\_data\_uri()}{parse\_data\_uri()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a77feb36d7c6a1fa3cffdedb68577737f} 
+parse\+\_\+data\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{\$data\+\_\+uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses a data URI scheme \href{http://en.wikipedia.org/wiki/Data_URI_scheme}{\texttt{http\+://en.\+wikipedia.\+org/wiki/\+Data\+\_\+\+URI\+\_\+scheme}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data\+\_\+uri} & The data URI to parse\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool The result with charset, mime type and decoded data 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_a9115933409fcfb13d0d21dc7e248a5a7}\index{Helpers@{Helpers}!pre\_r@{pre\_r}}
+\index{pre\_r@{pre\_r}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{pre\_r()}{pre\_r()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a9115933409fcfb13d0d21dc7e248a5a7} 
+pre\+\_\+r (\begin{DoxyParamCaption}\item[{}]{\$mixed}{, }\item[{}]{\$return}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+print\+\_\+r wrapper for html/cli output
+
+Wraps print\+\_\+r() output in \texorpdfstring{$<$}{<} pre \texorpdfstring{$>$}{>} tags if the current sapi is not \textquotesingle{}cli\textquotesingle{}. Returns the output string instead of displaying it if \$return is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$mixed} & variable or expression to display \\
+\hline
+bool & {\em \$return} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_ac7b66f25ad3a1af8ecfacf38159b2809}\index{Helpers@{Helpers}!record\_warnings@{record\_warnings}}
+\index{record\_warnings@{record\_warnings}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{record\_warnings()}{record\_warnings()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_ac7b66f25ad3a1af8ecfacf38159b2809} 
+record\+\_\+warnings (\begin{DoxyParamCaption}\item[{}]{\$errno}{, }\item[{}]{\$errstr}{, }\item[{}]{\$errfile}{, }\item[{}]{\$errline}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Stores warnings in an array for display later This function allows warnings generated by the Dom\+Document parser and CSS loader ({\ttfamily \doxylink{}{Stylesheet}}) to be captured and displayed later. Without this function, errors are displayed immediately and \doxylink{class_p_d_f}{PDF} streaming is impossible. \begin{DoxySeeAlso}{See also}
+\href{http://www.php.net/manual/en/function.set-error_handler.php}{\texttt{http\+://www.\+php.\+net/manual/en/function.\+set-\/error\+\_\+handler.\+php}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$errno} & \\
+\hline
+string & {\em \$errstr} & \\
+\hline
+string & {\em \$errfile} & \\
+\hline
+string & {\em \$errline} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_dompdf_1_1_helpers_a58b5c92f8930ad7ca3c5a07b225a3d51}\index{Helpers@{Helpers}!rle4\_decode@{rle4\_decode}}
+\index{rle4\_decode@{rle4\_decode}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{rle4\_decode()}{rle4\_decode()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a58b5c92f8930ad7ca3c5a07b225a3d51} 
+rle4\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$str}{, }\item[{}]{\$width}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decoder for RLE4 compression in windows bitmaps see \href{http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/bitmaps_6x0u.asp}{\texttt{http\+://msdn.\+microsoft.\+com/library/default.\+asp?url=/library/en-\/us/gdi/bitmaps\+\_\+6x0u.\+asp}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & Data to decode \\
+\hline
+int & {\em \$width} & Image width\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_aa360943a5a457466da53a68ed21f248d}\index{Helpers@{Helpers}!rle8\_decode@{rle8\_decode}}
+\index{rle8\_decode@{rle8\_decode}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{rle8\_decode()}{rle8\_decode()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_aa360943a5a457466da53a68ed21f248d} 
+rle8\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$str}{, }\item[{}]{\$width}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decoder for RLE8 compression in windows bitmaps \href{http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/bitmaps_6x0u.asp}{\texttt{http\+://msdn.\+microsoft.\+com/library/default.\+asp?url=/library/en-\/us/gdi/bitmaps\+\_\+6x0u.\+asp}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & Data to decode \\
+\hline
+int & {\em \$width} & Image width\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_acc41ef13c271e92a993e217f03fa8a4c}\index{Helpers@{Helpers}!unichr@{unichr}}
+\index{unichr@{unichr}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{unichr()}{unichr()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_acc41ef13c271e92a993e217f03fa8a4c} 
+unichr (\begin{DoxyParamCaption}\item[{int}]{\$c}{, }\item[{?string}]{\$encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return character by Unicode code point value
+
+Shim for use on systems running PHP \texorpdfstring{$<$}{<} 7.\+2
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$c} & \\
+\hline
+string | null & {\em \$encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_helpers_a617ff5671d9139238c27dc2a88e7bc52}\index{Helpers@{Helpers}!uniord@{uniord}}
+\index{uniord@{uniord}!Helpers@{Helpers}}
+\doxysubsubsection{\texorpdfstring{uniord()}{uniord()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_helpers_a617ff5671d9139238c27dc2a88e7bc52} 
+uniord (\begin{DoxyParamCaption}\item[{string}]{\$c}{, }\item[{?string}]{\$encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get Unicode code point of character
+
+Shim for use on systems running PHP \texorpdfstring{$<$}{<} 7.\+2
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$c} & \\
+\hline
+string | null & {\em \$encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/dompdf/src/\mbox{\hyperlink{dompdf_2dompdf_2src_2_helpers_8php}{Helpers.\+php}}\end{DoxyCompactItemize}

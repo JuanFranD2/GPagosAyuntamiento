@@ -1,0 +1,58 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psr/log Directory Reference}
+\hypertarget{dir_3aba8ea0d799c35d76cc7d444320d90c}{}\label{dir_3aba8ea0d799c35d76cc7d444320d90c}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/psr/log Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/psr/log Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_a7ea4b50cc4de318986b3e3ec2065c5d}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This repository holds all interfaces/classes/traits related to \href{https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md}{\texttt{PSR-\/3}}.
+
+Note that this is not a logger of its own. It is merely an interface that describes a logger. See the specification for more details.\hypertarget{README.md_autotoc_md10424}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md10424}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ psr/log}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10425}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md10425}
+If you need a logger, you can use the interface like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Psr\(\backslash\)Log\(\backslash\)LoggerInterface}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }Foo}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \$logger;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_testing_1_1_concerns_a17ea103c75f2b56cb4ebd89dbf59d2d6}{\_\_construct}}(LoggerInterface\ \$logger\ =\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>logger\ =\ \$logger;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ doSomething()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>logger)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>logger-\/>info(\textcolor{stringliteral}{'Doing\ work'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>doSomethingElse();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Exception\ \$exception)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>logger-\/>error(\textcolor{stringliteral}{'Oh\ no!'},\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(\textcolor{stringliteral}{'exception'}\ =>\ \$exception));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ do\ something\ useful}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+You can then pick one of the implementations of the interface to get a logger.
+
+If you want to implement the interface, you can require this package and implement {\ttfamily Psr\textbackslash{}\doxylink{class_log}{Log}\textbackslash{}Logger\+Interface} in your code. Please read the \href{https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md}{\texttt{specification text}} for details. 

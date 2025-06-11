@@ -1,0 +1,4 @@
+var symfony_2http_foundation_2_session_2_storage_2_handler_2_null_session_handler_8php =
+[
+    [ "NullSessionHandler", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_null_session_handler.html", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_null_session_handler" ]
+];

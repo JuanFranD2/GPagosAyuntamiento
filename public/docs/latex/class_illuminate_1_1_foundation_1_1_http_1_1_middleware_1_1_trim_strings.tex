@@ -1,0 +1,193 @@
+\doxysection{Trim\+Strings Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings}{}\label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings}\index{TrimStrings@{TrimStrings}}
+Inheritance diagram for Trim\+Strings\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_acef7660b2651389395d139e8af42d670}{handle}} (\$request, Closure \$next)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a8ba22e75b180b2a84d68f52d07254d57}{except}} (\$attributes)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a07f17decc548f0c506f326570d1ea8ff}{skip\+When}} (Closure \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a0904294c306d5c182f2ffbc8b939bfae}{flush\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_ad567cb257fd2031f1c4100baee4a50c1}{transform}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_ac140f6cdf1765d4db11546fced6d32ac}{should\+Skip}} (\$key, \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a8ba22e75b180b2a84d68f52d07254d57}{except}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request}{Transforms\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a4e4525fcf55bf070a65d6091f440adca}{clean}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_ae788c2133acb2e44bc8a7e72cab1fc6d}{clean\+Parameter\+Bag}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag}{Parameter\+Bag}} \$bag)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_ac668c7073cbb6cdfa2430e60465de034}{clean\+Array}} (array \$data, \$key\+Prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a862d5ee331691e60ac759859d74f494e}{clean\+Value}} (\$key, \$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a20aee92e768748d175898c2dba356c51}{\$except}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a22a98f2538ad72198f9b4b427d73b8b0}{\$never\+Trim}} = \mbox{[}$\,$\mbox{]}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_afd2d450b70d66d9d1d39003a711a09f3}{\$skip\+Callbacks}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a8ba22e75b180b2a84d68f52d07254d57}\index{TrimStrings@{TrimStrings}!except@{except}}
+\index{except@{except}!TrimStrings@{TrimStrings}}
+\doxysubsubsection{\texorpdfstring{except()}{except()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a8ba22e75b180b2a84d68f52d07254d57} 
+except (\begin{DoxyParamCaption}\item[{}]{\$attributes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Indicate that the given attributes should never be trimmed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a0904294c306d5c182f2ffbc8b939bfae}\index{TrimStrings@{TrimStrings}!flushState@{flushState}}
+\index{flushState@{flushState}!TrimStrings@{TrimStrings}}
+\doxysubsubsection{\texorpdfstring{flushState()}{flushState()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a0904294c306d5c182f2ffbc8b939bfae} 
+flush\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Flush the middleware\textquotesingle{}s global state.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_acef7660b2651389395d139e8af42d670}\index{TrimStrings@{TrimStrings}!handle@{handle}}
+\index{handle@{handle}!TrimStrings@{TrimStrings}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_acef7660b2651389395d139e8af42d670} 
+handle (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{Closure}]{\$next}{}\end{DoxyParamCaption})}
+
+Handle an incoming request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_acef7660b2651389395d139e8af42d670}{Transforms\+Request}}.
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_ac140f6cdf1765d4db11546fced6d32ac}\index{TrimStrings@{TrimStrings}!shouldSkip@{shouldSkip}}
+\index{shouldSkip@{shouldSkip}!TrimStrings@{TrimStrings}}
+\doxysubsubsection{\texorpdfstring{shouldSkip()}{shouldSkip()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_ac140f6cdf1765d4db11546fced6d32ac} 
+should\+Skip (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$except}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given key should be skipped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+array & {\em \$except} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a07f17decc548f0c506f326570d1ea8ff}\index{TrimStrings@{TrimStrings}!skipWhen@{skipWhen}}
+\index{skipWhen@{skipWhen}!TrimStrings@{TrimStrings}}
+\doxysubsubsection{\texorpdfstring{skipWhen()}{skipWhen()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a07f17decc548f0c506f326570d1ea8ff} 
+skip\+When (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Register a callback that instructs the middleware to be skipped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_ad567cb257fd2031f1c4100baee4a50c1}\index{TrimStrings@{TrimStrings}!transform@{transform}}
+\index{transform@{transform}!TrimStrings@{TrimStrings}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_ad567cb257fd2031f1c4100baee4a50c1} 
+transform (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Transform the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_ad567cb257fd2031f1c4100baee4a50c1}{Transforms\+Request}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a20aee92e768748d175898c2dba356c51}\index{TrimStrings@{TrimStrings}!\$except@{\$except}}
+\index{\$except@{\$except}!TrimStrings@{TrimStrings}}
+\doxysubsubsection{\texorpdfstring{\$except}{\$except}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a20aee92e768748d175898c2dba356c51} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a8ba22e75b180b2a84d68f52d07254d57}{except}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a22a98f2538ad72198f9b4b427d73b8b0}\index{TrimStrings@{TrimStrings}!\$neverTrim@{\$neverTrim}}
+\index{\$neverTrim@{\$neverTrim}!TrimStrings@{TrimStrings}}
+\doxysubsubsection{\texorpdfstring{\$neverTrim}{\$neverTrim}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a22a98f2538ad72198f9b4b427d73b8b0} 
+\$never\+Trim = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_afd2d450b70d66d9d1d39003a711a09f3}\index{TrimStrings@{TrimStrings}!\$skipCallbacks@{\$skipCallbacks}}
+\index{\$skipCallbacks@{\$skipCallbacks}!TrimStrings@{TrimStrings}}
+\doxysubsubsection{\texorpdfstring{\$skipCallbacks}{\$skipCallbacks}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_afd2d450b70d66d9d1d39003a711a09f3} 
+\$skip\+Callbacks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Http/\+Middleware/\mbox{\hyperlink{_trim_strings_8php}{Trim\+Strings.\+php}}\end{DoxyCompactItemize}

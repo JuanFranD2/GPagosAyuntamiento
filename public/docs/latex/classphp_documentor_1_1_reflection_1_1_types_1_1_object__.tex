@@ -1,0 +1,68 @@
+\doxysection{Object\+\_\+ Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_object__}{}\label{classphp_documentor_1_1_reflection_1_1_types_1_1_object__}\index{Object\_@{Object\_}}
+Inheritance diagram for Object\+\_\+\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classphp_documentor_1_1_reflection_1_1_types_1_1_object__}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_object___ad1579d106a34d891399152b1ec663069}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_fqsen}{Fqsen}} \$fqsen=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_object___a07132fe536354352c87e6447d512bf3b}{get\+Fqsen}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_object___a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Value Object representing an object.
+
+An object can be either typed or untyped. When an object is typed it means that it has an identifier, the FQSEN, pointing to an element in PHP. Object types that are untyped do not refer to a specific class but represent objects in general.
+
+@psalm-\/immutable 
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_object___doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_object___ad1579d106a34d891399152b1ec663069}\index{Object\_@{Object\_}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Object\_@{Object\_}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_object___ad1579d106a34d891399152b1ec663069} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_fqsen}{Fqsen}}}]{\$fqsen}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Initializes this object with an optional FQSEN, if not provided this object is considered \textquotesingle{}untyped\textquotesingle{}.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & When provided \$fqsen is not a valid type. \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_object___doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_object___a7516ca30af0db3cdbf9a7739b48ce91d}\index{Object\_@{Object\_}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Object\_@{Object\_}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_object___a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a rendered output of the Type as it would be used in a Doc\+Block. 
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type_a7516ca30af0db3cdbf9a7739b48ce91d}{Type}}.
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_object___a07132fe536354352c87e6447d512bf3b}\index{Object\_@{Object\_}!getFqsen@{getFqsen}}
+\index{getFqsen@{getFqsen}!Object\_@{Object\_}}
+\doxysubsubsection{\texorpdfstring{getFqsen()}{getFqsen()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_object___a07132fe536354352c87e6447d512bf3b} 
+get\+Fqsen (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the FQSEN associated with this object. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/type-\/resolver/src/\+Types/\mbox{\hyperlink{phpdocumentor_2type-resolver_2src_2_types_2_object___8php}{Object\+\_\+.\+php}}\end{DoxyCompactItemize}

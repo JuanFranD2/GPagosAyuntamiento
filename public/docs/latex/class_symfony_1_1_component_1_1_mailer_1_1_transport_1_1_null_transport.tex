@@ -1,0 +1,68 @@
+\doxysection{Null\+Transport Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport}\index{NullTransport@{NullTransport}}
+Inheritance diagram for Null\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{Abstract\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a8361b3ca6b07f27e2a700c6b784602fc}{\+\_\+\+\_\+construct}} (private ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_ae85719512d9d7ea23ffde7741222fac5}{set\+Max\+Per\+Second}} (float \$rate)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a25d696d916e4c2862bd7ac1cb998b491}{send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}} \$message, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}} \$envelope=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport_ab2a6fbf236a5d081eacb4418f581010c}{do\+Send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}} \$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{Abstract\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a7120af2abf2de07e224546c0cd9bed28}{stringify\+Addresses}} (array \$addresses)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a2321df4f2f7d188b92b96fe63dc71a90}{get\+Logger}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pretends messages have been sent, but just ignores them.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport_a7516ca30af0db3cdbf9a7739b48ce91d}\index{NullTransport@{NullTransport}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!NullTransport@{NullTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport_ab2a6fbf236a5d081eacb4418f581010c}\index{NullTransport@{NullTransport}!doSend@{doSend}}
+\index{doSend@{doSend}!NullTransport@{NullTransport}}
+\doxysubsubsection{\texorpdfstring{doSend()}{doSend()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_null_transport_ab2a6fbf236a5d081eacb4418f581010c} 
+do\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_ab2a6fbf236a5d081eacb4418f581010c}{Abstract\+Transport}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/mailer/\+Transport/\mbox{\hyperlink{_null_transport_8php}{Null\+Transport.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,237 @@
+\doxysection{Database\+User\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider}{}\label{class_illuminate_1_1_auth_1_1_database_user_provider}\index{DatabaseUserProvider@{DatabaseUserProvider}}
+Inheritance diagram for Database\+User\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_auth_1_1_database_user_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_a50a8bd0947037cb6404211b5b669f67d}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$connection, Hasher\+Contract \$hasher, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_affdb511d38ff1bbadffea0082ca2c92b}{retrieve\+By\+Id}} (\$identifier)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_a5006ea696b4fee698174cd08b513ab74}{retrieve\+By\+Token}} (\$identifier, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$token)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_a2cc49aa3148621552824bde7d26e8af2}{update\+Remember\+Token}} (User\+Contract \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$token)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_a03b927813a83052c007325efb088cf47}{retrieve\+By\+Credentials}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_a636bf6024043b08c7c721c90fd175cc5}{validate\+Credentials}} (User\+Contract \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_a014cfb31655f96292f6999f607fa7f81}{rehash\+Password\+If\+Required}} (User\+Contract \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials, bool \$force=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider}{User\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_a37b7a8fe31313d36b1479bf1bd19462b}{update\+Remember\+Token}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$token)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_a1f635c0ad5186f23d3176951bbf6d1bf}{validate\+Credentials}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_af2c5d55c463b14331678e9c68559576f}{rehash\+Password\+If\+Required}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials, bool \$force=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_ad9231693e6fabed5258f639a085643ad}{get\+Generic\+User}} (\$user)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_afd2ecddb9047719af6380d0266485722}{\$hasher}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_database_user_provider_ae8876a14058f368335baccf35af4a22b}{\$table}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_a50a8bd0947037cb6404211b5b669f67d}\index{DatabaseUserProvider@{DatabaseUserProvider}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_a50a8bd0947037cb6404211b5b669f67d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface}{Connection\+Interface}}}]{\$connection}{, }\item[{Hasher\+Contract}]{\$hasher}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Create a new database user provider.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface & {\em \$connection} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Hashing\textbackslash{}\+Hasher & {\em \$hasher} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_ad9231693e6fabed5258f639a085643ad}\index{DatabaseUserProvider@{DatabaseUserProvider}!getGenericUser@{getGenericUser}}
+\index{getGenericUser@{getGenericUser}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{getGenericUser()}{getGenericUser()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_ad9231693e6fabed5258f639a085643ad} 
+get\+Generic\+User (\begin{DoxyParamCaption}\item[{}]{\$user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the generic user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Generic\+User\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_a014cfb31655f96292f6999f607fa7f81}\index{DatabaseUserProvider@{DatabaseUserProvider}!rehashPasswordIfRequired@{rehashPasswordIfRequired}}
+\index{rehashPasswordIfRequired@{rehashPasswordIfRequired}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{rehashPasswordIfRequired()}{rehashPasswordIfRequired()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_a014cfb31655f96292f6999f607fa7f81} 
+rehash\+Password\+If\+Required (\begin{DoxyParamCaption}\item[{User\+Contract}]{\$user}{, }\item[{\# array}]{\$credentials}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{bool}]{\$force}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Rehash the user\textquotesingle{}s password if required and supported.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable & {\em \$user} & \\
+\hline
+array & {\em \$credentials} & \\
+\hline
+bool & {\em \$force} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_a03b927813a83052c007325efb088cf47}\index{DatabaseUserProvider@{DatabaseUserProvider}!retrieveByCredentials@{retrieveByCredentials}}
+\index{retrieveByCredentials@{retrieveByCredentials}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{retrieveByCredentials()}{retrieveByCredentials()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_a03b927813a83052c007325efb088cf47} 
+retrieve\+By\+Credentials (\begin{DoxyParamCaption}\item[{\# array}]{\$credentials}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+Retrieve a user by the given credentials.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$credentials} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_a03b927813a83052c007325efb088cf47}{User\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_affdb511d38ff1bbadffea0082ca2c92b}\index{DatabaseUserProvider@{DatabaseUserProvider}!retrieveById@{retrieveById}}
+\index{retrieveById@{retrieveById}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{retrieveById()}{retrieveById()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_affdb511d38ff1bbadffea0082ca2c92b} 
+retrieve\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$identifier}{}\end{DoxyParamCaption})}
+
+Retrieve a user by their unique identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$identifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_affdb511d38ff1bbadffea0082ca2c92b}{User\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_a5006ea696b4fee698174cd08b513ab74}\index{DatabaseUserProvider@{DatabaseUserProvider}!retrieveByToken@{retrieveByToken}}
+\index{retrieveByToken@{retrieveByToken}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{retrieveByToken()}{retrieveByToken()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_a5006ea696b4fee698174cd08b513ab74} 
+retrieve\+By\+Token (\begin{DoxyParamCaption}\item[{}]{\$identifier}{, }\item[{\#}]{\$token}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+Retrieve a user by their unique identifier and "{}remember me"{} token.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$identifier} & \\
+\hline
+string & {\em \$token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_a5006ea696b4fee698174cd08b513ab74}{User\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_a2cc49aa3148621552824bde7d26e8af2}\index{DatabaseUserProvider@{DatabaseUserProvider}!updateRememberToken@{updateRememberToken}}
+\index{updateRememberToken@{updateRememberToken}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{updateRememberToken()}{updateRememberToken()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_a2cc49aa3148621552824bde7d26e8af2} 
+update\+Remember\+Token (\begin{DoxyParamCaption}\item[{User\+Contract}]{\$user}{, }\item[{\#}]{\$token}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+Update the "{}remember me"{} token for the given user in storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable & {\em \$user} & \\
+\hline
+string & {\em \$token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_a636bf6024043b08c7c721c90fd175cc5}\index{DatabaseUserProvider@{DatabaseUserProvider}!validateCredentials@{validateCredentials}}
+\index{validateCredentials@{validateCredentials}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{validateCredentials()}{validateCredentials()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_a636bf6024043b08c7c721c90fd175cc5} 
+validate\+Credentials (\begin{DoxyParamCaption}\item[{User\+Contract}]{\$user}{, }\item[{\# array}]{\$credentials}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+Validate a user against the given credentials.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable & {\em \$user} & \\
+\hline
+array & {\em \$credentials} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_a0d9c79b9b86b3f5891c6d3892f12c6a0}\index{DatabaseUserProvider@{DatabaseUserProvider}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\$connection\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_afd2ecddb9047719af6380d0266485722}\index{DatabaseUserProvider@{DatabaseUserProvider}!\$hasher@{\$hasher}}
+\index{\$hasher@{\$hasher}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{\$hasher}{\$hasher}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_afd2ecddb9047719af6380d0266485722} 
+\$hasher\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_database_user_provider_ae8876a14058f368335baccf35af4a22b}\index{DatabaseUserProvider@{DatabaseUserProvider}!\$table@{\$table}}
+\index{\$table@{\$table}!DatabaseUserProvider@{DatabaseUserProvider}}
+\doxysubsubsection{\texorpdfstring{\$table}{\$table}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_database_user_provider_ae8876a14058f368335baccf35af4a22b} 
+\$table\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Auth/\mbox{\hyperlink{_database_user_provider_8php}{Database\+User\+Provider.\+php}}\end{DoxyCompactItemize}

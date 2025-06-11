@@ -1,0 +1,4 @@
+var _add_live_modifier_to_entangle_directives_8php =
+[
+    [ "AddLiveModifierToEntangleDirectives", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_add_live_modifier_to_entangle_directives.html", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_add_live_modifier_to_entangle_directives" ]
+];

@@ -1,0 +1,103 @@
+\doxysection{Image Class Reference}
+\hypertarget{class_dompdf_1_1_renderer_1_1_image}{}\label{class_dompdf_1_1_renderer_1_1_image}\index{Image@{Image}}
+Inheritance diagram for Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dompdf_1_1_renderer_1_1_image}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_image_a25d4f887dbbc6f4685b4d41f3e88050f}{render}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$frame)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer}{Abstract\+Renderer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a7cd48df4f2198e8af47619bf8acc6411}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf}} \$dompdf)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_block}{Block}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_block_abd614d79000349b0d4c0f4610da95999}{debug\+Block\+Layout}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$frame, \$color, bool \$lines=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer}{Abstract\+Renderer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a8e0f5c6aee355fd90aa054ef1b551e0e}{\+\_\+render\+\_\+background}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$frame, array \$border\+\_\+box)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_aeba8913bdd5b5f87bc6bfbbf33956a2f}{\+\_\+render\+\_\+border}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$frame, array \$border\+\_\+box, string \$corner\+\_\+style="{}bevel"{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a36d735f0e846f0e52241f14b584d7ee7}{\+\_\+render\+\_\+outline}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$frame, array \$border\+\_\+box, string \$corner\+\_\+style="{}bevel"{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a80cabbd53abfeadef84ab1a6c48d90b0}{\+\_\+background\+\_\+image}} (string \$url, float \$x, float \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, float \$width, float \$height, \mbox{\hyperlink{class_dompdf_1_1_css_1_1_style}{Style}} \$style)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a765686fc15e7c3a450b0efbd323eedc8}{\+\_\+resize\+\_\+background\+\_\+image}} (float \$img\+\_\+width, float \$img\+\_\+height, float \$container\+\_\+width, float \$container\+\_\+height, \$bg\+\_\+resize, int \$dpi)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_ae6078fe32ab2fd7ec97ca085f4f1333b}{\+\_\+border\+\_\+dotted}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$length, \$color, \$widths, \$side, \$corner\+\_\+style="{}bevel"{}, \$r1=0, \$r2=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_add646fdf2c250aa882647a28be0aedea}{\+\_\+border\+\_\+dashed}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$length, \$color, \$widths, \$side, \$corner\+\_\+style="{}bevel"{}, \$r1=0, \$r2=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a2a7b326d784222dffc6579081014ac7f}{\+\_\+border\+\_\+solid}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$length, \$color, \$widths, \$side, \$corner\+\_\+style="{}bevel"{}, \$r1=0, \$r2=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a569748be153b9a0f23179d4729377241}{\+\_\+apply\+\_\+ratio}} (\$side, \$ratio, \$top, \$right, \$bottom, \$left, \&\$x, \&\$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \&\$length, \&\$r1, \&\$r2)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_af7c0a68eaf813d1eb90fe88b546c5030}{\+\_\+border\+\_\+double}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$length, \$color, \$widths, \$side, \$corner\+\_\+style="{}bevel"{}, \$r1=0, \$r2=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a72ce5bc953091d1bd68cf48ae7aa5628}{\+\_\+border\+\_\+groove}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$length, \$color, \$widths, \$side, \$corner\+\_\+style="{}bevel"{}, \$r1=0, \$r2=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_ac298867e88c391563235006a574b0b73}{\+\_\+border\+\_\+ridge}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$length, \$color, \$widths, \$side, \$corner\+\_\+style="{}bevel"{}, \$r1=0, \$r2=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a7c5b5c66b28c61e0f4ab5ae1fa7fb01b}{\+\_\+tint}} (\$c)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a988652cc03e1da6d6d8162d45c91af9e}{\+\_\+shade}} (\$c)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a5314f1c615f1eb3bda410aba413c9275}{\+\_\+border\+\_\+inset}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$length, \$color, \$widths, \$side, \$corner\+\_\+style="{}bevel"{}, \$r1=0, \$r2=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_aaa5f312ddb3b77e16a15b96ea5b1794d}{\+\_\+border\+\_\+outset}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$length, \$color, \$widths, \$side, \$corner\+\_\+style="{}bevel"{}, \$r1=0, \$r2=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a735465b26ea17f1921bdd7d9c535a86d}{dash\+Pattern}} (string \$style, float \$width, float \$length)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_aa3001702a283f46e17f73f9aca843f81}{\+\_\+border\+\_\+line}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$length, \$color, \$widths, \$side, \$corner\+\_\+style="{}bevel"{}, \$pattern\+\_\+name="{}none"{}, \$r1=0, \$r2=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a662155e70dc5d1226daed8f292872537}{\+\_\+set\+\_\+opacity}} (float \$opacity)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_ac611364021d2e2f1df410acd655e8071}{add\+Named\+Dest}} (DOMElement \$node)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a787818feef07ba6e147a8bbd8fc1e0f2}{add\+Hyperlink}} (DOMElement \$node, array \$border\+Box)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_ae199db7ba9753651e11c7496f66d1a5a}{debug\+Layout}} (array \$box, \$color="{}red"{}, array \$style=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer}{Abstract\+Renderer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a6982d2a7d7013eca131ec554d64fa552}{\$\+\_\+canvas}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_abstract_renderer_a3d42c6b602f6b5a224b276b1efed7820}{\$\+\_\+dompdf}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dompdf_1_1_renderer_1_1_image_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dompdf_1_1_renderer_1_1_image_a25d4f887dbbc6f4685b4d41f3e88050f}\index{Image@{Image}!render@{render}}
+\index{render@{render}!Image@{Image}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_renderer_1_1_image_a25d4f887dbbc6f4685b4d41f3e88050f} 
+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}]{\$frame}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Image\+Frame\+Decorator & {\em \$frame} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_dompdf_1_1_renderer_1_1_block_a25d4f887dbbc6f4685b4d41f3e88050f}{Block}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/dompdf/src/\+Renderer/\mbox{\hyperlink{dompdf_2dompdf_2src_2_renderer_2_image_8php}{Image.\+php}}\end{DoxyCompactItemize}

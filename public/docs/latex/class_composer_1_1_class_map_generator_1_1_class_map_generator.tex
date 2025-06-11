@@ -1,0 +1,123 @@
+\doxysection{Class\+Map\+Generator Class Reference}
+\hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_generator}{}\label{class_composer_1_1_class_map_generator_1_1_class_map_generator}\index{ClassMapGenerator@{ClassMapGenerator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_generator_a06b060038a53efc893d19c9e05e1bf94}{\+\_\+\+\_\+construct}} (array \$extensions=\mbox{[}\textquotesingle{}php\textquotesingle{}, \textquotesingle{}inc\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_generator_ae0d252c86f4854420f52d80102d32256}{avoid\+Duplicate\+Scans}} (?\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_file_list}{File\+List}} \$scanned\+Files=null)
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_generator_a7e9a9730c400820ee2b1c995cd5134fe}{get\+Class\+Map}} ()
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_generator_a56e069fdad9031c9931273c1c7730ae9}{scan\+Paths}} (\$path, ?string \$excluded=null, string \$autoload\+Type=\textquotesingle{}classmap\textquotesingle{}, ?string \$namespace=null, array \$excluded\+Dirs=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_generator_a3aff7c367cb282abd24cca6a1f6914c7}{create\+Map}} (\$path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class\+Map\+Generator
+
+\begin{DoxyAuthor}{Author}
+Gyula Sallai \href{mailto:salla016@gmail.com}{\texttt{salla016@gmail.\+com}} 
+
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{j.\+boggiano@seld.\+be}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_generator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_generator_a06b060038a53efc893d19c9e05e1bf94}\index{ClassMapGenerator@{ClassMapGenerator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ClassMapGenerator@{ClassMapGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_generator_a06b060038a53efc893d19c9e05e1bf94} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$extensions}{ = {\ttfamily \mbox{[}\textquotesingle{}php\textquotesingle{},~\textquotesingle{}inc\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$} & \$extensions \doxylink{class_file}{File} extensions to scan for classes in the given paths \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_generator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_generator_ae0d252c86f4854420f52d80102d32256}\index{ClassMapGenerator@{ClassMapGenerator}!avoidDuplicateScans@{avoidDuplicateScans}}
+\index{avoidDuplicateScans@{avoidDuplicateScans}!ClassMapGenerator@{ClassMapGenerator}}
+\doxysubsubsection{\texorpdfstring{avoidDuplicateScans()}{avoidDuplicateScans()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_generator_ae0d252c86f4854420f52d80102d32256} 
+avoid\+Duplicate\+Scans (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_file_list}{File\+List}}}]{\$scanned\+Files}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+When calling scan\+Paths repeatedly with paths that may overlap, calling this will ensure that the same class is never scanned twice
+
+You can provide your own File\+List instance or use the default one if you pass no argument
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_generator_a3aff7c367cb282abd24cca6a1f6914c7}\index{ClassMapGenerator@{ClassMapGenerator}!createMap@{createMap}}
+\index{createMap@{createMap}!ClassMapGenerator@{ClassMapGenerator}}
+\doxysubsubsection{\texorpdfstring{createMap()}{createMap()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_generator_a3aff7c367cb282abd24cca6a1f6914c7} 
+create\+Map (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Iterate over all files in the given directory searching for classes
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\texorpdfstring{$\vert$}{|}} & \\
+\hline
+\end{DoxyParams}
+Traversable\texorpdfstring{$<$}{<}\textbackslash{}\+Spl\+File\+Info\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}array\texorpdfstring{$<$}{<}\textbackslash{}\+Spl\+File\+Info\texorpdfstring{$>$}{>} \$path The path to search in or an array/traversable of Spl\+File\+Info (e.\+g. symfony/finder instance) \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}class-\/string, non-\/empty-\/string\texorpdfstring{$>$}{>} A class map array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception When the path is neither an existing file nor directory \Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_generator_a7e9a9730c400820ee2b1c995cd5134fe}\index{ClassMapGenerator@{ClassMapGenerator}!getClassMap@{getClassMap}}
+\index{getClassMap@{getClassMap}!ClassMapGenerator@{ClassMapGenerator}}
+\doxysubsubsection{\texorpdfstring{getClassMap()}{getClassMap()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_generator_a7e9a9730c400820ee2b1c995cd5134fe} 
+get\+Class\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_generator_a56e069fdad9031c9931273c1c7730ae9}\index{ClassMapGenerator@{ClassMapGenerator}!scanPaths@{scanPaths}}
+\index{scanPaths@{scanPaths}!ClassMapGenerator@{ClassMapGenerator}}
+\doxysubsubsection{\texorpdfstring{scanPaths()}{scanPaths()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_generator_a56e069fdad9031c9931273c1c7730ae9} 
+scan\+Paths (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{?string}]{\$excluded}{ = {\ttfamily null}, }\item[{string}]{\$autoload\+Type}{ = {\ttfamily \textquotesingle{}classmap\textquotesingle{}}, }\item[{?string}]{\$namespace}{ = {\ttfamily null}, }\item[{array}]{\$excluded\+Dirs}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Iterate over all files in the given directory searching for classes
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\texorpdfstring{$\vert$}{|}} & \\
+\hline
+\end{DoxyParams}
+Traversable\texorpdfstring{$<$}{<}\textbackslash{}\+Spl\+File\+Info\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}array\texorpdfstring{$<$}{<}\textbackslash{}\+Spl\+File\+Info\texorpdfstring{$>$}{>} \$path The path to search in or an array/traversable of Spl\+File\+Info (e.\+g. symfony/finder instance) 
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string | null & {\em \$excluded} & Regex that matches file paths to be excluded from the classmap \\
+\hline
+ & {\em \textquotesingle{}classmap\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}psr-\/0\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}psr-\/4\textquotesingle{}} & \$autoload\+Type Optional autoload standard to use mapping rules with the namespace instead of purely doing a classmap \\
+\hline
+string | null & {\em \$namespace} & Optional namespace prefix to filter by, only for psr-\/0/psr-\/4 autoloading \\
+\hline
+ & {\em array$<$string$>$} & \$excluded\+Dirs Optional dirs to exclude from search relative to \$path\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception When the path is neither an existing file nor directory 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/composer/class-\/map-\/generator/src/\mbox{\hyperlink{_class_map_generator_8php}{Class\+Map\+Generator.\+php}}\end{DoxyCompactItemize}

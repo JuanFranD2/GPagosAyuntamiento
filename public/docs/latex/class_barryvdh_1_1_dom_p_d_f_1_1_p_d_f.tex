@@ -1,0 +1,299 @@
+\doxysection{PDF Class Reference}
+\hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f}{}\label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f}\index{PDF@{PDF}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a2e354c74f4a5e1b60c8c3551bf0bd3fa}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf}} \$dompdf, Config\+Repository \$config, \mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}} \$files, View\+Factory \$view)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a55367a12bfaf4d3e0f7385fcfc6b945e}{get\+Dom\+PDF}} ()
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_af2a7d8bfd20b3a5a0f0325e17dc67df4}{set\+Warnings}} (bool \$warnings)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_af62f1035b9cfa2302bc1ecb3633eb595}{load\+HTML}} (string \$string, ?string \$encoding=null)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a5ee773feb0a60a342d2cf395771829b0}{load\+File}} (string \$file)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ac9823a816416e33033076e6a477093f8}{add\+Info}} (array \$info)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a7f228db81fadf4f39c4e64b2b6cd50e6}{load\+View}} (string \$view, array \$data=\mbox{[}$\,$\mbox{]}, array \$merge\+Data=\mbox{[}$\,$\mbox{]}, ?string \$encoding=null)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a35249a828afb79c4fe9959a35d4f89b4}{set\+Option}} (\$attribute, \$value=null)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a915a09f6359f0d9187c299b900b01cb9}{set\+Options}} (array \$options, bool \$merge\+With\+Defaults=false)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a5930841cd316bebb7a021aa68503bc3d}{output}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a6bf78f479b4a50e49a52cd58c57c7c41}{save}} (string \$filename, ?string \$disk=null)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ab00491865cad86a51c874894d9ce0fe8}{download}} (string \$filename=\textquotesingle{}document.\+pdf\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ad6bc72160246d1225e882fd2ab7df309}{stream}} (string \$filename=\textquotesingle{}document.\+pdf\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_afde88292c44dc59faf017738dae6dffb}{render}} ()
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a580fa2ce7d8dd46f1492782b3adfd5b8}{set\+Encryption}} (string \$password, string \$ownerpassword=\textquotesingle{}\textquotesingle{}, array \$pc=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ac565bd6a9d062c73a0a0db7afe0ffea9}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a6ebd9af4d3a727d84d201cb5d8271afa}{convert\+Entities}} (string \$subject)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ae09e068e8bb7b9cf08d9c2430e40f055}{fallback\+Name}} (string \$filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a43a29153c5521d1c78e68e511d4d73a6}{\$dompdf}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a9590b15215a21e9b42eb546aeef79704}{\$files}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_acccf2eac8663e0cebe8101e90fbab089}{\$view}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a3d89bc8b1c394034068825d3229e9bb8}{\$rendered}} = false
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_abd8e4e63320f2a4b419fb1552760d06e}{\$show\+Warnings}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a4d831c662051c46f3b812a40d16386b9}{\$public\+\_\+path}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a2e354c74f4a5e1b60c8c3551bf0bd3fa}\index{PDF@{PDF}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a2e354c74f4a5e1b60c8c3551bf0bd3fa} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf}}}]{\$dompdf}{, }\item[{Config\+Repository}]{\$config}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}}}]{\$files}{, }\item[{View\+Factory}]{\$view}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ac565bd6a9d062c73a0a0db7afe0ffea9}\index{PDF@{PDF}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ac565bd6a9d062c73a0a0db7afe0ffea9} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically handle calls into the dompdf instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this\texorpdfstring{$\vert$}{|}mixed 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ac9823a816416e33033076e6a477093f8}\index{PDF@{PDF}!addInfo@{addInfo}}
+\index{addInfo@{addInfo}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{addInfo()}{addInfo()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ac9823a816416e33033076e6a477093f8} 
+add\+Info (\begin{DoxyParamCaption}\item[{array}]{\$info}{}\end{DoxyParamCaption})}
+
+Add metadata info 
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,string$>$} & \$info \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a6ebd9af4d3a727d84d201cb5d8271afa}\index{PDF@{PDF}!convertEntities@{convertEntities}}
+\index{convertEntities@{convertEntities}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{convertEntities()}{convertEntities()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a6ebd9af4d3a727d84d201cb5d8271afa} 
+convert\+Entities (\begin{DoxyParamCaption}\item[{string}]{\$subject}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ab00491865cad86a51c874894d9ce0fe8}\index{PDF@{PDF}!download@{download}}
+\index{download@{download}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{download()}{download()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ab00491865cad86a51c874894d9ce0fe8} 
+download (\begin{DoxyParamCaption}\item[{string}]{\$filename}{ = {\ttfamily \textquotesingle{}document.pdf\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Make the \doxylink{class_p_d_f}{PDF} downloadable by the user \Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ae09e068e8bb7b9cf08d9c2430e40f055}\index{PDF@{PDF}!fallbackName@{fallbackName}}
+\index{fallbackName@{fallbackName}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{fallbackName()}{fallbackName()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ae09e068e8bb7b9cf08d9c2430e40f055} 
+fallback\+Name (\begin{DoxyParamCaption}\item[{string}]{\$filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Make a safe fallback filename \Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a55367a12bfaf4d3e0f7385fcfc6b945e}\index{PDF@{PDF}!getDomPDF@{getDomPDF}}
+\index{getDomPDF@{getDomPDF}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{getDomPDF()}{getDomPDF()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a55367a12bfaf4d3e0f7385fcfc6b945e} 
+get\+Dom\+PDF (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Dom\+PDF instance \Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a5ee773feb0a60a342d2cf395771829b0}\index{PDF@{PDF}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a5ee773feb0a60a342d2cf395771829b0} 
+load\+File (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})}
+
+Load a HTML file \Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_af62f1035b9cfa2302bc1ecb3633eb595}\index{PDF@{PDF}!loadHTML@{loadHTML}}
+\index{loadHTML@{loadHTML}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{loadHTML()}{loadHTML()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_af62f1035b9cfa2302bc1ecb3633eb595} 
+load\+HTML (\begin{DoxyParamCaption}\item[{string}]{\$string}{, }\item[{?string}]{\$encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Load a HTML string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$encoding} & Not used yet \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a7f228db81fadf4f39c4e64b2b6cd50e6}\index{PDF@{PDF}!loadView@{loadView}}
+\index{loadView@{loadView}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{loadView()}{loadView()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a7f228db81fadf4f39c4e64b2b6cd50e6} 
+load\+View (\begin{DoxyParamCaption}\item[{string}]{\$view}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$merge\+Data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Load a \doxylink{class_view}{View} and convert to HTML 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string,mixed$>$} & \$data \\
+\hline
+ & {\em array$<$string,mixed$>$} & \$merge\+Data \\
+\hline
+string | null & {\em \$encoding} & Not used yet \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a5930841cd316bebb7a021aa68503bc3d}\index{PDF@{PDF}!output@{output}}
+\index{output@{output}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a5930841cd316bebb7a021aa68503bc3d} 
+output (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Output the \doxylink{class_p_d_f}{PDF} as a string.
+
+The options parameter controls the output. Accepted options are\+:
+
+\textquotesingle{}compress\textquotesingle{} = \texorpdfstring{$>$}{>} 1 or 0 -\/ apply content stream compression, this is on (1) by default
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,int$>$} & \$options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The rendered \doxylink{class_p_d_f}{PDF} as string 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_afde88292c44dc59faf017738dae6dffb}\index{PDF@{PDF}!render@{render}}
+\index{render@{render}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_afde88292c44dc59faf017738dae6dffb} 
+render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Render the \doxylink{class_p_d_f}{PDF} \Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a6bf78f479b4a50e49a52cd58c57c7c41}\index{PDF@{PDF}!save@{save}}
+\index{save@{save}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a6bf78f479b4a50e49a52cd58c57c7c41} 
+save (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{?string}]{\$disk}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Save the \doxylink{class_p_d_f}{PDF} to a file \Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a580fa2ce7d8dd46f1492782b3adfd5b8}\index{PDF@{PDF}!setEncryption@{setEncryption}}
+\index{setEncryption@{setEncryption}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{setEncryption()}{setEncryption()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a580fa2ce7d8dd46f1492782b3adfd5b8} 
+set\+Encryption (\begin{DoxyParamCaption}\item[{string}]{\$password}{, }\item[{string}]{\$ownerpassword}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{array}]{\$pc}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$} & \$pc \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a35249a828afb79c4fe9959a35d4f89b4}\index{PDF@{PDF}!setOption@{setOption}}
+\index{setOption@{setOption}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{setOption()}{setOption()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a35249a828afb79c4fe9959a35d4f89b4} 
+set\+Option (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set/\+Change an option (or array of options) in \doxylink{namespace_dompdf}{Dompdf}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string,mixed$>$\texorpdfstring{$\vert$}{|}string} & \$attribute \\
+\hline
+null | mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a915a09f6359f0d9187c299b900b01cb9}\index{PDF@{PDF}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a915a09f6359f0d9187c299b900b01cb9} 
+set\+Options (\begin{DoxyParamCaption}\item[{array}]{\$options}{, }\item[{bool}]{\$merge\+With\+Defaults}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Replace all the Options from Dom\+PDF
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$options \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_af2a7d8bfd20b3a5a0f0325e17dc67df4}\index{PDF@{PDF}!setWarnings@{setWarnings}}
+\index{setWarnings@{setWarnings}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{setWarnings()}{setWarnings()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_af2a7d8bfd20b3a5a0f0325e17dc67df4} 
+set\+Warnings (\begin{DoxyParamCaption}\item[{bool}]{\$warnings}{}\end{DoxyParamCaption})}
+
+Show or hide warnings \Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ad6bc72160246d1225e882fd2ab7df309}\index{PDF@{PDF}!stream@{stream}}
+\index{stream@{stream}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_ad6bc72160246d1225e882fd2ab7df309} 
+stream (\begin{DoxyParamCaption}\item[{string}]{\$filename}{ = {\ttfamily \textquotesingle{}document.pdf\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Return a response with the \doxylink{class_p_d_f}{PDF} to show in the browser 
+
+\label{doc-variable-members}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a49c7011be9c979d9174c52a8b83e5d8e}\index{PDF@{PDF}!\$config@{\$config}}
+\index{\$config@{\$config}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{\$config}{\$config}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a49c7011be9c979d9174c52a8b83e5d8e} 
+\$config\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a43a29153c5521d1c78e68e511d4d73a6}\index{PDF@{PDF}!\$dompdf@{\$dompdf}}
+\index{\$dompdf@{\$dompdf}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{\$dompdf}{\$dompdf}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a43a29153c5521d1c78e68e511d4d73a6} 
+\$dompdf\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a9590b15215a21e9b42eb546aeef79704}\index{PDF@{PDF}!\$files@{\$files}}
+\index{\$files@{\$files}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{\$files}{\$files}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a9590b15215a21e9b42eb546aeef79704} 
+\$files\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a4d831c662051c46f3b812a40d16386b9}\index{PDF@{PDF}!\$public\_path@{\$public\_path}}
+\index{\$public\_path@{\$public\_path}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{\$public\_path}{\$public\_path}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a4d831c662051c46f3b812a40d16386b9} 
+\$public\+\_\+path\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a3d89bc8b1c394034068825d3229e9bb8}\index{PDF@{PDF}!\$rendered@{\$rendered}}
+\index{\$rendered@{\$rendered}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{\$rendered}{\$rendered}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_a3d89bc8b1c394034068825d3229e9bb8} 
+\$rendered = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_abd8e4e63320f2a4b419fb1552760d06e}\index{PDF@{PDF}!\$showWarnings@{\$showWarnings}}
+\index{\$showWarnings@{\$showWarnings}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{\$showWarnings}{\$showWarnings}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_abd8e4e63320f2a4b419fb1552760d06e} 
+\$show\+Warnings\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_acccf2eac8663e0cebe8101e90fbab089}\index{PDF@{PDF}!\$view@{\$view}}
+\index{\$view@{\$view}!PDF@{PDF}}
+\doxysubsubsection{\texorpdfstring{\$view}{\$view}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_dom_p_d_f_1_1_p_d_f_acccf2eac8663e0cebe8101e90fbab089} 
+\$view\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/barryvdh/laravel-\/dompdf/src/\mbox{\hyperlink{_pdf_8php}{PDF.\+php}}\end{DoxyCompactItemize}

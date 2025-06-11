@@ -1,0 +1,111 @@
+\doxysection{Register\+Providers Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers}{}\label{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers}\index{RegisterProviders@{RegisterProviders}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a3e9e10673efcacfb7e55f67c35296537}{bootstrap}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}} \$app)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_ac440463be611905176f2bf1ea53868fc}{merge}} (array \$providers, ?string \$bootstrap\+Provider\+Path=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a0904294c306d5c182f2ffbc8b939bfae}{flush\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a7a8941afe1aee6eb2b3d8c878e539ec4}{merge\+Additional\+Providers}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}} \$app)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a2bd633c5fafa49324cd2e560ef36549a}{\$merge}} = \mbox{[}$\,$\mbox{]}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a659b1e680c83a70328e159100841f3ea}{\$bootstrap\+Provider\+Path}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a3e9e10673efcacfb7e55f67c35296537}\index{RegisterProviders@{RegisterProviders}!bootstrap@{bootstrap}}
+\index{bootstrap@{bootstrap}!RegisterProviders@{RegisterProviders}}
+\doxysubsubsection{\texorpdfstring{bootstrap()}{bootstrap()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a3e9e10673efcacfb7e55f67c35296537} 
+bootstrap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}}}]{\$app}{}\end{DoxyParamCaption})}
+
+Bootstrap the given application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a0904294c306d5c182f2ffbc8b939bfae}\index{RegisterProviders@{RegisterProviders}!flushState@{flushState}}
+\index{flushState@{flushState}!RegisterProviders@{RegisterProviders}}
+\doxysubsubsection{\texorpdfstring{flushState()}{flushState()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a0904294c306d5c182f2ffbc8b939bfae} 
+flush\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Flush the bootstrapper\textquotesingle{}s global state.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_ac440463be611905176f2bf1ea53868fc}\index{RegisterProviders@{RegisterProviders}!merge@{merge}}
+\index{merge@{merge}!RegisterProviders@{RegisterProviders}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_ac440463be611905176f2bf1ea53868fc} 
+merge (\begin{DoxyParamCaption}\item[{array}]{\$providers}{, }\item[{?string}]{\$bootstrap\+Provider\+Path}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Merge the given providers into the provider configuration before registration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$providers} & \\
+\hline
+string | null & {\em \$bootstrap\+Provider\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a7a8941afe1aee6eb2b3d8c878e539ec4}\index{RegisterProviders@{RegisterProviders}!mergeAdditionalProviders@{mergeAdditionalProviders}}
+\index{mergeAdditionalProviders@{mergeAdditionalProviders}!RegisterProviders@{RegisterProviders}}
+\doxysubsubsection{\texorpdfstring{mergeAdditionalProviders()}{mergeAdditionalProviders()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a7a8941afe1aee6eb2b3d8c878e539ec4} 
+merge\+Additional\+Providers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}}}]{\$app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Merge the additional configured providers into the configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a659b1e680c83a70328e159100841f3ea}\index{RegisterProviders@{RegisterProviders}!\$bootstrapProviderPath@{\$bootstrapProviderPath}}
+\index{\$bootstrapProviderPath@{\$bootstrapProviderPath}!RegisterProviders@{RegisterProviders}}
+\doxysubsubsection{\texorpdfstring{\$bootstrapProviderPath}{\$bootstrapProviderPath}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a659b1e680c83a70328e159100841f3ea} 
+\$bootstrap\+Provider\+Path\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a2bd633c5fafa49324cd2e560ef36549a}\index{RegisterProviders@{RegisterProviders}!\$merge@{\$merge}}
+\index{\$merge@{\$merge}!RegisterProviders@{RegisterProviders}}
+\doxysubsubsection{\texorpdfstring{\$merge}{\$merge}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_a2bd633c5fafa49324cd2e560ef36549a} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bootstrap_1_1_register_providers_ac440463be611905176f2bf1ea53868fc}{merge}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Bootstrap/\mbox{\hyperlink{_register_providers_8php}{Register\+Providers.\+php}}\end{DoxyCompactItemize}

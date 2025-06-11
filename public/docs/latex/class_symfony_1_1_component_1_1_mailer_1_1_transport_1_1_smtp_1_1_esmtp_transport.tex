@@ -1,0 +1,201 @@
+\doxysection{Esmtp\+Transport Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport}\index{EsmtpTransport@{EsmtpTransport}}
+Inheritance diagram for Esmtp\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a6fcb92ccc9c50d72d73b6bb2908db9bc}{set\+Username}} (string \$username)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a81b37a3c9d639574e394f80c1138c75e}{get\+Username}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_ac7a794498cb16cf60b9911d29b2b070e}{set\+Password}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$password)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a04e0957baeb7acde9c0c86556da2d43f}{get\+Password}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_aa347ad32d857e9992755bea2f869b519}{set\+Auto\+Tls}} (bool \$auto\+Tls)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a8aa90d2294886e64bf4391bfef706eb5}{is\+Auto\+Tls}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_afcafc6dfe9b9389e188b1bacae910891}{set\+Authenticators}} (array \$authenticators)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a42370dd3f5043bdd86b9ed97e542bfea}{add\+Authenticator}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_auth_1_1_authenticator_interface}{Authenticator\+Interface}} \$authenticator)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a5dceca60df9682b46543382fe520ba4f}{execute\+Command}} (string \$command, array \$codes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport}{Smtp\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a8465bda617c50b37d54f880f3fc39fe8}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_stream_1_1_abstract_stream}{Abstract\+Stream}} \$stream=null, ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a3e5834ff3daeecd091712270886a16fb}{get\+Stream}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_af6ce7c666d905f1e5cc0a867d60e522f}{set\+Restart\+Threshold}} (int \$threshold, int \$sleep=0)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a953cd271f88caa4525c89130b69df78e}{set\+Ping\+Threshold}} (int \$seconds)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_aded94f464a52768efcd9c87ab19aa7c8}{set\+Local\+Domain}} (string \$domain)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a1627a9f04f0c176a5581eaa08d01cf88}{get\+Local\+Domain}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a25d696d916e4c2862bd7ac1cb998b491}{send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}} \$message, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}} \$envelope=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_aaf11785905da71774e052912d784e3b4}{\+\_\+\+\_\+sleep}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a19dd44fe063cfd1cbafe97452e57666c}{\+\_\+\+\_\+wakeup}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{Abstract\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a8361b3ca6b07f27e2a700c6b784602fc}{\+\_\+\+\_\+construct}} (private ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_ae85719512d9d7ea23ffde7741222fac5}{set\+Max\+Per\+Second}} (float \$rate)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_aef6a344a8de433b50039668ea77ed506}{get\+Capabilities}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a576674f4542d9cc65342fc45b40f7bec}{server\+Supports\+Smtp\+Utf8}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport}{Smtp\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_af630c1bb1525b903ff8618f494c58c3c}{parse\+Message\+Id}} (string \$mta\+Result)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_ab2a6fbf236a5d081eacb4418f581010c}{do\+Send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}} \$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{Abstract\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a7120af2abf2de07e224546c0cd9bed28}{stringify\+Addresses}} (array \$addresses)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a2321df4f2f7d188b92b96fe63dc71a90}{get\+Logger}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sends Emails over SMTP with ESMTP support.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a42370dd3f5043bdd86b9ed97e542bfea}\index{EsmtpTransport@{EsmtpTransport}!addAuthenticator@{addAuthenticator}}
+\index{addAuthenticator@{addAuthenticator}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{addAuthenticator()}{addAuthenticator()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a42370dd3f5043bdd86b9ed97e542bfea} 
+add\+Authenticator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_auth_1_1_authenticator_interface}{Authenticator\+Interface}}}]{\$authenticator}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a5dceca60df9682b46543382fe520ba4f}\index{EsmtpTransport@{EsmtpTransport}!executeCommand@{executeCommand}}
+\index{executeCommand@{executeCommand}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{executeCommand()}{executeCommand()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a5dceca60df9682b46543382fe520ba4f} 
+execute\+Command (\begin{DoxyParamCaption}\item[{string}]{\$command}{, }\item[{array}]{\$codes}{}\end{DoxyParamCaption})}
+
+Runs a command against the stream, expecting the given response codes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int\mbox{[}$\,$\mbox{]} & {\em \$codes} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Transport\+Exception} & when an invalid response if received \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a5dceca60df9682b46543382fe520ba4f}{Smtp\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_aef6a344a8de433b50039668ea77ed506}\index{EsmtpTransport@{EsmtpTransport}!getCapabilities@{getCapabilities}}
+\index{getCapabilities@{getCapabilities}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getCapabilities()}{getCapabilities()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_aef6a344a8de433b50039668ea77ed506} 
+get\+Capabilities (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a04e0957baeb7acde9c0c86556da2d43f}\index{EsmtpTransport@{EsmtpTransport}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a04e0957baeb7acde9c0c86556da2d43f} 
+get\+Password (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a81b37a3c9d639574e394f80c1138c75e}\index{EsmtpTransport@{EsmtpTransport}!getUsername@{getUsername}}
+\index{getUsername@{getUsername}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getUsername()}{getUsername()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a81b37a3c9d639574e394f80c1138c75e} 
+get\+Username (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a8aa90d2294886e64bf4391bfef706eb5}\index{EsmtpTransport@{EsmtpTransport}!isAutoTls@{isAutoTls}}
+\index{isAutoTls@{isAutoTls}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{isAutoTls()}{isAutoTls()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a8aa90d2294886e64bf4391bfef706eb5} 
+is\+Auto\+Tls (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a576674f4542d9cc65342fc45b40f7bec}\index{EsmtpTransport@{EsmtpTransport}!serverSupportsSmtpUtf8@{serverSupportsSmtpUtf8}}
+\index{serverSupportsSmtpUtf8@{serverSupportsSmtpUtf8}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{serverSupportsSmtpUtf8()}{serverSupportsSmtpUtf8()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a576674f4542d9cc65342fc45b40f7bec} 
+server\+Supports\+Smtp\+Utf8 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a576674f4542d9cc65342fc45b40f7bec}{Smtp\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_afcafc6dfe9b9389e188b1bacae910891}\index{EsmtpTransport@{EsmtpTransport}!setAuthenticators@{setAuthenticators}}
+\index{setAuthenticators@{setAuthenticators}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setAuthenticators()}{setAuthenticators()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_afcafc6dfe9b9389e188b1bacae910891} 
+set\+Authenticators (\begin{DoxyParamCaption}\item[{array}]{\$authenticators}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_aa347ad32d857e9992755bea2f869b519}\index{EsmtpTransport@{EsmtpTransport}!setAutoTls@{setAutoTls}}
+\index{setAutoTls@{setAutoTls}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setAutoTls()}{setAutoTls()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_aa347ad32d857e9992755bea2f869b519} 
+set\+Auto\+Tls (\begin{DoxyParamCaption}\item[{bool}]{\$auto\+Tls}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_ac7a794498cb16cf60b9911d29b2b070e}\index{EsmtpTransport@{EsmtpTransport}!setPassword@{setPassword}}
+\index{setPassword@{setPassword}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setPassword()}{setPassword()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_ac7a794498cb16cf60b9911d29b2b070e} 
+set\+Password (\begin{DoxyParamCaption}\item[{\# string}]{\$password}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a6fcb92ccc9c50d72d73b6bb2908db9bc}\index{EsmtpTransport@{EsmtpTransport}!setUsername@{setUsername}}
+\index{setUsername@{setUsername}!EsmtpTransport@{EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setUsername()}{setUsername()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport_a6fcb92ccc9c50d72d73b6bb2908db9bc} 
+set\+Username (\begin{DoxyParamCaption}\item[{string}]{\$username}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/mailer/\+Transport/\+Smtp/\mbox{\hyperlink{_esmtp_transport_8php}{Esmtp\+Transport.\+php}}\end{DoxyCompactItemize}

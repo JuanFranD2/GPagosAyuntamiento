@@ -1,0 +1,83 @@
+\doxysection{Result\+Printer Class Reference}
+\hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer}{}\label{class_para_test_1_1_wrapper_runner_1_1_result_printer}\index{ResultPrinter@{ResultPrinter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_result_printer_aba414852af420c3864c6b713c56a86a0}{\+\_\+\+\_\+construct}} (private readonly \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output, private readonly \mbox{\hyperlink{class_para_test_1_1_options}{Options}} \$options)
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_result_printer_a5b73ef4bc89fb937e07e7d8ed23a3ae5}{set\+Test\+Count}} (int \$test\+Count)
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_result_printer_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_result_printer_acd79f5931d4149996897baf44822e3a1}{print\+Feedback}} (Spl\+File\+Info \$progress\+File, Spl\+File\+Info \$output\+File, Spl\+File\+Info\texorpdfstring{$\vert$}{|}null \$teamcity\+File)
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_result_printer_ae7608a921206e58ece25a2b21bd9c919}{print\+Results}} (\mbox{\hyperlink{class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result}{Test\+Result}} \$test\+Result, array \$teamcity\+Files, array \$testdox\+Files)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{interface_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_printer}{Printer}} \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_result_printer_a4366ed920df887b483769f598f53c677}{\$printer}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer_aba414852af420c3864c6b713c56a86a0}\index{ResultPrinter@{ResultPrinter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_result_printer_aba414852af420c3864c6b713c56a86a0} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}}}]{\$output}{, }\item[{private readonly \mbox{\hyperlink{class_para_test_1_1_options}{Options}}}]{\$options}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer_acd79f5931d4149996897baf44822e3a1}\index{ResultPrinter@{ResultPrinter}!printFeedback@{printFeedback}}
+\index{printFeedback@{printFeedback}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{printFeedback()}{printFeedback()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_result_printer_acd79f5931d4149996897baf44822e3a1} 
+print\+Feedback (\begin{DoxyParamCaption}\item[{Spl\+File\+Info}]{\$progress\+File}{, }\item[{Spl\+File\+Info}]{\$output\+File}{, }\item[{Spl\+File\+Info\texorpdfstring{$\vert$}{|}null}]{\$teamcity\+File}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer_ae7608a921206e58ece25a2b21bd9c919}\index{ResultPrinter@{ResultPrinter}!printResults@{printResults}}
+\index{printResults@{printResults}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{printResults()}{printResults()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_result_printer_ae7608a921206e58ece25a2b21bd9c919} 
+print\+Results (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result}{Test\+Result}}}]{\$test\+Result}{, }\item[{array}]{\$teamcity\+Files}{, }\item[{array}]{\$testdox\+Files}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$\+Spl\+File\+Info$>$} & \$teamcity\+Files \\
+\hline
+{\em list$<$\+Spl\+File\+Info$>$} & \$testdox\+Files \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer_a5b73ef4bc89fb937e07e7d8ed23a3ae5}\index{ResultPrinter@{ResultPrinter}!setTestCount@{setTestCount}}
+\index{setTestCount@{setTestCount}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{setTestCount()}{setTestCount()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_result_printer_a5b73ef4bc89fb937e07e7d8ed23a3ae5} 
+set\+Test\+Count (\begin{DoxyParamCaption}\item[{int}]{\$test\+Count}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer_af8fa59992209e36dccb3eefb0f75531f}\index{ResultPrinter@{ResultPrinter}!start@{start}}
+\index{start@{start}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_result_printer_af8fa59992209e36dccb3eefb0f75531f} 
+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_result_printer_a4366ed920df887b483769f598f53c677}\index{ResultPrinter@{ResultPrinter}!\$printer@{\$printer}}
+\index{\$printer@{\$printer}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{\$printer}{\$printer}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_result_printer_a4366ed920df887b483769f598f53c677} 
+readonly \mbox{\hyperlink{interface_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_printer}{Printer}} \$printer}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/brianium/paratest/src/\+Wrapper\+Runner/\mbox{\hyperlink{brianium_2paratest_2src_2_wrapper_runner_2_result_printer_8php}{Result\+Printer.\+php}}\end{DoxyCompactItemize}

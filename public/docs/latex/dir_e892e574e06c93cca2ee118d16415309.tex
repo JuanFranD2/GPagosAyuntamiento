@@ -1,0 +1,57 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/php-\/font-\/lib Directory Reference}
+\hypertarget{dir_e892e574e06c93cca2ee118d16415309}{}\label{dir_e892e574e06c93cca2ee118d16415309}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/dompdf/php-\/font-\/lib Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/dompdf/php-\/font-\/lib Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_536ea724af6f3b1545107d127e52ceae}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}!\mbox{[}\doxylink{namespace_p_h_p_unit}{PHPUnit} tests\mbox{]}(\href{https://github.com/dompdf/php-font-lib/actions/workflows/phpunit.yml/badge.svg}{\texttt{https\+://github.\+com/dompdf/php-\/font-\/lib/actions/workflows/phpunit.\+yml/badge.\+svg}})\mbox{]}(\href{https://github.com/dompdf/php-font-lib/actions/workflows/phpunit.yml}{\texttt{https\+://github.\+com/dompdf/php-\/font-\/lib/actions/workflows/phpunit.\+yml}})\hypertarget{README.md_autotoc_md8830}{}\doxysubsection{\texorpdfstring{PHP Font Lib}{PHP Font Lib}}\label{README.md_autotoc_md8830}
+This library can be used to\+:
+\begin{DoxyItemize}
+\item Read True\+Type, Open\+Type (with True\+Type glyphs), WOFF font files
+\item Extract basic info (name, style, etc)
+\item Extract advanced info (horizontal metrics, glyph names, glyph shapes, etc)
+\item Make an Adobe Font Metrics (AFM) file from a font
+\end{DoxyItemize}
+
+This project was initiated by the need to read font files in the \href{https://github.com/dompdf/dompdf}{\texttt{DOMPDF project}}.\hypertarget{README.md_autotoc_md8831}{}\doxysubsubsection{\texorpdfstring{Usage Example}{Usage Example}}\label{README.md_autotoc_md8831}
+\hypertarget{README.md_autotoc_md8832}{}\doxysubsubsubsection{\texorpdfstring{Base font information}{Base font information}}\label{README.md_autotoc_md8832}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$font\ =\ \(\backslash\)FontLib\(\backslash\)Font::load(\textcolor{stringliteral}{'fontfile.ttf'});}
+\DoxyCodeLine{\$font-\/>parse();\ \ \textcolor{comment}{//\ for\ getFontWeight()\ to\ work\ this\ call\ must\ be\ done\ first!}}
+\DoxyCodeLine{echo\ \$font-\/>getFontName()\ .\textcolor{stringliteral}{'<br>'};}
+\DoxyCodeLine{echo\ \$font-\/>getFontSubfamily()\ .\textcolor{stringliteral}{'<br>'};}
+\DoxyCodeLine{echo\ \$font-\/>getFontSubfamilyID()\ .\textcolor{stringliteral}{'<br>'};}
+\DoxyCodeLine{echo\ \$font-\/>getFontFullName()\ .\textcolor{stringliteral}{'<br>'};}
+\DoxyCodeLine{echo\ \$font-\/>getFontVersion()\ .\textcolor{stringliteral}{'<br>'};}
+\DoxyCodeLine{echo\ \$font-\/>getFontWeight()\ .\textcolor{stringliteral}{'<br>'};}
+\DoxyCodeLine{echo\ \$font-\/>getFontPostscriptName()\ .\textcolor{stringliteral}{'<br>'};}
+\DoxyCodeLine{\$font-\/>close();}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8833}{}\doxysubsubsubsection{\texorpdfstring{Font Metrics Generation}{Font Metrics Generation}}\label{README.md_autotoc_md8833}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$font\ =\ FontLib\(\backslash\)Font::load(\textcolor{stringliteral}{'fontfile.ttf'});}
+\DoxyCodeLine{\$font-\/>parse();}
+\DoxyCodeLine{\$font-\/>saveAdobeFontMetrics(\textcolor{stringliteral}{'fontfile.ufm'});}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8834}{}\doxysubsubsubsection{\texorpdfstring{Create a font subset}{Create a font subset}}\label{README.md_autotoc_md8834}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$font\ =\ FontLib\(\backslash\)Font::load(\textcolor{stringliteral}{'fontfile.ttf'});}
+\DoxyCodeLine{\$font-\/>parse();}
+\DoxyCodeLine{\$font-\/>setSubset(\textcolor{stringliteral}{"{}abcdefghijklmnopqrstuvwxyz\ ABCDEFGHIJKLMNOPQRSTUVWXYZ.:,;'\ (!?)+-\/*/==\ 1234567890"{}});\ \textcolor{comment}{//\ characters\ to\ include}}
+\DoxyCodeLine{\$font-\/>reduce();}
+\DoxyCodeLine{touch(\textcolor{stringliteral}{'fontfile.subset.ttf'});}
+\DoxyCodeLine{\$font-\/>open(\textcolor{stringliteral}{'fontfile.subset.ttf'},\ \mbox{\hyperlink{namespace_font_lib}{FontLib}}\(\backslash\)BinaryStream::modeReadWrite);}
+\DoxyCodeLine{\$font-\/>encode(array(\textcolor{stringliteral}{"{}OS/2"{}}));}
+\DoxyCodeLine{\$font-\/>close();}
+
+\end{DoxyCode}
+ 

@@ -1,0 +1,64 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpunit/php-\/code-\/coverage Directory Reference}
+\hypertarget{dir_3cb9082886f5971cdbb97be5ac2b0d7c}{}\label{dir_3cb9082886f5971cdbb97be5ac2b0d7c}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/phpunit/php-\/code-\/coverage Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/phpunit/php-\/code-\/coverage Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_b908e11998369f9b9019c9c3521017ac}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md10160}{}\doxysubsection{\texorpdfstring{phpunit/php-\/code-\/coverage}{phpunit/php-\/code-\/coverage}}\label{README.md_autotoc_md10160}
+\href{https://packagist.org/packages/phpunit/php-code-coverage}{\texttt{}} \href{https://github.com/sebastianbergmann/php-code-coverage/actions}{\texttt{}} \href{https://codecov.io/gh/sebastianbergmann/php-code-coverage}{\texttt{}}
+
+Provides collection, processing, and rendering functionality for PHP code coverage information.\hypertarget{README.md_autotoc_md10161}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md10161}
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\texttt{Composer}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ phpunit/php-\/code-\/coverage}
+
+\end{DoxyCode}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ -\/-\/dev\ phpunit/php-\/code-\/coverage}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10162}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md10162}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}\ declare(strict\_types=1);}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter}{SebastianBergmann\(\backslash\)CodeCoverage\(\backslash\)Filter}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_driver_1_1_selector}{SebastianBergmann\(\backslash\)CodeCoverage\(\backslash\)Driver\(\backslash\)Selector}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage}{SebastianBergmann\(\backslash\)CodeCoverage\(\backslash\)CodeCoverage}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_report_1_1_html_1_1_facade}{SebastianBergmann\(\backslash\)CodeCoverage\(\backslash\)Report\(\backslash\)Html\(\backslash\)Facade}}\ as\ HtmlReport;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$filter\ =\ \textcolor{keyword}{new}\ Filter;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$filter-\/>includeFiles(}
+\DoxyCodeLine{\ \ \ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'/path/to/file.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'/path/to/another\_file.php'},}
+\DoxyCodeLine{\ \ \ \ ]}
+\DoxyCodeLine{);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$coverage\ =\ \textcolor{keyword}{new}\ CodeCoverage(}
+\DoxyCodeLine{\ \ \ \ (\textcolor{keyword}{new}\ Selector)-\/>forLineCoverage(\$filter),}
+\DoxyCodeLine{\ \ \ \ \$filter}
+\DoxyCodeLine{);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$coverage-\/>start(\textcolor{stringliteral}{'<name\ of\ test>'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ ...}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$coverage-\/>stop();}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{(\textcolor{keyword}{new}\ HtmlReport)-\/>process(\$coverage,\ \textcolor{stringliteral}{'/tmp/code-\/coverage-\/report'});}
+
+\end{DoxyCode}
+ 

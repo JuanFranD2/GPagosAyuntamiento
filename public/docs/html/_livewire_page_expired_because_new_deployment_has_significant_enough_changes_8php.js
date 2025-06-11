@@ -1,0 +1,4 @@
+var _livewire_page_expired_because_new_deployment_has_significant_enough_changes_8php =
+[
+    [ "LivewirePageExpiredBecauseNewDeploymentHasSignificantEnoughChanges", "class_livewire_1_1_exceptions_1_1_livewire_page_expired_because_new_deployment_has_significant_enough_changes.html", "class_livewire_1_1_exceptions_1_1_livewire_page_expired_because_new_deployment_has_significant_enough_changes" ]
+];

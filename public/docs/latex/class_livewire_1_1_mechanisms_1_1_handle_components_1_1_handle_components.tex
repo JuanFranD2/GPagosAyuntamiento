@@ -1,0 +1,293 @@
+\doxysection{Handle\+Components Class Reference}
+\hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components}{}\label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components}\index{HandleComponents@{HandleComponents}}
+Inheritance diagram for Handle\+Components\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a634a2baaeb8bc2dbb320c4391d8b0215}{register\+Property\+Synthesizer}} (\$synth)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a143c9e3272c636f821fcc2de56736010}{mount}} (\$name, \$params=\mbox{[}$\,$\mbox{]}, \$key=null)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a40eea495b8c7963b6ce5518229c580cd}{update}} (\$\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_ab399fff1f1272d928c54ad31c26a8c50}{snapshot}}, \$updates, \$calls)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9c3d733428af907c1949c32ab6b552bb}{from\+Snapshot}} (\$\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_ab399fff1f1272d928c54ad31c26a8c50}{snapshot}})
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_ab399fff1f1272d928c54ad31c26a8c50}{snapshot}} (\$component, \$context=null)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_aa43dc37f1f4a9a9b94c8476bb027a7e5}{update\+Property}} (\$component, \$path, \$value, \$context)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a4975f851b43535e8c37062abbd84302e}{find\+Synth}} (\$key\+Or\+Target, \$component)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a536805fb2106dd356a6959bedaf65a3b}{property\+Synth}} (\$key\+Or\+Target, \$context, \$path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_mechanism}{Mechanism}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_mechanism_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_mechanism_a8814ea4b5beba763c570b4818980814e}{boot}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_acfbb2bf2350e9129b4353e948e2ab977}{\$render\+Stack}} = \mbox{[}$\,$\mbox{]}
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9056e2f369117ffed5998f4beb0467b3}{\$component\+Stack}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_afa9751335df878fe9a6501a33d693190}{short\+Circuit\+Mount}} (\$name, \$params, \$key, \$parent)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a422d2fe9e671a9d53db3e11621a455be}{dehydrate\+Properties}} (\$component, \$context)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a92ebd7db6b2f25b1120e6e8962eb4e00}{dehydrate}} (\$target, \$context, \$path)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a236229b4bc925bcd0718ef869c7dd3d0}{hydrate\+Properties}} (\$component, \$data, \$context)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a789cefeead66dc3c8061aeaab479fc2e}{hydrate}} (\$value\+Or\+Tuple, \$context, \$path)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a1f845efa386150096e833635e90f5734}{render}} (\$component, \$default=null)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a08597f798d694a6b9667f9eaad6c3ec2}{get\+View}} (\$component)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a3d077c38a7ccfae7c5ba2bedbbc74aa2}{track\+In\+Render\+Stack}} (\$component, \$callback)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a4f759fc3a2cd7de1c5fb50384dbd8a17}{update\+Properties}} (\$component, \$updates, \$data, \$context)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a6fdef66096f94c7241d1f6ca1a2abc34}{hydrate\+For\+Update}} (\$raw, \$path, \$value, \$context)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a8e0beff4a503dbcf4306b70db898d2af}{get\+Meta\+For\+Path}} (\$raw, \$path)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9d4d13a9b4fad4bb1c68ac856d22f42c}{recursively\+Set\+Value}} (\$base\+Property, \$target, \$leaf\+Value, \$segments, \$index=0, \$context=null)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_abfd3a17e18d30bce347c606202cc5f47}{set\+Component\+Property\+Aware\+Of\+Types}} (\$component, \$property, \$value)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_ae7c59df1b2190070b685067ec00eb10c}{call\+Methods}} (\$root, \$calls, \$context)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_abe82ffe7f8e215bf16ac68105aeddb65}{get\+Synthesizer\+By\+Key}} (\$key, \$context, \$path)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a7635b96e28068d8a067b12d358c078bc}{get\+Synthesizer\+By\+Target}} (\$target, \$context, \$path)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a4f0beb9a253819472f7d90dc60b05e3b}{get\+Synthesizer\+By\+Type}} (\$type, \$context, \$path)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9afc280026db26f5894b27594e09ca62}{push\+Onto\+Component\+Stack}} (\$component)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a395f41d25e5592f18cdf15ac53aa29d8}{pop\+Off\+Component\+Stack}} ()
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a76544e570d443ca219b7f5fa057d144f}{is\+Removal}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a7b24b1a5b376ee5f05c2f5b09c5317c6}{\$property\+Synthesizers}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_ae7c59df1b2190070b685067ec00eb10c}\index{HandleComponents@{HandleComponents}!callMethods@{callMethods}}
+\index{callMethods@{callMethods}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{callMethods()}{callMethods()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_ae7c59df1b2190070b685067ec00eb10c} 
+call\+Methods (\begin{DoxyParamCaption}\item[{}]{\$root}{, }\item[{}]{\$calls}{, }\item[{}]{\$context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a92ebd7db6b2f25b1120e6e8962eb4e00}\index{HandleComponents@{HandleComponents}!dehydrate@{dehydrate}}
+\index{dehydrate@{dehydrate}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{dehydrate()}{dehydrate()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a92ebd7db6b2f25b1120e6e8962eb4e00} 
+dehydrate (\begin{DoxyParamCaption}\item[{}]{\$target}{, }\item[{}]{\$context}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a422d2fe9e671a9d53db3e11621a455be}\index{HandleComponents@{HandleComponents}!dehydrateProperties@{dehydrateProperties}}
+\index{dehydrateProperties@{dehydrateProperties}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{dehydrateProperties()}{dehydrateProperties()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a422d2fe9e671a9d53db3e11621a455be} 
+dehydrate\+Properties (\begin{DoxyParamCaption}\item[{}]{\$component}{, }\item[{}]{\$context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a4975f851b43535e8c37062abbd84302e}\index{HandleComponents@{HandleComponents}!findSynth@{findSynth}}
+\index{findSynth@{findSynth}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{findSynth()}{findSynth()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a4975f851b43535e8c37062abbd84302e} 
+find\+Synth (\begin{DoxyParamCaption}\item[{}]{\$key\+Or\+Target}{, }\item[{}]{\$component}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9c3d733428af907c1949c32ab6b552bb}\index{HandleComponents@{HandleComponents}!fromSnapshot@{fromSnapshot}}
+\index{fromSnapshot@{fromSnapshot}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{fromSnapshot()}{fromSnapshot()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9c3d733428af907c1949c32ab6b552bb} 
+from\+Snapshot (\begin{DoxyParamCaption}\item[{}]{\$snapshot}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a8e0beff4a503dbcf4306b70db898d2af}\index{HandleComponents@{HandleComponents}!getMetaForPath@{getMetaForPath}}
+\index{getMetaForPath@{getMetaForPath}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{getMetaForPath()}{getMetaForPath()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a8e0beff4a503dbcf4306b70db898d2af} 
+get\+Meta\+For\+Path (\begin{DoxyParamCaption}\item[{}]{\$raw}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_abe82ffe7f8e215bf16ac68105aeddb65}\index{HandleComponents@{HandleComponents}!getSynthesizerByKey@{getSynthesizerByKey}}
+\index{getSynthesizerByKey@{getSynthesizerByKey}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{getSynthesizerByKey()}{getSynthesizerByKey()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_abe82ffe7f8e215bf16ac68105aeddb65} 
+get\+Synthesizer\+By\+Key (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$context}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a7635b96e28068d8a067b12d358c078bc}\index{HandleComponents@{HandleComponents}!getSynthesizerByTarget@{getSynthesizerByTarget}}
+\index{getSynthesizerByTarget@{getSynthesizerByTarget}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{getSynthesizerByTarget()}{getSynthesizerByTarget()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a7635b96e28068d8a067b12d358c078bc} 
+get\+Synthesizer\+By\+Target (\begin{DoxyParamCaption}\item[{}]{\$target}{, }\item[{}]{\$context}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a4f0beb9a253819472f7d90dc60b05e3b}\index{HandleComponents@{HandleComponents}!getSynthesizerByType@{getSynthesizerByType}}
+\index{getSynthesizerByType@{getSynthesizerByType}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{getSynthesizerByType()}{getSynthesizerByType()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a4f0beb9a253819472f7d90dc60b05e3b} 
+get\+Synthesizer\+By\+Type (\begin{DoxyParamCaption}\item[{}]{\$type}{, }\item[{}]{\$context}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a08597f798d694a6b9667f9eaad6c3ec2}\index{HandleComponents@{HandleComponents}!getView@{getView}}
+\index{getView@{getView}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{getView()}{getView()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a08597f798d694a6b9667f9eaad6c3ec2} 
+get\+View (\begin{DoxyParamCaption}\item[{}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a789cefeead66dc3c8061aeaab479fc2e}\index{HandleComponents@{HandleComponents}!hydrate@{hydrate}}
+\index{hydrate@{hydrate}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{hydrate()}{hydrate()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a789cefeead66dc3c8061aeaab479fc2e} 
+hydrate (\begin{DoxyParamCaption}\item[{}]{\$value\+Or\+Tuple}{, }\item[{}]{\$context}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a6fdef66096f94c7241d1f6ca1a2abc34}\index{HandleComponents@{HandleComponents}!hydrateForUpdate@{hydrateForUpdate}}
+\index{hydrateForUpdate@{hydrateForUpdate}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{hydrateForUpdate()}{hydrateForUpdate()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a6fdef66096f94c7241d1f6ca1a2abc34} 
+hydrate\+For\+Update (\begin{DoxyParamCaption}\item[{}]{\$raw}{, }\item[{}]{\$path}{, }\item[{}]{\$value}{, }\item[{}]{\$context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a236229b4bc925bcd0718ef869c7dd3d0}\index{HandleComponents@{HandleComponents}!hydrateProperties@{hydrateProperties}}
+\index{hydrateProperties@{hydrateProperties}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{hydrateProperties()}{hydrateProperties()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a236229b4bc925bcd0718ef869c7dd3d0} 
+hydrate\+Properties (\begin{DoxyParamCaption}\item[{}]{\$component}{, }\item[{}]{\$data}{, }\item[{}]{\$context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a76544e570d443ca219b7f5fa057d144f}\index{HandleComponents@{HandleComponents}!isRemoval@{isRemoval}}
+\index{isRemoval@{isRemoval}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{isRemoval()}{isRemoval()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a76544e570d443ca219b7f5fa057d144f} 
+is\+Removal (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a143c9e3272c636f821fcc2de56736010}\index{HandleComponents@{HandleComponents}!mount@{mount}}
+\index{mount@{mount}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{mount()}{mount()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a143c9e3272c636f821fcc2de56736010} 
+mount (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a395f41d25e5592f18cdf15ac53aa29d8}\index{HandleComponents@{HandleComponents}!popOffComponentStack@{popOffComponentStack}}
+\index{popOffComponentStack@{popOffComponentStack}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{popOffComponentStack()}{popOffComponentStack()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a395f41d25e5592f18cdf15ac53aa29d8} 
+pop\+Off\+Component\+Stack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a536805fb2106dd356a6959bedaf65a3b}\index{HandleComponents@{HandleComponents}!propertySynth@{propertySynth}}
+\index{propertySynth@{propertySynth}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{propertySynth()}{propertySynth()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a536805fb2106dd356a6959bedaf65a3b} 
+property\+Synth (\begin{DoxyParamCaption}\item[{}]{\$key\+Or\+Target}{, }\item[{}]{\$context}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9afc280026db26f5894b27594e09ca62}\index{HandleComponents@{HandleComponents}!pushOntoComponentStack@{pushOntoComponentStack}}
+\index{pushOntoComponentStack@{pushOntoComponentStack}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{pushOntoComponentStack()}{pushOntoComponentStack()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9afc280026db26f5894b27594e09ca62} 
+push\+Onto\+Component\+Stack (\begin{DoxyParamCaption}\item[{}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9d4d13a9b4fad4bb1c68ac856d22f42c}\index{HandleComponents@{HandleComponents}!recursivelySetValue@{recursivelySetValue}}
+\index{recursivelySetValue@{recursivelySetValue}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{recursivelySetValue()}{recursivelySetValue()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9d4d13a9b4fad4bb1c68ac856d22f42c} 
+recursively\+Set\+Value (\begin{DoxyParamCaption}\item[{}]{\$base\+Property}{, }\item[{}]{\$target}{, }\item[{}]{\$leaf\+Value}{, }\item[{}]{\$segments}{, }\item[{}]{\$index}{ = {\ttfamily 0}, }\item[{}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a634a2baaeb8bc2dbb320c4391d8b0215}\index{HandleComponents@{HandleComponents}!registerPropertySynthesizer@{registerPropertySynthesizer}}
+\index{registerPropertySynthesizer@{registerPropertySynthesizer}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{registerPropertySynthesizer()}{registerPropertySynthesizer()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a634a2baaeb8bc2dbb320c4391d8b0215} 
+register\+Property\+Synthesizer (\begin{DoxyParamCaption}\item[{}]{\$synth}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a1f845efa386150096e833635e90f5734}\index{HandleComponents@{HandleComponents}!render@{render}}
+\index{render@{render}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a1f845efa386150096e833635e90f5734} 
+render (\begin{DoxyParamCaption}\item[{}]{\$component}{, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_abfd3a17e18d30bce347c606202cc5f47}\index{HandleComponents@{HandleComponents}!setComponentPropertyAwareOfTypes@{setComponentPropertyAwareOfTypes}}
+\index{setComponentPropertyAwareOfTypes@{setComponentPropertyAwareOfTypes}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{setComponentPropertyAwareOfTypes()}{setComponentPropertyAwareOfTypes()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_abfd3a17e18d30bce347c606202cc5f47} 
+set\+Component\+Property\+Aware\+Of\+Types (\begin{DoxyParamCaption}\item[{}]{\$component}{, }\item[{}]{\$property}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_afa9751335df878fe9a6501a33d693190}\index{HandleComponents@{HandleComponents}!shortCircuitMount@{shortCircuitMount}}
+\index{shortCircuitMount@{shortCircuitMount}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{shortCircuitMount()}{shortCircuitMount()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_afa9751335df878fe9a6501a33d693190} 
+short\+Circuit\+Mount (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$params}{, }\item[{}]{\$key}{, }\item[{}]{\$parent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_ab399fff1f1272d928c54ad31c26a8c50}\index{HandleComponents@{HandleComponents}!snapshot@{snapshot}}
+\index{snapshot@{snapshot}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{snapshot()}{snapshot()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_ab399fff1f1272d928c54ad31c26a8c50} 
+snapshot (\begin{DoxyParamCaption}\item[{}]{\$component}{, }\item[{}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a3d077c38a7ccfae7c5ba2bedbbc74aa2}\index{HandleComponents@{HandleComponents}!trackInRenderStack@{trackInRenderStack}}
+\index{trackInRenderStack@{trackInRenderStack}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{trackInRenderStack()}{trackInRenderStack()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a3d077c38a7ccfae7c5ba2bedbbc74aa2} 
+track\+In\+Render\+Stack (\begin{DoxyParamCaption}\item[{}]{\$component}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a40eea495b8c7963b6ce5518229c580cd}\index{HandleComponents@{HandleComponents}!update@{update}}
+\index{update@{update}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a40eea495b8c7963b6ce5518229c580cd} 
+update (\begin{DoxyParamCaption}\item[{}]{\$snapshot}{, }\item[{}]{\$updates}{, }\item[{}]{\$calls}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a4f759fc3a2cd7de1c5fb50384dbd8a17}\index{HandleComponents@{HandleComponents}!updateProperties@{updateProperties}}
+\index{updateProperties@{updateProperties}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{updateProperties()}{updateProperties()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a4f759fc3a2cd7de1c5fb50384dbd8a17} 
+update\+Properties (\begin{DoxyParamCaption}\item[{}]{\$component}{, }\item[{}]{\$updates}{, }\item[{}]{\$data}{, }\item[{}]{\$context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_aa43dc37f1f4a9a9b94c8476bb027a7e5}\index{HandleComponents@{HandleComponents}!updateProperty@{updateProperty}}
+\index{updateProperty@{updateProperty}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{updateProperty()}{updateProperty()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_aa43dc37f1f4a9a9b94c8476bb027a7e5} 
+update\+Property (\begin{DoxyParamCaption}\item[{}]{\$component}{, }\item[{}]{\$path}{, }\item[{}]{\$value}{, }\item[{}]{\$context}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9056e2f369117ffed5998f4beb0467b3}\index{HandleComponents@{HandleComponents}!\$componentStack@{\$componentStack}}
+\index{\$componentStack@{\$componentStack}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{\$componentStack}{\$componentStack}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a9056e2f369117ffed5998f4beb0467b3} 
+\$component\+Stack = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a7b24b1a5b376ee5f05c2f5b09c5317c6}\index{HandleComponents@{HandleComponents}!\$propertySynthesizers@{\$propertySynthesizers}}
+\index{\$propertySynthesizers@{\$propertySynthesizers}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{\$propertySynthesizers}{\$propertySynthesizers}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_a7b24b1a5b376ee5f05c2f5b09c5317c6} 
+\$property\+Synthesizers\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_acfbb2bf2350e9129b4353e948e2ab977}\index{HandleComponents@{HandleComponents}!\$renderStack@{\$renderStack}}
+\index{\$renderStack@{\$renderStack}!HandleComponents@{HandleComponents}}
+\doxysubsubsection{\texorpdfstring{\$renderStack}{\$renderStack}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_handle_components_1_1_handle_components_acfbb2bf2350e9129b4353e948e2ab977} 
+\$render\+Stack = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/livewire/livewire/src/\+Mechanisms/\+Handle\+Components/\mbox{\hyperlink{_handle_components_8php}{Handle\+Components.\+php}}\end{DoxyCompactItemize}

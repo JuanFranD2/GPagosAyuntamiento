@@ -1,0 +1,4 @@
+var _strikethrough_delimiter_processor_8php =
+[
+    [ "StrikethroughDelimiterProcessor", "class_league_1_1_common_mark_1_1_extension_1_1_strikethrough_1_1_strikethrough_delimiter_processor.html", "class_league_1_1_common_mark_1_1_extension_1_1_strikethrough_1_1_strikethrough_delimiter_processor" ]
+];

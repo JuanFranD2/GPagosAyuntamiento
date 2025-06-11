@@ -1,0 +1,236 @@
+\doxysection{Trust\+Proxies Class Reference}
+\hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies}{}\label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies}\index{TrustProxies@{TrustProxies}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_abc042d95f5786d8adcdee22a40a727bd}{handle}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, Closure \$next)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a12e453258585517637e5933b2f7da64c}{at}} (array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a7edba346721565bf53dcc6de5943e0c7}{proxies}})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_ab7a93276c2d82828f3c5dbd707c6436a}{with\+Headers}} (int \$\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_acf17788084df5a3d3415f4d9e346471d}{headers}})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a0904294c306d5c182f2ffbc8b939bfae}{flush\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a7466f1a5de3a1e40eee64858760d4684}{set\+Trusted\+Proxy\+Ip\+Addresses}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a8014cc7465bc4318af033793631d821c}{set\+Trusted\+Proxy\+Ip\+Addresses\+To\+Specific\+Ips}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, array \$trusted\+Ips)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a93700950d3e779c5c59540ce015642d7}{set\+Trusted\+Proxy\+Ip\+Addresses\+To\+The\+Calling\+Ip}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a4bbdd2880e94411b25e2c03cdafee6c7}{get\+Trusted\+Header\+Names}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_acf17788084df5a3d3415f4d9e346471d}{headers}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a7edba346721565bf53dcc6de5943e0c7}{proxies}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a9fed7e7c82160e6b32d7ed4c8193c195}{\$proxies}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a52500036ee807241b8b4b7e2367c49ef}{\$headers}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_aace67733fe9ae138e5418bd6e6b53fa1}{\$always\+Trust\+Proxies}}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_ab98d0f6a2da875dec01d0b9406760c32}{\$always\+Trust\+Headers}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a12e453258585517637e5933b2f7da64c}\index{TrustProxies@{TrustProxies}!at@{at}}
+\index{at@{at}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a12e453258585517637e5933b2f7da64c} 
+at (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$proxies}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Specify the IP addresses of proxies that should always be trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$proxies} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a0904294c306d5c182f2ffbc8b939bfae}\index{TrustProxies@{TrustProxies}!flushState@{flushState}}
+\index{flushState@{flushState}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{flushState()}{flushState()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a0904294c306d5c182f2ffbc8b939bfae} 
+flush\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Flush the state of the middleware.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a4bbdd2880e94411b25e2c03cdafee6c7}\index{TrustProxies@{TrustProxies}!getTrustedHeaderNames@{getTrustedHeaderNames}}
+\index{getTrustedHeaderNames@{getTrustedHeaderNames}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{getTrustedHeaderNames()}{getTrustedHeaderNames()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a4bbdd2880e94411b25e2c03cdafee6c7} 
+get\+Trusted\+Header\+Names (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retrieve trusted header name(s), falling back to defaults if config not set.
+
+\begin{DoxyReturn}{Returns}
+int A bit field of Request\+::\+HEADER\+\_\+\texorpdfstring{$\ast$}{*}, to set which headers to trust from your proxies. 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_abc042d95f5786d8adcdee22a40a727bd}\index{TrustProxies@{TrustProxies}!handle@{handle}}
+\index{handle@{handle}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_abc042d95f5786d8adcdee22a40a727bd} 
+handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{Closure}]{\$next}{}\end{DoxyParamCaption})}
+
+Handle an incoming request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Exception\textbackslash{}\+Http\+Exception \Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_acf17788084df5a3d3415f4d9e346471d}\index{TrustProxies@{TrustProxies}!headers@{headers}}
+\index{headers@{headers}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{headers()}{headers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_acf17788084df5a3d3415f4d9e346471d} 
+headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the trusted headers.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a7edba346721565bf53dcc6de5943e0c7}\index{TrustProxies@{TrustProxies}!proxies@{proxies}}
+\index{proxies@{proxies}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{proxies()}{proxies()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a7edba346721565bf53dcc6de5943e0c7} 
+proxies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the trusted proxies.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a7466f1a5de3a1e40eee64858760d4684}\index{TrustProxies@{TrustProxies}!setTrustedProxyIpAddresses@{setTrustedProxyIpAddresses}}
+\index{setTrustedProxyIpAddresses@{setTrustedProxyIpAddresses}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{setTrustedProxyIpAddresses()}{setTrustedProxyIpAddresses()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a7466f1a5de3a1e40eee64858760d4684} 
+set\+Trusted\+Proxy\+Ip\+Addresses (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the trusted proxies on the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a8014cc7465bc4318af033793631d821c}\index{TrustProxies@{TrustProxies}!setTrustedProxyIpAddressesToSpecificIps@{setTrustedProxyIpAddressesToSpecificIps}}
+\index{setTrustedProxyIpAddressesToSpecificIps@{setTrustedProxyIpAddressesToSpecificIps}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{setTrustedProxyIpAddressesToSpecificIps()}{setTrustedProxyIpAddressesToSpecificIps()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a8014cc7465bc4318af033793631d821c} 
+set\+Trusted\+Proxy\+Ip\+Addresses\+To\+Specific\+Ips (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{array}]{\$trusted\+Ips}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Specify the IP addresses to trust explicitly.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+array & {\em \$trusted\+Ips} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a93700950d3e779c5c59540ce015642d7}\index{TrustProxies@{TrustProxies}!setTrustedProxyIpAddressesToTheCallingIp@{setTrustedProxyIpAddressesToTheCallingIp}}
+\index{setTrustedProxyIpAddressesToTheCallingIp@{setTrustedProxyIpAddressesToTheCallingIp}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{setTrustedProxyIpAddressesToTheCallingIp()}{setTrustedProxyIpAddressesToTheCallingIp()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a93700950d3e779c5c59540ce015642d7} 
+set\+Trusted\+Proxy\+Ip\+Addresses\+To\+The\+Calling\+Ip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the trusted proxy to be the IP address calling this servers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_ab7a93276c2d82828f3c5dbd707c6436a}\index{TrustProxies@{TrustProxies}!withHeaders@{withHeaders}}
+\index{withHeaders@{withHeaders}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{withHeaders()}{withHeaders()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_ab7a93276c2d82828f3c5dbd707c6436a} 
+with\+Headers (\begin{DoxyParamCaption}\item[{int}]{\$headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Specify the proxy headers that should always be trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$headers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_ab98d0f6a2da875dec01d0b9406760c32}\index{TrustProxies@{TrustProxies}!\$alwaysTrustHeaders@{\$alwaysTrustHeaders}}
+\index{\$alwaysTrustHeaders@{\$alwaysTrustHeaders}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{\$alwaysTrustHeaders}{\$alwaysTrustHeaders}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_ab98d0f6a2da875dec01d0b9406760c32} 
+\$always\+Trust\+Headers\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_aace67733fe9ae138e5418bd6e6b53fa1}\index{TrustProxies@{TrustProxies}!\$alwaysTrustProxies@{\$alwaysTrustProxies}}
+\index{\$alwaysTrustProxies@{\$alwaysTrustProxies}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{\$alwaysTrustProxies}{\$alwaysTrustProxies}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_aace67733fe9ae138e5418bd6e6b53fa1} 
+\$always\+Trust\+Proxies\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a52500036ee807241b8b4b7e2367c49ef}\index{TrustProxies@{TrustProxies}!\$headers@{\$headers}}
+\index{\$headers@{\$headers}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{\$headers}{\$headers}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a52500036ee807241b8b4b7e2367c49ef} 
+\$\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_acf17788084df5a3d3415f4d9e346471d}{headers}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a9fed7e7c82160e6b32d7ed4c8193c195}\index{TrustProxies@{TrustProxies}!\$proxies@{\$proxies}}
+\index{\$proxies@{\$proxies}!TrustProxies@{TrustProxies}}
+\doxysubsubsection{\texorpdfstring{\$proxies}{\$proxies}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a9fed7e7c82160e6b32d7ed4c8193c195} 
+\$\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_proxies_a7edba346721565bf53dcc6de5943e0c7}{proxies}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Http/\+Middleware/\mbox{\hyperlink{_trust_proxies_8php}{Trust\+Proxies.\+php}}\end{DoxyCompactItemize}

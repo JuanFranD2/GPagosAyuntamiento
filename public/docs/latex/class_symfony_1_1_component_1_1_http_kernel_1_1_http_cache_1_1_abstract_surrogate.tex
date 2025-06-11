@@ -1,0 +1,159 @@
+\doxysection{Abstract\+Surrogate Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate}\index{AbstractSurrogate@{AbstractSurrogate}}
+Inheritance diagram for Abstract\+Surrogate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a7fc7c1b00966670d9461f4b3c8dfe7cd}{\+\_\+\+\_\+construct}} (protected array \$content\+Types=\mbox{[}\textquotesingle{}text/html\textquotesingle{}, \textquotesingle{}text/xml\textquotesingle{}, \textquotesingle{}application/xhtml+xml\textquotesingle{}, \textquotesingle{}application/xml\textquotesingle{}\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a10536a88367a345a54e91a23d77701e5}{create\+Cache\+Strategy}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a7fe3c091a5cafb32e34284a6b6a5cc06}{has\+Surrogate\+Capability}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a09e148a81aa665d5510f61d97fd18084}{add\+Surrogate\+Capability}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_aef081c4d84bdd6f6b57eca8914f86e2c}{needs\+Parsing}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_ac036b34124a270fb2b790c0e8814b4a4}{handle}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_http_cache}{Http\+Cache}} \$cache, string \$uri, string \$alt, bool \$ignore\+Errors)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface}{Surrogate\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a0c687b781f68709a5ef0b535e1947540}{add\+Surrogate\+Control}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_ad255c898b9cedfe5ee7490756ef0f25b}{render\+Include\+Tag}} (string \$uri, ?string \$alt=null, bool \$ignore\+Errors=true, string \$comment=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a01e892ef2998ab486938f9b9baa372ae}{process}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a2a26209d84722dc422b8fa58bf69e8a0}{remove\+From\+Control}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_aeb5727a659fffb310dcc97dbc8aded04}{generate\+Body\+Eval\+Boundary}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class implementing Surrogate capabilities to \doxylink{class_request}{Request} and \doxylink{class_response}{Response} instances.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+
+Robin Chalas \href{mailto:robin.chalas@gmail.com}{\texttt{robin.\+chalas@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a7fc7c1b00966670d9461f4b3c8dfe7cd}\index{AbstractSurrogate@{AbstractSurrogate}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AbstractSurrogate@{AbstractSurrogate}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a7fc7c1b00966670d9461f4b3c8dfe7cd} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected array}]{\$content\+Types}{ = {\ttfamily \mbox{[}\textquotesingle{}text/html\textquotesingle{},~\textquotesingle{}text/xml\textquotesingle{},~\textquotesingle{}application/xhtml+xml\textquotesingle{},~\textquotesingle{}application/xml\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$content\+Types} & An array of content-\/type that should be parsed for Surrogate information (default\+: text/html, text/xml, application/xhtml+xml, and application/xml) \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a09e148a81aa665d5510f61d97fd18084}\index{AbstractSurrogate@{AbstractSurrogate}!addSurrogateCapability@{addSurrogateCapability}}
+\index{addSurrogateCapability@{addSurrogateCapability}!AbstractSurrogate@{AbstractSurrogate}}
+\doxysubsubsection{\texorpdfstring{addSurrogateCapability()}{addSurrogateCapability()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a09e148a81aa665d5510f61d97fd18084} 
+add\+Surrogate\+Capability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Adds Surrogate-\/capability to the given \doxylink{class_request}{Request}. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a09e148a81aa665d5510f61d97fd18084}{Surrogate\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a10536a88367a345a54e91a23d77701e5}\index{AbstractSurrogate@{AbstractSurrogate}!createCacheStrategy@{createCacheStrategy}}
+\index{createCacheStrategy@{createCacheStrategy}!AbstractSurrogate@{AbstractSurrogate}}
+\doxysubsubsection{\texorpdfstring{createCacheStrategy()}{createCacheStrategy()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a10536a88367a345a54e91a23d77701e5} 
+create\+Cache\+Strategy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a new cache strategy instance. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a10536a88367a345a54e91a23d77701e5}{Surrogate\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_aeb5727a659fffb310dcc97dbc8aded04}\index{AbstractSurrogate@{AbstractSurrogate}!generateBodyEvalBoundary@{generateBodyEvalBoundary}}
+\index{generateBodyEvalBoundary@{generateBodyEvalBoundary}!AbstractSurrogate@{AbstractSurrogate}}
+\doxysubsubsection{\texorpdfstring{generateBodyEvalBoundary()}{generateBodyEvalBoundary()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_aeb5727a659fffb310dcc97dbc8aded04} 
+generate\+Body\+Eval\+Boundary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_ac036b34124a270fb2b790c0e8814b4a4}\index{AbstractSurrogate@{AbstractSurrogate}!handle@{handle}}
+\index{handle@{handle}!AbstractSurrogate@{AbstractSurrogate}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_ac036b34124a270fb2b790c0e8814b4a4} 
+handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_http_cache}{Http\+Cache}}}]{\$cache}{, }\item[{string}]{\$uri}{, }\item[{string}]{\$alt}{, }\item[{bool}]{\$ignore\+Errors}{}\end{DoxyParamCaption})}
+
+Handles a Surrogate from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$alt} & An alternative URI\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_ac036b34124a270fb2b790c0e8814b4a4}{Surrogate\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a7fe3c091a5cafb32e34284a6b6a5cc06}\index{AbstractSurrogate@{AbstractSurrogate}!hasSurrogateCapability@{hasSurrogateCapability}}
+\index{hasSurrogateCapability@{hasSurrogateCapability}!AbstractSurrogate@{AbstractSurrogate}}
+\doxysubsubsection{\texorpdfstring{hasSurrogateCapability()}{hasSurrogateCapability()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a7fe3c091a5cafb32e34284a6b6a5cc06} 
+has\+Surrogate\+Capability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Checks that at least one surrogate has Surrogate capability. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a7fe3c091a5cafb32e34284a6b6a5cc06}{Surrogate\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_aef081c4d84bdd6f6b57eca8914f86e2c}\index{AbstractSurrogate@{AbstractSurrogate}!needsParsing@{needsParsing}}
+\index{needsParsing@{needsParsing}!AbstractSurrogate@{AbstractSurrogate}}
+\doxysubsubsection{\texorpdfstring{needsParsing()}{needsParsing()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_aef081c4d84bdd6f6b57eca8914f86e2c} 
+needs\+Parsing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Checks that the \doxylink{class_response}{Response} needs to be parsed for Surrogate tags. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_aef081c4d84bdd6f6b57eca8914f86e2c}{Surrogate\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a2a26209d84722dc422b8fa58bf69e8a0}\index{AbstractSurrogate@{AbstractSurrogate}!removeFromControl@{removeFromControl}}
+\index{removeFromControl@{removeFromControl}!AbstractSurrogate@{AbstractSurrogate}}
+\doxysubsubsection{\texorpdfstring{removeFromControl()}{removeFromControl()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a2a26209d84722dc422b8fa58bf69e8a0} 
+remove\+From\+Control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove the Surrogate from the Surrogate-\/\+Control header. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Http\+Cache/\mbox{\hyperlink{_abstract_surrogate_8php}{Abstract\+Surrogate.\+php}}\end{DoxyCompactItemize}

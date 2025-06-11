@@ -1,0 +1,78 @@
+\chapter{Passthrough Arguments }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments}\index{Passthrough Arguments@{Passthrough Arguments}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments_autotoc_md2244}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments_autotoc_md2244}%
+
+
+If you have a shortcut for running a specific combination of commands through concurrently, you might need at some point to pass additional arguments/flags to some of these.
+
+For example, imagine you have in your {\ttfamily package.\+json} file scripts like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ //\ ...}
+\DoxyCodeLine{\ \ "{}scripts"{}:\ \{}
+\DoxyCodeLine{\ \ \ \ "{}build:client"{}:\ "{}tsc\ -\/p\ client"{},}
+\DoxyCodeLine{\ \ \ \ "{}build:server"{}:\ "{}tsc\ -\/p\ server"{},}
+\DoxyCodeLine{\ \ \ \ "{}build"{}:\ "{}concurrently\ npm:build:client\ npm:build:server"{}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+If you wanted to run only either {\ttfamily build\+:server} or {\ttfamily build\+:client} with an additional {\ttfamily -\/-\/no\+Emit} flag, you can do so with {\ttfamily npm run build\+:server -\/-\/ -\/-\/no\+Emit}, for example.~\newline
+ However, if you want to do that while using concurrently, as {\ttfamily npm run build -\/-\/ -\/-\/no\+Emit} for example, you might find that concurrently actually parses {\ttfamily -\/-\/no\+Emit} as its own flag, which does nothing, because it doesn\textquotesingle{}t exist.
+
+To solve this, you can set the {\ttfamily -\/-\/passthrough-\/arguments}/{\ttfamily -\/P} flag, which instructs concurrently to take everything after a {\ttfamily -\/-\/} as additional arguments that are passed through to the input commands via a few placeholder styles\+:\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments_autotoc_md2245}{}\doxysection{\texorpdfstring{Single argument}{Single argument}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments_autotoc_md2245}
+We can modify the original {\ttfamily build} script to pass a single additional argument/flag to a script by using a 1-\/indexed {\ttfamily \{number\}} placeholder to the command you want it to apply to\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ //\ ...}
+\DoxyCodeLine{\ \ "{}scripts"{}:\ \{}
+\DoxyCodeLine{\ \ \ \ //\ ...}
+\DoxyCodeLine{\ \ \ \ "{}build"{}:\ "{}concurrently\ -\/P\ 'npm:build:client\ -\/-\/\ \{1\}'\ npm:build:server\ -\/-\/"{},}
+\DoxyCodeLine{\ \ \ \ "{}typecheck"{}:\ "{}npm\ run\ build\ -\/-\/\ -\/-\/noEmit"{}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+With this, running {\ttfamily npm run typecheck} will pass {\ttfamily -\/-\/no\+Emit} only to {\ttfamily npm run build\+:client}.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments_autotoc_md2246}{}\doxysection{\texorpdfstring{All arguments}{All arguments}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments_autotoc_md2246}
+In the original {\ttfamily build} example script, you\textquotesingle{}re more likely to want to pass every additional argument/flag to your commands. This can be done with the {\ttfamily \{@\}} placeholder.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ //\ ...}
+\DoxyCodeLine{\ \ "{}scripts"{}:\ \{}
+\DoxyCodeLine{\ \ \ \ //\ ...}
+\DoxyCodeLine{\ \ \ \ "{}build"{}:\ "{}concurrently\ -\/P\ 'npm:build:client\ -\/-\/\ \{@\}'\ 'npm:build:server\ -\/-\/\ \{@\}'\ -\/-\/"{},}
+\DoxyCodeLine{\ \ \ \ "{}typecheck"{}:\ "{}npm\ run\ build\ -\/-\/\ -\/-\/watch\ -\/-\/noEmit"{}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+In the above example, both {\ttfamily -\/-\/watch} and {\ttfamily -\/-\/no\+Emit} are passed to each command.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments_autotoc_md2247}{}\doxysection{\texorpdfstring{All arguments, combined}{All arguments, combined}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2passthrough-arguments_autotoc_md2247}
+If for some reason you wish to combine all additional arguments into a single one, you can do that with the {\ttfamily \{\texorpdfstring{$\ast$}{*}\}} placeholder, which wraps the arguments in quotes.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ //\ ...}
+\DoxyCodeLine{\ \ "{}scripts"{}:\ \{}
+\DoxyCodeLine{\ \ \ \ //\ ...}
+\DoxyCodeLine{\ \ \ \ "{}build"{}:\ "{}concurrently\ -\/P\ 'npm:build:client\ -\/-\/\ -\/-\/outDir\ \{*\}/client'\ 'npm:build:server\ -\/-\/\ -\/-\/outDir\ \{*\}/server'\ -\/-\/\ \$(date)"{}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+In the above example, the output of the {\ttfamily date} command, which looks like {\ttfamily Sun 1 Sep 2024 23\+:50\+:00 AEST} will be passed as a single string to the {\ttfamily -\/-\/out\+Dir} parameter of both commands. 

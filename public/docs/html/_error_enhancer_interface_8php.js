@@ -1,0 +1,4 @@
+var _error_enhancer_interface_8php =
+[
+    [ "ErrorEnhancerInterface", "interface_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_error_enhancer_interface.html", "interface_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_error_enhancer_interface" ]
+];

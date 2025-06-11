@@ -1,0 +1,322 @@
+\doxysection{Elements Class Reference}
+\hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements}{}\label{class_masterminds_1_1_h_t_m_l5_1_1_elements}\index{Elements@{Elements}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a8892cdd67f7158d455fd337a8f551569}{isA}} (\$name, \$mask)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a881bd75e5e5f4a86c18388ee0bfef5a3}{is\+Html5\+Element}} (\$name)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a4a2d8fc2472961af2c433b901a078190}{is\+Math\+MLElement}} (\$name)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a5233e3529a05ef84a6c5eb3e921143fe}{is\+Svg\+Element}} (\$name)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a4e0520356df480899192da9bee0e477c}{is\+Element}} (\$name)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a10be217254e96881313d6ed289b5550c}{element}} (\$name)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a5860924a19d77b1c4ca0193389d7d62e}{normalize\+Svg\+Element}} (\$name)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a86cbc55e4b43f6d5ed66bd19e0454ef6}{normalize\+Svg\+Attribute}} (\$name)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a3e78f7a88f730bde865a41da40e4c1b3}{normalize\+Math\+Ml\+Attribute}} (\$name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a6b4754e908435633e5baf3d2a6d81ad0}{KNOWN\+\_\+\+ELEMENT}} = 1
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_ad0dfaeb5bcb901af1d0922764e16e471}{TEXT\+\_\+\+RAW}} = 2
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_ae97597f2b3270d5cbdaced0d5ee3e721}{TEXT\+\_\+\+RCDATA}} = 4
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a4fdd4df244270693f47a4418392c6855}{VOID\+\_\+\+TAG}} = 8
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a7c73b5cb488263a24863f3fe65d52fe5}{AUTOCLOSE\+\_\+P}} = 16
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a2114eff099c74f5d999cba6b655d07ee}{TEXT\+\_\+\+PLAINTEXT}} = 32
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a1e0074d9c59be456d4391d1a01003b30}{BLOCK\+\_\+\+TAG}} = 64
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a937d2d7c8209f1d1569700482a671244}{BLOCK\+\_\+\+ONLY\+\_\+\+INLINE}} = 128
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a9ef1363280b9c44cdf66f357f404e9af}{\$optional\+End\+Elements\+Parents\+To\+Close}}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a2368554a0e8c97b518a03fa1e34bfddf}{\$html5}}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_ac089e62181f3c9b3e43c7fbaf1c2d000}{\$mathml}}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a7b4403a9f056c469b17b37bb448a2aac}{\$svg}}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_a21ce323d97903071c7b79c92bcc29d52}{\$svg\+Case\+Sensitive\+Attribute\+Map}}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_elements_ae79c8b7e68ef30b54fb74cddbb9270e9}{\$svg\+Case\+Sensitive\+Element\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides general information about HTML5 elements, including syntactic and semantic issues. Parsers and serializers can use this class as a reference point for information about the rules of various HTML5 elements.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000017}{Todo}}]consider using a bitmask table lookup. There is enough overlap in naming that this could significantly shrink the size and maybe make it faster. See the Go teams implementation at \href{https://code.google.com/p/go/source/browse/html/atom}{\texttt{https\+://code.\+google.\+com/p/go/source/browse/html/atom}}. \end{DoxyRefDesc}
+
+
+\label{doc-func-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a10be217254e96881313d6ed289b5550c}\index{Elements@{Elements}!element@{element}}
+\index{element@{element}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{element()}{element()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a10be217254e96881313d6ed289b5550c} 
+element (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the element mask for the given element name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the element mask. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a8892cdd67f7158d455fd337a8f551569}\index{Elements@{Elements}!isA@{isA}}
+\index{isA@{isA}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{isA()}{isA()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a8892cdd67f7158d455fd337a8f551569} 
+isA (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$mask}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether the given element meets the given criterion.
+
+Example\+:
+
+Elements\+::isA(\textquotesingle{}script\textquotesingle{}, Elements\+::\+TEXT\+\_\+\+RAW); // Returns true.
+
+Elements\+::isA(\textquotesingle{}script\textquotesingle{}, Elements\+::\+TEXT\+\_\+\+RCDATA); // Returns false.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The element name. \\
+\hline
+int & {\em \$mask} & One of the constants on this class.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the element matches the mask, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a4e0520356df480899192da9bee0e477c}\index{Elements@{Elements}!isElement@{isElement}}
+\index{isElement@{isElement}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{isElement()}{isElement()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a4e0520356df480899192da9bee0e477c} 
+is\+Element (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Is an element name valid in an html5 document. This includes html5 elements along with other allowed embedded content such as svg and mathml.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if valid and false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a881bd75e5e5f4a86c18388ee0bfef5a3}\index{Elements@{Elements}!isHtml5Element@{isHtml5Element}}
+\index{isHtml5Element@{isHtml5Element}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{isHtml5Element()}{isHtml5Element()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a881bd75e5e5f4a86c18388ee0bfef5a3} 
+is\+Html5\+Element (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Test if an element is a valid html5 element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if a html5 element and false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a4a2d8fc2472961af2c433b901a078190}\index{Elements@{Elements}!isMathMLElement@{isMathMLElement}}
+\index{isMathMLElement@{isMathMLElement}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{isMathMLElement()}{isMathMLElement()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a4a2d8fc2472961af2c433b901a078190} 
+is\+Math\+MLElement (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Test if an element name is a valid Math\+ML presentation element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if a Math\+ML name and false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a5233e3529a05ef84a6c5eb3e921143fe}\index{Elements@{Elements}!isSvgElement@{isSvgElement}}
+\index{isSvgElement@{isSvgElement}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{isSvgElement()}{isSvgElement()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a5233e3529a05ef84a6c5eb3e921143fe} 
+is\+Svg\+Element (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Test if an element is a valid SVG element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if a SVG element and false otherise. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a3e78f7a88f730bde865a41da40e4c1b3}\index{Elements@{Elements}!normalizeMathMlAttribute@{normalizeMathMlAttribute}}
+\index{normalizeMathMlAttribute@{normalizeMathMlAttribute}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{normalizeMathMlAttribute()}{normalizeMathMlAttribute()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a3e78f7a88f730bde865a41da40e4c1b3} 
+normalize\+Math\+Ml\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalize a Math\+ML attribute name to its proper case and form. Note, all Math\+ML element names are lowercase.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the attribute.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The normalized form of the attribute name. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a86cbc55e4b43f6d5ed66bd19e0454ef6}\index{Elements@{Elements}!normalizeSvgAttribute@{normalizeSvgAttribute}}
+\index{normalizeSvgAttribute@{normalizeSvgAttribute}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{normalizeSvgAttribute()}{normalizeSvgAttribute()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a86cbc55e4b43f6d5ed66bd19e0454ef6} 
+normalize\+Svg\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalize a SVG attribute name to its proper case and form.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the attribute.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The normalized form of the attribute name. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a5860924a19d77b1c4ca0193389d7d62e}\index{Elements@{Elements}!normalizeSvgElement@{normalizeSvgElement}}
+\index{normalizeSvgElement@{normalizeSvgElement}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{normalizeSvgElement()}{normalizeSvgElement()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a5860924a19d77b1c4ca0193389d7d62e} 
+normalize\+Svg\+Element (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalize a SVG element name to its proper case and form.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the normalized form of the element name. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a2368554a0e8c97b518a03fa1e34bfddf}\index{Elements@{Elements}!\$html5@{\$html5}}
+\index{\$html5@{\$html5}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{\$html5}{\$html5}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a2368554a0e8c97b518a03fa1e34bfddf} 
+\$html5\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_ac089e62181f3c9b3e43c7fbaf1c2d000}\index{Elements@{Elements}!\$mathml@{\$mathml}}
+\index{\$mathml@{\$mathml}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{\$mathml}{\$mathml}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_ac089e62181f3c9b3e43c7fbaf1c2d000} 
+\$mathml\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a9ef1363280b9c44cdf66f357f404e9af}\index{Elements@{Elements}!\$optionalEndElementsParentsToClose@{\$optionalEndElementsParentsToClose}}
+\index{\$optionalEndElementsParentsToClose@{\$optionalEndElementsParentsToClose}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{\$optionalEndElementsParentsToClose}{\$optionalEndElementsParentsToClose}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a9ef1363280b9c44cdf66f357f404e9af} 
+\$optional\+End\+Elements\+Parents\+To\+Close\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a7b4403a9f056c469b17b37bb448a2aac}\index{Elements@{Elements}!\$svg@{\$svg}}
+\index{\$svg@{\$svg}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{\$svg}{\$svg}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a7b4403a9f056c469b17b37bb448a2aac} 
+\$svg\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a21ce323d97903071c7b79c92bcc29d52}\index{Elements@{Elements}!\$svgCaseSensitiveAttributeMap@{\$svgCaseSensitiveAttributeMap}}
+\index{\$svgCaseSensitiveAttributeMap@{\$svgCaseSensitiveAttributeMap}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{\$svgCaseSensitiveAttributeMap}{\$svgCaseSensitiveAttributeMap}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a21ce323d97903071c7b79c92bcc29d52} 
+\$svg\+Case\+Sensitive\+Attribute\+Map\hspace{0.3cm}{\ttfamily [static]}}
+
+Some attributes in SVG are case sensitive.
+
+This map contains key/value pairs with the key as the lowercase attribute name and the value with the correct casing. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_ae79c8b7e68ef30b54fb74cddbb9270e9}\index{Elements@{Elements}!\$svgCaseSensitiveElementMap@{\$svgCaseSensitiveElementMap}}
+\index{\$svgCaseSensitiveElementMap@{\$svgCaseSensitiveElementMap}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{\$svgCaseSensitiveElementMap}{\$svgCaseSensitiveElementMap}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_ae79c8b7e68ef30b54fb74cddbb9270e9} 
+\$svg\+Case\+Sensitive\+Element\+Map\hspace{0.3cm}{\ttfamily [static]}}
+
+Some SVG elements are case sensitive. This map contains these.
+
+The map contains key/value store of the name is lowercase as the keys and the correct casing as the value. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a7c73b5cb488263a24863f3fe65d52fe5}\index{Elements@{Elements}!AUTOCLOSE\_P@{AUTOCLOSE\_P}}
+\index{AUTOCLOSE\_P@{AUTOCLOSE\_P}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{AUTOCLOSE\_P}{AUTOCLOSE\_P}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a7c73b5cb488263a24863f3fe65d52fe5} 
+const AUTOCLOSE\+\_\+P = 16}
+
+Indicates that if a previous event is for a P tag, that element should be considered closed. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a937d2d7c8209f1d1569700482a671244}\index{Elements@{Elements}!BLOCK\_ONLY\_INLINE@{BLOCK\_ONLY\_INLINE}}
+\index{BLOCK\_ONLY\_INLINE@{BLOCK\_ONLY\_INLINE}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{BLOCK\_ONLY\_INLINE}{BLOCK\_ONLY\_INLINE}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a937d2d7c8209f1d1569700482a671244} 
+const BLOCK\+\_\+\+ONLY\+\_\+\+INLINE = 128}
+
+Indicates that the tag allows only inline elements as child nodes. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a1e0074d9c59be456d4391d1a01003b30}\index{Elements@{Elements}!BLOCK\_TAG@{BLOCK\_TAG}}
+\index{BLOCK\_TAG@{BLOCK\_TAG}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{BLOCK\_TAG}{BLOCK\_TAG}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a1e0074d9c59be456d4391d1a01003b30} 
+const BLOCK\+\_\+\+TAG = 64}
+
+Indicates that the tag is a block. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a6b4754e908435633e5baf3d2a6d81ad0}\index{Elements@{Elements}!KNOWN\_ELEMENT@{KNOWN\_ELEMENT}}
+\index{KNOWN\_ELEMENT@{KNOWN\_ELEMENT}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{KNOWN\_ELEMENT}{KNOWN\_ELEMENT}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a6b4754e908435633e5baf3d2a6d81ad0} 
+const KNOWN\+\_\+\+ELEMENT = 1}
+
+Indicates an element is described in the specification. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a2114eff099c74f5d999cba6b655d07ee}\index{Elements@{Elements}!TEXT\_PLAINTEXT@{TEXT\_PLAINTEXT}}
+\index{TEXT\_PLAINTEXT@{TEXT\_PLAINTEXT}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{TEXT\_PLAINTEXT}{TEXT\_PLAINTEXT}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a2114eff099c74f5d999cba6b655d07ee} 
+const TEXT\+\_\+\+PLAINTEXT = 32}
+
+Indicates that the text inside is plaintext (pre). \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_ad0dfaeb5bcb901af1d0922764e16e471}\index{Elements@{Elements}!TEXT\_RAW@{TEXT\_RAW}}
+\index{TEXT\_RAW@{TEXT\_RAW}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{TEXT\_RAW}{TEXT\_RAW}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_ad0dfaeb5bcb901af1d0922764e16e471} 
+const TEXT\+\_\+\+RAW = 2}
+
+Indicates the contained text should be processed as raw text. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_ae97597f2b3270d5cbdaced0d5ee3e721}\index{Elements@{Elements}!TEXT\_RCDATA@{TEXT\_RCDATA}}
+\index{TEXT\_RCDATA@{TEXT\_RCDATA}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{TEXT\_RCDATA}{TEXT\_RCDATA}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_ae97597f2b3270d5cbdaced0d5ee3e721} 
+const TEXT\+\_\+\+RCDATA = 4}
+
+Indicates the contained text should be processed as RCDATA. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_elements_a4fdd4df244270693f47a4418392c6855}\index{Elements@{Elements}!VOID\_TAG@{VOID\_TAG}}
+\index{VOID\_TAG@{VOID\_TAG}!Elements@{Elements}}
+\doxysubsubsection{\texorpdfstring{VOID\_TAG}{VOID\_TAG}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_elements_a4fdd4df244270693f47a4418392c6855} 
+const VOID\+\_\+\+TAG = 8}
+
+Indicates the tag cannot have content. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\mbox{\hyperlink{_elements_8php}{Elements.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/babel-\/plugin-\/istanbul Directory Reference}
+\hypertarget{dir_1e108add923282746bee54ea2bd3d791}{}\label{dir_1e108add923282746bee54ea2bd3d791}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/babel-\/plugin-\/istanbul Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/babel-\/plugin-\/istanbul Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_4de0738454e030565fe10524a48bff68}{node\+\_\+modules}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md1742}{}\doxysubsection{\texorpdfstring{babel-\/plugin-\/istanbul}{babel-\/plugin-\/istanbul}}\label{README.md_autotoc_md1742}
+\href{https://coveralls.io/github/istanbuljs/babel-plugin-istanbul?branch=master}{\texttt{}} \href{https://conventionalcommits.org}{\texttt{}} \href{http://devtoolscommunity.herokuapp.com}{\texttt{}}
+
+{\itshape Having problems? want to contribute? join our \href{http://devtoolscommunity.herokuapp.com}{\texttt{community slack}}}.
+
+A Babel plugin that instruments your code with Istanbul coverage. It can instantly be used with \href{https://github.com/karma-runner/karma-coverage}{\texttt{karma-\/coverage}} and mocha on Node.\+js (through \href{https://github.com/bcoe/nyc}{\texttt{nyc}}).
+
+{\bfseries{Note\+:}} This plugin does not generate any report or save any data to any file; it only adds instrumenting code to your Java\+Script source code. To integrate with testing tools, please see the Integrations section.\hypertarget{README.md_autotoc_md1743}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md1743}
+Install it\+:
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+Add it to {\ttfamily .babelrc} in test mode\+:
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+Optionally, use \href{https://www.npmjs.com/package/cross-env}{\texttt{cross-\/env}} to set {\ttfamily NODE\+\_\+\+ENV=test}\+:
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md1744}{}\doxysubsection{\texorpdfstring{Integrations}{Integrations}}\label{README.md_autotoc_md1744}
+\hypertarget{README.md_autotoc_md1745}{}\doxysubsubsection{\texorpdfstring{karma}{karma}}\label{README.md_autotoc_md1745}
+It {\itshape just works} with Karma. First, make sure that the code is already transpiled by Babel (either using {\ttfamily karma-\/babel-\/preprocessor}, {\ttfamily karma-\/webpack}, or {\ttfamily karma-\/browserify}). Then, simply set up \href{https://github.com/karma-runner/karma-coverage}{\texttt{karma-\/coverage}} according to the docs, but {\bfseries{don’t add the {\ttfamily coverage} preprocessor.}} This plugin has already instrumented your code, and Karma should pick it up automatically.
+
+It has been tested with \href{https://codecov.io/github/bemusic/bemuse}{\texttt{bemusic/bemuse}} project, which contains \texorpdfstring{$\sim$}{\string~}2400 statements.\hypertarget{README.md_autotoc_md1746}{}\doxysubsubsection{\texorpdfstring{mocha on node.\+js (through nyc)}{mocha on node.\+js (through nyc)}}\label{README.md_autotoc_md1746}
+Configure Mocha to transpile Java\+Script code using Babel, then you can run your tests with \href{https://github.com/bcoe/nyc}{\texttt{{\ttfamily nyc}}}, which will collect all the coverage report.
+
+babel-\/plugin-\/istanbul respects the {\ttfamily include}/{\ttfamily exclude} configuration options from nyc, but you also need to {\bfseries{configure NYC not to instrument your code}} by adding these settings in your {\ttfamily package.\+json}\+:
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md1747}{}\doxysubsection{\texorpdfstring{Ignoring files}{Ignoring files}}\label{README.md_autotoc_md1747}
+You don\textquotesingle{}t want to cover your test files as this will skew your coverage results. You can configure this by providing plugin options matching nyc\textquotesingle{}s \href{https://github.com/bcoe/nyc\#excluding-files}{\texttt{{\ttfamily exclude}/{\ttfamily include} rules}}\+:
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+If you don\textquotesingle{}t provide options in your Babel config, the plugin will look for {\ttfamily exclude}/{\ttfamily include} config under an {\ttfamily "{}nyc"{}} key in {\ttfamily package.\+json}.
+
+You can also use \href{https://github.com/gotwarlost/istanbul/blob/master/ignoring-code-for-coverage.md\#ignoring-code-for-coverage-purposes}{\texttt{istanbul\textquotesingle{}s ignore hints}} to specify specific lines of code to skip instrumenting.\hypertarget{README.md_autotoc_md1748}{}\doxysubsection{\texorpdfstring{Source Maps}{Source Maps}}\label{README.md_autotoc_md1748}
+By default, this plugin will pick up inline source maps and attach them to the instrumented code such that code coverage can be remapped back to the original source, even for multi-\/step build processes. This can be memory intensive. Set {\ttfamily use\+Inline\+Source\+Maps} to prevent this behavior.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+If you\textquotesingle{}re instrumenting code programatically, you can pass a source map explicitly. 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md1749}{}\doxysubsection{\texorpdfstring{Credit where credit is due}{Credit where credit is due}}\label{README.md_autotoc_md1749}
+The approach used in {\ttfamily babel-\/plugin-\/istanbul} was inspired by \href{https://github.com/dtinth}{\texttt{Thai Pangsakulyanont}}\textquotesingle{}s original library \href{https://github.com/dtinth/babel-plugin-__coverage__}{\texttt{{\ttfamily babel-\/plugin-\/\+\_\+\+\_\+coverage\+\_\+\+\_\+}}}.\hypertarget{README.md_autotoc_md1750}{}\doxysubsection{\texorpdfstring{{\ttfamily babel-\/plugin-\/istanbul} for enterprise}{{\ttfamily babel-\/plugin-\/istanbul} for enterprise}}\label{README.md_autotoc_md1750}
+Available as part of the Tidelift Subscription.
+
+The maintainers of {\ttfamily babel-\/plugin-\/istanbul} and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. \href{https://tidelift.com/subscription/pkg/npm-babel-plugin-istanbul?utm_source=npm-babel-plugin-istanbul&utm_medium=referral&utm_campaign=enterprise&utm_term=repo}{\texttt{Learn more.}} 

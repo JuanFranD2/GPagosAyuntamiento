@@ -1,0 +1,4 @@
+var _soap_extension_not_available_exception_8php =
+[
+    [ "SoapExtensionNotAvailableException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_soap_extension_not_available_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_soap_extension_not_available_exception" ]
+];

@@ -1,0 +1,137 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/public/index.php File Reference}
+\hypertarget{index_8php}{}\label{index_8php}\index{C:/xampp/htdocs/GPagosAyuntamiento/public/index.php@{C:/xampp/htdocs/GPagosAyuntamiento/public/index.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{index_8php_a3904d6331aed7d48e576702946b2f47c}{LARAVEL\+\_\+\+START}} microtime(true)
+\item 
+\mbox{\hyperlink{index_8php_ab7b0934f179386acaa4ad69fb6e3c8e6}{if}} (file\+\_\+exists( \$maintenance=\+\_\+\+\_\+\+DIR\+\_\+\+\_\+.\textquotesingle{}/../storage/framework/maintenance.\+php\textquotesingle{}))
+\item 
+\mbox{\hyperlink{index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}} = require\+\_\+once \+\_\+\+\_\+\+DIR\+\_\+\+\_\+.\textquotesingle{}/../bootstrap/app.\+php\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{index_8php_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{index_8php_adfb117f244076aa9bc269269f7e57403}\index{index.php@{index.php}!\$app@{\$app}}
+\index{\$app@{\$app}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$app}{\$app}}
+{\footnotesize\ttfamily \label{index_8php_adfb117f244076aa9bc269269f7e57403} 
+\$app = require\+\_\+once \+\_\+\+\_\+\+DIR\+\_\+\+\_\+.\textquotesingle{}/../bootstrap/app.\+php\textquotesingle{}}
+
+\Hypertarget{index_8php_ab7b0934f179386acaa4ad69fb6e3c8e6}\index{index.php@{index.php}!if@{if}}
+\index{if@{if}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily \label{index_8php_ab7b0934f179386acaa4ad69fb6e3c8e6} 
+if (\begin{DoxyParamCaption}\item[{file\+\_\+exists( \$maintenance=\+\_\+\+\_\+\+DIR\+\_\+\+\_\+.\textquotesingle{}/../storage/framework/maintenance.\+php\textquotesingle{})}]{function\+\_\+exists}{}\end{DoxyParamCaption})}
+
+Creates a new expectation.
+
+@template TValue
+
+
+\begin{DoxyParams}[1]{Parameters}
+TValue | null & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expectation\texorpdfstring{$<$}{<}TValue\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+Runs the given closure before all tests in the current file.
+
+Runs the given closure before each test in the current file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/closure-\/this} & \doxylink{class_p_h_p_unit_1_1_framework_1_1_test_case}{Test\+Case} \$closure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_pest_1_1_support_1_1_higher_order_tap_proxy}{Higher\+Order\+Tap\+Proxy}\texorpdfstring{$<$}{<}Expectable\texorpdfstring{$\vert$}{|}\+Test\+Call\texorpdfstring{$\vert$}{|}\+Test\+Case\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Expectable\texorpdfstring{$\vert$}{|}\+Test\+Call\texorpdfstring{$\vert$}{|}\+Test\+Case\texorpdfstring{$\vert$}{|}mixed
+\end{DoxyReturn}
+Registers the given dataset.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Closure\texorpdfstring{$\vert$}{|}iterable$<$int\texorpdfstring{$\vert$}{|}string,mixed$>$} & \$dataset\\
+\hline
+\end{DoxyParams}
+Adds the given closure as a group of tests. The first argument is the group description; the second argument is a closure that contains the group tests.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_pest_1_1_support_1_1_higher_order_tap_proxy}{Higher\+Order\+Tap\+Proxy}\texorpdfstring{$<$}{<}Expectable\texorpdfstring{$\vert$}{|}\+Test\+Call\texorpdfstring{$\vert$}{|}\+Test\+Case\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Expectable\texorpdfstring{$\vert$}{|}\+Test\+Call\texorpdfstring{$\vert$}{|}\+Test\+Case\texorpdfstring{$\vert$}{|}mixed
+\end{DoxyReturn}
+The uses function binds the given arguments to test closures.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class-\/string} & ...\$class\+And\+Traits\\
+\hline
+\end{DoxyParams}
+Creates a new \doxylink{namespace_pest}{Pest} configuration instance.
+
+Adds the given closure as a test. The first argument is the test description; the second argument is a closure that contains the test expectations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/closure-\/this} & \doxylink{class_p_h_p_unit_1_1_framework_1_1_test_case}{Test\+Case} \$closure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expectable\texorpdfstring{$\vert$}{|}\+Test\+Call\texorpdfstring{$\vert$}{|}\+Test\+Case\texorpdfstring{$\vert$}{|}mixed
+\end{DoxyReturn}
+Adds the given closure as a test. The first argument is the test description; the second argument is a closure that contains the test expectations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/closure-\/this} & \doxylink{class_p_h_p_unit_1_1_framework_1_1_test_case}{Test\+Case} \$closure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expectable\texorpdfstring{$\vert$}{|}\+Test\+Call\texorpdfstring{$\vert$}{|}\+Test\+Case\texorpdfstring{$\vert$}{|}mixed
+\end{DoxyReturn}
+
+
+Creates a new test that is marked as "{}todo"{}.
+
+\begin{DoxyReturn}{Returns}
+Expectable\texorpdfstring{$\vert$}{|}\+Test\+Call\texorpdfstring{$\vert$}{|}\+Test\+Case\texorpdfstring{$\vert$}{|}mixed
+\end{DoxyReturn}
+Runs the given closure after each test in the current file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/closure-\/this} & \doxylink{class_p_h_p_unit_1_1_framework_1_1_test_case}{Test\+Case} \$closure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expectable\texorpdfstring{$\vert$}{|}\+Higher\+Order\+Tap\+Proxy\texorpdfstring{$<$}{<}Expectable\texorpdfstring{$\vert$}{|}\+Test\+Call\texorpdfstring{$\vert$}{|}\+Test\+Case\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Test\+Call\texorpdfstring{$\vert$}{|}mixed
+\end{DoxyReturn}
+Runs the given closure after all tests in the current file.
+
+Specifies which classes, or functions, a test case covers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}string} & \$classes\+Or\+Functions\\
+\hline
+\end{DoxyParams}
+
+
+Specifies which classes, enums, or traits a test case mutates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}string} & \$targets\\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_carbon_period_8php-example}{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nesbot/carbon/src/\+Carbon/\+Carbon\+Period.\+php}}, and \mbox{\hyperlink{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_factory_8php-example}{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nesbot/carbon/src/\+Carbon/\+Factory.\+php}}.\end{Desc}
+\Hypertarget{index_8php_a3904d6331aed7d48e576702946b2f47c}\index{index.php@{index.php}!LARAVEL\_START@{LARAVEL\_START}}
+\index{LARAVEL\_START@{LARAVEL\_START}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{LARAVEL\_START}{LARAVEL\_START}}
+{\footnotesize\ttfamily \label{index_8php_a3904d6331aed7d48e576702946b2f47c} 
+const LARAVEL\+\_\+\+START microtime(true)}
+

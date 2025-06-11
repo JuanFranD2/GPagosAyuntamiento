@@ -1,0 +1,149 @@
+\doxysection{Type Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_type}{}\label{class_nette_1_1_utils_1_1_type}\index{Type@{Type}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a64e8191090bf560e825966b082e868f0}{get\+Names}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a1e7fa771a9df3e495e38f12a85d3a286}{get\+Types}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a703d5c84f8c9b4fefb058a5e20351c60}{get\+Single\+Name}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a69aabd9a83e9e73ddaa36a2c8fe22c74}{is\+Union}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_ad992489b8d1502619bc8edb9c7b6054b}{is\+Intersection}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a270d6ef7fb3863dbd4d27027b21f6ecb}{is\+Simple}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a3936b4780caecb6de53a76b7594a0977}{is\+Single}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a017c873b53c23349d055a7cb3cbac378}{is\+Builtin}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a3ca7c72866fe5b4e4ba2609b2541f0bc}{is\+Class}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_aad688dda2d8c5e348e44d3cf93176f8d}{is\+Class\+Keyword}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_type_ac6879040523825ed51f1414bc37300b4}{allows}} (string \$subtype)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_type_ab8cd8cb3d9216eaed914d9addb15a1ab}{from\+Reflection}} (\textbackslash{}Reflection\+Function\+Abstract\texorpdfstring{$\vert$}{|}\textbackslash{}Reflection\+Parameter\texorpdfstring{$\vert$}{|}\textbackslash{}Reflection\+Property \$reflection,)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a69800936b9008ba41c567291d9e10d63}{from\+String}} (string \$type)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_type_a948070d168cdf9d2527c279808a04b37}{resolve}} (string \$type, \textbackslash{}Reflection\+Function\+Abstract\texorpdfstring{$\vert$}{|}\textbackslash{}Reflection\+Parameter\texorpdfstring{$\vert$}{|}\textbackslash{}Reflection\+Property \$of,)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+PHP type reflection. 
+
+\label{doc-func-members}
+\Hypertarget{class_nette_1_1_utils_1_1_type_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_type_a7516ca30af0db3cdbf9a7739b48ce91d}\index{Type@{Type}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_nette_1_1_utils_1_1_type_ac6879040523825ed51f1414bc37300b4}\index{Type@{Type}!allows@{allows}}
+\index{allows@{allows}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{allows()}{allows()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_ac6879040523825ed51f1414bc37300b4} 
+allows (\begin{DoxyParamCaption}\item[{string}]{\$subtype}{}\end{DoxyParamCaption})}
+
+Verifies type compatibility. For example, it checks if a value of a certain type could be passed as a parameter. \Hypertarget{class_nette_1_1_utils_1_1_type_ab8cd8cb3d9216eaed914d9addb15a1ab}\index{Type@{Type}!fromReflection@{fromReflection}}
+\index{fromReflection@{fromReflection}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{fromReflection()}{fromReflection()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_ab8cd8cb3d9216eaed914d9addb15a1ab} 
+from\+Reflection (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Function\+Abstract\texorpdfstring{$\vert$}{|}\textbackslash{}Reflection\+Parameter\texorpdfstring{$\vert$}{|}\textbackslash{}Reflection\+Property}]{\$reflection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a Type object based on reflection. Resolves self, static and parent to the actual class name. If the subject has no type, it returns null. \Hypertarget{class_nette_1_1_utils_1_1_type_a69800936b9008ba41c567291d9e10d63}\index{Type@{Type}!fromString@{fromString}}
+\index{fromString@{fromString}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a69800936b9008ba41c567291d9e10d63} 
+from\+String (\begin{DoxyParamCaption}\item[{string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates the Type object according to the text notation. \Hypertarget{class_nette_1_1_utils_1_1_type_a64e8191090bf560e825966b082e868f0}\index{Type@{Type}!getNames@{getNames}}
+\index{getNames@{getNames}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{getNames()}{getNames()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a64e8191090bf560e825966b082e868f0} 
+get\+Names (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the array of subtypes that make up the compound type as strings. \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}int, string\texorpdfstring{$\vert$}{|}string\mbox{[}\mbox{]}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_type_a703d5c84f8c9b4fefb058a5e20351c60}\index{Type@{Type}!getSingleName@{getSingleName}}
+\index{getSingleName@{getSingleName}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{getSingleName()}{getSingleName()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a703d5c84f8c9b4fefb058a5e20351c60} 
+get\+Single\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the type name for simple types, otherwise null. \Hypertarget{class_nette_1_1_utils_1_1_type_a1e7fa771a9df3e495e38f12a85d3a286}\index{Type@{Type}!getTypes@{getTypes}}
+\index{getTypes@{getTypes}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{getTypes()}{getTypes()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a1e7fa771a9df3e495e38f12a85d3a286} 
+get\+Types (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the array of subtypes that make up the compound type as Type objects\+: \begin{DoxyReturn}{Returns}
+self\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_type_a017c873b53c23349d055a7cb3cbac378}\index{Type@{Type}!isBuiltin@{isBuiltin}}
+\index{isBuiltin@{isBuiltin}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{isBuiltin()}{isBuiltin()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a017c873b53c23349d055a7cb3cbac378} 
+is\+Builtin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true whether the type is both a simple and a PHP built-\/in type. \Hypertarget{class_nette_1_1_utils_1_1_type_a3ca7c72866fe5b4e4ba2609b2541f0bc}\index{Type@{Type}!isClass@{isClass}}
+\index{isClass@{isClass}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{isClass()}{isClass()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a3ca7c72866fe5b4e4ba2609b2541f0bc} 
+is\+Class (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true whether the type is both a simple and a class name. \Hypertarget{class_nette_1_1_utils_1_1_type_aad688dda2d8c5e348e44d3cf93176f8d}\index{Type@{Type}!isClassKeyword@{isClassKeyword}}
+\index{isClassKeyword@{isClassKeyword}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{isClassKeyword()}{isClassKeyword()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_aad688dda2d8c5e348e44d3cf93176f8d} 
+is\+Class\+Keyword (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determines if type is special class name self/parent/static. \Hypertarget{class_nette_1_1_utils_1_1_type_ad992489b8d1502619bc8edb9c7b6054b}\index{Type@{Type}!isIntersection@{isIntersection}}
+\index{isIntersection@{isIntersection}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{isIntersection()}{isIntersection()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_ad992489b8d1502619bc8edb9c7b6054b} 
+is\+Intersection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true whether it is an intersection type. \Hypertarget{class_nette_1_1_utils_1_1_type_a270d6ef7fb3863dbd4d27027b21f6ecb}\index{Type@{Type}!isSimple@{isSimple}}
+\index{isSimple@{isSimple}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{isSimple()}{isSimple()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a270d6ef7fb3863dbd4d27027b21f6ecb} 
+is\+Simple (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true whether it is a simple type. Single nullable types are also considered to be simple types. \Hypertarget{class_nette_1_1_utils_1_1_type_a3936b4780caecb6de53a76b7594a0977}\index{Type@{Type}!isSingle@{isSingle}}
+\index{isSingle@{isSingle}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{isSingle()}{isSingle()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a3936b4780caecb6de53a76b7594a0977} 
+is\+Single (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000257}{Deprecated}}]use is\+Simple() \end{DoxyRefDesc}
+\Hypertarget{class_nette_1_1_utils_1_1_type_a69aabd9a83e9e73ddaa36a2c8fe22c74}\index{Type@{Type}!isUnion@{isUnion}}
+\index{isUnion@{isUnion}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{isUnion()}{isUnion()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a69aabd9a83e9e73ddaa36a2c8fe22c74} 
+is\+Union (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true whether it is a union type. \Hypertarget{class_nette_1_1_utils_1_1_type_a948070d168cdf9d2527c279808a04b37}\index{Type@{Type}!resolve@{resolve}}
+\index{resolve@{resolve}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_type_a948070d168cdf9d2527c279808a04b37} 
+resolve (\begin{DoxyParamCaption}\item[{string}]{\$type}{, }\item[{\textbackslash{}Reflection\+Function\+Abstract\texorpdfstring{$\vert$}{|}\textbackslash{}Reflection\+Parameter\texorpdfstring{$\vert$}{|}\textbackslash{}Reflection\+Property}]{\$of}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Resolves \textquotesingle{}self\textquotesingle{}, \textquotesingle{}static\textquotesingle{} and \textquotesingle{}parent\textquotesingle{} to the actual class name. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nette/utils/src/\+Utils/\mbox{\hyperlink{nette_2utils_2src_2_utils_2_type_8php}{Type.\+php}}\end{DoxyCompactItemize}

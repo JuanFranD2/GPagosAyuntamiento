@@ -1,0 +1,51 @@
+\doxysection{Description\+Factory Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory}{}\label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory}\index{DescriptionFactory@{DescriptionFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory_abbed3d059669b02e516a9e8b0be6bb44}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_factory}{Factory}} \$tag\+Factory)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory_a4c2fe0f103774f13aa82432c9dafee2d}{create}} (string \$contents, ?Type\+Context \$context=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a new Description object given a body of text.
+
+Descriptions in php\+Documentor are somewhat complex entities as they can contain one or more tags inside their body that can be replaced with a readable output. The replacing is done by passing a Formatter object to the Description object\textquotesingle{}s {\ttfamily render} method.
+
+In addition to the above does a Description support two types of escape sequences\+:
+
+
+\begin{DoxyEnumerate}
+\item {\ttfamily \{@\}} to escape the {\ttfamily @} character to prevent it from being interpreted as part of a tag, i.\+e. {\ttfamily \{\{@\}link\}}
+\item {\ttfamily \{\}} to escape the {\ttfamily \}} character, this can be used if you want to use the {\ttfamily \}} character in the description of an inline tag.
+\end{DoxyEnumerate}
+
+If a body consists of multiple lines then this factory will also remove any superfluous whitespace at the beginning of each line while maintaining any indentation that is used. This will prevent formatting parsers from tripping over unexpected spaces as can be observed with tag descriptions. 
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory_abbed3d059669b02e516a9e8b0be6bb44}\index{DescriptionFactory@{DescriptionFactory}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DescriptionFactory@{DescriptionFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory_abbed3d059669b02e516a9e8b0be6bb44} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_factory}{Factory}}}]{\$tag\+Factory}{}\end{DoxyParamCaption})}
+
+Initializes this factory with the means to construct (inline) tags. 
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory_a4c2fe0f103774f13aa82432c9dafee2d}\index{DescriptionFactory@{DescriptionFactory}!create@{create}}
+\index{create@{create}!DescriptionFactory@{DescriptionFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory_a4c2fe0f103774f13aa82432c9dafee2d} 
+create (\begin{DoxyParamCaption}\item[{string}]{\$contents}{, }\item[{?Type\+Context}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the parsed text of this description. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock/src/\+Doc\+Block/\mbox{\hyperlink{_description_factory_8php}{Description\+Factory.\+php}}\end{DoxyCompactItemize}

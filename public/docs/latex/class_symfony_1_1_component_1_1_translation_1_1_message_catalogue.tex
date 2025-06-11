@@ -1,0 +1,371 @@
+\doxysection{Message\+Catalogue Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue}{}\label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue}\index{MessageCatalogue@{MessageCatalogue}}
+Inheritance diagram for Message\+Catalogue\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.728395cm]{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a9b83dce0db3a10d03eb0e8c9c60a07b5}{\+\_\+\+\_\+construct}} (private string \$locale, private array \$messages=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ad532b661eb33c3e755bd3fa8ff1bd7af}{get\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aa77ff496620f810daf64f6b937238054}{get\+Domains}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a10931b4f993472f9a220ab09921f1aec}{all}} (?string \$domain=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ac9d3122741e6a8a006ba3060878e8305}{set}} (string \$id, string \$translation, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a2d740fecd302d83093e040e175439b6c}{has}} (string \$id, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a1f8db850fdcb7bd5ee135cdd2e79d1e8}{defines}} (string \$id, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_afb2dd74c1bcfb25ebe0a421460d47295}{get}} (string \$id, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aafd7f53be07f11ea78ae7446f80c8c9a}{replace}} (array \$messages, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aaba385a4cf72126e804c6e95fe60fe3a}{add}} (array \$messages, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a34d0a223d38e7546187e7eba36548c35}{add\+Catalogue}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}} \$catalogue)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a8a8e1c048ba8d5e3db9056dfbe8089da}{add\+Fallback\+Catalogue}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}} \$catalogue)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a9bf9d4d1083268356b108cad6af5c950}{get\+Fallback\+Catalogue}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_acfe6846338dbf5cf990a593d55cbdc4c}{get\+Resources}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a745ac3b4e1a2a127509bc8da50f8bd70}{add\+Resource}} (Resource\+Interface \$resource)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ac96c75a353c11d3065ece617b09fa928}{get\+Metadata}} (string \$key=\textquotesingle{}\textquotesingle{}, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a128ad092d942d3cff348a36d37dc0a2a}{set\+Metadata}} (string \$key, mixed \$value, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a30769644ad7006be13547c18b59574a3}{delete\+Metadata}} (string \$key=\textquotesingle{}\textquotesingle{}, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ae7c6de4fbb0c150f29a48e6a91e2da8d}{get\+Catalogue\+Metadata}} (string \$key=\textquotesingle{}\textquotesingle{}, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aad05ffb40c440f0762abc19d6bb5026e}{set\+Catalogue\+Metadata}} (string \$key, mixed \$value, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ae89d888d37a6e844508c7ab13685bbcd}{delete\+Catalogue\+Metadata}} (string \$key=\textquotesingle{}\textquotesingle{}, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_a58b3d37cbc0e3437aeca1fc82199dd80}{add\+Catalogue}} (self \$catalogue)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_a8dd31de34ed7f105b96fd3eff1e5046d}{add\+Fallback\+Catalogue}} (self \$catalogue)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_ac720a810b77b4694dfed80b28d7eba90}{INTL\+\_\+\+DOMAIN\+\_\+\+SUFFIX}} = \textquotesingle{}+intl-\/icu\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a9b83dce0db3a10d03eb0e8c9c60a07b5}\index{MessageCatalogue@{MessageCatalogue}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a9b83dce0db3a10d03eb0e8c9c60a07b5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private string}]{\$locale}{, }\item[{private array}]{\$messages}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$messages} & An array of messages classified by domain \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aaba385a4cf72126e804c6e95fe60fe3a}\index{MessageCatalogue@{MessageCatalogue}!add@{add}}
+\index{add@{add}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aaba385a4cf72126e804c6e95fe60fe3a} 
+add (\begin{DoxyParamCaption}\item[{array}]{\$messages}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Adds translations for a given domain.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$messages} & An array of translations \\
+\hline
+string & {\em \$domain} & The domain name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_aaba385a4cf72126e804c6e95fe60fe3a}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a34d0a223d38e7546187e7eba36548c35}\index{MessageCatalogue@{MessageCatalogue}!addCatalogue@{addCatalogue}}
+\index{addCatalogue@{addCatalogue}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{addCatalogue()}{addCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a34d0a223d38e7546187e7eba36548c35} 
+add\+Catalogue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}}}]{\$catalogue}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a8a8e1c048ba8d5e3db9056dfbe8089da}\index{MessageCatalogue@{MessageCatalogue}!addFallbackCatalogue@{addFallbackCatalogue}}
+\index{addFallbackCatalogue@{addFallbackCatalogue}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{addFallbackCatalogue()}{addFallbackCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a8a8e1c048ba8d5e3db9056dfbe8089da} 
+add\+Fallback\+Catalogue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}}}]{\$catalogue}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a745ac3b4e1a2a127509bc8da50f8bd70}\index{MessageCatalogue@{MessageCatalogue}!addResource@{addResource}}
+\index{addResource@{addResource}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{addResource()}{addResource()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a745ac3b4e1a2a127509bc8da50f8bd70} 
+add\+Resource (\begin{DoxyParamCaption}\item[{Resource\+Interface}]{\$resource}{}\end{DoxyParamCaption})}
+
+Adds a resource for this collection. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_a745ac3b4e1a2a127509bc8da50f8bd70}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a10931b4f993472f9a220ab09921f1aec}\index{MessageCatalogue@{MessageCatalogue}!all@{all}}
+\index{all@{all}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a10931b4f993472f9a220ab09921f1aec} 
+all (\begin{DoxyParamCaption}\item[{?string}]{\$domain}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets the messages within a given domain.
+
+If \$domain is null, it returns all messages. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_a10931b4f993472f9a220ab09921f1aec}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a1f8db850fdcb7bd5ee135cdd2e79d1e8}\index{MessageCatalogue@{MessageCatalogue}!defines@{defines}}
+\index{defines@{defines}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{defines()}{defines()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a1f8db850fdcb7bd5ee135cdd2e79d1e8} 
+defines (\begin{DoxyParamCaption}\item[{string}]{\$id}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Checks if a message has a translation (it does not take into account the fallback mechanism).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The message id \\
+\hline
+string & {\em \$domain} & The domain name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_a1f8db850fdcb7bd5ee135cdd2e79d1e8}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ae89d888d37a6e844508c7ab13685bbcd}\index{MessageCatalogue@{MessageCatalogue}!deleteCatalogueMetadata@{deleteCatalogueMetadata}}
+\index{deleteCatalogueMetadata@{deleteCatalogueMetadata}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{deleteCatalogueMetadata()}{deleteCatalogueMetadata()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ae89d888d37a6e844508c7ab13685bbcd} 
+delete\+Catalogue\+Metadata (\begin{DoxyParamCaption}\item[{string}]{\$key}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Deletes catalogue metadata for the given key and domain.
+
+Passing an empty domain will delete all catalogue metadata. Passing an empty key will delete all metadata for the given domain. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_ae89d888d37a6e844508c7ab13685bbcd}{Catalogue\+Metadata\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a30769644ad7006be13547c18b59574a3}\index{MessageCatalogue@{MessageCatalogue}!deleteMetadata@{deleteMetadata}}
+\index{deleteMetadata@{deleteMetadata}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{deleteMetadata()}{deleteMetadata()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a30769644ad7006be13547c18b59574a3} 
+delete\+Metadata (\begin{DoxyParamCaption}\item[{string}]{\$key}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Deletes metadata for the given key and domain.
+
+Passing an empty domain will delete all metadata. Passing an empty key will delete all metadata for the given domain. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_metadata_aware_interface_a30769644ad7006be13547c18b59574a3}{Metadata\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_afb2dd74c1bcfb25ebe0a421460d47295}\index{MessageCatalogue@{MessageCatalogue}!get@{get}}
+\index{get@{get}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_afb2dd74c1bcfb25ebe0a421460d47295} 
+get (\begin{DoxyParamCaption}\item[{string}]{\$id}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Gets a message translation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The message id \\
+\hline
+string & {\em \$domain} & The domain name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_afb2dd74c1bcfb25ebe0a421460d47295}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ae7c6de4fbb0c150f29a48e6a91e2da8d}\index{MessageCatalogue@{MessageCatalogue}!getCatalogueMetadata@{getCatalogueMetadata}}
+\index{getCatalogueMetadata@{getCatalogueMetadata}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{getCatalogueMetadata()}{getCatalogueMetadata()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ae7c6de4fbb0c150f29a48e6a91e2da8d} 
+get\+Catalogue\+Metadata (\begin{DoxyParamCaption}\item[{string}]{\$key}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Gets catalogue metadata for the given domain and key.
+
+Passing an empty domain will return an array with all catalogue metadata indexed by domain and then by key. Passing an empty key will return an array with all catalogue metadata for the given domain.
+
+\begin{DoxyReturn}{Returns}
+mixed The value that was set or an array with the domains/keys or null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_ae7c6de4fbb0c150f29a48e6a91e2da8d}{Catalogue\+Metadata\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aa77ff496620f810daf64f6b937238054}\index{MessageCatalogue@{MessageCatalogue}!getDomains@{getDomains}}
+\index{getDomains@{getDomains}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{getDomains()}{getDomains()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aa77ff496620f810daf64f6b937238054} 
+get\+Domains (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the domains. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_aa77ff496620f810daf64f6b937238054}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a9bf9d4d1083268356b108cad6af5c950}\index{MessageCatalogue@{MessageCatalogue}!getFallbackCatalogue@{getFallbackCatalogue}}
+\index{getFallbackCatalogue@{getFallbackCatalogue}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{getFallbackCatalogue()}{getFallbackCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a9bf9d4d1083268356b108cad6af5c950} 
+get\+Fallback\+Catalogue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the fallback catalogue. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_a9bf9d4d1083268356b108cad6af5c950}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ad532b661eb33c3e755bd3fa8ff1bd7af}\index{MessageCatalogue@{MessageCatalogue}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{getLocale()}{getLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ad532b661eb33c3e755bd3fa8ff1bd7af} 
+get\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the catalogue locale. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_ad532b661eb33c3e755bd3fa8ff1bd7af}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ac96c75a353c11d3065ece617b09fa928}\index{MessageCatalogue@{MessageCatalogue}!getMetadata@{getMetadata}}
+\index{getMetadata@{getMetadata}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{getMetadata()}{getMetadata()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ac96c75a353c11d3065ece617b09fa928} 
+get\+Metadata (\begin{DoxyParamCaption}\item[{string}]{\$key}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Gets metadata for the given domain and key.
+
+Passing an empty domain will return an array with all metadata indexed by domain and then by key. Passing an empty key will return an array with all metadata for the given domain.
+
+\begin{DoxyReturn}{Returns}
+mixed The value that was set or an array with the domains/keys or null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_metadata_aware_interface_ac96c75a353c11d3065ece617b09fa928}{Metadata\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_acfe6846338dbf5cf990a593d55cbdc4c}\index{MessageCatalogue@{MessageCatalogue}!getResources@{getResources}}
+\index{getResources@{getResources}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{getResources()}{getResources()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_acfe6846338dbf5cf990a593d55cbdc4c} 
+get\+Resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an array of resources loaded to build this collection.
+
+\begin{DoxyReturn}{Returns}
+Resource\+Interface\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_acfe6846338dbf5cf990a593d55cbdc4c}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a2d740fecd302d83093e040e175439b6c}\index{MessageCatalogue@{MessageCatalogue}!has@{has}}
+\index{has@{has}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a2d740fecd302d83093e040e175439b6c} 
+has (\begin{DoxyParamCaption}\item[{string}]{\$id}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Checks if a message has a translation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The message id \\
+\hline
+string & {\em \$domain} & The domain name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_a2d740fecd302d83093e040e175439b6c}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aafd7f53be07f11ea78ae7446f80c8c9a}\index{MessageCatalogue@{MessageCatalogue}!replace@{replace}}
+\index{replace@{replace}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aafd7f53be07f11ea78ae7446f80c8c9a} 
+replace (\begin{DoxyParamCaption}\item[{array}]{\$messages}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Sets translations for a given domain.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$messages} & An array of translations \\
+\hline
+string & {\em \$domain} & The domain name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_aafd7f53be07f11ea78ae7446f80c8c9a}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ac9d3122741e6a8a006ba3060878e8305}\index{MessageCatalogue@{MessageCatalogue}!set@{set}}
+\index{set@{set}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_ac9d3122741e6a8a006ba3060878e8305} 
+set (\begin{DoxyParamCaption}\item[{string}]{\$id}{, }\item[{string}]{\$translation}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Sets a message translation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The message id \\
+\hline
+string & {\em \$translation} & The messages translation \\
+\hline
+string & {\em \$domain} & The domain name \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface_ac9d3122741e6a8a006ba3060878e8305}{Message\+Catalogue\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aad05ffb40c440f0762abc19d6bb5026e}\index{MessageCatalogue@{MessageCatalogue}!setCatalogueMetadata@{setCatalogueMetadata}}
+\index{setCatalogueMetadata@{setCatalogueMetadata}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{setCatalogueMetadata()}{setCatalogueMetadata()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_aad05ffb40c440f0762abc19d6bb5026e} 
+set\+Catalogue\+Metadata (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$value}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Adds catalogue metadata to a message domain. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_aad05ffb40c440f0762abc19d6bb5026e}{Catalogue\+Metadata\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a128ad092d942d3cff348a36d37dc0a2a}\index{MessageCatalogue@{MessageCatalogue}!setMetadata@{setMetadata}}
+\index{setMetadata@{setMetadata}!MessageCatalogue@{MessageCatalogue}}
+\doxysubsubsection{\texorpdfstring{setMetadata()}{setMetadata()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a128ad092d942d3cff348a36d37dc0a2a} 
+set\+Metadata (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$value}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Adds metadata to a message domain. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_metadata_aware_interface_a128ad092d942d3cff348a36d37dc0a2a}{Metadata\+Aware\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/translation/\mbox{\hyperlink{_message_catalogue_8php}{Message\+Catalogue.\+php}}\end{DoxyCompactItemize}

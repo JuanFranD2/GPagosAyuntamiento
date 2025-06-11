@@ -1,0 +1,4 @@
+var _pure_unless_callable_is_impure_tag_value_node_8php =
+[
+    [ "PureUnlessCallableIsImpureTagValueNode", "class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_php_doc_1_1_pure_unless_callable_is_impure_tag_value_node.html", "class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_php_doc_1_1_pure_unless_callable_is_impure_tag_value_node" ]
+];

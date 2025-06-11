@@ -1,0 +1,93 @@
+\doxysection{Character\+Reference Class Reference}
+\hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference}{}\label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference}\index{CharacterReference@{CharacterReference}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_aa65a6fc20241cede1de9e7d0cdd40ecc}{lookup\+Name}} (\$name)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_ab81af0fb6a01b49c241843be7b237d5a}{lookup\+Decimal}} (\$int)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_a452e6b3f53d077aaefe71b4bc8261db0}{lookup\+Hex}} (\$hexdec)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_ae7dafc1bc0f9de5dcb8fabb585cec9ec}{\$numeric\+\_\+mask}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manage entity references.
+
+This is a simple resolver for HTML5 character reference entitites. See Entities for the list of supported entities. 
+
+\label{doc-func-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_ab81af0fb6a01b49c241843be7b237d5a}\index{CharacterReference@{CharacterReference}!lookupDecimal@{lookupDecimal}}
+\index{lookupDecimal@{lookupDecimal}!CharacterReference@{CharacterReference}}
+\doxysubsubsection{\texorpdfstring{lookupDecimal()}{lookupDecimal()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_ab81af0fb6a01b49c241843be7b237d5a} 
+lookup\+Decimal (\begin{DoxyParamCaption}\item[{}]{\$int}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Given a decimal number, return the UTF-\/8 character.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}string\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_a452e6b3f53d077aaefe71b4bc8261db0}\index{CharacterReference@{CharacterReference}!lookupHex@{lookupHex}}
+\index{lookupHex@{lookupHex}!CharacterReference@{CharacterReference}}
+\doxysubsubsection{\texorpdfstring{lookupHex()}{lookupHex()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_a452e6b3f53d077aaefe71b4bc8261db0} 
+lookup\+Hex (\begin{DoxyParamCaption}\item[{}]{\$hexdec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Given a hexidecimal number, return the UTF-\/8 character.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$hexdec} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}string\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_aa65a6fc20241cede1de9e7d0cdd40ecc}\index{CharacterReference@{CharacterReference}!lookupName@{lookupName}}
+\index{lookupName@{lookupName}!CharacterReference@{CharacterReference}}
+\doxysubsubsection{\texorpdfstring{lookupName()}{lookupName()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_aa65a6fc20241cede1de9e7d0cdd40ecc} 
+lookup\+Name (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Given a name (e.\+g. \textquotesingle{}amp\textquotesingle{}), lookup the UTF-\/8 character (\textquotesingle{}\&\textquotesingle{}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name to look up.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The character sequence. In UTF-\/8 this may be more than one byte. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_ae7dafc1bc0f9de5dcb8fabb585cec9ec}\index{CharacterReference@{CharacterReference}!\$numeric\_mask@{\$numeric\_mask}}
+\index{\$numeric\_mask@{\$numeric\_mask}!CharacterReference@{CharacterReference}}
+\doxysubsubsection{\texorpdfstring{\$numeric\_mask}{\$numeric\_mask}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_character_reference_ae7dafc1bc0f9de5dcb8fabb585cec9ec} 
+\$numeric\+\_\+mask\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Parser/\mbox{\hyperlink{_character_reference_8php}{Character\+Reference.\+php}}\end{DoxyCompactItemize}

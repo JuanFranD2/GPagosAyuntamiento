@@ -1,0 +1,173 @@
+\doxysection{Input\+Argument Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument}{}\label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument}\index{InputArgument@{InputArgument}}
+Inheritance diagram for Input\+Argument\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_acba3ffd0e8329d6d04cef4aaf25bd2d5}{\+\_\+\+\_\+construct}} (private string \$name, ?int \$mode=null, private string \$description=\textquotesingle{}\textquotesingle{}, string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$default=null, private \textbackslash{}Closure\texorpdfstring{$\vert$}{|}array \$suggested\+Values=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_ac26faa299b04174755ce0cca5f774585}{is\+Required}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a2f0ab131ec6fa3f6f91721eb72ca10f0}{is\+Array}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a84086c22502051b501fe011d366ab825}{set\+Default}} (string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$default)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_adc30a2a4d3e48cb6aee21562afbc4022}{get\+Default}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_aab6c8dee318bfb706bb04cd89686b245}{has\+Completion}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a75661471e033afd63caccdb6bd352601}{complete}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_input}{Completion\+Input}} \$input, \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_suggestions}{Completion\+Suggestions}} \$suggestions)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a2e7bb35c71bf1824456ceb944cb7a845}{get\+Description}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a4af9e891afe0982a6bc3b1338da3dfe6}{REQUIRED}} = 1
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a0a925b0673e0899cf6882ba6643ba79e}{OPTIONAL}} = 2
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_af9eb4906b6ce9917c507b712befeb256}{IS\+\_\+\+ARRAY}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a command line argument.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_acba3ffd0e8329d6d04cef4aaf25bd2d5}\index{InputArgument@{InputArgument}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_acba3ffd0e8329d6d04cef4aaf25bd2d5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private string}]{\$name}{, }\item[{?int}]{\$mode}{ = {\ttfamily null}, }\item[{private string}]{\$description}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null}]{\$default}{ = {\ttfamily null}, }\item[{private \textbackslash{}Closure\texorpdfstring{$\vert$}{|}array}]{\$suggested\+Values}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The argument name \\
+\hline
+ & {\em int-\/mask-\/of$<$\+Input\+Argument\+::\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\vert$}{|}null} & \$mode The argument mode\+: a bit mask of self\+::\+REQUIRED, self\+::\+OPTIONAL and self\+::\+IS\+\_\+\+ARRAY \\
+\hline
+string & {\em \$description} & A description text \\
+\hline
+string | bool | int | float | array | null & {\em \$default} & The default value (for self\+::\+OPTIONAL mode only) \\
+\hline
+ & {\em array\texorpdfstring{$\vert$}{|}} & \\
+\hline
+\end{DoxyParams}
+Closure(\+Completion\+Input,\+Completion\+Suggestions)\+:list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}\+Suggestion\texorpdfstring{$>$}{>} \$suggested\+Values The values used for input completion
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & When argument mode is not valid \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a75661471e033afd63caccdb6bd352601}\index{InputArgument@{InputArgument}!complete@{complete}}
+\index{complete@{complete}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{complete()}{complete()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a75661471e033afd63caccdb6bd352601} 
+complete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_input}{Completion\+Input}}}]{\$input}{, }\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_suggestions}{Completion\+Suggestions}}}]{\$suggestions}{}\end{DoxyParamCaption})}
+
+Supplies suggestions when command resolves possible completion options for input.
+
+\begin{DoxySeeAlso}{See also}
+Command\+::complete() 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_adc30a2a4d3e48cb6aee21562afbc4022}\index{InputArgument@{InputArgument}!getDefault@{getDefault}}
+\index{getDefault@{getDefault}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{getDefault()}{getDefault()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_adc30a2a4d3e48cb6aee21562afbc4022} 
+get\+Default (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the default value. \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a2e7bb35c71bf1824456ceb944cb7a845}\index{InputArgument@{InputArgument}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a2e7bb35c71bf1824456ceb944cb7a845} 
+get\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the description text. \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a3d0963e68bb313b163a73f2803c64600}\index{InputArgument@{InputArgument}!getName@{getName}}
+\index{getName@{getName}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the argument name. \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_aab6c8dee318bfb706bb04cd89686b245}\index{InputArgument@{InputArgument}!hasCompletion@{hasCompletion}}
+\index{hasCompletion@{hasCompletion}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{hasCompletion()}{hasCompletion()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_aab6c8dee318bfb706bb04cd89686b245} 
+has\+Completion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if the argument has values for input completion. \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a2f0ab131ec6fa3f6f91721eb72ca10f0}\index{InputArgument@{InputArgument}!isArray@{isArray}}
+\index{isArray@{isArray}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{isArray()}{isArray()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a2f0ab131ec6fa3f6f91721eb72ca10f0} 
+is\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if the argument can take multiple values.
+
+\begin{DoxyReturn}{Returns}
+bool true if mode is self\+::\+IS\+\_\+\+ARRAY, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_ac26faa299b04174755ce0cca5f774585}\index{InputArgument@{InputArgument}!isRequired@{isRequired}}
+\index{isRequired@{isRequired}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{isRequired()}{isRequired()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_ac26faa299b04174755ce0cca5f774585} 
+is\+Required (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if the argument is required.
+
+\begin{DoxyReturn}{Returns}
+bool true if parameter mode is self\+::\+REQUIRED, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a84086c22502051b501fe011d366ab825}\index{InputArgument@{InputArgument}!setDefault@{setDefault}}
+\index{setDefault@{setDefault}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{setDefault()}{setDefault()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a84086c22502051b501fe011d366ab825} 
+set\+Default (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null}]{\$default}{}\end{DoxyParamCaption})}
+
+Sets the default value. 
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_af9eb4906b6ce9917c507b712befeb256}\index{InputArgument@{InputArgument}!IS\_ARRAY@{IS\_ARRAY}}
+\index{IS\_ARRAY@{IS\_ARRAY}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{IS\_ARRAY}{IS\_ARRAY}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_af9eb4906b6ce9917c507b712befeb256} 
+const IS\+\_\+\+ARRAY = 4}
+
+The argument accepts multiple values and turn them into an array (e.\+g. \textquotesingle{}app\+:foo bar baz\textquotesingle{} will result in value \mbox{[}\textquotesingle{}bar\textquotesingle{}, \textquotesingle{}baz\textquotesingle{}\mbox{]}). \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a0a925b0673e0899cf6882ba6643ba79e}\index{InputArgument@{InputArgument}!OPTIONAL@{OPTIONAL}}
+\index{OPTIONAL@{OPTIONAL}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{OPTIONAL}{OPTIONAL}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a0a925b0673e0899cf6882ba6643ba79e} 
+const OPTIONAL = 2}
+
+Providing an argument is optional (e.\+g. \textquotesingle{}app\+:foo\textquotesingle{} and \textquotesingle{}app\+:foo bar\textquotesingle{} are both allowed). This is the default behavior of arguments. \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a4af9e891afe0982a6bc3b1338da3dfe6}\index{InputArgument@{InputArgument}!REQUIRED@{REQUIRED}}
+\index{REQUIRED@{REQUIRED}!InputArgument@{InputArgument}}
+\doxysubsubsection{\texorpdfstring{REQUIRED}{REQUIRED}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a4af9e891afe0982a6bc3b1338da3dfe6} 
+const REQUIRED = 1}
+
+Providing an argument is required (e.\+g. just \textquotesingle{}app\+:foo\textquotesingle{} is not allowed). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/console/\+Input/\mbox{\hyperlink{_input_argument_8php}{Input\+Argument.\+php}}\end{DoxyCompactItemize}

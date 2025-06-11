@@ -1,0 +1,465 @@
+\chapter{Changelog }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g}\index{Changelog@{Changelog}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8698}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8698}%
+
+
+All notable changes to this project will be documented in this file.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8699}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.12.3}{\texttt{0.\+12.\+3}} -\/ 2025-\/02-\/28}{\href{https://github.com/brick/math/releases/tag/0.12.3}{\texttt{0.\+12.\+3}} -\/ 2025-\/02-\/28}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8699}
+✨ {\bfseries{New features}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Decimal\+::get\+Precision()} Returns the number of significant digits in a decimal number
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8700}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.12.2}{\texttt{0.\+12.\+2}} -\/ 2025-\/02-\/26}{\href{https://github.com/brick/math/releases/tag/0.12.2}{\texttt{0.\+12.\+2}} -\/ 2025-\/02-\/26}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8700}
+⚡️ {\bfseries{Performance improvements}}
+
+
+\begin{DoxyItemize}
+\item Division in {\ttfamily Native\+Calculator} is now faster for small divisors, thanks to \href{https://github.com/Izumi-kun}{\texttt{@\+Izumi-\/kun}} in \href{https://github.com/brick/math/pull/87}{\texttt{\#87}}.
+\end{DoxyItemize}
+
+👌 {\bfseries{Improvements}}
+
+
+\begin{DoxyItemize}
+\item Add missing {\ttfamily Rounding\+Necessary\+Exception} to the {\ttfamily @throws} annotation of {\ttfamily Big\+Number\+::of()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8701}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.12.1}{\texttt{0.\+12.\+1}} -\/ 2023-\/11-\/29}{\href{https://github.com/brick/math/releases/tag/0.12.1}{\texttt{0.\+12.\+1}} -\/ 2023-\/11-\/29}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8701}
+⚡️ {\bfseries{Performance improvements}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Number\+::of()} is now faster, thanks to \href{https://github.com/SebastienDug}{\texttt{@\+Sebastien\+Dug}} in \href{https://github.com/brick/math/pull/77}{\texttt{\#77}}.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8702}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.12.0}{\texttt{0.\+12.\+0}} -\/ 2023-\/11-\/26}{\href{https://github.com/brick/math/releases/tag/0.12.0}{\texttt{0.\+12.\+0}} -\/ 2023-\/11-\/26}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8702}
+💥 {\bfseries{Breaking changes}}
+
+
+\begin{DoxyItemize}
+\item Minimum PHP version is now 8.\+1
+\item {\ttfamily Rounding\+Mode} is now an {\ttfamily enum}; if you\textquotesingle{}re type-\/hinting rounding modes, you need to type-\/hint against {\ttfamily Rounding\+Mode} instead of {\ttfamily int} now
+\item {\ttfamily Big\+Number} classes do not implement the {\ttfamily Serializable} interface anymore (they use the \href{https://wiki.php.net/rfc/custom_object_serialization}{\texttt{new custom object serialization mechanism}})
+\item The following breaking changes only affect you if you\textquotesingle{}re creating your own {\ttfamily Big\+Number} subclasses\+:
+\begin{DoxyItemize}
+\item the return type of {\ttfamily Big\+Number\+::of()} is now {\ttfamily static}
+\item {\ttfamily Big\+Number} has a new abstract method {\ttfamily from()}
+\item all {\ttfamily public} and {\ttfamily protected} functions of {\ttfamily Big\+Number} are now {\ttfamily final}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8703}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.11.0}{\texttt{0.\+11.\+0}} -\/ 2023-\/01-\/16}{\href{https://github.com/brick/math/releases/tag/0.11.0}{\texttt{0.\+11.\+0}} -\/ 2023-\/01-\/16}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8703}
+💥 {\bfseries{Breaking changes}}
+
+
+\begin{DoxyItemize}
+\item Minimum PHP version is now 8.\+0
+\item Methods accepting a union of types are now strongly typed\textsuperscript{\texorpdfstring{$\ast$}{*}}
+\item {\ttfamily Math\+Exception} now extends {\ttfamily Exception} instead of {\ttfamily Runtime\+Exception}
+\end{DoxyItemize}
+
+\textsuperscript{\texorpdfstring{$\ast$}{*} You may now run into type errors if you were passing {\ttfamily Stringable} objects to {\ttfamily of()} or any of the methods internally calling {\ttfamily of()}, with {\ttfamily strict\+\_\+types} enabled. You can fix this by casting {\ttfamily Stringable} objects to {\ttfamily string} first.}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8704}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.10.2}{\texttt{0.\+10.\+2}} -\/ 2022-\/08-\/11}{\href{https://github.com/brick/math/releases/tag/0.10.2}{\texttt{0.\+10.\+2}} -\/ 2022-\/08-\/11}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8704}
+👌 {\bfseries{Improvements}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Rational\+::to\+Float()} now simplifies the fraction before performing division (\#73) thanks to @olsavmic
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8705}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.10.1}{\texttt{0.\+10.\+1}} -\/ 2022-\/08-\/02}{\href{https://github.com/brick/math/releases/tag/0.10.1}{\texttt{0.\+10.\+1}} -\/ 2022-\/08-\/02}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8705}
+✨ {\bfseries{New features}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::gcd\+Multiple()} returns the GCD of multiple {\ttfamily Big\+Integer} numbers
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8706}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.10.0}{\texttt{0.\+10.\+0}} -\/ 2022-\/06-\/18}{\href{https://github.com/brick/math/releases/tag/0.10.0}{\texttt{0.\+10.\+0}} -\/ 2022-\/06-\/18}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8706}
+💥 {\bfseries{Breaking changes}}
+
+
+\begin{DoxyItemize}
+\item Minimum PHP version is now 7.\+4
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8707}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.9.3}{\texttt{0.\+9.\+3}} -\/ 2021-\/08-\/15}{\href{https://github.com/brick/math/releases/tag/0.9.3}{\texttt{0.\+9.\+3}} -\/ 2021-\/08-\/15}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8707}
+🚀 {\bfseries{Compatibility with PHP 8.\+1}}
+
+
+\begin{DoxyItemize}
+\item Support for custom object serialization; this removes a warning on PHP 8.\+1 due to the {\ttfamily Serializable} interface being deprecated (\#60) thanks @\+TRowbotham
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8708}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.9.2}{\texttt{0.\+9.\+2}} -\/ 2021-\/01-\/20}{\href{https://github.com/brick/math/releases/tag/0.9.2}{\texttt{0.\+9.\+2}} -\/ 2021-\/01-\/20}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8708}
+🐛 {\bfseries{Bug fix}}
+
+
+\begin{DoxyItemize}
+\item Incorrect results could be returned when using the BCMath calculator, with a default scale set with {\ttfamily bcscale()}, on PHP \texorpdfstring{$>$}{>}= 7.\+2 (\#55).
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8709}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.9.1}{\texttt{0.\+9.\+1}} -\/ 2020-\/08-\/19}{\href{https://github.com/brick/math/releases/tag/0.9.1}{\texttt{0.\+9.\+1}} -\/ 2020-\/08-\/19}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8709}
+✨ {\bfseries{New features}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::not()} returns the bitwise {\ttfamily NOT} value
+\end{DoxyItemize}
+
+🐛 {\bfseries{Bug fixes}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::to\+Bytes()} could return an incorrect binary representation for some numbers
+\item The bitwise operations {\ttfamily and()}, {\ttfamily or()}, {\ttfamily xor()} on {\ttfamily Big\+Integer} could return an incorrect result when the GMP extension is not available
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8710}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.9.0}{\texttt{0.\+9.\+0}} -\/ 2020-\/08-\/18}{\href{https://github.com/brick/math/releases/tag/0.9.0}{\texttt{0.\+9.\+0}} -\/ 2020-\/08-\/18}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8710}
+👌 {\bfseries{Improvements}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Number\+::of()} now accepts {\ttfamily .123} and {\ttfamily 123.} formats, both of which return a {\ttfamily Big\+Decimal}
+\end{DoxyItemize}
+
+💥 {\bfseries{Breaking changes}}
+
+
+\begin{DoxyItemize}
+\item Deprecated method {\ttfamily Big\+Integer\+::power\+Mod()} has been removed -\/ use {\ttfamily mod\+Pow()} instead
+\item Deprecated method {\ttfamily Big\+Integer\+::parse()} has been removed -\/ use {\ttfamily from\+Base()} instead
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8711}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.17}{\texttt{0.\+8.\+17}} -\/ 2020-\/08-\/19}{\href{https://github.com/brick/math/releases/tag/0.8.17}{\texttt{0.\+8.\+17}} -\/ 2020-\/08-\/19}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8711}
+🐛 {\bfseries{Bug fix}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::to\+Bytes()} could return an incorrect binary representation for some numbers
+\item The bitwise operations {\ttfamily and()}, {\ttfamily or()}, {\ttfamily xor()} on {\ttfamily Big\+Integer} could return an incorrect result when the GMP extension is not available
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8712}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.16}{\texttt{0.\+8.\+16}} -\/ 2020-\/08-\/18}{\href{https://github.com/brick/math/releases/tag/0.8.16}{\texttt{0.\+8.\+16}} -\/ 2020-\/08-\/18}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8712}
+🚑 {\bfseries{Critical fix}}
+
+
+\begin{DoxyItemize}
+\item This version reintroduces the deprecated {\ttfamily Big\+Integer\+::parse()} method, that has been removed by mistake in version {\ttfamily 0.\+8.\+9} and should have lasted for the whole {\ttfamily 0.\+8} release cycle.
+\end{DoxyItemize}
+
+✨ {\bfseries{New features}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::mod\+Inverse()} calculates a modular multiplicative inverse
+\item {\ttfamily Big\+Integer\+::from\+Bytes()} creates a {\ttfamily Big\+Integer} from a byte string
+\item {\ttfamily Big\+Integer\+::to\+Bytes()} converts a {\ttfamily Big\+Integer} to a byte string
+\item {\ttfamily Big\+Integer\+::random\+Bits()} creates a pseudo-\/random {\ttfamily Big\+Integer} of a given bit length
+\item {\ttfamily Big\+Integer\+::random\+Range()} creates a pseudo-\/random {\ttfamily Big\+Integer} between two bounds
+\end{DoxyItemize}
+
+💩 {\bfseries{Deprecations}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::power\+Mod()} is now deprecated in favour of {\ttfamily mod\+Pow()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8713}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.15}{\texttt{0.\+8.\+15}} -\/ 2020-\/04-\/15}{\href{https://github.com/brick/math/releases/tag/0.8.15}{\texttt{0.\+8.\+15}} -\/ 2020-\/04-\/15}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8713}
+🐛 {\bfseries{Fixes}}
+
+
+\begin{DoxyItemize}
+\item added missing {\ttfamily ext-\/json} requirement, due to {\ttfamily Big\+Number} implementing {\ttfamily Json\+Serializable}
+\end{DoxyItemize}
+
+⚡️ {\bfseries{Optimizations}}
+
+
+\begin{DoxyItemize}
+\item additional optimization in {\ttfamily Big\+Integer\+::remainder()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8714}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.14}{\texttt{0.\+8.\+14}} -\/ 2020-\/02-\/18}{\href{https://github.com/brick/math/releases/tag/0.8.14}{\texttt{0.\+8.\+14}} -\/ 2020-\/02-\/18}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8714}
+✨ {\bfseries{New features}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::get\+Lowest\+Set\+Bit()} returns the index of the rightmost one bit
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8715}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.13}{\texttt{0.\+8.\+13}} -\/ 2020-\/02-\/16}{\href{https://github.com/brick/math/releases/tag/0.8.13}{\texttt{0.\+8.\+13}} -\/ 2020-\/02-\/16}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8715}
+✨ {\bfseries{New features}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::is\+Even()} tests whether the number is even
+\item {\ttfamily Big\+Integer\+::is\+Odd()} tests whether the number is odd
+\item {\ttfamily Big\+Integer\+::test\+Bit()} tests if a bit is set
+\item {\ttfamily Big\+Integer\+::get\+Bit\+Length()} returns the number of bits in the minimal representation of the number
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8716}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.12}{\texttt{0.\+8.\+12}} -\/ 2020-\/02-\/03}{\href{https://github.com/brick/math/releases/tag/0.8.12}{\texttt{0.\+8.\+12}} -\/ 2020-\/02-\/03}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8716}
+🛠️ {\bfseries{Maintenance release}}
+
+Classes are now annotated for better static analysis with \href{https://psalm.dev/}{\texttt{psalm}}.
+
+This is a maintenance release\+: no bug fixes, no new features, no breaking changes.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8717}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.11}{\texttt{0.\+8.\+11}} -\/ 2020-\/01-\/23}{\href{https://github.com/brick/math/releases/tag/0.8.11}{\texttt{0.\+8.\+11}} -\/ 2020-\/01-\/23}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8717}
+✨ {\bfseries{New feature}}
+
+{\ttfamily Big\+Integer\+::power\+Mod()} performs a power-\/with-\/modulo operation. Useful for crypto.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8718}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.10}{\texttt{0.\+8.\+10}} -\/ 2020-\/01-\/21}{\href{https://github.com/brick/math/releases/tag/0.8.10}{\texttt{0.\+8.\+10}} -\/ 2020-\/01-\/21}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8718}
+✨ {\bfseries{New feature}}
+
+{\ttfamily Big\+Integer\+::mod()} returns the {\bfseries{modulo}} of two numbers. The {\itshape modulo} differs from the {\itshape remainder} when the signs of the operands are different.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8719}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.9}{\texttt{0.\+8.\+9}} -\/ 2020-\/01-\/08}{\href{https://github.com/brick/math/releases/tag/0.8.9}{\texttt{0.\+8.\+9}} -\/ 2020-\/01-\/08}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8719}
+⚡️ {\bfseries{Performance improvements}}
+
+A few additional optimizations in {\ttfamily Big\+Integer} and {\ttfamily Big\+Decimal} when one of the operands can be returned as is. Thanks to @tomtomsen in \#24.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8720}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.8}{\texttt{0.\+8.\+8}} -\/ 2019-\/04-\/25}{\href{https://github.com/brick/math/releases/tag/0.8.8}{\texttt{0.\+8.\+8}} -\/ 2019-\/04-\/25}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8720}
+🐛 {\bfseries{Bug fixes}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::to\+Base()} could return an empty string for zero values (BCMath \& Native calculators only, GMP calculator unaffected)
+\end{DoxyItemize}
+
+✨ {\bfseries{New features}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::to\+Arbitrary\+Base()} converts a number to an arbitrary base, using a custom alphabet
+\item {\ttfamily Big\+Integer\+::from\+Arbitrary\+Base()} converts a string in an arbitrary base, using a custom alphabet, back to a number
+\end{DoxyItemize}
+
+These methods can be used as the foundation to convert strings between different bases/alphabets, using Big\+Integer as an intermediate representation.
+
+💩 {\bfseries{Deprecations}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::parse()} is now deprecated in favour of {\ttfamily from\+Base()}
+\end{DoxyItemize}
+
+{\ttfamily Big\+Integer\+::from\+Base()} works the same way as {\ttfamily parse()}, with 2 minor differences\+:
+
+
+\begin{DoxyItemize}
+\item the {\ttfamily \$base} parameter is required, it does not default to {\ttfamily 10}
+\item it throws a {\ttfamily Number\+Format\+Exception} instead of an {\ttfamily Invalid\+Argument\+Exception} when the number is malformed
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8721}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.7}{\texttt{0.\+8.\+7}} -\/ 2019-\/04-\/20}{\href{https://github.com/brick/math/releases/tag/0.8.7}{\texttt{0.\+8.\+7}} -\/ 2019-\/04-\/20}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8721}
+{\bfseries{Improvements}}
+
+
+\begin{DoxyItemize}
+\item Safer conversion from {\ttfamily float} when using custom locales
+\item {\bfseries{Much faster}} {\ttfamily Native\+Calculator} implementation 🚀
+\end{DoxyItemize}
+
+You can expect {\bfseries{at least a 3x performance improvement}} for common arithmetic operations when using the library on systems without GMP or BCMath; it gets exponentially faster on multiplications with a high number of digits. This is due to calculations now being performed on whole blocks of digits (the block size depending on the platform, 32-\/bit or 64-\/bit) instead of digit-\/by-\/digit as before.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8722}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.6}{\texttt{0.\+8.\+6}} -\/ 2019-\/04-\/11}{\href{https://github.com/brick/math/releases/tag/0.8.6}{\texttt{0.\+8.\+6}} -\/ 2019-\/04-\/11}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8722}
+{\bfseries{New method}}
+
+{\ttfamily Big\+Number\+::sum()} returns the sum of one or more numbers.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8723}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.5}{\texttt{0.\+8.\+5}} -\/ 2019-\/02-\/12}{\href{https://github.com/brick/math/releases/tag/0.8.5}{\texttt{0.\+8.\+5}} -\/ 2019-\/02-\/12}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8723}
+{\bfseries{Bug fix}}\+: {\ttfamily of()} factory methods could fail when passing a {\ttfamily float} in environments using a {\ttfamily LC\+\_\+\+NUMERIC} locale with a decimal separator other than `'.\textquotesingle{}\`{} (\#20).
+
+Thanks @manowark 👍\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8724}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.4}{\texttt{0.\+8.\+4}} -\/ 2018-\/12-\/07}{\href{https://github.com/brick/math/releases/tag/0.8.4}{\texttt{0.\+8.\+4}} -\/ 2018-\/12-\/07}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8724}
+{\bfseries{New method}}
+
+{\ttfamily Big\+Decimal\+::sqrt()} calculates the square root of a decimal number, to a given scale.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8725}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.3}{\texttt{0.\+8.\+3}} -\/ 2018-\/12-\/06}{\href{https://github.com/brick/math/releases/tag/0.8.3}{\texttt{0.\+8.\+3}} -\/ 2018-\/12-\/06}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8725}
+{\bfseries{New method}}
+
+{\ttfamily Big\+Integer\+::sqrt()} calculates the square root of a number (thanks @peter279k).
+
+{\bfseries{New exception}}
+
+{\ttfamily Negative\+Number\+Exception} is thrown when calling {\ttfamily sqrt()} on a negative number.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8726}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.2}{\texttt{0.\+8.\+2}} -\/ 2018-\/11-\/08}{\href{https://github.com/brick/math/releases/tag/0.8.2}{\texttt{0.\+8.\+2}} -\/ 2018-\/11-\/08}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8726}
+{\bfseries{Performance update}}
+
+
+\begin{DoxyItemize}
+\item Further improvement of {\ttfamily to\+Int()} performance
+\item {\ttfamily Native\+Calculator} can now perform some multiplications more efficiently
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8727}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.1}{\texttt{0.\+8.\+1}} -\/ 2018-\/11-\/07}{\href{https://github.com/brick/math/releases/tag/0.8.1}{\texttt{0.\+8.\+1}} -\/ 2018-\/11-\/07}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8727}
+Performance optimization of {\ttfamily to\+Int()} methods.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8728}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.8.0}{\texttt{0.\+8.\+0}} -\/ 2018-\/10-\/13}{\href{https://github.com/brick/math/releases/tag/0.8.0}{\texttt{0.\+8.\+0}} -\/ 2018-\/10-\/13}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8728}
+{\bfseries{Breaking changes}}
+
+The following deprecated methods have been removed. Use the new method name instead\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method removed  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Replacement method  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method removed  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Replacement method  }\\\cline{1-2}
+\endhead
+{\ttfamily Big\+Decimal\+::get\+Integral()}  &{\ttfamily Big\+Decimal\+::get\+Integral\+Part()}  \\\cline{1-2}
+{\ttfamily Big\+Decimal\+::get\+Fraction()}  &{\ttfamily Big\+Decimal\+::get\+Fractional\+Part()}  \\\cline{1-2}
+\end{longtabu}
+
+
+\DoxyHorRuler{0}
+
+
+{\bfseries{New features}}
+
+{\ttfamily Big\+Integer} has been augmented with 5 new methods for bitwise operations\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ New method  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ New method  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily and()}  &performs a bitwise {\ttfamily AND} operation on two numbers  \\\cline{1-2}
+{\ttfamily or()}  &performs a bitwise {\ttfamily OR} operation on two numbers  \\\cline{1-2}
+{\ttfamily xor()}  &performs a bitwise {\ttfamily XOR} operation on two numbers  \\\cline{1-2}
+{\ttfamily shifted\+Left()}  &returns the number shifted left by a number of bits  \\\cline{1-2}
+{\ttfamily shifted\+Right()}  &returns the number shifted right by a number of bits  \\\cline{1-2}
+\end{longtabu}
+
+
+Thanks to @\+DASPRiD 👍\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8730}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.7.3}{\texttt{0.\+7.\+3}} -\/ 2018-\/08-\/20}{\href{https://github.com/brick/math/releases/tag/0.7.3}{\texttt{0.\+7.\+3}} -\/ 2018-\/08-\/20}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8730}
+{\bfseries{New method\+:}} {\ttfamily Big\+Decimal\+::has\+Non\+Zero\+Fractional\+Part()}
+
+{\bfseries{Renamed/deprecated methods\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Decimal\+::get\+Integral()} has been renamed to {\ttfamily get\+Integral\+Part()} and is now deprecated
+\item {\ttfamily Big\+Decimal\+::get\+Fraction()} has been renamed to {\ttfamily get\+Fractional\+Part()} and is now deprecated
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8731}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.7.2}{\texttt{0.\+7.\+2}} -\/ 2018-\/07-\/21}{\href{https://github.com/brick/math/releases/tag/0.7.2}{\texttt{0.\+7.\+2}} -\/ 2018-\/07-\/21}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8731}
+{\bfseries{Performance update}}
+
+{\ttfamily Big\+Integer\+::parse()} and {\ttfamily to\+Base()} now use GMP\textquotesingle{}s built-\/in base conversion features when available.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8732}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.7.1}{\texttt{0.\+7.\+1}} -\/ 2018-\/03-\/01}{\href{https://github.com/brick/math/releases/tag/0.7.1}{\texttt{0.\+7.\+1}} -\/ 2018-\/03-\/01}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8732}
+This is a maintenance release, no code has been changed.
+
+
+\begin{DoxyItemize}
+\item When installed with {\ttfamily -\/-\/no-\/dev}, the autoloader does not autoload tests anymore
+\item \doxylink{namespace_tests}{Tests} and other files unnecessary for production are excluded from the dist package
+\end{DoxyItemize}
+
+This will help make installations more compact.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8733}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.7.0}{\texttt{0.\+7.\+0}} -\/ 2017-\/10-\/02}{\href{https://github.com/brick/math/releases/tag/0.7.0}{\texttt{0.\+7.\+0}} -\/ 2017-\/10-\/02}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8733}
+Methods renamed\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Number\+:sign()} has been renamed to {\ttfamily get\+Sign()}
+\item {\ttfamily Big\+Decimal\+::unscaled\+Value()} has been renamed to {\ttfamily get\+Unscaled\+Value()}
+\item {\ttfamily Big\+Decimal\+::scale()} has been renamed to {\ttfamily get\+Scale()}
+\item {\ttfamily Big\+Decimal\+::integral()} has been renamed to {\ttfamily get\+Integral()}
+\item {\ttfamily Big\+Decimal\+::fraction()} has been renamed to {\ttfamily get\+Fraction()}
+\item {\ttfamily Big\+Rational\+::numerator()} has been renamed to {\ttfamily get\+Numerator()}
+\item {\ttfamily Big\+Rational\+::denominator()} has been renamed to {\ttfamily get\+Denominator()}
+\end{DoxyItemize}
+
+Classes renamed\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Arithmetic\+Exception} has been renamed to {\ttfamily Math\+Exception}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8734}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.6.2}{\texttt{0.\+6.\+2}} -\/ 2017-\/10-\/02}{\href{https://github.com/brick/math/releases/tag/0.6.2}{\texttt{0.\+6.\+2}} -\/ 2017-\/10-\/02}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8734}
+The base class for all exceptions is now {\ttfamily Math\+Exception}. {\ttfamily Arithmetic\+Exception} has been deprecated, and will be removed in 0.\+7.\+0.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8735}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.6.1}{\texttt{0.\+6.\+1}} -\/ 2017-\/10-\/02}{\href{https://github.com/brick/math/releases/tag/0.6.1}{\texttt{0.\+6.\+1}} -\/ 2017-\/10-\/02}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8735}
+A number of methods have been renamed\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Number\+:sign()} is deprecated; use {\ttfamily get\+Sign()} instead
+\item {\ttfamily Big\+Decimal\+::unscaled\+Value()} is deprecated; use {\ttfamily get\+Unscaled\+Value()} instead
+\item {\ttfamily Big\+Decimal\+::scale()} is deprecated; use {\ttfamily get\+Scale()} instead
+\item {\ttfamily Big\+Decimal\+::integral()} is deprecated; use {\ttfamily get\+Integral()} instead
+\item {\ttfamily Big\+Decimal\+::fraction()} is deprecated; use {\ttfamily get\+Fraction()} instead
+\item {\ttfamily Big\+Rational\+::numerator()} is deprecated; use {\ttfamily get\+Numerator()} instead
+\item {\ttfamily Big\+Rational\+::denominator()} is deprecated; use {\ttfamily get\+Denominator()} instead
+\end{DoxyItemize}
+
+The old methods will be removed in version 0.\+7.\+0.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8736}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.6.0}{\texttt{0.\+6.\+0}} -\/ 2017-\/08-\/25}{\href{https://github.com/brick/math/releases/tag/0.6.0}{\texttt{0.\+6.\+0}} -\/ 2017-\/08-\/25}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8736}
+
+\begin{DoxyItemize}
+\item Minimum PHP version is now \href{https://gophp71.org/}{\texttt{7.\+1}}; for PHP 5.\+6 and PHP 7.\+0 support, use version {\ttfamily 0.\+5}
+\item Deprecated method {\ttfamily Big\+Decimal\+::with\+Scale()} has been removed; use {\ttfamily to\+Scale()} instead
+\item Method {\ttfamily Big\+Number\+::to\+Integer()} has been renamed to {\ttfamily to\+Int()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8737}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.5.4}{\texttt{0.\+5.\+4}} -\/ 2016-\/10-\/17}{\href{https://github.com/brick/math/releases/tag/0.5.4}{\texttt{0.\+5.\+4}} -\/ 2016-\/10-\/17}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8737}
+{\ttfamily Big\+Number} classes now implement \href{http://php.net/manual/en/class.jsonserializable.php}{\texttt{Json\+Serializable}}. The JSON output is always a string.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8738}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.5.3}{\texttt{0.\+5.\+3}} -\/ 2016-\/03-\/31}{\href{https://github.com/brick/math/releases/tag/0.5.3}{\texttt{0.\+5.\+3}} -\/ 2016-\/03-\/31}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8738}
+This is a bugfix release. Dividing by a negative power of 1 with the same scale as the dividend could trigger an incorrect optimization which resulted in a wrong result. See \#6.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8739}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.5.2}{\texttt{0.\+5.\+2}} -\/ 2015-\/08-\/06}{\href{https://github.com/brick/math/releases/tag/0.5.2}{\texttt{0.\+5.\+2}} -\/ 2015-\/08-\/06}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8739}
+The {\ttfamily \$scale} parameter of {\ttfamily Big\+Decimal\+::divided\+By()} is now optional again.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8740}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.5.1}{\texttt{0.\+5.\+1}} -\/ 2015-\/07-\/05}{\href{https://github.com/brick/math/releases/tag/0.5.1}{\texttt{0.\+5.\+1}} -\/ 2015-\/07-\/05}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8740}
+{\bfseries{New method\+: {\ttfamily Big\+Number\+::to\+Scale()}}}
+
+This allows to convert any {\ttfamily Big\+Number} to a {\ttfamily Big\+Decimal} with a given scale, using rounding if necessary.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8741}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.5.0}{\texttt{0.\+5.\+0}} -\/ 2015-\/07-\/04}{\href{https://github.com/brick/math/releases/tag/0.5.0}{\texttt{0.\+5.\+0}} -\/ 2015-\/07-\/04}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8741}
+{\bfseries{New features}}
+\begin{DoxyItemize}
+\item Common {\ttfamily Big\+Number} interface for all classes, with the following methods\+:
+\begin{DoxyItemize}
+\item {\ttfamily sign()} and derived methods ({\ttfamily is\+Zero()}, {\ttfamily is\+Positive()}, ...)
+\item {\ttfamily compare\+To()} and derived methods ({\ttfamily is\+Equal\+To()}, {\ttfamily is\+Greater\+Than()}, ...) that work across different {\ttfamily Big\+Number} types
+\item {\ttfamily to\+Big\+Integer()}, {\ttfamily to\+Big\+Decimal()}, {\ttfamily to\+Big\+Rational}() conversion methods
+\item {\ttfamily to\+Integer()} and {\ttfamily to\+Float()} conversion methods to native types
+\end{DoxyItemize}
+\item Unified {\ttfamily of()} behaviour\+: every class now accepts any type of number, provided that it can be safely converted to the current type
+\item New method\+: {\ttfamily Big\+Decimal\+::exactly\+Divided\+By()}; this method automatically computes the scale of the result, provided that the division yields a finite number of digits
+\item New methods\+: {\ttfamily Big\+Rational\+::quotient()} and {\ttfamily remainder()}
+\item Fine-\/grained exceptions\+: {\ttfamily Division\+By\+Zero\+Exception}, {\ttfamily Rounding\+Necessary\+Exception}, {\ttfamily Number\+Format\+Exception}
+\item Factory methods {\ttfamily zero()}, {\ttfamily one()} and {\ttfamily ten()} available in all classes
+\item Rounding mode reintroduced in {\ttfamily Big\+Integer\+::divided\+By()}
+\end{DoxyItemize}
+
+This release also comes with many performance improvements.
+
+\DoxyHorRuler{0}
+
+
+{\bfseries{Breaking changes}}
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer}\+:
+\begin{DoxyItemize}
+\item {\ttfamily get\+Sign()} is renamed to {\ttfamily sign()}
+\item {\ttfamily to\+String()} is renamed to {\ttfamily to\+Base()}
+\item {\ttfamily Big\+Integer\+::divided\+By()} now throws an exception by default if the remainder is not zero; use {\ttfamily quotient()} to get the previous behaviour
+\end{DoxyItemize}
+\item {\ttfamily Big\+Decimal}\+:
+\begin{DoxyItemize}
+\item {\ttfamily get\+Sign()} is renamed to {\ttfamily sign()}
+\item {\ttfamily get\+Unscaled\+Value()} is renamed to {\ttfamily unscaled\+Value()}
+\item {\ttfamily get\+Scale()} is renamed to {\ttfamily scale()}
+\item {\ttfamily get\+Integral()} is renamed to {\ttfamily integral()}
+\item {\ttfamily get\+Fraction()} is renamed to {\ttfamily fraction()}
+\item {\ttfamily divide\+And\+Remainder()} is renamed to {\ttfamily quotient\+And\+Remainder()}
+\item {\ttfamily divided\+By()} now takes a {\bfseries{mandatory}} {\ttfamily \$scale} parameter {\bfseries{before}} the rounding mode
+\item {\ttfamily to\+Big\+Integer()} does not accept a {\ttfamily \$rounding\+Mode} parameter anymore
+\item {\ttfamily to\+Big\+Rational()} does not simplify the fraction anymore; explicitly add {\ttfamily -\/\texorpdfstring{$>$}{>}simplified()} to get the previous behaviour
+\end{DoxyItemize}
+\item {\ttfamily Big\+Rational}\+:
+\begin{DoxyItemize}
+\item {\ttfamily get\+Sign()} is renamed to {\ttfamily sign()}
+\item {\ttfamily get\+Numerator()} is renamed to {\ttfamily numerator()}
+\item {\ttfamily get\+Denominator()} is renamed to {\ttfamily denominator()}
+\item {\ttfamily of()} is renamed to {\ttfamily nd()}, while {\ttfamily parse()} is renamed to {\ttfamily of()}
+\end{DoxyItemize}
+\item Miscellaneous\+:
+\begin{DoxyItemize}
+\item {\ttfamily Arithmetic\+Exception} is moved to an {\ttfamily Exception\textbackslash{}} sub-\/namespace
+\item {\ttfamily of()} factory methods now throw {\ttfamily Number\+Format\+Exception} instead of {\ttfamily Invalid\+Argument\+Exception}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8743}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.4.3}{\texttt{0.\+4.\+3}} -\/ 2016-\/03-\/31}{\href{https://github.com/brick/math/releases/tag/0.4.3}{\texttt{0.\+4.\+3}} -\/ 2016-\/03-\/31}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8743}
+Backport of two bug fixes from the 0.\+5 branch\+:
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::parse()} did not always throw {\ttfamily Invalid\+Argument\+Exception} as expected
+\item Dividing by a negative power of 1 with the same scale as the dividend could trigger an incorrect optimization which resulted in a wrong result. See \#6.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8744}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.4.2}{\texttt{0.\+4.\+2}} -\/ 2015-\/06-\/16}{\href{https://github.com/brick/math/releases/tag/0.4.2}{\texttt{0.\+4.\+2}} -\/ 2015-\/06-\/16}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8744}
+New method\+: {\ttfamily Big\+Decimal\+::strip\+Trailing\+Zeros()}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8745}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.4.1}{\texttt{0.\+4.\+1}} -\/ 2015-\/06-\/12}{\href{https://github.com/brick/math/releases/tag/0.4.1}{\texttt{0.\+4.\+1}} -\/ 2015-\/06-\/12}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8745}
+Introducing a {\ttfamily Big\+Rational} class, to perform calculations on fractions of any size.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8746}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.4.0}{\texttt{0.\+4.\+0}} -\/ 2015-\/06-\/12}{\href{https://github.com/brick/math/releases/tag/0.4.0}{\texttt{0.\+4.\+0}} -\/ 2015-\/06-\/12}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8746}
+Rounding modes have been removed from {\ttfamily Big\+Integer}, and are now a concept specific to {\ttfamily Big\+Decimal}.
+
+{\ttfamily Big\+Integer\+::divided\+By()} now always returns the quotient of the division.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8747}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.3.5}{\texttt{0.\+3.\+5}} -\/ 2016-\/03-\/31}{\href{https://github.com/brick/math/releases/tag/0.3.5}{\texttt{0.\+3.\+5}} -\/ 2016-\/03-\/31}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8747}
+Backport of two bug fixes from the 0.\+5 branch\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::parse()} did not always throw {\ttfamily Invalid\+Argument\+Exception} as expected
+\item Dividing by a negative power of 1 with the same scale as the dividend could trigger an incorrect optimization which resulted in a wrong result. See \#6.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8748}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.3.4}{\texttt{0.\+3.\+4}} -\/ 2015-\/06-\/11}{\href{https://github.com/brick/math/releases/tag/0.3.4}{\texttt{0.\+3.\+4}} -\/ 2015-\/06-\/11}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8748}
+New methods\+:
+\begin{DoxyItemize}
+\item {\ttfamily Big\+Integer\+::remainder()} returns the remainder of a division only
+\item {\ttfamily Big\+Integer\+::gcd()} returns the greatest common divisor of two numbers
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8749}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.3.3}{\texttt{0.\+3.\+3}} -\/ 2015-\/06-\/07}{\href{https://github.com/brick/math/releases/tag/0.3.3}{\texttt{0.\+3.\+3}} -\/ 2015-\/06-\/07}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8749}
+Fix {\ttfamily to\+String()} not handling negative numbers.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8750}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.3.2}{\texttt{0.\+3.\+2}} -\/ 2015-\/06-\/07}{\href{https://github.com/brick/math/releases/tag/0.3.2}{\texttt{0.\+3.\+2}} -\/ 2015-\/06-\/07}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8750}
+{\ttfamily Big\+Integer} and {\ttfamily Big\+Decimal} now have a {\ttfamily get\+Sign()} method that returns\+:
+\begin{DoxyItemize}
+\item {\ttfamily -\/1} if the number is negative
+\item {\ttfamily 0} if the number is zero
+\item {\ttfamily 1} if the number is positive
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8751}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.3.1}{\texttt{0.\+3.\+1}} -\/ 2015-\/06-\/05}{\href{https://github.com/brick/math/releases/tag/0.3.1}{\texttt{0.\+3.\+1}} -\/ 2015-\/06-\/05}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8751}
+Minor performance improvements\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8752}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.3.0}{\texttt{0.\+3.\+0}} -\/ 2015-\/06-\/04}{\href{https://github.com/brick/math/releases/tag/0.3.0}{\texttt{0.\+3.\+0}} -\/ 2015-\/06-\/04}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8752}
+The {\ttfamily \$rounding\+Mode} and {\ttfamily \$scale} parameters have been swapped in {\ttfamily Big\+Decimal\+::divided\+By()}.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8753}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.2.2}{\texttt{0.\+2.\+2}} -\/ 2015-\/06-\/04}{\href{https://github.com/brick/math/releases/tag/0.2.2}{\texttt{0.\+2.\+2}} -\/ 2015-\/06-\/04}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8753}
+Stronger immutability guarantee for {\ttfamily Big\+Integer} and {\ttfamily Big\+Decimal}.
+
+So far, it would have been possible to break immutability of these classes by calling the {\ttfamily unserialize()} internal function. This release fixes that.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8754}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.2.1}{\texttt{0.\+2.\+1}} -\/ 2015-\/06-\/02}{\href{https://github.com/brick/math/releases/tag/0.2.1}{\texttt{0.\+2.\+1}} -\/ 2015-\/06-\/02}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8754}
+Added {\ttfamily Big\+Decimal\+::divide\+And\+Remainder()}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8755}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.2.0}{\texttt{0.\+2.\+0}} -\/ 2015-\/05-\/22}{\href{https://github.com/brick/math/releases/tag/0.2.0}{\texttt{0.\+2.\+0}} -\/ 2015-\/05-\/22}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8755}
+
+\begin{DoxyItemize}
+\item {\ttfamily min()} and {\ttfamily max()} do not accept an {\ttfamily array} anymore, but a variable number of parameters
+\item {\bfseries{minimum PHP version is now 5.\+6}}
+\item continuous integration with PHP 7
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8756}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.1.1}{\texttt{0.\+1.\+1}} -\/ 2014-\/09-\/01}{\href{https://github.com/brick/math/releases/tag/0.1.1}{\texttt{0.\+1.\+1}} -\/ 2014-\/09-\/01}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8756}
+
+\begin{DoxyItemize}
+\item Added {\ttfamily Big\+Integer\+::power()}
+\item Added HHVM support
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8757}{}\doxysection{\texorpdfstring{\href{https://github.com/brick/math/releases/tag/0.1.0}{\texttt{0.\+1.\+0}} -\/ 2014-\/08-\/31}{\href{https://github.com/brick/math/releases/tag/0.1.0}{\texttt{0.\+1.\+0}} -\/ 2014-\/08-\/31}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2brick_2math_2_c_h_a_n_g_e_l_o_g_autotoc_md8757}
+First beta release. 

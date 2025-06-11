@@ -1,0 +1,228 @@
+\doxysection{Bound\+Method Class Reference}
+\hypertarget{class_illuminate_1_1_container_1_1_bound_method}{}\label{class_illuminate_1_1_container_1_1_bound_method}\index{BoundMethod@{BoundMethod}}
+Inheritance diagram for Bound\+Method\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_container_1_1_bound_method}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_bound_method_abfb7c7ea11baf3de8421649d8f071e3e}{call}} (\$container, \$callback, array \$parameters=\mbox{[}$\,$\mbox{]}, \$default\+Method=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_bound_method_a601693f5e03c35e5ec9cd2ec2d96460f}{call\+Class}} (\$container, \$target, array \$parameters=\mbox{[}$\,$\mbox{]}, \$default\+Method=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_bound_method_a09c64c3003dc58b7ad36d2d674a7db95}{call\+Bound\+Method}} (\$container, \$callback, \$default)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_bound_method_a20a1af72d8ccf70b39503cf99385170b}{normalize\+Method}} (\$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_bound_method_a57bbeb5f293f08cbf4cc723f50a40947}{get\+Method\+Dependencies}} (\$container, \$callback, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_bound_method_abbad338e3a91cdd12f2be2e45dc779e6}{get\+Call\+Reflector}} (\$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_bound_method_abffc931bb8716db885d57b2aa0154b70}{add\+Dependency\+For\+Call\+Parameter}} ( \$container, \$parameter, array \&\$parameters, \&\$dependencies)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_bound_method_a5ef1f0f79f141a8e8101d822fcf79cb4}{is\+Callable\+With\+At\+Sign}} (\$callback)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_container_1_1_bound_method_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_container_1_1_bound_method_abffc931bb8716db885d57b2aa0154b70}\index{BoundMethod@{BoundMethod}!addDependencyForCallParameter@{addDependencyForCallParameter}}
+\index{addDependencyForCallParameter@{addDependencyForCallParameter}!BoundMethod@{BoundMethod}}
+\doxysubsubsection{\texorpdfstring{addDependencyForCallParameter()}{addDependencyForCallParameter()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_bound_method_abffc931bb8716db885d57b2aa0154b70} 
+add\+Dependency\+For\+Call\+Parameter (\begin{DoxyParamCaption}\item[{}]{\$container}{, }\item[{}]{\$parameter}{, }\item[{array \&}]{\$parameters}{, }\item[{\&}]{\$dependencies}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Get the dependency for the given call parameter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\textbackslash{}\+Reflection\+Parameter & {\em \$parameter} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+array & {\em \$dependencies} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Binding\+Resolution\+Exception \Hypertarget{class_illuminate_1_1_container_1_1_bound_method_abfb7c7ea11baf3de8421649d8f071e3e}\index{BoundMethod@{BoundMethod}!call@{call}}
+\index{call@{call}!BoundMethod@{BoundMethod}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_bound_method_abfb7c7ea11baf3de8421649d8f071e3e} 
+call (\begin{DoxyParamCaption}\item[{}]{\$container}{, }\item[{}]{\$callback}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$default\+Method}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Call the given Closure / class@method and inject its dependencies.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+callable | string & {\em \$callback} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+string | null & {\em \$default\+Method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Reflection\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_container_1_1_bound_method_a09c64c3003dc58b7ad36d2d674a7db95}\index{BoundMethod@{BoundMethod}!callBoundMethod@{callBoundMethod}}
+\index{callBoundMethod@{callBoundMethod}!BoundMethod@{BoundMethod}}
+\doxysubsubsection{\texorpdfstring{callBoundMethod()}{callBoundMethod()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_bound_method_a09c64c3003dc58b7ad36d2d674a7db95} 
+call\+Bound\+Method (\begin{DoxyParamCaption}\item[{}]{\$container}{, }\item[{}]{\$callback}{, }\item[{}]{\$default}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Call a method that has been bound to the container.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+mixed & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_container_1_1_bound_method_a601693f5e03c35e5ec9cd2ec2d96460f}\index{BoundMethod@{BoundMethod}!callClass@{callClass}}
+\index{callClass@{callClass}!BoundMethod@{BoundMethod}}
+\doxysubsubsection{\texorpdfstring{callClass()}{callClass()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_bound_method_a601693f5e03c35e5ec9cd2ec2d96460f} 
+call\+Class (\begin{DoxyParamCaption}\item[{}]{\$container}{, }\item[{}]{\$target}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$default\+Method}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Call a string reference to a class using Class@method syntax.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+string & {\em \$target} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+string | null & {\em \$default\+Method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_container_1_1_bound_method_abbad338e3a91cdd12f2be2e45dc779e6}\index{BoundMethod@{BoundMethod}!getCallReflector@{getCallReflector}}
+\index{getCallReflector@{getCallReflector}!BoundMethod@{BoundMethod}}
+\doxysubsubsection{\texorpdfstring{getCallReflector()}{getCallReflector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_bound_method_abbad338e3a91cdd12f2be2e45dc779e6} 
+get\+Call\+Reflector (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Get the proper reflection instance for the given callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Reflection\+Function\+Abstract
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Reflection\+Exception \Hypertarget{class_illuminate_1_1_container_1_1_bound_method_a57bbeb5f293f08cbf4cc723f50a40947}\index{BoundMethod@{BoundMethod}!getMethodDependencies@{getMethodDependencies}}
+\index{getMethodDependencies@{getMethodDependencies}!BoundMethod@{BoundMethod}}
+\doxysubsubsection{\texorpdfstring{getMethodDependencies()}{getMethodDependencies()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_bound_method_a57bbeb5f293f08cbf4cc723f50a40947} 
+get\+Method\+Dependencies (\begin{DoxyParamCaption}\item[{}]{\$container}{, }\item[{}]{\$callback}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Get all dependencies for a given method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+callable | string & {\em \$callback} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Reflection\+Exception 
+
+Reimplemented in \mbox{\hyperlink{class_livewire_1_1_implicitly_bound_method_a57bbeb5f293f08cbf4cc723f50a40947}{Implicitly\+Bound\+Method}}.
+
+\Hypertarget{class_illuminate_1_1_container_1_1_bound_method_a5ef1f0f79f141a8e8101d822fcf79cb4}\index{BoundMethod@{BoundMethod}!isCallableWithAtSign@{isCallableWithAtSign}}
+\index{isCallableWithAtSign@{isCallableWithAtSign}!BoundMethod@{BoundMethod}}
+\doxysubsubsection{\texorpdfstring{isCallableWithAtSign()}{isCallableWithAtSign()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_bound_method_a5ef1f0f79f141a8e8101d822fcf79cb4} 
+is\+Callable\+With\+At\+Sign (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Determine if the given string is in Class@method syntax.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_container_1_1_bound_method_a20a1af72d8ccf70b39503cf99385170b}\index{BoundMethod@{BoundMethod}!normalizeMethod@{normalizeMethod}}
+\index{normalizeMethod@{normalizeMethod}!BoundMethod@{BoundMethod}}
+\doxysubsubsection{\texorpdfstring{normalizeMethod()}{normalizeMethod()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_bound_method_a20a1af72d8ccf70b39503cf99385170b} 
+normalize\+Method (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Normalize the given callback into a Class@method string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Container/\mbox{\hyperlink{_bound_method_8php}{Bound\+Method.\+php}}\end{DoxyCompactItemize}

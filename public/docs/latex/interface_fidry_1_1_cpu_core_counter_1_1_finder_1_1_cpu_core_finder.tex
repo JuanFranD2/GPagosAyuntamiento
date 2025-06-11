@@ -1,0 +1,64 @@
+\doxysection{Cpu\+Core\+Finder Interface Reference}
+\hypertarget{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder}{}\label{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder}\index{CpuCoreFinder@{CpuCoreFinder}}
+Inheritance diagram for Cpu\+Core\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{diagnose}} ()
+\item 
+\mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a39ec161e9a5372e002b889d276208899}{find}} ()
+\item 
+\mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}\index{CpuCoreFinder@{CpuCoreFinder}!diagnose@{diagnose}}
+\index{diagnose@{diagnose}!CpuCoreFinder@{CpuCoreFinder}}
+\doxysubsubsection{\texorpdfstring{diagnose()}{diagnose()}}
+{\footnotesize\ttfamily \label{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8} 
+diagnose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Provides an explanation which may offer some insight as to what the finder will be able to find.
+
+This is practical to have an idea of what each finder will find collect information for the unit tests, since integration tests are quite complicated as dependent on complex infrastructures. 
+
+Implemented in \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Cpu\+Info\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_dummy_cpu_core_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Dummy\+Cpu\+Core\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Env\+Variable\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_null_cpu_core_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Null\+Cpu\+Core\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Only\+In\+Power\+Shell\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_on_o_s_family_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Only\+On\+OSFamily\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_proc_open_based_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Proc\+Open\+Based\+Finder}}, and \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_skip_on_o_s_family_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Skip\+On\+OSFamily\+Finder}}.
+
+\Hypertarget{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a39ec161e9a5372e002b889d276208899}\index{CpuCoreFinder@{CpuCoreFinder}!find@{find}}
+\index{find@{find}!CpuCoreFinder@{CpuCoreFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a39ec161e9a5372e002b889d276208899} 
+find (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Find the number of CPU cores. If it could not find it, returns null. The means used to find the cores are at the implementation discretion.
+
+\begin{DoxyReturn}{Returns}
+positive-\/int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_a39ec161e9a5372e002b889d276208899}{Cpu\+Info\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_dummy_cpu_core_finder_a39ec161e9a5372e002b889d276208899}{Dummy\+Cpu\+Core\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a39ec161e9a5372e002b889d276208899}{Env\+Variable\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_null_cpu_core_finder_a39ec161e9a5372e002b889d276208899}{Null\+Cpu\+Core\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a39ec161e9a5372e002b889d276208899}{Only\+In\+Power\+Shell\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_on_o_s_family_finder_a39ec161e9a5372e002b889d276208899}{Only\+On\+OSFamily\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_proc_open_based_finder_a39ec161e9a5372e002b889d276208899}{Proc\+Open\+Based\+Finder}}, and \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_skip_on_o_s_family_finder_a39ec161e9a5372e002b889d276208899}{Skip\+On\+OSFamily\+Finder}}.
+
+\Hypertarget{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a5558c5d549f41597377fa1ea8a1cefa3}\index{CpuCoreFinder@{CpuCoreFinder}!toString@{toString}}
+\index{toString@{toString}!CpuCoreFinder@{CpuCoreFinder}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a5558c5d549f41597377fa1ea8a1cefa3} 
+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1___n_processor_finder_a5558c5d549f41597377fa1ea8a1cefa3}{\+\_\+\+NProcessor\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cmi_cmdlet_logical_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Cmi\+Cmdlet\+Logical\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cmi_cmdlet_physical_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Cmi\+Cmdlet\+Physical\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Cpu\+Info\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_dummy_cpu_core_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Dummy\+Cpu\+Core\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Env\+Variable\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_hw_logical_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Hw\+Logical\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_hw_physical_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Hw\+Physical\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_lscpu_logical_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Lscpu\+Logical\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_lscpu_physical_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Lscpu\+Physical\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_n_processor_finder_a5558c5d549f41597377fa1ea8a1cefa3}{NProcessor\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_n_proc_finder_a5558c5d549f41597377fa1ea8a1cefa3}{NProc\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_null_cpu_core_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Null\+Cpu\+Core\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Only\+In\+Power\+Shell\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_on_o_s_family_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Only\+On\+OSFamily\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_skip_on_o_s_family_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Skip\+On\+OSFamily\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_windows_registry_logical_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Windows\+Registry\+Logical\+Finder}}, \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_wmic_logical_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Wmic\+Logical\+Finder}}, and \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_wmic_physical_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Wmic\+Physical\+Finder}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/fidry/cpu-\/core-\/counter/src/\+Finder/\mbox{\hyperlink{_cpu_core_finder_8php}{Cpu\+Core\+Finder.\+php}}\end{DoxyCompactItemize}

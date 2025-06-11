@@ -1,0 +1,285 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nesbot/carbon/src/\+Carbon/\+Traits/\+Converter.\+php}
+\hypertarget{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_traits_2_converter_8php-example}{}\label{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_traits_2_converter_8php-example}Format the instance as a string using the set format
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{echo\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a80593ccdc0339775ddd5d82c37ca4f6b}{Carbon::now}}();\ \textcolor{comment}{//\ Carbon\ instances\ can\ be\ cast\ to\ string}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{declare(strict\_types=1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }Carbon\(\backslash\)Traits;}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ Carbon\(\backslash\)Carbon;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)CarbonImmutable;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)CarbonInterface;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)CarbonInterval;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)CarbonPeriod;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)CarbonPeriodImmutable;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)Exceptions\(\backslash\)UnitException;}
+\DoxyCodeLine{use\ Closure;}
+\DoxyCodeLine{use\ DateTime;}
+\DoxyCodeLine{use\ DateTimeImmutable;}
+\DoxyCodeLine{use\ DateTimeInterface;}
+\DoxyCodeLine{}
+\DoxyCodeLine{trait\ Converter}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ use\ ToStringFormat;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4030e198f3ac40216f57d30e67f24c2f}{format}}(\textcolor{keywordtype}{string}\ \$format):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$function\ =\ \$this-\/>localFormatFunction}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ??\ \$this-\/>getFactory()-\/>getSettings()[\textcolor{stringliteral}{'formatFunction'}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ??\ static::\$formatFunction;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$function)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\$format);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_string(\$function)\ \&\&\ method\_exists(\$this,\ \$function))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$function\ =\ [\$this,\ \$function];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$function(...\(\backslash\)func\_get\_args());}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{keywordtype}{string}\ \$format):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ parent::format(\$format);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a7516ca30af0db3cdbf9a7739b48ce91d}{\_\_toString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$format\ =\ \$this-\/>localToStringFormat}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ??\ \$this-\/>getFactory()-\/>getSettings()[\textcolor{stringliteral}{'toStringFormat'}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ??\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$format\ instanceof\ Closure}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ?\ \$format(\$this)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ \$this-\/>\mbox{\hyperlink{interface_carbon_1_1_carbon_interface_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\$format\ ?:\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)\mbox{\hyperlink{namespace_laravel_1_1_serializable_closure_1_1_support_a0b5ee6f176cd47e84b04710f2181e3ff}{defined}}(\textcolor{stringliteral}{'static::DEFAULT\_TO\_STRING\_FORMAT'})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ?\ static::\mbox{\hyperlink{interface_carbon_1_1_carbon_interface_a41cdf9e69de409edd92c05dedaae0388}{DEFAULT\_TO\_STRING\_FORMAT}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface}{CarbonInterface}}::\mbox{\hyperlink{interface_carbon_1_1_carbon_interface_a41cdf9e69de409edd92c05dedaae0388}{DEFAULT\_TO\_STRING\_FORMAT}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8e48a2392d146d9358284c2edcba9745}{toDateString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{stringliteral}{'Y-\/m-\/d'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a19210a2e9b2a813fd9079d1729f580ea}{toFormattedDateString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{stringliteral}{'M\ j,\ Y'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2cc7bf5645da0016290c166545045aa5}{toFormattedDayDateString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{stringliteral}{'D,\ M\ j,\ Y'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9313107d8be89d56828e2822f86c0fcc}{toTimeString}}(\textcolor{keywordtype}{string}\ \$unitPrecision\ =\ \textcolor{stringliteral}{'second'}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(static::getTimeFormatByPrecision(\$unitPrecision));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aed79ea64f51a887efd39dfb5396fe6da}{toDateTimeString}}(\textcolor{keywordtype}{string}\ \$unitPrecision\ =\ \textcolor{stringliteral}{'second'}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{stringliteral}{'Y-\/m-\/d\ '}.static::getTimeFormatByPrecision(\$unitPrecision));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface_aa974277c9d121f3e285c262af6fdd5e8}{getTimeFormatByPrecision}}(\textcolor{keywordtype}{string}\ \$unitPrecision):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_dumper_a7a70639bfd8072d5dd9df7a818f4129e}{match}}\ (static::singularUnit(\$unitPrecision))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'minute'}\ =>\ \textcolor{stringliteral}{'H:i'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'second'}\ =>\ \textcolor{stringliteral}{'H:i:s'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'m'},\ \textcolor{stringliteral}{'millisecond'}\ =>\ \textcolor{stringliteral}{'H:i:s.v'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'µ'},\ \textcolor{stringliteral}{'microsecond'}\ =>\ \textcolor{stringliteral}{'H:i:s.u'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}\ =>\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_unit_exception}{UnitException}}(\textcolor{stringliteral}{'Precision\ unit\ expected\ among:\ minute,\ second,\ millisecond\ and\ microsecond.'}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9486aa6a0a87ff1b489432bf5d20d181}{toDateTimeLocalString}}(\textcolor{keywordtype}{string}\ \$unitPrecision\ =\ \textcolor{stringliteral}{'second'}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{stringliteral}{'Y-\/m-\/d\(\backslash\)T'}.static::getTimeFormatByPrecision(\$unitPrecision));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ae17905053013dff69e03367d6a1c8b18}{toDayDateTimeString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{stringliteral}{'D,\ M\ j,\ Y\ g:i\ A'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a37557b34f282e30c585ac6a01c4ed617}{toAtomString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(DateTime::ATOM);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a469c8ba0aa31bb8ad1f7d3479d5227f2}{toCookieString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(DateTimeInterface::COOKIE);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a82c53db8c00b7e0ff2d5cbb779310f44}{toIso8601String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a37557b34f282e30c585ac6a01c4ed617}{toAtomString}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4d157add79077bd87f1edfe4b157ca02}{toRfc822String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(DateTimeInterface::RFC822);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4fa2a7c4a957b3dc8a231c6c9ba12c08}{toIso8601ZuluString}}(\textcolor{keywordtype}{string}\ \$unitPrecision\ =\ \textcolor{stringliteral}{'second'}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a46d369d0556b483ec005cd02db58fd0b}{avoidMutation}}()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>utc()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>rawFormat(\textcolor{stringliteral}{'Y-\/m-\/d\(\backslash\)T'}.static::getTimeFormatByPrecision(\$unitPrecision).\textcolor{charliteral}{'\(\backslash\)Z'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ab79b8fdef9245e711c5881068956ff73}{toRfc850String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(DateTimeInterface::RFC850);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a88ef74b5c5cb45bb8d13dabb03854972}{toRfc1036String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(DateTimeInterface::RFC1036);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_adb465169dd0f6e8fee5dd40c5b39d618}{toRfc1123String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(DateTimeInterface::RFC1123);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2adfe7a61225d3ce9fa318641104b540}{toRfc2822String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(DateTimeInterface::RFC2822);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa818836c92084ca871fa9c2b326adcb4}{toRfc3339String}}(\textcolor{keywordtype}{bool}\ \$extended\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\$extended\ ?\ DateTimeInterface::RFC3339\_EXTENDED\ :\ DateTimeInterface::RFC3339);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac771e03aac742daaf439b67757820834}{toRssString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(DateTimeInterface::RSS);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a63a152cc2687c5f49c9e7ff7d497f6cc}{toW3cString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(DateTimeInterface::W3C);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a80d48b47e88eb04b4cd54beae2c03fff}{toRfc7231String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a46d369d0556b483ec005cd02db58fd0b}{avoidMutation}}()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>setTimezone(\textcolor{stringliteral}{'GMT'})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>rawFormat(\(\backslash\)\mbox{\hyperlink{namespace_laravel_1_1_serializable_closure_1_1_support_a0b5ee6f176cd47e84b04710f2181e3ff}{defined}}(\textcolor{stringliteral}{'static::RFC7231\_FORMAT'})\ ?\ static::RFC7231\_FORMAT\ :\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface_acf91c5c34e1731ec8556dc5e85829d08}{CarbonInterface::RFC7231\_FORMAT}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a658defb34762c8f40085aec87e16ba1a}{toArray}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'year'}\ =>\ \$this-\/>year,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'month'}\ =>\ \$this-\/>month,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'day'}\ =>\ \$this-\/>day,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'dayOfWeek'}\ =>\ \$this-\/>dayOfWeek,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'dayOfYear'}\ =>\ \$this-\/>dayOfYear,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hour'}\ =>\ \$this-\/>hour,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'minute'}\ =>\ \$this-\/>minute,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'second'}\ =>\ \$this-\/>second,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'micro'}\ =>\ \$this-\/>micro,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'timestamp'}\ =>\ \$this-\/>timestamp,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'formatted'}\ =>\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\(\backslash\)\mbox{\hyperlink{namespace_laravel_1_1_serializable_closure_1_1_support_a0b5ee6f176cd47e84b04710f2181e3ff}{defined}}(\textcolor{stringliteral}{'static::DEFAULT\_TO\_STRING\_FORMAT'})\ ?\ static::DEFAULT\_TO\_STRING\_FORMAT\ :\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface_a41cdf9e69de409edd92c05dedaae0388}{CarbonInterface::DEFAULT\_TO\_STRING\_FORMAT}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'timezone'}\ =>\ \$this-\/>timezone,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a1a405d79c79d8954cad698bb9f46065c}{toObject}}():\ object}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keywordtype}{object})\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a658defb34762c8f40085aec87e16ba1a}{toArray}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a5558c5d549f41597377fa1ea8a1cefa3}{toString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a46d369d0556b483ec005cd02db58fd0b}{avoidMutation}}()-\/>locale(\textcolor{stringliteral}{'en'})-\/>isoFormat(\textcolor{stringliteral}{'ddd\ MMM\ DD\ YYYY\ HH:mm:ss\ [GMT]ZZ'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa606df60de34f7c395c023ef5a554978}{toISOString}}(\textcolor{keywordtype}{bool}\ \$keepOffset\ =\ \textcolor{keyword}{false}):\ ?\mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$this-\/>isValid())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$yearFormat\ =\ \$this-\/>year\ <\ 0\ ||\ \$this-\/>year\ >\ 9999\ ?\ \textcolor{stringliteral}{'YYYYYY'}\ :\ \textcolor{stringliteral}{'YYYY'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$timezoneFormat\ =\ \$keepOffset\ ?\ \textcolor{charliteral}{'Z'}\ :\ \textcolor{stringliteral}{'[Z]'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$date\ =\ \$keepOffset\ ?\ \$this\ :\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a46d369d0556b483ec005cd02db58fd0b}{avoidMutation}}()-\/>utc();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$date-\/>isoFormat(\textcolor{stringliteral}{"{}\$yearFormat-\/MM-\/DD[T]HH:mm:ss.SSSSSS\$timezoneFormat"{}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2108d0f07e9bca6160bf5885703de972}{toJSON}}():\ ?\mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_aa606df60de34f7c395c023ef5a554978}{toISOString}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aad24f8d2b983e556231f3e65be1a4c94}{toDateTime}}():\ DateTime}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ DateTime::createFromFormat(\textcolor{stringliteral}{'U.u'},\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{stringliteral}{'U.u'}))}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>setTimezone(\$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a23e87a365ef1aea5bc5fdad51d8925ae}{getTimezone}}());}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a25d701daaf8fbd3e4a344385f7f38fed}{toDateTimeImmutable}}():\ DateTimeImmutable}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ DateTimeImmutable::createFromFormat(\textcolor{stringliteral}{'U.u'},\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{stringliteral}{'U.u'}))}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>setTimezone(\$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a23e87a365ef1aea5bc5fdad51d8925ae}{getTimezone}}());}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac2c5ff27ee47c93dc3940674506631b0}{toDate}}():\ DateTime}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_aad24f8d2b983e556231f3e65be1a4c94}{toDateTime}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a3f73ce285a1f107005571856aab03de3}{toPeriod}}(\mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}\ =\ \textcolor{keyword}{null},\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a02df6fd14302ba88fecc15b95d513e5b}{\$interval}}\ =\ \textcolor{keyword}{null},\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_bad_comparison_unit_exception_a1e32431b9d521850ce2aa78bc3af0040}{\$unit}}\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{class_carbon_1_1_carbon_period}{CarbonPeriod}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_bad_comparison_unit_exception_a1e32431b9d521850ce2aa78bc3af0040}{\$unit}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_1_1_traits_a02df6fd14302ba88fecc15b95d513e5b}{\$interval}}\ =\ \mbox{\hyperlink{class_carbon_1_1_carbon_interval_a2db921dd8f8a09731bd8cf62bed242fe}{CarbonInterval::make}}(\textcolor{stringliteral}{"{}\$interval\ "{}}.static::pluralUnit(\mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_bad_comparison_unit_exception_a1e32431b9d521850ce2aa78bc3af0040}{\$unit}}));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_carbon_1_1_carbon_period_a1db713f794ed7a876179233238d1b7f3}{\$isDefaultInterval}}\ =\ !\mbox{\hyperlink{namespace_carbon_1_1_traits_a02df6fd14302ba88fecc15b95d513e5b}{\$interval}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_1_1_traits_a02df6fd14302ba88fecc15b95d513e5b}{\$interval}}\ ??=\ CarbonInterval::day();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{traces_8html_8php_a252ba022809910ea710a068fc1bab657}{\$class}}\ =\ \$this-\/>\mbox{\hyperlink{class_carbon_1_1_carbon_a32da6faa2147cf924a2c454f483c64d4}{isMutable}}()\ ?\ CarbonPeriod::class\ :\ CarbonPeriodImmutable::class;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_int(\mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}})\ ||\ (\(\backslash\)is\_string(\mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}})\ \&\&\ ctype\_digit(\mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}})))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}\ =\ (\mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}})\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}\ ??=\ 1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\(\backslash\)is\_int(\mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}\ =\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a2c0cd721424b10ee3d9d2dc759e2bcfa}{resolveCarbon}}(\mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{traces_8html_8php_a252ba022809910ea710a068fc1bab657}{\$class}}(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ raw:\ [\$this,\ \mbox{\hyperlink{class_carbon_1_1_carbon_interval_a2db921dd8f8a09731bd8cf62bed242fe}{CarbonInterval::make}}(\mbox{\hyperlink{namespace_carbon_1_1_traits_a02df6fd14302ba88fecc15b95d513e5b}{\$interval}}),\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ dateClass:\ static::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ isDefaultInterval:\ \mbox{\hyperlink{class_carbon_1_1_carbon_period_a1db713f794ed7a876179233238d1b7f3}{\$isDefaultInterval}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a3868d62595946c978f9a2fd71bd3fab8}{range}}(\mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}\ =\ \textcolor{keyword}{null},\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a02df6fd14302ba88fecc15b95d513e5b}{\$interval}}\ =\ \textcolor{keyword}{null},\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_bad_comparison_unit_exception_a1e32431b9d521850ce2aa78bc3af0040}{\$unit}}\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{class_carbon_1_1_carbon_period}{CarbonPeriod}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a3f73ce285a1f107005571856aab03de3}{toPeriod}}(\mbox{\hyperlink{namespace_carbon_1_1_traits_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}},\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a02df6fd14302ba88fecc15b95d513e5b}{\$interval}},\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_bad_comparison_unit_exception_a1e32431b9d521850ce2aa78bc3af0040}{\$unit}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

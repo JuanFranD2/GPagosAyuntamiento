@@ -1,0 +1,156 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dragonmantank/cron-\/expression Directory Reference}
+\hypertarget{dir_d078de098819dd7483f5c2dcc098da11}{}\label{dir_d078de098819dd7483f5c2dcc098da11}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/dragonmantank/cron-\/expression Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/dragonmantank/cron-\/expression Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_77de547de6a2163308ed0828483ceef8}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\href{https://packagist.org/packages/dragonmantank/cron-expression}{\texttt{}} \href{https://packagist.org/packages/dragonmantank/cron-expression}{\texttt{}} \href{https://github.com/dragonmantank/cron-expression/actions/workflows/tests.yml}{\texttt{}} \href{https://github.styleci.io/repos/103715337}{\texttt{}}
+
+The PHP cron expression parser can parse a CRON expression, determine if it is due to run, calculate the next run date of the expression, and calculate the previous run date of the expression. You can calculate dates far into the future or past by skipping {\bfseries{n}} number of matching dates.
+
+The parser can handle increments of ranges (e.\+g. \texorpdfstring{$\ast$}{*}/12, 2-\/59/3), intervals (e.\+g. 0-\/9), lists (e.\+g. 1,2,3), {\bfseries{W}} to find the nearest weekday for a given day of the month, {\bfseries{L}} to find the last day of the month, {\bfseries{L}} to find the last given weekday of a month, and hash (\#) to find the nth weekday of a given month.
+
+More information about this fork can be found in the blog post \href{http://ctankersley.com/2017/10/12/cron-expression-update/}{\texttt{here}}. tl;dr -\/ v2.\+0.\+0 is a major breaking change, and @dragonmantank can better take care of the project in a separate fork.\hypertarget{README.md_autotoc_md8922}{}\doxysubsection{\texorpdfstring{Installing}{Installing}}\label{README.md_autotoc_md8922}
+Add the dependency to your project\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ dragonmantank/cron-\/expression}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8923}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md8923}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{require\_once\ \textcolor{stringliteral}{'/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Works\ with\ predefined\ scheduling\ definitions}}
+\DoxyCodeLine{\$cron\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_cron_1_1_cron_expression}{Cron\(\backslash\)CronExpression}}(\textcolor{stringliteral}{'@daily'});}
+\DoxyCodeLine{\$cron-\/>isDue();}
+\DoxyCodeLine{echo\ \$cron-\/>getNextRunDate()-\/>format(\textcolor{stringliteral}{'Y-\/m-\/d\ H:i:s'});}
+\DoxyCodeLine{echo\ \$cron-\/>getPreviousRunDate()-\/>format(\textcolor{stringliteral}{'Y-\/m-\/d\ H:i:s'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Works\ with\ complex\ expressions}}
+\DoxyCodeLine{\$cron\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_cron_1_1_cron_expression}{Cron\(\backslash\)CronExpression}}(\textcolor{stringliteral}{'3-\/59/15\ 6-\/12\ */15\ 1\ 2-\/5'});}
+\DoxyCodeLine{echo\ \$cron-\/>getNextRunDate()-\/>format(\textcolor{stringliteral}{'Y-\/m-\/d\ H:i:s'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Calculate\ a\ run\ date\ two\ iterations\ into\ the\ future}}
+\DoxyCodeLine{\$cron\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_cron_1_1_cron_expression}{Cron\(\backslash\)CronExpression}}(\textcolor{stringliteral}{'@daily'});}
+\DoxyCodeLine{echo\ \$cron-\/>getNextRunDate(\textcolor{keyword}{null},\ 2)-\/>format(\textcolor{stringliteral}{'Y-\/m-\/d\ H:i:s'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Calculate\ a\ run\ date\ relative\ to\ a\ specific\ time}}
+\DoxyCodeLine{\$cron\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_cron_1_1_cron_expression}{Cron\(\backslash\)CronExpression}}(\textcolor{stringliteral}{'@monthly'});}
+\DoxyCodeLine{echo\ \$cron-\/>getNextRunDate(\textcolor{stringliteral}{'2010-\/01-\/12\ 00:00:00'})-\/>format(\textcolor{stringliteral}{'Y-\/m-\/d\ H:i:s'});}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8924}{}\doxysubsection{\texorpdfstring{CRON Expressions}{CRON Expressions}}\label{README.md_autotoc_md8924}
+A CRON expression is a string representing the schedule for a particular command to execute. The parts of a CRON schedule are as follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{*\ \ \ *\ \ \ *\ \ \ *\ \ \ *}
+\DoxyCodeLine{-\/\ \ \ -\/\ \ \ -\/\ \ \ -\/\ \ \ -\/}
+\DoxyCodeLine{|\ \ \ |\ \ \ |\ \ \ |\ \ \ |}
+\DoxyCodeLine{|\ \ \ |\ \ \ |\ \ \ |\ \ \ |}
+\DoxyCodeLine{|\ \ \ |\ \ \ |\ \ \ |\ \ \ +-\/-\/-\/-\/-\/\ day\ of\ week\ (0-\/7)\ (Sunday\ =\ 0\ or\ 7)\ (or\ SUN-\/SAT)}
+\DoxyCodeLine{|\ \ \ |\ \ \ |\ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/\ month\ (1-\/12)\ (or\ JAN-\/DEC)}
+\DoxyCodeLine{|\ \ \ |\ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ day\ of\ month\ (1-\/31)}
+\DoxyCodeLine{|\ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ hour\ (0-\/23)}
+\DoxyCodeLine{+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ minute\ (0-\/59)}
+
+\end{DoxyCode}
+
+
+Each part of expression can also use wildcard, lists, ranges and steps\+:
+
+
+\begin{DoxyItemize}
+\item wildcard -\/ match always
+\begin{DoxyItemize}
+\item {\ttfamily \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}} -\/ At every minute.
+\item day of week and day of month also support {\ttfamily ?}, an alias to {\ttfamily \texorpdfstring{$\ast$}{*}}
+\end{DoxyItemize}
+\item lists -\/ match list of values, ranges and steps
+\begin{DoxyItemize}
+\item e.\+g. {\ttfamily 15,30 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}} -\/ At minute 15 and 30.
+\end{DoxyItemize}
+\item ranges -\/ match values in range
+\begin{DoxyItemize}
+\item e.\+g. {\ttfamily 1-\/9 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}} -\/ At every minute from 1 through 9.
+\end{DoxyItemize}
+\item steps -\/ match every nth value in range
+\begin{DoxyItemize}
+\item e.\+g. {\ttfamily \texorpdfstring{$\ast$}{*}/5 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}} -\/ At every 5th minute.
+\item e.\+g. {\ttfamily 0-\/30/5 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}} -\/ At every 5th minute from 0 through 30.
+\end{DoxyItemize}
+\item combinations
+\begin{DoxyItemize}
+\item e.\+g. {\ttfamily 0-\/14,30-\/44 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}} -\/ At every minute from 0 through 14 and every minute from 30 through 44.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+You can also use macro instead of an expression\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily @yearly}, {\ttfamily @annually} -\/ At 00\+:00 on 1st of January. (same as {\ttfamily 0 0 1 1 \texorpdfstring{$\ast$}{*}})
+\item {\ttfamily @monthly} -\/ At 00\+:00 on day-\/of-\/month 1. (same as {\ttfamily 0 0 1 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}})
+\item {\ttfamily @weekly} -\/ At 00\+:00 on Sunday. (same as {\ttfamily 0 0 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} 0})
+\item {\ttfamily @daily}, {\ttfamily @midnight} -\/ At 00\+:00. (same as {\ttfamily 0 0 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}})
+\item {\ttfamily @hourly} -\/ At minute 0. (same as {\ttfamily 0 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}})
+\end{DoxyItemize}
+
+Day of month extra features\+:
+
+
+\begin{DoxyItemize}
+\item nearest weekday -\/ weekday (Monday-\/\+Friday) nearest to the given day
+\begin{DoxyItemize}
+\item e.\+g. {\ttfamily \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} 15W \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}} -\/ At every minute on a weekday nearest to the 15th.
+\item If you were to specify {\ttfamily 15W} as the value, the meaning is\+: "{}the nearest weekday to the 15th of the month"{} So if the 15th is a Saturday, the trigger will fire on Friday the 14th. If the 15th is a Sunday, the trigger will fire on Monday the 16th. If the 15th is a Tuesday, then it will fire on Tuesday the 15th.
+\item However, if you specify {\ttfamily 1W} as the value for day-\/of-\/month, and the 1st is a Saturday, the trigger will fire on Monday the 3rd, as it will not \textquotesingle{}jump\textquotesingle{} over the boundary of a month\textquotesingle{}s days.
+\end{DoxyItemize}
+\item last day of the month
+\begin{DoxyItemize}
+\item e.\+g. {\ttfamily \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} L \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}} -\/ At every minute on a last day-\/of-\/month.
+\end{DoxyItemize}
+\item last weekday of the month
+\begin{DoxyItemize}
+\item e.\+g. {\ttfamily \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} LW \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}} -\/ At every minute on a last weekday.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Day of week extra features\+:
+
+
+\begin{DoxyItemize}
+\item nth day
+\begin{DoxyItemize}
+\item e.\+g. {\ttfamily \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} 7\#4} -\/ At every minute on 4th Sunday.
+\item 1-\/5
+\item Every day of week repeats 4-\/5 times a month. To target the last one, use "{}last day"{} feature instead.
+\end{DoxyItemize}
+\item last day
+\begin{DoxyItemize}
+\item e.\+g. {\ttfamily \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} 7L} -\/ At every minute on the last Sunday.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md8925}{}\doxysubsection{\texorpdfstring{Requirements}{Requirements}}\label{README.md_autotoc_md8925}
+
+\begin{DoxyItemize}
+\item PHP 7.\+2+
+\item \doxylink{namespace_p_h_p_unit}{PHPUnit} is required to run the unit tests
+\item \doxylink{namespace_composer}{Composer} is required to run the unit tests
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md8926}{}\doxysubsection{\texorpdfstring{Projects that Use cron-\/expression}{Projects that Use cron-\/expression}}\label{README.md_autotoc_md8926}
+
+\begin{DoxyItemize}
+\item Part of the \href{https://github.com/laravel/framework/}{\texttt{Laravel Framework}}
+\item Available as a \href{https://github.com/Setono/CronExpressionBundle}{\texttt{Symfony Bundle -\/ setono/cron-\/expression-\/bundle}}
+\item Framework agnostic, PHP-\/based job scheduler -\/ \href{https://github.com/crunzphp/crunz}{\texttt{Crunz}}
+\item Framework agnostic job scheduler -\/ with locks, parallelism, per-\/second scheduling and more -\/ \href{https://github.com/orisai/scheduler}{\texttt{orisai/scheduler}}
+\item Explain expression in English (and other languages) with \href{https://github.com/orisai/cron-expression-explainer}{\texttt{orisai/cron-\/expression-\/explainer}} 
+\end{DoxyItemize}

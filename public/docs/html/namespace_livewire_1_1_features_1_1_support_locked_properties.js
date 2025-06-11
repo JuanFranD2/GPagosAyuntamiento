@@ -1,0 +1,5 @@
+var namespace_livewire_1_1_features_1_1_support_locked_properties =
+[
+    [ "BaseLocked", "class_livewire_1_1_features_1_1_support_locked_properties_1_1_base_locked.html", "class_livewire_1_1_features_1_1_support_locked_properties_1_1_base_locked" ],
+    [ "CannotUpdateLockedPropertyException", "class_livewire_1_1_features_1_1_support_locked_properties_1_1_cannot_update_locked_property_exception.html", "class_livewire_1_1_features_1_1_support_locked_properties_1_1_cannot_update_locked_property_exception" ]
+];

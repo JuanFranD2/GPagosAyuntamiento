@@ -1,0 +1,86 @@
+\doxysection{Console\+Terminate\+Event Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event}{}\label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event}\index{ConsoleTerminateEvent@{ConsoleTerminateEvent}}
+Inheritance diagram for Console\+Terminate\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_ad17820844fd4481a1e7947690d3b567a}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Command}} \$command, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output, private int \$exit\+Code, private readonly ?int \$interrupting\+Signal=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_ae308e1587012095c46583ecdd075377b}{set\+Exit\+Code}} (int \$exit\+Code)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_a946e1b288785f27fbc87ae08742b16c3}{get\+Exit\+Code}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_af66c4f8d3738f45cb25b66d06cf18aa8}{get\+Interrupting\+Signal}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_event}{Console\+Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_event_ac62b7d1927408270099fb0195bccea9c}{\+\_\+\+\_\+construct}} (protected ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Command}} \$command, private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_event_a154e8997a5c7e497d5d54dcf340a80b1}{get\+Command}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_event_a4380f30ae9202fa49ebd2439572f9cdb}{get\+Input}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_event_aefad4c11248b7c6fa6581c25d82bf9c6}{get\+Output}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event}{Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_aabfd0a1205a80881b10962db51a2902c}{is\+Propagation\+Stopped}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_adc3f4b7596e176069cd179814c05c66d}{stop\+Propagation}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows to manipulate the exit code of a command after its execution.
+
+\begin{DoxyAuthor}{Author}
+Francesco Levorato \href{mailto:git@flevour.net}{\texttt{git@flevour.\+net}} 
+
+Jules Pietri \href{mailto:jules@heahprod.com}{\texttt{jules@heahprod.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_ad17820844fd4481a1e7947690d3b567a}\index{ConsoleTerminateEvent@{ConsoleTerminateEvent}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ConsoleTerminateEvent@{ConsoleTerminateEvent}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_ad17820844fd4481a1e7947690d3b567a} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Command}}}]{\$command}{, }\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}}}]{\$input}{, }\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}}}]{\$output}{, }\item[{private int}]{\$exit\+Code}{, }\item[{private readonly ?int}]{\$interrupting\+Signal}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_a946e1b288785f27fbc87ae08742b16c3}\index{ConsoleTerminateEvent@{ConsoleTerminateEvent}!getExitCode@{getExitCode}}
+\index{getExitCode@{getExitCode}!ConsoleTerminateEvent@{ConsoleTerminateEvent}}
+\doxysubsubsection{\texorpdfstring{getExitCode()}{getExitCode()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_a946e1b288785f27fbc87ae08742b16c3} 
+get\+Exit\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_af66c4f8d3738f45cb25b66d06cf18aa8}\index{ConsoleTerminateEvent@{ConsoleTerminateEvent}!getInterruptingSignal@{getInterruptingSignal}}
+\index{getInterruptingSignal@{getInterruptingSignal}!ConsoleTerminateEvent@{ConsoleTerminateEvent}}
+\doxysubsubsection{\texorpdfstring{getInterruptingSignal()}{getInterruptingSignal()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_af66c4f8d3738f45cb25b66d06cf18aa8} 
+get\+Interrupting\+Signal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_ae308e1587012095c46583ecdd075377b}\index{ConsoleTerminateEvent@{ConsoleTerminateEvent}!setExitCode@{setExitCode}}
+\index{setExitCode@{setExitCode}!ConsoleTerminateEvent@{ConsoleTerminateEvent}}
+\doxysubsubsection{\texorpdfstring{setExitCode()}{setExitCode()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_terminate_event_ae308e1587012095c46583ecdd075377b} 
+set\+Exit\+Code (\begin{DoxyParamCaption}\item[{int}]{\$exit\+Code}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/console/\+Event/\mbox{\hyperlink{_console_terminate_event_8php}{Console\+Terminate\+Event.\+php}}\end{DoxyCompactItemize}

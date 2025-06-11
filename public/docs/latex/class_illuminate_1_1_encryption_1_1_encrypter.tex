@@ -1,0 +1,417 @@
+\doxysection{Encrypter Class Reference}
+\hypertarget{class_illuminate_1_1_encryption_1_1_encrypter}{}\label{class_illuminate_1_1_encryption_1_1_encrypter}\index{Encrypter@{Encrypter}}
+Inheritance diagram for Encrypter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_encryption_1_1_encrypter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a7bed5cf9b7d06ea589e4cddf02cce37b}{\+\_\+\+\_\+construct}} (\$key, \$cipher=\textquotesingle{}aes-\/128-\/cbc\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a397c5e85d7dfa6e04665a60d41ef651f}{encrypt}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$value, \$serialize=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_aaddc214e4c31ac50887da1b2c7de0d8c}{encrypt\+String}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_ae8aa10bdaa928cc95319965b1cb6ff0e}{decrypt}} (\$payload, \$unserialize=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_add2c5c300195bf8f8b7646bdc22be0bc}{decrypt\+String}} (\$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_ad40c766ec8aced9770fe6ae269a1e781}{get\+Key}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a5df9315aee4ffec7bd8c0cb57ce58886}{get\+All\+Keys}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_ac1ed4a04f90406897d25c01b37ca53ac}{get\+Previous\+Keys}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a7d5f60e973e5e057c856d7eabfa152fc}{previous\+Keys}} (array \$keys)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a34e7292dc66114bc1287bfdf881a03e2}{supported}} (\$key, \$cipher)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_aee34114c3ba2d65e8adf284abad1293f}{generate\+Key}} (\$cipher)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a17c35f690575c1dcf369b48491862ade}{hash}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$iv, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$value, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a93048c5df6905cdfc8f36057e98c0727}{get\+Json\+Payload}} (\$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a558d804e9e139982781ce160f195b2e0}{valid\+Payload}} (\$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a7ec3ae642bea9c2b515840551c105b8d}{valid\+Mac}} (array \$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a0b793bc306de297e0bfcf5b04fc0a185}{valid\+Mac\+For\+Key}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$payload, \$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a2acdccbb47bdeff4ca9388c9ceaace3b}{ensure\+Tag\+Is\+Valid}} (\$tag)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a0b406661bd0598be8d18275905143e56}{should\+Validate\+Mac}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_aa60b0284e0dfa2463495481cf11e3cf4}{\$key}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a0452df7a640ce13c6da2a8cc3dc79f4f}{\$previous\+Keys}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_aba0db80576c3a7048ea153316f5d9934}{\$cipher}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a7bed5cf9b7d06ea589e4cddf02cce37b}\index{Encrypter@{Encrypter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a7bed5cf9b7d06ea589e4cddf02cce37b} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$cipher}{ = {\ttfamily \textquotesingle{}aes-\/128-\/cbc\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new encrypter instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string & {\em \$cipher} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_ae8aa10bdaa928cc95319965b1cb6ff0e}\index{Encrypter@{Encrypter}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_ae8aa10bdaa928cc95319965b1cb6ff0e} 
+decrypt (\begin{DoxyParamCaption}\item[{}]{\$payload}{, }\item[{}]{\$unserialize}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Decrypt the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$payload} & \\
+\hline
+bool & {\em \$unserialize} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Encryption\textbackslash{}\+Decrypt\+Exception \Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_add2c5c300195bf8f8b7646bdc22be0bc}\index{Encrypter@{Encrypter}!decryptString@{decryptString}}
+\index{decryptString@{decryptString}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{decryptString()}{decryptString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_add2c5c300195bf8f8b7646bdc22be0bc} 
+decrypt\+String (\begin{DoxyParamCaption}\item[{}]{\$payload}{}\end{DoxyParamCaption})}
+
+Decrypt the given string without unserialization.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Encryption\textbackslash{}\+Decrypt\+Exception 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_encryption_1_1_string_encrypter_add2c5c300195bf8f8b7646bdc22be0bc}{String\+Encrypter}}.
+
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a397c5e85d7dfa6e04665a60d41ef651f}\index{Encrypter@{Encrypter}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a397c5e85d7dfa6e04665a60d41ef651f} 
+encrypt (\begin{DoxyParamCaption}\item[{\#}]{\$value}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{}]{\$serialize}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Encrypt the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+bool & {\em \$serialize} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Encryption\textbackslash{}\+Encrypt\+Exception \Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_aaddc214e4c31ac50887da1b2c7de0d8c}\index{Encrypter@{Encrypter}!encryptString@{encryptString}}
+\index{encryptString@{encryptString}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{encryptString()}{encryptString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_aaddc214e4c31ac50887da1b2c7de0d8c} 
+encrypt\+String (\begin{DoxyParamCaption}\item[{\#}]{\$value}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+Encrypt a string without serialization.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Encryption\textbackslash{}\+Encrypt\+Exception 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_encryption_1_1_string_encrypter_aaddc214e4c31ac50887da1b2c7de0d8c}{String\+Encrypter}}.
+
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a2acdccbb47bdeff4ca9388c9ceaace3b}\index{Encrypter@{Encrypter}!ensureTagIsValid@{ensureTagIsValid}}
+\index{ensureTagIsValid@{ensureTagIsValid}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{ensureTagIsValid()}{ensureTagIsValid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a2acdccbb47bdeff4ca9388c9ceaace3b} 
+ensure\+Tag\+Is\+Valid (\begin{DoxyParamCaption}\item[{}]{\$tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the given tag is a valid tag given the selected cipher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_aee34114c3ba2d65e8adf284abad1293f}\index{Encrypter@{Encrypter}!generateKey@{generateKey}}
+\index{generateKey@{generateKey}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{generateKey()}{generateKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_aee34114c3ba2d65e8adf284abad1293f} 
+generate\+Key (\begin{DoxyParamCaption}\item[{}]{\$cipher}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new encryption key for the given cipher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cipher} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a5df9315aee4ffec7bd8c0cb57ce58886}\index{Encrypter@{Encrypter}!getAllKeys@{getAllKeys}}
+\index{getAllKeys@{getAllKeys}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{getAllKeys()}{getAllKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a5df9315aee4ffec7bd8c0cb57ce58886} 
+get\+All\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current encryption key and all previous encryption keys.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a93048c5df6905cdfc8f36057e98c0727}\index{Encrypter@{Encrypter}!getJsonPayload@{getJsonPayload}}
+\index{getJsonPayload@{getJsonPayload}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{getJsonPayload()}{getJsonPayload()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a93048c5df6905cdfc8f36057e98c0727} 
+get\+Json\+Payload (\begin{DoxyParamCaption}\item[{}]{\$payload}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the JSON array from the given payload.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Encryption\textbackslash{}\+Decrypt\+Exception \Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_ad40c766ec8aced9770fe6ae269a1e781}\index{Encrypter@{Encrypter}!getKey@{getKey}}
+\index{getKey@{getKey}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_ad40c766ec8aced9770fe6ae269a1e781} 
+get\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the encryption key that the encrypter is currently using.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_ac1ed4a04f90406897d25c01b37ca53ac}\index{Encrypter@{Encrypter}!getPreviousKeys@{getPreviousKeys}}
+\index{getPreviousKeys@{getPreviousKeys}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{getPreviousKeys()}{getPreviousKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_ac1ed4a04f90406897d25c01b37ca53ac} 
+get\+Previous\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the previous encryption keys.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a17c35f690575c1dcf369b48491862ade}\index{Encrypter@{Encrypter}!hash@{hash}}
+\index{hash@{hash}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a17c35f690575c1dcf369b48491862ade} 
+hash (\begin{DoxyParamCaption}\item[{\#}]{\$iv}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{\#}]{\$value}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{\#}]{\$key}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a MAC for the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$iv} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a7d5f60e973e5e057c856d7eabfa152fc}\index{Encrypter@{Encrypter}!previousKeys@{previousKeys}}
+\index{previousKeys@{previousKeys}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{previousKeys()}{previousKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a7d5f60e973e5e057c856d7eabfa152fc} 
+previous\+Keys (\begin{DoxyParamCaption}\item[{array}]{\$keys}{}\end{DoxyParamCaption})}
+
+Set the previous / legacy encryption keys that should be utilized if decryption fails.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$keys} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a0b406661bd0598be8d18275905143e56}\index{Encrypter@{Encrypter}!shouldValidateMac@{shouldValidateMac}}
+\index{shouldValidateMac@{shouldValidateMac}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{shouldValidateMac()}{shouldValidateMac()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a0b406661bd0598be8d18275905143e56} 
+should\+Validate\+Mac (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if we should validate the MAC while decrypting.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a34e7292dc66114bc1287bfdf881a03e2}\index{Encrypter@{Encrypter}!supported@{supported}}
+\index{supported@{supported}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{supported()}{supported()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a34e7292dc66114bc1287bfdf881a03e2} 
+supported (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$cipher}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determine if the given key and cipher combination is valid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string & {\em \$cipher} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a7ec3ae642bea9c2b515840551c105b8d}\index{Encrypter@{Encrypter}!validMac@{validMac}}
+\index{validMac@{validMac}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{validMac()}{validMac()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a7ec3ae642bea9c2b515840551c105b8d} 
+valid\+Mac (\begin{DoxyParamCaption}\item[{array}]{\$payload}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the MAC for the given payload is valid for the primary key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a0b793bc306de297e0bfcf5b04fc0a185}\index{Encrypter@{Encrypter}!validMacForKey@{validMacForKey}}
+\index{validMacForKey@{validMacForKey}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{validMacForKey()}{validMacForKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a0b793bc306de297e0bfcf5b04fc0a185} 
+valid\+Mac\+For\+Key (\begin{DoxyParamCaption}\item[{\#}]{\$payload}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the MAC is valid for the given payload and key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$payload} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a558d804e9e139982781ce160f195b2e0}\index{Encrypter@{Encrypter}!validPayload@{validPayload}}
+\index{validPayload@{validPayload}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{validPayload()}{validPayload()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a558d804e9e139982781ce160f195b2e0} 
+valid\+Payload (\begin{DoxyParamCaption}\item[{}]{\$payload}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Verify that the encryption payload is valid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_aba0db80576c3a7048ea153316f5d9934}\index{Encrypter@{Encrypter}!\$cipher@{\$cipher}}
+\index{\$cipher@{\$cipher}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{\$cipher}{\$cipher}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_aba0db80576c3a7048ea153316f5d9934} 
+\$cipher\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_aa60b0284e0dfa2463495481cf11e3cf4}\index{Encrypter@{Encrypter}!\$key@{\$key}}
+\index{\$key@{\$key}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{\$key}{\$key}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_aa60b0284e0dfa2463495481cf11e3cf4} 
+\$key\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encrypter_a0452df7a640ce13c6da2a8cc3dc79f4f}\index{Encrypter@{Encrypter}!\$previousKeys@{\$previousKeys}}
+\index{\$previousKeys@{\$previousKeys}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{\$previousKeys}{\$previousKeys}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encrypter_a0452df7a640ce13c6da2a8cc3dc79f4f} 
+\$\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encrypter_a7d5f60e973e5e057c856d7eabfa152fc}{previous\+Keys}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Encryption/\mbox{\hyperlink{_encryption_2_encrypter_8php}{Encrypter.\+php}}\end{DoxyCompactItemize}

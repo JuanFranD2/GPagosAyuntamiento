@@ -1,0 +1,7 @@
+var namespace_league_1_1_common_mark_1_1_extension_1_1_heading_permalink =
+[
+    [ "HeadingPermalink", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink.html", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink" ],
+    [ "HeadingPermalinkExtension", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_extension.html", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_extension" ],
+    [ "HeadingPermalinkProcessor", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_processor.html", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_processor" ],
+    [ "HeadingPermalinkRenderer", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_renderer.html", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_renderer" ]
+];

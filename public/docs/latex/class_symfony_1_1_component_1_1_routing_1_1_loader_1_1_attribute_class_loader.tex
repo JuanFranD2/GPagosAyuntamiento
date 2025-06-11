@@ -1,0 +1,212 @@
+\doxysection{Attribute\+Class\+Loader Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader}{}\label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader}\index{AttributeClassLoader@{AttributeClassLoader}}
+Inheritance diagram for Attribute\+Class\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_ae5385a5057b5af88491d89c25768c3ea}{\+\_\+\+\_\+construct}} (protected readonly ?string \$env=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_acd4e51d78002819140d1695c81c4a13b}{set\+Route\+Annotation\+Class}} (string \$class)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a3da992765a48efdfdc70cba7711882b4}{set\+Route\+Attribute\+Class}} (string \$class)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a05f14b72fac4f7e2ff02ddd69352f007}{load}} (mixed \$class, ?string \$type=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a85cf529588f2706f69496eec85944e6a}{supports}} (mixed \$resource, ?string \$type=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_aa564926a7907475bd8f75bdb6a6c5c98}{set\+Resolver}} (Loader\+Resolver\+Interface \$resolver)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a0cfb6f45ec589182257a328341b5091b}{get\+Resolver}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a8f17fbeb8a33e8dab74097e9dd5195e4}{add\+Route}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_collection}{Route\+Collection}} \$collection, object \$attr, array \$globals, \textbackslash{}Reflection\+Class \$class, \textbackslash{}Reflection\+Method \$method)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a9dda64f51659201df3320988f291bca6}{get\+Default\+Route\+Name}} (\textbackslash{}Reflection\+Class \$class, \textbackslash{}Reflection\+Method \$method)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_af68e8ed7da54cebdac5bd4a5edda3062}{get\+Globals}} (\textbackslash{}Reflection\+Class \$class)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a2f4093fa28e72c79e40651e06891b872}{create\+Route}} (string \$path, array \$defaults, array \$requirements, array \$options, ?string \$host, array \$schemes, array \$methods, ?string \$condition)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_adf152ca2d5e2b2718f5d6d5d36e4e96b}{configure\+Route}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route}{Route}} \$route, \textbackslash{}Reflection\+Class \$class, \textbackslash{}Reflection\+Method \$method, object \$attr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_af240f23b12f991b485b80cdcba2e18f9}{\$route\+Annotation\+Class}} = Route\+Attribute\+::class
+\item 
+int \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a3e67d10128d5ce68af36e77b6b7f1573}{\$default\+Route\+Index}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Attribute\+Class\+Loader loads routing information from a PHP class and its methods.
+
+You need to define an implementation for the configure\+Route() method. Most of the time, this method should define some PHP callable to be called for the route (a controller in MVC speak).
+
+The \#\mbox{[}\doxylink{class_route}{Route}\mbox{]} attribute can be set on the class (for global parameters), and on each method.
+
+The \#\mbox{[}\doxylink{class_route}{Route}\mbox{]} attribute main value is the route path. The attribute also recognizes several parameters\+: requirements, options, defaults, schemes, methods, host, and name. The name parameter is mandatory. Here is an example of how you should be able to use it\+: \begin{DoxyVerb}#[Route('/Blog')]
+class Blog
+{
+    #[Route('/', name: 'blog_index')]
+    public function index()
+    {
+    }
+    #[Route('/{id}', name: 'blog_post', requirements: ["id" => '\d+'])]
+    public function show()
+    {
+    }
+}
+\end{DoxyVerb}
+
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+
+Alexander M. Turek \href{mailto:me@derrabus.de}{\texttt{me@derrabus.\+de}} 
+
+Alexandre Daubois \href{mailto:alex.daubois@gmail.com}{\texttt{alex.\+daubois@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_ae5385a5057b5af88491d89c25768c3ea}\index{AttributeClassLoader@{AttributeClassLoader}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_ae5385a5057b5af88491d89c25768c3ea} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected readonly ?string}]{\$env}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a8f17fbeb8a33e8dab74097e9dd5195e4}\index{AttributeClassLoader@{AttributeClassLoader}!addRoute@{addRoute}}
+\index{addRoute@{addRoute}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{addRoute()}{addRoute()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a8f17fbeb8a33e8dab74097e9dd5195e4} 
+add\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_collection}{Route\+Collection}}}]{\$collection}{, }\item[{object}]{\$attr}{, }\item[{array}]{\$globals}{, }\item[{\textbackslash{}Reflection\+Class}]{\$class}{, }\item[{\textbackslash{}Reflection\+Method}]{\$method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Route\+Attribute & {\em \$attr} & or an object that exposes a similar interface \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_adf152ca2d5e2b2718f5d6d5d36e4e96b}\index{AttributeClassLoader@{AttributeClassLoader}!configureRoute@{configureRoute}}
+\index{configureRoute@{configureRoute}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{configureRoute()}{configureRoute()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_adf152ca2d5e2b2718f5d6d5d36e4e96b} 
+configure\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route}{Route}}}]{\$route}{, }\item[{\textbackslash{}Reflection\+Class}]{\$class}{, }\item[{\textbackslash{}Reflection\+Method}]{\$method}{, }\item[{object}]{\$attr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Route\+Attribute & {\em \$attr} & or an object that exposes a similar interface\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a2f4093fa28e72c79e40651e06891b872}\index{AttributeClassLoader@{AttributeClassLoader}!createRoute@{createRoute}}
+\index{createRoute@{createRoute}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{createRoute()}{createRoute()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a2f4093fa28e72c79e40651e06891b872} 
+create\+Route (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{array}]{\$defaults}{, }\item[{array}]{\$requirements}{, }\item[{array}]{\$options}{, }\item[{?string}]{\$host}{, }\item[{array}]{\$schemes}{, }\item[{array}]{\$methods}{, }\item[{?string}]{\$condition}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a9dda64f51659201df3320988f291bca6}\index{AttributeClassLoader@{AttributeClassLoader}!getDefaultRouteName@{getDefaultRouteName}}
+\index{getDefaultRouteName@{getDefaultRouteName}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{getDefaultRouteName()}{getDefaultRouteName()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a9dda64f51659201df3320988f291bca6} 
+get\+Default\+Route\+Name (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Class}]{\$class}{, }\item[{\textbackslash{}Reflection\+Method}]{\$method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the default route name for a class method.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_af68e8ed7da54cebdac5bd4a5edda3062}\index{AttributeClassLoader@{AttributeClassLoader}!getGlobals@{getGlobals}}
+\index{getGlobals@{getGlobals}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{getGlobals()}{getGlobals()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_af68e8ed7da54cebdac5bd4a5edda3062} 
+get\+Globals (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Class}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a0cfb6f45ec589182257a328341b5091b}\index{AttributeClassLoader@{AttributeClassLoader}!getResolver@{getResolver}}
+\index{getResolver@{getResolver}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{getResolver()}{getResolver()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a0cfb6f45ec589182257a328341b5091b} 
+get\+Resolver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a05f14b72fac4f7e2ff02ddd69352f007}\index{AttributeClassLoader@{AttributeClassLoader}!load@{load}}
+\index{load@{load}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a05f14b72fac4f7e2ff02ddd69352f007} 
+load (\begin{DoxyParamCaption}\item[{mixed}]{\$class}{, }\item[{?string}]{\$type}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When route can\textquotesingle{}t be parsed \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_aa564926a7907475bd8f75bdb6a6c5c98}\index{AttributeClassLoader@{AttributeClassLoader}!setResolver@{setResolver}}
+\index{setResolver@{setResolver}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{setResolver()}{setResolver()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_aa564926a7907475bd8f75bdb6a6c5c98} 
+set\+Resolver (\begin{DoxyParamCaption}\item[{Loader\+Resolver\+Interface}]{\$resolver}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_acd4e51d78002819140d1695c81c4a13b}\index{AttributeClassLoader@{AttributeClassLoader}!setRouteAnnotationClass@{setRouteAnnotationClass}}
+\index{setRouteAnnotationClass@{setRouteAnnotationClass}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{setRouteAnnotationClass()}{setRouteAnnotationClass()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_acd4e51d78002819140d1695c81c4a13b} 
+set\+Route\+Annotation\+Class (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000438}{Deprecated}}]since Symfony 7.\+2, use "{}set\+Route\+Attribute\+Class(string \$class)"{} instead\end{DoxyRefDesc}
+
+
+Sets the annotation class to read route properties from. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a3da992765a48efdfdc70cba7711882b4}\index{AttributeClassLoader@{AttributeClassLoader}!setRouteAttributeClass@{setRouteAttributeClass}}
+\index{setRouteAttributeClass@{setRouteAttributeClass}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{setRouteAttributeClass()}{setRouteAttributeClass()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a3da992765a48efdfdc70cba7711882b4} 
+set\+Route\+Attribute\+Class (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})}
+
+Sets the attribute class to read route properties from. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a85cf529588f2706f69496eec85944e6a}\index{AttributeClassLoader@{AttributeClassLoader}!supports@{supports}}
+\index{supports@{supports}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{supports()}{supports()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a85cf529588f2706f69496eec85944e6a} 
+supports (\begin{DoxyParamCaption}\item[{mixed}]{\$resource}{, }\item[{?string}]{\$type}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a3e67d10128d5ce68af36e77b6b7f1573}\index{AttributeClassLoader@{AttributeClassLoader}!\$defaultRouteIndex@{\$defaultRouteIndex}}
+\index{\$defaultRouteIndex@{\$defaultRouteIndex}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{\$defaultRouteIndex}{\$defaultRouteIndex}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_a3e67d10128d5ce68af36e77b6b7f1573} 
+int \$default\+Route\+Index = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_af240f23b12f991b485b80cdcba2e18f9}\index{AttributeClassLoader@{AttributeClassLoader}!\$routeAnnotationClass@{\$routeAnnotationClass}}
+\index{\$routeAnnotationClass@{\$routeAnnotationClass}!AttributeClassLoader@{AttributeClassLoader}}
+\doxysubsubsection{\texorpdfstring{\$routeAnnotationClass}{\$routeAnnotationClass}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_attribute_class_loader_af240f23b12f991b485b80cdcba2e18f9} 
+string \$route\+Annotation\+Class = Route\+Attribute\+::class\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000437}{Deprecated}}]since Symfony 7.\+2, use "{}set\+Route\+Attribute\+Class()"{} instead. \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/routing/\+Loader/\mbox{\hyperlink{_attribute_class_loader_8php}{Attribute\+Class\+Loader.\+php}}\end{DoxyCompactItemize}

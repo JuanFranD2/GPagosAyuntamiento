@@ -1,0 +1,386 @@
+\doxysection{Lexer Class Reference}
+\hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer}{}\label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer}\index{Lexer@{Lexer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aedf0cc97d882f38d3775e69b988af06c}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_config}{Parser\+Config}} \$config)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a4febc24b032bc5449f45eca6be369561}{tokenize}} (string \$s)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a7cb3e479c26124266040625647a6651b}{TOKEN\+\_\+\+REFERENCE}} = 0
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a173390a2c6ac32b7a4efd0e40f22208f}{TOKEN\+\_\+\+UNION}} = 1
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa0ee5e84ec1d5187ee97f9e92e219386}{TOKEN\+\_\+\+INTERSECTION}} = 2
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aebccf939f340b5d99e36850e77756ac6}{TOKEN\+\_\+\+NULLABLE}} = 3
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa277af29f8cdd7e82d7a66c56eb413e9}{TOKEN\+\_\+\+OPEN\+\_\+\+PARENTHESES}} = 4
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_afc326597af28084d4c89ee03e88d124a}{TOKEN\+\_\+\+CLOSE\+\_\+\+PARENTHESES}} = 5
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_adfacc01ae4e1fb43e26aa733a35f1dfc}{TOKEN\+\_\+\+OPEN\+\_\+\+ANGLE\+\_\+\+BRACKET}} = 6
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a7fb6d58aa0e132c39f9d8bac2348687a}{TOKEN\+\_\+\+CLOSE\+\_\+\+ANGLE\+\_\+\+BRACKET}} = 7
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa8426febf0e2b25a8939f3ea459a2a8f}{TOKEN\+\_\+\+OPEN\+\_\+\+SQUARE\+\_\+\+BRACKET}} = 8
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a6f445c050be3e738a666a527f3b7e19f}{TOKEN\+\_\+\+CLOSE\+\_\+\+SQUARE\+\_\+\+BRACKET}} = 9
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ac9099795985e419ce6b86b4519314c48}{TOKEN\+\_\+\+COMMA}} = 10
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a8ed940627e596c4cb313b9c209abcc5d}{TOKEN\+\_\+\+VARIADIC}} = 11
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_afb6eae55da2bc0808cf36e44b93d22c0}{TOKEN\+\_\+\+DOUBLE\+\_\+\+COLON}} = 12
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a1674915b47b438b9016ca897d749439d}{TOKEN\+\_\+\+DOUBLE\+\_\+\+ARROW}} = 13
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a74564d9cd6eb06706568b5da3297869d}{TOKEN\+\_\+\+EQUAL}} = 14
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ae91d9d75d444b710bff3738d7e3a1fa9}{TOKEN\+\_\+\+OPEN\+\_\+\+PHPDOC}} = 15
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ad0b07e53e0e465bae2154ffb35958aca}{TOKEN\+\_\+\+CLOSE\+\_\+\+PHPDOC}} = 16
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a9a09f84319f6e3eff37c35b330247bb5}{TOKEN\+\_\+\+PHPDOC\+\_\+\+TAG}} = 17
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ad4e12c8198d661ea6b7139f7af22aad1}{TOKEN\+\_\+\+DOCTRINE\+\_\+\+TAG}} = 18
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a1dad275ccd3d41d853b4a411f6ad65ae}{TOKEN\+\_\+\+FLOAT}} = 19
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ab27d2b5aa1e7c3977d1acb902da85d86}{TOKEN\+\_\+\+INTEGER}} = 20
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a58d07bf61343d44f21c7014671d3075e}{TOKEN\+\_\+\+SINGLE\+\_\+\+QUOTED\+\_\+\+STRING}} = 21
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_acae3294c0cb97855cab5c75523f37fad}{TOKEN\+\_\+\+DOUBLE\+\_\+\+QUOTED\+\_\+\+STRING}} = 22
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a95d1a3e80b47dc58885bb575641355f8}{TOKEN\+\_\+\+DOCTRINE\+\_\+\+ANNOTATION\+\_\+\+STRING}} = 23
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_abec5059a97dfdbb70b92143ece0e6de7}{TOKEN\+\_\+\+IDENTIFIER}} = 24
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a1ade777117087c58632f0233fee63bc4}{TOKEN\+\_\+\+THIS\+\_\+\+VARIABLE}} = 25
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a4744107c46c59a4931503fbc71a586f0}{TOKEN\+\_\+\+VARIABLE}} = 26
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa0101ff12b943e43c28d8085a06d0471}{TOKEN\+\_\+\+HORIZONTAL\+\_\+\+WS}} = 27
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aebf006460d3c1d8a226b416ba9e79140}{TOKEN\+\_\+\+PHPDOC\+\_\+\+EOL}} = 28
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_af9ceab5e818775631770e2666963ec5d}{TOKEN\+\_\+\+OTHER}} = 29
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ab1dc5bd008a10ba2cd689fc374b1202e}{TOKEN\+\_\+\+END}} = 30
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a62aad757eb1b5c63ab62c7beeaa4e69c}{TOKEN\+\_\+\+COLON}} = 31
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a6cbebdf1a1b6d7cfc23894d4bd16f4c8}{TOKEN\+\_\+\+WILDCARD}} = 32
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a75468c4aed5627c578c8b74790beaa82}{TOKEN\+\_\+\+OPEN\+\_\+\+CURLY\+\_\+\+BRACKET}} = 33
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a27857426a16f6112fafee4bbdadcd97a}{TOKEN\+\_\+\+CLOSE\+\_\+\+CURLY\+\_\+\+BRACKET}} = 34
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a2ceab668787931001aa85ba4096f0904}{TOKEN\+\_\+\+NEGATED}} = 35
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aefd09dcbf83fa0aa4b481737a0325a25}{TOKEN\+\_\+\+ARROW}} = 36
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a57af18b807b456419dcb7dfb1fb3d5a1}{TOKEN\+\_\+\+COMMENT}} = 37
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_abc16e196c84d80a6bc0cc711a55c7f0b}{TOKEN\+\_\+\+LABELS}}
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_af16e1f326ea7bd1f91575fda2bf543fd}{VALUE\+\_\+\+OFFSET}} = 0
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a2e2f392ada8eec2cb3dec46fdbcec7fe}{TYPE\+\_\+\+OFFSET}} = 1
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a639fbe6fc4ee28136cc051bbb9be318f}{LINE\+\_\+\+OFFSET}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation based on \doxylink{namespace_nette}{Nette} Tokenizer (New BSD License; \href{https://github.com/nette/tokenizer}{\texttt{https\+://github.\+com/nette/tokenizer}}) 
+
+\label{doc-constructors}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aedf0cc97d882f38d3775e69b988af06c}\index{Lexer@{Lexer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aedf0cc97d882f38d3775e69b988af06c} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_config}{Parser\+Config}}}]{\$config}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a4febc24b032bc5449f45eca6be369561}\index{Lexer@{Lexer}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a4febc24b032bc5449f45eca6be369561} 
+tokenize (\begin{DoxyParamCaption}\item[{string}]{\$s}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+list\texorpdfstring{$<$}{<}array\{string, int, int\}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a639fbe6fc4ee28136cc051bbb9be318f}\index{Lexer@{Lexer}!LINE\_OFFSET@{LINE\_OFFSET}}
+\index{LINE\_OFFSET@{LINE\_OFFSET}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{LINE\_OFFSET}{LINE\_OFFSET}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a639fbe6fc4ee28136cc051bbb9be318f} 
+const LINE\+\_\+\+OFFSET = 2}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aefd09dcbf83fa0aa4b481737a0325a25}\index{Lexer@{Lexer}!TOKEN\_ARROW@{TOKEN\_ARROW}}
+\index{TOKEN\_ARROW@{TOKEN\_ARROW}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_ARROW}{TOKEN\_ARROW}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aefd09dcbf83fa0aa4b481737a0325a25} 
+const TOKEN\+\_\+\+ARROW = 36}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a7fb6d58aa0e132c39f9d8bac2348687a}\index{Lexer@{Lexer}!TOKEN\_CLOSE\_ANGLE\_BRACKET@{TOKEN\_CLOSE\_ANGLE\_BRACKET}}
+\index{TOKEN\_CLOSE\_ANGLE\_BRACKET@{TOKEN\_CLOSE\_ANGLE\_BRACKET}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_CLOSE\_ANGLE\_BRACKET}{TOKEN\_CLOSE\_ANGLE\_BRACKET}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a7fb6d58aa0e132c39f9d8bac2348687a} 
+const TOKEN\+\_\+\+CLOSE\+\_\+\+ANGLE\+\_\+\+BRACKET = 7}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a27857426a16f6112fafee4bbdadcd97a}\index{Lexer@{Lexer}!TOKEN\_CLOSE\_CURLY\_BRACKET@{TOKEN\_CLOSE\_CURLY\_BRACKET}}
+\index{TOKEN\_CLOSE\_CURLY\_BRACKET@{TOKEN\_CLOSE\_CURLY\_BRACKET}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_CLOSE\_CURLY\_BRACKET}{TOKEN\_CLOSE\_CURLY\_BRACKET}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a27857426a16f6112fafee4bbdadcd97a} 
+const TOKEN\+\_\+\+CLOSE\+\_\+\+CURLY\+\_\+\+BRACKET = 34}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_afc326597af28084d4c89ee03e88d124a}\index{Lexer@{Lexer}!TOKEN\_CLOSE\_PARENTHESES@{TOKEN\_CLOSE\_PARENTHESES}}
+\index{TOKEN\_CLOSE\_PARENTHESES@{TOKEN\_CLOSE\_PARENTHESES}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_CLOSE\_PARENTHESES}{TOKEN\_CLOSE\_PARENTHESES}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_afc326597af28084d4c89ee03e88d124a} 
+const TOKEN\+\_\+\+CLOSE\+\_\+\+PARENTHESES = 5}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ad0b07e53e0e465bae2154ffb35958aca}\index{Lexer@{Lexer}!TOKEN\_CLOSE\_PHPDOC@{TOKEN\_CLOSE\_PHPDOC}}
+\index{TOKEN\_CLOSE\_PHPDOC@{TOKEN\_CLOSE\_PHPDOC}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_CLOSE\_PHPDOC}{TOKEN\_CLOSE\_PHPDOC}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ad0b07e53e0e465bae2154ffb35958aca} 
+const TOKEN\+\_\+\+CLOSE\+\_\+\+PHPDOC = 16}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a6f445c050be3e738a666a527f3b7e19f}\index{Lexer@{Lexer}!TOKEN\_CLOSE\_SQUARE\_BRACKET@{TOKEN\_CLOSE\_SQUARE\_BRACKET}}
+\index{TOKEN\_CLOSE\_SQUARE\_BRACKET@{TOKEN\_CLOSE\_SQUARE\_BRACKET}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_CLOSE\_SQUARE\_BRACKET}{TOKEN\_CLOSE\_SQUARE\_BRACKET}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a6f445c050be3e738a666a527f3b7e19f} 
+const TOKEN\+\_\+\+CLOSE\+\_\+\+SQUARE\+\_\+\+BRACKET = 9}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a62aad757eb1b5c63ab62c7beeaa4e69c}\index{Lexer@{Lexer}!TOKEN\_COLON@{TOKEN\_COLON}}
+\index{TOKEN\_COLON@{TOKEN\_COLON}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_COLON}{TOKEN\_COLON}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a62aad757eb1b5c63ab62c7beeaa4e69c} 
+const TOKEN\+\_\+\+COLON = 31}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ac9099795985e419ce6b86b4519314c48}\index{Lexer@{Lexer}!TOKEN\_COMMA@{TOKEN\_COMMA}}
+\index{TOKEN\_COMMA@{TOKEN\_COMMA}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_COMMA}{TOKEN\_COMMA}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ac9099795985e419ce6b86b4519314c48} 
+const TOKEN\+\_\+\+COMMA = 10}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a57af18b807b456419dcb7dfb1fb3d5a1}\index{Lexer@{Lexer}!TOKEN\_COMMENT@{TOKEN\_COMMENT}}
+\index{TOKEN\_COMMENT@{TOKEN\_COMMENT}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_COMMENT}{TOKEN\_COMMENT}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a57af18b807b456419dcb7dfb1fb3d5a1} 
+const TOKEN\+\_\+\+COMMENT = 37}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a95d1a3e80b47dc58885bb575641355f8}\index{Lexer@{Lexer}!TOKEN\_DOCTRINE\_ANNOTATION\_STRING@{TOKEN\_DOCTRINE\_ANNOTATION\_STRING}}
+\index{TOKEN\_DOCTRINE\_ANNOTATION\_STRING@{TOKEN\_DOCTRINE\_ANNOTATION\_STRING}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_DOCTRINE\_ANNOTATION\_STRING}{TOKEN\_DOCTRINE\_ANNOTATION\_STRING}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a95d1a3e80b47dc58885bb575641355f8} 
+const TOKEN\+\_\+\+DOCTRINE\+\_\+\+ANNOTATION\+\_\+\+STRING = 23}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ad4e12c8198d661ea6b7139f7af22aad1}\index{Lexer@{Lexer}!TOKEN\_DOCTRINE\_TAG@{TOKEN\_DOCTRINE\_TAG}}
+\index{TOKEN\_DOCTRINE\_TAG@{TOKEN\_DOCTRINE\_TAG}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_DOCTRINE\_TAG}{TOKEN\_DOCTRINE\_TAG}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ad4e12c8198d661ea6b7139f7af22aad1} 
+const TOKEN\+\_\+\+DOCTRINE\+\_\+\+TAG = 18}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a1674915b47b438b9016ca897d749439d}\index{Lexer@{Lexer}!TOKEN\_DOUBLE\_ARROW@{TOKEN\_DOUBLE\_ARROW}}
+\index{TOKEN\_DOUBLE\_ARROW@{TOKEN\_DOUBLE\_ARROW}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_DOUBLE\_ARROW}{TOKEN\_DOUBLE\_ARROW}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a1674915b47b438b9016ca897d749439d} 
+const TOKEN\+\_\+\+DOUBLE\+\_\+\+ARROW = 13}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_afb6eae55da2bc0808cf36e44b93d22c0}\index{Lexer@{Lexer}!TOKEN\_DOUBLE\_COLON@{TOKEN\_DOUBLE\_COLON}}
+\index{TOKEN\_DOUBLE\_COLON@{TOKEN\_DOUBLE\_COLON}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_DOUBLE\_COLON}{TOKEN\_DOUBLE\_COLON}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_afb6eae55da2bc0808cf36e44b93d22c0} 
+const TOKEN\+\_\+\+DOUBLE\+\_\+\+COLON = 12}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_acae3294c0cb97855cab5c75523f37fad}\index{Lexer@{Lexer}!TOKEN\_DOUBLE\_QUOTED\_STRING@{TOKEN\_DOUBLE\_QUOTED\_STRING}}
+\index{TOKEN\_DOUBLE\_QUOTED\_STRING@{TOKEN\_DOUBLE\_QUOTED\_STRING}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_DOUBLE\_QUOTED\_STRING}{TOKEN\_DOUBLE\_QUOTED\_STRING}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_acae3294c0cb97855cab5c75523f37fad} 
+const TOKEN\+\_\+\+DOUBLE\+\_\+\+QUOTED\+\_\+\+STRING = 22}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ab1dc5bd008a10ba2cd689fc374b1202e}\index{Lexer@{Lexer}!TOKEN\_END@{TOKEN\_END}}
+\index{TOKEN\_END@{TOKEN\_END}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_END}{TOKEN\_END}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ab1dc5bd008a10ba2cd689fc374b1202e} 
+const TOKEN\+\_\+\+END = 30}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a74564d9cd6eb06706568b5da3297869d}\index{Lexer@{Lexer}!TOKEN\_EQUAL@{TOKEN\_EQUAL}}
+\index{TOKEN\_EQUAL@{TOKEN\_EQUAL}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_EQUAL}{TOKEN\_EQUAL}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a74564d9cd6eb06706568b5da3297869d} 
+const TOKEN\+\_\+\+EQUAL = 14}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a1dad275ccd3d41d853b4a411f6ad65ae}\index{Lexer@{Lexer}!TOKEN\_FLOAT@{TOKEN\_FLOAT}}
+\index{TOKEN\_FLOAT@{TOKEN\_FLOAT}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_FLOAT}{TOKEN\_FLOAT}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a1dad275ccd3d41d853b4a411f6ad65ae} 
+const TOKEN\+\_\+\+FLOAT = 19}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa0101ff12b943e43c28d8085a06d0471}\index{Lexer@{Lexer}!TOKEN\_HORIZONTAL\_WS@{TOKEN\_HORIZONTAL\_WS}}
+\index{TOKEN\_HORIZONTAL\_WS@{TOKEN\_HORIZONTAL\_WS}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_HORIZONTAL\_WS}{TOKEN\_HORIZONTAL\_WS}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa0101ff12b943e43c28d8085a06d0471} 
+const TOKEN\+\_\+\+HORIZONTAL\+\_\+\+WS = 27}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_abec5059a97dfdbb70b92143ece0e6de7}\index{Lexer@{Lexer}!TOKEN\_IDENTIFIER@{TOKEN\_IDENTIFIER}}
+\index{TOKEN\_IDENTIFIER@{TOKEN\_IDENTIFIER}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_IDENTIFIER}{TOKEN\_IDENTIFIER}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_abec5059a97dfdbb70b92143ece0e6de7} 
+const TOKEN\+\_\+\+IDENTIFIER = 24}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ab27d2b5aa1e7c3977d1acb902da85d86}\index{Lexer@{Lexer}!TOKEN\_INTEGER@{TOKEN\_INTEGER}}
+\index{TOKEN\_INTEGER@{TOKEN\_INTEGER}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_INTEGER}{TOKEN\_INTEGER}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ab27d2b5aa1e7c3977d1acb902da85d86} 
+const TOKEN\+\_\+\+INTEGER = 20}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa0ee5e84ec1d5187ee97f9e92e219386}\index{Lexer@{Lexer}!TOKEN\_INTERSECTION@{TOKEN\_INTERSECTION}}
+\index{TOKEN\_INTERSECTION@{TOKEN\_INTERSECTION}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_INTERSECTION}{TOKEN\_INTERSECTION}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa0ee5e84ec1d5187ee97f9e92e219386} 
+const TOKEN\+\_\+\+INTERSECTION = 2}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_abc16e196c84d80a6bc0cc711a55c7f0b}\index{Lexer@{Lexer}!TOKEN\_LABELS@{TOKEN\_LABELS}}
+\index{TOKEN\_LABELS@{TOKEN\_LABELS}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_LABELS}{TOKEN\_LABELS}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_abc16e196c84d80a6bc0cc711a55c7f0b} 
+const TOKEN\+\_\+\+LABELS}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a2ceab668787931001aa85ba4096f0904}\index{Lexer@{Lexer}!TOKEN\_NEGATED@{TOKEN\_NEGATED}}
+\index{TOKEN\_NEGATED@{TOKEN\_NEGATED}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_NEGATED}{TOKEN\_NEGATED}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a2ceab668787931001aa85ba4096f0904} 
+const TOKEN\+\_\+\+NEGATED = 35}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aebccf939f340b5d99e36850e77756ac6}\index{Lexer@{Lexer}!TOKEN\_NULLABLE@{TOKEN\_NULLABLE}}
+\index{TOKEN\_NULLABLE@{TOKEN\_NULLABLE}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_NULLABLE}{TOKEN\_NULLABLE}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aebccf939f340b5d99e36850e77756ac6} 
+const TOKEN\+\_\+\+NULLABLE = 3}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_adfacc01ae4e1fb43e26aa733a35f1dfc}\index{Lexer@{Lexer}!TOKEN\_OPEN\_ANGLE\_BRACKET@{TOKEN\_OPEN\_ANGLE\_BRACKET}}
+\index{TOKEN\_OPEN\_ANGLE\_BRACKET@{TOKEN\_OPEN\_ANGLE\_BRACKET}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_OPEN\_ANGLE\_BRACKET}{TOKEN\_OPEN\_ANGLE\_BRACKET}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_adfacc01ae4e1fb43e26aa733a35f1dfc} 
+const TOKEN\+\_\+\+OPEN\+\_\+\+ANGLE\+\_\+\+BRACKET = 6}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a75468c4aed5627c578c8b74790beaa82}\index{Lexer@{Lexer}!TOKEN\_OPEN\_CURLY\_BRACKET@{TOKEN\_OPEN\_CURLY\_BRACKET}}
+\index{TOKEN\_OPEN\_CURLY\_BRACKET@{TOKEN\_OPEN\_CURLY\_BRACKET}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_OPEN\_CURLY\_BRACKET}{TOKEN\_OPEN\_CURLY\_BRACKET}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a75468c4aed5627c578c8b74790beaa82} 
+const TOKEN\+\_\+\+OPEN\+\_\+\+CURLY\+\_\+\+BRACKET = 33}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa277af29f8cdd7e82d7a66c56eb413e9}\index{Lexer@{Lexer}!TOKEN\_OPEN\_PARENTHESES@{TOKEN\_OPEN\_PARENTHESES}}
+\index{TOKEN\_OPEN\_PARENTHESES@{TOKEN\_OPEN\_PARENTHESES}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_OPEN\_PARENTHESES}{TOKEN\_OPEN\_PARENTHESES}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa277af29f8cdd7e82d7a66c56eb413e9} 
+const TOKEN\+\_\+\+OPEN\+\_\+\+PARENTHESES = 4}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ae91d9d75d444b710bff3738d7e3a1fa9}\index{Lexer@{Lexer}!TOKEN\_OPEN\_PHPDOC@{TOKEN\_OPEN\_PHPDOC}}
+\index{TOKEN\_OPEN\_PHPDOC@{TOKEN\_OPEN\_PHPDOC}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_OPEN\_PHPDOC}{TOKEN\_OPEN\_PHPDOC}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_ae91d9d75d444b710bff3738d7e3a1fa9} 
+const TOKEN\+\_\+\+OPEN\+\_\+\+PHPDOC = 15}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa8426febf0e2b25a8939f3ea459a2a8f}\index{Lexer@{Lexer}!TOKEN\_OPEN\_SQUARE\_BRACKET@{TOKEN\_OPEN\_SQUARE\_BRACKET}}
+\index{TOKEN\_OPEN\_SQUARE\_BRACKET@{TOKEN\_OPEN\_SQUARE\_BRACKET}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_OPEN\_SQUARE\_BRACKET}{TOKEN\_OPEN\_SQUARE\_BRACKET}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aa8426febf0e2b25a8939f3ea459a2a8f} 
+const TOKEN\+\_\+\+OPEN\+\_\+\+SQUARE\+\_\+\+BRACKET = 8}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_af9ceab5e818775631770e2666963ec5d}\index{Lexer@{Lexer}!TOKEN\_OTHER@{TOKEN\_OTHER}}
+\index{TOKEN\_OTHER@{TOKEN\_OTHER}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_OTHER}{TOKEN\_OTHER}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_af9ceab5e818775631770e2666963ec5d} 
+const TOKEN\+\_\+\+OTHER = 29}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aebf006460d3c1d8a226b416ba9e79140}\index{Lexer@{Lexer}!TOKEN\_PHPDOC\_EOL@{TOKEN\_PHPDOC\_EOL}}
+\index{TOKEN\_PHPDOC\_EOL@{TOKEN\_PHPDOC\_EOL}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_PHPDOC\_EOL}{TOKEN\_PHPDOC\_EOL}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_aebf006460d3c1d8a226b416ba9e79140} 
+const TOKEN\+\_\+\+PHPDOC\+\_\+\+EOL = 28}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a9a09f84319f6e3eff37c35b330247bb5}\index{Lexer@{Lexer}!TOKEN\_PHPDOC\_TAG@{TOKEN\_PHPDOC\_TAG}}
+\index{TOKEN\_PHPDOC\_TAG@{TOKEN\_PHPDOC\_TAG}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_PHPDOC\_TAG}{TOKEN\_PHPDOC\_TAG}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a9a09f84319f6e3eff37c35b330247bb5} 
+const TOKEN\+\_\+\+PHPDOC\+\_\+\+TAG = 17}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a7cb3e479c26124266040625647a6651b}\index{Lexer@{Lexer}!TOKEN\_REFERENCE@{TOKEN\_REFERENCE}}
+\index{TOKEN\_REFERENCE@{TOKEN\_REFERENCE}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_REFERENCE}{TOKEN\_REFERENCE}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a7cb3e479c26124266040625647a6651b} 
+const TOKEN\+\_\+\+REFERENCE = 0}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a58d07bf61343d44f21c7014671d3075e}\index{Lexer@{Lexer}!TOKEN\_SINGLE\_QUOTED\_STRING@{TOKEN\_SINGLE\_QUOTED\_STRING}}
+\index{TOKEN\_SINGLE\_QUOTED\_STRING@{TOKEN\_SINGLE\_QUOTED\_STRING}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_SINGLE\_QUOTED\_STRING}{TOKEN\_SINGLE\_QUOTED\_STRING}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a58d07bf61343d44f21c7014671d3075e} 
+const TOKEN\+\_\+\+SINGLE\+\_\+\+QUOTED\+\_\+\+STRING = 21}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a1ade777117087c58632f0233fee63bc4}\index{Lexer@{Lexer}!TOKEN\_THIS\_VARIABLE@{TOKEN\_THIS\_VARIABLE}}
+\index{TOKEN\_THIS\_VARIABLE@{TOKEN\_THIS\_VARIABLE}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_THIS\_VARIABLE}{TOKEN\_THIS\_VARIABLE}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a1ade777117087c58632f0233fee63bc4} 
+const TOKEN\+\_\+\+THIS\+\_\+\+VARIABLE = 25}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a173390a2c6ac32b7a4efd0e40f22208f}\index{Lexer@{Lexer}!TOKEN\_UNION@{TOKEN\_UNION}}
+\index{TOKEN\_UNION@{TOKEN\_UNION}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_UNION}{TOKEN\_UNION}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a173390a2c6ac32b7a4efd0e40f22208f} 
+const TOKEN\+\_\+\+UNION = 1}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a4744107c46c59a4931503fbc71a586f0}\index{Lexer@{Lexer}!TOKEN\_VARIABLE@{TOKEN\_VARIABLE}}
+\index{TOKEN\_VARIABLE@{TOKEN\_VARIABLE}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_VARIABLE}{TOKEN\_VARIABLE}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a4744107c46c59a4931503fbc71a586f0} 
+const TOKEN\+\_\+\+VARIABLE = 26}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a8ed940627e596c4cb313b9c209abcc5d}\index{Lexer@{Lexer}!TOKEN\_VARIADIC@{TOKEN\_VARIADIC}}
+\index{TOKEN\_VARIADIC@{TOKEN\_VARIADIC}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_VARIADIC}{TOKEN\_VARIADIC}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a8ed940627e596c4cb313b9c209abcc5d} 
+const TOKEN\+\_\+\+VARIADIC = 11}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a6cbebdf1a1b6d7cfc23894d4bd16f4c8}\index{Lexer@{Lexer}!TOKEN\_WILDCARD@{TOKEN\_WILDCARD}}
+\index{TOKEN\_WILDCARD@{TOKEN\_WILDCARD}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_WILDCARD}{TOKEN\_WILDCARD}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a6cbebdf1a1b6d7cfc23894d4bd16f4c8} 
+const TOKEN\+\_\+\+WILDCARD = 32}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a2e2f392ada8eec2cb3dec46fdbcec7fe}\index{Lexer@{Lexer}!TYPE\_OFFSET@{TYPE\_OFFSET}}
+\index{TYPE\_OFFSET@{TYPE\_OFFSET}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{TYPE\_OFFSET}{TYPE\_OFFSET}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_a2e2f392ada8eec2cb3dec46fdbcec7fe} 
+const TYPE\+\_\+\+OFFSET = 1}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_af16e1f326ea7bd1f91575fda2bf543fd}\index{Lexer@{Lexer}!VALUE\_OFFSET@{VALUE\_OFFSET}}
+\index{VALUE\_OFFSET@{VALUE\_OFFSET}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{VALUE\_OFFSET}{VALUE\_OFFSET}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer_af16e1f326ea7bd1f91575fda2bf543fd} 
+const VALUE\+\_\+\+OFFSET = 0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpstan/phpdoc-\/parser/src/\+Lexer/\mbox{\hyperlink{phpstan_2phpdoc-parser_2src_2_lexer_2_lexer_8php}{Lexer.\+php}}\end{DoxyCompactItemize}

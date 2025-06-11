@@ -1,0 +1,201 @@
+\doxysection{Class\+Map Class Reference}
+\hypertarget{class_composer_1_1_class_map_generator_1_1_class_map}{}\label{class_composer_1_1_class_map_generator_1_1_class_map}\index{ClassMap@{ClassMap}}
+Inheritance diagram for Class\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_composer_1_1_class_map_generator_1_1_class_map}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_a831bfd2e8f3f041f518f9815cb503bda}{get\+Map}} ()
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_ada194cbfd7244eaee29db7b843f65a21}{get\+Psr\+Violations}} ()
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_a9a9db913732bc72a40db3f5dd91a25d2}{get\+Ambiguous\+Classes}} (\$duplicates\+Filter=\textquotesingle{}\{/(test\texorpdfstring{$\vert$}{|}fixture\texorpdfstring{$\vert$}{|}example\texorpdfstring{$\vert$}{|}stub) s?/\}i\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_a4bd31bcedb7b4943aac2da78d0d84afe}{sort}} ()
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_a8d8aab79b68f56d9f5560e77e91e1e24}{add\+Class}} (string \$class\+Name, string \$path)
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_abf9842d59bf036d66911c34a28f0a96f}{get\+Class\+Path}} (string \$class\+Name)
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_a57866b9829f1dbf2f27fe64d70fe76b7}{has\+Class}} (string \$class\+Name)
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_a70dd8fc660dd44fe42968076f91cd49c}{add\+Psr\+Violation}} (string \$warning, string \$class\+Name, string \$path)
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_a5f86834e57f1e55e8f1cf957ef301f19}{clear\+Psr\+Violations\+By\+Path}} (string \$path\+Prefix)
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_aa31cc1e5f0a60f37412f522c992a5b58}{add\+Ambiguous\+Class}} (string \$class\+Name, string \$path)
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_a099b52ed9dffa0614f66c72e7f1d916d}{get\+Raw\+Psr\+Violations}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_composer_1_1_class_map_generator_1_1_class_map_acdcfcd6e65900bdadd894106750cf520}{\$map}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{j.\+boggiano@seld.\+be}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_aa31cc1e5f0a60f37412f522c992a5b58}\index{ClassMap@{ClassMap}!addAmbiguousClass@{addAmbiguousClass}}
+\index{addAmbiguousClass@{addAmbiguousClass}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{addAmbiguousClass()}{addAmbiguousClass()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_aa31cc1e5f0a60f37412f522c992a5b58} 
+add\+Ambiguous\+Class (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{, }\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$class\+Name} & \\
+\hline
+non-\/empty-\/string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_a8d8aab79b68f56d9f5560e77e91e1e24}\index{ClassMap@{ClassMap}!addClass@{addClass}}
+\index{addClass@{addClass}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{addClass()}{addClass()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_a8d8aab79b68f56d9f5560e77e91e1e24} 
+add\+Class (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{, }\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$class\+Name} & \\
+\hline
+non-\/empty-\/string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_a70dd8fc660dd44fe42968076f91cd49c}\index{ClassMap@{ClassMap}!addPsrViolation@{addPsrViolation}}
+\index{addPsrViolation@{addPsrViolation}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{addPsrViolation()}{addPsrViolation()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_a70dd8fc660dd44fe42968076f91cd49c} 
+add\+Psr\+Violation (\begin{DoxyParamCaption}\item[{string}]{\$warning}{, }\item[{string}]{\$class\+Name}{, }\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_a5f86834e57f1e55e8f1cf957ef301f19}\index{ClassMap@{ClassMap}!clearPsrViolationsByPath@{clearPsrViolationsByPath}}
+\index{clearPsrViolationsByPath@{clearPsrViolationsByPath}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{clearPsrViolationsByPath()}{clearPsrViolationsByPath()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_a5f86834e57f1e55e8f1cf957ef301f19} 
+clear\+Psr\+Violations\+By\+Path (\begin{DoxyParamCaption}\item[{string}]{\$path\+Prefix}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_ac751e87b3d4c4bf2feb03bee8b092755}\index{ClassMap@{ClassMap}!count@{count}}
+\index{count@{count}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_a9a9db913732bc72a40db3f5dd91a25d2}\index{ClassMap@{ClassMap}!getAmbiguousClasses@{getAmbiguousClasses}}
+\index{getAmbiguousClasses@{getAmbiguousClasses}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{getAmbiguousClasses()}{getAmbiguousClasses()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_a9a9db913732bc72a40db3f5dd91a25d2} 
+get\+Ambiguous\+Classes (\begin{DoxyParamCaption}\item[{}]{\$duplicates\+Filter}{ = {\ttfamily \textquotesingle{}\{/(test\texorpdfstring{$\vert$}{|}fixture\texorpdfstring{$\vert$}{|}example\texorpdfstring{$\vert$}{|}stub)s?/\}i\textquotesingle{}}}\end{DoxyParamCaption})}
+
+A map of class names to their list of ambiguous paths
+
+This occurs when the same class can be found in several files
+
+To get the path the class is being mapped to, call get\+Class\+Path
+
+By default, paths that contain test(s), fixture(s), example(s) or stub(s) are ignored as those are typically not problematic when they\textquotesingle{}re dummy classes in the tests folder. If you want to get these back as well you can pass false to \$duplicates\+Filter. Or you can pass your own pattern to exclude if you need to change the default.
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string | false & {\em \$duplicates\+Filter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}class-\/string, array\texorpdfstring{$<$}{<}non-\/empty-\/string\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_abf9842d59bf036d66911c34a28f0a96f}\index{ClassMap@{ClassMap}!getClassPath@{getClassPath}}
+\index{getClassPath@{getClassPath}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{getClassPath()}{getClassPath()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_abf9842d59bf036d66911c34a28f0a96f} 
+get\+Class\+Path (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$class\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+non-\/empty-\/string 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_a831bfd2e8f3f041f518f9815cb503bda}\index{ClassMap@{ClassMap}!getMap@{getMap}}
+\index{getMap@{getMap}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_a831bfd2e8f3f041f518f9815cb503bda} 
+get\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the class map, which is a list of paths indexed by class name
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}class-\/string, non-\/empty-\/string\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_ada194cbfd7244eaee29db7b843f65a21}\index{ClassMap@{ClassMap}!getPsrViolations@{getPsrViolations}}
+\index{getPsrViolations@{getPsrViolations}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{getPsrViolations()}{getPsrViolations()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_ada194cbfd7244eaee29db7b843f65a21} 
+get\+Psr\+Violations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns warning strings containing details about PSR-\/0/4 violations that were detected
+
+Violations are for ex a class which is in the wrong file/directory and thus should not be found using psr-\/0/psr-\/4 autoloading but was found by the Class\+Map\+Generator as it scans all files.
+
+This is only happening when scanning paths using psr-\/0/psr-\/4 autoload type. Classmap type always accepts every class as it finds it.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_a099b52ed9dffa0614f66c72e7f1d916d}\index{ClassMap@{ClassMap}!getRawPsrViolations@{getRawPsrViolations}}
+\index{getRawPsrViolations@{getRawPsrViolations}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{getRawPsrViolations()}{getRawPsrViolations()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_a099b52ed9dffa0614f66c72e7f1d916d} 
+get\+Raw\+Psr\+Violations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the raw psr violations
+
+This is a map of filepath to an associative array of the warning string and the offending class name. \begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, array\texorpdfstring{$<$}{<}array\{warning\+: string, class\+Name\+: string\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_a57866b9829f1dbf2f27fe64d70fe76b7}\index{ClassMap@{ClassMap}!hasClass@{hasClass}}
+\index{hasClass@{hasClass}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{hasClass()}{hasClass()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_a57866b9829f1dbf2f27fe64d70fe76b7} 
+has\+Class (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$class\+Name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_a4bd31bcedb7b4943aac2da78d0d84afe}\index{ClassMap@{ClassMap}!sort@{sort}}
+\index{sort@{sort}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_a4bd31bcedb7b4943aac2da78d0d84afe} 
+sort (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sorts the class map alphabetically by class names 
+
+\label{doc-variable-members}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_composer_1_1_class_map_generator_1_1_class_map_acdcfcd6e65900bdadd894106750cf520}\index{ClassMap@{ClassMap}!\$map@{\$map}}
+\index{\$map@{\$map}!ClassMap@{ClassMap}}
+\doxysubsubsection{\texorpdfstring{\$map}{\$map}}
+{\footnotesize\ttfamily \label{class_composer_1_1_class_map_generator_1_1_class_map_acdcfcd6e65900bdadd894106750cf520} 
+\$map = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/composer/class-\/map-\/generator/src/\mbox{\hyperlink{_class_map_8php}{Class\+Map.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var _php81_garbage_collector_status_provider_8php =
+[
+    [ "Php81GarbageCollectorStatusProvider", "class_p_h_p_unit_1_1_event_1_1_telemetry_1_1_php81_garbage_collector_status_provider.html", "class_p_h_p_unit_1_1_event_1_1_telemetry_1_1_php81_garbage_collector_status_provider" ]
+];

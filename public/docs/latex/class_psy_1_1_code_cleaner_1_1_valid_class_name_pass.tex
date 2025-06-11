@@ -1,0 +1,382 @@
+\doxysection{Valid\+Class\+Name\+Pass Class Reference}
+\hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass}{}\label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass}\index{ValidClassNamePass@{ValidClassNamePass}}
+Inheritance diagram for Valid\+Class\+Name\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (Node \$node)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a560dafbb8615947e1fbfa5565bbb832c}{leave\+Node}} (Node \$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass}{Namespace\+Aware\+Pass}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a61cf9be18190b38cbe8e0778f4cb2fd8}{before\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{Node\+Visitor\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a560dafbb8615947e1fbfa5565bbb832c}{leave\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a85d622872e004eec9219c62ed111a79b}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_adbcf2029358658c8b1d1ce652debdc0e}{CLASS\+\_\+\+TYPE}} = \textquotesingle{}class\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a3b392650aa27c323d9b44a6cb712679c}{INTERFACE\+\_\+\+TYPE}} = \textquotesingle{}interface\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a013494d4ffe92610f4e7386c00ff8012}{TRAIT\+\_\+\+TYPE}} = \textquotesingle{}trait\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a6d11bd165a2ecd3a965f1a64df677f96}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a48cbae280b53266294ddbc517de2e59b}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae379b14ba14de6999485d1e6bc22c94f}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae5987b64591d5fb77abdcf3c51cbb238}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_afc3479fd9ddf97109031fee9751f6234}{REPLACE\+\_\+\+WITH\+\_\+\+NULL}} = 5
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a5bee5f1db2064c8d89bdc5ec7052861c}{validate\+Class\+Statement}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class__}{Class\+\_\+}} \$stmt)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a0155273c2ab2e9ca8cc672ae6214816a}{validate\+Interface\+Statement}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_interface__}{Interface\+\_\+}} \$stmt)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a9aacaa0be1c1699bbe9eb6927377ea49}{validate\+Trait\+Statement}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait__}{Trait\+\_\+}} \$stmt)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a6c59f245ab3e57146d3b008d5a6fb673}{ensure\+Can\+Define}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}} \$stmt, string \$scope\+Type=self\+::\+CLASS\+\_\+\+TYPE)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a5de624d37ed35aac0e9fc66b6f29d197}{ensure\+Class\+Exists}} (string \$name, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}} \$stmt)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_aff8933aab166bdeef880d99c72e3c3b3}{ensure\+Class\+Or\+Interface\+Exists}} (string \$name, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}} \$stmt)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_ae87a7e2bef120f59fac92c52fa84f50a}{ensure\+Class\+Or\+Trait\+Exists}} (string \$name, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}} \$stmt)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a5d5431b481475d588ac718c6936b8b88}{ensure\+Method\+Exists}} (string \$class, string \$name, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}} \$stmt)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a7773aa851725c641eebb6e7b284a4692}{class\+Exists}} (string \$name)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a7d2f5edc4d1530ca761d144c6b0a5469}{interface\+Exists}} (string \$name)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a05bd6fa3bbad299846a0cc9a69a8c464}{trait\+Exists}} (string \$name)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_aa32e28a523755a34f1071267092548a3}{find\+In\+Scope}} (string \$name)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_aab0cea10a89a0f1dc4d56b5567be8d3c}{create\+Error}} (string \$msg, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}} \$stmt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass}{Namespace\+Aware\+Pass}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_accc2b47ea3d54a7012983ea1b61a487a}{get\+Fully\+Qualified\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_aa2bd90c51a210936a9cc188b7645fefb}{get\+Parts}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \$name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass}{Namespace\+Aware\+Pass}}}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a7b014deefd58a829ed2a4c6adce307dc}{\$namespace}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_aa9bbeda0be88d9c480e4796303f2f338}{\$current\+Scope}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Validate that classes exist.
+
+This pass throws a Fatal\+Error\+Exception rather than letting PHP run headfirst into a real fatal error and die. 
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a7773aa851725c641eebb6e7b284a4692}\index{ValidClassNamePass@{ValidClassNamePass}!classExists@{classExists}}
+\index{classExists@{classExists}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{classExists()}{classExists()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a7773aa851725c641eebb6e7b284a4692} 
+class\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check whether a class exists, or has been defined in the current code snippet.
+
+Gives {\ttfamily self}, {\ttfamily static} and {\ttfamily parent} a free pass.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_aab0cea10a89a0f1dc4d56b5567be8d3c}\index{ValidClassNamePass@{ValidClassNamePass}!createError@{createError}}
+\index{createError@{createError}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{createError()}{createError()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_aab0cea10a89a0f1dc4d56b5567be8d3c} 
+create\+Error (\begin{DoxyParamCaption}\item[{string}]{\$msg}{, }\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}}}]{\$stmt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Error creation factory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & \\
+\hline
+Stmt & {\em \$stmt} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a6c59f245ab3e57146d3b008d5a6fb673}\index{ValidClassNamePass@{ValidClassNamePass}!ensureCanDefine@{ensureCanDefine}}
+\index{ensureCanDefine@{ensureCanDefine}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{ensureCanDefine()}{ensureCanDefine()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a6c59f245ab3e57146d3b008d5a6fb673} 
+ensure\+Can\+Define (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}}}]{\$stmt}{, }\item[{string}]{\$scope\+Type}{ = {\ttfamily self\+:\+:CLASS\+\_\+TYPE}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure that no class, interface or trait name collides with a new definition.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Fatal\+Error\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+Stmt & {\em \$stmt} & \\
+\hline
+string & {\em \$scope\+Type} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a5de624d37ed35aac0e9fc66b6f29d197}\index{ValidClassNamePass@{ValidClassNamePass}!ensureClassExists@{ensureClassExists}}
+\index{ensureClassExists@{ensureClassExists}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{ensureClassExists()}{ensureClassExists()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a5de624d37ed35aac0e9fc66b6f29d197} 
+ensure\+Class\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}}}]{\$stmt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure that a referenced class exists.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Fatal\+Error\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+Stmt & {\em \$stmt} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_aff8933aab166bdeef880d99c72e3c3b3}\index{ValidClassNamePass@{ValidClassNamePass}!ensureClassOrInterfaceExists@{ensureClassOrInterfaceExists}}
+\index{ensureClassOrInterfaceExists@{ensureClassOrInterfaceExists}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{ensureClassOrInterfaceExists()}{ensureClassOrInterfaceExists()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_aff8933aab166bdeef880d99c72e3c3b3} 
+ensure\+Class\+Or\+Interface\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}}}]{\$stmt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure that a referenced class {\itshape or interface} exists.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Fatal\+Error\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+Stmt & {\em \$stmt} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_ae87a7e2bef120f59fac92c52fa84f50a}\index{ValidClassNamePass@{ValidClassNamePass}!ensureClassOrTraitExists@{ensureClassOrTraitExists}}
+\index{ensureClassOrTraitExists@{ensureClassOrTraitExists}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{ensureClassOrTraitExists()}{ensureClassOrTraitExists()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_ae87a7e2bef120f59fac92c52fa84f50a} 
+ensure\+Class\+Or\+Trait\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}}}]{\$stmt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure that a referenced class {\itshape or trait} exists.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Fatal\+Error\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+Stmt & {\em \$stmt} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a5d5431b481475d588ac718c6936b8b88}\index{ValidClassNamePass@{ValidClassNamePass}!ensureMethodExists@{ensureMethodExists}}
+\index{ensureMethodExists@{ensureMethodExists}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{ensureMethodExists()}{ensureMethodExists()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a5d5431b481475d588ac718c6936b8b88} 
+ensure\+Method\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$class}{, }\item[{string}]{\$name}{, }\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt}{Stmt}}}]{\$stmt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure that a statically called method exists.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Fatal\+Error\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+Stmt & {\em \$stmt} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a72d9ab2b97095f3bf1c97eb453a386d1}\index{ValidClassNamePass@{ValidClassNamePass}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a72d9ab2b97095f3bf1c97eb453a386d1} 
+enter\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+Validate class, interface and trait definitions.
+
+Validate them upon entering the node, so that we know about their presence and can validate constant fetches and static calls in class or trait methods.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a72d9ab2b97095f3bf1c97eb453a386d1}{Namespace\+Aware\+Pass}}.
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_aa32e28a523755a34f1071267092548a3}\index{ValidClassNamePass@{ValidClassNamePass}!findInScope@{findInScope}}
+\index{findInScope@{findInScope}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{findInScope()}{findInScope()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_aa32e28a523755a34f1071267092548a3} 
+find\+In\+Scope (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Find a symbol in the current code snippet scope.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a7d2f5edc4d1530ca761d144c6b0a5469}\index{ValidClassNamePass@{ValidClassNamePass}!interfaceExists@{interfaceExists}}
+\index{interfaceExists@{interfaceExists}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{interfaceExists()}{interfaceExists()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a7d2f5edc4d1530ca761d144c6b0a5469} 
+interface\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check whether an interface exists, or has been defined in the current code snippet.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a560dafbb8615947e1fbfa5565bbb832c}\index{ValidClassNamePass@{ValidClassNamePass}!leaveNode@{leaveNode}}
+\index{leaveNode@{leaveNode}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{leaveNode()}{leaveNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a560dafbb8615947e1fbfa5565bbb832c} 
+leave\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a05bd6fa3bbad299846a0cc9a69a8c464}\index{ValidClassNamePass@{ValidClassNamePass}!traitExists@{traitExists}}
+\index{traitExists@{traitExists}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{traitExists()}{traitExists()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a05bd6fa3bbad299846a0cc9a69a8c464} 
+trait\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check whether a trait exists, or has been defined in the current code snippet.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a5bee5f1db2064c8d89bdc5ec7052861c}\index{ValidClassNamePass@{ValidClassNamePass}!validateClassStatement@{validateClassStatement}}
+\index{validateClassStatement@{validateClassStatement}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{validateClassStatement()}{validateClassStatement()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a5bee5f1db2064c8d89bdc5ec7052861c} 
+validate\+Class\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class__}{Class\+\_\+}}}]{\$stmt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate a class definition statement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Class\+\_\+ & {\em \$stmt} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a0155273c2ab2e9ca8cc672ae6214816a}\index{ValidClassNamePass@{ValidClassNamePass}!validateInterfaceStatement@{validateInterfaceStatement}}
+\index{validateInterfaceStatement@{validateInterfaceStatement}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{validateInterfaceStatement()}{validateInterfaceStatement()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a0155273c2ab2e9ca8cc672ae6214816a} 
+validate\+Interface\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_interface__}{Interface\+\_\+}}}]{\$stmt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate an interface definition statement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Interface\+\_\+ & {\em \$stmt} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a9aacaa0be1c1699bbe9eb6927377ea49}\index{ValidClassNamePass@{ValidClassNamePass}!validateTraitStatement@{validateTraitStatement}}
+\index{validateTraitStatement@{validateTraitStatement}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{validateTraitStatement()}{validateTraitStatement()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a9aacaa0be1c1699bbe9eb6927377ea49} 
+validate\+Trait\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait__}{Trait\+\_\+}}}]{\$stmt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate a trait definition statement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Trait\+\_\+ & {\em \$stmt} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_adbcf2029358658c8b1d1ce652debdc0e}\index{ValidClassNamePass@{ValidClassNamePass}!CLASS\_TYPE@{CLASS\_TYPE}}
+\index{CLASS\_TYPE@{CLASS\_TYPE}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{CLASS\_TYPE}{CLASS\_TYPE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_adbcf2029358658c8b1d1ce652debdc0e} 
+const CLASS\+\_\+\+TYPE = \textquotesingle{}class\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a3b392650aa27c323d9b44a6cb712679c}\index{ValidClassNamePass@{ValidClassNamePass}!INTERFACE\_TYPE@{INTERFACE\_TYPE}}
+\index{INTERFACE\_TYPE@{INTERFACE\_TYPE}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{INTERFACE\_TYPE}{INTERFACE\_TYPE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a3b392650aa27c323d9b44a6cb712679c} 
+const INTERFACE\+\_\+\+TYPE = \textquotesingle{}interface\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a013494d4ffe92610f4e7386c00ff8012}\index{ValidClassNamePass@{ValidClassNamePass}!TRAIT\_TYPE@{TRAIT\_TYPE}}
+\index{TRAIT\_TYPE@{TRAIT\_TYPE}!ValidClassNamePass@{ValidClassNamePass}}
+\doxysubsubsection{\texorpdfstring{TRAIT\_TYPE}{TRAIT\_TYPE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_a013494d4ffe92610f4e7386c00ff8012} 
+const TRAIT\+\_\+\+TYPE = \textquotesingle{}trait\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Code\+Cleaner/\mbox{\hyperlink{_valid_class_name_pass_8php}{Valid\+Class\+Name\+Pass.\+php}}\end{DoxyCompactItemize}

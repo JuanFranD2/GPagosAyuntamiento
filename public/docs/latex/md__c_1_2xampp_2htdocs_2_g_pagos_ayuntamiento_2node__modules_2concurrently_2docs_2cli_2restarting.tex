@@ -1,0 +1,51 @@
+\chapter{Restarting Commands }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2restarting}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2restarting}\index{Restarting Commands@{Restarting Commands}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2restarting_autotoc_md2252}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2restarting_autotoc_md2252}%
+
+
+Sometimes it\textquotesingle{}s useful to have commands that exited with a non-\/zero status to restart automatically.~\newline
+ concurrently lets you configure how many times you wish for such a command to restart through the {\ttfamily -\/-\/restart-\/tries} flag\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/restart-\/tries\ 2\ "{}exit\ 1"{}}
+\DoxyCodeLine{[0]\ exit\ 1\ exited\ with\ code\ 1}
+\DoxyCodeLine{[0]\ exit\ 1\ restarted}
+\DoxyCodeLine{[0]\ exit\ 1\ exited\ with\ code\ 1}
+\DoxyCodeLine{[0]\ exit\ 1\ restarted}
+\DoxyCodeLine{[0]\ exit\ 1\ exited\ with\ code\ 1}
+
+\end{DoxyCode}
+
+
+Sometimes, it might be interesting to have commands wait before restarting.~\newline
+ To do this, simply set {\ttfamily -\/-\/restart-\/after} to a the number of milliseconds you\textquotesingle{}d like to delay restarting.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/p\ time\ -\/-\/restart-\/tries\ 1\ -\/-\/restart-\/after\ 3000\ "{}exit\ 1"{}}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:43:55.871]\ exit\ 1\ exited\ with\ code\ 1}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:43:58.874]\ exit\ 1\ restarted}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:43:58.891]\ exit\ 1\ exited\ with\ code\ 1}
+
+\end{DoxyCode}
+
+
+If a command is not having success spawning, you might want to instead apply an exponential back-\/off.~\newline
+ Set {\ttfamily -\/-\/restart-\/after exponential} to have commands respawn with a {\ttfamily 2\texorpdfstring{$^\wedge$}{\string^}N} seconds delay.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/p\ time\ -\/-\/restart-\/tries\ 3\ -\/-\/restart-\/after\ exponential\ "{}exit\ 1"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:49:01.124]\ exit\ 1\ exited\ with\ code\ 1}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:49:02.127]\ exit\ 1\ restarted}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:49:02.139]\ exit\ 1\ exited\ with\ code\ 1}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:49:04.141]\ exit\ 1\ restarted}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:49:04.157]\ exit\ 1\ exited\ with\ code\ 1}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:49:08.158]\ exit\ 1\ restarted}
+\DoxyCodeLine{[2024-\/09-\/01\ 23:49:08.174]\ exit\ 1\ exited\ with\ code\ 1}
+
+\end{DoxyCode}
+ 

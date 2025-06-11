@@ -1,0 +1,261 @@
+\doxysection{Rule\+Set Class Reference}
+\hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set}{}\label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set}\index{RuleSet@{RuleSet}}
+Inheritance diagram for Rule\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_add22f11a0f367e5ae553265f5d83782f}{\+\_\+\+\_\+construct}} (\$i\+Line\+No=0)
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a16d247e18fc050dffcf5ed26439b2905}{get\+Line\+No}} ()
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a38bed54100435dd53b6cf1aa93913aab}{add\+Rule}} (\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_1_1_rule}{Rule}} \$o\+Rule, \$o\+Sibling=null)
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_af0174232f29aac18f648112eb6329a6a}{set\+Rules}} (array \$a\+Rules)
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_aca06340187f0b4dd11186527e6a0faae}{remove\+Rule}} (\$m\+Rule)
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_ab61516f4d219d8eb3fbf503f191e09aa}{add\+Comments}} (array \$a\+Comments)
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_af3034ead082330d2c046a69814009808}{get\+Comments}} ()
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a9366ed3d173d3580395c96cda3005564}{set\+Comments}} (array \$a\+Comments)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_renderable}{Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_renderable_ad56bbc0284de9b11bf0426503984f37d}{render}} (\$o\+Output\+Format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a8d689f0e3f0a3bd1b0bce49fc59a87a9}{parse\+Rule\+Set}} (\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parsing_1_1_parser_state}{Parser\+State}} \$o\+Parser\+State, \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set}{Rule\+Set}} \$o\+Rule\+Set)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_aa31419dcbf20c1ddaf9f2e1ab51bfdf2}{render\+Rules}} (\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_output_format}{Output\+Format}} \$o\+Output\+Format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a1019368868955f64e3173e8f40d62582}{\$i\+Line\+No}}
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_ac812e339f6635f2838c73a1436247e44}{\$a\+Comments}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a container for individual \textquotesingle{}Rule\textquotesingle{}s.
+
+The most common form of a rule set is one constrained by a selector, i.\+e., a {\ttfamily Declaration\+Block}. However, unknown {\ttfamily At\+Rule}s (like {\ttfamily @font-\/face}) are rule sets as well.
+
+If you want to manipulate a {\ttfamily Rule\+Set}, use the methods {\ttfamily add\+Rule(Rule \$rule)}, {\ttfamily get\+Rules()} and {\ttfamily remove\+Rule(\$rule)} (which accepts either a {\ttfamily Rule} or a rule name; optionally suffixed by a dash to remove all related rules). 
+
+\label{doc-constructors}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_add22f11a0f367e5ae553265f5d83782f}\index{RuleSet@{RuleSet}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_add22f11a0f367e5ae553265f5d83782f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$i\+Line\+No}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$i\+Line\+No} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_declaration_block_add22f11a0f367e5ae553265f5d83782f}{Declaration\+Block}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a7516ca30af0db3cdbf9a7739b48ce91d}\index{RuleSet@{RuleSet}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000421}{Deprecated}}]in V8.\+8.\+0, will be removed in V9.\+0.\+0. Use {\ttfamily render} instead. \end{DoxyRefDesc}
+
+
+Implements \mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_renderable_a7516ca30af0db3cdbf9a7739b48ce91d}{Renderable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_at_rule_set_a7516ca30af0db3cdbf9a7739b48ce91d}{At\+Rule\+Set}}, and \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_declaration_block_a7516ca30af0db3cdbf9a7739b48ce91d}{Declaration\+Block}}.
+
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_ab61516f4d219d8eb3fbf503f191e09aa}\index{RuleSet@{RuleSet}!addComments@{addComments}}
+\index{addComments@{addComments}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{addComments()}{addComments()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_ab61516f4d219d8eb3fbf503f191e09aa} 
+add\+Comments (\begin{DoxyParamCaption}\item[{array}]{\$a\+Comments}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,Comment$>$} & \$a\+Comments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_comment_1_1_commentable_ab61516f4d219d8eb3fbf503f191e09aa}{Commentable}}.
+
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a38bed54100435dd53b6cf1aa93913aab}\index{RuleSet@{RuleSet}!addRule@{addRule}}
+\index{addRule@{addRule}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{addRule()}{addRule()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a38bed54100435dd53b6cf1aa93913aab} 
+add\+Rule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_1_1_rule}{Rule}}}]{\$o\+Rule}{, }\item[{}]{\$o\+Sibling}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Rule | null & {\em \$o\+Sibling} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_af3034ead082330d2c046a69814009808}\index{RuleSet@{RuleSet}!getComments@{getComments}}
+\index{getComments@{getComments}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{getComments()}{getComments()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_af3034ead082330d2c046a69814009808} 
+get\+Comments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array$<$string, Comment$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_comment_1_1_commentable_af3034ead082330d2c046a69814009808}{Commentable}}.
+
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a16d247e18fc050dffcf5ed26439b2905}\index{RuleSet@{RuleSet}!getLineNo@{getLineNo}}
+\index{getLineNo@{getLineNo}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{getLineNo()}{getLineNo()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a16d247e18fc050dffcf5ed26439b2905} 
+get\+Line\+No (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_renderable_a16d247e18fc050dffcf5ed26439b2905}{Renderable}}.
+
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a8d689f0e3f0a3bd1b0bce49fc59a87a9}\index{RuleSet@{RuleSet}!parseRuleSet@{parseRuleSet}}
+\index{parseRuleSet@{parseRuleSet}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{parseRuleSet()}{parseRuleSet()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a8d689f0e3f0a3bd1b0bce49fc59a87a9} 
+parse\+Rule\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parsing_1_1_parser_state}{Parser\+State}}}]{\$o\+Parser\+State}{, }\item[{\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set}{Rule\+Set}}}]{\$o\+Rule\+Set}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Token\+Exception} & \\
+\hline
+{\em Unexpected\+EOFException} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_aca06340187f0b4dd11186527e6a0faae}\index{RuleSet@{RuleSet}!removeRule@{removeRule}}
+\index{removeRule@{removeRule}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{removeRule()}{removeRule()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_aca06340187f0b4dd11186527e6a0faae} 
+remove\+Rule (\begin{DoxyParamCaption}\item[{}]{\$m\+Rule}{}\end{DoxyParamCaption})}
+
+Removes a rule from this Rule\+Set. This accepts all the possible values that {\ttfamily get\+Rules()} accepts.
+
+If given a Rule, it will only remove this particular rule (by identity). If given a name, it will remove all rules by that name.
+
+Note\+: this is different from pre-\/v.\+2.\+0 behaviour of PHP-\/\+CSS-\/\+Parser, where passing a Rule instance would remove all rules with the same name. To get the old behaviour, use {\ttfamily remove\+Rule(\$o\+Rule-\/\texorpdfstring{$>$}{>}get\+Rule())}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Rule | string | null & {\em \$m\+Rule} & pattern to remove. If \$m\+Rule is null, all rules are removed. If the pattern ends in a dash, all rules starting with the pattern are removed as well as one matching the pattern with the dash excluded. Passing a Rule behaves matches by identity.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_aa31419dcbf20c1ddaf9f2e1ab51bfdf2}\index{RuleSet@{RuleSet}!renderRules@{renderRules}}
+\index{renderRules@{renderRules}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{renderRules()}{renderRules()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_aa31419dcbf20c1ddaf9f2e1ab51bfdf2} 
+render\+Rules (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_output_format}{Output\+Format}}}]{\$o\+Output\+Format}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a9366ed3d173d3580395c96cda3005564}\index{RuleSet@{RuleSet}!setComments@{setComments}}
+\index{setComments@{setComments}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{setComments()}{setComments()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a9366ed3d173d3580395c96cda3005564} 
+set\+Comments (\begin{DoxyParamCaption}\item[{array}]{\$a\+Comments}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,Comment$>$} & \$a\+Comments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_comment_1_1_commentable_a9366ed3d173d3580395c96cda3005564}{Commentable}}.
+
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_af0174232f29aac18f648112eb6329a6a}\index{RuleSet@{RuleSet}!setRules@{setRules}}
+\index{setRules@{setRules}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{setRules()}{setRules()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_af0174232f29aac18f648112eb6329a6a} 
+set\+Rules (\begin{DoxyParamCaption}\item[{array}]{\$a\+Rules}{}\end{DoxyParamCaption})}
+
+Overrides all the rules of this set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,Rule$>$} & \$a\+Rules The rules to override with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_ac812e339f6635f2838c73a1436247e44}\index{RuleSet@{RuleSet}!\$aComments@{\$aComments}}
+\index{\$aComments@{\$aComments}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{\$aComments}{\$aComments}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_ac812e339f6635f2838c73a1436247e44} 
+\$a\+Comments\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a1019368868955f64e3173e8f40d62582}\index{RuleSet@{RuleSet}!\$iLineNo@{\$iLineNo}}
+\index{\$iLineNo@{\$iLineNo}!RuleSet@{RuleSet}}
+\doxysubsubsection{\texorpdfstring{\$iLineNo}{\$iLineNo}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_rule_set_1_1_rule_set_a1019368868955f64e3173e8f40d62582} 
+\$i\+Line\+No\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/sabberworm/php-\/css-\/parser/src/\+Rule\+Set/\mbox{\hyperlink{sabberworm_2php-css-parser_2src_2_rule_set_2_ruleset_8php}{Rule\+Set.\+php}}\end{DoxyCompactItemize}

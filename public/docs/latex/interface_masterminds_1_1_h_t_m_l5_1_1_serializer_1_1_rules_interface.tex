@@ -1,0 +1,206 @@
+\doxysection{Rules\+Interface Interface Reference}
+\hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface}{}\label{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface}\index{RulesInterface@{RulesInterface}}
+Inheritance diagram for Rules\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a6dfece9c91baaed7fe4cd004750aa292}{\+\_\+\+\_\+construct}} (\$output, \$options=array())
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a32b29e4c559e9512fc51e7b043fb3314}{set\+Traverser}} (\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser}{Traverser}} \$traverser)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a55d4f3ee6640137b87c5a4844768f040}{document}} (\$dom)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_aad31eb7ab29e5bf6c11baabab9d1fa68}{element}} (\$ele)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_adf85dd819f0a09c2dca1bd1fa675d4e5}{text}} (\$ele)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a665c6b8d1d3df9ad133ce4a689fe09c8}{cdata}} (\$ele)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_ae0942156fd1e47d40b586cb73da78971}{comment}} (\$ele)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a59298ba23b2e1e7d56b17b3e16c929c1}{processor\+Instruction}} (\$ele)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+To create a new rule set for writing output the Rules\+Interface needs to be implemented. The resulting class can be specified in the options with the key of rules.
+
+For an example implementation see Serializer\textbackslash{}\+Output\+Rules. 
+
+\label{doc-constructors}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a6dfece9c91baaed7fe4cd004750aa292}\index{RulesInterface@{RulesInterface}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!RulesInterface@{RulesInterface}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a6dfece9c91baaed7fe4cd004750aa292} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$output}{, }\item[{}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+The class constructor.
+
+Note, before the rules can be used a traverser must be registered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$output} & The output stream to write output to. \\
+\hline
+array & {\em \$options} & An array of options. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_output_rules_a6dfece9c91baaed7fe4cd004750aa292}{Output\+Rules}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a665c6b8d1d3df9ad133ce4a689fe09c8}\index{RulesInterface@{RulesInterface}!cdata@{cdata}}
+\index{cdata@{cdata}!RulesInterface@{RulesInterface}}
+\doxysubsubsection{\texorpdfstring{cdata()}{cdata()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a665c6b8d1d3df9ad133ce4a689fe09c8} 
+cdata (\begin{DoxyParamCaption}\item[{}]{\$ele}{}\end{DoxyParamCaption})}
+
+Write a CDATA node.
+
+Instead of returning the result write it to the output stream (\$output) that was passed into the constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$ele} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_output_rules_a665c6b8d1d3df9ad133ce4a689fe09c8}{Output\+Rules}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_ae0942156fd1e47d40b586cb73da78971}\index{RulesInterface@{RulesInterface}!comment@{comment}}
+\index{comment@{comment}!RulesInterface@{RulesInterface}}
+\doxysubsubsection{\texorpdfstring{comment()}{comment()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_ae0942156fd1e47d40b586cb73da78971} 
+comment (\begin{DoxyParamCaption}\item[{}]{\$ele}{}\end{DoxyParamCaption})}
+
+Write a comment node.
+
+Instead of returning the result write it to the output stream (\$output) that was passed into the constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$ele} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_output_rules_ae0942156fd1e47d40b586cb73da78971}{Output\+Rules}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a55d4f3ee6640137b87c5a4844768f040}\index{RulesInterface@{RulesInterface}!document@{document}}
+\index{document@{document}!RulesInterface@{RulesInterface}}
+\doxysubsubsection{\texorpdfstring{document()}{document()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a55d4f3ee6640137b87c5a4844768f040} 
+document (\begin{DoxyParamCaption}\item[{}]{\$dom}{}\end{DoxyParamCaption})}
+
+Write a document element (\textbackslash{}\+DOMDocument).
+
+Instead of returning the result write it to the output stream (\$output) that was passed into the constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+DOMDocument & {\em \$dom} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_output_rules_a55d4f3ee6640137b87c5a4844768f040}{Output\+Rules}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_aad31eb7ab29e5bf6c11baabab9d1fa68}\index{RulesInterface@{RulesInterface}!element@{element}}
+\index{element@{element}!RulesInterface@{RulesInterface}}
+\doxysubsubsection{\texorpdfstring{element()}{element()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_aad31eb7ab29e5bf6c11baabab9d1fa68} 
+element (\begin{DoxyParamCaption}\item[{}]{\$ele}{}\end{DoxyParamCaption})}
+
+Write an element.
+
+Instead of returning the result write it to the output stream (\$output) that was passed into the constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$ele} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_output_rules_aad31eb7ab29e5bf6c11baabab9d1fa68}{Output\+Rules}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a59298ba23b2e1e7d56b17b3e16c929c1}\index{RulesInterface@{RulesInterface}!processorInstruction@{processorInstruction}}
+\index{processorInstruction@{processorInstruction}!RulesInterface@{RulesInterface}}
+\doxysubsubsection{\texorpdfstring{processorInstruction()}{processorInstruction()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a59298ba23b2e1e7d56b17b3e16c929c1} 
+processor\+Instruction (\begin{DoxyParamCaption}\item[{}]{\$ele}{}\end{DoxyParamCaption})}
+
+Write a processor instruction.
+
+To learn about processor instructions see Instruction\+Processor
+
+Instead of returning the result write it to the output stream (\$output) that was passed into the constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$ele} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_output_rules_a59298ba23b2e1e7d56b17b3e16c929c1}{Output\+Rules}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a32b29e4c559e9512fc51e7b043fb3314}\index{RulesInterface@{RulesInterface}!setTraverser@{setTraverser}}
+\index{setTraverser@{setTraverser}!RulesInterface@{RulesInterface}}
+\doxysubsubsection{\texorpdfstring{setTraverser()}{setTraverser()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_a32b29e4c559e9512fc51e7b043fb3314} 
+set\+Traverser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser}{Traverser}}}]{\$traverser}{}\end{DoxyParamCaption})}
+
+Register the traverser used in but the rules.
+
+Note, only one traverser can be used by the rules.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Traverser & {\em \$traverser} & The traverser used in the rules.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rules\+Interface \$this for the current object. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_output_rules_a32b29e4c559e9512fc51e7b043fb3314}{Output\+Rules}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_adf85dd819f0a09c2dca1bd1fa675d4e5}\index{RulesInterface@{RulesInterface}!text@{text}}
+\index{text@{text}!RulesInterface@{RulesInterface}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface_adf85dd819f0a09c2dca1bd1fa675d4e5} 
+text (\begin{DoxyParamCaption}\item[{}]{\$ele}{}\end{DoxyParamCaption})}
+
+Write a text node.
+
+Instead of returning the result write it to the output stream (\$output) that was passed into the constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$ele} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_output_rules_adf85dd819f0a09c2dca1bd1fa675d4e5}{Output\+Rules}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Serializer/\mbox{\hyperlink{_rules_interface_8php}{Rules\+Interface.\+php}}\end{DoxyCompactItemize}

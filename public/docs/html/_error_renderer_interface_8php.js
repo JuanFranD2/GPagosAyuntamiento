@@ -1,0 +1,4 @@
+var _error_renderer_interface_8php =
+[
+    [ "ErrorRendererInterface", "interface_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_error_renderer_interface.html", "interface_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_error_renderer_interface" ]
+];

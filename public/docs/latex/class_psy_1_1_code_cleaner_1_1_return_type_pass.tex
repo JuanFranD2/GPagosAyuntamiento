@@ -1,0 +1,122 @@
+\doxysection{Return\+Type\+Pass Class Reference}
+\hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass}{}\label{class_psy_1_1_code_cleaner_1_1_return_type_pass}\index{ReturnTypePass@{ReturnTypePass}}
+Inheritance diagram for Return\+Type\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_psy_1_1_code_cleaner_1_1_return_type_pass}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_return_type_pass_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (Node \$node)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_return_type_pass_a560dafbb8615947e1fbfa5565bbb832c}{leave\+Node}} (Node \$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{Node\+Visitor\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a61cf9be18190b38cbe8e0778f4cb2fd8}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a560dafbb8615947e1fbfa5565bbb832c}{leave\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a85d622872e004eec9219c62ed111a79b}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_return_type_pass_af9b451d04eb24044a2d4112be10de570}{MESSAGE}} = \textquotesingle{}A \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} with \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} type must \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} a value\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_return_type_pass_aef5db87805007b47a32af9a8615d80d6}{NULLABLE\+\_\+\+MESSAGE}} = \textquotesingle{}A \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} with \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} type must \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} a value (did you mean "{}return null;"{} instead of "{}return;"{}?)\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_return_type_pass_a6e7716c2d7950d9bcf69b4ccec6a9792}{VOID\+\_\+\+MESSAGE}} = \textquotesingle{}A void \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} must not \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} a value\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_return_type_pass_ada6e2ddbc64954d6312d7b96fccba4d7}{VOID\+\_\+\+NULL\+\_\+\+MESSAGE}} = \textquotesingle{}A void \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} must not \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} a value (did you mean "{}return;"{} instead of "{}return null;"{}?)\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_return_type_pass_a36aec3a4debf24f529ee1e3def6d7e8a}{NULLABLE\+\_\+\+VOID\+\_\+\+MESSAGE}} = \textquotesingle{}Void type cannot be nullable\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a6d11bd165a2ecd3a965f1a64df677f96}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a48cbae280b53266294ddbc517de2e59b}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae379b14ba14de6999485d1e6bc22c94f}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae5987b64591d5fb77abdcf3c51cbb238}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_afc3479fd9ddf97109031fee9751f6234}{REPLACE\+\_\+\+WITH\+\_\+\+NULL}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Add runtime validation for return types. 
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass_a72d9ab2b97095f3bf1c97eb453a386d1}\index{ReturnTypePass@{ReturnTypePass}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!ReturnTypePass@{ReturnTypePass}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_return_type_pass_a72d9ab2b97095f3bf1c97eb453a386d1} 
+enter\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass_a560dafbb8615947e1fbfa5565bbb832c}\index{ReturnTypePass@{ReturnTypePass}!leaveNode@{leaveNode}}
+\index{leaveNode@{leaveNode}!ReturnTypePass@{ReturnTypePass}}
+\doxysubsubsection{\texorpdfstring{leaveNode()}{leaveNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_return_type_pass_a560dafbb8615947e1fbfa5565bbb832c} 
+leave\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass_af9b451d04eb24044a2d4112be10de570}\index{ReturnTypePass@{ReturnTypePass}!MESSAGE@{MESSAGE}}
+\index{MESSAGE@{MESSAGE}!ReturnTypePass@{ReturnTypePass}}
+\doxysubsubsection{\texorpdfstring{MESSAGE}{MESSAGE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_return_type_pass_af9b451d04eb24044a2d4112be10de570} 
+const MESSAGE = \textquotesingle{}A \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} with \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} type must \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} a value\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass_aef5db87805007b47a32af9a8615d80d6}\index{ReturnTypePass@{ReturnTypePass}!NULLABLE\_MESSAGE@{NULLABLE\_MESSAGE}}
+\index{NULLABLE\_MESSAGE@{NULLABLE\_MESSAGE}!ReturnTypePass@{ReturnTypePass}}
+\doxysubsubsection{\texorpdfstring{NULLABLE\_MESSAGE}{NULLABLE\_MESSAGE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_return_type_pass_aef5db87805007b47a32af9a8615d80d6} 
+const NULLABLE\+\_\+\+MESSAGE = \textquotesingle{}A \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} with \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} type must \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} a value (did you mean "{}return null;"{} instead of "{}return;"{}?)\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass_a36aec3a4debf24f529ee1e3def6d7e8a}\index{ReturnTypePass@{ReturnTypePass}!NULLABLE\_VOID\_MESSAGE@{NULLABLE\_VOID\_MESSAGE}}
+\index{NULLABLE\_VOID\_MESSAGE@{NULLABLE\_VOID\_MESSAGE}!ReturnTypePass@{ReturnTypePass}}
+\doxysubsubsection{\texorpdfstring{NULLABLE\_VOID\_MESSAGE}{NULLABLE\_VOID\_MESSAGE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_return_type_pass_a36aec3a4debf24f529ee1e3def6d7e8a} 
+const NULLABLE\+\_\+\+VOID\+\_\+\+MESSAGE = \textquotesingle{}Void type cannot be nullable\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass_a6e7716c2d7950d9bcf69b4ccec6a9792}\index{ReturnTypePass@{ReturnTypePass}!VOID\_MESSAGE@{VOID\_MESSAGE}}
+\index{VOID\_MESSAGE@{VOID\_MESSAGE}!ReturnTypePass@{ReturnTypePass}}
+\doxysubsubsection{\texorpdfstring{VOID\_MESSAGE}{VOID\_MESSAGE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_return_type_pass_a6e7716c2d7950d9bcf69b4ccec6a9792} 
+const VOID\+\_\+\+MESSAGE = \textquotesingle{}A void \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} must not \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} a value\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_return_type_pass_ada6e2ddbc64954d6312d7b96fccba4d7}\index{ReturnTypePass@{ReturnTypePass}!VOID\_NULL\_MESSAGE@{VOID\_NULL\_MESSAGE}}
+\index{VOID\_NULL\_MESSAGE@{VOID\_NULL\_MESSAGE}!ReturnTypePass@{ReturnTypePass}}
+\doxysubsubsection{\texorpdfstring{VOID\_NULL\_MESSAGE}{VOID\_NULL\_MESSAGE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_return_type_pass_ada6e2ddbc64954d6312d7b96fccba4d7} 
+const VOID\+\_\+\+NULL\+\_\+\+MESSAGE = \textquotesingle{}A void \mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}} must not \mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} a value (did you mean "{}return;"{} instead of "{}return null;"{}?)\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Code\+Cleaner/\mbox{\hyperlink{_return_type_pass_8php}{Return\+Type\+Pass.\+php}}\end{DoxyCompactItemize}

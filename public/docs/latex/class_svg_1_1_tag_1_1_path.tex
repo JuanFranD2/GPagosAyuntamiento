@@ -1,0 +1,202 @@
+\doxysection{Path Class Reference}
+\hypertarget{class_svg_1_1_tag_1_1_path}{}\label{class_svg_1_1_tag_1_1_path}\index{Path@{Path}}
+Inheritance diagram for Path\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_svg_1_1_tag_1_1_path}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_path_a22456196dbe8a6cf7b5afe5cb4106c87}{start}} (\$attributes)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_path_a3df2aa5e850a111d59822d57a17c70bc}{draw\+Arc}} (\mbox{\hyperlink{interface_svg_1_1_surface_1_1_surface_interface}{Surface\+Interface}} \$surface, \$fx, \$fy, \$coords)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_path_a36ebbe540f94db1fb46432922df0260c}{arc\+To\+Segments}} (\$toX, \$toY, \$rx, \$ry, \$large, \$sweep, \$rotateX)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_path_a1d7da1386d337bf45fe658519c81d822}{segment\+To\+Bezier}} (\$th2, \$th3, \$cos\+Th, \$sin\+Th, \$rx, \$ry, \$cx1, \$cy1, \$mT, \$fromX, \$fromY)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_path_a3c03b4a11435a7504b3f525b8b39a5c7}{calc\+Vector\+Angle}} (\$ux, \$uy, \$vx, \$vy)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag}{Abstract\+Tag}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a39c5394cb5a965e43b5e436ee4919734}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_svg_1_1_document}{Document}} \$document, \$tag\+Name)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a2a238eb37625dec8b40d857cdbccb582}{get\+Document}} ()
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_abc9111e8d9212baef39a04194fa6a89a}{get\+Parent\+Group}} ()
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a5bb057d2cfcb1ffdc696a9ed15b2efa5}{handle}} (\$attributes)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a1ebb5f301aa4bb251edd359082288bca}{handle\+End}} ()
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes}} ()
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a1a9c641ae8a39113009425cbccaee5d5}{get\+Style}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_svg_1_1_tag_1_1_path_af35fbc09fa8742f76cb926825176c004}{parse}} (string \$command\+Sequence)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_svg_1_1_tag_1_1_path_aecb5c1ebb254d656772f80bb339cc4ae}{NUMBER\+\_\+\+PATTERN}} = \textquotesingle{}(\mbox{[}-\/+\mbox{]}?(?\+:\textbackslash{}d\texorpdfstring{$\ast$}{*}\textbackslash{}.\textbackslash{}d+\texorpdfstring{$\vert$}{|}\textbackslash{}d+\textbackslash{}.?)(?\+:\mbox{[}eE\mbox{]}\mbox{[}-\/+\mbox{]}?\textbackslash{}d+)?)\textbackslash{}s\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_svg_1_1_tag_1_1_path_ad02e2599b25d5a74b86bf4e3e503664a}{COMMA\+\_\+\+PATTERN}} = \textquotesingle{}(?\+:\textbackslash{}s+,?\textbackslash{}s\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|},\textbackslash{}s\texorpdfstring{$\ast$}{*})?\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_svg_1_1_tag_1_1_path_a95d86d933f013645d9dfef341df9cae5}{FLAG\+\_\+\+PATTERN}} = \textquotesingle{}(\mbox{[}01\mbox{]})\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_svg_1_1_tag_1_1_path_af99a17f6a08c5a89af9e78e9b1cf7547}{ARC\+\_\+\+REGEXP}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag}{Abstract\+Tag}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a526eef5c35551ca57b86d20034360d16}{\$tag\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_svg_1_1_tag_1_1_path_ab643c0b6de04e2ab1e83f93157f85ea4}{\$command\+Lengths}}
+\item 
+static \mbox{\hyperlink{class_svg_1_1_tag_1_1_path_aad1ac1a58b8b1b3a0be1fa25cad7b055}{\$repeated\+Commands}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_svg_1_1_tag_1_1_shape}{Shape}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_shape_a98e54577cfd55e899bfebeba488c6c45}{before}} (\$attributes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag}{Abstract\+Tag}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a817082ace0e2589d27b22890290aa4a9}{end}} ()
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a1c4f41ef2c0bc555e009e4c937f79f56}{after}} ()
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_aeea8f5fe99b837647cbc79f0d77ca209}{set\+Style}} (\mbox{\hyperlink{class_svg_1_1_style}{Style}} \$style)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a739f7867835d6db411b0a657b6d8b445}{make\+Style}} (\$attributes)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a1fd39b2a86d603433b525b18c0b6ecfa}{apply\+Transform}} (\$attributes)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_ab9b08622c9d9ccbea3b37a040f8d5078}{apply\+Viewbox}} (\$attributes)
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_afdffe5ece9c4ea77d6b5253223bc5c31}{convert\+Size}} (string \$size, float \$px\+Reference)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag}{Abstract\+Tag}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_ac5a31edb787609a3143dec9bfa8063ea}{\$document}}
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a4b16ebd3ba5d6cd79dd64e240aec4a58}{\$style}}
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_adc851f7a62250e75df0490c0280aef4c}{\$attributes}} = array()
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a180ec5cc8c356f51b1b386139c86625f}{\$has\+Shape}} = true
+\item 
+\mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_aafda1a84fe840800c9884c167093f759}{\$children}} = array()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_svg_1_1_tag_1_1_path_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_svg_1_1_tag_1_1_path_a36ebbe540f94db1fb46432922df0260c}\index{Path@{Path}!arcToSegments@{arcToSegments}}
+\index{arcToSegments@{arcToSegments}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{arcToSegments()}{arcToSegments()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_a36ebbe540f94db1fb46432922df0260c} 
+arc\+To\+Segments (\begin{DoxyParamCaption}\item[{}]{\$toX}{, }\item[{}]{\$toY}{, }\item[{}]{\$rx}{, }\item[{}]{\$ry}{, }\item[{}]{\$large}{, }\item[{}]{\$sweep}{, }\item[{}]{\$rotateX}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_svg_1_1_tag_1_1_path_a3c03b4a11435a7504b3f525b8b39a5c7}\index{Path@{Path}!calcVectorAngle@{calcVectorAngle}}
+\index{calcVectorAngle@{calcVectorAngle}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{calcVectorAngle()}{calcVectorAngle()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_a3c03b4a11435a7504b3f525b8b39a5c7} 
+calc\+Vector\+Angle (\begin{DoxyParamCaption}\item[{}]{\$ux}{, }\item[{}]{\$uy}{, }\item[{}]{\$vx}{, }\item[{}]{\$vy}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_svg_1_1_tag_1_1_path_a3df2aa5e850a111d59822d57a17c70bc}\index{Path@{Path}!drawArc@{drawArc}}
+\index{drawArc@{drawArc}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{drawArc()}{drawArc()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_a3df2aa5e850a111d59822d57a17c70bc} 
+draw\+Arc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_svg_1_1_surface_1_1_surface_interface}{Surface\+Interface}}}]{\$surface}{, }\item[{}]{\$fx}{, }\item[{}]{\$fy}{, }\item[{}]{\$coords}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_svg_1_1_tag_1_1_path_af35fbc09fa8742f76cb926825176c004}\index{Path@{Path}!parse@{parse}}
+\index{parse@{parse}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_af35fbc09fa8742f76cb926825176c004} 
+parse (\begin{DoxyParamCaption}\item[{string}]{\$command\+Sequence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_svg_1_1_tag_1_1_path_a1d7da1386d337bf45fe658519c81d822}\index{Path@{Path}!segmentToBezier@{segmentToBezier}}
+\index{segmentToBezier@{segmentToBezier}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{segmentToBezier()}{segmentToBezier()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_a1d7da1386d337bf45fe658519c81d822} 
+segment\+To\+Bezier (\begin{DoxyParamCaption}\item[{}]{\$th2}{, }\item[{}]{\$th3}{, }\item[{}]{\$cos\+Th}{, }\item[{}]{\$sin\+Th}{, }\item[{}]{\$rx}{, }\item[{}]{\$ry}{, }\item[{}]{\$cx1}{, }\item[{}]{\$cy1}{, }\item[{}]{\$mT}{, }\item[{}]{\$fromX}{, }\item[{}]{\$fromY}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_svg_1_1_tag_1_1_path_a22456196dbe8a6cf7b5afe5cb4106c87}\index{Path@{Path}!start@{start}}
+\index{start@{start}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_a22456196dbe8a6cf7b5afe5cb4106c87} 
+start (\begin{DoxyParamCaption}\item[{}]{\$attributes}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_svg_1_1_tag_1_1_abstract_tag_a22456196dbe8a6cf7b5afe5cb4106c87}{Abstract\+Tag}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_svg_1_1_tag_1_1_path_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_svg_1_1_tag_1_1_path_ab643c0b6de04e2ab1e83f93157f85ea4}\index{Path@{Path}!\$commandLengths@{\$commandLengths}}
+\index{\$commandLengths@{\$commandLengths}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{\$commandLengths}{\$commandLengths}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_ab643c0b6de04e2ab1e83f93157f85ea4} 
+\$command\+Lengths\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_svg_1_1_tag_1_1_path_aad1ac1a58b8b1b3a0be1fa25cad7b055}\index{Path@{Path}!\$repeatedCommands@{\$repeatedCommands}}
+\index{\$repeatedCommands@{\$repeatedCommands}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{\$repeatedCommands}{\$repeatedCommands}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_aad1ac1a58b8b1b3a0be1fa25cad7b055} 
+\$repeated\+Commands\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_svg_1_1_tag_1_1_path_af99a17f6a08c5a89af9e78e9b1cf7547}\index{Path@{Path}!ARC\_REGEXP@{ARC\_REGEXP}}
+\index{ARC\_REGEXP@{ARC\_REGEXP}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{ARC\_REGEXP}{ARC\_REGEXP}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_af99a17f6a08c5a89af9e78e9b1cf7547} 
+const ARC\+\_\+\+REGEXP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_svg_1_1_tag_1_1_path_ad02e2599b25d5a74b86bf4e3e503664a}\index{Path@{Path}!COMMA\_PATTERN@{COMMA\_PATTERN}}
+\index{COMMA\_PATTERN@{COMMA\_PATTERN}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{COMMA\_PATTERN}{COMMA\_PATTERN}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_ad02e2599b25d5a74b86bf4e3e503664a} 
+const COMMA\+\_\+\+PATTERN = \textquotesingle{}(?\+:\textbackslash{}s+,?\textbackslash{}s\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|},\textbackslash{}s\texorpdfstring{$\ast$}{*})?\textquotesingle{}}
+
+\Hypertarget{class_svg_1_1_tag_1_1_path_a95d86d933f013645d9dfef341df9cae5}\index{Path@{Path}!FLAG\_PATTERN@{FLAG\_PATTERN}}
+\index{FLAG\_PATTERN@{FLAG\_PATTERN}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{FLAG\_PATTERN}{FLAG\_PATTERN}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_a95d86d933f013645d9dfef341df9cae5} 
+const FLAG\+\_\+\+PATTERN = \textquotesingle{}(\mbox{[}01\mbox{]})\textquotesingle{}}
+
+\Hypertarget{class_svg_1_1_tag_1_1_path_aecb5c1ebb254d656772f80bb339cc4ae}\index{Path@{Path}!NUMBER\_PATTERN@{NUMBER\_PATTERN}}
+\index{NUMBER\_PATTERN@{NUMBER\_PATTERN}!Path@{Path}}
+\doxysubsubsection{\texorpdfstring{NUMBER\_PATTERN}{NUMBER\_PATTERN}}
+{\footnotesize\ttfamily \label{class_svg_1_1_tag_1_1_path_aecb5c1ebb254d656772f80bb339cc4ae} 
+const NUMBER\+\_\+\+PATTERN = \textquotesingle{}(\mbox{[}-\/+\mbox{]}?(?\+:\textbackslash{}d\texorpdfstring{$\ast$}{*}\textbackslash{}.\textbackslash{}d+\texorpdfstring{$\vert$}{|}\textbackslash{}d+\textbackslash{}.?)(?\+:\mbox{[}eE\mbox{]}\mbox{[}-\/+\mbox{]}?\textbackslash{}d+)?)\textbackslash{}s\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/php-\/svg-\/lib/src/\+Svg/\+Tag/\mbox{\hyperlink{_path_8php}{Path.\+php}}\end{DoxyCompactItemize}

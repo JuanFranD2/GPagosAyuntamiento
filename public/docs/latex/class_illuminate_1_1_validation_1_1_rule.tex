@@ -1,0 +1,397 @@
+\doxysection{Rule Class Reference}
+\hypertarget{class_illuminate_1_1_validation_1_1_rule}{}\label{class_illuminate_1_1_validation_1_1_rule}\index{Rule@{Rule}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_af1b610842d57ca133b72b6be96008a72}{can}} (\$ability,... \$arguments)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a018fd44c90193ecbe4e0ffb53ed9c93d}{when}} (\$condition, \$rules, \$default\+Rules=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_af7aad278df1e73bb00ea4a4ac29775ce}{unless}} (\$condition, \$rules, \$default\+Rules=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_aab02f6be350108dfd5be10be87aebab0}{array}} (\$keys=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_acb57765914fc440cf02abf0fc803e95b}{for\+Each}} (\$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a68b24c1b87d75a6e11380f40a387659b}{unique}} (\$table, \$column=\textquotesingle{}NULL\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_ad92df51f34abbfe752cae02745f7fa69}{exists}} (\$table, \$column=\textquotesingle{}NULL\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_af6e385beeff5bef5836a6099fd9881fc}{in}} (\$values)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a0d5d60bf738a8cbdf3d3f1e31d79a9e7}{not\+In}} (\$values)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a16c074c48c9ea4c005a243edfbd3d0a5}{required\+If}} (\$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_abec4edc9a7c7bb885ad53394e1a186ef}{exclude\+If}} (\$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_ab4d3f6ad7380e2d8cd8448fb678e178e}{prohibited\+If}} (\$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a0c5b5c70836a691de94b3fc673c0e062}{date}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a03189314d1ab5fe7b0fce370ee46acb3}{email}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_acdc069f803dc6e049915ee6ebd82a620}{enum}} (\$type)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a8bfd56e69f6a616f9bfb17d00b6d891f}{file}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a0fc5b8aa97286d328ef9bfdd04379356}{image\+File}} (\$allow\+Svg=false)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a0bca879b3f8c2a1990b6904c1a6cbf04}{dimensions}} (array \$constraints=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a59a8da4f95682d3958c20878d1f89b7d}{numeric}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a1a222358e4c77d625fd72ee8de5a01bf}{any\+Of}} (\$rules)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rule_a86cad618028014415b9fff686ca6155a}{compile}} (\$attribute, \$rules, \$data=null)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a1a222358e4c77d625fd72ee8de5a01bf}\index{Rule@{Rule}!anyOf@{anyOf}}
+\index{anyOf@{anyOf}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{anyOf()}{anyOf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a1a222358e4c77d625fd72ee8de5a01bf} 
+any\+Of (\begin{DoxyParamCaption}\item[{}]{\$rules}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get an "{}any of"{} rule builder instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Any\+Of
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_validation_1_1_rule_aab02f6be350108dfd5be10be87aebab0}\index{Rule@{Rule}!array@{array}}
+\index{array@{array}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{array()}{array()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_aab02f6be350108dfd5be10be87aebab0} 
+array (\begin{DoxyParamCaption}\item[{}]{\$keys}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get an array rule builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$keys} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Array\+Rule 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_af1b610842d57ca133b72b6be96008a72}\index{Rule@{Rule}!can@{can}}
+\index{can@{can}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{can()}{can()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_af1b610842d57ca133b72b6be96008a72} 
+can (\begin{DoxyParamCaption}\item[{}]{\$ability}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a can constraint builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ability} & \\
+\hline
+ & {\em mixed} & ...\$arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Can 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a86cad618028014415b9fff686ca6155a}\index{Rule@{Rule}!compile@{compile}}
+\index{compile@{compile}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a86cad618028014415b9fff686ca6155a} 
+compile (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$rules}{, }\item[{}]{\$data}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Compile a set of rules for an attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+array & {\em \$rules} & \\
+\hline
+array | null & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object\texorpdfstring{$\vert$}{|}\textbackslash{}std\+Class 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a0c5b5c70836a691de94b3fc673c0e062}\index{Rule@{Rule}!date@{date}}
+\index{date@{date}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a0c5b5c70836a691de94b3fc673c0e062} 
+date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a date rule builder instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Date 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a0bca879b3f8c2a1990b6904c1a6cbf04}\index{Rule@{Rule}!dimensions@{dimensions}}
+\index{dimensions@{dimensions}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{dimensions()}{dimensions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a0bca879b3f8c2a1990b6904c1a6cbf04} 
+dimensions (\begin{DoxyParamCaption}\item[{array}]{\$constraints}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a dimensions rule builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$constraints} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Dimensions 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a03189314d1ab5fe7b0fce370ee46acb3}\index{Rule@{Rule}!email@{email}}
+\index{email@{email}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{email()}{email()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a03189314d1ab5fe7b0fce370ee46acb3} 
+email (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get an email rule builder instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Email 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_acdc069f803dc6e049915ee6ebd82a620}\index{Rule@{Rule}!enum@{enum}}
+\index{enum@{enum}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{enum()}{enum()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_acdc069f803dc6e049915ee6ebd82a620} 
+enum (\begin{DoxyParamCaption}\item[{}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get an enum rule builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Enum 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_abec4edc9a7c7bb885ad53394e1a186ef}\index{Rule@{Rule}!excludeIf@{excludeIf}}
+\index{excludeIf@{excludeIf}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{excludeIf()}{excludeIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_abec4edc9a7c7bb885ad53394e1a186ef} 
+exclude\+If (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a exclude\+\_\+if rule builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | bool & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Exclude\+If 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_ad92df51f34abbfe752cae02745f7fa69}\index{Rule@{Rule}!exists@{exists}}
+\index{exists@{exists}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_ad92df51f34abbfe752cae02745f7fa69} 
+exists (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}NULL\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get an exists constraint builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Exists 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a8bfd56e69f6a616f9bfb17d00b6d891f}\index{Rule@{Rule}!file@{file}}
+\index{file@{file}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a8bfd56e69f6a616f9bfb17d00b6d891f} 
+file (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a file rule builder instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+File 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_acb57765914fc440cf02abf0fc803e95b}\index{Rule@{Rule}!forEach@{forEach}}
+\index{forEach@{forEach}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{forEach()}{forEach()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_acb57765914fc440cf02abf0fc803e95b} 
+for\+Each (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new nested rule set.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Nested\+Rules 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a0fc5b8aa97286d328ef9bfdd04379356}\index{Rule@{Rule}!imageFile@{imageFile}}
+\index{imageFile@{imageFile}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{imageFile()}{imageFile()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a0fc5b8aa97286d328ef9bfdd04379356} 
+image\+File (\begin{DoxyParamCaption}\item[{}]{\$allow\+Svg}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get an image file rule builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$allow\+Svg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Image\+File 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_af6e385beeff5bef5836a6099fd9881fc}\index{Rule@{Rule}!in@{in}}
+\index{in@{in}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{in()}{in()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_af6e385beeff5bef5836a6099fd9881fc} 
+in (\begin{DoxyParamCaption}\item[{}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get an in rule builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable | \textbackslash{}\+Backed\+Enum | \textbackslash{}\+Unit\+Enum | array | string & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+In 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a0d5d60bf738a8cbdf3d3f1e31d79a9e7}\index{Rule@{Rule}!notIn@{notIn}}
+\index{notIn@{notIn}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{notIn()}{notIn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a0d5d60bf738a8cbdf3d3f1e31d79a9e7} 
+not\+In (\begin{DoxyParamCaption}\item[{}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a not\+\_\+in rule builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable | \textbackslash{}\+Backed\+Enum | \textbackslash{}\+Unit\+Enum | array | string & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Not\+In 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a59a8da4f95682d3958c20878d1f89b7d}\index{Rule@{Rule}!numeric@{numeric}}
+\index{numeric@{numeric}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{numeric()}{numeric()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a59a8da4f95682d3958c20878d1f89b7d} 
+numeric (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a numeric rule builder instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Numeric 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_ab4d3f6ad7380e2d8cd8448fb678e178e}\index{Rule@{Rule}!prohibitedIf@{prohibitedIf}}
+\index{prohibitedIf@{prohibitedIf}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{prohibitedIf()}{prohibitedIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_ab4d3f6ad7380e2d8cd8448fb678e178e} 
+prohibited\+If (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a prohibited\+\_\+if rule builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | bool & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Prohibited\+If 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a16c074c48c9ea4c005a243edfbd3d0a5}\index{Rule@{Rule}!requiredIf@{requiredIf}}
+\index{requiredIf@{requiredIf}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{requiredIf()}{requiredIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a16c074c48c9ea4c005a243edfbd3d0a5} 
+required\+If (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a required\+\_\+if rule builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | bool & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Required\+If 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a68b24c1b87d75a6e11380f40a387659b}\index{Rule@{Rule}!unique@{unique}}
+\index{unique@{unique}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{unique()}{unique()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a68b24c1b87d75a6e11380f40a387659b} 
+unique (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}NULL\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a unique constraint builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Rules\textbackslash{}\+Unique 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_af7aad278df1e73bb00ea4a4ac29775ce}\index{Rule@{Rule}!unless@{unless}}
+\index{unless@{unless}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{unless()}{unless()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_af7aad278df1e73bb00ea4a4ac29775ce} 
+unless (\begin{DoxyParamCaption}\item[{}]{\$condition}{, }\item[{}]{\$rules}{, }\item[{}]{\$default\+Rules}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Apply the given rules if the given condition is falsy.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | bool & {\em \$condition} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Validation\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Invokable\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Rule | \textbackslash{}\+Closure | array | string & {\em \$rules} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Validation\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Invokable\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Rule | \textbackslash{}\+Closure | array | string & {\em \$default\+Rules} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Conditional\+Rules 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_rule_a018fd44c90193ecbe4e0ffb53ed9c93d}\index{Rule@{Rule}!when@{when}}
+\index{when@{when}!Rule@{Rule}}
+\doxysubsubsection{\texorpdfstring{when()}{when()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_rule_a018fd44c90193ecbe4e0ffb53ed9c93d} 
+when (\begin{DoxyParamCaption}\item[{}]{\$condition}{, }\item[{}]{\$rules}{, }\item[{}]{\$default\+Rules}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Apply the given rules if the given condition is truthy.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | bool & {\em \$condition} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Validation\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Invokable\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Rule | \textbackslash{}\+Closure | array | string & {\em \$rules} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Validation\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Invokable\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Rule | \textbackslash{}\+Closure | array | string & {\em \$default\+Rules} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Conditional\+Rules 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Validation/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_validation_2_rule_8php}{Rule.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/sabberworm/php-\/css-\/parser/src/\+Rule/\mbox{\hyperlink{sabberworm_2php-css-parser_2src_2_rule_2_rule_8php}{Rule.\+php}}\end{DoxyCompactItemize}

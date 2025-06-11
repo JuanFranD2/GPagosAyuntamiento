@@ -1,0 +1,252 @@
+\doxysection{Parameter\+Bag Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag}\index{ParameterBag@{ParameterBag}}
+Inheritance diagram for Parameter\+Bag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a5335f479dbf2dafe54013389fcd2343d}{\+\_\+\+\_\+construct}} (protected array \$parameters=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a48d7c4f745902ed428570fedd97c4249}{all}} (?string \$key=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a3b0db17d4be3aff5451d2764e7c88beb}{keys}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a0ab02885664cffb16f8ee37edc804f5d}{replace}} (array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a001a884126c48a65a946ad8d4d8b4131}{add}} (array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a4d1ec84d2ad9eee94a297ff6db1c0add}{get}} (string \$key, mixed \$default=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ad61cc5cf37604f5e112651bd7e7a0a1f}{set}} (string \$key, mixed \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_afdce603da130f170b2e650649949b544}{has}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ab454eea7bf82990572fe4017b8dd4ca3}{remove}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ac00a27e04325e8a69246a6fcf8c996f2}{get\+Alpha}} (string \$key, string \$default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a02a95206fafd7cd7069ff620d53207d5}{get\+Alnum}} (string \$key, string \$default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a7b859c8cf214e8622e85aa7f180c03c4}{get\+Digits}} (string \$key, string \$default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a95a3c0b23410bb368009168973e6a740}{get\+String}} (string \$key, string \$default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a5645a5332026713204d284ba9d742edb}{get\+Int}} (string \$key, int \$default=0)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a32d482d487659f5daaf3cf2a913e6c9a}{get\+Boolean}} (string \$key, bool \$default=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a3365525f80142fcbb15e411258a09eab}{get\+Enum}} (string \$key, string \$class, ?\textbackslash{}Backed\+Enum \$default=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_acd0337cbbb8b505940033e8b8dfaeaf7}{filter}} (string \$key, mixed \$default=null, int \$filter=\textbackslash{}FILTER\+\_\+\+DEFAULT, mixed \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parameter\+Bag is a container for key/value pairs.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}}
+\end{DoxyAuthor}
+\texorpdfstring{$<$}{<}string, mixed\texorpdfstring{$>$}{>} 
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a5335f479dbf2dafe54013389fcd2343d}\index{ParameterBag@{ParameterBag}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a5335f479dbf2dafe54013389fcd2343d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a001a884126c48a65a946ad8d4d8b4131}\index{ParameterBag@{ParameterBag}!add@{add}}
+\index{add@{add}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a001a884126c48a65a946ad8d4d8b4131} 
+add (\begin{DoxyParamCaption}\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds parameters. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_bag_a40cc3638351682a3c0ffca71ce7a24ec}{File\+Bag}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag_ae6ababd4dcfe2875f491be75dc9f440d}{Input\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a48d7c4f745902ed428570fedd97c4249}\index{ParameterBag@{ParameterBag}!all@{all}}
+\index{all@{all}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a48d7c4f745902ed428570fedd97c4249} 
+all (\begin{DoxyParamCaption}\item[{?string}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$key} & The name of the parameter to return or null to get them all \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ac751e87b3d4c4bf2feb03bee8b092755}\index{ParameterBag@{ParameterBag}!count@{count}}
+\index{count@{count}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the number of parameters. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_acd0337cbbb8b505940033e8b8dfaeaf7}\index{ParameterBag@{ParameterBag}!filter@{filter}}
+\index{filter@{filter}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_acd0337cbbb8b505940033e8b8dfaeaf7} 
+filter (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}, }\item[{int}]{\$filter}{ = {\ttfamily \textbackslash{}FILTER\+\_\+DEFAULT}, }\item[{mixed}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Filter key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$filter} & FILTER\+\_\+\texorpdfstring{$\ast$}{*} constant \\
+\hline
+ & {\em int\texorpdfstring{$\vert$}{|}array\{flags?} & int, options?\+: array\} \$options Flags from FILTER\+\_\+\texorpdfstring{$\ast$}{*} constants\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://php.net/filter-var}{\texttt{https\+://php.\+net/filter-\/var}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag_acd0337cbbb8b505940033e8b8dfaeaf7}{Input\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a4d1ec84d2ad9eee94a297ff6db1c0add}\index{ParameterBag@{ParameterBag}!get@{get}}
+\index{get@{get}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a4d1ec84d2ad9eee94a297ff6db1c0add} 
+get (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag_a4d1ec84d2ad9eee94a297ff6db1c0add}{Input\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a02a95206fafd7cd7069ff620d53207d5}\index{ParameterBag@{ParameterBag}!getAlnum@{getAlnum}}
+\index{getAlnum@{getAlnum}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{getAlnum()}{getAlnum()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a02a95206fafd7cd7069ff620d53207d5} 
+get\+Alnum (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string}]{\$default}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the alphabetic characters and digits of the parameter value. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ac00a27e04325e8a69246a6fcf8c996f2}\index{ParameterBag@{ParameterBag}!getAlpha@{getAlpha}}
+\index{getAlpha@{getAlpha}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{getAlpha()}{getAlpha()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ac00a27e04325e8a69246a6fcf8c996f2} 
+get\+Alpha (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string}]{\$default}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the alphabetic characters of the parameter value. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a32d482d487659f5daaf3cf2a913e6c9a}\index{ParameterBag@{ParameterBag}!getBoolean@{getBoolean}}
+\index{getBoolean@{getBoolean}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{getBoolean()}{getBoolean()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a32d482d487659f5daaf3cf2a913e6c9a} 
+get\+Boolean (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{bool}]{\$default}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Returns the parameter value converted to boolean. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a7b859c8cf214e8622e85aa7f180c03c4}\index{ParameterBag@{ParameterBag}!getDigits@{getDigits}}
+\index{getDigits@{getDigits}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{getDigits()}{getDigits()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a7b859c8cf214e8622e85aa7f180c03c4} 
+get\+Digits (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string}]{\$default}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the digits of the parameter value. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a3365525f80142fcbb15e411258a09eab}\index{ParameterBag@{ParameterBag}!getEnum@{getEnum}}
+\index{getEnum@{getEnum}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{getEnum()}{getEnum()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a3365525f80142fcbb15e411258a09eab} 
+get\+Enum (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string}]{\$class}{, }\item[{?\textbackslash{}Backed\+Enum}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the parameter value converted to an enum.
+
+@template T of \textbackslash{}\+Backed\+Enum
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em class-\/string$<$\+T$>$} & \$class \\
+\hline
+?T & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?T
+\end{DoxyReturn}
+@psalm-\/return (\$default is null ? T\texorpdfstring{$\vert$}{|}null \+: T) 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag_a3365525f80142fcbb15e411258a09eab}{Input\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a5645a5332026713204d284ba9d742edb}\index{ParameterBag@{ParameterBag}!getInt@{getInt}}
+\index{getInt@{getInt}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{getInt()}{getInt()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a5645a5332026713204d284ba9d742edb} 
+get\+Int (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$default}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Returns the parameter value converted to integer. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{ParameterBag@{ParameterBag}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an iterator for parameters.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Array\+Iterator\texorpdfstring{$<$}{<}string, mixed\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a95a3c0b23410bb368009168973e6a740}\index{ParameterBag@{ParameterBag}!getString@{getString}}
+\index{getString@{getString}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a95a3c0b23410bb368009168973e6a740} 
+get\+String (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string}]{\$default}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the parameter as string. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag_a95a3c0b23410bb368009168973e6a740}{Input\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_afdce603da130f170b2e650649949b544}\index{ParameterBag@{ParameterBag}!has@{has}}
+\index{has@{has}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_afdce603da130f170b2e650649949b544} 
+has (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns true if the parameter is defined. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a3b0db17d4be3aff5451d2764e7c88beb}\index{ParameterBag@{ParameterBag}!keys@{keys}}
+\index{keys@{keys}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a3b0db17d4be3aff5451d2764e7c88beb} 
+keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the parameter keys. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ab454eea7bf82990572fe4017b8dd4ca3}\index{ParameterBag@{ParameterBag}!remove@{remove}}
+\index{remove@{remove}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ab454eea7bf82990572fe4017b8dd4ca3} 
+remove (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Removes a parameter. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a0ab02885664cffb16f8ee37edc804f5d}\index{ParameterBag@{ParameterBag}!replace@{replace}}
+\index{replace@{replace}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_a0ab02885664cffb16f8ee37edc804f5d} 
+replace (\begin{DoxyParamCaption}\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Replaces the current parameters by a new set. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_bag_aaa3e269c3d0ba09810d371321095d3fb}{File\+Bag}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag_a336b41877fca09cc050540257676716f}{Input\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ad61cc5cf37604f5e112651bd7e7a0a1f}\index{ParameterBag@{ParameterBag}!set@{set}}
+\index{set@{set}!ParameterBag@{ParameterBag}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag_ad61cc5cf37604f5e112651bd7e7a0a1f} 
+set (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_bag_ad61cc5cf37604f5e112651bd7e7a0a1f}{File\+Bag}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag_ad61cc5cf37604f5e112651bd7e7a0a1f}{Input\+Bag}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/foundation/\mbox{\hyperlink{_parameter_bag_8php}{Parameter\+Bag.\+php}}\end{DoxyCompactItemize}

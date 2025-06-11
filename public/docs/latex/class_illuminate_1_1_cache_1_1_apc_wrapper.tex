@@ -1,0 +1,126 @@
+\doxysection{Apc\+Wrapper Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_apc_wrapper}{}\label{class_illuminate_1_1_cache_1_1_apc_wrapper}\index{ApcWrapper@{ApcWrapper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_wrapper_a24a9bf83a1002d46ece83a93d14bd921}{get}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_wrapper_a3b76908d35df4a081db12c8f704761c7}{put}} (\$key, \$value, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_wrapper_a7b0a5672863026ca2fa4d534143deb8f}{increment}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_wrapper_a0096939eb1146de5eabec112d16495af}{decrement}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_wrapper_aa74a2edd6f3cbb5c5353f7faa97b6d70}{delete}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_wrapper_a7751f77b5263bcf940ece6e824a05b38}{flush}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_wrapper_a0096939eb1146de5eabec112d16495af}\index{ApcWrapper@{ApcWrapper}!decrement@{decrement}}
+\index{decrement@{decrement}!ApcWrapper@{ApcWrapper}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_wrapper_a0096939eb1146de5eabec112d16495af} 
+decrement (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Decrement the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_wrapper_aa74a2edd6f3cbb5c5353f7faa97b6d70}\index{ApcWrapper@{ApcWrapper}!delete@{delete}}
+\index{delete@{delete}!ApcWrapper@{ApcWrapper}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_wrapper_aa74a2edd6f3cbb5c5353f7faa97b6d70} 
+delete (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Remove an item from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_wrapper_a7751f77b5263bcf940ece6e824a05b38}\index{ApcWrapper@{ApcWrapper}!flush@{flush}}
+\index{flush@{flush}!ApcWrapper@{ApcWrapper}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_wrapper_a7751f77b5263bcf940ece6e824a05b38} 
+flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Remove all items from the cache.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_wrapper_a24a9bf83a1002d46ece83a93d14bd921}\index{ApcWrapper@{ApcWrapper}!get@{get}}
+\index{get@{get}!ApcWrapper@{ApcWrapper}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_wrapper_a24a9bf83a1002d46ece83a93d14bd921} 
+get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Get an item from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_wrapper_a7b0a5672863026ca2fa4d534143deb8f}\index{ApcWrapper@{ApcWrapper}!increment@{increment}}
+\index{increment@{increment}!ApcWrapper@{ApcWrapper}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_wrapper_a7b0a5672863026ca2fa4d534143deb8f} 
+increment (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Increment the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_wrapper_a3b76908d35df4a081db12c8f704761c7}\index{ApcWrapper@{ApcWrapper}!put@{put}}
+\index{put@{put}!ApcWrapper@{ApcWrapper}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_wrapper_a3b76908d35df4a081db12c8f704761c7} 
+put (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Cache/\mbox{\hyperlink{_apc_wrapper_8php}{Apc\+Wrapper.\+php}}\end{DoxyCompactItemize}

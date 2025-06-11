@@ -1,0 +1,7 @@
+var namespace_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_renderer =
+[
+    [ "FootnoteBackrefRenderer", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_renderer_1_1_footnote_backref_renderer.html", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_renderer_1_1_footnote_backref_renderer" ],
+    [ "FootnoteContainerRenderer", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_renderer_1_1_footnote_container_renderer.html", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_renderer_1_1_footnote_container_renderer" ],
+    [ "FootnoteRefRenderer", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_renderer_1_1_footnote_ref_renderer.html", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_renderer_1_1_footnote_ref_renderer" ],
+    [ "FootnoteRenderer", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_renderer_1_1_footnote_renderer.html", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_renderer_1_1_footnote_renderer" ]
+];

@@ -1,0 +1,129 @@
+\doxysection{Authority\+Interface Interface Reference}
+\hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface}{}\label{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface}\index{AuthorityInterface@{AuthorityInterface}}
+Inheritance diagram for Authority\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a39895a44b52bdced039e698588aaf18e}{get\+Host}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_afd4db46d3c12f47f0bee19cd2101be64}{get\+Port}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a7e7999c3a04f08ffcc5e237fd28a6bc7}{get\+User\+Info}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_abed72eecd6815f748031505225cc1319}{components}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a88b0ffb51075d1189994907c46e5d82b}{with\+Host}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$host)
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_ae57f099b526755aae718915e744eae3f}{with\+Port}} (?int \$port)
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a9f4e6dfa8053087cedc8bf5ba49d9a7a}{with\+User\+Info}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$user, Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$password=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface}{Uri\+Component\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_aefbfa229f1c9e1fc967bff724a010f9e}{value}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_ad402d8679325bc514874370f02b5c2ac}{json\+Serialize}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_a4164db14e8425915ba23f4490a7d3185}{get\+Uri\+Component}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_abed72eecd6815f748031505225cc1319}\index{AuthorityInterface@{AuthorityInterface}!components@{components}}
+\index{components@{components}!AuthorityInterface@{AuthorityInterface}}
+\doxysubsubsection{\texorpdfstring{components()}{components()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_abed72eecd6815f748031505225cc1319} 
+components (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an associative array containing all the Authority components.
+
+The returned a hashmap similar to PHP\textquotesingle{}s parse\+\_\+url return value
+
+\doxylink{}{array\{user\+: ?string, pass \+: ?string, host\+: ?string, port\+: ?int\} }\Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a39895a44b52bdced039e698588aaf18e}\index{AuthorityInterface@{AuthorityInterface}!getHost@{getHost}}
+\index{getHost@{getHost}!AuthorityInterface@{AuthorityInterface}}
+\doxysubsubsection{\texorpdfstring{getHost()}{getHost()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a39895a44b52bdced039e698588aaf18e} 
+get\+Host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the host component of the authority. \Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_afd4db46d3c12f47f0bee19cd2101be64}\index{AuthorityInterface@{AuthorityInterface}!getPort@{getPort}}
+\index{getPort@{getPort}!AuthorityInterface@{AuthorityInterface}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_afd4db46d3c12f47f0bee19cd2101be64} 
+get\+Port (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the port component of the authority. \Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a7e7999c3a04f08ffcc5e237fd28a6bc7}\index{AuthorityInterface@{AuthorityInterface}!getUserInfo@{getUserInfo}}
+\index{getUserInfo@{getUserInfo}!AuthorityInterface@{AuthorityInterface}}
+\doxysubsubsection{\texorpdfstring{getUserInfo()}{getUserInfo()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a7e7999c3a04f08ffcc5e237fd28a6bc7} 
+get\+User\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the user information component of the authority. \Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a88b0ffb51075d1189994907c46e5d82b}\index{AuthorityInterface@{AuthorityInterface}!withHost@{withHost}}
+\index{withHost@{withHost}!AuthorityInterface@{AuthorityInterface}}
+\doxysubsubsection{\texorpdfstring{withHost()}{withHost()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a88b0ffb51075d1189994907c46e5d82b} 
+with\+Host (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$host}{}\end{DoxyParamCaption})}
+
+Return an instance with the specified host.
+
+This method MUST retain the state of the current instance, and return an instance that contains the specified host.
+
+A null value provided for the host is equivalent to removing the host information.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & for invalid component or transformations that would result in an object in invalid state. \\
+\hline
+{\em Missing\+Feature} & for component or transformations requiring IDN support when IDN support is not present or misconfigured. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_ae57f099b526755aae718915e744eae3f}\index{AuthorityInterface@{AuthorityInterface}!withPort@{withPort}}
+\index{withPort@{withPort}!AuthorityInterface@{AuthorityInterface}}
+\doxysubsubsection{\texorpdfstring{withPort()}{withPort()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_ae57f099b526755aae718915e744eae3f} 
+with\+Port (\begin{DoxyParamCaption}\item[{?int}]{\$port}{}\end{DoxyParamCaption})}
+
+Return an instance with the specified port.
+
+This method MUST retain the state of the current instance, and return an instance that contains the specified port.
+
+A null value provided for the port is equivalent to removing the port information.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & for invalid component or transformations that would result in an object in invalid state. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a9f4e6dfa8053087cedc8bf5ba49d9a7a}\index{AuthorityInterface@{AuthorityInterface}!withUserInfo@{withUserInfo}}
+\index{withUserInfo@{withUserInfo}!AuthorityInterface@{AuthorityInterface}}
+\doxysubsubsection{\texorpdfstring{withUserInfo()}{withUserInfo()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_authority_interface_a9f4e6dfa8053087cedc8bf5ba49d9a7a} 
+with\+User\+Info (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$user}{, }\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$password}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Return an instance with the specified user information.
+
+This method MUST retain the state of the current instance, and return an instance that contains the specified user information.
+
+\doxylink{class_password}{Password} is optional, but the user information MUST include the user; a null value for the user is equivalent to removing user information.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & for invalid component or transformations that would result in an object in invalid state. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/uri-\/interfaces/\+Contracts/\mbox{\hyperlink{_authority_interface_8php}{Authority\+Interface.\+php}}\end{DoxyCompactItemize}

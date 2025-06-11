@@ -1,0 +1,187 @@
+\doxysection{List\+Failed\+Command Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command}{}\label{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command}\index{ListFailedCommand@{ListFailedCommand}}
+Inheritance diagram for List\+Failed\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_a66eb7514ea7f7f8a5738a180b14e9b48}{handle}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acc17fc4b2880856deb16661a443fe08e}{run}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a645d49a93702949a651360c7bdc0a0b0}{fail}} (Throwable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$exception=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acbd42dc98fc1c0649ae7b1aeaf842b3d}{is\+Hidden}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a352b564237d3f16ca19a07d6ac036196}{set\+Hidden}} (bool \$hidden=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aab7aca3854218cb065a030769a143418}{get\+Laravel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a94bbb27e66c6b8dafd84410ede30c6af}{set\+Laravel}} (\$laravel)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ab2de2f4ebbce4ce329b80f28d9d5d318}{get\+Failed\+Jobs}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_adb7a028697a987775fb18d5966218cc9}{parse\+Failed\+Job}} (array \$failed)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ac3a293ad43caf55d33a857cf629d8a36}{match\+Job\+Name}} (\$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ae5393b2c1461ddd5dd2530c43371a51a}{display\+Failed\+Jobs}} (array \$jobs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aef18ba6dc42644207c37bf5de362a4bd}{configure\+Using\+Fluent\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a05e39d241c3e3400b03d3b63dfbd8929}{configure\+Isolation}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab31c72b72ddaf7116db5d84c055d3c0b}{execute}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac8094b40d2f975480f91e5a3b7040769}{command\+Isolation\+Mutex}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac1aba88abc23023836393a7f4ea231ca}{resolve\+Command}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}} = \textquotesingle{}queue\+:failed\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_a87b032cba06009e3467abf1c8018d960}{\$description}} = \textquotesingle{}List all of the failed queue jobs\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_a52500036ee807241b8b4b7e2367c49ef}{\$headers}} = \mbox{[}\textquotesingle{}ID\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue}{Queue}}\textquotesingle{}, \textquotesingle{}Class\textquotesingle{}, \textquotesingle{}Failed At\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a2483b0a3df07768a50dd53f90fd7ae4b}{\$laravel}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a87b032cba06009e3467abf1c8018d960}{\$description}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ae8c606891eb7e59cb0674a2dd63c5498}{\$help}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a4a374564d2858d8ae869a8fb890aad56}{\$hidden}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a568541fc9a0d312709894fe344c5aa13}{\$isolated}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a11ba5862b76c657e950bdde51f6e54b0}{\$isolated\+Exit\+Code}} = self\+::\+SUCCESS
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a7e6d29edbd9ec5d8ec9d478cf98fba03}{\$aliases}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ae5393b2c1461ddd5dd2530c43371a51a}\index{ListFailedCommand@{ListFailedCommand}!displayFailedJobs@{displayFailedJobs}}
+\index{displayFailedJobs@{displayFailedJobs}!ListFailedCommand@{ListFailedCommand}}
+\doxysubsubsection{\texorpdfstring{displayFailedJobs()}{displayFailedJobs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ae5393b2c1461ddd5dd2530c43371a51a} 
+display\+Failed\+Jobs (\begin{DoxyParamCaption}\item[{array}]{\$jobs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Display the failed jobs in the console.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$jobs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ab2de2f4ebbce4ce329b80f28d9d5d318}\index{ListFailedCommand@{ListFailedCommand}!getFailedJobs@{getFailedJobs}}
+\index{getFailedJobs@{getFailedJobs}!ListFailedCommand@{ListFailedCommand}}
+\doxysubsubsection{\texorpdfstring{getFailedJobs()}{getFailedJobs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ab2de2f4ebbce4ce329b80f28d9d5d318} 
+get\+Failed\+Jobs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile the failed jobs into a displayable format.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_a66eb7514ea7f7f8a5738a180b14e9b48}\index{ListFailedCommand@{ListFailedCommand}!handle@{handle}}
+\index{handle@{handle}!ListFailedCommand@{ListFailedCommand}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_a66eb7514ea7f7f8a5738a180b14e9b48} 
+handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Execute the console command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ac3a293ad43caf55d33a857cf629d8a36}\index{ListFailedCommand@{ListFailedCommand}!matchJobName@{matchJobName}}
+\index{matchJobName@{matchJobName}!ListFailedCommand@{ListFailedCommand}}
+\doxysubsubsection{\texorpdfstring{matchJobName()}{matchJobName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ac3a293ad43caf55d33a857cf629d8a36} 
+match\+Job\+Name (\begin{DoxyParamCaption}\item[{}]{\$payload}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Match the job name from the payload.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_adb7a028697a987775fb18d5966218cc9}\index{ListFailedCommand@{ListFailedCommand}!parseFailedJob@{parseFailedJob}}
+\index{parseFailedJob@{parseFailedJob}!ListFailedCommand@{ListFailedCommand}}
+\doxysubsubsection{\texorpdfstring{parseFailedJob()}{parseFailedJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_adb7a028697a987775fb18d5966218cc9} 
+parse\+Failed\+Job (\begin{DoxyParamCaption}\item[{array}]{\$failed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the failed job row.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$failed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_a87b032cba06009e3467abf1c8018d960}\index{ListFailedCommand@{ListFailedCommand}!\$description@{\$description}}
+\index{\$description@{\$description}!ListFailedCommand@{ListFailedCommand}}
+\doxysubsubsection{\texorpdfstring{\$description}{\$description}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_a87b032cba06009e3467abf1c8018d960} 
+\$description = \textquotesingle{}List all of the failed queue jobs\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_a52500036ee807241b8b4b7e2367c49ef}\index{ListFailedCommand@{ListFailedCommand}!\$headers@{\$headers}}
+\index{\$headers@{\$headers}!ListFailedCommand@{ListFailedCommand}}
+\doxysubsubsection{\texorpdfstring{\$headers}{\$headers}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_a52500036ee807241b8b4b7e2367c49ef} 
+\$headers = \mbox{[}\textquotesingle{}ID\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue}{Queue}}\textquotesingle{}, \textquotesingle{}Class\textquotesingle{}, \textquotesingle{}Failed At\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ab2fc40d43824ea3e1ce5d86dee0d763b}\index{ListFailedCommand@{ListFailedCommand}!\$name@{\$name}}
+\index{\$name@{\$name}!ListFailedCommand@{ListFailedCommand}}
+\doxysubsubsection{\texorpdfstring{\$name}{\$name}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_list_failed_command_ab2fc40d43824ea3e1ce5d86dee0d763b} 
+\$name = \textquotesingle{}queue\+:failed\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Queue/\+Console/\mbox{\hyperlink{_list_failed_command_8php}{List\+Failed\+Command.\+php}}\end{DoxyCompactItemize}

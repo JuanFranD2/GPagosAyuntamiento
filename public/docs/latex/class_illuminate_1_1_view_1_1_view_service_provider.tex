@@ -1,0 +1,165 @@
+\doxysection{View\+Service\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_view_1_1_view_service_provider}{}\label{class_illuminate_1_1_view_1_1_view_service_provider}\index{ViewServiceProvider@{ViewServiceProvider}}
+Inheritance diagram for View\+Service\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_view_1_1_view_service_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_service_provider_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_service_provider_a00e3ecfdf585ec29e44935a51ac650dd}{register\+Factory}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_service_provider_a9cef63f388826f82b330b90e85feb41b}{register\+View\+Finder}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_service_provider_a0af13cc8d692d6eea12f1ca07083da43}{register\+Blade\+Compiler}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_service_provider_af399a460a0d3fb4ae3afdf41d6d1ce87}{register\+Engine\+Resolver}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_service_provider_aa5b00f75f9c2ea92fbd290bd71263326}{register\+File\+Engine}} (\$resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_service_provider_a3d4fa590042c481640d58eba7ffc8113}{register\+Php\+Engine}} (\$resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_service_provider_a6387372e354710d420f3416e5f14bb93}{register\+Blade\+Engine}} (\$resolver)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_service_provider_a1cb6e724120b62453cbdaa30c58127b2}{create\+Factory}} (\$resolver, \$finder, \$events)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_a1cb6e724120b62453cbdaa30c58127b2}\index{ViewServiceProvider@{ViewServiceProvider}!createFactory@{createFactory}}
+\index{createFactory@{createFactory}!ViewServiceProvider@{ViewServiceProvider}}
+\doxysubsubsection{\texorpdfstring{createFactory()}{createFactory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_service_provider_a1cb6e724120b62453cbdaa30c58127b2} 
+create\+Factory (\begin{DoxyParamCaption}\item[{}]{\$resolver}{, }\item[{}]{\$finder}{, }\item[{}]{\$events}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new Factory Instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+Engines\textbackslash{}\+Engine\+Resolver & {\em \$resolver} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+View\+Finder\+Interface & {\em \$finder} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$events} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+Factory 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_acc294a6cc8e69743746820e3d15e3f78}\index{ViewServiceProvider@{ViewServiceProvider}!register@{register}}
+\index{register@{register}!ViewServiceProvider@{ViewServiceProvider}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_service_provider_acc294a6cc8e69743746820e3d15e3f78} 
+register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the service provider.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_a0af13cc8d692d6eea12f1ca07083da43}\index{ViewServiceProvider@{ViewServiceProvider}!registerBladeCompiler@{registerBladeCompiler}}
+\index{registerBladeCompiler@{registerBladeCompiler}!ViewServiceProvider@{ViewServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerBladeCompiler()}{registerBladeCompiler()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_service_provider_a0af13cc8d692d6eea12f1ca07083da43} 
+register\+Blade\+Compiler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the \doxylink{class_blade}{Blade} compiler implementation.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_a6387372e354710d420f3416e5f14bb93}\index{ViewServiceProvider@{ViewServiceProvider}!registerBladeEngine@{registerBladeEngine}}
+\index{registerBladeEngine@{registerBladeEngine}!ViewServiceProvider@{ViewServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerBladeEngine()}{registerBladeEngine()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_service_provider_a6387372e354710d420f3416e5f14bb93} 
+register\+Blade\+Engine (\begin{DoxyParamCaption}\item[{}]{\$resolver}{}\end{DoxyParamCaption})}
+
+Register the \doxylink{class_blade}{Blade} engine implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+Engines\textbackslash{}\+Engine\+Resolver & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_af399a460a0d3fb4ae3afdf41d6d1ce87}\index{ViewServiceProvider@{ViewServiceProvider}!registerEngineResolver@{registerEngineResolver}}
+\index{registerEngineResolver@{registerEngineResolver}!ViewServiceProvider@{ViewServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerEngineResolver()}{registerEngineResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_service_provider_af399a460a0d3fb4ae3afdf41d6d1ce87} 
+register\+Engine\+Resolver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the engine resolver instance.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_a00e3ecfdf585ec29e44935a51ac650dd}\index{ViewServiceProvider@{ViewServiceProvider}!registerFactory@{registerFactory}}
+\index{registerFactory@{registerFactory}!ViewServiceProvider@{ViewServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerFactory()}{registerFactory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_service_provider_a00e3ecfdf585ec29e44935a51ac650dd} 
+register\+Factory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the view environment.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_aa5b00f75f9c2ea92fbd290bd71263326}\index{ViewServiceProvider@{ViewServiceProvider}!registerFileEngine@{registerFileEngine}}
+\index{registerFileEngine@{registerFileEngine}!ViewServiceProvider@{ViewServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerFileEngine()}{registerFileEngine()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_service_provider_aa5b00f75f9c2ea92fbd290bd71263326} 
+register\+File\+Engine (\begin{DoxyParamCaption}\item[{}]{\$resolver}{}\end{DoxyParamCaption})}
+
+Register the file engine implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+Engines\textbackslash{}\+Engine\+Resolver & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_a3d4fa590042c481640d58eba7ffc8113}\index{ViewServiceProvider@{ViewServiceProvider}!registerPhpEngine@{registerPhpEngine}}
+\index{registerPhpEngine@{registerPhpEngine}!ViewServiceProvider@{ViewServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerPhpEngine()}{registerPhpEngine()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_service_provider_a3d4fa590042c481640d58eba7ffc8113} 
+register\+Php\+Engine (\begin{DoxyParamCaption}\item[{}]{\$resolver}{}\end{DoxyParamCaption})}
+
+Register the PHP engine implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+Engines\textbackslash{}\+Engine\+Resolver & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_service_provider_a9cef63f388826f82b330b90e85feb41b}\index{ViewServiceProvider@{ViewServiceProvider}!registerViewFinder@{registerViewFinder}}
+\index{registerViewFinder@{registerViewFinder}!ViewServiceProvider@{ViewServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerViewFinder()}{registerViewFinder()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_service_provider_a9cef63f388826f82b330b90e85feb41b} 
+register\+View\+Finder (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the view finder implementation.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+View/\mbox{\hyperlink{_view_service_provider_8php}{View\+Service\+Provider.\+php}}\end{DoxyCompactItemize}

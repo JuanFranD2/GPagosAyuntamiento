@@ -1,0 +1,4 @@
+var _annotations_are_not_supported_for_internal_classes_exception_8php =
+[
+    [ "AnnotationsAreNotSupportedForInternalClassesException", "class_p_h_p_unit_1_1_metadata_1_1_annotations_are_not_supported_for_internal_classes_exception.html", "class_p_h_p_unit_1_1_metadata_1_1_annotations_are_not_supported_for_internal_classes_exception" ]
+];

@@ -1,0 +1,146 @@
+\doxysection{Filesystem\+Service\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider}{}\label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider}\index{FilesystemServiceProvider@{FilesystemServiceProvider}}
+Inheritance diagram for Filesystem\+Service\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a8814ea4b5beba763c570b4818980814e}{boot}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_ab7f910c9f51c1ceba24731726c2fd91d}{register\+Native\+Filesystem}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a2eafe19a21b8ed054ea7563e8b0e49fd}{register\+Flysystem}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a07b7418e056c2b243f313b8028703ed0}{register\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_ae82de053899e275afae51eec1cf5a924}{serve\+Files}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a56f291fc233f8650f915eed8646f7ffa}{should\+Serve\+Files}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a0bd119b90d7c1935b1c6ce8b8aed09e0}{get\+Default\+Driver}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a0c55f3e782942d3aa11dca3bf14f4d61}{get\+Cloud\+Driver}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a8814ea4b5beba763c570b4818980814e}\index{FilesystemServiceProvider@{FilesystemServiceProvider}!boot@{boot}}
+\index{boot@{boot}!FilesystemServiceProvider@{FilesystemServiceProvider}}
+\doxysubsubsection{\texorpdfstring{boot()}{boot()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a8814ea4b5beba763c570b4818980814e} 
+boot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Bootstrap the filesystem.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a0c55f3e782942d3aa11dca3bf14f4d61}\index{FilesystemServiceProvider@{FilesystemServiceProvider}!getCloudDriver@{getCloudDriver}}
+\index{getCloudDriver@{getCloudDriver}!FilesystemServiceProvider@{FilesystemServiceProvider}}
+\doxysubsubsection{\texorpdfstring{getCloudDriver()}{getCloudDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a0c55f3e782942d3aa11dca3bf14f4d61} 
+get\+Cloud\+Driver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the default cloud based file driver.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a0bd119b90d7c1935b1c6ce8b8aed09e0}\index{FilesystemServiceProvider@{FilesystemServiceProvider}!getDefaultDriver@{getDefaultDriver}}
+\index{getDefaultDriver@{getDefaultDriver}!FilesystemServiceProvider@{FilesystemServiceProvider}}
+\doxysubsubsection{\texorpdfstring{getDefaultDriver()}{getDefaultDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a0bd119b90d7c1935b1c6ce8b8aed09e0} 
+get\+Default\+Driver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the default file driver.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_acc294a6cc8e69743746820e3d15e3f78}\index{FilesystemServiceProvider@{FilesystemServiceProvider}!register@{register}}
+\index{register@{register}!FilesystemServiceProvider@{FilesystemServiceProvider}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_acc294a6cc8e69743746820e3d15e3f78} 
+register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the service provider.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a2eafe19a21b8ed054ea7563e8b0e49fd}\index{FilesystemServiceProvider@{FilesystemServiceProvider}!registerFlysystem@{registerFlysystem}}
+\index{registerFlysystem@{registerFlysystem}!FilesystemServiceProvider@{FilesystemServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerFlysystem()}{registerFlysystem()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a2eafe19a21b8ed054ea7563e8b0e49fd} 
+register\+Flysystem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the driver based filesystem.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a07b7418e056c2b243f313b8028703ed0}\index{FilesystemServiceProvider@{FilesystemServiceProvider}!registerManager@{registerManager}}
+\index{registerManager@{registerManager}!FilesystemServiceProvider@{FilesystemServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerManager()}{registerManager()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a07b7418e056c2b243f313b8028703ed0} 
+register\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the filesystem manager.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_ab7f910c9f51c1ceba24731726c2fd91d}\index{FilesystemServiceProvider@{FilesystemServiceProvider}!registerNativeFilesystem@{registerNativeFilesystem}}
+\index{registerNativeFilesystem@{registerNativeFilesystem}!FilesystemServiceProvider@{FilesystemServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerNativeFilesystem()}{registerNativeFilesystem()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_ab7f910c9f51c1ceba24731726c2fd91d} 
+register\+Native\+Filesystem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the native filesystem implementation.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_ae82de053899e275afae51eec1cf5a924}\index{FilesystemServiceProvider@{FilesystemServiceProvider}!serveFiles@{serveFiles}}
+\index{serveFiles@{serveFiles}!FilesystemServiceProvider@{FilesystemServiceProvider}}
+\doxysubsubsection{\texorpdfstring{serveFiles()}{serveFiles()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_ae82de053899e275afae51eec1cf5a924} 
+serve\+Files (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register protected file serving.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a56f291fc233f8650f915eed8646f7ffa}\index{FilesystemServiceProvider@{FilesystemServiceProvider}!shouldServeFiles@{shouldServeFiles}}
+\index{shouldServeFiles@{shouldServeFiles}!FilesystemServiceProvider@{FilesystemServiceProvider}}
+\doxysubsubsection{\texorpdfstring{shouldServeFiles()}{shouldServeFiles()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_service_provider_a56f291fc233f8650f915eed8646f7ffa} 
+should\+Serve\+Files (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the disk is serveable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Filesystem/\mbox{\hyperlink{_filesystem_service_provider_8php}{Filesystem\+Service\+Provider.\+php}}\end{DoxyCompactItemize}

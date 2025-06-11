@@ -1,0 +1,202 @@
+\doxysection{Deferred\+Callback\+Collection Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection}{}\label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection}\index{DeferredCallbackCollection@{DeferredCallbackCollection}}
+Inheritance diagram for Deferred\+Callback\+Collection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ac73eef9ff76ea330c0dab36ca448b90d}{first}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a969cad912937b1e2e6e66b49d8148738}{invoke}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_afcc0ae89b599ef83bc55a73e0338bb6b}{invoke\+When}} (?Closure \$when=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ace0a18434b3912c504ab51d285e5baf2}{forget}} (string \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a2fa83c64b65bfcd6ae01aa378370f012}{offset\+Exists}} (mixed \$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a3d6a26d211a99287459a423d3965f11f}{offset\+Get}} (mixed \$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_abd3a144f8df4dea56d1ac58da5bc762a}{offset\+Set}} (mixed \$offset, mixed \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a1bb2b81cc0daac39879f608d2a9ede38}{offset\+Unset}} (mixed \$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ad5ed2aa4a258ad5ffbc890b9e4edebfd}{forget\+Duplicates}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a98b72b34467e0f9597ff03072e413083}{\$callbacks}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ac751e87b3d4c4bf2feb03bee8b092755}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!count@{count}}
+\index{count@{count}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine how many callbacks are in the collection.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ac73eef9ff76ea330c0dab36ca448b90d}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!first@{first}}
+\index{first@{first}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ac73eef9ff76ea330c0dab36ca448b90d} 
+first (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the first callback in the collection.
+
+\begin{DoxyReturn}{Returns}
+callable 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ace0a18434b3912c504ab51d285e5baf2}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!forget@{forget}}
+\index{forget@{forget}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ace0a18434b3912c504ab51d285e5baf2} 
+forget (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Remove any deferred callbacks with the given name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ad5ed2aa4a258ad5ffbc890b9e4edebfd}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!forgetDuplicates@{forgetDuplicates}}
+\index{forgetDuplicates@{forgetDuplicates}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{forgetDuplicates()}{forgetDuplicates()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_ad5ed2aa4a258ad5ffbc890b9e4edebfd} 
+forget\+Duplicates (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove any duplicate callbacks.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a969cad912937b1e2e6e66b49d8148738}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!invoke@{invoke}}
+\index{invoke@{invoke}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a969cad912937b1e2e6e66b49d8148738} 
+invoke (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Invoke the deferred callbacks.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_afcc0ae89b599ef83bc55a73e0338bb6b}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!invokeWhen@{invokeWhen}}
+\index{invokeWhen@{invokeWhen}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{invokeWhen()}{invokeWhen()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_afcc0ae89b599ef83bc55a73e0338bb6b} 
+invoke\+When (\begin{DoxyParamCaption}\item[{?Closure}]{\$when}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Invoke the deferred callbacks if the given truth test evaluates to true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | null & {\em \$when} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a2fa83c64b65bfcd6ae01aa378370f012}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!offsetExists@{offsetExists}}
+\index{offsetExists@{offsetExists}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{offsetExists()}{offsetExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a2fa83c64b65bfcd6ae01aa378370f012} 
+offset\+Exists (\begin{DoxyParamCaption}\item[{mixed}]{\$offset}{}\end{DoxyParamCaption})}
+
+Determine if the collection has a callback with the given key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a3d6a26d211a99287459a423d3965f11f}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!offsetGet@{offsetGet}}
+\index{offsetGet@{offsetGet}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{offsetGet()}{offsetGet()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a3d6a26d211a99287459a423d3965f11f} 
+offset\+Get (\begin{DoxyParamCaption}\item[{mixed}]{\$offset}{}\end{DoxyParamCaption})}
+
+Get the callback with the given key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_abd3a144f8df4dea56d1ac58da5bc762a}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!offsetSet@{offsetSet}}
+\index{offsetSet@{offsetSet}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{offsetSet()}{offsetSet()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_abd3a144f8df4dea56d1ac58da5bc762a} 
+offset\+Set (\begin{DoxyParamCaption}\item[{mixed}]{\$offset}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Set the callback with the given key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$offset} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a1bb2b81cc0daac39879f608d2a9ede38}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!offsetUnset@{offsetUnset}}
+\index{offsetUnset@{offsetUnset}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{offsetUnset()}{offsetUnset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a1bb2b81cc0daac39879f608d2a9ede38} 
+offset\+Unset (\begin{DoxyParamCaption}\item[{mixed}]{\$offset}{}\end{DoxyParamCaption})}
+
+Remove the callback with the given key from the collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a98b72b34467e0f9597ff03072e413083}\index{DeferredCallbackCollection@{DeferredCallbackCollection}!\$callbacks@{\$callbacks}}
+\index{\$callbacks@{\$callbacks}!DeferredCallbackCollection@{DeferredCallbackCollection}}
+\doxysubsubsection{\texorpdfstring{\$callbacks}{\$callbacks}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_collection_a98b72b34467e0f9597ff03072e413083} 
+array \$callbacks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Support/\+Defer/\mbox{\hyperlink{_deferred_callback_collection_8php}{Deferred\+Callback\+Collection.\+php}}\end{DoxyCompactItemize}

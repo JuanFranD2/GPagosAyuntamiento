@@ -1,0 +1,4 @@
+var nunomaduro_2collision_2src_2_adapters_2_phpunit_2_printers_2_default_printer_8php =
+[
+    [ "DefaultPrinter", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_printers_1_1_default_printer.html", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_printers_1_1_default_printer" ]
+];

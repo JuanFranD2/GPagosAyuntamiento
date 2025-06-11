@@ -1,0 +1,130 @@
+\chapter{Changelog }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g}\index{Changelog@{Changelog}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8530}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8530}%
+
+
+All notable changes to this project will be documented in this file.
+
+The format is based on \href{https://keepachangelog.com/en/1.0.0/}{\texttt{Keep a Changelog}}, and this project adheres to \href{https://semver.org/spec/v2.0.0.html}{\texttt{Semantic Versioning}}. \mbox{[}3.\+0.\+0\mbox{]} Version 3.\+x supports Dom\+PDF version 3.\+x. See the changelog in \href{https://github.com/dompdf/dompdf/releases/tag/v3.0.0}{\texttt{https\+://github.\+com/dompdf/dompdf/releases/tag/v3.\+0.\+0}}
+
+The most notable change in laravel-\/dompdf are the changed defaults, to be more secure;
+\begin{DoxyItemize}
+\item {\ttfamily enable\+\_\+remote} is now {\ttfamily false} by default. Change with caution.
+\item {\ttfamily allowed\+Remote\+Hosts} and {\ttfamily artifact\+Path\+Validation} are added the the config. Also, support for Laravel \texorpdfstring{$<$}{<} 9 and PHP \texorpdfstring{$<$}{<} 8.\+1 is dropped.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8531}{}\doxysection{\texorpdfstring{\mbox{[}3.\+1\mbox{]}}{\mbox{[}3.\+1\mbox{]}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8531}
+This release updates the config for \href{https://github.com/dompdf/dompdf/releases/tag/v3.1.0}{\texttt{dompdf/dompdf v3.\+1.\+0}} which contains the. following breaking \doxylink{class_u_r_l}{URL}\+:
+
+\begin{quote}
+{\bfseries{Breaking Change}} This release adds the "{}data\+://"{} scheme to the protocol validation rules. Installations that explicitly define the allowed protocols but do not include the "{}data\+://"{} protocol will no longer render data-\/\+URIs. This is a change from previous versions, where data-\/\+URIs were not processed through the validated rules. Installations that use the default validation rules included with \doxylink{namespace_dompdf}{Dompdf} should see no impact. \end{quote}
+
+
+The update for laravel-\/dompdf adds this to the default config, but if you have published the config, you need to add the {\ttfamily data\+://} scheme.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8532}{}\doxysection{\texorpdfstring{\mbox{[}3.\+0\mbox{]}}{\mbox{[}3.\+0\mbox{]}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8532}
+Version 3.\+x supports Dom\+PDF version 3.\+x. See the changelog in \href{https://github.com/dompdf/dompdf/releases/tag/v3.0.0}{\texttt{https\+://github.\+com/dompdf/dompdf/releases/tag/v3.\+0.\+0}}
+
+The most notable change in laravel-\/dompdf are the changed defaults, to be more secure;
+
+enable\+\_\+remote is now false by default. Change with caution. allowed\+Remote\+Hosts and artifact\+Path\+Validation are added the the config. Also, support for Laravel \texorpdfstring{$<$}{<} 9 and PHP \texorpdfstring{$<$}{<} 8.\+1 is dropped.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8533}{}\doxysection{\texorpdfstring{\mbox{[}2.\+2.\+0\mbox{]}}{\mbox{[}2.\+2.\+0\mbox{]}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8533}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8534}{}\doxysubsection{\texorpdfstring{What\textquotesingle{}s Changed}{What\textquotesingle{}s Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8534}
+
+\begin{DoxyItemize}
+\item Fix set\+Options by @cesarreyes3 in \href{https://github.com/barryvdh/laravel-dompdf/pull/1040}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1040}}
+\item Bump dompdf minimum to 2.\+0.\+7 by @barryvdh
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8535}{}\doxysection{\texorpdfstring{New Contributors}{New Contributors}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8535}
+
+\begin{DoxyItemize}
+\item @cesarreyes3 made their first contribution in \href{https://github.com/barryvdh/laravel-dompdf/pull/1040}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1040}}
+\end{DoxyItemize}
+
+{\bfseries{Full Changelog}}\+: \href{https://github.com/barryvdh/laravel-dompdf/compare/v2.1.1...v2.2.0}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/compare/v2.\+1.\+1...\+v2.\+2.\+0}}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8536}{}\doxysection{\texorpdfstring{\mbox{[}2.\+1.\+1\mbox{]}}{\mbox{[}2.\+1.\+1\mbox{]}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8536}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8537}{}\doxysubsection{\texorpdfstring{What\textquotesingle{}s Changed}{What\textquotesingle{}s Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8537}
+
+\begin{DoxyItemize}
+\item Revert "{}\+Fix set\+Options method"{} by @barryvdh in \href{https://github.com/barryvdh/laravel-dompdf/pull/1039}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1039}}
+\end{DoxyItemize}
+
+{\bfseries{Full Changelog}}\+: \href{https://github.com/barryvdh/laravel-dompdf/compare/v2.1.0...v2.1.1}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/compare/v2.\+1.\+0...\+v2.\+1.\+1}}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8538}{}\doxysection{\texorpdfstring{\mbox{[}2.\+1.\+0\mbox{]}}{\mbox{[}2.\+1.\+0\mbox{]}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8538}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8539}{}\doxysubsection{\texorpdfstring{What\textquotesingle{}s Changed}{What\textquotesingle{}s Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8539}
+
+\begin{DoxyItemize}
+\item Convert phpunit by @barryvdh in \href{https://github.com/barryvdh/laravel-dompdf/pull/952}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/952}}
+\item ci\+: Use Git\+Hub Actions V3 by @\+Dannyvd\+Sluijs in \href{https://github.com/barryvdh/laravel-dompdf/pull/990}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/990}}
+\item Fix named arguments when using facade by @erikn69 in \href{https://github.com/barryvdh/laravel-dompdf/pull/1002}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1002}}
+\item Update dompdf version as a dependancy by @\+Ali\+Sheikh\+Dev in \href{https://github.com/barryvdh/laravel-dompdf/pull/967}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/967}}
+\item ci\+: Use Git\+Hub Actions V4 by @erikn69 in \href{https://github.com/barryvdh/laravel-dompdf/pull/1003}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1003}}
+\item Fix phpstan analysis by @erikn69 in \href{https://github.com/barryvdh/laravel-dompdf/pull/972}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/972}}
+\item Fix set\+Options method by @erikn69 in \href{https://github.com/barryvdh/laravel-dompdf/pull/974}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/974}}
+\item Small typo fix in dompdf config file by @ricklambrechts in \href{https://github.com/barryvdh/laravel-dompdf/pull/1004}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1004}}
+\item Upgrade to larastan/larastan by @parth391 in \href{https://github.com/barryvdh/laravel-dompdf/pull/1014}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1014}}
+\item Fixing "{}\+Upgrade to larastan/larastan"{} by @erikn69 in \href{https://github.com/barryvdh/laravel-dompdf/pull/1018}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1018}}
+\item Laravel 11 Support by @erikn69 in \href{https://github.com/barryvdh/laravel-dompdf/pull/1036}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1036}}
+\item Laravel 11.\+x Compatibility by @laravel-\/shift in \href{https://github.com/barryvdh/laravel-dompdf/pull/1037}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1037}}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8540}{}\doxysubsection{\texorpdfstring{New Contributors}{New Contributors}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8540}
+
+\begin{DoxyItemize}
+\item @\+Dannyvd\+Sluijs made their first contribution in \href{https://github.com/barryvdh/laravel-dompdf/pull/990}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/990}}
+\item @\+Ali\+Sheikh\+Dev made their first contribution in \href{https://github.com/barryvdh/laravel-dompdf/pull/967}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/967}}
+\item @ricklambrechts made their first contribution in \href{https://github.com/barryvdh/laravel-dompdf/pull/1004}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1004}}
+\item @parth391 made their first contribution in \href{https://github.com/barryvdh/laravel-dompdf/pull/1014}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1014}}
+\item @laravel-\/shift made their first contribution in \href{https://github.com/barryvdh/laravel-dompdf/pull/1037}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/pull/1037}}
+\end{DoxyItemize}
+
+{\bfseries{Full Changelog}}\+: \href{https://github.com/barryvdh/laravel-dompdf/compare/v2.0.1...v2.0.2}{\texttt{https\+://github.\+com/barryvdh/laravel-\/dompdf/compare/v2.\+0.\+1...\+v2.\+0.\+2}}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8541}{}\doxysection{\texorpdfstring{\mbox{[}2.\+0.\+0\mbox{]}}{\mbox{[}2.\+0.\+0\mbox{]}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8541}
+Version 2 supports Dom\+PDF 2.\+x\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8542}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8542}
+
+\begin{DoxyItemize}
+\item Remove the deprecated class \textquotesingle{}\doxylink{namespace_barryvdh}{Barryvdh}\textbackslash{}\+Dom\+PDF\textbackslash{}\+Facade\textquotesingle{} Facade in favor of \doxylink{namespace_barryvdh}{Barryvdh}\textbackslash{}\+Dom\+PDF\textbackslash{}\+Facade\textbackslash{}\+Pdf
+\item Set default Facade to \doxylink{class_pdf}{Pdf} instead of \doxylink{class_p_d_f}{PDF}
+\item HTML5 parser option is deprecated, because this is always on.
+\item {\ttfamily orientation} option was never used. Removed in favor of {\ttfamily options.\+default\+\_\+paper\+\_\+orientation}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8543}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8543}
+
+\begin{DoxyItemize}
+\item Upgraded to use dompdf/dompdf 2.\+x
+\item {\ttfamily set\+Option} to change only the specified option(s), instead of replace all options.
+\item Magic methods to allow calls to \doxylink{namespace_dompdf}{Dompdf} methods easier. (\#892)
+\item {\ttfamily default\+\_\+paper\+\_\+orientation} option has been added to the defaults.
+\item Add option to set public path (\#890)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8544}{}\doxysubsection{\texorpdfstring{Deprecated}{Deprecated}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8544}
+
+\begin{DoxyItemize}
+\item {\ttfamily set\+Options} is now deprecated. Use {\ttfamily set\+Option} instead.
+\item \doxylink{class_config}{Config} {\ttfamily dompdf.\+defines} has been renamed to {\ttfamily dompdf.\+options}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8545}{}\doxysection{\texorpdfstring{\mbox{[}2.\+0.\+0-\/beta3\mbox{]}}{\mbox{[}2.\+0.\+0-\/beta3\mbox{]}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8545}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8546}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8546}
+
+\begin{DoxyItemize}
+\item Remove the deprecated class \textquotesingle{}\doxylink{namespace_barryvdh}{Barryvdh}\textbackslash{}\+Dom\+PDF\textbackslash{}\+Facade\textquotesingle{} Facade in favor of \doxylink{namespace_barryvdh}{Barryvdh}\textbackslash{}\+Dom\+PDF\textbackslash{}\+Facade\textbackslash{}\+Pdf
+\item Set default Facade to \doxylink{class_pdf}{Pdf} instead of \doxylink{class_p_d_f}{PDF}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8547}{}\doxysection{\texorpdfstring{\mbox{[}2.\+0.\+0-\/beta2\mbox{]}}{\mbox{[}2.\+0.\+0-\/beta2\mbox{]}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8547}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8548}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8548}
+
+\begin{DoxyItemize}
+\item Upgraded to use dompdf/dompdf 2.\+x
+\item {\ttfamily set\+Option} to change only the specified option(s), instead of replace all options.
+\item Magic methods to allow calls to \doxylink{namespace_dompdf}{Dompdf} methods easier. (\#892)
+\item {\ttfamily default\+\_\+paper\+\_\+orientation} option has been added to the defaults.
+\item Add option to set public path (\#890)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8549}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8549}
+
+\begin{DoxyItemize}
+\item HTML5 parser option is deprecated, because this is always on.
+\item {\ttfamily orientation} option was never used. Removed in favor of {\ttfamily options.\+default\+\_\+paper\+\_\+orientation}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8550}{}\doxysubsection{\texorpdfstring{Deprecated}{Deprecated}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8550}
+
+\begin{DoxyItemize}
+\item {\ttfamily set\+Options} is now deprecated. Use {\ttfamily set\+Option} instead.
+\item \doxylink{class_config}{Config} {\ttfamily dompdf.\+defines} has been renamed to {\ttfamily dompdf.\+options}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8551}{}\doxysection{\texorpdfstring{Dompdf 2.\+0.\+0, highlights since 1.\+2.\+x}{Dompdf 2.\+0.\+0, highlights since 1.\+2.\+x}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2barryvdh_2laravel-dompdf_2_c_h_a_n_g_e_l_o_g_autotoc_md8551}
+\begin{quote}
+\href{https://github.com/dompdf/dompdf/releases/tag/v2.0.0}{\texttt{https\+://github.\+com/dompdf/dompdf/releases/tag/v2.\+0.\+0}}
+\begin{DoxyItemize}
+\item Addresses multiple security vulnerabilities (see link)
+\item Modifies callback and page\+\_\+script/page\+\_\+text handling (breaking change, see link)
+\item Switches the HTML5 parser to Masterminds/\+HTML5
+\item Improves CSS property parsing and representation
+\item Improves border, outline, and background rendering for inline elements
+\item Switches installed fonts and font metrics cache file format to JSON
+\item Adds support for the inset CSS shorthand property and the legacy break-\/word keyword for word-\/break
+\item Adds "{}end\+\_\+document"{} callback event 
+\end{DoxyItemize}\end{quote}

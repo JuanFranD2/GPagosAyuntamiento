@@ -1,0 +1,4 @@
+var interface_symfony_1_1_component_1_1_var_dumper_1_1_dumper_1_1_context_provider_1_1_context_provider_interface =
+[
+    [ "getContext", "interface_symfony_1_1_component_1_1_var_dumper_1_1_dumper_1_1_context_provider_1_1_context_provider_interface.html#a51609a8c7faaf9948679e3a291ba4733", null ]
+];

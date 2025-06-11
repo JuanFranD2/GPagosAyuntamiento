@@ -1,0 +1,33 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/shebang-\/regex Directory Reference}
+\hypertarget{dir_3bad5da334ef1607af54053531eda5c2}{}\label{dir_3bad5da334ef1607af54053531eda5c2}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/shebang-\/regex Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/shebang-\/regex Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md6615}{}\doxysubsection{\texorpdfstring{shebang-\/regex \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/shebang-regex.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/shebang-\/regex.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/shebang-regex}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/shebang-\/regex}})}{shebang-\/regex \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/shebang-regex.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/shebang-\/regex.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/shebang-regex}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/shebang-\/regex}})}}\label{readme.md_autotoc_md6615}
+\begin{quote}
+Regular expression for matching a \href{https://en.wikipedia.org/wiki/Shebang_(Unix)}{\texttt{shebang}} line \end{quote}
+\hypertarget{readme.md_autotoc_md6616}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md6616}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ shebang-\/regex}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md6617}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md6617}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ shebangRegex\ =\ require('shebang-\/regex');}
+\DoxyCodeLine{}
+\DoxyCodeLine{const\ string\ =\ '\#!/usr/bin/env\ node\(\backslash\)nconsole.log("{}unicorns"{});';}
+\DoxyCodeLine{}
+\DoxyCodeLine{shebangRegex.test(string);}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{}
+\DoxyCodeLine{shebangRegex.exec(string)[0];}
+\DoxyCodeLine{//=>\ '\#!/usr/bin/env\ node'}
+\DoxyCodeLine{}
+\DoxyCodeLine{shebangRegex.exec(string)[1];}
+\DoxyCodeLine{//=>\ '/usr/bin/env\ node'}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md6618}{}\doxysubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md6618}
+MIT © \href{https://sindresorhus.com}{\texttt{Sindre Sorhus}} 

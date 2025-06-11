@@ -1,0 +1,76 @@
+\doxysection{Mutation Class Reference}
+\hypertarget{class_pest_1_1_mutate_1_1_mutation}{}\label{class_pest_1_1_mutate_1_1_mutation}\index{Mutation@{Mutation}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_mutate_1_1_mutation_ae9c9a8f33c19fcf4974991ea4179da6c}{\+\_\+\+\_\+construct}} (public readonly \mbox{\hyperlink{class_symfony_1_1_component_1_1_finder_1_1_spl_file_info}{Spl\+File\+Info}} \$file, public readonly string \$id, public readonly string \$mutator, public readonly int \$start\+Line, public readonly int \$end\+Line, public readonly string \$diff, public readonly string \$modified\+Source\+Path,)
+\item 
+\mbox{\hyperlink{class_pest_1_1_mutate_1_1_mutation_a658ba906fd75e3c8d294645a7754ce00}{modified\+Source}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_mutate_1_1_mutation_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}{\+\_\+\+\_\+serialize}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_mutate_1_1_mutation_a2fe5966ad9b8e1d91a37d3e055ac4938}{\+\_\+\+\_\+unserialize}} (array \$data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pest_1_1_mutate_1_1_mutation_ab442443d4288c0cb14571648070b7edd}{create}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_finder_1_1_spl_file_info}{Spl\+File\+Info}} \$file, string \$mutator, Node \$original\+Node, ?Node \$modified\+Node, array \$modified\+Ast,)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_pest_1_1_mutate_1_1_mutation_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pest_1_1_mutate_1_1_mutation_ae9c9a8f33c19fcf4974991ea4179da6c}\index{Mutation@{Mutation}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Mutation@{Mutation}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_mutate_1_1_mutation_ae9c9a8f33c19fcf4974991ea4179da6c} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{public readonly \mbox{\hyperlink{class_symfony_1_1_component_1_1_finder_1_1_spl_file_info}{Spl\+File\+Info}}}]{\$file}{, }\item[{public readonly string}]{\$id}{, }\item[{public readonly string}]{\$mutator}{, }\item[{public readonly int}]{\$start\+Line}{, }\item[{public readonly int}]{\$end\+Line}{, }\item[{public readonly string}]{\$diff}{, }\item[{public readonly string}]{\$modified\+Source\+Path}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_mutate_1_1_mutation_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_mutate_1_1_mutation_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}\index{Mutation@{Mutation}!\_\_serialize@{\_\_serialize}}
+\index{\_\_serialize@{\_\_serialize}!Mutation@{Mutation}}
+\doxysubsubsection{\texorpdfstring{\_\_serialize()}{\_\_serialize()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_mutate_1_1_mutation_ab1d6abfbdcd8c9dd63dfef565bd2cfcf} 
+\+\_\+\+\_\+serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array\{file\+: string, id\+: string, mutator\+: string, start\+\_\+line\+: int, end\+\_\+line\+: int, diff\+: string, modified\+\_\+source\+\_\+path\+: string\} 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_mutate_1_1_mutation_a2fe5966ad9b8e1d91a37d3e055ac4938}\index{Mutation@{Mutation}!\_\_unserialize@{\_\_unserialize}}
+\index{\_\_unserialize@{\_\_unserialize}!Mutation@{Mutation}}
+\doxysubsubsection{\texorpdfstring{\_\_unserialize()}{\_\_unserialize()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_mutate_1_1_mutation_a2fe5966ad9b8e1d91a37d3e055ac4938} 
+\+\_\+\+\_\+unserialize (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\{file} & string, id\+: string, mutator\+: string, start\+\_\+line\+: int, end\+\_\+line\+: int, diff\+: string, modified\+\_\+source\+\_\+path\+: string\} \$data \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_mutate_1_1_mutation_ab442443d4288c0cb14571648070b7edd}\index{Mutation@{Mutation}!create@{create}}
+\index{create@{create}!Mutation@{Mutation}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_mutate_1_1_mutation_ab442443d4288c0cb14571648070b7edd} 
+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_finder_1_1_spl_file_info}{Spl\+File\+Info}}}]{\$file}{, }\item[{string}]{\$mutator}{, }\item[{Node}]{\$original\+Node}{, }\item[{?Node}]{\$modified\+Node}{, }\item[{array}]{\$modified\+Ast}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,Node$>$} & \$modified\+Ast \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_mutate_1_1_mutation_a658ba906fd75e3c8d294645a7754ce00}\index{Mutation@{Mutation}!modifiedSource@{modifiedSource}}
+\index{modifiedSource@{modifiedSource}!Mutation@{Mutation}}
+\doxysubsubsection{\texorpdfstring{modifiedSource()}{modifiedSource()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_mutate_1_1_mutation_a658ba906fd75e3c8d294645a7754ce00} 
+modified\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest-\/plugin-\/mutate/src/\mbox{\hyperlink{_mutation_8php}{Mutation.\+php}}\end{DoxyCompactItemize}

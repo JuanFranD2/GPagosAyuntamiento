@@ -1,0 +1,156 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dflydev/dot-\/access-\/data Directory Reference}
+\hypertarget{dir_0f67702431cfde6cc4a95c85137f9abd}{}\label{dir_0f67702431cfde6cc4a95c85137f9abd}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/dflydev/dot-\/access-\/data Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/dflydev/dot-\/access-\/data Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_9030f1a13df4f90a779f1598378d835e}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\href{https://packagist.org/packages/dflydev/dot-access-data}{\texttt{}} \href{https://packagist.org/packages/dflydev/dot-access-data}{\texttt{}} \mbox{[}\mbox{]}(LICENSE) \href{https://github.com/dflydev/dflydev-dot-access-data/actions?query=workflow\%3ATests+branch\%3Amain}{\texttt{}} \href{https://scrutinizer-ci.com/g/dflydev/dflydev-dot-access-data/code-structure/}{\texttt{}} \href{https://scrutinizer-ci.com/g/dflydev/dflydev-dot-access-data}{\texttt{}}
+
+Given a deep data structure, access data by dot notation.\hypertarget{README.md_autotoc_md8790}{}\doxysubsection{\texorpdfstring{Requirements}{Requirements}}\label{README.md_autotoc_md8790}
+
+\begin{DoxyItemize}
+\item PHP (7.\+1+)
+\end{DoxyItemize}
+
+\begin{quote}
+For PHP (5.\+3+) please refer to version {\ttfamily 1.\+0}. \end{quote}
+\hypertarget{README.md_autotoc_md8791}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md8791}
+Abstract example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data}{Dflydev\(\backslash\)DotAccessData\(\backslash\)Data}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$data\ =\ \textcolor{keyword}{new}\ Data;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$data-\/>\mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_a6bd330ab0bd11fdff616fe1f23fcd05f}{set}}(\textcolor{stringliteral}{'a.b.c'},\ \textcolor{charliteral}{'C'});}
+\DoxyCodeLine{\$data-\/>set(\textcolor{stringliteral}{'a.b.d'},\ \textcolor{stringliteral}{'D1'});}
+\DoxyCodeLine{\$data-\/>append(\textcolor{stringliteral}{'a.b.d'},\ \textcolor{stringliteral}{'D2'});}
+\DoxyCodeLine{\$data-\/>set(\textcolor{stringliteral}{'a.b.e'},\ [\textcolor{stringliteral}{'E0'},\ \textcolor{stringliteral}{'E1'},\ \textcolor{stringliteral}{'E2'}]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ C}}
+\DoxyCodeLine{\$data-\/>get(\textcolor{stringliteral}{'a.b.c'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ ['D1',\ 'D2']}}
+\DoxyCodeLine{\$data-\/>get(\textcolor{stringliteral}{'a.b.d'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ ['E0',\ 'E1',\ 'E2']}}
+\DoxyCodeLine{\$data-\/>get(\textcolor{stringliteral}{'a.b.e'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ true}}
+\DoxyCodeLine{\$data-\/>has(\textcolor{stringliteral}{'a.b.c'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ false}}
+\DoxyCodeLine{\$data-\/>has(\textcolor{stringliteral}{'a.b.d.j'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ 'some-\/default-\/value'}}
+\DoxyCodeLine{\$data-\/>get(\textcolor{stringliteral}{'some.path.that.does.not.exist'},\ \textcolor{stringliteral}{'some-\/default-\/value'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ throws\ a\ MissingPathException\ because\ no\ default\ was\ given}}
+\DoxyCodeLine{\$data-\/>get(\textcolor{stringliteral}{'some.path.that.does.not.exist'});}
+
+\end{DoxyCode}
+
+
+A more concrete example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data}{Dflydev\(\backslash\)DotAccessData\(\backslash\)Data}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$data\ =\ \textcolor{keyword}{new}\ Data([}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'hosts'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hewey'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'username'}\ =>\ \textcolor{stringliteral}{'hman'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'password'}\ =>\ \textcolor{stringliteral}{'HPASS'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'roles'}\ \ \ \ =>\ [\textcolor{stringliteral}{'web'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'dewey'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'username'}\ =>\ \textcolor{stringliteral}{'dman'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'password'}\ =>\ \textcolor{stringliteral}{'D-\/-\/-\/S'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'roles'}\ \ \ \ =>\ [\textcolor{stringliteral}{'web'},\ \textcolor{stringliteral}{'db'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'nick'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'dewey\ dman'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'lewey'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'username'}\ =>\ \textcolor{stringliteral}{'lman'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'password'}\ =>\ \textcolor{stringliteral}{'LP@\$\$'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'roles'}\ \ \ \ =>\ [\textcolor{stringliteral}{'db'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ ],}
+\DoxyCodeLine{]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ hman}}
+\DoxyCodeLine{\$username\ =\ \$data-\/>get(\textcolor{stringliteral}{'hosts.hewey.username'});}
+\DoxyCodeLine{\textcolor{comment}{//\ HPASS}}
+\DoxyCodeLine{\mbox{\hyperlink{resources_2views_2livewire_2pages_2auth_2register_8blade_8php_a99f6264ab0c9eac3199f38350ea0703d}{\$password}}\ =\ \$data-\/>get(\textcolor{stringliteral}{'hosts.hewey.password'});}
+\DoxyCodeLine{\textcolor{comment}{//\ ['web']}}
+\DoxyCodeLine{\$roles\ =\ \$data-\/>get(\textcolor{stringliteral}{'hosts.hewey.roles'});}
+\DoxyCodeLine{\textcolor{comment}{//\ dewey\ dman}}
+\DoxyCodeLine{\$nick\ =\ \$data-\/>get(\textcolor{stringliteral}{'hosts.dewey.nick'});}
+\DoxyCodeLine{\textcolor{comment}{//\ Unknown}}
+\DoxyCodeLine{\$nick\ =\ \$data-\/>get(\textcolor{stringliteral}{'hosts.lewey.nick'},\ \textcolor{stringliteral}{'Unknown'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ DataInterface\ instance}}
+\DoxyCodeLine{\$dewey\ =\ \$data-\/>getData(\textcolor{stringliteral}{'hosts.dewey'});}
+\DoxyCodeLine{\textcolor{comment}{//\ dman}}
+\DoxyCodeLine{\$username\ =\ \$dewey-\/>get(\textcolor{stringliteral}{'username'});}
+\DoxyCodeLine{\textcolor{comment}{//\ D-\/-\/-\/S}}
+\DoxyCodeLine{\mbox{\hyperlink{resources_2views_2livewire_2pages_2auth_2register_8blade_8php_a99f6264ab0c9eac3199f38350ea0703d}{\$password}}\ =\ \$dewey-\/>get(\textcolor{stringliteral}{'password'});}
+\DoxyCodeLine{\textcolor{comment}{//\ ['web',\ 'db']}}
+\DoxyCodeLine{\$roles\ =\ \$dewey-\/>get(\textcolor{stringliteral}{'roles'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ No\ more\ lewey}}
+\DoxyCodeLine{\$data-\/>remove(\textcolor{stringliteral}{'hosts.lewey'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Add\ DB\ to\ hewey's\ roles}}
+\DoxyCodeLine{\$data-\/>append(\textcolor{stringliteral}{'hosts.hewey.roles'},\ \textcolor{stringliteral}{'db'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$data-\/>set(\textcolor{stringliteral}{'hosts.april'},\ [}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'username'}\ =>\ \textcolor{stringliteral}{'aman'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'password'}\ =>\ \textcolor{stringliteral}{'@-\/-\/-\/S'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'roles'}\ \ \ \ =>\ [\textcolor{stringliteral}{'web'}],}
+\DoxyCodeLine{]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Check\ if\ a\ key\ exists\ (true\ to\ this\ case)}}
+\DoxyCodeLine{\$hasKey\ =\ \$data-\/>has(\textcolor{stringliteral}{'hosts.dewey.username'});}
+
+\end{DoxyCode}
+
+
+{\ttfamily Data} may be used as an array, since it implements {\ttfamily Array\+Access} interface\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Get}}
+\DoxyCodeLine{\$data-\/>get(\textcolor{stringliteral}{'name'})\ ===\ \$data[\textcolor{stringliteral}{'name'}];\ \textcolor{comment}{//\ true}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$data[\textcolor{stringliteral}{'name'}]\ =\ \textcolor{stringliteral}{'Dewey'};}
+\DoxyCodeLine{\textcolor{comment}{//\ is\ equivalent\ to}}
+\DoxyCodeLine{\$data-\/>set(\$name,\ \textcolor{stringliteral}{'Dewey'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{isset(\$data[\textcolor{stringliteral}{'name'}])\ ===\ \$data-\/>has(\textcolor{stringliteral}{'name'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Remove\ key}}
+\DoxyCodeLine{unset(\$data[\textcolor{stringliteral}{'name'}]);}
+
+\end{DoxyCode}
+
+
+{\ttfamily /} can also be used as a path delimiter\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$data-\/>set(\textcolor{stringliteral}{'a/b/c'},\ \textcolor{charliteral}{'d'});}
+\DoxyCodeLine{echo\ \$data-\/>get(\textcolor{stringliteral}{'a/b/c'});\ \textcolor{comment}{//\ "{}d"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$data-\/>get(\textcolor{stringliteral}{'a/b/c'})\ ===\ \$data-\/>get(\textcolor{stringliteral}{'a.b.c'});\ \textcolor{comment}{//\ true}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8792}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md8792}
+This library is licensed under the MIT License -\/ see the LICENSE file for details.\hypertarget{README.md_autotoc_md8793}{}\doxysubsection{\texorpdfstring{Community}{Community}}\label{README.md_autotoc_md8793}
+If you have questions or want to help out, join us in the \href{irc://irc.freenode.net/\#dflydev}{\texttt{\#dflydev}} channel on irc.\+freenode.\+net. 

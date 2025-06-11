@@ -1,0 +1,4 @@
+var _add_request_formats_listener_8php =
+[
+    [ "AddRequestFormatsListener", "class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_add_request_formats_listener.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_add_request_formats_listener" ]
+];

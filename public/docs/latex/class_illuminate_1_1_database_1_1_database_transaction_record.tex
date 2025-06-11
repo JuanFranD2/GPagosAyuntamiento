@@ -1,0 +1,126 @@
+\doxysection{Database\+Transaction\+Record Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record}{}\label{class_illuminate_1_1_database_1_1_database_transaction_record}\index{DatabaseTransactionRecord@{DatabaseTransactionRecord}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record_a5dc21d66b4b94473892c6bbf9bdf76bd}{\+\_\+\+\_\+construct}} (\$connection, \$level, ?\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record}{Database\+Transaction\+Record}} \$parent=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record_a371fd2989fd197891d5cadd22ae415cd}{add\+Callback}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record_a02603b7b79212aa5daa9faaf76e069df}{execute\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record_a96c408925a2b86cb73902a2424cd8d78}{get\+Callbacks}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record_abd32cc82c6a3f79491987de36ad580ca}{\$level}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record_a4e2313a4b35b72a06ac45fd38960f677}{\$parent}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record_a151f6e603ac02a25364ad54bee36ab2a}{\$callbacks}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_a5dc21d66b4b94473892c6bbf9bdf76bd}\index{DatabaseTransactionRecord@{DatabaseTransactionRecord}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DatabaseTransactionRecord@{DatabaseTransactionRecord}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transaction_record_a5dc21d66b4b94473892c6bbf9bdf76bd} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$level}{, }\item[{?\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record}{Database\+Transaction\+Record}}}]{\$parent}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new database transaction record instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+int & {\em \$level} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Database\+Transaction\+Record | null & {\em \$parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_a371fd2989fd197891d5cadd22ae415cd}\index{DatabaseTransactionRecord@{DatabaseTransactionRecord}!addCallback@{addCallback}}
+\index{addCallback@{addCallback}!DatabaseTransactionRecord@{DatabaseTransactionRecord}}
+\doxysubsubsection{\texorpdfstring{addCallback()}{addCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transaction_record_a371fd2989fd197891d5cadd22ae415cd} 
+add\+Callback (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be executed after committing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_a02603b7b79212aa5daa9faaf76e069df}\index{DatabaseTransactionRecord@{DatabaseTransactionRecord}!executeCallbacks@{executeCallbacks}}
+\index{executeCallbacks@{executeCallbacks}!DatabaseTransactionRecord@{DatabaseTransactionRecord}}
+\doxysubsubsection{\texorpdfstring{executeCallbacks()}{executeCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transaction_record_a02603b7b79212aa5daa9faaf76e069df} 
+execute\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Execute all of the callbacks.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_a96c408925a2b86cb73902a2424cd8d78}\index{DatabaseTransactionRecord@{DatabaseTransactionRecord}!getCallbacks@{getCallbacks}}
+\index{getCallbacks@{getCallbacks}!DatabaseTransactionRecord@{DatabaseTransactionRecord}}
+\doxysubsubsection{\texorpdfstring{getCallbacks()}{getCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transaction_record_a96c408925a2b86cb73902a2424cd8d78} 
+get\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the callbacks.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_a151f6e603ac02a25364ad54bee36ab2a}\index{DatabaseTransactionRecord@{DatabaseTransactionRecord}!\$callbacks@{\$callbacks}}
+\index{\$callbacks@{\$callbacks}!DatabaseTransactionRecord@{DatabaseTransactionRecord}}
+\doxysubsubsection{\texorpdfstring{\$callbacks}{\$callbacks}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transaction_record_a151f6e603ac02a25364ad54bee36ab2a} 
+\$callbacks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_a0d9c79b9b86b3f5891c6d3892f12c6a0}\index{DatabaseTransactionRecord@{DatabaseTransactionRecord}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!DatabaseTransactionRecord@{DatabaseTransactionRecord}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transaction_record_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\$connection}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_abd32cc82c6a3f79491987de36ad580ca}\index{DatabaseTransactionRecord@{DatabaseTransactionRecord}!\$level@{\$level}}
+\index{\$level@{\$level}!DatabaseTransactionRecord@{DatabaseTransactionRecord}}
+\doxysubsubsection{\texorpdfstring{\$level}{\$level}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transaction_record_abd32cc82c6a3f79491987de36ad580ca} 
+\$level}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transaction_record_a4e2313a4b35b72a06ac45fd38960f677}\index{DatabaseTransactionRecord@{DatabaseTransactionRecord}!\$parent@{\$parent}}
+\index{\$parent@{\$parent}!DatabaseTransactionRecord@{DatabaseTransactionRecord}}
+\doxysubsubsection{\texorpdfstring{\$parent}{\$parent}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transaction_record_a4e2313a4b35b72a06ac45fd38960f677} 
+\$parent}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\mbox{\hyperlink{_database_transaction_record_8php}{Database\+Transaction\+Record.\+php}}\end{DoxyCompactItemize}

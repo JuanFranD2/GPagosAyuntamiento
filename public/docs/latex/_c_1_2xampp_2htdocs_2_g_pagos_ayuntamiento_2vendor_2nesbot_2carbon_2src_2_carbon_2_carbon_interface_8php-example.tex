@@ -1,0 +1,878 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nesbot/carbon/src/\+Carbon/\+Carbon\+Interface.\+php}
+\hypertarget{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_carbon_interface_8php-example}{}\label{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_carbon_interface_8php-example}Format the instance as a string using the set format
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{echo\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a80593ccdc0339775ddd5d82c37ca4f6b}{Carbon::now}}();\ \textcolor{comment}{//\ Carbon\ instances\ can\ be\ cast\ to\ string}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{declare(strict\_types=1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_carbon}{Carbon}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ BadMethodCallException;}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_bad_comparison_unit_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)BadComparisonUnitException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_immutable_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)ImmutableException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_invalid_date_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)InvalidDateException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_invalid_format_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)InvalidFormatException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_unknown_getter_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)UnknownGetterException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_unknown_method_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)UnknownMethodException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_unknown_setter_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)UnknownSetterException}};}
+\DoxyCodeLine{use\ Closure;}
+\DoxyCodeLine{use\ DateInterval;}
+\DoxyCodeLine{use\ DateTime;}
+\DoxyCodeLine{use\ DateTimeImmutable;}
+\DoxyCodeLine{use\ DateTimeInterface;}
+\DoxyCodeLine{use\ DateTimeZone;}
+\DoxyCodeLine{use\ JsonSerializable;}
+\DoxyCodeLine{use\ ReflectionException;}
+\DoxyCodeLine{use\ ReturnTypeWillChange;}
+\DoxyCodeLine{use\ \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Symfony\(\backslash\)Contracts\(\backslash\)Translation\(\backslash\)TranslatorInterface}};}
+\DoxyCodeLine{use\ Throwable;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{interface\ }CarbonInterface\ \textcolor{keyword}{extends}\ DateTimeInterface,\ JsonSerializable}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ NO\_ZERO\_DIFF\ =\ 01;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ JUST\_NOW\ =\ 02;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ ONE\_DAY\_WORDS\ =\ 04;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ TWO\_DAY\_WORDS\ =\ 010;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ SEQUENTIAL\_PARTS\_ONLY\ =\ 020;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ ROUND\ =\ 040;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ FLOOR\ =\ 0100;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ CEIL\ =\ 0200;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ DIFF\_ABSOLUTE\ =\ 1;\ \textcolor{comment}{//\ backward\ compatibility\ with\ true}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ DIFF\_RELATIVE\_AUTO\ =\ 0;\ \textcolor{comment}{//\ backward\ compatibility\ with\ false}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ DIFF\_RELATIVE\_TO\_NOW\ =\ 2;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ DIFF\_RELATIVE\_TO\_OTHER\ =\ 3;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ TRANSLATE\_MONTHS\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ TRANSLATE\_DAYS\ =\ 2;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ TRANSLATE\_UNITS\ =\ 4;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ TRANSLATE\_MERIDIEM\ =\ 8;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ TRANSLATE\_DIFF\ =\ 0x10;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ TRANSLATE\_ALL\ =\ self::TRANSLATE\_MONTHS\ |\ self::TRANSLATE\_DAYS\ |\ self::TRANSLATE\_UNITS\ |\ self::TRANSLATE\_MERIDIEM\ |\ self::TRANSLATE\_DIFF;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ SUNDAY\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MONDAY\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ TUESDAY\ =\ 2;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ WEDNESDAY\ =\ 3;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ THURSDAY\ =\ 4;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ FRIDAY\ =\ 5;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ SATURDAY\ =\ 6;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ JANUARY\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ FEBRUARY\ =\ 2;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MARCH\ =\ 3;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ APRIL\ =\ 4;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MAY\ =\ 5;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ JUNE\ =\ 6;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ JULY\ =\ 7;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ AUGUST\ =\ 8;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ SEPTEMBER\ =\ 9;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ OCTOBER\ =\ 10;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ NOVEMBER\ =\ 11;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ DECEMBER\ =\ 12;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ YEARS\_PER\_MILLENNIUM\ =\ 1\_000;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ YEARS\_PER\_CENTURY\ =\ 100;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ YEARS\_PER\_DECADE\ =\ 10;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MONTHS\_PER\_YEAR\ =\ 12;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MONTHS\_PER\_QUARTER\ =\ 3;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ QUARTERS\_PER\_YEAR\ =\ 4;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ WEEKS\_PER\_YEAR\ =\ 52;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ WEEKS\_PER\_MONTH\ =\ 4;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ DAYS\_PER\_YEAR\ =\ 365;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ DAYS\_PER\_WEEK\ =\ 7;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ HOURS\_PER\_DAY\ =\ 24;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MINUTES\_PER\_HOUR\ =\ 60;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ SECONDS\_PER\_MINUTE\ =\ 60;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MILLISECONDS\_PER\_SECOND\ =\ 1\_000;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MICROSECONDS\_PER\_MILLISECOND\ =\ 1\_000;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MICROSECONDS\_PER\_SECOND\ =\ 1\_000\_000;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ WEEK\_DAY\_AUTO\ =\ \textcolor{stringliteral}{'auto'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ RFC7231\_FORMAT\ =\ \textcolor{stringliteral}{'D,\ d\ M\ Y\ H:i:s\ \(\backslash\)G\(\backslash\)M\(\backslash\)T'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ DEFAULT\_TO\_STRING\_FORMAT\ =\ \textcolor{stringliteral}{'Y-\/m-\/d\ H:i:s'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ MOCK\_DATETIME\_FORMAT\ =\ \textcolor{stringliteral}{'Y-\/m-\/d\ H:i:s.u'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ ISO\_FORMAT\_REGEXP\ =\ \textcolor{stringliteral}{'(O[YMDHhms]|[Hh]mm(ss)?|Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Qo?|YYYYYY|YYYYY|YYYY|YY?|g\{1,5\}|G\{1,5\}|e|E|a|A|hh?|HH?|kk?|mm?|ss?|S\{1,9\}|x|X|zz?|ZZ?)'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ DEFAULT\_LOCALE\ =\ \textcolor{stringliteral}{'en'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ <methods>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_ac565bd6a9d062c73a0a0db7afe0ffea9}{\_\_call}}(\textcolor{keywordtype}{string}\ \$method,\ array\ \$parameters):\ mixed;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \_\_callStatic(\textcolor{keywordtype}{string}\ \$method,\ array\ \$parameters):\ mixed;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ad0cb87b388bc74d63dc884accdca8713}{\_\_clone}}():\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_testing_1_1_concerns_a17ea103c75f2b56cb4ebd89dbf59d2d6}{\_\_construct}}(DateTimeInterface|WeekDay|Month|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}|\textcolor{keyword}{null}\ \$time\ =\ \textcolor{keyword}{null},\ DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aca922c6f7bcc068784112a8e402a59f7}{\_\_debugInfo}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a4537dad3b44254124991341cc91b28fb}{\_\_get}}(\textcolor{keywordtype}{string}\ \$name):\ mixed;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8f132f051b7cd7d570ccb9f6e2bb4201}{\_\_isset}}(\$name);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a83c2703c91959192f759992ad5640b67}{\_\_set}}(\$name,\ \$value);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\ \ \ \ \#[ReturnTypeWillChange]}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \_\_set\_state(\$dump):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aaf11785905da71774e052912d784e3b4}{\_\_sleep}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a7516ca30af0db3cdbf9a7739b48ce91d}{\_\_toString}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\ \ \ \ \#[ReturnTypeWillChange]}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_symfony_1_1_component_1_1_routing_1_1_loader_1_1_configurator_1_1_traits_afaa5addd4f52882d4d869dafb551d257}{add}}(\$unit,\ \$value\ =\ 1,\ ?\textcolor{keywordtype}{bool}\ \$overflow\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ addRealUnit(\textcolor{keywordtype}{string}\ \$unit,\ \$value\ =\ 1):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ addUTCUnit(\textcolor{keywordtype}{string}\ \$unit,\ \$value\ =\ 1):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ addUnit(Unit|\textcolor{keywordtype}{string}\ \$unit,\ \$value\ =\ 1,\ ?\textcolor{keywordtype}{bool}\ \$overflow\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a41e7cc32d911df14946f0f2fe8a0b48f}{addUnitNoOverflow}}(\textcolor{keywordtype}{string}\ \$valueUnit,\ \textcolor{keywordtype}{int}\ \$value,\ \textcolor{keywordtype}{string}\ \$overflowUnit):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ ago(\$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ 1,\ \$options\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_acc5ff0ce6aad56c67213acca7dbc5f5d}{average}}(\$date\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a46d369d0556b483ec005cd02db58fd0b}{avoidMutation}}():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a5dc37c92bc03d9e95471e3d7a6a03ef8}{between}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date1,\ DateTimeInterface|\textcolor{keywordtype}{string}\ \$date2,\ \textcolor{keywordtype}{bool}\ \$equal\ =\ \textcolor{keyword}{true}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa496d31fa7dd27316e97d2dda184c8c2}{betweenExcluded}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date1,\ DateTimeInterface|\textcolor{keywordtype}{string}\ \$date2):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a92eb7ab681bd8663d4afdd48d402cb06}{betweenIncluded}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date1,\ DateTimeInterface|\textcolor{keywordtype}{string}\ \$date2):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ calendar(\$referenceTime\ =\ \textcolor{keyword}{null},\ array\ \$formats\ =\ []);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ canBeCreatedFromFormat(?\textcolor{keywordtype}{string}\ \$date,\ \textcolor{keywordtype}{string}\ \$format):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9954bb77d679bf9f68474429ddc7e465}{carbonize}}(\$date\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ cast(\textcolor{keywordtype}{string}\ \$className):\ mixed;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6fcddef8748c4e3d40d5c8397637ac3d}{ceil}}(DateInterval|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$precision\ =\ 1):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_af164e459eb1b1eb68a950f52cbbbcc61}{ceilUnit}}(\textcolor{keywordtype}{string}\ \$unit,\ DateInterval|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$precision\ =\ 1):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6422d113763a5c37f2011dbdffa0fbc8}{ceilWeek}}(WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$weekStartsAt\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a13e3fa374bd76f1a046dd98736510325}{change}}(\$modifier);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a7d9da52004233ca96c1faba882a28baa}{cleanupDumpProperties}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a30fb1fe83217b873d8e474b88f258ae7}{clone}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac551a0cf3ff048a44a35293958e4afef}{closest}}(\$date1,\ \$date2);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_af2ee38d1ce36008491d935c9431afc7b}{copy}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ create(\$year\ =\ 0,\ \$month\ =\ 1,\ \$day\ =\ 1,\ \$hour\ =\ 0,\ \$minute\ =\ 0,\ \$second\ =\ 0,\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromDate(\$year\ =\ \textcolor{keyword}{null},\ \$month\ =\ \textcolor{keyword}{null},\ \$day\ =\ \textcolor{keyword}{null},\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\ \ \ \ \#[ReturnTypeWillChange]}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromFormat(\$format,\ \$time,\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromIsoFormat(\textcolor{keywordtype}{string}\ \$format,\ \textcolor{keywordtype}{string}\ \$time,\ \$timezone\ =\ \textcolor{keyword}{null},\ ?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{stringliteral}{'en'},\ ?TranslatorInterface\ \mbox{\hyperlink{discover-d234df6a22ae2b9b097ac6e3772bd950_8php_ad1bd0a7c70da186307de0136d0f0c2e3}{\$translator}}\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromLocaleFormat(\textcolor{keywordtype}{string}\ \$format,\ \textcolor{keywordtype}{string}\ \$locale,\ \textcolor{keywordtype}{string}\ \$time,\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromLocaleIsoFormat(\textcolor{keywordtype}{string}\ \$format,\ \textcolor{keywordtype}{string}\ \$locale,\ \textcolor{keywordtype}{string}\ \$time,\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromTime(\$hour\ =\ 0,\ \$minute\ =\ 0,\ \$second\ =\ 0,\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromTimeString(\textcolor{keywordtype}{string}\ \$time,\ DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromTimestamp(\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$timestamp,\ DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromTimestampMs(\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$timestamp,\ DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromTimestampMsUTC(\$timestamp):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromTimestampUTC(\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$timestamp):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createMidnightDate(\$year\ =\ \textcolor{keyword}{null},\ \$month\ =\ \textcolor{keyword}{null},\ \$day\ =\ \textcolor{keyword}{null},\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createSafe(\$year\ =\ \textcolor{keyword}{null},\ \$month\ =\ \textcolor{keyword}{null},\ \$day\ =\ \textcolor{keyword}{null},\ \$hour\ =\ \textcolor{keyword}{null},\ \$minute\ =\ \textcolor{keyword}{null},\ \$second\ =\ \textcolor{keyword}{null},\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createStrict(?\textcolor{keywordtype}{int}\ \$year\ =\ 0,\ ?\textcolor{keywordtype}{int}\ \$month\ =\ 1,\ ?\textcolor{keywordtype}{int}\ \$day\ =\ 1,\ ?\textcolor{keywordtype}{int}\ \$hour\ =\ 0,\ ?\textcolor{keywordtype}{int}\ \$minute\ =\ 0,\ ?\textcolor{keywordtype}{int}\ \$second\ =\ 0,\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a90218fedb8f5b48652417a4014c65bde}{dayOfYear}}(?\textcolor{keywordtype}{int}\ \$value\ =\ \textcolor{keyword}{null}):\ static|\mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffAsCarbonInterval(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false},\ array\ \$skip\ =\ []):\ CarbonInterval;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffAsDateInterval(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ DateInterval;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffFiltered(CarbonInterval\ \$ci,\ Closure\ \$callback,\ \$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffForHumans(\$other\ =\ \textcolor{keyword}{null},\ \$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ 1,\ \$options\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInDays(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ \$utc\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInDaysFiltered(Closure\ \$callback,\ \$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInHours(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInHoursFiltered(Closure\ \$callback,\ \$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInMicroseconds(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInMilliseconds(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInMinutes(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInMonths(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ \$utc\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInQuarters(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ \$utc\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInSeconds(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInUnit(Unit|\textcolor{keywordtype}{string}\ \$unit,\ \$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ \$utc\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInWeekdays(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInWeekendDays(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInWeeks(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ \$utc\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ diffInYears(\$date\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ \$utc\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ disableHumanDiffOption(\textcolor{keywordtype}{int}\ \$humanDiffOption):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ enableHumanDiffOption(\textcolor{keywordtype}{int}\ \$humanDiffOption):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOf(Unit|\textcolor{keywordtype}{string}\ \$unit,\ mixed\ ...\$params):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfCentury();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfDay();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfDecade();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfHour():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfMillennium();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfMillisecond():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfMinute():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfMonth();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfQuarter();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfSecond():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfWeek(WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$weekEndsAt\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ endOfYear();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ace0ae6cd1e2de075de41383f571999fa}{eq}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4bcd2a269500fdde8a584b12e90252fd}{equalTo}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ executeWithLocale(\textcolor{keywordtype}{string}\ \$locale,\ callable\ \$func):\ mixed;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a037e161e6de9690a8825d7e29f4fa350}{farthest}}(\$date1,\ \$date2);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a7bed921e535f55caa18401702eafa101}{firstOfMonth}}(\$dayOfWeek\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a1d02933e9d5bf7a6050f0fa0edb29aec}{firstOfQuarter}}(\$dayOfWeek\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a39cefe07d2e63132aadcd8762ddf49b1}{firstOfYear}}(\$dayOfWeek\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a0003c428a66d88d24dccc770cb48987a}{floor}}(DateInterval|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$precision\ =\ 1):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_abc6a30d7c4ea0d09e6808822794a1c38}{floorUnit}}(\textcolor{keywordtype}{string}\ \$unit,\ DateInterval|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$precision\ =\ 1):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a944d5bb2707db4fd5628e2f08b79cb56}{floorWeek}}(WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$weekStartsAt\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_foundation_1_1_testing_1_1_concerns_a4e3d0d4b626e0ee57b533d53e6025d11}{from}}(\$other\ =\ \textcolor{keyword}{null},\ \$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ 1,\ \$options\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ fromNow(\$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ 1,\ \$options\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ fromSerialized(\$value):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ genericMacro(callable\ \$macro,\ \textcolor{keywordtype}{int}\ \$priority\ =\ 0):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \textcolor{keyword}{get}(\mbox{\hyperlink{namespace_carbon_a49ff953eb371b3b3498ff4f9280d2d42}{Unit}}|\textcolor{keywordtype}{string}\ \mbox{\hyperlink{namespace_symfony_1_1_component_1_1_routing_1_1_loader_1_1_configurator_1_1_traits_a58551b63ba97fb35b928f11f36b1fac6}{\$name}}):\ mixed;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8d9923acf35d42193a927143f6f4677f}{getAltNumber}}(\textcolor{keywordtype}{string}\ \$key):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getAvailableLocales();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getAvailableLocalesInfo();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a60299f77bce28b6b0f967f61abd6d530}{getCalendarFormats}}(?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8f3ca3bb0d61ca4411fe5f2822855383}{getClock}}():\ ?WrapperClock;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getDays():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a26f180549b07546c9bb6785bf585bfed}{getDaysFromStartOfWeek}}(WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$weekStartsAt\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getFallbackLocale():\ ?\mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getFormatsToIsoReplacements():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getHumanDiffOptions():\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8a9ea76cd350a30946534d0b466fab80}{getIsoFormats}}(?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getIsoUnits():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getLastErrors():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}|false;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a51893816dbbe730c68e2370b68b0b52b}{getLocalMacro}}(\textcolor{keywordtype}{string}\ \$name):\ ?callable;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4e77acc742d233d975385c7413aba664}{getLocalTranslator}}():\ TranslatorInterface;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_symfony_1_1_contracts_1_1_translation_ad532b661eb33c3e755bd3fa8ff1bd7af}{getLocale}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getMacro(\textcolor{keywordtype}{string}\ \$name):\ ?callable;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getMidDayAt();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a29faa12aa7b4a9c5788241d2c47d84d3}{getOffsetString}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{trace_8php_acb4e8e50eaf0132d1e70b8776b4ad5cc}{\$separator}}\ =\ \textcolor{charliteral}{':'}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa25df02dcecdb20cf068875102cef0ad}{getPaddedUnit}}(\$unit,\ \$length\ =\ 2,\ \$padString\ =\ \textcolor{charliteral}{'0'},\ \$padType\ =\ 0):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ getPreciseTimestamp(\$precision\ =\ 6):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ae7b2b0de7f05bf6b6993996d7475804d}{getSettings}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getTestNow():\ Closure|self|null;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getTimeFormatByPrecision(\textcolor{keywordtype}{string}\ \$unitPrecision):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ getTimestampMs():\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a479b50d7b7f8c203816ea0ed013f6210}{getTranslatedDayName}}(?\textcolor{keywordtype}{string}\ \$context\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{string}\ \$keySuffix\ =\ \textcolor{stringliteral}{''},\ ?\textcolor{keywordtype}{string}\ \$defaultValue\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4feffea856c23e1b180999ea509c854a}{getTranslatedMinDayName}}(?\textcolor{keywordtype}{string}\ \$context\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ace70494541429013ead7e16868e957ad}{getTranslatedMonthName}}(?\textcolor{keywordtype}{string}\ \$context\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{string}\ \$keySuffix\ =\ \textcolor{stringliteral}{''},\ ?\textcolor{keywordtype}{string}\ \$defaultValue\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6ca54379e3172607e3f21274af3beac5}{getTranslatedShortDayName}}(?\textcolor{keywordtype}{string}\ \$context\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac747b53c3654aee5d47c00a6848e0fb9}{getTranslatedShortMonthName}}(?\textcolor{keywordtype}{string}\ \$context\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aec6f7d1c96001ee1920a8a4bd90f7cbb}{getTranslationMessage}}(\textcolor{keywordtype}{string}\ \$key,\ ?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{keyword}{null},\ ?\textcolor{keywordtype}{string}\ \mbox{\hyperlink{translations_8php_a9df479534ecf05fd7575c6275d381687}{\$default}}\ =\ \textcolor{keyword}{null},\ \mbox{\hyperlink{discover-d234df6a22ae2b9b097ac6e3772bd950_8php_ad1bd0a7c70da186307de0136d0f0c2e3}{\$translator}}\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getTranslationMessageWith(\mbox{\hyperlink{discover-d234df6a22ae2b9b097ac6e3772bd950_8php_ad1bd0a7c70da186307de0136d0f0c2e3}{\$translator}},\ \textcolor{keywordtype}{string}\ \$key,\ ?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{keyword}{null},\ ?\textcolor{keywordtype}{string}\ \mbox{\hyperlink{translations_8php_a9df479534ecf05fd7575c6275d381687}{\$default}}\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getTranslator():\ TranslatorInterface;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getWeekEndsAt(?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getWeekStartsAt(?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getWeekendDays():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2d58d11b52f2b3fcc92295a070fde97c}{greaterThan}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a87540f68a2ec8188525b0d38ec94b4bc}{greaterThanOrEqualTo}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a04f7d93a8bd9a9f53d52a047a9d95a79}{gt}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9b43bf8c1ef8147048f6e31acf1cee33}{gte}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ hasFormat(\textcolor{keywordtype}{string}\ \$date,\ \textcolor{keywordtype}{string}\ \$format):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ hasFormatWithModifiers(?\textcolor{keywordtype}{string}\ \$date,\ \textcolor{keywordtype}{string}\ \$format):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a3013c89b3e450776b687935b579b1fc1}{hasLocalMacro}}(\textcolor{keywordtype}{string}\ \$name):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a207f7384e58f2441c562190493b4da66}{hasLocalTranslator}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ hasMacro(\textcolor{keywordtype}{string}\ \$name):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ hasRelativeKeywords(?\textcolor{keywordtype}{string}\ \$time):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ hasTestNow():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_foundation_1_1_testing_1_1_concerns_ab5e1121e7cec7da324793b93ae13a449}{instance}}(DateTimeInterface\ \$date):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9989d7787f582dbe5c068a73dc55ebb3}{is}}(WeekDay|Month|\textcolor{keywordtype}{string}\ \$tester):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a0e26e0f19fe2bc6505c431cb63a1891a}{isAfter}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a03df7d48317a7a488b815e032d1216d7}{isBefore}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a437e9c29ef2b3b10d5c833119163b933}{isBetween}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date1,\ DateTimeInterface|\textcolor{keywordtype}{string}\ \$date2,\ \textcolor{keywordtype}{bool}\ \$equal\ =\ \textcolor{keyword}{true}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_af65b8d7c9f3e8bdfdf1f3dc1d10df2d8}{isBirthday}}(DateTimeInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$date\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a1309dd19c22a8494c76d5312f90d4a89}{isCurrentUnit}}(\textcolor{keywordtype}{string}\ \$unit):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8e63329d539e9816dc5e014c2058fc51}{isDayOfWeek}}(\$dayOfWeek):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a50ada972c92aa5ec2c41ffe881ed8972}{isEndOfCentury}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ae1fa98c5015e8e5a971870ed6e62aeda}{isEndOfDay}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{bool}\ \$checkMicroseconds\ =\ \textcolor{keyword}{false},\ Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a59a7001f7e1a410ab16965dec2a1dba5}{isEndOfDecade}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a01126471c0fd8d2ee9c72c2a636c28b2}{isEndOfHour}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_acac7b62cc5c73d79c418ca1cb6c4d2b8}{isEndOfMillennium}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_afe332738e9f0a09e9ab7889abcadcef5}{isEndOfMillisecond}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a357bc5f702fc1cac57576a6517b71490}{isEndOfMinute}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ab45f77fdfd25f2f1681c49be5c5fc172}{isEndOfMonth}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a661819f7d830b08ff4f8dbedb4ff1479}{isEndOfQuarter}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2a860bfae1ad345cfb0111fe166df820}{isEndOfSecond}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ab15925ddf46a1d0b9d8a2438134e9d85}{isEndOfTime}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a809a8dce17992a74b708bc45bd3937b8}{isEndOfUnit}}(Unit\ \$unit,\ Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null},\ mixed\ ...\$params):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a3052835b0f1277efe9ca29a4b2365e5c}{isEndOfWeek}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null},\ WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$weekEndsAt\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6e0bf7f09237d12e6099083e771f6b49}{isEndOfYear}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa5d6d10cc63a18bbf47552b9c0ae9150}{isFuture}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ isImmutable():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa9ff8d3d003236137e71784ebc410f07}{isLastOfMonth}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a7c7acc5dcd823781c3db16369895db1b}{isLeapYear}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ae11205675e7d6f2062a1b508aa53a902}{isLongIsoYear}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a61c2cc898c4a1460ffab934c84839d47}{isLongYear}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aefe93d47edb9cfadb34668d05e39956e}{isMidday}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa578b0a141beacdc8a9bd66a7eee236d}{isMidnight}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ isModifiableUnit(\$unit):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ isMutable():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_afc3dddd8778f991c5b386b45b709767f}{isNowOrFuture}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ad83579a1f85fb24353c175f72c86f3aa}{isNowOrPast}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a94d9d1bfe25492463a0f302ea98d68c6}{isPast}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6f18d2a92636029dbe4b446bfe9feaf6}{isSameAs}}(\textcolor{keywordtype}{string}\ \$format,\ DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a36cd85038379b485e6f318c652b6ff8c}{isSameMonth}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date,\ \textcolor{keywordtype}{bool}\ \$ofSameYear\ =\ \textcolor{keyword}{true}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a812a956e81daef1bc37c9aa6676bf526}{isSameQuarter}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date,\ \textcolor{keywordtype}{bool}\ \$ofSameYear\ =\ \textcolor{keyword}{true}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8f7e39bc9da8255164bacb9d7be8b443}{isSameUnit}}(\textcolor{keywordtype}{string}\ \$unit,\ DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac5de858c40cb034663e4ed23bd296f92}{isStartOfCentury}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a29f0eb65349bc49f7a1b37ccd75da55d}{isStartOfDay}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{bool}\ \$checkMicroseconds\ =\ \textcolor{keyword}{false},\ Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_acfa8566d591c7f545a14cedac75683cf}{isStartOfDecade}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_abffeab8a5464bcfc38197638b146163f}{isStartOfHour}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a1768494506221cbde1324d66bd54b795}{isStartOfMillennium}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a3169960fc21e9f50d07863079f2bba54}{isStartOfMillisecond}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a61bfc6d9dd44e88d844c8af5836bd5ca}{isStartOfMinute}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_adf078aefa91fcff8c5753c17398f5291}{isStartOfMonth}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4d32bc106a2070852ca4e80b714070dd}{isStartOfQuarter}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_acd17c699cc59b86cefe2c016855cdacc}{isStartOfSecond}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2903879d301477a478849711e01f9cde}{isStartOfTime}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a272aca8851c5389c1f7336e8f21e51bd}{isStartOfUnit}}(Unit\ \$unit,\ Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null},\ mixed\ ...\$params):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a973de2d5d6f0d1b1c9ef7f8a6d4fb588}{isStartOfWeek}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null},\ WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$weekStartsAt\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_af6988963c29a173f4585785982f63ba8}{isStartOfYear}}(Unit|DateInterval|Closure|CarbonConverterInterface|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$interval\ =\ \textcolor{keyword}{null}):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ isStrictModeEnabled():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a56353ab1f16bf8cb483676ed0d3e048a}{isToday}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2a7a4ce57d40edc919e14b6d5d1270da}{isTomorrow}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a108fc2e64427c0ccff8a0ef18a63aa56}{isWeekday}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aed776005012b7c3ca5c61269ccc25dec}{isWeekend}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a666e8b5c3b6ef3b0905019db86f15102}{isYesterday}}():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_af98dd4bd6e82295e46ca6d59fe345ce0}{isoFormat}}(\textcolor{keywordtype}{string}\ \$format,\ ?\textcolor{keywordtype}{string}\ \$originalFormat\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ isoWeek(\$week\ =\ \textcolor{keyword}{null},\ \$dayOfWeek\ =\ \textcolor{keyword}{null},\ \$dayOfYear\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ isoWeekYear(\$year\ =\ \textcolor{keyword}{null},\ \$dayOfWeek\ =\ \textcolor{keyword}{null},\ \$dayOfYear\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa67cb0ad3c27e04c66ec762b223451a5}{isoWeekday}}(WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$value\ =\ \textcolor{keyword}{null}):\ static|\mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ isoWeeksInYear(\$dayOfWeek\ =\ \textcolor{keyword}{null},\ \$dayOfYear\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_ad402d8679325bc514874370f02b5c2ac}{jsonSerialize}}():\ mixed;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aedf1d20d5c81c57e1529c0b752f514d8}{lastOfMonth}}(\$dayOfWeek\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa9b28f18d94bfb0f6de8b22adee2a87a}{lastOfQuarter}}(\$dayOfWeek\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2f3d27ca425ea272e681d70ec1f2cd1a}{lastOfYear}}(\$dayOfWeek\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a0705d5a6134b0d8d6c0f754e127f2da0}{lessThan}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a39f9ac272366bcab5e9748de7ed534f1}{lessThanOrEqualTo}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a04c6c1621af937dd7aa2016a01f55865}{locale}}(?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{string}\ ...\$fallbackLocales):\ static|\mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ localeHasDiffOneDayWords(\textcolor{keywordtype}{string}\ \$locale):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ localeHasDiffSyntax(\textcolor{keywordtype}{string}\ \$locale):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ localeHasDiffTwoDayWords(\textcolor{keywordtype}{string}\ \$locale):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ localeHasPeriodSyntax(\$locale);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ localeHasShortUnits(\textcolor{keywordtype}{string}\ \$locale):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8b7d99cb160af4275654a265538f5431}{lt}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a927e29b3e83781fe8c33ff47f072c930}{lte}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ macro(\textcolor{keywordtype}{string}\ \$name,\ ?callable\ \$macro):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ make(\$var,\ DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a56d9fc87df339998f88486b0b09214c0}{max}}(\$date\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6d48af6c0a70221fda8bda4e99042e7f}{maximum}}(\$date\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a20ed85a5f294de54f7f56b182a9f6076}{meridiem}}(\textcolor{keywordtype}{bool}\ \$isLower\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9a9885a3f4666fc6d37d93a7aff616dc}{midDay}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa30b199f9fa7f4a6520e728618735a2d}{min}}(\$date\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2f9723080510d9fc8222037d9c50de24}{minimum}}(\$date\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ mixin(\textcolor{keywordtype}{object}|\textcolor{keywordtype}{string}\ \$mixin):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\ \ \ \ \#[ReturnTypeWillChange]}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_acca5e14773545353ff843912ee914f24}{modify}}(\$modify);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a10c6f30f5f7da779d567f454d07dc529}{ne}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a29f125315f3bb3970faaa70c4761e05b}{next}}(\$modifier\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_af5b23c6e208d1db5a979a8fc8444d215}{nextWeekday}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a95abf73854dac9f85e1142ccdd83d161}{nextWeekendDay}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ab967d56bcb9d676d8bcf02d5854b6cfb}{notEqualTo}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_symfony_1_1_component_1_1_clock_a80593ccdc0339775ddd5d82c37ca4f6b}{now}}(DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a83235bd939725ea85dcb738851a7b3c1}{nowWithSameTz}}():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a28b52ad2ad494814a43562cb5e91eeb1}{nthOfMonth}}(\$nth,\ \$dayOfWeek);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a35f8072d37a9b3380cc8a3ccf5d20126}{nthOfQuarter}}(\$nth,\ \$dayOfWeek);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ae2831136e4303f8d187d0bd3350ad240}{nthOfYear}}(\$nth,\ \$dayOfWeek);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a769fcd5d797ccd95c1dc3d97d0f8d2a9}{ordinal}}(\textcolor{keywordtype}{string}\ \$key,\ ?\textcolor{keywordtype}{string}\ \$period\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ parse(DateTimeInterface|WeekDay|Month|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}|\textcolor{keyword}{null}\ \$time,\ DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ parseFromLocale(\textcolor{keywordtype}{string}\ \$time,\ ?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{keyword}{null},\ DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ pluralUnit(\textcolor{keywordtype}{string}\ \$unit):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac5b03a239af61aee95a7f633f857156a}{previous}}(\$modifier\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a7d39a90ad059a172cd75a34dcea053a5}{previousWeekday}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a14c6a8bd1d496e0d75a9ad2a0e34d73c}{previousWeekendDay}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a3868d62595946c978f9a2fd71bd3fab8}{range}}(\$end\ =\ \textcolor{keyword}{null},\ \$interval\ =\ \textcolor{keyword}{null},\ \$unit\ =\ \textcolor{keyword}{null}):\ CarbonPeriod;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ rawAdd(DateInterval\ \$interval):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ rawCreateFromFormat(\textcolor{keywordtype}{string}\ \$format,\ \textcolor{keywordtype}{string}\ \$time,\ \$timezone\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8a286834d12b4f605f50ed84b3e3723a}{rawFormat}}(\textcolor{keywordtype}{string}\ \$format):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ rawParse(DateTimeInterface|WeekDay|Month|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}|\textcolor{keyword}{null}\ \$time,\ DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ rawSub(DateInterval\ \$interval):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ resetMacros():\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ resetMonthsOverflow():\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ resetToStringFormat():\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ resetYearsOverflow():\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa7e03d9f8ab1bc03d208e92dd22c8e56}{round}}(DateInterval|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$precision\ =\ 1,\ callable|\textcolor{keywordtype}{string}\ \$function\ =\ \textcolor{stringliteral}{'round'}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ roundUnit(\textcolor{keywordtype}{string}\ \$unit,\ DateInterval|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$precision\ =\ 1,\ callable|\textcolor{keywordtype}{string}\ \$function\ =\ \textcolor{stringliteral}{'round'}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa144be868cb85412815637e7c3c2b555}{roundWeek}}(WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$weekStartsAt\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ secondsSinceMidnight():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ secondsUntilEndOfDay():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4d9813fea8525b19a1d370eeb8fe41d6}{serialize}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ serializeUsing(callable|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$format):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \textcolor{keyword}{set}(\mbox{\hyperlink{namespace_carbon_a49ff953eb371b3b3498ff4f9280d2d42}{Unit}}|\mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}|\textcolor{keywordtype}{string}\ \mbox{\hyperlink{namespace_symfony_1_1_component_1_1_routing_1_1_loader_1_1_configurator_1_1_traits_a58551b63ba97fb35b928f11f36b1fac6}{\$name}},\ DateTimeZone|\mbox{\hyperlink{namespace_carbon_a3c6c2c22a96bdc8eae207fe0230d92a7}{Month}}|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}|\textcolor{keyword}{null}\ \$value\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a5c82e1bd4bec76016579a5911992c7fe}{setDate}}(\textcolor{keywordtype}{int}\ \$year,\ \textcolor{keywordtype}{int}\ \$month,\ \textcolor{keywordtype}{int}\ \$day):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a7c882326f96aa4cf077de8949bd00fb4}{setDateFrom}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a541d1f25cf78a9bbf1186868d146ed69}{setDateTime}}(\textcolor{keywordtype}{int}\ \$year,\ \textcolor{keywordtype}{int}\ \$month,\ \textcolor{keywordtype}{int}\ \$day,\ \textcolor{keywordtype}{int}\ \$hour,\ \textcolor{keywordtype}{int}\ \$minute,\ \textcolor{keywordtype}{int}\ \$second\ =\ 0,\ \textcolor{keywordtype}{int}\ \$microseconds\ =\ 0):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ab9c441c78d12b6738ff33731433dca5a}{setDateTimeFrom}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_acfea640e938f1da6a42dad38670ea634}{setDaysFromStartOfWeek}}(\textcolor{keywordtype}{int}\ \$numberOfDays,\ WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$weekStartsAt\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ setFallbackLocale(\textcolor{keywordtype}{string}\ \$locale):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ setHumanDiffOptions(\textcolor{keywordtype}{int}\ \$humanDiffOptions):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ae2a9f343d8c491757cd789edd042b697}{setISODate}}(\textcolor{keywordtype}{int}\ \$year,\ \textcolor{keywordtype}{int}\ \$week,\ \textcolor{keywordtype}{int}\ \$day\ =\ 1):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_acd6153b26c4cbb423423e730f0f244d7}{setLocalTranslator}}(TranslatorInterface\ \mbox{\hyperlink{discover-d234df6a22ae2b9b097ac6e3772bd950_8php_ad1bd0a7c70da186307de0136d0f0c2e3}{\$translator}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_symfony_1_1_contracts_1_1_translation_ab6643b93f57377aaca6ccff3a7b24022}{setLocale}}(\textcolor{keywordtype}{string}\ \$locale):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ setMidDayAt(\$hour);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ setTestNow(mixed\ \$testNow\ =\ \textcolor{keyword}{null}):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ setTestNowAndTimezone(\$testNow\ =\ \textcolor{keyword}{null},\ \$timezone\ =\ \textcolor{keyword}{null}):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_afc2a58e4d5d56aed9b53f4fa9c6d2cfa}{setTime}}(\textcolor{keywordtype}{int}\ \$hour,\ \textcolor{keywordtype}{int}\ \$minute,\ \textcolor{keywordtype}{int}\ \$second\ =\ 0,\ \textcolor{keywordtype}{int}\ \$microseconds\ =\ 0):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6be7ea38436eaa66eb09300ec3236bc6}{setTimeFrom}}(DateTimeInterface|\textcolor{keywordtype}{string}\ \$date):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a0f4b03bd74c6366604c13e10a5f476d5}{setTimeFromTimeString}}(\textcolor{keywordtype}{string}\ \$time):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_af6c2d7f4e67aa3285de3bc5ac80289cb}{setTimestamp}}(\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$timestamp):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa861c8e9c2decd74377f332a9a54ad74}{setTimezone}}(DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}\ \$timeZone):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ setToStringFormat(Closure|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$format):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ setTranslator(TranslatorInterface\ \mbox{\hyperlink{discover-d234df6a22ae2b9b097ac6e3772bd950_8php_ad1bd0a7c70da186307de0136d0f0c2e3}{\$translator}}):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa19f5a91fe1685d68c4a6c6bc88b476d}{setUnit}}(\textcolor{keywordtype}{string}\ \$unit,\ Month|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}|\textcolor{keyword}{null}\ \$value\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ setUnitNoOverflow(\textcolor{keywordtype}{string}\ \$valueUnit,\ \textcolor{keywordtype}{int}\ \$value,\ \textcolor{keywordtype}{string}\ \$overflowUnit):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ setWeekendDays(array\ \$days):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8ef27b4be15c75b142f0a532de5bc15c}{settings}}(array\ \$settings):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ad03b2eabda910ceea0a32113013f0d00}{shiftTimezone}}(DateTimeZone|\textcolor{keywordtype}{string}\ \$value):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ shouldOverflowMonths():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ shouldOverflowYears():\ bool;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ since(\$other\ =\ \textcolor{keyword}{null},\ \$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ 1,\ \$options\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ singularUnit(\textcolor{keywordtype}{string}\ \$unit):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ sleep(\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$seconds):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOf(Unit|\textcolor{keywordtype}{string}\ \$unit,\ mixed\ ...\$params):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfCentury();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfDay();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfDecade();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfHour():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfMillennium();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfMillisecond():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfMinute():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfMonth();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfQuarter();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfSecond():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfWeek(WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$weekStartsAt\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ startOfYear();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\ \ \ \ \#[ReturnTypeWillChange]}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ sub(\$unit,\ \$value\ =\ 1,\ ?\textcolor{keywordtype}{bool}\ \$overflow\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ subRealUnit(\$unit,\ \$value\ =\ 1):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ subUTCUnit(\$unit,\ \$value\ =\ 1):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ subUnit(Unit|\textcolor{keywordtype}{string}\ \$unit,\ \$value\ =\ 1,\ ?\textcolor{keywordtype}{bool}\ \$overflow\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a066c2e70d2f0ffbd31586b0b1db1a5d1}{subUnitNoOverflow}}(\textcolor{keywordtype}{string}\ \$valueUnit,\ \textcolor{keywordtype}{int}\ \$value,\ \textcolor{keywordtype}{string}\ \$overflowUnit):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ subtract(\$unit,\ \$value\ =\ 1,\ ?\textcolor{keywordtype}{bool}\ \$overflow\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ timespan(\$other\ =\ \textcolor{keyword}{null},\ \$timezone\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ timestamp(\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$timestamp):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2e867f36ca91bf38eeb95f0d72ba60de}{timezone}}(DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}\ \$value):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ to(\$other\ =\ \textcolor{keyword}{null},\ \$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ 1,\ \$options\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a658defb34762c8f40085aec87e16ba1a}{toArray}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a37557b34f282e30c585ac6a01c4ed617}{toAtomString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a469c8ba0aa31bb8ad1f7d3479d5227f2}{toCookieString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac2c5ff27ee47c93dc3940674506631b0}{toDate}}():\ DateTime;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a8e48a2392d146d9358284c2edcba9745}{toDateString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aad24f8d2b983e556231f3e65be1a4c94}{toDateTime}}():\ DateTime;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a25d701daaf8fbd3e4a344385f7f38fed}{toDateTimeImmutable}}():\ DateTimeImmutable;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9486aa6a0a87ff1b489432bf5d20d181}{toDateTimeLocalString}}(\textcolor{keywordtype}{string}\ \$unitPrecision\ =\ \textcolor{stringliteral}{'second'}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aed79ea64f51a887efd39dfb5396fe6da}{toDateTimeString}}(\textcolor{keywordtype}{string}\ \$unitPrecision\ =\ \textcolor{stringliteral}{'second'}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ae17905053013dff69e03367d6a1c8b18}{toDayDateTimeString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a19210a2e9b2a813fd9079d1729f580ea}{toFormattedDateString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2cc7bf5645da0016290c166545045aa5}{toFormattedDayDateString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa606df60de34f7c395c023ef5a554978}{toISOString}}(\textcolor{keywordtype}{bool}\ \$keepOffset\ =\ \textcolor{keyword}{false}):\ ?\mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ toImmutable();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a82c53db8c00b7e0ff2d5cbb779310f44}{toIso8601String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4fa2a7c4a957b3dc8a231c6c9ba12c08}{toIso8601ZuluString}}(\textcolor{keywordtype}{string}\ \$unitPrecision\ =\ \textcolor{stringliteral}{'second'}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2108d0f07e9bca6160bf5885703de972}{toJSON}}():\ ?\mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ toMutable();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ toNow(\$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ 1,\ \$options\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a1a405d79c79d8954cad698bb9f46065c}{toObject}}():\ object;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a3f73ce285a1f107005571856aab03de3}{toPeriod}}(\$end\ =\ \textcolor{keyword}{null},\ \$interval\ =\ \textcolor{keyword}{null},\ \$unit\ =\ \textcolor{keyword}{null}):\ CarbonPeriod;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a88ef74b5c5cb45bb8d13dabb03854972}{toRfc1036String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_adb465169dd0f6e8fee5dd40c5b39d618}{toRfc1123String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a2adfe7a61225d3ce9fa318641104b540}{toRfc2822String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aa818836c92084ca871fa9c2b326adcb4}{toRfc3339String}}(\textcolor{keywordtype}{bool}\ \$extended\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a80d48b47e88eb04b4cd54beae2c03fff}{toRfc7231String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4d157add79077bd87f1edfe4b157ca02}{toRfc822String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ab79b8fdef9245e711c5881068956ff73}{toRfc850String}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac771e03aac742daaf439b67757820834}{toRssString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_para_test_1_1_j_unit_ac6606ebe91c8ac66a2c314c79f5ab013a42caf0cc266a86fc140402875b8c8fee}{toString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9313107d8be89d56828e2822f86c0fcc}{toTimeString}}(\textcolor{keywordtype}{string}\ \$unitPrecision\ =\ \textcolor{stringliteral}{'second'}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a63a152cc2687c5f49c9e7ff7d497f6cc}{toW3cString}}():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ today(DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ tomorrow(DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a138c9ab4dc139a2d7157ea240a504908}{translate}}(\textcolor{keywordtype}{string}\ \$key,\ array\ \$parameters\ =\ [],\ \textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}|\textcolor{keyword}{null}\ \$number\ =\ \textcolor{keyword}{null},\ ?TranslatorInterface\ \mbox{\hyperlink{discover-d234df6a22ae2b9b097ac6e3772bd950_8php_ad1bd0a7c70da186307de0136d0f0c2e3}{\$translator}}\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$altNumbers\ =\ \textcolor{keyword}{false}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ac53a5f577ecf7a337c0517715e311c18}{translateNumber}}(\textcolor{keywordtype}{int}\ \$number):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ translateTimeString(\textcolor{keywordtype}{string}\ \$timeString,\ ?\textcolor{keywordtype}{string}\ \$from\ =\ \textcolor{keyword}{null},\ ?\textcolor{keywordtype}{string}\ \$to\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{int}\ \$mode\ =\ self::TRANSLATE\_ALL):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9578d4c40dd37a8cdaf584e6e942cf2f}{translateTimeStringTo}}(\textcolor{keywordtype}{string}\ \$timeString,\ ?\textcolor{keywordtype}{string}\ \$to\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ translateWith(TranslatorInterface\ \mbox{\hyperlink{discover-d234df6a22ae2b9b097ac6e3772bd950_8php_ad1bd0a7c70da186307de0136d0f0c2e3}{\$translator}},\ \textcolor{keywordtype}{string}\ \$key,\ array\ \$parameters\ =\ [],\ \$number\ =\ \textcolor{keyword}{null}):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a85c641ec71992336e1589b28b4107791}{translatedFormat}}(\textcolor{keywordtype}{string}\ \$format):\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a356286d134a2d9657b9e050d36f5b07d}{tz}}(DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$value\ =\ \textcolor{keyword}{null}):\ static|\mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ unix():\ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ until(\$other\ =\ \textcolor{keyword}{null},\ \$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ 1,\ \$options\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ useMonthsOverflow(\textcolor{keywordtype}{bool}\ \$monthsOverflow\ =\ \textcolor{keyword}{true}):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ useStrictMode(\textcolor{keywordtype}{bool}\ \$strictModeEnabled\ =\ \textcolor{keyword}{true}):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ useYearsOverflow(\textcolor{keywordtype}{bool}\ \$yearsOverflow\ =\ \textcolor{keyword}{true}):\ void;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a7f421907507d865c0b5c0dc407d6e7da}{utc}}():\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a7d8452c1fda0a0fdbbdd6d0c31e60a33}{utcOffset}}(?\textcolor{keywordtype}{int}\ \$minuteOffset\ =\ \textcolor{keyword}{null}):\ static|\mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ valueOf():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_aa686322c2078fbfc8f319421be9ef1e1}{float}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ week(\$week\ =\ \textcolor{keyword}{null},\ \$dayOfWeek\ =\ \textcolor{keyword}{null},\ \$dayOfYear\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ weekYear(\$year\ =\ \textcolor{keyword}{null},\ \$dayOfWeek\ =\ \textcolor{keyword}{null},\ \$dayOfYear\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a829a710007dc8f1213d227a018e65e9b}{weekday}}(WeekDay|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$value\ =\ \textcolor{keyword}{null}):\ static|\mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ weeksInYear(\$dayOfWeek\ =\ \textcolor{keyword}{null},\ \$dayOfYear\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ withTestNow(mixed\ \$testNow,\ callable\ \$callback):\ mixed;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ yesterday(DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezone\ =\ \textcolor{keyword}{null}):\ static;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ </methods>}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

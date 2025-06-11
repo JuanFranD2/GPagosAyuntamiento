@@ -1,0 +1,33 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/breeze/stubs/livewire-\/functional/resources/views/livewire/pages/auth/register.blade.\+php File Reference}
+\hypertarget{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2pages_2auth_2register_8blade_8php}{}\label{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2pages_2auth_2register_8blade_8php}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/breeze/stubs/livewire-\/functional/resources/views/livewire/pages/auth/register.blade.php@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/breeze/stubs/livewire-\/functional/resources/views/livewire/pages/auth/register.blade.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2pages_2auth_2register_8blade_8php_ad1564cd016714695281933da0f4bca63}{\$register}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2pages_2auth_2register_8blade_8php_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2pages_2auth_2register_8blade_8php_ad1564cd016714695281933da0f4bca63}\index{register.blade.php@{register.blade.php}!\$register@{\$register}}
+\index{\$register@{\$register}!register.blade.php@{register.blade.php}}
+\doxysubsubsection{\texorpdfstring{\$register}{\$register}}
+{\footnotesize\ttfamily \label{vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2pages_2auth_2register_8blade_8php_ad1564cd016714695281933da0f4bca63} 
+\$\mbox{\hyperlink{resources_2views_2livewire_2pages_2auth_2register_8blade_8php_acc294a6cc8e69743746820e3d15e3f78}{register}}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \$validated\ =\ \$this-\/>validate();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$validated[\textcolor{stringliteral}{'password'}]\ =\ Hash::make(\$validated[\textcolor{stringliteral}{'password'}]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ event(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_illuminate_1_1_auth_1_1_events_1_1_registered}{Registered}}(\$user\ =\ User::create(\$validated)));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ Auth::login(\$user);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$this-\/>redirect(route(\textcolor{stringliteral}{'dashboard'},\ absolute:\ \textcolor{keyword}{false}),\ navigate:\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

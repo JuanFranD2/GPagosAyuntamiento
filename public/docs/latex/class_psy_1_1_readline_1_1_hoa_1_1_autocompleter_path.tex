@@ -1,0 +1,141 @@
+\doxysection{Autocompleter\+Path Class Reference}
+\hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path}{}\label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path}\index{AutocompleterPath@{AutocompleterPath}}
+Inheritance diagram for Autocompleter\+Path\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a7d4ed0024c18b49c4693d7d3b16959ff}{\+\_\+\+\_\+construct}} (?string \$root=null, ?\textbackslash{}\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_closure}{Closure}} \$iterator\+Factory=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a5514b4c3989845da6ff89d111d2df81e}{complete}} (\&\$prefix)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_ae1e303c58d33f57ea224c79e85ef9d57}{get\+Word\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a68fcf449cf99d871bf2b1658a804a42b}{set\+Root}} (string \$root)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_aad5f81bb01a9f12cfb3fc38ca462a90d}{get\+Root}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a4d1f889f66dc21095b8838d74419763d}{set\+Iterator\+Factory}} (\textbackslash{}\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_closure}{Closure}} \$iterator\+Factory)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_ab5424199ee5b8ae1b260b08d3c83b84f}{get\+Iterator\+Factory}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_ac1bd1b84ab68e31864f7ce8c38895df8}{get\+Default\+Iterator\+Factory}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_adf70ec9001e56ac799bd62de7047671e}{PWD}} = null
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a15ea8c78d28d8d9b6023dedbe622c731}{\$\+\_\+root}} = null
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a21383c90fdd23bb5343d4ec71a57f8a7}{\$\+\_\+iterator\+Factory}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \textbackslash{}\+Hoa\textbackslash{}\+Console\textbackslash{}\+Readline\textbackslash{}\+Autocompleter\textbackslash{}\+Path.
+
+Path autocompleter. 
+
+\label{doc-constructors}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a7d4ed0024c18b49c4693d7d3b16959ff}\index{AutocompleterPath@{AutocompleterPath}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a7d4ed0024c18b49c4693d7d3b16959ff} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?string}]{\$root}{ = {\ttfamily null}, }\item[{?\textbackslash{}\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_closure}{Closure}}}]{\$iterator\+Factory}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor. 
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a5514b4c3989845da6ff89d111d2df81e}\index{AutocompleterPath@{AutocompleterPath}!complete@{complete}}
+\index{complete@{complete}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{complete()}{complete()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a5514b4c3989845da6ff89d111d2df81e} 
+complete (\begin{DoxyParamCaption}\item[{\&}]{\$prefix}{}\end{DoxyParamCaption})}
+
+Complete a word. Returns null for no word, a full-\/word or an array of full-\/words. 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_autocompleter_a5514b4c3989845da6ff89d111d2df81e}{Autocompleter}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_ac1bd1b84ab68e31864f7ce8c38895df8}\index{AutocompleterPath@{AutocompleterPath}!getDefaultIteratorFactory@{getDefaultIteratorFactory}}
+\index{getDefaultIteratorFactory@{getDefaultIteratorFactory}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{getDefaultIteratorFactory()}{getDefaultIteratorFactory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_ac1bd1b84ab68e31864f7ce8c38895df8} 
+get\+Default\+Iterator\+Factory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get default iterator factory (based on \textbackslash{}\+Directory\+Iterator). \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_ab5424199ee5b8ae1b260b08d3c83b84f}\index{AutocompleterPath@{AutocompleterPath}!getIteratorFactory@{getIteratorFactory}}
+\index{getIteratorFactory@{getIteratorFactory}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{getIteratorFactory()}{getIteratorFactory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_ab5424199ee5b8ae1b260b08d3c83b84f} 
+get\+Iterator\+Factory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get iterator factory. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_aad5f81bb01a9f12cfb3fc38ca462a90d}\index{AutocompleterPath@{AutocompleterPath}!getRoot@{getRoot}}
+\index{getRoot@{getRoot}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{getRoot()}{getRoot()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_aad5f81bb01a9f12cfb3fc38ca462a90d} 
+get\+Root (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get root. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_ae1e303c58d33f57ea224c79e85ef9d57}\index{AutocompleterPath@{AutocompleterPath}!getWordDefinition@{getWordDefinition}}
+\index{getWordDefinition@{getWordDefinition}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{getWordDefinition()}{getWordDefinition()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_ae1e303c58d33f57ea224c79e85ef9d57} 
+get\+Word\+Definition (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get definition of a word. 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_autocompleter_ae1e303c58d33f57ea224c79e85ef9d57}{Autocompleter}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a4d1f889f66dc21095b8838d74419763d}\index{AutocompleterPath@{AutocompleterPath}!setIteratorFactory@{setIteratorFactory}}
+\index{setIteratorFactory@{setIteratorFactory}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{setIteratorFactory()}{setIteratorFactory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a4d1f889f66dc21095b8838d74419763d} 
+set\+Iterator\+Factory (\begin{DoxyParamCaption}\item[{\textbackslash{}\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_closure}{Closure}}}]{\$iterator\+Factory}{}\end{DoxyParamCaption})}
+
+Set iterator factory (a finder). \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a68fcf449cf99d871bf2b1658a804a42b}\index{AutocompleterPath@{AutocompleterPath}!setRoot@{setRoot}}
+\index{setRoot@{setRoot}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{setRoot()}{setRoot()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a68fcf449cf99d871bf2b1658a804a42b} 
+set\+Root (\begin{DoxyParamCaption}\item[{string}]{\$root}{}\end{DoxyParamCaption})}
+
+Set root. 
+
+\label{doc-variable-members}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a21383c90fdd23bb5343d4ec71a57f8a7}\index{AutocompleterPath@{AutocompleterPath}!\$\_iteratorFactory@{\$\_iteratorFactory}}
+\index{\$\_iteratorFactory@{\$\_iteratorFactory}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{\$\_iteratorFactory}{\$\_iteratorFactory}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a21383c90fdd23bb5343d4ec71a57f8a7} 
+\$\+\_\+iterator\+Factory = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Iterator factory. Please, see the self\+::set\+Iterator\+Factory method. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a15ea8c78d28d8d9b6023dedbe622c731}\index{AutocompleterPath@{AutocompleterPath}!\$\_root@{\$\_root}}
+\index{\$\_root@{\$\_root}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{\$\_root}{\$\_root}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_a15ea8c78d28d8d9b6023dedbe622c731} 
+\$\+\_\+root = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Root. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_adf70ec9001e56ac799bd62de7047671e}\index{AutocompleterPath@{AutocompleterPath}!PWD@{PWD}}
+\index{PWD@{PWD}!AutocompleterPath@{AutocompleterPath}}
+\doxysubsubsection{\texorpdfstring{PWD}{PWD}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_autocompleter_path_adf70ec9001e56ac799bd62de7047671e} 
+const PWD = null}
+
+Root is the current working directory. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Readline/\+Hoa/\mbox{\hyperlink{_autocompleter_path_8php}{Autocompleter\+Path.\+php}}\end{DoxyCompactItemize}

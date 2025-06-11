@@ -1,0 +1,103 @@
+\doxysection{Converter Class Reference}
+\hypertarget{class_league_1_1_uri_1_1_idna_1_1_converter}{}\label{class_league_1_1_uri_1_1_idna_1_1_converter}\index{Converter@{Converter}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter_add9028ccab9d9e721d5299e4675619b3}{to\+Ascii\+Or\+Fail}} (Stringable\texorpdfstring{$\vert$}{|}string \$domain, \mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_option}{Option}}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$options=null)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter_acbce2178c287c290a13bfb1d6e0036a6}{to\+Ascii}} (Stringable\texorpdfstring{$\vert$}{|}string \$domain, \mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_option}{Option}}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$options=null)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter_a8daacfad8ca6bfe149e33a760d0ce64a}{to\+Unicode\+Or\+Fail}} (Stringable\texorpdfstring{$\vert$}{|}string \$domain, \mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_option}{Option}}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$options=null)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter_afa8326d0bec9d9776ed25786c184b31b}{to\+Unicode}} (Stringable\texorpdfstring{$\vert$}{|}string \$domain, \mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_option}{Option}}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$options=null)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter_ad4f900a1b8b1aeae134e3200941e87d1}{is\+Idn}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$domain)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxySeeAlso}{See also}
+\href{https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/uidna_8h.html}{\texttt{https\+://unicode-\/org.\+github.\+io/icu-\/docs/apidoc/released/icu4c/uidna\+\_\+8h.\+html}} 
+\end{DoxySeeAlso}
+
+
+\label{doc-func-members}
+\Hypertarget{class_league_1_1_uri_1_1_idna_1_1_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_idna_1_1_converter_ad4f900a1b8b1aeae134e3200941e87d1}\index{Converter@{Converter}!isIdn@{isIdn}}
+\index{isIdn@{isIdn}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{isIdn()}{isIdn()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_idna_1_1_converter_ad4f900a1b8b1aeae134e3200941e87d1} 
+is\+Idn (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$domain}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tells whether the submitted host is a valid IDN regardless of its format.
+
+Returns false if the host is invalid or if its conversion yield the same result \Hypertarget{class_league_1_1_uri_1_1_idna_1_1_converter_acbce2178c287c290a13bfb1d6e0036a6}\index{Converter@{Converter}!toAscii@{toAscii}}
+\index{toAscii@{toAscii}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{toAscii()}{toAscii()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_idna_1_1_converter_acbce2178c287c290a13bfb1d6e0036a6} 
+to\+Ascii (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string}]{\$domain}{, }\item[{\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_option}{Option}}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts the input to its IDNA ASCII form.
+
+This method returns the string converted to IDN ASCII form
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & if the string cannot be converted to ASCII using IDN UTS46 algorithm \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_league_1_1_uri_1_1_idna_1_1_converter_add9028ccab9d9e721d5299e4675619b3}\index{Converter@{Converter}!toAsciiOrFail@{toAsciiOrFail}}
+\index{toAsciiOrFail@{toAsciiOrFail}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{toAsciiOrFail()}{toAsciiOrFail()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_idna_1_1_converter_add9028ccab9d9e721d5299e4675619b3} 
+to\+Ascii\+Or\+Fail (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string}]{\$domain}{, }\item[{\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_option}{Option}}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts the input to its IDNA ASCII form or throw on failure.
+
+\begin{DoxySeeAlso}{See also}
+Converter\+::to\+Ascii()
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & if the string cannot be converted to UNICODE using IDN UTS46 algorithm \\
+\hline
+{\em Conversion\+Failed} & if the conversion returns error \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_league_1_1_uri_1_1_idna_1_1_converter_afa8326d0bec9d9776ed25786c184b31b}\index{Converter@{Converter}!toUnicode@{toUnicode}}
+\index{toUnicode@{toUnicode}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{toUnicode()}{toUnicode()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_idna_1_1_converter_afa8326d0bec9d9776ed25786c184b31b} 
+to\+Unicode (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string}]{\$domain}{, }\item[{\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_option}{Option}}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts the input to its IDNA UNICODE form.
+
+This method returns the string converted to IDN UNICODE form
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & if the string cannot be converted to UNICODE using IDN UTS46 algorithm \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_league_1_1_uri_1_1_idna_1_1_converter_a8daacfad8ca6bfe149e33a760d0ce64a}\index{Converter@{Converter}!toUnicodeOrFail@{toUnicodeOrFail}}
+\index{toUnicodeOrFail@{toUnicodeOrFail}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{toUnicodeOrFail()}{toUnicodeOrFail()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_idna_1_1_converter_a8daacfad8ca6bfe149e33a760d0ce64a} 
+to\+Unicode\+Or\+Fail (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string}]{\$domain}{, }\item[{\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_option}{Option}}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts the input to its IDNA UNICODE form or throw on failure.
+
+\begin{DoxySeeAlso}{See also}
+Converter\+::to\+Unicode()
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Conversion\+Failed} & if the conversion returns error \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/uri-\/interfaces/\+Idna/\mbox{\hyperlink{league_2uri-interfaces_2_idna_2_converter_8php}{Converter.\+php}}\end{DoxyCompactItemize}

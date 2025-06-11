@@ -1,0 +1,294 @@
+\doxysection{Translator Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator}{}\label{class_symfony_1_1_component_1_1_translation_1_1_translator}\index{Translator@{Translator}}
+Inheritance diagram for Translator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_translation_1_1_translator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_aae85807e73087f24996579bd6cb42569}{\+\_\+\+\_\+construct}} (string \$locale, ?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_interface}{Message\+Formatter\+Interface}} \$formatter=null, private ?string \$cache\+Dir=null, private bool \$debug=false, private array \$cache\+Vary=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a273136e5893ff406e878816666562030}{set\+Config\+Cache\+Factory}} (Config\+Cache\+Factory\+Interface \$config\+Cache\+Factory)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a2fbf2d76db735aa4cf56b3391bb7124b}{add\+Loader}} (string \$format, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_loader_1_1_loader_interface}{Loader\+Interface}} \$loader)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ac1dc9ed923850151c574de855469422b}{add\+Resource}} (string \$format, mixed \$resource, string \$locale, ?string \$domain=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ab6643b93f57377aaca6ccff3a7b24022}{set\+Locale}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ad532b661eb33c3e755bd3fa8ff1bd7af}{get\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_aa5a31d23135c9b57ae2bc2b1b7174d90}{set\+Fallback\+Locales}} (array \$locales)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a1ba0e6d754495a9c3dd5110a95cdeb11}{get\+Fallback\+Locales}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a2673ba085fdd4acd7142e22944c34256}{trans}} (?string \$id, array \$parameters=\mbox{[}$\,$\mbox{]}, ?string \$domain=null, ?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a4f8d6d2fabc44a04f2e88c5818971eaa}{get\+Catalogue}} (?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a65922ebac5c6d59da543df43777d4ccc}{get\+Catalogues}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Translator\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface_a26335c57b686d81a7c5a56ec91cb68ab}{trans}} (string \$id, array \$parameters=\mbox{[}$\,$\mbox{]}, ?string \$domain=null, ?string \$locale=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a79dac4a40aa2f03009e4e625d2543f3e}{get\+Loaders}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a137b50572cac5c1d8f673d9076eddc74}{load\+Catalogue}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a527fcea36ae1b694efca32596e69f68a}{initialize\+Catalogue}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ae4d2a59dddb4c069873f8218c58bbe35}{do\+Load\+Catalogue}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a00e9dc754233d786825c5019c7dd2315}{compute\+Fallback\+Locales}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ae5dc2d0a08680e85f572b7f544d3ea26}{assert\+Valid\+Locale}} (string \$locale)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_abf928efad81dd9d8014b7ea68b0405a2}{\$catalogues}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_aae85807e73087f24996579bd6cb42569}\index{Translator@{Translator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_aae85807e73087f24996579bd6cb42569} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$locale}{, }\item[{?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_interface}{Message\+Formatter\+Interface}}}]{\$formatter}{ = {\ttfamily null}, }\item[{private ?string}]{\$cache\+Dir}{ = {\ttfamily null}, }\item[{private bool}]{\$debug}{ = {\ttfamily false}, }\item[{private array}]{\$cache\+Vary}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If a locale contains invalid characters \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a2fbf2d76db735aa4cf56b3391bb7124b}\index{Translator@{Translator}!addLoader@{addLoader}}
+\index{addLoader@{addLoader}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{addLoader()}{addLoader()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a2fbf2d76db735aa4cf56b3391bb7124b} 
+add\+Loader (\begin{DoxyParamCaption}\item[{string}]{\$format}{, }\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_loader_1_1_loader_interface}{Loader\+Interface}}}]{\$loader}{}\end{DoxyParamCaption})}
+
+Adds a Loader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$format} & The name of the loader (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+add\+Resource()) 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_ac1dc9ed923850151c574de855469422b}\index{Translator@{Translator}!addResource@{addResource}}
+\index{addResource@{addResource}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{addResource()}{addResource()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_ac1dc9ed923850151c574de855469422b} 
+add\+Resource (\begin{DoxyParamCaption}\item[{string}]{\$format}{, }\item[{mixed}]{\$resource}{, }\item[{string}]{\$locale}{, }\item[{?string}]{\$domain}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Adds a Resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$format} & The name of the loader (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+add\+Loader()) 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$resource} & The resource name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the locale contains invalid characters \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_ae5dc2d0a08680e85f572b7f544d3ea26}\index{Translator@{Translator}!assertValidLocale@{assertValidLocale}}
+\index{assertValidLocale@{assertValidLocale}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{assertValidLocale()}{assertValidLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_ae5dc2d0a08680e85f572b7f544d3ea26} 
+assert\+Valid\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Asserts that the locale is valid, throws an Exception if not.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the locale contains invalid characters \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a00e9dc754233d786825c5019c7dd2315}\index{Translator@{Translator}!computeFallbackLocales@{computeFallbackLocales}}
+\index{computeFallbackLocales@{computeFallbackLocales}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{computeFallbackLocales()}{computeFallbackLocales()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a00e9dc754233d786825c5019c7dd2315} 
+compute\+Fallback\+Locales (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_ae4d2a59dddb4c069873f8218c58bbe35}\index{Translator@{Translator}!doLoadCatalogue@{doLoadCatalogue}}
+\index{doLoadCatalogue@{doLoadCatalogue}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{doLoadCatalogue()}{doLoadCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_ae4d2a59dddb4c069873f8218c58bbe35} 
+do\+Load\+Catalogue (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a4f8d6d2fabc44a04f2e88c5818971eaa}\index{Translator@{Translator}!getCatalogue@{getCatalogue}}
+\index{getCatalogue@{getCatalogue}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{getCatalogue()}{getCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a4f8d6d2fabc44a04f2e88c5818971eaa} 
+get\+Catalogue (\begin{DoxyParamCaption}\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets the catalogue by locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$locale} & The locale or null to use the default\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the locale contains invalid characters \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface_a4f8d6d2fabc44a04f2e88c5818971eaa}{Translator\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a65922ebac5c6d59da543df43777d4ccc}\index{Translator@{Translator}!getCatalogues@{getCatalogues}}
+\index{getCatalogues@{getCatalogues}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{getCatalogues()}{getCatalogues()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a65922ebac5c6d59da543df43777d4ccc} 
+get\+Catalogues (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all catalogues of the instance.
+
+\begin{DoxyReturn}{Returns}
+Message\+Catalogue\+Interface\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface_a65922ebac5c6d59da543df43777d4ccc}{Translator\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a1ba0e6d754495a9c3dd5110a95cdeb11}\index{Translator@{Translator}!getFallbackLocales@{getFallbackLocales}}
+\index{getFallbackLocales@{getFallbackLocales}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{getFallbackLocales()}{getFallbackLocales()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a1ba0e6d754495a9c3dd5110a95cdeb11} 
+get\+Fallback\+Locales (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the fallback locales. \Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a79dac4a40aa2f03009e4e625d2543f3e}\index{Translator@{Translator}!getLoaders@{getLoaders}}
+\index{getLoaders@{getLoaders}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{getLoaders()}{getLoaders()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a79dac4a40aa2f03009e4e625d2543f3e} 
+get\+Loaders (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the loaders.
+
+\begin{DoxyReturn}{Returns}
+Loader\+Interface\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_ad532b661eb33c3e755bd3fa8ff1bd7af}\index{Translator@{Translator}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{getLocale()}{getLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_ad532b661eb33c3e755bd3fa8ff1bd7af} 
+get\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the default locale. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface_ad532b661eb33c3e755bd3fa8ff1bd7af}{Translator\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a527fcea36ae1b694efca32596e69f68a}\index{Translator@{Translator}!initializeCatalogue@{initializeCatalogue}}
+\index{initializeCatalogue@{initializeCatalogue}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{initializeCatalogue()}{initializeCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a527fcea36ae1b694efca32596e69f68a} 
+initialize\+Catalogue (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a137b50572cac5c1d8f673d9076eddc74}\index{Translator@{Translator}!loadCatalogue@{loadCatalogue}}
+\index{loadCatalogue@{loadCatalogue}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{loadCatalogue()}{loadCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a137b50572cac5c1d8f673d9076eddc74} 
+load\+Catalogue (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a273136e5893ff406e878816666562030}\index{Translator@{Translator}!setConfigCacheFactory@{setConfigCacheFactory}}
+\index{setConfigCacheFactory@{setConfigCacheFactory}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{setConfigCacheFactory()}{setConfigCacheFactory()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a273136e5893ff406e878816666562030} 
+set\+Config\+Cache\+Factory (\begin{DoxyParamCaption}\item[{Config\+Cache\+Factory\+Interface}]{\$config\+Cache\+Factory}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_aa5a31d23135c9b57ae2bc2b1b7174d90}\index{Translator@{Translator}!setFallbackLocales@{setFallbackLocales}}
+\index{setFallbackLocales@{setFallbackLocales}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{setFallbackLocales()}{setFallbackLocales()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_aa5a31d23135c9b57ae2bc2b1b7174d90} 
+set\+Fallback\+Locales (\begin{DoxyParamCaption}\item[{array}]{\$locales}{}\end{DoxyParamCaption})}
+
+Sets the fallback locales.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$locales} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If a locale contains invalid characters \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_ab6643b93f57377aaca6ccff3a7b24022}\index{Translator@{Translator}!setLocale@{setLocale}}
+\index{setLocale@{setLocale}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{setLocale()}{setLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_ab6643b93f57377aaca6ccff3a7b24022} 
+set\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})}
+
+Sets the current locale.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the locale contains invalid characters 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_locale_aware_interface_ab6643b93f57377aaca6ccff3a7b24022}{Locale\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_a2673ba085fdd4acd7142e22944c34256}\index{Translator@{Translator}!trans@{trans}}
+\index{trans@{trans}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{trans()}{trans()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_a2673ba085fdd4acd7142e22944c34256} 
+trans (\begin{DoxyParamCaption}\item[{?string}]{\$id}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$domain}{ = {\ttfamily null}, }\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_abf928efad81dd9d8014b7ea68b0405a2}\index{Translator@{Translator}!\$catalogues@{\$catalogues}}
+\index{\$catalogues@{\$catalogues}!Translator@{Translator}}
+\doxysubsubsection{\texorpdfstring{\$catalogues}{\$catalogues}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_abf928efad81dd9d8014b7ea68b0405a2} 
+array \$catalogues = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/translation/\mbox{\hyperlink{symfony_2translation_2_translator_8php}{Translator.\+php}}\end{DoxyCompactItemize}

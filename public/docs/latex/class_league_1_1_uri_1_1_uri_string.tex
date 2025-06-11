@@ -1,0 +1,64 @@
+\doxysection{Uri\+String Class Reference}
+\hypertarget{class_league_1_1_uri_1_1_uri_string}{}\label{class_league_1_1_uri_1_1_uri_string}\index{UriString@{UriString}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_string_a8faf3cfd018c5b56f22382e9c08f9f30}{build}} (array \$components)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_string_a957387a112490973d2374c3d394f65c3}{build\+Uri}} (?string \$scheme, ?string \$authority, string \$path, ?string \$query, ?string \$fragment,)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_string_a4f3d2e0c9c58f7854e34e0bc7aedbb32}{build\+Authority}} (array \$components)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_string_a499fd71eb4b6eecbe17d66b27dd4d66c}{parse\+Authority}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$authority)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_league_1_1_uri_1_1_uri_string_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_uri_string_a8faf3cfd018c5b56f22382e9c08f9f30}\index{UriString@{UriString}!build@{build}}
+\index{build@{build}!UriString@{UriString}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_string_a8faf3cfd018c5b56f22382e9c08f9f30} 
+build (\begin{DoxyParamCaption}\item[{array}]{\$components}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate a URI string representation from its parsed representation returned by \doxylink{namespace_league}{League}\textbackslash{}\+Uri\+String\+::parse() or PHP\textquotesingle{}s parse\+\_\+url.
+
+If you supply your own array, you are responsible for providing valid components without their URI delimiters.
+
+\doxylink{}{\href{https://tools.ietf.org/html/rfc3986\#section-7.5}{\texttt{https\+://tools.\+ietf.\+org/html/rfc3986\#section-\/7.\+5}}  Input\+Component\+Map \$components }\Hypertarget{class_league_1_1_uri_1_1_uri_string_a4f3d2e0c9c58f7854e34e0bc7aedbb32}\index{UriString@{UriString}!buildAuthority@{buildAuthority}}
+\index{buildAuthority@{buildAuthority}!UriString@{UriString}}
+\doxysubsubsection{\texorpdfstring{buildAuthority()}{buildAuthority()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_string_a4f3d2e0c9c58f7854e34e0bc7aedbb32} 
+build\+Authority (\begin{DoxyParamCaption}\item[{array}]{\$components}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate a URI authority representation from its parsed representation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Input\+Component\+Map & {\em \$components} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_league_1_1_uri_1_1_uri_string_a957387a112490973d2374c3d394f65c3}\index{UriString@{UriString}!buildUri@{buildUri}}
+\index{buildUri@{buildUri}!UriString@{UriString}}
+\doxysubsubsection{\texorpdfstring{buildUri()}{buildUri()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_string_a957387a112490973d2374c3d394f65c3} 
+build\+Uri (\begin{DoxyParamCaption}\item[{?string}]{\$scheme}{, }\item[{?string}]{\$authority}{, }\item[{string}]{\$path}{, }\item[{?string}]{\$query}{, }\item[{?string}]{\$fragment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate a URI string representation based on RFC3986 algorithm.
+
+valid URI component MUST be provided without their URI delimiters but properly encoded.
+
+\doxylink{}{\href{https://tools.ietf.org/html/rfc3986\#section-7.5}{\texttt{https\+://tools.\+ietf.\+org/html/rfc3986\#section-\/7.\+5}} }\Hypertarget{class_league_1_1_uri_1_1_uri_string_a499fd71eb4b6eecbe17d66b27dd4d66c}\index{UriString@{UriString}!parseAuthority@{parseAuthority}}
+\index{parseAuthority@{parseAuthority}!UriString@{UriString}}
+\doxysubsubsection{\texorpdfstring{parseAuthority()}{parseAuthority()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_string_a499fd71eb4b6eecbe17d66b27dd4d66c} 
+parse\+Authority (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$authority}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses the URI authority part.
+
+\doxylink{}{Syntax\+Error If the port component is invalid  Authority\+Map }
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/uri-\/interfaces/\mbox{\hyperlink{_uri_string_8php}{Uri\+String.\+php}}\end{DoxyCompactItemize}

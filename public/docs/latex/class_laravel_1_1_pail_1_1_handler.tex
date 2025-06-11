@@ -1,0 +1,84 @@
+\doxysection{Handler Class Reference}
+\hypertarget{class_laravel_1_1_pail_1_1_handler}{}\label{class_laravel_1_1_pail_1_1_handler}\index{Handler@{Handler}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_handler_a9a6f2dbdc08f19c665f4c58b036e8d96}{\+\_\+\+\_\+construct}} (protected \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}} \$container, protected \mbox{\hyperlink{class_laravel_1_1_pail_1_1_files}{Files}} \$files, protected bool \$running\+In\+Console,)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_handler_af30dcee87dac5257c47f8ffeef1874fb}{log}} (\mbox{\hyperlink{class_illuminate_1_1_log_1_1_events_1_1_message_logged}{Message\+Logged}} \$message\+Logged)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_handler_a4c29e9049bec139dd5ea258fb2c1beb7}{set\+Last\+Lifecycle\+Event}} (\mbox{\hyperlink{class_illuminate_1_1_console_1_1_events_1_1_command_starting}{Command\+Starting}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_processing}{Job\+Processing}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_exception_occurred}{Job\+Exception\+Occurred}}\texorpdfstring{$\vert$}{|}null \$event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_handler_a23bc8ca2e76d1a00316744bcab52f62f}{context}} (\mbox{\hyperlink{class_illuminate_1_1_log_1_1_events_1_1_message_logged}{Message\+Logged}} \$message\+Logged)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_events_1_1_command_starting}{Command\+Starting}} \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_processing}{Job\+Processing}} \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_exception_occurred}{Job\+Exception\+Occurred}} null \mbox{\hyperlink{class_laravel_1_1_pail_1_1_handler_abdf11cd2f319654378be93da7bf4fcd4}{\$last\+Lifecycle\+Event}} = null
+\item 
+string \mbox{\hyperlink{class_laravel_1_1_pail_1_1_handler_a7310df19a1051264604a41a2ddc79c3a}{\$artisan\+Command}} = null
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_laravel_1_1_pail_1_1_handler_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_laravel_1_1_pail_1_1_handler_a9a6f2dbdc08f19c665f4c58b036e8d96}\index{Handler@{Handler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Handler@{Handler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_handler_a9a6f2dbdc08f19c665f4c58b036e8d96} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}}}]{\$container}{, }\item[{protected \mbox{\hyperlink{class_laravel_1_1_pail_1_1_files}{Files}}}]{\$files}{, }\item[{protected bool}]{\$running\+In\+Console}{}\end{DoxyParamCaption})}
+
+Creates a new instance of the handler. 
+
+\label{doc-func-members}
+\Hypertarget{class_laravel_1_1_pail_1_1_handler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laravel_1_1_pail_1_1_handler_a23bc8ca2e76d1a00316744bcab52f62f}\index{Handler@{Handler}!context@{context}}
+\index{context@{context}!Handler@{Handler}}
+\doxysubsubsection{\texorpdfstring{context()}{context()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_handler_a23bc8ca2e76d1a00316744bcab52f62f} 
+context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_log_1_1_events_1_1_message_logged}{Message\+Logged}}}]{\$message\+Logged}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Builds the context array.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_pail_1_1_handler_af30dcee87dac5257c47f8ffeef1874fb}\index{Handler@{Handler}!log@{log}}
+\index{log@{log}!Handler@{Handler}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_handler_af30dcee87dac5257c47f8ffeef1874fb} 
+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_log_1_1_events_1_1_message_logged}{Message\+Logged}}}]{\$message\+Logged}{}\end{DoxyParamCaption})}
+
+Reports the given message logged. \Hypertarget{class_laravel_1_1_pail_1_1_handler_a4c29e9049bec139dd5ea258fb2c1beb7}\index{Handler@{Handler}!setLastLifecycleEvent@{setLastLifecycleEvent}}
+\index{setLastLifecycleEvent@{setLastLifecycleEvent}!Handler@{Handler}}
+\doxysubsubsection{\texorpdfstring{setLastLifecycleEvent()}{setLastLifecycleEvent()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_handler_a4c29e9049bec139dd5ea258fb2c1beb7} 
+set\+Last\+Lifecycle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_console_1_1_events_1_1_command_starting}{Command\+Starting}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_processing}{Job\+Processing}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_exception_occurred}{Job\+Exception\+Occurred}}\texorpdfstring{$\vert$}{|}null}]{\$event}{}\end{DoxyParamCaption})}
+
+Sets the last application lifecycle event. 
+
+\label{doc-variable-members}
+\Hypertarget{class_laravel_1_1_pail_1_1_handler_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_laravel_1_1_pail_1_1_handler_a7310df19a1051264604a41a2ddc79c3a}\index{Handler@{Handler}!\$artisanCommand@{\$artisanCommand}}
+\index{\$artisanCommand@{\$artisanCommand}!Handler@{Handler}}
+\doxysubsubsection{\texorpdfstring{\$artisanCommand}{\$artisanCommand}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_handler_a7310df19a1051264604a41a2ddc79c3a} 
+string \$artisan\+Command = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The artisan command being executed, if any. \Hypertarget{class_laravel_1_1_pail_1_1_handler_abdf11cd2f319654378be93da7bf4fcd4}\index{Handler@{Handler}!\$lastLifecycleEvent@{\$lastLifecycleEvent}}
+\index{\$lastLifecycleEvent@{\$lastLifecycleEvent}!Handler@{Handler}}
+\doxysubsubsection{\texorpdfstring{\$lastLifecycleEvent}{\$lastLifecycleEvent}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_handler_abdf11cd2f319654378be93da7bf4fcd4} 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_events_1_1_command_starting}{Command\+Starting}} \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_processing}{Job\+Processing}} \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_exception_occurred}{Job\+Exception\+Occurred}} null \$last\+Lifecycle\+Event = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The last lifecycle captured event. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/pail/src/\mbox{\hyperlink{laravel_2pail_2src_2_handler_8php}{Handler.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,154 @@
+\doxysection{Sql\+Server\+Processor Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor}{}\label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor}\index{SqlServerProcessor@{SqlServerProcessor}}
+Inheritance diagram for Sql\+Server\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_adb28f2adfcbc913380a80836a0e4a7ec}{process\+Insert\+Get\+Id}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}} \$query, \$sql, \$values, \$sequence=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_a319e40d71f88887017e917f17d58bcc0}{process\+Columns}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_ac38866f53035f91bd145c84c802f3422}{process\+Indexes}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_a12229b914a46336a6a448e6c3aade32c}{process\+Foreign\+Keys}} (\$results)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor}{Processor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ab7523450d20a0f391ebce81bfeeb932b}{process\+Select}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}} \$query, \$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2b05f465e0fd060a458e3539e390a85f}{process\+Schemas}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2db9aa9849e65a0f0dae4b3a3a7ac1c6}{process\+Tables}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a77c10af71a0e57679c1b9f9eeadc6854}{process\+Views}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a11983c69a64f1a92b2a309a00389a29f}{process\+Types}} (\$results)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_ab01c27513ad4e4224aac20c395950081}{process\+Insert\+Get\+Id\+For\+Odbc}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}} \$connection)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_a319e40d71f88887017e917f17d58bcc0}\index{SqlServerProcessor@{SqlServerProcessor}!processColumns@{processColumns}}
+\index{processColumns@{processColumns}!SqlServerProcessor@{SqlServerProcessor}}
+\doxysubsubsection{\texorpdfstring{processColumns()}{processColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_a319e40d71f88887017e917f17d58bcc0} 
+process\+Columns (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a columns query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a319e40d71f88887017e917f17d58bcc0}{Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_a12229b914a46336a6a448e6c3aade32c}\index{SqlServerProcessor@{SqlServerProcessor}!processForeignKeys@{processForeignKeys}}
+\index{processForeignKeys@{processForeignKeys}!SqlServerProcessor@{SqlServerProcessor}}
+\doxysubsubsection{\texorpdfstring{processForeignKeys()}{processForeignKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_a12229b914a46336a6a448e6c3aade32c} 
+process\+Foreign\+Keys (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a foreign keys query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a12229b914a46336a6a448e6c3aade32c}{Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_ac38866f53035f91bd145c84c802f3422}\index{SqlServerProcessor@{SqlServerProcessor}!processIndexes@{processIndexes}}
+\index{processIndexes@{processIndexes}!SqlServerProcessor@{SqlServerProcessor}}
+\doxysubsubsection{\texorpdfstring{processIndexes()}{processIndexes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_ac38866f53035f91bd145c84c802f3422} 
+process\+Indexes (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of an indexes query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ac38866f53035f91bd145c84c802f3422}{Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_adb28f2adfcbc913380a80836a0e4a7ec}\index{SqlServerProcessor@{SqlServerProcessor}!processInsertGetId@{processInsertGetId}}
+\index{processInsertGetId@{processInsertGetId}!SqlServerProcessor@{SqlServerProcessor}}
+\doxysubsubsection{\texorpdfstring{processInsertGetId()}{processInsertGetId()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_adb28f2adfcbc913380a80836a0e4a7ec} 
+process\+Insert\+Get\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}}}]{\$query}{, }\item[{}]{\$sql}{, }\item[{}]{\$values}{, }\item[{}]{\$sequence}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} an "{}insert get ID"{} query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder & {\em \$query} & \\
+\hline
+string & {\em \$sql} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+string | null & {\em \$sequence} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_adb28f2adfcbc913380a80836a0e4a7ec}{Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_ab01c27513ad4e4224aac20c395950081}\index{SqlServerProcessor@{SqlServerProcessor}!processInsertGetIdForOdbc@{processInsertGetIdForOdbc}}
+\index{processInsertGetIdForOdbc@{processInsertGetIdForOdbc}!SqlServerProcessor@{SqlServerProcessor}}
+\doxysubsubsection{\texorpdfstring{processInsertGetIdForOdbc()}{processInsertGetIdForOdbc()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_ab01c27513ad4e4224aac20c395950081} 
+process\+Insert\+Get\+Id\+For\+Odbc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}}}]{\$connection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{class_process}{Process} an "{}insert get ID"{} query for ODBC.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Query/\+Processors/\mbox{\hyperlink{_sql_server_processor_8php}{Sql\+Server\+Processor.\+php}}\end{DoxyCompactItemize}

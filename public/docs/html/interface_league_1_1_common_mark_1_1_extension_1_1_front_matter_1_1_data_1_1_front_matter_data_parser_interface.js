@@ -1,0 +1,4 @@
+var interface_league_1_1_common_mark_1_1_extension_1_1_front_matter_1_1_data_1_1_front_matter_data_parser_interface =
+[
+    [ "parse", "interface_league_1_1_common_mark_1_1_extension_1_1_front_matter_1_1_data_1_1_front_matter_data_parser_interface.html#aeb74eb5fc78bf1117c643c3667746d9b", null ]
+];

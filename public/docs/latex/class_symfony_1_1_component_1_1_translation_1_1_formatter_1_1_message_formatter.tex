@@ -1,0 +1,86 @@
+\doxysection{Message\+Formatter Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter}{}\label{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter}\index{MessageFormatter@{MessageFormatter}}
+Inheritance diagram for Message\+Formatter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_af93cb93c488d791a2c42508235a3df6c}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Translator\+Interface}} \$translator=null, ?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_intl_formatter_interface}{Intl\+Formatter\+Interface}} \$intl\+Formatter=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_a01e39b85c51b0f7ad2ed4af937ab5380}{format}} (string \$message, string \$locale, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_a5fb83904b5657fb0019c8d6bf12cee0d}{format\+Intl}} (string \$message, string \$locale, array \$parameters=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Abdellatif Ait boudad \href{mailto:a.aitboudad@gmail.com}{\texttt{a.\+aitboudad@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_af93cb93c488d791a2c42508235a3df6c}\index{MessageFormatter@{MessageFormatter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!MessageFormatter@{MessageFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_af93cb93c488d791a2c42508235a3df6c} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Translator\+Interface}}}]{\$translator}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_intl_formatter_interface}{Intl\+Formatter\+Interface}}}]{\$intl\+Formatter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Translator\+Interface | null & {\em \$translator} & An identity translator to use as selector for pluralization \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_a01e39b85c51b0f7ad2ed4af937ab5380}\index{MessageFormatter@{MessageFormatter}!format@{format}}
+\index{format@{format}!MessageFormatter@{MessageFormatter}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_a01e39b85c51b0f7ad2ed4af937ab5380} 
+format (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{string}]{\$locale}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Returns a formatted message string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Request\+Interface & {\em \$request} & \doxylink{class_request}{Request} that was sent \\
+\hline
+Response\+Interface | null & {\em \$response} & \doxylink{class_response}{Response} that was received \\
+\hline
+\textbackslash{}\+Throwable | null & {\em \$error} & Exception that was received \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_interface_a01e39b85c51b0f7ad2ed4af937ab5380}{Message\+Formatter\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_a5fb83904b5657fb0019c8d6bf12cee0d}\index{MessageFormatter@{MessageFormatter}!formatIntl@{formatIntl}}
+\index{formatIntl@{formatIntl}!MessageFormatter@{MessageFormatter}}
+\doxysubsubsection{\texorpdfstring{formatIntl()}{formatIntl()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_a5fb83904b5657fb0019c8d6bf12cee0d} 
+format\+Intl (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{string}]{\$locale}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Formats a localized message using rules defined by ICU Message\+Format.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://icu-project.org/apiref/icu4c/classMessageFormat.html\#details}{\texttt{http\+://icu-\/project.\+org/apiref/icu4c/class\+Message\+Format.\+html\#details}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_intl_formatter_interface_a5fb83904b5657fb0019c8d6bf12cee0d}{Intl\+Formatter\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/translation/\+Formatter/\mbox{\hyperlink{symfony_2translation_2_formatter_2_message_formatter_8php}{Message\+Formatter.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/guzzlehttp/guzzle/src/\mbox{\hyperlink{guzzlehttp_2guzzle_2src_2_message_formatter_8php}{Message\+Formatter.\+php}}\end{DoxyCompactItemize}

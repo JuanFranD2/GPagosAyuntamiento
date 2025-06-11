@@ -1,0 +1,139 @@
+\doxysection{Higher\+Order\+Expectation Class Reference}
+\hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation}{}\label{class_pest_1_1_expectations_1_1_higher_order_expectation}\index{HigherOrderExpectation@{HigherOrderExpectation}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_higher_order_expectation_a6c5b1186dbaf0fbe4b6d9ce787c58e6f}{\+\_\+\+\_\+construct}} (private readonly Expectation \$original, mixed \$value)
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_higher_order_expectation_ae4b749acc120be8c42b44ac42a2fc102}{not}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_higher_order_expectation_a21589b78bfa7d52b6f0d2a8c67d0ab3a}{expect}} (mixed \$value)
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_higher_order_expectation_a950ee4fdc90dafa56bf4cff4cd3c894b}{and}} (mixed \$value)
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_higher_order_expectation_afc0c6d78c435976760e03785fc063d19}{scoped}} (Closure \$expectation)
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_higher_order_expectation_a3ccf4cf3b27223cc2ab070dbcf641e74}{json}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_higher_order_expectation_ac9b8adb97c0ebc704af63a44358a9582}{\+\_\+\+\_\+call}} (string \$name, array \$arguments)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation_a6c5b1186dbaf0fbe4b6d9ce787c58e6f}\index{HigherOrderExpectation@{HigherOrderExpectation}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!HigherOrderExpectation@{HigherOrderExpectation}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_higher_order_expectation_a6c5b1186dbaf0fbe4b6d9ce787c58e6f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly Expectation}]{\$original}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Creates a new higher order expectation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em Expectation$<$\+TOriginal\+Value$>$} & \$original \\
+\hline
+TValue & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation_ac9b8adb97c0ebc704af63a44358a9582}\index{HigherOrderExpectation@{HigherOrderExpectation}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!HigherOrderExpectation@{HigherOrderExpectation}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_higher_order_expectation_ac9b8adb97c0ebc704af63a44358a9582} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})}
+
+Dynamically calls methods on the class with the given arguments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,mixed$>$} & \$arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self$<$\+TOriginal\+Value, mixed$>$\texorpdfstring{$\vert$}{|}self\texorpdfstring{$<$}{<}TOriginal\+Value, TValue\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation_a950ee4fdc90dafa56bf4cff4cd3c894b}\index{HigherOrderExpectation@{HigherOrderExpectation}!and@{and}}
+\index{and@{and}!HigherOrderExpectation@{HigherOrderExpectation}}
+\doxysubsubsection{\texorpdfstring{and()}{and()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_higher_order_expectation_a950ee4fdc90dafa56bf4cff4cd3c894b} 
+and (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Creates a new expectation.
+
+@template TExpect\+Value
+
+
+\begin{DoxyParams}[1]{Parameters}
+TExpect\+Value & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expectation$<$\+TExpect\+Value$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation_a21589b78bfa7d52b6f0d2a8c67d0ab3a}\index{HigherOrderExpectation@{HigherOrderExpectation}!expect@{expect}}
+\index{expect@{expect}!HigherOrderExpectation@{HigherOrderExpectation}}
+\doxysubsubsection{\texorpdfstring{expect()}{expect()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_higher_order_expectation_a21589b78bfa7d52b6f0d2a8c67d0ab3a} 
+expect (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Creates a new Expectation.
+
+@template TExpect\+Value
+
+
+\begin{DoxyParams}[1]{Parameters}
+TExpect\+Value & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expectation$<$\+TExpect\+Value$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation_a3ccf4cf3b27223cc2ab070dbcf641e74}\index{HigherOrderExpectation@{HigherOrderExpectation}!json@{json}}
+\index{json@{json}!HigherOrderExpectation@{HigherOrderExpectation}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_higher_order_expectation_a3ccf4cf3b27223cc2ab070dbcf641e74} 
+json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Creates a new expectation with the decoded JSON value.
+
+\begin{DoxyReturn}{Returns}
+self\texorpdfstring{$<$}{<}TOriginal\+Value, array\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}int, mixed\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation_ae4b749acc120be8c42b44ac42a2fc102}\index{HigherOrderExpectation@{HigherOrderExpectation}!not@{not}}
+\index{not@{not}!HigherOrderExpectation@{HigherOrderExpectation}}
+\doxysubsubsection{\texorpdfstring{not()}{not()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_higher_order_expectation_ae4b749acc120be8c42b44ac42a2fc102} 
+not (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Creates the opposite expectation for the value.
+
+\begin{DoxyReturn}{Returns}
+self$<$\+TOriginal\+Value, TValue$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_expectations_1_1_higher_order_expectation_afc0c6d78c435976760e03785fc063d19}\index{HigherOrderExpectation@{HigherOrderExpectation}!scoped@{scoped}}
+\index{scoped@{scoped}!HigherOrderExpectation@{HigherOrderExpectation}}
+\doxysubsubsection{\texorpdfstring{scoped()}{scoped()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_higher_order_expectation_afc0c6d78c435976760e03785fc063d19} 
+scoped (\begin{DoxyParamCaption}\item[{Closure}]{\$expectation}{}\end{DoxyParamCaption})}
+
+Scope an expectation callback to the current value in the Higher\+Order\+Expectation chain.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Closure(\+Expectation$<$\+TValue$>$)} & void \$expectation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Higher\+Order\+Expectation$<$\+TOriginal\+Value, TOriginal\+Value$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Expectations/\mbox{\hyperlink{_higher_order_expectation_8php}{Higher\+Order\+Expectation.\+php}}\end{DoxyCompactItemize}

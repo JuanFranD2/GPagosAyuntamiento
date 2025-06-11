@@ -1,0 +1,119 @@
+\doxysection{Terminal Class Reference}
+\hypertarget{class_laravel_1_1_prompts_1_1_terminal}{}\label{class_laravel_1_1_prompts_1_1_terminal}\index{Terminal@{Terminal}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_a64571309bfb3238c65fd3c2898f92440}{read}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_a2c670e3ddb12580502a4893fcbf2eead}{set\+Tty}} (string \$mode)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_a1cd617645ac260fcb167635a695e937c}{restore\+Tty}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_a4537b64504b19a87c9451edbe13a6539}{cols}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_a65055164939f434481e5ee710bb44a45}{lines}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_a57bddafdff6e56515d4e0badbd75ea93}{init\+Dimensions}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_ace25ca9279765eb13bc51445001a4d00}{exit}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_a56f4dcccf7e7ffe3645bb1399a7164cb}{exec}} (string \$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_aa233822e9a115f64829517c74dbbc638}{\$initial\+Tty\+Mode}}
+\item 
+Symfony\+Terminal \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal_a22e8c3c2364bac7304e0a4d93efbae24}{\$terminal}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_laravel_1_1_prompts_1_1_terminal_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_terminal_a095c5d389db211932136b53f25f39685}\index{Terminal@{Terminal}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a new Terminal instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_terminal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_terminal_a4537b64504b19a87c9451edbe13a6539}\index{Terminal@{Terminal}!cols@{cols}}
+\index{cols@{cols}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{cols()}{cols()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_a4537b64504b19a87c9451edbe13a6539} 
+cols (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the number of columns in the terminal. \Hypertarget{class_laravel_1_1_prompts_1_1_terminal_a56f4dcccf7e7ffe3645bb1399a7164cb}\index{Terminal@{Terminal}!exec@{exec}}
+\index{exec@{exec}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{exec()}{exec()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_a56f4dcccf7e7ffe3645bb1399a7164cb} 
+exec (\begin{DoxyParamCaption}\item[{string}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Execute the given command and return the output. \Hypertarget{class_laravel_1_1_prompts_1_1_terminal_ace25ca9279765eb13bc51445001a4d00}\index{Terminal@{Terminal}!exit@{exit}}
+\index{exit@{exit}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_ace25ca9279765eb13bc51445001a4d00} 
+exit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Exit the interactive session. \Hypertarget{class_laravel_1_1_prompts_1_1_terminal_a57bddafdff6e56515d4e0badbd75ea93}\index{Terminal@{Terminal}!initDimensions@{initDimensions}}
+\index{initDimensions@{initDimensions}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{initDimensions()}{initDimensions()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_a57bddafdff6e56515d4e0badbd75ea93} 
+init\+Dimensions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+(Re)initialize the terminal dimensions. \Hypertarget{class_laravel_1_1_prompts_1_1_terminal_a65055164939f434481e5ee710bb44a45}\index{Terminal@{Terminal}!lines@{lines}}
+\index{lines@{lines}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{lines()}{lines()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_a65055164939f434481e5ee710bb44a45} 
+lines (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the number of lines in the terminal. \Hypertarget{class_laravel_1_1_prompts_1_1_terminal_a64571309bfb3238c65fd3c2898f92440}\index{Terminal@{Terminal}!read@{read}}
+\index{read@{read}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_a64571309bfb3238c65fd3c2898f92440} 
+read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Read a line from the terminal. \Hypertarget{class_laravel_1_1_prompts_1_1_terminal_a1cd617645ac260fcb167635a695e937c}\index{Terminal@{Terminal}!restoreTty@{restoreTty}}
+\index{restoreTty@{restoreTty}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{restoreTty()}{restoreTty()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_a1cd617645ac260fcb167635a695e937c} 
+restore\+Tty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Restore the initial TTY mode. \Hypertarget{class_laravel_1_1_prompts_1_1_terminal_a2c670e3ddb12580502a4893fcbf2eead}\index{Terminal@{Terminal}!setTty@{setTty}}
+\index{setTty@{setTty}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{setTty()}{setTty()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_a2c670e3ddb12580502a4893fcbf2eead} 
+set\+Tty (\begin{DoxyParamCaption}\item[{string}]{\$mode}{}\end{DoxyParamCaption})}
+
+Set the TTY mode. 
+
+\label{doc-variable-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_terminal_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_terminal_aa233822e9a115f64829517c74dbbc638}\index{Terminal@{Terminal}!\$initialTtyMode@{\$initialTtyMode}}
+\index{\$initialTtyMode@{\$initialTtyMode}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{\$initialTtyMode}{\$initialTtyMode}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_aa233822e9a115f64829517c74dbbc638} 
+string \$initial\+Tty\+Mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+The initial TTY mode. \Hypertarget{class_laravel_1_1_prompts_1_1_terminal_a22e8c3c2364bac7304e0a4d93efbae24}\index{Terminal@{Terminal}!\$terminal@{\$terminal}}
+\index{\$terminal@{\$terminal}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{\$terminal}{\$terminal}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_terminal_a22e8c3c2364bac7304e0a4d93efbae24} 
+Symfony\+Terminal \$terminal\hspace{0.3cm}{\ttfamily [protected]}}
+
+The Symfony Terminal instance. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/prompts/src/\mbox{\hyperlink{laravel_2prompts_2src_2_terminal_8php}{Terminal.\+php}}\end{DoxyCompactItemize}

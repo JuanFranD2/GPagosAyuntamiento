@@ -1,0 +1,73 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/error-\/handler Directory Reference}
+\hypertarget{dir_121809544a5fcf16cc13c0dccab318c2}{}\label{dir_121809544a5fcf16cc13c0dccab318c2}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/symfony/error-\/handler Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/symfony/error-\/handler Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_d57cca36031a91b9fd7ac10a70b2dd7b}{Error}}
+\item 
+directory \mbox{\hyperlink{dir_6689b6e179a4ae41a59f6167c7a9cedf}{Error\+Enhancer}}
+\item 
+directory \mbox{\hyperlink{dir_302bf4a1b0b22604180ae32eeafd1166}{Error\+Renderer}}
+\item 
+directory \mbox{\hyperlink{dir_16196dffef0cfafa4670732afb9d57c3}{Exception}}
+\item 
+directory \mbox{\hyperlink{dir_3532733297390e9d46c80b8ad6e778e7}{Internal}}
+\item 
+directory \mbox{\hyperlink{dir_bc562ce62bb6723718a71b986fcd9a10}{Resources}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{_buffering_logger_8php}{Buffering\+Logger.\+php}}
+\item 
+file \mbox{\hyperlink{_debug_8php}{Debug.\+php}}
+\item 
+file \mbox{\hyperlink{_debug_class_loader_8php}{Debug\+Class\+Loader.\+php}}
+\item 
+file \mbox{\hyperlink{symfony_2error-handler_2_error_handler_8php}{Error\+Handler.\+php}}
+\item 
+file \mbox{\hyperlink{_throwable_utils_8php}{Throwable\+Utils.\+php}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Error\+Handler component provides tools to manage errors and ease debugging PHP code.\hypertarget{README.md_autotoc_md11202}{}\doxysubsection{\texorpdfstring{Getting Started}{Getting Started}}\label{README.md_autotoc_md11202}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ symfony/error-\/handler}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_debug}{Symfony\(\backslash\)Component\(\backslash\)ErrorHandler\(\backslash\)Debug}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler}{Symfony\(\backslash\)Component\(\backslash\)ErrorHandler\(\backslash\)ErrorHandler}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader}{Symfony\(\backslash\)Component\(\backslash\)ErrorHandler\(\backslash\)DebugClassLoader}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{Debug::enable();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ or\ enable\ only\ one\ feature}}
+\DoxyCodeLine{\textcolor{comment}{//ErrorHandler::register();}}
+\DoxyCodeLine{\textcolor{comment}{//DebugClassLoader::enable();}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ If\ you\ want\ a\ custom\ generic\ template\ when\ debug\ is\ not\ enabled}}
+\DoxyCodeLine{\textcolor{comment}{//\ HtmlErrorRenderer::setTemplate('/path/to/custom/error.html.php');}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$data\ =\ ErrorHandler::call(\textcolor{keyword}{static}\ \textcolor{keyword}{function}\ ()\ use\ (\$filename,\ \$datetimeFormat)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ if\ any\ code\ executed\ inside\ this\ anonymous\ function\ fails,\ a\ PHP\ exception}}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ will\ be\ thrown,\ even\ if\ the\ code\ uses\ the\ '@'\ PHP\ silence\ operator}}
+\DoxyCodeLine{\ \ \ \ \$data\ =\ json\_decode(file\_get\_contents(\$filename),\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\ \ \ \ \$data[\textcolor{stringliteral}{'read\_at'}]\ =\ date(\$datetimeFormat);}
+\DoxyCodeLine{\ \ \ \ file\_put\_contents(\$filename,\ \mbox{\hyperlink{namespace_guzzle_http_a43c0826d27653b8c4cd40d2398f4b93e}{json\_encode}}(\$data));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \$data;}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11203}{}\doxysubsection{\texorpdfstring{Resources}{Resources}}\label{README.md_autotoc_md11203}
+
+\begin{DoxyItemize}
+\item \href{https://symfony.com/doc/current/contributing/index.html}{\texttt{Contributing}}
+\item \href{https://github.com/symfony/symfony/issues}{\texttt{Report issues}} and \href{https://github.com/symfony/symfony/pulls}{\texttt{send Pull Requests}} in the \href{https://github.com/symfony/symfony}{\texttt{main Symfony repository}} 
+\end{DoxyItemize}

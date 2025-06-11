@@ -1,0 +1,62 @@
+\doxysection{Proxy Class Reference}
+\hypertarget{class_guzzle_http_1_1_handler_1_1_proxy}{}\label{class_guzzle_http_1_1_handler_1_1_proxy}\index{Proxy@{Proxy}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_proxy_acb519f5ce4a0ae446d2c038b085f4ec9}{wrap\+Sync}} (callable \$default, callable \$sync)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_proxy_a08831f085944efc861a07a459072eec8}{wrap\+Streaming}} (callable \$default, callable \$streaming)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides basic proxies for handlers.
+
+@final 
+
+\label{doc-func-members}
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_proxy_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_proxy_a08831f085944efc861a07a459072eec8}\index{Proxy@{Proxy}!wrapStreaming@{wrapStreaming}}
+\index{wrapStreaming@{wrapStreaming}!Proxy@{Proxy}}
+\doxysubsubsection{\texorpdfstring{wrapStreaming()}{wrapStreaming()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_proxy_a08831f085944efc861a07a459072eec8} 
+wrap\+Streaming (\begin{DoxyParamCaption}\item[{callable}]{\$default}{, }\item[{callable}]{\$streaming}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sends streaming requests to a streaming compatible handler while sending all other requests to a default handler.
+
+This, for example, could be useful for taking advantage of the performance benefits of curl while still supporting true streaming through the Stream\+Handler.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+Request\+Interface,array)} & Promise\+Interface \$default Handler used for non-\/streaming responses \\
+\hline
+{\em callable(\+Request\+Interface,array)} & Promise\+Interface \$streaming Handler used for streaming responses\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable(\+Request\+Interface, array)\+: Promise\+Interface Returns the composed handler. 
+\end{DoxyReturn}
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_proxy_acb519f5ce4a0ae446d2c038b085f4ec9}\index{Proxy@{Proxy}!wrapSync@{wrapSync}}
+\index{wrapSync@{wrapSync}!Proxy@{Proxy}}
+\doxysubsubsection{\texorpdfstring{wrapSync()}{wrapSync()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_proxy_acb519f5ce4a0ae446d2c038b085f4ec9} 
+wrap\+Sync (\begin{DoxyParamCaption}\item[{callable}]{\$default}{, }\item[{callable}]{\$sync}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sends synchronous requests to a specific handler while sending all other requests to another handler.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+Request\+Interface,array)} & Promise\+Interface \$default Handler used for normal responses \\
+\hline
+{\em callable(\+Request\+Interface,array)} & Promise\+Interface \$sync Handler used for synchronous responses.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable(\+Request\+Interface, array)\+: Promise\+Interface Returns the composed handler. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/guzzlehttp/guzzle/src/\+Handler/\mbox{\hyperlink{_proxy_8php}{Proxy.\+php}}\end{DoxyCompactItemize}

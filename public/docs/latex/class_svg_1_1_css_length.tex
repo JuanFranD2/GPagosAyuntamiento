@@ -1,0 +1,129 @@
+\doxysection{Css\+Length Class Reference}
+\hypertarget{class_svg_1_1_css_length}{}\label{class_svg_1_1_css_length}\index{CssLength@{CssLength}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_svg_1_1_css_length_a256e7d52abf1aa1dee48215c8e1bd82d}{\+\_\+\+\_\+construct}} (string \$length)
+\item 
+\mbox{\hyperlink{class_svg_1_1_css_length_a7f0c4814146c9c44f8c468931d6e5571}{get\+Unit}} ()
+\item 
+\mbox{\hyperlink{class_svg_1_1_css_length_aa8101a66c60e6ec8377b73e53c1ec9e1}{to\+Pixels}} (float \$reference\+Size=11.\+0, float \$dpi=96.\+0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_svg_1_1_css_length_abc23d5dfc7e836bd94e74ae4a4ccf9a8}{parse\+Length\+Components}} (string \$length)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_svg_1_1_css_length_a1e32431b9d521850ce2aa78bc3af0040}{\$unit}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_svg_1_1_css_length_a0f298096f322952a72a50f98a74c7b60}{\$value}} = 0
+\item 
+\mbox{\hyperlink{class_svg_1_1_css_length_a8d068d6d5f922c09602fe37e887fdbed}{\$unparsed}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_svg_1_1_css_length_abab3f33128592840c23918fe3999185a}{\$units}}
+\item 
+static \mbox{\hyperlink{class_svg_1_1_css_length_a3ec52220b877027b91c966c77bb2c91a}{\$inch\+Divisions}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_svg_1_1_css_length_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_svg_1_1_css_length_a256e7d52abf1aa1dee48215c8e1bd82d}\index{CssLength@{CssLength}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CssLength@{CssLength}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_css_length_a256e7d52abf1aa1dee48215c8e1bd82d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$length}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_svg_1_1_css_length_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_svg_1_1_css_length_a7f0c4814146c9c44f8c468931d6e5571}\index{CssLength@{CssLength}!getUnit@{getUnit}}
+\index{getUnit@{getUnit}!CssLength@{CssLength}}
+\doxysubsubsection{\texorpdfstring{getUnit()}{getUnit()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_css_length_a7f0c4814146c9c44f8c468931d6e5571} 
+get\+Unit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the unit type of this css length. Units are standardised to be lower-\/cased.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_svg_1_1_css_length_abc23d5dfc7e836bd94e74ae4a4ccf9a8}\index{CssLength@{CssLength}!parseLengthComponents@{parseLengthComponents}}
+\index{parseLengthComponents@{parseLengthComponents}!CssLength@{CssLength}}
+\doxysubsubsection{\texorpdfstring{parseLengthComponents()}{parseLengthComponents()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_css_length_abc23d5dfc7e836bd94e74ae4a4ccf9a8} 
+parse\+Length\+Components (\begin{DoxyParamCaption}\item[{string}]{\$length}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse out the unit and value components from the given string length. \Hypertarget{class_svg_1_1_css_length_aa8101a66c60e6ec8377b73e53c1ec9e1}\index{CssLength@{CssLength}!toPixels@{toPixels}}
+\index{toPixels@{toPixels}!CssLength@{CssLength}}
+\doxysubsubsection{\texorpdfstring{toPixels()}{toPixels()}}
+{\footnotesize\ttfamily \label{class_svg_1_1_css_length_aa8101a66c60e6ec8377b73e53c1ec9e1} 
+to\+Pixels (\begin{DoxyParamCaption}\item[{float}]{\$reference\+Size}{ = {\ttfamily 11.0}, }\item[{float}]{\$dpi}{ = {\ttfamily 96.0}}\end{DoxyParamCaption})}
+
+Get this CSS length in the equivalent pixel count size.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$reference\+Size} & \\
+\hline
+float & {\em \$dpi} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_svg_1_1_css_length_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_svg_1_1_css_length_a3ec52220b877027b91c966c77bb2c91a}\index{CssLength@{CssLength}!\$inchDivisions@{\$inchDivisions}}
+\index{\$inchDivisions@{\$inchDivisions}!CssLength@{CssLength}}
+\doxysubsubsection{\texorpdfstring{\$inchDivisions}{\$inchDivisions}}
+{\footnotesize\ttfamily \label{class_svg_1_1_css_length_a3ec52220b877027b91c966c77bb2c91a} 
+\$inch\+Divisions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_svg_1_1_css_length_a1e32431b9d521850ce2aa78bc3af0040}\index{CssLength@{CssLength}!\$unit@{\$unit}}
+\index{\$unit@{\$unit}!CssLength@{CssLength}}
+\doxysubsubsection{\texorpdfstring{\$unit}{\$unit}}
+{\footnotesize\ttfamily \label{class_svg_1_1_css_length_a1e32431b9d521850ce2aa78bc3af0040} 
+\$unit = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_svg_1_1_css_length_abab3f33128592840c23918fe3999185a}\index{CssLength@{CssLength}!\$units@{\$units}}
+\index{\$units@{\$units}!CssLength@{CssLength}}
+\doxysubsubsection{\texorpdfstring{\$units}{\$units}}
+{\footnotesize\ttfamily \label{class_svg_1_1_css_length_abab3f33128592840c23918fe3999185a} 
+\$units\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_svg_1_1_css_length_a8d068d6d5f922c09602fe37e887fdbed}\index{CssLength@{CssLength}!\$unparsed@{\$unparsed}}
+\index{\$unparsed@{\$unparsed}!CssLength@{CssLength}}
+\doxysubsubsection{\texorpdfstring{\$unparsed}{\$unparsed}}
+{\footnotesize\ttfamily \label{class_svg_1_1_css_length_a8d068d6d5f922c09602fe37e887fdbed} 
+\$unparsed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_svg_1_1_css_length_a0f298096f322952a72a50f98a74c7b60}\index{CssLength@{CssLength}!\$value@{\$value}}
+\index{\$value@{\$value}!CssLength@{CssLength}}
+\doxysubsubsection{\texorpdfstring{\$value}{\$value}}
+{\footnotesize\ttfamily \label{class_svg_1_1_css_length_a0f298096f322952a72a50f98a74c7b60} 
+\$value = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/php-\/svg-\/lib/src/\+Svg/\mbox{\hyperlink{_css_length_8php}{Css\+Length.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var mailer_2_exception_2_unsupported_scheme_exception_8php =
+[
+    [ "UnsupportedSchemeException", "class_symfony_1_1_component_1_1_mailer_1_1_exception_1_1_unsupported_scheme_exception.html", "class_symfony_1_1_component_1_1_mailer_1_1_exception_1_1_unsupported_scheme_exception" ]
+];

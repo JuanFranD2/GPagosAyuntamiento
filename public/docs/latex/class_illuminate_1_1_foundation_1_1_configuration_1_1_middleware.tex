@@ -1,0 +1,908 @@
+\doxysection{Middleware Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware}{}\label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware}\index{Middleware@{Middleware}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad9815b41a228fc4c66dd3be7153b6ff5}{prepend}} (array\texorpdfstring{$\vert$}{|}string \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a109198c8cc67e79033a4ff6c764fb574}{append}} (array\texorpdfstring{$\vert$}{|}string \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a9a05465aaea3f733ce9203833293084f}{remove}} (array\texorpdfstring{$\vert$}{|}string \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a045b1e270089d581ab7b1c2104b01c80}{replace}} (string \$search, string \$replace)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d5c9430e1596e71341b612005cf6766}{group}} (string \$group, array \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad22b35bd97ebc9a88833ddb0d0b31e36}{prepend\+To\+Group}} (string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d5c9430e1596e71341b612005cf6766}{group}}, array\texorpdfstring{$\vert$}{|}string \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab042ce284924171368064a669c5e4be5}{append\+To\+Group}} (string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d5c9430e1596e71341b612005cf6766}{group}}, array\texorpdfstring{$\vert$}{|}string \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_af8b0ac7f570ddb2f1ff78880e596b893}{remove\+From\+Group}} (string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d5c9430e1596e71341b612005cf6766}{group}}, array\texorpdfstring{$\vert$}{|}string \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a918b69726f2bb90d848d3c9dd0d30806}{replace\+In\+Group}} (string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d5c9430e1596e71341b612005cf6766}{group}}, string \$search, string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a045b1e270089d581ab7b1c2104b01c80}{replace}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad3b62fea4b1d6b4d8936309cba0f1fd5}{web}} (array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a109198c8cc67e79033a4ff6c764fb574}{append}}=\mbox{[}$\,$\mbox{]}, array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad9815b41a228fc4c66dd3be7153b6ff5}{prepend}}=\mbox{[}$\,$\mbox{]}, array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a9a05465aaea3f733ce9203833293084f}{remove}}=\mbox{[}$\,$\mbox{]}, array \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a045b1e270089d581ab7b1c2104b01c80}{replace}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a865cb475c72cb732480d8eb20bd3f14c}{api}} (array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a109198c8cc67e79033a4ff6c764fb574}{append}}=\mbox{[}$\,$\mbox{]}, array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad9815b41a228fc4c66dd3be7153b6ff5}{prepend}}=\mbox{[}$\,$\mbox{]}, array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a9a05465aaea3f733ce9203833293084f}{remove}}=\mbox{[}$\,$\mbox{]}, array \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a045b1e270089d581ab7b1c2104b01c80}{replace}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7ae468b608f169d6bfcdcd0ebd5fd691}{pages}} (array \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7789fd2c4698984014f61360161e0505}{alias}} (array \$aliases)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a5176be8bbbcadb93a78f33a45dcdd39f}{priority}} (array \$priority)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a9ff8ba82330b3f516f01582df98b83b7}{prepend\+To\+Priority\+List}} (\$before, \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad9815b41a228fc4c66dd3be7153b6ff5}{prepend}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a8650ef3d885531076eaa2cab4d547d3a}{append\+To\+Priority\+List}} (\$after, \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a109198c8cc67e79033a4ff6c764fb574}{append}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6ec9d06f3569cc5cfe39fe9a8fbbec49}{get\+Global\+Middleware}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a3c2ad3433b8a60b7c9452f01f1d19c0b}{get\+Middleware\+Groups}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad6560e706da7e96fe9f592b42c8bc920}{redirect\+Guests\+To}} (callable\texorpdfstring{$\vert$}{|}string \$redirect)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a15a064e42297923da4e55669bd1540fd}{redirect\+Users\+To}} (callable\texorpdfstring{$\vert$}{|}string \$redirect)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_acb965b653d8e18f3ca781c77696d362c}{redirect\+To}} (callable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$guests=null, callable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$users=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac7493f7f94a07af9c77265c7975967dd}{encrypt\+Cookies}} (array \$except=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a61f8a7276b12c0cb9c64f796132b301c}{validate\+Csrf\+Tokens}} (array \$except=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a77bd4d698f59298a90741c4440f44924}{validate\+Signatures}} (array \$except=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ae984eb20ceb9edad5da46d7f3c935eed}{convert\+Empty\+Strings\+To\+Null}} (array \$except=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aea7d826e2ad71905e305315ab3ffac0c}{trim\+Strings}} (array \$except=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aeea4d4f0eb6644ebacca193c5bcc2a39}{trust\+Hosts}} (array\texorpdfstring{$\vert$}{|}callable\texorpdfstring{$\vert$}{|}null \$at=null, bool \$subdomains=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aa4ffc6704c926e632ff8426b73ab1ad1}{trust\+Proxies}} (array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$at=null, ?int \$headers=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a3ecf663bdfdae11b3413e913bfcc8577}{prevent\+Requests\+During\+Maintenance}} (array \$except=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac07f8403cdd7fcb06a349ff62ee27efc}{stateful\+Api}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a4c085599eef676dd558c464c57c0bcc9}{throttle\+Api}} (\$limiter=\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a865cb475c72cb732480d8eb20bd3f14c}{api}}\textquotesingle{}, \$redis=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a233023ba2ce0685c35a8e7a42692f2ca}{throttle\+With\+Redis}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_af97c4f8058847c0b2a6f0c777264c43e}{authenticate\+Sessions}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad8699e16d59dd30af772751ea7e8bde8}{get\+Page\+Middleware}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a8b710dabed1fa828a0e5de60d0467564}{get\+Middleware\+Aliases}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a41ff291f4357b3ee5be0fcb9665de6d0}{get\+Middleware\+Priority}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac2a3dcb525fadd3e95171d65273ce086}{get\+Middleware\+Priority\+Prepends}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a1ece75abc3bce63f68d1f6cfd1c830a6}{get\+Middleware\+Priority\+Appends}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d7803a3412a798782e3cd74812931d4}{\$this}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_af2ddd729cf0d1fa422819acac213708f}{modify\+Group}} (string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d5c9430e1596e71341b612005cf6766}{group}}, array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a109198c8cc67e79033a4ff6c764fb574}{append}}, array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad9815b41a228fc4c66dd3be7153b6ff5}{prepend}}, array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a9a05465aaea3f733ce9203833293084f}{remove}}, array \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a045b1e270089d581ab7b1c2104b01c80}{replace}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad5e7119bc5c8ecd605f2fc602c408df0}{default\+Aliases}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aad844777d9d6beb4ca7c92d97afe7d27}{\$global}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac1b97dbda8ea9ea62f3fd50d6b0ef9c0}{\$prepends}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a29ec873a375ecb374d2e2ec92490cd41}{\$appends}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7b93cece98558f52c50b5812f862caf5}{\$removals}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a93cb3f67ace379a71de4fb00bcc7a605}{\$replacements}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a1af3c911abb4f6414a86954705266327}{\$groups}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ae5b220a150384e2c6c8e96d9515b046d}{\$group\+Prepends}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ae59d3dc405d3194c1d0e483175b36e0d}{\$group\+Appends}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7dedc66521761097ba0dbcce7456853c}{\$group\+Removals}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a23375b6d0041755184f228f48f23521a}{\$group\+Replacements}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_addb1acad2afda225573d25cf88957ddc}{\$page\+Middleware}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab4c2b75c6310ea8b9d621083215c7ab4}{\$trust\+Hosts}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7225ff297ef7042628d93f9b7b4c728c}{\$stateful\+Api}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_abd4db2f5f8956445fcfb5f0d9ecb2d7b}{\$api\+Limiter}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a0a9c3e581eb8f996d47a6123f2a980e8}{\$throttle\+With\+Redis}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ada6cb37ae348f64b18c7459ff91ebcd6}{\$authenticated\+Sessions}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aac8f9760b0802b702b45c6bc1846d025}{\$custom\+Aliases}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a2677e505e860db863720ac4e216fd3f2}{\$priority}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab65c5016e28fc01d6c9da5287c41afb2}{\$prepend\+Priority}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab6852c7a9f1b07bc8f036ce54611fbcc}{\$append\+Priority}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7789fd2c4698984014f61360161e0505}\index{Middleware@{Middleware}!alias@{alias}}
+\index{alias@{alias}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{alias()}{alias()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7789fd2c4698984014f61360161e0505} 
+alias (\begin{DoxyParamCaption}\item[{array}]{\$aliases}{}\end{DoxyParamCaption})}
+
+Register additional middleware aliases.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$aliases} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a865cb475c72cb732480d8eb20bd3f14c}\index{Middleware@{Middleware}!api@{api}}
+\index{api@{api}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{api()}{api()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a865cb475c72cb732480d8eb20bd3f14c} 
+api (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$append}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$prepend}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$remove}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$replace}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Modify the middleware in the "{}api"{} group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$append} & \\
+\hline
+array | string & {\em \$prepend} & \\
+\hline
+array | string & {\em \$remove} & \\
+\hline
+array & {\em \$replace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a109198c8cc67e79033a4ff6c764fb574}\index{Middleware@{Middleware}!append@{append}}
+\index{append@{append}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a109198c8cc67e79033a4ff6c764fb574} 
+append (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Append middleware to the application\textquotesingle{}s global middleware stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab042ce284924171368064a669c5e4be5}\index{Middleware@{Middleware}!appendToGroup@{appendToGroup}}
+\index{appendToGroup@{appendToGroup}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{appendToGroup()}{appendToGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab042ce284924171368064a669c5e4be5} 
+append\+To\+Group (\begin{DoxyParamCaption}\item[{string}]{\$group}{, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Append the given middleware to the specified group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & \\
+\hline
+array | string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a8650ef3d885531076eaa2cab4d547d3a}\index{Middleware@{Middleware}!appendToPriorityList@{appendToPriorityList}}
+\index{appendToPriorityList@{appendToPriorityList}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{appendToPriorityList()}{appendToPriorityList()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a8650ef3d885531076eaa2cab4d547d3a} 
+append\+To\+Priority\+List (\begin{DoxyParamCaption}\item[{}]{\$after}{, }\item[{}]{\$append}{}\end{DoxyParamCaption})}
+
+Append middleware to the priority middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$after} & \\
+\hline
+string & {\em \$append} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_af97c4f8058847c0b2a6f0c777264c43e}\index{Middleware@{Middleware}!authenticateSessions@{authenticateSessions}}
+\index{authenticateSessions@{authenticateSessions}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{authenticateSessions()}{authenticateSessions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_af97c4f8058847c0b2a6f0c777264c43e} 
+authenticate\+Sessions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that sessions should be authenticated for the "{}web"{} middleware group.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ae984eb20ceb9edad5da46d7f3c935eed}\index{Middleware@{Middleware}!convertEmptyStringsToNull@{convertEmptyStringsToNull}}
+\index{convertEmptyStringsToNull@{convertEmptyStringsToNull}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{convertEmptyStringsToNull()}{convertEmptyStringsToNull()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ae984eb20ceb9edad5da46d7f3c935eed} 
+convert\+Empty\+Strings\+To\+Null (\begin{DoxyParamCaption}\item[{array}]{\$except}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Configure the empty string conversion middleware.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,(} & \\
+\hline
+\end{DoxyParams}
+Closure(\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request)\+: bool)\texorpdfstring{$>$}{>} \$except \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad5e7119bc5c8ecd605f2fc602c408df0}\index{Middleware@{Middleware}!defaultAliases@{defaultAliases}}
+\index{defaultAliases@{defaultAliases}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{defaultAliases()}{defaultAliases()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad5e7119bc5c8ecd605f2fc602c408df0} 
+default\+Aliases (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the default middleware aliases.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac7493f7f94a07af9c77265c7975967dd}\index{Middleware@{Middleware}!encryptCookies@{encryptCookies}}
+\index{encryptCookies@{encryptCookies}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{encryptCookies()}{encryptCookies()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac7493f7f94a07af9c77265c7975967dd} 
+encrypt\+Cookies (\begin{DoxyParamCaption}\item[{array}]{\$except}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Configure the cookie encryption middleware.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$} & \$except \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6ec9d06f3569cc5cfe39fe9a8fbbec49}\index{Middleware@{Middleware}!getGlobalMiddleware@{getGlobalMiddleware}}
+\index{getGlobalMiddleware@{getGlobalMiddleware}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{getGlobalMiddleware()}{getGlobalMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6ec9d06f3569cc5cfe39fe9a8fbbec49} 
+get\+Global\+Middleware (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the global middleware.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a8b710dabed1fa828a0e5de60d0467564}\index{Middleware@{Middleware}!getMiddlewareAliases@{getMiddlewareAliases}}
+\index{getMiddlewareAliases@{getMiddlewareAliases}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{getMiddlewareAliases()}{getMiddlewareAliases()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a8b710dabed1fa828a0e5de60d0467564} 
+get\+Middleware\+Aliases (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the middleware aliases.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a3c2ad3433b8a60b7c9452f01f1d19c0b}\index{Middleware@{Middleware}!getMiddlewareGroups@{getMiddlewareGroups}}
+\index{getMiddlewareGroups@{getMiddlewareGroups}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{getMiddlewareGroups()}{getMiddlewareGroups()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a3c2ad3433b8a60b7c9452f01f1d19c0b} 
+get\+Middleware\+Groups (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the middleware groups.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a41ff291f4357b3ee5be0fcb9665de6d0}\index{Middleware@{Middleware}!getMiddlewarePriority@{getMiddlewarePriority}}
+\index{getMiddlewarePriority@{getMiddlewarePriority}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{getMiddlewarePriority()}{getMiddlewarePriority()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a41ff291f4357b3ee5be0fcb9665de6d0} 
+get\+Middleware\+Priority (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the middleware priority for the application.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a1ece75abc3bce63f68d1f6cfd1c830a6}\index{Middleware@{Middleware}!getMiddlewarePriorityAppends@{getMiddlewarePriorityAppends}}
+\index{getMiddlewarePriorityAppends@{getMiddlewarePriorityAppends}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{getMiddlewarePriorityAppends()}{getMiddlewarePriorityAppends()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a1ece75abc3bce63f68d1f6cfd1c830a6} 
+get\+Middleware\+Priority\+Appends (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the middleware to append to the middleware priority definition.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac2a3dcb525fadd3e95171d65273ce086}\index{Middleware@{Middleware}!getMiddlewarePriorityPrepends@{getMiddlewarePriorityPrepends}}
+\index{getMiddlewarePriorityPrepends@{getMiddlewarePriorityPrepends}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{getMiddlewarePriorityPrepends()}{getMiddlewarePriorityPrepends()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac2a3dcb525fadd3e95171d65273ce086} 
+get\+Middleware\+Priority\+Prepends (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the middleware to prepend to the middleware priority definition.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad8699e16d59dd30af772751ea7e8bde8}\index{Middleware@{Middleware}!getPageMiddleware@{getPageMiddleware}}
+\index{getPageMiddleware@{getPageMiddleware}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{getPageMiddleware()}{getPageMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad8699e16d59dd30af772751ea7e8bde8} 
+get\+Page\+Middleware (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Folio / page middleware for the application.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d5c9430e1596e71341b612005cf6766}\index{Middleware@{Middleware}!group@{group}}
+\index{group@{group}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{group()}{group()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d5c9430e1596e71341b612005cf6766} 
+group (\begin{DoxyParamCaption}\item[{string}]{\$group}{, }\item[{array}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Define a middleware group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & \\
+\hline
+array & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_af2ddd729cf0d1fa422819acac213708f}\index{Middleware@{Middleware}!modifyGroup@{modifyGroup}}
+\index{modifyGroup@{modifyGroup}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{modifyGroup()}{modifyGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_af2ddd729cf0d1fa422819acac213708f} 
+modify\+Group (\begin{DoxyParamCaption}\item[{string}]{\$group}{, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$append}{, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$prepend}{, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$remove}{, }\item[{array}]{\$replace}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Modify the middleware in the given group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & \\
+\hline
+array | string & {\em \$append} & \\
+\hline
+array | string & {\em \$prepend} & \\
+\hline
+array | string & {\em \$remove} & \\
+\hline
+array & {\em \$replace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7ae468b608f169d6bfcdcd0ebd5fd691}\index{Middleware@{Middleware}!pages@{pages}}
+\index{pages@{pages}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{pages()}{pages()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7ae468b608f169d6bfcdcd0ebd5fd691} 
+pages (\begin{DoxyParamCaption}\item[{array}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Register the Folio / page middleware for the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad9815b41a228fc4c66dd3be7153b6ff5}\index{Middleware@{Middleware}!prepend@{prepend}}
+\index{prepend@{prepend}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{prepend()}{prepend()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad9815b41a228fc4c66dd3be7153b6ff5} 
+prepend (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Prepend middleware to the application\textquotesingle{}s global middleware stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad22b35bd97ebc9a88833ddb0d0b31e36}\index{Middleware@{Middleware}!prependToGroup@{prependToGroup}}
+\index{prependToGroup@{prependToGroup}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{prependToGroup()}{prependToGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad22b35bd97ebc9a88833ddb0d0b31e36} 
+prepend\+To\+Group (\begin{DoxyParamCaption}\item[{string}]{\$group}{, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Prepend the given middleware to the specified group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & \\
+\hline
+array | string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a9ff8ba82330b3f516f01582df98b83b7}\index{Middleware@{Middleware}!prependToPriorityList@{prependToPriorityList}}
+\index{prependToPriorityList@{prependToPriorityList}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{prependToPriorityList()}{prependToPriorityList()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a9ff8ba82330b3f516f01582df98b83b7} 
+prepend\+To\+Priority\+List (\begin{DoxyParamCaption}\item[{}]{\$before}{, }\item[{}]{\$prepend}{}\end{DoxyParamCaption})}
+
+Prepend middleware to the priority middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$before} & \\
+\hline
+string & {\em \$prepend} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a3ecf663bdfdae11b3413e913bfcc8577}\index{Middleware@{Middleware}!preventRequestsDuringMaintenance@{preventRequestsDuringMaintenance}}
+\index{preventRequestsDuringMaintenance@{preventRequestsDuringMaintenance}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{preventRequestsDuringMaintenance()}{preventRequestsDuringMaintenance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a3ecf663bdfdae11b3413e913bfcc8577} 
+prevent\+Requests\+During\+Maintenance (\begin{DoxyParamCaption}\item[{array}]{\$except}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Configure the middleware that prevents requests during maintenance mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$} & \$except \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a5176be8bbbcadb93a78f33a45dcdd39f}\index{Middleware@{Middleware}!priority@{priority}}
+\index{priority@{priority}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{priority()}{priority()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a5176be8bbbcadb93a78f33a45dcdd39f} 
+priority (\begin{DoxyParamCaption}\item[{array}]{\$priority}{}\end{DoxyParamCaption})}
+
+Define the middleware priority for the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$priority} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad6560e706da7e96fe9f592b42c8bc920}\index{Middleware@{Middleware}!redirectGuestsTo@{redirectGuestsTo}}
+\index{redirectGuestsTo@{redirectGuestsTo}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{redirectGuestsTo()}{redirectGuestsTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad6560e706da7e96fe9f592b42c8bc920} 
+redirect\+Guests\+To (\begin{DoxyParamCaption}\item[{callable\texorpdfstring{$\vert$}{|}string}]{\$redirect}{}\end{DoxyParamCaption})}
+
+Configure where guests are redirected by the "{}auth"{} middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | string & {\em \$redirect} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_acb965b653d8e18f3ca781c77696d362c}\index{Middleware@{Middleware}!redirectTo@{redirectTo}}
+\index{redirectTo@{redirectTo}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{redirectTo()}{redirectTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_acb965b653d8e18f3ca781c77696d362c} 
+redirect\+To (\begin{DoxyParamCaption}\item[{callable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$guests}{ = {\ttfamily null}, }\item[{callable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$users}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Configure where users are redirected by the authentication and guest middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | string & {\em \$guests} & \\
+\hline
+callable | string & {\em \$users} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a15a064e42297923da4e55669bd1540fd}\index{Middleware@{Middleware}!redirectUsersTo@{redirectUsersTo}}
+\index{redirectUsersTo@{redirectUsersTo}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{redirectUsersTo()}{redirectUsersTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a15a064e42297923da4e55669bd1540fd} 
+redirect\+Users\+To (\begin{DoxyParamCaption}\item[{callable\texorpdfstring{$\vert$}{|}string}]{\$redirect}{}\end{DoxyParamCaption})}
+
+Configure where users are redirected by the "{}guest"{} middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | string & {\em \$redirect} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a9a05465aaea3f733ce9203833293084f}\index{Middleware@{Middleware}!remove@{remove}}
+\index{remove@{remove}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a9a05465aaea3f733ce9203833293084f} 
+remove (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Remove middleware from the application\textquotesingle{}s global middleware stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_af8b0ac7f570ddb2f1ff78880e596b893}\index{Middleware@{Middleware}!removeFromGroup@{removeFromGroup}}
+\index{removeFromGroup@{removeFromGroup}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{removeFromGroup()}{removeFromGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_af8b0ac7f570ddb2f1ff78880e596b893} 
+remove\+From\+Group (\begin{DoxyParamCaption}\item[{string}]{\$group}{, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Remove the given middleware from the specified group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & \\
+\hline
+array | string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a045b1e270089d581ab7b1c2104b01c80}\index{Middleware@{Middleware}!replace@{replace}}
+\index{replace@{replace}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a045b1e270089d581ab7b1c2104b01c80} 
+replace (\begin{DoxyParamCaption}\item[{string}]{\$search}{, }\item[{string}]{\$replace}{}\end{DoxyParamCaption})}
+
+Specify a middleware that should be replaced with another middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$search} & \\
+\hline
+string & {\em \$replace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a918b69726f2bb90d848d3c9dd0d30806}\index{Middleware@{Middleware}!replaceInGroup@{replaceInGroup}}
+\index{replaceInGroup@{replaceInGroup}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{replaceInGroup()}{replaceInGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a918b69726f2bb90d848d3c9dd0d30806} 
+replace\+In\+Group (\begin{DoxyParamCaption}\item[{string}]{\$group}{, }\item[{string}]{\$search}{, }\item[{string}]{\$replace}{}\end{DoxyParamCaption})}
+
+Replace the given middleware in the specified group with another middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & \\
+\hline
+string & {\em \$search} & \\
+\hline
+string & {\em \$replace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac07f8403cdd7fcb06a349ff62ee27efc}\index{Middleware@{Middleware}!statefulApi@{statefulApi}}
+\index{statefulApi@{statefulApi}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{statefulApi()}{statefulApi()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac07f8403cdd7fcb06a349ff62ee27efc} 
+stateful\+Api (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that Sanctum\textquotesingle{}s frontend state middleware should be enabled.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a4c085599eef676dd558c464c57c0bcc9}\index{Middleware@{Middleware}!throttleApi@{throttleApi}}
+\index{throttleApi@{throttleApi}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{throttleApi()}{throttleApi()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a4c085599eef676dd558c464c57c0bcc9} 
+throttle\+Api (\begin{DoxyParamCaption}\item[{}]{\$limiter}{ = {\ttfamily \textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a865cb475c72cb732480d8eb20bd3f14c}{api}}\textquotesingle{}}, }\item[{}]{\$redis}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Indicate that the API middleware group\textquotesingle{}s throttling middleware should be enabled.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$limiter} & \\
+\hline
+bool & {\em \$redis} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a233023ba2ce0685c35a8e7a42692f2ca}\index{Middleware@{Middleware}!throttleWithRedis@{throttleWithRedis}}
+\index{throttleWithRedis@{throttleWithRedis}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{throttleWithRedis()}{throttleWithRedis()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a233023ba2ce0685c35a8e7a42692f2ca} 
+throttle\+With\+Redis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that Laravel\textquotesingle{}s throttling middleware should use Redis.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aea7d826e2ad71905e305315ab3ffac0c}\index{Middleware@{Middleware}!trimStrings@{trimStrings}}
+\index{trimStrings@{trimStrings}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{trimStrings()}{trimStrings()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aea7d826e2ad71905e305315ab3ffac0c} 
+trim\+Strings (\begin{DoxyParamCaption}\item[{array}]{\$except}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Configure the string trimming middleware.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,(} & \\
+\hline
+\end{DoxyParams}
+Closure(\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request)\+: bool)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>} \$except \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aeea4d4f0eb6644ebacca193c5bcc2a39}\index{Middleware@{Middleware}!trustHosts@{trustHosts}}
+\index{trustHosts@{trustHosts}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{trustHosts()}{trustHosts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aeea4d4f0eb6644ebacca193c5bcc2a39} 
+trust\+Hosts (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}callable\texorpdfstring{$\vert$}{|}null}]{\$at}{ = {\ttfamily null}, }\item[{bool}]{\$subdomains}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Indicate that the trusted host middleware should be enabled.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}(callable()} & array$<$int, string$>$)\texorpdfstring{$\vert$}{|}null \$at \\
+\hline
+bool & {\em \$subdomains} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aa4ffc6704c926e632ff8426b73ab1ad1}\index{Middleware@{Middleware}!trustProxies@{trustProxies}}
+\index{trustProxies@{trustProxies}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{trustProxies()}{trustProxies()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aa4ffc6704c926e632ff8426b73ab1ad1} 
+trust\+Proxies (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$at}{ = {\ttfamily null}, }\item[{?int}]{\$headers}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Configure the trusted proxies for the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null} & \$at \\
+\hline
+int | null & {\em \$headers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a61f8a7276b12c0cb9c64f796132b301c}\index{Middleware@{Middleware}!validateCsrfTokens@{validateCsrfTokens}}
+\index{validateCsrfTokens@{validateCsrfTokens}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{validateCsrfTokens()}{validateCsrfTokens()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a61f8a7276b12c0cb9c64f796132b301c} 
+validate\+Csrf\+Tokens (\begin{DoxyParamCaption}\item[{array}]{\$except}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Configure the CSRF token validation middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$except} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a77bd4d698f59298a90741c4440f44924}\index{Middleware@{Middleware}!validateSignatures@{validateSignatures}}
+\index{validateSignatures@{validateSignatures}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{validateSignatures()}{validateSignatures()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a77bd4d698f59298a90741c4440f44924} 
+validate\+Signatures (\begin{DoxyParamCaption}\item[{array}]{\$except}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Configure the \doxylink{class_u_r_l}{URL} signature validation middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$except} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad3b62fea4b1d6b4d8936309cba0f1fd5}\index{Middleware@{Middleware}!web@{web}}
+\index{web@{web}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{web()}{web()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ad3b62fea4b1d6b4d8936309cba0f1fd5} 
+web (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$append}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$prepend}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$remove}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$replace}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Modify the middleware in the "{}web"{} group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$append} & \\
+\hline
+array | string & {\em \$prepend} & \\
+\hline
+array | string & {\em \$remove} & \\
+\hline
+array & {\em \$replace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_abd4db2f5f8956445fcfb5f0d9ecb2d7b}\index{Middleware@{Middleware}!\$apiLimiter@{\$apiLimiter}}
+\index{\$apiLimiter@{\$apiLimiter}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$apiLimiter}{\$apiLimiter}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_abd4db2f5f8956445fcfb5f0d9ecb2d7b} 
+\$api\+Limiter\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab6852c7a9f1b07bc8f036ce54611fbcc}\index{Middleware@{Middleware}!\$appendPriority@{\$appendPriority}}
+\index{\$appendPriority@{\$appendPriority}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$appendPriority}{\$appendPriority}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab6852c7a9f1b07bc8f036ce54611fbcc} 
+\$append\+Priority = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a29ec873a375ecb374d2e2ec92490cd41}\index{Middleware@{Middleware}!\$appends@{\$appends}}
+\index{\$appends@{\$appends}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$appends}{\$appends}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a29ec873a375ecb374d2e2ec92490cd41} 
+\$appends = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ada6cb37ae348f64b18c7459ff91ebcd6}\index{Middleware@{Middleware}!\$authenticatedSessions@{\$authenticatedSessions}}
+\index{\$authenticatedSessions@{\$authenticatedSessions}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$authenticatedSessions}{\$authenticatedSessions}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ada6cb37ae348f64b18c7459ff91ebcd6} 
+\$authenticated\+Sessions = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aac8f9760b0802b702b45c6bc1846d025}\index{Middleware@{Middleware}!\$customAliases@{\$customAliases}}
+\index{\$customAliases@{\$customAliases}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$customAliases}{\$customAliases}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aac8f9760b0802b702b45c6bc1846d025} 
+\$custom\+Aliases = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aad844777d9d6beb4ca7c92d97afe7d27}\index{Middleware@{Middleware}!\$global@{\$global}}
+\index{\$global@{\$global}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$global}{\$global}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aad844777d9d6beb4ca7c92d97afe7d27} 
+\$global = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ae59d3dc405d3194c1d0e483175b36e0d}\index{Middleware@{Middleware}!\$groupAppends@{\$groupAppends}}
+\index{\$groupAppends@{\$groupAppends}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$groupAppends}{\$groupAppends}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ae59d3dc405d3194c1d0e483175b36e0d} 
+\$group\+Appends = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ae5b220a150384e2c6c8e96d9515b046d}\index{Middleware@{Middleware}!\$groupPrepends@{\$groupPrepends}}
+\index{\$groupPrepends@{\$groupPrepends}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$groupPrepends}{\$groupPrepends}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ae5b220a150384e2c6c8e96d9515b046d} 
+\$group\+Prepends = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7dedc66521761097ba0dbcce7456853c}\index{Middleware@{Middleware}!\$groupRemovals@{\$groupRemovals}}
+\index{\$groupRemovals@{\$groupRemovals}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$groupRemovals}{\$groupRemovals}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7dedc66521761097ba0dbcce7456853c} 
+\$group\+Removals = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a23375b6d0041755184f228f48f23521a}\index{Middleware@{Middleware}!\$groupReplacements@{\$groupReplacements}}
+\index{\$groupReplacements@{\$groupReplacements}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$groupReplacements}{\$groupReplacements}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a23375b6d0041755184f228f48f23521a} 
+\$group\+Replacements = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a1af3c911abb4f6414a86954705266327}\index{Middleware@{Middleware}!\$groups@{\$groups}}
+\index{\$groups@{\$groups}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$groups}{\$groups}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a1af3c911abb4f6414a86954705266327} 
+\$groups = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_addb1acad2afda225573d25cf88957ddc}\index{Middleware@{Middleware}!\$pageMiddleware@{\$pageMiddleware}}
+\index{\$pageMiddleware@{\$pageMiddleware}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$pageMiddleware}{\$pageMiddleware}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_addb1acad2afda225573d25cf88957ddc} 
+\$page\+Middleware = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab65c5016e28fc01d6c9da5287c41afb2}\index{Middleware@{Middleware}!\$prependPriority@{\$prependPriority}}
+\index{\$prependPriority@{\$prependPriority}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$prependPriority}{\$prependPriority}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab65c5016e28fc01d6c9da5287c41afb2} 
+\$prepend\+Priority = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac1b97dbda8ea9ea62f3fd50d6b0ef9c0}\index{Middleware@{Middleware}!\$prepends@{\$prepends}}
+\index{\$prepends@{\$prepends}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$prepends}{\$prepends}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac1b97dbda8ea9ea62f3fd50d6b0ef9c0} 
+\$prepends = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a2677e505e860db863720ac4e216fd3f2}\index{Middleware@{Middleware}!\$priority@{\$priority}}
+\index{\$priority@{\$priority}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$priority}{\$priority}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a2677e505e860db863720ac4e216fd3f2} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a5176be8bbbcadb93a78f33a45dcdd39f}{priority}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7b93cece98558f52c50b5812f862caf5}\index{Middleware@{Middleware}!\$removals@{\$removals}}
+\index{\$removals@{\$removals}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$removals}{\$removals}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7b93cece98558f52c50b5812f862caf5} 
+\$removals = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a93cb3f67ace379a71de4fb00bcc7a605}\index{Middleware@{Middleware}!\$replacements@{\$replacements}}
+\index{\$replacements@{\$replacements}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$replacements}{\$replacements}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a93cb3f67ace379a71de4fb00bcc7a605} 
+\$replacements = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7225ff297ef7042628d93f9b7b4c728c}\index{Middleware@{Middleware}!\$statefulApi@{\$statefulApi}}
+\index{\$statefulApi@{\$statefulApi}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$statefulApi}{\$statefulApi}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a7225ff297ef7042628d93f9b7b4c728c} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ac07f8403cdd7fcb06a349ff62ee27efc}{stateful\+Api}} = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d7803a3412a798782e3cd74812931d4}\index{Middleware@{Middleware}!\$this@{\$this}}
+\index{\$this@{\$this}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$this}{\$this}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a6d7803a3412a798782e3cd74812931d4} 
+\mbox{\hyperlink{providers_8php_a790c6224c4222ecf84c7c3f2e46af575}{return}} \$this}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a0a9c3e581eb8f996d47a6123f2a980e8}\index{Middleware@{Middleware}!\$throttleWithRedis@{\$throttleWithRedis}}
+\index{\$throttleWithRedis@{\$throttleWithRedis}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$throttleWithRedis}{\$throttleWithRedis}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a0a9c3e581eb8f996d47a6123f2a980e8} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_a233023ba2ce0685c35a8e7a42692f2ca}{throttle\+With\+Redis}} = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab4c2b75c6310ea8b9d621083215c7ab4}\index{Middleware@{Middleware}!\$trustHosts@{\$trustHosts}}
+\index{\$trustHosts@{\$trustHosts}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{\$trustHosts}{\$trustHosts}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_ab4c2b75c6310ea8b9d621083215c7ab4} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_middleware_aeea4d4f0eb6644ebacca193c5bcc2a39}{trust\+Hosts}} = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Configuration/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_foundation_2_configuration_2middleware_8php}{Middleware.\+php}}\end{DoxyCompactItemize}

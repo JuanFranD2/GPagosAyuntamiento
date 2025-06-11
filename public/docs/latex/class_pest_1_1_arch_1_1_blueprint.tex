@@ -1,0 +1,148 @@
+\doxysection{Blueprint Class Reference}
+\hypertarget{class_pest_1_1_arch_1_1_blueprint}{}\label{class_pest_1_1_arch_1_1_blueprint}\index{Blueprint@{Blueprint}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_1_1_blueprint_a4467017a6b0cad3bb851e06cd91c4e8b}{\+\_\+\+\_\+construct}} (private readonly \mbox{\hyperlink{class_pest_1_1_arch_1_1_factories_1_1_layer_factory}{Layer\+Factory}} \$layer\+Factory, private readonly \mbox{\hyperlink{class_pest_1_1_arch_1_1_value_objects_1_1_targets}{Targets}} \$target, private readonly \mbox{\hyperlink{class_pest_1_1_arch_1_1_collections_1_1_dependencies}{Dependencies}} \$dependencies)
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_1_1_blueprint_ad70604d12b0e0fbc7050207c2b0ca75f}{expect\+To\+Use}} (\mbox{\hyperlink{class_pest_1_1_arch_1_1_options_1_1_layer_options}{Layer\+Options}} \$options, callable \$failure)
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_1_1_blueprint_a1e727db00e0bb7295d84016cee400442}{targeted}} (callable \$callback, \mbox{\hyperlink{class_pest_1_1_arch_1_1_options_1_1_layer_options}{Layer\+Options}} \$options, callable \$failure, callable \$line\+Finder)
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_1_1_blueprint_ac1a90f4ea67584882f89b1ff868101c6}{expect\+To\+Only\+Use}} (\mbox{\hyperlink{class_pest_1_1_arch_1_1_options_1_1_layer_options}{Layer\+Options}} \$options, callable \$failure)
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_1_1_blueprint_ab149cf2cde56745459601b778e3b5233}{expect\+To\+Only\+Be\+Used\+In}} (\mbox{\hyperlink{class_pest_1_1_arch_1_1_options_1_1_layer_options}{Layer\+Options}} \$options, callable \$failure)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pest_1_1_arch_1_1_blueprint_a66334f5f56d959659c22618f2f8e7a44}{make}} (\mbox{\hyperlink{class_pest_1_1_arch_1_1_value_objects_1_1_targets}{Targets}} \$target, \mbox{\hyperlink{class_pest_1_1_arch_1_1_collections_1_1_dependencies}{Dependencies}} \$dependencies)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_arch_1_1_blueprint_a965043a39c8c43a9c984eb8521c52923}{assert\+True}} (mixed \$condition, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_pest_1_1_arch_1_1_blueprint_a2d1aa021aa02be313ecf0683fb0206e4}{assert\+Not\+Equals}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_pest_1_1_arch_1_1_blueprint_a67df56b19f501963a47ccb679e5eb1f6}{assert\+Equals}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_a4467017a6b0cad3bb851e06cd91c4e8b}\index{Blueprint@{Blueprint}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_1_1_blueprint_a4467017a6b0cad3bb851e06cd91c4e8b} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly \mbox{\hyperlink{class_pest_1_1_arch_1_1_factories_1_1_layer_factory}{Layer\+Factory}}}]{\$layer\+Factory}{, }\item[{private readonly \mbox{\hyperlink{class_pest_1_1_arch_1_1_value_objects_1_1_targets}{Targets}}}]{\$target}{, }\item[{private readonly \mbox{\hyperlink{class_pest_1_1_arch_1_1_collections_1_1_dependencies}{Dependencies}}}]{\$dependencies}{}\end{DoxyParamCaption})}
+
+Creates a new Blueprint instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_a67df56b19f501963a47ccb679e5eb1f6}\index{Blueprint@{Blueprint}!assertEquals@{assertEquals}}
+\index{assertEquals@{assertEquals}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{assertEquals()}{assertEquals()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_1_1_blueprint_a67df56b19f501963a47ccb679e5eb1f6} 
+assert\+Equals (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Asserts that two variables are equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_a2d1aa021aa02be313ecf0683fb0206e4}\index{Blueprint@{Blueprint}!assertNotEquals@{assertNotEquals}}
+\index{assertNotEquals@{assertNotEquals}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{assertNotEquals()}{assertNotEquals()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_1_1_blueprint_a2d1aa021aa02be313ecf0683fb0206e4} 
+assert\+Not\+Equals (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Asserts that two variables are not equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_a965043a39c8c43a9c984eb8521c52923}\index{Blueprint@{Blueprint}!assertTrue@{assertTrue}}
+\index{assertTrue@{assertTrue}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{assertTrue()}{assertTrue()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_1_1_blueprint_a965043a39c8c43a9c984eb8521c52923} 
+assert\+True (\begin{DoxyParamCaption}\item[{mixed}]{\$condition}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Asserts that a condition is true.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_ab149cf2cde56745459601b778e3b5233}\index{Blueprint@{Blueprint}!expectToOnlyBeUsedIn@{expectToOnlyBeUsedIn}}
+\index{expectToOnlyBeUsedIn@{expectToOnlyBeUsedIn}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{expectToOnlyBeUsedIn()}{expectToOnlyBeUsedIn()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_1_1_blueprint_ab149cf2cde56745459601b778e3b5233} 
+expect\+To\+Only\+Be\+Used\+In (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pest_1_1_arch_1_1_options_1_1_layer_options}{Layer\+Options}}}]{\$options}{, }\item[{callable}]{\$failure}{}\end{DoxyParamCaption})}
+
+Expects the dependency to "{}only"{} be used by given targets.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(string,string,Violation\texorpdfstring{$\vert$}{|}null)} & mixed \$failure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_ac1a90f4ea67584882f89b1ff868101c6}\index{Blueprint@{Blueprint}!expectToOnlyUse@{expectToOnlyUse}}
+\index{expectToOnlyUse@{expectToOnlyUse}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{expectToOnlyUse()}{expectToOnlyUse()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_1_1_blueprint_ac1a90f4ea67584882f89b1ff868101c6} 
+expect\+To\+Only\+Use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pest_1_1_arch_1_1_options_1_1_layer_options}{Layer\+Options}}}]{\$options}{, }\item[{callable}]{\$failure}{}\end{DoxyParamCaption})}
+
+Expects the target to "{}only"{} use the given dependencies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(string,string,string,Violation\texorpdfstring{$\vert$}{|}null)} & mixed \$failure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_ad70604d12b0e0fbc7050207c2b0ca75f}\index{Blueprint@{Blueprint}!expectToUse@{expectToUse}}
+\index{expectToUse@{expectToUse}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{expectToUse()}{expectToUse()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_1_1_blueprint_ad70604d12b0e0fbc7050207c2b0ca75f} 
+expect\+To\+Use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pest_1_1_arch_1_1_options_1_1_layer_options}{Layer\+Options}}}]{\$options}{, }\item[{callable}]{\$failure}{}\end{DoxyParamCaption})}
+
+Expects the target to use the given dependencies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(string,string)} & mixed \$failure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_arch_1_1_blueprint_a66334f5f56d959659c22618f2f8e7a44}\index{Blueprint@{Blueprint}!make@{make}}
+\index{make@{make}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_1_1_blueprint_a66334f5f56d959659c22618f2f8e7a44} 
+make (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pest_1_1_arch_1_1_value_objects_1_1_targets}{Targets}}}]{\$target}{, }\item[{\mbox{\hyperlink{class_pest_1_1_arch_1_1_collections_1_1_dependencies}{Dependencies}}}]{\$dependencies}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new Blueprint instance. \Hypertarget{class_pest_1_1_arch_1_1_blueprint_a1e727db00e0bb7295d84016cee400442}\index{Blueprint@{Blueprint}!targeted@{targeted}}
+\index{targeted@{targeted}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{targeted()}{targeted()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_1_1_blueprint_a1e727db00e0bb7295d84016cee400442} 
+targeted (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{, }\item[{\mbox{\hyperlink{class_pest_1_1_arch_1_1_options_1_1_layer_options}{Layer\+Options}}}]{\$options}{, }\item[{callable}]{\$failure}{, }\item[{callable}]{\$line\+Finder}{}\end{DoxyParamCaption})}
+
+Creates an expectation with the given callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+Object\+Description} & \$object)\+: bool \$callback \\
+\hline
+{\em callable(\+Violation)} & mixed \$failure \\
+\hline
+{\em callable(string)} & int \$line\+Finder \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest-\/plugin-\/arch/src/\mbox{\hyperlink{pestphp_2pest-plugin-arch_2src_2_blueprint_8php}{Blueprint.\+php}}\end{DoxyCompactItemize}

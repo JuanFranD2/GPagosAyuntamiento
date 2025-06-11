@@ -1,0 +1,4 @@
+var _unsupported_media_type_http_exception_8php =
+[
+    [ "UnsupportedMediaTypeHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_unsupported_media_type_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_unsupported_media_type_http_exception" ]
+];

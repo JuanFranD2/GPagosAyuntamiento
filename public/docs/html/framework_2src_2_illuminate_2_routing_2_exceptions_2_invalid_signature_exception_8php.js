@@ -1,0 +1,4 @@
+var framework_2src_2_illuminate_2_routing_2_exceptions_2_invalid_signature_exception_8php =
+[
+    [ "InvalidSignatureException", "class_illuminate_1_1_routing_1_1_exceptions_1_1_invalid_signature_exception.html", "class_illuminate_1_1_routing_1_1_exceptions_1_1_invalid_signature_exception" ]
+];

@@ -1,0 +1,176 @@
+\doxysection{Anonymous\+Event Class Reference}
+\hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event}{}\label{class_illuminate_1_1_broadcasting_1_1_anonymous_event}\index{AnonymousEvent@{AnonymousEvent}}
+Inheritance diagram for Anonymous\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_broadcasting_1_1_anonymous_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a8d6ad4f42577ccf7f2571370e9cf3a17}{\+\_\+\+\_\+construct}} (protected \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_channel}{Channel}}\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string \$channels)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_abccc348f045e4aef5aace83bf92d91a3}{via}} (string \$connection)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a8ef4ce1ea943e526933d3c0cdda9f9f0}{as}} (string \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_ae6a44e7ced22c2d83402bb0ea67a4a6d}{with}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_support_1_1_arrayable}{Arrayable}}\texorpdfstring{$\vert$}{|}array \$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a2e797ad2d9fe850a39825230cf3e1e47}{to\+Others}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a317b4fea1840fc98e2fdbbc1f0c005e4}{send\+Now}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a12bcef5130168b80d3d52dc82213f19a}{send}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a7f69c09372a6ac0463cc1b9dd9fa7588}{broadcast\+As}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_aa737e1a6be301b52e85746925ba5613e}{broadcast\+With}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_afdd67b80d67f15ce0ab9a0c254dad3bc}{broadcast\+On}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a9ea3183cbcf386cbac721146c1085038}{should\+Broadcast\+Now}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a347039f57e0c8f28171ea25955f99bc5}{\$connection}} = null
+\item 
+string \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a58551b63ba97fb35b928f11f36b1fac6}{\$name}} = null
+\item 
+array \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_ab1f5a5c687101690a0f614623551c47c}{\$payload}} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_afc73e92a2c5d9affbfc3c1c5ffcdc596}{\$include\+Current\+User}} = true
+\item 
+bool \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a76a9eda129f71a7fb9e8e53016ecc861}{\$should\+Broadcast\+Now}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a8d6ad4f42577ccf7f2571370e9cf3a17}\index{AnonymousEvent@{AnonymousEvent}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a8d6ad4f42577ccf7f2571370e9cf3a17} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_channel}{Channel}}\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string}]{\$channels}{}\end{DoxyParamCaption})}
+
+Create a new anonymous broadcastable event instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a8ef4ce1ea943e526933d3c0cdda9f9f0}\index{AnonymousEvent@{AnonymousEvent}!as@{as}}
+\index{as@{as}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{as()}{as()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a8ef4ce1ea943e526933d3c0cdda9f9f0} 
+as (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Set the name the event should be broadcast as. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a7f69c09372a6ac0463cc1b9dd9fa7588}\index{AnonymousEvent@{AnonymousEvent}!broadcastAs@{broadcastAs}}
+\index{broadcastAs@{broadcastAs}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{broadcastAs()}{broadcastAs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a7f69c09372a6ac0463cc1b9dd9fa7588} 
+broadcast\+As (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name the event should broadcast as. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_afdd67b80d67f15ce0ab9a0c254dad3bc}\index{AnonymousEvent@{AnonymousEvent}!broadcastOn@{broadcastOn}}
+\index{broadcastOn@{broadcastOn}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{broadcastOn()}{broadcastOn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_afdd67b80d67f15ce0ab9a0c254dad3bc} 
+broadcast\+On (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the channels the event should broadcast on.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Channel\texorpdfstring{$\vert$}{|}\textbackslash{}\+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Channel\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}string\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_broadcasting_1_1_should_broadcast_afdd67b80d67f15ce0ab9a0c254dad3bc}{Should\+Broadcast}}.
+
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_aa737e1a6be301b52e85746925ba5613e}\index{AnonymousEvent@{AnonymousEvent}!broadcastWith@{broadcastWith}}
+\index{broadcastWith@{broadcastWith}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{broadcastWith()}{broadcastWith()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_aa737e1a6be301b52e85746925ba5613e} 
+broadcast\+With (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the payload the event should broadcast with.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a12bcef5130168b80d3d52dc82213f19a}\index{AnonymousEvent@{AnonymousEvent}!send@{send}}
+\index{send@{send}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a12bcef5130168b80d3d52dc82213f19a} 
+send (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\doxylink{class_broadcast}{Broadcast} the event. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a317b4fea1840fc98e2fdbbc1f0c005e4}\index{AnonymousEvent@{AnonymousEvent}!sendNow@{sendNow}}
+\index{sendNow@{sendNow}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{sendNow()}{sendNow()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a317b4fea1840fc98e2fdbbc1f0c005e4} 
+send\+Now (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\doxylink{class_broadcast}{Broadcast} the event. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a9ea3183cbcf386cbac721146c1085038}\index{AnonymousEvent@{AnonymousEvent}!shouldBroadcastNow@{shouldBroadcastNow}}
+\index{shouldBroadcastNow@{shouldBroadcastNow}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{shouldBroadcastNow()}{shouldBroadcastNow()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a9ea3183cbcf386cbac721146c1085038} 
+should\+Broadcast\+Now (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the event should be broadcast synchronously. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a2e797ad2d9fe850a39825230cf3e1e47}\index{AnonymousEvent@{AnonymousEvent}!toOthers@{toOthers}}
+\index{toOthers@{toOthers}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{toOthers()}{toOthers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a2e797ad2d9fe850a39825230cf3e1e47} 
+to\+Others (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\doxylink{class_broadcast}{Broadcast} the event to everyone except the current user. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_abccc348f045e4aef5aace83bf92d91a3}\index{AnonymousEvent@{AnonymousEvent}!via@{via}}
+\index{via@{via}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{via()}{via()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_abccc348f045e4aef5aace83bf92d91a3} 
+via (\begin{DoxyParamCaption}\item[{string}]{\$connection}{}\end{DoxyParamCaption})}
+
+Set the connection the event should be broadcast on. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_ae6a44e7ced22c2d83402bb0ea67a4a6d}\index{AnonymousEvent@{AnonymousEvent}!with@{with}}
+\index{with@{with}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{with()}{with()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_ae6a44e7ced22c2d83402bb0ea67a4a6d} 
+with (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_support_1_1_arrayable}{Arrayable}}\texorpdfstring{$\vert$}{|}array}]{\$payload}{}\end{DoxyParamCaption})}
+
+Set the payload the event should be broadcast with. 
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a347039f57e0c8f28171ea25955f99bc5}\index{AnonymousEvent@{AnonymousEvent}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a347039f57e0c8f28171ea25955f99bc5} 
+string \$connection = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The connection the event should be broadcast on. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_afc73e92a2c5d9affbfc3c1c5ffcdc596}\index{AnonymousEvent@{AnonymousEvent}!\$includeCurrentUser@{\$includeCurrentUser}}
+\index{\$includeCurrentUser@{\$includeCurrentUser}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{\$includeCurrentUser}{\$includeCurrentUser}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_afc73e92a2c5d9affbfc3c1c5ffcdc596} 
+bool \$include\+Current\+User = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+Should the broadcast include the current user. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a58551b63ba97fb35b928f11f36b1fac6}\index{AnonymousEvent@{AnonymousEvent}!\$name@{\$name}}
+\index{\$name@{\$name}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{\$name}{\$name}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a58551b63ba97fb35b928f11f36b1fac6} 
+string \$name = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The name the event should be broadcast as. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_ab1f5a5c687101690a0f614623551c47c}\index{AnonymousEvent@{AnonymousEvent}!\$payload@{\$payload}}
+\index{\$payload@{\$payload}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{\$payload}{\$payload}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_ab1f5a5c687101690a0f614623551c47c} 
+array \$payload = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+The payload the event should be broadcast with. \Hypertarget{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a76a9eda129f71a7fb9e8e53016ecc861}\index{AnonymousEvent@{AnonymousEvent}!\$shouldBroadcastNow@{\$shouldBroadcastNow}}
+\index{\$shouldBroadcastNow@{\$shouldBroadcastNow}!AnonymousEvent@{AnonymousEvent}}
+\doxysubsubsection{\texorpdfstring{\$shouldBroadcastNow}{\$shouldBroadcastNow}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a76a9eda129f71a7fb9e8e53016ecc861} 
+bool \$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_anonymous_event_a9ea3183cbcf386cbac721146c1085038}{should\+Broadcast\+Now}} = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Indicates if the event should be broadcast synchronously. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Broadcasting/\mbox{\hyperlink{_anonymous_event_8php}{Anonymous\+Event.\+php}}\end{DoxyCompactItemize}

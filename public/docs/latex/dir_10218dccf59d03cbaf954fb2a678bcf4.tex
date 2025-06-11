@@ -1,0 +1,159 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/mini-\/svg-\/data-\/uri Directory Reference}
+\hypertarget{dir_10218dccf59d03cbaf954fb2a678bcf4}{}\label{dir_10218dccf59d03cbaf954fb2a678bcf4}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/mini-\/svg-\/data-\/uri Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/mini-\/svg-\/data-\/uri Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+This tool converts SVGs into the most compact, compressible {\ttfamily data\+:} URI that SVG-\/supporting browsers tolerate. The results look like this (169 bytes)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{data:image/svg+xml,\%3csvg\ xmlns='http://www.w3.org/2000/svg'\ viewBox='0\ 0\ 50\ 50'}
+\DoxyCodeLine{\%3e\%3cpath\ d='M22\ 38V51L32\ 32l19-\/19v12C44\ 26\ 43\ 10\ 38\ 0\ 52\ 15\ 49\ 39\ 22\ 38z'/\%3e}
+\DoxyCodeLine{\%3c/svg\%3e}
+
+\end{DoxyCode}
+
+
+Compare to the Base64 version (210 bytes)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIH}
+\DoxyCodeLine{ZpZXdCb3g9IjAgMCA1MCA1MCI+PHBhdGggZD0iTTIyIDM4VjUxTDMyIDMybDE5LTE5djEyQzQ0IDI2ID}
+\DoxyCodeLine{QzIDEwIDM4IDAgNTIgMTUgNDkgMzkgMjIgMzh6Ii8+PC9zdmc+}
+
+\end{DoxyCode}
+
+
+Or the URL-\/encoded version other tools produce (256 bytes)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{data:image/svg+xml;charset=US-\/ASCII,\%3Csvg\%20xmlns\%3D\%22http\%3A\%2F\%2Fwww.w3.org\%}
+\DoxyCodeLine{2F2000\%2Fsvg\%22\%20viewBox\%3D\%220\%200\%2050\%2050\%22\%3E\%3Cpath\%20d\%3D\%22M22\%2038V51}
+\DoxyCodeLine{L32\%2032l19-\/19v12C44\%2026\%2043\%2010\%2038\%200\%2052\%2015\%2049\%2039\%2022\%2038z\%22\%2}
+\DoxyCodeLine{F\%3E\%3C\%2Fsvg\%3E}
+
+\end{DoxyCode}
+
+
+For a more realistic example, I inlined the icons from the \href{https://useiconic.com/open}{\texttt{Open Iconic}} project into CSS files with the 3 above methods\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Compression  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Base64  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Basic \%-\/encoding  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ {\ttfamily mini-\/svg-\/data-\/uri}  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Compression  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Base64  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ Basic \%-\/encoding  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ {\ttfamily mini-\/svg-\/data-\/uri}  }\\\cline{1-4}
+\endhead
+None  &\PBS\raggedleft 96.\+459 kB  &\PBS\raggedleft 103.\+268 kB  &\PBS\raggedleft 76.\+583 kB  \\\cline{1-4}
+{\ttfamily gzip -\/9}  &\PBS\raggedleft 17.\+902 kB  &\PBS\raggedleft 13.\+780 kB  &\PBS\raggedleft 12.\+974 kB  \\\cline{1-4}
+{\ttfamily brotli -\/Z}  &\PBS\raggedleft 15.\+797 kB  &\PBS\raggedleft 11.\+693 kB  &\PBS\raggedleft 10.\+976 kB  \\\cline{1-4}
+\end{longtabu}
+
+
+Roughly 6\% smaller compressed, but don\textquotesingle{}t write off the ≈20\% uncompressed savings either. \href{https://blogs.msdn.microsoft.com/ieinternals/2014/10/21/compressing-the-web/}{\texttt{Some browser caches decompress before store}}, and parsing time/memory usage scale linearly with uncompressed filesize.\hypertarget{README.md_autotoc_md5142}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md5142}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ svgToMiniDataURI\ =\ require('mini-\/svg-\/data-\/uri');}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ svg\ =\ '<svg\ xmlns="{}http://www.w3.org/2000/svg"{}\ viewBox="{}0\ 0\ 50\ 50"{}><path\ d="{}M22\ 38V51L32\ 32l19-\/19v12C44\ 26\ 43\ 10\ 38\ 0\ 52\ 15\ 49\ 39\ 22\ 38z"{}/></svg>';}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ optimizedSVGDataURI\ =\ svgToMiniDataURI(svg);}
+\DoxyCodeLine{//\ "{}data:image/svg+xml,\%3csvg\ xmlns='http://www.w3.org/2000/svg'\ viewBox='0\ 0\ 50\ 50'\%3e\%3cpath\ d='M22\ 38V51L32\ 32l19-\/19v12C44\ 26\ 43\ 10\ 38\ 0\ 52\ 15\ 49\ 39\ 22\ 38z'/\%3e\%3c/svg\%3e"{}}
+
+\end{DoxyCode}
+
+
+You can also \href{https://npm.runkit.com/mini-svg-data-uri}{\texttt{try it in your browser at Run\+Kit}}.\hypertarget{README.md_autotoc_md5143}{}\doxysubsubsection{\texorpdfstring{CLI}{CLI}}\label{README.md_autotoc_md5143}
+If you have it installed globally, or as some kind of dependency inside your project’s directory\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mini-\/svg-\/data-\/uri\ file.svg\ \#\ writes\ to\ stdout}
+\DoxyCodeLine{mini-\/svg-\/data-\/uri\ file.svg\ file.svg.uri\ \#\ writes\ to\ the\ given\ output\ filename}
+
+\end{DoxyCode}
+
+
+Use {\ttfamily -\/-\/help} for more info.\hypertarget{README.md_autotoc_md5144}{}\doxysubsubsection{\texorpdfstring{Warning}{Warning}}\label{README.md_autotoc_md5144}
+
+\begin{DoxyItemize}
+\item This {\bfseries{does not optimize the SVG source file}}. You’ll want \href{https://github.com/svg/svgo}{\texttt{svgo}} or its brother \href{https://jakearchibald.github.io/svgomg/}{\texttt{SVGOMG}} for that.
+\item The default output {\bfseries{does not work inside {\ttfamily srcset} attributes}}. Use the {\ttfamily .to\+Srcset} method for that\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ srcsetExample\ =\ html`}
+\DoxyCodeLine{<picture>}
+\DoxyCodeLine{\ \ <source\ srcset="{}\$\{svgToMiniDataURI.toSrcset(svg)\}"{}>}
+\DoxyCodeLine{\ \ <img\ src="{}\$\{svgToMiniDataURI(svg)\}"{}>}
+\DoxyCodeLine{</picture>`;}
+
+\end{DoxyCode}
+
+\item The resulting Data URI should be wrapped with double quotes\+: {\ttfamily url("{}…"{})}, {\ttfamily \texorpdfstring{$<$}{<}img src="{}…"{}\texorpdfstring{$>$}{>}}, etc.
+\item This might change or break SVGs that use {\ttfamily "{}$<$/tt$>$ in character data, like inside $<$tt$>$\textbackslash{}$<$text\textbackslash{}$>$$<$/tt$>$ or $<$tt$>$aria-\/label$<$/tt$>$ or something. Try curly quotes ($<$tt$>$“”$<$/tt$>$)  or $<$tt$>$\textbackslash{}"{}$<$/tt$>$ instead.   @section autotoc\+\_\+md5145 FAQ   @subsection autotoc\+\_\+md5146 Don’t you need a $<$tt$>$charset$<$/tt$>$ in the MIME Type?  $<$tt$>$charset$<$/tt$>$ does nothing for Data URIs. The URI can only be the encoding of its parent file — it’s included in it!  @subsection autotoc\+\_\+md5147 Why lowercase the URL-\/encoded hex pairs?  \+It compresses slightly better. No, really. Using the same files from earlier\+:  $<$table class="{}markdown\+Table"{}$>$   $<$tr class="{}markdown\+Table\+Head"{}$>$    $<$th class="{}markdown\+Table\+Head\+None"{}\texorpdfstring{$>$}{>} Compression  }
+\end{DoxyItemize}
+
+{\ttfamily  }
+
+{\ttfamily  Uppercase ({\ttfamily AF})  }
+
+{\ttfamily  }
+
+{\ttfamily  Lowercase ({\ttfamily af})  }
+
+{\ttfamily  }
+
+{\ttfamily  }
+
+{\ttfamily  }
+
+{\ttfamily  {\ttfamily gzip -\/9}  }
+
+{\ttfamily  }
+
+{\ttfamily  12.\+978 kB  }
+
+{\ttfamily  }
+
+{\ttfamily  12.\+974 kB  }
+
+{\ttfamily  }
+
+{\ttfamily  }
+
+{\ttfamily  }
+
+{\ttfamily  {\ttfamily brotli -\/Z}  }
+
+{\ttfamily  }
+
+{\ttfamily  10.\+988 kB  }
+
+{\ttfamily  }
+
+{\ttfamily  10.\+976 kB  }
+
+{\ttfamily  }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily I did say {\itshape slightly}.}
+
+{\ttfamily }\hypertarget{README.md_autotoc_md5148}{}\doxysubsection{\texorpdfstring{{\ttfamily Browser support}}{{\ttfamily Browser support}}}\label{README.md_autotoc_md5148}
+{\ttfamily }
+
+{\ttfamily 
+\begin{DoxyItemize}
+\item Internet Explorer 9 and up, including Edge
+\item Firefox, Safari, Chrome, whatever else uses their engines
+\item Android Web\+Kit 3+
+\item Opera Mini’s server-\/side Presto 
+\end{DoxyItemize}}

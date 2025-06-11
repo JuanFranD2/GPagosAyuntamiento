@@ -1,0 +1,4 @@
+var _move_coverage_directories_to_source_8php =
+[
+    [ "MoveCoverageDirectoriesToSource", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_move_coverage_directories_to_source.html", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_move_coverage_directories_to_source" ]
+];

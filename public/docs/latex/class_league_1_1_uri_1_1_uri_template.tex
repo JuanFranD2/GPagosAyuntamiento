@@ -1,0 +1,148 @@
+\doxysection{Uri\+Template Class Reference}
+\hypertarget{class_league_1_1_uri_1_1_uri_template}{}\label{class_league_1_1_uri_1_1_uri_template}\index{UriTemplate@{UriTemplate}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_a5dd3178101a552451acaa227b06d0679}{Operator}} \+: string \{ \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_a5dd3178101a552451acaa227b06d0679aa4500e61db092c2e1719b5d68b047ec3}{first}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_a21b5dbbf211f44a102751ce1fc3f76a3}{\+\_\+\+\_\+construct}} (Stringable\texorpdfstring{$\vert$}{|}string \$template, iterable \$default\+Variables=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_a5d9dc4ee2d6563ea86a5d8f4d450d124}{get\+Template}} ()
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_a4ac7030fc1df715d1ecfc55149c9d4d5}{get\+Variable\+Names}} ()
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_a66ad5b9d6b684026c34723f908b4c8c7}{get\+Default\+Variables}} ()
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_a4edcfd10c363355062cb7893a5b11255}{with\+Default\+Variables}} (iterable \$default\+Variables)
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_aa7e9464120c9ab6b669d6c1c7713462f}{expand}} (iterable \$variables=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_ab030cda71d30a10e4bf16ed55fdf04fe}{expand\+Or\+Fail}} (iterable \$variables=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\label{doc-enum-members}
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_doc-enum-members}
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_a5dd3178101a552451acaa227b06d0679}\index{UriTemplate@{UriTemplate}!Operator@{Operator}}
+\index{Operator@{Operator}!UriTemplate@{UriTemplate}}
+\doxysubsubsection{\texorpdfstring{Operator}{Operator}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_template_a5dd3178101a552451acaa227b06d0679} 
+enum \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_template_a5dd3178101a552451acaa227b06d0679}{Operator}} \+: string}
+
+Processing behavior according to the expression type operator. \begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{first@{first}!UriTemplate@{UriTemplate}}\index{UriTemplate@{UriTemplate}!first@{first}}}\Hypertarget{class_league_1_1_uri_1_1_uri_template_a5dd3178101a552451acaa227b06d0679aa4500e61db092c2e1719b5d68b047ec3}\label{class_league_1_1_uri_1_1_uri_template_a5dd3178101a552451acaa227b06d0679aa4500e61db092c2e1719b5d68b047ec3} 
+first&Expression regular expression pattern.
+
+\doxylink{}{Reserved Operator characters.  \href{https://tools.ietf.org/html/rfc6570\#section-2.2}{\texttt{https\+://tools.\+ietf.\+org/html/rfc6570\#section-\/2.\+2}} }\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{doc-constructors}
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_a21b5dbbf211f44a102751ce1fc3f76a3}\index{UriTemplate@{UriTemplate}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!UriTemplate@{UriTemplate}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_template_a21b5dbbf211f44a102751ce1fc3f76a3} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string}]{\$template}{, }\item[{iterable}]{\$default\+Variables}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & if the template syntax is invalid \\
+\hline
+{\em Template\+Can\+Not\+Be\+Expanded} & if the template or the variables are invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_aa7e9464120c9ab6b669d6c1c7713462f}\index{UriTemplate@{UriTemplate}!expand@{expand}}
+\index{expand@{expand}!UriTemplate@{UriTemplate}}
+\doxysubsubsection{\texorpdfstring{expand()}{expand()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_template_aa7e9464120c9ab6b669d6c1c7713462f} 
+expand (\begin{DoxyParamCaption}\item[{iterable}]{\$variables}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Template\+Can\+Not\+Be\+Expanded} & if the variables are invalid \\
+\hline
+{\em Uri\+Exception} & if the resulting expansion cannot be converted to a Uri\+Interface instance\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$variables Variables to use in the template expansion\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_league_1_1_uri_1_1_uri_template_ab030cda71d30a10e4bf16ed55fdf04fe}\index{UriTemplate@{UriTemplate}!expandOrFail@{expandOrFail}}
+\index{expandOrFail@{expandOrFail}!UriTemplate@{UriTemplate}}
+\doxysubsubsection{\texorpdfstring{expandOrFail()}{expandOrFail()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_template_ab030cda71d30a10e4bf16ed55fdf04fe} 
+expand\+Or\+Fail (\begin{DoxyParamCaption}\item[{iterable}]{\$variables}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Template\+Can\+Not\+Be\+Expanded} & if the variables are invalid or missing \\
+\hline
+{\em Uri\+Exception} & if the resulting expansion cannot be converted to a Uri\+Interface instance \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_a66ad5b9d6b684026c34723f908b4c8c7}\index{UriTemplate@{UriTemplate}!getDefaultVariables@{getDefaultVariables}}
+\index{getDefaultVariables@{getDefaultVariables}!UriTemplate@{UriTemplate}}
+\doxysubsubsection{\texorpdfstring{getDefaultVariables()}{getDefaultVariables()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_template_a66ad5b9d6b684026c34723f908b4c8c7} 
+get\+Default\+Variables (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_a5d9dc4ee2d6563ea86a5d8f4d450d124}\index{UriTemplate@{UriTemplate}!getTemplate@{getTemplate}}
+\index{getTemplate@{getTemplate}!UriTemplate@{UriTemplate}}
+\doxysubsubsection{\texorpdfstring{getTemplate()}{getTemplate()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_template_a5d9dc4ee2d6563ea86a5d8f4d450d124} 
+get\+Template (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_a4ac7030fc1df715d1ecfc55149c9d4d5}\index{UriTemplate@{UriTemplate}!getVariableNames@{getVariableNames}}
+\index{getVariableNames@{getVariableNames}!UriTemplate@{UriTemplate}}
+\doxysubsubsection{\texorpdfstring{getVariableNames()}{getVariableNames()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_template_a4ac7030fc1df715d1ecfc55149c9d4d5} 
+get\+Variable\+Names (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_league_1_1_uri_1_1_uri_template_a4edcfd10c363355062cb7893a5b11255}\index{UriTemplate@{UriTemplate}!withDefaultVariables@{withDefaultVariables}}
+\index{withDefaultVariables@{withDefaultVariables}!UriTemplate@{UriTemplate}}
+\doxysubsubsection{\texorpdfstring{withDefaultVariables()}{withDefaultVariables()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_template_a4edcfd10c363355062cb7893a5b11255} 
+with\+Default\+Variables (\begin{DoxyParamCaption}\item[{iterable}]{\$default\+Variables}{}\end{DoxyParamCaption})}
+
+Returns a new instance with the updated default variables.
+
+This method MUST retain the state of the current instance, and return an instance that contains the modified default variables.
+
+If present, variables whose name is not part of the current template possible variable names are removed.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Template\+Can\+Not\+Be\+Expanded} & if the variables are invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/uri/\mbox{\hyperlink{league_2uri_2_uri_template_8php}{Uri\+Template.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/uri/\+Uri\+Template/\mbox{\hyperlink{league_2uri_2_uri_template_2_operator_8php}{Operator.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/guzzlehttp/uri-\/template/src/\mbox{\hyperlink{guzzlehttp_2uri-template_2src_2_uri_template_8php}{Uri\+Template.\+php}}\end{DoxyCompactItemize}

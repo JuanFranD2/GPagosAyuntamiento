@@ -1,0 +1,84 @@
+\doxysection{Var\+Cloner Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_var_cloner}{}\label{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_var_cloner}\index{VarCloner@{VarCloner}}
+Inheritance diagram for Var\+Cloner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_var_cloner}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_var_cloner_ac71712dcb2ab4226d455be7138fd32e3}{do\+Clone}} (mixed \$var)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner}{Abstract\+Cloner}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_a8cc6a4ead5f19d9b3d2a13899b70cca4}{cast\+Object}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_stub}{Stub}} \$stub, bool \$is\+Nested)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_ad6878db29c9500c751c1e4d30075dbcd}{cast\+Resource}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_stub}{Stub}} \$stub, bool \$is\+Nested)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner}{Abstract\+Cloner}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_aa4c10ce3d6bf0be3d539447f524d707c}{\+\_\+\+\_\+construct}} (?array \$casters=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_ac00193d681def5217ffa183f3874829c}{add\+Casters}} (array \$casters)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_ae540797a6adb99b1cdb42b8081e37276}{set\+Max\+Items}} (int \$max\+Items)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_a26ec114fbaa1c4344250d3899baaf0f7}{set\+Max\+String}} (int \$max\+String)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_a9b41ee4cdba50e7cd102c70c3522d7e7}{set\+Min\+Depth}} (int \$min\+Depth)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_a9731e067ab3ca7c2eb601c4354a0d29d}{clone\+Var}} (mixed \$var, int \$filter=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_cloner_interface}{Cloner\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_cloner_interface_a261611dfe06b6b75cbf4dce6066e0364}{clone\+Var}} (mixed \$var)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner}{Abstract\+Cloner}}}
+\begin{DoxyCompactItemize}
+\item 
+static array \mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_a2c6e5bca4c7aa4ba1ab5559f72344064}{\$default\+Casters}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner}{Abstract\+Cloner}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_a020212f9471b8ec60e1009acc46d3011}{\$max\+Items}} = 2500
+\item 
+int \mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_aae4b93877461ed7f022ec26088249661}{\$max\+String}} = -\/1
+\item 
+int \mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_a8a7a18abe8ef8c62422874a9e43065c4}{\$min\+Depth}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{p@tchwork.\+com}} 
+\end{DoxyAuthor}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2filp_2whoops_2src_2_whoops_2_handler_2_pretty_page_handler_8php-example}{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/filp/whoops/src/\+Whoops/\+Handler/\+Pretty\+Page\+Handler.\+php}}.\end{Desc}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_var_cloner_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_var_cloner_ac71712dcb2ab4226d455be7138fd32e3}\index{VarCloner@{VarCloner}!doClone@{doClone}}
+\index{doClone@{doClone}!VarCloner@{VarCloner}}
+\doxysubsubsection{\texorpdfstring{doClone()}{doClone()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_var_cloner_ac71712dcb2ab4226d455be7138fd32e3} 
+do\+Clone (\begin{DoxyParamCaption}\item[{mixed}]{\$var}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Effectively clones the PHP variable. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_abstract_cloner_ac71712dcb2ab4226d455be7138fd32e3}{Abstract\+Cloner}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/var-\/dumper/\+Cloner/\mbox{\hyperlink{_var_cloner_8php}{Var\+Cloner.\+php}}\end{DoxyCompactItemize}

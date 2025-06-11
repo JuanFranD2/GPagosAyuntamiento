@@ -1,0 +1,175 @@
+\doxysection{Standard\+Tag\+Factory Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory}{}\label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory}\index{StandardTagFactory@{StandardTagFactory}}
+Inheritance diagram for Standard\+Tag\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_abf50bb3e686d6bd65b18d409c87d34fb}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_fqsen_resolver}{Fqsen\+Resolver}} \$fqsen\+Resolver, ?array \$tag\+Handlers=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_acd6cf6c525ed41b9359da491c7d70aa1}{create}} (string \$tag\+Line, ?Type\+Context \$context=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a6d2792e725a373eec55e9c8ca43665a6}{add\+Parameter}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_acacbc471d59fbc41c0c68f118ff65a56}{add\+Service}} (object \$service, ?string \$alias=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a05856bac6ac7add813d6d516cb6aa29b}{register\+Tag\+Handler}} (string \$tag\+Name, \$handler)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory}{Tag\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_aa7cac3b00ed953b89d7d9d8c4373f4a0}{add\+Service}} (object \$service)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a957784e7c5fa6aa8f0cfce8ded3c4a7a}{REGEX\+\_\+\+TAGNAME}} = \textquotesingle{}\mbox{[}\textbackslash{}w\textbackslash{}-\/\textbackslash{}\+\_\+\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\+:\mbox{]}+\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a Tag object given the contents of a tag.
+
+This Factory is capable of determining the appropriate class for a tag and instantiate it using its {\ttfamily create} factory method. The {\ttfamily create} factory method of a Tag can have a variable number of arguments; this way you can pass the dependencies that you need to construct a tag object.
+
+\begin{quote}
+Important\+: each parameter in addition to the body variable for the {\ttfamily create} method must default to null, otherwise it violates the constraint with the interface; it is recommended to use the \{\begin{DoxySeeAlso}{See also}
+Assert\+::not\+Null()\} method to verify that a dependency is actually passed. 
+\end{DoxySeeAlso}
+\end{quote}
+
+
+This Factory also features a Service Locator component that is used to pass the right dependencies to the {\ttfamily create} method of a tag; each dependency should be registered as a service or as a parameter.
+
+When you want to use a Tag of your own with custom handling you need to call the {\ttfamily register\+Tag\+Handler} method, pass the name of the tag and a Fully Qualified Class Name pointing to a class that implements the Tag interface. 
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_abf50bb3e686d6bd65b18d409c87d34fb}\index{StandardTagFactory@{StandardTagFactory}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!StandardTagFactory@{StandardTagFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_abf50bb3e686d6bd65b18d409c87d34fb} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_fqsen_resolver}{Fqsen\+Resolver}}}]{\$fqsen\+Resolver}{, }\item[{?array}]{\$tag\+Handlers}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Initialize this tag factory with the means to resolve an FQSEN and optionally a list of tag handlers.
+
+If no tag handlers are provided than the default list in the \{\begin{DoxySeeAlso}{See also}
+self\+::\$tag\+Handler\+Mappings\} property is used.
+
+self\+::register\+Tag\+Handler() to add a \doxylink{resources_2views_2livewire_2pages_2auth_2confirm-password_8blade_8php_ae3b81d385ca4c26109dfbda28c563e2b}{new} tag handler to the existing default list.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$class-\/string$<$\+Tag$>$$>$} & \$tag\+Handlers \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a6d2792e725a373eec55e9c8ca43665a6}\index{StandardTagFactory@{StandardTagFactory}!addParameter@{addParameter}}
+\index{addParameter@{addParameter}!StandardTagFactory@{StandardTagFactory}}
+\doxysubsubsection{\texorpdfstring{addParameter()}{addParameter()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a6d2792e725a373eec55e9c8ca43665a6} 
+add\+Parameter (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_a6d2792e725a373eec55e9c8ca43665a6}{Tag\+Factory}}.
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_acacbc471d59fbc41c0c68f118ff65a56}\index{StandardTagFactory@{StandardTagFactory}!addService@{addService}}
+\index{addService@{addService}!StandardTagFactory@{StandardTagFactory}}
+\doxysubsubsection{\texorpdfstring{addService()}{addService()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_acacbc471d59fbc41c0c68f118ff65a56} 
+add\+Service (\begin{DoxyParamCaption}\item[{object}]{\$service}{, }\item[{?string}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_acd6cf6c525ed41b9359da491c7d70aa1}\index{StandardTagFactory@{StandardTagFactory}!create@{create}}
+\index{create@{create}!StandardTagFactory@{StandardTagFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_acd6cf6c525ed41b9359da491c7d70aa1} 
+create (\begin{DoxyParamCaption}\item[{string}]{\$tag\+Line}{, }\item[{?Type\+Context}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Factory method responsible for instantiating the correct sub type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag\+Line} & The text for this tag, including description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tag A new tag object.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If an invalid tag line was presented. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_factory_acd6cf6c525ed41b9359da491c7d70aa1}{Factory}}.
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a05856bac6ac7add813d6d516cb6aa29b}\index{StandardTagFactory@{StandardTagFactory}!registerTagHandler@{registerTagHandler}}
+\index{registerTagHandler@{registerTagHandler}!StandardTagFactory@{StandardTagFactory}}
+\doxysubsubsection{\texorpdfstring{registerTagHandler()}{registerTagHandler()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a05856bac6ac7add813d6d516cb6aa29b} 
+register\+Tag\+Handler (\begin{DoxyParamCaption}\item[{string}]{\$tag\+Name}{, }\item[{}]{\$handler}{}\end{DoxyParamCaption})}
+
+Registers a handler for tags.
+
+If you want to use your own tags then you can use this method to instruct the \doxylink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory}{Tag\+Factory} to register the name of a tag with the FQCN of a \textquotesingle{}\doxylink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag}{Tag} Handler\textquotesingle{}. The \doxylink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag}{Tag} handler should implement the \{\begin{DoxySeeAlso}{See also}
+\doxylink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag}{Tag}\} interface (and thus the \doxylink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_factory_acd6cf6c525ed41b9359da491c7d70aa1}{create} method).
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag\+Name} & Name of tag to register a handler for. When registering a namespaced tag, the full name, along with a prefixing slash MUST be provided. \\
+\hline
+ & {\em class-\/string$<$\+Tag$>$\texorpdfstring{$\vert$}{|}\+Factory} & \$handler FQCN of handler.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the tag name is not a string. \\
+\hline
+{\em Invalid\+Argument\+Exception} & If the tag name is namespaced (contains backslashes) but does not start with a backslash. \\
+\hline
+{\em Invalid\+Argument\+Exception} & If the handler is not a string. \\
+\hline
+{\em Invalid\+Argument\+Exception} & If the handler is not an existing class. \\
+\hline
+{\em Invalid\+Argument\+Exception} & If the handler does not implement the \{\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\doxylink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag}{Tag}\} interface.
+\end{DoxySeeAlso}
+ 
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_a05856bac6ac7add813d6d516cb6aa29b}{Tag\+Factory}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a957784e7c5fa6aa8f0cfce8ded3c4a7a}\index{StandardTagFactory@{StandardTagFactory}!REGEX\_TAGNAME@{REGEX\_TAGNAME}}
+\index{REGEX\_TAGNAME@{REGEX\_TAGNAME}!StandardTagFactory@{StandardTagFactory}}
+\doxysubsubsection{\texorpdfstring{REGEX\_TAGNAME}{REGEX\_TAGNAME}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a957784e7c5fa6aa8f0cfce8ded3c4a7a} 
+const REGEX\+\_\+\+TAGNAME = \textquotesingle{}\mbox{[}\textbackslash{}w\textbackslash{}-\/\textbackslash{}\+\_\+\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\+:\mbox{]}+\textquotesingle{}}
+
+PCRE regular expression matching a tag name. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock/src/\+Doc\+Block/\mbox{\hyperlink{_standard_tag_factory_8php}{Standard\+Tag\+Factory.\+php}}\end{DoxyCompactItemize}

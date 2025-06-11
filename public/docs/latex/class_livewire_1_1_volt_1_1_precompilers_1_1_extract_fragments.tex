@@ -1,0 +1,98 @@
+\doxysection{Extract\+Fragments Class Reference}
+\hypertarget{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments}{}\label{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments}\index{ExtractFragments@{ExtractFragments}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_ab7c46b397edf04297b97922b15db6dc9}{\+\_\+\+\_\+construct}} (protected string \$compiled\+View\+Path)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_aa30dfe99ae37f3757770ab1c568c4564}{\+\_\+\+\_\+invoke}} (string \$template)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_a0bc12458c7841b9ce80808dc31b2a631}{component\+Arguments}} (array \$defined\+Vars)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_aab24eb6ec569a1992ebba9e07c8846f5}{arguments\+From\+Match}} (string \$match)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_a1f774488b3c10d125a2e4ccb5b3b4078}{directive}} (string \$name, array \$arguments)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_a92c777c5fc372d3584fec4e795ae2d7f}{ensure\+Pages\+Using\+Fragments\+Use\+Directive}} (string \$template)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_ab7c46b397edf04297b97922b15db6dc9}\index{ExtractFragments@{ExtractFragments}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ExtractFragments@{ExtractFragments}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_ab7c46b397edf04297b97922b15db6dc9} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected string}]{\$compiled\+View\+Path}{}\end{DoxyParamCaption})}
+
+Create a new precompiler instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_aa30dfe99ae37f3757770ab1c568c4564}\index{ExtractFragments@{ExtractFragments}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!ExtractFragments@{ExtractFragments}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_aa30dfe99ae37f3757770ab1c568c4564} 
+\+\_\+\+\_\+invoke (\begin{DoxyParamCaption}\item[{string}]{\$template}{}\end{DoxyParamCaption})}
+
+Extract @volt \doxylink{class_livewire}{Livewire} fragments from the template and write them to their own template file.
+
+Then, replace them with $<$livewire$>$ tags that render that template. \Hypertarget{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_aab24eb6ec569a1992ebba9e07c8846f5}\index{ExtractFragments@{ExtractFragments}!argumentsFromMatch@{argumentsFromMatch}}
+\index{argumentsFromMatch@{argumentsFromMatch}!ExtractFragments@{ExtractFragments}}
+\doxysubsubsection{\texorpdfstring{argumentsFromMatch()}{argumentsFromMatch()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_aab24eb6ec569a1992ebba9e07c8846f5} 
+arguments\+From\+Match (\begin{DoxyParamCaption}\item[{string}]{\$match}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the arguments from the @volt directive.
+
+\begin{DoxyReturn}{Returns}
+array\{0\+: string\texorpdfstring{$\vert$}{|}null, 1\+: array$<$string, mixed$>$\} 
+\end{DoxyReturn}
+\Hypertarget{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_a0bc12458c7841b9ce80808dc31b2a631}\index{ExtractFragments@{ExtractFragments}!componentArguments@{componentArguments}}
+\index{componentArguments@{componentArguments}!ExtractFragments@{ExtractFragments}}
+\doxysubsubsection{\texorpdfstring{componentArguments()}{componentArguments()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_a0bc12458c7841b9ce80808dc31b2a631} 
+component\+Arguments (\begin{DoxyParamCaption}\item[{array}]{\$defined\+Vars}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the arguments that should be passed to the component when rendering it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$defined\+Vars \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_a1f774488b3c10d125a2e4ccb5b3b4078}\index{ExtractFragments@{ExtractFragments}!directive@{directive}}
+\index{directive@{directive}!ExtractFragments@{ExtractFragments}}
+\doxysubsubsection{\texorpdfstring{directive()}{directive()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_a1f774488b3c10d125a2e4ccb5b3b4078} 
+directive (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compute the @volt directive into a $<$livewire$>$ tag. \Hypertarget{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_a92c777c5fc372d3584fec4e795ae2d7f}\index{ExtractFragments@{ExtractFragments}!ensurePagesUsingFragmentsUseDirective@{ensurePagesUsingFragmentsUseDirective}}
+\index{ensurePagesUsingFragmentsUseDirective@{ensurePagesUsingFragmentsUseDirective}!ExtractFragments@{ExtractFragments}}
+\doxysubsubsection{\texorpdfstring{ensurePagesUsingFragmentsUseDirective()}{ensurePagesUsingFragmentsUseDirective()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_precompilers_1_1_extract_fragments_a92c777c5fc372d3584fec4e795ae2d7f} 
+ensure\+Pages\+Using\+Fragments\+Use\+Directive (\begin{DoxyParamCaption}\item[{string}]{\$template}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure that Folio pages using fragments have the "{}@volt"{} directive.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{class_livewire}{Livewire}\textbackslash{}\+Volt\textbackslash{}\+Exceptions\textbackslash{}\+Volt\+Directive\+Missing\+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/livewire/volt/src/\+Precompilers/\mbox{\hyperlink{_extract_fragments_8php}{Extract\+Fragments.\+php}}\end{DoxyCompactItemize}

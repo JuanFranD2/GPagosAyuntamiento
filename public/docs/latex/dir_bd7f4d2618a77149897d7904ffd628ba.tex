@@ -1,0 +1,63 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock Directory Reference}
+\hypertarget{dir_bd7f4d2618a77149897d7904ffd628ba}{}\label{dir_bd7f4d2618a77149897d7904ffd628ba}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/phpdocumentor/reflection-\/docblock Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/phpdocumentor/reflection-\/docblock Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_320a73f4bbeed24a56443cf8b41faf19}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}!\mbox{[}License\+: MIT\mbox{]}(\href{https://img.shields.io/badge/License-MIT-yellow.svg}{\texttt{https\+://img.\+shields.\+io/badge/\+License-\/\+MIT-\/yellow.\+svg}})\mbox{]}(\href{https://opensource.org/licenses/MIT}{\texttt{https\+://opensource.\+org/licenses/\+MIT}})  \href{https://scrutinizer-ci.com/g/phpDocumentor/ReflectionDocBlock/?branch=master}{\texttt{}} \href{https://scrutinizer-ci.com/g/phpDocumentor/ReflectionDocBlock/?branch=master}{\texttt{}} \href{https://packagist.org/packages/phpdocumentor/reflection-docblock}{\texttt{}} \href{https://packagist.org/packages/phpdocumentor/reflection-docblock}{\texttt{}}\hypertarget{README.md_autotoc_md10114}{}\doxysubsection{\texorpdfstring{Reflection\+Doc\+Block}{Reflection\+Doc\+Block}}\label{README.md_autotoc_md10114}
+\hypertarget{README.md_autotoc_md10115}{}\doxysubsubsection{\texorpdfstring{Introduction}{Introduction}}\label{README.md_autotoc_md10115}
+The Reflection\+Doc\+Block component of php\+Documentor provides a Doc\+Block parser that is 100\% compatible with the \href{http://phpdoc.org/docs/latest}{\texttt{PHPDoc standard}}.
+
+With this component, a library can provide support for annotations via Doc\+Blocks or otherwise retrieve information that is embedded in a Doc\+Block.\hypertarget{README.md_autotoc_md10116}{}\doxysubsubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md10116}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ phpdocumentor/reflection-\/docblock}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10117}{}\doxysubsubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md10117}
+In order to parse the Doc\+Block one needs a Doc\+Block\+Factory that can be instantiated using its {\ttfamily create\+Instance} factory method like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$factory\ \ =\ \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_factory_a220aa312016b6fa0c9a6c4bf61a7ead4}{\(\backslash\)phpDocumentor\(\backslash\)Reflection\(\backslash\)DocBlockFactory::createInstance}}();}
+
+\end{DoxyCode}
+
+
+Then we can use the {\ttfamily create} method of the factory to interpret the Doc\+Block. Please note that it is also possible to provide a class that has the {\ttfamily get\+Doc\+Comment()} method, such as an object of type {\ttfamily Reflection\+Class}, the create method will read that if it exists.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$docComment\ =\ <<<DOCCOMMENT}
+\DoxyCodeLine{DOCCOMMENT;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$docblock\ =\ \$factory-\/>create(\$docComment);}
+
+\end{DoxyCode}
+
+
+The {\ttfamily create} method will yield an object of type {\ttfamily \textbackslash{}php\+Documentor\textbackslash{}Reflection\textbackslash{}Doc\+Block} whose methods can be queried\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Contains\ the\ summary\ for\ this\ DocBlock}}
+\DoxyCodeLine{\$summary\ =\ \$docblock-\/>getSummary();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Contains\ \(\backslash\)phpDocumentor\(\backslash\)Reflection\(\backslash\)DocBlock\(\backslash\)Description\ object}}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_illuminate_1_1_console_1_1_scheduling_a87b032cba06009e3467abf1c8018d960}{\$description}}\ =\ \$docblock-\/>getDescription();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ You\ can\ either\ cast\ it\ to\ string}}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_illuminate_1_1_console_1_1_scheduling_a87b032cba06009e3467abf1c8018d960}{\$description}}\ =\ (string)\ \$docblock-\/>getDescription();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Or\ use\ the\ render\ method\ to\ get\ a\ string\ representation\ of\ the\ Description.}}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_illuminate_1_1_console_1_1_scheduling_a87b032cba06009e3467abf1c8018d960}{\$description}}\ =\ \$docblock-\/>getDescription()-\/>render();}
+
+\end{DoxyCode}
+
+
+\begin{quote}
+For more examples it would be best to review the scripts in the \href{/examples}{\texttt{{\ttfamily /examples} folder}}. \end{quote}

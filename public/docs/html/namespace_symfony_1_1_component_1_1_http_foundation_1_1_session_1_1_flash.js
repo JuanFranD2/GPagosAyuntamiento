@@ -1,0 +1,6 @@
+var namespace_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_flash =
+[
+    [ "AutoExpireFlashBag", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_flash_1_1_auto_expire_flash_bag.html", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_flash_1_1_auto_expire_flash_bag" ],
+    [ "FlashBag", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_flash_1_1_flash_bag.html", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_flash_1_1_flash_bag" ],
+    [ "FlashBagInterface", "interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_flash_1_1_flash_bag_interface.html", "interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_flash_1_1_flash_bag_interface" ]
+];

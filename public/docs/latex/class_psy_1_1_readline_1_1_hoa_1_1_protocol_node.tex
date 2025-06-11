@@ -1,0 +1,187 @@
+\doxysection{Protocol\+Node Class Reference}
+\hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node}{}\label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node}\index{ProtocolNode@{ProtocolNode}}
+Inheritance diagram for Protocol\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a0d05a9b5fb0d44bca28e117472896da3}{\+\_\+\+\_\+construct}} (?string \$name=null, ?string \$\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a279fae1ab66e07033add3ba9ffa8bb7a}{reach}}=null, array \$children=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a50f7c62d5637bca1df4887326e8146de}{offset\+Set}} (\$name, \$node)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a3d0a0d05f795eea43971f8ab662b3404}{offset\+Get}} (\$name)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a14f08d489c790c82c6207fefdd3d1564}{offset\+Exists}} (\$name)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_ac64f6f4bbdf2eaac50e8334a92ea7106}{offset\+Unset}} (\$name)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a279fae1ab66e07033add3ba9ffa8bb7a}{reach}} (?string \$queue=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a9a9299e876645fd7ebd6f8a1e1867b24}{reach\+Id}} (string \$id)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a6fc8dcaa9c71a0d5ab4c22f0e7da139e}{set\+Reach}} (string \$\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a279fae1ab66e07033add3ba9ffa8bb7a}{reach}})
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a41ee3f839f887a3c6313dec895016761}{get\+Root}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a3a76fd185bf7ef712d89b8b3774b0d8c}{\+\_\+resolve}} (string \$path, \&\$accumulator, ?string \$id=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a2b9a6dd0597a1fabddf4b21ab1a85487}{\+\_\+resolve\+Choice}} (\$\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a279fae1ab66e07033add3ba9ffa8bb7a}{reach}}, \&\$accumulator)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a617a85c4378267da735aa260d5002322}{get\+Reach}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a1c89defaf5aa7ac8e526065e8572f580}{\$\+\_\+name}} = null
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a1c03aa13cb5a5d503014383daaca3678}{\$\+\_\+reach}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for all {\ttfamily hoa\+://}\textquotesingle{}s nodes. 
+
+\label{doc-constructors}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a0d05a9b5fb0d44bca28e117472896da3}\index{ProtocolNode@{ProtocolNode}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a0d05a9b5fb0d44bca28e117472896da3} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?string}]{\$reach}{ = {\ttfamily null}, }\item[{array}]{\$children}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Construct a protocol\textquotesingle{}s node. If it is not a data object (i.\+e. if it does not extend this class to overload the {\ttfamily \$\+\_\+name} attribute), we can set the {\ttfamily \$\+\_\+name} attribute dynamically. This is useful to create a node on-\/the-\/fly. 
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a7516ca30af0db3cdbf9a7739b48ce91d}\index{ProtocolNode@{ProtocolNode}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Print a tree of component. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a3a76fd185bf7ef712d89b8b3774b0d8c}\index{ProtocolNode@{ProtocolNode}!\_resolve@{\_resolve}}
+\index{\_resolve@{\_resolve}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{\_resolve()}{\_resolve()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a3a76fd185bf7ef712d89b8b3774b0d8c} 
+\+\_\+resolve (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{\&}]{\$accumulator}{, }\item[{?string}]{\$id}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve a path, i.\+e. iterate the nodes tree and reach the queue of the path. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a2b9a6dd0597a1fabddf4b21ab1a85487}\index{ProtocolNode@{ProtocolNode}!\_resolveChoice@{\_resolveChoice}}
+\index{\_resolveChoice@{\_resolveChoice}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{\_resolveChoice()}{\_resolveChoice()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a2b9a6dd0597a1fabddf4b21ab1a85487} 
+\+\_\+resolve\+Choice (\begin{DoxyParamCaption}\item[{}]{\$reach}{, }\item[{\&}]{\$accumulator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve choices, i.\+e. a reach value has a “;”. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{ProtocolNode@{ProtocolNode}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get an iterator. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a3d0963e68bb313b163a73f2803c64600}\index{ProtocolNode@{ProtocolNode}!getName@{getName}}
+\index{getName@{getName}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get node\textquotesingle{}s name. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a617a85c4378267da735aa260d5002322}\index{ProtocolNode@{ProtocolNode}!getReach@{getReach}}
+\index{getReach@{getReach}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{getReach()}{getReach()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a617a85c4378267da735aa260d5002322} 
+get\+Reach (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get reach\textquotesingle{}s root. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a41ee3f839f887a3c6313dec895016761}\index{ProtocolNode@{ProtocolNode}!getRoot@{getRoot}}
+\index{getRoot@{getRoot}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{getRoot()}{getRoot()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a41ee3f839f887a3c6313dec895016761} 
+get\+Root (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get root the protocol. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a14f08d489c790c82c6207fefdd3d1564}\index{ProtocolNode@{ProtocolNode}!offsetExists@{offsetExists}}
+\index{offsetExists@{offsetExists}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{offsetExists()}{offsetExists()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a14f08d489c790c82c6207fefdd3d1564} 
+offset\+Exists (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Check if a node exists. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a3d0a0d05f795eea43971f8ab662b3404}\index{ProtocolNode@{ProtocolNode}!offsetGet@{offsetGet}}
+\index{offsetGet@{offsetGet}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{offsetGet()}{offsetGet()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a3d0a0d05f795eea43971f8ab662b3404} 
+offset\+Get (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Get a specific node. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a50f7c62d5637bca1df4887326e8146de}\index{ProtocolNode@{ProtocolNode}!offsetSet@{offsetSet}}
+\index{offsetSet@{offsetSet}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{offsetSet()}{offsetSet()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a50f7c62d5637bca1df4887326e8146de} 
+offset\+Set (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$node}{}\end{DoxyParamCaption})}
+
+Add a node. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_ac64f6f4bbdf2eaac50e8334a92ea7106}\index{ProtocolNode@{ProtocolNode}!offsetUnset@{offsetUnset}}
+\index{offsetUnset@{offsetUnset}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{offsetUnset()}{offsetUnset()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_ac64f6f4bbdf2eaac50e8334a92ea7106} 
+offset\+Unset (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Remove a node. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a279fae1ab66e07033add3ba9ffa8bb7a}\index{ProtocolNode@{ProtocolNode}!reach@{reach}}
+\index{reach@{reach}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{reach()}{reach()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a279fae1ab66e07033add3ba9ffa8bb7a} 
+reach (\begin{DoxyParamCaption}\item[{?string}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\doxylink{class_queue}{Queue} of the node. Generic one. Must be overrided in children classes. 
+
+Reimplemented in \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_library_a279fae1ab66e07033add3ba9ffa8bb7a}{Protocol\+Node\+Library}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a9a9299e876645fd7ebd6f8a1e1867b24}\index{ProtocolNode@{ProtocolNode}!reachId@{reachId}}
+\index{reachId@{reachId}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{reachId()}{reachId()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a9a9299e876645fd7ebd6f8a1e1867b24} 
+reach\+Id (\begin{DoxyParamCaption}\item[{string}]{\$id}{}\end{DoxyParamCaption})}
+
+ID of the component. Generic one. Should be overrided in children classes. 
+
+Reimplemented in \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1___protocol_a9a9299e876645fd7ebd6f8a1e1867b24}{\+\_\+\+Protocol}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a6fc8dcaa9c71a0d5ab4c22f0e7da139e}\index{ProtocolNode@{ProtocolNode}!setReach@{setReach}}
+\index{setReach@{setReach}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{setReach()}{setReach()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a6fc8dcaa9c71a0d5ab4c22f0e7da139e} 
+set\+Reach (\begin{DoxyParamCaption}\item[{string}]{\$reach}{}\end{DoxyParamCaption})}
+
+Set a new reach value. 
+
+\label{doc-variable-members}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a1c89defaf5aa7ac8e526065e8572f580}\index{ProtocolNode@{ProtocolNode}!\$\_name@{\$\_name}}
+\index{\$\_name@{\$\_name}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{\$\_name}{\$\_name}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a1c89defaf5aa7ac8e526065e8572f580} 
+\$\+\_\+name = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Node\textquotesingle{}s name. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a1c03aa13cb5a5d503014383daaca3678}\index{ProtocolNode@{ProtocolNode}!\$\_reach@{\$\_reach}}
+\index{\$\_reach@{\$\_reach}!ProtocolNode@{ProtocolNode}}
+\doxysubsubsection{\texorpdfstring{\$\_reach}{\$\_reach}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_protocol_node_a1c03aa13cb5a5d503014383daaca3678} 
+\$\+\_\+reach = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Path for the {\ttfamily reach} method. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Readline/\+Hoa/\mbox{\hyperlink{_protocol_node_8php}{Protocol\+Node.\+php}}\end{DoxyCompactItemize}

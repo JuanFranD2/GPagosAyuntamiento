@@ -1,0 +1,67 @@
+\doxysection{Type\+Resolver Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_type_resolver}{}\label{classphp_documentor_1_1_reflection_1_1_type_resolver}\index{TypeResolver@{TypeResolver}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_type_resolver_a8b03e5e7749e6fe961eb6c9ad7022d70}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_fqsen_resolver}{Fqsen\+Resolver}} \$fqsen\+Resolver=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_type_resolver_a5d1134213c510c37edaf711a7aae0e25}{resolve}} (string \$type, ?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context}{Context}} \$context=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_type_resolver_af2f006fef00915797bbc8de4a0a80e36}{create\+Type}} (?\mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_type_1_1_type_node}{Type\+Node}} \$type, \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context}{Context}} \$context)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_type_resolver_aaa686ab3aff1a217211c595aa2db21cb}{add\+Keyword}} (string \$keyword, string \$type\+Class\+Name)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_type_resolver_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_type_resolver_a8b03e5e7749e6fe961eb6c9ad7022d70}\index{TypeResolver@{TypeResolver}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TypeResolver@{TypeResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_type_resolver_a8b03e5e7749e6fe961eb6c9ad7022d70} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_fqsen_resolver}{Fqsen\+Resolver}}}]{\$fqsen\+Resolver}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Initializes this Type\+Resolver with the means to create and resolve Fqsen objects. 
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_type_resolver_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_type_resolver_aaa686ab3aff1a217211c595aa2db21cb}\index{TypeResolver@{TypeResolver}!addKeyword@{addKeyword}}
+\index{addKeyword@{addKeyword}!TypeResolver@{TypeResolver}}
+\doxysubsubsection{\texorpdfstring{addKeyword()}{addKeyword()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_type_resolver_aaa686ab3aff1a217211c595aa2db21cb} 
+add\+Keyword (\begin{DoxyParamCaption}\item[{string}]{\$keyword}{, }\item[{string}]{\$type\+Class\+Name}{}\end{DoxyParamCaption})}
+
+Adds a keyword to the list of Keywords and associates it with a specific Value Object.
+
+@psalm-\/param class-\/string$<$\+Type$>$ \$type\+Class\+Name \Hypertarget{classphp_documentor_1_1_reflection_1_1_type_resolver_af2f006fef00915797bbc8de4a0a80e36}\index{TypeResolver@{TypeResolver}!createType@{createType}}
+\index{createType@{createType}!TypeResolver@{TypeResolver}}
+\doxysubsubsection{\texorpdfstring{createType()}{createType()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_type_resolver_af2f006fef00915797bbc8de4a0a80e36} 
+create\+Type (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_type_1_1_type_node}{Type\+Node}}}]{\$type}{, }\item[{\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context}{Context}}}]{\$context}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_type_resolver_a5d1134213c510c37edaf711a7aae0e25}\index{TypeResolver@{TypeResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!TypeResolver@{TypeResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_type_resolver_a5d1134213c510c37edaf711a7aae0e25} 
+resolve (\begin{DoxyParamCaption}\item[{string}]{\$type}{, }\item[{?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context}{Context}}}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Analyzes the given type and returns the FQCN variant.
+
+When a type is provided this method checks whether it is not a keyword or Fully Qualified Class Name. If so it will use the given namespace and aliases to expand the type to a FQCN representation.
+
+This method only works as expected if the namespace and aliases are set; no dynamic reflection is being performed here.
+
+@uses Context\+::get\+Namespace() to determine with what to prefix the type name. @uses Context\+::get\+Namespace\+Aliases() to check whether the first part of the relative type name should not be replaced with another namespace.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & The relative or absolute type. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/type-\/resolver/src/\mbox{\hyperlink{_type_resolver_8php}{Type\+Resolver.\+php}}\end{DoxyCompactItemize}

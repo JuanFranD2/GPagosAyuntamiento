@@ -1,0 +1,85 @@
+\doxysection{Http\+Exception Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception}\index{HttpException@{HttpException}}
+Inheritance diagram for Http\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.456681cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_a2269aec8f3444502f0bd3e37fd9756ac}{\+\_\+\+\_\+construct}} (private int \$status\+Code, string \$message=\textquotesingle{}\textquotesingle{}, ?\textbackslash{}Throwable \$previous=null, private array \$headers=\mbox{[}$\,$\mbox{]}, int \$code=0,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_a094778dd1c04fe44626000b47ea0c0bb}{get\+Status\+Code}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_a157e0005d82edaa21cbea07fdc5c62da}{get\+Headers}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_ad62c7c9cad0e3ccfdbff9144c914090b}{set\+Headers}} (array \$headers)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_afbd6638054ad5624800b5d971e579f69}{from\+Status\+Code}} (int \$status\+Code, string \$message=\textquotesingle{}\textquotesingle{}, ?\textbackslash{}Throwable \$previous=null, array \$headers=\mbox{[}$\,$\mbox{]}, int \$code=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Http\+Exception.
+
+\begin{DoxyAuthor}{Author}
+Kris Wallsmith \href{mailto:kris@symfony.com}{\texttt{kris@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_a2269aec8f3444502f0bd3e37fd9756ac}\index{HttpException@{HttpException}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!HttpException@{HttpException}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_a2269aec8f3444502f0bd3e37fd9756ac} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private int}]{\$status\+Code}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?\textbackslash{}Throwable}]{\$previous}{ = {\ttfamily null}, }\item[{private array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{int}]{\$code}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_afbd6638054ad5624800b5d971e579f69}\index{HttpException@{HttpException}!fromStatusCode@{fromStatusCode}}
+\index{fromStatusCode@{fromStatusCode}!HttpException@{HttpException}}
+\doxysubsubsection{\texorpdfstring{fromStatusCode()}{fromStatusCode()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_afbd6638054ad5624800b5d971e579f69} 
+from\+Status\+Code (\begin{DoxyParamCaption}\item[{int}]{\$status\+Code}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?\textbackslash{}Throwable}]{\$previous}{ = {\ttfamily null}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{int}]{\$code}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_a157e0005d82edaa21cbea07fdc5c62da}\index{HttpException@{HttpException}!getHeaders@{getHeaders}}
+\index{getHeaders@{getHeaders}!HttpException@{HttpException}}
+\doxysubsubsection{\texorpdfstring{getHeaders()}{getHeaders()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_a157e0005d82edaa21cbea07fdc5c62da} 
+get\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns response headers. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_interface_a157e0005d82edaa21cbea07fdc5c62da}{Http\+Exception\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_a094778dd1c04fe44626000b47ea0c0bb}\index{HttpException@{HttpException}!getStatusCode@{getStatusCode}}
+\index{getStatusCode@{getStatusCode}!HttpException@{HttpException}}
+\doxysubsubsection{\texorpdfstring{getStatusCode()}{getStatusCode()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_a094778dd1c04fe44626000b47ea0c0bb} 
+get\+Status\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the status code. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_interface_a094778dd1c04fe44626000b47ea0c0bb}{Http\+Exception\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_ad62c7c9cad0e3ccfdbff9144c914090b}\index{HttpException@{HttpException}!setHeaders@{setHeaders}}
+\index{setHeaders@{setHeaders}!HttpException@{HttpException}}
+\doxysubsubsection{\texorpdfstring{setHeaders()}{setHeaders()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_ad62c7c9cad0e3ccfdbff9144c914090b} 
+set\+Headers (\begin{DoxyParamCaption}\item[{array}]{\$headers}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Exception/\mbox{\hyperlink{_http_exception_8php}{Http\+Exception.\+php}}\end{DoxyCompactItemize}

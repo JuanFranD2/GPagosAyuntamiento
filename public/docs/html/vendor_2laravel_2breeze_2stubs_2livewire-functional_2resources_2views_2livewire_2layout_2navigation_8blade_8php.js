@@ -1,0 +1,4 @@
+var vendor_2laravel_2breeze_2stubs_2livewire_functional_2resources_2views_2livewire_2layout_2navigation_8blade_8php =
+[
+    [ "$logout", "vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2layout_2navigation_8blade_8php.html#adeba7304a4fe9881628eeb22e8439934", null ]
+];

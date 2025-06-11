@@ -1,0 +1,78 @@
+\doxysection{Parallel Class Reference}
+\hypertarget{class_pest_1_1_plugins_1_1_parallel}{}\label{class_pest_1_1_plugins_1_1_parallel}\index{Parallel@{Parallel}}
+Inheritance diagram for Parallel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pest_1_1_plugins_1_1_parallel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_a914a3d2470c38084946e5d23134e55f2}{handle\+Arguments}} (array \$arguments)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_a9a7845e01c063d777200518bd8d146cb}{is\+Enabled}} ()
+\item 
+static \mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_ae4956c347f979491b6f61f4cf24ba0d1}{is\+Worker}} ()
+\item 
+static \mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_a4b3ed58eb6dbd351a05e2f05ab5a589d}{set\+Global}} (string \$key, string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}Stringable \$value)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_a913a3252e4d5d6e3506ac6d57eb698d4}{get\+Global}} (string \$key)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_a913a3252e4d5d6e3506ac6d57eb698d4}\index{Parallel@{Parallel}!getGlobal@{getGlobal}}
+\index{getGlobal@{getGlobal}!Parallel@{Parallel}}
+\doxysubsubsection{\texorpdfstring{getGlobal()}{getGlobal()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_a913a3252e4d5d6e3506ac6d57eb698d4} 
+get\+Global (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the given global value if one has been set. \Hypertarget{class_pest_1_1_plugins_1_1_parallel_a914a3d2470c38084946e5d23134e55f2}\index{Parallel@{Parallel}!handleArguments@{handleArguments}}
+\index{handleArguments@{handleArguments}!Parallel@{Parallel}}
+\doxysubsubsection{\texorpdfstring{handleArguments()}{handleArguments()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_a914a3d2470c38084946e5d23134e55f2} 
+handle\+Arguments (\begin{DoxyParamCaption}\item[{array}]{\$arguments}{}\end{DoxyParamCaption})}
+
+\{Adds arguments before the Test Suite execution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$} & \$arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$int, string$>$
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_pest_1_1_contracts_1_1_plugins_1_1_handles_arguments_a914a3d2470c38084946e5d23134e55f2}{Handles\+Arguments}}.
+
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_a9a7845e01c063d777200518bd8d146cb}\index{Parallel@{Parallel}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!Parallel@{Parallel}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_a9a7845e01c063d777200518bd8d146cb} 
+is\+Enabled (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Whether the given command line arguments indicate that the test suite should be run in parallel. \Hypertarget{class_pest_1_1_plugins_1_1_parallel_ae4956c347f979491b6f61f4cf24ba0d1}\index{Parallel@{Parallel}!isWorker@{isWorker}}
+\index{isWorker@{isWorker}!Parallel@{Parallel}}
+\doxysubsubsection{\texorpdfstring{isWorker()}{isWorker()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_ae4956c347f979491b6f61f4cf24ba0d1} 
+is\+Worker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+If this code is running in a worker process rather than the main process. \Hypertarget{class_pest_1_1_plugins_1_1_parallel_a4b3ed58eb6dbd351a05e2f05ab5a589d}\index{Parallel@{Parallel}!setGlobal@{setGlobal}}
+\index{setGlobal@{setGlobal}!Parallel@{Parallel}}
+\doxysubsubsection{\texorpdfstring{setGlobal()}{setGlobal()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_a4b3ed58eb6dbd351a05e2f05ab5a589d} 
+set\+Global (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}Stringable}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets a global value that can be accessed by the parent process and all workers. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Plugins/\mbox{\hyperlink{_parallel_8php}{Parallel.\+php}}\end{DoxyCompactItemize}

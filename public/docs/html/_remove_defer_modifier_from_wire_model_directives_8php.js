@@ -1,0 +1,4 @@
+var _remove_defer_modifier_from_wire_model_directives_8php =
+[
+    [ "RemoveDeferModifierFromWireModelDirectives", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_remove_def568de27c42223b43515041c1eb522438.html", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_remove_def568de27c42223b43515041c1eb522438" ]
+];

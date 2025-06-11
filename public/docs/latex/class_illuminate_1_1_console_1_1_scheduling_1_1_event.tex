@@ -1,0 +1,1074 @@
+\doxysection{Event Class Reference}
+\hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event}{}\label{class_illuminate_1_1_console_1_1_scheduling_1_1_event}\index{Event@{Event}}
+Inheritance diagram for Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_console_1_1_scheduling_1_1_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af81a38127d93181353836132c30b4b9f}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_console_1_1_scheduling_1_1_event_mutex}{Event\+Mutex}} \$mutex, \$command, \$timezone=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5de0a5529ec79b9e1df6fe90828dcb12}{get\+Default\+Output}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a323aac382e40a916ec33b20956c7e7f1}{run}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa55e908d120057b4b5bff4e5e7b27c30}{should\+Skip\+Due\+To\+Overlapping}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a7b12f5d119d88c8a5ded8aa18e51613a}{is\+Repeatable}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a742192db3ebcc2eb8564222a098f731b}{should\+Repeat\+Now}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a8f89a4ad0f7833ffaf8ec794abf27a19}{finish}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container, \$exit\+Code)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af95fed6ca5c56126c871b69cb41af97d}{call\+Before\+Callbacks}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_acdd216984fb03194b5980a561f517731}{call\+After\+Callbacks}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ae5784111842555ca64ff370a1dc2dd8d}{build\+Command}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad90b1961e82b89a4f0cfb31c56c54eff}{is\+Due}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5e2d3faa063e3a293a8d6cbd03f725fb}{runs\+In\+Maintenance\+Mode}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a57bffe2bea8782926cb3cfff6d568d18}{runs\+In\+Environment}} (\$environment)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad46fab18fd47774133231a4aaa1f8489}{filters\+Pass}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a642566a54378ccebf749925dd2109953}{store\+Output}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a1c916197fddba21af401cec576c9270a}{send\+Output\+To}} (\$location, \$append=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a319428a10267789b6645695fecfff94a}{append\+Output\+To}} (\$location)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3f6837911765635ac3eba4ec4df35140}{email\+Output\+To}} (\$addresses, \$only\+If\+Output\+Exists=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad27139e5efc5be9c356ab9f27daa9070}{email\+Written\+Output\+To}} (\$addresses)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5f470f8db762c2b241f67e149f46b36b}{email\+Output\+On\+Failure}} (\$addresses)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a4318134ec1a27b4da86e465c758e4547}{ping\+Before}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a0c3ffa5c0656e5d5da7a6299718fc930}{ping\+Before\+If}} (\$value, \$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa4bc37cefff29aa5a2dc76f6d6a336e4}{then\+Ping}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_afd1a747fe6f578520224322a0b6465c0}{then\+Ping\+If}} (\$value, \$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac716e829eab634cd2245d7561b2f3844}{ping\+On\+Success}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a934026fff1303daa3b6527018f595e4d}{ping\+On\+Success\+If}} (\$value, \$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a9e5bc45a1f086d6ce6e6b763ea586756}{ping\+On\+Failure}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aee664c6dd38094696c526df3cc484083}{ping\+On\+Failure\+If}} (\$value, \$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a905ff7056a0304a4d773c811f789df8b}{before}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a347a39f48f468a4e920a8f3b1e0c1e6d}{after}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a6085eed98176787b3714474cc107a445}{then}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3d443dcb2809416ee3c45e7378f87e93}{then\+With\+Output}} (Closure \$callback, \$only\+If\+Output\+Exists=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aef2b2a7a92908baf1de6b9f4a538e8d3}{on\+Success}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3b656cc0c45877194ba60d1f9f33cd27}{on\+Success\+With\+Output}} (Closure \$callback, \$only\+If\+Output\+Exists=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a64315b25aef39a949a4c12d0f9181075}{on\+Failure}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad99675777dcf608d441acadbffcdff17}{on\+Failure\+With\+Output}} (Closure \$callback, \$only\+If\+Output\+Exists=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a518984dd2f7b77841e01c2b1c1fde2da}{get\+Summary\+For\+Display}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ace96f543504090a0fcb4d237960c05b6}{next\+Run\+Date}} (\$current\+Time=\textquotesingle{}now\textquotesingle{}, \$nth=0, \$allow\+Current\+Date=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ab1cefb04a11dacd3164f79373c1294f0}{get\+Expression}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a46a1d049985a827cdee7068e37f6fc5b}{prevent\+Overlaps\+Using}} (\mbox{\hyperlink{interface_illuminate_1_1_console_1_1_scheduling_1_1_event_mutex}{Event\+Mutex}} \$mutex)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aff946477faceb32b02be63c44295804e}{mutex\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a30050804aaa24514bb5675744135dc50}{create\+Mutex\+Name\+Using}} (Closure\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aff946477faceb32b02be63c44295804e}{mutex\+Name}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a75ddcbc7e51b297078189d67edbfc7d4}{normalize\+Command}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a8f120409eb9f635ac30b3f9a6d5becdc}{\$command}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a73004ce9cd673c1bfafd1dc351134797}{\$output}} = \textquotesingle{}/dev/null\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a516965430dfc93297a4215a291d6e9a9}{\$should\+Append\+Output}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_acee1058d5349fea786e5fc3170e08a24}{\$mutex}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa99e20fff59925dedc85c70627dbef16}{\$mutex\+Name\+Resolver}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a354f17f08a3db07ffff5a6b5ab6d1c84}{\$exit\+Code}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a2219c9d4e70a93ae4445e67324134b09}{start}} (\$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a1a875d3606dba730110d574896934841}{execute}} (\$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac3e31b4d465d543ea2be0531a50f3e86}{expression\+Passes}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a473ba2ca55d95dc4a5005dc09bbb5dcf}{ensure\+Output\+Is\+Being\+Captured}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af1ee2ad54db4564c7b68a394048f8062}{email\+Output}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_mail_1_1_mailer}{Mailer}} \$mailer, \$addresses, \$only\+If\+Output\+Exists=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac91b5aa3ce2d40c869f79b6bcb73d2ac}{get\+Email\+Subject}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a948e1ddf9f39d74f16fc2efffa890631}{ping\+Callback}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aef0762a5dfd10c69ed8b470c6b55392f}{get\+Http\+Client}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a6f7aa61ce265ad7ca40a6e672227c7f7}{with\+Output\+Callback}} (Closure \$callback, \$only\+If\+Output\+Exists=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a0f0005049b5f82db13d628a963c68f9b}{remove\+Mutex}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a24df4c31c4342dee99836c7743c5214e}{\$before\+Callbacks}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a00897481ee44ab5081efc1a131f4ba63}{\$after\+Callbacks}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a521aea05de15b85949c5fe79e4e5f1c1}{\$last\+Checked}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af81a38127d93181353836132c30b4b9f}\index{Event@{Event}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af81a38127d93181353836132c30b4b9f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_console_1_1_scheduling_1_1_event_mutex}{Event\+Mutex}}}]{\$mutex}{, }\item[{}]{\$command}{, }\item[{}]{\$timezone}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new event instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Scheduling\textbackslash{}\+Event\+Mutex & {\em \$mutex} & \\
+\hline
+string & {\em \$command} & \\
+\hline
+\textbackslash{}\+Date\+Time\+Zone | string | null & {\em \$timezone} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a347a39f48f468a4e920a8f3b1e0c1e6d}\index{Event@{Event}!after@{after}}
+\index{after@{after}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a347a39f48f468a4e920a8f3b1e0c1e6d} 
+after (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be called after the operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a319428a10267789b6645695fecfff94a}\index{Event@{Event}!appendOutputTo@{appendOutputTo}}
+\index{appendOutputTo@{appendOutputTo}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{appendOutputTo()}{appendOutputTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a319428a10267789b6645695fecfff94a} 
+append\+Output\+To (\begin{DoxyParamCaption}\item[{}]{\$location}{}\end{DoxyParamCaption})}
+
+Append the output of the command to a given location.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$location} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a905ff7056a0304a4d773c811f789df8b}\index{Event@{Event}!before@{before}}
+\index{before@{before}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a905ff7056a0304a4d773c811f789df8b} 
+before (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be called before the operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ae5784111842555ca64ff370a1dc2dd8d}\index{Event@{Event}!buildCommand@{buildCommand}}
+\index{buildCommand@{buildCommand}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{buildCommand()}{buildCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ae5784111842555ca64ff370a1dc2dd8d} 
+build\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Build the command string.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_acdd216984fb03194b5980a561f517731}\index{Event@{Event}!callAfterCallbacks@{callAfterCallbacks}}
+\index{callAfterCallbacks@{callAfterCallbacks}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{callAfterCallbacks()}{callAfterCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_acdd216984fb03194b5980a561f517731} 
+call\+After\+Callbacks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Call all of the "{}after"{} callbacks for the event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af95fed6ca5c56126c871b69cb41af97d}\index{Event@{Event}!callBeforeCallbacks@{callBeforeCallbacks}}
+\index{callBeforeCallbacks@{callBeforeCallbacks}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{callBeforeCallbacks()}{callBeforeCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af95fed6ca5c56126c871b69cb41af97d} 
+call\+Before\+Callbacks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Call all of the "{}before"{} callbacks for the event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a30050804aaa24514bb5675744135dc50}\index{Event@{Event}!createMutexNameUsing@{createMutexNameUsing}}
+\index{createMutexNameUsing@{createMutexNameUsing}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{createMutexNameUsing()}{createMutexNameUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a30050804aaa24514bb5675744135dc50} 
+create\+Mutex\+Name\+Using (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}string}]{\$mutex\+Name}{}\end{DoxyParamCaption})}
+
+Set the mutex name or name resolver callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string & {\em \$mutex\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af1ee2ad54db4564c7b68a394048f8062}\index{Event@{Event}!emailOutput@{emailOutput}}
+\index{emailOutput@{emailOutput}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{emailOutput()}{emailOutput()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af1ee2ad54db4564c7b68a394048f8062} 
+email\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_mail_1_1_mailer}{Mailer}}}]{\$mailer}{, }\item[{}]{\$addresses}{, }\item[{}]{\$only\+If\+Output\+Exists}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+E-\/mail the output of the event to the recipients.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailer & {\em \$mailer} & \\
+\hline
+array & {\em \$addresses} & \\
+\hline
+bool & {\em \$only\+If\+Output\+Exists} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5f470f8db762c2b241f67e149f46b36b}\index{Event@{Event}!emailOutputOnFailure@{emailOutputOnFailure}}
+\index{emailOutputOnFailure@{emailOutputOnFailure}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{emailOutputOnFailure()}{emailOutputOnFailure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5f470f8db762c2b241f67e149f46b36b} 
+email\+Output\+On\+Failure (\begin{DoxyParamCaption}\item[{}]{\$addresses}{}\end{DoxyParamCaption})}
+
+E-\/mail the results of the scheduled operation if it fails.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | mixed & {\em \$addresses} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3f6837911765635ac3eba4ec4df35140}\index{Event@{Event}!emailOutputTo@{emailOutputTo}}
+\index{emailOutputTo@{emailOutputTo}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{emailOutputTo()}{emailOutputTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3f6837911765635ac3eba4ec4df35140} 
+email\+Output\+To (\begin{DoxyParamCaption}\item[{}]{\$addresses}{, }\item[{}]{\$only\+If\+Output\+Exists}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+E-\/mail the results of the scheduled operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | mixed & {\em \$addresses} & \\
+\hline
+bool & {\em \$only\+If\+Output\+Exists} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception \Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad27139e5efc5be9c356ab9f27daa9070}\index{Event@{Event}!emailWrittenOutputTo@{emailWrittenOutputTo}}
+\index{emailWrittenOutputTo@{emailWrittenOutputTo}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{emailWrittenOutputTo()}{emailWrittenOutputTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad27139e5efc5be9c356ab9f27daa9070} 
+email\+Written\+Output\+To (\begin{DoxyParamCaption}\item[{}]{\$addresses}{}\end{DoxyParamCaption})}
+
+E-\/mail the results of the scheduled operation if it produces output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | mixed & {\em \$addresses} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception \Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a473ba2ca55d95dc4a5005dc09bbb5dcf}\index{Event@{Event}!ensureOutputIsBeingCaptured@{ensureOutputIsBeingCaptured}}
+\index{ensureOutputIsBeingCaptured@{ensureOutputIsBeingCaptured}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{ensureOutputIsBeingCaptured()}{ensureOutputIsBeingCaptured()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a473ba2ca55d95dc4a5005dc09bbb5dcf} 
+ensure\+Output\+Is\+Being\+Captured (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure that the command output is being captured.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a1a875d3606dba730110d574896934841}\index{Event@{Event}!execute@{execute}}
+\index{execute@{execute}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a1a875d3606dba730110d574896934841} 
+execute (\begin{DoxyParamCaption}\item[{}]{\$container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Run the command process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a1a875d3606dba730110d574896934841}{Callback\+Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac3e31b4d465d543ea2be0531a50f3e86}\index{Event@{Event}!expressionPasses@{expressionPasses}}
+\index{expressionPasses@{expressionPasses}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{expressionPasses()}{expressionPasses()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac3e31b4d465d543ea2be0531a50f3e86} 
+expression\+Passes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the \doxylink{namespace_cron}{Cron} expression passes.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad46fab18fd47774133231a4aaa1f8489}\index{Event@{Event}!filtersPass@{filtersPass}}
+\index{filtersPass@{filtersPass}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{filtersPass()}{filtersPass()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad46fab18fd47774133231a4aaa1f8489} 
+filters\+Pass (\begin{DoxyParamCaption}\item[{}]{\$app}{}\end{DoxyParamCaption})}
+
+Determine if the filters pass for the event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a8f89a4ad0f7833ffaf8ec794abf27a19}\index{Event@{Event}!finish@{finish}}
+\index{finish@{finish}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a8f89a4ad0f7833ffaf8ec794abf27a19} 
+finish (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{, }\item[{}]{\$exit\+Code}{}\end{DoxyParamCaption})}
+
+Mark the command process as finished and run callbacks/cleanup.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+int & {\em \$exit\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5de0a5529ec79b9e1df6fe90828dcb12}\index{Event@{Event}!getDefaultOutput@{getDefaultOutput}}
+\index{getDefaultOutput@{getDefaultOutput}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getDefaultOutput()}{getDefaultOutput()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5de0a5529ec79b9e1df6fe90828dcb12} 
+get\+Default\+Output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the default output depending on the OS.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac91b5aa3ce2d40c869f79b6bcb73d2ac}\index{Event@{Event}!getEmailSubject@{getEmailSubject}}
+\index{getEmailSubject@{getEmailSubject}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getEmailSubject()}{getEmailSubject()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac91b5aa3ce2d40c869f79b6bcb73d2ac} 
+get\+Email\+Subject (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the e-\/mail subject line for output results.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ab1cefb04a11dacd3164f79373c1294f0}\index{Event@{Event}!getExpression@{getExpression}}
+\index{getExpression@{getExpression}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getExpression()}{getExpression()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ab1cefb04a11dacd3164f79373c1294f0} 
+get\+Expression (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the \doxylink{namespace_cron}{Cron} expression for the event.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aef0762a5dfd10c69ed8b470c6b55392f}\index{Event@{Event}!getHttpClient@{getHttpClient}}
+\index{getHttpClient@{getHttpClient}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getHttpClient()}{getHttpClient()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aef0762a5dfd10c69ed8b470c6b55392f} 
+get\+Http\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Guzzle HTTP client to use to send pings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Guzzle\+Http\textbackslash{}\+Client\+Interface 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a518984dd2f7b77841e01c2b1c1fde2da}\index{Event@{Event}!getSummaryForDisplay@{getSummaryForDisplay}}
+\index{getSummaryForDisplay@{getSummaryForDisplay}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getSummaryForDisplay()}{getSummaryForDisplay()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a518984dd2f7b77841e01c2b1c1fde2da} 
+get\+Summary\+For\+Display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the summary of the event for display.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a518984dd2f7b77841e01c2b1c1fde2da}{Callback\+Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad90b1961e82b89a4f0cfb31c56c54eff}\index{Event@{Event}!isDue@{isDue}}
+\index{isDue@{isDue}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{isDue()}{isDue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad90b1961e82b89a4f0cfb31c56c54eff} 
+is\+Due (\begin{DoxyParamCaption}\item[{}]{\$app}{}\end{DoxyParamCaption})}
+
+Determine if the given event should run based on the \doxylink{namespace_cron}{Cron} expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a7b12f5d119d88c8a5ded8aa18e51613a}\index{Event@{Event}!isRepeatable@{isRepeatable}}
+\index{isRepeatable@{isRepeatable}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{isRepeatable()}{isRepeatable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a7b12f5d119d88c8a5ded8aa18e51613a} 
+is\+Repeatable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the event has been configured to repeat multiple times per minute.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aff946477faceb32b02be63c44295804e}\index{Event@{Event}!mutexName@{mutexName}}
+\index{mutexName@{mutexName}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{mutexName()}{mutexName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aff946477faceb32b02be63c44295804e} 
+mutex\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the mutex name for the scheduled command.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_aff946477faceb32b02be63c44295804e}{Callback\+Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ace96f543504090a0fcb4d237960c05b6}\index{Event@{Event}!nextRunDate@{nextRunDate}}
+\index{nextRunDate@{nextRunDate}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{nextRunDate()}{nextRunDate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ace96f543504090a0fcb4d237960c05b6} 
+next\+Run\+Date (\begin{DoxyParamCaption}\item[{}]{\$current\+Time}{ = {\ttfamily \textquotesingle{}now\textquotesingle{}}, }\item[{}]{\$nth}{ = {\ttfamily 0}, }\item[{}]{\$allow\+Current\+Date}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Determine the next due date for an event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | string & {\em \$current\+Time} & \\
+\hline
+int & {\em \$nth} & \\
+\hline
+bool & {\em \$allow\+Current\+Date} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a75ddcbc7e51b297078189d67edbfc7d4}\index{Event@{Event}!normalizeCommand@{normalizeCommand}}
+\index{normalizeCommand@{normalizeCommand}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{normalizeCommand()}{normalizeCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a75ddcbc7e51b297078189d67edbfc7d4} 
+normalize\+Command (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Format the given command string with a normalized PHP binary path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a64315b25aef39a949a4c12d0f9181075}\index{Event@{Event}!onFailure@{onFailure}}
+\index{onFailure@{onFailure}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{onFailure()}{onFailure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a64315b25aef39a949a4c12d0f9181075} 
+on\+Failure (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be called if the operation fails.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad99675777dcf608d441acadbffcdff17}\index{Event@{Event}!onFailureWithOutput@{onFailureWithOutput}}
+\index{onFailureWithOutput@{onFailureWithOutput}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{onFailureWithOutput()}{onFailureWithOutput()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad99675777dcf608d441acadbffcdff17} 
+on\+Failure\+With\+Output (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{, }\item[{}]{\$only\+If\+Output\+Exists}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Register a callback that uses the output if the operation fails.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+bool & {\em \$only\+If\+Output\+Exists} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aef2b2a7a92908baf1de6b9f4a538e8d3}\index{Event@{Event}!onSuccess@{onSuccess}}
+\index{onSuccess@{onSuccess}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{onSuccess()}{onSuccess()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aef2b2a7a92908baf1de6b9f4a538e8d3} 
+on\+Success (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be called if the operation succeeds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3b656cc0c45877194ba60d1f9f33cd27}\index{Event@{Event}!onSuccessWithOutput@{onSuccessWithOutput}}
+\index{onSuccessWithOutput@{onSuccessWithOutput}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{onSuccessWithOutput()}{onSuccessWithOutput()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3b656cc0c45877194ba60d1f9f33cd27} 
+on\+Success\+With\+Output (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{, }\item[{}]{\$only\+If\+Output\+Exists}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Register a callback that uses the output if the operation succeeds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+bool & {\em \$only\+If\+Output\+Exists} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a4318134ec1a27b4da86e465c758e4547}\index{Event@{Event}!pingBefore@{pingBefore}}
+\index{pingBefore@{pingBefore}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{pingBefore()}{pingBefore()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a4318134ec1a27b4da86e465c758e4547} 
+ping\+Before (\begin{DoxyParamCaption}\item[{}]{\$url}{}\end{DoxyParamCaption})}
+
+Register a callback to ping a given \doxylink{class_u_r_l}{URL} before the job runs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a0c3ffa5c0656e5d5da7a6299718fc930}\index{Event@{Event}!pingBeforeIf@{pingBeforeIf}}
+\index{pingBeforeIf@{pingBeforeIf}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{pingBeforeIf()}{pingBeforeIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a0c3ffa5c0656e5d5da7a6299718fc930} 
+ping\+Before\+If (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$url}{}\end{DoxyParamCaption})}
+
+Register a callback to ping a given \doxylink{class_u_r_l}{URL} before the job runs if the given condition is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$value} & \\
+\hline
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a948e1ddf9f39d74f16fc2efffa890631}\index{Event@{Event}!pingCallback@{pingCallback}}
+\index{pingCallback@{pingCallback}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{pingCallback()}{pingCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a948e1ddf9f39d74f16fc2efffa890631} 
+ping\+Callback (\begin{DoxyParamCaption}\item[{}]{\$url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the callback that pings the given \doxylink{class_u_r_l}{URL}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a9e5bc45a1f086d6ce6e6b763ea586756}\index{Event@{Event}!pingOnFailure@{pingOnFailure}}
+\index{pingOnFailure@{pingOnFailure}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{pingOnFailure()}{pingOnFailure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a9e5bc45a1f086d6ce6e6b763ea586756} 
+ping\+On\+Failure (\begin{DoxyParamCaption}\item[{}]{\$url}{}\end{DoxyParamCaption})}
+
+Register a callback to ping a given \doxylink{class_u_r_l}{URL} if the operation fails.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aee664c6dd38094696c526df3cc484083}\index{Event@{Event}!pingOnFailureIf@{pingOnFailureIf}}
+\index{pingOnFailureIf@{pingOnFailureIf}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{pingOnFailureIf()}{pingOnFailureIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aee664c6dd38094696c526df3cc484083} 
+ping\+On\+Failure\+If (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$url}{}\end{DoxyParamCaption})}
+
+Register a callback to ping a given \doxylink{class_u_r_l}{URL} if the operation fails and if the given condition is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$value} & \\
+\hline
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac716e829eab634cd2245d7561b2f3844}\index{Event@{Event}!pingOnSuccess@{pingOnSuccess}}
+\index{pingOnSuccess@{pingOnSuccess}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{pingOnSuccess()}{pingOnSuccess()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac716e829eab634cd2245d7561b2f3844} 
+ping\+On\+Success (\begin{DoxyParamCaption}\item[{}]{\$url}{}\end{DoxyParamCaption})}
+
+Register a callback to ping a given \doxylink{class_u_r_l}{URL} if the operation succeeds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a934026fff1303daa3b6527018f595e4d}\index{Event@{Event}!pingOnSuccessIf@{pingOnSuccessIf}}
+\index{pingOnSuccessIf@{pingOnSuccessIf}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{pingOnSuccessIf()}{pingOnSuccessIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a934026fff1303daa3b6527018f595e4d} 
+ping\+On\+Success\+If (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$url}{}\end{DoxyParamCaption})}
+
+Register a callback to ping a given \doxylink{class_u_r_l}{URL} if the operation succeeds and if the given condition is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$value} & \\
+\hline
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a46a1d049985a827cdee7068e37f6fc5b}\index{Event@{Event}!preventOverlapsUsing@{preventOverlapsUsing}}
+\index{preventOverlapsUsing@{preventOverlapsUsing}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{preventOverlapsUsing()}{preventOverlapsUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a46a1d049985a827cdee7068e37f6fc5b} 
+prevent\+Overlaps\+Using (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_console_1_1_scheduling_1_1_event_mutex}{Event\+Mutex}}}]{\$mutex}{}\end{DoxyParamCaption})}
+
+Set the event mutex implementation to be used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Scheduling\textbackslash{}\+Event\+Mutex & {\em \$mutex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a0f0005049b5f82db13d628a963c68f9b}\index{Event@{Event}!removeMutex@{removeMutex}}
+\index{removeMutex@{removeMutex}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{removeMutex()}{removeMutex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a0f0005049b5f82db13d628a963c68f9b} 
+remove\+Mutex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Delete the mutex for the event.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a0f0005049b5f82db13d628a963c68f9b}{Callback\+Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a323aac382e40a916ec33b20956c7e7f1}\index{Event@{Event}!run@{run}}
+\index{run@{run}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a323aac382e40a916ec33b20956c7e7f1} 
+run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Run the given event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable 
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a323aac382e40a916ec33b20956c7e7f1}{Callback\+Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a57bffe2bea8782926cb3cfff6d568d18}\index{Event@{Event}!runsInEnvironment@{runsInEnvironment}}
+\index{runsInEnvironment@{runsInEnvironment}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{runsInEnvironment()}{runsInEnvironment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a57bffe2bea8782926cb3cfff6d568d18} 
+runs\+In\+Environment (\begin{DoxyParamCaption}\item[{}]{\$environment}{}\end{DoxyParamCaption})}
+
+Determine if the event runs in the given environment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$environment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5e2d3faa063e3a293a8d6cbd03f725fb}\index{Event@{Event}!runsInMaintenanceMode@{runsInMaintenanceMode}}
+\index{runsInMaintenanceMode@{runsInMaintenanceMode}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{runsInMaintenanceMode()}{runsInMaintenanceMode()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5e2d3faa063e3a293a8d6cbd03f725fb} 
+runs\+In\+Maintenance\+Mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the event runs in maintenance mode.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a1c916197fddba21af401cec576c9270a}\index{Event@{Event}!sendOutputTo@{sendOutputTo}}
+\index{sendOutputTo@{sendOutputTo}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{sendOutputTo()}{sendOutputTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a1c916197fddba21af401cec576c9270a} 
+send\+Output\+To (\begin{DoxyParamCaption}\item[{}]{\$location}{, }\item[{}]{\$append}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Send the output of the command to a given location.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$location} & \\
+\hline
+bool & {\em \$append} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a742192db3ebcc2eb8564222a098f731b}\index{Event@{Event}!shouldRepeatNow@{shouldRepeatNow}}
+\index{shouldRepeatNow@{shouldRepeatNow}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{shouldRepeatNow()}{shouldRepeatNow()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a742192db3ebcc2eb8564222a098f731b} 
+should\+Repeat\+Now (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the event is ready to repeat.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa55e908d120057b4b5bff4e5e7b27c30}\index{Event@{Event}!shouldSkipDueToOverlapping@{shouldSkipDueToOverlapping}}
+\index{shouldSkipDueToOverlapping@{shouldSkipDueToOverlapping}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{shouldSkipDueToOverlapping()}{shouldSkipDueToOverlapping()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa55e908d120057b4b5bff4e5e7b27c30} 
+should\+Skip\+Due\+To\+Overlapping (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the event should skip because another process is overlapping.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_aa55e908d120057b4b5bff4e5e7b27c30}{Callback\+Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a2219c9d4e70a93ae4445e67324134b09}\index{Event@{Event}!start@{start}}
+\index{start@{start}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a2219c9d4e70a93ae4445e67324134b09} 
+start (\begin{DoxyParamCaption}\item[{}]{\$container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Run the command process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable \Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a642566a54378ccebf749925dd2109953}\index{Event@{Event}!storeOutput@{storeOutput}}
+\index{storeOutput@{storeOutput}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{storeOutput()}{storeOutput()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a642566a54378ccebf749925dd2109953} 
+store\+Output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ensure that the output is stored on disk in a log file.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a6085eed98176787b3714474cc107a445}\index{Event@{Event}!then@{then}}
+\index{then@{then}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{then()}{then()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a6085eed98176787b3714474cc107a445} 
+then (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be called after the operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa4bc37cefff29aa5a2dc76f6d6a336e4}\index{Event@{Event}!thenPing@{thenPing}}
+\index{thenPing@{thenPing}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{thenPing()}{thenPing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa4bc37cefff29aa5a2dc76f6d6a336e4} 
+then\+Ping (\begin{DoxyParamCaption}\item[{}]{\$url}{}\end{DoxyParamCaption})}
+
+Register a callback to ping a given \doxylink{class_u_r_l}{URL} after the job runs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_afd1a747fe6f578520224322a0b6465c0}\index{Event@{Event}!thenPingIf@{thenPingIf}}
+\index{thenPingIf@{thenPingIf}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{thenPingIf()}{thenPingIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_afd1a747fe6f578520224322a0b6465c0} 
+then\+Ping\+If (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$url}{}\end{DoxyParamCaption})}
+
+Register a callback to ping a given \doxylink{class_u_r_l}{URL} after the job runs if the given condition is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$value} & \\
+\hline
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3d443dcb2809416ee3c45e7378f87e93}\index{Event@{Event}!thenWithOutput@{thenWithOutput}}
+\index{thenWithOutput@{thenWithOutput}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{thenWithOutput()}{thenWithOutput()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3d443dcb2809416ee3c45e7378f87e93} 
+then\+With\+Output (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{, }\item[{}]{\$only\+If\+Output\+Exists}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Register a callback that uses the output after the job runs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+bool & {\em \$only\+If\+Output\+Exists} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a6f7aa61ce265ad7ca40a6e672227c7f7}\index{Event@{Event}!withOutputCallback@{withOutputCallback}}
+\index{withOutputCallback@{withOutputCallback}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{withOutputCallback()}{withOutputCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a6f7aa61ce265ad7ca40a6e672227c7f7} 
+with\+Output\+Callback (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{, }\item[{}]{\$only\+If\+Output\+Exists}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a callback that provides output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+bool & {\em \$only\+If\+Output\+Exists} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a00897481ee44ab5081efc1a131f4ba63}\index{Event@{Event}!\$afterCallbacks@{\$afterCallbacks}}
+\index{\$afterCallbacks@{\$afterCallbacks}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\$afterCallbacks}{\$afterCallbacks}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a00897481ee44ab5081efc1a131f4ba63} 
+\$after\+Callbacks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a24df4c31c4342dee99836c7743c5214e}\index{Event@{Event}!\$beforeCallbacks@{\$beforeCallbacks}}
+\index{\$beforeCallbacks@{\$beforeCallbacks}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\$beforeCallbacks}{\$beforeCallbacks}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a24df4c31c4342dee99836c7743c5214e} 
+\$before\+Callbacks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a8f120409eb9f635ac30b3f9a6d5becdc}\index{Event@{Event}!\$command@{\$command}}
+\index{\$command@{\$command}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\$command}{\$command}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a8f120409eb9f635ac30b3f9a6d5becdc} 
+\$command}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a354f17f08a3db07ffff5a6b5ab6d1c84}\index{Event@{Event}!\$exitCode@{\$exitCode}}
+\index{\$exitCode@{\$exitCode}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\$exitCode}{\$exitCode}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a354f17f08a3db07ffff5a6b5ab6d1c84} 
+\$exit\+Code}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a521aea05de15b85949c5fe79e4e5f1c1}\index{Event@{Event}!\$lastChecked@{\$lastChecked}}
+\index{\$lastChecked@{\$lastChecked}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\$lastChecked}{\$lastChecked}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a521aea05de15b85949c5fe79e4e5f1c1} 
+\$last\+Checked\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_acee1058d5349fea786e5fc3170e08a24}\index{Event@{Event}!\$mutex@{\$mutex}}
+\index{\$mutex@{\$mutex}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\$mutex}{\$mutex}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_acee1058d5349fea786e5fc3170e08a24} 
+\$mutex}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa99e20fff59925dedc85c70627dbef16}\index{Event@{Event}!\$mutexNameResolver@{\$mutexNameResolver}}
+\index{\$mutexNameResolver@{\$mutexNameResolver}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\$mutexNameResolver}{\$mutexNameResolver}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa99e20fff59925dedc85c70627dbef16} 
+\$mutex\+Name\+Resolver}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a73004ce9cd673c1bfafd1dc351134797}\index{Event@{Event}!\$output@{\$output}}
+\index{\$output@{\$output}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\$output}{\$output}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a73004ce9cd673c1bfafd1dc351134797} 
+\$output = \textquotesingle{}/dev/null\textquotesingle{}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a516965430dfc93297a4215a291d6e9a9}\index{Event@{Event}!\$shouldAppendOutput@{\$shouldAppendOutput}}
+\index{\$shouldAppendOutput@{\$shouldAppendOutput}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{\$shouldAppendOutput}{\$shouldAppendOutput}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a516965430dfc93297a4215a291d6e9a9} 
+\$should\+Append\+Output = false}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Console/\+Scheduling/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_console_2_scheduling_2_event_8php}{Event.\+php}}\end{DoxyCompactItemize}

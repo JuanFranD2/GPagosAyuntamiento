@@ -1,0 +1,157 @@
+\doxysection{Compiled\+Route Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route}{}\label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route}\index{CompiledRoute@{CompiledRoute}}
+Inheritance diagram for Compiled\+Route\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_routing_1_1_compiled_route}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a9e9c892b23f63e20f6b11d42d9ba3f66}{\+\_\+\+\_\+construct}} (private string \$static\+Prefix, private string \$regex, private array \$tokens, private array \$path\+Variables, private ?string \$host\+Regex=null, private array \$host\+Tokens=\mbox{[}$\,$\mbox{]}, private array \$host\+Variables=\mbox{[}$\,$\mbox{]}, private array \$variables=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}{\+\_\+\+\_\+serialize}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a4d9813fea8525b19a1d370eeb8fe41d6}{serialize}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a2fe5966ad9b8e1d91a37d3e055ac4938}{\+\_\+\+\_\+unserialize}} (array \$data)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a9ab1ff80b69b216ad496801d940c1266}{unserialize}} (string \$serialized)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_aa12b9c09a2f02dabc6d884a7b9357a34}{get\+Static\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a8a9b85f7e222025fbf7d760df2d46383}{get\+Regex}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a1d955b42ed8fa45c8dde6b8fd00aec95}{get\+Host\+Regex}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_acf2f05f60b57bd67020d2259a2cf9982}{get\+Tokens}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_aae6037b40ec8cde41330cd254a4a6878}{get\+Host\+Tokens}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a46cc1e9fb9c3c38ec4cc9d81f1fab999}{get\+Variables}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_ae7692f57e23af861127a26e2d714d2ec}{get\+Path\+Variables}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_af3ce3faf1a29ee677c875f70fad9d733}{get\+Host\+Variables}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Compiled\+Routes are returned by the Route\+Compiler class.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a9e9c892b23f63e20f6b11d42d9ba3f66}\index{CompiledRoute@{CompiledRoute}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a9e9c892b23f63e20f6b11d42d9ba3f66} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private string}]{\$static\+Prefix}{, }\item[{private string}]{\$regex}{, }\item[{private array}]{\$tokens}{, }\item[{private array}]{\$path\+Variables}{, }\item[{private ?string}]{\$host\+Regex}{ = {\ttfamily null}, }\item[{private array}]{\$host\+Tokens}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{private array}]{\$host\+Variables}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{private array}]{\$variables}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$static\+Prefix} & The static prefix of the compiled route \\
+\hline
+string & {\em \$regex} & The regular expression to use to match this route \\
+\hline
+array & {\em \$tokens} & An array of tokens to use to generate \doxylink{class_u_r_l}{URL} for this route \\
+\hline
+array & {\em \$path\+Variables} & An array of path variables \\
+\hline
+string | null & {\em \$host\+Regex} & Host regex \\
+\hline
+array & {\em \$host\+Tokens} & Host tokens \\
+\hline
+array & {\em \$host\+Variables} & An array of host variables \\
+\hline
+array & {\em \$variables} & An array of variables (variables defined in the path and in the host patterns) \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}\index{CompiledRoute@{CompiledRoute}!\_\_serialize@{\_\_serialize}}
+\index{\_\_serialize@{\_\_serialize}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{\_\_serialize()}{\_\_serialize()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_ab1d6abfbdcd8c9dd63dfef565bd2cfcf} 
+\+\_\+\+\_\+serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a2fe5966ad9b8e1d91a37d3e055ac4938}\index{CompiledRoute@{CompiledRoute}!\_\_unserialize@{\_\_unserialize}}
+\index{\_\_unserialize@{\_\_unserialize}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{\_\_unserialize()}{\_\_unserialize()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a2fe5966ad9b8e1d91a37d3e055ac4938} 
+\+\_\+\+\_\+unserialize (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a1d955b42ed8fa45c8dde6b8fd00aec95}\index{CompiledRoute@{CompiledRoute}!getHostRegex@{getHostRegex}}
+\index{getHostRegex@{getHostRegex}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{getHostRegex()}{getHostRegex()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a1d955b42ed8fa45c8dde6b8fd00aec95} 
+get\+Host\+Regex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the host regex. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_aae6037b40ec8cde41330cd254a4a6878}\index{CompiledRoute@{CompiledRoute}!getHostTokens@{getHostTokens}}
+\index{getHostTokens@{getHostTokens}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{getHostTokens()}{getHostTokens()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_aae6037b40ec8cde41330cd254a4a6878} 
+get\+Host\+Tokens (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the host tokens. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_af3ce3faf1a29ee677c875f70fad9d733}\index{CompiledRoute@{CompiledRoute}!getHostVariables@{getHostVariables}}
+\index{getHostVariables@{getHostVariables}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{getHostVariables()}{getHostVariables()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_af3ce3faf1a29ee677c875f70fad9d733} 
+get\+Host\+Variables (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the host variables. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_ae7692f57e23af861127a26e2d714d2ec}\index{CompiledRoute@{CompiledRoute}!getPathVariables@{getPathVariables}}
+\index{getPathVariables@{getPathVariables}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{getPathVariables()}{getPathVariables()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_ae7692f57e23af861127a26e2d714d2ec} 
+get\+Path\+Variables (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the path variables. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a8a9b85f7e222025fbf7d760df2d46383}\index{CompiledRoute@{CompiledRoute}!getRegex@{getRegex}}
+\index{getRegex@{getRegex}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{getRegex()}{getRegex()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a8a9b85f7e222025fbf7d760df2d46383} 
+get\+Regex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the regex. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_aa12b9c09a2f02dabc6d884a7b9357a34}\index{CompiledRoute@{CompiledRoute}!getStaticPrefix@{getStaticPrefix}}
+\index{getStaticPrefix@{getStaticPrefix}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{getStaticPrefix()}{getStaticPrefix()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_aa12b9c09a2f02dabc6d884a7b9357a34} 
+get\+Static\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the static prefix. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_acf2f05f60b57bd67020d2259a2cf9982}\index{CompiledRoute@{CompiledRoute}!getTokens@{getTokens}}
+\index{getTokens@{getTokens}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{getTokens()}{getTokens()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_acf2f05f60b57bd67020d2259a2cf9982} 
+get\+Tokens (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the tokens. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a46cc1e9fb9c3c38ec4cc9d81f1fab999}\index{CompiledRoute@{CompiledRoute}!getVariables@{getVariables}}
+\index{getVariables@{getVariables}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{getVariables()}{getVariables()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a46cc1e9fb9c3c38ec4cc9d81f1fab999} 
+get\+Variables (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the variables. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a4d9813fea8525b19a1d370eeb8fe41d6}\index{CompiledRoute@{CompiledRoute}!serialize@{serialize}}
+\index{serialize@{serialize}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a4d9813fea8525b19a1d370eeb8fe41d6} 
+serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a9ab1ff80b69b216ad496801d940c1266}\index{CompiledRoute@{CompiledRoute}!unserialize@{unserialize}}
+\index{unserialize@{unserialize}!CompiledRoute@{CompiledRoute}}
+\doxysubsubsection{\texorpdfstring{unserialize()}{unserialize()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_compiled_route_a9ab1ff80b69b216ad496801d940c1266} 
+unserialize (\begin{DoxyParamCaption}\item[{string}]{\$serialized}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/routing/\mbox{\hyperlink{_compiled_route_8php}{Compiled\+Route.\+php}}\end{DoxyCompactItemize}

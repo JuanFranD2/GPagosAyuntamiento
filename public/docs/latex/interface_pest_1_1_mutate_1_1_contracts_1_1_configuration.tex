@@ -1,0 +1,222 @@
+\doxysection{Configuration Interface Reference}
+\hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration}{}\label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration}\index{Configuration@{Configuration}}
+Inheritance diagram for Configuration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_ad487258f5c5b29f245ac636e1b3773c1}{path}} (array\texorpdfstring{$\vert$}{|}string ... \$paths)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a7eb9a388b6dafa8c607cc26df2af3c55}{ignore}} (array\texorpdfstring{$\vert$}{|}string ... \$paths)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a77ec0566415add56607f362469ea8451}{mutator}} (array\texorpdfstring{$\vert$}{|}string ... \$mutators)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a8d1ec021b135f2a0c334e6e0d54d6828}{except}} (array\texorpdfstring{$\vert$}{|}string ... \$mutators)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_af3aad745de69a5b9d03ae89d0e900158}{min}} (float \$min\+Score, ?bool \$fail\+On\+Zero\+Mutations=null)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a46a935715d84e2e3fcbaf9e91388031d}{ignore\+Min\+Score\+On\+Zero\+Mutations}} (bool \$\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a7eb9a388b6dafa8c607cc26df2af3c55}{ignore}}=true)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a5fb9e3dcd4696cab7e79e6cee0140d02}{covered\+Only}} (bool \$covered\+Only=true)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a3ee2ec3fd53f756c5972adc86b4d9e9d}{parallel}} (bool \$parallel=true)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a0b8d9e1a026a7979e0c80e105715a114}{processes}} (?int \$processes=null)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a055a6ca2e445b9a621ed4c9cb5f8eec7}{profile}} (bool \$profile=true)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_ad6d8adb7cdbd5c5c22980b16b8cff671}{stop\+On\+Untested}} (bool \$stop\+On\+Untested=true)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_aa018196bbd78d5ec4f31d9d57bec40a0}{stop\+On\+Uncovered}} (bool \$stop\+On\+Uncovered=true)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a8f734509b1c165589f1a3a30d615b2e4}{bail}} ()
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_acf80447a18a4dfcb218aee9f333fb993}{class}} (array\texorpdfstring{$\vert$}{|}string ... \$classes)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a8883bb99d36b3e4481c70b10dbf74f6c}{retry}} (bool \$retry=true)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a8f734509b1c165589f1a3a30d615b2e4}\index{Configuration@{Configuration}!bail@{bail}}
+\index{bail@{bail}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{bail()}{bail()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a8f734509b1c165589f1a3a30d615b2e4} 
+bail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a8f734509b1c165589f1a3a30d615b2e4}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_acf80447a18a4dfcb218aee9f333fb993}\index{Configuration@{Configuration}!class@{class}}
+\index{class@{class}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{class()}{class()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_acf80447a18a4dfcb218aee9f333fb993} 
+class (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string ...}]{\$classes}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,class-\/string$>$\texorpdfstring{$\vert$}{|}class-\/string} & ...\$classes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a5fb9e3dcd4696cab7e79e6cee0140d02}\index{Configuration@{Configuration}!coveredOnly@{coveredOnly}}
+\index{coveredOnly@{coveredOnly}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{coveredOnly()}{coveredOnly()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a5fb9e3dcd4696cab7e79e6cee0140d02} 
+covered\+Only (\begin{DoxyParamCaption}\item[{bool}]{\$covered\+Only}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a5fb9e3dcd4696cab7e79e6cee0140d02}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a8d1ec021b135f2a0c334e6e0d54d6828}\index{Configuration@{Configuration}!except@{except}}
+\index{except@{except}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{except()}{except()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a8d1ec021b135f2a0c334e6e0d54d6828} 
+except (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string ...}]{\$mutators}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,class-\/string$<$\+Mutator\texorpdfstring{$\vert$}{|}\+Mutator\+Set$>$$>$\texorpdfstring{$\vert$}{|}class-\/string$<$\+Mutator\texorpdfstring{$\vert$}{|}\+Mutator\+Set$>$} & ...\$mutators \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a8d1ec021b135f2a0c334e6e0d54d6828}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a7eb9a388b6dafa8c607cc26df2af3c55}\index{Configuration@{Configuration}!ignore@{ignore}}
+\index{ignore@{ignore}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{ignore()}{ignore()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a7eb9a388b6dafa8c607cc26df2af3c55} 
+ignore (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string ...}]{\$paths}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}string} & ...\$paths \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a7eb9a388b6dafa8c607cc26df2af3c55}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a46a935715d84e2e3fcbaf9e91388031d}\index{Configuration@{Configuration}!ignoreMinScoreOnZeroMutations@{ignoreMinScoreOnZeroMutations}}
+\index{ignoreMinScoreOnZeroMutations@{ignoreMinScoreOnZeroMutations}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{ignoreMinScoreOnZeroMutations()}{ignoreMinScoreOnZeroMutations()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a46a935715d84e2e3fcbaf9e91388031d} 
+ignore\+Min\+Score\+On\+Zero\+Mutations (\begin{DoxyParamCaption}\item[{bool}]{\$ignore}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a46a935715d84e2e3fcbaf9e91388031d}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_af3aad745de69a5b9d03ae89d0e900158}\index{Configuration@{Configuration}!min@{min}}
+\index{min@{min}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_af3aad745de69a5b9d03ae89d0e900158} 
+min (\begin{DoxyParamCaption}\item[{float}]{\$min\+Score}{, }\item[{?bool}]{\$fail\+On\+Zero\+Mutations}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_af3aad745de69a5b9d03ae89d0e900158}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a77ec0566415add56607f362469ea8451}\index{Configuration@{Configuration}!mutator@{mutator}}
+\index{mutator@{mutator}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{mutator()}{mutator()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a77ec0566415add56607f362469ea8451} 
+mutator (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string ...}]{\$mutators}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,class-\/string$<$\+Mutator\texorpdfstring{$\vert$}{|}\+Mutator\+Set$>$$>$\texorpdfstring{$\vert$}{|}class-\/string$<$\+Mutator\texorpdfstring{$\vert$}{|}\+Mutator\+Set$>$} & ...\$mutators \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a77ec0566415add56607f362469ea8451}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a3ee2ec3fd53f756c5972adc86b4d9e9d}\index{Configuration@{Configuration}!parallel@{parallel}}
+\index{parallel@{parallel}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{parallel()}{parallel()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a3ee2ec3fd53f756c5972adc86b4d9e9d} 
+parallel (\begin{DoxyParamCaption}\item[{bool}]{\$parallel}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a3ee2ec3fd53f756c5972adc86b4d9e9d}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_ad487258f5c5b29f245ac636e1b3773c1}\index{Configuration@{Configuration}!path@{path}}
+\index{path@{path}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_ad487258f5c5b29f245ac636e1b3773c1} 
+path (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string ...}]{\$paths}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}string} & ...\$paths \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_ad487258f5c5b29f245ac636e1b3773c1}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a0b8d9e1a026a7979e0c80e105715a114}\index{Configuration@{Configuration}!processes@{processes}}
+\index{processes@{processes}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{processes()}{processes()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a0b8d9e1a026a7979e0c80e105715a114} 
+processes (\begin{DoxyParamCaption}\item[{?int}]{\$processes}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a0b8d9e1a026a7979e0c80e105715a114}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a055a6ca2e445b9a621ed4c9cb5f8eec7}\index{Configuration@{Configuration}!profile@{profile}}
+\index{profile@{profile}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{profile()}{profile()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a055a6ca2e445b9a621ed4c9cb5f8eec7} 
+profile (\begin{DoxyParamCaption}\item[{bool}]{\$profile}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a055a6ca2e445b9a621ed4c9cb5f8eec7}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a8883bb99d36b3e4481c70b10dbf74f6c}\index{Configuration@{Configuration}!retry@{retry}}
+\index{retry@{retry}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{retry()}{retry()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_a8883bb99d36b3e4481c70b10dbf74f6c} 
+retry (\begin{DoxyParamCaption}\item[{bool}]{\$retry}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_a8883bb99d36b3e4481c70b10dbf74f6c}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_aa018196bbd78d5ec4f31d9d57bec40a0}\index{Configuration@{Configuration}!stopOnUncovered@{stopOnUncovered}}
+\index{stopOnUncovered@{stopOnUncovered}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{stopOnUncovered()}{stopOnUncovered()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_aa018196bbd78d5ec4f31d9d57bec40a0} 
+stop\+On\+Uncovered (\begin{DoxyParamCaption}\item[{bool}]{\$stop\+On\+Uncovered}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_aa018196bbd78d5ec4f31d9d57bec40a0}{Abstract\+Configuration}}.
+
+\Hypertarget{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_ad6d8adb7cdbd5c5c22980b16b8cff671}\index{Configuration@{Configuration}!stopOnUntested@{stopOnUntested}}
+\index{stopOnUntested@{stopOnUntested}!Configuration@{Configuration}}
+\doxysubsubsection{\texorpdfstring{stopOnUntested()}{stopOnUntested()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_mutate_1_1_contracts_1_1_configuration_ad6d8adb7cdbd5c5c22980b16b8cff671} 
+stop\+On\+Untested (\begin{DoxyParamCaption}\item[{bool}]{\$stop\+On\+Untested}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_mutate_1_1_support_1_1_configuration_1_1_abstract_configuration_ad6d8adb7cdbd5c5c22980b16b8cff671}{Abstract\+Configuration}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest-\/plugin-\/mutate/src/\+Contracts/\mbox{\hyperlink{pestphp_2pest-plugin-mutate_2src_2_contracts_2_configuration_8php}{Configuration.\+php}}\end{DoxyCompactItemize}

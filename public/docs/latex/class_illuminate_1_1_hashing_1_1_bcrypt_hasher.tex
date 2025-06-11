@@ -1,0 +1,250 @@
+\doxysection{Bcrypt\+Hasher Class Reference}
+\hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher}{}\label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher}\index{BcryptHasher@{BcryptHasher}}
+Inheritance diagram for Bcrypt\+Hasher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_hashing_1_1_bcrypt_hasher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a3f8a60e8e1644d4f26da4ca9330794dd}{\+\_\+\+\_\+construct}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a0d64c47b88d013fb6d691a440cf031d3}{make}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$value, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a40055f347c3c43b1584c13ea880f2336}{check}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$value, \$hashed\+Value, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_aca6d2c35054ae12ff517ac9bef608295}{needs\+Rehash}} (\$hashed\+Value, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a967d9fc22f1590daacc7ee35bcedaf9c}{verify\+Configuration}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_aa2703bb0c7625c6c6d35aff04c6ae561}{set\+Rounds}} (\$rounds)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_abstract_hasher}{Abstract\+Hasher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_abstract_hasher_af1bcd61115c8644288bdb50d569dae63}{info}} (\$hashed\+Value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher}{Hasher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_af1bcd61115c8644288bdb50d569dae63}{info}} (\$hashed\+Value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a5ac886faab5e03aea44cf6bf454f5cd6}{is\+Using\+Correct\+Algorithm}} (\$hashed\+Value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a749559ffea34f235c406b622fe249f52}{is\+Using\+Valid\+Options}} (\$hashed\+Value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_ad61c6ea4804e532be11464ebc9b26c87}{cost}} (array \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a08703727dea176ec1c31df9818fa4cc3}{\$rounds}} = 12
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_af6302c6057e44e151502b19f648836c7}{\$verify\+Algorithm}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_ae05862a0294251c88629b141b5ce329a}{\$limit}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a3f8a60e8e1644d4f26da4ca9330794dd}\index{BcryptHasher@{BcryptHasher}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a3f8a60e8e1644d4f26da4ca9330794dd} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new hasher instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a40055f347c3c43b1584c13ea880f2336}\index{BcryptHasher@{BcryptHasher}!check@{check}}
+\index{check@{check}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a40055f347c3c43b1584c13ea880f2336} 
+check (\begin{DoxyParamCaption}\item[{\#}]{\$value}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{}]{\$hashed\+Value}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Check the given plain value against a hash.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+string & {\em \$hashed\+Value} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_abstract_hasher_a40055f347c3c43b1584c13ea880f2336}{Abstract\+Hasher}}.
+
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_ad61c6ea4804e532be11464ebc9b26c87}\index{BcryptHasher@{BcryptHasher}!cost@{cost}}
+\index{cost@{cost}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{cost()}{cost()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_ad61c6ea4804e532be11464ebc9b26c87} 
+cost (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extract the cost value from the options array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a5ac886faab5e03aea44cf6bf454f5cd6}\index{BcryptHasher@{BcryptHasher}!isUsingCorrectAlgorithm@{isUsingCorrectAlgorithm}}
+\index{isUsingCorrectAlgorithm@{isUsingCorrectAlgorithm}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{isUsingCorrectAlgorithm()}{isUsingCorrectAlgorithm()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a5ac886faab5e03aea44cf6bf454f5cd6} 
+is\+Using\+Correct\+Algorithm (\begin{DoxyParamCaption}\item[{}]{\$hashed\+Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Verify the hashed value\textquotesingle{}s algorithm.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hashed\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a749559ffea34f235c406b622fe249f52}\index{BcryptHasher@{BcryptHasher}!isUsingValidOptions@{isUsingValidOptions}}
+\index{isUsingValidOptions@{isUsingValidOptions}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{isUsingValidOptions()}{isUsingValidOptions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a749559ffea34f235c406b622fe249f52} 
+is\+Using\+Valid\+Options (\begin{DoxyParamCaption}\item[{}]{\$hashed\+Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Verify the hashed value\textquotesingle{}s options.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hashed\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a0d64c47b88d013fb6d691a440cf031d3}\index{BcryptHasher@{BcryptHasher}!make@{make}}
+\index{make@{make}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a0d64c47b88d013fb6d691a440cf031d3} 
+make (\begin{DoxyParamCaption}\item[{\#}]{\$value}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\doxylink{class_hash}{Hash} the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a0d64c47b88d013fb6d691a440cf031d3}{Hasher}}.
+
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_aca6d2c35054ae12ff517ac9bef608295}\index{BcryptHasher@{BcryptHasher}!needsRehash@{needsRehash}}
+\index{needsRehash@{needsRehash}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{needsRehash()}{needsRehash()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_aca6d2c35054ae12ff517ac9bef608295} 
+needs\+Rehash (\begin{DoxyParamCaption}\item[{}]{\$hashed\+Value}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Check if the given hash has been hashed using the given options.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hashed\+Value} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_aca6d2c35054ae12ff517ac9bef608295}{Hasher}}.
+
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_aa2703bb0c7625c6c6d35aff04c6ae561}\index{BcryptHasher@{BcryptHasher}!setRounds@{setRounds}}
+\index{setRounds@{setRounds}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{setRounds()}{setRounds()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_aa2703bb0c7625c6c6d35aff04c6ae561} 
+set\+Rounds (\begin{DoxyParamCaption}\item[{}]{\$rounds}{}\end{DoxyParamCaption})}
+
+Set the default password work factor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rounds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a967d9fc22f1590daacc7ee35bcedaf9c}\index{BcryptHasher@{BcryptHasher}!verifyConfiguration@{verifyConfiguration}}
+\index{verifyConfiguration@{verifyConfiguration}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{verifyConfiguration()}{verifyConfiguration()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a967d9fc22f1590daacc7ee35bcedaf9c} 
+verify\+Configuration (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Verifies that the configuration is less than or equal to what is configured. 
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_ae05862a0294251c88629b141b5ce329a}\index{BcryptHasher@{BcryptHasher}!\$limit@{\$limit}}
+\index{\$limit@{\$limit}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{\$limit}{\$limit}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_ae05862a0294251c88629b141b5ce329a} 
+\$limit\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a08703727dea176ec1c31df9818fa4cc3}\index{BcryptHasher@{BcryptHasher}!\$rounds@{\$rounds}}
+\index{\$rounds@{\$rounds}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{\$rounds}{\$rounds}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a08703727dea176ec1c31df9818fa4cc3} 
+\$rounds = 12\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_af6302c6057e44e151502b19f648836c7}\index{BcryptHasher@{BcryptHasher}!\$verifyAlgorithm@{\$verifyAlgorithm}}
+\index{\$verifyAlgorithm@{\$verifyAlgorithm}!BcryptHasher@{BcryptHasher}}
+\doxysubsubsection{\texorpdfstring{\$verifyAlgorithm}{\$verifyAlgorithm}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_af6302c6057e44e151502b19f648836c7} 
+\$verify\+Algorithm = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Hashing/\mbox{\hyperlink{_bcrypt_hasher_8php}{Bcrypt\+Hasher.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var _object_properties_description_8php =
+[
+    [ "ObjectPropertiesDescription", "class_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_properties_1_1_object_properties_description.html", "class_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_properties_1_1_object_properties_description" ]
+];

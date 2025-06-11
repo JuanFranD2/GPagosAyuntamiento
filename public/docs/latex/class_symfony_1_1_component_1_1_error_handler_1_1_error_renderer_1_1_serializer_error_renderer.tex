@@ -1,0 +1,78 @@
+\doxysection{Serializer\+Error\+Renderer Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer}{}\label{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer}\index{SerializerErrorRenderer@{SerializerErrorRenderer}}
+Inheritance diagram for Serializer\+Error\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_a165e2e837228b4b3966f88a6300a8d33}{\+\_\+\+\_\+construct}} (private Serializer\+Interface \$serializer, string\texorpdfstring{$\vert$}{|}callable \$format, ?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_error_renderer_interface}{Error\+Renderer\+Interface}} \$fallback\+Error\+Renderer=null, bool\texorpdfstring{$\vert$}{|}callable \$debug=false,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_af142c8afe86a5764575e5fc11fe369fc}{render}} (\textbackslash{}Throwable \$exception)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_a889c312e1c09e4dedaa8674b4f451f77}{get\+Preferred\+Format}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{Request\+Stack}} \$request\+Stack)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_error_renderer_interface}{Error\+Renderer\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_error_renderer_interface_ac0de1a13da16d818f57b75d43b2bb5e8}{IDE\+\_\+\+LINK\+\_\+\+FORMATS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Formats an exception using Serializer for rendering.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_a165e2e837228b4b3966f88a6300a8d33}\index{SerializerErrorRenderer@{SerializerErrorRenderer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!SerializerErrorRenderer@{SerializerErrorRenderer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_a165e2e837228b4b3966f88a6300a8d33} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private Serializer\+Interface}]{\$serializer}{, }\item[{string\texorpdfstring{$\vert$}{|}callable}]{\$format}{, }\item[{?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_error_renderer_interface}{Error\+Renderer\+Interface}}}]{\$fallback\+Error\+Renderer}{ = {\ttfamily null}, }\item[{bool\texorpdfstring{$\vert$}{|}callable}]{\$debug}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em string\texorpdfstring{$\vert$}{|}callable(\+Flatten\+Exception)} & \$format The format as a string or a callable that should return it formats not supported by Request\+::get\+Mime\+Types() should be given as mime types \\
+\hline
+bool | callable & {\em \$debug} & The debugging mode as a boolean or a callable that should return it \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_a889c312e1c09e4dedaa8674b4f451f77}\index{SerializerErrorRenderer@{SerializerErrorRenderer}!getPreferredFormat@{getPreferredFormat}}
+\index{getPreferredFormat@{getPreferredFormat}!SerializerErrorRenderer@{SerializerErrorRenderer}}
+\doxysubsubsection{\texorpdfstring{getPreferredFormat()}{getPreferredFormat()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_a889c312e1c09e4dedaa8674b4f451f77} 
+get\+Preferred\+Format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{Request\+Stack}}}]{\$request\+Stack}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_af142c8afe86a5764575e5fc11fe369fc}\index{SerializerErrorRenderer@{SerializerErrorRenderer}!render@{render}}
+\index{render@{render}!SerializerErrorRenderer@{SerializerErrorRenderer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_serializer_error_renderer_af142c8afe86a5764575e5fc11fe369fc} 
+render (\begin{DoxyParamCaption}\item[{\textbackslash{}Throwable}]{\$exception}{}\end{DoxyParamCaption})}
+
+Renders a Throwable as a Flatten\+Exception. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_error_renderer_interface_af142c8afe86a5764575e5fc11fe369fc}{Error\+Renderer\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/error-\/handler/\+Error\+Renderer/\mbox{\hyperlink{_serializer_error_renderer_8php}{Serializer\+Error\+Renderer.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+var namespace_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator =
+[
+    [ "CannotUseAddMethodsException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_cannot_use_add_methods_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_cannot_use_add_methods_exception" ],
+    [ "ClassIsEnumerationException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_class_is_enumeration_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_class_is_enumeration_exception" ],
+    [ "ClassIsFinalException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_class_is_final_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_class_is_final_exception" ],
+    [ "DuplicateMethodException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_duplicate_method_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_duplicate_method_exception" ],
+    [ "Exception", "interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_exception.html", null ],
+    [ "Generator", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_generator.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_generator" ],
+    [ "HookedProperty", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_hooked_property.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_hooked_property" ],
+    [ "HookedPropertyGenerator", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_hooked_property_generator.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_hooked_property_generator" ],
+    [ "InvalidMethodNameException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_invalid_method_name_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_invalid_method_name_exception" ],
+    [ "MockClass", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_class.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_class" ],
+    [ "MockMethod", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_method.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_method" ],
+    [ "MockMethodSet", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_method_set.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_method_set" ],
+    [ "MockTrait", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_trait.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_trait" ],
+    [ "MockType", "interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_type.html", "interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_mock_type" ],
+    [ "NameAlreadyInUseException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_name_already_in_use_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_name_already_in_use_exception" ],
+    [ "OriginalConstructorInvocationRequiredException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_original_constructor_invocation_required_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_original_constructor_invocation_required_exception" ],
+    [ "ReflectionException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_reflection_exception.html", null ],
+    [ "RuntimeException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_runtime_exception.html", null ],
+    [ "SoapExtensionNotAvailableException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_soap_extension_not_available_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_soap_extension_not_available_exception" ],
+    [ "UnknownClassException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_unknown_class_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_unknown_class_exception" ],
+    [ "UnknownTraitException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_unknown_trait_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_unknown_trait_exception" ],
+    [ "UnknownTypeException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_unknown_type_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_unknown_type_exception" ],
+    [ "TemplateLoader", "namespace_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator.html#aa77ddbb4a9d4bf8df20370bfa9b5c6c3", null ]
+];

@@ -1,0 +1,4 @@
+var _remove_unserialize_for_internal_serializable_classes_pass_8php =
+[
+    [ "RemoveUnserializeForInternalSerializableClassesPass", "class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass.html", "class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass" ]
+];

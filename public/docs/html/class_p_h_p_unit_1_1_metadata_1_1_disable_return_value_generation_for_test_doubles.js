@@ -1,0 +1,4 @@
+var class_p_h_p_unit_1_1_metadata_1_1_disable_return_value_generation_for_test_doubles =
+[
+    [ "isDisableReturnValueGenerationForTestDoubles", "class_p_h_p_unit_1_1_metadata_1_1_disable_return_value_generation_for_test_doubles.html#aa0044642ac3f8c6083c6c26a95394b9d", null ]
+];

@@ -1,0 +1,591 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 4419.643066
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.113131 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 99 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text 'arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col 'arg1' to 'arg2' of row 'arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(Mutator) cw
+(AbstractMutator) cw
+(AbstractFunctionCallUnwrapMutator) cw
+(AbstractFunctionReplaceMutator) cw
+(BitwiseAndToBitwiseOr) cw
+(BitwiseOrToBitwiseAnd) cw
+(BitwiseXorToBitwiseAnd) cw
+(DivisionToMultiplication) cw
+(MinusToPlus) cw
+(ModulusToMultiplication) cw
+(MultiplicationToDivision) cw
+(PlusToMinus) cw
+(PostDecrementToPostIncrement) cw
+(PostIncrementToPostDecrement) cw
+(PowerToMultiplication) cw
+(PreDecrementToPreIncrement) cw
+(PreIncrementToPreDecrement) cw
+(ShiftLeftToShiftRight) cw
+(ShiftRightToShiftLeft) cw
+(BitwiseAndToBitwiseOr) cw
+(BitwiseOrToBitwiseAnd) cw
+(BitwiseXorToBitwiseAnd) cw
+(CoalesceEqualToEqual) cw
+(ConcatEqualToEqual) cw
+(DivideEqualToMultiplyEqual) cw
+(MinusEqualToPlusEqual) cw
+(ModulusEqualToMultiplyEqual) cw
+(MultiplyEqualToDivideEqual) cw
+(PlusEqualToMinusEqual) cw
+(PowerEqualToMultiplyEqual) cw
+(ShiftLeftToShiftRight) cw
+(ShiftRightToShiftLeft) cw
+(RemoveArrayCast) cw
+(RemoveBooleanCast) cw
+(RemoveDoubleCast) cw
+(RemoveIntegerCast) cw
+(RemoveObjectCast) cw
+(RemoveStringCast) cw
+(BreakToContinue) cw
+(ContinueToBreak) cw
+(DoWhileAlwaysFalse) cw
+(ElseIfNegated) cw
+(ForAlwaysFalse) cw
+(ForeachEmptyIterable) cw
+(IfNegated) cw
+(TernaryNegated) cw
+(WhileAlwaysFalse) cw
+(EqualToIdentical) cw
+(EqualToNotEqual) cw
+(GreaterOrEqualToGreater) cw
+(GreaterOrEqualToSmaller) cw
+(GreaterToGreaterOrEqual) cw
+(GreaterToSmallerOrEqual) cw
+(IdenticalToEqual) cw
+(IdenticalToNotIdentical) cw
+(NotEqualToEqual) cw
+(NotEqualToNotIdentical) cw
+(NotIdenticalToIdentical) cw
+(NotIdenticalToNotEqual) cw
+(SmallerOrEqualToGreater) cw
+(SmallerOrEqualToSmaller) cw
+(SmallerToGreaterOrEqual) cw
+(SmallerToSmallerOrEqual) cw
+(SpaceshipSwitchSides) cw
+(LaravelRemoveStringableUpper) cw
+(LaravelUnwrapStrUpper) cw
+(BooleanAndToBooleanOr) cw
+(BooleanOrToBooleanAnd) cw
+(CoalesceRemoveLeft) cw
+(FalseToTrue) cw
+(InstanceOfToFalse) cw
+(InstanceOfToTrue) cw
+(LogicalAndToLogicalOr) cw
+(LogicalOrToLogicalAnd) cw
+(LogicalXorToLogicalAnd) cw
+(RemoveNot) cw
+(TrueToFalse) cw
+(DecrementFloat) cw
+(DecrementInteger) cw
+(IncrementFloat) cw
+(IncrementInteger) cw
+(RemoveArrayItem) cw
+(RemoveEarlyReturn) cw
+(RemoveFunctionCall) cw
+(RemoveMethodCall) cw
+(RemoveNullSafeOperator) cw
+(AlwaysReturnEmptyArray) cw
+(AlwaysReturnNull) cw
+(ConcatRemoveLeft) cw
+(ConcatRemoveRight) cw
+(ConcatSwitchSides) cw
+(EmptyStringToNotEmpty) cw
+(NotEmptyStringToEmpty) cw
+(ConstantProtectedToPrivate) cw
+(ConstantPublicToProtected) cw
+(FunctionProtectedToPrivate) cw
+(FunctionPublicToProtected) cw
+(PropertyProtectedToPrivate) cw
+(PropertyPublicToProtected) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (Mutator) 0.000000 98.000000 box
+ (AbstractMutator) 0.000000 97.000000 box
+ (AbstractFunctionCallUnwrapMutator) 1.000000 96.000000 box
+1.000000 96.000000 mark
+ (AbstractFunctionReplaceMutator) 1.000000 95.000000 box
+1.000000 95.000000 mark
+ (BitwiseAndToBitwiseOr) 1.000000 94.000000 box
+ (BitwiseOrToBitwiseAnd) 1.000000 93.000000 box
+ (BitwiseXorToBitwiseAnd) 1.000000 92.000000 box
+ (DivisionToMultiplication) 1.000000 91.000000 box
+ (MinusToPlus) 1.000000 90.000000 box
+ (ModulusToMultiplication) 1.000000 89.000000 box
+ (MultiplicationToDivision) 1.000000 88.000000 box
+ (PlusToMinus) 1.000000 87.000000 box
+ (PostDecrementToPostIncrement) 1.000000 86.000000 box
+ (PostIncrementToPostDecrement) 1.000000 85.000000 box
+ (PowerToMultiplication) 1.000000 84.000000 box
+ (PreDecrementToPreIncrement) 1.000000 83.000000 box
+ (PreIncrementToPreDecrement) 1.000000 82.000000 box
+ (ShiftLeftToShiftRight) 1.000000 81.000000 box
+ (ShiftRightToShiftLeft) 1.000000 80.000000 box
+ (BitwiseAndToBitwiseOr) 1.000000 79.000000 box
+ (BitwiseOrToBitwiseAnd) 1.000000 78.000000 box
+ (BitwiseXorToBitwiseAnd) 1.000000 77.000000 box
+ (CoalesceEqualToEqual) 1.000000 76.000000 box
+ (ConcatEqualToEqual) 1.000000 75.000000 box
+ (DivideEqualToMultiplyEqual) 1.000000 74.000000 box
+ (MinusEqualToPlusEqual) 1.000000 73.000000 box
+ (ModulusEqualToMultiplyEqual) 1.000000 72.000000 box
+ (MultiplyEqualToDivideEqual) 1.000000 71.000000 box
+ (PlusEqualToMinusEqual) 1.000000 70.000000 box
+ (PowerEqualToMultiplyEqual) 1.000000 69.000000 box
+ (ShiftLeftToShiftRight) 1.000000 68.000000 box
+ (ShiftRightToShiftLeft) 1.000000 67.000000 box
+ (RemoveArrayCast) 1.000000 66.000000 box
+ (RemoveBooleanCast) 1.000000 65.000000 box
+ (RemoveDoubleCast) 1.000000 64.000000 box
+ (RemoveIntegerCast) 1.000000 63.000000 box
+ (RemoveObjectCast) 1.000000 62.000000 box
+ (RemoveStringCast) 1.000000 61.000000 box
+ (BreakToContinue) 1.000000 60.000000 box
+ (ContinueToBreak) 1.000000 59.000000 box
+ (DoWhileAlwaysFalse) 1.000000 58.000000 box
+ (ElseIfNegated) 1.000000 57.000000 box
+ (ForAlwaysFalse) 1.000000 56.000000 box
+ (ForeachEmptyIterable) 1.000000 55.000000 box
+ (IfNegated) 1.000000 54.000000 box
+ (TernaryNegated) 1.000000 53.000000 box
+ (WhileAlwaysFalse) 1.000000 52.000000 box
+ (EqualToIdentical) 1.000000 51.000000 box
+ (EqualToNotEqual) 1.000000 50.000000 box
+ (GreaterOrEqualToGreater) 1.000000 49.000000 box
+ (GreaterOrEqualToSmaller) 1.000000 48.000000 box
+ (GreaterToGreaterOrEqual) 1.000000 47.000000 box
+ (GreaterToSmallerOrEqual) 1.000000 46.000000 box
+ (IdenticalToEqual) 1.000000 45.000000 box
+ (IdenticalToNotIdentical) 1.000000 44.000000 box
+ (NotEqualToEqual) 1.000000 43.000000 box
+ (NotEqualToNotIdentical) 1.000000 42.000000 box
+ (NotIdenticalToIdentical) 1.000000 41.000000 box
+ (NotIdenticalToNotEqual) 1.000000 40.000000 box
+ (SmallerOrEqualToGreater) 1.000000 39.000000 box
+ (SmallerOrEqualToSmaller) 1.000000 38.000000 box
+ (SmallerToGreaterOrEqual) 1.000000 37.000000 box
+ (SmallerToSmallerOrEqual) 1.000000 36.000000 box
+ (SpaceshipSwitchSides) 1.000000 35.000000 box
+ (LaravelRemoveStringableUpper) 1.000000 34.000000 box
+ (LaravelUnwrapStrUpper) 1.000000 33.000000 box
+ (BooleanAndToBooleanOr) 1.000000 32.000000 box
+ (BooleanOrToBooleanAnd) 1.000000 31.000000 box
+ (CoalesceRemoveLeft) 1.000000 30.000000 box
+ (FalseToTrue) 1.000000 29.000000 box
+ (InstanceOfToFalse) 1.000000 28.000000 box
+ (InstanceOfToTrue) 1.000000 27.000000 box
+ (LogicalAndToLogicalOr) 1.000000 26.000000 box
+ (LogicalOrToLogicalAnd) 1.000000 25.000000 box
+ (LogicalXorToLogicalAnd) 1.000000 24.000000 box
+ (RemoveNot) 1.000000 23.000000 box
+ (TrueToFalse) 1.000000 22.000000 box
+ (DecrementFloat) 1.000000 21.000000 box
+ (DecrementInteger) 1.000000 20.000000 box
+ (IncrementFloat) 1.000000 19.000000 box
+ (IncrementInteger) 1.000000 18.000000 box
+ (RemoveArrayItem) 1.000000 17.000000 box
+ (RemoveEarlyReturn) 1.000000 16.000000 box
+ (RemoveFunctionCall) 1.000000 15.000000 box
+ (RemoveMethodCall) 1.000000 14.000000 box
+ (RemoveNullSafeOperator) 1.000000 13.000000 box
+ (AlwaysReturnEmptyArray) 1.000000 12.000000 box
+ (AlwaysReturnNull) 1.000000 11.000000 box
+ (ConcatRemoveLeft) 1.000000 10.000000 box
+ (ConcatRemoveRight) 1.000000 9.000000 box
+ (ConcatSwitchSides) 1.000000 8.000000 box
+ (EmptyStringToNotEmpty) 1.000000 7.000000 box
+ (NotEmptyStringToEmpty) 1.000000 6.000000 box
+ (ConstantProtectedToPrivate) 1.000000 5.000000 box
+ (ConstantPublicToProtected) 1.000000 4.000000 box
+ (FunctionProtectedToPrivate) 1.000000 3.000000 box
+ (FunctionPublicToProtected) 1.000000 2.000000 box
+ (PropertyProtectedToPrivate) 1.000000 1.000000 box
+ (PropertyPublicToProtected) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+1 0.000000 97.250000 out
+solid
+0 0.000000 97.750000 in
+solid
+1 0.000000 96.250000 out
+solid
+0 0.000000 96.500000 hedge
+solid
+0 0.000000 95.500000 hedge
+solid
+0 0.000000 94.500000 hedge
+solid
+0 0.000000 93.500000 hedge
+solid
+0 0.000000 92.500000 hedge
+solid
+0 0.000000 91.500000 hedge
+solid
+0 0.000000 90.500000 hedge
+solid
+0 0.000000 89.500000 hedge
+solid
+0 0.000000 88.500000 hedge
+solid
+0 0.000000 87.500000 hedge
+solid
+0 0.000000 86.500000 hedge
+solid
+0 0.000000 85.500000 hedge
+solid
+0 0.000000 84.500000 hedge
+solid
+0 0.000000 83.500000 hedge
+solid
+0 0.000000 82.500000 hedge
+solid
+0 0.000000 81.500000 hedge
+solid
+0 0.000000 80.500000 hedge
+solid
+0 0.000000 79.500000 hedge
+solid
+0 0.000000 78.500000 hedge
+solid
+0 0.000000 77.500000 hedge
+solid
+0 0.000000 76.500000 hedge
+solid
+0 0.000000 75.500000 hedge
+solid
+0 0.000000 74.500000 hedge
+solid
+0 0.000000 73.500000 hedge
+solid
+0 0.000000 72.500000 hedge
+solid
+0 0.000000 71.500000 hedge
+solid
+0 0.000000 70.500000 hedge
+solid
+0 0.000000 69.500000 hedge
+solid
+0 0.000000 68.500000 hedge
+solid
+0 0.000000 67.500000 hedge
+solid
+0 0.000000 66.500000 hedge
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0 0.000000 63.500000 hedge
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 97.000000 0.500000 vedge

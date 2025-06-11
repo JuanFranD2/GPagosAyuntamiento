@@ -1,0 +1,77 @@
+\doxysection{Env\+Variable\+Finder Class Reference}
+\hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder}{}\label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder}\index{EnvVariableFinder@{EnvVariableFinder}}
+Inheritance diagram for Env\+Variable\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a61a04b728f3be507e3bec4b089ee9b81}{\+\_\+\+\_\+construct}} (string \$environment\+Variable\+Name)
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{diagnose}} ()
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a39ec161e9a5372e002b889d276208899}{find}} ()
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a61a04b728f3be507e3bec4b089ee9b81}\index{EnvVariableFinder@{EnvVariableFinder}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!EnvVariableFinder@{EnvVariableFinder}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a61a04b728f3be507e3bec4b089ee9b81} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$environment\+Variable\+Name}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}\index{EnvVariableFinder@{EnvVariableFinder}!diagnose@{diagnose}}
+\index{diagnose@{diagnose}!EnvVariableFinder@{EnvVariableFinder}}
+\doxysubsubsection{\texorpdfstring{diagnose()}{diagnose()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8} 
+diagnose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Provides an explanation which may offer some insight as to what the finder will be able to find.
+
+This is practical to have an idea of what each finder will find collect information for the unit tests, since integration tests are quite complicated as dependent on complex infrastructures. 
+
+Implements \mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Cpu\+Core\+Finder}}.
+
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a39ec161e9a5372e002b889d276208899}\index{EnvVariableFinder@{EnvVariableFinder}!find@{find}}
+\index{find@{find}!EnvVariableFinder@{EnvVariableFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a39ec161e9a5372e002b889d276208899} 
+find (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Find the number of CPU cores. If it could not find it, returns null. The means used to find the cores are at the implementation discretion.
+
+\begin{DoxyReturn}{Returns}
+positive-\/int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a39ec161e9a5372e002b889d276208899}{Cpu\+Core\+Finder}}.
+
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a5558c5d549f41597377fa1ea8a1cefa3}\index{EnvVariableFinder@{EnvVariableFinder}!toString@{toString}}
+\index{toString@{toString}!EnvVariableFinder@{EnvVariableFinder}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder_a5558c5d549f41597377fa1ea8a1cefa3} 
+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Cpu\+Core\+Finder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/fidry/cpu-\/core-\/counter/src/\+Finder/\mbox{\hyperlink{_env_variable_finder_8php}{Env\+Variable\+Finder.\+php}}\end{DoxyCompactItemize}

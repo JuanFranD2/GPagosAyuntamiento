@@ -1,0 +1,48 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/path-\/is-\/absolute Directory Reference}
+\hypertarget{dir_db3d4663aa74fbe332d7dff145aaf827}{}\label{dir_db3d4663aa74fbe332d7dff145aaf827}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/path-\/is-\/absolute Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/path-\/is-\/absolute Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md5439}{}\doxysubsection{\texorpdfstring{path-\/is-\/absolute \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/path-is-absolute.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/path-\/is-\/absolute.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/path-is-absolute}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/path-\/is-\/absolute}})}{path-\/is-\/absolute \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/path-is-absolute.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/path-\/is-\/absolute.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/path-is-absolute}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/path-\/is-\/absolute}})}}\label{readme.md_autotoc_md5439}
+\begin{quote}
+Node.\+js 0.\+12 \href{http://nodejs.org/api/path.html\#path_path_isabsolute_path}{\texttt{{\ttfamily path.\+is\+Absolute()}}} \href{https://ponyfill.com}{\texttt{ponyfill}} \end{quote}
+\hypertarget{readme.md_autotoc_md5440}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md5440}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ -\/-\/save\ path-\/is-\/absolute}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md5441}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md5441}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ pathIsAbsolute\ =\ require('path-\/is-\/absolute');}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ Running\ on\ Linux}
+\DoxyCodeLine{pathIsAbsolute('/home/foo');}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{pathIsAbsolute('C:/Users/foo');}
+\DoxyCodeLine{//=>\ false}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ Running\ on\ Windows}
+\DoxyCodeLine{pathIsAbsolute('C:/Users/foo');}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{pathIsAbsolute('/home/foo');}
+\DoxyCodeLine{//=>\ false}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ Running\ on\ any\ OS}
+\DoxyCodeLine{pathIsAbsolute.posix('/home/foo');}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{pathIsAbsolute.posix('C:/Users/foo');}
+\DoxyCodeLine{//=>\ false}
+\DoxyCodeLine{pathIsAbsolute.win32('C:/Users/foo');}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{pathIsAbsolute.win32('/home/foo');}
+\DoxyCodeLine{//=>\ false}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md5442}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md5442}
+See the \href{http://nodejs.org/api/path.html\#path_path_isabsolute_path}{\texttt{{\ttfamily path.\+is\+Absolute()} docs}}.\hypertarget{readme.md_autotoc_md5443}{}\doxysubsubsection{\texorpdfstring{path\+Is\+Absolute(path)}{path\+Is\+Absolute(path)}}\label{readme.md_autotoc_md5443}
+\hypertarget{readme.md_autotoc_md5444}{}\doxysubsubsection{\texorpdfstring{path\+Is\+Absolute.\+posix(path)}{path\+Is\+Absolute.\+posix(path)}}\label{readme.md_autotoc_md5444}
+POSIX specific version.\hypertarget{readme.md_autotoc_md5445}{}\doxysubsubsection{\texorpdfstring{path\+Is\+Absolute.\+win32(path)}{path\+Is\+Absolute.\+win32(path)}}\label{readme.md_autotoc_md5445}
+Windows specific version.\hypertarget{readme.md_autotoc_md5446}{}\doxysubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md5446}
+MIT © \href{https://sindresorhus.com}{\texttt{Sindre Sorhus}} 

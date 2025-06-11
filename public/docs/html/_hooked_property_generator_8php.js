@@ -1,0 +1,4 @@
+var _hooked_property_generator_8php =
+[
+    [ "HookedPropertyGenerator", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_hooked_property_generator.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_hooked_property_generator" ]
+];

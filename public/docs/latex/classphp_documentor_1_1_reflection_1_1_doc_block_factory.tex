@@ -1,0 +1,86 @@
+\doxysection{Doc\+Block\+Factory Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_factory}{}\label{classphp_documentor_1_1_reflection_1_1_doc_block_factory}\index{DocBlockFactory@{DocBlockFactory}}
+Inheritance diagram for Doc\+Block\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classphp_documentor_1_1_reflection_1_1_doc_block_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_factory_ad4bd68911188b861c6f1625903c35c8d}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory}{Description\+Factory}} \$description\+Factory, \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory}{Tag\+Factory}} \$tag\+Factory)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_factory_aae6824881e7598ababd49cefc0591bce}{create}} (\$docblock, ?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context}{Types\textbackslash{}\+Context}} \$context=null, ?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_location}{Location}} \$location=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_factory_a05856bac6ac7add813d6d516cb6aa29b}{register\+Tag\+Handler}} (string \$tag\+Name, \$handler)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_factory_a220aa312016b6fa0c9a6c4bf61a7ead4}{create\+Instance}} (array \$additional\+Tags=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_factory_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_factory_ad4bd68911188b861c6f1625903c35c8d}\index{DocBlockFactory@{DocBlockFactory}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DocBlockFactory@{DocBlockFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_factory_ad4bd68911188b861c6f1625903c35c8d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_factory}{Description\+Factory}}}]{\$description\+Factory}{, }\item[{\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory}{Tag\+Factory}}}]{\$tag\+Factory}{}\end{DoxyParamCaption})}
+
+Initializes this factory with the required subcontractors. 
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_factory_aae6824881e7598ababd49cefc0591bce}\index{DocBlockFactory@{DocBlockFactory}!create@{create}}
+\index{create@{create}!DocBlockFactory@{DocBlockFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_factory_aae6824881e7598ababd49cefc0591bce} 
+create (\begin{DoxyParamCaption}\item[{}]{\$docblock}{, }\item[{?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context}{Types\textbackslash{}\+Context}}}]{\$context}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_location}{Location}}}]{\$location}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$docblock} & A string containing the Doc\+Block to parse or an object supporting the get\+Doc\+Comment method (such as a Reflection\+Class object). \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_factory_interface_aae6824881e7598ababd49cefc0591bce}{Doc\+Block\+Factory\+Interface}}.
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_factory_a220aa312016b6fa0c9a6c4bf61a7ead4}\index{DocBlockFactory@{DocBlockFactory}!createInstance@{createInstance}}
+\index{createInstance@{createInstance}!DocBlockFactory@{DocBlockFactory}}
+\doxysubsubsection{\texorpdfstring{createInstance()}{createInstance()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_factory_a220aa312016b6fa0c9a6c4bf61a7ead4} 
+create\+Instance (\begin{DoxyParamCaption}\item[{array}]{\$additional\+Tags}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Factory method for easy instantiation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,class-\/string$<$\+Tag$>$\texorpdfstring{$\vert$}{|}\+Factory$>$} & \$additional\+Tags \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_factory_interface_a220aa312016b6fa0c9a6c4bf61a7ead4}{Doc\+Block\+Factory\+Interface}}.
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_factory_a05856bac6ac7add813d6d516cb6aa29b}\index{DocBlockFactory@{DocBlockFactory}!registerTagHandler@{registerTagHandler}}
+\index{registerTagHandler@{registerTagHandler}!DocBlockFactory@{DocBlockFactory}}
+\doxysubsubsection{\texorpdfstring{registerTagHandler()}{registerTagHandler()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_factory_a05856bac6ac7add813d6d516cb6aa29b} 
+register\+Tag\+Handler (\begin{DoxyParamCaption}\item[{string}]{\$tag\+Name}{, }\item[{}]{\$handler}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em class-\/string$<$\+Tag$>$\texorpdfstring{$\vert$}{|}\+Factory} & \$handler \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock/src/\mbox{\hyperlink{_doc_block_factory_8php}{Doc\+Block\+Factory.\+php}}\end{DoxyCompactItemize}

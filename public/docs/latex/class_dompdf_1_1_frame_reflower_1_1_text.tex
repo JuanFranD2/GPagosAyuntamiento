@@ -1,0 +1,309 @@
+\doxysection{Text Class Reference}
+\hypertarget{class_dompdf_1_1_frame_reflower_1_1_text}{}\label{class_dompdf_1_1_frame_reflower_1_1_text}\index{Text@{Text}}
+Inheritance diagram for Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dompdf_1_1_frame_reflower_1_1_text}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_ae55ebe4652ffeb5ec06aec9d60554da7}{\+\_\+\+\_\+construct}} (Text\+Frame\+Decorator \$frame, \mbox{\hyperlink{class_dompdf_1_1_font_metrics}{Font\+Metrics}} \$font\+Metrics)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a2b7a954a544cbdd231fcdc808bd92f8d}{reflow}} (?Block\+Frame\+Decorator \$block=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a6897a59d644ce4d15582a089bf0c5a46}{trim\+\_\+trailing\+\_\+ws}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a139176699e8bfe68e03e3a1866e751b6}{get\+\_\+min\+\_\+max\+\_\+width}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_ae0ecaa863eb8923656b2ee3f950d06cd}{set\+Font\+Metrics}} (\mbox{\hyperlink{class_dompdf_1_1_font_metrics}{Font\+Metrics}} \$font\+Metrics)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a30005c77915affe30f5a80e6498d311f}{get\+Font\+Metrics}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower}{Abstract\+Frame\+Reflower}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a5da86ce36ab4613bb14457df06acef0e}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator}{Abstract\+Frame\+Decorator}} \$frame)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a566e3aab55d194c8ab4af51fc8dbe9fa}{get\+\_\+dompdf}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a0fdeecf48b8e772008b340c369c4fc7f}{reflow}} (?\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block}{Block}} \$block=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a65a9a899e9c132971db9e0a7f5f82a22}{get\+\_\+min\+\_\+max\+\_\+content\+\_\+width}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a3f38bee59b85a063f500a41fca5ddcaa}{SOFT\+\_\+\+HYPHEN}} = "{}\textbackslash{}x\+C2\textbackslash{}x\+AD"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a59b8e102ef1adaab91815fb18ed44df8}{\$\+\_\+whitespace\+\_\+pattern}} = \textquotesingle{}/(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S\textbackslash{}x\+A0\textbackslash{}x\{202F\}\textbackslash{}x\{2007\}\mbox{]}+)/u\textquotesingle{}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a21f7f03f1696a7d02bf3e3f33bb1d469}{\$\+\_\+wordbreak\+\_\+pattern}} = \textquotesingle{}/(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S\textbackslash{}x\+A0\textbackslash{}x\{202F\}\textbackslash{}x\{2007\}\textbackslash{}n\mbox{]}+\texorpdfstring{$\vert$}{|}\textbackslash{}R\texorpdfstring{$\vert$}{|}\textbackslash{}-\/+\texorpdfstring{$\vert$}{|}\textbackslash{}x\+AD+)/u\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a03549b1f9197fcba916fbb404c8a8fff}{pre\+\_\+process\+\_\+text}} (string \$text)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_ac1ddd6affa1195e2a4ae05ad602e47d3}{line\+\_\+break}} (string \$text, Block\+Frame\+Decorator \$block, bool \$nowrap=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_ae431d0dfcfd8e3f953a2e7259f79d40d}{newline\+\_\+break}} (string \$text)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_a49dbdf09a1cb85bb3a640b4568d89346}{layout\+\_\+line}} (Block\+Frame\+Decorator \$block)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower}{Abstract\+Frame\+Reflower}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_af34fde4d25a9ce028eb769aad20dbb75}{determine\+\_\+absolute\+\_\+containing\+\_\+block}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a7159c9b168017d183b087401cbb6873f}{\+\_\+collapse\+\_\+margins}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_ae929f7fa7f4f0680aa224b7b6fb8d20c}{position\+\_\+relative}} (\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator}{Abstract\+Frame\+Decorator}} \$frame)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a5083aafcbc14fb5e5d279c0ebc13e255}{resolve\+\_\+min\+\_\+width}} (?float \$cbw)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a2481f8b5f90a56daa6961df6e862d9ca}{resolve\+\_\+max\+\_\+width}} (?float \$cbw)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_afd6b9ac1ffd7906a3425720c068ff1b2}{resolve\+\_\+min\+\_\+height}} (?float \$cbh)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_ac1be009ff1a3fcd53df32894f60e4299}{resolve\+\_\+max\+\_\+height}} (?float \$cbh)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_af0eaf9974f3eccf970a6a88a02cc38b4}{resolve\+\_\+content}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a66ce068d2ba2306c14e2dd5003a78fa3}{\+\_\+set\+\_\+content}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_aff12a4858e57db8ae96bf92cb2337579}{\$\+\_\+frame}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_text_afa98f5363da8d26a7aa6796b9b624abc}{\$trailing\+Ws}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower}{Abstract\+Frame\+Reflower}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_aff12a4858e57db8ae96bf92cb2337579}{\$\+\_\+frame}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a7b2e10a7c6eb35a3c4fa59cec2cb2c5e}{\$\+\_\+min\+\_\+max\+\_\+child\+\_\+cache}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a2786a8effd1b223049ea13df750dbf20}{\$\+\_\+min\+\_\+max\+\_\+cache}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_ae55ebe4652ffeb5ec06aec9d60554da7}\index{Text@{Text}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_ae55ebe4652ffeb5ec06aec9d60554da7} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Text\+Frame\+Decorator}]{\$frame}{, }\item[{\mbox{\hyperlink{class_dompdf_1_1_font_metrics}{Font\+Metrics}}}]{\$font\+Metrics}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Text\+Frame\+Decorator & {\em \$frame} & \\
+\hline
+Font\+Metrics & {\em \$font\+Metrics} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a139176699e8bfe68e03e3a1866e751b6}\index{Text@{Text}!get\_min\_max\_width@{get\_min\_max\_width}}
+\index{get\_min\_max\_width@{get\_min\_max\_width}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{get\_min\_max\_width()}{get\_min\_max\_width()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a139176699e8bfe68e03e3a1866e751b6} 
+get\+\_\+min\+\_\+max\+\_\+width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the minimum and maximum preferred border-\/box width of the frame.
+
+Required for shrink-\/to-\/fit width calculation, as used in automatic table layout, absolute positioning, float and inline-\/block. This provides a basic implementation. Child classes should override this or {\ttfamily get\+\_\+min\+\_\+max\+\_\+content\+\_\+width} as necessary.
+
+\begin{DoxyReturn}{Returns}
+array An array {\ttfamily \mbox{[}0 =\texorpdfstring{$>$}{>} min, 1 =\texorpdfstring{$>$}{>} max, "{}min"{} =\texorpdfstring{$>$}{>} min, "{}max"{} =\texorpdfstring{$>$}{>} max\mbox{]}} of min and max width. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a139176699e8bfe68e03e3a1866e751b6}{Abstract\+Frame\+Reflower}}.
+
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a30005c77915affe30f5a80e6498d311f}\index{Text@{Text}!getFontMetrics@{getFontMetrics}}
+\index{getFontMetrics@{getFontMetrics}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{getFontMetrics()}{getFontMetrics()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a30005c77915affe30f5a80e6498d311f} 
+get\+Font\+Metrics (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Font\+Metrics 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a49dbdf09a1cb85bb3a640b4568d89346}\index{Text@{Text}!layout\_line@{layout\_line}}
+\index{layout\_line@{layout\_line}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{layout\_line()}{layout\_line()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a49dbdf09a1cb85bb3a640b4568d89346} 
+layout\+\_\+line (\begin{DoxyParamCaption}\item[{Block\+Frame\+Decorator}]{\$block}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Block\+Frame\+Decorator & {\em \$block} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}null Whether to add a new line at the end. {\ttfamily null} if reflow should be stopped. 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_ac1ddd6affa1195e2a4ae05ad602e47d3}\index{Text@{Text}!line\_break@{line\_break}}
+\index{line\_break@{line\_break}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{line\_break()}{line\_break()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_ac1ddd6affa1195e2a4ae05ad602e47d3} 
+line\+\_\+break (\begin{DoxyParamCaption}\item[{string}]{\$text}{, }\item[{Block\+Frame\+Decorator}]{\$block}{, }\item[{bool}]{\$nowrap}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+Block\+Frame\+Decorator & {\em \$block} & \\
+\hline
+bool & {\em \$nowrap} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_ae431d0dfcfd8e3f953a2e7259f79d40d}\index{Text@{Text}!newline\_break@{newline\_break}}
+\index{newline\_break@{newline\_break}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{newline\_break()}{newline\_break()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_ae431d0dfcfd8e3f953a2e7259f79d40d} 
+newline\+\_\+break (\begin{DoxyParamCaption}\item[{string}]{\$text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a03549b1f9197fcba916fbb404c8a8fff}\index{Text@{Text}!pre\_process\_text@{pre\_process\_text}}
+\index{pre\_process\_text@{pre\_process\_text}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{pre\_process\_text()}{pre\_process\_text()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a03549b1f9197fcba916fbb404c8a8fff} 
+pre\+\_\+process\+\_\+text (\begin{DoxyParamCaption}\item[{string}]{\$text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Apply text transform and white-\/space collapse according to style.
+
+
+\begin{DoxyItemize}
+\item \href{http://www.w3.org/TR/CSS21/text.html\#propdef-text-transform}{\texttt{http\+://www.\+w3.\+org/\+TR/\+CSS21/text.\+html\#propdef-\/text-\/transform}}
+\item \href{http://www.w3.org/TR/CSS21/text.html\#propdef-white-space}{\texttt{http\+://www.\+w3.\+org/\+TR/\+CSS21/text.\+html\#propdef-\/white-\/space}}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a2b7a954a544cbdd231fcdc808bd92f8d}\index{Text@{Text}!reflow@{reflow}}
+\index{reflow@{reflow}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{reflow()}{reflow()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a2b7a954a544cbdd231fcdc808bd92f8d} 
+reflow (\begin{DoxyParamCaption}\item[{?Block\+Frame\+Decorator}]{\$block}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Block\+Frame\+Decorator | null & {\em \$block} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a4a20559544fdf4dcb457e258dc976cf8}\index{Text@{Text}!reset@{reset}}
+\index{reset@{reset}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a4a20559544fdf4dcb457e258dc976cf8} 
+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower_a4a20559544fdf4dcb457e258dc976cf8}{Abstract\+Frame\+Reflower}}.
+
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_ae0ecaa863eb8923656b2ee3f950d06cd}\index{Text@{Text}!setFontMetrics@{setFontMetrics}}
+\index{setFontMetrics@{setFontMetrics}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{setFontMetrics()}{setFontMetrics()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_ae0ecaa863eb8923656b2ee3f950d06cd} 
+set\+Font\+Metrics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dompdf_1_1_font_metrics}{Font\+Metrics}}}]{\$font\+Metrics}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Font\+Metrics & {\em \$font\+Metrics} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a6897a59d644ce4d15582a089bf0c5a46}\index{Text@{Text}!trim\_trailing\_ws@{trim\_trailing\_ws}}
+\index{trim\_trailing\_ws@{trim\_trailing\_ws}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{trim\_trailing\_ws()}{trim\_trailing\_ws()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a6897a59d644ce4d15582a089bf0c5a46} 
+trim\+\_\+trailing\+\_\+ws (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Trim trailing white space from the frame text. 
+
+\label{doc-variable-members}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_aff12a4858e57db8ae96bf92cb2337579}\index{Text@{Text}!\$\_frame@{\$\_frame}}
+\index{\$\_frame@{\$\_frame}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{\$\_frame}{\$\_frame}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_aff12a4858e57db8ae96bf92cb2337579} 
+\$\+\_\+frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a59b8e102ef1adaab91815fb18ed44df8}\index{Text@{Text}!\$\_whitespace\_pattern@{\$\_whitespace\_pattern}}
+\index{\$\_whitespace\_pattern@{\$\_whitespace\_pattern}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{\$\_whitespace\_pattern}{\$\_whitespace\_pattern}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a59b8e102ef1adaab91815fb18ed44df8} 
+\$\+\_\+whitespace\+\_\+pattern = \textquotesingle{}/(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S\textbackslash{}x\+A0\textbackslash{}x\{202F\}\textbackslash{}x\{2007\}\mbox{]}+)/u\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+The regex splits on everything that\textquotesingle{}s a separator (\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S double negative), excluding the following non-\/breaking space characters\+:
+\begin{DoxyItemize}
+\item nbsp (\textbackslash{}x\+A0)
+\item narrow nbsp (\textbackslash{}x\{202F\})
+\item figure space (\textbackslash{}x\{2007\}) 
+\end{DoxyItemize}\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a21f7f03f1696a7d02bf3e3f33bb1d469}\index{Text@{Text}!\$\_wordbreak\_pattern@{\$\_wordbreak\_pattern}}
+\index{\$\_wordbreak\_pattern@{\$\_wordbreak\_pattern}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{\$\_wordbreak\_pattern}{\$\_wordbreak\_pattern}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a21f7f03f1696a7d02bf3e3f33bb1d469} 
+\$\+\_\+wordbreak\+\_\+pattern = \textquotesingle{}/(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S\textbackslash{}x\+A0\textbackslash{}x\{202F\}\textbackslash{}x\{2007\}\textbackslash{}n\mbox{]}+\texorpdfstring{$\vert$}{|}\textbackslash{}R\texorpdfstring{$\vert$}{|}\textbackslash{}-\/+\texorpdfstring{$\vert$}{|}\textbackslash{}x\+AD+)/u\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+The regex splits on everything that\textquotesingle{}s a separator (\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S double negative) plus dashes, excluding the following non-\/breaking space characters\+:
+\begin{DoxyItemize}
+\item nbsp (\textbackslash{}x\+A0)
+\item narrow nbsp (\textbackslash{}x\{202F\})
+\item figure space (\textbackslash{}x\{2007\}) 
+\end{DoxyItemize}\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_afa98f5363da8d26a7aa6796b9b624abc}\index{Text@{Text}!\$trailingWs@{\$trailingWs}}
+\index{\$trailingWs@{\$trailingWs}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{\$trailingWs}{\$trailingWs}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_afa98f5363da8d26a7aa6796b9b624abc} 
+\$trailing\+Ws = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_frame_reflower_1_1_text_a3f38bee59b85a063f500a41fca5ddcaa}\index{Text@{Text}!SOFT\_HYPHEN@{SOFT\_HYPHEN}}
+\index{SOFT\_HYPHEN@{SOFT\_HYPHEN}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{SOFT\_HYPHEN}{SOFT\_HYPHEN}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_reflower_1_1_text_a3f38bee59b85a063f500a41fca5ddcaa} 
+const SOFT\+\_\+\+HYPHEN = "{}\textbackslash{}x\+C2\textbackslash{}x\+AD"{}}
+
+PHP string representation of HTML entity $<$shy$>$ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/dompdf/src/\+Frame\+Reflower/\mbox{\hyperlink{dompdf_2dompdf_2src_2_frame_reflower_2_text_8php}{Text.\+php}}\end{DoxyCompactItemize}

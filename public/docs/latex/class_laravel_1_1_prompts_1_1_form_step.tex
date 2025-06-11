@@ -1,0 +1,92 @@
+\doxysection{Form\+Step Class Reference}
+\hypertarget{class_laravel_1_1_prompts_1_1_form_step}{}\label{class_laravel_1_1_prompts_1_1_form_step}\index{FormStep@{FormStep}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_step_a9ce9422e42bde996867d9c4d35a2ea4f}{\+\_\+\+\_\+construct}} (protected readonly Closure \$step, bool\texorpdfstring{$\vert$}{|}Closure \$condition, public readonly ?string \$name, protected readonly bool \$ignore\+When\+Reverting,)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_step_a84402b73d263023dc254267698e1c5c1}{run}} (array \$responses, mixed \$previous\+Response)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_step_a769436ac8dbcc3191fa57cea242d16a5}{should\+Ignore\+When\+Reverting}} (array \$responses)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_step_a6f65479f0be2d3b006b8fc864779e63d}{should\+Run}} (array \$responses)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Closure \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_step_a0f015d55089888632f96723ed98e6968}{\$condition}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_step_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_step_a9ce9422e42bde996867d9c4d35a2ea4f}\index{FormStep@{FormStep}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!FormStep@{FormStep}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_step_a9ce9422e42bde996867d9c4d35a2ea4f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected readonly Closure}]{\$step}{, }\item[{bool\texorpdfstring{$\vert$}{|}Closure}]{\$condition}{, }\item[{public readonly ?string}]{\$name}{, }\item[{protected readonly bool}]{\$ignore\+When\+Reverting}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_step_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_step_a84402b73d263023dc254267698e1c5c1}\index{FormStep@{FormStep}!run@{run}}
+\index{run@{run}!FormStep@{FormStep}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_step_a84402b73d263023dc254267698e1c5c1} 
+run (\begin{DoxyParamCaption}\item[{array}]{\$responses}{, }\item[{mixed}]{\$previous\+Response}{}\end{DoxyParamCaption})}
+
+Execute this step.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$} & \$responses \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_step_a769436ac8dbcc3191fa57cea242d16a5}\index{FormStep@{FormStep}!shouldIgnoreWhenReverting@{shouldIgnoreWhenReverting}}
+\index{shouldIgnoreWhenReverting@{shouldIgnoreWhenReverting}!FormStep@{FormStep}}
+\doxysubsubsection{\texorpdfstring{shouldIgnoreWhenReverting()}{shouldIgnoreWhenReverting()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_step_a769436ac8dbcc3191fa57cea242d16a5} 
+should\+Ignore\+When\+Reverting (\begin{DoxyParamCaption}\item[{array}]{\$responses}{}\end{DoxyParamCaption})}
+
+Whether this step should be skipped over when a subsequent step is reverted.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$} & \$responses \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_step_a6f65479f0be2d3b006b8fc864779e63d}\index{FormStep@{FormStep}!shouldRun@{shouldRun}}
+\index{shouldRun@{shouldRun}!FormStep@{FormStep}}
+\doxysubsubsection{\texorpdfstring{shouldRun()}{shouldRun()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_step_a6f65479f0be2d3b006b8fc864779e63d} 
+should\+Run (\begin{DoxyParamCaption}\item[{array}]{\$responses}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether the step should run based on the given condition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$} & \$responses \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_step_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_step_a0f015d55089888632f96723ed98e6968}\index{FormStep@{FormStep}!\$condition@{\$condition}}
+\index{\$condition@{\$condition}!FormStep@{FormStep}}
+\doxysubsubsection{\texorpdfstring{\$condition}{\$condition}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_step_a0f015d55089888632f96723ed98e6968} 
+readonly Closure \$condition\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/prompts/src/\mbox{\hyperlink{_form_step_8php}{Form\+Step.\+php}}\end{DoxyCompactItemize}

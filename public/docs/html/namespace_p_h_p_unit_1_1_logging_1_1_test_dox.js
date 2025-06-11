@@ -1,0 +1,28 @@
+var namespace_p_h_p_unit_1_1_logging_1_1_test_dox =
+[
+    [ "HtmlRenderer", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_html_renderer.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_html_renderer" ],
+    [ "NamePrettifier", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_name_prettifier.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_name_prettifier" ],
+    [ "PlainTextRenderer", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_plain_text_renderer.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_plain_text_renderer" ],
+    [ "Subscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_subscriber" ],
+    [ "TestConsideredRiskySubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_considered_risky_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_considered_risky_subscriber" ],
+    [ "TestErroredSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_errored_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_errored_subscriber" ],
+    [ "TestFailedSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_failed_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_failed_subscriber" ],
+    [ "TestFinishedSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_finished_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_finished_subscriber" ],
+    [ "TestMarkedIncompleteSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_marked_incomplete_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_marked_incomplete_subscriber" ],
+    [ "TestPassedSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_passed_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_passed_subscriber" ],
+    [ "TestPreparedSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_prepared_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_prepared_subscriber" ],
+    [ "TestResult", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result" ],
+    [ "TestResultCollection", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result_collection.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result_collection" ],
+    [ "TestResultCollectionIterator", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result_collection_iterator.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result_collection_iterator" ],
+    [ "TestResultCollector", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result_collector.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result_collector" ],
+    [ "TestSkippedSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_skipped_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_skipped_subscriber" ],
+    [ "TestTriggeredDeprecationSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_deprecation_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_deprecation_subscriber" ],
+    [ "TestTriggeredNoticeSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_notice_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_notice_subscriber" ],
+    [ "TestTriggeredPhpDeprecationSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_php_deprecation_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_php_deprecation_subscriber" ],
+    [ "TestTriggeredPhpNoticeSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_php_notice_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_php_notice_subscriber" ],
+    [ "TestTriggeredPhpunitDeprecationSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_phpunit_deprecation_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_phpunit_deprecation_subscriber" ],
+    [ "TestTriggeredPhpunitErrorSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_phpunit_error_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_phpunit_error_subscriber" ],
+    [ "TestTriggeredPhpunitWarningSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_phpunit_warning_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_phpunit_warning_subscriber" ],
+    [ "TestTriggeredPhpWarningSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_php_warning_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_php_warning_subscriber" ],
+    [ "TestTriggeredWarningSubscriber", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_warning_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_triggered_warning_subscriber" ]
+];

@@ -1,0 +1,121 @@
+\doxysection{File Class Reference}
+\hypertarget{class_laravel_1_1_pail_1_1_file}{}\label{class_laravel_1_1_pail_1_1_file}\index{File@{File}}
+Inheritance diagram for File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_laravel_1_1_pail_1_1_file}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_file_a42e7ef2d2a8400e657cafc6a1a922c87}{\+\_\+\+\_\+construct}} (protected string \$file,)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_file_a435e7d7525d4bcd0ed5e34a469f3adf6}{create}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_file_ac2f864b72dc2f778e68ad96364c48c5e}{exists}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_file_aa118461de946085fe42989193337044a}{destroy}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_file_af99821cbd8dafa0fd6235e000cf37579}{log}} (string \$level, string \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_file_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_pail_1_1_file_a4c047c52cf49cb728639ec3678ac82d9}{is\+Stale}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_laravel_1_1_pail_1_1_file_a6b84eefa75375eb4cec761b40110f522}{TTL}} = 3600
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_laravel_1_1_pail_1_1_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_laravel_1_1_pail_1_1_file_a42e7ef2d2a8400e657cafc6a1a922c87}\index{File@{File}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!File@{File}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_file_a42e7ef2d2a8400e657cafc6a1a922c87} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected string}]{\$file}{}\end{DoxyParamCaption})}
+
+Creates a new instance of the file. 
+
+\label{doc-func-members}
+\Hypertarget{class_laravel_1_1_pail_1_1_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laravel_1_1_pail_1_1_file_a7516ca30af0db3cdbf9a7739b48ce91d}\index{File@{File}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!File@{File}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_file_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the file as string. \Hypertarget{class_laravel_1_1_pail_1_1_file_a435e7d7525d4bcd0ed5e34a469f3adf6}\index{File@{File}!create@{create}}
+\index{create@{create}!File@{File}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_file_a435e7d7525d4bcd0ed5e34a469f3adf6} 
+create (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ensure the file exists. \Hypertarget{class_laravel_1_1_pail_1_1_file_aa118461de946085fe42989193337044a}\index{File@{File}!destroy@{destroy}}
+\index{destroy@{destroy}!File@{File}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_file_aa118461de946085fe42989193337044a} 
+destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Deletes the file. \Hypertarget{class_laravel_1_1_pail_1_1_file_ac2f864b72dc2f778e68ad96364c48c5e}\index{File@{File}!exists@{exists}}
+\index{exists@{exists}!File@{File}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_file_ac2f864b72dc2f778e68ad96364c48c5e} 
+exists (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determines if the file exists.
+
+Determine if a file or directory exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_pail_1_1_file_a4c047c52cf49cb728639ec3678ac82d9}\index{File@{File}!isStale@{isStale}}
+\index{isStale@{isStale}!File@{File}}
+\doxysubsubsection{\texorpdfstring{isStale()}{isStale()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_file_a4c047c52cf49cb728639ec3678ac82d9} 
+is\+Stale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines if the file is staled. \Hypertarget{class_laravel_1_1_pail_1_1_file_af99821cbd8dafa0fd6235e000cf37579}\index{File@{File}!log@{log}}
+\index{log@{log}!File@{File}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_file_af99821cbd8dafa0fd6235e000cf37579} 
+log (\begin{DoxyParamCaption}\item[{string}]{\$level}{, }\item[{string}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\doxylink{class_log}{Log} a log message to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$context \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_laravel_1_1_pail_1_1_file_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_laravel_1_1_pail_1_1_file_a6b84eefa75375eb4cec761b40110f522}\index{File@{File}!TTL@{TTL}}
+\index{TTL@{TTL}!File@{File}}
+\doxysubsubsection{\texorpdfstring{TTL}{TTL}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_pail_1_1_file_a6b84eefa75375eb4cec761b40110f522} 
+const TTL = 3600\hspace{0.3cm}{\ttfamily [protected]}}
+
+The time to live of the file. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/pail/src/\mbox{\hyperlink{laravel_2pail_2src_2_file_8php}{File.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/\mbox{\hyperlink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php}}\end{DoxyCompactItemize}

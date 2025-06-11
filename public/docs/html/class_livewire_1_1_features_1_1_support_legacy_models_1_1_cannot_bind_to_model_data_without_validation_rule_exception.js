@@ -1,0 +1,4 @@
+var class_livewire_1_1_features_1_1_support_legacy_models_1_1_cannot_bind_to_model_data_without_validation_rule_exception =
+[
+    [ "__construct", "class_livewire_1_1_features_1_1_support_legacy_models_1_1_cannot_bind_to_model_data_without_validation_rule_exception.html#a101158a4fbbb34f774141274903860b7", null ]
+];

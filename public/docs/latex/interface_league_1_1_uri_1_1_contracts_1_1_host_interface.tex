@@ -1,0 +1,94 @@
+\doxysection{Host\+Interface Interface Reference}
+\hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_host_interface}{}\label{interface_league_1_1_uri_1_1_contracts_1_1_host_interface}\index{HostInterface@{HostInterface}}
+Inheritance diagram for Host\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_league_1_1_uri_1_1_contracts_1_1_host_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_ad9d5dd8758176886f0d5bc3b11dc315a}{to\+Ascii}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a34e5edf8213901ef28be6a44f8a81e2e}{to\+Unicode}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a66acb032ec22d631180868ef1a4179af}{get\+Ip\+Version}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a4bf860bc339a9e83ea312a0051e367b9}{get\+Ip}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_afe236b2b9697fa2fda8aa927cb129d27}{is\+Domain}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_ae2e212bd52ce3bcf32fe134894cddf3a}{is\+Ip}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a37578799a482b4f4323699f951a14922}{is\+Registered\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface}{Uri\+Component\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_aefbfa229f1c9e1fc967bff724a010f9e}{value}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_ad402d8679325bc514874370f02b5c2ac}{json\+Serialize}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_component_interface_a4164db14e8425915ba23f4490a7d3185}{get\+Uri\+Component}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a4bf860bc339a9e83ea312a0051e367b9}\index{HostInterface@{HostInterface}!getIp@{getIp}}
+\index{getIp@{getIp}!HostInterface@{HostInterface}}
+\doxysubsubsection{\texorpdfstring{getIp()}{getIp()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a4bf860bc339a9e83ea312a0051e367b9} 
+get\+Ip (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the IP component If the Host is an IP address.
+
+If the host is a not an IP this method will return null \Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a66acb032ec22d631180868ef1a4179af}\index{HostInterface@{HostInterface}!getIpVersion@{getIpVersion}}
+\index{getIpVersion@{getIpVersion}!HostInterface@{HostInterface}}
+\doxysubsubsection{\texorpdfstring{getIpVersion()}{getIpVersion()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a66acb032ec22d631180868ef1a4179af} 
+get\+Ip\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the IP version.
+
+If the host is a not an IP this method will return null \Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_afe236b2b9697fa2fda8aa927cb129d27}\index{HostInterface@{HostInterface}!isDomain@{isDomain}}
+\index{isDomain@{isDomain}!HostInterface@{HostInterface}}
+\doxysubsubsection{\texorpdfstring{isDomain()}{isDomain()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_afe236b2b9697fa2fda8aa927cb129d27} 
+is\+Domain (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Tells whether the host is a domain name. \Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_ae2e212bd52ce3bcf32fe134894cddf3a}\index{HostInterface@{HostInterface}!isIp@{isIp}}
+\index{isIp@{isIp}!HostInterface@{HostInterface}}
+\doxysubsubsection{\texorpdfstring{isIp()}{isIp()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_ae2e212bd52ce3bcf32fe134894cddf3a} 
+is\+Ip (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Tells whether the host is an IP Address. \Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a37578799a482b4f4323699f951a14922}\index{HostInterface@{HostInterface}!isRegisteredName@{isRegisteredName}}
+\index{isRegisteredName@{isRegisteredName}!HostInterface@{HostInterface}}
+\doxysubsubsection{\texorpdfstring{isRegisteredName()}{isRegisteredName()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a37578799a482b4f4323699f951a14922} 
+is\+Registered\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Tells whether the host is a registered name. \Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_ad9d5dd8758176886f0d5bc3b11dc315a}\index{HostInterface@{HostInterface}!toAscii@{toAscii}}
+\index{toAscii@{toAscii}!HostInterface@{HostInterface}}
+\doxysubsubsection{\texorpdfstring{toAscii()}{toAscii()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_ad9d5dd8758176886f0d5bc3b11dc315a} 
+to\+Ascii (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the ascii representation. \Hypertarget{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a34e5edf8213901ef28be6a44f8a81e2e}\index{HostInterface@{HostInterface}!toUnicode@{toUnicode}}
+\index{toUnicode@{toUnicode}!HostInterface@{HostInterface}}
+\doxysubsubsection{\texorpdfstring{toUnicode()}{toUnicode()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_uri_1_1_contracts_1_1_host_interface_a34e5edf8213901ef28be6a44f8a81e2e} 
+to\+Unicode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the unicode representation. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/uri-\/interfaces/\+Contracts/\mbox{\hyperlink{_host_interface_8php}{Host\+Interface.\+php}}\end{DoxyCompactItemize}

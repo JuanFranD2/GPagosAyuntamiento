@@ -1,0 +1,7 @@
+var namespace_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer =
+[
+    [ "ClassNotFoundErrorEnhancer", "class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_class_not_found_error_enhancer.html", "class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_class_not_found_error_enhancer" ],
+    [ "ErrorEnhancerInterface", "interface_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_error_enhancer_interface.html", "interface_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_error_enhancer_interface" ],
+    [ "UndefinedFunctionErrorEnhancer", "class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_undefined_function_error_enhancer.html", "class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_undefined_function_error_enhancer" ],
+    [ "UndefinedMethodErrorEnhancer", "class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_undefined_method_error_enhancer.html", "class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_undefined_method_error_enhancer" ]
+];

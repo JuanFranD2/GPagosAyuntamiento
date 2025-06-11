@@ -1,0 +1,161 @@
+\doxysection{Date\+Factory Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_date_factory}{}\label{class_illuminate_1_1_support_1_1_date_factory}\index{DateFactory@{DateFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_date_factory_ac565bd6a9d062c73a0a0db7afe0ffea9}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_date_factory_a1d8c183913699083055d0a4dc86c862c}{use\+Default}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_date_factory_a61b81b0ba7a305fcadb8cc5bb021b042}{use\+Callable}} (callable \$callable)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_date_factory_a7b6f7dd16e212f6e6abf90a107ebb2fc}{use\+Class}} (\$date\+Class)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_date_factory_af638f38e032a6982e2350494f1c4938a}{use\+Factory}} (\$factory)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_illuminate_1_1_support_1_1_date_factory_aff0370a4477960f9dc5c95771b9c3097}{DEFAULT\+\_\+\+CLASS\+\_\+\+NAME}} = Carbon\+::class
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_date_factory_a1fdee7c690fe9b0597d14d4ee2946047}{\$date\+Class}}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_date_factory_ae3d0fc9fa800751a4a5e2917209d85f2}{\$callable}}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_date_factory_a099b374dc664ee043fffcd6ea05e3e70}{\$factory}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxySeeAlso}{See also}
+\href{https://carbon.nesbot.com/docs/}{\texttt{https\+://carbon.\+nesbot.\+com/docs/}} 
+
+\href{https://github.com/briannesbitt/Carbon/blob/master/src/Carbon/Factory.php}{\texttt{https\+://github.\+com/briannesbitt/\+Carbon/blob/master/src/\+Carbon/\+Factory.\+php}}
+\end{DoxySeeAlso}
+@method bool can\+Be\+Created\+From\+Format(?string \$date, string \$format) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null create(\$year = 0, \$month = 1, \$day = 1, \$hour = 0, \$minute = 0, \$second = 0, \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon create\+From\+Date(\$year = null, \$month = null, \$day = null, \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null create\+From\+Format(\$format, \$time, \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null create\+From\+Iso\+Format(string \$format, string \$time, \$timezone = null, ?string \$locale = \textquotesingle{}en\textquotesingle{}, ?\textbackslash{}\+Symfony\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Translator\+Interface \$translator = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null create\+From\+Locale\+Format(string \$format, string \$locale, string \$time, \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null create\+From\+Locale\+Iso\+Format(string \$format, string \$locale, string \$time, \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon create\+From\+Time(\$hour = 0, \$minute = 0, \$second = 0, \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon create\+From\+Time\+String(string \$time, \textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon create\+From\+Timestamp(string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float \$timestamp, \textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon create\+From\+Timestamp\+Ms(string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float \$timestamp, \textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon create\+From\+Timestamp\+Ms\+UTC(\$timestamp) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon create\+From\+Timestamp\+UTC(string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float \$timestamp) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon create\+Midnight\+Date(\$year = null, \$month = null, \$day = null, \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null create\+Safe(\$year = null, \$month = null, \$day = null, \$hour = null, \$minute = null, \$second = null, \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon create\+Strict(?int \$year = 0, ?int \$month = 1, ?int \$day = 1, ?int \$hour = 0, ?int \$minute = 0, ?int \$second = 0, \$timezone = null) @method void disable\+Human\+Diff\+Option(\$human\+Diff\+Option) @method void enable\+Human\+Diff\+Option(\$human\+Diff\+Option) @method mixed execute\+With\+Locale(string \$locale, callable \$func) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon from\+Serialized(\$value) @method array get\+Available\+Locales() @method array get\+Available\+Locales\+Info() @method array get\+Days() @method ?string get\+Fallback\+Locale() @method array get\+Formats\+To\+Iso\+Replacements() @method int get\+Human\+Diff\+Options() @method array get\+Iso\+Units() @method array\texorpdfstring{$\vert$}{|}false get\+Last\+Errors() @method string get\+Locale() @method int get\+Mid\+Day\+At() @method string get\+Time\+Format\+By\+Precision(string \$unit\+Precision) @method string\texorpdfstring{$\vert$}{|}\textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}null get\+Translation\+Message\+With(\$translator, string \$key, ?string \$locale = null, ?string \$default = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null get\+Test\+Now() @method \textbackslash{}\+Symfony\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Translator\+Interface get\+Translator() @method int get\+Week\+Ends\+At(?string \$locale = null) @method int get\+Week\+Starts\+At(?string \$locale = null) @method array get\+Weekend\+Days() @method bool has\+Format(string \$date, string \$format) @method bool has\+Format\+With\+Modifiers(string \$date, string \$format) @method bool has\+Macro(\$name) @method bool has\+Relative\+Keywords(?string \$time) @method bool has\+Test\+Now() @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon instance(\textbackslash{}\+Date\+Time\+Interface \$date) @method bool is\+Immutable() @method bool is\+Modifiable\+Unit(\$unit) @method bool is\+Mutable() @method bool is\+Strict\+Mode\+Enabled() @method bool locale\+Has\+Diff\+One\+Day\+Words(string \$locale) @method bool locale\+Has\+Diff\+Syntax(string \$locale) @method bool locale\+Has\+Diff\+Two\+Day\+Words(string \$locale) @method bool locale\+Has\+Period\+Syntax(\$locale) @method bool locale\+Has\+Short\+Units(string \$locale) @method void macro(string \$name, ?callable \$macro) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null make(\$var, \textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$timezone = null) @method void mixin(object\texorpdfstring{$\vert$}{|}string \$mixin) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon now(\textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon parse(\textbackslash{}\+Date\+Time\+Interface\texorpdfstring{$\vert$}{|}\textbackslash{}\+Carbon\textbackslash{}\+Week\+Day\texorpdfstring{$\vert$}{|}\textbackslash{}\+Carbon\textbackslash{}\+Month\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}null \$time, \textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon parse\+From\+Locale(string \$time, ?string \$locale = null, \textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) @method string plural\+Unit(string \$unit) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null raw\+Create\+From\+Format(string \$format, string \$time, \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon raw\+Parse(\textbackslash{}\+Date\+Time\+Interface\texorpdfstring{$\vert$}{|}\textbackslash{}\+Carbon\textbackslash{}\+Week\+Day\texorpdfstring{$\vert$}{|}\textbackslash{}\+Carbon\textbackslash{}\+Month\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}null \$time, \textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) @method void reset\+Months\+Overflow() @method void reset\+To\+String\+Format() @method void reset\+Years\+Overflow() @method void serialize\+Using(\$callback) @method void set\+Fallback\+Locale(string \$locale) @method void set\+Human\+Diff\+Options(\$human\+Diff\+Options) @method void set\+Locale(string \$locale) @method void set\+Mid\+Day\+At(\$hour) @method void set\+Test\+Now(mixed \$test\+Now = null) @method void set\+Test\+Now\+And\+Timezone(mixed \$test\+Now = null, \$timezone = null) @method void set\+To\+String\+Format(string\texorpdfstring{$\vert$}{|}\textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}null \$format) @method void set\+Translator(\textbackslash{}\+Symfony\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Translator\+Interface \$translator) @method void set\+Week\+Ends\+At(\$day) @method void set\+Week\+Starts\+At(\$day) @method void set\+Weekend\+Days(\$days) @method bool should\+Overflow\+Months() @method bool should\+Overflow\+Years() @method string singular\+Unit(string \$unit) @method void sleep(int\texorpdfstring{$\vert$}{|}float \$seconds) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon today(\textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon tomorrow(\textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) @method string translate\+Time\+String(string \$time\+String, ?string \$from = null, ?string \$to = null, int \$mode = \textbackslash{}\+Carbon\textbackslash{}\+Carbon\+Interface\+::\+TRANSLATE\+\_\+\+ALL) @method string translate\+With(\textbackslash{}\+Symfony\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Translator\+Interface \$translator, string \$key, array \$parameters = \mbox{[}\mbox{]}, \$number = null) @method void use\+Months\+Overflow(\$months\+Overflow = true) @method void use\+Strict\+Mode(\$strict\+Mode\+Enabled = true) @method void use\+Years\+Overflow(\$years\+Overflow = true) @method mixed with\+Test\+Now(mixed \$test\+Now, callable \$callback) @method static with\+Time\+Zone(\textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone) @method \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon yesterday(\textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$timezone = null) 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_ac565bd6a9d062c73a0a0db7afe0ffea9}\index{DateFactory@{DateFactory}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!DateFactory@{DateFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_date_factory_ac565bd6a9d062c73a0a0db7afe0ffea9} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Handle dynamic calls to generate dates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_support_1_1_date_factory_a61b81b0ba7a305fcadb8cc5bb021b042}\index{DateFactory@{DateFactory}!useCallable@{useCallable}}
+\index{useCallable@{useCallable}!DateFactory@{DateFactory}}
+\doxysubsubsection{\texorpdfstring{useCallable()}{useCallable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_date_factory_a61b81b0ba7a305fcadb8cc5bb021b042} 
+use\+Callable (\begin{DoxyParamCaption}\item[{callable}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Execute the given callable on each date creation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_a7b6f7dd16e212f6e6abf90a107ebb2fc}\index{DateFactory@{DateFactory}!useClass@{useClass}}
+\index{useClass@{useClass}!DateFactory@{DateFactory}}
+\doxysubsubsection{\texorpdfstring{useClass()}{useClass()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_date_factory_a7b6f7dd16e212f6e6abf90a107ebb2fc} 
+use\+Class (\begin{DoxyParamCaption}\item[{}]{\$date\+Class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Use the given date type (class) when generating dates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$date\+Class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_a1d8c183913699083055d0a4dc86c862c}\index{DateFactory@{DateFactory}!useDefault@{useDefault}}
+\index{useDefault@{useDefault}!DateFactory@{DateFactory}}
+\doxysubsubsection{\texorpdfstring{useDefault()}{useDefault()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_date_factory_a1d8c183913699083055d0a4dc86c862c} 
+use\+Default (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Use the default date class when generating dates.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_af638f38e032a6982e2350494f1c4938a}\index{DateFactory@{DateFactory}!useFactory@{useFactory}}
+\index{useFactory@{useFactory}!DateFactory@{DateFactory}}
+\doxysubsubsection{\texorpdfstring{useFactory()}{useFactory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_date_factory_af638f38e032a6982e2350494f1c4938a} 
+use\+Factory (\begin{DoxyParamCaption}\item[{}]{\$factory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Use the given Carbon factory when generating dates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$factory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_ae3d0fc9fa800751a4a5e2917209d85f2}\index{DateFactory@{DateFactory}!\$callable@{\$callable}}
+\index{\$callable@{\$callable}!DateFactory@{DateFactory}}
+\doxysubsubsection{\texorpdfstring{\$callable}{\$callable}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_date_factory_ae3d0fc9fa800751a4a5e2917209d85f2} 
+\$callable\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_a1fdee7c690fe9b0597d14d4ee2946047}\index{DateFactory@{DateFactory}!\$dateClass@{\$dateClass}}
+\index{\$dateClass@{\$dateClass}!DateFactory@{DateFactory}}
+\doxysubsubsection{\texorpdfstring{\$dateClass}{\$dateClass}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_date_factory_a1fdee7c690fe9b0597d14d4ee2946047} 
+\$date\+Class\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_a099b374dc664ee043fffcd6ea05e3e70}\index{DateFactory@{DateFactory}!\$factory@{\$factory}}
+\index{\$factory@{\$factory}!DateFactory@{DateFactory}}
+\doxysubsubsection{\texorpdfstring{\$factory}{\$factory}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_date_factory_a099b374dc664ee043fffcd6ea05e3e70} 
+\$factory\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_support_1_1_date_factory_aff0370a4477960f9dc5c95771b9c3097}\index{DateFactory@{DateFactory}!DEFAULT\_CLASS\_NAME@{DEFAULT\_CLASS\_NAME}}
+\index{DEFAULT\_CLASS\_NAME@{DEFAULT\_CLASS\_NAME}!DateFactory@{DateFactory}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_CLASS\_NAME}{DEFAULT\_CLASS\_NAME}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_date_factory_aff0370a4477960f9dc5c95771b9c3097} 
+const DEFAULT\+\_\+\+CLASS\+\_\+\+NAME = Carbon\+::class}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Support/\mbox{\hyperlink{_date_factory_8php}{Date\+Factory.\+php}}\end{DoxyCompactItemize}

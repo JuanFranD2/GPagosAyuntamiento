@@ -1,0 +1,4 @@
+var _missing_file_uploads_trait_exception_8php =
+[
+    [ "MissingFileUploadsTraitException", "class_livewire_1_1_features_1_1_support_file_uploads_1_1_missing_file_uploads_trait_exception.html", "class_livewire_1_1_features_1_1_support_file_uploads_1_1_missing_file_uploads_trait_exception" ]
+];

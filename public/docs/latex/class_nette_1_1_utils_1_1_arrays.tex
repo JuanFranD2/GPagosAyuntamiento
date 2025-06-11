@@ -1,0 +1,435 @@
+\doxysection{Arrays Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_arrays}{}\label{class_nette_1_1_utils_1_1_arrays}\index{Arrays@{Arrays}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a30759198b342bb8f935ec7f7efacaa3b}{get}} (array \$array, string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}array \$key, mixed \$default=null)
+\item 
+static \& \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a650631da6d1ad050fe91a448916b1e4e}{get\+Ref}} (array \&\$array, string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}array \$key)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a988e1f251d522e7fb078f5f130bc6126}{merge\+Tree}} (array \$array1, array \$array2)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_ade8eda4b0c048121d4d923b41e84903b}{get\+Key\+Offset}} (array \$array, string\texorpdfstring{$\vert$}{|}int \$key)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_aa7c1056f6a95387ecfba8223f838f9cc}{search\+Key}} (array \$array, \$key)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a1fb826fcf626a21411d221b5488066ec}{contains}} (array \$array, mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a46cf48d3620f6af458f987a04a648531}{first}} (array \$array, ?callable \$predicate=null, ?callable \$\mbox{\hyperlink{header_8html_8php_a963df2a8541ff906745b0f1db557dcdc}{else}}=null)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_aaf63097bf0927b7277442f24070d1e94}{last}} (array \$array, ?callable \$predicate=null, ?callable \$\mbox{\hyperlink{header_8html_8php_a963df2a8541ff906745b0f1db557dcdc}{else}}=null)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a0c9508c8c7d45fb07010583bfa6b5c7a}{first\+Key}} (array \$array, ?callable \$predicate=null)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a30c2fafed48ab9a22b2c32845f1eda09}{last\+Key}} (array \$array, ?callable \$predicate=null)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a570093fd3e6cec179f982522564b8ae4}{insert\+Before}} (array \&\$array, string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$key, array \$inserted)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_ad4ba24129036f261098d2b4df827fa40}{insert\+After}} (array \&\$array, string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$key, array \$inserted)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_ae2d0a39f079a2515673a519426fc833a}{rename\+Key}} (array \&\$array, string\texorpdfstring{$\vert$}{|}int \$old\+Key, string\texorpdfstring{$\vert$}{|}int \$new\+Key)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_af8d232bb019f1dd2025e078f6466dff8}{grep}} (array \$array, \#\mbox{[}Language(\textquotesingle{}Reg\+Exp\textquotesingle{})\mbox{]} string \$pattern, bool\texorpdfstring{$\vert$}{|}int \$invert=false,)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a81fdd815623b7fc0bdc1d59d60426224}{flatten}} (array \$array, bool \$preserve\+Keys=false)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_aceb16cfda511c925d76ccbfc036aad12}{is\+List}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_af6290066d8647e705f9c3b2145116eb9}{associate}} (array \$array, \$path)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a8c67fdea19e0f1ec4b56eeff66615b3f}{normalize}} (array \$array, mixed \$filling=null)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a4c7d1fcb590e2846975182486c3ffc2b}{pick}} (array \&\$array, string\texorpdfstring{$\vert$}{|}int \$key, mixed \$default=null)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_ad6d6b90d38ceca72f70f5f75bbf42843}{some}} (iterable \$array, callable \$predicate)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a1032dabb6b8eb71b2cc9825e61ed33c6}{every}} (iterable \$array, callable \$predicate)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_aac4ad7ea267580e077434f6714a3ebc8}{filter}} (array \$array, callable \$predicate)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a896ffcae789e9403c4c5906851bac679}{map}} (iterable \$array, callable \$transformer)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_aca84ca8449fc7573c056372775676e8d}{map\+With\+Keys}} (array \$array, callable \$transformer)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a37bd5d2e744f316e4ca2649c76d440b8}{invoke}} (iterable \$callbacks,... \$args)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a182d8efcee1a1f44abb2bbf2ecff0fad}{invoke\+Method}} (iterable \$objects, string \$method,... \$args)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_aba3f981191932ab1bd610307f615b58a}{to\+Object}} (iterable \$array, object \$object)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_aa602a3b03de5d3849bb6c55b640ad2a5}{to\+Key}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_arrays_a7c4598b09002cc07b4d400b36f980f67}{wrap}} (array \$array, string \$prefix=\textquotesingle{}\textquotesingle{}, string \$suffix=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Array tools library. 
+
+\label{doc-func-members}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_af6290066d8647e705f9c3b2145116eb9}\index{Arrays@{Arrays}!associate@{associate}}
+\index{associate@{associate}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{associate()}{associate()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_af6290066d8647e705f9c3b2145116eb9} 
+associate (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reformats table to associative tree. Path looks like \textquotesingle{}field\texorpdfstring{$\vert$}{|}field\mbox{[}\mbox{]}field-\/\texorpdfstring{$>$}{>}field=field\textquotesingle{}. 
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a1fb826fcf626a21411d221b5488066ec}\index{Arrays@{Arrays}!contains@{contains}}
+\index{contains@{contains}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a1fb826fcf626a21411d221b5488066ec} 
+contains (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{namespace_tests}{Tests} an array for the presence of value. \Hypertarget{class_nette_1_1_utils_1_1_arrays_a1032dabb6b8eb71b2cc9825e61ed33c6}\index{Arrays@{Arrays}!every@{every}}
+\index{every@{every}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{every()}{every()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a1032dabb6b8eb71b2cc9825e61ed33c6} 
+every (\begin{DoxyParamCaption}\item[{iterable}]{\$array}{, }\item[{callable}]{\$predicate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{namespace_tests}{Tests} whether all elements in the array pass the test implemented by the provided function. @template K of int\texorpdfstring{$\vert$}{|}string @template V 
+\begin{DoxyParams}{Parameters}
+{\em array$<$K,V$>$} & \$array \\
+\hline
+{\em callable(V,K,array$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_aac4ad7ea267580e077434f6714a3ebc8}\index{Arrays@{Arrays}!filter@{filter}}
+\index{filter@{filter}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_aac4ad7ea267580e077434f6714a3ebc8} 
+filter (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{callable}]{\$predicate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a new array containing all key-\/value pairs matching the given \$predicate. @template K of int\texorpdfstring{$\vert$}{|}string @template V 
+\begin{DoxyParams}{Parameters}
+{\em array$<$K,V$>$} & \$array \\
+\hline
+{\em callable(V,K,array$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$\+K, V$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a46cf48d3620f6af458f987a04a648531}\index{Arrays@{Arrays}!first@{first}}
+\index{first@{first}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a46cf48d3620f6af458f987a04a648531} 
+first (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{?callable}]{\$predicate}{ = {\ttfamily null}, }\item[{?callable}]{\$else}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the first item (matching the specified predicate if given). If there is no such item, it returns result of invoking \$else or null. @template K of int\texorpdfstring{$\vert$}{|}string @template V 
+\begin{DoxyParams}{Parameters}
+{\em array$<$K,V$>$} & \$array \\
+\hline
+{\em ?callable(V,K,array$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?V 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a0c9508c8c7d45fb07010583bfa6b5c7a}\index{Arrays@{Arrays}!firstKey@{firstKey}}
+\index{firstKey@{firstKey}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{firstKey()}{firstKey()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a0c9508c8c7d45fb07010583bfa6b5c7a} 
+first\+Key (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{?callable}]{\$predicate}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the key of first item (matching the specified predicate if given) or null if there is no such item. @template K of int\texorpdfstring{$\vert$}{|}string @template V 
+\begin{DoxyParams}{Parameters}
+{\em array$<$K,V$>$} & \$array \\
+\hline
+{\em ?callable(V,K,array$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?K 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a81fdd815623b7fc0bdc1d59d60426224}\index{Arrays@{Arrays}!flatten@{flatten}}
+\index{flatten@{flatten}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a81fdd815623b7fc0bdc1d59d60426224} 
+flatten (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{bool}]{\$preserve\+Keys}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Transforms multidimensional array to flat array. \Hypertarget{class_nette_1_1_utils_1_1_arrays_a30759198b342bb8f935ec7f7efacaa3b}\index{Arrays@{Arrays}!get@{get}}
+\index{get@{get}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a30759198b342bb8f935ec7f7efacaa3b} 
+get (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}array}]{\$key}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns item from array. If it does not exist, it throws an exception, unless a default value is set. @template T 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$\+T$>$} & \$array \\
+\hline
+array-\/key | array-\/key\mbox{[}$\,$\mbox{]} & {\em \$key} & \\
+\hline
+?T & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?T 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{namespace_nette}{Nette}} & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if item does not exist and default value is not provided \Hypertarget{class_nette_1_1_utils_1_1_arrays_ade8eda4b0c048121d4d923b41e84903b}\index{Arrays@{Arrays}!getKeyOffset@{getKeyOffset}}
+\index{getKeyOffset@{getKeyOffset}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{getKeyOffset()}{getKeyOffset()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_ade8eda4b0c048121d4d923b41e84903b} 
+get\+Key\+Offset (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{string\texorpdfstring{$\vert$}{|}int}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns zero-\/indexed position of given array key. Returns null if key is not found. \Hypertarget{class_nette_1_1_utils_1_1_arrays_a650631da6d1ad050fe91a448916b1e4e}\index{Arrays@{Arrays}!getRef@{getRef}}
+\index{getRef@{getRef}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{getRef()}{getRef()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a650631da6d1ad050fe91a448916b1e4e} 
+\& get\+Ref (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}array}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns reference to array item. If the index does not exist, new one is created with value null. @template T 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$\+T$>$} & \$array \\
+\hline
+array-\/key | array-\/key\mbox{[}$\,$\mbox{]} & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?T 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{namespace_nette}{Nette}} & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if traversed item is not an array \Hypertarget{class_nette_1_1_utils_1_1_arrays_af8d232bb019f1dd2025e078f6466dff8}\index{Arrays@{Arrays}!grep@{grep}}
+\index{grep@{grep}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{grep()}{grep()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_af8d232bb019f1dd2025e078f6466dff8} 
+grep (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{\# string}]{\$pattern}{\mbox{[}\+Language( \textquotesingle{}\+Reg\+Exp\textquotesingle{})\mbox{]}, }\item[{bool\texorpdfstring{$\vert$}{|}int}]{\$invert}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns only those array items, which matches a regular expression \$pattern. 
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_ad4ba24129036f261098d2b4df827fa40}\index{Arrays@{Arrays}!insertAfter@{insertAfter}}
+\index{insertAfter@{insertAfter}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{insertAfter()}{insertAfter()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_ad4ba24129036f261098d2b4df827fa40} 
+insert\+After (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null}]{\$key}{, }\item[{array}]{\$inserted}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Inserts the contents of the \$inserted array into the \$array before the \$key. If \$key is null (or does not exist), it is inserted at the end. \Hypertarget{class_nette_1_1_utils_1_1_arrays_a570093fd3e6cec179f982522564b8ae4}\index{Arrays@{Arrays}!insertBefore@{insertBefore}}
+\index{insertBefore@{insertBefore}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{insertBefore()}{insertBefore()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a570093fd3e6cec179f982522564b8ae4} 
+insert\+Before (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null}]{\$key}{, }\item[{array}]{\$inserted}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Inserts the contents of the \$inserted array into the \$array immediately after the \$key. If \$key is null (or does not exist), it is inserted at the beginning. \Hypertarget{class_nette_1_1_utils_1_1_arrays_a37bd5d2e744f316e4ca2649c76d440b8}\index{Arrays@{Arrays}!invoke@{invoke}}
+\index{invoke@{invoke}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a37bd5d2e744f316e4ca2649c76d440b8} 
+invoke (\begin{DoxyParamCaption}\item[{iterable}]{\$callbacks}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Invokes all callbacks and returns array of results. 
+\begin{DoxyParams}[1]{Parameters}
+callable\mbox{[}$\,$\mbox{]} & {\em \$callbacks} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a182d8efcee1a1f44abb2bbf2ecff0fad}\index{Arrays@{Arrays}!invokeMethod@{invokeMethod}}
+\index{invokeMethod@{invokeMethod}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{invokeMethod()}{invokeMethod()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a182d8efcee1a1f44abb2bbf2ecff0fad} 
+invoke\+Method (\begin{DoxyParamCaption}\item[{iterable}]{\$objects}{, }\item[{string}]{\$method}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Invokes method on every object in an array and returns array of results. 
+\begin{DoxyParams}[1]{Parameters}
+object\mbox{[}$\,$\mbox{]} & {\em \$objects} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_aceb16cfda511c925d76ccbfc036aad12}\index{Arrays@{Arrays}!isList@{isList}}
+\index{isList@{isList}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{isList()}{isList()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_aceb16cfda511c925d76ccbfc036aad12} 
+is\+List (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the array is indexed in ascending order of numeric keys from zero, a.\+k.\+a list. \begin{DoxyReturn}{Returns}
+(\$value is list ? true \+: false) 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_aaf63097bf0927b7277442f24070d1e94}\index{Arrays@{Arrays}!last@{last}}
+\index{last@{last}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_aaf63097bf0927b7277442f24070d1e94} 
+last (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{?callable}]{\$predicate}{ = {\ttfamily null}, }\item[{?callable}]{\$else}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the last item (matching the specified predicate if given). If there is no such item, it returns result of invoking \$else or null. @template K of int\texorpdfstring{$\vert$}{|}string @template V 
+\begin{DoxyParams}{Parameters}
+{\em array$<$K,V$>$} & \$array \\
+\hline
+{\em ?callable(V,K,array$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?V 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a30c2fafed48ab9a22b2c32845f1eda09}\index{Arrays@{Arrays}!lastKey@{lastKey}}
+\index{lastKey@{lastKey}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{lastKey()}{lastKey()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a30c2fafed48ab9a22b2c32845f1eda09} 
+last\+Key (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{?callable}]{\$predicate}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the key of last item (matching the specified predicate if given) or null if there is no such item. @template K of int\texorpdfstring{$\vert$}{|}string @template V 
+\begin{DoxyParams}{Parameters}
+{\em array$<$K,V$>$} & \$array \\
+\hline
+{\em ?callable(V,K,array$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?K 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a896ffcae789e9403c4c5906851bac679}\index{Arrays@{Arrays}!map@{map}}
+\index{map@{map}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a896ffcae789e9403c4c5906851bac679} 
+map (\begin{DoxyParamCaption}\item[{iterable}]{\$array}{, }\item[{callable}]{\$transformer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array containing the original keys and results of applying the given transform function to each element. @template K of int\texorpdfstring{$\vert$}{|}string @template V @template R 
+\begin{DoxyParams}{Parameters}
+{\em array$<$K,V$>$} & \$array \\
+\hline
+{\em callable(V,K,array$<$K,V$>$)} & R \$transformer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$\+K, R$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_aca84ca8449fc7573c056372775676e8d}\index{Arrays@{Arrays}!mapWithKeys@{mapWithKeys}}
+\index{mapWithKeys@{mapWithKeys}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{mapWithKeys()}{mapWithKeys()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_aca84ca8449fc7573c056372775676e8d} 
+map\+With\+Keys (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{callable}]{\$transformer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array containing new keys and values generated by applying the given transform function to each element. If the function returns null, the element is skipped. @template K of int\texorpdfstring{$\vert$}{|}string @template V @template ResK of int\texorpdfstring{$\vert$}{|}string @template ResV 
+\begin{DoxyParams}{Parameters}
+{\em array$<$K,V$>$} & \$array \\
+\hline
+{\em callable(V,K,array$<$K,V$>$)} & ?array\{ResK, ResV\} \$transformer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$\+Res\+K, Res\+V$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a988e1f251d522e7fb078f5f130bc6126}\index{Arrays@{Arrays}!mergeTree@{mergeTree}}
+\index{mergeTree@{mergeTree}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{mergeTree()}{mergeTree()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a988e1f251d522e7fb078f5f130bc6126} 
+merge\+Tree (\begin{DoxyParamCaption}\item[{array}]{\$array1}{, }\item[{array}]{\$array2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Recursively merges two fields. It is useful, for example, for merging tree structures. It behaves as the + operator for array, ie. it adds a key/value pair from the second array to the first one and retains the value from the first array in the case of a key collision. @template T1 @template T2 
+\begin{DoxyParams}{Parameters}
+{\em array$<$\+T1$>$} & \$array1 \\
+\hline
+{\em array$<$\+T2$>$} & \$array2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}T1\texorpdfstring{$\vert$}{|}\+T2\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a8c67fdea19e0f1ec4b56eeff66615b3f}\index{Arrays@{Arrays}!normalize@{normalize}}
+\index{normalize@{normalize}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a8c67fdea19e0f1ec4b56eeff66615b3f} 
+normalize (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{mixed}]{\$filling}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes array to associative array. Replace numeric keys with their values, the new value will be \$filling. \Hypertarget{class_nette_1_1_utils_1_1_arrays_a4c7d1fcb590e2846975182486c3ffc2b}\index{Arrays@{Arrays}!pick@{pick}}
+\index{pick@{pick}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{pick()}{pick()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a4c7d1fcb590e2846975182486c3ffc2b} 
+pick (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string\texorpdfstring{$\vert$}{|}int}]{\$key}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns and removes the value of an item from an array. If it does not exist, it throws an exception, or returns \$default, if provided. @template T 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$\+T$>$} & \$array \\
+\hline
+?T & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?T 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{namespace_nette}{Nette}} & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if item does not exist and default value is not provided \Hypertarget{class_nette_1_1_utils_1_1_arrays_ae2d0a39f079a2515673a519426fc833a}\index{Arrays@{Arrays}!renameKey@{renameKey}}
+\index{renameKey@{renameKey}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{renameKey()}{renameKey()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_ae2d0a39f079a2515673a519426fc833a} 
+rename\+Key (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string\texorpdfstring{$\vert$}{|}int}]{\$old\+Key}{, }\item[{string\texorpdfstring{$\vert$}{|}int}]{\$new\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Renames key in array. \Hypertarget{class_nette_1_1_utils_1_1_arrays_aa7c1056f6a95387ecfba8223f838f9cc}\index{Arrays@{Arrays}!searchKey@{searchKey}}
+\index{searchKey@{searchKey}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{searchKey()}{searchKey()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_aa7c1056f6a95387ecfba8223f838f9cc} 
+search\+Key (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000237}{Deprecated}}]use get\+Key\+Offset() \end{DoxyRefDesc}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_ad6d6b90d38ceca72f70f5f75bbf42843}\index{Arrays@{Arrays}!some@{some}}
+\index{some@{some}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{some()}{some()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_ad6d6b90d38ceca72f70f5f75bbf42843} 
+some (\begin{DoxyParamCaption}\item[{iterable}]{\$array}{, }\item[{callable}]{\$predicate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{namespace_tests}{Tests} whether at least one element in the array passes the test implemented by the provided function. @template K of int\texorpdfstring{$\vert$}{|}string @template V 
+\begin{DoxyParams}{Parameters}
+{\em array$<$K,V$>$} & \$array \\
+\hline
+{\em callable(V,K,array$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_aa602a3b03de5d3849bb6c55b640ad2a5}\index{Arrays@{Arrays}!toKey@{toKey}}
+\index{toKey@{toKey}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{toKey()}{toKey()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_aa602a3b03de5d3849bb6c55b640ad2a5} 
+to\+Key (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts value to array key. \Hypertarget{class_nette_1_1_utils_1_1_arrays_aba3f981191932ab1bd610307f615b58a}\index{Arrays@{Arrays}!toObject@{toObject}}
+\index{toObject@{toObject}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{toObject()}{toObject()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_aba3f981191932ab1bd610307f615b58a} 
+to\+Object (\begin{DoxyParamCaption}\item[{iterable}]{\$array}{, }\item[{object}]{\$object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Copies the elements of the \$array array to the \$object object and then returns it. @template T of object 
+\begin{DoxyParams}[1]{Parameters}
+T & {\em \$object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_arrays_a7c4598b09002cc07b4d400b36f980f67}\index{Arrays@{Arrays}!wrap@{wrap}}
+\index{wrap@{wrap}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{wrap()}{wrap()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_arrays_a7c4598b09002cc07b4d400b36f980f67} 
+wrap (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{string}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$suffix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns copy of the \$array where every item is converted to string and prefixed by \$prefix and suffixed by \$suffix. 
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nette/utils/src/\+Utils/\mbox{\hyperlink{_arrays_8php}{Arrays.\+php}}\end{DoxyCompactItemize}

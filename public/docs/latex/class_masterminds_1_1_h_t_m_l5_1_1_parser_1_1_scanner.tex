@@ -1,0 +1,335 @@
+\doxysection{Scanner Class Reference}
+\hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner}{}\label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner}\index{Scanner@{Scanner}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a085a5c4125a97d473623ccbcdbb5604a}{\+\_\+\+\_\+construct}} (\$data, \$encoding=\textquotesingle{}UTF-\/8\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_ab9870aabcde11bd3e55f89308521f79d}{sequence\+Matches}} (\$sequence, \$case\+Sensitive=true)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a78b2b4542074a67b9a7f22f29be979dd}{position}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_af0d2b98b49496eaef856a5b277fa775b}{peek}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_acea62048bfee7b3cd80ed446c86fb78a}{next}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_af343507d1926e6ecf964625d41db528c}{current}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a47eff023083b6758809a24ac4998ee8a}{consume}} (\$count=1)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a4b0ade74f44a42675edf96c92da7e1df}{unconsume}} (\$how\+Many=1)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a22ef93af40eb3275f4411fbc522ddb13}{get\+Hex}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a158785800af2848ecdd5e23fdfd6a391}{get\+Ascii\+Alpha}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_ad26231860f2dcc12f7cf44d39a6ae53c}{get\+Ascii\+Alpha\+Num}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a4e994d6a138045bdb6ab5486da9b80af}{get\+Numeric}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a20c53f113ff646c98fc4046e932f2be8}{whitespace}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a019496412a2398a981060c2b4d7bc7e6}{current\+Line}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_af243128e9e0f2b4379a7c6e9d6f8d8a4}{chars\+Until}} (\$mask)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a41d1150221bb55ecc8fd86e98cd5dad0}{chars\+While}} (\$mask)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_aed521896613e5f737b51b3d71e518b68}{column\+Offset}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a2562abb4267acd3b1a0069e1feed9615}{remaining\+Chars}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a3e603adf8abfa67272dd83bebfbe8cda}{CHARS\+\_\+\+HEX}} = \textquotesingle{}abcdef\+ABCDEF01234567890\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a290309244c9ee6e2216536b2749bc7b9}{CHARS\+\_\+\+ALNUM}} = \textquotesingle{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a5508322cf16cb17c2a3bc115de15e874}{CHARS\+\_\+\+ALPHA}} = \textquotesingle{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_ab24faf4aa647cdcee494fc48524ad4ff}{\$errors}} = array()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The scanner scans over a given data input to react appropriately to characters. 
+
+\label{doc-constructors}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a085a5c4125a97d473623ccbcdbb5604a}\index{Scanner@{Scanner}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a085a5c4125a97d473623ccbcdbb5604a} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$encoding}{ = {\ttfamily \textquotesingle{}UTF-\/8\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new Scanner.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & Data to parse. \\
+\hline
+string & {\em \$encoding} & The encoding to use for the data.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & If the given data cannot be encoded to UTF-\/8. \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_af243128e9e0f2b4379a7c6e9d6f8d8a4}\index{Scanner@{Scanner}!charsUntil@{charsUntil}}
+\index{charsUntil@{charsUntil}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{charsUntil()}{charsUntil()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_af243128e9e0f2b4379a7c6e9d6f8d8a4} 
+chars\+Until (\begin{DoxyParamCaption}\item[{}]{\$mask}{}\end{DoxyParamCaption})}
+
+Read chars until something in the mask is encountered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mask} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a41d1150221bb55ecc8fd86e98cd5dad0}\index{Scanner@{Scanner}!charsWhile@{charsWhile}}
+\index{charsWhile@{charsWhile}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{charsWhile()}{charsWhile()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a41d1150221bb55ecc8fd86e98cd5dad0} 
+chars\+While (\begin{DoxyParamCaption}\item[{}]{\$mask}{}\end{DoxyParamCaption})}
+
+Read chars as long as the mask matches.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mask} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_aed521896613e5f737b51b3d71e518b68}\index{Scanner@{Scanner}!columnOffset@{columnOffset}}
+\index{columnOffset@{columnOffset}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{columnOffset()}{columnOffset()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_aed521896613e5f737b51b3d71e518b68} 
+column\+Offset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current column of the current line that the tokenizer is at.
+
+Newlines are column 0. The first char after a newline is column 1.
+
+\begin{DoxyReturn}{Returns}
+int The column number. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a47eff023083b6758809a24ac4998ee8a}\index{Scanner@{Scanner}!consume@{consume}}
+\index{consume@{consume}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a47eff023083b6758809a24ac4998ee8a} 
+consume (\begin{DoxyParamCaption}\item[{}]{\$count}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Silently consume N chars.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_af343507d1926e6ecf964625d41db528c}\index{Scanner@{Scanner}!current@{current}}
+\index{current@{current}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_af343507d1926e6ecf964625d41db528c} 
+current (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current character. Note, this does not advance the pointer.
+
+\begin{DoxyReturn}{Returns}
+string The current character. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a019496412a2398a981060c2b4d7bc7e6}\index{Scanner@{Scanner}!currentLine@{currentLine}}
+\index{currentLine@{currentLine}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{currentLine()}{currentLine()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a019496412a2398a981060c2b4d7bc7e6} 
+current\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current line that is being consumed.
+
+\begin{DoxyReturn}{Returns}
+int The current line number. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a158785800af2848ecdd5e23fdfd6a391}\index{Scanner@{Scanner}!getAsciiAlpha@{getAsciiAlpha}}
+\index{getAsciiAlpha@{getAsciiAlpha}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{getAsciiAlpha()}{getAsciiAlpha()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a158785800af2848ecdd5e23fdfd6a391} 
+get\+Ascii\+Alpha (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the next group of characters that are ASCII Alpha characters. Note, along with getting the characters the pointer in the data will be moved as well.
+
+\begin{DoxyReturn}{Returns}
+string The next group of ASCII alpha characters. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_ad26231860f2dcc12f7cf44d39a6ae53c}\index{Scanner@{Scanner}!getAsciiAlphaNum@{getAsciiAlphaNum}}
+\index{getAsciiAlphaNum@{getAsciiAlphaNum}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{getAsciiAlphaNum()}{getAsciiAlphaNum()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_ad26231860f2dcc12f7cf44d39a6ae53c} 
+get\+Ascii\+Alpha\+Num (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the next group of characters that are ASCII Alpha characters and numbers. Note, along with getting the characters the pointer in the data will be moved as well.
+
+\begin{DoxyReturn}{Returns}
+string The next group of ASCII alpha characters and numbers. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a22ef93af40eb3275f4411fbc522ddb13}\index{Scanner@{Scanner}!getHex@{getHex}}
+\index{getHex@{getHex}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{getHex()}{getHex()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a22ef93af40eb3275f4411fbc522ddb13} 
+get\+Hex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the next group of that contains hex characters. Note, along with getting the characters the pointer in the data will be moved as well.
+
+\begin{DoxyReturn}{Returns}
+string The next group that is hex characters. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a4e994d6a138045bdb6ab5486da9b80af}\index{Scanner@{Scanner}!getNumeric@{getNumeric}}
+\index{getNumeric@{getNumeric}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{getNumeric()}{getNumeric()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a4e994d6a138045bdb6ab5486da9b80af} 
+get\+Numeric (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the next group of numbers. Note, along with getting the characters the pointer in the data will be moved as well.
+
+\begin{DoxyReturn}{Returns}
+string The next group of numbers. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_acea62048bfee7b3cd80ed446c86fb78a}\index{Scanner@{Scanner}!next@{next}}
+\index{next@{next}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_acea62048bfee7b3cd80ed446c86fb78a} 
+next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the next character. Note\+: This advances the pointer.
+
+\begin{DoxyReturn}{Returns}
+string The next character. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_af0d2b98b49496eaef856a5b277fa775b}\index{Scanner@{Scanner}!peek@{peek}}
+\index{peek@{peek}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_af0d2b98b49496eaef856a5b277fa775b} 
+peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Take a peek at the next character in the data.
+
+\begin{DoxyReturn}{Returns}
+string The next character. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a78b2b4542074a67b9a7f22f29be979dd}\index{Scanner@{Scanner}!position@{position}}
+\index{position@{position}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a78b2b4542074a67b9a7f22f29be979dd} 
+position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current position.
+
+\begin{DoxyReturn}{Returns}
+int The current intiger byte position. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a2562abb4267acd3b1a0069e1feed9615}\index{Scanner@{Scanner}!remainingChars@{remainingChars}}
+\index{remainingChars@{remainingChars}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{remainingChars()}{remainingChars()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a2562abb4267acd3b1a0069e1feed9615} 
+remaining\+Chars (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all characters until EOF.
+
+This consumes characters until the EOF.
+
+\begin{DoxyReturn}{Returns}
+int The number of characters remaining. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_ab9870aabcde11bd3e55f89308521f79d}\index{Scanner@{Scanner}!sequenceMatches@{sequenceMatches}}
+\index{sequenceMatches@{sequenceMatches}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{sequenceMatches()}{sequenceMatches()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_ab9870aabcde11bd3e55f89308521f79d} 
+sequence\+Matches (\begin{DoxyParamCaption}\item[{}]{\$sequence}{, }\item[{}]{\$case\+Sensitive}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Check if upcomming chars match the given sequence.
+
+This will read the stream for the \$sequence. If it\textquotesingle{}s found, this will return true. If not, return false. Since this unconsumes any chars it reads, the caller will still need to read the next sequence, even if this returns true.
+
+Example\+: \$this-\/\texorpdfstring{$>$}{>}scanner-\/\texorpdfstring{$>$}{>}sequence\+Matches(\textquotesingle{}$<$/script$>$\textquotesingle{}) will see if the input stream is at the start of a \textquotesingle{}$<$/script$>$\textquotesingle{} string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sequence} & \\
+\hline
+bool & {\em \$case\+Sensitive} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a4b0ade74f44a42675edf96c92da7e1df}\index{Scanner@{Scanner}!unconsume@{unconsume}}
+\index{unconsume@{unconsume}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{unconsume()}{unconsume()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a4b0ade74f44a42675edf96c92da7e1df} 
+unconsume (\begin{DoxyParamCaption}\item[{}]{\$how\+Many}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Unconsume some of the data. This moves the data pointer backwards.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$how\+Many} & The number of characters to move the pointer back. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a20c53f113ff646c98fc4046e932f2be8}\index{Scanner@{Scanner}!whitespace@{whitespace}}
+\index{whitespace@{whitespace}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{whitespace()}{whitespace()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a20c53f113ff646c98fc4046e932f2be8} 
+whitespace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Consume whitespace. Whitespace in HTML5 is\+: formfeed, tab, newline, space.
+
+\begin{DoxyReturn}{Returns}
+int The length of the matched whitespaces. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_ab24faf4aa647cdcee494fc48524ad4ff}\index{Scanner@{Scanner}!\$errors@{\$errors}}
+\index{\$errors@{\$errors}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{\$errors}{\$errors}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_ab24faf4aa647cdcee494fc48524ad4ff} 
+\$errors = array()}
+
+Parse errors. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a290309244c9ee6e2216536b2749bc7b9}\index{Scanner@{Scanner}!CHARS\_ALNUM@{CHARS\_ALNUM}}
+\index{CHARS\_ALNUM@{CHARS\_ALNUM}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{CHARS\_ALNUM}{CHARS\_ALNUM}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a290309244c9ee6e2216536b2749bc7b9} 
+const CHARS\+\_\+\+ALNUM = \textquotesingle{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890\textquotesingle{}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a5508322cf16cb17c2a3bc115de15e874}\index{Scanner@{Scanner}!CHARS\_ALPHA@{CHARS\_ALPHA}}
+\index{CHARS\_ALPHA@{CHARS\_ALPHA}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{CHARS\_ALPHA}{CHARS\_ALPHA}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a5508322cf16cb17c2a3bc115de15e874} 
+const CHARS\+\_\+\+ALPHA = \textquotesingle{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ\textquotesingle{}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a3e603adf8abfa67272dd83bebfbe8cda}\index{Scanner@{Scanner}!CHARS\_HEX@{CHARS\_HEX}}
+\index{CHARS\_HEX@{CHARS\_HEX}!Scanner@{Scanner}}
+\doxysubsubsection{\texorpdfstring{CHARS\_HEX}{CHARS\_HEX}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_scanner_a3e603adf8abfa67272dd83bebfbe8cda} 
+const CHARS\+\_\+\+HEX = \textquotesingle{}abcdef\+ABCDEF01234567890\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Parser/\mbox{\hyperlink{_scanner_8php}{Scanner.\+php}}\end{DoxyCompactItemize}

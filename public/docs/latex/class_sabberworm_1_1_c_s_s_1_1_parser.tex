@@ -1,0 +1,93 @@
+\doxysection{Parser Class Reference}
+\hypertarget{class_sabberworm_1_1_c_s_s_1_1_parser}{}\label{class_sabberworm_1_1_c_s_s_1_1_parser}\index{Parser@{Parser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parser_a9d28d3485aa3217bc58dbdbd28a01a20}{\+\_\+\+\_\+construct}} (\$s\+Text, \$o\+Parser\+Settings=null, \$i\+Line\+No=1)
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parser_a8a7d48fff7cdf30fbf1cac6383a060d8}{set\+Charset}} (\$s\+Charset)
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parser_abca2d528da8311b6fcfe040768cbaa24}{get\+Charset}} ()
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parser_a38d99acc70a1d8fd8f94455743b2d237}{parse}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class parses CSS from text into a data structure. 
+
+\label{doc-constructors}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_parser_a9d28d3485aa3217bc58dbdbd28a01a20}\index{Parser@{Parser}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_parser_a9d28d3485aa3217bc58dbdbd28a01a20} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$s\+Text}{, }\item[{}]{\$o\+Parser\+Settings}{ = {\ttfamily null}, }\item[{}]{\$i\+Line\+No}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$s\+Text} & the complete CSS as text (i.\+e., usually the contents of a CSS file) \\
+\hline
+Settings | null & {\em \$o\+Parser\+Settings} & \\
+\hline
+int & {\em \$i\+Line\+No} & the line number (starting from 1, not from 0) \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_parser_abca2d528da8311b6fcfe040768cbaa24}\index{Parser@{Parser}!getCharset@{getCharset}}
+\index{getCharset@{getCharset}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getCharset()}{getCharset()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_parser_abca2d528da8311b6fcfe040768cbaa24} 
+get\+Charset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the charset that is used if the CSS does not contain an {\ttfamily @charset} declaration.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000391}{Deprecated}}]since 8.\+7.\+0, will be removed in version 9.\+0.\+0 with \#687 \end{DoxyRefDesc}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_parser_a38d99acc70a1d8fd8f94455743b2d237}\index{Parser@{Parser}!parse@{parse}}
+\index{parse@{parse}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_parser_a38d99acc70a1d8fd8f94455743b2d237} 
+parse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Parses the CSS provided to the constructor and creates a {\ttfamily Document} from it.
+
+\begin{DoxyReturn}{Returns}
+Document
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Source\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_parser_a8a7d48fff7cdf30fbf1cac6383a060d8}\index{Parser@{Parser}!setCharset@{setCharset}}
+\index{setCharset@{setCharset}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{setCharset()}{setCharset()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_parser_a8a7d48fff7cdf30fbf1cac6383a060d8} 
+set\+Charset (\begin{DoxyParamCaption}\item[{}]{\$s\+Charset}{}\end{DoxyParamCaption})}
+
+Sets the charset to be used if the CSS does not contain an {\ttfamily @charset} declaration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$s\+Charset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000390}{Deprecated}}]since 8.\+7.\+0, will be removed in version 9.\+0.\+0 with \#687 \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/sabberworm/php-\/css-\/parser/src/\mbox{\hyperlink{sabberworm_2php-css-parser_2src_2_parser_8php}{Parser.\+php}}\end{DoxyCompactItemize}

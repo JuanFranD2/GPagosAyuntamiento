@@ -1,0 +1,30 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Serializer Directory Reference}
+\hypertarget{dir_3e529c5dedc44247d6c255f3348425a3}{}\label{dir_3e529c5dedc44247d6c255f3348425a3}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/masterminds/html5/src/HTML5/Serializer Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/masterminds/html5/src/HTML5/Serializer Directory Reference}}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{_h_t_m_l5_entities_8php}{HTML5\+Entities.\+php}}
+\item 
+file \mbox{\hyperlink{_output_rules_8php}{Output\+Rules.\+php}}
+\item 
+file \mbox{\hyperlink{_rules_interface_8php}{Rules\+Interface.\+php}}
+\item 
+file \mbox{\hyperlink{_traverser_8php}{Traverser.\+php}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md9821}{}\doxysubsection{\texorpdfstring{The Serializer (Writer) Model}{The Serializer (Writer) Model}}\label{README.md_autotoc_md9821}
+The serializer roughly follows sections {\itshape 8.\+1 Writing HTML documents} and section {\itshape 8.\+3 Serializing HTML fragments} by converting DOMDocument, DOMDocument\+Fragment, and DOMNode\+List into HTML5. \begin{DoxyVerb}   [ HTML5 ]   // Interface for saving.
+      ||
+ [ Traverser ]   // Walk the DOM
+      ||
+   [ Rules ]     // Convert DOM elements into strings.
+      ||
+   [ HTML5 ]     // HTML5 document or fragment in text.
+\end{DoxyVerb}
+\hypertarget{README.md_autotoc_md9822}{}\doxysubsection{\texorpdfstring{HTML5 Class}{HTML5 Class}}\label{README.md_autotoc_md9822}
+Provides the top level interface for saving.\hypertarget{README.md_autotoc_md9823}{}\doxysubsection{\texorpdfstring{The Traverser}{The Traverser}}\label{README.md_autotoc_md9823}
+Walks the DOM finding each element and passing it off to the output rules to convert to HTML5.\hypertarget{README.md_autotoc_md9824}{}\doxysubsection{\texorpdfstring{Output Rules}{Output Rules}}\label{README.md_autotoc_md9824}
+The output rules are defined in the Rules\+Interface which can have multiple implementations. Currently, the Output\+Rules is the default implementation that converts a DOM as is into HTML5.\hypertarget{README.md_autotoc_md9825}{}\doxysubsection{\texorpdfstring{HTML5 String}{HTML5 String}}\label{README.md_autotoc_md9825}
+The output of the process it HTML5 as a string or saved to a file. 

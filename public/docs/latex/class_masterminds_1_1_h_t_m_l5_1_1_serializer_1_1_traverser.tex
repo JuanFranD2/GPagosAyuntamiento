@@ -1,0 +1,176 @@
+\doxysection{Traverser Class Reference}
+\hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser}{}\label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser}\index{Traverser@{Traverser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_adff27a8abda1f7d2d0c0fc1a73d2b767}{\+\_\+\+\_\+construct}} (\$dom, \$out, \mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface}{Rules\+Interface}} \$rules, \$options=array())
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a3d81c09ee7b561d3aacb5eef65dd47c2}{walk}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a986484e354d8e6bd0e787c6bfea25669}{node}} (\$node)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_aa4c7d593d26f6cbc57559b365668b332}{children}} (\$nl)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_aebdc7dfb162c1f1f8ca586dc72b8c9b7}{is\+Local\+Element}} (\$ele)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a46127a794280dd592812c25b62af34b0}{\$dom}}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a011800c63ece4cbbfa77136a20607023}{\$options}}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a274e62e564d4c52d0f486f1e5894a727}{\$encode}} = false
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a811d22ac55b4592f7f2a202529629419}{\$rules}}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a48cb304902320d173a4eaa41543327b9}{\$out}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a478904a24e955df01ace9e141d7ef300}{\$local\+\_\+ns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Traverser for walking a DOM tree.
+
+This is a concrete traverser designed to convert a DOM tree into an HTML5 document. It is not intended to be a generic DOMTree\+Walker implementation.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://www.w3.org/TR/2012/CR-html5-20121217/syntax.html\#serializing-html-fragments}{\texttt{http\+://www.\+w3.\+org/\+TR/2012/\+CR-\/html5-\/20121217/syntax.\+html\#serializing-\/html-\/fragments}} 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_adff27a8abda1f7d2d0c0fc1a73d2b767}\index{Traverser@{Traverser}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_adff27a8abda1f7d2d0c0fc1a73d2b767} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$dom}{, }\item[{}]{\$out}{, }\item[{\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_rules_interface}{Rules\+Interface}}}]{\$rules}{, }\item[{}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Create a traverser.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+DOMNode | \textbackslash{}\+DOMNode\+List & {\em \$dom} & The document or node to traverse. \\
+\hline
+resource & {\em \$out} & A stream that allows writing. The traverser will output into this stream. \\
+\hline
+array & {\em \$options} & An array of options for the traverser as key/value pairs. These include\+:
+\begin{DoxyItemize}
+\item encode\+\_\+entities\+: A bool to specify if full encding should happen for all named charachter references. Defaults to false which escapes \&\textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$>$}{>}"{}.
+\item output\+\_\+rules\+: The path to the class handling the output rules. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_aa4c7d593d26f6cbc57559b365668b332}\index{Traverser@{Traverser}!children@{children}}
+\index{children@{children}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{children()}{children()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_aa4c7d593d26f6cbc57559b365668b332} 
+children (\begin{DoxyParamCaption}\item[{}]{\$nl}{}\end{DoxyParamCaption})}
+
+Walk through all the nodes on a node list.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+DOMNode\+List & {\em \$nl} & A list of child elements to walk through. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_aebdc7dfb162c1f1f8ca586dc72b8c9b7}\index{Traverser@{Traverser}!isLocalElement@{isLocalElement}}
+\index{isLocalElement@{isLocalElement}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{isLocalElement()}{isLocalElement()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_aebdc7dfb162c1f1f8ca586dc72b8c9b7} 
+is\+Local\+Element (\begin{DoxyParamCaption}\item[{}]{\$ele}{}\end{DoxyParamCaption})}
+
+Is an element local?
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$ele} & An element that implement \textbackslash{}\+DOMNode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if local and false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a986484e354d8e6bd0e787c6bfea25669}\index{Traverser@{Traverser}!node@{node}}
+\index{node@{node}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{node()}{node()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a986484e354d8e6bd0e787c6bfea25669} 
+node (\begin{DoxyParamCaption}\item[{}]{\$node}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} a node in the DOM.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$node} & A node implementing \textbackslash{}\+DOMNode. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a3d81c09ee7b561d3aacb5eef65dd47c2}\index{Traverser@{Traverser}!walk@{walk}}
+\index{walk@{walk}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{walk()}{walk()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a3d81c09ee7b561d3aacb5eef65dd47c2} 
+walk (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Tell the traverser to walk the DOM.
+
+\begin{DoxyReturn}{Returns}
+resource \$out Returns the output stream. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a46127a794280dd592812c25b62af34b0}\index{Traverser@{Traverser}!\$dom@{\$dom}}
+\index{\$dom@{\$dom}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{\$dom}{\$dom}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a46127a794280dd592812c25b62af34b0} 
+\$dom\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a274e62e564d4c52d0f486f1e5894a727}\index{Traverser@{Traverser}!\$encode@{\$encode}}
+\index{\$encode@{\$encode}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{\$encode}{\$encode}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a274e62e564d4c52d0f486f1e5894a727} 
+\$encode = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a478904a24e955df01ace9e141d7ef300}\index{Traverser@{Traverser}!\$local\_ns@{\$local\_ns}}
+\index{\$local\_ns@{\$local\_ns}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{\$local\_ns}{\$local\_ns}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a478904a24e955df01ace9e141d7ef300} 
+\$local\+\_\+ns\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+Namespaces that should be treated as "{}local"{} to HTML5. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a011800c63ece4cbbfa77136a20607023}\index{Traverser@{Traverser}!\$options@{\$options}}
+\index{\$options@{\$options}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{\$options}{\$options}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a011800c63ece4cbbfa77136a20607023} 
+\$options\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a48cb304902320d173a4eaa41543327b9}\index{Traverser@{Traverser}!\$out@{\$out}}
+\index{\$out@{\$out}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{\$out}{\$out}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a48cb304902320d173a4eaa41543327b9} 
+\$out\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a811d22ac55b4592f7f2a202529629419}\index{Traverser@{Traverser}!\$rules@{\$rules}}
+\index{\$rules@{\$rules}!Traverser@{Traverser}}
+\doxysubsubsection{\texorpdfstring{\$rules}{\$rules}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_serializer_1_1_traverser_a811d22ac55b4592f7f2a202529629419} 
+\$rules\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Serializer/\mbox{\hyperlink{_traverser_8php}{Traverser.\+php}}\end{DoxyCompactItemize}

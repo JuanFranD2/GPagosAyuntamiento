@@ -1,0 +1,4 @@
+var interface_pest_1_1_mutate_1_1_event_1_1_events_1_1_test_suite_1_1_start_mutation_suite_subscriber =
+[
+    [ "notify", "interface_pest_1_1_mutate_1_1_event_1_1_events_1_1_test_suite_1_1_start_mutation_suite_subscriber.html#a3d7102766a7565ae7eb09fa9a9154c0f", null ]
+];

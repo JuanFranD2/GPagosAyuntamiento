@@ -1,0 +1,162 @@
+\chapter{PSR-\/7 Usage }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage}\index{PSR-\/7 Usage@{PSR-\/7 Usage}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10406}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10406}%
+
+
+All PSR-\/7 applications comply with these interfaces They were created to establish a standard between middleware implementations.
+
+\begin{quote}
+{\ttfamily Request\+Interface}, {\ttfamily Server\+Request\+Interface}, {\ttfamily Response\+Interface} extend {\ttfamily Message\+Interface} because the {\ttfamily \doxylink{class_request}{Request}} and the {\ttfamily \doxylink{class_response}{Response}} are {\ttfamily HTTP Messages}. When using {\ttfamily Server\+Request\+Interface}, both {\ttfamily Request\+Interface} and {\ttfamily Psr\textbackslash{}\doxylink{class_http}{Http}\textbackslash{}Message\textbackslash{}Message\+Interface} methods are considered. \end{quote}
+
+
+The following examples will illustrate how basic operations are done in PSR-\/7.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10407}{}\doxysubsubsubsection{\texorpdfstring{Examples}{Examples}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10407}
+For this examples to work (at least) a PSR-\/7 implementation package is required. (eg\+: zendframework/zend-\/diactoros, guzzlehttp/psr7, slim/slim, etc) All PSR-\/7 implementations should have the same behaviour.
+
+The following will be assumed\+: {\ttfamily \$request} is an object of {\ttfamily Psr\textbackslash{}\doxylink{class_http}{Http}\textbackslash{}Message\textbackslash{}Request\+Interface} and
+
+{\ttfamily \$response} is an object implementing {\ttfamily Psr\textbackslash{}\doxylink{class_http}{Http}\textbackslash{}Message\textbackslash{}Request\+Interface}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10408}{}\doxysubsection{\texorpdfstring{Working with HTTP Headers}{Working with HTTP Headers}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10408}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10409}{}\doxysubsubsection{\texorpdfstring{Adding headers to response\+:}{Adding headers to response\+:}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10409}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$response-\/>withHeader(\textcolor{stringliteral}{'My-\/Custom-\/Header'},\ \textcolor{stringliteral}{'My\ Custom\ Message'});}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10410}{}\doxysubsubsection{\texorpdfstring{Appending values to headers}{Appending values to headers}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10410}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$response-\/>withAddedHeader(\textcolor{stringliteral}{'My-\/Custom-\/Header'},\ \textcolor{stringliteral}{'The\ second\ message'});}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10411}{}\doxysubsubsection{\texorpdfstring{Checking if header exists\+:}{Checking if header exists\+:}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10411}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$request-\/>hasHeader(\textcolor{stringliteral}{'My-\/Custom-\/Header'});\ \textcolor{comment}{//\ will\ return\ false}}
+\DoxyCodeLine{\$response-\/>hasHeader(\textcolor{stringliteral}{'My-\/Custom-\/Header'});\ \textcolor{comment}{//\ will\ return\ true}}
+
+\end{DoxyCode}
+
+
+\begin{quote}
+Note\+: My-\/\+Custom-\/\+Header was only added in the \doxylink{class_response}{Response} \end{quote}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10412}{}\doxysubsubsection{\texorpdfstring{Getting comma-\/separated values from a header (also applies to request)}{Getting comma-\/separated values from a header (also applies to request)}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10412}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ getting\ value\ from\ request\ headers}}
+\DoxyCodeLine{\$request-\/>getHeaderLine(\textcolor{stringliteral}{'Content-\/Type'});\ \textcolor{comment}{//\ will\ return:\ "{}text/html;\ charset=UTF-\/8"{}}}
+\DoxyCodeLine{\textcolor{comment}{//\ getting\ value\ from\ response\ headers}}
+\DoxyCodeLine{\$response-\/>getHeaderLine(\textcolor{stringliteral}{'My-\/Custom-\/Header'});\ \textcolor{comment}{//\ will\ return:\ \ "{}My\ Custom\ Message;\ The\ second\ message"{}}}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10413}{}\doxysubsubsection{\texorpdfstring{Getting array of value from a header (also applies to request)}{Getting array of value from a header (also applies to request)}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10413}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ getting\ value\ from\ request\ headers}}
+\DoxyCodeLine{\$request-\/>getHeader(\textcolor{stringliteral}{'Content-\/Type'});\ \textcolor{comment}{//\ will\ return:\ ["{}text/html"{},\ "{}charset=UTF-\/8"{}]}}
+\DoxyCodeLine{\textcolor{comment}{//\ getting\ value\ from\ response\ headers}}
+\DoxyCodeLine{\$response-\/>getHeader(\textcolor{stringliteral}{'My-\/Custom-\/Header'});\ \textcolor{comment}{//\ will\ return:\ \ ["{}My\ Custom\ Message"{},\ \ "{}The\ second\ message"{}]}}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10414}{}\doxysubsubsection{\texorpdfstring{Removing headers from HTTP Messages}{Removing headers from HTTP Messages}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10414}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ removing\ a\ header\ from\ Request,\ removing\ deprecated\ "{}Content-\/MD5"{}\ header}}
+\DoxyCodeLine{\$request-\/>withoutHeader(\textcolor{stringliteral}{'Content-\/MD5'});\ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ removing\ a\ header\ from\ Response}}
+\DoxyCodeLine{\textcolor{comment}{//\ effect:\ the\ browser\ won't\ know\ the\ size\ of\ the\ stream}}
+\DoxyCodeLine{\textcolor{comment}{//\ the\ browser\ will\ download\ the\ stream\ till\ it\ ends}}
+\DoxyCodeLine{\$response-\/>withoutHeader(\textcolor{stringliteral}{'Content-\/Length'});}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10415}{}\doxysubsection{\texorpdfstring{Working with HTTP Message Body}{Working with HTTP Message Body}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10415}
+When working with the PSR-\/7 there are two methods of implementation\+: \hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10416}{}\doxysubsubsection{\texorpdfstring{1. Getting the body separately}{1. Getting the body separately}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10416}
+\begin{quote}
+This method makes the body handling easier to understand and is useful when repeatedly calling body methods. (You only call {\ttfamily get\+Body()} once). Using this method mistakes like {\ttfamily \$response-\/\texorpdfstring{$>$}{>}write()} are also prevented. \end{quote}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$body\ =\ \$response-\/>getBody();}
+\DoxyCodeLine{\textcolor{comment}{//\ operations\ on\ body,\ eg.\ read,\ write,\ seek}}
+\DoxyCodeLine{\textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\textcolor{comment}{//\ replacing\ the\ old\ body}}
+\DoxyCodeLine{\$response-\/>withBody(\$body);\ }
+\DoxyCodeLine{\textcolor{comment}{//\ this\ last\ statement\ is\ optional\ as\ we\ working\ with\ objects}}
+\DoxyCodeLine{\textcolor{comment}{//\ in\ this\ case\ the\ "{}new"{}\ body\ is\ same\ with\ the\ "{}old"{}\ one}}
+\DoxyCodeLine{\textcolor{comment}{//\ the\ \$body\ variable\ has\ the\ same\ value\ as\ the\ one\ in\ \$request,\ only\ the\ reference\ is\ passed}}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10417}{}\doxysubsubsection{\texorpdfstring{2. Working directly on response}{2. Working directly on response}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10417}
+\begin{quote}
+This method is useful when only performing few operations as the {\ttfamily \$request-\/\texorpdfstring{$>$}{>}get\+Body()} statement fragment is required \end{quote}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$response-\/>getBody()-\/>write(\textcolor{stringliteral}{'hello'});}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10418}{}\doxysubsection{\texorpdfstring{Getting the body contents}{Getting the body contents}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10418}
+The following snippet gets the contents of a stream contents. \begin{quote}
+Note\+: Streams must be rewinded, if content was written into streams, it will be ignored when calling {\ttfamily get\+Contents()} because the stream pointer is set to the last character, which is {\ttfamily \textbackslash{}0} -\/ meaning end of stream. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$body\ =\ \$response-\/>getBody();}
+\DoxyCodeLine{\$body-\/>rewind();\ \textcolor{comment}{//\ or\ \$body-\/>seek(0);}}
+\DoxyCodeLine{\$bodyText\ =\ \$body-\/>getContents();}
+
+\end{DoxyCode}
+ Note\+: If {\ttfamily \$body-\/\texorpdfstring{$>$}{>}seek(1)} is called before {\ttfamily \$body-\/\texorpdfstring{$>$}{>}get\+Contents()}, the first character will be ommited as the starting pointer is set to {\ttfamily 1}, not {\ttfamily 0}. This is why using {\ttfamily \$body-\/\texorpdfstring{$>$}{>}rewind()} is recommended. \end{quote}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10419}{}\doxysubsection{\texorpdfstring{Append to body}{Append to body}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10419}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$response-\/>getBody()-\/>write(\textcolor{stringliteral}{'Hello'});\ \textcolor{comment}{//\ writing\ directly}}
+\DoxyCodeLine{\$body\ =\ \$request-\/>getBody();\ \textcolor{comment}{//\ which\ is\ a\ \`{}StreamInterface`}}
+\DoxyCodeLine{\$body-\/>write(\textcolor{stringliteral}{'xxxxx'});}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10420}{}\doxysubsection{\texorpdfstring{Prepend to body}{Prepend to body}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10420}
+Prepending is different when it comes to streams. The content must be copied before writing the content to be prepended. The following example will explain the behaviour of streams.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ assuming\ our\ response\ is\ initially\ empty}}
+\DoxyCodeLine{\$body\ =\ \$repsonse-\/>getBody();}
+\DoxyCodeLine{\textcolor{comment}{//\ writing\ the\ string\ "{}abcd"{}}}
+\DoxyCodeLine{\$body-\/>write(\textcolor{stringliteral}{'abcd'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ seeking\ to\ start\ of\ stream}}
+\DoxyCodeLine{\$body-\/>seek(0);}
+\DoxyCodeLine{\textcolor{comment}{//\ writing\ 'ef'}}
+\DoxyCodeLine{\$body-\/>write(\textcolor{stringliteral}{'ef'});\ \textcolor{comment}{//\ at\ this\ point\ the\ stream\ contains\ "{}efcd"{}}}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10421}{}\doxysubsubsection{\texorpdfstring{Prepending by rewriting separately}{Prepending by rewriting separately}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10421}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ assuming\ our\ response\ body\ stream\ only\ contains:\ "{}abcd"{}}}
+\DoxyCodeLine{\$body\ =\ \$response-\/>getBody();}
+\DoxyCodeLine{\$body-\/>rewind();}
+\DoxyCodeLine{\$contents\ =\ \$body-\/>getContents();\ \textcolor{comment}{//\ abcd}}
+\DoxyCodeLine{\textcolor{comment}{//\ seeking\ the\ stream\ to\ beginning}}
+\DoxyCodeLine{\$body-\/>rewind();}
+\DoxyCodeLine{\$body-\/>write(\textcolor{stringliteral}{'ef'});\ \textcolor{comment}{//\ stream\ contains\ "{}efcd"{}}}
+\DoxyCodeLine{\$body-\/>write(\$contents);\ \textcolor{comment}{//\ stream\ contains\ "{}efabcd"{}}}
+
+\end{DoxyCode}
+
+
+\begin{quote}
+Note\+: {\ttfamily get\+Contents()} seeks the stream while reading it, therefore if the second {\ttfamily rewind()} method call was not present the stream would have resulted in {\ttfamily abcdefabcd} because the {\ttfamily write()} method appends to stream if not preceeded by {\ttfamily rewind()} or {\ttfamily seek(0)}. \end{quote}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10422}{}\doxysubsubsection{\texorpdfstring{Prepending by using contents as a string}{Prepending by using contents as a string}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2psr_2http-message_2docs_2_p_s_r7-_usage_autotoc_md10422}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$body\ =\ \$response-\/>getBody();}
+\DoxyCodeLine{\$body-\/>rewind();}
+\DoxyCodeLine{\$contents\ =\ \$body-\/>getContents();\ \textcolor{comment}{//\ efabcd}}
+\DoxyCodeLine{\$contents\ =\ \textcolor{stringliteral}{'ef'}.\$contents;}
+\DoxyCodeLine{\$body-\/>rewind();}
+\DoxyCodeLine{\$body-\/>write(\$contents);}
+
+\end{DoxyCode}
+ 

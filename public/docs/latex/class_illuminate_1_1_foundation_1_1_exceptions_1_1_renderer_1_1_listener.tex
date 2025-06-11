@@ -1,0 +1,80 @@
+\doxysection{Listener Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener}{}\label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener}\index{Listener@{Listener}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a3c1e6a7cd5a545942dcb05a3ef83b489}{register\+Listeners}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$events)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a1143ccbf9ac44278f87da9cda35b4c0d}{queries}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a34eb594ead287d9d4a71df65f9a1afa2}{on\+Query\+Executed}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_events_1_1_query_executed}{Query\+Executed}} \$event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a576b05de2f452e4cce4e3de12667ba0f}{\$queries}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a34eb594ead287d9d4a71df65f9a1afa2}\index{Listener@{Listener}!onQueryExecuted@{onQueryExecuted}}
+\index{onQueryExecuted@{onQueryExecuted}!Listener@{Listener}}
+\doxysubsubsection{\texorpdfstring{onQueryExecuted()}{onQueryExecuted()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a34eb594ead287d9d4a71df65f9a1afa2} 
+on\+Query\+Executed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_events_1_1_query_executed}{Query\+Executed}}}]{\$event}{}\end{DoxyParamCaption})}
+
+Listens for the query executed event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Events\textbackslash{}\+Query\+Executed & {\em \$event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a1143ccbf9ac44278f87da9cda35b4c0d}\index{Listener@{Listener}!queries@{queries}}
+\index{queries@{queries}!Listener@{Listener}}
+\doxysubsubsection{\texorpdfstring{queries()}{queries()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a1143ccbf9ac44278f87da9cda35b4c0d} 
+queries (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the queries that have been executed.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}int, array\{sql\+: string, time\+: float\}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a3c1e6a7cd5a545942dcb05a3ef83b489}\index{Listener@{Listener}!registerListeners@{registerListeners}}
+\index{registerListeners@{registerListeners}!Listener@{Listener}}
+\doxysubsubsection{\texorpdfstring{registerListeners()}{registerListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a3c1e6a7cd5a545942dcb05a3ef83b489} 
+register\+Listeners (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}}}]{\$events}{}\end{DoxyParamCaption})}
+
+Register the appropriate listeners on the given event dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$events} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a576b05de2f452e4cce4e3de12667ba0f}\index{Listener@{Listener}!\$queries@{\$queries}}
+\index{\$queries@{\$queries}!Listener@{Listener}}
+\doxysubsubsection{\texorpdfstring{\$queries}{\$queries}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a576b05de2f452e4cce4e3de12667ba0f} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener_a1143ccbf9ac44278f87da9cda35b4c0d}{queries}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Exceptions/\+Renderer/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_foundation_2_exceptions_2_renderer_2_listener_8php}{Listener.\+php}}\end{DoxyCompactItemize}

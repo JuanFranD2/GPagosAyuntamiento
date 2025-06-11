@@ -1,0 +1,57 @@
+\doxysection{Dispatcher Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_notifications_1_1_dispatcher}{}\label{interface_illuminate_1_1_contracts_1_1_notifications_1_1_dispatcher}\index{Dispatcher@{Dispatcher}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_notifications_1_1_dispatcher_aa05e4c6cba4c899b8c2d9dcfef45e22c}{send}} (\$notifiables, \$notification)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_notifications_1_1_dispatcher_a7df19d08a3a7157eebf4b6ebc813bb4d}{send\+Now}} (\$notifiables, \$notification, ?array \$channels=null)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_notifications_1_1_dispatcher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_notifications_1_1_dispatcher_aa05e4c6cba4c899b8c2d9dcfef45e22c}\index{Dispatcher@{Dispatcher}!send@{send}}
+\index{send@{send}!Dispatcher@{Dispatcher}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_notifications_1_1_dispatcher_aa05e4c6cba4c899b8c2d9dcfef45e22c} 
+send (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{}\end{DoxyParamCaption})}
+
+Send the given notification to the given notifiable entities.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array | mixed & {\em \$notifiables} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_notifications_1_1_dispatcher_a7df19d08a3a7157eebf4b6ebc813bb4d}\index{Dispatcher@{Dispatcher}!sendNow@{sendNow}}
+\index{sendNow@{sendNow}!Dispatcher@{Dispatcher}}
+\doxysubsubsection{\texorpdfstring{sendNow()}{sendNow()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_notifications_1_1_dispatcher_a7df19d08a3a7157eebf4b6ebc813bb4d} 
+send\+Now (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{, }\item[{?array}]{\$channels}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Send the given notification immediately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array | mixed & {\em \$notifiables} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+array | null & {\em \$channels} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Notifications/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_contracts_2_notifications_2_dispatcher_8php}{Dispatcher.\+php}}\end{DoxyCompactItemize}

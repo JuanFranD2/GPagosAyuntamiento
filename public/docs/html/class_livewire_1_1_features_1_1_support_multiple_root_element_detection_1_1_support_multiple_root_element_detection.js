@@ -1,0 +1,5 @@
+var class_livewire_1_1_features_1_1_support_multiple_root_element_detection_1_1_support_multiple_root_element_detection =
+[
+    [ "getRootElementCount", "class_livewire_1_1_features_1_1_support_multiple_root_element_detection_1_1_support_multiple_root_element_detection.html#a327b1575ba35d4cd60f70da87a78a16e", null ],
+    [ "warnAgainstMoreThanOneRootElement", "class_livewire_1_1_features_1_1_support_multiple_root_element_detection_1_1_support_multiple_root_element_detection.html#af92344ee955ef6fb4380835c3675bba1", null ]
+];

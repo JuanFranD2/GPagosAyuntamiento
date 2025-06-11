@@ -1,0 +1,4 @@
+var extract_tentative_return_types_8php =
+[
+    [ "echo;while(false !==$file=fgets(\\STDIN)) { $code=file_get_contents(substr($file, 0, -1));if(!str_contains($code, ' @tentative-return-type')) { continue;} $code=preg_split('{^\\s *(?:(?:abstract)?class|interface|trait)([^\\s]++)}m', $code, -1, \\PREG_SPLIT_DELIM_CAPTURE);if(1===count($code)) { continue;} for($i=1;null !==$class=$code[$i] ?? null; $i+=2) { $methods=$code[1+ $i];if(!str_contains($methods, ' @tentative-return-type')) { continue;} echo \" '$class' =>", "extract-tentative-return-types_8php.html#a9c1c8cc2ca5541873b08599fcc731a08", null ]
+];

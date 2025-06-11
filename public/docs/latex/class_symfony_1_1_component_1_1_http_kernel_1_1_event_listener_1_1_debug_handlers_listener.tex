@@ -1,0 +1,97 @@
+\doxysection{Debug\+Handlers\+Listener Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener}\index{DebugHandlersListener@{DebugHandlersListener}}
+Inheritance diagram for Debug\+Handlers\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_a7a34a0bf7ad89dbceac0835cb07f4048}{\+\_\+\+\_\+construct}} (?callable \$exception\+Handler=null, bool\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}\texorpdfstring{$\vert$}{|}null \$web\+Mode=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_a5c40cef67b6cebcbf8e0270677af8d01}{configure}} (?object \$event=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_af1f63475927bbcb3bd21b58712076104}{get\+Subscribed\+Events}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sets an exception handler.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{p@tchwork.\+com}}
+\end{DoxyAuthor}
+@final 
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_a7a34a0bf7ad89dbceac0835cb07f4048}\index{DebugHandlersListener@{DebugHandlersListener}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DebugHandlersListener@{DebugHandlersListener}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_a7a34a0bf7ad89dbceac0835cb07f4048} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?callable}]{\$exception\+Handler}{ = {\ttfamily null}, }\item[{bool\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}\texorpdfstring{$\vert$}{|}null}]{\$web\+Mode}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$web\+Mode} & \\
+\hline
+callable | null & {\em \$exception\+Handler} & A handler that must support \textbackslash{}\+Throwable instances that will be called on Exception \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_a5c40cef67b6cebcbf8e0270677af8d01}\index{DebugHandlersListener@{DebugHandlersListener}!configure@{configure}}
+\index{configure@{configure}!DebugHandlersListener@{DebugHandlersListener}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_a5c40cef67b6cebcbf8e0270677af8d01} 
+configure (\begin{DoxyParamCaption}\item[{?object}]{\$event}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Configures the error handler. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_af1f63475927bbcb3bd21b58712076104}\index{DebugHandlersListener@{DebugHandlersListener}!getSubscribedEvents@{getSubscribedEvents}}
+\index{getSubscribedEvents@{getSubscribedEvents}!DebugHandlersListener@{DebugHandlersListener}}
+\doxysubsubsection{\texorpdfstring{getSubscribedEvents()}{getSubscribedEvents()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_af1f63475927bbcb3bd21b58712076104} 
+get\+Subscribed\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of event names this subscriber wants to listen to.
+
+The array keys are event names and the value can be\+:
+
+
+\begin{DoxyItemize}
+\item The method name to call (priority defaults to 0)
+\item An array composed of the method name to call and the priority
+\item An array of arrays composed of the method names to call and respective priorities, or 0 if unset
+\end{DoxyItemize}
+
+For instance\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}method\+Name\textquotesingle{}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}method\+Name\textquotesingle{}, \$priority\mbox{]}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\mbox{[}\textquotesingle{}method\+Name1\textquotesingle{}, \$priority\mbox{]}, \mbox{[}\textquotesingle{}method\+Name2\textquotesingle{}\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyItemize}
+
+The code must not depend on runtime state as it will only be called at compile time. All logic depending on runtime state must be put into the individual methods handling the events.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$\vert$}{|}array\{0\+: string, 1\+: int\}\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}array\{0\+: string, 1?\+: int\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_af1f63475927bbcb3bd21b58712076104}{Event\+Subscriber\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Event\+Listener/\mbox{\hyperlink{_debug_handlers_listener_8php}{Debug\+Handlers\+Listener.\+php}}\end{DoxyCompactItemize}

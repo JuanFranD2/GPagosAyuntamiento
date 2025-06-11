@@ -1,0 +1,223 @@
+\doxysection{Bundle Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle}\index{Bundle@{Bundle}}
+Inheritance diagram for Bundle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a8814ea4b5beba763c570b4818980814e}{boot}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a482087c71391537bfe6fece68a58d420}{shutdown}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a20d1b2c300dead1d0bf003660f4d6354}{build}} (Container\+Builder \$container)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_ab0388390bce15dc587e4971709d57d32}{get\+Container\+Extension}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a2614df64646ac71b70b1e1074258052b}{get\+Namespace}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a30c5c67b2bf8e2e2ccc7e361faa20afe}{get\+Path}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_af89a4fb6fb5583eeeafab279b02def24}{register\+Commands}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application}{Application}} \$application)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a83c9d75795f999ff86cc7b699e894a76}{set\+Container}} (?\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}} \$container)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a3921d4c3d8de13626189e084ea4e49eb}{get\+Container\+Extension\+Class}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a869c8f8545bce5fd99428162c1aafe3c}{create\+Container\+Extension}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a58551b63ba97fb35b928f11f36b1fac6}{\$name}}
+\item 
+Extension\+Interface false null \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a99b0e890d060654401df64103a52f206}{\$extension}} = null
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a8c653cd058ea0a281f629453441ade47}{\$path}}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}} \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_ac5e4b54a4d658059f4330a6076a8f2b7}{\$container}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An implementation of Bundle\+Interface that adds a few conventions for Dependency\+Injection extensions.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a8814ea4b5beba763c570b4818980814e}\index{Bundle@{Bundle}!boot@{boot}}
+\index{boot@{boot}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{boot()}{boot()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a8814ea4b5beba763c570b4818980814e} 
+boot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_interface_a8814ea4b5beba763c570b4818980814e}{Bundle\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a20d1b2c300dead1d0bf003660f4d6354}\index{Bundle@{Bundle}!build@{build}}
+\index{build@{build}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a20d1b2c300dead1d0bf003660f4d6354} 
+build (\begin{DoxyParamCaption}\item[{Container\+Builder}]{\$container}{}\end{DoxyParamCaption})}
+
+This method can be overridden to register compilation passes, other extensions, ...
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_interface_a20d1b2c300dead1d0bf003660f4d6354}{Bundle\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a869c8f8545bce5fd99428162c1aafe3c}\index{Bundle@{Bundle}!createContainerExtension@{createContainerExtension}}
+\index{createContainerExtension@{createContainerExtension}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{createContainerExtension()}{createContainerExtension()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a869c8f8545bce5fd99428162c1aafe3c} 
+create\+Container\+Extension (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates the bundle\textquotesingle{}s container extension. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_ab0388390bce15dc587e4971709d57d32}\index{Bundle@{Bundle}!getContainerExtension@{getContainerExtension}}
+\index{getContainerExtension@{getContainerExtension}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{getContainerExtension()}{getContainerExtension()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_ab0388390bce15dc587e4971709d57d32} 
+get\+Container\+Extension (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the bundle\textquotesingle{}s container extension.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_interface_ab0388390bce15dc587e4971709d57d32}{Bundle\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_abstract_bundle_ab0388390bce15dc587e4971709d57d32}{Abstract\+Bundle}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a3921d4c3d8de13626189e084ea4e49eb}\index{Bundle@{Bundle}!getContainerExtensionClass@{getContainerExtensionClass}}
+\index{getContainerExtensionClass@{getContainerExtensionClass}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{getContainerExtensionClass()}{getContainerExtensionClass()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a3921d4c3d8de13626189e084ea4e49eb} 
+get\+Container\+Extension\+Class (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the bundle\textquotesingle{}s container extension class. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a3d0963e68bb313b163a73f2803c64600}\index{Bundle@{Bundle}!getName@{getName}}
+\index{getName@{getName}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Returns the bundle name (the class short name). 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_interface_a3d0963e68bb313b163a73f2803c64600}{Bundle\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a2614df64646ac71b70b1e1074258052b}\index{Bundle@{Bundle}!getNamespace@{getNamespace}}
+\index{getNamespace@{getNamespace}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{getNamespace()}{getNamespace()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a2614df64646ac71b70b1e1074258052b} 
+get\+Namespace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Bundle namespace. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_interface_a2614df64646ac71b70b1e1074258052b}{Bundle\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a30c5c67b2bf8e2e2ccc7e361faa20afe}\index{Bundle@{Bundle}!getPath@{getPath}}
+\index{getPath@{getPath}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a30c5c67b2bf8e2e2ccc7e361faa20afe} 
+get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Bundle directory path.
+
+The path should always be returned as a Unix path (with /). 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_interface_a30c5c67b2bf8e2e2ccc7e361faa20afe}{Bundle\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_abstract_bundle_a30c5c67b2bf8e2e2ccc7e361faa20afe}{Abstract\+Bundle}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_af89a4fb6fb5583eeeafab279b02def24}\index{Bundle@{Bundle}!registerCommands@{registerCommands}}
+\index{registerCommands@{registerCommands}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{registerCommands()}{registerCommands()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_af89a4fb6fb5583eeeafab279b02def24} 
+register\+Commands (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application}{Application}}}]{\$application}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a83c9d75795f999ff86cc7b699e894a76}\index{Bundle@{Bundle}!setContainer@{setContainer}}
+\index{setContainer@{setContainer}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{setContainer()}{setContainer()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a83c9d75795f999ff86cc7b699e894a76} 
+set\+Container (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}}}]{\$container}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_interface_a83c9d75795f999ff86cc7b699e894a76}{Bundle\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a482087c71391537bfe6fece68a58d420}\index{Bundle@{Bundle}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a482087c71391537bfe6fece68a58d420} 
+shutdown (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_interface_a482087c71391537bfe6fece68a58d420}{Bundle\+Interface}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_ac5e4b54a4d658059f4330a6076a8f2b7}\index{Bundle@{Bundle}!\$container@{\$container}}
+\index{\$container@{\$container}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{\$container}{\$container}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_ac5e4b54a4d658059f4330a6076a8f2b7} 
+\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}} \$container\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a99b0e890d060654401df64103a52f206}\index{Bundle@{Bundle}!\$extension@{\$extension}}
+\index{\$extension@{\$extension}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{\$extension}{\$extension}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a99b0e890d060654401df64103a52f206} 
+Extension\+Interface false null \$extension = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a58551b63ba97fb35b928f11f36b1fac6}\index{Bundle@{Bundle}!\$name@{\$name}}
+\index{\$name@{\$name}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{\$name}{\$name}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a58551b63ba97fb35b928f11f36b1fac6} 
+string \$name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a8c653cd058ea0a281f629453441ade47}\index{Bundle@{Bundle}!\$path@{\$path}}
+\index{\$path@{\$path}!Bundle@{Bundle}}
+\doxysubsubsection{\texorpdfstring{\$path}{\$path}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_bundle_1_1_bundle_a8c653cd058ea0a281f629453441ade47} 
+string \$path\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Bundle/\mbox{\hyperlink{_bundle_8php}{Bundle.\+php}}\end{DoxyCompactItemize}

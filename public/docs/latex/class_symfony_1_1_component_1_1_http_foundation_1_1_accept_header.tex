@@ -1,0 +1,120 @@
+\doxysection{Accept\+Header Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header}\index{AcceptHeader@{AcceptHeader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_ad156e94011b953013407e3cc2df74ebb}{\+\_\+\+\_\+construct}} (array \$items)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a4f2c99f9ef574beb234fd8514c1d33a5}{has}} (string \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a65411e5aa1108390c1db30e8671cb27f}{get}} (string \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_af0cab78108cf717aabd148701805be17}{add}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_item}{Accept\+Header\+Item}} \$item)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_af9d14e4ae6227970ad603987781573ca}{all}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a86987fd66ee8b2462551f68497aeaaed}{filter}} (string \$pattern)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_ac73eef9ff76ea330c0dab36ca448b90d}{first}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a013b6618960be6fb14a19508f69ad53d}{from\+String}} (?string \$header\+Value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an Accept-\/\texorpdfstring{$\ast$}{*} header.
+
+An accept header is compound with a list of items, sorted by descending quality.
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+François Simon \href{mailto:contact@jfsimon.fr}{\texttt{contact@jfsimon.\+fr}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_ad156e94011b953013407e3cc2df74ebb}\index{AcceptHeader@{AcceptHeader}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AcceptHeader@{AcceptHeader}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_ad156e94011b953013407e3cc2df74ebb} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$items}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Accept\+Header\+Item\mbox{[}$\,$\mbox{]} & {\em \$items} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a7516ca30af0db3cdbf9a7739b48ce91d}\index{AcceptHeader@{AcceptHeader}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!AcceptHeader@{AcceptHeader}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns header value\textquotesingle{}s string representation. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_af0cab78108cf717aabd148701805be17}\index{AcceptHeader@{AcceptHeader}!add@{add}}
+\index{add@{add}!AcceptHeader@{AcceptHeader}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_af0cab78108cf717aabd148701805be17} 
+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_item}{Accept\+Header\+Item}}}]{\$item}{}\end{DoxyParamCaption})}
+
+Adds an item.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_af9d14e4ae6227970ad603987781573ca}\index{AcceptHeader@{AcceptHeader}!all@{all}}
+\index{all@{all}!AcceptHeader@{AcceptHeader}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_af9d14e4ae6227970ad603987781573ca} 
+all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all items.
+
+\begin{DoxyReturn}{Returns}
+Accept\+Header\+Item\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a86987fd66ee8b2462551f68497aeaaed}\index{AcceptHeader@{AcceptHeader}!filter@{filter}}
+\index{filter@{filter}!AcceptHeader@{AcceptHeader}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a86987fd66ee8b2462551f68497aeaaed} 
+filter (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{}\end{DoxyParamCaption})}
+
+Filters items on their value using given regex. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_ac73eef9ff76ea330c0dab36ca448b90d}\index{AcceptHeader@{AcceptHeader}!first@{first}}
+\index{first@{first}!AcceptHeader@{AcceptHeader}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_ac73eef9ff76ea330c0dab36ca448b90d} 
+first (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns first item. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a013b6618960be6fb14a19508f69ad53d}\index{AcceptHeader@{AcceptHeader}!fromString@{fromString}}
+\index{fromString@{fromString}!AcceptHeader@{AcceptHeader}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a013b6618960be6fb14a19508f69ad53d} 
+from\+String (\begin{DoxyParamCaption}\item[{?string}]{\$header\+Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Builds an Accept\+Header instance from a string. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a65411e5aa1108390c1db30e8671cb27f}\index{AcceptHeader@{AcceptHeader}!get@{get}}
+\index{get@{get}!AcceptHeader@{AcceptHeader}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a65411e5aa1108390c1db30e8671cb27f} 
+get (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Returns given value\textquotesingle{}s item, if exists. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a4f2c99f9ef574beb234fd8514c1d33a5}\index{AcceptHeader@{AcceptHeader}!has@{has}}
+\index{has@{has}!AcceptHeader@{AcceptHeader}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_accept_header_a4f2c99f9ef574beb234fd8514c1d33a5} 
+has (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+\doxylink{namespace_tests}{Tests} if header has given value. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/foundation/\mbox{\hyperlink{_accept_header_8php}{Accept\+Header.\+php}}\end{DoxyCompactItemize}

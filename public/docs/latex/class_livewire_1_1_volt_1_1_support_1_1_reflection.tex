@@ -1,0 +1,108 @@
+\doxysection{Reflection Class Reference}
+\hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection}{}\label{class_livewire_1_1_volt_1_1_support_1_1_reflection}\index{Reflection@{Reflection}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_volt_1_1_support_1_1_reflection_a97d5e63e12506bf472506e37d79dd070}{to\+Method\+Signature}} (string \$name, array \$parameters, ?Reflection\+Type \$return\+Type)
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_volt_1_1_support_1_1_reflection_aa571c4b560eac0d59780f38582dbfbff}{to\+Method\+Signature\+From\+Closure}} (string \$name, Closure \$closure)
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_volt_1_1_support_1_1_reflection_a6fe68c7ebc37a4b32cfbe6068ee05dc4}{to\+Single\+Method\+Signature\+From\+Closures}} (string \$name, array \$closures)
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_volt_1_1_support_1_1_reflection_a43567177ccd67c5619fdff57cd1d8d98}{to\+Attributes\+Signature}} (array \$attributes)
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_volt_1_1_support_1_1_reflection_a0addc399dfa2719d6cb02cc3b79e21d1}{set\+Exception\+Message}} (Throwable \$exception, string \$message)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_volt_1_1_support_1_1_reflection_a7cb380ca06442b4bf04ea6ce8c8091ea}{get\+Parameters\+From\+Closure}} (?Closure \$closure)
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_volt_1_1_support_1_1_reflection_a8143900b282f31ef4eb6f6d34f0893b5}{get\+Return\+Type\+From\+Closure}} (?Closure \$closure)
+\item 
+static \mbox{\hyperlink{class_livewire_1_1_volt_1_1_support_1_1_reflection_a034b32eacecd535d1d0c1504aa55d6ad}{get\+Type}} (?Reflection\+Type \$type, bool \$next\+Disjunctive=false)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection_a7cb380ca06442b4bf04ea6ce8c8091ea}\index{Reflection@{Reflection}!getParametersFromClosure@{getParametersFromClosure}}
+\index{getParametersFromClosure@{getParametersFromClosure}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{getParametersFromClosure()}{getParametersFromClosure()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_support_1_1_reflection_a7cb380ca06442b4bf04ea6ce8c8091ea} 
+get\+Parameters\+From\+Closure (\begin{DoxyParamCaption}\item[{?Closure}]{\$closure}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Get the reflection parameters of the given closure keyed by their name.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}string, \textbackslash{}\+Reflection\+Parameter\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection_a8143900b282f31ef4eb6f6d34f0893b5}\index{Reflection@{Reflection}!getReturnTypeFromClosure@{getReturnTypeFromClosure}}
+\index{getReturnTypeFromClosure@{getReturnTypeFromClosure}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{getReturnTypeFromClosure()}{getReturnTypeFromClosure()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_support_1_1_reflection_a8143900b282f31ef4eb6f6d34f0893b5} 
+get\+Return\+Type\+From\+Closure (\begin{DoxyParamCaption}\item[{?Closure}]{\$closure}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Get the return type of the given closure. \Hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection_a034b32eacecd535d1d0c1504aa55d6ad}\index{Reflection@{Reflection}!getType@{getType}}
+\index{getType@{getType}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_support_1_1_reflection_a034b32eacecd535d1d0c1504aa55d6ad} 
+get\+Type (\begin{DoxyParamCaption}\item[{?Reflection\+Type}]{\$type}{, }\item[{bool}]{\$next\+Disjunctive}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Get the type of the given parameter. \Hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection_a0addc399dfa2719d6cb02cc3b79e21d1}\index{Reflection@{Reflection}!setExceptionMessage@{setExceptionMessage}}
+\index{setExceptionMessage@{setExceptionMessage}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{setExceptionMessage()}{setExceptionMessage()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_support_1_1_reflection_a0addc399dfa2719d6cb02cc3b79e21d1} 
+set\+Exception\+Message (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{, }\item[{string}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Overwrite the message of an exception. \Hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection_a43567177ccd67c5619fdff57cd1d8d98}\index{Reflection@{Reflection}!toAttributesSignature@{toAttributesSignature}}
+\index{toAttributesSignature@{toAttributesSignature}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{toAttributesSignature()}{toAttributesSignature()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_support_1_1_reflection_a43567177ccd67c5619fdff57cd1d8d98} 
+to\+Attributes\+Signature (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the signature of the given attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$attributes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection_a97d5e63e12506bf472506e37d79dd070}\index{Reflection@{Reflection}!toMethodSignature@{toMethodSignature}}
+\index{toMethodSignature@{toMethodSignature}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{toMethodSignature()}{toMethodSignature()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_support_1_1_reflection_a97d5e63e12506bf472506e37d79dd070} 
+to\+Method\+Signature (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$parameters}{, }\item[{?Reflection\+Type}]{\$return\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the method signature from the given parameters and return type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,Reflection\+Parameter$>$} & \$parameters \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection_aa571c4b560eac0d59780f38582dbfbff}\index{Reflection@{Reflection}!toMethodSignatureFromClosure@{toMethodSignatureFromClosure}}
+\index{toMethodSignatureFromClosure@{toMethodSignatureFromClosure}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{toMethodSignatureFromClosure()}{toMethodSignatureFromClosure()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_support_1_1_reflection_aa571c4b560eac0d59780f38582dbfbff} 
+to\+Method\+Signature\+From\+Closure (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{Closure}]{\$closure}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the method signature of a closure as a string. \Hypertarget{class_livewire_1_1_volt_1_1_support_1_1_reflection_a6fe68c7ebc37a4b32cfbe6068ee05dc4}\index{Reflection@{Reflection}!toSingleMethodSignatureFromClosures@{toSingleMethodSignatureFromClosures}}
+\index{toSingleMethodSignatureFromClosures@{toSingleMethodSignatureFromClosures}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{toSingleMethodSignatureFromClosures()}{toSingleMethodSignatureFromClosures()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_support_1_1_reflection_a6fe68c7ebc37a4b32cfbe6068ee05dc4} 
+to\+Single\+Method\+Signature\+From\+Closures (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$closures}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the method signature of combined closures as a string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int} & \\
+\hline
+\end{DoxyParams}
+Closure\texorpdfstring{$>$}{>} \$closures 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/livewire/volt/src/\+Support/\mbox{\hyperlink{livewire_2volt_2src_2_support_2_reflection_8php}{Reflection.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,281 @@
+\doxysection{Blade\+Mapper Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper}{}\label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper}\index{BladeMapper@{BladeMapper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_abf828b560f6648802147074ffb5a7cdb}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory}{Factory}} \$factory, Blade\+Compiler \$blade\+Compiler)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_acf1d380def2cfbbc4327799cb28be1eb}{map}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_exception_1_1_flatten_exception}{Flatten\+Exception}} \$exception)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a68b5f0c16795e5f73394428cc0cec747}{find\+Compiled\+View}} (string \$compiled\+Path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a02966d0f6f43d9464f9fa8569721cf1e}{get\+Known\+Paths}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_acfb14099968e0cfdf88af3841e82cfc9}{filter\+View\+Data}} (array \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a23f6a0f929332d4f317938697efc5afb}{detect\+Line\+Number}} (string \$filename, int \$compiled\+Line\+Number)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a0260e82eb28079fffe793a3cebecb230}{compile\+Sourcemap}} (string \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a3b63a2418954754367e8d814ab4bd60f}{add\+Echo\+Line\+Numbers}} (string \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_ae33679a16210ecdf0a39f9a62150aecf}{add\+Statement\+Line\+Numbers}} (string \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a7fd31f5b6a812df78bf2f89f1d897847}{add\+Blade\+Component\+Line\+Numbers}} (string \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a0087c59631bd22e4f936ca02e947f78a}{insert\+Line\+Number\+At\+Position}} (int \$position, string \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a324e441c56fc6a81fb8e63b88262186f}{trim\+Empty\+Lines}} (string \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a33392b5fbf0f03863024f3f93d3ecb60}{find\+Closest\+Line\+Number\+Mapping}} (string \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_acf1d380def2cfbbc4327799cb28be1eb}{map}}, int \$compiled\+Line\+Number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a099b374dc664ee043fffcd6ea05e3e70}{\$factory}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a53fe83a95c3d2874a9bdb9f4b5cd1992}{\$blade\+Compiler}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_abf828b560f6648802147074ffb5a7cdb}\index{BladeMapper@{BladeMapper}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_abf828b560f6648802147074ffb5a7cdb} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory}{Factory}}}]{\$factory}{, }\item[{Blade\+Compiler}]{\$blade\+Compiler}{}\end{DoxyParamCaption})}
+
+Create a new \doxylink{class_blade}{Blade} mapper instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory & {\em \$factory} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+Compilers\textbackslash{}\+Blade\+Compiler & {\em \$blade\+Compiler} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a7fd31f5b6a812df78bf2f89f1d897847}\index{BladeMapper@{BladeMapper}!addBladeComponentLineNumbers@{addBladeComponentLineNumbers}}
+\index{addBladeComponentLineNumbers@{addBladeComponentLineNumbers}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{addBladeComponentLineNumbers()}{addBladeComponentLineNumbers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a7fd31f5b6a812df78bf2f89f1d897847} 
+add\+Blade\+Component\+Line\+Numbers (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add line numbers to blade components.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a3b63a2418954754367e8d814ab4bd60f}\index{BladeMapper@{BladeMapper}!addEchoLineNumbers@{addEchoLineNumbers}}
+\index{addEchoLineNumbers@{addEchoLineNumbers}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{addEchoLineNumbers()}{addEchoLineNumbers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a3b63a2418954754367e8d814ab4bd60f} 
+add\+Echo\+Line\+Numbers (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add line numbers to echo statements.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_ae33679a16210ecdf0a39f9a62150aecf}\index{BladeMapper@{BladeMapper}!addStatementLineNumbers@{addStatementLineNumbers}}
+\index{addStatementLineNumbers@{addStatementLineNumbers}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{addStatementLineNumbers()}{addStatementLineNumbers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_ae33679a16210ecdf0a39f9a62150aecf} 
+add\+Statement\+Line\+Numbers (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add line numbers to blade statements.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a0260e82eb28079fffe793a3cebecb230}\index{BladeMapper@{BladeMapper}!compileSourcemap@{compileSourcemap}}
+\index{compileSourcemap@{compileSourcemap}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{compileSourcemap()}{compileSourcemap()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a0260e82eb28079fffe793a3cebecb230} 
+compile\+Sourcemap (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile the source map for the given blade file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a23f6a0f929332d4f317938697efc5afb}\index{BladeMapper@{BladeMapper}!detectLineNumber@{detectLineNumber}}
+\index{detectLineNumber@{detectLineNumber}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{detectLineNumber()}{detectLineNumber()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a23f6a0f929332d4f317938697efc5afb} 
+detect\+Line\+Number (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{int}]{\$compiled\+Line\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Detect the line number in the original blade file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+int & {\em \$compiled\+Line\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_acfb14099968e0cfdf88af3841e82cfc9}\index{BladeMapper@{BladeMapper}!filterViewData@{filterViewData}}
+\index{filterViewData@{filterViewData}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{filterViewData()}{filterViewData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_acfb14099968e0cfdf88af3841e82cfc9} 
+filter\+View\+Data (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Filter out the view data that should not be shown in the exception report.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a33392b5fbf0f03863024f3f93d3ecb60}\index{BladeMapper@{BladeMapper}!findClosestLineNumberMapping@{findClosestLineNumberMapping}}
+\index{findClosestLineNumberMapping@{findClosestLineNumberMapping}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{findClosestLineNumberMapping()}{findClosestLineNumberMapping()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a33392b5fbf0f03863024f3f93d3ecb60} 
+find\+Closest\+Line\+Number\+Mapping (\begin{DoxyParamCaption}\item[{string}]{\$map}{, }\item[{int}]{\$compiled\+Line\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Find the closest line number mapping in the given source map.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$map} & \\
+\hline
+int & {\em \$compiled\+Line\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a68b5f0c16795e5f73394428cc0cec747}\index{BladeMapper@{BladeMapper}!findCompiledView@{findCompiledView}}
+\index{findCompiledView@{findCompiledView}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{findCompiledView()}{findCompiledView()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a68b5f0c16795e5f73394428cc0cec747} 
+find\+Compiled\+View (\begin{DoxyParamCaption}\item[{string}]{\$compiled\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Find the compiled view file for the given compiled path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$compiled\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a02966d0f6f43d9464f9fa8569721cf1e}\index{BladeMapper@{BladeMapper}!getKnownPaths@{getKnownPaths}}
+\index{getKnownPaths@{getKnownPaths}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{getKnownPaths()}{getKnownPaths()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a02966d0f6f43d9464f9fa8569721cf1e} 
+get\+Known\+Paths (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the list of known paths from the compiler engine.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a0087c59631bd22e4f936ca02e947f78a}\index{BladeMapper@{BladeMapper}!insertLineNumberAtPosition@{insertLineNumberAtPosition}}
+\index{insertLineNumberAtPosition@{insertLineNumberAtPosition}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{insertLineNumberAtPosition()}{insertLineNumberAtPosition()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a0087c59631bd22e4f936ca02e947f78a} 
+insert\+Line\+Number\+At\+Position (\begin{DoxyParamCaption}\item[{int}]{\$position}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Insert a line number at the given position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$position} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_acf1d380def2cfbbc4327799cb28be1eb}\index{BladeMapper@{BladeMapper}!map@{map}}
+\index{map@{map}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_acf1d380def2cfbbc4327799cb28be1eb} 
+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_exception_1_1_flatten_exception}{Flatten\+Exception}}}]{\$exception}{}\end{DoxyParamCaption})}
+
+Map cached view paths to their original paths.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Exception\textbackslash{}\+Flatten\+Exception & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Exception\textbackslash{}\+Flatten\+Exception 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a324e441c56fc6a81fb8e63b88262186f}\index{BladeMapper@{BladeMapper}!trimEmptyLines@{trimEmptyLines}}
+\index{trimEmptyLines@{trimEmptyLines}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{trimEmptyLines()}{trimEmptyLines()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a324e441c56fc6a81fb8e63b88262186f} 
+trim\+Empty\+Lines (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Trim empty lines from the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a53fe83a95c3d2874a9bdb9f4b5cd1992}\index{BladeMapper@{BladeMapper}!\$bladeCompiler@{\$bladeCompiler}}
+\index{\$bladeCompiler@{\$bladeCompiler}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{\$bladeCompiler}{\$bladeCompiler}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a53fe83a95c3d2874a9bdb9f4b5cd1992} 
+\$blade\+Compiler\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a099b374dc664ee043fffcd6ea05e3e70}\index{BladeMapper@{BladeMapper}!\$factory@{\$factory}}
+\index{\$factory@{\$factory}!BladeMapper@{BladeMapper}}
+\doxysubsubsection{\texorpdfstring{\$factory}{\$factory}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper_a099b374dc664ee043fffcd6ea05e3e70} 
+\$factory\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Exceptions/\+Renderer/\+Mappers/\mbox{\hyperlink{_blade_mapper_8php}{Blade\+Mapper.\+php}}\end{DoxyCompactItemize}

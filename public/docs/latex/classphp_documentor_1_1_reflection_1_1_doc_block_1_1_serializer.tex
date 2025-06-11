@@ -1,0 +1,126 @@
+\doxysection{Serializer Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer}{}\label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer}\index{Serializer@{Serializer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a390f0b3fb77bedafcafabf1857a97af5}{\+\_\+\+\_\+construct}} (int \$indent=0, string \$indent\+String=\textquotesingle{} \textquotesingle{}, bool \$indent\+First\+Line=true, ?int \$line\+Length=null, ?Formatter \$tag\+Formatter=null, string \$line\+Ending="{}\textbackslash{}n"{})
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a4a3c6ba9d8027705aea0acbb893a97f3}{get\+Doc\+Comment}} (\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block}{Doc\+Block}} \$docblock)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_ad10aeb2d314978d82f40ef3281345128}{\$indent\+String}} = \textquotesingle{} \textquotesingle{}
+\item 
+int \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_ae64357bc0cf528683b782aee219abe9a}{\$indent}} = 0
+\item 
+bool \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a1190ed4e0031b0b34f07349a0f84991f}{\$is\+First\+Line\+Indented}} = true
+\item 
+int \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_ac827a3fe741eb8ef80384c0b2f509b30}{\$line\+Length}} = null
+\item 
+Formatter \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a11d645d90b247c69514d0c9bf56caeb6}{\$tag\+Formatter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Converts a Doc\+Block back from an object to a complete Doc\+Comment including Asterisks. 
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a390f0b3fb77bedafcafabf1857a97af5}\index{Serializer@{Serializer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Serializer@{Serializer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a390f0b3fb77bedafcafabf1857a97af5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{int}]{\$indent}{ = {\ttfamily 0}, }\item[{string}]{\$indent\+String}{ = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }\item[{bool}]{\$indent\+First\+Line}{ = {\ttfamily true}, }\item[{?int}]{\$line\+Length}{ = {\ttfamily null}, }\item[{?Formatter}]{\$tag\+Formatter}{ = {\ttfamily null}, }\item[{string}]{\$line\+Ending}{ = {\ttfamily "{}\textbackslash{}n"{}}}\end{DoxyParamCaption})}
+
+Create a Serializer instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$indent} & The number of times the indent string is repeated. \\
+\hline
+string & {\em \$indent\+String} & The string to indent the comment with. \\
+\hline
+bool & {\em \$indent\+First\+Line} & Whether to indent the first line. \\
+\hline
+int | null & {\em \$line\+Length} & The max length of a line or NULL to disable line wrapping. \\
+\hline
+Formatter & {\em \$tag\+Formatter} & A custom tag formatter, defaults to Passthrough\+Formatter. \\
+\hline
+string & {\em \$line\+Ending} & Line ending used in the output, by default ~\newline
+ is used. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a4a3c6ba9d8027705aea0acbb893a97f3}\index{Serializer@{Serializer}!getDocComment@{getDocComment}}
+\index{getDocComment@{getDocComment}!Serializer@{Serializer}}
+\doxysubsubsection{\texorpdfstring{getDocComment()}{getDocComment()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a4a3c6ba9d8027705aea0acbb893a97f3} 
+get\+Doc\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block}{Doc\+Block}}}]{\$docblock}{}\end{DoxyParamCaption})}
+
+Generate a Doc\+Block comment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Doc\+Block & {\em \$docblock} & The Doc\+Block to serialize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The serialized doc block.
+\end{DoxyReturn}
+Generate a Doc\+Block comment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Doc\+Block} & The Doc\+Block to serialize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The serialized doc block. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_ae64357bc0cf528683b782aee219abe9a}\index{Serializer@{Serializer}!\$indent@{\$indent}}
+\index{\$indent@{\$indent}!Serializer@{Serializer}}
+\doxysubsubsection{\texorpdfstring{\$indent}{\$indent}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_ae64357bc0cf528683b782aee219abe9a} 
+int \$indent = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_ad10aeb2d314978d82f40ef3281345128}\index{Serializer@{Serializer}!\$indentString@{\$indentString}}
+\index{\$indentString@{\$indentString}!Serializer@{Serializer}}
+\doxysubsubsection{\texorpdfstring{\$indentString}{\$indentString}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_ad10aeb2d314978d82f40ef3281345128} 
+string \$indent\+String = \textquotesingle{} \textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a1190ed4e0031b0b34f07349a0f84991f}\index{Serializer@{Serializer}!\$isFirstLineIndented@{\$isFirstLineIndented}}
+\index{\$isFirstLineIndented@{\$isFirstLineIndented}!Serializer@{Serializer}}
+\doxysubsubsection{\texorpdfstring{\$isFirstLineIndented}{\$isFirstLineIndented}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a1190ed4e0031b0b34f07349a0f84991f} 
+bool \$is\+First\+Line\+Indented = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_ac827a3fe741eb8ef80384c0b2f509b30}\index{Serializer@{Serializer}!\$lineLength@{\$lineLength}}
+\index{\$lineLength@{\$lineLength}!Serializer@{Serializer}}
+\doxysubsubsection{\texorpdfstring{\$lineLength}{\$lineLength}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_ac827a3fe741eb8ef80384c0b2f509b30} 
+int \$line\+Length = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a11d645d90b247c69514d0c9bf56caeb6}\index{Serializer@{Serializer}!\$tagFormatter@{\$tagFormatter}}
+\index{\$tagFormatter@{\$tagFormatter}!Serializer@{Serializer}}
+\doxysubsubsection{\texorpdfstring{\$tagFormatter}{\$tagFormatter}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_serializer_a11d645d90b247c69514d0c9bf56caeb6} 
+Formatter \$tag\+Formatter\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock/src/\+Doc\+Block/\mbox{\hyperlink{phpdocumentor_2reflection-docblock_2src_2_doc_block_2_serializer_8php}{Serializer.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/barryvdh/reflection-\/docblock/src/\+Barryvdh/\+Reflection/\+Doc\+Block/\mbox{\hyperlink{barryvdh_2reflection-docblock_2src_2_barryvdh_2_reflection_2_doc_block_2_serializer_8php}{Serializer.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var _multiple_root_elements_detected_exception_8php =
+[
+    [ "MultipleRootElementsDetectedException", "class_livewire_1_1_features_1_1_support_multiple_root_element_detection_1_1_multiple_root_elements_detected_exception.html", "class_livewire_1_1_features_1_1_support_multiple_root_element_detection_1_1_multiple_root_elements_detected_exception" ]
+];

@@ -1,0 +1,156 @@
+\doxysection{Query\+Exception Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_query_exception}{}\label{class_illuminate_1_1_database_1_1_query_exception}\index{QueryException@{QueryException}}
+Inheritance diagram for Query\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_database_1_1_query_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception_ab938904744aa227d03de13e171e5769e}{\+\_\+\+\_\+construct}} (\$connection\+Name, \$sql, array \$bindings, Throwable \$previous)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception_a4b199b80a35b58c716a31a1afbd6fe1a}{get\+Connection\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception_ad53d6d06affd7337d46e4efce0f6b2a1}{get\+Sql}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception_a93805bdd7f91e96b953219ce3b39308a}{get\+Raw\+Sql}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception_ad89786cda7caa3dc6dd46f4e4af51ede}{get\+Bindings}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception_a7ddd88fcfe7c27ccb17effdf3fc1310e}{\$connection\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception_a23e0144e6d09a792a5cabe12dd847db3}{format\+Message}} (\$connection\+Name, \$sql, \$bindings, Throwable \$previous)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception_a047170d6020a882807665812a27e2525}{\$sql}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception_adacdcea57647569304169243ff32cd10}{\$bindings}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_ab938904744aa227d03de13e171e5769e}\index{QueryException@{QueryException}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!QueryException@{QueryException}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_exception_ab938904744aa227d03de13e171e5769e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$sql}{, }\item[{array}]{\$bindings}{, }\item[{Throwable}]{\$previous}{}\end{DoxyParamCaption})}
+
+Create a new query exception instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+string & {\em \$sql} & \\
+\hline
+array & {\em \$bindings} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$previous} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_a23e0144e6d09a792a5cabe12dd847db3}\index{QueryException@{QueryException}!formatMessage@{formatMessage}}
+\index{formatMessage@{formatMessage}!QueryException@{QueryException}}
+\doxysubsubsection{\texorpdfstring{formatMessage()}{formatMessage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_exception_a23e0144e6d09a792a5cabe12dd847db3} 
+format\+Message (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$sql}{, }\item[{}]{\$bindings}{, }\item[{Throwable}]{\$previous}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format the SQL error message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+string & {\em \$sql} & \\
+\hline
+array & {\em \$bindings} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$previous} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_ad89786cda7caa3dc6dd46f4e4af51ede}\index{QueryException@{QueryException}!getBindings@{getBindings}}
+\index{getBindings@{getBindings}!QueryException@{QueryException}}
+\doxysubsubsection{\texorpdfstring{getBindings()}{getBindings()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_exception_ad89786cda7caa3dc6dd46f4e4af51ede} 
+get\+Bindings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the bindings for the query.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_a4b199b80a35b58c716a31a1afbd6fe1a}\index{QueryException@{QueryException}!getConnectionName@{getConnectionName}}
+\index{getConnectionName@{getConnectionName}!QueryException@{QueryException}}
+\doxysubsubsection{\texorpdfstring{getConnectionName()}{getConnectionName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_exception_a4b199b80a35b58c716a31a1afbd6fe1a} 
+get\+Connection\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the connection name for the query.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_a93805bdd7f91e96b953219ce3b39308a}\index{QueryException@{QueryException}!getRawSql@{getRawSql}}
+\index{getRawSql@{getRawSql}!QueryException@{QueryException}}
+\doxysubsubsection{\texorpdfstring{getRawSql()}{getRawSql()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_exception_a93805bdd7f91e96b953219ce3b39308a} 
+get\+Raw\+Sql (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the raw SQL representation of the query with embedded bindings. \Hypertarget{class_illuminate_1_1_database_1_1_query_exception_ad53d6d06affd7337d46e4efce0f6b2a1}\index{QueryException@{QueryException}!getSql@{getSql}}
+\index{getSql@{getSql}!QueryException@{QueryException}}
+\doxysubsubsection{\texorpdfstring{getSql()}{getSql()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_exception_ad53d6d06affd7337d46e4efce0f6b2a1} 
+get\+Sql (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the SQL for the query.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_adacdcea57647569304169243ff32cd10}\index{QueryException@{QueryException}!\$bindings@{\$bindings}}
+\index{\$bindings@{\$bindings}!QueryException@{QueryException}}
+\doxysubsubsection{\texorpdfstring{\$bindings}{\$bindings}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_exception_adacdcea57647569304169243ff32cd10} 
+\$bindings\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_a7ddd88fcfe7c27ccb17effdf3fc1310e}\index{QueryException@{QueryException}!\$connectionName@{\$connectionName}}
+\index{\$connectionName@{\$connectionName}!QueryException@{QueryException}}
+\doxysubsubsection{\texorpdfstring{\$connectionName}{\$connectionName}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_exception_a7ddd88fcfe7c27ccb17effdf3fc1310e} 
+\$connection\+Name}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_exception_a047170d6020a882807665812a27e2525}\index{QueryException@{QueryException}!\$sql@{\$sql}}
+\index{\$sql@{\$sql}!QueryException@{QueryException}}
+\doxysubsubsection{\texorpdfstring{\$sql}{\$sql}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_exception_a047170d6020a882807665812a27e2525} 
+\$sql\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\mbox{\hyperlink{_query_exception_8php}{Query\+Exception.\+php}}\end{DoxyCompactItemize}

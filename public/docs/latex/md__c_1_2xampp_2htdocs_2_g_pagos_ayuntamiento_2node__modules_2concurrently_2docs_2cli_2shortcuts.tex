@@ -1,0 +1,101 @@
+\chapter{Command Shortcuts }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2shortcuts}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2shortcuts}\index{Command Shortcuts@{Command Shortcuts}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2shortcuts_autotoc_md2253}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2shortcuts_autotoc_md2253}%
+
+
+Package managers that execute scripts from a {\ttfamily package.\+json} or {\ttfamily deno.(json\texorpdfstring{$\vert$}{|}jsonc)} file can be shortened when in concurrently.~\newline
+ The following are supported\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Syntax  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Expands to  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Syntax  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Expands to  }\\\cline{1-2}
+\endhead
+{\ttfamily npm\+:\texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  &{\ttfamily npm run \texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  \\\cline{1-2}
+{\ttfamily pnpm\+:\texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  &{\ttfamily pnpm run \texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  \\\cline{1-2}
+{\ttfamily yarn\+:\texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  &{\ttfamily yarn run \texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  \\\cline{1-2}
+{\ttfamily bun\+:\texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  &{\ttfamily bun run \texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  \\\cline{1-2}
+{\ttfamily node\+:\texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  &{\ttfamily node -\/-\/run \texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  \\\cline{1-2}
+{\ttfamily deno\+:\texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  &{\ttfamily deno task \texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}}  \\\cline{1-2}
+\end{longtabu}
+
+
+\begin{DoxyNote}{Note}
+~\newline
+ {\ttfamily node -\/-\/run} is only available from \href{https://nodejs.org/en/blog/announcements/v22-release-announce\#running-packagejson-scripts}{\texttt{Node 22 onwards}}.
+\end{DoxyNote}
+For example, given the following {\ttfamily package.\+json} contents\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ //\ ...}
+\DoxyCodeLine{\ \ "{}scripts"{}:\ \{}
+\DoxyCodeLine{\ \ \ \ "{}lint:js"{}:\ "{}..."{},}
+\DoxyCodeLine{\ \ \ \ "{}lint:ts"{}:\ "{}..."{},}
+\DoxyCodeLine{\ \ \ \ "{}lint:fix:js"{}:\ "{}..."{},}
+\DoxyCodeLine{\ \ \ \ "{}lint:fix:ts"{}:\ "{}..."{}}
+\DoxyCodeLine{\ \ \ \ //\ ...}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ //\ ...}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+It\textquotesingle{}s possible to run some of these with the following command line\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ "{}pnpm:lint:js"{}}
+\DoxyCodeLine{\#\ Is\ equivalent\ to}
+\DoxyCodeLine{\$\ concurrently\ -\/n\ lint:js\ "{}pnpm\ run\ lint:js"{}}
+
+\end{DoxyCode}
+
+
+Note that the command automatically receives a name equal to the script name.
+
+If you have several scripts with similar name patterns, you can use the {\ttfamily \texorpdfstring{$\ast$}{*}} wildcard to run all of them at once.~\newline
+ The spawned commands will receive names set to whatever the {\ttfamily \texorpdfstring{$\ast$}{*}} wildcard matched.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ "{}npm:lint:fix:*"{}}
+\DoxyCodeLine{\#\ is\ equivalent\ to}
+\DoxyCodeLine{\$\ concurrently\ -\/n\ js,ts\ "{}npm\ run\ lint:fix:js"{}\ "{}npm\ run\ lint:fix:ts"{}}
+
+\end{DoxyCode}
+
+
+If you specify a command name when using wildcards, it\textquotesingle{}ll be a prefix of what the {\ttfamily \texorpdfstring{$\ast$}{*}} wildcard matched\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/n\ fix:\ "{}npm:lint:fix:*"{}}
+\DoxyCodeLine{\#\ is\ equivalent\ to}
+\DoxyCodeLine{\$\ concurrently\ -\/n\ fix:js,fix:ts\ "{}npm\ run\ lint:fix:js"{}\ "{}npm\ run\ lint:fix:ts"{}}
+
+\end{DoxyCode}
+
+
+Filtering out commands matched by wildcard is also possible. Do this with by including {\ttfamily (!\texorpdfstring{$<$}{<}some pattern\texorpdfstring{$>$}{>})} in the command line\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ 'yarn:lint:*(!fix)'}
+\DoxyCodeLine{\#\ is\ equivalent\ to}
+\DoxyCodeLine{\$\ concurrently\ -\/n\ js,ts\ "{}yarn\ run\ lint:js"{}\ "{}yarn\ run\ lint:ts"{}}
+
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+If you use this syntax with double quotes ({\ttfamily "{}$<$/tt$>$), bash and other shells might fail parsing it. You\textquotesingle{}ll need to escape the $<$tt$>$!$<$/tt$>$, or use single quote (`'\`{}) instead.$<$br/$>$ \+See $<$a href="{}\href{https://serverfault.com/a/208266/160539}{\texttt{https\+://serverfault.\+com/a/208266/160539}}"{} \texorpdfstring{$>$}{>}here for more information. }
+\end{DoxyNote}

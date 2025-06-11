@@ -1,0 +1,4 @@
+var _preg_replace_callback_closure_type_extension_8php =
+[
+    [ "PregReplaceCallbackClosureTypeExtension", "class_composer_1_1_pcre_1_1_p_h_p_stan_1_1_preg_replace_callback_closure_type_extension.html", "class_composer_1_1_pcre_1_1_p_h_p_stan_1_1_preg_replace_callback_closure_type_extension" ]
+];

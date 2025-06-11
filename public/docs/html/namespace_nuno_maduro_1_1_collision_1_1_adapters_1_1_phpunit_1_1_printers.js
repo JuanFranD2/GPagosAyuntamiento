@@ -1,0 +1,5 @@
+var namespace_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_printers =
+[
+    [ "DefaultPrinter", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_printers_1_1_default_printer.html", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_printers_1_1_default_printer" ],
+    [ "ReportablePrinter", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_printers_1_1_reportable_printer.html", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_printers_1_1_reportable_printer" ]
+];

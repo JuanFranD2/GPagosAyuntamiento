@@ -1,0 +1,78 @@
+\doxysection{Snapshot\+Repository Class Reference}
+\hypertarget{class_pest_1_1_repositories_1_1_snapshot_repository}{}\label{class_pest_1_1_repositories_1_1_snapshot_repository}\index{SnapshotRepository@{SnapshotRepository}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_snapshot_repository_a6e54663ed1e6db2417d4b8c5ff083ee4}{\+\_\+\+\_\+construct}} (readonly private string \$tests\+Path, readonly private string \$snapshots\+Path,)
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_snapshot_repository_a9db60e5b2881ca151b1780e9a4e08560}{has}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_snapshot_repository_ac33ee765f5ad9f134540bac393721cfe}{get}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_snapshot_repository_a9fd6b42cbbccf73d6dda06dc75d3ce88}{save}} (string \$snapshot)
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_snapshot_repository_a7751f77b5263bcf940ece6e824a05b38}{flush}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_snapshot_repository_ac62467e8add5717eb13641533d4ad954}{start\+New\+Expectation}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_pest_1_1_repositories_1_1_snapshot_repository_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pest_1_1_repositories_1_1_snapshot_repository_a6e54663ed1e6db2417d4b8c5ff083ee4}\index{SnapshotRepository@{SnapshotRepository}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!SnapshotRepository@{SnapshotRepository}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_snapshot_repository_a6e54663ed1e6db2417d4b8c5ff083ee4} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{readonly private string}]{\$tests\+Path}{, }\item[{readonly private string}]{\$snapshots\+Path}{}\end{DoxyParamCaption})}
+
+Creates a snapshot repository instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_repositories_1_1_snapshot_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_repositories_1_1_snapshot_repository_a7751f77b5263bcf940ece6e824a05b38}\index{SnapshotRepository@{SnapshotRepository}!flush@{flush}}
+\index{flush@{flush}!SnapshotRepository@{SnapshotRepository}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_snapshot_repository_a7751f77b5263bcf940ece6e824a05b38} 
+flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Flushes the snapshots. \Hypertarget{class_pest_1_1_repositories_1_1_snapshot_repository_ac33ee765f5ad9f134540bac393721cfe}\index{SnapshotRepository@{SnapshotRepository}!get@{get}}
+\index{get@{get}!SnapshotRepository@{SnapshotRepository}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_snapshot_repository_ac33ee765f5ad9f134540bac393721cfe} 
+get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the snapshot.
+
+\begin{DoxyReturn}{Returns}
+array\{0\+: string, 1\+: string\}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Should\+Not\+Happen} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pest_1_1_repositories_1_1_snapshot_repository_a9db60e5b2881ca151b1780e9a4e08560}\index{SnapshotRepository@{SnapshotRepository}!has@{has}}
+\index{has@{has}!SnapshotRepository@{SnapshotRepository}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_snapshot_repository_a9db60e5b2881ca151b1780e9a4e08560} 
+has (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks if the snapshot exists. \Hypertarget{class_pest_1_1_repositories_1_1_snapshot_repository_a9fd6b42cbbccf73d6dda06dc75d3ce88}\index{SnapshotRepository@{SnapshotRepository}!save@{save}}
+\index{save@{save}!SnapshotRepository@{SnapshotRepository}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_snapshot_repository_a9fd6b42cbbccf73d6dda06dc75d3ce88} 
+save (\begin{DoxyParamCaption}\item[{string}]{\$snapshot}{}\end{DoxyParamCaption})}
+
+Saves the given snapshot for the given test case. \Hypertarget{class_pest_1_1_repositories_1_1_snapshot_repository_ac62467e8add5717eb13641533d4ad954}\index{SnapshotRepository@{SnapshotRepository}!startNewExpectation@{startNewExpectation}}
+\index{startNewExpectation@{startNewExpectation}!SnapshotRepository@{SnapshotRepository}}
+\doxysubsubsection{\texorpdfstring{startNewExpectation()}{startNewExpectation()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_snapshot_repository_ac62467e8add5717eb13641533d4ad954} 
+start\+New\+Expectation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Repositories/\mbox{\hyperlink{_snapshot_repository_8php}{Snapshot\+Repository.\+php}}\end{DoxyCompactItemize}

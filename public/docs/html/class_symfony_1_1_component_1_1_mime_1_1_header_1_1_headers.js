@@ -1,0 +1,27 @@
+var class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#aa4e4cfa2c62229714a0c73de7a5a9c90", null ],
+    [ "__clone", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#ad0cb87b388bc74d63dc884accdca8713", null ],
+    [ "add", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a5ff07e7bd224d784e334643588a95f1c", null ],
+    [ "addDateHeader", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a97236ae46afffe49da7c24ae90118065", null ],
+    [ "addHeader", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a2518fc4c6fb0d05dd0645d2d19f335ce", null ],
+    [ "addIdHeader", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a19459bc8c119133b3ddafa7ce962d3a7", null ],
+    [ "addMailboxHeader", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a13ebeecbcde27e1536cf85406012e48e", null ],
+    [ "addMailboxListHeader", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a1f5c25e5531914c8a320e60f24ec9710", null ],
+    [ "addParameterizedHeader", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a59c1038db3edb12e164538ad154328cc", null ],
+    [ "addPathHeader", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#ad98f7a267eb0e1779279e9dc1c0e3f0c", null ],
+    [ "addTextHeader", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#afd21ddcfa0ebefd0425852ed94dc42bf", null ],
+    [ "all", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a4ec0d898ca9614335515b8ecac4dbd27", null ],
+    [ "get", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a004397797e263171281784084cf4a502", null ],
+    [ "getHeaderBody", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a1b28343d338a46c9b2cbf6bc93dc4015", null ],
+    [ "getHeaderParameter", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#ad9a43d2142ebadf4e6573d6d3ae8b2a7", null ],
+    [ "getMaxLineLength", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#ac9be5b30d39eed72d13b10fecfcc8561", null ],
+    [ "getNames", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a64e8191090bf560e825966b082e868f0", null ],
+    [ "has", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a36c5aea84ecb000ab035e47ec3f351c3", null ],
+    [ "remove", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a78471a595e3f14f4ea1effa091093589", null ],
+    [ "setHeaderBody", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a1d5701564768a43344bb5889cdf31f52", null ],
+    [ "setHeaderParameter", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a31779067a799fea8c710e005fcd65811", null ],
+    [ "setMaxLineLength", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a8f7f5ae8bb4f4f676a38b2e774fa9ed7", null ],
+    [ "toArray", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a658defb34762c8f40085aec87e16ba1a", null ],
+    [ "toString", "class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers.html#a5558c5d549f41597377fa1ea8a1cefa3", null ]
+];

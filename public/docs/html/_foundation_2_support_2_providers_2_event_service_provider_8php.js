@@ -1,0 +1,4 @@
+var _foundation_2_support_2_providers_2_event_service_provider_8php =
+[
+    [ "EventServiceProvider", "class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider.html", "class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider" ]
+];

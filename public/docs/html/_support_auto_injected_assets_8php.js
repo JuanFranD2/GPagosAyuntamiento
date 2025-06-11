@@ -1,0 +1,4 @@
+var _support_auto_injected_assets_8php =
+[
+    [ "SupportAutoInjectedAssets", "class_livewire_1_1_features_1_1_support_auto_injected_assets_1_1_support_auto_injected_assets.html", "class_livewire_1_1_features_1_1_support_auto_injected_assets_1_1_support_auto_injected_assets" ]
+];

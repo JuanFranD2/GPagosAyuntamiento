@@ -1,0 +1,99 @@
+\doxysection{Each\+Expectation Class Reference}
+\hypertarget{class_pest_1_1_expectations_1_1_each_expectation}{}\label{class_pest_1_1_expectations_1_1_each_expectation}\index{EachExpectation@{EachExpectation}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_each_expectation_ad4afb8dac7424f6dc3734ba55e900f1e}{\+\_\+\+\_\+construct}} (private readonly Expectation \$original)
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_each_expectation_a950ee4fdc90dafa56bf4cff4cd3c894b}{and}} (mixed \$value)
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_each_expectation_ae4b749acc120be8c42b44ac42a2fc102}{not}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_each_expectation_ac9b8adb97c0ebc704af63a44358a9582}{\+\_\+\+\_\+call}} (string \$name, array \$arguments)
+\item 
+\mbox{\hyperlink{class_pest_1_1_expectations_1_1_each_expectation_a0acd7052f38245fd3723ea29c83bf3f3}{\+\_\+\+\_\+get}} (string \$name)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_pest_1_1_expectations_1_1_each_expectation_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pest_1_1_expectations_1_1_each_expectation_ad4afb8dac7424f6dc3734ba55e900f1e}\index{EachExpectation@{EachExpectation}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!EachExpectation@{EachExpectation}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_each_expectation_ad4afb8dac7424f6dc3734ba55e900f1e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly Expectation}]{\$original}{}\end{DoxyParamCaption})}
+
+Creates an expectation on each item of the iterable "{}value"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Expectation$<$\+TValue$>$} & \$original \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_expectations_1_1_each_expectation_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_expectations_1_1_each_expectation_ac9b8adb97c0ebc704af63a44358a9582}\index{EachExpectation@{EachExpectation}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!EachExpectation@{EachExpectation}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_each_expectation_ac9b8adb97c0ebc704af63a44358a9582} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})}
+
+Dynamically calls methods on the class with the given arguments on each item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int\texorpdfstring{$\vert$}{|}string,mixed$>$} & \$arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self$<$\+TValue$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_expectations_1_1_each_expectation_a0acd7052f38245fd3723ea29c83bf3f3}\index{EachExpectation@{EachExpectation}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!EachExpectation@{EachExpectation}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_each_expectation_a0acd7052f38245fd3723ea29c83bf3f3} 
+\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Dynamically calls methods on the class without any arguments on each item.
+
+\begin{DoxyReturn}{Returns}
+self$<$\+TValue$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_expectations_1_1_each_expectation_a950ee4fdc90dafa56bf4cff4cd3c894b}\index{EachExpectation@{EachExpectation}!and@{and}}
+\index{and@{and}!EachExpectation@{EachExpectation}}
+\doxysubsubsection{\texorpdfstring{and()}{and()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_each_expectation_a950ee4fdc90dafa56bf4cff4cd3c894b} 
+and (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Creates a new expectation.
+
+@template TAnd\+Value
+
+
+\begin{DoxyParams}[1]{Parameters}
+TAnd\+Value & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expectation$<$\+TAnd\+Value$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_expectations_1_1_each_expectation_ae4b749acc120be8c42b44ac42a2fc102}\index{EachExpectation@{EachExpectation}!not@{not}}
+\index{not@{not}!EachExpectation@{EachExpectation}}
+\doxysubsubsection{\texorpdfstring{not()}{not()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_expectations_1_1_each_expectation_ae4b749acc120be8c42b44ac42a2fc102} 
+not (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Creates the opposite expectation for the value.
+
+\begin{DoxyReturn}{Returns}
+self$<$\+TValue$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Expectations/\mbox{\hyperlink{_each_expectation_8php}{Each\+Expectation.\+php}}\end{DoxyCompactItemize}

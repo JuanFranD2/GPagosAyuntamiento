@@ -1,0 +1,4 @@
+var vendor_2laravel_2breeze_2stubs_2livewire_functional_2resources_2views_2livewire_2profile_2update_password_form_8blade_8php =
+[
+    [ "$updatePassword", "vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2update-password-form_8blade_8php.html#a44678c3d058cc0f5b22635abb176fdd6", null ]
+];

@@ -1,0 +1,184 @@
+\chapter{Changes in sebastianbergmann/environment }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log}\index{Changes in sebastianbergmann/environment@{Changes in sebastianbergmann/environment}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10780}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10780}%
+
+
+All notable changes in {\ttfamily sebastianbergmann/environment} are documented in this file using the \href{http://keepachangelog.com/}{\texttt{Keep a CHANGELOG}} principles.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10781}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/7.1.0...7.2.0}{\texttt{7.\+2.\+0}} -\/ 2024-\/07-\/03}{\href{https://github.com/sebastianbergmann/environment/compare/7.1.0...7.2.0}{\texttt{7.\+2.\+0}} -\/ 2024-\/07-\/03}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10781}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10782}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10782}
+
+\begin{DoxyItemize}
+\item Synced {\ttfamily Console\+::has\+Color\+Support()} with Symfony\textquotesingle{}s {\ttfamily Stream\+Output\+::has\+Color\+Support()} implementation
+\item Removed code left over from a time before PHP 5.\+4 and when HHVM was still supported
+\item This project now uses PHPStan instead of Psalm for static analysis
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10783}{}\doxysubsection{\texorpdfstring{Deprecated}{Deprecated}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10783}
+
+\begin{DoxyItemize}
+\item The {\ttfamily Runtime\+::get\+Binary()} method is now deprecated, use {\ttfamily escapeshellarg(\+PHP\+\_\+\+BINARY)} instead
+\item The {\ttfamily Runtime\+::get\+Raw\+Binary()} method is now deprecated, use the {\ttfamily PHP\+\_\+\+BINARY} constant instead
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10784}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/7.0.0...7.1.0}{\texttt{7.\+1.\+0}} -\/ 2024-\/03-\/23}{\href{https://github.com/sebastianbergmann/environment/compare/7.0.0...7.1.0}{\texttt{7.\+1.\+0}} -\/ 2024-\/03-\/23}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10784}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10785}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10785}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/pull/72}{\texttt{\#72}}\+: {\ttfamily Runtime\+::get\+Raw\+Binary()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10786}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/6.1...7.0.0}{\texttt{7.\+0.\+0}} -\/ 2024-\/02-\/02}{\href{https://github.com/sebastianbergmann/environment/compare/6.1...7.0.0}{\texttt{7.\+0.\+0}} -\/ 2024-\/02-\/02}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10786}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10787}{}\doxysubsection{\texorpdfstring{Removed}{Removed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10787}
+
+\begin{DoxyItemize}
+\item This component is no longer supported on PHP 8.\+1
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10788}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/6.1.0...6.1}{\texttt{6.\+1.\+1}} -\/ 2024-\/MM-\/\+DD}{\href{https://github.com/sebastianbergmann/environment/compare/6.1.0...6.1}{\texttt{6.\+1.\+1}} -\/ 2024-\/MM-\/\+DD}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10788}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10789}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10789}
+
+\begin{DoxyItemize}
+\item Synced {\ttfamily Console\+::has\+Color\+Support()} with Symfony\textquotesingle{}s {\ttfamily Stream\+Output\+::has\+Color\+Support()} implementation
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10790}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/6.0.1...6.1.0}{\texttt{6.\+1.\+0}} -\/ 2024-\/03-\/23}{\href{https://github.com/sebastianbergmann/environment/compare/6.0.1...6.1.0}{\texttt{6.\+1.\+0}} -\/ 2024-\/03-\/23}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10790}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10791}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10791}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/pull/72}{\texttt{\#72}}\+: {\ttfamily Runtime\+::get\+Raw\+Binary()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10792}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/6.0.0...6.0.1}{\texttt{6.\+0.\+1}} -\/ 2023-\/04-\/11}{\href{https://github.com/sebastianbergmann/environment/compare/6.0.0...6.0.1}{\texttt{6.\+0.\+1}} -\/ 2023-\/04-\/11}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10792}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10793}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10793}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/pull/68}{\texttt{\#68}}\+: The Just-\/in-\/\+Time compiler is disabled when {\ttfamily opcache.\+jit\+\_\+buffer\+\_\+size} is set to {\ttfamily 0}
+\item \href{https://github.com/sebastianbergmann/environment/pull/70}{\texttt{\#70}}\+: The first {\ttfamily 0} of {\ttfamily opcache.\+jit} only disables CPU-\/specific optimizations, not the Just-\/in-\/\+Time compiler itself
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10794}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/5.1.5...6.0.0}{\texttt{6.\+0.\+0}} -\/ 2023-\/02-\/03}{\href{https://github.com/sebastianbergmann/environment/compare/5.1.5...6.0.0}{\texttt{6.\+0.\+0}} -\/ 2023-\/02-\/03}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10794}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10795}{}\doxysubsection{\texorpdfstring{Removed}{Removed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10795}
+
+\begin{DoxyItemize}
+\item Removed {\ttfamily \doxylink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}\textbackslash{}Environment\textbackslash{}Operating\+System\+::get\+Family()} because this component is no longer supported on PHP versions that do not have {\ttfamily PHP\+\_\+\+OS\+\_\+\+FAMILY}
+\item Removed {\ttfamily \doxylink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}\textbackslash{}Environment\textbackslash{}Runtime\+::is\+HHVM()}
+\item This component is no longer supported on PHP 7.\+3, PHP 7.\+4, and PHP 8.\+0
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10796}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/5.1.4...5.1.5}{\texttt{5.\+1.\+5}} -\/ 2022-\/MM-\/\+DD}{\href{https://github.com/sebastianbergmann/environment/compare/5.1.4...5.1.5}{\texttt{5.\+1.\+5}} -\/ 2022-\/MM-\/\+DD}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10796}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10797}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10797}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/issues/59}{\texttt{\#59}}\+: Wrong usage of {\ttfamily stream\+\_\+isatty()}, {\ttfamily fstat()} used without checking whether the function is available
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10798}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/5.1.3...5.1.4}{\texttt{5.\+1.\+4}} -\/ 2022-\/04-\/03}{\href{https://github.com/sebastianbergmann/environment/compare/5.1.3...5.1.4}{\texttt{5.\+1.\+4}} -\/ 2022-\/04-\/03}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10798}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10799}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10799}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/pull/63}{\texttt{\#63}}\+: {\ttfamily Runtime\+::get\+Current\+Settings()} does not correctly process INI settings
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10800}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/5.1.2...5.1.3}{\texttt{5.\+1.\+3}} -\/ 2020-\/09-\/28}{\href{https://github.com/sebastianbergmann/environment/compare/5.1.2...5.1.3}{\texttt{5.\+1.\+3}} -\/ 2020-\/09-\/28}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10800}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10801}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10801}
+
+\begin{DoxyItemize}
+\item Changed PHP version constraint in {\ttfamily composer.\+json} from {\ttfamily \texorpdfstring{$^\wedge$}{\string^}7.3 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \texorpdfstring{$^\wedge$}{\string^}8.0} to {\ttfamily \texorpdfstring{$>$}{>}=7.\+3}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10802}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/5.1.1...5.1.2}{\texttt{5.\+1.\+2}} -\/ 2020-\/06-\/26}{\href{https://github.com/sebastianbergmann/environment/compare/5.1.1...5.1.2}{\texttt{5.\+1.\+2}} -\/ 2020-\/06-\/26}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10802}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10803}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10803}
+
+\begin{DoxyItemize}
+\item This component is now supported on PHP 8
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10804}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/5.1.0...5.1.1}{\texttt{5.\+1.\+1}} -\/ 2020-\/06-\/15}{\href{https://github.com/sebastianbergmann/environment/compare/5.1.0...5.1.1}{\texttt{5.\+1.\+1}} -\/ 2020-\/06-\/15}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10804}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10805}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10805}
+
+\begin{DoxyItemize}
+\item \doxylink{namespace_tests}{Tests} etc. are now ignored for archive exports
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10806}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/5.0.2...5.1.0}{\texttt{5.\+1.\+0}} -\/ 2020-\/04-\/14}{\href{https://github.com/sebastianbergmann/environment/compare/5.0.2...5.1.0}{\texttt{5.\+1.\+0}} -\/ 2020-\/04-\/14}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10806}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10807}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10807}
+
+\begin{DoxyItemize}
+\item {\ttfamily Runtime\+::performs\+Just\+In\+Time\+Compilation()} returns {\ttfamily true} if PHP 8\textquotesingle{}s JIT is active, {\ttfamily false} otherwise
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10808}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/5.0.1...5.0.2}{\texttt{5.\+0.\+2}} -\/ 2020-\/03-\/31}{\href{https://github.com/sebastianbergmann/environment/compare/5.0.1...5.0.2}{\texttt{5.\+0.\+2}} -\/ 2020-\/03-\/31}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10808}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10809}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10809}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/issues/55}{\texttt{\#55}}\+: {\ttfamily stty} command is executed even if no tty is available
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10810}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/5.0.0...5.0.1}{\texttt{5.\+0.\+1}} -\/ 2020-\/02-\/19}{\href{https://github.com/sebastianbergmann/environment/compare/5.0.0...5.0.1}{\texttt{5.\+0.\+1}} -\/ 2020-\/02-\/19}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10810}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10811}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10811}
+
+\begin{DoxyItemize}
+\item {\ttfamily Runtime\+::get\+Name\+With\+Version\+And\+Code\+Coverage\+Driver()} now prioritizes PCOV over Xdebug when both extensions are loaded (just like php-\/code-\/coverage does)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10812}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/4.2.3...5.0.0}{\texttt{5.\+0.\+0}} -\/ 2020-\/02-\/07}{\href{https://github.com/sebastianbergmann/environment/compare/4.2.3...5.0.0}{\texttt{5.\+0.\+0}} -\/ 2020-\/02-\/07}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10812}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10813}{}\doxysubsection{\texorpdfstring{Removed}{Removed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10813}
+
+\begin{DoxyItemize}
+\item This component is no longer supported on PHP 7.\+1 and PHP 7.\+2
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10814}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/4.2.2...4.2.3}{\texttt{4.\+2.\+3}} -\/ 2019-\/11-\/20}{\href{https://github.com/sebastianbergmann/environment/compare/4.2.2...4.2.3}{\texttt{4.\+2.\+3}} -\/ 2019-\/11-\/20}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10814}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10815}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10815}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/pull/50}{\texttt{\#50}}\+: Windows improvements to console capabilities
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10816}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10816}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/issues/49}{\texttt{\#49}}\+: Detection how Op\+Cache handles docblocks does not work correctly when PHPDBG is used
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10817}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/4.2.1...4.2.2}{\texttt{4.\+2.\+2}} -\/ 2019-\/05-\/05}{\href{https://github.com/sebastianbergmann/environment/compare/4.2.1...4.2.2}{\texttt{4.\+2.\+2}} -\/ 2019-\/05-\/05}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10817}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10818}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10818}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/pull/44}{\texttt{\#44}}\+: {\ttfamily Type\+Error} in {\ttfamily Console\+::get\+Number\+Of\+Columns\+Interactive()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10819}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/4.2.0...4.2.1}{\texttt{4.\+2.\+1}} -\/ 2019-\/04-\/25}{\href{https://github.com/sebastianbergmann/environment/compare/4.2.0...4.2.1}{\texttt{4.\+2.\+1}} -\/ 2019-\/04-\/25}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10819}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10820}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10820}
+
+\begin{DoxyItemize}
+\item Fixed an issue in {\ttfamily Runtime\+::get\+Current\+Settings()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10821}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/4.1.0...4.2.0}{\texttt{4.\+2.\+0}} -\/ 2019-\/04-\/25}{\href{https://github.com/sebastianbergmann/environment/compare/4.1.0...4.2.0}{\texttt{4.\+2.\+0}} -\/ 2019-\/04-\/25}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10821}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10822}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10822}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/pull/36}{\texttt{\#36}}\+: {\ttfamily Runtime\+::get\+Current\+Settings()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10823}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/4.0.2...4.1.0}{\texttt{4.\+1.\+0}} -\/ 2019-\/02-\/01}{\href{https://github.com/sebastianbergmann/environment/compare/4.0.2...4.1.0}{\texttt{4.\+1.\+0}} -\/ 2019-\/02-\/01}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10823}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10824}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10824}
+
+\begin{DoxyItemize}
+\item Implemented {\ttfamily Runtime\+::get\+Name\+With\+Version\+And\+Code\+Coverage\+Driver()} method
+\item \href{https://github.com/sebastianbergmann/environment/pull/34}{\texttt{\#34}}\+: Support for PCOV extension
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10825}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/4.0.1...4.0.2}{\texttt{4.\+0.\+2}} -\/ 2019-\/01-\/28}{\href{https://github.com/sebastianbergmann/environment/compare/4.0.1...4.0.2}{\texttt{4.\+0.\+2}} -\/ 2019-\/01-\/28}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10825}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10826}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10826}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/issues/33}{\texttt{\#33}}\+: {\ttfamily Runtime\+::discards\+Comments()} returns true too eagerly
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10827}{}\doxysubsection{\texorpdfstring{Removed}{Removed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10827}
+
+\begin{DoxyItemize}
+\item Removed support for Zend Optimizer+ in {\ttfamily Runtime\+::discards\+Comments()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10828}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/66691f8e2dc4641909166b275a9a4f45c0e89092...4.0.1}{\texttt{4.\+0.\+1}} -\/ 2018-\/11-\/25}{\href{https://github.com/sebastianbergmann/environment/compare/66691f8e2dc4641909166b275a9a4f45c0e89092...4.0.1}{\texttt{4.\+0.\+1}} -\/ 2018-\/11-\/25}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10828}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10829}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10829}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/issues/31}{\texttt{\#31}}\+: Regressions in {\ttfamily Console} class
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10830}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/3.1.0...66691f8e2dc4641909166b275a9a4f45c0e89092}{\texttt{4.\+0.\+0}} -\/ 2018-\/10-\/23 \mbox{[}YANKED\mbox{]}}{\href{https://github.com/sebastianbergmann/environment/compare/3.1.0...66691f8e2dc4641909166b275a9a4f45c0e89092}{\texttt{4.\+0.\+0}} -\/ 2018-\/10-\/23 \mbox{[}YANKED\mbox{]}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10830}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10831}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10831}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/pull/25}{\texttt{\#25}}\+: {\ttfamily Console\+::has\+Color\+Support()} does not work on Windows
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10832}{}\doxysubsection{\texorpdfstring{Removed}{Removed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10832}
+
+\begin{DoxyItemize}
+\item This component is no longer supported on PHP 7.\+0
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10833}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/3.0...3.1.0}{\texttt{3.\+1.\+0}} -\/ 2017-\/07-\/01}{\href{https://github.com/sebastianbergmann/environment/compare/3.0...3.1.0}{\texttt{3.\+1.\+0}} -\/ 2017-\/07-\/01}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10833}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10834}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10834}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/issues/21}{\texttt{\#21}}\+: Equivalent of {\ttfamily PHP\+\_\+\+OS\+\_\+\+FAMILY} (for PHP \texorpdfstring{$<$}{<} 7.\+2)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10835}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/3.0.3...3.0.4}{\texttt{3.\+0.\+4}} -\/ 2017-\/06-\/20}{\href{https://github.com/sebastianbergmann/environment/compare/3.0.3...3.0.4}{\texttt{3.\+0.\+4}} -\/ 2017-\/06-\/20}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10835}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10836}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10836}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/pull/20}{\texttt{\#20}}\+: PHP 7 mode of HHVM not forced
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10837}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/3.0.2...3.0.3}{\texttt{3.\+0.\+3}} -\/ 2017-\/05-\/18}{\href{https://github.com/sebastianbergmann/environment/compare/3.0.2...3.0.3}{\texttt{3.\+0.\+3}} -\/ 2017-\/05-\/18}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10837}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10838}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10838}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/issues/18}{\texttt{\#18}}\+: {\ttfamily Uncaught Type\+Error\+: preg\+\_\+match() expects parameter 2 to be string, null given}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10839}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/3.0.1...3.0.2}{\texttt{3.\+0.\+2}} -\/ 2017-\/04-\/21}{\href{https://github.com/sebastianbergmann/environment/compare/3.0.1...3.0.2}{\texttt{3.\+0.\+2}} -\/ 2017-\/04-\/21}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10839}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10840}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10840}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/environment/issues/17}{\texttt{\#17}}\+: {\ttfamily Uncaught Type\+Error\+: trim() expects parameter 1 to be string, boolean given}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10841}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/3.0.0...3.0.1}{\texttt{3.\+0.\+1}} -\/ 2017-\/04-\/21}{\href{https://github.com/sebastianbergmann/environment/compare/3.0.0...3.0.1}{\texttt{3.\+0.\+1}} -\/ 2017-\/04-\/21}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10841}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10842}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10842}
+
+\begin{DoxyItemize}
+\item Fixed inverted logic in {\ttfamily Runtime\+::discards\+Comments()}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10843}{}\doxysection{\texorpdfstring{\href{https://github.com/sebastianbergmann/environment/compare/2.0...3.0.0}{\texttt{3.\+0.\+0}} -\/ 2017-\/04-\/21}{\href{https://github.com/sebastianbergmann/environment/compare/2.0...3.0.0}{\texttt{3.\+0.\+0}} -\/ 2017-\/04-\/21}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10843}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10844}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10844}
+
+\begin{DoxyItemize}
+\item Implemented {\ttfamily Runtime\+::discards\+Comments()} for querying whether the PHP runtime discards annotations
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10845}{}\doxysubsection{\texorpdfstring{Removed}{Removed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2sebastian_2environment_2_change_log_autotoc_md10845}
+
+\begin{DoxyItemize}
+\item This component is no longer supported on PHP 5.\+6 
+\end{DoxyItemize}

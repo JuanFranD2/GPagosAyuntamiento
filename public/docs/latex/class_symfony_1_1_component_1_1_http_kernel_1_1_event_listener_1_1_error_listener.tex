@@ -1,0 +1,136 @@
+\doxysection{Error\+Listener Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener}\index{ErrorListener@{ErrorListener}}
+Inheritance diagram for Error\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_af85a61fad6fc94cd59786ecb0a7e5c7a}{\+\_\+\+\_\+construct}} (protected string\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$controller, protected ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null, protected bool \$debug=false, protected array \$exceptions\+Mapping=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a7ecd66488c65b838dc75c3c1d6ff2941}{log\+Kernel\+Exception}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_exception_event}{Exception\+Event}} \$event)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_ab41565bb12a84738078e1d124f92acac}{on\+Kernel\+Exception}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_exception_event}{Exception\+Event}} \$event)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a38047b8ca009efc9839965ce2d5cfa40}{remove\+Csp\+Header}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_response_event}{Response\+Event}} \$event)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a1d14abbd43c6313e690ffd2b5a1c93ea}{on\+Controller\+Arguments}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_controller_arguments_event}{Controller\+Arguments\+Event}} \$event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_af1f63475927bbcb3bd21b58712076104}{get\+Subscribed\+Events}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a60be10a11a3bd87d65d45c949732a9df}{log\+Exception}} (\textbackslash{}Throwable \$exception, string \$message, ?string \$log\+Level=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a699a31d9d9011788573693e8416fcdb5}{duplicate\+Request}} (\textbackslash{}Throwable \$exception, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_af85a61fad6fc94cd59786ecb0a7e5c7a}\index{ErrorListener@{ErrorListener}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ErrorListener@{ErrorListener}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_af85a61fad6fc94cd59786ecb0a7e5c7a} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected string\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null}]{\$controller}{, }\item[{protected ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{ = {\ttfamily null}, }\item[{protected bool}]{\$debug}{ = {\ttfamily false}, }\item[{protected array}]{\$exceptions\+Mapping}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$class-\/string,array\{log\+\_\+level} & string\texorpdfstring{$\vert$}{|}null, status\+\_\+code\+: int$<$100,599$>$\texorpdfstring{$\vert$}{|}null\}\texorpdfstring{$>$}{>} \$exceptions\+Mapping \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a699a31d9d9011788573693e8416fcdb5}\index{ErrorListener@{ErrorListener}!duplicateRequest@{duplicateRequest}}
+\index{duplicateRequest@{duplicateRequest}!ErrorListener@{ErrorListener}}
+\doxysubsubsection{\texorpdfstring{duplicateRequest()}{duplicateRequest()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a699a31d9d9011788573693e8416fcdb5} 
+duplicate\+Request (\begin{DoxyParamCaption}\item[{\textbackslash{}Throwable}]{\$exception}{, }\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clones the request for the exception. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_af1f63475927bbcb3bd21b58712076104}\index{ErrorListener@{ErrorListener}!getSubscribedEvents@{getSubscribedEvents}}
+\index{getSubscribedEvents@{getSubscribedEvents}!ErrorListener@{ErrorListener}}
+\doxysubsubsection{\texorpdfstring{getSubscribedEvents()}{getSubscribedEvents()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_af1f63475927bbcb3bd21b58712076104} 
+get\+Subscribed\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of event names this subscriber wants to listen to.
+
+The array keys are event names and the value can be\+:
+
+
+\begin{DoxyItemize}
+\item The method name to call (priority defaults to 0)
+\item An array composed of the method name to call and the priority
+\item An array of arrays composed of the method names to call and respective priorities, or 0 if unset
+\end{DoxyItemize}
+
+For instance\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}method\+Name\textquotesingle{}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}method\+Name\textquotesingle{}, \$priority\mbox{]}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\mbox{[}\textquotesingle{}method\+Name1\textquotesingle{}, \$priority\mbox{]}, \mbox{[}\textquotesingle{}method\+Name2\textquotesingle{}\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyItemize}
+
+The code must not depend on runtime state as it will only be called at compile time. All logic depending on runtime state must be put into the individual methods handling the events.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$\vert$}{|}array\{0\+: string, 1\+: int\}\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}array\{0\+: string, 1?\+: int\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_af1f63475927bbcb3bd21b58712076104}{Event\+Subscriber\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a60be10a11a3bd87d65d45c949732a9df}\index{ErrorListener@{ErrorListener}!logException@{logException}}
+\index{logException@{logException}!ErrorListener@{ErrorListener}}
+\doxysubsubsection{\texorpdfstring{logException()}{logException()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a60be10a11a3bd87d65d45c949732a9df} 
+log\+Exception (\begin{DoxyParamCaption}\item[{\textbackslash{}Throwable}]{\$exception}{, }\item[{string}]{\$message}{, }\item[{?string}]{\$log\+Level}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Logs an exception. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a7ecd66488c65b838dc75c3c1d6ff2941}\index{ErrorListener@{ErrorListener}!logKernelException@{logKernelException}}
+\index{logKernelException@{logKernelException}!ErrorListener@{ErrorListener}}
+\doxysubsubsection{\texorpdfstring{logKernelException()}{logKernelException()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a7ecd66488c65b838dc75c3c1d6ff2941} 
+log\+Kernel\+Exception (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_exception_event}{Exception\+Event}}}]{\$event}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a1d14abbd43c6313e690ffd2b5a1c93ea}\index{ErrorListener@{ErrorListener}!onControllerArguments@{onControllerArguments}}
+\index{onControllerArguments@{onControllerArguments}!ErrorListener@{ErrorListener}}
+\doxysubsubsection{\texorpdfstring{onControllerArguments()}{onControllerArguments()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a1d14abbd43c6313e690ffd2b5a1c93ea} 
+on\+Controller\+Arguments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_controller_arguments_event}{Controller\+Arguments\+Event}}}]{\$event}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_ab41565bb12a84738078e1d124f92acac}\index{ErrorListener@{ErrorListener}!onKernelException@{onKernelException}}
+\index{onKernelException@{onKernelException}!ErrorListener@{ErrorListener}}
+\doxysubsubsection{\texorpdfstring{onKernelException()}{onKernelException()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_ab41565bb12a84738078e1d124f92acac} 
+on\+Kernel\+Exception (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_exception_event}{Exception\+Event}}}]{\$event}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a38047b8ca009efc9839965ce2d5cfa40}\index{ErrorListener@{ErrorListener}!removeCspHeader@{removeCspHeader}}
+\index{removeCspHeader@{removeCspHeader}!ErrorListener@{ErrorListener}}
+\doxysubsubsection{\texorpdfstring{removeCspHeader()}{removeCspHeader()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_a38047b8ca009efc9839965ce2d5cfa40} 
+remove\+Csp\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_response_event}{Response\+Event}}}]{\$event}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Event\+Listener/\mbox{\hyperlink{http-kernel_2_event_listener_2_error_listener_8php}{Error\+Listener.\+php}}\end{DoxyCompactItemize}

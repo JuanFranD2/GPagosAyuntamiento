@@ -1,0 +1,94 @@
+\doxysection{Translator\+Bag Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_bag}{}\label{class_symfony_1_1_component_1_1_translation_1_1_translator_bag}\index{TranslatorBag@{TranslatorBag}}
+Inheritance diagram for Translator\+Bag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_translation_1_1_translator_bag}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_acd6641efb68bbea95634cbfbcb611059}{add\+Catalogue}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue}{Message\+Catalogue}} \$catalogue)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a8eb9137ab63e43ba9f73878eddd63e0d}{add\+Bag}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface}{Translator\+Bag\+Interface}} \$bag)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a4f8d6d2fabc44a04f2e88c5818971eaa}{get\+Catalogue}} (?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a65922ebac5c6d59da543df43777d4ccc}{get\+Catalogues}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_ada1250f4b0fbedb7700af024cd9d0760}{diff}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface}{Translator\+Bag\+Interface}} \$diff\+Bag)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a856cc428f249b69d91da5c4badab4304}{intersect}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface}{Translator\+Bag\+Interface}} \$intersect\+Bag)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a8eb9137ab63e43ba9f73878eddd63e0d}\index{TranslatorBag@{TranslatorBag}!addBag@{addBag}}
+\index{addBag@{addBag}!TranslatorBag@{TranslatorBag}}
+\doxysubsubsection{\texorpdfstring{addBag()}{addBag()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a8eb9137ab63e43ba9f73878eddd63e0d} 
+add\+Bag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface}{Translator\+Bag\+Interface}}}]{\$bag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_acd6641efb68bbea95634cbfbcb611059}\index{TranslatorBag@{TranslatorBag}!addCatalogue@{addCatalogue}}
+\index{addCatalogue@{addCatalogue}!TranslatorBag@{TranslatorBag}}
+\doxysubsubsection{\texorpdfstring{addCatalogue()}{addCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_acd6641efb68bbea95634cbfbcb611059} 
+add\+Catalogue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue}{Message\+Catalogue}}}]{\$catalogue}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_ada1250f4b0fbedb7700af024cd9d0760}\index{TranslatorBag@{TranslatorBag}!diff@{diff}}
+\index{diff@{diff}!TranslatorBag@{TranslatorBag}}
+\doxysubsubsection{\texorpdfstring{diff()}{diff()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_ada1250f4b0fbedb7700af024cd9d0760} 
+diff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface}{Translator\+Bag\+Interface}}}]{\$diff\+Bag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a4f8d6d2fabc44a04f2e88c5818971eaa}\index{TranslatorBag@{TranslatorBag}!getCatalogue@{getCatalogue}}
+\index{getCatalogue@{getCatalogue}!TranslatorBag@{TranslatorBag}}
+\doxysubsubsection{\texorpdfstring{getCatalogue()}{getCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a4f8d6d2fabc44a04f2e88c5818971eaa} 
+get\+Catalogue (\begin{DoxyParamCaption}\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets the catalogue by locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$locale} & The locale or null to use the default\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the locale contains invalid characters \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface_a4f8d6d2fabc44a04f2e88c5818971eaa}{Translator\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a65922ebac5c6d59da543df43777d4ccc}\index{TranslatorBag@{TranslatorBag}!getCatalogues@{getCatalogues}}
+\index{getCatalogues@{getCatalogues}!TranslatorBag@{TranslatorBag}}
+\doxysubsubsection{\texorpdfstring{getCatalogues()}{getCatalogues()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a65922ebac5c6d59da543df43777d4ccc} 
+get\+Catalogues (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all catalogues of the instance.
+
+\begin{DoxyReturn}{Returns}
+Message\+Catalogue\+Interface\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface_a65922ebac5c6d59da543df43777d4ccc}{Translator\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a856cc428f249b69d91da5c4badab4304}\index{TranslatorBag@{TranslatorBag}!intersect@{intersect}}
+\index{intersect@{intersect}!TranslatorBag@{TranslatorBag}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_translator_bag_a856cc428f249b69d91da5c4badab4304} 
+intersect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface}{Translator\+Bag\+Interface}}}]{\$intersect\+Bag}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/translation/\mbox{\hyperlink{_translator_bag_8php}{Translator\+Bag.\+php}}\end{DoxyCompactItemize}

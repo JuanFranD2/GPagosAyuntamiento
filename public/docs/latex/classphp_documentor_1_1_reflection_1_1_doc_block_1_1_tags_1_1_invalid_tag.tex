@@ -1,0 +1,97 @@
+\doxysection{Invalid\+Tag Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag}{}\label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag}\index{InvalidTag@{InvalidTag}}
+Inheritance diagram for Invalid\+Tag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a31ec439e56ccf74108b96587373a112c}{get\+Exception}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a2e74659add883ced40dbe8f8e121b4ad}{with\+Error}} (Throwable \$exception)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_aa6be4c653601299c8bf8a25987bbe0f3}{render}} (?\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_formatter}{Formatter}} \$formatter=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag}{Tag}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_aa6be4c653601299c8bf8a25987bbe0f3}{render}} (?Formatter \$formatter=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a7cc5e422e22e57fac7a9df7a1bfb49fd}{create}} (string \$body, string \$name=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag}{Tag}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_a6fafdaff738bff5d477ed4a6b97253fe}{create}} (string \$body)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents an exception during the tag creation
+
+Since the internals of the library are relaying on the correct syntax of a docblock we cannot simply throw exceptions at all time because the exceptions will break the creation of a docklock. Just silently ignore the exceptions is not an option because the user as an issue to fix.
+
+This tag holds that error information until a using application is able to display it. The object will just behave like any normal tag. So the normal application flow will not break. 
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a7516ca30af0db3cdbf9a7739b48ce91d}\index{InvalidTag@{InvalidTag}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!InvalidTag@{InvalidTag}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_a7516ca30af0db3cdbf9a7739b48ce91d}{Tag}}.
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a7cc5e422e22e57fac7a9df7a1bfb49fd}\index{InvalidTag@{InvalidTag}!create@{create}}
+\index{create@{create}!InvalidTag@{InvalidTag}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a7cc5e422e22e57fac7a9df7a1bfb49fd} 
+create (\begin{DoxyParamCaption}\item[{string}]{\$body}{, }\item[{string}]{\$name}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a31ec439e56ccf74108b96587373a112c}\index{InvalidTag@{InvalidTag}!getException@{getException}}
+\index{getException@{getException}!InvalidTag@{InvalidTag}}
+\doxysubsubsection{\texorpdfstring{getException()}{getException()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a31ec439e56ccf74108b96587373a112c} 
+get\+Exception (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a3d0963e68bb313b163a73f2803c64600}\index{InvalidTag@{InvalidTag}!getName@{getName}}
+\index{getName@{getName}!InvalidTag@{InvalidTag}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_a3d0963e68bb313b163a73f2803c64600}{Tag}}.
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_aa6be4c653601299c8bf8a25987bbe0f3}\index{InvalidTag@{InvalidTag}!render@{render}}
+\index{render@{render}!InvalidTag@{InvalidTag}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_aa6be4c653601299c8bf8a25987bbe0f3} 
+render (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_formatter}{Formatter}}}]{\$formatter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a2e74659add883ced40dbe8f8e121b4ad}\index{InvalidTag@{InvalidTag}!withError@{withError}}
+\index{withError@{withError}!InvalidTag@{InvalidTag}}
+\doxysubsubsection{\texorpdfstring{withError()}{withError()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_invalid_tag_a2e74659add883ced40dbe8f8e121b4ad} 
+with\+Error (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock/src/\+Doc\+Block/\+Tags/\mbox{\hyperlink{_invalid_tag_8php}{Invalid\+Tag.\+php}}\end{DoxyCompactItemize}

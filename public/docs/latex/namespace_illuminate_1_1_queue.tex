@@ -1,0 +1,353 @@
+\doxysection{Illuminate\textbackslash{}Queue Namespace Reference}
+\hypertarget{namespace_illuminate_1_1_queue}{}\label{namespace_illuminate_1_1_queue}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_queue_1_1_attributes}{Attributes}}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_queue_1_1_capsule}{Capsule}}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_queue_1_1_connectors}{Connectors}}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_queue_1_1_console}{Console}}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_queue_1_1_events}{Events}}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_queue_1_1_failed}{Failed}}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_queue_1_1_jobs}{Jobs}}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_queue_1_1_middleware}{Middleware}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_beanstalkd_queue}{Beanstalkd\+Queue}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_closure}{Call\+Queued\+Closure}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler}{Call\+Queued\+Handler}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_database_queue}{Database\+Queue}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_invalid_payload_exception}{Invalid\+Payload\+Exception}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener}{Listener}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_options}{Listener\+Options}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_lua_scripts}{Lua\+Scripts}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_manually_failed_exception}{Manually\+Failed\+Exception}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_max_attempts_exceeded_exception}{Max\+Attempts\+Exceeded\+Exception}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_null_queue}{Null\+Queue}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue}{Queue}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_manager}{Queue\+Manager}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_service_provider}{Queue\+Service\+Provider}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue}{Redis\+Queue}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_sqs_queue}{Sqs\+Queue}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_sync_queue}{Sync\+Queue}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_timeout_exceeded_exception}{Timeout\+Exceeded\+Exception}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker}{Worker}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a8b665278088b7c0d5628e53030d010e5}{attempts}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a13bdffdd926f26b825ea57066334ff01}{delete}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a471f2155e97aaa96c8653ffd1149d4e2}{fail}} (\$exception=null)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_ac5cc2a30abbe3afc2dc664c91489bb2d}{release}} (\$delay=0)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a6c0a60c0800ea66c4af69c63cbed958a}{with\+Fake\+Queue\+Interactions}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a99019dad215889e874dadea28add3003}{assert\+Deleted}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_ad86bc19e6c80a31b3a3d563f8dbde81e}{assert\+Not\+Deleted}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a0cedf246204d59f4c2f40605fc5c75bb}{assert\+Failed}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_af3fb14202b6123fbd5d72bed9f870996}{assert\+Failed\+With}} (\$exception)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_ab50eb470169563fd902f3fe7fbffb21c}{assert\+Not\+Failed}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_aa1d1fbc453ddec2c3ac45ab320d5dc57}{assert\+Released}} (\$delay=null)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a9b8d711788b2bf53c8d7b013d52b4f40}{assert\+Not\+Released}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a1ebc1224318fd30abf39de34ce3199eb}{set\+Job}} (Job\+Contract \$job)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}{\+\_\+\+\_\+serialize}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a5dfeb0415b037d2887b37a880187869c}{\+\_\+\+\_\+unserialize}} (array \$values)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_a826d0d3c705d569a0cb5dc5fff790d48}{get\+Property\+Value}} (Reflection\+Property \$property)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+trait \mbox{\hyperlink{namespace_illuminate_1_1_queue_abb7979e986d32e634f260be307d62311}{Interacts\+With\+Queue}}
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_queue_aab0e16ecbc63a8e57fdd9823b66be5a1}{\$job}}
+\item 
+trait \mbox{\hyperlink{namespace_illuminate_1_1_queue_a2fdcef71ec9731638842ee40ec4226bb}{Serializes\+Models}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_illuminate_1_1_queue_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_illuminate_1_1_queue_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!\_\_serialize@{\_\_serialize}}
+\index{\_\_serialize@{\_\_serialize}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{\_\_serialize()}{\_\_serialize()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_ab1d6abfbdcd8c9dd63dfef565bd2cfcf} 
+\+\_\+\+\_\+serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Prepare the instance values for serialization.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a5dfeb0415b037d2887b37a880187869c}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!\_\_unserialize@{\_\_unserialize}}
+\index{\_\_unserialize@{\_\_unserialize}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{\_\_unserialize()}{\_\_unserialize()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a5dfeb0415b037d2887b37a880187869c} 
+\+\_\+\+\_\+unserialize (\begin{DoxyParamCaption}\item[{array}]{\$values}{}\end{DoxyParamCaption})}
+
+Restore the model after serialization.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a99019dad215889e874dadea28add3003}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!assertDeleted@{assertDeleted}}
+\index{assertDeleted@{assertDeleted}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{assertDeleted()}{assertDeleted()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a99019dad215889e874dadea28add3003} 
+assert\+Deleted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Assert that the job was deleted from the queue.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a0cedf246204d59f4c2f40605fc5c75bb}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!assertFailed@{assertFailed}}
+\index{assertFailed@{assertFailed}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{assertFailed()}{assertFailed()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a0cedf246204d59f4c2f40605fc5c75bb} 
+assert\+Failed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Assert that the job was manually failed.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_af3fb14202b6123fbd5d72bed9f870996}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!assertFailedWith@{assertFailedWith}}
+\index{assertFailedWith@{assertFailedWith}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{assertFailedWith()}{assertFailedWith()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_af3fb14202b6123fbd5d72bed9f870996} 
+assert\+Failed\+With (\begin{DoxyParamCaption}\item[{}]{\$exception}{}\end{DoxyParamCaption})}
+
+Assert that the job was manually failed with a specific exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Throwable | string & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_ad86bc19e6c80a31b3a3d563f8dbde81e}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!assertNotDeleted@{assertNotDeleted}}
+\index{assertNotDeleted@{assertNotDeleted}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{assertNotDeleted()}{assertNotDeleted()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_ad86bc19e6c80a31b3a3d563f8dbde81e} 
+assert\+Not\+Deleted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Assert that the job was not deleted from the queue.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_ab50eb470169563fd902f3fe7fbffb21c}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!assertNotFailed@{assertNotFailed}}
+\index{assertNotFailed@{assertNotFailed}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{assertNotFailed()}{assertNotFailed()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_ab50eb470169563fd902f3fe7fbffb21c} 
+assert\+Not\+Failed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Assert that the job was not manually failed.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a9b8d711788b2bf53c8d7b013d52b4f40}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!assertNotReleased@{assertNotReleased}}
+\index{assertNotReleased@{assertNotReleased}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{assertNotReleased()}{assertNotReleased()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a9b8d711788b2bf53c8d7b013d52b4f40} 
+assert\+Not\+Released (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Assert that the job was not released back onto the queue.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_aa1d1fbc453ddec2c3ac45ab320d5dc57}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!assertReleased@{assertReleased}}
+\index{assertReleased@{assertReleased}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{assertReleased()}{assertReleased()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_aa1d1fbc453ddec2c3ac45ab320d5dc57} 
+assert\+Released (\begin{DoxyParamCaption}\item[{}]{\$delay}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert that the job was released back onto the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int & {\em \$delay} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a8b665278088b7c0d5628e53030d010e5}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!attempts@{attempts}}
+\index{attempts@{attempts}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{attempts()}{attempts()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a8b665278088b7c0d5628e53030d010e5} 
+attempts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the number of times the job has been attempted.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a13bdffdd926f26b825ea57066334ff01}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!delete@{delete}}
+\index{delete@{delete}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a13bdffdd926f26b825ea57066334ff01} 
+delete (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Delete the job from the queue.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a471f2155e97aaa96c8653ffd1149d4e2}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!fail@{fail}}
+\index{fail@{fail}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a471f2155e97aaa96c8653ffd1149d4e2} 
+fail (\begin{DoxyParamCaption}\item[{}]{\$exception}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fail the job from the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Throwable | string | null & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a826d0d3c705d569a0cb5dc5fff790d48}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!getPropertyValue@{getPropertyValue}}
+\index{getPropertyValue@{getPropertyValue}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{getPropertyValue()}{getPropertyValue()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a826d0d3c705d569a0cb5dc5fff790d48} 
+get\+Property\+Value (\begin{DoxyParamCaption}\item[{Reflection\+Property}]{\$property}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the property value for the given property.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Reflection\+Property & {\em \$property} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_ac5cc2a30abbe3afc2dc664c91489bb2d}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!release@{release}}
+\index{release@{release}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_ac5cc2a30abbe3afc2dc664c91489bb2d} 
+release (\begin{DoxyParamCaption}\item[{}]{\$delay}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Release the job back into the queue after (n) seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int & {\em \$delay} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a1ebc1224318fd30abf39de34ce3199eb}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!setJob@{setJob}}
+\index{setJob@{setJob}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{setJob()}{setJob()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a1ebc1224318fd30abf39de34ce3199eb} 
+set\+Job (\begin{DoxyParamCaption}\item[{Job\+Contract}]{\$job}{}\end{DoxyParamCaption})}
+
+Set the base queue job instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_queue_a6c0a60c0800ea66c4af69c63cbed958a}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!withFakeQueueInteractions@{withFakeQueueInteractions}}
+\index{withFakeQueueInteractions@{withFakeQueueInteractions}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{withFakeQueueInteractions()}{withFakeQueueInteractions()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a6c0a60c0800ea66c4af69c63cbed958a} 
+with\+Fake\+Queue\+Interactions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that queue interactions like fail, delete, and release should be faked.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-var-members}
+\Hypertarget{namespace_illuminate_1_1_queue_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_illuminate_1_1_queue_aab0e16ecbc63a8e57fdd9823b66be5a1}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!\$job@{\$job}}
+\index{\$job@{\$job}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{\$job}{\$job}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_aab0e16ecbc63a8e57fdd9823b66be5a1} 
+\$job}
+
+\Hypertarget{namespace_illuminate_1_1_queue_abb7979e986d32e634f260be307d62311}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!InteractsWithQueue@{InteractsWithQueue}}
+\index{InteractsWithQueue@{InteractsWithQueue}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{InteractsWithQueue}{InteractsWithQueue}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_abb7979e986d32e634f260be307d62311} 
+trait Interacts\+With\+Queue}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{namespace_illuminate_1_1_queue_a2fdcef71ec9731638842ee40ec4226bb}\index{Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}!SerializesModels@{SerializesModels}}
+\index{SerializesModels@{SerializesModels}!Illuminate\textbackslash{}Queue@{Illuminate\textbackslash{}Queue}}
+\doxysubsubsection{\texorpdfstring{SerializesModels}{SerializesModels}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_queue_a2fdcef71ec9731638842ee40ec4226bb} 
+trait Serializes\+Models}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}

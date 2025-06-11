@@ -1,0 +1,108 @@
+\doxysection{Unique\+Lock Class Reference}
+\hypertarget{class_illuminate_1_1_bus_1_1_unique_lock}{}\label{class_illuminate_1_1_bus_1_1_unique_lock}\index{UniqueLock@{UniqueLock}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_unique_lock_ab62fdcc37f339869c78399fe1c9e1446}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_cache}{Cache}} \$cache)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_unique_lock_afd7fdc2458cd5c860140a7a58ed2c134}{acquire}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_unique_lock_a9debd899fd05be5fd12b30d82daa8413}{release}} (\$job)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_unique_lock_afa5c1dc06cc90dcaecd55d04fed0eec3}{get\+Key}} (\$job)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_unique_lock_ac2dc76d756ec398393d4b1d23659276c}{\$cache}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_ab62fdcc37f339869c78399fe1c9e1446}\index{UniqueLock@{UniqueLock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!UniqueLock@{UniqueLock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_unique_lock_ab62fdcc37f339869c78399fe1c9e1446} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cache}{Cache}}}]{\$cache}{}\end{DoxyParamCaption})}
+
+Create a new unique lock manager instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Repository & {\em \$cache} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_afd7fdc2458cd5c860140a7a58ed2c134}\index{UniqueLock@{UniqueLock}!acquire@{acquire}}
+\index{acquire@{acquire}!UniqueLock@{UniqueLock}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_unique_lock_afd7fdc2458cd5c860140a7a58ed2c134} 
+acquire (\begin{DoxyParamCaption}\item[{}]{\$job}{}\end{DoxyParamCaption})}
+
+Attempt to acquire a lock for the given job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_afa5c1dc06cc90dcaecd55d04fed0eec3}\index{UniqueLock@{UniqueLock}!getKey@{getKey}}
+\index{getKey@{getKey}!UniqueLock@{UniqueLock}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_unique_lock_afa5c1dc06cc90dcaecd55d04fed0eec3} 
+get\+Key (\begin{DoxyParamCaption}\item[{}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate the lock key for the given job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_a9debd899fd05be5fd12b30d82daa8413}\index{UniqueLock@{UniqueLock}!release@{release}}
+\index{release@{release}!UniqueLock@{UniqueLock}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_unique_lock_a9debd899fd05be5fd12b30d82daa8413} 
+release (\begin{DoxyParamCaption}\item[{}]{\$job}{}\end{DoxyParamCaption})}
+
+Release the lock for the given job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_ac2dc76d756ec398393d4b1d23659276c}\index{UniqueLock@{UniqueLock}!\$cache@{\$cache}}
+\index{\$cache@{\$cache}!UniqueLock@{UniqueLock}}
+\doxysubsubsection{\texorpdfstring{\$cache}{\$cache}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_unique_lock_ac2dc76d756ec398393d4b1d23659276c} 
+\$cache\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Bus/\mbox{\hyperlink{_unique_lock_8php}{Unique\+Lock.\+php}}\end{DoxyCompactItemize}

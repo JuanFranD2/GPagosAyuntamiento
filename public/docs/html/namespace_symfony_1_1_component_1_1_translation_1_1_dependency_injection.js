@@ -1,0 +1,9 @@
+var namespace_symfony_1_1_component_1_1_translation_1_1_dependency_injection =
+[
+    [ "DataCollectorTranslatorPass", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_data_collector_translator_pass.html", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_data_collector_translator_pass" ],
+    [ "LoggingTranslatorPass", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_logging_translator_pass.html", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_logging_translator_pass" ],
+    [ "TranslationDumperPass", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_translation_dumper_pass.html", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_translation_dumper_pass" ],
+    [ "TranslationExtractorPass", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_translation_extractor_pass.html", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_translation_extractor_pass" ],
+    [ "TranslatorPass", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_translator_pass.html", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_translator_pass" ],
+    [ "TranslatorPathsPass", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_translator_paths_pass.html", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_translator_paths_pass" ]
+];

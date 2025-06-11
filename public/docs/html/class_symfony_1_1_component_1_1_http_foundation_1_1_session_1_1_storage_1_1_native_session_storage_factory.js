@@ -1,0 +1,5 @@
+var class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage_factory =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage_factory.html#ad15eeccf28079e3140e42d7ca5a556ce", null ],
+    [ "createStorage", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_native_session_storage_factory.html#ac2315b79b1df476ad75ca2b62bfe5ae3", null ]
+];

@@ -1,0 +1,4 @@
+var class_livewire_1_1_features_1_1_support_disabling_back_button_cache_1_1_support_disabling_back_button_cache =
+[
+    [ "boot", "class_livewire_1_1_features_1_1_support_disabling_back_button_cache_1_1_support_disabling_back_button_cache.html#a8814ea4b5beba763c570b4818980814e", null ]
+];

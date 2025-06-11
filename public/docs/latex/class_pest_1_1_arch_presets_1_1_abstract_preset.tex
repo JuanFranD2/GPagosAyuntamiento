@@ -1,0 +1,107 @@
+\doxysection{Abstract\+Preset Class Reference}
+\hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset}{}\label{class_pest_1_1_arch_presets_1_1_abstract_preset}\index{AbstractPreset@{AbstractPreset}}
+Inheritance diagram for Abstract\+Preset\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.812298cm]{class_pest_1_1_arch_presets_1_1_abstract_preset}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_abstract_preset_a35367bd60c44e3d205f532a9e7d89799}{\+\_\+\+\_\+construct}} (private readonly array \$user\+Namespaces,)
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_abstract_preset_a1909f4b7f8129c7790cb75de2ffbe1e4}{execute}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_abstract_preset_ae608fd2e8d738912068a08ff17144cb0}{ignoring}} (array\texorpdfstring{$\vert$}{|}string \$targets\+Or\+Dependencies)
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_abstract_preset_afbcfb772a198a306591ab50f6b8054ad}{each\+User\+Namespace}} (callable ... \$callbacks)
+\item 
+\mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_abstract_preset_a7751f77b5263bcf940ece6e824a05b38}{flush}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_abstract_preset_a61f9baa3d58558e4476ae596796c1e1f}{\$expectations}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset_a35367bd60c44e3d205f532a9e7d89799}\index{AbstractPreset@{AbstractPreset}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AbstractPreset@{AbstractPreset}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_presets_1_1_abstract_preset_a35367bd60c44e3d205f532a9e7d89799} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly array}]{\$user\+Namespaces}{}\end{DoxyParamCaption})}
+
+Creates a new preset instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$} & \$user\+Namespaces \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset_afbcfb772a198a306591ab50f6b8054ad}\index{AbstractPreset@{AbstractPreset}!eachUserNamespace@{eachUserNamespace}}
+\index{eachUserNamespace@{eachUserNamespace}!AbstractPreset@{AbstractPreset}}
+\doxysubsubsection{\texorpdfstring{eachUserNamespace()}{eachUserNamespace()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_presets_1_1_abstract_preset_afbcfb772a198a306591ab50f6b8054ad} 
+each\+User\+Namespace (\begin{DoxyParamCaption}\item[{callable ...}]{\$callbacks}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Runs the given callback for each namespace.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+Expectation$<$string\texorpdfstring{$\vert$}{|}null$>$)} & Arch\+Expectation ...\$callbacks \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset_a1909f4b7f8129c7790cb75de2ffbe1e4}\index{AbstractPreset@{AbstractPreset}!execute@{execute}}
+\index{execute@{execute}!AbstractPreset@{AbstractPreset}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_presets_1_1_abstract_preset_a1909f4b7f8129c7790cb75de2ffbe1e4} 
+execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Executes the arch preset. 
+
+Reimplemented in \mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_custom_a1909f4b7f8129c7790cb75de2ffbe1e4}{Custom}}, \mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_laravel_a1909f4b7f8129c7790cb75de2ffbe1e4}{Laravel}}, \mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_php_a1909f4b7f8129c7790cb75de2ffbe1e4}{Php}}, \mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_relaxed_a1909f4b7f8129c7790cb75de2ffbe1e4}{Relaxed}}, \mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_security_a1909f4b7f8129c7790cb75de2ffbe1e4}{Security}}, and \mbox{\hyperlink{class_pest_1_1_arch_presets_1_1_strict_a1909f4b7f8129c7790cb75de2ffbe1e4}{Strict}}.
+
+\Hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset_a7751f77b5263bcf940ece6e824a05b38}\index{AbstractPreset@{AbstractPreset}!flush@{flush}}
+\index{flush@{flush}!AbstractPreset@{AbstractPreset}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_presets_1_1_abstract_preset_a7751f77b5263bcf940ece6e824a05b38} 
+flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Flushes the expectations. \Hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset_ae608fd2e8d738912068a08ff17144cb0}\index{AbstractPreset@{AbstractPreset}!ignoring@{ignoring}}
+\index{ignoring@{ignoring}!AbstractPreset@{AbstractPreset}}
+\doxysubsubsection{\texorpdfstring{ignoring()}{ignoring()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_presets_1_1_abstract_preset_ae608fd2e8d738912068a08ff17144cb0} 
+ignoring (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$targets\+Or\+Dependencies}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Ignores the given "{}targets"{} or "{}dependencies"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}string} & \$targets\+Or\+Dependencies \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_pest_1_1_arch_presets_1_1_abstract_preset_a61f9baa3d58558e4476ae596796c1e1f}\index{AbstractPreset@{AbstractPreset}!\$expectations@{\$expectations}}
+\index{\$expectations@{\$expectations}!AbstractPreset@{AbstractPreset}}
+\doxysubsubsection{\texorpdfstring{\$expectations}{\$expectations}}
+{\footnotesize\ttfamily \label{class_pest_1_1_arch_presets_1_1_abstract_preset_a61f9baa3d58558e4476ae596796c1e1f} 
+array \$expectations = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Arch\+Presets/\mbox{\hyperlink{_abstract_preset_8php}{Abstract\+Preset.\+php}}\end{DoxyCompactItemize}

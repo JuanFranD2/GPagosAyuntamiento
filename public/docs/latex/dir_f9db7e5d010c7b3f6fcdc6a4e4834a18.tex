@@ -1,0 +1,46 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/resolve-\/cwd Directory Reference}
+\hypertarget{dir_f9db7e5d010c7b3f6fcdc6a4e4834a18}{}\label{dir_f9db7e5d010c7b3f6fcdc6a4e4834a18}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/resolve-\/cwd Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/resolve-\/cwd Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md5992}{}\doxysubsection{\texorpdfstring{resolve-\/cwd \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/resolve-cwd.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/resolve-\/cwd.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/resolve-cwd}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/resolve-\/cwd}})}{resolve-\/cwd \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/resolve-cwd.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/resolve-\/cwd.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/resolve-cwd}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/resolve-\/cwd}})}}\label{readme.md_autotoc_md5992}
+\begin{quote}
+Resolve the path of a module like \href{https://nodejs.org/api/globals.html\#globals_require_resolve}{\texttt{{\ttfamily require.\+resolve()}}} but from the current working directory \end{quote}
+\hypertarget{readme.md_autotoc_md5993}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md5993}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ resolve-\/cwd}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md5994}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md5994}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ resolveCwd\ =\ require('resolve-\/cwd');}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(\_\_dirname);}
+\DoxyCodeLine{//=>\ '/Users/sindresorhus/rainbow'}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(process.cwd());}
+\DoxyCodeLine{//=>\ '/Users/sindresorhus/unicorn'}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(resolveCwd('./foo'));}
+\DoxyCodeLine{//=>\ '/Users/sindresorhus/unicorn/foo.js'}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md5995}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md5995}
+\hypertarget{readme.md_autotoc_md5996}{}\doxysubsubsection{\texorpdfstring{resolve\+Cwd(module\+Id)}{resolve\+Cwd(module\+Id)}}\label{readme.md_autotoc_md5996}
+Like {\ttfamily require()}, throws when the module can\textquotesingle{}t be found.\hypertarget{readme.md_autotoc_md5997}{}\doxysubsubsection{\texorpdfstring{resolve\+Cwd.\+silent(module\+Id)}{resolve\+Cwd.\+silent(module\+Id)}}\label{readme.md_autotoc_md5997}
+Returns {\ttfamily undefined} instead of throwing when the module can\textquotesingle{}t be found.\hypertarget{readme.md_autotoc_md5998}{}\doxysubsubsubsection{\texorpdfstring{module\+Id}{module\+Id}}\label{readme.md_autotoc_md5998}
+Type\+: {\ttfamily string}
+
+What you would use in {\ttfamily require()}.\hypertarget{readme.md_autotoc_md5999}{}\doxysubsection{\texorpdfstring{Related}{Related}}\label{readme.md_autotoc_md5999}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sindresorhus/resolve-from}{\texttt{resolve-\/from}} -\/ Resolve the path of a module from a given path
+\item \href{https://github.com/sindresorhus/import-from}{\texttt{import-\/from}} -\/ Import a module from a given path
+\item \href{https://github.com/sindresorhus/import-cwd}{\texttt{import-\/cwd}} -\/ Import a module from the current working directory
+\item \href{https://github.com/sindresorhus/resolve-pkg}{\texttt{resolve-\/pkg}} -\/ Resolve the path of a package regardless of it having an entry point
+\item \href{https://github.com/sindresorhus/import-lazy}{\texttt{import-\/lazy}} -\/ Import a module lazily
+\item \href{https://github.com/sindresorhus/resolve-global}{\texttt{resolve-\/global}} -\/ Resolve the path of a globally installed module
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md6000}{}\doxysubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md6000}
+MIT © \href{https://sindresorhus.com}{\texttt{Sindre Sorhus}} 

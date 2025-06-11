@@ -1,0 +1,21 @@
+\chapter{From 1.\+x to 2.\+x }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2masterminds_2html5_2_u_p_g_r_a_d_i_n_g}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2masterminds_2html5_2_u_p_g_r_a_d_i_n_g}\index{From 1.x to 2.x@{From 1.x to 2.x}}
+
+\begin{DoxyItemize}
+\item All classes uses {\ttfamily \doxylink{namespace_masterminds}{Masterminds}} namespace.
+\item All public static methods has been removed from {\ttfamily HTML5} class and the general API to access the HTML5 functionalities has changed.
+
+Before\+: \begin{DoxyVerb}$dom = \HTML5::loadHTML('<html>....');
+\HTML5::saveHTML($dom);
+\end{DoxyVerb}
+
+
+After\+: \begin{DoxyVerb}use Masterminds\HTML5;
+
+$html5 = new HTML5();
+
+$dom = $html5->loadHTML('<html>....');
+echo $html5->saveHTML($dom);
+\end{DoxyVerb}
+ 
+\end{DoxyItemize}

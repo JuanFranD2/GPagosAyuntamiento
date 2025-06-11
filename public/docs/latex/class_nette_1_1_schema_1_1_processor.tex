@@ -1,0 +1,79 @@
+\doxysection{Processor Class Reference}
+\hypertarget{class_nette_1_1_schema_1_1_processor}{}\label{class_nette_1_1_schema_1_1_processor}\index{Processor@{Processor}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nette_1_1_schema_1_1_processor_a81c07fa7fa91f55b10d40dd157ffce5a}{skip\+Defaults}} (bool \$value=true)
+\item 
+\mbox{\hyperlink{class_nette_1_1_schema_1_1_processor_a723b8b786c97f13e046a120b95f9abda}{process}} (\mbox{\hyperlink{interface_nette_1_1_schema_1_1_schema}{Schema}} \$schema, mixed \$data)
+\item 
+\mbox{\hyperlink{class_nette_1_1_schema_1_1_processor_ab3275c44481de01f253af4ab137d5f4e}{process\+Multiple}} (\mbox{\hyperlink{interface_nette_1_1_schema_1_1_schema}{Schema}} \$schema, array \$dataset)
+\item 
+\mbox{\hyperlink{class_nette_1_1_schema_1_1_processor_adc3b82cf30d1a6f68351b9bbcc88602e}{get\+Warnings}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_nette_1_1_schema_1_1_processor_a6517c1f22ba88f0c281417b06b2e823c}{\$on\+New\+Context}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_schema}{Schema} validator. 
+
+\label{doc-func-members}
+\Hypertarget{class_nette_1_1_schema_1_1_processor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_schema_1_1_processor_adc3b82cf30d1a6f68351b9bbcc88602e}\index{Processor@{Processor}!getWarnings@{getWarnings}}
+\index{getWarnings@{getWarnings}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{getWarnings()}{getWarnings()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_schema_1_1_processor_adc3b82cf30d1a6f68351b9bbcc88602e} 
+get\+Warnings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_schema_1_1_processor_a723b8b786c97f13e046a120b95f9abda}\index{Processor@{Processor}!process@{process}}
+\index{process@{process}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_schema_1_1_processor_a723b8b786c97f13e046a120b95f9abda} 
+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_nette_1_1_schema_1_1_schema}{Schema}}}]{\$schema}{, }\item[{mixed}]{\$data}{}\end{DoxyParamCaption})}
+
+Normalizes and validates data. Result is a clean completed data. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Validation\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_nette_1_1_schema_1_1_processor_ab3275c44481de01f253af4ab137d5f4e}\index{Processor@{Processor}!processMultiple@{processMultiple}}
+\index{processMultiple@{processMultiple}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processMultiple()}{processMultiple()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_schema_1_1_processor_ab3275c44481de01f253af4ab137d5f4e} 
+process\+Multiple (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_nette_1_1_schema_1_1_schema}{Schema}}}]{\$schema}{, }\item[{array}]{\$dataset}{}\end{DoxyParamCaption})}
+
+Normalizes and validates and merges multiple data. Result is a clean completed data. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Validation\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_nette_1_1_schema_1_1_processor_a81c07fa7fa91f55b10d40dd157ffce5a}\index{Processor@{Processor}!skipDefaults@{skipDefaults}}
+\index{skipDefaults@{skipDefaults}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{skipDefaults()}{skipDefaults()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_schema_1_1_processor_a81c07fa7fa91f55b10d40dd157ffce5a} 
+skip\+Defaults (\begin{DoxyParamCaption}\item[{bool}]{\$value}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_nette_1_1_schema_1_1_processor_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_nette_1_1_schema_1_1_processor_a6517c1f22ba88f0c281417b06b2e823c}\index{Processor@{Processor}!\$onNewContext@{\$onNewContext}}
+\index{\$onNewContext@{\$onNewContext}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{\$onNewContext}{\$onNewContext}}
+{\footnotesize\ttfamily \label{class_nette_1_1_schema_1_1_processor_a6517c1f22ba88f0c281417b06b2e823c} 
+array \$on\+New\+Context = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nette/schema/src/\+Schema/\mbox{\hyperlink{nette_2schema_2src_2_schema_2_processor_8php}{Processor.\+php}}\end{DoxyCompactItemize}

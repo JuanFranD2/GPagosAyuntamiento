@@ -1,0 +1,41 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/globals Directory Reference}
+\hypertarget{dir_e57b3c08e19eb3688be354ef12494173}{}\label{dir_e57b3c08e19eb3688be354ef12494173}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/globals Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/globals Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md3197}{}\doxysubsection{\texorpdfstring{globals \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/globals.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/globals.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/globals}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/globals}})}{globals \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/globals.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/globals.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/globals}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/globals}})}}\label{readme.md_autotoc_md3197}
+\begin{quote}
+Global identifiers from different Java\+Script environments \end{quote}
+
+
+Extracted from \href{https://github.com/jshint/jshint/blob/3a8efa979dbb157bfb5c10b5826603a55a33b9ad/src/vars.js}{\texttt{JSHint}} and \href{https://github.com/eslint/eslint/blob/b648406218f8a2d7302b98f5565e23199f44eb31/conf/environments.json}{\texttt{ESLint}} and merged.
+
+It\textquotesingle{}s just a \href{globals.json}{\texttt{JSON file}}, so use it in whatever environment you like.
+
+{\bfseries{This module \href{https://github.com/sindresorhus/globals/issues/82}{\texttt{no longer accepts}} new environments. If you need it for ESLint, just \href{http://eslint.org/docs/developer-guide/working-with-plugins\#environments-in-plugins}{\texttt{create a plugin}}.}}\hypertarget{readme.md_autotoc_md3198}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md3198}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ globals}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md3199}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md3199}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ globals\ =\ require('globals');}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(globals.browser);}
+\DoxyCodeLine{/*}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ addEventListener:\ false,}
+\DoxyCodeLine{\ \ \ \ applicationCache:\ false,}
+\DoxyCodeLine{\ \ \ \ ArrayBuffer:\ false,}
+\DoxyCodeLine{\ \ \ \ atob:\ false,}
+\DoxyCodeLine{\ \ \ \ ...}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{*/}
+
+\end{DoxyCode}
+
+
+Each global is given a value of {\ttfamily true} or {\ttfamily false}. A value of {\ttfamily true} indicates that the variable may be overwritten. A value of {\ttfamily false} indicates that the variable should be considered read-\/only. This information is used by static analysis tools to flag incorrect behavior. We assume all variables should be {\ttfamily false} unless we hear otherwise.\hypertarget{readme.md_autotoc_md3200}{}\doxysubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md3200}
+MIT © \href{https://sindresorhus.com}{\texttt{Sindre Sorhus}} 

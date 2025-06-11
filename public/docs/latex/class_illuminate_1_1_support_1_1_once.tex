@@ -1,0 +1,135 @@
+\doxysection{Once Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_once}{}\label{class_illuminate_1_1_support_1_1_once}\index{Once@{Once}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_once_a7d4e2d3cd11c6569b7a4b1028c01f490}{value}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_onceable}{Onceable}} \$onceable)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_once_a0deb004950b8dc4f51836316fd19c111}{instance}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_once_a4b6ff1261b1b5962538caaa8668165e7}{enable}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_once_a5471c4c9c443d5a497b7383a6fc63fcc}{disable}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_once_a13c506fa80a40d0a161b9ee91a5db11c}{flush}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_once_a62d00109d65c07277a4f54ab4456cf92}{\+\_\+\+\_\+construct}} (protected Weak\+Map \$values)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static self \mbox{\hyperlink{class_illuminate_1_1_support_1_1_once_a16280fce2f59c8440d5e84908fc17aca}{\$instance}} = null
+\item 
+static bool \mbox{\hyperlink{class_illuminate_1_1_support_1_1_once_a274943df191ed1b8d6af979916af555d}{\$enabled}} = true
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_a62d00109d65c07277a4f54ab4456cf92}\index{Once@{Once}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Once@{Once}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_once_a62d00109d65c07277a4f54ab4456cf92} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected Weak\+Map}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new once instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Weak\+Map$<$object, array$<$string, mixed$>$$>$ \$values 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_a5471c4c9c443d5a497b7383a6fc63fcc}\index{Once@{Once}!disable@{disable}}
+\index{disable@{disable}!Once@{Once}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_once_a5471c4c9c443d5a497b7383a6fc63fcc} 
+disable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Disable the once instance.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_a4b6ff1261b1b5962538caaa8668165e7}\index{Once@{Once}!enable@{enable}}
+\index{enable@{enable}!Once@{Once}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_once_a4b6ff1261b1b5962538caaa8668165e7} 
+enable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Re-\/enable the once instance if it was disabled.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_a13c506fa80a40d0a161b9ee91a5db11c}\index{Once@{Once}!flush@{flush}}
+\index{flush@{flush}!Once@{Once}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_once_a13c506fa80a40d0a161b9ee91a5db11c} 
+flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Flush the once instance.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_a0deb004950b8dc4f51836316fd19c111}\index{Once@{Once}!instance@{instance}}
+\index{instance@{instance}!Once@{Once}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_once_a0deb004950b8dc4f51836316fd19c111} 
+instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new once instance.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_a7d4e2d3cd11c6569b7a4b1028c01f490}\index{Once@{Once}!value@{value}}
+\index{value@{value}!Once@{Once}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_once_a7d4e2d3cd11c6569b7a4b1028c01f490} 
+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_onceable}{Onceable}}}]{\$onceable}{}\end{DoxyParamCaption})}
+
+Get the value of the given onceable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Onceable & {\em \$onceable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_once_a274943df191ed1b8d6af979916af555d}\index{Once@{Once}!\$enabled@{\$enabled}}
+\index{\$enabled@{\$enabled}!Once@{Once}}
+\doxysubsubsection{\texorpdfstring{\$enabled}{\$enabled}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_once_a274943df191ed1b8d6af979916af555d} 
+bool \$enabled = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_support_1_1_once_a16280fce2f59c8440d5e84908fc17aca}\index{Once@{Once}!\$instance@{\$instance}}
+\index{\$instance@{\$instance}!Once@{Once}}
+\doxysubsubsection{\texorpdfstring{\$instance}{\$instance}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_once_a16280fce2f59c8440d5e84908fc17aca} 
+self \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_once_a0deb004950b8dc4f51836316fd19c111}{instance}} = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Support/\mbox{\hyperlink{_once_8php}{Once.\+php}}\end{DoxyCompactItemize}

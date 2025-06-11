@@ -1,0 +1,4 @@
+var _add_annotated_classes_to_cache_pass_8php =
+[
+    [ "AddAnnotatedClassesToCachePass", "class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_add_annotated_classes_to_cache_pass.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_add_annotated_classes_to_cache_pass" ]
+];

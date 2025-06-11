@@ -1,0 +1,473 @@
+\doxysection{Eloquent\+Data\+Table Class Reference}
+\hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table}{}\label{class_yajra_1_1_data_tables_1_1_eloquent_data_table}\index{EloquentDataTable@{EloquentDataTable}}
+Inheritance diagram for Eloquent\+Data\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_yajra_1_1_data_tables_1_1_eloquent_data_table}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_af9f0337824525ea84aaff13277e9da8e}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}\texorpdfstring{$\vert$}{|}Eloquent\+Builder \$model)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a1775931c320087fb268ca30bc5bc2abb}{add\+Columns}} (array \$names, \$\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a35b6d752cc0eb78d05a39bcb24ceb238}{order}}=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table}{Query\+Data\+Table}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a024a0dc681524bf67656cdce003522b1}{\+\_\+\+\_\+construct}} (protected Query\+Builder \$query)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a18b8231cd590e579e96a9a2f33b19b6f}{make}} (bool \$m\+Data\+Support=true)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a81532ad36ede4bfc6cd5e69a321f3df4}{results}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a5f6e2991ff5a83e1315dd9d0fab2285f}{prepare\+Query}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a2cce160dc45c0d97a2a36ca44f04cea9}{prepare\+Count\+Query}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a27568e9a7b4d906cb8f879cf0a89d392}{keep\+Select\+Bindings}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_abcd912630fcfe95fac53b99cb51105e1}{column\+Search}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a1a5801c3b7620564ec1c5bf8c3b91829}{has\+Filter\+Column}} (string \$column\+Name)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a55f162785567258fe5138af282e588c2}{get\+Query}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aaa2088293e7993437dfd8fae13725a73}{filter\+Column}} (\$column, callable \$callback)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_adb0d2d7ff64e6ff9ef8972db00673ee0}{order\+Columns}} (array \$columns, \$sql, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a813a8eab9a93abe22d77e3396394d575}{order\+Column}} (\$column, \$sql, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a01f3278e11f873789cc16e14329ee35b}{order\+By\+Nulls\+Last}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ac3e1c547bae96d4977f6acfeb29b475c}{paging}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a8e4413084d788dd4b1f8a44a18f4da48}{limit}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a5c6750187081e42e4e4f565722bd9403}{add\+Column}} (\$name, \$content, \$\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a35b6d752cc0eb78d05a39bcb24ceb238}{order}}=false)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a6b35966372b15d3d687d709a45457626}{get\+Filtered\+Query}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a7beefb56672921577a09db9150b72113}{ignore\+Selects\+In\+Count\+Query}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a17349944f47d5c16015b211648b397e3}{ordering}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a78bc2bc869c8453f66ecdfec9094de50}{enable\+Scout\+Search}} (string \$model, int \$max\+\_\+hits=1000)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a1defc584c289dc293227fe9b320713be}{scout\+Filter}} (callable \$callback)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract}{Data\+Table\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a560f86826d4cbd9dbc1e97d7b7766a14}{format\+Column}} (\$columns, \$formatter)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_aa18ed61744094fd4eb9bed87fcd9a3c0}{add\+Index\+Column}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a1f52764903624df3e79e8da3c6c6d2ae}{ignore\+Getters}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ae0fdf448c9afbab80fd32541ba5b39e2}{edit\+Column}} (\$name, \$content)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a63117cee929e9c09da14add343efff16}{remove\+Column}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a492b5eae140ec367d924c4e0addc33db}{only}} (array \$columns=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a1994ccc416140bbb5b1ecb4fdfaf0c56}{escape\+Columns}} (\$columns=\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_adb51baf1844fdb13e1846f7b1101beef}{make\+Hidden}} (array \$attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a5c90fa0b43c717dfc33aa0354ceaf20e}{make\+Visible}} (array \$attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ab45dc9b454f0df7f27d0b70500e83df8}{set\+Row\+Class}} (\$content)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a694aff3385c65f1a1b04562f6462e846}{set\+Row\+Id}} (\$content)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a072624a097b734c551e6c8ad054d5c5c}{set\+Row\+Data}} (array \$data)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a13dd89f0714466ddf0e88253e18181b3}{add\+Row\+Data}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a0c1e50e037a6e2a48362bb9a48fcf62d}{set\+Row\+Attr}} (array \$data)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a41752d3e1582d27d05eb928a61a0a156}{add\+Row\+Attr}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a333d30e1a2ef45b4149e364edc6e3645}{with}} (mixed \$key, mixed \$value=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ac440ff8052b7ee2104deb532482a4710}{with\+Query}} (string \$key, callable \$value)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a35b6d752cc0eb78d05a39bcb24ceb238}{order}} (callable \$closure)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a3ea2096a60a2c753806a336ed7b05640}{blacklist}} (array \$blacklist)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a90f0953485a3ee6777df7ef1fd731ed2}{whitelist}} (array\texorpdfstring{$\vert$}{|}string \$whitelist=\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a94472a13d6e523590acb2813ec99f221}{smart}} (bool \$state=true)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a265d90082c1c2e20faa83f2f01f7eb38}{starts\+With\+Search}} (bool \$state=true)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a5c60474a98eaf11ef6c840fb191e89ca}{set\+Multi\+Term}} (bool \$multi\+Term=true)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a5b46f6679f0c641dff23bff0a09e22fe}{set\+Total\+Records}} (int \$total)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a3de0939d1f40f4cbe3772b1198fac652}{skip\+Total\+Records}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_af30f46316065a651cc69f2422881697c}{set\+Filtered\+Records}} (int \$total)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ad10f93e54d84a1b14057fa7df7764e49}{skip\+Paging}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a9a9a131599fdde49650928405f6d952a}{skip\+Auto\+Filter}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a00b80ec27ae4d76cbb11acde52895ba2}{push\+To\+Blacklist}} (\$column)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a5fd43d1edf3046a1a00f1a6fecb2c3e1}{filter}} (callable \$callback, bool \$\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_acbccac2e454748dd44f1c1f4a562c7e4}{global\+Search}}=false)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a2155a600ee9969f88dc2881d6171e73b}{to\+Json}} (\$options=0)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ae77a22fd2e4a99d1d46fa55588b0a790}{search\+Pane}} (\$column, mixed \$options, ?callable \$builder=null)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a658defb34762c8f40085aec87e16ba1a}{to\+Array}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_acc537352437bffcca1b0796461cc0b91}{total\+Count}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a4b8e336ba1577a3390f251a3aa2b059e}{edit\+Only\+Selected\+Columns}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_aeb101868e338fd62871ddf8b930e6b85}{filtering}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a2321df4f2f7d188b92b96fe63dc71a90}{get\+Logger}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a80ec5ad53b685504efbf3395c8663ae0}{set\+Logger}} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a9ca84f12f0b5cd45316204dff482a073}{can\+Create}} (\$source)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract}{Data\+Table\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a749f917cd254d2fef883666148f50982}{can\+Create}} (mixed \$source)
+\item 
+static \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a44b2d5502f595aa1feb156e72778f6d8}{create}} (mixed \$source)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_aef3fe1db307ad1138ee3de23eaf70039}{get\+Primary\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_ac148e62b11b1296b83119c0effe8d207}{compile\+Query\+Search}} (\$query, string \$column, string \$keyword, string \$boolean=\textquotesingle{}or\textquotesingle{}, bool \$nested=false)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_afa0f28bfe454dda38d0e3b0e1ec3be99}{is\+Not\+Eager\+Loaded}} (\$relation)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a9d31e1d6fded90d021620f83dbbd52cd}{is\+Morph\+Relation}} (\$relation)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a8ec86be4693ff38978b8484579466784}{resolve\+Relation\+Column}} (string \$column)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_af376b1d30f12b7c657c1ae947cb61f43}{join\+Eager\+Loaded\+Column}} (\$relation, \$relation\+Column)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_eloquent_data_table_afd73c0816c59d99395a2a620826c372d}{perform\+Join}} (\$table, \$foreign, \$other, \$type=\textquotesingle{}left\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table}{Query\+Data\+Table}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aa23c959d08decff375ed041df281630e}{is\+Complex\+Query}} (\$query)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a2a7ce7bd3cc369a226928a0339a4a5c1}{wrap}} (string \$column)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aadd9ce756f97b088e7b1aaf16557aec5}{filter\+Records}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a6eb344e5449c28165ce50da32fb064cf}{get\+Column\+Search\+Keyword}} (int \$i, bool \$raw=false)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a4a59d58fc62e7276c18556adf4b84118}{get\+Column\+Name\+By\+Index}} (int \$index)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a6bdaeb05115ed8c28f6463057ed8577e}{get\+Base\+Query\+Builder}} (\$instance=null)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ae74b5947a4c2bd6944e4313a938d8006}{compile\+Column\+Search}} (int \$i, string \$column, string \$keyword)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aaffb2c154358342d4fd7424962beca6d}{regex\+Column\+Search}} (string \$column, string \$keyword)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_abd4312d8a7cae9554f6a9788ee5015ba}{cast\+Column}} (string \$column)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aa6cf7d8d50dc375204ceaa39bbd94365}{compile\+Query\+Search}} (\$query, string \$column, string \$keyword, string \$boolean=\textquotesingle{}or\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ac22eeb24cca56a31602cd7651c41044d}{add\+Table\+Prefix}} (\$query, string \$column)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a1b9a85ff95c3bebb246f6693954be7fb}{prepare\+Keyword}} (string \$keyword)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ab5eafc670b503d8fffab1959cba82a4f}{resolve\+Callback\+Parameter}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_acfda9d67a37260363aee8f4eacda0641}{default\+Ordering}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ab099c60c60c36a192b0337dd67e5ae47}{has\+Order\+Column}} (string \$column)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a41b54e7811ff2af98c0b6d695db7362c}{apply\+Order\+Column}} (string \$column, array \$orderable)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_acbccac2e454748dd44f1c1f4a562c7e4}{global\+Search}} (string \$keyword)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aef16c4251fe228ca4b12eeeff6fe6095}{smart\+Global\+Search}} (\$keyword)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ac451beaa251351da38d492e20aaee5b9}{show\+Debugger}} (array \$output)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a266104b7509044e996033f01ae0be1c6}{attach\+Appends}} (array \$data)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a7d44fad8403eb2d871d8866b3dc4f345}{apply\+Scout\+Search}} (string \$search\+\_\+keyword)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aa3533cbfb55a31786765a2c65ebdbc50}{apply\+Fixed\+Ordering\+To\+Query}} (string \$key\+Name, array \$ordered\+Keys)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract}{Data\+Table\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a4f33d6466670cf489060df6940417999}{get\+Columns\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a4f480203c9d530c340ab93aa17ee7426}{is\+Blacklisted}} (\$column)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a64004d4afa60288e853486529b74798d}{search\+Panes\+Search}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a81aac445430b21a65ada330f40be175b}{filtered\+Count}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a6253a95db9a93efe03a150091feeb37c}{paginate}} ()
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a7adcc73d656b6ec260dd6827f9c9c6f7}{transform}} (\$\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a81532ad36ede4bfc6cd5e69a321f3df4}{results}}, \$processed)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ac2e94d368ac493e3ab27b40962ddc6c9}{process\+Results}} (\$\mbox{\hyperlink{interface_yajra_1_1_data_tables_1_1_contracts_1_1_data_table_a81532ad36ede4bfc6cd5e69a321f3df4}{results}}, \$object=false)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a8d38b4c7ba7f55ecabcb35147b73baae}{render}} (array \$data)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a974be12d17883b6a3f9c2273db1dc2e2}{setup\+Keyword}} (string \$value)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a2b9498af4416ae603a63835dfd78381b}{get\+Column\+Name}} (int \$index, bool \$wants\+Alias=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract}{Data\+Table\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+Utilities \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_utilities_1_1_request}{Request}} \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a9ab19229255deb0f2cda57d7565b2783}{\$request}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table}{Query\+Data\+Table}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a26c702e5adbcd04295ed25512292262a}{\$nulls\+Last}} = false
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aafbf45ec16d5d7f999ac3c2d29e15ee4}{\$prepared}} = false
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ac8466e329ec1cf875ce57d94b9c54348}{\$limit\+Callback}} = null
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a591b3888288e4b3289ecb9e2a2ff43fe}{\$keep\+Select\+Bindings}} = false
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a477b80921771de393d731127fef1224c}{\$ignore\+Select\+In\+Count\+Query}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aacd2cab0e85d6be53ba646f7c96e1805}{\$scout\+Model}} = null
+\item 
+int \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a99bd5352b33dbc0d5b54a767d77e7b8d}{\$scout\+Max\+Hits}} = 1000
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_ae62b8998c95c7df3f539c5c729348107}{\$scout\+Filter\+Callback}} = null
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_aa01bca8c56e6508d1ba1cad579585648}{\$scout\+Searched}} = false
+\item 
+string \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a1eacd5c5e597137f5572d0a8d0c7a472}{\$scout\+Index}}
+\item 
+string \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a4def2ac3177c5ed59dff3c50d21d0f2c}{\$scout\+Key}}
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a6b5593f3aa29b74a4630b29c22d6d8e4}{\$disable\+User\+Ordering}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract}{Data\+Table\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ad0d21473a15cfd8c4df0d0eb013c9546}{\$logger}} = null
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_afa53e489bc9150c842e8f8b085782281}{\$columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a973c00a88904ec2e085b2fd409e71623}{\$column\+Def}}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a7e238c047937c3a144ed1b80a4bdab01}{\$extra\+Columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_acc3c599f96860a4d6a2bb5f7c89c33b4}{\$total\+Records}} = null
+\item 
+int \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a747c8314c3b26cf2d2fc49da656f59f1}{\$filtered\+Records}} = null
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ad3f0ccd09c91e45b2ee626710a110305}{\$skip\+Total\+Records}} = false
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a171ace0a7d32bf059664739c9863da5f}{\$auto\+Filter}} = true
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ad11725d9e566dc54ec2810fd343fe39c}{\$filter\+Callback}} = null
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a8fa15e973f9b551f3ce49bb94b844dd7}{\$templates}}
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a52dd47c674fc85a5a1a198183729f418}{\$order\+Callback}} = null
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_aaa0807abb98e5137d5d777ab4e5c5ef0}{\$skip\+Paging}} = false
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a2f891c3ddc371402c455a71fbe376e29}{\$appends}} = \mbox{[}$\,$\mbox{]}
+\item 
+Utilities \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_utilities_1_1_config}{Config}} \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a91447fc0214d03e2aed7184aa8622a64}{\$config}}
+\item 
+mixed \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a9156d0645476f312e1b99cd958a69604}{\$serializer}}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a9e321c37ad22042388a72bb8d9fca620}{\$search\+Panes}} = \mbox{[}$\,$\mbox{]}
+\item 
+mixed \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_a9823e3ff506e7f7d82cbb7c04ae2a261}{\$transformer}}
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_ae5d6a7039518584ba3d242b03fb5e36f}{\$edit\+Only\+Selected\+Columns}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_af9f0337824525ea84aaff13277e9da8e}\index{EloquentDataTable@{EloquentDataTable}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_af9f0337824525ea84aaff13277e9da8e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}\texorpdfstring{$\vert$}{|}Eloquent\+Builder}]{\$model}{}\end{DoxyParamCaption})}
+
+Eloquent\+Engine constructor. 
+
+\label{doc-func-members}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a1775931c320087fb268ca30bc5bc2abb}\index{EloquentDataTable@{EloquentDataTable}!addColumns@{addColumns}}
+\index{addColumns@{addColumns}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{addColumns()}{addColumns()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a1775931c320087fb268ca30bc5bc2abb} 
+add\+Columns (\begin{DoxyParamCaption}\item[{array}]{\$names}{, }\item[{}]{\$order}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Add columns in collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool | int & {\em \$order} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a9ca84f12f0b5cd45316204dff482a073}\index{EloquentDataTable@{EloquentDataTable}!canCreate@{canCreate}}
+\index{canCreate@{canCreate}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{canCreate()}{canCreate()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a9ca84f12f0b5cd45316204dff482a073} 
+can\+Create (\begin{DoxyParamCaption}\item[{}]{\$source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Can the Data\+Table engine be created with these parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$source} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a9ca84f12f0b5cd45316204dff482a073}{Query\+Data\+Table}}.
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_ac148e62b11b1296b83119c0effe8d207}\index{EloquentDataTable@{EloquentDataTable}!compileQuerySearch@{compileQuerySearch}}
+\index{compileQuerySearch@{compileQuerySearch}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{compileQuerySearch()}{compileQuerySearch()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_ac148e62b11b1296b83119c0effe8d207} 
+compile\+Query\+Search (\begin{DoxyParamCaption}\item[{}]{\$query}{, }\item[{string}]{\$column}{, }\item[{string}]{\$keyword}{, }\item[{string}]{\$boolean}{ = {\ttfamily \textquotesingle{}or\textquotesingle{}}, }\item[{bool}]{\$nested}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_aef3fe1db307ad1138ee3de23eaf70039}\index{EloquentDataTable@{EloquentDataTable}!getPrimaryKeyName@{getPrimaryKeyName}}
+\index{getPrimaryKeyName@{getPrimaryKeyName}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{getPrimaryKeyName()}{getPrimaryKeyName()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_aef3fe1db307ad1138ee3de23eaf70039} 
+get\+Primary\+Key\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+If column name could not be resolved then use primary key. 
+
+Reimplemented from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_data_table_abstract_aef3fe1db307ad1138ee3de23eaf70039}{Data\+Table\+Abstract}}.
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a9d31e1d6fded90d021620f83dbbd52cd}\index{EloquentDataTable@{EloquentDataTable}!isMorphRelation@{isMorphRelation}}
+\index{isMorphRelation@{isMorphRelation}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{isMorphRelation()}{isMorphRelation()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a9d31e1d6fded90d021620f83dbbd52cd} 
+is\+Morph\+Relation (\begin{DoxyParamCaption}\item[{}]{\$relation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if a relation is a morphed one or not.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$relation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_afa0f28bfe454dda38d0e3b0e1ec3be99}\index{EloquentDataTable@{EloquentDataTable}!isNotEagerLoaded@{isNotEagerLoaded}}
+\index{isNotEagerLoaded@{isNotEagerLoaded}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{isNotEagerLoaded()}{isNotEagerLoaded()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_afa0f28bfe454dda38d0e3b0e1ec3be99} 
+is\+Not\+Eager\+Loaded (\begin{DoxyParamCaption}\item[{}]{\$relation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if a relation was not used on eager loading.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$relation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_af376b1d30f12b7c657c1ae947cb61f43}\index{EloquentDataTable@{EloquentDataTable}!joinEagerLoadedColumn@{joinEagerLoadedColumn}}
+\index{joinEagerLoadedColumn@{joinEagerLoadedColumn}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{joinEagerLoadedColumn()}{joinEagerLoadedColumn()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_af376b1d30f12b7c657c1ae947cb61f43} 
+join\+Eager\+Loaded\+Column (\begin{DoxyParamCaption}\item[{}]{\$relation}{, }\item[{}]{\$relation\+Column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Join eager loaded relation and get the related column name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$relation} & \\
+\hline
+string & {\em \$relation\+Column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{namespace_yajra}{Yajra}\textbackslash{}\+Data\+Tables\textbackslash{}\+Exceptions\textbackslash{}\+Exception \Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_afd73c0816c59d99395a2a620826c372d}\index{EloquentDataTable@{EloquentDataTable}!performJoin@{performJoin}}
+\index{performJoin@{performJoin}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{performJoin()}{performJoin()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_afd73c0816c59d99395a2a620826c372d} 
+perform\+Join (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$foreign}{, }\item[{}]{\$other}{, }\item[{}]{\$type}{ = {\ttfamily \textquotesingle{}left\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Perform join query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$foreign} & \\
+\hline
+string & {\em \$other} & \\
+\hline
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a8ec86be4693ff38978b8484579466784}\index{EloquentDataTable@{EloquentDataTable}!resolveRelationColumn@{resolveRelationColumn}}
+\index{resolveRelationColumn@{resolveRelationColumn}!EloquentDataTable@{EloquentDataTable}}
+\doxysubsubsection{\texorpdfstring{resolveRelationColumn()}{resolveRelationColumn()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_eloquent_data_table_a8ec86be4693ff38978b8484579466784} 
+resolve\+Relation\+Column (\begin{DoxyParamCaption}\item[{string}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the proper column name be used.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{namespace_yajra}{Yajra}\textbackslash{}\+Data\+Tables\textbackslash{}\+Exceptions\textbackslash{}\+Exception 
+
+Reimplemented from \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_query_data_table_a8ec86be4693ff38978b8484579466784}{Query\+Data\+Table}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/yajra/laravel-\/datatables-\/oracle/src/\mbox{\hyperlink{_eloquent_data_table_8php}{Eloquent\+Data\+Table.\+php}}\end{DoxyCompactItemize}

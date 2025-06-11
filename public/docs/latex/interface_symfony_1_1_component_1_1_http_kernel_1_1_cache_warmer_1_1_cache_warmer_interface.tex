@@ -1,0 +1,50 @@
+\doxysection{Cache\+Warmer\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_cache_warmer_interface}{}\label{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_cache_warmer_interface}\index{CacheWarmerInterface@{CacheWarmerInterface}}
+Inheritance diagram for Cache\+Warmer\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_cache_warmer_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_cache_warmer_interface_aa771d9e74542caa5d10f197d706fdecc}{is\+Optional}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface}{Warmable\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface_a71140687f6f45db8464c326370d0fea7}{warm\+Up}} (string \$cache\+Dir, ?string \$build\+Dir=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for classes able to warm up the cache.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_cache_warmer_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_cache_warmer_interface_aa771d9e74542caa5d10f197d706fdecc}\index{CacheWarmerInterface@{CacheWarmerInterface}!isOptional@{isOptional}}
+\index{isOptional@{isOptional}!CacheWarmerInterface@{CacheWarmerInterface}}
+\doxysubsubsection{\texorpdfstring{isOptional()}{isOptional()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_cache_warmer_interface_aa771d9e74542caa5d10f197d706fdecc} 
+is\+Optional (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks whether this warmer is optional or not.
+
+Optional warmers can be ignored on certain conditions.
+
+A warmer should return true if the cache can be generated incrementally and on-\/demand. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_cache_warmer_aggregate_aa771d9e74542caa5d10f197d706fdecc}{Cache\+Warmer\+Aggregate}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Cache\+Warmer/\mbox{\hyperlink{_cache_warmer_interface_8php}{Cache\+Warmer\+Interface.\+php}}\end{DoxyCompactItemize}

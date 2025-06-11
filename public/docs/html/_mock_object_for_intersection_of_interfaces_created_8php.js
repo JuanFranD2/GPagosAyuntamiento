@@ -1,0 +1,4 @@
+var _mock_object_for_intersection_of_interfaces_created_8php =
+[
+    [ "MockObjectForIntersectionOfInterfacesCreated", "class_p_h_p_unit_1_1_event_1_1_test_1_1_mock_object_for_intersection_of_interfaces_created.html", "class_p_h_p_unit_1_1_event_1_1_test_1_1_mock_object_for_intersection_of_interfaces_created" ]
+];

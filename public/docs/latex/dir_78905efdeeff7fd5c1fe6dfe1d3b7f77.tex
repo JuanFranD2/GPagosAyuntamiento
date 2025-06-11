@@ -1,0 +1,135 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/brianium/paratest Directory Reference}
+\hypertarget{dir_78905efdeeff7fd5c1fe6dfe1d3b7f77}{}\label{dir_78905efdeeff7fd5c1fe6dfe1d3b7f77}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/brianium/paratest Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/brianium/paratest Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_acad1bb53a77c9e1fec2f5d658b81235}{bin}}
+\item 
+directory \mbox{\hyperlink{dir_549b8b3db6321b01dd4410e5e3d49934}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\href{https://packagist.org/packages/brianium/paratest}{\texttt{}} \href{https://packagist.org/packages/brianium/paratest}{\texttt{}} \href{https://github.com/paratestphp/paratest/actions}{\texttt{}} \href{https://dashboard.stryker-mutator.io/reports/github.com/paratestphp/paratest/7.x}{\texttt{}}
+
+The objective of \doxylink{namespace_para_test}{Para\+Test} is to support parallel testing in \doxylink{namespace_p_h_p_unit}{PHPUnit}. Provided you have well-\/written \doxylink{namespace_p_h_p_unit}{PHPUnit} tests, you can drop {\ttfamily paratest} in your project and start using it with no additional bootstrap or configurations!
+
+Benefits\+:
+
+
+\begin{DoxyItemize}
+\item Zero configuration. After the installation, run with {\ttfamily vendor/bin/paratest} to parallelize by Test\+Case or {\ttfamily vendor/bin/paratest -\/-\/functional} to parallelize by Test. That\textquotesingle{}s it!
+\item Code Coverage report combining. Run your tests in N parallel processes and all the code coverage output will be combined into one report.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md8685}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md8685}
+To install with composer run the following command\+: \begin{DoxyVerb}composer require --dev brianium/paratest
+\end{DoxyVerb}
+\hypertarget{README.md_autotoc_md8686}{}\doxysubsection{\texorpdfstring{Versions}{Versions}}\label{README.md_autotoc_md8686}
+Only the latest version of \doxylink{namespace_p_h_p_unit}{PHPUnit} is supported, and thus only the latest version of \doxylink{namespace_para_test}{Para\+Test} is actively maintained.
+
+This is because of the following reasons\+:
+
+
+\begin{DoxyEnumerate}
+\item To reduce bugs, code duplication and incompatibilities with \doxylink{namespace_p_h_p_unit}{PHPUnit}, from version 5 \doxylink{namespace_para_test}{Para\+Test} heavily relies on \doxylink{namespace_p_h_p_unit}{PHPUnit} {\ttfamily @internal} classes
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item The fast pace both PHP and \doxylink{namespace_p_h_p_unit}{PHPUnit} have taken recently adds too much maintenance burden, which we can only afford for the latest versions to stay up-\/to-\/date
+\end{DoxyEnumerate}\hypertarget{README.md_autotoc_md8687}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md8687}
+After installation, the binary can be found at {\ttfamily vendor/bin/paratest}. Run it with {\ttfamily -\/-\/help} option to see a complete list of the available options.\hypertarget{README.md_autotoc_md8688}{}\doxysubsubsection{\texorpdfstring{Test token}{Test token}}\label{README.md_autotoc_md8688}
+The {\ttfamily TEST\+\_\+\+TOKEN} environment variable is guaranteed to have a value that is different from every other currently running test. This is useful to e.\+g. use a different database for each test\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (getenv(\textcolor{stringliteral}{'TEST\_TOKEN'})\ !==\ \textcolor{keyword}{false})\ \{\ \ \textcolor{comment}{//\ Using\ ParaTest}}
+\DoxyCodeLine{\ \ \ \ \$dbname\ =\ \textcolor{stringliteral}{'testdb\_'}\ .\ getenv(\textcolor{stringliteral}{'TEST\_TOKEN'});}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \$dbname\ =\ \textcolor{stringliteral}{'testdb'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+A {\ttfamily UNIQUE\+\_\+\+TEST\+\_\+\+TOKEN} environment variable is also available and guaranteed to have a value that is unique both per run and per process.\hypertarget{README.md_autotoc_md8689}{}\doxysubsubsection{\texorpdfstring{Code coverage}{Code coverage}}\label{README.md_autotoc_md8689}
+The cache is always warmed up by \doxylink{namespace_para_test}{Para\+Test} before executing the test suite.\hypertarget{README.md_autotoc_md8690}{}\doxysubsubsubsection{\texorpdfstring{PCOV}{PCOV}}\label{README.md_autotoc_md8690}
+If you have installed {\ttfamily pcov} but need to enable it only while running tests, you have to pass thru the needed PHP binary option\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ -\/d\ pcov.enabled=1\ vendor/bin/paratest\ -\/-\/passthru-\/php="{}'-\/d'\ 'pcov.enabled=1'"{}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8691}{}\doxysubsubsubsection{\texorpdfstring{x\+Debug}{x\+Debug}}\label{README.md_autotoc_md8691}
+If you have {\ttfamily x\+Debug} installed, activating it by the environment variable is enough to have it running even in the subprocesses\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{XDEBUG\_MODE=coverage\ vendor/bin/paratest}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8692}{}\doxysubsubsection{\texorpdfstring{Initial setup for all tests}{Initial setup for all tests}}\label{README.md_autotoc_md8692}
+Because \doxylink{namespace_para_test}{Para\+Test} runs multiple processes in parallel, each with their own instance of the PHP interpreter, techniques used to perform an initialization step exactly once for each test work different from \doxylink{namespace_p_h_p_unit}{PHPUnit}. The following pattern will not work as expected -\/ run the initialization exactly once -\/ and instead run the initialization once per process\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \$initialized\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_pest_1_1_concerns_afc4f41febe5a279fd92e72b1df201ec7}{setUp}}():\ void}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\ self::\$initialized)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ self::initialize();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ self::\$initialized\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+This is because static variables persist during the execution of a single process. In parallel testing each process has a separate instance of {\ttfamily \$initialized}. You can use the following pattern to ensure your initialization runs exactly once for the entire test invocation\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \$initialized\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_pest_1_1_concerns_afc4f41febe5a279fd92e72b1df201ec7}{setUp}}():\ void}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\ self::\$initialized)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ We\ utilize\ the\ filesystem\ as\ shared\ mutable\ state\ to\ coordinate\ between\ processes}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ touch(\textcolor{stringliteral}{'/tmp/test-\/initialization-\/lock-\/file'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$lockFile\ =\ fopen(\textcolor{stringliteral}{'/tmp/test-\/initialization-\/lock-\/file'},\ \textcolor{charliteral}{'r'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Attempt\ to\ get\ an\ exclusive\ lock\ -\/\ first\ process\ wins}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (flock(\$lockFile,\ LOCK\_EX\ |\ LOCK\_NB))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Since\ we\ are\ the\ single\ process\ that\ has\ an\ exclusive\ lock,\ we\ run\ the\ initialization}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self::initialize();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ no\ exclusive\ lock\ is\ available,\ block\ until\ the\ first\ process\ is\ done\ with\ initialization}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ flock(\$lockFile,\ LOCK\_SH);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::\$initialized\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8693}{}\doxysubsubsection{\texorpdfstring{Troubleshooting}{Troubleshooting}}\label{README.md_autotoc_md8693}
+If you run into problems with {\ttfamily paratest}, try to get more information about the issue by enabling debug output via {\ttfamily -\/-\/verbose -\/-\/debug}.
+
+When a sub-\/process fails, the originating command is given in the output and can then be copy-\/pasted in the terminal to be run and debugged. All internal commands run with {\ttfamily -\/-\/printer \mbox{[}...\mbox{]}\textbackslash{}Null\+Phpunit\+Printer} which silence the original \doxylink{namespace_p_h_p_unit}{PHPUnit} output\+: during a debugging run remove that option to restore the output and see what \doxylink{namespace_p_h_p_unit}{PHPUnit} is doing.\hypertarget{README.md_autotoc_md8694}{}\doxysubsubsection{\texorpdfstring{Caveats}{Caveats}}\label{README.md_autotoc_md8694}
+
+\begin{DoxyEnumerate}
+\item Constants, static methods, static variables and everything exposed by test classes consumed by other test classes (including Reflection) are not supported. This is due to a limitation of the current implementation of {\ttfamily Wrapper\+Runner} and how \doxylink{namespace_p_h_p_unit}{PHPUnit} searches for classes. The fix is to put shared code into classes which are not tests {\itshape themselves}.
+\end{DoxyEnumerate}\hypertarget{README.md_autotoc_md8695}{}\doxysubsubsection{\texorpdfstring{Integration with PHPStorm}{Integration with PHPStorm}}\label{README.md_autotoc_md8695}
+\doxylink{namespace_para_test}{Para\+Test} provides a dedicated binary to work with PHPStorm; follow these steps to have \doxylink{namespace_para_test}{Para\+Test} working within it\+:
+
+
+\begin{DoxyEnumerate}
+\item Be sure you have \doxylink{namespace_p_h_p_unit}{PHPUnit} already configured in PHPStorm\+: \href{https://www.jetbrains.com/help/phpstorm/using-phpunit-framework.html\#php_test_frameworks_phpunit_integrate}{\texttt{https\+://www.\+jetbrains.\+com/help/phpstorm/using-\/phpunit-\/framework.\+html\#php\+\_\+test\+\_\+frameworks\+\_\+phpunit\+\_\+integrate}}
+\item Go to {\ttfamily Run} -\/\texorpdfstring{$>$}{>} {\ttfamily Edit configurations...}
+\item Select {\ttfamily Add new Configuration}, select the {\ttfamily \doxylink{namespace_p_h_p_unit}{PHPUnit}} type and name it {\ttfamily \doxylink{namespace_para_test}{Para\+Test}}
+\item In the {\ttfamily Command Line} -\/\texorpdfstring{$>$}{>} {\ttfamily Interpreter options} add {\ttfamily ./vendor/bin/paratest\+\_\+for\+\_\+phpstorm}
+\item Any additional \doxylink{namespace_para_test}{Para\+Test} options you want to pass to \doxylink{namespace_para_test}{Para\+Test} should go within the {\ttfamily Test runner} -\/\texorpdfstring{$>$}{>} {\ttfamily Test runner options} section
+\end{DoxyEnumerate}
+
+You should now have a {\ttfamily \doxylink{namespace_para_test}{Para\+Test}} run within your configurations list. It should natively work with the {\ttfamily Rerun failed tests} and {\ttfamily Toggle auto-\/test} buttons of the {\ttfamily Run} overlay.\hypertarget{README.md_autotoc_md8696}{}\doxysubsubsubsection{\texorpdfstring{Run with Coverage}{Run with Coverage}}\label{README.md_autotoc_md8696}
+Coverage with one of the available coverage engines must already be \href{https://www.jetbrains.com/help/phpstorm/code-coverage.html}{\texttt{configured in PHPStorm}} and working when running tests sequentially in order for the helper binary to correctly handle code coverage\hypertarget{README.md_autotoc_md8697}{}\doxysubsection{\texorpdfstring{For Contributors\+: testing Para\+Test itself}{For Contributors\+: testing Para\+Test itself}}\label{README.md_autotoc_md8697}
+Before creating a Pull \doxylink{class_request}{Request} be sure to run all the necessary checks with {\ttfamily make} command. 

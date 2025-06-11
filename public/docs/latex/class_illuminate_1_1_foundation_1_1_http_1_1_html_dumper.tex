@@ -1,0 +1,151 @@
+\doxysection{Html\+Dumper Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper}{}\label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper}\index{HtmlDumper@{HtmlDumper}}
+Inheritance diagram for Html\+Dumper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a916bec6ba050306c24dabf4dbc1810ac}{\+\_\+\+\_\+construct}} (\$base\+Path, \$compiled\+View\+Path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_ac60ba790ac963c4f5f21c2d4d6c70b9b}{dump\+With\+Source}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_data}{Data}} \$data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a5596a3c75e354b10df9556f96748e912}{register}} (\$base\+Path, \$compiled\+View\+Path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_ad12d5c26824dec6a6b9ec800cc83befe}{EXPANDED\+\_\+\+SEPARATOR}} = \textquotesingle{}class=sf-\/dump-\/expanded$>$\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a4ec948cce5ad47eb14ad220db8a5384b}{NON\+\_\+\+EXPANDED\+\_\+\+SEPARATOR}} = "{}\textbackslash{}n$<$/pre$>$$<$script$>$"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_ae9fd0a5e40da59dce16cd6c1269fab9d}{get\+Dump\+Source\+Content}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a9cd745428004768fe921475a29a7d870}{\$base\+Path}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a6e3d32b3243e7912c3e4f476def4a0c0}{\$compiled\+View\+Path}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a8bbbbbfe5c49e8e3e7cb503366b100f0}{\$dumping}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a916bec6ba050306c24dabf4dbc1810ac}\index{HtmlDumper@{HtmlDumper}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!HtmlDumper@{HtmlDumper}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a916bec6ba050306c24dabf4dbc1810ac} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$base\+Path}{, }\item[{}]{\$compiled\+View\+Path}{}\end{DoxyParamCaption})}
+
+Create a new HTML dumper instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$base\+Path} & \\
+\hline
+string & {\em \$compiled\+View\+Path} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_ac60ba790ac963c4f5f21c2d4d6c70b9b}\index{HtmlDumper@{HtmlDumper}!dumpWithSource@{dumpWithSource}}
+\index{dumpWithSource@{dumpWithSource}!HtmlDumper@{HtmlDumper}}
+\doxysubsubsection{\texorpdfstring{dumpWithSource()}{dumpWithSource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_ac60ba790ac963c4f5f21c2d4d6c70b9b} 
+dump\+With\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_data}{Data}}}]{\$data}{}\end{DoxyParamCaption})}
+
+Dump a variable with its source file / line.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Var\+Dumper\textbackslash{}\+Cloner\textbackslash{}\+Data & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_ae9fd0a5e40da59dce16cd6c1269fab9d}\index{HtmlDumper@{HtmlDumper}!getDumpSourceContent@{getDumpSourceContent}}
+\index{getDumpSourceContent@{getDumpSourceContent}!HtmlDumper@{HtmlDumper}}
+\doxysubsubsection{\texorpdfstring{getDumpSourceContent()}{getDumpSourceContent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_ae9fd0a5e40da59dce16cd6c1269fab9d} 
+get\+Dump\+Source\+Content (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the dump\textquotesingle{}s source HTML content.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a5596a3c75e354b10df9556f96748e912}\index{HtmlDumper@{HtmlDumper}!register@{register}}
+\index{register@{register}!HtmlDumper@{HtmlDumper}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a5596a3c75e354b10df9556f96748e912} 
+register (\begin{DoxyParamCaption}\item[{}]{\$base\+Path}{, }\item[{}]{\$compiled\+View\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new HTML dumper instance and register it as the default dumper.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$base\+Path} & \\
+\hline
+string & {\em \$compiled\+View\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a9cd745428004768fe921475a29a7d870}\index{HtmlDumper@{HtmlDumper}!\$basePath@{\$basePath}}
+\index{\$basePath@{\$basePath}!HtmlDumper@{HtmlDumper}}
+\doxysubsubsection{\texorpdfstring{\$basePath}{\$basePath}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a9cd745428004768fe921475a29a7d870} 
+\$base\+Path\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a6e3d32b3243e7912c3e4f476def4a0c0}\index{HtmlDumper@{HtmlDumper}!\$compiledViewPath@{\$compiledViewPath}}
+\index{\$compiledViewPath@{\$compiledViewPath}!HtmlDumper@{HtmlDumper}}
+\doxysubsubsection{\texorpdfstring{\$compiledViewPath}{\$compiledViewPath}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a6e3d32b3243e7912c3e4f476def4a0c0} 
+\$compiled\+View\+Path\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a8bbbbbfe5c49e8e3e7cb503366b100f0}\index{HtmlDumper@{HtmlDumper}!\$dumping@{\$dumping}}
+\index{\$dumping@{\$dumping}!HtmlDumper@{HtmlDumper}}
+\doxysubsubsection{\texorpdfstring{\$dumping}{\$dumping}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a8bbbbbfe5c49e8e3e7cb503366b100f0} 
+\$dumping = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_ad12d5c26824dec6a6b9ec800cc83befe}\index{HtmlDumper@{HtmlDumper}!EXPANDED\_SEPARATOR@{EXPANDED\_SEPARATOR}}
+\index{EXPANDED\_SEPARATOR@{EXPANDED\_SEPARATOR}!HtmlDumper@{HtmlDumper}}
+\doxysubsubsection{\texorpdfstring{EXPANDED\_SEPARATOR}{EXPANDED\_SEPARATOR}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_ad12d5c26824dec6a6b9ec800cc83befe} 
+const EXPANDED\+\_\+\+SEPARATOR = \textquotesingle{}class=sf-\/dump-\/expanded$>$\textquotesingle{}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a4ec948cce5ad47eb14ad220db8a5384b}\index{HtmlDumper@{HtmlDumper}!NON\_EXPANDED\_SEPARATOR@{NON\_EXPANDED\_SEPARATOR}}
+\index{NON\_EXPANDED\_SEPARATOR@{NON\_EXPANDED\_SEPARATOR}!HtmlDumper@{HtmlDumper}}
+\doxysubsubsection{\texorpdfstring{NON\_EXPANDED\_SEPARATOR}{NON\_EXPANDED\_SEPARATOR}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_html_dumper_a4ec948cce5ad47eb14ad220db8a5384b} 
+const NON\+\_\+\+EXPANDED\+\_\+\+SEPARATOR = "{}\textbackslash{}n$<$/pre$>$$<$script$>$"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Http/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_foundation_2_http_2_html_dumper_8php}{Html\+Dumper.\+php}}\end{DoxyCompactItemize}

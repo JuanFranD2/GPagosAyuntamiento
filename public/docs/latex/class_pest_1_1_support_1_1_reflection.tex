@@ -1,0 +1,130 @@
+\doxysection{Reflection Class Reference}
+\hypertarget{class_pest_1_1_support_1_1_reflection}{}\label{class_pest_1_1_support_1_1_reflection}\index{Reflection@{Reflection}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_reflection_ae06057151afbdb07a27ceec2a7010f35}{call}} (object \$object, string \$method, array \$args=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_reflection_a56b4f68b77bf155b200565762f7d6c2b}{bind\+Callable}} (callable \$callable, array \$args=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_reflection_ab4fa3aef3b021aafeea65d6ae1ac3b81}{bind\+Callable\+With\+Data}} (callable \$callable)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_reflection_ac1a87745c624765ad6e8a0e19a4f28fd}{get\+File\+Name\+From\+Closure}} (\mbox{\hyperlink{class_pest_1_1_support_1_1_closure}{Closure}} \$closure)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_reflection_ad8e82fd522533652057249e28e6663c1}{get\+Property\+Value}} (object \$object, string \$property)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_reflection_a4d3b259ce682b4771f3161e6156dfd3c}{get\+Parameter\+Class\+Name}} (Reflection\+Parameter \$parameter)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_reflection_ae77fe1d70741717f39e291be46677c0e}{get\+Function\+Variable}} (\mbox{\hyperlink{class_pest_1_1_support_1_1_closure}{Closure}} \$\mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}}, string \$key)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_reflection_a24bd7103bf6f7b966f7e5c1d3f50a0ef}{get\+Properties\+From\+Reflection\+Class}} (Reflection\+Class \$reflection\+Class)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_reflection_a27918669a3f89b9f6df426e49dc41e04}{get\+Methods\+From\+Reflection\+Class}} (Reflection\+Class \$reflection\+Class, int \$filter=Reflection\+Method\+::\+IS\+\_\+\+PUBLIC\texorpdfstring{$\vert$}{|}Reflection\+Method\+::\+IS\+\_\+\+PROTECTED\texorpdfstring{$\vert$}{|}Reflection\+Method\+::\+IS\+\_\+\+PRIVATE)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_support_1_1_reflection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_support_1_1_reflection_a56b4f68b77bf155b200565762f7d6c2b}\index{Reflection@{Reflection}!bindCallable@{bindCallable}}
+\index{bindCallable@{bindCallable}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{bindCallable()}{bindCallable()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_reflection_a56b4f68b77bf155b200565762f7d6c2b} 
+bind\+Callable (\begin{DoxyParamCaption}\item[{callable}]{\$callable}{, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Bind a callable to the Test\+Case and return the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,mixed$>$} & \$args \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_support_1_1_reflection_ab4fa3aef3b021aafeea65d6ae1ac3b81}\index{Reflection@{Reflection}!bindCallableWithData@{bindCallableWithData}}
+\index{bindCallableWithData@{bindCallableWithData}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{bindCallableWithData()}{bindCallableWithData()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_reflection_ab4fa3aef3b021aafeea65d6ae1ac3b81} 
+bind\+Callable\+With\+Data (\begin{DoxyParamCaption}\item[{callable}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Bind a callable to the Test\+Case and return the result, passing in the current dataset values as arguments. \Hypertarget{class_pest_1_1_support_1_1_reflection_ae06057151afbdb07a27ceec2a7010f35}\index{Reflection@{Reflection}!call@{call}}
+\index{call@{call}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_reflection_ae06057151afbdb07a27ceec2a7010f35} 
+call (\begin{DoxyParamCaption}\item[{object}]{\$object}{, }\item[{string}]{\$method}{, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calls the given method with args on the given object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,mixed$>$} & \$args \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_support_1_1_reflection_ac1a87745c624765ad6e8a0e19a4f28fd}\index{Reflection@{Reflection}!getFileNameFromClosure@{getFileNameFromClosure}}
+\index{getFileNameFromClosure@{getFileNameFromClosure}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{getFileNameFromClosure()}{getFileNameFromClosure()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_reflection_ac1a87745c624765ad6e8a0e19a4f28fd} 
+get\+File\+Name\+From\+Closure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pest_1_1_support_1_1_closure}{Closure}}}]{\$closure}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Infers the file name from the given closure. \Hypertarget{class_pest_1_1_support_1_1_reflection_ae77fe1d70741717f39e291be46677c0e}\index{Reflection@{Reflection}!getFunctionVariable@{getFunctionVariable}}
+\index{getFunctionVariable@{getFunctionVariable}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{getFunctionVariable()}{getFunctionVariable()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_reflection_ae77fe1d70741717f39e291be46677c0e} 
+get\+Function\+Variable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pest_1_1_support_1_1_closure}{Closure}}}]{\$function}{, }\item[{string}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_pest_1_1_support_1_1_reflection_a27918669a3f89b9f6df426e49dc41e04}\index{Reflection@{Reflection}!getMethodsFromReflectionClass@{getMethodsFromReflectionClass}}
+\index{getMethodsFromReflectionClass@{getMethodsFromReflectionClass}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{getMethodsFromReflectionClass()}{getMethodsFromReflectionClass()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_reflection_a27918669a3f89b9f6df426e49dc41e04} 
+get\+Methods\+From\+Reflection\+Class (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$reflection\+Class}{, }\item[{int}]{\$filter}{ = {\ttfamily ReflectionMethod\+:\+:IS\+\_\+PUBLIC~\texorpdfstring{$\vert$}{|}~ReflectionMethod\+:\+:IS\+\_\+PROTECTED~\texorpdfstring{$\vert$}{|}~ReflectionMethod\+:\+:IS\+\_\+PRIVATE}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the methods from the given reflection class.
+
+Used by {\ttfamily expect()-\/\texorpdfstring{$>$}{>}to\+Have\+Methods\+Documented()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Reflection\+Class$<$object$>$} & \$reflection\+Class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$int, Reflection\+Method$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_support_1_1_reflection_a4d3b259ce682b4771f3161e6156dfd3c}\index{Reflection@{Reflection}!getParameterClassName@{getParameterClassName}}
+\index{getParameterClassName@{getParameterClassName}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{getParameterClassName()}{getParameterClassName()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_reflection_a4d3b259ce682b4771f3161e6156dfd3c} 
+get\+Parameter\+Class\+Name (\begin{DoxyParamCaption}\item[{Reflection\+Parameter}]{\$parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the class name of the given parameter\textquotesingle{}s type, if possible.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/laravel/framework/blob/v6.18.25/src/Illuminate/Support/Reflector.php}{\texttt{https\+://github.\+com/laravel/framework/blob/v6.\+18.\+25/src/\+Illuminate/\+Support/\+Reflector.\+php}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_pest_1_1_support_1_1_reflection_a24bd7103bf6f7b966f7e5c1d3f50a0ef}\index{Reflection@{Reflection}!getPropertiesFromReflectionClass@{getPropertiesFromReflectionClass}}
+\index{getPropertiesFromReflectionClass@{getPropertiesFromReflectionClass}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{getPropertiesFromReflectionClass()}{getPropertiesFromReflectionClass()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_reflection_a24bd7103bf6f7b966f7e5c1d3f50a0ef} 
+get\+Properties\+From\+Reflection\+Class (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$reflection\+Class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the properties from the given reflection class.
+
+Used by {\ttfamily expect()-\/\texorpdfstring{$>$}{>}to\+Have\+Properties\+Documented()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Reflection\+Class$<$object$>$} & \$reflection\+Class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$int, Reflection\+Property$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_support_1_1_reflection_ad8e82fd522533652057249e28e6663c1}\index{Reflection@{Reflection}!getPropertyValue@{getPropertyValue}}
+\index{getPropertyValue@{getPropertyValue}!Reflection@{Reflection}}
+\doxysubsubsection{\texorpdfstring{getPropertyValue()}{getPropertyValue()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_reflection_ad8e82fd522533652057249e28e6663c1} 
+get\+Property\+Value (\begin{DoxyParamCaption}\item[{object}]{\$object}{, }\item[{string}]{\$property}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the property value from of the given object. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Support/\mbox{\hyperlink{pestphp_2pest_2src_2_support_2_reflection_8php}{Reflection.\+php}}\end{DoxyCompactItemize}

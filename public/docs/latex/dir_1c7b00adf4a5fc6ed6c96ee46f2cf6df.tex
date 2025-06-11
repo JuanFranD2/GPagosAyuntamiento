@@ -1,0 +1,35 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/jest-\/pnp-\/resolver Directory Reference}
+\hypertarget{dir_1c7b00adf4a5fc6ed6c96ee46f2cf6df}{}\label{dir_1c7b00adf4a5fc6ed6c96ee46f2cf6df}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/jest-\/pnp-\/resolver Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/jest-\/pnp-\/resolver Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md4329}{}\doxysubsection{\texorpdfstring{ \mbox{[}Plug\textquotesingle{}n\textquotesingle{}Play\mbox{]}(\href{https://github.com/yarnpkg/rfcs/pull/101}{\texttt{https\+://github.\+com/yarnpkg/rfcs/pull/101}}) resolver for Jest}{ \mbox{[}Plug\textquotesingle{}n\textquotesingle{}Play\mbox{]}(\href{https://github.com/yarnpkg/rfcs/pull/101}{\texttt{https\+://github.\+com/yarnpkg/rfcs/pull/101}}) resolver for Jest}}\label{README.md_autotoc_md4329}
+\href{https://www.npmjs.com/package/jest-pnp-resolver}{\texttt{}} \href{https://www.npmjs.com/package/jest-pnp-resolver}{\texttt{}}
+
+{\itshape This plugin is also available for Rollup (\href{https://github.com/arcanis/rollup-plugin-pnp-resolve}{\texttt{rollup-\/plugin-\/pnp-\/resolve}}), Type\+Script (\href{https://github.com/arcanis/ts-pnp}{\texttt{ts-\/pnp}}), and Webpack (\href{https://github.com/arcanis/pnp-webpack-plugin}{\texttt{pnp-\/webpack-\/plugin}})}\hypertarget{README.md_autotoc_md4330}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md4330}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{yarn\ add\ -\/D\ jest-\/pnp-\/resolver}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md4331}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md4331}
+As of {\ttfamily jest@\texorpdfstring{$^\wedge$}{\string^}24.4.\+0} you don\textquotesingle{}t need to manually add this package anymore. The default resolver will already use PnP.
+
+Simply add the resolver to your configuration. For example, a minimal {\ttfamily jest.\+config.\+js} would be as such\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{module.exports\ =\ \{}
+\DoxyCodeLine{\ \ resolver:\ require.resolve(`jest-\/pnp-\/resolver`)}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md4332}{}\doxysubsection{\texorpdfstring{License (MIT)}{License (MIT)}}\label{README.md_autotoc_md4332}
+\begin{quote}
+{\bfseries{Copyright © 2016 Maël Nison}}
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "{}\+Software"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "{}\+AS IS"{}, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. \end{quote}

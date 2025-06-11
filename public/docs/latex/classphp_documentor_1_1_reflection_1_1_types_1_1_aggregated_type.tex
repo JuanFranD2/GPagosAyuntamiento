@@ -1,0 +1,97 @@
+\doxysection{Aggregated\+Type Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type}{}\label{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type}\index{AggregatedType@{AggregatedType}}
+Inheritance diagram for Aggregated\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a99a1e1469317a4bfa1215db1f82dcbf0}{\+\_\+\+\_\+construct}} (array \$types, string \$token)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_ae91f4299eda89a730fb0389f8f066952}{get}} (int \$index)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a16bf9e79b54f995fe41cbdcf84d46b66}{has}} (int \$index)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7bbfd41e2173df4830d3f07041e8c769}{contains}} (\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} \$type)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for aggregated types like Compound and Intersection
+
+A Aggregated Type is not so much a special keyword or object reference but is a series of Types that are separated using separator.
+
+@psalm-\/immutable @template-\/implements Iterator\+Aggregate$<$int, Type$>$ 
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a99a1e1469317a4bfa1215db1f82dcbf0}\index{AggregatedType@{AggregatedType}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AggregatedType@{AggregatedType}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a99a1e1469317a4bfa1215db1f82dcbf0} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$types}{, }\item[{string}]{\$token}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$\+Type$>$} & \$types \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7516ca30af0db3cdbf9a7739b48ce91d}\index{AggregatedType@{AggregatedType}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!AggregatedType@{AggregatedType}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a rendered output of the Type as it would be used in a Doc\+Block. 
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type_a7516ca30af0db3cdbf9a7739b48ce91d}{Type}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_pseudo_types_1_1_numeric___a7516ca30af0db3cdbf9a7739b48ce91d}{Numeric\+\_\+}}, and \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_array_key_a7516ca30af0db3cdbf9a7739b48ce91d}{Array\+Key}}.
+
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7bbfd41e2173df4830d3f07041e8c769}\index{AggregatedType@{AggregatedType}!contains@{contains}}
+\index{contains@{contains}!AggregatedType@{AggregatedType}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7bbfd41e2173df4830d3f07041e8c769} 
+contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}}}]{\$type}{}\end{DoxyParamCaption})}
+
+\doxylink{namespace_tests}{Tests} if this compound type contains the given type. \Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_ae91f4299eda89a730fb0389f8f066952}\index{AggregatedType@{AggregatedType}!get@{get}}
+\index{get@{get}!AggregatedType@{AggregatedType}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_ae91f4299eda89a730fb0389f8f066952} 
+get (\begin{DoxyParamCaption}\item[{int}]{\$index}{}\end{DoxyParamCaption})}
+
+Returns the type at the given index. \Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{AggregatedType@{AggregatedType}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!AggregatedType@{AggregatedType}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Array\+Iterator$<$int, Type$>$ 
+\end{DoxyReturn}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a16bf9e79b54f995fe41cbdcf84d46b66}\index{AggregatedType@{AggregatedType}!has@{has}}
+\index{has@{has}!AggregatedType@{AggregatedType}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a16bf9e79b54f995fe41cbdcf84d46b66} 
+has (\begin{DoxyParamCaption}\item[{int}]{\$index}{}\end{DoxyParamCaption})}
+
+\doxylink{namespace_tests}{Tests} if this compound type has a type with the given index. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/type-\/resolver/src/\+Types/\mbox{\hyperlink{_aggregated_type_8php}{Aggregated\+Type.\+php}}\end{DoxyCompactItemize}

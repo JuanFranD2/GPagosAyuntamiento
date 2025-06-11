@@ -1,0 +1,79 @@
+\doxysection{Encoder Class Reference}
+\hypertarget{class_league_1_1_uri_1_1_encoder}{}\label{class_league_1_1_uri_1_1_encoder}\index{Encoder@{Encoder}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_encoder_a33068a5d01b9f3813834f6572208c75a}{encode\+User}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$component)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_encoder_a61a08df7c4eeadedfe653fbbef409663}{encode\+Password}} (\#\mbox{[}Sensitive\+Parameter\mbox{]} Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$component)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_encoder_afe8f514e3dcb40910c8457996cebc1c5}{encode\+Path}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$component)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_encoder_aa23b5336c8558f87557e4f6f034ff8c7}{encode\+Query\+Or\+Fragment}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$component)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_encoder_a03e167c65f197fb334f2aca754bdc73a}{encode\+Query\+Key\+Value}} (mixed \$component)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_encoder_adb10e73b03f883b8038f0479498aaef6}{decode\+Partial}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$component)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_encoder_a507853e970edadd83e335ae250c72472}{decode\+All}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$component)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_league_1_1_uri_1_1_encoder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_encoder_a507853e970edadd83e335ae250c72472}\index{Encoder@{Encoder}!decodeAll@{decodeAll}}
+\index{decodeAll@{decodeAll}!Encoder@{Encoder}}
+\doxysubsubsection{\texorpdfstring{decodeAll()}{decodeAll()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_encoder_a507853e970edadd83e335ae250c72472} 
+decode\+All (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decodes all the URI component characters. \Hypertarget{class_league_1_1_uri_1_1_encoder_adb10e73b03f883b8038f0479498aaef6}\index{Encoder@{Encoder}!decodePartial@{decodePartial}}
+\index{decodePartial@{decodePartial}!Encoder@{Encoder}}
+\doxysubsubsection{\texorpdfstring{decodePartial()}{decodePartial()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_encoder_adb10e73b03f883b8038f0479498aaef6} 
+decode\+Partial (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decodes the URI component without decoding the unreserved characters which are already encoded. \Hypertarget{class_league_1_1_uri_1_1_encoder_a61a08df7c4eeadedfe653fbbef409663}\index{Encoder@{Encoder}!encodePassword@{encodePassword}}
+\index{encodePassword@{encodePassword}!Encoder@{Encoder}}
+\doxysubsubsection{\texorpdfstring{encodePassword()}{encodePassword()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_encoder_a61a08df7c4eeadedfe653fbbef409663} 
+encode\+Password (\begin{DoxyParamCaption}\item[{\# Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$component}{\mbox{[}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encode \doxylink{class_password}{Password}.
+
+Generic delimiters "{}\+:"{} MUST NOT be encoded \Hypertarget{class_league_1_1_uri_1_1_encoder_afe8f514e3dcb40910c8457996cebc1c5}\index{Encoder@{Encoder}!encodePath@{encodePath}}
+\index{encodePath@{encodePath}!Encoder@{Encoder}}
+\doxysubsubsection{\texorpdfstring{encodePath()}{encodePath()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_encoder_afe8f514e3dcb40910c8457996cebc1c5} 
+encode\+Path (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encode Path.
+
+Generic delimiters "{}\+:"{}, "{}@"{}, and "{}/"{} MUST NOT be encoded \Hypertarget{class_league_1_1_uri_1_1_encoder_a03e167c65f197fb334f2aca754bdc73a}\index{Encoder@{Encoder}!encodeQueryKeyValue@{encodeQueryKeyValue}}
+\index{encodeQueryKeyValue@{encodeQueryKeyValue}!Encoder@{Encoder}}
+\doxysubsubsection{\texorpdfstring{encodeQueryKeyValue()}{encodeQueryKeyValue()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_encoder_a03e167c65f197fb334f2aca754bdc73a} 
+encode\+Query\+Key\+Value (\begin{DoxyParamCaption}\item[{mixed}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_league_1_1_uri_1_1_encoder_aa23b5336c8558f87557e4f6f034ff8c7}\index{Encoder@{Encoder}!encodeQueryOrFragment@{encodeQueryOrFragment}}
+\index{encodeQueryOrFragment@{encodeQueryOrFragment}!Encoder@{Encoder}}
+\doxysubsubsection{\texorpdfstring{encodeQueryOrFragment()}{encodeQueryOrFragment()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_encoder_aa23b5336c8558f87557e4f6f034ff8c7} 
+encode\+Query\+Or\+Fragment (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encode Query or Fragment.
+
+Generic delimiters "{}\+:"{}, "{}@"{}, "{}?"{}, and "{}/"{} MUST NOT be encoded \Hypertarget{class_league_1_1_uri_1_1_encoder_a33068a5d01b9f3813834f6572208c75a}\index{Encoder@{Encoder}!encodeUser@{encodeUser}}
+\index{encodeUser@{encodeUser}!Encoder@{Encoder}}
+\doxysubsubsection{\texorpdfstring{encodeUser()}{encodeUser()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_encoder_a33068a5d01b9f3813834f6572208c75a} 
+encode\+User (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encode User.
+
+All generic delimiters MUST be encoded 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/uri-\/interfaces/\mbox{\hyperlink{_encoder_8php}{Encoder.\+php}}\end{DoxyCompactItemize}

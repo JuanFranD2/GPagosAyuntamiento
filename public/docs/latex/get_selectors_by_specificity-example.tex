@@ -1,0 +1,18 @@
+\doxysection{get\+Selectors\+By\+Specificity}
+\hypertarget{get_selectors_by_specificity-example}{}\label{get_selectors_by_specificity-example}Returns all {\ttfamily Selector} objects with the requested specificity found recursively in the tree.
+
+Note that this does not yield the full {\ttfamily Declaration\+Block} that the selector belongs to (and, currently, there is no way to get to that).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$s\+Specificity\+Search} & An optional filter by specificity. May contain a comparison operator and a number or just a number (defaults to "{}=="{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$int, Selector$>$ (\textquotesingle{}\texorpdfstring{$>$}{>}= 100\textquotesingle{})\`{}
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ 

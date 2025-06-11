@@ -1,0 +1,194 @@
+\chapter{Prefixing }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing}\index{Prefixing@{Prefixing}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing_autotoc_md2248}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing_autotoc_md2248}%
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing_autotoc_md2249}{}\doxysection{\texorpdfstring{Prefix Styles}{Prefix Styles}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing_autotoc_md2249}
+concurrently will by default prefix each command\textquotesingle{}s outputs with a zero-\/based index, wrapped in square brackets\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+\DoxyCodeLine{[0]\ Hello\ there}
+\DoxyCodeLine{[1]\ General\ Kenobi!}
+\DoxyCodeLine{[0]\ echo\ Hello\ there\ exited\ with\ code\ 0}
+\DoxyCodeLine{[1]\ echo\ 'General\ Kenobi!'\ exited\ with\ code\ 0}
+
+\end{DoxyCode}
+
+
+If you\textquotesingle{}ve given the commands names, they are used instead\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/names\ one,two\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+\DoxyCodeLine{[one]\ Hello\ there}
+\DoxyCodeLine{[two]\ General\ Kenobi!}
+\DoxyCodeLine{[one]\ echo\ Hello\ there\ exited\ with\ code\ 0}
+\DoxyCodeLine{[two]\ echo\ 'General\ Kenobi!'\ exited\ with\ code\ 0}
+
+\end{DoxyCode}
+
+
+There are other prefix styles available too\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Style  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Style  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily index}  &Zero-\/based command\textquotesingle{}s index  \\\cline{1-2}
+{\ttfamily name}  &The command\textquotesingle{}s name  \\\cline{1-2}
+{\ttfamily command}  &The command\textquotesingle{}s line  \\\cline{1-2}
+{\ttfamily time}  &Time of output  \\\cline{1-2}
+{\ttfamily pid}  &ID of the command\textquotesingle{}s process (PID)  \\\cline{1-2}
+{\ttfamily none}  &No prefix  \\\cline{1-2}
+\end{longtabu}
+
+
+Any of these can be used by setting the {\ttfamily -\/-\/prefix}/{\ttfamily -\/p} flag. For example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/prefix\ pid\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+\DoxyCodeLine{[2222]\ Hello\ there}
+\DoxyCodeLine{[2223]\ General\ Kenobi!}
+\DoxyCodeLine{[2222]\ echo\ Hello\ there\ exited\ with\ code\ 0}
+\DoxyCodeLine{[2223]\ echo\ 'General\ Kenobi!'\ exited\ with\ code\ 0}
+
+\end{DoxyCode}
+
+
+It\textquotesingle{}s also possible to have a prefix based on a template. Any of the styles listed above can be used by wrapping it in {\ttfamily \{\}}. Doing so will also remove the square brackets\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/prefix\ "{}\{index\}-\/\{pid\}"{}\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+\DoxyCodeLine{0-\/2222\ Hello\ there}
+\DoxyCodeLine{1-\/2223\ General\ Kenobi!}
+\DoxyCodeLine{0-\/2222\ echo\ Hello\ there\ exited\ with\ code\ 0}
+\DoxyCodeLine{1-\/2223\ echo\ 'General\ Kenobi!'\ exited\ with\ code\ 0}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing_autotoc_md2250}{}\doxysection{\texorpdfstring{Prefix Colors}{Prefix Colors}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing_autotoc_md2250}
+By default, there are no colors applied to concurrently prefixes, and they just use whatever the terminal\textquotesingle{}s defaults are.
+
+This can be changed by using the {\ttfamily -\/-\/prefix-\/colors}/{\ttfamily -\/c} flag, which takes a comma-\/separated list of colors to use.~\newline
+ The available values are color names (e.\+g. {\ttfamily green}, {\ttfamily magenta}, {\ttfamily gray}, etc), a hex value (such as {\ttfamily \#23de43}), or {\ttfamily auto}, to automatically select a color.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/c\ red,blue\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+
+\end{DoxyCode}
+
+
+
+
+{\bfseries{List of available color names}}\begin{adjustwidth}{1em}{0em}
+
+
+
+\begin{DoxyItemize}
+\item {\ttfamily black}
+\item {\ttfamily blue}
+\item {\ttfamily cyan}
+\item {\ttfamily green}
+\item {\ttfamily gray}
+\item {\ttfamily magenta}
+\item {\ttfamily red}
+\item {\ttfamily white}
+\item {\ttfamily yellow} 
+\end{DoxyItemize}\end{adjustwidth}
+
+
+Colors can take modifiers too. Several can be applied at once by prepending {\ttfamily .\texorpdfstring{$<$}{<}modifier 1\texorpdfstring{$>$}{>}.\texorpdfstring{$<$}{<}modifier 2\texorpdfstring{$>$}{>}} and so on.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/c\ red,bold.blue.dim\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+
+\end{DoxyCode}
+
+
+
+
+{\bfseries{List of available modifiers}}\begin{adjustwidth}{1em}{0em}
+
+
+
+\begin{DoxyItemize}
+\item {\ttfamily reset}
+\item {\ttfamily bold}
+\item {\ttfamily dim}
+\item {\ttfamily hidden}
+\item {\ttfamily inverse}
+\item {\ttfamily italic}
+\item {\ttfamily strikethrough}
+\item {\ttfamily underline} 
+\end{DoxyItemize}\end{adjustwidth}
+
+
+A background color can be set in a similary fashion.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/c\ bgGray,red.bgBlack\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+
+\end{DoxyCode}
+
+
+
+
+{\bfseries{List of available background color names}}\begin{adjustwidth}{1em}{0em}
+
+
+
+\begin{DoxyItemize}
+\item {\ttfamily bg\+Black}
+\item {\ttfamily bg\+Blue}
+\item {\ttfamily bg\+Cyan}
+\item {\ttfamily bg\+Green}
+\item {\ttfamily bg\+Gray}
+\item {\ttfamily bg\+Magenta}
+\item {\ttfamily bg\+Red}
+\item {\ttfamily bg\+White}
+\item {\ttfamily bg\+Yellow} 
+\end{DoxyItemize}\end{adjustwidth}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing_autotoc_md2251}{}\doxysection{\texorpdfstring{Prefix Length}{Prefix Length}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2prefixing_autotoc_md2251}
+When using the {\ttfamily command} prefix style, it\textquotesingle{}s possible that it\textquotesingle{}ll be too long.~\newline
+ It can be limited by setting the {\ttfamily -\/-\/prefix-\/length}/{\ttfamily -\/l} flag\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/p\ command\ -\/l\ 10\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+\DoxyCodeLine{[echo..here]\ Hello\ there}
+\DoxyCodeLine{[echo..bi!']\ General\ Kenobi!}
+\DoxyCodeLine{[echo..here]\ echo\ Hello\ there\ exited\ with\ code\ 0}
+\DoxyCodeLine{[echo..bi!']\ echo\ 'General\ Kenobi!'\ exited\ with\ code\ 0}
+
+\end{DoxyCode}
+
+
+It\textquotesingle{}s also possible that some prefixes are too short, and you want all of them to have the same length.~\newline
+ This can be done by setting the {\ttfamily -\/-\/pad-\/prefix} flag\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/n\ foo,barbaz\ -\/-\/pad-\/prefix\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+\DoxyCodeLine{[foo\ \ \ ]\ Hello\ there}
+\DoxyCodeLine{[foo\ \ \ ]\ echo\ Hello\ there\ exited\ with\ code\ 0}
+\DoxyCodeLine{[barbaz]\ General\ Kenobi!}
+\DoxyCodeLine{[barbaz]\ echo\ 'General\ Kenobi!'\ exited\ with\ code\ 0}
+
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+If using the {\ttfamily pid} prefix style in combination with \doxysectlink{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2restarting}{{\ttfamily -\/-\/restart-\/tries}}{0}, the length of the PID might grow, in which case all subsequent lines will match the new length.~\newline
+ This might happen, for example, if the PID was 99 and it\textquotesingle{}s now 100. 
+\end{DoxyNote}

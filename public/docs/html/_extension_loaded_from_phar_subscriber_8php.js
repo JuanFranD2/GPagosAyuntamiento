@@ -1,0 +1,4 @@
+var _extension_loaded_from_phar_subscriber_8php =
+[
+    [ "ExtensionLoadedFromPharSubscriber", "interface_p_h_p_unit_1_1_event_1_1_test_runner_1_1_extension_loaded_from_phar_subscriber.html", "interface_p_h_p_unit_1_1_event_1_1_test_runner_1_1_extension_loaded_from_phar_subscriber" ]
+];

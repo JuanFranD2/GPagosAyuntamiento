@@ -1,0 +1,1679 @@
+\doxysection{Postgres\+Grammar Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar}{}\label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar}\index{PostgresGrammar@{PostgresGrammar}}
+Inheritance diagram for Postgres\+Grammar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a9bad26d92244ff9af20eaa95c8837d54}{compile\+Create\+Database}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1e2a197c61fde0a02928dd1153846abf}{compile\+Schemas}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aef1fe0be1e02c1d2fde8b073c9d6a0aa}{compile\+Table\+Exists}} (\$schema, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a6eb42d053cd1d4c72d95975259dd22d9}{compile\+Tables}} (\$schema)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a5597b2543133292bddaced02c39dcb16}{compile\+Views}} (\$schema)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aa87dfd8ff5fa9949c474813f02b36b6c}{compile\+Types}} (\$schema)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a683128e820c1767a21fd4b7e422d2422}{compile\+Columns}} (\$schema, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7b21fcc75a261ee264883d1421b51029}{compile\+Indexes}} (\$schema, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a808c078ab4110d20ea903c6c699fb77e}{compile\+Foreign\+Keys}} (\$schema, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_af765675c4c516485bb11f09b4d9c7f5f}{compile\+Create}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a82584e4dc7a2a3d0cae0ec60afa4085b}{compile\+Add}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_af694372eed7664366b7249db2a8eee54}{compile\+Auto\+Increment\+Starting\+Values}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a024c8e38e0397820f121a17e66812789}{compile\+Change}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac33a3e52e7ef705e3d9aa45d9d96096b}{compile\+Primary}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a74caed0dea1bdc0240a6aa921088b056}{compile\+Unique}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a0f926bb22b5ff12bd818dca8fc926ae5}{compile\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a3d0026f5709b787dc83696d0a28329c1}{compile\+Fulltext}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7dc3c3dda42927aa0e872186ef6f3eb6}{compile\+Spatial\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ade455e059a35b928da33846c8c17cc74}{compile\+Foreign}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aead2f199df5cecea92de8cfd964f2741}{compile\+Drop}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aa15ab74bb37f0fdcc559f771b1c79a2a}{compile\+Drop\+If\+Exists}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a146cb19ceb1448ca3d793017e2bffc86}{compile\+Drop\+All\+Tables}} (\$tables)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1690045d5d2fd7e4bfba8e8fdc55bc0b}{compile\+Drop\+All\+Views}} (\$views)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a6ddf5180e3bf1a4abd7fb2cabb00259b}{compile\+Drop\+All\+Types}} (\$types)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ad289609aedabaa8a3545dfe1ec4185a1}{compile\+Drop\+All\+Domains}} (\$domains)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a3adb41ee9b4ccd70ecac1391340ff414}{compile\+Drop\+Column}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac093ab4dcec068257ebfd1df34ab6ec9}{compile\+Drop\+Primary}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a4aa0035711999be08be2a0132590b14b}{compile\+Drop\+Unique}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a515bc4108db787ede21878eb266dd400}{compile\+Drop\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7aece4426d652967055a33f81b5d30ef}{compile\+Drop\+Full\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a56ce8344453afba2776db0216cbba821}{compile\+Drop\+Spatial\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a10161b2f28ecbc84e2ec89455582b698}{compile\+Drop\+Foreign}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac1d399b11ca0b010946afe6de29e252a}{compile\+Rename}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ae25156c7ed7b653deddb99f335856769}{compile\+Rename\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ab900224ca63098e03fa2593b5b135830}{compile\+Enable\+Foreign\+Key\+Constraints}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a98f451e3ddef663fa26ba79144c7657d}{compile\+Disable\+Foreign\+Key\+Constraints}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a105877e0ec52900e9b8fcd6a7ff7ec36}{compile\+Comment}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a48f036a3d47403f1b01af0aa120c7e59}{compile\+Table\+Comment}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a03c46aa2d546ddc54c1c93a519873030}{escape\+Names}} (\$names)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar}{Grammar}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_af6b275bd6fc7a5d0759c82bf2b754279}{compile\+Drop\+Database\+If\+Exists}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a2116522f0a509b88f91755cc23447a12}{compile\+Rename\+Column}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a8d546d668a604a1deb1d5e046e1c32c3}{prefix\+Array}} (\$prefix, array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aa7b8a4cd774cfe7ef408d4042ced1e03}{wrap\+Table}} (\$table, \$prefix=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a09e2b9d182ef63a09ef8d91ae5a89e40}{wrap}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a1ab14fc2762aade38def29785315043f}{get\+Fluent\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_ae6ef76c1763dbc67d7d7dfc38972ba45}{supports\+Schema\+Transactions}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a9bf677b1d571cfd2379d40b57d7fc6db}{compile\+Schema\+Where\+Clause}} (\$schema, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a671a5d2f9b13e89002b798ffdc2f2df4}{type\+Char}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a388abe6b9beac57152215493f8aefce6}{type\+String}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac4edfb43bc703db74cfa18e7c0640b6c}{type\+Tiny\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a8c686868a89dbd039f35308eef26fd8f}{type\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_afa87362b86157e2f37dcea2f23bd37cc}{type\+Medium\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a60c26b88c281f192a9357bb6d88df7c2}{type\+Long\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a20dc55ca50eef6e7f4a61d93bfd984ed}{type\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a5ed83288b82e30d172f40e41434b1a2e}{type\+Big\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ade2e43aa53b2f06fd8e1071aa339bfd3}{type\+Medium\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_abca25411a812abad9b2383ae6d609918}{type\+Tiny\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aad2df322e9a4e4bc7508a18c54d1978d}{type\+Small\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ae52d34dd85fb7a878ec9fab0f706f1c8}{type\+Float}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a0399bbf2b8baa4b3fe6cb750da912b1d}{type\+Double}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a48b741834e1321f1ae7accf2812c95f7}{type\+Real}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7fc1d2d3a6ccf22ca619f326ac1d384d}{type\+Decimal}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_adb893a7fdd4d2ab1fb1bbd83770f0aa7}{type\+Boolean}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a87cedcc10ad27382e20d274980268c33}{type\+Enum}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a425caf2c70040ba2774c61e5d09d4e15}{type\+Json}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aeceee01d5c726e568c96f781445a3c47}{type\+Jsonb}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_adf7f02c626032a8878d9fe2a0b30d4ef}{type\+Date}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a55deb9f5895a1bc2aca45ce0f51eb9c8}{type\+Date\+Time}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a6516648db9c70dbdc06b51c1904daabe}{type\+Date\+Time\+Tz}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a239adf939b7dcf77cc77ef4fb41c5365}{type\+Time}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a5966809347f4a101b474b75e8a7c5166}{type\+Time\+Tz}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7515216c9600b06fb2fab0a26bf530fd}{type\+Timestamp}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ab6493229383ef043d2949a893c9b3ae3}{type\+Timestamp\+Tz}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a86b4fc703f9100960526a4123d7a69c7}{type\+Year}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ab3799e9f2d78a97761f7a8d51250b536}{type\+Binary}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1fe4f44117625a028efa1d70a0d56735}{type\+Uuid}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1a4b0b132dba03331f4fc95616fdc89b}{type\+Ip\+Address}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a351aff67e2be5f28bf648fe581a821a7}{type\+Mac\+Address}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a68ba20c6614b248c15d9b45345be8ff3}{type\+Geometry}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a32ccd504a670587ed006ecb984328b49}{type\+Geography}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a801da715aec781e976974a5adf21f980}{type\+Vector}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_abb6ff76bb99b90d5af1600deb962ce31}{modify\+Collate}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a9c7776a862d64a4316782e6bdd20ba1e}{modify\+Nullable}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a8843ec1889fbcdc5229791781576c2d2}{modify\+Default}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a4d9495e2ec2f4216ba15a01c5db69c7e}{modify\+Increment}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a061ea67aa1b03cf03e7b7acf6f81dbdf}{modify\+Virtual\+As}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a2513d8b9fa7204ddfa545c4e9b35a433}{modify\+Stored\+As}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a3d7b42d6d30b93b3f22fb398bf3c5ad9}{modify\+Generated\+As}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar}{Grammar}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a0470593e4c1de8da055fb5edb124377c}{get\+Columns}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aba039baec9373722914d0745c65ac3c4}{get\+Column}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a7ebd97ab3628b9ac55d04d0a60890a5f}{get\+Type}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a4d2cf0c3ee9c0b9fe24e4e3678c5d45d}{type\+Computed}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a9cd6ba85938418868a62423578e544ff}{type\+Raw}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a864f1bd18d2a3c8025e6d87de1f1e995}{add\+Modifiers}} (\$sql, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_af03d389c465abfb6bf586232fa1e2e95}{get\+Command\+By\+Name}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a0ca8d8ca12e5a967448471523920fdf6}{get\+Commands\+By\+Name}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aaac7e0a88ee22e0ce7dca423e0228995}{has\+Command}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a663441b597c9ad03cf80568cd83f46a0}{get\+Default\+Value}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_acf491548539fb3e48517eae4df476304}{\$transactions}} = true
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a160987fb6b313e736e282e85282c6a30}{\$modifiers}} = \mbox{[}\textquotesingle{}Collate\textquotesingle{}, \textquotesingle{}Nullable\textquotesingle{}, \textquotesingle{}Default\textquotesingle{}, \textquotesingle{}Virtual\+As\textquotesingle{}, \textquotesingle{}Stored\+As\textquotesingle{}, \textquotesingle{}Generated\+As\textquotesingle{}, \textquotesingle{}Increment\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a151ecd4bab2e85de938891e925a040c2}{\$serials}} = \mbox{[}\textquotesingle{}big\+Integer\textquotesingle{}, \textquotesingle{}integer\textquotesingle{}, \textquotesingle{}medium\+Integer\textquotesingle{}, \textquotesingle{}small\+Integer\textquotesingle{}, \textquotesingle{}tiny\+Integer\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a8819395a8920e6fc292fcb27f5491269}{\$fluent\+Commands}} = \mbox{[}\textquotesingle{}Auto\+Increment\+Starting\+Values\textquotesingle{}, \textquotesingle{}Comment\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar}{Grammar}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a160987fb6b313e736e282e85282c6a30}{\$modifiers}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_acf491548539fb3e48517eae4df476304}{\$transactions}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a8819395a8920e6fc292fcb27f5491269}{\$fluent\+Commands}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a82584e4dc7a2a3d0cae0ec60afa4085b}\index{PostgresGrammar@{PostgresGrammar}!compileAdd@{compileAdd}}
+\index{compileAdd@{compileAdd}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileAdd()}{compileAdd()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a82584e4dc7a2a3d0cae0ec60afa4085b} 
+compile\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a column addition command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_af694372eed7664366b7249db2a8eee54}\index{PostgresGrammar@{PostgresGrammar}!compileAutoIncrementStartingValues@{compileAutoIncrementStartingValues}}
+\index{compileAutoIncrementStartingValues@{compileAutoIncrementStartingValues}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileAutoIncrementStartingValues()}{compileAutoIncrementStartingValues()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_af694372eed7664366b7249db2a8eee54} 
+compile\+Auto\+Increment\+Starting\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile the auto-\/incrementing column starting values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a024c8e38e0397820f121a17e66812789}\index{PostgresGrammar@{PostgresGrammar}!compileChange@{compileChange}}
+\index{compileChange@{compileChange}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileChange()}{compileChange()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a024c8e38e0397820f121a17e66812789} 
+compile\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a024c8e38e0397820f121a17e66812789}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a683128e820c1767a21fd4b7e422d2422}\index{PostgresGrammar@{PostgresGrammar}!compileColumns@{compileColumns}}
+\index{compileColumns@{compileColumns}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileColumns()}{compileColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a683128e820c1767a21fd4b7e422d2422} 
+compile\+Columns (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the columns.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a683128e820c1767a21fd4b7e422d2422}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a105877e0ec52900e9b8fcd6a7ff7ec36}\index{PostgresGrammar@{PostgresGrammar}!compileComment@{compileComment}}
+\index{compileComment@{compileComment}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileComment()}{compileComment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a105877e0ec52900e9b8fcd6a7ff7ec36} 
+compile\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a comment command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_af765675c4c516485bb11f09b4d9c7f5f}\index{PostgresGrammar@{PostgresGrammar}!compileCreate@{compileCreate}}
+\index{compileCreate@{compileCreate}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileCreate()}{compileCreate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_af765675c4c516485bb11f09b4d9c7f5f} 
+compile\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a create table command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a9bad26d92244ff9af20eaa95c8837d54}\index{PostgresGrammar@{PostgresGrammar}!compileCreateDatabase@{compileCreateDatabase}}
+\index{compileCreateDatabase@{compileCreateDatabase}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileCreateDatabase()}{compileCreateDatabase()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a9bad26d92244ff9af20eaa95c8837d54} 
+compile\+Create\+Database (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Compile a create database command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a9bad26d92244ff9af20eaa95c8837d54}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a98f451e3ddef663fa26ba79144c7657d}\index{PostgresGrammar@{PostgresGrammar}!compileDisableForeignKeyConstraints@{compileDisableForeignKeyConstraints}}
+\index{compileDisableForeignKeyConstraints@{compileDisableForeignKeyConstraints}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDisableForeignKeyConstraints()}{compileDisableForeignKeyConstraints()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a98f451e3ddef663fa26ba79144c7657d} 
+compile\+Disable\+Foreign\+Key\+Constraints (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Compile the command to disable foreign key constraints.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aead2f199df5cecea92de8cfd964f2741}\index{PostgresGrammar@{PostgresGrammar}!compileDrop@{compileDrop}}
+\index{compileDrop@{compileDrop}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDrop()}{compileDrop()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aead2f199df5cecea92de8cfd964f2741} 
+compile\+Drop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop table command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ad289609aedabaa8a3545dfe1ec4185a1}\index{PostgresGrammar@{PostgresGrammar}!compileDropAllDomains@{compileDropAllDomains}}
+\index{compileDropAllDomains@{compileDropAllDomains}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropAllDomains()}{compileDropAllDomains()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ad289609aedabaa8a3545dfe1ec4185a1} 
+compile\+Drop\+All\+Domains (\begin{DoxyParamCaption}\item[{}]{\$domains}{}\end{DoxyParamCaption})}
+
+Compile the SQL needed to drop all domains.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$} & \$domains \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a146cb19ceb1448ca3d793017e2bffc86}\index{PostgresGrammar@{PostgresGrammar}!compileDropAllTables@{compileDropAllTables}}
+\index{compileDropAllTables@{compileDropAllTables}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropAllTables()}{compileDropAllTables()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a146cb19ceb1448ca3d793017e2bffc86} 
+compile\+Drop\+All\+Tables (\begin{DoxyParamCaption}\item[{}]{\$tables}{}\end{DoxyParamCaption})}
+
+Compile the SQL needed to drop all tables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$} & \$tables \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a6ddf5180e3bf1a4abd7fb2cabb00259b}\index{PostgresGrammar@{PostgresGrammar}!compileDropAllTypes@{compileDropAllTypes}}
+\index{compileDropAllTypes@{compileDropAllTypes}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropAllTypes()}{compileDropAllTypes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a6ddf5180e3bf1a4abd7fb2cabb00259b} 
+compile\+Drop\+All\+Types (\begin{DoxyParamCaption}\item[{}]{\$types}{}\end{DoxyParamCaption})}
+
+Compile the SQL needed to drop all types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$} & \$types \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1690045d5d2fd7e4bfba8e8fdc55bc0b}\index{PostgresGrammar@{PostgresGrammar}!compileDropAllViews@{compileDropAllViews}}
+\index{compileDropAllViews@{compileDropAllViews}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropAllViews()}{compileDropAllViews()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1690045d5d2fd7e4bfba8e8fdc55bc0b} 
+compile\+Drop\+All\+Views (\begin{DoxyParamCaption}\item[{}]{\$views}{}\end{DoxyParamCaption})}
+
+Compile the SQL needed to drop all views.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$} & \$views \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a3adb41ee9b4ccd70ecac1391340ff414}\index{PostgresGrammar@{PostgresGrammar}!compileDropColumn@{compileDropColumn}}
+\index{compileDropColumn@{compileDropColumn}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropColumn()}{compileDropColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a3adb41ee9b4ccd70ecac1391340ff414} 
+compile\+Drop\+Column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop column command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a10161b2f28ecbc84e2ec89455582b698}\index{PostgresGrammar@{PostgresGrammar}!compileDropForeign@{compileDropForeign}}
+\index{compileDropForeign@{compileDropForeign}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropForeign()}{compileDropForeign()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a10161b2f28ecbc84e2ec89455582b698} 
+compile\+Drop\+Foreign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop foreign key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a10161b2f28ecbc84e2ec89455582b698}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7aece4426d652967055a33f81b5d30ef}\index{PostgresGrammar@{PostgresGrammar}!compileDropFullText@{compileDropFullText}}
+\index{compileDropFullText@{compileDropFullText}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropFullText()}{compileDropFullText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7aece4426d652967055a33f81b5d30ef} 
+compile\+Drop\+Full\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop fulltext index command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a7aece4426d652967055a33f81b5d30ef}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aa15ab74bb37f0fdcc559f771b1c79a2a}\index{PostgresGrammar@{PostgresGrammar}!compileDropIfExists@{compileDropIfExists}}
+\index{compileDropIfExists@{compileDropIfExists}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropIfExists()}{compileDropIfExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aa15ab74bb37f0fdcc559f771b1c79a2a} 
+compile\+Drop\+If\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop table (if exists) command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a515bc4108db787ede21878eb266dd400}\index{PostgresGrammar@{PostgresGrammar}!compileDropIndex@{compileDropIndex}}
+\index{compileDropIndex@{compileDropIndex}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropIndex()}{compileDropIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a515bc4108db787ede21878eb266dd400} 
+compile\+Drop\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop index command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac093ab4dcec068257ebfd1df34ab6ec9}\index{PostgresGrammar@{PostgresGrammar}!compileDropPrimary@{compileDropPrimary}}
+\index{compileDropPrimary@{compileDropPrimary}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropPrimary()}{compileDropPrimary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac093ab4dcec068257ebfd1df34ab6ec9} 
+compile\+Drop\+Primary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop primary key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a56ce8344453afba2776db0216cbba821}\index{PostgresGrammar@{PostgresGrammar}!compileDropSpatialIndex@{compileDropSpatialIndex}}
+\index{compileDropSpatialIndex@{compileDropSpatialIndex}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropSpatialIndex()}{compileDropSpatialIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a56ce8344453afba2776db0216cbba821} 
+compile\+Drop\+Spatial\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop spatial index command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a4aa0035711999be08be2a0132590b14b}\index{PostgresGrammar@{PostgresGrammar}!compileDropUnique@{compileDropUnique}}
+\index{compileDropUnique@{compileDropUnique}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropUnique()}{compileDropUnique()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a4aa0035711999be08be2a0132590b14b} 
+compile\+Drop\+Unique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop unique key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ab900224ca63098e03fa2593b5b135830}\index{PostgresGrammar@{PostgresGrammar}!compileEnableForeignKeyConstraints@{compileEnableForeignKeyConstraints}}
+\index{compileEnableForeignKeyConstraints@{compileEnableForeignKeyConstraints}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileEnableForeignKeyConstraints()}{compileEnableForeignKeyConstraints()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ab900224ca63098e03fa2593b5b135830} 
+compile\+Enable\+Foreign\+Key\+Constraints (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Compile the command to enable foreign key constraints.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ade455e059a35b928da33846c8c17cc74}\index{PostgresGrammar@{PostgresGrammar}!compileForeign@{compileForeign}}
+\index{compileForeign@{compileForeign}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileForeign()}{compileForeign()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ade455e059a35b928da33846c8c17cc74} 
+compile\+Foreign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a foreign key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_ade455e059a35b928da33846c8c17cc74}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a808c078ab4110d20ea903c6c699fb77e}\index{PostgresGrammar@{PostgresGrammar}!compileForeignKeys@{compileForeignKeys}}
+\index{compileForeignKeys@{compileForeignKeys}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileForeignKeys()}{compileForeignKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a808c078ab4110d20ea903c6c699fb77e} 
+compile\+Foreign\+Keys (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the foreign keys.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a808c078ab4110d20ea903c6c699fb77e}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a3d0026f5709b787dc83696d0a28329c1}\index{PostgresGrammar@{PostgresGrammar}!compileFulltext@{compileFulltext}}
+\index{compileFulltext@{compileFulltext}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileFulltext()}{compileFulltext()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a3d0026f5709b787dc83696d0a28329c1} 
+compile\+Fulltext (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a fulltext index key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a3d0026f5709b787dc83696d0a28329c1}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a0f926bb22b5ff12bd818dca8fc926ae5}\index{PostgresGrammar@{PostgresGrammar}!compileIndex@{compileIndex}}
+\index{compileIndex@{compileIndex}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileIndex()}{compileIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a0f926bb22b5ff12bd818dca8fc926ae5} 
+compile\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a plain index key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7b21fcc75a261ee264883d1421b51029}\index{PostgresGrammar@{PostgresGrammar}!compileIndexes@{compileIndexes}}
+\index{compileIndexes@{compileIndexes}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileIndexes()}{compileIndexes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7b21fcc75a261ee264883d1421b51029} 
+compile\+Indexes (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the indexes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a7b21fcc75a261ee264883d1421b51029}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac33a3e52e7ef705e3d9aa45d9d96096b}\index{PostgresGrammar@{PostgresGrammar}!compilePrimary@{compilePrimary}}
+\index{compilePrimary@{compilePrimary}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compilePrimary()}{compilePrimary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac33a3e52e7ef705e3d9aa45d9d96096b} 
+compile\+Primary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a primary key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac1d399b11ca0b010946afe6de29e252a}\index{PostgresGrammar@{PostgresGrammar}!compileRename@{compileRename}}
+\index{compileRename@{compileRename}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileRename()}{compileRename()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac1d399b11ca0b010946afe6de29e252a} 
+compile\+Rename (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a rename table command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ae25156c7ed7b653deddb99f335856769}\index{PostgresGrammar@{PostgresGrammar}!compileRenameIndex@{compileRenameIndex}}
+\index{compileRenameIndex@{compileRenameIndex}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileRenameIndex()}{compileRenameIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ae25156c7ed7b653deddb99f335856769} 
+compile\+Rename\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a rename index command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1e2a197c61fde0a02928dd1153846abf}\index{PostgresGrammar@{PostgresGrammar}!compileSchemas@{compileSchemas}}
+\index{compileSchemas@{compileSchemas}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileSchemas()}{compileSchemas()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1e2a197c61fde0a02928dd1153846abf} 
+compile\+Schemas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the schemas.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a1e2a197c61fde0a02928dd1153846abf}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a9bf677b1d571cfd2379d40b57d7fc6db}\index{PostgresGrammar@{PostgresGrammar}!compileSchemaWhereClause@{compileSchemaWhereClause}}
+\index{compileSchemaWhereClause@{compileSchemaWhereClause}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileSchemaWhereClause()}{compileSchemaWhereClause()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a9bf677b1d571cfd2379d40b57d7fc6db} 
+compile\+Schema\+Where\+Clause (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile the query to compare the schema.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$schema} & \\
+\hline
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7dc3c3dda42927aa0e872186ef6f3eb6}\index{PostgresGrammar@{PostgresGrammar}!compileSpatialIndex@{compileSpatialIndex}}
+\index{compileSpatialIndex@{compileSpatialIndex}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileSpatialIndex()}{compileSpatialIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7dc3c3dda42927aa0e872186ef6f3eb6} 
+compile\+Spatial\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a spatial index key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a48f036a3d47403f1b01af0aa120c7e59}\index{PostgresGrammar@{PostgresGrammar}!compileTableComment@{compileTableComment}}
+\index{compileTableComment@{compileTableComment}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileTableComment()}{compileTableComment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a48f036a3d47403f1b01af0aa120c7e59} 
+compile\+Table\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a table comment command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aef1fe0be1e02c1d2fde8b073c9d6a0aa}\index{PostgresGrammar@{PostgresGrammar}!compileTableExists@{compileTableExists}}
+\index{compileTableExists@{compileTableExists}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileTableExists()}{compileTableExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aef1fe0be1e02c1d2fde8b073c9d6a0aa} 
+compile\+Table\+Exists (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Compile the query to determine if the given table exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aef1fe0be1e02c1d2fde8b073c9d6a0aa}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a6eb42d053cd1d4c72d95975259dd22d9}\index{PostgresGrammar@{PostgresGrammar}!compileTables@{compileTables}}
+\index{compileTables@{compileTables}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileTables()}{compileTables()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a6eb42d053cd1d4c72d95975259dd22d9} 
+compile\+Tables (\begin{DoxyParamCaption}\item[{}]{\$schema}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the tables.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$schema} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a6eb42d053cd1d4c72d95975259dd22d9}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aa87dfd8ff5fa9949c474813f02b36b6c}\index{PostgresGrammar@{PostgresGrammar}!compileTypes@{compileTypes}}
+\index{compileTypes@{compileTypes}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileTypes()}{compileTypes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aa87dfd8ff5fa9949c474813f02b36b6c} 
+compile\+Types (\begin{DoxyParamCaption}\item[{}]{\$schema}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the user-\/defined types.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$schema} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aa87dfd8ff5fa9949c474813f02b36b6c}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a74caed0dea1bdc0240a6aa921088b056}\index{PostgresGrammar@{PostgresGrammar}!compileUnique@{compileUnique}}
+\index{compileUnique@{compileUnique}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileUnique()}{compileUnique()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a74caed0dea1bdc0240a6aa921088b056} 
+compile\+Unique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a unique key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a5597b2543133292bddaced02c39dcb16}\index{PostgresGrammar@{PostgresGrammar}!compileViews@{compileViews}}
+\index{compileViews@{compileViews}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{compileViews()}{compileViews()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a5597b2543133292bddaced02c39dcb16} 
+compile\+Views (\begin{DoxyParamCaption}\item[{}]{\$schema}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the views.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$schema} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a5597b2543133292bddaced02c39dcb16}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a03c46aa2d546ddc54c1c93a519873030}\index{PostgresGrammar@{PostgresGrammar}!escapeNames@{escapeNames}}
+\index{escapeNames@{escapeNames}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{escapeNames()}{escapeNames()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a03c46aa2d546ddc54c1c93a519873030} 
+escape\+Names (\begin{DoxyParamCaption}\item[{}]{\$names}{}\end{DoxyParamCaption})}
+
+Quote-\/escape the given tables, views, or types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$} & \$names \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_abb6ff76bb99b90d5af1600deb962ce31}\index{PostgresGrammar@{PostgresGrammar}!modifyCollate@{modifyCollate}}
+\index{modifyCollate@{modifyCollate}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyCollate()}{modifyCollate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_abb6ff76bb99b90d5af1600deb962ce31} 
+modify\+Collate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a collation column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a8843ec1889fbcdc5229791781576c2d2}\index{PostgresGrammar@{PostgresGrammar}!modifyDefault@{modifyDefault}}
+\index{modifyDefault@{modifyDefault}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyDefault()}{modifyDefault()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a8843ec1889fbcdc5229791781576c2d2} 
+modify\+Default (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a default column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a3d7b42d6d30b93b3f22fb398bf3c5ad9}\index{PostgresGrammar@{PostgresGrammar}!modifyGeneratedAs@{modifyGeneratedAs}}
+\index{modifyGeneratedAs@{modifyGeneratedAs}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyGeneratedAs()}{modifyGeneratedAs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a3d7b42d6d30b93b3f22fb398bf3c5ad9} 
+modify\+Generated\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for an identity column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}list$<$string$>$\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a4d9495e2ec2f4216ba15a01c5db69c7e}\index{PostgresGrammar@{PostgresGrammar}!modifyIncrement@{modifyIncrement}}
+\index{modifyIncrement@{modifyIncrement}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyIncrement()}{modifyIncrement()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a4d9495e2ec2f4216ba15a01c5db69c7e} 
+modify\+Increment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for an auto-\/increment column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a9c7776a862d64a4316782e6bdd20ba1e}\index{PostgresGrammar@{PostgresGrammar}!modifyNullable@{modifyNullable}}
+\index{modifyNullable@{modifyNullable}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyNullable()}{modifyNullable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a9c7776a862d64a4316782e6bdd20ba1e} 
+modify\+Nullable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a nullable column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a2513d8b9fa7204ddfa545c4e9b35a433}\index{PostgresGrammar@{PostgresGrammar}!modifyStoredAs@{modifyStoredAs}}
+\index{modifyStoredAs@{modifyStoredAs}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyStoredAs()}{modifyStoredAs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a2513d8b9fa7204ddfa545c4e9b35a433} 
+modify\+Stored\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a generated stored column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a061ea67aa1b03cf03e7b7acf6f81dbdf}\index{PostgresGrammar@{PostgresGrammar}!modifyVirtualAs@{modifyVirtualAs}}
+\index{modifyVirtualAs@{modifyVirtualAs}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyVirtualAs()}{modifyVirtualAs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a061ea67aa1b03cf03e7b7acf6f81dbdf} 
+modify\+Virtual\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a generated virtual column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a5ed83288b82e30d172f40e41434b1a2e}\index{PostgresGrammar@{PostgresGrammar}!typeBigInteger@{typeBigInteger}}
+\index{typeBigInteger@{typeBigInteger}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeBigInteger()}{typeBigInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a5ed83288b82e30d172f40e41434b1a2e} 
+type\+Big\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a big integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ab3799e9f2d78a97761f7a8d51250b536}\index{PostgresGrammar@{PostgresGrammar}!typeBinary@{typeBinary}}
+\index{typeBinary@{typeBinary}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeBinary()}{typeBinary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ab3799e9f2d78a97761f7a8d51250b536} 
+type\+Binary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a binary type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_adb893a7fdd4d2ab1fb1bbd83770f0aa7}\index{PostgresGrammar@{PostgresGrammar}!typeBoolean@{typeBoolean}}
+\index{typeBoolean@{typeBoolean}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeBoolean()}{typeBoolean()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_adb893a7fdd4d2ab1fb1bbd83770f0aa7} 
+type\+Boolean (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a boolean type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a671a5d2f9b13e89002b798ffdc2f2df4}\index{PostgresGrammar@{PostgresGrammar}!typeChar@{typeChar}}
+\index{typeChar@{typeChar}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeChar()}{typeChar()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a671a5d2f9b13e89002b798ffdc2f2df4} 
+type\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a char type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_adf7f02c626032a8878d9fe2a0b30d4ef}\index{PostgresGrammar@{PostgresGrammar}!typeDate@{typeDate}}
+\index{typeDate@{typeDate}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDate()}{typeDate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_adf7f02c626032a8878d9fe2a0b30d4ef} 
+type\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a date type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a55deb9f5895a1bc2aca45ce0f51eb9c8}\index{PostgresGrammar@{PostgresGrammar}!typeDateTime@{typeDateTime}}
+\index{typeDateTime@{typeDateTime}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDateTime()}{typeDateTime()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a55deb9f5895a1bc2aca45ce0f51eb9c8} 
+type\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a date-\/time type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a6516648db9c70dbdc06b51c1904daabe}\index{PostgresGrammar@{PostgresGrammar}!typeDateTimeTz@{typeDateTimeTz}}
+\index{typeDateTimeTz@{typeDateTimeTz}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDateTimeTz()}{typeDateTimeTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a6516648db9c70dbdc06b51c1904daabe} 
+type\+Date\+Time\+Tz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a date-\/time (with time zone) type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7fc1d2d3a6ccf22ca619f326ac1d384d}\index{PostgresGrammar@{PostgresGrammar}!typeDecimal@{typeDecimal}}
+\index{typeDecimal@{typeDecimal}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDecimal()}{typeDecimal()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7fc1d2d3a6ccf22ca619f326ac1d384d} 
+type\+Decimal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a decimal type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a0399bbf2b8baa4b3fe6cb750da912b1d}\index{PostgresGrammar@{PostgresGrammar}!typeDouble@{typeDouble}}
+\index{typeDouble@{typeDouble}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDouble()}{typeDouble()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a0399bbf2b8baa4b3fe6cb750da912b1d} 
+type\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a double type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a87cedcc10ad27382e20d274980268c33}\index{PostgresGrammar@{PostgresGrammar}!typeEnum@{typeEnum}}
+\index{typeEnum@{typeEnum}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeEnum()}{typeEnum()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a87cedcc10ad27382e20d274980268c33} 
+type\+Enum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for an enumeration type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ae52d34dd85fb7a878ec9fab0f706f1c8}\index{PostgresGrammar@{PostgresGrammar}!typeFloat@{typeFloat}}
+\index{typeFloat@{typeFloat}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeFloat()}{typeFloat()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ae52d34dd85fb7a878ec9fab0f706f1c8} 
+type\+Float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a float type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a32ccd504a670587ed006ecb984328b49}\index{PostgresGrammar@{PostgresGrammar}!typeGeography@{typeGeography}}
+\index{typeGeography@{typeGeography}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeGeography()}{typeGeography()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a32ccd504a670587ed006ecb984328b49} 
+type\+Geography (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a spatial Geography type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a68ba20c6614b248c15d9b45345be8ff3}\index{PostgresGrammar@{PostgresGrammar}!typeGeometry@{typeGeometry}}
+\index{typeGeometry@{typeGeometry}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeGeometry()}{typeGeometry()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a68ba20c6614b248c15d9b45345be8ff3} 
+type\+Geometry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a spatial Geometry type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a20dc55ca50eef6e7f4a61d93bfd984ed}\index{PostgresGrammar@{PostgresGrammar}!typeInteger@{typeInteger}}
+\index{typeInteger@{typeInteger}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeInteger()}{typeInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a20dc55ca50eef6e7f4a61d93bfd984ed} 
+type\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for an integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1a4b0b132dba03331f4fc95616fdc89b}\index{PostgresGrammar@{PostgresGrammar}!typeIpAddress@{typeIpAddress}}
+\index{typeIpAddress@{typeIpAddress}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeIpAddress()}{typeIpAddress()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1a4b0b132dba03331f4fc95616fdc89b} 
+type\+Ip\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for an IP address type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a425caf2c70040ba2774c61e5d09d4e15}\index{PostgresGrammar@{PostgresGrammar}!typeJson@{typeJson}}
+\index{typeJson@{typeJson}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeJson()}{typeJson()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a425caf2c70040ba2774c61e5d09d4e15} 
+type\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a json type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aeceee01d5c726e568c96f781445a3c47}\index{PostgresGrammar@{PostgresGrammar}!typeJsonb@{typeJsonb}}
+\index{typeJsonb@{typeJsonb}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeJsonb()}{typeJsonb()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aeceee01d5c726e568c96f781445a3c47} 
+type\+Jsonb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a jsonb type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a60c26b88c281f192a9357bb6d88df7c2}\index{PostgresGrammar@{PostgresGrammar}!typeLongText@{typeLongText}}
+\index{typeLongText@{typeLongText}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeLongText()}{typeLongText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a60c26b88c281f192a9357bb6d88df7c2} 
+type\+Long\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a long text type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a351aff67e2be5f28bf648fe581a821a7}\index{PostgresGrammar@{PostgresGrammar}!typeMacAddress@{typeMacAddress}}
+\index{typeMacAddress@{typeMacAddress}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeMacAddress()}{typeMacAddress()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a351aff67e2be5f28bf648fe581a821a7} 
+type\+Mac\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a MAC address type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ade2e43aa53b2f06fd8e1071aa339bfd3}\index{PostgresGrammar@{PostgresGrammar}!typeMediumInteger@{typeMediumInteger}}
+\index{typeMediumInteger@{typeMediumInteger}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeMediumInteger()}{typeMediumInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ade2e43aa53b2f06fd8e1071aa339bfd3} 
+type\+Medium\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a medium integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_afa87362b86157e2f37dcea2f23bd37cc}\index{PostgresGrammar@{PostgresGrammar}!typeMediumText@{typeMediumText}}
+\index{typeMediumText@{typeMediumText}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeMediumText()}{typeMediumText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_afa87362b86157e2f37dcea2f23bd37cc} 
+type\+Medium\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a medium text type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a48b741834e1321f1ae7accf2812c95f7}\index{PostgresGrammar@{PostgresGrammar}!typeReal@{typeReal}}
+\index{typeReal@{typeReal}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeReal()}{typeReal()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a48b741834e1321f1ae7accf2812c95f7} 
+type\+Real (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a real type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aad2df322e9a4e4bc7508a18c54d1978d}\index{PostgresGrammar@{PostgresGrammar}!typeSmallInteger@{typeSmallInteger}}
+\index{typeSmallInteger@{typeSmallInteger}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeSmallInteger()}{typeSmallInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_aad2df322e9a4e4bc7508a18c54d1978d} 
+type\+Small\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a small integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a388abe6b9beac57152215493f8aefce6}\index{PostgresGrammar@{PostgresGrammar}!typeString@{typeString}}
+\index{typeString@{typeString}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeString()}{typeString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a388abe6b9beac57152215493f8aefce6} 
+type\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a string type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a8c686868a89dbd039f35308eef26fd8f}\index{PostgresGrammar@{PostgresGrammar}!typeText@{typeText}}
+\index{typeText@{typeText}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeText()}{typeText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a8c686868a89dbd039f35308eef26fd8f} 
+type\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a text type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a239adf939b7dcf77cc77ef4fb41c5365}\index{PostgresGrammar@{PostgresGrammar}!typeTime@{typeTime}}
+\index{typeTime@{typeTime}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTime()}{typeTime()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a239adf939b7dcf77cc77ef4fb41c5365} 
+type\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a time type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7515216c9600b06fb2fab0a26bf530fd}\index{PostgresGrammar@{PostgresGrammar}!typeTimestamp@{typeTimestamp}}
+\index{typeTimestamp@{typeTimestamp}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTimestamp()}{typeTimestamp()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a7515216c9600b06fb2fab0a26bf530fd} 
+type\+Timestamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a timestamp type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ab6493229383ef043d2949a893c9b3ae3}\index{PostgresGrammar@{PostgresGrammar}!typeTimestampTz@{typeTimestampTz}}
+\index{typeTimestampTz@{typeTimestampTz}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTimestampTz()}{typeTimestampTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ab6493229383ef043d2949a893c9b3ae3} 
+type\+Timestamp\+Tz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a timestamp (with time zone) type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a5966809347f4a101b474b75e8a7c5166}\index{PostgresGrammar@{PostgresGrammar}!typeTimeTz@{typeTimeTz}}
+\index{typeTimeTz@{typeTimeTz}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTimeTz()}{typeTimeTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a5966809347f4a101b474b75e8a7c5166} 
+type\+Time\+Tz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a time (with time zone) type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_abca25411a812abad9b2383ae6d609918}\index{PostgresGrammar@{PostgresGrammar}!typeTinyInteger@{typeTinyInteger}}
+\index{typeTinyInteger@{typeTinyInteger}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTinyInteger()}{typeTinyInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_abca25411a812abad9b2383ae6d609918} 
+type\+Tiny\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a tiny integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac4edfb43bc703db74cfa18e7c0640b6c}\index{PostgresGrammar@{PostgresGrammar}!typeTinyText@{typeTinyText}}
+\index{typeTinyText@{typeTinyText}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTinyText()}{typeTinyText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_ac4edfb43bc703db74cfa18e7c0640b6c} 
+type\+Tiny\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a tiny text type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1fe4f44117625a028efa1d70a0d56735}\index{PostgresGrammar@{PostgresGrammar}!typeUuid@{typeUuid}}
+\index{typeUuid@{typeUuid}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeUuid()}{typeUuid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a1fe4f44117625a028efa1d70a0d56735} 
+type\+Uuid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a uuid type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a801da715aec781e976974a5adf21f980}\index{PostgresGrammar@{PostgresGrammar}!typeVector@{typeVector}}
+\index{typeVector@{typeVector}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeVector()}{typeVector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a801da715aec781e976974a5adf21f980} 
+type\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a vector type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a801da715aec781e976974a5adf21f980}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a86b4fc703f9100960526a4123d7a69c7}\index{PostgresGrammar@{PostgresGrammar}!typeYear@{typeYear}}
+\index{typeYear@{typeYear}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{typeYear()}{typeYear()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a86b4fc703f9100960526a4123d7a69c7} 
+type\+Year (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a year type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a8819395a8920e6fc292fcb27f5491269}\index{PostgresGrammar@{PostgresGrammar}!\$fluentCommands@{\$fluentCommands}}
+\index{\$fluentCommands@{\$fluentCommands}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{\$fluentCommands}{\$fluentCommands}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a8819395a8920e6fc292fcb27f5491269} 
+\$fluent\+Commands = \mbox{[}\textquotesingle{}Auto\+Increment\+Starting\+Values\textquotesingle{}, \textquotesingle{}Comment\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a160987fb6b313e736e282e85282c6a30}\index{PostgresGrammar@{PostgresGrammar}!\$modifiers@{\$modifiers}}
+\index{\$modifiers@{\$modifiers}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{\$modifiers}{\$modifiers}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a160987fb6b313e736e282e85282c6a30} 
+\$modifiers = \mbox{[}\textquotesingle{}Collate\textquotesingle{}, \textquotesingle{}Nullable\textquotesingle{}, \textquotesingle{}Default\textquotesingle{}, \textquotesingle{}Virtual\+As\textquotesingle{}, \textquotesingle{}Stored\+As\textquotesingle{}, \textquotesingle{}Generated\+As\textquotesingle{}, \textquotesingle{}Increment\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a151ecd4bab2e85de938891e925a040c2}\index{PostgresGrammar@{PostgresGrammar}!\$serials@{\$serials}}
+\index{\$serials@{\$serials}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{\$serials}{\$serials}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_a151ecd4bab2e85de938891e925a040c2} 
+\$serials = \mbox{[}\textquotesingle{}big\+Integer\textquotesingle{}, \textquotesingle{}integer\textquotesingle{}, \textquotesingle{}medium\+Integer\textquotesingle{}, \textquotesingle{}small\+Integer\textquotesingle{}, \textquotesingle{}tiny\+Integer\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_acf491548539fb3e48517eae4df476304}\index{PostgresGrammar@{PostgresGrammar}!\$transactions@{\$transactions}}
+\index{\$transactions@{\$transactions}!PostgresGrammar@{PostgresGrammar}}
+\doxysubsubsection{\texorpdfstring{\$transactions}{\$transactions}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_postgres_grammar_acf491548539fb3e48517eae4df476304} 
+\$transactions = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Schema/\+Grammars/\mbox{\hyperlink{_schema_2_grammars_2_postgres_grammar_8php}{Postgres\+Grammar.\+php}}\end{DoxyCompactItemize}

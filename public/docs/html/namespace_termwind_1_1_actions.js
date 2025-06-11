@@ -1,0 +1,4 @@
+var namespace_termwind_1_1_actions =
+[
+    [ "StyleToMethod", "class_termwind_1_1_actions_1_1_style_to_method.html", "class_termwind_1_1_actions_1_1_style_to_method" ]
+];

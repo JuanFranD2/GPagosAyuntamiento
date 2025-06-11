@@ -1,0 +1,7 @@
+var class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass =
+[
+    [ "appendToClass", "class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass.html#aa67fe43aada5aa44405f2840f63178ba", null ],
+    [ "apply", "class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass.html#a2f25d1c949009b154d77c4ce6f7587b6", null ],
+    [ "DUMMY_METHOD_DEFINITION", "class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass.html#abbb29208d5f1ee41be755af2896b86d1", null ],
+    [ "DUMMY_METHOD_DEFINITION_LEGACY", "class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass.html#a826350e08d96ed56f32a6fa0b2a50619", null ]
+];

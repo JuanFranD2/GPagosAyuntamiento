@@ -1,0 +1,67 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/staabm/side-\/effects-\/detector Directory Reference}
+\hypertarget{dir_a14e8bf5fd20f0aa3d93b5314ff5d913}{}\label{dir_a14e8bf5fd20f0aa3d93b5314ff5d913}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/staabm/side-\/effects-\/detector Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/staabm/side-\/effects-\/detector Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_345d1ff6de12c4e00ca13887fcc05485}{lib}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Analyzes php-\/code for side-\/effects.
+
+When code has no side-\/effects it can e.\+g. be used with {\ttfamily eval(\$code)} in the same process without interfering. \href{https://github.com/staabm/side-effects-detector/blob/main/lib/SideEffect.php}{\texttt{Side-\/effects are classified}} into categories to filter them more easily depending on your use-\/case.\hypertarget{README.md_autotoc_md11142}{}\doxysubsubsection{\texorpdfstring{Install}{Install}}\label{README.md_autotoc_md11142}
+{\ttfamily composer require staabm/side-\/effects-\/detector}\hypertarget{README.md_autotoc_md11143}{}\doxysubsubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md11143}
+Example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{classstaabm_1_1_side_effects_detector_1_1_side_effects_detector}{staabm\(\backslash\)SideEffectsDetector\(\backslash\)SideEffectsDetector}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$code\ =\ \textcolor{stringliteral}{'<?php\ version\_compare(PHP\_VERSION,\ "{}8.0"{},\ "{}>="{})\ or\ echo("{}skip\ because\ attributes\ are\ only\ available\ since\ PHP\ 8.0"{});'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$detector\ =\ \textcolor{keyword}{new}\ SideEffectsDetector();}
+\DoxyCodeLine{\textcolor{comment}{//\ [SideEffect::STANDARD\_OUTPUT]}}
+\DoxyCodeLine{var\_dump(\$detector-\/>getSideEffects(\$code));}
+
+\end{DoxyCode}
+
+
+In case functions are called which are not known to have side-\/effects -\/ e.\+g. userland functions -\/ {\ttfamily null} is returned.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{classstaabm_1_1_side_effects_detector_1_1_side_effects_detector}{staabm\(\backslash\)SideEffectsDetector\(\backslash\)SideEffectsDetector}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$code\ =\ \textcolor{stringliteral}{'<?php\ userlandFunction();'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$detector\ =\ \textcolor{keyword}{new}\ SideEffectsDetector();}
+\DoxyCodeLine{\textcolor{comment}{//\ [SideEffect::MAYBE]}}
+\DoxyCodeLine{var\_dump(\$detector-\/>getSideEffects(\$code));}
+
+\end{DoxyCode}
+
+
+Code might have multiple side-\/effects\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{classstaabm_1_1_side_effects_detector_1_1_side_effects_detector}{staabm\(\backslash\)SideEffectsDetector\(\backslash\)SideEffectsDetector}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$code\ =\ \textcolor{stringliteral}{'<?php\ include\ "{}some-\/file.php"{};\ echo\ "{}hello\ world"{};\ exit(1);'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$detector\ =\ \textcolor{keyword}{new}\ SideEffectsDetector();}
+\DoxyCodeLine{\textcolor{comment}{//\ [SideEffect::SCOPE\_POLLUTION,\ SideEffect::STANDARD\_OUTPUT,\ SideEffect::PROCESS\_EXIT]}}
+\DoxyCodeLine{var\_dump(\$detector-\/>getSideEffects(\$code));}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11144}{}\doxysubsubsection{\texorpdfstring{Disclaimer}{Disclaimer}}\label{README.md_autotoc_md11144}
+Non goals are\+:
+\begin{DoxyItemize}
+\item find the best possible answer for all cases
+\item add runtime dependencies
+\end{DoxyItemize}
+
+If you are in need of a fully fledged side-\/effect analysis, use more advanced tools like PHPStan.
+
+Look at the test-\/suite to get an idea of \href{https://github.com/staabm/side-effects-detector/blob/main/tests/SideEffectsDetectorTest.php}{\texttt{supported use-\/cases}}. 

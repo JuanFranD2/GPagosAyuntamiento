@@ -1,0 +1,58 @@
+\doxysection{Signalable\+Command\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface}{}\label{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface}\index{SignalableCommandInterface@{SignalableCommandInterface}}
+Inheritance diagram for Signalable\+Command\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface_a0fee49311e3fb9d2438fcd8f3910283b}{get\+Subscribed\+Signals}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface_a11d94a6a5c47569a939ee299fc18da39}{handle\+Signal}} (int \$signal, int\texorpdfstring{$\vert$}{|}false \$previous\+Exit\+Code=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for command reacting to signal.
+
+\begin{DoxyAuthor}{Author}
+Grégoire Pineau \href{mailto:lyrixx@lyrix.info}{\texttt{lyrixx@lyrix.\+info}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface_a0fee49311e3fb9d2438fcd8f3910283b}\index{SignalableCommandInterface@{SignalableCommandInterface}!getSubscribedSignals@{getSubscribedSignals}}
+\index{getSubscribedSignals@{getSubscribedSignals}!SignalableCommandInterface@{SignalableCommandInterface}}
+\doxysubsubsection{\texorpdfstring{getSubscribedSignals()}{getSubscribedSignals()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface_a0fee49311e3fb9d2438fcd8f3910283b} 
+get\+Subscribed\+Signals (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the list of signals to subscribe. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_traceable_command_a0fee49311e3fb9d2438fcd8f3910283b}{Traceable\+Command}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface_a11d94a6a5c47569a939ee299fc18da39}\index{SignalableCommandInterface@{SignalableCommandInterface}!handleSignal@{handleSignal}}
+\index{handleSignal@{handleSignal}!SignalableCommandInterface@{SignalableCommandInterface}}
+\doxysubsubsection{\texorpdfstring{handleSignal()}{handleSignal()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_console_1_1_command_1_1_signalable_command_interface_a11d94a6a5c47569a939ee299fc18da39} 
+handle\+Signal (\begin{DoxyParamCaption}\item[{int}]{\$signal}{, }\item[{int\texorpdfstring{$\vert$}{|}false}]{\$previous\+Exit\+Code}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+The method will be called when the application is signaled.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false The exit code to return or false to continue the normal execution 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_traceable_command_a11d94a6a5c47569a939ee299fc18da39}{Traceable\+Command}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/console/\+Command/\mbox{\hyperlink{_signalable_command_interface_8php}{Signalable\+Command\+Interface.\+php}}\end{DoxyCompactItemize}

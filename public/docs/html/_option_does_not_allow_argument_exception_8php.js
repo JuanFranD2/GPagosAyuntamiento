@@ -1,0 +1,4 @@
+var _option_does_not_allow_argument_exception_8php =
+[
+    [ "OptionDoesNotAllowArgumentException", "class_sebastian_bergmann_1_1_cli_parser_1_1_option_does_not_allow_argument_exception.html", "class_sebastian_bergmann_1_1_cli_parser_1_1_option_does_not_allow_argument_exception" ]
+];

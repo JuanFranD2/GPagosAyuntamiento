@@ -1,0 +1,249 @@
+\doxysection{Lockable\+File Class Reference}
+\hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file}{}\label{class_illuminate_1_1_filesystem_1_1_lockable_file}\index{LockableFile@{LockableFile}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a9f50971f9a0a3abf142b70b22b84fd18}{\+\_\+\+\_\+construct}} (\$path, \$mode)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_abe93fa81367afc981e280965fb20a7ac}{read}} (\$length=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a775bfb88c1bb7975d67f277eade2a1b7}{size}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_ac38aa087d69516995a8d7c2bd86d28ea}{write}} (\$contents)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_aded92815b0f4cd9a64f76a6019162198}{truncate}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_ad47a27d8346fed8dd41df5c2b2f87f92}{get\+Shared\+Lock}} (\$block=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a5b384118860dd2e5ea7cf8be540b1359}{get\+Exclusive\+Lock}} (\$block=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_ac2dab4f6d135e515e1c560945d4e81aa}{release\+Lock}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_aa69c8bf1f1dcf4e72552efff1fe3e87e}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_aa348b4cfb0bfb906cf310e83244e8995}{ensure\+Directory\+Exists}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_afcc31b97e789d5fe34478f378e7d66b1}{create\+Resource}} (\$path, \$mode)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_ad86c3fbc5672e1deeafc5229012b0b5d}{\$handle}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a0a4baf0b22973c07685c3981f0d17fc4}{\$path}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a44a0302ff92563750dd1451cc2d4cf66}{\$is\+Locked}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a9f50971f9a0a3abf142b70b22b84fd18}\index{LockableFile@{LockableFile}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a9f50971f9a0a3abf142b70b22b84fd18} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$mode}{}\end{DoxyParamCaption})}
+
+Create a new \doxylink{class_file}{File} instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_aa69c8bf1f1dcf4e72552efff1fe3e87e}\index{LockableFile@{LockableFile}!close@{close}}
+\index{close@{close}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_aa69c8bf1f1dcf4e72552efff1fe3e87e} 
+close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Close the file.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_afcc31b97e789d5fe34478f378e7d66b1}\index{LockableFile@{LockableFile}!createResource@{createResource}}
+\index{createResource@{createResource}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{createResource()}{createResource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_afcc31b97e789d5fe34478f378e7d66b1} 
+create\+Resource (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the file resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_aa348b4cfb0bfb906cf310e83244e8995}\index{LockableFile@{LockableFile}!ensureDirectoryExists@{ensureDirectoryExists}}
+\index{ensureDirectoryExists@{ensureDirectoryExists}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{ensureDirectoryExists()}{ensureDirectoryExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_aa348b4cfb0bfb906cf310e83244e8995} 
+ensure\+Directory\+Exists (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the file\textquotesingle{}s directory if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a5b384118860dd2e5ea7cf8be540b1359}\index{LockableFile@{LockableFile}!getExclusiveLock@{getExclusiveLock}}
+\index{getExclusiveLock@{getExclusiveLock}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{getExclusiveLock()}{getExclusiveLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a5b384118860dd2e5ea7cf8be540b1359} 
+get\+Exclusive\+Lock (\begin{DoxyParamCaption}\item[{}]{\$block}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get an exclusive lock on the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$block} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Filesystem\textbackslash{}\+Lock\+Timeout\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_ad47a27d8346fed8dd41df5c2b2f87f92}\index{LockableFile@{LockableFile}!getSharedLock@{getSharedLock}}
+\index{getSharedLock@{getSharedLock}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{getSharedLock()}{getSharedLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_ad47a27d8346fed8dd41df5c2b2f87f92} 
+get\+Shared\+Lock (\begin{DoxyParamCaption}\item[{}]{\$block}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get a shared lock on the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$block} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Filesystem\textbackslash{}\+Lock\+Timeout\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_abe93fa81367afc981e280965fb20a7ac}\index{LockableFile@{LockableFile}!read@{read}}
+\index{read@{read}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_abe93fa81367afc981e280965fb20a7ac} 
+read (\begin{DoxyParamCaption}\item[{}]{\$length}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Read the file contents.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_ac2dab4f6d135e515e1c560945d4e81aa}\index{LockableFile@{LockableFile}!releaseLock@{releaseLock}}
+\index{releaseLock@{releaseLock}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{releaseLock()}{releaseLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_ac2dab4f6d135e515e1c560945d4e81aa} 
+release\+Lock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Release the lock on the file.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a775bfb88c1bb7975d67f277eade2a1b7}\index{LockableFile@{LockableFile}!size@{size}}
+\index{size@{size}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a775bfb88c1bb7975d67f277eade2a1b7} 
+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the file size.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_aded92815b0f4cd9a64f76a6019162198}\index{LockableFile@{LockableFile}!truncate@{truncate}}
+\index{truncate@{truncate}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_aded92815b0f4cd9a64f76a6019162198} 
+truncate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Truncate the file.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_ac38aa087d69516995a8d7c2bd86d28ea}\index{LockableFile@{LockableFile}!write@{write}}
+\index{write@{write}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_ac38aa087d69516995a8d7c2bd86d28ea} 
+write (\begin{DoxyParamCaption}\item[{}]{\$contents}{}\end{DoxyParamCaption})}
+
+Write to the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$contents} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_ad86c3fbc5672e1deeafc5229012b0b5d}\index{LockableFile@{LockableFile}!\$handle@{\$handle}}
+\index{\$handle@{\$handle}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{\$handle}{\$handle}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_ad86c3fbc5672e1deeafc5229012b0b5d} 
+\$handle\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a44a0302ff92563750dd1451cc2d4cf66}\index{LockableFile@{LockableFile}!\$isLocked@{\$isLocked}}
+\index{\$isLocked@{\$isLocked}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{\$isLocked}{\$isLocked}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a44a0302ff92563750dd1451cc2d4cf66} 
+\$is\+Locked = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a0a4baf0b22973c07685c3981f0d17fc4}\index{LockableFile@{LockableFile}!\$path@{\$path}}
+\index{\$path@{\$path}!LockableFile@{LockableFile}}
+\doxysubsubsection{\texorpdfstring{\$path}{\$path}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a0a4baf0b22973c07685c3981f0d17fc4} 
+\$path\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Filesystem/\mbox{\hyperlink{_lockable_file_8php}{Lockable\+File.\+php}}\end{DoxyCompactItemize}

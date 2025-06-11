@@ -1,0 +1,31 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/jest-\/leak-\/detector Directory Reference}
+\hypertarget{dir_82f48d901c7290ef51d96a27bb948d7c}{}\label{dir_82f48d901c7290ef51d96a27bb948d7c}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/jest-\/leak-\/detector Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/jest-\/leak-\/detector Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md4308}{}\doxysubsection{\texorpdfstring{jest-\/leak-\/detector}{jest-\/leak-\/detector}}\label{README.md_autotoc_md4308}
+Module for verifying whether an object has been garbage collected or not.
+
+Internally creates a weak reference to the object, and forces garbage collection to happen. If the reference is gone, it meant no one else was pointing to the object.\hypertarget{README.md_autotoc_md4309}{}\doxysubsection{\texorpdfstring{Example}{Example}}\label{README.md_autotoc_md4309}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(async\ function\ ()\ \{}
+\DoxyCodeLine{\ \ let\ reference\ =\ \{\};}
+\DoxyCodeLine{\ \ let\ isLeaking;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ const\ detector\ =\ new\ LeakDetector(reference);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ //\ Reference\ is\ held\ in\ memory.}
+\DoxyCodeLine{\ \ isLeaking\ =\ await\ detector.isLeaking();}
+\DoxyCodeLine{\ \ console.log(isLeaking);\ //\ true}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ //\ We\ destroy\ the\ only\ reference\ to\ the\ object.}
+\DoxyCodeLine{\ \ reference\ =\ null;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ //\ Reference\ is\ gone.}
+\DoxyCodeLine{\ \ isLeaking\ =\ await\ detector.isLeaking();}
+\DoxyCodeLine{\ \ console.log(isLeaking);\ //\ false}
+\DoxyCodeLine{\})();}
+
+\end{DoxyCode}
+ 

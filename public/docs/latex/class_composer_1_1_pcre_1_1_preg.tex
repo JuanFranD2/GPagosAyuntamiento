@@ -1,0 +1,487 @@
+\doxysection{Preg Class Reference}
+\hypertarget{class_composer_1_1_pcre_1_1_preg}{}\label{class_composer_1_1_pcre_1_1_preg}\index{Preg@{Preg}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a72f6b711eaeb3deee57e21b08dd93c4b}{match}} (string \$pattern, string \$subject, ?array \&\$matches=null, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a25ff3388388e3b9f3b38c67594e8e987}{match\+Strict\+Groups}} (string \$pattern, string \$subject, ?array \&\$matches=null, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_ad83e48c227bbb94d57079e7191ae8472}{match\+With\+Offsets}} (string \$pattern, string \$subject, ?array \&\$matches, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_aef15d430e01c3cb0f6fb480527a02677}{match\+All}} (string \$pattern, string \$subject, ?array \&\$matches=null, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_ad5305decd8ad965375e7b06f1b9bd486}{match\+All\+Strict\+Groups}} (string \$pattern, string \$subject, ?array \&\$matches=null, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_afab2f048f95caae793caf210146c9397}{match\+All\+With\+Offsets}} (string \$pattern, string \$subject, ?array \&\$matches, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a07c9506a965403b72a563614681bf05d}{replace}} (\$pattern, \$replacement, \$subject, int \$limit=-\/1, ?int \&\$count=null)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a0bf2c023b3edd8fa28b077e5dca3364c}{replace\+Callback}} (\$pattern, callable \$replacement, \$subject, int \$limit=-\/1, ?int \&\$count=null, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a9e8b6585acea25ad3106ee8776d6fe7c}{replace\+Callback\+Strict\+Groups}} (string \$pattern, callable \$replacement, \$subject, int \$limit=-\/1, ?int \&\$count=null, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a2e08863b6394648e232c2f24ad4ff18f}{replace\+Callback\+Array}} (array \$pattern, \$subject, int \$limit=-\/1, ?int \&\$count=null, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_aa57c042f2a2c5704a161ebd28410f15e}{split}} (string \$pattern, string \$subject, int \$limit=-\/1, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a1c9348b9bbe23e9c6a08a76e4b0f8d72}{split\+With\+Offsets}} (string \$pattern, string \$subject, int \$limit=-\/1, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a2178fd062781a4f324da1096ae6d3165}{grep}} (string \$pattern, array \$array, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_af49412e145025125af7d02c1533720b7}{is\+Match}} (string \$pattern, string \$subject, ?array \&\$matches=null, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_add6a7a1b1237770d4bece68c82dde876}{is\+Match\+Strict\+Groups}} (string \$pattern, string \$subject, ?array \&\$matches=null, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a67baee7d0b1e59a2483bbecd82419677}{is\+Match\+All}} (string \$pattern, string \$subject, ?array \&\$matches=null, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a41e35c29ecaa2ff0eb1d0d3b10e5d621}{is\+Match\+All\+Strict\+Groups}} (string \$pattern, string \$subject, ?array \&\$matches=null, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a3e178076d33968a40c555e37c22c8426}{is\+Match\+With\+Offsets}} (string \$pattern, string \$subject, ?array \&\$matches, int \$flags=0, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_ad4c21f61ca6cc9a3a5844a4609d7a89a}{is\+Match\+All\+With\+Offsets}} (string \$pattern, string \$subject, ?array \&\$matches, int \$flags=0, int \$offset=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_add11cd2afaf7f25564f26b3b2498df71}{ARRAY\+\_\+\+MSG}} = \textquotesingle{}\$subject as an array is not supported. You can use \textbackslash{}\textquotesingle{}foreach\textbackslash{}\textquotesingle{} instead.\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg_a214ad65f0b8c8077005de5fc51c0a7c0}{INVALID\+\_\+\+TYPE\+\_\+\+MSG}} = \textquotesingle{}\$subject must be a string, \%s given.\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a2178fd062781a4f324da1096ae6d3165}\index{Preg@{Preg}!grep@{grep}}
+\index{grep@{grep}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{grep()}{grep()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a2178fd062781a4f324da1096ae6d3165} 
+grep (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{array}]{\$array}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@template T of string\texorpdfstring{$\vert$}{|}\textbackslash{}\+Stringable 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$\+T$>$} & \$array \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+GREP\+\_\+\+INVERT$>$} & \$flags PREG\+\_\+\+GREP\+\_\+\+INVERT \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$\+T$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_af49412e145025125af7d02c1533720b7}\index{Preg@{Preg}!isMatch@{isMatch}}
+\index{isMatch@{isMatch}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{isMatch()}{isMatch()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_af49412e145025125af7d02c1533720b7} 
+is\+Match (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of match() which returns a bool instead of int
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported\\
+\hline
+ & {\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a67baee7d0b1e59a2483bbecd82419677}\index{Preg@{Preg}!isMatchAll@{isMatchAll}}
+\index{isMatchAll@{isMatchAll}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{isMatchAll()}{isMatchAll()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a67baee7d0b1e59a2483bbecd82419677} 
+is\+Match\+All (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of match\+All() which returns a bool instead of int
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported\\
+\hline
+ & {\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a41e35c29ecaa2ff0eb1d0d3b10e5d621}\index{Preg@{Preg}!isMatchAllStrictGroups@{isMatchAllStrictGroups}}
+\index{isMatchAllStrictGroups@{isMatchAllStrictGroups}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{isMatchAllStrictGroups()}{isMatchAllStrictGroups()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a41e35c29ecaa2ff0eb1d0d3b10e5d621} 
+is\+Match\+All\+Strict\+Groups (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of {\ttfamily is\+Match\+All()} which outputs non-\/null matches (or throws)
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported\\
+\hline
+ & {\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, list$<$string$>$\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_ad4c21f61ca6cc9a3a5844a4609d7a89a}\index{Preg@{Preg}!isMatchAllWithOffsets@{isMatchAllWithOffsets}}
+\index{isMatchAllWithOffsets@{isMatchAllWithOffsets}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{isMatchAllWithOffsets()}{isMatchAllWithOffsets()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_ad4c21f61ca6cc9a3a5844a4609d7a89a} 
+is\+Match\+All\+With\+Offsets (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of match\+All\+With\+Offsets() which returns a bool instead of int
+
+Runs preg\+\_\+match\+\_\+all with PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported\\
+\hline
+ & {\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, list\texorpdfstring{$<$}{<}array\{string\texorpdfstring{$\vert$}{|}null, int\texorpdfstring{$<$}{<}-\/1, max\texorpdfstring{$>$}{>}\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_add6a7a1b1237770d4bece68c82dde876}\index{Preg@{Preg}!isMatchStrictGroups@{isMatchStrictGroups}}
+\index{isMatchStrictGroups@{isMatchStrictGroups}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{isMatchStrictGroups()}{isMatchStrictGroups()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_add6a7a1b1237770d4bece68c82dde876} 
+is\+Match\+Strict\+Groups (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of {\ttfamily is\+Match()} which outputs non-\/null matches (or throws)
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Null\+Match\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a3e178076d33968a40c555e37c22c8426}\index{Preg@{Preg}!isMatchWithOffsets@{isMatchWithOffsets}}
+\index{isMatchWithOffsets@{isMatchWithOffsets}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{isMatchWithOffsets()}{isMatchWithOffsets()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a3e178076d33968a40c555e37c22c8426} 
+is\+Match\+With\+Offsets (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of match\+With\+Offsets() which returns a bool instead of int
+
+Runs preg\+\_\+match with PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported\\
+\hline
+ & {\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, array\{string\texorpdfstring{$\vert$}{|}null, int\texorpdfstring{$<$}{<}-\/1, max\texorpdfstring{$>$}{>}\}\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a72f6b711eaeb3deee57e21b08dd93c4b}\index{Preg@{Preg}!match@{match}}
+\index{match@{match}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a72f6b711eaeb3deee57e21b08dd93c4b} 
+match (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\texorpdfstring{$\vert$}{|}1
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_aef15d430e01c3cb0f6fb480527a02677}\index{Preg@{Preg}!matchAll@{matchAll}}
+\index{matchAll@{matchAll}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{matchAll()}{matchAll()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_aef15d430e01c3cb0f6fb480527a02677} 
+match\+All (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\texorpdfstring{$\vert$}{|}positive-\/int
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_ad5305decd8ad965375e7b06f1b9bd486}\index{Preg@{Preg}!matchAllStrictGroups@{matchAllStrictGroups}}
+\index{matchAllStrictGroups@{matchAllStrictGroups}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{matchAllStrictGroups()}{matchAllStrictGroups()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_ad5305decd8ad965375e7b06f1b9bd486} 
+match\+All\+Strict\+Groups (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of {\ttfamily match()} which outputs non-\/null matches (or throws)
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Null\+Match\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, list$<$string$>$\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_afab2f048f95caae793caf210146c9397}\index{Preg@{Preg}!matchAllWithOffsets@{matchAllWithOffsets}}
+\index{matchAllWithOffsets@{matchAllWithOffsets}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{matchAllWithOffsets()}{matchAllWithOffsets()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_afab2f048f95caae793caf210146c9397} 
+match\+All\+With\+Offsets (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Runs preg\+\_\+match\+\_\+all with PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL and PREG\+\_\+\+MATCH\+\_\+\+OFFSET are always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\texorpdfstring{$\vert$}{|}positive-\/int
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, list\texorpdfstring{$<$}{<}array\{string\texorpdfstring{$\vert$}{|}null, int\texorpdfstring{$<$}{<}-\/1, max\texorpdfstring{$>$}{>}\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a25ff3388388e3b9f3b38c67594e8e987}\index{Preg@{Preg}!matchStrictGroups@{matchStrictGroups}}
+\index{matchStrictGroups@{matchStrictGroups}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{matchStrictGroups()}{matchStrictGroups()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a25ff3388388e3b9f3b38c67594e8e987} 
+match\+Strict\+Groups (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of {\ttfamily match()} which outputs non-\/null matches (or throws)
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\texorpdfstring{$\vert$}{|}1 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+Null\+Match\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_ad83e48c227bbb94d57079e7191ae8472}\index{Preg@{Preg}!matchWithOffsets@{matchWithOffsets}}
+\index{matchWithOffsets@{matchWithOffsets}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{matchWithOffsets()}{matchWithOffsets()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_ad83e48c227bbb94d57079e7191ae8472} 
+match\+With\+Offsets (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Runs preg\+\_\+match with PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$pattern} & \\
+\hline
+ & {\em array$<$mixed$>$} & \$matches Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL and PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE are always set, no other flags are supported \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\texorpdfstring{$\vert$}{|}1
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em -\/out} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, array\{string\texorpdfstring{$\vert$}{|}null, int\texorpdfstring{$<$}{<}-\/1, max\texorpdfstring{$>$}{>}\}\texorpdfstring{$>$}{>} \$matches \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a07c9506a965403b72a563614681bf05d}\index{Preg@{Preg}!replace@{replace}}
+\index{replace@{replace}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a07c9506a965403b72a563614681bf05d} 
+replace (\begin{DoxyParamCaption}\item[{}]{\$pattern}{, }\item[{}]{\$replacement}{, }\item[{}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{?int \&}]{\$count}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$pattern} & \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} & {\em \$replacement} & \\
+\hline
+string & {\em \$subject} & \\
+\hline
+int & {\em \$count} & Set by method\\
+\hline
+ & {\em -\/out} & int$<$0, max$>$ \$count \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a0bf2c023b3edd8fa28b077e5dca3364c}\index{Preg@{Preg}!replaceCallback@{replaceCallback}}
+\index{replaceCallback@{replaceCallback}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{replaceCallback()}{replaceCallback()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a0bf2c023b3edd8fa28b077e5dca3364c} 
+replace\+Callback (\begin{DoxyParamCaption}\item[{}]{\$pattern}{, }\item[{callable}]{\$replacement}{, }\item[{}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{?int \&}]{\$count}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$pattern} & \\
+\hline
+ & {\em (\$flags} & is PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE ? (callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, array\{string\texorpdfstring{$\vert$}{|}null, int\texorpdfstring{$<$}{<}-\/1, max\texorpdfstring{$>$}{>}\}\texorpdfstring{$>$}{>})\+: string) \+: callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>})\+: string) \$replacement \\
+\hline
+string & {\em \$subject} & \\
+\hline
+int & {\em \$count} & Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE is supported, PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set\\
+\hline
+ & {\em -\/out} & int$<$0, max$>$ \$count \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a2e08863b6394648e232c2f24ad4ff18f}\index{Preg@{Preg}!replaceCallbackArray@{replaceCallbackArray}}
+\index{replaceCallbackArray@{replaceCallbackArray}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{replaceCallbackArray()}{replaceCallbackArray()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a2e08863b6394648e232c2f24ad4ff18f} 
+replace\+Callback\+Array (\begin{DoxyParamCaption}\item[{array}]{\$pattern}{, }\item[{}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{?int \&}]{\$count}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em (\$flags} & is PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE ? (array\texorpdfstring{$<$}{<}string, callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, array\{string\texorpdfstring{$\vert$}{|}null, int\texorpdfstring{$<$}{<}-\/1, max\texorpdfstring{$>$}{>}\}\texorpdfstring{$>$}{>})\+: string\texorpdfstring{$>$}{>}) \+: array\texorpdfstring{$<$}{<}string, callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>})\+: string\texorpdfstring{$>$}{>}) \$pattern \\
+\hline
+string & {\em \$subject} & \\
+\hline
+int & {\em \$count} & Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE is supported, PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set\\
+\hline
+ & {\em -\/out} & int$<$0, max$>$ \$count \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a9e8b6585acea25ad3106ee8776d6fe7c}\index{Preg@{Preg}!replaceCallbackStrictGroups@{replaceCallbackStrictGroups}}
+\index{replaceCallbackStrictGroups@{replaceCallbackStrictGroups}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{replaceCallbackStrictGroups()}{replaceCallbackStrictGroups()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a9e8b6585acea25ad3106ee8776d6fe7c} 
+replace\+Callback\+Strict\+Groups (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{callable}]{\$replacement}{, }\item[{}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{?int \&}]{\$count}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Variant of {\ttfamily replace\+Callback()} which outputs non-\/null matches (or throws)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & \\
+\hline
+ & {\em (\$flags} & is PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE ? (callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, array\{string, int$<$0, max$>$\}\texorpdfstring{$>$}{>})\+: string) \+: callable(array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$>$}{>})\+: string) \$replacement \\
+\hline
+string & {\em \$subject} & \\
+\hline
+int & {\em \$count} & Set by method \\
+\hline
+ & {\em int-\/mask$<$\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE is supported, PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL is always set\\
+\hline
+ & {\em -\/out} & int$<$0, max$>$ \$count \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_aa57c042f2a2c5704a161ebd28410f15e}\index{Preg@{Preg}!split@{split}}
+\index{split@{split}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_aa57c042f2a2c5704a161ebd28410f15e} 
+split (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em int-\/mask$<$\+PREG\+\_\+\+SPLIT\+\_\+\+NO\+\_\+\+EMPTY\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+SPLIT\+\_\+\+DELIM\+\_\+\+CAPTURE\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+SPLIT\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+SPLIT\+\_\+\+NO\+\_\+\+EMPTY or PREG\+\_\+\+SPLIT\+\_\+\+DELIM\+\_\+\+CAPTURE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a1c9348b9bbe23e9c6a08a76e4b0f8d72}\index{Preg@{Preg}!splitWithOffsets@{splitWithOffsets}}
+\index{splitWithOffsets@{splitWithOffsets}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{splitWithOffsets()}{splitWithOffsets()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a1c9348b9bbe23e9c6a08a76e4b0f8d72} 
+split\+With\+Offsets (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em int-\/mask$<$\+PREG\+\_\+\+SPLIT\+\_\+\+NO\+\_\+\+EMPTY\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+SPLIT\+\_\+\+DELIM\+\_\+\+CAPTURE\texorpdfstring{$\vert$}{|}\+PREG\+\_\+\+SPLIT\+\_\+\+OFFSET\+\_\+\+CAPTURE$>$} & \$flags PREG\+\_\+\+SPLIT\+\_\+\+NO\+\_\+\+EMPTY or PREG\+\_\+\+SPLIT\+\_\+\+DELIM\+\_\+\+CAPTURE, PREG\+\_\+\+SPLIT\+\_\+\+OFFSET\+\_\+\+CAPTURE is always set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list\texorpdfstring{$<$}{<}array\{string, int\}\texorpdfstring{$>$}{>} @phpstan-\/return list\texorpdfstring{$<$}{<}array\{string, int$<$0, max$>$\}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_add11cd2afaf7f25564f26b3b2498df71}\index{Preg@{Preg}!ARRAY\_MSG@{ARRAY\_MSG}}
+\index{ARRAY\_MSG@{ARRAY\_MSG}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{ARRAY\_MSG}{ARRAY\_MSG}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_add11cd2afaf7f25564f26b3b2498df71} 
+const ARRAY\+\_\+\+MSG = \textquotesingle{}\$subject as an array is not supported. You can use \textbackslash{}\textquotesingle{}foreach\textbackslash{}\textquotesingle{} instead.\textquotesingle{}}
+
+\Hypertarget{class_composer_1_1_pcre_1_1_preg_a214ad65f0b8c8077005de5fc51c0a7c0}\index{Preg@{Preg}!INVALID\_TYPE\_MSG@{INVALID\_TYPE\_MSG}}
+\index{INVALID\_TYPE\_MSG@{INVALID\_TYPE\_MSG}!Preg@{Preg}}
+\doxysubsubsection{\texorpdfstring{INVALID\_TYPE\_MSG}{INVALID\_TYPE\_MSG}}
+{\footnotesize\ttfamily \label{class_composer_1_1_pcre_1_1_preg_a214ad65f0b8c8077005de5fc51c0a7c0} 
+const INVALID\+\_\+\+TYPE\+\_\+\+MSG = \textquotesingle{}\$subject must be a string, \%s given.\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/composer/pcre/src/\mbox{\hyperlink{_preg_8php}{Preg.\+php}}\end{DoxyCompactItemize}

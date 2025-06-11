@@ -1,0 +1,232 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/concurrently Directory Reference}
+\hypertarget{dir_f55b09265fa06270aab9d272361f8181}{}\label{dir_f55b09265fa06270aab9d272361f8181}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/concurrently Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/concurrently Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_e56bf208ff3f6c4bc77d2b34924224c2}{docs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md2256}{}\doxysubsection{\texorpdfstring{concurrently}{concurrently}}\label{README.md_autotoc_md2256}
+\href{https://github.com/open-cli-tools/concurrently/releases}{\texttt{}} \href{https://github.com/open-cli-tools/concurrently/blob/main/LICENSE}{\texttt{}} \href{https://www.npmjs.com/package/concurrently}{\texttt{}} \href{https://github.com/open-cli-tools/concurrently/actions/workflows/test.yml}{\texttt{}} \href{https://coveralls.io/github/open-cli-tools/concurrently?branch=main}{\texttt{}}
+
+Run multiple commands concurrently. Like {\ttfamily npm run watch-\/js \& npm run watch-\/less} but better.
+
+
+
+{\bfseries{Table of Contents}}
+
+
+\begin{DoxyItemize}
+\item concurrently
+\begin{DoxyItemize}
+\item Why
+\item Installation
+\item \doxylink{readme.md_usage}{Usage}
+\item API
+\begin{DoxyItemize}
+\item \`{}concurrently(commands\mbox{[}, options\mbox{]})\`{}
+\item \`{}\+Command\`{}
+\item \`{}\+Close\+Event\`{}
+\end{DoxyItemize}
+\item \doxylink{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2safer-buffer_2_porting-_buffer_faq}{FAQ}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md2257}{}\doxysubsection{\texorpdfstring{Why}{Why}}\label{README.md_autotoc_md2257}
+I like \href{https://web.archive.org/web/20220531064025/https://github.com/substack/blog/blob/master/npm_run.markdown}{\texttt{task automation with npm}} but the usual way to run multiple commands concurrently is {\ttfamily npm run watch-\/js \& npm run watch-\/css}. That\textquotesingle{}s fine but it\textquotesingle{}s hard to keep on track of different outputs. Also if one process fails, others still keep running and you won\textquotesingle{}t even notice the difference.
+
+Another option would be to just run all commands in separate terminals. I got tired of opening terminals and made {\bfseries{concurrently}}.
+
+{\bfseries{Features\+:}}
+
+
+\begin{DoxyItemize}
+\item Cross platform (including Windows)
+\item Output is easy to follow with prefixes
+\item With {\ttfamily -\/-\/kill-\/others} switch, all commands are killed if one dies
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md2258}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md2258}
+{\bfseries{concurrently}} can be installed in the global scope (if you\textquotesingle{}d like to have it available and use it on the whole system) or locally for a specific package (for example if you\textquotesingle{}d like to use it in the {\ttfamily scripts} section of your package)\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ npm  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Yarn  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ pnpm  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Bun  }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ npm  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Yarn  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ pnpm  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Bun  }\\\cline{1-5}
+\endhead
+{\bfseries{Global}}  &{\ttfamily npm i -\/g concurrently}  &{\ttfamily yarn global add concurrently}  &{\ttfamily pnpm add -\/g concurrently}  &{\ttfamily bun add -\/g concurrently}  \\\cline{1-5}
+{\bfseries{Local}}\texorpdfstring{$\ast$}{*}  &{\ttfamily npm i -\/D concurrently}  &{\ttfamily yarn add -\/D concurrently}  &{\ttfamily pnpm add -\/D concurrently}  &{\ttfamily bun add -\/d concurrently}  \\\cline{1-5}
+\end{longtabu}
+
+
+\textsubscript{\texorpdfstring{$\ast$}{*} It\textquotesingle{}s recommended to add {\bfseries{concurrently}} to {\ttfamily dev\+Dependencies} as it\textquotesingle{}s usually used for developing purposes. Please adjust the command if this doesn\textquotesingle{}t apply in your case.}\hypertarget{README.md_autotoc_md2259}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md2259}
+\begin{quote}
+{\bfseries{Note}} The {\ttfamily concurrently} command is also available under the shorthand alias {\ttfamily conc}. \end{quote}
+
+
+The tool is written in Node.\+js, but you can use it to run {\bfseries{any}} commands.
+
+Remember to surround separate commands with quotes\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{concurrently\ "{}command1\ arg"{}\ "{}command2\ arg"{}}
+
+\end{DoxyCode}
+
+
+Otherwise {\bfseries{concurrently}} would try to run 4 separate commands\+: {\ttfamily command1}, {\ttfamily arg}, {\ttfamily command2}, {\ttfamily arg}.
+
+In package.\+json, escape quotes\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{"{}start"{}:\ "{}concurrently\ \(\backslash\)"{}command1\ arg\(\backslash\)"{}\ \(\backslash\)"{}command2\ arg\(\backslash\)"{}"{}}
+
+\end{DoxyCode}
+
+
+You can always check concurrently\textquotesingle{}s flag list by running {\ttfamily concurrently -\/-\/help}. For the version, run {\ttfamily concurrently -\/-\/version}.
+
+Check out documentation and other usage examples in the \doxylink{node__modules_2concurrently_2docs_2readme_8md}{{\ttfamily docs} directory}.\hypertarget{README.md_autotoc_md2260}{}\doxysubsection{\texorpdfstring{API}{API}}\label{README.md_autotoc_md2260}
+{\bfseries{concurrently}} can be used programmatically by using the API documented below\+:\hypertarget{README.md_autotoc_md2261}{}\doxysubsubsection{\texorpdfstring{{\ttfamily concurrently(commands\mbox{[}, options\mbox{]})}}{{\ttfamily concurrently(commands\mbox{[}, options\mbox{]})}}}\label{README.md_autotoc_md2261}
+
+\begin{DoxyItemize}
+\item {\ttfamily commands}\+: an array of either strings (containing the commands to run) or objects with the shape {\ttfamily \{ command, name, prefix\+Color, env, cwd, ipc \}}.
+\item {\ttfamily options} (optional)\+: an object containing any of the below\+:
+\begin{DoxyItemize}
+\item {\ttfamily cwd}\+: the working directory to be used by all commands. Can be overriden per command. Default\+: {\ttfamily process.\+cwd()}.
+\item {\ttfamily default\+Input\+Target}\+: the default input target when reading from {\ttfamily input\+Stream}. Default\+: {\ttfamily 0}.
+\item {\ttfamily handle\+Input}\+: when {\ttfamily true}, reads input from {\ttfamily process.\+stdin}.
+\item {\ttfamily input\+Stream}\+: a \href{https://nodejs.org/dist/latest-v10.x/docs/api/stream.html\#stream_readable_streams}{\texttt{{\ttfamily Readable} stream}} to read the input from. Should only be used in the rare instance you would like to stream anything other than {\ttfamily process.\+stdin}. Overrides {\ttfamily handle\+Input}.
+\item {\ttfamily pause\+Input\+Stream\+On\+Finish}\+: by default, pauses the input stream ({\ttfamily process.\+stdin} when {\ttfamily handle\+Input} is enabled, or {\ttfamily input\+Stream} if provided) when all of the processes have finished. If you need to read from the input stream after {\ttfamily concurrently} has finished, set this to {\ttfamily false}. (\href{https://github.com/kimmobrunfeldt/concurrently/issues/252}{\texttt{\#252}}).
+\item {\ttfamily kill\+Others}\+: an array of exitting conditions that will cause a process to kill others. Can contain any of {\ttfamily success} or {\ttfamily failure}.
+\item {\ttfamily max\+Processes}\+: how many processes should run at once.
+\item {\ttfamily output\+Stream}\+: a \href{https://nodejs.org/dist/latest-v10.x/docs/api/stream.html\#stream_writable_streams}{\texttt{{\ttfamily Writable} stream}} to write logs to. Default\+: {\ttfamily process.\+stdout}.
+\item {\ttfamily prefix}\+: the prefix type to use when logging processes output. Possible values\+: {\ttfamily index}, {\ttfamily pid}, {\ttfamily time}, {\ttfamily command}, {\ttfamily name}, {\ttfamily none}, or a template (eg {\ttfamily \mbox{[}\{time\} process\+: \{pid\}\mbox{]}}). Default\+: the name of the process, or its index if no name is set.
+\item {\ttfamily prefix\+Colors}\+: a list of colors or a string as supported by \href{https://www.npmjs.com/package/chalk}{\texttt{chalk}} and additional style {\ttfamily auto} for an automatically picked color. If concurrently would run more commands than there are colors, the last color is repeated, unless if the last color value is {\ttfamily auto} which means following colors are automatically picked to vary. Prefix colors specified per-\/command take precedence over this list.
+\item {\ttfamily prefix\+Length}\+: how many characters to show when prefixing with {\ttfamily command}. Default\+: {\ttfamily 10}
+\item {\ttfamily raw}\+: whether raw mode should be used, meaning strictly process output will be logged, without any prefixes, coloring or extra stuff. Can be overriden per command.
+\item {\ttfamily success\+Condition}\+: the condition to consider the run was successful. If {\ttfamily first}, only the first process to exit will make up the success of the run; if {\ttfamily last}, the last process that exits will determine whether the run succeeds. Anything else means all processes should exit successfully.
+\item {\ttfamily restart\+Tries}\+: how many attempts to restart a process that dies will be made. Default\+: {\ttfamily 0}.
+\item {\ttfamily restart\+Delay}\+: how many milliseconds to wait between process restarts. Default\+: {\ttfamily 0}.
+\item {\ttfamily timestamp\+Format}\+: a \href{https://www.unicode.org/reports/tr35/tr35-dates.html\#Date_Field_Symbol_Table}{\texttt{Unicode format}} to use when prefixing with {\ttfamily time}. Default\+: {\ttfamily yyyy-\/\+MM-\/dd HH\+:mm\+:ss.\+ZZZ}
+\item {\ttfamily additional\+Arguments}\+: list of additional arguments passed that will get replaced in each command. If not defined, no argument replacing will happen.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\begin{quote}
+{\bfseries{Returns\+:}} an object in the shape {\ttfamily \{ result, commands \}}.
+
+
+\begin{DoxyItemize}
+\item {\ttfamily result}\+: a {\ttfamily Promise} that resolves if the run was successful (according to {\ttfamily success\+Condition} option), or rejects, containing an array of \`{}\+Close\+Event\`{}, in the order that the commands terminated.
+\item {\ttfamily commands}\+: an array of all spawned \`{}\+Command\`{}s. 
+\end{DoxyItemize}\end{quote}
+
+
+Example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ concurrently\ =\ require('concurrently');}
+\DoxyCodeLine{const\ \{\ result\ \}\ =\ concurrently(}
+\DoxyCodeLine{\ \ [}
+\DoxyCodeLine{\ \ \ \ 'npm:watch-\/*',}
+\DoxyCodeLine{\ \ \ \ \{\ command:\ 'nodemon',\ name:\ 'server'\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ command:\ 'deploy',\ name:\ 'deploy',\ env:\ \{\ PUBLIC\_KEY:\ '...'\ \}\ \},}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ command:\ 'watch',}
+\DoxyCodeLine{\ \ \ \ \ \ name:\ 'watch',}
+\DoxyCodeLine{\ \ \ \ \ \ cwd:\ path.resolve(\_\_dirname,\ 'scripts/watchers'),}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ ],}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \ \ prefix:\ 'name',}
+\DoxyCodeLine{\ \ \ \ killOthers:\ ['failure',\ 'success'],}
+\DoxyCodeLine{\ \ \ \ restartTries:\ 3,}
+\DoxyCodeLine{\ \ \ \ cwd:\ path.resolve(\_\_dirname,\ 'scripts'),}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{);}
+\DoxyCodeLine{result.then(success,\ failure);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md2262}{}\doxysubsubsection{\texorpdfstring{{\ttfamily Command}}{{\ttfamily Command}}}\label{README.md_autotoc_md2262}
+An object that contains all information about a spawned command, and ways to interact with it.~\newline
+ It has the following properties\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily index}\+: the index of the command among all commands spawned.
+\item {\ttfamily command}\+: the command line of the command.
+\item {\ttfamily name}\+: the name of the command; defaults to an empty string.
+\item {\ttfamily cwd}\+: the current working directory of the command.
+\item {\ttfamily env}\+: an object with all the environment variables that the command will be spawned with.
+\item {\ttfamily killed}\+: whether the command has been killed.
+\item {\ttfamily state}\+: the command\textquotesingle{}s state. Can be one of
+\begin{DoxyItemize}
+\item {\ttfamily stopped}\+: if the command was never started
+\item {\ttfamily started}\+: if the command is currently running
+\item {\ttfamily errored}\+: if the command failed spawning
+\item {\ttfamily exited}\+: if the command is not running anymore, e.\+g. it received a close event
+\end{DoxyItemize}
+\item {\ttfamily pid}\+: the command\textquotesingle{}s process ID.
+\item {\ttfamily stdin}\+: a Writable stream to the command\textquotesingle{}s {\ttfamily stdin}.
+\item {\ttfamily stdout}\+: an Rx\+JS observable to the command\textquotesingle{}s {\ttfamily stdout}.
+\item {\ttfamily stderr}\+: an Rx\+JS observable to the command\textquotesingle{}s {\ttfamily stderr}.
+\item {\ttfamily error}\+: an Rx\+JS observable to the command\textquotesingle{}s error events (e.\+g. when it fails to spawn).
+\item {\ttfamily timer}\+: an Rx\+JS observable to the command\textquotesingle{}s timing events (e.\+g. starting, stopping).
+\item {\ttfamily messages}\+: an object with the following properties\+:
+\begin{DoxyItemize}
+\item {\ttfamily incoming}\+: an Rx\+JS observable for the IPC messages received from the underlying process.
+\item {\ttfamily outgoing}\+: an Rx\+JS observable for the IPC messages sent to the underlying process.
+\end{DoxyItemize}
+
+Both observables emit \`{}\+Message\+Event\`{}s.~\newline
+ Note that if the command wasn\textquotesingle{}t spawned with IPC support, these won\textquotesingle{}t emit any values.
+\item {\ttfamily close}\+: an Rx\+JS observable to the command\textquotesingle{}s close events. See \`{}\+Close\+Event\`{} for more information.
+\item {\ttfamily start()}\+: starts the command and sets up all of the above streams
+\item {\ttfamily send(message\mbox{[}, handle, options\mbox{]})}\+: sends a message to the underlying process via IPC channels, returning a promise that resolves once the message has been sent. See \href{https://nodejs.org/docs/latest/api/child_process.html\#subprocesssendmessage-sendhandle-options-callback}{\texttt{Node.\+js docs}}.
+\item {\ttfamily kill(\mbox{[}signal\mbox{]})}\+: kills the command, optionally specifying a signal (e.\+g. {\ttfamily SIGTERM}, {\ttfamily SIGKILL}, etc).
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md2263}{}\doxysubsubsection{\texorpdfstring{{\ttfamily Message\+Event}}{{\ttfamily Message\+Event}}}\label{README.md_autotoc_md2263}
+An object that represents a message that was received from/sent to the underlying command process.~\newline
+ It has the following properties\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily message}\+: the message itself.
+\item {\ttfamily handle}\+: a \href{https://nodejs.org/docs/latest/api/net.html\#class-netsocket}{\texttt{{\ttfamily net.\+Socket}}}, \href{https://nodejs.org/docs/latest/api/net.html\#class-netserver}{\texttt{{\ttfamily net.\+Server}}} or \href{https://nodejs.org/docs/latest/api/dgram.html\#class-dgramsocket}{\texttt{{\ttfamily dgram.\+Socket}}}, if one was sent, or {\ttfamily undefined}.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md2264}{}\doxysubsubsection{\texorpdfstring{{\ttfamily Close\+Event}}{{\ttfamily Close\+Event}}}\label{README.md_autotoc_md2264}
+An object with information about a command\textquotesingle{}s closing event.~\newline
+ It contains the following properties\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily command}\+: a stripped down version of \`{}\+Command\`{}, including only {\ttfamily name}, {\ttfamily command}, {\ttfamily env} and {\ttfamily cwd} properties.
+\item {\ttfamily index}\+: the index of the command among all commands spawned.
+\item {\ttfamily killed}\+: whether the command exited because it was killed.
+\item {\ttfamily exit\+Code}\+: the exit code of the command\textquotesingle{}s process, or the signal which it was killed with.
+\item {\ttfamily timings}\+: an object in the shape {\ttfamily \{ start\+Date, end\+Date, duration\+Seconds \}}.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md2265}{}\doxysubsection{\texorpdfstring{FAQ}{FAQ}}\label{README.md_autotoc_md2265}
+
+\begin{DoxyItemize}
+\item \doxylink{class_process}{Process} exited with code {\itshape null}?
+
+From \href{http://nodejs.org/api/child_process.html\#child_process_event_exit}{\texttt{Node child\+\_\+process documentation}}, {\ttfamily exit} event\+:
+\end{DoxyItemize}
+
+\begin{quote}
+This event is emitted after the child process ends. If the process terminated normally, code is the final exit code of the process, otherwise null. If the process terminated due to receipt of a signal, signal is the string name of the signal, otherwise null. \end{quote}
+
+
+So {\itshape null} means the process didn\textquotesingle{}t terminate normally. This will make {\bfseries{concurrently}} to return non-\/zero exit code too.
+
+
+\begin{DoxyItemize}
+\item Does this work with the npm-\/replacements \href{https://github.com/yarnpkg/yarn}{\texttt{yarn}}, \href{https://pnpm.js.org/}{\texttt{pnpm}}, or \href{https://bun.sh/}{\texttt{Bun}}?
+
+Yes! In all examples above, you may replace "{}\`{}npm\`{}"{} with "{}\`{}yarn\`{}"{}, "{}\`{}pnpm\`{}"{}, or "{}\`{}bun\`{}"{}. 
+\end{DoxyItemize}

@@ -1,0 +1,63 @@
+\doxysection{Uploaded\+File\+Factory\+Interface Interface Reference}
+\hypertarget{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface}{}\label{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface}\index{UploadedFileFactoryInterface@{UploadedFileFactoryInterface}}
+Inheritance diagram for Uploaded\+File\+Factory\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface_a4c886eb92c58e9854a2d167f37da8b5a}{create\+Uploaded\+File}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$stream, ?int \$size=null, int \$error=\textbackslash{}UPLOAD\+\_\+\+ERR\+\_\+\+OK, ?string \$client\+Filename=null, ?string \$client\+Media\+Type=null)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface_a4c886eb92c58e9854a2d167f37da8b5a}\index{UploadedFileFactoryInterface@{UploadedFileFactoryInterface}!createUploadedFile@{createUploadedFile}}
+\index{createUploadedFile@{createUploadedFile}!UploadedFileFactoryInterface@{UploadedFileFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{createUploadedFile()}{createUploadedFile()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface_a4c886eb92c58e9854a2d167f37da8b5a} 
+create\+Uploaded\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$stream}{, }\item[{?int}]{\$size}{ = {\ttfamily null}, }\item[{int}]{\$error}{ = {\ttfamily \textbackslash{}UPLOAD\+\_\+ERR\+\_\+OK}, }\item[{?string}]{\$client\+Filename}{ = {\ttfamily null}, }\item[{?string}]{\$client\+Media\+Type}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new uploaded file.
+
+If a size is not provided it will be determined by checking the size of the file.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/manual/features.file-upload.post-method.php}{\texttt{http\+://php.\+net/manual/features.\+file-\/upload.\+post-\/method.\+php}} 
+
+\href{http://php.net/manual/features.file-upload.errors.php}{\texttt{http\+://php.\+net/manual/features.\+file-\/upload.\+errors.\+php}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$stream} & Underlying stream representing the uploaded file content. \\
+\hline
+int | null & {\em \$size} & in bytes \\
+\hline
+int & {\em \$error} & PHP file upload error \\
+\hline
+string | null & {\em \$client\+Filename} & Filename as provided by the client, if any. \\
+\hline
+string | null & {\em \$client\+Media\+Type} & Media type as provided by the client, if any.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uploaded\+File\+Interface
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the file resource is not readable. 
+
+Implemented in \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_a4c886eb92c58e9854a2d167f37da8b5a}{Http\+Factory}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psr/http-\/factory/src/\mbox{\hyperlink{_uploaded_file_factory_interface_8php}{Uploaded\+File\+Factory\+Interface.\+php}}\end{DoxyCompactItemize}

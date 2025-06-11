@@ -1,0 +1,58 @@
+\doxysection{Process\+Driver Class Reference}
+\hypertarget{class_illuminate_1_1_concurrency_1_1_process_driver}{}\label{class_illuminate_1_1_concurrency_1_1_process_driver}\index{ProcessDriver@{ProcessDriver}}
+Inheritance diagram for Process\+Driver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_concurrency_1_1_process_driver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_process_driver_a6ee4acf98ea879c7515ffb9520bf82d6}{\+\_\+\+\_\+construct}} (protected Process\+Factory \$process\+Factory)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_process_driver_a33749a8acca1f2f7fe819f69b7cf989a}{run}} (Closure\texorpdfstring{$\vert$}{|}array \$tasks)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_process_driver_a29b484d7ce2444b6af2f78054a465c8f}{defer}} (Closure\texorpdfstring{$\vert$}{|}array \$tasks)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_process_driver_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_process_driver_a6ee4acf98ea879c7515ffb9520bf82d6}\index{ProcessDriver@{ProcessDriver}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ProcessDriver@{ProcessDriver}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_process_driver_a6ee4acf98ea879c7515ffb9520bf82d6} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected Process\+Factory}]{\$process\+Factory}{}\end{DoxyParamCaption})}
+
+Create a new process based concurrency driver. 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_process_driver_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_process_driver_a29b484d7ce2444b6af2f78054a465c8f}\index{ProcessDriver@{ProcessDriver}!defer@{defer}}
+\index{defer@{defer}!ProcessDriver@{ProcessDriver}}
+\doxysubsubsection{\texorpdfstring{defer()}{defer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_process_driver_a29b484d7ce2444b6af2f78054a465c8f} 
+defer (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}array}]{\$tasks}{}\end{DoxyParamCaption})}
+
+Start the given tasks in the background after the current task has finished. 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver_a29b484d7ce2444b6af2f78054a465c8f}{Driver}}.
+
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_process_driver_a33749a8acca1f2f7fe819f69b7cf989a}\index{ProcessDriver@{ProcessDriver}!run@{run}}
+\index{run@{run}!ProcessDriver@{ProcessDriver}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_process_driver_a33749a8acca1f2f7fe819f69b7cf989a} 
+run (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}array}]{\$tasks}{}\end{DoxyParamCaption})}
+
+Run the given tasks concurrently and return an array containing the results. 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver_a33749a8acca1f2f7fe819f69b7cf989a}{Driver}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Concurrency/\mbox{\hyperlink{_process_driver_8php}{Process\+Driver.\+php}}\end{DoxyCompactItemize}

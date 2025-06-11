@@ -1,0 +1,55 @@
+\doxysection{Response\+Cache\+Strategy Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy}\index{ResponseCacheStrategy@{ResponseCacheStrategy}}
+Inheritance diagram for Response\+Cache\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy_a2a2dcdade1ef05d56c2e1ebd2fdc3c9b}{add}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy_a40123c48b8c12bf264e380a5b9c9725f}{update}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Response\+Cache\+Strategy knows how to compute the \doxylink{class_response}{Response} cache HTTP header based on the different response cache headers.
+
+This implementation changes the main response TTL to the smallest TTL received or force validation if one of the surrogates has validation cache strategy.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy_a2a2dcdade1ef05d56c2e1ebd2fdc3c9b}\index{ResponseCacheStrategy@{ResponseCacheStrategy}!add@{add}}
+\index{add@{add}!ResponseCacheStrategy@{ResponseCacheStrategy}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy_a2a2dcdade1ef05d56c2e1ebd2fdc3c9b} 
+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Adds a \doxylink{class_response}{Response}. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy_interface_a2a2dcdade1ef05d56c2e1ebd2fdc3c9b}{Response\+Cache\+Strategy\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy_a40123c48b8c12bf264e380a5b9c9725f}\index{ResponseCacheStrategy@{ResponseCacheStrategy}!update@{update}}
+\index{update@{update}!ResponseCacheStrategy@{ResponseCacheStrategy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy_a40123c48b8c12bf264e380a5b9c9725f} 
+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Updates the \doxylink{class_response}{Response} HTTP headers based on the embedded Responses. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_response_cache_strategy_interface_a40123c48b8c12bf264e380a5b9c9725f}{Response\+Cache\+Strategy\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Http\+Cache/\mbox{\hyperlink{_response_cache_strategy_8php}{Response\+Cache\+Strategy.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,191 @@
+\doxysection{Pest\textbackslash{}Concerns Namespace Reference}
+\hypertarget{namespace_pest_1_1_concerns}{}\label{namespace_pest_1_1_concerns}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_pest_1_1_concerns_1_1_logging}{Logging}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_a4722343095aa8ed126e390b05043d11e}{extend}} (string \$name, Closure \$extend)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_a7b4af0eb9b5f5222c92e5255443bf72b}{pipe}} (string \$name, Closure \$pipe)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_a5dc8810e19d69b4b466a05f7e6648349}{intercept}} (string \$name, string\texorpdfstring{$\vert$}{|}Closure \$filter, Closure \$handler)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_a196b3403dd3fe36fd9617ada22960ff1}{\+\_\+\+\_\+construct}} (string \$name)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_aeb76a31d71d14212f8a9e245f81d17e9}{note}} (array\texorpdfstring{$\vert$}{|}string \$note)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_acca4fb88f9dc1f250d04e8c71337ed19}{\+\_\+\+\_\+add\+Before\+All}} (?Closure \$hook)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_a5adc5c8c8f626f8630de2c4b02253d91}{\+\_\+\+\_\+add\+After\+All}} (?Closure \$hook)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_ad2c340f26cd0aba711a32d8693f8537f}{\+\_\+\+\_\+add\+Before\+Each}} (?Closure \$hook)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_a2b19ea60c3e1efe42f4a5a54e5293b70}{\+\_\+\+\_\+add\+After\+Each}} (?Closure \$hook)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_afc4f41febe5a279fd92e72b1df201ec7}{set\+Up}} (... \$arguments)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_a26704fb19132b261ff5040c5739017c7}{tear\+Down}} (... \$arguments)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_ada4a31c31637b08ad365d9e316c38506}{preset}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_aecf7016efafcdddb9291e9374e0c3b15}{\+\_\+\+\_\+\+Mark\+Test\+Incomplete\+If\+Snapshot\+Have\+Changed}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_concerns_a282b4396bfe499210a1729dfc295fa63}{get\+Printable\+Test\+Case\+Method\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+trait \mbox{\hyperlink{namespace_pest_1_1_concerns_aa02d5ec03daf24677a57026a53866aac}{Extendable}}
+\item 
+trait \mbox{\hyperlink{namespace_pest_1_1_concerns_a197e5bb8abd9c0c01208fbf633b3d80a}{Pipeable}}
+\item 
+trait \mbox{\hyperlink{namespace_pest_1_1_concerns_ae444a906fd1c2d5dc8ba1ea1b90447ae}{Testable}}
+\item 
+array \mbox{\hyperlink{namespace_pest_1_1_concerns_a861a8baeac189a019a3239818d0cd4c4}{\$\+\_\+\+\_\+describing}} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \mbox{\hyperlink{namespace_pest_1_1_concerns_a84c570d020805306714a35b6b6b58fa8}{\$\+\_\+\+\_\+ran}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_pest_1_1_concerns_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_pest_1_1_concerns_a5adc5c8c8f626f8630de2c4b02253d91}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!\_\_addAfterAll@{\_\_addAfterAll}}
+\index{\_\_addAfterAll@{\_\_addAfterAll}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{\_\_addAfterAll()}{\_\_addAfterAll()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a5adc5c8c8f626f8630de2c4b02253d91} 
+\+\_\+\+\_\+add\+After\+All (\begin{DoxyParamCaption}\item[{?Closure}]{\$hook}{}\end{DoxyParamCaption})}
+
+Adds a new "{}tear\+Down\+After\+Class"{} to the Test Case. \Hypertarget{namespace_pest_1_1_concerns_a2b19ea60c3e1efe42f4a5a54e5293b70}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!\_\_addAfterEach@{\_\_addAfterEach}}
+\index{\_\_addAfterEach@{\_\_addAfterEach}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{\_\_addAfterEach()}{\_\_addAfterEach()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a2b19ea60c3e1efe42f4a5a54e5293b70} 
+\+\_\+\+\_\+add\+After\+Each (\begin{DoxyParamCaption}\item[{?Closure}]{\$hook}{}\end{DoxyParamCaption})}
+
+Adds a new "{}tear\+Down"{} to the Test Case. \Hypertarget{namespace_pest_1_1_concerns_acca4fb88f9dc1f250d04e8c71337ed19}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!\_\_addBeforeAll@{\_\_addBeforeAll}}
+\index{\_\_addBeforeAll@{\_\_addBeforeAll}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{\_\_addBeforeAll()}{\_\_addBeforeAll()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_acca4fb88f9dc1f250d04e8c71337ed19} 
+\+\_\+\+\_\+add\+Before\+All (\begin{DoxyParamCaption}\item[{?Closure}]{\$hook}{}\end{DoxyParamCaption})}
+
+Adds a new "{}set\+Up\+Before\+Class"{} to the Test Case. \Hypertarget{namespace_pest_1_1_concerns_ad2c340f26cd0aba711a32d8693f8537f}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!\_\_addBeforeEach@{\_\_addBeforeEach}}
+\index{\_\_addBeforeEach@{\_\_addBeforeEach}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{\_\_addBeforeEach()}{\_\_addBeforeEach()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_ad2c340f26cd0aba711a32d8693f8537f} 
+\+\_\+\+\_\+add\+Before\+Each (\begin{DoxyParamCaption}\item[{?Closure}]{\$hook}{}\end{DoxyParamCaption})}
+
+Adds a new "{}set\+Up"{} to the Test Case. \Hypertarget{namespace_pest_1_1_concerns_a196b3403dd3fe36fd9617ada22960ff1}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a196b3403dd3fe36fd9617ada22960ff1} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a new Test Case instance. \Hypertarget{namespace_pest_1_1_concerns_aecf7016efafcdddb9291e9374e0c3b15}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!\_\_MarkTestIncompleteIfSnapshotHaveChanged@{\_\_MarkTestIncompleteIfSnapshotHaveChanged}}
+\index{\_\_MarkTestIncompleteIfSnapshotHaveChanged@{\_\_MarkTestIncompleteIfSnapshotHaveChanged}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{\_\_MarkTestIncompleteIfSnapshotHaveChanged()}{\_\_MarkTestIncompleteIfSnapshotHaveChanged()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_aecf7016efafcdddb9291e9374e0c3b15} 
+\+\_\+\+\_\+\+Mark\+Test\+Incomplete\+If\+Snapshot\+Have\+Changed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespace_pest_1_1_concerns_a4722343095aa8ed126e390b05043d11e}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!extend@{extend}}
+\index{extend@{extend}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a4722343095aa8ed126e390b05043d11e} 
+extend (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{Closure}]{\$extend}{}\end{DoxyParamCaption})}
+
+Register a new extend. \Hypertarget{namespace_pest_1_1_concerns_a282b4396bfe499210a1729dfc295fa63}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!getPrintableTestCaseMethodName@{getPrintableTestCaseMethodName}}
+\index{getPrintableTestCaseMethodName@{getPrintableTestCaseMethodName}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{getPrintableTestCaseMethodName()}{getPrintableTestCaseMethodName()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a282b4396bfe499210a1729dfc295fa63} 
+get\+Printable\+Test\+Case\+Method\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+The printable test case method name. \Hypertarget{namespace_pest_1_1_concerns_a5dc8810e19d69b4b466a05f7e6648349}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!intercept@{intercept}}
+\index{intercept@{intercept}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{intercept()}{intercept()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a5dc8810e19d69b4b466a05f7e6648349} 
+intercept (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string\texorpdfstring{$\vert$}{|}Closure}]{\$filter}{, }\item[{Closure}]{\$handler}{}\end{DoxyParamCaption})}
+
+Register an interceptor that should replace an existing expectation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\texorpdfstring{$\vert$}{|}\+Closure(mixed} & \$value, mixed ...\$arguments)\+:bool \$filter \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_pest_1_1_concerns_aeb76a31d71d14212f8a9e245f81d17e9}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!note@{note}}
+\index{note@{note}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{note()}{note()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_aeb76a31d71d14212f8a9e245f81d17e9} 
+note (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$note}{}\end{DoxyParamCaption})}
+
+Adds a new "{}note"{} to the Test Case. \Hypertarget{namespace_pest_1_1_concerns_a7b4af0eb9b5f5222c92e5255443bf72b}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!pipe@{pipe}}
+\index{pipe@{pipe}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{pipe()}{pipe()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a7b4af0eb9b5f5222c92e5255443bf72b} 
+pipe (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{Closure}]{\$pipe}{}\end{DoxyParamCaption})}
+
+Register a pipe to be applied before an expectation is checked. \Hypertarget{namespace_pest_1_1_concerns_ada4a31c31637b08ad365d9e316c38506}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!preset@{preset}}
+\index{preset@{preset}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{preset()}{preset()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_ada4a31c31637b08ad365d9e316c38506} 
+preset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Uses the given preset on the test. \Hypertarget{namespace_pest_1_1_concerns_afc4f41febe5a279fd92e72b1df201ec7}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!setUp@{setUp}}
+\index{setUp@{setUp}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_afc4f41febe5a279fd92e72b1df201ec7} 
+set\+Up (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets executed before the Test Case. \Hypertarget{namespace_pest_1_1_concerns_a26704fb19132b261ff5040c5739017c7}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!tearDown@{tearDown}}
+\index{tearDown@{tearDown}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{tearDown()}{tearDown()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a26704fb19132b261ff5040c5739017c7} 
+tear\+Down (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets executed after the Test Case. 
+
+\label{doc-var-members}
+\Hypertarget{namespace_pest_1_1_concerns_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_pest_1_1_concerns_a861a8baeac189a019a3239818d0cd4c4}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!\$\_\_describing@{\$\_\_describing}}
+\index{\$\_\_describing@{\$\_\_describing}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{\$\_\_describing}{\$\_\_describing}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a861a8baeac189a019a3239818d0cd4c4} 
+array \$\+\_\+\+\_\+describing = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{namespace_pest_1_1_concerns_a84c570d020805306714a35b6b6b58fa8}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!\$\_\_ran@{\$\_\_ran}}
+\index{\$\_\_ran@{\$\_\_ran}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{\$\_\_ran}{\$\_\_ran}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a84c570d020805306714a35b6b6b58fa8} 
+bool \$\+\_\+\+\_\+ran = false}
+
+Whether the test has ran or not. \Hypertarget{namespace_pest_1_1_concerns_aa02d5ec03daf24677a57026a53866aac}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!Extendable@{Extendable}}
+\index{Extendable@{Extendable}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{Extendable}{Extendable}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_aa02d5ec03daf24677a57026a53866aac} 
+trait Extendable}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{namespace_pest_1_1_concerns_a197e5bb8abd9c0c01208fbf633b3d80a}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!Pipeable@{Pipeable}}
+\index{Pipeable@{Pipeable}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{Pipeable}{Pipeable}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_a197e5bb8abd9c0c01208fbf633b3d80a} 
+trait Pipeable}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{namespace_pest_1_1_concerns_ae444a906fd1c2d5dc8ba1ea1b90447ae}\index{Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}!Testable@{Testable}}
+\index{Testable@{Testable}!Pest\textbackslash{}Concerns@{Pest\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{Testable}{Testable}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_concerns_ae444a906fd1c2d5dc8ba1ea1b90447ae} 
+trait Testable}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}

@@ -1,0 +1,4 @@
+var class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_change_laza24ad7f38b5db741838577287853d6b8 =
+[
+    [ "handle", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_change_laza24ad7f38b5db741838577287853d6b8.html#a9930acdf09509c095728c44243f8ac76", null ]
+];

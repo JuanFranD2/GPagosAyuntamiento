@@ -1,0 +1,60 @@
+\doxysection{Map\+Query\+Parameter Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter}\index{MapQueryParameter@{MapQueryParameter}}
+Inheritance diagram for Map\+Query\+Parameter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter_ae45a54ded2f5b6750671606f4df3f2d9}{\+\_\+\+\_\+construct}} (public ?string \$name=null, public ?int \$filter=null, public int \$flags=0, public array \$options=\mbox{[}$\,$\mbox{]}, string \$resolver=Query\+Parameter\+Value\+Resolver\+::class, public int \$validation\+Failed\+Status\+Code=Response\+::\+HTTP\+\_\+\+NOT\+\_\+\+FOUND,)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_value_resolver}{Value\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_value_resolver_a3fe71be5665bd581227b5f3e803b94e5}{\+\_\+\+\_\+construct}} (public string \$resolver, public bool \$disabled=false,)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Can be used to pass a query parameter to a controller argument.
+
+\begin{DoxyAuthor}{Author}
+Ruud Kamphuis \href{mailto:ruud@ticketswap.com}{\texttt{ruud@ticketswap.\+com}} 
+
+Ionut Enache \href{mailto:i.ovidiuenache@yahoo.com}{\texttt{i.\+ovidiuenache@yahoo.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter_ae45a54ded2f5b6750671606f4df3f2d9}\index{MapQueryParameter@{MapQueryParameter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!MapQueryParameter@{MapQueryParameter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter_ae45a54ded2f5b6750671606f4df3f2d9} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{public ?string}]{\$name}{ = {\ttfamily null}, }\item[{public ?int}]{\$filter}{ = {\ttfamily null}, }\item[{public int}]{\$flags}{ = {\ttfamily 0}, }\item[{public array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{string}]{\$resolver}{ = {\ttfamily QueryParameterValueResolver\+:\+:class}, }\item[{public int}]{\$validation\+Failed\+Status\+Code}{ = {\ttfamily Response\+:\+:HTTP\+\_\+NOT\+\_\+FOUND}}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\href{https://php.net/manual/filter.constants}{\texttt{https\+://php.\+net/manual/filter.\+constants}} for filter, flags and options
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & The name of the query parameter; if null, the name of the argument in the controller will be used \\
+\hline
+ & {\em (\+FILTER\+\_\+\+VALIDATE\+\_\+\texorpdfstring{$\ast$}{*})\texorpdfstring{$\vert$}{|}(\+FILTER\+\_\+\+SANITIZE\+\_\+\texorpdfstring{$\ast$}{*})\texorpdfstring{$\vert$}{|}null} & \$filter The filter to pass to "{}filter\+\_\+var()"{} \\
+\hline
+ & {\em int-\/mask-\/of$<$(\+FILTER\+\_\+\+FLAG\+\_\+\texorpdfstring{$\ast$}{*})\texorpdfstring{$\vert$}{|}\+FILTER\+\_\+\+NULL\+\_\+\+ON\+\_\+\+FAILURE$>$} & \$flags The flags to pass to "{}filter\+\_\+var()"{} \\
+\hline
+array & {\em \$options} & The options to pass to "{}filter\+\_\+var()"{} \\
+\hline
+ & {\em class-\/string$<$\+Value\+Resolver\+Interface$>$\texorpdfstring{$\vert$}{|}string} & \$resolver The name of the resolver to use \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Attribute/\mbox{\hyperlink{_map_query_parameter_8php}{Map\+Query\+Parameter.\+php}}\end{DoxyCompactItemize}

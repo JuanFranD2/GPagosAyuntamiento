@@ -1,0 +1,48 @@
+\doxysection{Redirectable\+Url\+Matcher\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_redirectable_url_matcher_interface}{}\label{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_redirectable_url_matcher_interface}\index{RedirectableUrlMatcherInterface@{RedirectableUrlMatcherInterface}}
+Inheritance diagram for Redirectable\+Url\+Matcher\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_redirectable_url_matcher_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_redirectable_url_matcher_interface_a342dffdcf05a2047ccd3f12ea69b5d7e}{redirect}} (string \$path, string \$route, ?string \$scheme=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Redirectable\+Url\+Matcher\+Interface knows how to redirect the user.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_redirectable_url_matcher_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_redirectable_url_matcher_interface_a342dffdcf05a2047ccd3f12ea69b5d7e}\index{RedirectableUrlMatcherInterface@{RedirectableUrlMatcherInterface}!redirect@{redirect}}
+\index{redirect@{redirect}!RedirectableUrlMatcherInterface@{RedirectableUrlMatcherInterface}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_redirectable_url_matcher_interface_a342dffdcf05a2047ccd3f12ea69b5d7e} 
+redirect (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$route}{, }\item[{?string}]{\$scheme}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Redirects the user to another \doxylink{class_u_r_l}{URL} and returns the parameters for the redirection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path info to redirect to \\
+\hline
+string & {\em \$route} & The route name that matched \\
+\hline
+string | null & {\em \$scheme} & The \doxylink{class_u_r_l}{URL} scheme (null to keep the current one) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/routing/\+Matcher/\mbox{\hyperlink{_redirectable_url_matcher_interface_8php}{Redirectable\+Url\+Matcher\+Interface.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,336 @@
+\doxysection{Response\+Header\+Bag Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag}\index{ResponseHeaderBag@{ResponseHeaderBag}}
+Inheritance diagram for Response\+Header\+Bag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_abd1113e3c9b55e7668dde983afa5075d}{\+\_\+\+\_\+construct}} (array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a7c87638d67761ba284a6c1625ac22ff8}{all\+Preserve\+Case}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a8c9cd7c114bff7bb9add6f1b744f4295}{all\+Preserve\+Case\+Without\+Cookies}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5}{replace}} (array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a48d7c4f745902ed428570fedd97c4249}{all}} (?string \$key=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af4a0d17af3a2bcbfdda82db461caea6b}{set}} (string \$key, string\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$values, bool \$\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5}{replace}}=true)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ab454eea7bf82990572fe4017b8dd4ca3}{remove}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af856cccefacf92695f352fb97f09dcee}{has\+Cache\+Control\+Directive}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a987badafdb6359a7fe1cb8a1b710e316}{get\+Cache\+Control\+Directive}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a1f56e3be994b1cfb877844780f3f6199}{set\+Cookie}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_cookie}{Cookie}} \$cookie)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_aacd156e1139bb4180d0bdeeeb5758fb4}{remove\+Cookie}} (string \$name, ?string \$path=\textquotesingle{}/\textquotesingle{}, ?string \$domain=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af9a4a39458ee4850a590173a0614ecd6}{get\+Cookies}} (string \$format=self\+::\+COOKIES\+\_\+\+FLAT)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ad2035b4040e0d565f31c4e5e2eb17ffe}{clear\+Cookie}} (string \$name, ?string \$path=\textquotesingle{}/\textquotesingle{}, ?string \$domain=null, bool \$secure=false, bool \$http\+Only=true, ?string \$same\+Site=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a6a04368ec74a80267563ba8985cddbb4}{make\+Disposition}} (string \$disposition, string \$filename, string \$filename\+Fallback=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag}{Header\+Bag}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a3b0db17d4be3aff5451d2764e7c88beb}{keys}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a18c95da11f8e1f72043140089d7a72ab}{add}} (array \$headers)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6c6ab7751a60b2d90fb00c99eb75f673}{get}} (string \$key, ?string \$default=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_afdce603da130f170b2e650649949b544}{has}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a66e480c373bf47057e09de17b9f38f09}{contains}} (string \$key, string \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a50ae6436c51d416996e7c1fe27fdbea6}{get\+Date}} (string \$key, ?\textbackslash{}Date\+Time\+Interface \$default=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6601a8922a72f12da83db03bb1737081}{add\+Cache\+Control\+Directive}} (string \$key, bool\texorpdfstring{$\vert$}{|}string \$value=true)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a5d54a5ac03e668da378b18ef3381bfc5}{remove\+Cache\+Control\+Directive}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a624bf186647c1deb026765163643c301}{COOKIES\+\_\+\+FLAT}} = \textquotesingle{}flat\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ae3ca3d68edd96b786f0d5055e8510497}{COOKIES\+\_\+\+ARRAY}} = \textquotesingle{}array\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a1d397ced5e9742f72e2b2bea944d3243}{DISPOSITION\+\_\+\+ATTACHMENT}} = \textquotesingle{}attachment\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a060859bf09e05a8c8fdeca834a0d5730}{DISPOSITION\+\_\+\+INLINE}} = \textquotesingle{}inline\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ace5eb774921c2916c88d5fbf59189c5c}{compute\+Cache\+Control\+Value}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag}{Header\+Bag}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6fc724839b161909f18269c24d644160}{get\+Cache\+Control\+Header}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a3ef581ba68beac074e2530c5993e4445}{parse\+Cache\+Control}} (string \$header)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a667c73b0052be38d94dfa01b4d237c57}{\$computed\+Cache\+Control}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af81326b3975d95bbce5167257e071ccb}{\$cookies}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ae49b10237f54a553e1a986789cb4746b}{\$header\+Names}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag}{Header\+Bag}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_afd876bc3395c67e3838f70b46381e4fc}{UPPER}} = \textquotesingle{}\+\_\+\+ABCDEFGHIJKLMNOPQRSTUVWXYZ\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_accae88c9f25b2325723f9a64f955ab27}{LOWER}} = \textquotesingle{}-\/abcdefghijklmnopqrstuvwxyz\textquotesingle{}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a914c4187a92589e98dc298a488c6f4ca}{\$headers}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_add6c461cf306c4662ae59cb0732382d3}{\$cache\+Control}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Response\+Header\+Bag is a container for \doxylink{class_response}{Response} HTTP headers.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_abd1113e3c9b55e7668dde983afa5075d}\index{ResponseHeaderBag@{ResponseHeaderBag}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_abd1113e3c9b55e7668dde983afa5075d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_abd1113e3c9b55e7668dde983afa5075d}{Header\+Bag}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a48d7c4f745902ed428570fedd97c4249}\index{ResponseHeaderBag@{ResponseHeaderBag}!all@{all}}
+\index{all@{all}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a48d7c4f745902ed428570fedd97c4249} 
+all (\begin{DoxyParamCaption}\item[{?string}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the headers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$key} & The name of the headers to return or null to get them all\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\$key is null ? array\texorpdfstring{$<$}{<}string, list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \+: list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a48d7c4f745902ed428570fedd97c4249}{Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a7c87638d67761ba284a6c1625ac22ff8}\index{ResponseHeaderBag@{ResponseHeaderBag}!allPreserveCase@{allPreserveCase}}
+\index{allPreserveCase@{allPreserveCase}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{allPreserveCase()}{allPreserveCase()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a7c87638d67761ba284a6c1625ac22ff8} 
+all\+Preserve\+Case (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the headers, with original capitalizations. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a8c9cd7c114bff7bb9add6f1b744f4295}\index{ResponseHeaderBag@{ResponseHeaderBag}!allPreserveCaseWithoutCookies@{allPreserveCaseWithoutCookies}}
+\index{allPreserveCaseWithoutCookies@{allPreserveCaseWithoutCookies}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{allPreserveCaseWithoutCookies()}{allPreserveCaseWithoutCookies()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a8c9cd7c114bff7bb9add6f1b744f4295} 
+all\+Preserve\+Case\+Without\+Cookies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ad2035b4040e0d565f31c4e5e2eb17ffe}\index{ResponseHeaderBag@{ResponseHeaderBag}!clearCookie@{clearCookie}}
+\index{clearCookie@{clearCookie}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{clearCookie()}{clearCookie()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ad2035b4040e0d565f31c4e5e2eb17ffe} 
+clear\+Cookie (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{?string}]{\$path}{ = {\ttfamily \textquotesingle{}/\textquotesingle{}}, }\item[{?string}]{\$domain}{ = {\ttfamily null}, }\item[{bool}]{\$secure}{ = {\ttfamily false}, }\item[{bool}]{\$http\+Only}{ = {\ttfamily true}, }\item[{?string}]{\$same\+Site}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Clears a cookie in the browser.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$partitioned} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ace5eb774921c2916c88d5fbf59189c5c}\index{ResponseHeaderBag@{ResponseHeaderBag}!computeCacheControlValue@{computeCacheControlValue}}
+\index{computeCacheControlValue@{computeCacheControlValue}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{computeCacheControlValue()}{computeCacheControlValue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ace5eb774921c2916c88d5fbf59189c5c} 
+compute\+Cache\+Control\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the calculated value of the cache-\/control header.
+
+This considers several other headers and calculates or modifies the cache-\/control header to a sensible, conservative value. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a987badafdb6359a7fe1cb8a1b710e316}\index{ResponseHeaderBag@{ResponseHeaderBag}!getCacheControlDirective@{getCacheControlDirective}}
+\index{getCacheControlDirective@{getCacheControlDirective}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{getCacheControlDirective()}{getCacheControlDirective()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a987badafdb6359a7fe1cb8a1b710e316} 
+get\+Cache\+Control\+Directive (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns a Cache-\/\+Control directive value by name. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a987badafdb6359a7fe1cb8a1b710e316}{Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af9a4a39458ee4850a590173a0614ecd6}\index{ResponseHeaderBag@{ResponseHeaderBag}!getCookies@{getCookies}}
+\index{getCookies@{getCookies}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{getCookies()}{getCookies()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af9a4a39458ee4850a590173a0614ecd6} 
+get\+Cookies (\begin{DoxyParamCaption}\item[{string}]{\$format}{ = {\ttfamily self\+:\+:COOKIES\+\_\+FLAT}}\end{DoxyParamCaption})}
+
+Returns an array with all cookies.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_cookie}{Cookie}\mbox{[}\mbox{]}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When the \$format is invalid \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af856cccefacf92695f352fb97f09dcee}\index{ResponseHeaderBag@{ResponseHeaderBag}!hasCacheControlDirective@{hasCacheControlDirective}}
+\index{hasCacheControlDirective@{hasCacheControlDirective}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{hasCacheControlDirective()}{hasCacheControlDirective()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af856cccefacf92695f352fb97f09dcee} 
+has\+Cache\+Control\+Directive (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns true if the Cache-\/\+Control directive is defined. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_af856cccefacf92695f352fb97f09dcee}{Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a6a04368ec74a80267563ba8985cddbb4}\index{ResponseHeaderBag@{ResponseHeaderBag}!makeDisposition@{makeDisposition}}
+\index{makeDisposition@{makeDisposition}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{makeDisposition()}{makeDisposition()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a6a04368ec74a80267563ba8985cddbb4} 
+make\+Disposition (\begin{DoxyParamCaption}\item[{string}]{\$disposition}{, }\item[{string}]{\$filename}{, }\item[{string}]{\$filename\+Fallback}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+Header\+Utils\+::make\+Disposition() 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ab454eea7bf82990572fe4017b8dd4ca3}\index{ResponseHeaderBag@{ResponseHeaderBag}!remove@{remove}}
+\index{remove@{remove}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ab454eea7bf82990572fe4017b8dd4ca3} 
+remove (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Removes a header. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_ab454eea7bf82990572fe4017b8dd4ca3}{Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_aacd156e1139bb4180d0bdeeeb5758fb4}\index{ResponseHeaderBag@{ResponseHeaderBag}!removeCookie@{removeCookie}}
+\index{removeCookie@{removeCookie}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{removeCookie()}{removeCookie()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_aacd156e1139bb4180d0bdeeeb5758fb4} 
+remove\+Cookie (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{?string}]{\$path}{ = {\ttfamily \textquotesingle{}/\textquotesingle{}}, }\item[{?string}]{\$domain}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Removes a cookie from the array, but does not unset it in the browser. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5}\index{ResponseHeaderBag@{ResponseHeaderBag}!replace@{replace}}
+\index{replace@{replace}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5} 
+replace (\begin{DoxyParamCaption}\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Replaces the current HTTP headers by a new set. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5}{Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af4a0d17af3a2bcbfdda82db461caea6b}\index{ResponseHeaderBag@{ResponseHeaderBag}!set@{set}}
+\index{set@{set}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af4a0d17af3a2bcbfdda82db461caea6b} 
+set (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null}]{\$values}{, }\item[{bool}]{\$replace}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Sets a header by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$values} & The value or an array of values \\
+\hline
+bool & {\em \$replace} & Whether to replace the actual value or not (true by default) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_af4a0d17af3a2bcbfdda82db461caea6b}{Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a1f56e3be994b1cfb877844780f3f6199}\index{ResponseHeaderBag@{ResponseHeaderBag}!setCookie@{setCookie}}
+\index{setCookie@{setCookie}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{setCookie()}{setCookie()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a1f56e3be994b1cfb877844780f3f6199} 
+set\+Cookie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_cookie}{Cookie}}}]{\$cookie}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a667c73b0052be38d94dfa01b4d237c57}\index{ResponseHeaderBag@{ResponseHeaderBag}!\$computedCacheControl@{\$computedCacheControl}}
+\index{\$computedCacheControl@{\$computedCacheControl}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{\$computedCacheControl}{\$computedCacheControl}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a667c73b0052be38d94dfa01b4d237c57} 
+array \$computed\+Cache\+Control = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af81326b3975d95bbce5167257e071ccb}\index{ResponseHeaderBag@{ResponseHeaderBag}!\$cookies@{\$cookies}}
+\index{\$cookies@{\$cookies}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{\$cookies}{\$cookies}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af81326b3975d95bbce5167257e071ccb} 
+array \$cookies = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ae49b10237f54a553e1a986789cb4746b}\index{ResponseHeaderBag@{ResponseHeaderBag}!\$headerNames@{\$headerNames}}
+\index{\$headerNames@{\$headerNames}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{\$headerNames}{\$headerNames}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ae49b10237f54a553e1a986789cb4746b} 
+array \$header\+Names = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ae3ca3d68edd96b786f0d5055e8510497}\index{ResponseHeaderBag@{ResponseHeaderBag}!COOKIES\_ARRAY@{COOKIES\_ARRAY}}
+\index{COOKIES\_ARRAY@{COOKIES\_ARRAY}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{COOKIES\_ARRAY}{COOKIES\_ARRAY}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ae3ca3d68edd96b786f0d5055e8510497} 
+const COOKIES\+\_\+\+ARRAY = \textquotesingle{}array\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a624bf186647c1deb026765163643c301}\index{ResponseHeaderBag@{ResponseHeaderBag}!COOKIES\_FLAT@{COOKIES\_FLAT}}
+\index{COOKIES\_FLAT@{COOKIES\_FLAT}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{COOKIES\_FLAT}{COOKIES\_FLAT}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a624bf186647c1deb026765163643c301} 
+const COOKIES\+\_\+\+FLAT = \textquotesingle{}flat\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a1d397ced5e9742f72e2b2bea944d3243}\index{ResponseHeaderBag@{ResponseHeaderBag}!DISPOSITION\_ATTACHMENT@{DISPOSITION\_ATTACHMENT}}
+\index{DISPOSITION\_ATTACHMENT@{DISPOSITION\_ATTACHMENT}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{DISPOSITION\_ATTACHMENT}{DISPOSITION\_ATTACHMENT}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a1d397ced5e9742f72e2b2bea944d3243} 
+const DISPOSITION\+\_\+\+ATTACHMENT = \textquotesingle{}attachment\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a060859bf09e05a8c8fdeca834a0d5730}\index{ResponseHeaderBag@{ResponseHeaderBag}!DISPOSITION\_INLINE@{DISPOSITION\_INLINE}}
+\index{DISPOSITION\_INLINE@{DISPOSITION\_INLINE}!ResponseHeaderBag@{ResponseHeaderBag}}
+\doxysubsubsection{\texorpdfstring{DISPOSITION\_INLINE}{DISPOSITION\_INLINE}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a060859bf09e05a8c8fdeca834a0d5730} 
+const DISPOSITION\+\_\+\+INLINE = \textquotesingle{}inline\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/foundation/\mbox{\hyperlink{_response_header_bag_8php}{Response\+Header\+Bag.\+php}}\end{DoxyCompactItemize}

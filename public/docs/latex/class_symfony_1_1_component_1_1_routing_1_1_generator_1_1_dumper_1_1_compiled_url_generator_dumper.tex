@@ -1,0 +1,68 @@
+\doxysection{Compiled\+Url\+Generator\+Dumper Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper}{}\label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper}\index{CompiledUrlGeneratorDumper@{CompiledUrlGeneratorDumper}}
+Inheritance diagram for Compiled\+Url\+Generator\+Dumper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_a90a041d79c9b58eeaff64358c536f1d4}{get\+Compiled\+Routes}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_a2bca6e887b2b61ac11cfebcc62d81b02}{get\+Compiled\+Aliases}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_a527c4b2be1663ccd1933a858970ea226}{dump}} (array \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_generator_dumper}{Generator\+Dumper}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_generator_dumper_af2118300e51b0fd1cff581514516d226}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_collection}{Route\+Collection}} \$routes,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_generator_dumper_a18da86bf318ebe47e501aaad267d59ed}{get\+Routes}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Compiled\+Url\+Generator\+Dumper creates a PHP array to be used with Compiled\+Url\+Generator.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+
+Tobias Schultze \href{http://tobion.de}{\texttt{http\+://tobion.\+de}} 
+
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_a527c4b2be1663ccd1933a858970ea226}\index{CompiledUrlGeneratorDumper@{CompiledUrlGeneratorDumper}!dump@{dump}}
+\index{dump@{dump}!CompiledUrlGeneratorDumper@{CompiledUrlGeneratorDumper}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_a527c4b2be1663ccd1933a858970ea226} 
+dump (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Dumps a set of routes to a string representation of executable code that can then be used to generate a \doxylink{class_u_r_l}{URL} of such a route. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_generator_dumper_interface_a527c4b2be1663ccd1933a858970ea226}{Generator\+Dumper\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_a2bca6e887b2b61ac11cfebcc62d81b02}\index{CompiledUrlGeneratorDumper@{CompiledUrlGeneratorDumper}!getCompiledAliases@{getCompiledAliases}}
+\index{getCompiledAliases@{getCompiledAliases}!CompiledUrlGeneratorDumper@{CompiledUrlGeneratorDumper}}
+\doxysubsubsection{\texorpdfstring{getCompiledAliases()}{getCompiledAliases()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_a2bca6e887b2b61ac11cfebcc62d81b02} 
+get\+Compiled\+Aliases (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_a90a041d79c9b58eeaff64358c536f1d4}\index{CompiledUrlGeneratorDumper@{CompiledUrlGeneratorDumper}!getCompiledRoutes@{getCompiledRoutes}}
+\index{getCompiledRoutes@{getCompiledRoutes}!CompiledUrlGeneratorDumper@{CompiledUrlGeneratorDumper}}
+\doxysubsubsection{\texorpdfstring{getCompiledRoutes()}{getCompiledRoutes()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_dumper_1_1_compiled_url_generator_dumper_a90a041d79c9b58eeaff64358c536f1d4} 
+get\+Compiled\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/routing/\+Generator/\+Dumper/\mbox{\hyperlink{_compiled_url_generator_dumper_8php}{Compiled\+Url\+Generator\+Dumper.\+php}}\end{DoxyCompactItemize}

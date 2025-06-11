@@ -1,0 +1,137 @@
+\doxysection{Sudo\+Visitor Class Reference}
+\hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor}{}\label{class_psy_1_1_sudo_1_1_sudo_visitor}\index{SudoVisitor@{SudoVisitor}}
+Inheritance diagram for Sudo\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_psy_1_1_sudo_1_1_sudo_visitor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_sudo_1_1_sudo_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (Node \$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{Node\+Visitor\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a61cf9be18190b38cbe8e0778f4cb2fd8}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a560dafbb8615947e1fbfa5565bbb832c}{leave\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a85d622872e004eec9219c62ed111a79b}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_sudo_1_1_sudo_visitor_a5d9cf5989d35032b5c189da5c1d09d0a}{PROPERTY\+\_\+\+FETCH}} = \textquotesingle{}fetch\+Property\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_sudo_1_1_sudo_visitor_a25f394b409dd3da5db6ef466c2ecf45b}{PROPERTY\+\_\+\+ASSIGN}} = \textquotesingle{}assign\+Property\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_sudo_1_1_sudo_visitor_a296b9e68df98717f0c552180d8770665}{METHOD\+\_\+\+CALL}} = \textquotesingle{}call\+Method\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_sudo_1_1_sudo_visitor_ab78f99c5a374db206f11922489cb5c73}{STATIC\+\_\+\+PROPERTY\+\_\+\+FETCH}} = \textquotesingle{}fetch\+Static\+Property\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_sudo_1_1_sudo_visitor_a190bc60c590de7d358bf3e6eda06ac54}{STATIC\+\_\+\+PROPERTY\+\_\+\+ASSIGN}} = \textquotesingle{}assign\+Static\+Property\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_sudo_1_1_sudo_visitor_ac395469d952ee66c408c1daac0429e49}{STATIC\+\_\+\+CALL}} = \textquotesingle{}call\+Static\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_sudo_1_1_sudo_visitor_a7eeec568e92a4c635619762e2b78c903}{CLASS\+\_\+\+CONST\+\_\+\+FETCH}} = \textquotesingle{}fetch\+Class\+Const\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_sudo_1_1_sudo_visitor_a1194f9627a2f6dcd348d8b926ba7b928}{NEW\+\_\+\+INSTANCE}} = \textquotesingle{}new\+Instance\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a6d11bd165a2ecd3a965f1a64df677f96}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a48cbae280b53266294ddbc517de2e59b}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae379b14ba14de6999485d1e6bc22c94f}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae5987b64591d5fb77abdcf3c51cbb238}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_afc3479fd9ddf97109031fee9751f6234}{REPLACE\+\_\+\+WITH\+\_\+\+NULL}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A PHP Parser node visitor which rewrites property and method access to use the \doxylink{namespace_psy}{Psy}\textbackslash{}\+Sudo visibility bypass methods.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000034}{Todo}}]handle assigning by reference \end{DoxyRefDesc}
+
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}\index{SudoVisitor@{SudoVisitor}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!SudoVisitor@{SudoVisitor}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_sudo_1_1_sudo_visitor_a72d9ab2b97095f3bf1c97eb453a386d1} 
+enter\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_a7eeec568e92a4c635619762e2b78c903}\index{SudoVisitor@{SudoVisitor}!CLASS\_CONST\_FETCH@{CLASS\_CONST\_FETCH}}
+\index{CLASS\_CONST\_FETCH@{CLASS\_CONST\_FETCH}!SudoVisitor@{SudoVisitor}}
+\doxysubsubsection{\texorpdfstring{CLASS\_CONST\_FETCH}{CLASS\_CONST\_FETCH}}
+{\footnotesize\ttfamily \label{class_psy_1_1_sudo_1_1_sudo_visitor_a7eeec568e92a4c635619762e2b78c903} 
+const CLASS\+\_\+\+CONST\+\_\+\+FETCH = \textquotesingle{}fetch\+Class\+Const\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_a296b9e68df98717f0c552180d8770665}\index{SudoVisitor@{SudoVisitor}!METHOD\_CALL@{METHOD\_CALL}}
+\index{METHOD\_CALL@{METHOD\_CALL}!SudoVisitor@{SudoVisitor}}
+\doxysubsubsection{\texorpdfstring{METHOD\_CALL}{METHOD\_CALL}}
+{\footnotesize\ttfamily \label{class_psy_1_1_sudo_1_1_sudo_visitor_a296b9e68df98717f0c552180d8770665} 
+const METHOD\+\_\+\+CALL = \textquotesingle{}call\+Method\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_a1194f9627a2f6dcd348d8b926ba7b928}\index{SudoVisitor@{SudoVisitor}!NEW\_INSTANCE@{NEW\_INSTANCE}}
+\index{NEW\_INSTANCE@{NEW\_INSTANCE}!SudoVisitor@{SudoVisitor}}
+\doxysubsubsection{\texorpdfstring{NEW\_INSTANCE}{NEW\_INSTANCE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_sudo_1_1_sudo_visitor_a1194f9627a2f6dcd348d8b926ba7b928} 
+const NEW\+\_\+\+INSTANCE = \textquotesingle{}new\+Instance\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_a25f394b409dd3da5db6ef466c2ecf45b}\index{SudoVisitor@{SudoVisitor}!PROPERTY\_ASSIGN@{PROPERTY\_ASSIGN}}
+\index{PROPERTY\_ASSIGN@{PROPERTY\_ASSIGN}!SudoVisitor@{SudoVisitor}}
+\doxysubsubsection{\texorpdfstring{PROPERTY\_ASSIGN}{PROPERTY\_ASSIGN}}
+{\footnotesize\ttfamily \label{class_psy_1_1_sudo_1_1_sudo_visitor_a25f394b409dd3da5db6ef466c2ecf45b} 
+const PROPERTY\+\_\+\+ASSIGN = \textquotesingle{}assign\+Property\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_a5d9cf5989d35032b5c189da5c1d09d0a}\index{SudoVisitor@{SudoVisitor}!PROPERTY\_FETCH@{PROPERTY\_FETCH}}
+\index{PROPERTY\_FETCH@{PROPERTY\_FETCH}!SudoVisitor@{SudoVisitor}}
+\doxysubsubsection{\texorpdfstring{PROPERTY\_FETCH}{PROPERTY\_FETCH}}
+{\footnotesize\ttfamily \label{class_psy_1_1_sudo_1_1_sudo_visitor_a5d9cf5989d35032b5c189da5c1d09d0a} 
+const PROPERTY\+\_\+\+FETCH = \textquotesingle{}fetch\+Property\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_ac395469d952ee66c408c1daac0429e49}\index{SudoVisitor@{SudoVisitor}!STATIC\_CALL@{STATIC\_CALL}}
+\index{STATIC\_CALL@{STATIC\_CALL}!SudoVisitor@{SudoVisitor}}
+\doxysubsubsection{\texorpdfstring{STATIC\_CALL}{STATIC\_CALL}}
+{\footnotesize\ttfamily \label{class_psy_1_1_sudo_1_1_sudo_visitor_ac395469d952ee66c408c1daac0429e49} 
+const STATIC\+\_\+\+CALL = \textquotesingle{}call\+Static\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_a190bc60c590de7d358bf3e6eda06ac54}\index{SudoVisitor@{SudoVisitor}!STATIC\_PROPERTY\_ASSIGN@{STATIC\_PROPERTY\_ASSIGN}}
+\index{STATIC\_PROPERTY\_ASSIGN@{STATIC\_PROPERTY\_ASSIGN}!SudoVisitor@{SudoVisitor}}
+\doxysubsubsection{\texorpdfstring{STATIC\_PROPERTY\_ASSIGN}{STATIC\_PROPERTY\_ASSIGN}}
+{\footnotesize\ttfamily \label{class_psy_1_1_sudo_1_1_sudo_visitor_a190bc60c590de7d358bf3e6eda06ac54} 
+const STATIC\+\_\+\+PROPERTY\+\_\+\+ASSIGN = \textquotesingle{}assign\+Static\+Property\textquotesingle{}}
+
+\Hypertarget{class_psy_1_1_sudo_1_1_sudo_visitor_ab78f99c5a374db206f11922489cb5c73}\index{SudoVisitor@{SudoVisitor}!STATIC\_PROPERTY\_FETCH@{STATIC\_PROPERTY\_FETCH}}
+\index{STATIC\_PROPERTY\_FETCH@{STATIC\_PROPERTY\_FETCH}!SudoVisitor@{SudoVisitor}}
+\doxysubsubsection{\texorpdfstring{STATIC\_PROPERTY\_FETCH}{STATIC\_PROPERTY\_FETCH}}
+{\footnotesize\ttfamily \label{class_psy_1_1_sudo_1_1_sudo_visitor_ab78f99c5a374db206f11922489cb5c73} 
+const STATIC\+\_\+\+PROPERTY\+\_\+\+FETCH = \textquotesingle{}fetch\+Static\+Property\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Sudo/\mbox{\hyperlink{_sudo_visitor_8php}{Sudo\+Visitor.\+php}}\end{DoxyCompactItemize}

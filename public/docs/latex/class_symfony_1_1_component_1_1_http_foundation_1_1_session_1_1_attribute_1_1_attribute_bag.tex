@@ -1,0 +1,224 @@
+\doxysection{Attribute\+Bag Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag}\index{AttributeBag@{AttributeBag}}
+Inheritance diagram for Attribute\+Bag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a0b3e074d720935884668d148cc17afb9}{\+\_\+\+\_\+construct}} (private string \$storage\+Key=\textquotesingle{}\+\_\+sf2\+\_\+attributes\textquotesingle{},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a392752b62c4f6aacea5c269690921ef3}{set\+Name}} (string \$name)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_aed94ff5e8054411c0ea201e829967725}{initialize}} (array \&\$attributes)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_af78df88f8737e3e2ccc3b007c2e74ebb}{get\+Storage\+Key}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a36c5aea84ecb000ab035e47ec3f351c3}{has}} (string \$name)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a52cbfcd940bd1ddbe01050de175ab18b}{get}} (string \$name, mixed \$default=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_ae4b433c6e2e629ece7396aea42dd9d65}{set}} (string \$name, mixed \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_af9d14e4ae6227970ad603987781573ca}{all}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_aab5b60a5ba47bb097e12025d973e7478}{replace}} (array \$attributes)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a78471a595e3f14f4ea1effa091093589}{remove}} (string \$name)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_aa821bec12eaa7e0f649397c9675ff505}{clear}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_ac89f2733f3f084f1e693e13afbb67739}{\$attributes}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class relates to session attribute storage.
+
+\texorpdfstring{$<$}{<}string, mixed\texorpdfstring{$>$}{>} 
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a0b3e074d720935884668d148cc17afb9}\index{AttributeBag@{AttributeBag}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a0b3e074d720935884668d148cc17afb9} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private string}]{\$storage\+Key}{ = {\ttfamily \textquotesingle{}\+\_\+sf2\+\_\+attributes\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$storage\+Key} & The key used to store attributes in the session \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_af9d14e4ae6227970ad603987781573ca}\index{AttributeBag@{AttributeBag}!all@{all}}
+\index{all@{all}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_af9d14e4ae6227970ad603987781573ca} 
+all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns attributes.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_interface_af9d14e4ae6227970ad603987781573ca}{Attribute\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_aa821bec12eaa7e0f649397c9675ff505}\index{AttributeBag@{AttributeBag}!clear@{clear}}
+\index{clear@{clear}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_aa821bec12eaa7e0f649397c9675ff505} 
+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clears out data from bag.
+
+\begin{DoxyReturn}{Returns}
+mixed Whatever data was contained 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_bag_interface_aa821bec12eaa7e0f649397c9675ff505}{Session\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_ac751e87b3d4c4bf2feb03bee8b092755}\index{AttributeBag@{AttributeBag}!count@{count}}
+\index{count@{count}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the number of attributes. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a52cbfcd940bd1ddbe01050de175ab18b}\index{AttributeBag@{AttributeBag}!get@{get}}
+\index{get@{get}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a52cbfcd940bd1ddbe01050de175ab18b} 
+get (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns an attribute. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_interface_a52cbfcd940bd1ddbe01050de175ab18b}{Attribute\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{AttributeBag@{AttributeBag}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an iterator for attributes.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Array\+Iterator\texorpdfstring{$<$}{<}string, mixed\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a3d0963e68bb313b163a73f2803c64600}\index{AttributeBag@{AttributeBag}!getName@{getName}}
+\index{getName@{getName}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets this bag\textquotesingle{}s name. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_bag_interface_a3d0963e68bb313b163a73f2803c64600}{Session\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_af78df88f8737e3e2ccc3b007c2e74ebb}\index{AttributeBag@{AttributeBag}!getStorageKey@{getStorageKey}}
+\index{getStorageKey@{getStorageKey}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{getStorageKey()}{getStorageKey()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_af78df88f8737e3e2ccc3b007c2e74ebb} 
+get\+Storage\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the storage key for this bag. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_bag_interface_af78df88f8737e3e2ccc3b007c2e74ebb}{Session\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a36c5aea84ecb000ab035e47ec3f351c3}\index{AttributeBag@{AttributeBag}!has@{has}}
+\index{has@{has}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a36c5aea84ecb000ab035e47ec3f351c3} 
+has (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Checks if an attribute is defined. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_interface_a36c5aea84ecb000ab035e47ec3f351c3}{Attribute\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_aed94ff5e8054411c0ea201e829967725}\index{AttributeBag@{AttributeBag}!initialize@{initialize}}
+\index{initialize@{initialize}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_aed94ff5e8054411c0ea201e829967725} 
+initialize (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{}\end{DoxyParamCaption})}
+
+Initializes the Bag. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_bag_interface_a076bc7918568ff0856d712c4d4755684}{Session\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a78471a595e3f14f4ea1effa091093589}\index{AttributeBag@{AttributeBag}!remove@{remove}}
+\index{remove@{remove}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a78471a595e3f14f4ea1effa091093589} 
+remove (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Removes an attribute.
+
+\begin{DoxyReturn}{Returns}
+mixed The removed value or null when it does not exist 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_interface_a78471a595e3f14f4ea1effa091093589}{Attribute\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_aab5b60a5ba47bb097e12025d973e7478}\index{AttributeBag@{AttributeBag}!replace@{replace}}
+\index{replace@{replace}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_aab5b60a5ba47bb097e12025d973e7478} 
+replace (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_interface_aab5b60a5ba47bb097e12025d973e7478}{Attribute\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_ae4b433c6e2e629ece7396aea42dd9d65}\index{AttributeBag@{AttributeBag}!set@{set}}
+\index{set@{set}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_ae4b433c6e2e629ece7396aea42dd9d65} 
+set (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Sets an attribute. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_interface_ae4b433c6e2e629ece7396aea42dd9d65}{Attribute\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a392752b62c4f6aacea5c269690921ef3}\index{AttributeBag@{AttributeBag}!setName@{setName}}
+\index{setName@{setName}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_a392752b62c4f6aacea5c269690921ef3} 
+set\+Name (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_ac89f2733f3f084f1e693e13afbb67739}\index{AttributeBag@{AttributeBag}!\$attributes@{\$attributes}}
+\index{\$attributes@{\$attributes}!AttributeBag@{AttributeBag}}
+\doxysubsubsection{\texorpdfstring{\$attributes}{\$attributes}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_attribute_1_1_attribute_bag_ac89f2733f3f084f1e693e13afbb67739} 
+array \$attributes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/foundation/\+Session/\+Attribute/\mbox{\hyperlink{_attribute_bag_8php}{Attribute\+Bag.\+php}}\end{DoxyCompactItemize}

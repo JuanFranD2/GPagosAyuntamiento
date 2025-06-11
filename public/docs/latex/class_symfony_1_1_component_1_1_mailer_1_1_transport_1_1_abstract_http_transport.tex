@@ -1,0 +1,129 @@
+\doxysection{Abstract\+Http\+Transport Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport}\index{AbstractHttpTransport@{AbstractHttpTransport}}
+Inheritance diagram for Abstract\+Http\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_aa9d113d403baab3cf05e155d28951b42}{\+\_\+\+\_\+construct}} (protected ?Http\+Client\+Interface \$client=null, ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_af0e29805020c65531fc066b71207d167}{set\+Host}} (?string \$host)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_ad404a5053504f6316c3ad4b151031938}{set\+Port}} (?int \$port)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{Abstract\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a8361b3ca6b07f27e2a700c6b784602fc}{\+\_\+\+\_\+construct}} (private ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_ae85719512d9d7ea23ffde7741222fac5}{set\+Max\+Per\+Second}} (float \$rate)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a25d696d916e4c2862bd7ac1cb998b491}{send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}} \$message, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}} \$envelope=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_aab122a1aa7cff53abb552630e265ccbd}{do\+Send\+Http}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_ab2a6fbf236a5d081eacb4418f581010c}{do\+Send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}} \$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{Abstract\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a7120af2abf2de07e224546c0cd9bed28}{stringify\+Addresses}} (array \$addresses)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a2321df4f2f7d188b92b96fe63dc71a90}{get\+Logger}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_a01d6af4b83d900dee8e0da689894ff61}{\$host}} = null
+\item 
+int \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_a66d37c99345cad722068a8877b0f48cb}{\$port}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Victor Bocharsky \href{mailto:victor@symfonycasts.com}{\texttt{victor@symfonycasts.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_aa9d113d403baab3cf05e155d28951b42}\index{AbstractHttpTransport@{AbstractHttpTransport}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AbstractHttpTransport@{AbstractHttpTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_aa9d113d403baab3cf05e155d28951b42} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected ?Http\+Client\+Interface}]{\$client}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}}}]{\$dispatcher}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_ab2a6fbf236a5d081eacb4418f581010c}\index{AbstractHttpTransport@{AbstractHttpTransport}!doSend@{doSend}}
+\index{doSend@{doSend}!AbstractHttpTransport@{AbstractHttpTransport}}
+\doxysubsubsection{\texorpdfstring{doSend()}{doSend()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_ab2a6fbf236a5d081eacb4418f581010c} 
+do\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_ab2a6fbf236a5d081eacb4418f581010c}{Abstract\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_aab122a1aa7cff53abb552630e265ccbd}\index{AbstractHttpTransport@{AbstractHttpTransport}!doSendHttp@{doSendHttp}}
+\index{doSendHttp@{doSendHttp}!AbstractHttpTransport@{AbstractHttpTransport}}
+\doxysubsubsection{\texorpdfstring{doSendHttp()}{doSendHttp()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_aab122a1aa7cff53abb552630e265ccbd} 
+do\+Send\+Http (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_api_transport_aab122a1aa7cff53abb552630e265ccbd}{Abstract\+Api\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_af0e29805020c65531fc066b71207d167}\index{AbstractHttpTransport@{AbstractHttpTransport}!setHost@{setHost}}
+\index{setHost@{setHost}!AbstractHttpTransport@{AbstractHttpTransport}}
+\doxysubsubsection{\texorpdfstring{setHost()}{setHost()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_af0e29805020c65531fc066b71207d167} 
+set\+Host (\begin{DoxyParamCaption}\item[{?string}]{\$host}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_ad404a5053504f6316c3ad4b151031938}\index{AbstractHttpTransport@{AbstractHttpTransport}!setPort@{setPort}}
+\index{setPort@{setPort}!AbstractHttpTransport@{AbstractHttpTransport}}
+\doxysubsubsection{\texorpdfstring{setPort()}{setPort()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_ad404a5053504f6316c3ad4b151031938} 
+set\+Port (\begin{DoxyParamCaption}\item[{?int}]{\$port}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_a01d6af4b83d900dee8e0da689894ff61}\index{AbstractHttpTransport@{AbstractHttpTransport}!\$host@{\$host}}
+\index{\$host@{\$host}!AbstractHttpTransport@{AbstractHttpTransport}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_a01d6af4b83d900dee8e0da689894ff61} 
+string \$host = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_a66d37c99345cad722068a8877b0f48cb}\index{AbstractHttpTransport@{AbstractHttpTransport}!\$port@{\$port}}
+\index{\$port@{\$port}!AbstractHttpTransport@{AbstractHttpTransport}}
+\doxysubsubsection{\texorpdfstring{\$port}{\$port}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_http_transport_a66d37c99345cad722068a8877b0f48cb} 
+int \$port = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/mailer/\+Transport/\mbox{\hyperlink{_abstract_http_transport_8php}{Abstract\+Http\+Transport.\+php}}\end{DoxyCompactItemize}

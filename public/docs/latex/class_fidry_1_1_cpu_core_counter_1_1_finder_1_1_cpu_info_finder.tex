@@ -1,0 +1,83 @@
+\doxysection{Cpu\+Info\+Finder Class Reference}
+\hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder}{}\label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder}\index{CpuInfoFinder@{CpuInfoFinder}}
+Inheritance diagram for Cpu\+Info\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{diagnose}} ()
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_a39ec161e9a5372e002b889d276208899}{find}} ()
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_aeab6f90a5b223f0ded56b6e2b01ef223}{count\+Cpu\+Cores}} (string \$cpu\+Info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Find the number of CPU cores looking up at the cpuinfo file which is available on Linux systems and Windows systems with a Linux sub-\/system.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/paratestphp/paratest/blob/c163539818fd96308ca8dc60f46088461e366ed4/src/Runners/PHPUnit/Options.php\#L903-L909}{\texttt{https\+://github.\+com/paratestphp/paratest/blob/c163539818fd96308ca8dc60f46088461e366ed4/src/\+Runners/\+PHPUnit/\+Options.\+php\#\+L903-\/\+L909}} 
+
+\href{https://unix.stackexchange.com/questions/146051/number-of-processors-in-proc-cpuinfo}{\texttt{https\+://unix.\+stackexchange.\+com/questions/146051/number-\/of-\/processors-\/in-\/proc-\/cpuinfo}} 
+\end{DoxySeeAlso}
+
+
+\label{doc-func-members}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_aeab6f90a5b223f0ded56b6e2b01ef223}\index{CpuInfoFinder@{CpuInfoFinder}!countCpuCores@{countCpuCores}}
+\index{countCpuCores@{countCpuCores}!CpuInfoFinder@{CpuInfoFinder}}
+\doxysubsubsection{\texorpdfstring{countCpuCores()}{countCpuCores()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_aeab6f90a5b223f0ded56b6e2b01ef223} 
+count\+Cpu\+Cores (\begin{DoxyParamCaption}\item[{string}]{\$cpu\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}\index{CpuInfoFinder@{CpuInfoFinder}!diagnose@{diagnose}}
+\index{diagnose@{diagnose}!CpuInfoFinder@{CpuInfoFinder}}
+\doxysubsubsection{\texorpdfstring{diagnose()}{diagnose()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8} 
+diagnose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Provides an explanation which may offer some insight as to what the finder will be able to find.
+
+This is practical to have an idea of what each finder will find collect information for the unit tests, since integration tests are quite complicated as dependent on complex infrastructures. 
+
+Implements \mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Cpu\+Core\+Finder}}.
+
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_a39ec161e9a5372e002b889d276208899}\index{CpuInfoFinder@{CpuInfoFinder}!find@{find}}
+\index{find@{find}!CpuInfoFinder@{CpuInfoFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_a39ec161e9a5372e002b889d276208899} 
+find (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+positive-\/int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a39ec161e9a5372e002b889d276208899}{Cpu\+Core\+Finder}}.
+
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_a5558c5d549f41597377fa1ea8a1cefa3}\index{CpuInfoFinder@{CpuInfoFinder}!toString@{toString}}
+\index{toString@{toString}!CpuInfoFinder@{CpuInfoFinder}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder_a5558c5d549f41597377fa1ea8a1cefa3} 
+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Cpu\+Core\+Finder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/fidry/cpu-\/core-\/counter/src/\+Finder/\mbox{\hyperlink{_cpu_info_finder_8php}{Cpu\+Info\+Finder.\+php}}\end{DoxyCompactItemize}

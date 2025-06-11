@@ -1,0 +1,4 @@
+var _return_new_class_execution_ending_exception_8php =
+[
+    [ "ReturnNewClassExecutionEndingException", "class_livewire_1_1_volt_1_1_exceptions_1_1_return_new_class_execution_ending_exception.html", "class_livewire_1_1_volt_1_1_exceptions_1_1_return_new_class_execution_ending_exception" ]
+];

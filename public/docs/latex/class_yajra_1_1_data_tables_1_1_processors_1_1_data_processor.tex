@@ -1,0 +1,213 @@
+\doxysection{Data\+Processor Class Reference}
+\hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor}{}\label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor}\index{DataProcessor@{DataProcessor}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a7578d581469bbf50a4b69a7347763bcc}{\+\_\+\+\_\+construct}} (protected iterable \$results, array \$column\+Def, protected array \$templates, protected int \$start=0)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a079655593c9fcfadbe125169d2547016}{process}} (\$object=false)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ad501667f175f06d3acafc487f1d0b029}{flatten}} (array \$array)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a55b9f56c1e1ddf55bc0aeb76f673b5fe}{add\+Columns}} (array \$data, \$row)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a791b3705961eb511a9fb4ae87b565d73}{edit\+Columns}} (array \$data, object\texorpdfstring{$\vert$}{|}array \$row)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ae0d55c26c7fbb9879f50249a36862403}{setup\+Row\+Variables}} (array \$data, object\texorpdfstring{$\vert$}{|}array \$row)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a6e94147d46ee97211fb0cf7ed2282fa9}{select\+Only\+Needed\+Columns}} (array \$data)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ad3ac17ae8d5c2b1b5e6d9e24b3e52b17}{remove\+Excess\+Columns}} (array \$data)
+\item 
+\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ad46fee61a45492789d1e65b193953441}{escape\+Row}} (array \$row)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ae766f03cef9beff5e06ba7c114b0f19b}{\$output}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a0044a553475a75891405504697413c1a}{\$append\+Columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_aec3878f81a141b8c97b8b8ee292d59ee}{\$edit\+Columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a3a127d4fd73d802b7a59b019a09d0c07}{\$raw\+Columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_afd5865bd8bfc17c211dc9cca1559f3bf}{\$exceptions}} = \mbox{[}\textquotesingle{}DT\+\_\+\+Row\+Id\textquotesingle{}, \textquotesingle{}DT\+\_\+\+Row\+Class\textquotesingle{}, \textquotesingle{}DT\+\_\+\+Row\+Data\textquotesingle{}, \textquotesingle{}DT\+\_\+\+Row\+Attr\textquotesingle{}\mbox{]}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ac937970d516c623ca4042632d527dc81}{\$only\+Columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a82f6479dd8e08364e3d40e75576a90bf}{\$make\+Hidden}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a4ab28dcb6c652f81fb07053e6d8cc881}{\$make\+Visible}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a00882824498781b2c59802299ae1ae7e}{\$excess\+Columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+mixed \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a91471707c78f2bac4617f8c8220bef29}{\$escape\+Columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a73a889cf70f8c898285b9b401aa726fe}{\$include\+Index}} = false
+\item 
+bool \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a27f570f51a1b0b67a12682278d6179f6}{\$ignore\+Getters}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a7578d581469bbf50a4b69a7347763bcc}\index{DataProcessor@{DataProcessor}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a7578d581469bbf50a4b69a7347763bcc} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected iterable}]{\$results}{, }\item[{array}]{\$column\+Def}{, }\item[{protected array}]{\$templates}{, }\item[{protected int}]{\$start}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a55b9f56c1e1ddf55bc0aeb76f673b5fe}\index{DataProcessor@{DataProcessor}!addColumns@{addColumns}}
+\index{addColumns@{addColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{addColumns()}{addColumns()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a55b9f56c1e1ddf55bc0aeb76f673b5fe} 
+add\+Columns (\begin{DoxyParamCaption}\item[{array}]{\$data}{, }\item[{}]{\$row}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{class_process}{Process} add columns.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object | \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$row} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a791b3705961eb511a9fb4ae87b565d73}\index{DataProcessor@{DataProcessor}!editColumns@{editColumns}}
+\index{editColumns@{editColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{editColumns()}{editColumns()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a791b3705961eb511a9fb4ae87b565d73} 
+edit\+Columns (\begin{DoxyParamCaption}\item[{array}]{\$data}{, }\item[{object\texorpdfstring{$\vert$}{|}array}]{\$row}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{class_process}{Process} edit columns. \Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ad46fee61a45492789d1e65b193953441}\index{DataProcessor@{DataProcessor}!escapeRow@{escapeRow}}
+\index{escapeRow@{escapeRow}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{escapeRow()}{escapeRow()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ad46fee61a45492789d1e65b193953441} 
+escape\+Row (\begin{DoxyParamCaption}\item[{array}]{\$row}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Escape all string or Htmlable values of row. \Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ad501667f175f06d3acafc487f1d0b029}\index{DataProcessor@{DataProcessor}!flatten@{flatten}}
+\index{flatten@{flatten}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ad501667f175f06d3acafc487f1d0b029} 
+flatten (\begin{DoxyParamCaption}\item[{array}]{\$array}{}\end{DoxyParamCaption})}
+
+Flatten array with exceptions. \Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a079655593c9fcfadbe125169d2547016}\index{DataProcessor@{DataProcessor}!process@{process}}
+\index{process@{process}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a079655593c9fcfadbe125169d2547016} 
+process (\begin{DoxyParamCaption}\item[{}]{\$object}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} data to output on browser.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$object} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ad3ac17ae8d5c2b1b5e6d9e24b3e52b17}\index{DataProcessor@{DataProcessor}!removeExcessColumns@{removeExcessColumns}}
+\index{removeExcessColumns@{removeExcessColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{removeExcessColumns()}{removeExcessColumns()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ad3ac17ae8d5c2b1b5e6d9e24b3e52b17} 
+remove\+Excess\+Columns (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove declared hidden columns. \Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a6e94147d46ee97211fb0cf7ed2282fa9}\index{DataProcessor@{DataProcessor}!selectOnlyNeededColumns@{selectOnlyNeededColumns}}
+\index{selectOnlyNeededColumns@{selectOnlyNeededColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{selectOnlyNeededColumns()}{selectOnlyNeededColumns()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a6e94147d46ee97211fb0cf7ed2282fa9} 
+select\+Only\+Needed\+Columns (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get only needed columns. \Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ae0d55c26c7fbb9879f50249a36862403}\index{DataProcessor@{DataProcessor}!setupRowVariables@{setupRowVariables}}
+\index{setupRowVariables@{setupRowVariables}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{setupRowVariables()}{setupRowVariables()}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ae0d55c26c7fbb9879f50249a36862403} 
+setup\+Row\+Variables (\begin{DoxyParamCaption}\item[{array}]{\$data}{, }\item[{object\texorpdfstring{$\vert$}{|}array}]{\$row}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Setup additional DT row variables. 
+
+\label{doc-variable-members}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a0044a553475a75891405504697413c1a}\index{DataProcessor@{DataProcessor}!\$appendColumns@{\$appendColumns}}
+\index{\$appendColumns@{\$appendColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$appendColumns}{\$appendColumns}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a0044a553475a75891405504697413c1a} 
+array \$append\+Columns = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_aec3878f81a141b8c97b8b8ee292d59ee}\index{DataProcessor@{DataProcessor}!\$editColumns@{\$editColumns}}
+\index{\$editColumns@{\$editColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$editColumns}{\$editColumns}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_aec3878f81a141b8c97b8b8ee292d59ee} 
+array \$\mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a791b3705961eb511a9fb4ae87b565d73}{edit\+Columns}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a91471707c78f2bac4617f8c8220bef29}\index{DataProcessor@{DataProcessor}!\$escapeColumns@{\$escapeColumns}}
+\index{\$escapeColumns@{\$escapeColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$escapeColumns}{\$escapeColumns}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a91471707c78f2bac4617f8c8220bef29} 
+mixed \$escape\+Columns = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_afd5865bd8bfc17c211dc9cca1559f3bf}\index{DataProcessor@{DataProcessor}!\$exceptions@{\$exceptions}}
+\index{\$exceptions@{\$exceptions}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$exceptions}{\$exceptions}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_afd5865bd8bfc17c211dc9cca1559f3bf} 
+array \$exceptions = \mbox{[}\textquotesingle{}DT\+\_\+\+Row\+Id\textquotesingle{}, \textquotesingle{}DT\+\_\+\+Row\+Class\textquotesingle{}, \textquotesingle{}DT\+\_\+\+Row\+Data\textquotesingle{}, \textquotesingle{}DT\+\_\+\+Row\+Attr\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a00882824498781b2c59802299ae1ae7e}\index{DataProcessor@{DataProcessor}!\$excessColumns@{\$excessColumns}}
+\index{\$excessColumns@{\$excessColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$excessColumns}{\$excessColumns}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a00882824498781b2c59802299ae1ae7e} 
+array \$excess\+Columns = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a27f570f51a1b0b67a12682278d6179f6}\index{DataProcessor@{DataProcessor}!\$ignoreGetters@{\$ignoreGetters}}
+\index{\$ignoreGetters@{\$ignoreGetters}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$ignoreGetters}{\$ignoreGetters}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a27f570f51a1b0b67a12682278d6179f6} 
+bool \$ignore\+Getters = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a73a889cf70f8c898285b9b401aa726fe}\index{DataProcessor@{DataProcessor}!\$includeIndex@{\$includeIndex}}
+\index{\$includeIndex@{\$includeIndex}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$includeIndex}{\$includeIndex}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a73a889cf70f8c898285b9b401aa726fe} 
+bool \$include\+Index = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a82f6479dd8e08364e3d40e75576a90bf}\index{DataProcessor@{DataProcessor}!\$makeHidden@{\$makeHidden}}
+\index{\$makeHidden@{\$makeHidden}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$makeHidden}{\$makeHidden}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a82f6479dd8e08364e3d40e75576a90bf} 
+array \$make\+Hidden = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a4ab28dcb6c652f81fb07053e6d8cc881}\index{DataProcessor@{DataProcessor}!\$makeVisible@{\$makeVisible}}
+\index{\$makeVisible@{\$makeVisible}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$makeVisible}{\$makeVisible}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a4ab28dcb6c652f81fb07053e6d8cc881} 
+array \$make\+Visible = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ac937970d516c623ca4042632d527dc81}\index{DataProcessor@{DataProcessor}!\$onlyColumns@{\$onlyColumns}}
+\index{\$onlyColumns@{\$onlyColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$onlyColumns}{\$onlyColumns}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ac937970d516c623ca4042632d527dc81} 
+array \$only\+Columns = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ae766f03cef9beff5e06ba7c114b0f19b}\index{DataProcessor@{DataProcessor}!\$output@{\$output}}
+\index{\$output@{\$output}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$output}{\$output}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_ae766f03cef9beff5e06ba7c114b0f19b} 
+array \$output = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a3a127d4fd73d802b7a59b019a09d0c07}\index{DataProcessor@{DataProcessor}!\$rawColumns@{\$rawColumns}}
+\index{\$rawColumns@{\$rawColumns}!DataProcessor@{DataProcessor}}
+\doxysubsubsection{\texorpdfstring{\$rawColumns}{\$rawColumns}}
+{\footnotesize\ttfamily \label{class_yajra_1_1_data_tables_1_1_processors_1_1_data_processor_a3a127d4fd73d802b7a59b019a09d0c07} 
+array \$raw\+Columns = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/yajra/laravel-\/datatables-\/oracle/src/\+Processors/\mbox{\hyperlink{_data_processor_8php}{Data\+Processor.\+php}}\end{DoxyCompactItemize}

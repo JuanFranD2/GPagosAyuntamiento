@@ -1,0 +1,109 @@
+\doxysection{Tree\+Building\+Rules Class Reference}
+\hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules}{}\label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules}\index{TreeBuildingRules@{TreeBuildingRules}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_afaea5be4603883dbd4ad47056eacb9db}{has\+Rules}} (\$tagname)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a33383685f6beae53791ea7b686eb1ea3}{evaluate}} (\$\mbox{\hyperlink{resources_2views_2livewire_2pages_2auth_2confirm-password_8blade_8php_ae3b81d385ca4c26109dfbda28c563e2b}{new}}, \$current)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a7f6dfeeebc0e5f0154cec4d68759ae38}{handle\+LI}} (\$ele, \$current)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_aac9a8da414328acb5fff0db4050ec07c}{handle\+DT}} (\$ele, \$current)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a2f19c6d8184eac0a4942a21676e18b4c}{handle\+RT}} (\$ele, \$current)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_af15ec5e177be69f2b9d3f16b4930b56b}{close\+If\+Current\+Matches}} (\$ele, \$current, \$match)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a475a6a63b85186663d34151bcbd21590}{\$tags}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles special-\/case rules for the DOM tree builder.
+
+Many tags have special rules that need to be accomodated on an individual basis. This class handles those rules.
+
+See section 8.\+1.\+2.\+4 of the spec.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000020}{Todo}}]
+\begin{DoxyItemize}
+\item colgroup and col special behaviors
+\begin{DoxyItemize}
+\item body and head special behaviors 
+\end{DoxyItemize}
+\end{DoxyItemize}\end{DoxyRefDesc}
+
+
+\label{doc-func-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_af15ec5e177be69f2b9d3f16b4930b56b}\index{TreeBuildingRules@{TreeBuildingRules}!closeIfCurrentMatches@{closeIfCurrentMatches}}
+\index{closeIfCurrentMatches@{closeIfCurrentMatches}!TreeBuildingRules@{TreeBuildingRules}}
+\doxysubsubsection{\texorpdfstring{closeIfCurrentMatches()}{closeIfCurrentMatches()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_af15ec5e177be69f2b9d3f16b4930b56b} 
+close\+If\+Current\+Matches (\begin{DoxyParamCaption}\item[{}]{\$ele}{, }\item[{}]{\$current}{, }\item[{}]{\$match}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a33383685f6beae53791ea7b686eb1ea3}\index{TreeBuildingRules@{TreeBuildingRules}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!TreeBuildingRules@{TreeBuildingRules}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a33383685f6beae53791ea7b686eb1ea3} 
+evaluate (\begin{DoxyParamCaption}\item[{}]{\$new}{, }\item[{}]{\$current}{}\end{DoxyParamCaption})}
+
+Evaluate the rule for the current tag name.
+
+This may modify the existing DOM.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+DOMElement The new Current DOM element. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_aac9a8da414328acb5fff0db4050ec07c}\index{TreeBuildingRules@{TreeBuildingRules}!handleDT@{handleDT}}
+\index{handleDT@{handleDT}!TreeBuildingRules@{TreeBuildingRules}}
+\doxysubsubsection{\texorpdfstring{handleDT()}{handleDT()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_aac9a8da414328acb5fff0db4050ec07c} 
+handle\+DT (\begin{DoxyParamCaption}\item[{}]{\$ele}{, }\item[{}]{\$current}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a7f6dfeeebc0e5f0154cec4d68759ae38}\index{TreeBuildingRules@{TreeBuildingRules}!handleLI@{handleLI}}
+\index{handleLI@{handleLI}!TreeBuildingRules@{TreeBuildingRules}}
+\doxysubsubsection{\texorpdfstring{handleLI()}{handleLI()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a7f6dfeeebc0e5f0154cec4d68759ae38} 
+handle\+LI (\begin{DoxyParamCaption}\item[{}]{\$ele}{, }\item[{}]{\$current}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a2f19c6d8184eac0a4942a21676e18b4c}\index{TreeBuildingRules@{TreeBuildingRules}!handleRT@{handleRT}}
+\index{handleRT@{handleRT}!TreeBuildingRules@{TreeBuildingRules}}
+\doxysubsubsection{\texorpdfstring{handleRT()}{handleRT()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a2f19c6d8184eac0a4942a21676e18b4c} 
+handle\+RT (\begin{DoxyParamCaption}\item[{}]{\$ele}{, }\item[{}]{\$current}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_afaea5be4603883dbd4ad47056eacb9db}\index{TreeBuildingRules@{TreeBuildingRules}!hasRules@{hasRules}}
+\index{hasRules@{hasRules}!TreeBuildingRules@{TreeBuildingRules}}
+\doxysubsubsection{\texorpdfstring{hasRules()}{hasRules()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_afaea5be4603883dbd4ad47056eacb9db} 
+has\+Rules (\begin{DoxyParamCaption}\item[{}]{\$tagname}{}\end{DoxyParamCaption})}
+
+Returns true if the given tagname has special processing rules. 
+
+\label{doc-variable-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a475a6a63b85186663d34151bcbd21590}\index{TreeBuildingRules@{TreeBuildingRules}!\$tags@{\$tags}}
+\index{\$tags@{\$tags}!TreeBuildingRules@{TreeBuildingRules}}
+\doxysubsubsection{\texorpdfstring{\$tags}{\$tags}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tree_building_rules_a475a6a63b85186663d34151bcbd21590} 
+\$tags\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Parser/\mbox{\hyperlink{_tree_building_rules_8php}{Tree\+Building\+Rules.\+php}}\end{DoxyCompactItemize}

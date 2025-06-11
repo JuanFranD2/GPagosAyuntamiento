@@ -1,0 +1,229 @@
+\doxysection{Textarea\+Prompt Class Reference}
+\hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt}{}\label{class_laravel_1_1_prompts_1_1_textarea_prompt}\index{TextareaPrompt@{TextareaPrompt}}
+Inheritance diagram for Textarea\+Prompt\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_laravel_1_1_prompts_1_1_textarea_prompt}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_af5c2875ecea72ae04dd9a50b40c04b5e}{\+\_\+\+\_\+construct}} (public string \$label, public string \$placeholder=\textquotesingle{}\textquotesingle{}, public string \$default=\textquotesingle{}\textquotesingle{}, public bool\texorpdfstring{$\vert$}{|}string \$required=false, public mixed \$validate=null, public string \$hint=\textquotesingle{}\textquotesingle{}, int \$rows=5, public ?Closure \$transform=null,)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_ab1722f0cb5bfbaaeb21858ac5237fe77}{value\+With\+Cursor}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_a160a9cfeb912c41bb870f7a58aa2ec1d}{wrapped\+Value}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_a65055164939f434481e5ee710bb44a45}{lines}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_a7c1c5943c634e002649c92505138a6ef}{visible}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt}{Prompt}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_aefbfa229f1c9e1fc967bff724a010f9e}{value}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a4369aedf7a0640d4bffa22db904f58a0}{prompt}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_aeb303e3da1777408fcf675b4ce6214f7}{run\+Loop}} (callable \$callable)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a62507ed11698eaa500def06d857f5220}{new\+Lines\+Written}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_a3cedfd70ada3b14d18b3876536b8f3c7}{\$width}} = 60
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt}{Prompt}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a6bad46feed342f1b655c01334691e7b8}{\$state}} = \textquotesingle{}initial\textquotesingle{}
+\item 
+string \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a59c4d7244a55ab9b7523a0a84bdeb48c}{\$error}} = \textquotesingle{}\textquotesingle{}
+\item 
+string \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a6e6d8e41cd5f3b81bfa85097d6064c65}{\$cancel\+Message}} = \textquotesingle{}Cancelled.\textquotesingle{}
+\item 
+bool string \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a6e5ffa26303f13e6c0215e1221987bd7}{\$required}}
+\item 
+Closure \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a8ef94e259c83028243cdf68ed5699e3c}{\$transform}} = null
+\item 
+mixed \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a2e691b5cf8afa9e156cf2c928b90b47c}{\$validate}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_a40707d5907bcd7a8a1c04afa9ea547fb}{handle\+Up\+Key}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_a495812ff8bba36ac8e7a38c95c82ffe3}{handle\+Down\+Key}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_a9c1989d7b8f359aa03016cd7a8189c59}{adjust\+Visible\+Window}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_a22541d79bf5ed98d3f21ab0d219594ee}{current\+Line\+Index}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_ae77d01de353cb69994674c05453036cd}{cursor\+Offset}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_textarea_prompt_ab049063888f847c525cafe65deb4afa8}{wrapped\+Placeholder\+With\+Cursor}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt}{Prompt}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a3649d8e43d48e7322bf4c235055d6b44}{capture\+Previous\+New\+Lines}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_afde88292c44dc59faf017738dae6dffb}{render}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_ab9e356f2165bc12df16964044bf8bd24}{submit}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a692cdca3335208732d64b2045b873061}{transformed\+Value}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a886e432340c6c063fd6d596233836127}{is\+Invalid\+When\+Required}} (mixed \$\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_aefbfa229f1c9e1fc967bff724a010f9e}{value}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt}{Prompt}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a9bdab235bad49ac31093151ff3ef5ca0}{cancel\+Using}} (?Closure \$callback)
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_afdcbe9ef84a82567813b32ef8aa5b04e}{set\+Output}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a7359409fca8513354f11f5a33b783b55}{output}})
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a8e2e347132cac9c095bfcb935fb3add6}{terminal}} ()
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a8888abb7b0d6b5b0e4cf8a6e450a2c57}{validate\+Using}} (Closure \$callback)
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_ad0a47544b93d5aa10f37b9f1dc6ddf18}{revert\+Using}} (Closure \$callback)
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a21f4eb23bc118e9b3c2821662ae458e0}{prevent\+Reverting}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt}{Prompt}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a7359409fca8513354f11f5a33b783b55}{output}} ()
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a0a9f65f748c57b89a38c5b7e073555e0}{write\+Directly}} (string \$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt}{Prompt}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_afe5f01b75e02b789d58419049e9e14c9}{\$prev\+Frame}} = \textquotesingle{}\textquotesingle{}
+\item 
+int \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_ab65b181102140b442a8793aa72b00fd1}{\$new\+Lines\+Written}} = 1
+\item 
+bool \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a3b1e7fab829500374033edcabf1373b7}{\$validated}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt}{Prompt}}}
+\begin{DoxyCompactItemize}
+\item 
+static Closure \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a6770a0aed3561cb8a94d2874f176df6d}{\$cancel\+Using}}
+\item 
+static Closure \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_ab542fe7133c1dd1e4625f778c6b8a8b2}{\$validate\+Using}}
+\item 
+static Closure \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a8daa45ad6dc0320a980a507124ab9de7}{\$revert\+Using}} = null
+\item 
+static \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_a676ffb1c0ce0d97e544b5a590ea95f97}{\$output}}
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_terminal}{Terminal}} \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_prompt_ae282377084f5f00737e6aef03c65ba02}{\$terminal}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_af5c2875ecea72ae04dd9a50b40c04b5e}\index{TextareaPrompt@{TextareaPrompt}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_af5c2875ecea72ae04dd9a50b40c04b5e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{public string}]{\$label}{, }\item[{public string}]{\$placeholder}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{public string}]{\$default}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{public bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily false}, }\item[{public mixed}]{\$validate}{ = {\ttfamily null}, }\item[{public string}]{\$hint}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{int}]{\$rows}{ = {\ttfamily 5}, }\item[{public ?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new Textarea\+Prompt instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_a9c1989d7b8f359aa03016cd7a8189c59}\index{TextareaPrompt@{TextareaPrompt}!adjustVisibleWindow@{adjustVisibleWindow}}
+\index{adjustVisibleWindow@{adjustVisibleWindow}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{adjustVisibleWindow()}{adjustVisibleWindow()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_a9c1989d7b8f359aa03016cd7a8189c59} 
+adjust\+Visible\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adjust the visible window to ensure the cursor is always visible. \Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_a22541d79bf5ed98d3f21ab0d219594ee}\index{TextareaPrompt@{TextareaPrompt}!currentLineIndex@{currentLineIndex}}
+\index{currentLineIndex@{currentLineIndex}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{currentLineIndex()}{currentLineIndex()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_a22541d79bf5ed98d3f21ab0d219594ee} 
+current\+Line\+Index (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the index of the current line that the cursor is on. \Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_ae77d01de353cb69994674c05453036cd}\index{TextareaPrompt@{TextareaPrompt}!cursorOffset@{cursorOffset}}
+\index{cursorOffset@{cursorOffset}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{cursorOffset()}{cursorOffset()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_ae77d01de353cb69994674c05453036cd} 
+cursor\+Offset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calculate the cursor offset considering wrapped words. \Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_a495812ff8bba36ac8e7a38c95c82ffe3}\index{TextareaPrompt@{TextareaPrompt}!handleDownKey@{handleDownKey}}
+\index{handleDownKey@{handleDownKey}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{handleDownKey()}{handleDownKey()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_a495812ff8bba36ac8e7a38c95c82ffe3} 
+handle\+Down\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle the down key press. \Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_a40707d5907bcd7a8a1c04afa9ea547fb}\index{TextareaPrompt@{TextareaPrompt}!handleUpKey@{handleUpKey}}
+\index{handleUpKey@{handleUpKey}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{handleUpKey()}{handleUpKey()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_a40707d5907bcd7a8a1c04afa9ea547fb} 
+handle\+Up\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle the up key press. \Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_a65055164939f434481e5ee710bb44a45}\index{TextareaPrompt@{TextareaPrompt}!lines@{lines}}
+\index{lines@{lines}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{lines()}{lines()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_a65055164939f434481e5ee710bb44a45} 
+lines (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+The formatted lines.
+
+\begin{DoxyReturn}{Returns}
+array$<$int, string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_ab1722f0cb5bfbaaeb21858ac5237fe77}\index{TextareaPrompt@{TextareaPrompt}!valueWithCursor@{valueWithCursor}}
+\index{valueWithCursor@{valueWithCursor}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{valueWithCursor()}{valueWithCursor()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_ab1722f0cb5bfbaaeb21858ac5237fe77} 
+value\+With\+Cursor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the formatted value with a virtual cursor. \Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_a7c1c5943c634e002649c92505138a6ef}\index{TextareaPrompt@{TextareaPrompt}!visible@{visible}}
+\index{visible@{visible}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{visible()}{visible()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_a7c1c5943c634e002649c92505138a6ef} 
+visible (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+The currently visible lines.
+
+\begin{DoxyReturn}{Returns}
+array$<$int, string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_ab049063888f847c525cafe65deb4afa8}\index{TextareaPrompt@{TextareaPrompt}!wrappedPlaceholderWithCursor@{wrappedPlaceholderWithCursor}}
+\index{wrappedPlaceholderWithCursor@{wrappedPlaceholderWithCursor}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{wrappedPlaceholderWithCursor()}{wrappedPlaceholderWithCursor()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_ab049063888f847c525cafe65deb4afa8} 
+wrapped\+Placeholder\+With\+Cursor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A wrapped version of the placeholder with the virtual cursor. \Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_a160a9cfeb912c41bb870f7a58aa2ec1d}\index{TextareaPrompt@{TextareaPrompt}!wrappedValue@{wrappedValue}}
+\index{wrappedValue@{wrappedValue}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{wrappedValue()}{wrappedValue()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_a160a9cfeb912c41bb870f7a58aa2ec1d} 
+wrapped\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+The word-\/wrapped version of the typed value. 
+
+\label{doc-variable-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_textarea_prompt_a3cedfd70ada3b14d18b3876536b8f3c7}\index{TextareaPrompt@{TextareaPrompt}!\$width@{\$width}}
+\index{\$width@{\$width}!TextareaPrompt@{TextareaPrompt}}
+\doxysubsubsection{\texorpdfstring{\$width}{\$width}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_textarea_prompt_a3cedfd70ada3b14d18b3876536b8f3c7} 
+int \$width = 60}
+
+The width of the textarea. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/prompts/src/\mbox{\hyperlink{_textarea_prompt_8php}{Textarea\+Prompt.\+php}}\end{DoxyCompactItemize}

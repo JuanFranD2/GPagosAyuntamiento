@@ -1,0 +1,477 @@
+\doxysection{Notification\+Fake Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake}{}\label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake}\index{NotificationFake@{NotificationFake}}
+Inheritance diagram for Notification\+Fake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a43dbf0420a622c38c55ac6f85417fa5e}{assert\+Sent\+On\+Demand}} (\$notification, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a366b014cfce003a6dbf2c88fe62650d6}{assert\+Sent\+To}} (\$notifiable, \$notification, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a6e0e50719e7641037ddd984efe61fb10}{assert\+Sent\+On\+Demand\+Times}} (\$notification, \$times=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_af2038b6f832fd167c132b667d23ae045}{assert\+Sent\+To\+Times}} (\$notifiable, \$notification, \$times=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a2ca1b1aa51bbd3f73055c6df7dd8f815}{assert\+Not\+Sent\+To}} (\$notifiable, \$notification, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a60f3d8cbb84521d6a932b80efa9435a8}{assert\+Nothing\+Sent}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a7b5d4fc537c02e071dc3813e23929a89}{assert\+Nothing\+Sent\+To}} (\$notifiable)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ac6a4a85ff062fe1a82da2683badaf828}{assert\+Sent\+Times}} (\$notification, \$expected\+Count)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ac0122a6a19639b1948a1a3b6e8904095}{assert\+Count}} (\$expected\+Count)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_af97ea67631009cf296a5978f9fd6df9f}{sent}} (\$notifiable, \$notification, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a93e2c9d96f268f187caaf1c5d6fcd7f4}{has\+Sent}} (\$notifiable, \$notification)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_aa05e4c6cba4c899b8c2d9dcfef45e22c}{send}} (\$notifiables, \$notification)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a7df19d08a3a7157eebf4b6ebc813bb4d}{send\+Now}} (\$notifiables, \$notification, ?array \$channels=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a60ad3a047c10fecebd7d379967dc1f1f}{channel}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ae418186f7b3344acd1295798a2b46960}{locale}} (\$locale)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a87dd79b7ac32d1a1ca538bafa2da62dd}{serialize\+And\+Restore}} (bool \$serialize\+And\+Restore=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ae21a1f823e08a79be3ad266d2b7088fe}{sent\+Notifications}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher_ae0c057c9296d25c2c430afca63475dae}{listen}} (\$events, \$listener=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher_a6a09bcade0e7e5dcfec49dd3e837c1a6}{has\+Listeners}} (\$event\+Name)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher_ac18277095f037bd82f1bb6510ac9d442}{subscribe}} (\$subscriber)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher_a5d7f061a6b162233469ff0502b130ee1}{until}} (\$event, \$payload=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher_a066a7bbd32131d4c8e56517c2ede70d2}{dispatch}} (\$event, \$payload=\mbox{[}$\,$\mbox{]}, \$halt=false)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher_af7723a32758567fc2031070b8a4b0909}{push}} (\$event, \$payload=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher_a7242fe442d232bb90c8f40b5f9dcd3a2}{flush}} (\$event)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher_a02f5a60ef65fd314d50c2949cc07a92a}{forget}} (\$event)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher_a4e85bdffc6ab9445580126186d8219dd}{forget\+Pushed}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory}{Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_a4600dda0cb891a4ceb42b45dc26a671f}{send\+Now}} (\$notifiables, \$notification)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a3b392f5a691b803e728f1fb42b35f6e1}{\$locale}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a458174ba5f88ced959f376ef5d05ff74}{notifications\+For}} (\$notifiable, \$notification)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a0ed4ee2320fe88db2fc54f31981836bf}{serialize\+And\+Restore\+Notification}} (\$notification)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a51df68467e9bf7825dfa9f38d45e9404}{\$notifications}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_aee2f766f7488cda5f7714e504868ae7c}{\$serialize\+And\+Restore}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ac0122a6a19639b1948a1a3b6e8904095}\index{NotificationFake@{NotificationFake}!assertCount@{assertCount}}
+\index{assertCount@{assertCount}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{assertCount()}{assertCount()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ac0122a6a19639b1948a1a3b6e8904095} 
+assert\+Count (\begin{DoxyParamCaption}\item[{}]{\$expected\+Count}{}\end{DoxyParamCaption})}
+
+Assert the total count of notification that were sent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$expected\+Count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a60f3d8cbb84521d6a932b80efa9435a8}\index{NotificationFake@{NotificationFake}!assertNothingSent@{assertNothingSent}}
+\index{assertNothingSent@{assertNothingSent}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{assertNothingSent()}{assertNothingSent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a60f3d8cbb84521d6a932b80efa9435a8} 
+assert\+Nothing\+Sent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Assert that no notifications were sent.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a7b5d4fc537c02e071dc3813e23929a89}\index{NotificationFake@{NotificationFake}!assertNothingSentTo@{assertNothingSentTo}}
+\index{assertNothingSentTo@{assertNothingSentTo}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{assertNothingSentTo()}{assertNothingSentTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a7b5d4fc537c02e071dc3813e23929a89} 
+assert\+Nothing\+Sent\+To (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{}\end{DoxyParamCaption})}
+
+Assert that no notifications were sent to the given notifiable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception \Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a2ca1b1aa51bbd3f73055c6df7dd8f815}\index{NotificationFake@{NotificationFake}!assertNotSentTo@{assertNotSentTo}}
+\index{assertNotSentTo@{assertNotSentTo}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{assertNotSentTo()}{assertNotSentTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a2ca1b1aa51bbd3f73055c6df7dd8f815} 
+assert\+Not\+Sent\+To (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{, }\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Determine if a notification was sent based on a truth-\/test callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+string | \textbackslash{}\+Closure & {\em \$notification} & \\
+\hline
+callable | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception \Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a43dbf0420a622c38c55ac6f85417fa5e}\index{NotificationFake@{NotificationFake}!assertSentOnDemand@{assertSentOnDemand}}
+\index{assertSentOnDemand@{assertSentOnDemand}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{assertSentOnDemand()}{assertSentOnDemand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a43dbf0420a622c38c55ac6f85417fa5e} 
+assert\+Sent\+On\+Demand (\begin{DoxyParamCaption}\item[{}]{\$notification}{, }\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert if a notification was sent on-\/demand based on a truth-\/test callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Closure & {\em \$notification} & \\
+\hline
+callable | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception \Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a6e0e50719e7641037ddd984efe61fb10}\index{NotificationFake@{NotificationFake}!assertSentOnDemandTimes@{assertSentOnDemandTimes}}
+\index{assertSentOnDemandTimes@{assertSentOnDemandTimes}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{assertSentOnDemandTimes()}{assertSentOnDemandTimes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a6e0e50719e7641037ddd984efe61fb10} 
+assert\+Sent\+On\+Demand\+Times (\begin{DoxyParamCaption}\item[{}]{\$notification}{, }\item[{}]{\$times}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Assert if a notification was sent on-\/demand a number of times.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$notification} & \\
+\hline
+int & {\em \$times} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ac6a4a85ff062fe1a82da2683badaf828}\index{NotificationFake@{NotificationFake}!assertSentTimes@{assertSentTimes}}
+\index{assertSentTimes@{assertSentTimes}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{assertSentTimes()}{assertSentTimes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ac6a4a85ff062fe1a82da2683badaf828} 
+assert\+Sent\+Times (\begin{DoxyParamCaption}\item[{}]{\$notification}{, }\item[{}]{\$expected\+Count}{}\end{DoxyParamCaption})}
+
+Assert the total amount of times a notification was sent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$notification} & \\
+\hline
+int & {\em \$expected\+Count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a366b014cfce003a6dbf2c88fe62650d6}\index{NotificationFake@{NotificationFake}!assertSentTo@{assertSentTo}}
+\index{assertSentTo@{assertSentTo}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{assertSentTo()}{assertSentTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a366b014cfce003a6dbf2c88fe62650d6} 
+assert\+Sent\+To (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{, }\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert if a notification was sent based on a truth-\/test callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+string | \textbackslash{}\+Closure & {\em \$notification} & \\
+\hline
+callable | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception \Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_af2038b6f832fd167c132b667d23ae045}\index{NotificationFake@{NotificationFake}!assertSentToTimes@{assertSentToTimes}}
+\index{assertSentToTimes@{assertSentToTimes}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{assertSentToTimes()}{assertSentToTimes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_af2038b6f832fd167c132b667d23ae045} 
+assert\+Sent\+To\+Times (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{, }\item[{}]{\$times}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Assert if a notification was sent a number of times.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+string & {\em \$notification} & \\
+\hline
+int & {\em \$times} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a60ad3a047c10fecebd7d379967dc1f1f}\index{NotificationFake@{NotificationFake}!channel@{channel}}
+\index{channel@{channel}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{channel()}{channel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a60ad3a047c10fecebd7d379967dc1f1f} 
+channel (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a channel instance by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_a60ad3a047c10fecebd7d379967dc1f1f}{Factory}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a93e2c9d96f268f187caaf1c5d6fcd7f4}\index{NotificationFake@{NotificationFake}!hasSent@{hasSent}}
+\index{hasSent@{hasSent}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{hasSent()}{hasSent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a93e2c9d96f268f187caaf1c5d6fcd7f4} 
+has\+Sent (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{}\end{DoxyParamCaption})}
+
+Determine if there are more notifications left to inspect.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+string & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ae418186f7b3344acd1295798a2b46960}\index{NotificationFake@{NotificationFake}!locale@{locale}}
+\index{locale@{locale}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{locale()}{locale()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ae418186f7b3344acd1295798a2b46960} 
+locale (\begin{DoxyParamCaption}\item[{}]{\$locale}{}\end{DoxyParamCaption})}
+
+Set the locale of notifications.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a458174ba5f88ced959f376ef5d05ff74}\index{NotificationFake@{NotificationFake}!notificationsFor@{notificationsFor}}
+\index{notificationsFor@{notificationsFor}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{notificationsFor()}{notificationsFor()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a458174ba5f88ced959f376ef5d05ff74} 
+notifications\+For (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get all of the notifications for a notifiable entity by type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+string & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_aa05e4c6cba4c899b8c2d9dcfef45e22c}\index{NotificationFake@{NotificationFake}!send@{send}}
+\index{send@{send}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_aa05e4c6cba4c899b8c2d9dcfef45e22c} 
+send (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{}\end{DoxyParamCaption})}
+
+Send the given notification to the given notifiable entities.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array | mixed & {\em \$notifiables} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_aa05e4c6cba4c899b8c2d9dcfef45e22c}{Factory}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a7df19d08a3a7157eebf4b6ebc813bb4d}\index{NotificationFake@{NotificationFake}!sendNow@{sendNow}}
+\index{sendNow@{sendNow}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{sendNow()}{sendNow()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a7df19d08a3a7157eebf4b6ebc813bb4d} 
+send\+Now (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{, }\item[{?array}]{\$channels}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Send the given notification immediately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array | mixed & {\em \$notifiables} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+array | null & {\em \$channels} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_af97ea67631009cf296a5978f9fd6df9f}\index{NotificationFake@{NotificationFake}!sent@{sent}}
+\index{sent@{sent}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{sent()}{sent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_af97ea67631009cf296a5978f9fd6df9f} 
+sent (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{, }\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get all of the notifications matching a truth-\/test callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+string & {\em \$notification} & \\
+\hline
+callable | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ae21a1f823e08a79be3ad266d2b7088fe}\index{NotificationFake@{NotificationFake}!sentNotifications@{sentNotifications}}
+\index{sentNotifications@{sentNotifications}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{sentNotifications()}{sentNotifications()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ae21a1f823e08a79be3ad266d2b7088fe} 
+sent\+Notifications (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the notifications that have been sent.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a87dd79b7ac32d1a1ca538bafa2da62dd}\index{NotificationFake@{NotificationFake}!serializeAndRestore@{serializeAndRestore}}
+\index{serializeAndRestore@{serializeAndRestore}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{serializeAndRestore()}{serializeAndRestore()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a87dd79b7ac32d1a1ca538bafa2da62dd} 
+serialize\+And\+Restore (\begin{DoxyParamCaption}\item[{bool}]{\$serialize\+And\+Restore}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Specify if notification should be serialized and restored when being "{}pushed"{} to the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$serialize\+And\+Restore} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a0ed4ee2320fe88db2fc54f31981836bf}\index{NotificationFake@{NotificationFake}!serializeAndRestoreNotification@{serializeAndRestoreNotification}}
+\index{serializeAndRestoreNotification@{serializeAndRestoreNotification}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{serializeAndRestoreNotification()}{serializeAndRestoreNotification()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a0ed4ee2320fe88db2fc54f31981836bf} 
+serialize\+And\+Restore\+Notification (\begin{DoxyParamCaption}\item[{}]{\$notification}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Serialize and unserialize the notification to simulate the queueing process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a3b392f5a691b803e728f1fb42b35f6e1}\index{NotificationFake@{NotificationFake}!\$locale@{\$locale}}
+\index{\$locale@{\$locale}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{\$locale}{\$locale}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a3b392f5a691b803e728f1fb42b35f6e1} 
+\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ae418186f7b3344acd1295798a2b46960}{locale}}}
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a51df68467e9bf7825dfa9f38d45e9404}\index{NotificationFake@{NotificationFake}!\$notifications@{\$notifications}}
+\index{\$notifications@{\$notifications}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{\$notifications}{\$notifications}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a51df68467e9bf7825dfa9f38d45e9404} 
+\$notifications = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_aee2f766f7488cda5f7714e504868ae7c}\index{NotificationFake@{NotificationFake}!\$serializeAndRestore@{\$serializeAndRestore}}
+\index{\$serializeAndRestore@{\$serializeAndRestore}!NotificationFake@{NotificationFake}}
+\doxysubsubsection{\texorpdfstring{\$serializeAndRestore}{\$serializeAndRestore}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_aee2f766f7488cda5f7714e504868ae7c} 
+\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a87dd79b7ac32d1a1ca538bafa2da62dd}{serialize\+And\+Restore}} = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Support/\+Testing/\+Fakes/\mbox{\hyperlink{_notification_fake_8php}{Notification\+Fake.\+php}}\end{DoxyCompactItemize}

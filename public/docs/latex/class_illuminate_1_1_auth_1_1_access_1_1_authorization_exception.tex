@@ -1,0 +1,170 @@
+\doxysection{Authorization\+Exception Class Reference}
+\hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception}{}\label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception}\index{AuthorizationException@{AuthorizationException}}
+Inheritance diagram for Authorization\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a453e29dd40ac26405b3614d1a0572228}{\+\_\+\+\_\+construct}} (\$message=null, \$code=null, ?Throwable \$previous=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a1e3f1bea94184e9ba901797124266e96}{response}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_afc363f45ad20cc060a26c24badf3e25b}{set\+Response}} (\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a1e3f1bea94184e9ba901797124266e96}{response}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a20dc4cbde8c1b89086368d9ccf33253b}{with\+Status}} (\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a19e49aea71e41a8bd6076bc45169e4a3}{status}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a483cd8519e6ab7cde1ba6f79054dba84}{as\+Not\+Found}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a63e7e7bf6ca1a476e10f6b4d213a7dae}{has\+Status}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a19e49aea71e41a8bd6076bc45169e4a3}{status}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a43eec8af16a5b12856ad7f9be6d92554}{to\+Response}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_af4b6fb1bbc77ccc05f10da3b16935b99}{\$response}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a58391ea75f2d29d5d708d7050b641c33}{\$status}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a453e29dd40ac26405b3614d1a0572228}\index{AuthorizationException@{AuthorizationException}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a453e29dd40ac26405b3614d1a0572228} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$message}{ = {\ttfamily null}, }\item[{}]{\$code}{ = {\ttfamily null}, }\item[{?Throwable}]{\$previous}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new authorization exception instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$message} & \\
+\hline
+mixed & {\em \$code} & \\
+\hline
+\textbackslash{}\+Throwable | null & {\em \$previous} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a483cd8519e6ab7cde1ba6f79054dba84}\index{AuthorizationException@{AuthorizationException}!asNotFound@{asNotFound}}
+\index{asNotFound@{asNotFound}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{asNotFound()}{asNotFound()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a483cd8519e6ab7cde1ba6f79054dba84} 
+as\+Not\+Found (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Set the HTTP response status code to 404.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a63e7e7bf6ca1a476e10f6b4d213a7dae}\index{AuthorizationException@{AuthorizationException}!hasStatus@{hasStatus}}
+\index{hasStatus@{hasStatus}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{hasStatus()}{hasStatus()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a63e7e7bf6ca1a476e10f6b4d213a7dae} 
+has\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the HTTP status code has been set.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a1e3f1bea94184e9ba901797124266e96}\index{AuthorizationException@{AuthorizationException}!response@{response}}
+\index{response@{response}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a1e3f1bea94184e9ba901797124266e96} 
+response (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the response from the gate.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_afc363f45ad20cc060a26c24badf3e25b}\index{AuthorizationException@{AuthorizationException}!setResponse@{setResponse}}
+\index{setResponse@{setResponse}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{setResponse()}{setResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_afc363f45ad20cc060a26c24badf3e25b} 
+set\+Response (\begin{DoxyParamCaption}\item[{}]{\$response}{}\end{DoxyParamCaption})}
+
+Set the response from the gate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a19e49aea71e41a8bd6076bc45169e4a3}\index{AuthorizationException@{AuthorizationException}!status@{status}}
+\index{status@{status}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a19e49aea71e41a8bd6076bc45169e4a3} 
+status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the HTTP status code.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a43eec8af16a5b12856ad7f9be6d92554}\index{AuthorizationException@{AuthorizationException}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a43eec8af16a5b12856ad7f9be6d92554} 
+to\+Response (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a deny response object from this exception.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a20dc4cbde8c1b89086368d9ccf33253b}\index{AuthorizationException@{AuthorizationException}!withStatus@{withStatus}}
+\index{withStatus@{withStatus}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{withStatus()}{withStatus()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a20dc4cbde8c1b89086368d9ccf33253b} 
+with\+Status (\begin{DoxyParamCaption}\item[{}]{\$status}{}\end{DoxyParamCaption})}
+
+Set the HTTP response status code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_af4b6fb1bbc77ccc05f10da3b16935b99}\index{AuthorizationException@{AuthorizationException}!\$response@{\$response}}
+\index{\$response@{\$response}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{\$response}{\$response}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_af4b6fb1bbc77ccc05f10da3b16935b99} 
+\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a1e3f1bea94184e9ba901797124266e96}{response}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a58391ea75f2d29d5d708d7050b641c33}\index{AuthorizationException@{AuthorizationException}!\$status@{\$status}}
+\index{\$status@{\$status}!AuthorizationException@{AuthorizationException}}
+\doxysubsubsection{\texorpdfstring{\$status}{\$status}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a58391ea75f2d29d5d708d7050b641c33} 
+\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_authorization_exception_a19e49aea71e41a8bd6076bc45169e4a3}{status}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Auth/\+Access/\mbox{\hyperlink{_authorization_exception_8php}{Authorization\+Exception.\+php}}\end{DoxyCompactItemize}

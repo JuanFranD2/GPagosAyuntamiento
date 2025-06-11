@@ -1,0 +1,4 @@
+var class_league_1_1_common_mark_1_1_extension_1_1_smart_punct_1_1_replace_unpaired_quotes_listener =
+[
+    [ "__invoke", "class_league_1_1_common_mark_1_1_extension_1_1_smart_punct_1_1_replace_unpaired_quotes_listener.html#ae5ee5131c769cceb2325668a9dffa055", null ]
+];

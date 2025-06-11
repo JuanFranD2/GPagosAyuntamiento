@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_controller_does_not_return_response_exception =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_controller_does_not_return_response_exception.html#a9c2ee5768ea5663bb1acfba68c423384", null ]
+];

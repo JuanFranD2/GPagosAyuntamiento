@@ -1,0 +1,53 @@
+\doxysection{Warmable\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface}{}\label{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface}\index{WarmableInterface@{WarmableInterface}}
+Inheritance diagram for Warmable\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface_a71140687f6f45db8464c326370d0fea7}{warm\+Up}} (string \$cache\+Dir, ?string \$build\+Dir=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for classes that support warming their cache.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface_a71140687f6f45db8464c326370d0fea7}\index{WarmableInterface@{WarmableInterface}!warmUp@{warmUp}}
+\index{warmUp@{warmUp}!WarmableInterface@{WarmableInterface}}
+\doxysubsubsection{\texorpdfstring{warmUp()}{warmUp()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface_a71140687f6f45db8464c326370d0fea7} 
+warm\+Up (\begin{DoxyParamCaption}\item[{string}]{\$cache\+Dir}{, }\item[{?string}]{\$build\+Dir}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Warms up the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cache\+Dir} & Where warm-\/up artifacts should be stored \\
+\hline
+string | null & {\em \$build\+Dir} & Where read-\/only artifacts should go; null when called after compile-\/time\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} A list of classes or files to preload 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a71140687f6f45db8464c326370d0fea7}{Data\+Collector\+Translator}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Cache\+Warmer/\mbox{\hyperlink{_warmable_interface_8php}{Warmable\+Interface.\+php}}\end{DoxyCompactItemize}

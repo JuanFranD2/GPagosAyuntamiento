@@ -1,0 +1,4 @@
+var _remove_prevent_modifier_from_wire_submit_directive_8php =
+[
+    [ "RemovePreventModifierFromWireSubmitDirective", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_remove_pred38b8cb77209d2daecf6703c2474fb1d.html", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_remove_pred38b8cb77209d2daecf6703c2474fb1d" ]
+];

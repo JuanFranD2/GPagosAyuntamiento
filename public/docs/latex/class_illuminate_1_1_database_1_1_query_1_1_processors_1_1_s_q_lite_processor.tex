@@ -1,0 +1,102 @@
+\doxysection{SQLite\+Processor Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor}{}\label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor}\index{SQLiteProcessor@{SQLiteProcessor}}
+Inheritance diagram for SQLite\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_a5a4cd7dbad91aa7b4883db1529650810}{process\+Columns}} (\$results, \$sql=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_ac38866f53035f91bd145c84c802f3422}{process\+Indexes}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_a12229b914a46336a6a448e6c3aade32c}{process\+Foreign\+Keys}} (\$results)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor}{Processor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ab7523450d20a0f391ebce81bfeeb932b}{process\+Select}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}} \$query, \$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_adb28f2adfcbc913380a80836a0e4a7ec}{process\+Insert\+Get\+Id}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}} \$query, \$sql, \$values, \$sequence=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2b05f465e0fd060a458e3539e390a85f}{process\+Schemas}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2db9aa9849e65a0f0dae4b3a3a7ac1c6}{process\+Tables}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a77c10af71a0e57679c1b9f9eeadc6854}{process\+Views}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a11983c69a64f1a92b2a309a00389a29f}{process\+Types}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a319e40d71f88887017e917f17d58bcc0}{process\+Columns}} (\$results)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_a5a4cd7dbad91aa7b4883db1529650810}\index{SQLiteProcessor@{SQLiteProcessor}!processColumns@{processColumns}}
+\index{processColumns@{processColumns}!SQLiteProcessor@{SQLiteProcessor}}
+\doxysubsubsection{\texorpdfstring{processColumns()}{processColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_a5a4cd7dbad91aa7b4883db1529650810} 
+process\+Columns (\begin{DoxyParamCaption}\item[{}]{\$results}{, }\item[{}]{\$sql}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a columns query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+string & {\em \$sql} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_a12229b914a46336a6a448e6c3aade32c}\index{SQLiteProcessor@{SQLiteProcessor}!processForeignKeys@{processForeignKeys}}
+\index{processForeignKeys@{processForeignKeys}!SQLiteProcessor@{SQLiteProcessor}}
+\doxysubsubsection{\texorpdfstring{processForeignKeys()}{processForeignKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_a12229b914a46336a6a448e6c3aade32c} 
+process\+Foreign\+Keys (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a foreign keys query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a12229b914a46336a6a448e6c3aade32c}{Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_ac38866f53035f91bd145c84c802f3422}\index{SQLiteProcessor@{SQLiteProcessor}!processIndexes@{processIndexes}}
+\index{processIndexes@{processIndexes}!SQLiteProcessor@{SQLiteProcessor}}
+\doxysubsubsection{\texorpdfstring{processIndexes()}{processIndexes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_ac38866f53035f91bd145c84c802f3422} 
+process\+Indexes (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of an indexes query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ac38866f53035f91bd145c84c802f3422}{Processor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Query/\+Processors/\mbox{\hyperlink{_s_q_lite_processor_8php}{SQLite\+Processor.\+php}}\end{DoxyCompactItemize}

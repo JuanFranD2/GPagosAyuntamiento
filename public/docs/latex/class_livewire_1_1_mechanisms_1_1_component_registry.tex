@@ -1,0 +1,151 @@
+\doxysection{Component\+Registry Class Reference}
+\hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry}{}\label{class_livewire_1_1_mechanisms_1_1_component_registry}\index{ComponentRegistry@{ComponentRegistry}}
+Inheritance diagram for Component\+Registry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_livewire_1_1_mechanisms_1_1_component_registry}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_a902771dde84a9c26ec37001a1d5a8888}{component}} (\$name, \$class=null)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_a8bdcdee53aa2b0009d92c8aff2cd892a}{new}} (\$name\+Or\+Class, \$id=null)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_acdeaae9aa4b650a1a948d466ed007d4f}{is\+Discoverable}} (\$class\+Or\+Name)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_a73cac667d505dc06b8826c1a23933f73}{get\+Name}} (\$name\+Or\+Class\+Or\+Component)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_a7d8b31debdc6e7ced92f5b859716f0bc}{get\+Class}} (\$name\+Or\+Class\+Or\+Component)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_acce5495a46e723e0b23cdce6d4e550f8}{resolve\+Missing\+Component}} (\$resolver)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_mechanism}{Mechanism}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_mechanism_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_mechanism_a8814ea4b5beba763c570b4818980814e}{boot}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_a54bd79bbb46c76e7d6316df16df5bbf6}{get\+Name\+And\+Class}} (\$name\+Component\+Or\+Class)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_a378819873200a3640954701601ab7cd9}{name\+To\+Class}} (\$name)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_a2a2b6b46f99576957617594d5da46b6d}{class\+To\+Name}} (\$class)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_aba503adf53fddedda7660f69d8a871ea}{generate\+Class\+From\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_a83855065335ad25bfd480b4e7ff51f8d}{generate\+Name\+From\+Class}} (\$class)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_ab481c5a1e7a1f02ca780d54cc6d85bb1}{\$missing\+Component\+Resolvers}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_ac0f2ea905ff615d382b569f2488fc96a}{\$non\+Aliased\+Classes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_mechanisms_1_1_component_registry_a7e6d29edbd9ec5d8ec9d478cf98fba03}{\$aliases}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_a2a2b6b46f99576957617594d5da46b6d}\index{ComponentRegistry@{ComponentRegistry}!classToName@{classToName}}
+\index{classToName@{classToName}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{classToName()}{classToName()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_a2a2b6b46f99576957617594d5da46b6d} 
+class\+To\+Name (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_a902771dde84a9c26ec37001a1d5a8888}\index{ComponentRegistry@{ComponentRegistry}!component@{component}}
+\index{component@{component}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{component()}{component()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_a902771dde84a9c26ec37001a1d5a8888} 
+component (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$class}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_aba503adf53fddedda7660f69d8a871ea}\index{ComponentRegistry@{ComponentRegistry}!generateClassFromName@{generateClassFromName}}
+\index{generateClassFromName@{generateClassFromName}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{generateClassFromName()}{generateClassFromName()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_aba503adf53fddedda7660f69d8a871ea} 
+generate\+Class\+From\+Name (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_a83855065335ad25bfd480b4e7ff51f8d}\index{ComponentRegistry@{ComponentRegistry}!generateNameFromClass@{generateNameFromClass}}
+\index{generateNameFromClass@{generateNameFromClass}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{generateNameFromClass()}{generateNameFromClass()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_a83855065335ad25bfd480b4e7ff51f8d} 
+generate\+Name\+From\+Class (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_a7d8b31debdc6e7ced92f5b859716f0bc}\index{ComponentRegistry@{ComponentRegistry}!getClass@{getClass}}
+\index{getClass@{getClass}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{getClass()}{getClass()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_a7d8b31debdc6e7ced92f5b859716f0bc} 
+get\+Class (\begin{DoxyParamCaption}\item[{}]{\$name\+Or\+Class\+Or\+Component}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_a73cac667d505dc06b8826c1a23933f73}\index{ComponentRegistry@{ComponentRegistry}!getName@{getName}}
+\index{getName@{getName}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_a73cac667d505dc06b8826c1a23933f73} 
+get\+Name (\begin{DoxyParamCaption}\item[{}]{\$name\+Or\+Class\+Or\+Component}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_a54bd79bbb46c76e7d6316df16df5bbf6}\index{ComponentRegistry@{ComponentRegistry}!getNameAndClass@{getNameAndClass}}
+\index{getNameAndClass@{getNameAndClass}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{getNameAndClass()}{getNameAndClass()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_a54bd79bbb46c76e7d6316df16df5bbf6} 
+get\+Name\+And\+Class (\begin{DoxyParamCaption}\item[{}]{\$name\+Component\+Or\+Class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_acdeaae9aa4b650a1a948d466ed007d4f}\index{ComponentRegistry@{ComponentRegistry}!isDiscoverable@{isDiscoverable}}
+\index{isDiscoverable@{isDiscoverable}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{isDiscoverable()}{isDiscoverable()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_acdeaae9aa4b650a1a948d466ed007d4f} 
+is\+Discoverable (\begin{DoxyParamCaption}\item[{}]{\$class\+Or\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_a378819873200a3640954701601ab7cd9}\index{ComponentRegistry@{ComponentRegistry}!nameToClass@{nameToClass}}
+\index{nameToClass@{nameToClass}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{nameToClass()}{nameToClass()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_a378819873200a3640954701601ab7cd9} 
+name\+To\+Class (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_a8bdcdee53aa2b0009d92c8aff2cd892a}\index{ComponentRegistry@{ComponentRegistry}!new@{new}}
+\index{new@{new}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{new()}{new()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_a8bdcdee53aa2b0009d92c8aff2cd892a} 
+new (\begin{DoxyParamCaption}\item[{}]{\$name\+Or\+Class}{, }\item[{}]{\$id}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_acce5495a46e723e0b23cdce6d4e550f8}\index{ComponentRegistry@{ComponentRegistry}!resolveMissingComponent@{resolveMissingComponent}}
+\index{resolveMissingComponent@{resolveMissingComponent}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{resolveMissingComponent()}{resolveMissingComponent()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_acce5495a46e723e0b23cdce6d4e550f8} 
+resolve\+Missing\+Component (\begin{DoxyParamCaption}\item[{}]{\$resolver}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_a7e6d29edbd9ec5d8ec9d478cf98fba03}\index{ComponentRegistry@{ComponentRegistry}!\$aliases@{\$aliases}}
+\index{\$aliases@{\$aliases}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{\$aliases}{\$aliases}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_a7e6d29edbd9ec5d8ec9d478cf98fba03} 
+\$aliases = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_ab481c5a1e7a1f02ca780d54cc6d85bb1}\index{ComponentRegistry@{ComponentRegistry}!\$missingComponentResolvers@{\$missingComponentResolvers}}
+\index{\$missingComponentResolvers@{\$missingComponentResolvers}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{\$missingComponentResolvers}{\$missingComponentResolvers}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_ab481c5a1e7a1f02ca780d54cc6d85bb1} 
+\$missing\+Component\+Resolvers = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_livewire_1_1_mechanisms_1_1_component_registry_ac0f2ea905ff615d382b569f2488fc96a}\index{ComponentRegistry@{ComponentRegistry}!\$nonAliasedClasses@{\$nonAliasedClasses}}
+\index{\$nonAliasedClasses@{\$nonAliasedClasses}!ComponentRegistry@{ComponentRegistry}}
+\doxysubsubsection{\texorpdfstring{\$nonAliasedClasses}{\$nonAliasedClasses}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_mechanisms_1_1_component_registry_ac0f2ea905ff615d382b569f2488fc96a} 
+\$non\+Aliased\+Classes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/livewire/livewire/src/\+Mechanisms/\mbox{\hyperlink{_component_registry_8php}{Component\+Registry.\+php}}\end{DoxyCompactItemize}

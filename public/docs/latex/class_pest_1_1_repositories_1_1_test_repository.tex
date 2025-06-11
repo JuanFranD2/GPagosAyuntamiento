@@ -1,0 +1,92 @@
+\doxysection{Test\+Repository Class Reference}
+\hypertarget{class_pest_1_1_repositories_1_1_test_repository}{}\label{class_pest_1_1_repositories_1_1_test_repository}\index{TestRepository@{TestRepository}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository_a2b6b82e76d16af67295024d1b12f64f7}{get\+Filenames}} ()
+\item 
+\mbox{\hyperlink{bin_2entities_8php_a97ef45bedec26e5711ce3f0d4b4a29eb}{foreach}}( \$paths as \$path) \mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository_a6ea4aa810bf97396b88be68bd98c184d}{add\+Test\+Case\+Filter}} (\mbox{\hyperlink{interface_pest_1_1_contracts_1_1_test_case_filter}{Test\+Case\+Filter}} \$filter)
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository_aff8c8da697d1de5de626e8b3d2ade0ff}{add\+Test\+Case\+Method\+Filter}} (\mbox{\hyperlink{interface_pest_1_1_contracts_1_1_test_case_method_filter}{Test\+Case\+Method\+Filter}} \$filter)
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository_a92515a52e2b35690d36c9559dae3d9dc}{get}} (string \$filename)
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository_af46ad6b03079ad7d4aae8e065172e04c}{set}} (\mbox{\hyperlink{class_pest_1_1_factories_1_1_test_case_method_factory}{Test\+Case\+Method\+Factory}} \$method)
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository_a79391e564e3dba8581f2b4493970256a}{make\+If\+Needed}} (string \$filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository_a05aec88c3516c6db5da524fbcc673aff}{\$hooks}} = array\+\_\+map(fn (Closure \$hook)\+: array =$>$ \mbox{[}\$hook\mbox{]}, \$hooks)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_repositories_1_1_test_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_repositories_1_1_test_repository_a6ea4aa810bf97396b88be68bd98c184d}\index{TestRepository@{TestRepository}!addTestCaseFilter@{addTestCaseFilter}}
+\index{addTestCaseFilter@{addTestCaseFilter}!TestRepository@{TestRepository}}
+\doxysubsubsection{\texorpdfstring{addTestCaseFilter()}{addTestCaseFilter()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_test_repository_a6ea4aa810bf97396b88be68bd98c184d} 
+\mbox{\hyperlink{bin_2entities_8php_a97ef45bedec26e5711ce3f0d4b4a29eb}{foreach}}(\$paths as \$path) add\+Test\+Case\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pest_1_1_contracts_1_1_test_case_filter}{Test\+Case\+Filter}}}]{\$filter}{}\end{DoxyParamCaption})}
+
+Filters the test cases using the given filter. \Hypertarget{class_pest_1_1_repositories_1_1_test_repository_aff8c8da697d1de5de626e8b3d2ade0ff}\index{TestRepository@{TestRepository}!addTestCaseMethodFilter@{addTestCaseMethodFilter}}
+\index{addTestCaseMethodFilter@{addTestCaseMethodFilter}!TestRepository@{TestRepository}}
+\doxysubsubsection{\texorpdfstring{addTestCaseMethodFilter()}{addTestCaseMethodFilter()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_test_repository_aff8c8da697d1de5de626e8b3d2ade0ff} 
+add\+Test\+Case\+Method\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_pest_1_1_contracts_1_1_test_case_method_filter}{Test\+Case\+Method\+Filter}}}]{\$filter}{}\end{DoxyParamCaption})}
+
+Filters the test cases using the given filter. \Hypertarget{class_pest_1_1_repositories_1_1_test_repository_ac751e87b3d4c4bf2feb03bee8b092755}\index{TestRepository@{TestRepository}!count@{count}}
+\index{count@{count}!TestRepository@{TestRepository}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_test_repository_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Counts the number of test cases. \Hypertarget{class_pest_1_1_repositories_1_1_test_repository_a92515a52e2b35690d36c9559dae3d9dc}\index{TestRepository@{TestRepository}!get@{get}}
+\index{get@{get}!TestRepository@{TestRepository}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_test_repository_a92515a52e2b35690d36c9559dae3d9dc} 
+get (\begin{DoxyParamCaption}\item[{string}]{\$filename}{}\end{DoxyParamCaption})}
+
+Gets the test case factory from the given filename. \Hypertarget{class_pest_1_1_repositories_1_1_test_repository_a2b6b82e76d16af67295024d1b12f64f7}\index{TestRepository@{TestRepository}!getFilenames@{getFilenames}}
+\index{getFilenames@{getFilenames}!TestRepository@{TestRepository}}
+\doxysubsubsection{\texorpdfstring{getFilenames()}{getFilenames()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_test_repository_a2b6b82e76d16af67295024d1b12f64f7} 
+get\+Filenames (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the filename of each test that should be executed in the suite.
+
+\begin{DoxyReturn}{Returns}
+array$<$int, string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_repositories_1_1_test_repository_a79391e564e3dba8581f2b4493970256a}\index{TestRepository@{TestRepository}!makeIfNeeded@{makeIfNeeded}}
+\index{makeIfNeeded@{makeIfNeeded}!TestRepository@{TestRepository}}
+\doxysubsubsection{\texorpdfstring{makeIfNeeded()}{makeIfNeeded()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_test_repository_a79391e564e3dba8581f2b4493970256a} 
+make\+If\+Needed (\begin{DoxyParamCaption}\item[{string}]{\$filename}{}\end{DoxyParamCaption})}
+
+Makes a Test Case from the given filename, if exists. \Hypertarget{class_pest_1_1_repositories_1_1_test_repository_af46ad6b03079ad7d4aae8e065172e04c}\index{TestRepository@{TestRepository}!set@{set}}
+\index{set@{set}!TestRepository@{TestRepository}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_test_repository_af46ad6b03079ad7d4aae8e065172e04c} 
+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pest_1_1_factories_1_1_test_case_method_factory}{Test\+Case\+Method\+Factory}}}]{\$method}{}\end{DoxyParamCaption})}
+
+Sets a new test case method. 
+
+\label{doc-variable-members}
+\Hypertarget{class_pest_1_1_repositories_1_1_test_repository_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_pest_1_1_repositories_1_1_test_repository_a05aec88c3516c6db5da524fbcc673aff}\index{TestRepository@{TestRepository}!\$hooks@{\$hooks}}
+\index{\$hooks@{\$hooks}!TestRepository@{TestRepository}}
+\doxysubsubsection{\texorpdfstring{\$hooks}{\$hooks}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_test_repository_a05aec88c3516c6db5da524fbcc673aff} 
+\$hooks = array\+\_\+map(fn (Closure \$hook)\+: array =$>$ \mbox{[}\$hook\mbox{]}, \$hooks)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Repositories/\mbox{\hyperlink{_test_repository_8php}{Test\+Repository.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var class_livewire_1_1_features_1_1_support_disabling_back_button_cache_1_1_disable_back_button_cache_middleware =
+[
+    [ "handle", "class_livewire_1_1_features_1_1_support_disabling_back_button_cache_1_1_disable_back_button_cache_middleware.html#acef7660b2651389395d139e8af42d670", null ]
+];

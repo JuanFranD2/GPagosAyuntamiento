@@ -1,0 +1,173 @@
+\doxysection{SQLite\+Connector Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector}{}\label{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector}\index{SQLiteConnector@{SQLiteConnector}}
+Inheritance diagram for SQLite\+Connector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a2d01c6fcc7f96301dcf4c5d9d01120aa}{connect}} (array \$config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector}{Connector}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_abdd8b4a45bc0c16383a251f0acfa386c}{create\+Connection}} (\$dsn, array \$config, array \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_ae662b88d780123c835fdd68d54564146}{get\+Options}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_ae2ce4b43907e3cb8f78bafcb89a81ff9}{get\+Default\+Options}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a316bdeaf8f4455220ef76a8355a546ef}{set\+Default\+Options}} (array \$options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a1bbc527429ceb6a053fe57aa4bf247ac}{parse\+Database\+Path}} (string \$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a6f525a8aeaa2c141d64c71d9b8630168}{configure\+Foreign\+Key\+Constraints}} (\$connection, array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_aa052e62c53cd2c25e1045a5bc3881c41}{configure\+Busy\+Timeout}} (\$connection, array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a9e226643493dcfa8d1fae9f24b423589}{configure\+Journal\+Mode}} (\$connection, array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_ad4541e7a05a377f2b8becd47a2232ea0}{configure\+Synchronous}} (\$connection, array \$config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector}{Connector}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a2e4ba99e0f08b027794c357520985dc7}{create\+Pdo\+Connection}} (\$dsn, \$username, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$password, \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_ac4337226e42d16da5306df2a5201f6c1}{try\+Again\+If\+Caused\+By\+Lost\+Connection}} (Throwable \$e, \$dsn, \$username, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$password, \$options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector}{Connector}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a011800c63ece4cbbfa77136a20607023}{\$options}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_aa052e62c53cd2c25e1045a5bc3881c41}\index{SQLiteConnector@{SQLiteConnector}!configureBusyTimeout@{configureBusyTimeout}}
+\index{configureBusyTimeout@{configureBusyTimeout}!SQLiteConnector@{SQLiteConnector}}
+\doxysubsubsection{\texorpdfstring{configureBusyTimeout()}{configureBusyTimeout()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_aa052e62c53cd2c25e1045a5bc3881c41} 
+configure\+Busy\+Timeout (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the busy timeout if configured.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PDO & {\em \$connection} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a6f525a8aeaa2c141d64c71d9b8630168}\index{SQLiteConnector@{SQLiteConnector}!configureForeignKeyConstraints@{configureForeignKeyConstraints}}
+\index{configureForeignKeyConstraints@{configureForeignKeyConstraints}!SQLiteConnector@{SQLiteConnector}}
+\doxysubsubsection{\texorpdfstring{configureForeignKeyConstraints()}{configureForeignKeyConstraints()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a6f525a8aeaa2c141d64c71d9b8630168} 
+configure\+Foreign\+Key\+Constraints (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Enable or disable foreign key constraints if configured.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PDO & {\em \$connection} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a9e226643493dcfa8d1fae9f24b423589}\index{SQLiteConnector@{SQLiteConnector}!configureJournalMode@{configureJournalMode}}
+\index{configureJournalMode@{configureJournalMode}!SQLiteConnector@{SQLiteConnector}}
+\doxysubsubsection{\texorpdfstring{configureJournalMode()}{configureJournalMode()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a9e226643493dcfa8d1fae9f24b423589} 
+configure\+Journal\+Mode (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the journal mode if configured.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PDO & {\em \$connection} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_ad4541e7a05a377f2b8becd47a2232ea0}\index{SQLiteConnector@{SQLiteConnector}!configureSynchronous@{configureSynchronous}}
+\index{configureSynchronous@{configureSynchronous}!SQLiteConnector@{SQLiteConnector}}
+\doxysubsubsection{\texorpdfstring{configureSynchronous()}{configureSynchronous()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_ad4541e7a05a377f2b8becd47a2232ea0} 
+configure\+Synchronous (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the synchronous mode if configured.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PDO & {\em \$connection} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a2d01c6fcc7f96301dcf4c5d9d01120aa}\index{SQLiteConnector@{SQLiteConnector}!connect@{connect}}
+\index{connect@{connect}!SQLiteConnector@{SQLiteConnector}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a2d01c6fcc7f96301dcf4c5d9d01120aa} 
+connect (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})}
+
+Establish a database connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+PDO 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connectors_1_1_connector_interface_a2d01c6fcc7f96301dcf4c5d9d01120aa}{Connector\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a1bbc527429ceb6a053fe57aa4bf247ac}\index{SQLiteConnector@{SQLiteConnector}!parseDatabasePath@{parseDatabasePath}}
+\index{parseDatabasePath@{parseDatabasePath}!SQLiteConnector@{SQLiteConnector}}
+\doxysubsubsection{\texorpdfstring{parseDatabasePath()}{parseDatabasePath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_s_q_lite_connector_a1bbc527429ceb6a053fe57aa4bf247ac} 
+parse\+Database\+Path (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the absolute database path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+SQLite\+Database\+Does\+Not\+Exist\+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Connectors/\mbox{\hyperlink{_s_q_lite_connector_8php}{SQLite\+Connector.\+php}}\end{DoxyCompactItemize}

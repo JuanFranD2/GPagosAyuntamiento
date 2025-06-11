@@ -1,0 +1,150 @@
+\doxysection{My\+Sql\+Processor Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor}{}\label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor}\index{MySqlProcessor@{MySqlProcessor}}
+Inheritance diagram for My\+Sql\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_ac77d2c2c3990c647ef0056ff6a0d7886}{process\+Column\+Listing}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_adb28f2adfcbc913380a80836a0e4a7ec}{process\+Insert\+Get\+Id}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}} \$query, \$sql, \$values, \$sequence=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_a319e40d71f88887017e917f17d58bcc0}{process\+Columns}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_ac38866f53035f91bd145c84c802f3422}{process\+Indexes}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_a12229b914a46336a6a448e6c3aade32c}{process\+Foreign\+Keys}} (\$results)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor}{Processor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ab7523450d20a0f391ebce81bfeeb932b}{process\+Select}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}} \$query, \$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2b05f465e0fd060a458e3539e390a85f}{process\+Schemas}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2db9aa9849e65a0f0dae4b3a3a7ac1c6}{process\+Tables}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a77c10af71a0e57679c1b9f9eeadc6854}{process\+Views}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a11983c69a64f1a92b2a309a00389a29f}{process\+Types}} (\$results)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_ac77d2c2c3990c647ef0056ff6a0d7886}\index{MySqlProcessor@{MySqlProcessor}!processColumnListing@{processColumnListing}}
+\index{processColumnListing@{processColumnListing}!MySqlProcessor@{MySqlProcessor}}
+\doxysubsubsection{\texorpdfstring{processColumnListing()}{processColumnListing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_ac77d2c2c3990c647ef0056ff6a0d7886} 
+process\+Column\+Listing (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a column listing query.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000111}{Deprecated}}]Will be removed in a future Laravel version.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_a319e40d71f88887017e917f17d58bcc0}\index{MySqlProcessor@{MySqlProcessor}!processColumns@{processColumns}}
+\index{processColumns@{processColumns}!MySqlProcessor@{MySqlProcessor}}
+\doxysubsubsection{\texorpdfstring{processColumns()}{processColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_a319e40d71f88887017e917f17d58bcc0} 
+process\+Columns (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a columns query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a319e40d71f88887017e917f17d58bcc0}{Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_a12229b914a46336a6a448e6c3aade32c}\index{MySqlProcessor@{MySqlProcessor}!processForeignKeys@{processForeignKeys}}
+\index{processForeignKeys@{processForeignKeys}!MySqlProcessor@{MySqlProcessor}}
+\doxysubsubsection{\texorpdfstring{processForeignKeys()}{processForeignKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_a12229b914a46336a6a448e6c3aade32c} 
+process\+Foreign\+Keys (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a foreign keys query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a12229b914a46336a6a448e6c3aade32c}{Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_ac38866f53035f91bd145c84c802f3422}\index{MySqlProcessor@{MySqlProcessor}!processIndexes@{processIndexes}}
+\index{processIndexes@{processIndexes}!MySqlProcessor@{MySqlProcessor}}
+\doxysubsubsection{\texorpdfstring{processIndexes()}{processIndexes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_ac38866f53035f91bd145c84c802f3422} 
+process\+Indexes (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of an indexes query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ac38866f53035f91bd145c84c802f3422}{Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_adb28f2adfcbc913380a80836a0e4a7ec}\index{MySqlProcessor@{MySqlProcessor}!processInsertGetId@{processInsertGetId}}
+\index{processInsertGetId@{processInsertGetId}!MySqlProcessor@{MySqlProcessor}}
+\doxysubsubsection{\texorpdfstring{processInsertGetId()}{processInsertGetId()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_adb28f2adfcbc913380a80836a0e4a7ec} 
+process\+Insert\+Get\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}}}]{\$query}{, }\item[{}]{\$sql}{, }\item[{}]{\$values}{, }\item[{}]{\$sequence}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} an "{}insert get ID"{} query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder & {\em \$query} & \\
+\hline
+string & {\em \$sql} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+string | null & {\em \$sequence} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_adb28f2adfcbc913380a80836a0e4a7ec}{Processor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Query/\+Processors/\mbox{\hyperlink{_my_sql_processor_8php}{My\+Sql\+Processor.\+php}}\end{DoxyCompactItemize}

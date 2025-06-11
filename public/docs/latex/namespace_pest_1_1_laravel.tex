@@ -1,0 +1,1058 @@
+\doxysection{Pest\textbackslash{}Laravel Namespace Reference}
+\hypertarget{namespace_pest_1_1_laravel}{}\label{namespace_pest_1_1_laravel}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_pest_1_1_laravel_1_1_commands}{Commands}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_pest_1_1_laravel_1_1_pest_service_provider}{Pest\+Service\+Provider}}
+\item 
+class \mbox{\hyperlink{class_pest_1_1_laravel_1_1_plugin}{Plugin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a305ba4211b1f6e201763ac5dec051bc0}{acting\+As}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, ?string \$driver=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5ae3df065ac38f3fe70999a3c366830e}{be}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, ?string \$driver=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5a85f6c76696445a10a479c5fbfa0a4a}{assert\+Authenticated}} (?string \$guard=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a2ce3fee4f40ad3b79da5c886f5484d83}{assert\+Guest}} (?string \$guard=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_aca3286137ee6e0b55334e265aa0e436d}{is\+Authenticated}} (?string \$guard=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_addb7e6453d4d0246cc6c78479cec1b49}{assert\+Authenticated\+As}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, ?string \$guard=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a513a97f5c2807e5e825bde839daf0b38}{assert\+Credentials}} (array \$credentials, ?string \$guard=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a126e4b6281f608d390946ad2908521e7}{assert\+Invalid\+Credentials}} (array \$credentials, ?string \$guard=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_ac40bd8208d3a7f97d3e2c1ed4e275f69}{has\+Credentials}} (array \$credentials, ?string \$guard=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a96ca7320672ca2c0159f164b3b1615d6}{artisan}} (string \$command, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_afbc00fa10cbd173cf3a8a65ced974d2c}{without\+Mocking\+Console\+Output}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a2af9265a05f58b820e17fe700091df6c}{swap}} (string \$abstract, object \$\mbox{\hyperlink{namespace_pest_1_1_laravel_a736b39fa7ec6827246c5c9cedc1cf773}{instance}})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a736b39fa7ec6827246c5c9cedc1cf773}{instance}} (string \$abstract, object \$instance)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_aa7653bc970f081a13d693db3a8498c1f}{mock}} (string \$abstract, ?Closure \$mock=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a4dbf15a8e86f63e353b4f242cb550835}{partial\+Mock}} (string \$abstract, ?Closure \$\mbox{\hyperlink{namespace_pest_1_1_laravel_aa7653bc970f081a13d693db3a8498c1f}{mock}}=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a7541f52064cffc9912cd90b5bba87082}{spy}} (string \$abstract, ?Closure \$\mbox{\hyperlink{namespace_pest_1_1_laravel_aa7653bc970f081a13d693db3a8498c1f}{mock}}=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a1a5510635e90731cc7a6a04e9f403dbd}{forget\+Mock}} (string \$abstract)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a64938faec9a97eed780862c6c0b8f53d}{without\+Mix}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_aa347df39b98c236abcdbba129f4edc78}{with\+Mix}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a1cace51579a7dd4240b483277d2ac455}{without\+Vite}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a304f9850bfb660db567c21e15c76f54f}{with\+Vite}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_af1e2477b7cdeca403158067a79c36e32}{assert\+Database\+Has}} (string \$table, array \$data, ?string \$connection=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5371139bb89cf848a0598806191112f3}{assert\+Database\+Missing}} (string \$table, array \$data, ?string \$connection=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a2ef49efc8147eb78343671ec9c89454d}{assert\+Database\+Empty}} (string \$table, ?string \$connection=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a60ec75394ce99f2f0110593630d7488e}{assert\+Model\+Exists}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$model)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_aa14c1984872b41c0b7833e6ce6ae83f8}{assert\+Model\+Missing}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$model)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_aa3af792221a77d4ca298dcbd828e718f}{assert\+Database\+Count}} (string \$table, int \$count, ?string \$connection=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5cb1f058a8fc68fbb555268cab27d56f}{assert\+Soft\+Deleted}} (\$table, array \$data=\mbox{[}$\,$\mbox{]}, ?string \$connection=null, string \$deleted\+At\+Column=\textquotesingle{}deleted\+\_\+at\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a1ad2cabc54db5b3dc163f0c37893aee4}{assert\+Not\+Soft\+Deleted}} (\$table, array \$data=\mbox{[}$\,$\mbox{]}, ?string \$connection=null, string \$deleted\+At\+Column=\textquotesingle{}deleted\+\_\+at\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a8b2a50e3598bba4f51b6cd8d70299dfd}{is\+Soft\+Deletable\+Model}} (\$model)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5096ce895b7849517a57ca89efeb94b9}{get\+Connection}} (?string \$connection=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5416a94b3d617f5f539bd875b00f169b}{seed}} (array\texorpdfstring{$\vert$}{|}string \$class=\textquotesingle{}Database\textbackslash{}\textbackslash{}\+Seeders\textbackslash{}\textbackslash{}\+Database\+Seeder\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_abb16fa3ff532986bf96035e176626ecd}{expects\+Database\+Query\+Count}} (int \$excepted, ?string \$connection=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_ae0b884f6eba47655f08486b5c320a692}{cast\+As\+Json}} (array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string \$value)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a6b346b6f41a6e768853fdcaaf55de912}{with\+Exception\+Handling}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a18a28f6069cbcaaaead6b152260abe43}{handle\+Exceptions}} (array \$exceptions)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a03636cfc810dc1a858313a636b038247}{handle\+Validation\+Exceptions}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a1a7ac00975d29b05ff7dde158e451e02}{without\+Exception\+Handling}} (array \$except=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a4180a84d424c470be7b2710fb5005bee}{with\+Headers}} (array \$headers)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_aa915ca97ba5e73dae619c57e3d39508e}{with\+Header}} (string \$name, string \$value)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a7fe029a1a2531b96901387f1e276a347}{with\+Token}} (string \$token, string \$type=\textquotesingle{}Bearer\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_ae316adb7b9d7f79037793c12cf04a5bb}{with\+Basic\+Auth}} (string \$username, string \$password)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a3d257445fbc575691ebbf90a5c572f06}{without\+Token}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a754b2413f43936b7a8b3fabf99b0ddb0}{flush\+Headers}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a46fb902113a5cc303b30d34acda41bf7}{with\+Server\+Variables}} (array \$server)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_af353f4ee99555e2bbb181837b222658c}{without\+Middleware}} (\$middleware=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_ab35f013ff6ed55b8c0c7eb1bf3a626d4}{with\+Middleware}} (\$middleware=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a37b5d2795b9b267cec358741fb847b4b}{with\+Cookies}} (array \$cookies)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_aecd57d65a0c2b0aadc71cf9ddebb40e0}{with\+Cookie}} (string \$name, string \$value)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_ab0ac40b8ec768c8b5963a9d8eaffe92b}{with\+Unencrypted\+Cookies}} (array \$cookies)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a97c78a2e557066668cb5a79b8dd1bacf}{with\+Unencrypted\+Cookie}} (string \$name, string \$value)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a4f4966ed79d7b0ec257cbc72796c01dc}{following\+Redirects}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a4c10fd14a954309b39f4dc955e033580}{with\+Credentials}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5cb075c0074cc9a6da34aa3da7e02f77}{disable\+Cookie\+Encryption}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a4e3d0d4b626e0ee57b533d53e6025d11}{from}} (string \$url)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_ac0d4fc6fab2f2e08a57f9adb73e1e133}{get}} (string \$uri, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_acf72dbec102c59bf4723a5908d649df7}{get\+Json}} (string \$uri, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_ad4bc1254475076729fc1792f0c6ffd70}{post}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a50e537931b2cb426a3629cc2076e4f1d}{post\+Json}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a6ac4c9d9d97df8c89fe7d81aa2d72d9f}{put}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a79cb9e68019d260bbc4a882d59a19e8a}{put\+Json}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_ad0ceb4a71d4e3b72934fb341da4bd595}{patch}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a503c552dc36ae1c4a5e2e88116aacfec}{patch\+Json}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a90ad294035aa374931ced2d6929187ad}{delete}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a7973377f64ac798da97bcbac0fd8ab6b}{delete\+Json}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5c6d25903b43455ea47aa8e78cda4b40}{options}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_aeea1c8f6a47d5aab3877e349b4d92eb6}{options\+Json}} (string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5d0cffad5e71df1cbdda2ac8e92e1abf}{head}} (string \$uri, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a54eb51f9bad4d1712fec82f019df4a17}{json}} (string \$method, string \$uri, array \$data=\mbox{[}$\,$\mbox{]}, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_ab529f2a55444530c650353826f30193d}{call}} (string \$method, string \$uri, array \$parameters=\mbox{[}$\,$\mbox{]}, array \$cookies=\mbox{[}$\,$\mbox{]}, array \$files=\mbox{[}$\,$\mbox{]}, array \$server=\mbox{[}$\,$\mbox{]}, ?string \$content=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a393fd3036165cf3858a5cb0f559ed738}{with\+Session}} (array \$data)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a28bc47b80b8598685f6cfd6b39d185c3}{session}} (array \$data)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a1e201c0957bc704471a78cd492174871}{start\+Session}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_aca3eddaddb46689dba3e2ed9eafebc51}{flush\+Session}} ()
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a1449d6238442c486910d7f85fdf1f0da}{freeze\+Time}} (\$callback=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a140eb432443b6f3fe39e2df573bcee26}{freeze\+Second}} (\$callback=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a29e4089c55392e3cd291b4e81a758576}{travel}} (\$value)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a5704f02cafd380a83a07db2c350a48bb}{travel\+To}} (\$date, \$callback=null)
+\item 
+\mbox{\hyperlink{namespace_pest_1_1_laravel_a718067ab7ab306bfe98f029cdf2e08ed}{travel\+Back}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_pest_1_1_laravel_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_pest_1_1_laravel_a305ba4211b1f6e201763ac5dec051bc0}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!actingAs@{actingAs}}
+\index{actingAs@{actingAs}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{actingAs()}{actingAs()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a305ba4211b1f6e201763ac5dec051bc0} 
+acting\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}}}]{\$user}{, }\item[{?string}]{\$driver}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the currently logged in user for the application.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a96ca7320672ca2c0159f164b3b1615d6}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!artisan@{artisan}}
+\index{artisan@{artisan}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{artisan()}{artisan()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a96ca7320672ca2c0159f164b3b1615d6} 
+artisan (\begin{DoxyParamCaption}\item[{string}]{\$command}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Call artisan command and return code.
+
+\begin{DoxyReturn}{Returns}
+Pending\+Command\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a5a85f6c76696445a10a479c5fbfa0a4a}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertAuthenticated@{assertAuthenticated}}
+\index{assertAuthenticated@{assertAuthenticated}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertAuthenticated()}{assertAuthenticated()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5a85f6c76696445a10a479c5fbfa0a4a} 
+assert\+Authenticated (\begin{DoxyParamCaption}\item[{?string}]{\$guard}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert that the user is authenticated.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_addb7e6453d4d0246cc6c78479cec1b49}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertAuthenticatedAs@{assertAuthenticatedAs}}
+\index{assertAuthenticatedAs@{assertAuthenticatedAs}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertAuthenticatedAs()}{assertAuthenticatedAs()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_addb7e6453d4d0246cc6c78479cec1b49} 
+assert\+Authenticated\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}}}]{\$user}{, }\item[{?string}]{\$guard}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert that the user is authenticated as the given user.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a513a97f5c2807e5e825bde839daf0b38}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertCredentials@{assertCredentials}}
+\index{assertCredentials@{assertCredentials}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertCredentials()}{assertCredentials()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a513a97f5c2807e5e825bde839daf0b38} 
+assert\+Credentials (\begin{DoxyParamCaption}\item[{array}]{\$credentials}{, }\item[{?string}]{\$guard}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert that the given credentials are valid.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_aa3af792221a77d4ca298dcbd828e718f}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertDatabaseCount@{assertDatabaseCount}}
+\index{assertDatabaseCount@{assertDatabaseCount}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertDatabaseCount()}{assertDatabaseCount()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_aa3af792221a77d4ca298dcbd828e718f} 
+assert\+Database\+Count (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{int}]{\$count}{, }\item[{?string}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert the count of table entries.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a2ef49efc8147eb78343671ec9c89454d}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertDatabaseEmpty@{assertDatabaseEmpty}}
+\index{assertDatabaseEmpty@{assertDatabaseEmpty}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertDatabaseEmpty()}{assertDatabaseEmpty()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a2ef49efc8147eb78343671ec9c89454d} 
+assert\+Database\+Empty (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{?string}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert that the given table has no entries.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_af1e2477b7cdeca403158067a79c36e32}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertDatabaseHas@{assertDatabaseHas}}
+\index{assertDatabaseHas@{assertDatabaseHas}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertDatabaseHas()}{assertDatabaseHas()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_af1e2477b7cdeca403158067a79c36e32} 
+assert\+Database\+Has (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$data}{, }\item[{?string}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert that a given where condition exists in the database.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a5371139bb89cf848a0598806191112f3}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertDatabaseMissing@{assertDatabaseMissing}}
+\index{assertDatabaseMissing@{assertDatabaseMissing}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertDatabaseMissing()}{assertDatabaseMissing()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5371139bb89cf848a0598806191112f3} 
+assert\+Database\+Missing (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$data}{, }\item[{?string}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert that a given where condition does not exist in the database.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a2ce3fee4f40ad3b79da5c886f5484d83}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertGuest@{assertGuest}}
+\index{assertGuest@{assertGuest}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertGuest()}{assertGuest()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a2ce3fee4f40ad3b79da5c886f5484d83} 
+assert\+Guest (\begin{DoxyParamCaption}\item[{?string}]{\$guard}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert that the user is not authenticated.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a126e4b6281f608d390946ad2908521e7}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertInvalidCredentials@{assertInvalidCredentials}}
+\index{assertInvalidCredentials@{assertInvalidCredentials}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertInvalidCredentials()}{assertInvalidCredentials()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a126e4b6281f608d390946ad2908521e7} 
+assert\+Invalid\+Credentials (\begin{DoxyParamCaption}\item[{array}]{\$credentials}{, }\item[{?string}]{\$guard}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Assert that the given credentials are invalid.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a60ec75394ce99f2f0110593630d7488e}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertModelExists@{assertModelExists}}
+\index{assertModelExists@{assertModelExists}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertModelExists()}{assertModelExists()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a60ec75394ce99f2f0110593630d7488e} 
+assert\+Model\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}}]{\$model}{}\end{DoxyParamCaption})}
+
+Assert the given model exists in the database.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_aa14c1984872b41c0b7833e6ce6ae83f8}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertModelMissing@{assertModelMissing}}
+\index{assertModelMissing@{assertModelMissing}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertModelMissing()}{assertModelMissing()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_aa14c1984872b41c0b7833e6ce6ae83f8} 
+assert\+Model\+Missing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}}]{\$model}{}\end{DoxyParamCaption})}
+
+Assert the given model does not exist in the database.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a1ad2cabc54db5b3dc163f0c37893aee4}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertNotSoftDeleted@{assertNotSoftDeleted}}
+\index{assertNotSoftDeleted@{assertNotSoftDeleted}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertNotSoftDeleted()}{assertNotSoftDeleted()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a1ad2cabc54db5b3dc163f0c37893aee4} 
+assert\+Not\+Soft\+Deleted (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$connection}{ = {\ttfamily null}, }\item[{string}]{\$deleted\+At\+Column}{ = {\ttfamily \textquotesingle{}deleted\+\_\+at\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Assert the given record has not been "{}soft deleted"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Model | string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a5cb1f058a8fc68fbb555268cab27d56f}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!assertSoftDeleted@{assertSoftDeleted}}
+\index{assertSoftDeleted@{assertSoftDeleted}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{assertSoftDeleted()}{assertSoftDeleted()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5cb1f058a8fc68fbb555268cab27d56f} 
+assert\+Soft\+Deleted (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$connection}{ = {\ttfamily null}, }\item[{string}]{\$deleted\+At\+Column}{ = {\ttfamily \textquotesingle{}deleted\+\_\+at\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Assert the given record has been "{}soft deleted"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Model | string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a5ae3df065ac38f3fe70999a3c366830e}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!be@{be}}
+\index{be@{be}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{be()}{be()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5ae3df065ac38f3fe70999a3c366830e} 
+be (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}}}]{\$user}{, }\item[{?string}]{\$driver}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the currently logged in user for the application.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_ab529f2a55444530c650353826f30193d}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!call@{call}}
+\index{call@{call}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_ab529f2a55444530c650353826f30193d} 
+call (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{string}]{\$uri}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$cookies}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$files}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$server}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$content}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Call the given URI and return the \doxylink{class_response}{Response}.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_ae0b884f6eba47655f08486b5c320a692}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!castAsJson@{castAsJson}}
+\index{castAsJson@{castAsJson}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{castAsJson()}{castAsJson()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_ae0b884f6eba47655f08486b5c320a692} 
+cast\+As\+Json (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string}]{\$value}{}\end{DoxyParamCaption})}
+
+Cast a JSON string to a database compatible type.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a90ad294035aa374931ced2d6929187ad}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!delete@{delete}}
+\index{delete@{delete}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a90ad294035aa374931ced2d6929187ad} 
+delete (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a DELETE request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a7973377f64ac798da97bcbac0fd8ab6b}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!deleteJson@{deleteJson}}
+\index{deleteJson@{deleteJson}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{deleteJson()}{deleteJson()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a7973377f64ac798da97bcbac0fd8ab6b} 
+delete\+Json (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a DELETE request, expecting a JSON response.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a5cb075c0074cc9a6da34aa3da7e02f77}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!disableCookieEncryption@{disableCookieEncryption}}
+\index{disableCookieEncryption@{disableCookieEncryption}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{disableCookieEncryption()}{disableCookieEncryption()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5cb075c0074cc9a6da34aa3da7e02f77} 
+disable\+Cookie\+Encryption (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Disable automatic encryption of cookie values.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_abb16fa3ff532986bf96035e176626ecd}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!expectsDatabaseQueryCount@{expectsDatabaseQueryCount}}
+\index{expectsDatabaseQueryCount@{expectsDatabaseQueryCount}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{expectsDatabaseQueryCount()}{expectsDatabaseQueryCount()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_abb16fa3ff532986bf96035e176626ecd} 
+expects\+Database\+Query\+Count (\begin{DoxyParamCaption}\item[{int}]{\$excepted}{, }\item[{?string}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Specify the number of database queries that should occur throughout the test.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a754b2413f43936b7a8b3fabf99b0ddb0}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!flushHeaders@{flushHeaders}}
+\index{flushHeaders@{flushHeaders}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{flushHeaders()}{flushHeaders()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a754b2413f43936b7a8b3fabf99b0ddb0} 
+flush\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Flush all the configured headers.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_aca3eddaddb46689dba3e2ed9eafebc51}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!flushSession@{flushSession}}
+\index{flushSession@{flushSession}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{flushSession()}{flushSession()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_aca3eddaddb46689dba3e2ed9eafebc51} 
+flush\+Session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Flush all of the current session data.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a4f4966ed79d7b0ec257cbc72796c01dc}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!followingRedirects@{followingRedirects}}
+\index{followingRedirects@{followingRedirects}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{followingRedirects()}{followingRedirects()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a4f4966ed79d7b0ec257cbc72796c01dc} 
+following\+Redirects (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Automatically follow any redirects returned from the response.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a1a5510635e90731cc7a6a04e9f403dbd}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!forgetMock@{forgetMock}}
+\index{forgetMock@{forgetMock}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{forgetMock()}{forgetMock()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a1a5510635e90731cc7a6a04e9f403dbd} 
+forget\+Mock (\begin{DoxyParamCaption}\item[{string}]{\$abstract}{}\end{DoxyParamCaption})}
+
+Instruct the container to forget a previously mocked / spied instance of an object.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a140eb432443b6f3fe39e2df573bcee26}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!freezeSecond@{freezeSecond}}
+\index{freezeSecond@{freezeSecond}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{freezeSecond()}{freezeSecond()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a140eb432443b6f3fe39e2df573bcee26} 
+freeze\+Second (\begin{DoxyParamCaption}\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Freeze time at the beginning of the current second.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a1449d6238442c486910d7f85fdf1f0da}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!freezeTime@{freezeTime}}
+\index{freezeTime@{freezeTime}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{freezeTime()}{freezeTime()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a1449d6238442c486910d7f85fdf1f0da} 
+freeze\+Time (\begin{DoxyParamCaption}\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Freeze time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a4e3d0d4b626e0ee57b533d53e6025d11}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!from@{from}}
+\index{from@{from}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a4e3d0d4b626e0ee57b533d53e6025d11} 
+from (\begin{DoxyParamCaption}\item[{string}]{\$url}{}\end{DoxyParamCaption})}
+
+Set the referer header and previous \doxylink{class_u_r_l}{URL} session value in order to simulate a previous request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_ac0d4fc6fab2f2e08a57f9adb73e1e133}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!get@{get}}
+\index{get@{get}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_ac0d4fc6fab2f2e08a57f9adb73e1e133} 
+get (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a GET request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a5096ce895b7849517a57ca89efeb94b9}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{getConnection()}{getConnection()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5096ce895b7849517a57ca89efeb94b9} 
+get\+Connection (\begin{DoxyParamCaption}\item[{?string}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the database connection. \Hypertarget{namespace_pest_1_1_laravel_acf72dbec102c59bf4723a5908d649df7}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!getJson@{getJson}}
+\index{getJson@{getJson}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{getJson()}{getJson()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_acf72dbec102c59bf4723a5908d649df7} 
+get\+Json (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a GET request, expecting a JSON response.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a18a28f6069cbcaaaead6b152260abe43}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!handleExceptions@{handleExceptions}}
+\index{handleExceptions@{handleExceptions}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{handleExceptions()}{handleExceptions()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a18a28f6069cbcaaaead6b152260abe43} 
+handle\+Exceptions (\begin{DoxyParamCaption}\item[{array}]{\$exceptions}{}\end{DoxyParamCaption})}
+
+Only handle the given exceptions via the exception handler.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a03636cfc810dc1a858313a636b038247}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!handleValidationExceptions@{handleValidationExceptions}}
+\index{handleValidationExceptions@{handleValidationExceptions}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{handleValidationExceptions()}{handleValidationExceptions()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a03636cfc810dc1a858313a636b038247} 
+handle\+Validation\+Exceptions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Only handle validation exceptions via the exception handler.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_ac40bd8208d3a7f97d3e2c1ed4e275f69}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!hasCredentials@{hasCredentials}}
+\index{hasCredentials@{hasCredentials}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{hasCredentials()}{hasCredentials()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_ac40bd8208d3a7f97d3e2c1ed4e275f69} 
+has\+Credentials (\begin{DoxyParamCaption}\item[{array}]{\$credentials}{, }\item[{?string}]{\$guard}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Return true if the credentials are valid, false otherwise. \Hypertarget{namespace_pest_1_1_laravel_a5d0cffad5e71df1cbdda2ac8e92e1abf}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!head@{head}}
+\index{head@{head}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{head()}{head()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5d0cffad5e71df1cbdda2ac8e92e1abf} 
+head (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a HEAD request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a736b39fa7ec6827246c5c9cedc1cf773}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!instance@{instance}}
+\index{instance@{instance}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a736b39fa7ec6827246c5c9cedc1cf773} 
+instance (\begin{DoxyParamCaption}\item[{string}]{\$abstract}{, }\item[{object}]{\$instance}{}\end{DoxyParamCaption})}
+
+Register an instance of an object in the container. \Hypertarget{namespace_pest_1_1_laravel_aca3286137ee6e0b55334e265aa0e436d}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!isAuthenticated@{isAuthenticated}}
+\index{isAuthenticated@{isAuthenticated}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{isAuthenticated()}{isAuthenticated()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_aca3286137ee6e0b55334e265aa0e436d} 
+is\+Authenticated (\begin{DoxyParamCaption}\item[{?string}]{\$guard}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Return true if the user is authenticated, false otherwise.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a8b2a50e3598bba4f51b6cd8d70299dfd}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!isSoftDeletableModel@{isSoftDeletableModel}}
+\index{isSoftDeletableModel@{isSoftDeletableModel}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{isSoftDeletableModel()}{isSoftDeletableModel()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a8b2a50e3598bba4f51b6cd8d70299dfd} 
+is\+Soft\+Deletable\+Model (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})}
+
+Determine if the argument is a soft deletable model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_pest_1_1_laravel_a54eb51f9bad4d1712fec82f019df4a17}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!json@{json}}
+\index{json@{json}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a54eb51f9bad4d1712fec82f019df4a17} 
+json (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Call the given URI with a JSON request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_aa7653bc970f081a13d693db3a8498c1f}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!mock@{mock}}
+\index{mock@{mock}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{mock()}{mock()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_aa7653bc970f081a13d693db3a8498c1f} 
+mock (\begin{DoxyParamCaption}\item[{string}]{\$abstract}{, }\item[{?Closure}]{\$mock}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Mock an instance of an object in the container. \Hypertarget{namespace_pest_1_1_laravel_a5c6d25903b43455ea47aa8e78cda4b40}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!options@{options}}
+\index{options@{options}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5c6d25903b43455ea47aa8e78cda4b40} 
+options (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a OPTIONS request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_aeea1c8f6a47d5aab3877e349b4d92eb6}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!optionsJson@{optionsJson}}
+\index{optionsJson@{optionsJson}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{optionsJson()}{optionsJson()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_aeea1c8f6a47d5aab3877e349b4d92eb6} 
+options\+Json (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a OPTIONS request, expecting a JSON response.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a4dbf15a8e86f63e353b4f242cb550835}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!partialMock@{partialMock}}
+\index{partialMock@{partialMock}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{partialMock()}{partialMock()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a4dbf15a8e86f63e353b4f242cb550835} 
+partial\+Mock (\begin{DoxyParamCaption}\item[{string}]{\$abstract}{, }\item[{?Closure}]{\$mock}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Mock a partial instance of an object in the container. \Hypertarget{namespace_pest_1_1_laravel_ad0ceb4a71d4e3b72934fb341da4bd595}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!patch@{patch}}
+\index{patch@{patch}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_ad0ceb4a71d4e3b72934fb341da4bd595} 
+patch (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a PATCH request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a503c552dc36ae1c4a5e2e88116aacfec}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!patchJson@{patchJson}}
+\index{patchJson@{patchJson}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{patchJson()}{patchJson()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a503c552dc36ae1c4a5e2e88116aacfec} 
+patch\+Json (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a PATCH request, expecting a JSON response.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_ad4bc1254475076729fc1792f0c6ffd70}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!post@{post}}
+\index{post@{post}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_ad4bc1254475076729fc1792f0c6ffd70} 
+post (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a POST request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a50e537931b2cb426a3629cc2076e4f1d}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!postJson@{postJson}}
+\index{postJson@{postJson}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{postJson()}{postJson()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a50e537931b2cb426a3629cc2076e4f1d} 
+post\+Json (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a POST request, expecting a JSON response.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a6ac4c9d9d97df8c89fe7d81aa2d72d9f}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!put@{put}}
+\index{put@{put}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a6ac4c9d9d97df8c89fe7d81aa2d72d9f} 
+put (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a PUT request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a79cb9e68019d260bbc4a882d59a19e8a}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!putJson@{putJson}}
+\index{putJson@{putJson}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{putJson()}{putJson()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a79cb9e68019d260bbc4a882d59a19e8a} 
+put\+Json (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Visit the given URI with a PUT request, expecting a JSON response.
+
+\begin{DoxyReturn}{Returns}
+Test\+Response 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a5416a94b3d617f5f539bd875b00f169b}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!seed@{seed}}
+\index{seed@{seed}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{seed()}{seed()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5416a94b3d617f5f539bd875b00f169b} 
+seed (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$class}{ = {\ttfamily \textquotesingle{}Database\textbackslash{}\textbackslash{}Seeders\textbackslash{}\textbackslash{}DatabaseSeeder\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Seed a given database connection.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a28bc47b80b8598685f6cfd6b39d185c3}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!session@{session}}
+\index{session@{session}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{session()}{session()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a28bc47b80b8598685f6cfd6b39d185c3} 
+session (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+Set the session to the given array.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a7541f52064cffc9912cd90b5bba87082}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!spy@{spy}}
+\index{spy@{spy}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{spy()}{spy()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a7541f52064cffc9912cd90b5bba87082} 
+spy (\begin{DoxyParamCaption}\item[{string}]{\$abstract}{, }\item[{?Closure}]{\$mock}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Spy an instance of an object in the container. \Hypertarget{namespace_pest_1_1_laravel_a1e201c0957bc704471a78cd492174871}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!startSession@{startSession}}
+\index{startSession@{startSession}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{startSession()}{startSession()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a1e201c0957bc704471a78cd492174871} 
+start\+Session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Start the session for the application.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a2af9265a05f58b820e17fe700091df6c}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!swap@{swap}}
+\index{swap@{swap}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a2af9265a05f58b820e17fe700091df6c} 
+swap (\begin{DoxyParamCaption}\item[{string}]{\$abstract}{, }\item[{object}]{\$instance}{}\end{DoxyParamCaption})}
+
+Register an instance of an object in the container. \Hypertarget{namespace_pest_1_1_laravel_a29e4089c55392e3cd291b4e81a758576}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!travel@{travel}}
+\index{travel@{travel}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a29e4089c55392e3cd291b4e81a758576} 
+travel (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Begin travelling to another time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Testing\textbackslash{}\+Wormhole 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a718067ab7ab306bfe98f029cdf2e08ed}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!travelBack@{travelBack}}
+\index{travelBack@{travelBack}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{travelBack()}{travelBack()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a718067ab7ab306bfe98f029cdf2e08ed} 
+travel\+Back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Travel back to the current time.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time\+Interface 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a5704f02cafd380a83a07db2c350a48bb}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!travelTo@{travelTo}}
+\index{travelTo@{travelTo}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{travelTo()}{travelTo()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a5704f02cafd380a83a07db2c350a48bb} 
+travel\+To (\begin{DoxyParamCaption}\item[{}]{\$date}{, }\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Travel to another time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Closure | \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon | string | bool | null & {\em \$date} & \\
+\hline
+callable | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_ae316adb7b9d7f79037793c12cf04a5bb}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withBasicAuth@{withBasicAuth}}
+\index{withBasicAuth@{withBasicAuth}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withBasicAuth()}{withBasicAuth()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_ae316adb7b9d7f79037793c12cf04a5bb} 
+with\+Basic\+Auth (\begin{DoxyParamCaption}\item[{string}]{\$username}{, }\item[{string}]{\$password}{}\end{DoxyParamCaption})}
+
+Add a basic authentication header to the request with the given credentials.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_aecd57d65a0c2b0aadc71cf9ddebb40e0}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withCookie@{withCookie}}
+\index{withCookie@{withCookie}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withCookie()}{withCookie()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_aecd57d65a0c2b0aadc71cf9ddebb40e0} 
+with\+Cookie (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Add a cookie to be sent with the request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a37b5d2795b9b267cec358741fb847b4b}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withCookies@{withCookies}}
+\index{withCookies@{withCookies}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withCookies()}{withCookies()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a37b5d2795b9b267cec358741fb847b4b} 
+with\+Cookies (\begin{DoxyParamCaption}\item[{array}]{\$cookies}{}\end{DoxyParamCaption})}
+
+Define additional cookies to be sent with the request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a4c10fd14a954309b39f4dc955e033580}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withCredentials@{withCredentials}}
+\index{withCredentials@{withCredentials}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withCredentials()}{withCredentials()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a4c10fd14a954309b39f4dc955e033580} 
+with\+Credentials (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Include cookies and authorization headers for JSON requests.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a6b346b6f41a6e768853fdcaaf55de912}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withExceptionHandling@{withExceptionHandling}}
+\index{withExceptionHandling@{withExceptionHandling}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withExceptionHandling()}{withExceptionHandling()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a6b346b6f41a6e768853fdcaaf55de912} 
+with\+Exception\+Handling (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Restore exception handling.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_aa915ca97ba5e73dae619c57e3d39508e}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withHeader@{withHeader}}
+\index{withHeader@{withHeader}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withHeader()}{withHeader()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_aa915ca97ba5e73dae619c57e3d39508e} 
+with\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Add a header to be sent with the request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a4180a84d424c470be7b2710fb5005bee}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withHeaders@{withHeaders}}
+\index{withHeaders@{withHeaders}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withHeaders()}{withHeaders()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a4180a84d424c470be7b2710fb5005bee} 
+with\+Headers (\begin{DoxyParamCaption}\item[{array}]{\$headers}{}\end{DoxyParamCaption})}
+
+Define additional headers to be sent with the request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_ab35f013ff6ed55b8c0c7eb1bf3a626d4}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withMiddleware@{withMiddleware}}
+\index{withMiddleware@{withMiddleware}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withMiddleware()}{withMiddleware()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_ab35f013ff6ed55b8c0c7eb1bf3a626d4} 
+with\+Middleware (\begin{DoxyParamCaption}\item[{}]{\$middleware}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Enable the given middleware for the test.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array | null & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_aa347df39b98c236abcdbba129f4edc78}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withMix@{withMix}}
+\index{withMix@{withMix}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withMix()}{withMix()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_aa347df39b98c236abcdbba129f4edc78} 
+with\+Mix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Restore Laravel Mix in the container.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a1a7ac00975d29b05ff7dde158e451e02}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withoutExceptionHandling@{withoutExceptionHandling}}
+\index{withoutExceptionHandling@{withoutExceptionHandling}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withoutExceptionHandling()}{withoutExceptionHandling()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a1a7ac00975d29b05ff7dde158e451e02} 
+without\+Exception\+Handling (\begin{DoxyParamCaption}\item[{array}]{\$except}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Disable exception handling for the test.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_af353f4ee99555e2bbb181837b222658c}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withoutMiddleware@{withoutMiddleware}}
+\index{withoutMiddleware@{withoutMiddleware}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withoutMiddleware()}{withoutMiddleware()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_af353f4ee99555e2bbb181837b222658c} 
+without\+Middleware (\begin{DoxyParamCaption}\item[{}]{\$middleware}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Disable middleware for the test.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array | null & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a64938faec9a97eed780862c6c0b8f53d}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withoutMix@{withoutMix}}
+\index{withoutMix@{withoutMix}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withoutMix()}{withoutMix()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a64938faec9a97eed780862c6c0b8f53d} 
+without\+Mix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register an empty handler for Laravel Mix in the container.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_afbc00fa10cbd173cf3a8a65ced974d2c}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withoutMockingConsoleOutput@{withoutMockingConsoleOutput}}
+\index{withoutMockingConsoleOutput@{withoutMockingConsoleOutput}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withoutMockingConsoleOutput()}{withoutMockingConsoleOutput()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_afbc00fa10cbd173cf3a8a65ced974d2c} 
+without\+Mocking\+Console\+Output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Disable mocking the console output.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a3d257445fbc575691ebbf90a5c572f06}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withoutToken@{withoutToken}}
+\index{withoutToken@{withoutToken}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withoutToken()}{withoutToken()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a3d257445fbc575691ebbf90a5c572f06} 
+without\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Remove the authorization token from the request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a1cace51579a7dd4240b483277d2ac455}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withoutVite@{withoutVite}}
+\index{withoutVite@{withoutVite}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withoutVite()}{withoutVite()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a1cace51579a7dd4240b483277d2ac455} 
+without\+Vite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register an empty handler for \doxylink{class_vite}{Vite} in the container.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a46fb902113a5cc303b30d34acda41bf7}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withServerVariables@{withServerVariables}}
+\index{withServerVariables@{withServerVariables}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withServerVariables()}{withServerVariables()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a46fb902113a5cc303b30d34acda41bf7} 
+with\+Server\+Variables (\begin{DoxyParamCaption}\item[{array}]{\$server}{}\end{DoxyParamCaption})}
+
+Define a set of server variables to be sent with the requests.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a393fd3036165cf3858a5cb0f559ed738}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withSession@{withSession}}
+\index{withSession@{withSession}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withSession()}{withSession()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a393fd3036165cf3858a5cb0f559ed738} 
+with\+Session (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+Set the session to the given array.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a7fe029a1a2531b96901387f1e276a347}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withToken@{withToken}}
+\index{withToken@{withToken}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withToken()}{withToken()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a7fe029a1a2531b96901387f1e276a347} 
+with\+Token (\begin{DoxyParamCaption}\item[{string}]{\$token}{, }\item[{string}]{\$type}{ = {\ttfamily \textquotesingle{}Bearer\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Add an authorization token for the request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a97c78a2e557066668cb5a79b8dd1bacf}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withUnencryptedCookie@{withUnencryptedCookie}}
+\index{withUnencryptedCookie@{withUnencryptedCookie}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withUnencryptedCookie()}{withUnencryptedCookie()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a97c78a2e557066668cb5a79b8dd1bacf} 
+with\+Unencrypted\+Cookie (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Add a cookie will not be encrypted before sending with the request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_ab0ac40b8ec768c8b5963a9d8eaffe92b}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withUnencryptedCookies@{withUnencryptedCookies}}
+\index{withUnencryptedCookies@{withUnencryptedCookies}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withUnencryptedCookies()}{withUnencryptedCookies()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_ab0ac40b8ec768c8b5963a9d8eaffe92b} 
+with\+Unencrypted\+Cookies (\begin{DoxyParamCaption}\item[{array}]{\$cookies}{}\end{DoxyParamCaption})}
+
+Define additional cookies will not be encrypted before sending with the request.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}
+\Hypertarget{namespace_pest_1_1_laravel_a304f9850bfb660db567c21e15c76f54f}\index{Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}!withVite@{withVite}}
+\index{withVite@{withVite}!Pest\textbackslash{}Laravel@{Pest\textbackslash{}Laravel}}
+\doxysubsubsection{\texorpdfstring{withVite()}{withVite()}}
+{\footnotesize\ttfamily \label{namespace_pest_1_1_laravel_a304f9850bfb660db567c21e15c76f54f} 
+with\+Vite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Restore \doxylink{class_vite}{Vite} in the container.
+
+\begin{DoxyReturn}{Returns}
+Test\+Case 
+\end{DoxyReturn}

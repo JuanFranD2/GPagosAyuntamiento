@@ -1,0 +1,4 @@
+var interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_factory_interface =
+[
+    [ "createSession", "interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_factory_interface.html#ad0c5594c7e33c9821afd4305edaee0b9", null ]
+];

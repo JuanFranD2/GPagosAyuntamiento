@@ -1,0 +1,4 @@
+var _gather_footnotes_listener_8php =
+[
+    [ "GatherFootnotesListener", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_event_1_1_gather_footnotes_listener.html", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_event_1_1_gather_footnotes_listener" ]
+];

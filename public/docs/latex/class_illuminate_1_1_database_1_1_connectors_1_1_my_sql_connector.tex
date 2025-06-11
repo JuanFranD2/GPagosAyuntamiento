@@ -1,0 +1,188 @@
+\doxysection{My\+Sql\+Connector Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector}{}\label{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector}\index{MySqlConnector@{MySqlConnector}}
+Inheritance diagram for My\+Sql\+Connector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_a2d01c6fcc7f96301dcf4c5d9d01120aa}{connect}} (array \$config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector}{Connector}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_abdd8b4a45bc0c16383a251f0acfa386c}{create\+Connection}} (\$dsn, array \$config, array \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_ae662b88d780123c835fdd68d54564146}{get\+Options}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_ae2ce4b43907e3cb8f78bafcb89a81ff9}{get\+Default\+Options}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a316bdeaf8f4455220ef76a8355a546ef}{set\+Default\+Options}} (array \$options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_a420aaf8a3ef62ac101f37d6750238518}{get\+Dsn}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_a32aba3f3ffcfd42b0c4e721c5856057c}{has\+Socket}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_ab873f53b5e68426c94f516b39d00b194}{get\+Socket\+Dsn}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_af3663b24b28d3f3e7dea8012dcff00e0}{get\+Host\+Dsn}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_aea4815a0b5783823dfc9a46a14bdd04f}{configure\+Connection}} (PDO \$connection, array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_aac5b9ff0b49a5b7baa99384e290c6854}{get\+Sql\+Mode}} (PDO \$connection, array \$config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector}{Connector}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a2e4ba99e0f08b027794c357520985dc7}{create\+Pdo\+Connection}} (\$dsn, \$username, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$password, \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_ac4337226e42d16da5306df2a5201f6c1}{try\+Again\+If\+Caused\+By\+Lost\+Connection}} (Throwable \$e, \$dsn, \$username, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$password, \$options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector}{Connector}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a011800c63ece4cbbfa77136a20607023}{\$options}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_aea4815a0b5783823dfc9a46a14bdd04f}\index{MySqlConnector@{MySqlConnector}!configureConnection@{configureConnection}}
+\index{configureConnection@{configureConnection}!MySqlConnector@{MySqlConnector}}
+\doxysubsubsection{\texorpdfstring{configureConnection()}{configureConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_aea4815a0b5783823dfc9a46a14bdd04f} 
+configure\+Connection (\begin{DoxyParamCaption}\item[{PDO}]{\$connection}{, }\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Configure the given PDO connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PDO & {\em \$connection} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_a2d01c6fcc7f96301dcf4c5d9d01120aa}\index{MySqlConnector@{MySqlConnector}!connect@{connect}}
+\index{connect@{connect}!MySqlConnector@{MySqlConnector}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_a2d01c6fcc7f96301dcf4c5d9d01120aa} 
+connect (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})}
+
+Establish a database connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+PDO 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connectors_1_1_connector_interface_a2d01c6fcc7f96301dcf4c5d9d01120aa}{Connector\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_a420aaf8a3ef62ac101f37d6750238518}\index{MySqlConnector@{MySqlConnector}!getDsn@{getDsn}}
+\index{getDsn@{getDsn}!MySqlConnector@{MySqlConnector}}
+\doxysubsubsection{\texorpdfstring{getDsn()}{getDsn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_a420aaf8a3ef62ac101f37d6750238518} 
+get\+Dsn (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a DSN string from a configuration.
+
+Chooses socket or host/port based on the \textquotesingle{}unix\+\_\+socket\textquotesingle{} config value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_af3663b24b28d3f3e7dea8012dcff00e0}\index{MySqlConnector@{MySqlConnector}!getHostDsn@{getHostDsn}}
+\index{getHostDsn@{getHostDsn}!MySqlConnector@{MySqlConnector}}
+\doxysubsubsection{\texorpdfstring{getHostDsn()}{getHostDsn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_af3663b24b28d3f3e7dea8012dcff00e0} 
+get\+Host\+Dsn (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the DSN string for a host / port configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_ab873f53b5e68426c94f516b39d00b194}\index{MySqlConnector@{MySqlConnector}!getSocketDsn@{getSocketDsn}}
+\index{getSocketDsn@{getSocketDsn}!MySqlConnector@{MySqlConnector}}
+\doxysubsubsection{\texorpdfstring{getSocketDsn()}{getSocketDsn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_ab873f53b5e68426c94f516b39d00b194} 
+get\+Socket\+Dsn (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the DSN string for a socket configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_aac5b9ff0b49a5b7baa99384e290c6854}\index{MySqlConnector@{MySqlConnector}!getSqlMode@{getSqlMode}}
+\index{getSqlMode@{getSqlMode}!MySqlConnector@{MySqlConnector}}
+\doxysubsubsection{\texorpdfstring{getSqlMode()}{getSqlMode()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_aac5b9ff0b49a5b7baa99384e290c6854} 
+get\+Sql\+Mode (\begin{DoxyParamCaption}\item[{PDO}]{\$connection}{, }\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the sql\+\_\+mode value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PDO & {\em \$connection} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_maria_db_connector_aac5b9ff0b49a5b7baa99384e290c6854}{Maria\+Db\+Connector}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_a32aba3f3ffcfd42b0c4e721c5856057c}\index{MySqlConnector@{MySqlConnector}!hasSocket@{hasSocket}}
+\index{hasSocket@{hasSocket}!MySqlConnector@{MySqlConnector}}
+\doxysubsubsection{\texorpdfstring{hasSocket()}{hasSocket()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_my_sql_connector_a32aba3f3ffcfd42b0c4e721c5856057c} 
+has\+Socket (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given configuration array has a UNIX socket value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Connectors/\mbox{\hyperlink{_my_sql_connector_8php}{My\+Sql\+Connector.\+php}}\end{DoxyCompactItemize}

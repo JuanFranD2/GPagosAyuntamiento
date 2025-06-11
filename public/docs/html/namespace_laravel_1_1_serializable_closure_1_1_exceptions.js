@@ -1,0 +1,6 @@
+var namespace_laravel_1_1_serializable_closure_1_1_exceptions =
+[
+    [ "InvalidSignatureException", "class_laravel_1_1_serializable_closure_1_1_exceptions_1_1_invalid_signature_exception.html", "class_laravel_1_1_serializable_closure_1_1_exceptions_1_1_invalid_signature_exception" ],
+    [ "MissingSecretKeyException", "class_laravel_1_1_serializable_closure_1_1_exceptions_1_1_missing_secret_key_exception.html", "class_laravel_1_1_serializable_closure_1_1_exceptions_1_1_missing_secret_key_exception" ],
+    [ "PhpVersionNotSupportedException", "class_laravel_1_1_serializable_closure_1_1_exceptions_1_1_php_version_not_supported_exception.html", "class_laravel_1_1_serializable_closure_1_1_exceptions_1_1_php_version_not_supported_exception" ]
+];

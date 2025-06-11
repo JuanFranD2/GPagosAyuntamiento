@@ -1,0 +1,983 @@
+\doxysection{Collection Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection}{}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection}\index{Collection@{Collection}}
+Inheritance diagram for Collection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.916667cm]{class_illuminate_1_1_database_1_1_eloquent_1_1_collection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_adfd8185019ad78d6421b4adf62442cc4}{find}} (\$key, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a958e6ed3b4b82df7b9ec4f4c77468cb5}{find\+Or\+Fail}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a63907f19dca89948b10af94038bd8761}{load}} (\$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac94b1a0d53996f728cb6a8ebf3461706}{load\+Aggregate}} (\$relations, \$column, \$\mbox{\hyperlink{rector-migrate_8php_affc7ca71e2c30ccc9604c2697809c870}{function}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a6fe06346b12494cecbe3cb3d9b5dbd4f}{load\+Count}} (\$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a4c12c7a239057e57f0a4f72069c3482e}{load\+Max}} (\$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac67cb247ac6494c2c24ac51da423774b}{load\+Min}} (\$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a97c11801a4b0d868c74810156073f95b}{load\+Sum}} (\$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aeeaeaada1461a688fa1405be30020c29}{load\+Avg}} (\$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac55800b2b1b6d827e5481b89b6132be7}{load\+Exists}} (\$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac13ed19c7da64071d63463887daa2635}{load\+Missing}} (\$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aa721ed044e63930eb892e127654e0db3}{load\+Missing\+Relationship\+Chain}} (array \$tuples)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a263f0c122580e85e98c019678b99dd9b}{load\+Morph}} (\$relation, \$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a1b57885b4fb111d1c634c75b3fda156c}{load\+Morph\+Count}} (\$relation, \$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a48e9dc8534ccd3dc6bb0911113571d20}{contains}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a3faea466eda6964e6121d19035f9b96e}{doesnt\+Contain}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ad517e9a0cdb5ec516c1f156fc682b4b3}{model\+Keys}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab2a5406b2f5cf707ef80aa210c4cb3f5}{merge}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ade08fa61bdaee2ece583f318bc44c314}{map}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ae0eec0d32374f834773ca3bf354a53cd}{map\+With\+Keys}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a597273694db4a1448aa00d838ed39191}{fresh}} (\$with=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aba53bea9a3598d22b24f27c38c8d1ac4}{diff}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a2fc56a3e4836ea2859e34fd18cc9e27e}{intersect}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a931f07da64c20257fd49da7e5fb9854f}{unique}} (\$key=null, \$strict=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a40fcf523c77d019ea67b5a5b8ad4448c}{only}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a3b0db17d4be3aff5451d2764e7c88beb}{keys}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a9307724411411500c4b0b03de2808493}{except}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a3b0db17d4be3aff5451d2764e7c88beb}{keys}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ad80f6f78129a9a63e44d6ff748ffb358}{make\+Hidden}} (\$attributes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a8baf039db54c89197725a63dbb308b3a}{make\+Visible}} (\$attributes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a18c0f238f66aed17fcfb419dced5596a}{set\+Visible}} (\$visible)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aac6b9efd3d5b8e8259ef99dccebfafc4}{set\+Hidden}} (\$hidden)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a99b551e516623fb49ee42a5b2274960f}{append}} (\$attributes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a5532e0d81eb9e23ec54809215350e960}{get\+Dictionary}} (\$items=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a5fbf77022cff20c9220c179746dc4135}{count\+By}} (\$count\+By=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_af8054c4df285194837b97ec32f31ab80}{collapse}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ad516687f0efda77f8227dd752c61077d}{flatten}} (\$depth=INF)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab7b978294481794664ea5ffa6530e020}{flip}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a3b0db17d4be3aff5451d2764e7c88beb}{keys}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aa76c3decfeb2c8fe63c4a347b10caeef}{pad}} (\$size, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac73ed81e9fb06c843620ba21c2aecdd8}{partition}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a957c0c9837db2c325b9dcfe9751a279f}{pluck}} (\$value, \$key=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a90ef2477f46e96a1bc6421237c905a4e}{zip}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a198a8368f4bc0b96fb5a0c664a899d0a}{with\+Relationship\+Autoloading}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a08ce50fd01779203f8066fcdec7cbded}{get\+Queueable\+Class}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab7ae3cedf58586b0a9cd52b89c6481a6}{get\+Queueable\+Ids}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a8cff9abd3e0e341820df5046dd93d1be}{get\+Queueable\+Relations}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab8a749015e982925fccb34d4938bf157}{get\+Queueable\+Connection}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac2ad490628edd9ef1d7779872eb0d0d0}{to\+Query}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a87df64ea9981a69254b9716e46985429}{load\+Missing\+Relation}} (self \$models, array \$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a81a0d1bc43b65796f44941c0a9add6eb}{duplicate\+Comparator}} (\$strict)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a5ef0167494d0c3e5ab7535a025869d27}{get\+Queueable\+Model\+Class}} (\$model)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@template TKey of array-\/key @template TModel of \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model
+
+\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}TKey, TModel\texorpdfstring{$>$}{>} 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a99b551e516623fb49ee42a5b2274960f}\index{Collection@{Collection}!append@{append}}
+\index{append@{append}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a99b551e516623fb49ee42a5b2274960f} 
+append (\begin{DoxyParamCaption}\item[{}]{\$attributes}{}\end{DoxyParamCaption})}
+
+Append an attribute across the entire collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,string$>$\texorpdfstring{$\vert$}{|}string} & \$attributes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_af8054c4df285194837b97ec32f31ab80}\index{Collection@{Collection}!collapse@{collapse}}
+\index{collapse@{collapse}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{collapse()}{collapse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_af8054c4df285194837b97ec32f31ab80} 
+collapse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Collapse the collection of items into a single array.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, mixed\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a48e9dc8534ccd3dc6bb0911113571d20}\index{Collection@{Collection}!contains@{contains}}
+\index{contains@{contains}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a48e9dc8534ccd3dc6bb0911113571d20} 
+contains (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$operator}{ = {\ttfamily null}, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Determine if a key exists in the collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em (callable(\+TModel,TKey)} & bool)\texorpdfstring{$\vert$}{|}\+TModel\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int \$key \\
+\hline
+mixed & {\em \$operator} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a5fbf77022cff20c9220c179746dc4135}\index{Collection@{Collection}!countBy@{countBy}}
+\index{countBy@{countBy}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{countBy()}{countBy()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a5fbf77022cff20c9220c179746dc4135} 
+count\+By (\begin{DoxyParamCaption}\item[{}]{\$count\+By}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+The following methods are intercepted to always return base collections. Count the number of items in the collection by a field or using a callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (callable(\+TModel,TKey)} & array-\/key)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$count\+By \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}array-\/key, int\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aba53bea9a3598d22b24f27c38c8d1ac4}\index{Collection@{Collection}!diff@{diff}}
+\index{diff@{diff}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{diff()}{diff()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aba53bea9a3598d22b24f27c38c8d1ac4} 
+diff (\begin{DoxyParamCaption}\item[{}]{\$items}{}\end{DoxyParamCaption})}
+
+Diff the collection with the given items.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$array-\/key,TModel$>$} & \$items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a3faea466eda6964e6121d19035f9b96e}\index{Collection@{Collection}!doesntContain@{doesntContain}}
+\index{doesntContain@{doesntContain}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{doesntContain()}{doesntContain()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a3faea466eda6964e6121d19035f9b96e} 
+doesnt\+Contain (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$operator}{ = {\ttfamily null}, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Determine if a key does not exist in the collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em (callable(\+TModel,TKey)} & bool)\texorpdfstring{$\vert$}{|}\+TModel\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int \$key \\
+\hline
+mixed & {\em \$operator} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a81a0d1bc43b65796f44941c0a9add6eb}\index{Collection@{Collection}!duplicateComparator@{duplicateComparator}}
+\index{duplicateComparator@{duplicateComparator}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{duplicateComparator()}{duplicateComparator()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a81a0d1bc43b65796f44941c0a9add6eb} 
+duplicate\+Comparator (\begin{DoxyParamCaption}\item[{}]{\$strict}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the comparison function to detect duplicates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$strict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable(\+TModel, TModel)\+: bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a9307724411411500c4b0b03de2808493}\index{Collection@{Collection}!except@{except}}
+\index{except@{except}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{except()}{except()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a9307724411411500c4b0b03de2808493} 
+except (\begin{DoxyParamCaption}\item[{}]{\$keys}{}\end{DoxyParamCaption})}
+
+Returns all models in the collection except the models with specified keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$keys \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_adfd8185019ad78d6421b4adf62442cc4}\index{Collection@{Collection}!find@{find}}
+\index{find@{find}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_adfd8185019ad78d6421b4adf62442cc4} 
+find (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Find a model in the collection by key.
+
+@template TFind\+Default
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & \\
+\hline
+TFind\+Default & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\$key is (\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable\texorpdfstring{$<$}{<}array-\/key, mixed\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}array$<$mixed$>$) ? static \+: TModel\texorpdfstring{$\vert$}{|}\+TFind\+Default) 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a958e6ed3b4b82df7b9ec4f4c77468cb5}\index{Collection@{Collection}!findOrFail@{findOrFail}}
+\index{findOrFail@{findOrFail}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{findOrFail()}{findOrFail()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a958e6ed3b4b82df7b9ec4f4c77468cb5} 
+find\+Or\+Fail (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Find a model in the collection by key or throw an exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TModel
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\+Not\+Found\+Exception \Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ad516687f0efda77f8227dd752c61077d}\index{Collection@{Collection}!flatten@{flatten}}
+\index{flatten@{flatten}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ad516687f0efda77f8227dd752c61077d} 
+flatten (\begin{DoxyParamCaption}\item[{}]{\$depth}{ = {\ttfamily INF}}\end{DoxyParamCaption})}
+
+Get a flattened array of the items in the collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$depth} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, mixed\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab7b978294481794664ea5ffa6530e020}\index{Collection@{Collection}!flip@{flip}}
+\index{flip@{flip}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{flip()}{flip()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab7b978294481794664ea5ffa6530e020} 
+flip (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Flip the items in the collection.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}TModel, TKey\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a597273694db4a1448aa00d838ed39191}\index{Collection@{Collection}!fresh@{fresh}}
+\index{fresh@{fresh}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{fresh()}{fresh()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a597273694db4a1448aa00d838ed39191} 
+fresh (\begin{DoxyParamCaption}\item[{}]{\$with}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Reload a fresh model instance from the database for all the entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,string$>$\texorpdfstring{$\vert$}{|}string} & \$with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a5532e0d81eb9e23ec54809215350e960}\index{Collection@{Collection}!getDictionary@{getDictionary}}
+\index{getDictionary@{getDictionary}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{getDictionary()}{getDictionary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a5532e0d81eb9e23ec54809215350e960} 
+get\+Dictionary (\begin{DoxyParamCaption}\item[{}]{\$items}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a dictionary keyed by primary keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$array-\/key,TModel$>$\texorpdfstring{$\vert$}{|}null} & \$items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}array-\/key, TModel\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a08ce50fd01779203f8066fcdec7cbded}\index{Collection@{Collection}!getQueueableClass@{getQueueableClass}}
+\index{getQueueableClass@{getQueueableClass}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{getQueueableClass()}{getQueueableClass()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a08ce50fd01779203f8066fcdec7cbded} 
+get\+Queueable\+Class (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the type of the entities being queued.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_queueable_collection_a08ce50fd01779203f8066fcdec7cbded}{Queueable\+Collection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab8a749015e982925fccb34d4938bf157}\index{Collection@{Collection}!getQueueableConnection@{getQueueableConnection}}
+\index{getQueueableConnection@{getQueueableConnection}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{getQueueableConnection()}{getQueueableConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab8a749015e982925fccb34d4938bf157} 
+get\+Queueable\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the connection of the entities being queued.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_queueable_collection_ab8a749015e982925fccb34d4938bf157}{Queueable\+Collection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab7ae3cedf58586b0a9cd52b89c6481a6}\index{Collection@{Collection}!getQueueableIds@{getQueueableIds}}
+\index{getQueueableIds@{getQueueableIds}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{getQueueableIds()}{getQueueableIds()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab7ae3cedf58586b0a9cd52b89c6481a6} 
+get\+Queueable\+Ids (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the identifiers for all of the entities.
+
+\begin{DoxyReturn}{Returns}
+array$<$int, mixed$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_queueable_collection_ab7ae3cedf58586b0a9cd52b89c6481a6}{Queueable\+Collection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a5ef0167494d0c3e5ab7535a025869d27}\index{Collection@{Collection}!getQueueableModelClass@{getQueueableModelClass}}
+\index{getQueueableModelClass@{getQueueableModelClass}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{getQueueableModelClass()}{getQueueableModelClass()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a5ef0167494d0c3e5ab7535a025869d27} 
+get\+Queueable\+Model\+Class (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the queueable class name for the given model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a8cff9abd3e0e341820df5046dd93d1be}\index{Collection@{Collection}!getQueueableRelations@{getQueueableRelations}}
+\index{getQueueableRelations@{getQueueableRelations}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{getQueueableRelations()}{getQueueableRelations()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a8cff9abd3e0e341820df5046dd93d1be} 
+get\+Queueable\+Relations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the relationships of the entities being queued.
+
+\begin{DoxyReturn}{Returns}
+array$<$int, string$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_queueable_collection_a8cff9abd3e0e341820df5046dd93d1be}{Queueable\+Collection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a2fc56a3e4836ea2859e34fd18cc9e27e}\index{Collection@{Collection}!intersect@{intersect}}
+\index{intersect@{intersect}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a2fc56a3e4836ea2859e34fd18cc9e27e} 
+intersect (\begin{DoxyParamCaption}\item[{}]{\$items}{}\end{DoxyParamCaption})}
+
+Intersect the collection with the given items.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$array-\/key,TModel$>$} & \$items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a3b0db17d4be3aff5451d2764e7c88beb}\index{Collection@{Collection}!keys@{keys}}
+\index{keys@{keys}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a3b0db17d4be3aff5451d2764e7c88beb} 
+keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the keys of the collection items.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TKey\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a63907f19dca89948b10af94038bd8761}\index{Collection@{Collection}!load@{load}}
+\index{load@{load}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a63907f19dca89948b10af94038bd8761} 
+load (\begin{DoxyParamCaption}\item[{}]{\$relations}{}\end{DoxyParamCaption})}
+
+Load a set of relationships onto the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}string \$relations \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac94b1a0d53996f728cb6a8ebf3461706}\index{Collection@{Collection}!loadAggregate@{loadAggregate}}
+\index{loadAggregate@{loadAggregate}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadAggregate()}{loadAggregate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac94b1a0d53996f728cb6a8ebf3461706} 
+load\+Aggregate (\begin{DoxyParamCaption}\item[{}]{\$relations}{, }\item[{}]{\$column}{, }\item[{}]{\$function}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Load a set of aggregations over relationship\textquotesingle{}s column onto the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}string \$relations 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+string | null & {\em \$function} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aeeaeaada1461a688fa1405be30020c29}\index{Collection@{Collection}!loadAvg@{loadAvg}}
+\index{loadAvg@{loadAvg}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadAvg()}{loadAvg()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aeeaeaada1461a688fa1405be30020c29} 
+load\+Avg (\begin{DoxyParamCaption}\item[{}]{\$relations}{, }\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Load a set of relationship\textquotesingle{}s average column values onto the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}string \$relations 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a6fe06346b12494cecbe3cb3d9b5dbd4f}\index{Collection@{Collection}!loadCount@{loadCount}}
+\index{loadCount@{loadCount}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadCount()}{loadCount()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a6fe06346b12494cecbe3cb3d9b5dbd4f} 
+load\+Count (\begin{DoxyParamCaption}\item[{}]{\$relations}{}\end{DoxyParamCaption})}
+
+Load a set of relationship counts onto the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}string \$relations \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac55800b2b1b6d827e5481b89b6132be7}\index{Collection@{Collection}!loadExists@{loadExists}}
+\index{loadExists@{loadExists}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadExists()}{loadExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac55800b2b1b6d827e5481b89b6132be7} 
+load\+Exists (\begin{DoxyParamCaption}\item[{}]{\$relations}{}\end{DoxyParamCaption})}
+
+Load a set of related existences onto the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}string \$relations \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a4c12c7a239057e57f0a4f72069c3482e}\index{Collection@{Collection}!loadMax@{loadMax}}
+\index{loadMax@{loadMax}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadMax()}{loadMax()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a4c12c7a239057e57f0a4f72069c3482e} 
+load\+Max (\begin{DoxyParamCaption}\item[{}]{\$relations}{, }\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Load a set of relationship\textquotesingle{}s max column values onto the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}string \$relations 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac67cb247ac6494c2c24ac51da423774b}\index{Collection@{Collection}!loadMin@{loadMin}}
+\index{loadMin@{loadMin}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadMin()}{loadMin()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac67cb247ac6494c2c24ac51da423774b} 
+load\+Min (\begin{DoxyParamCaption}\item[{}]{\$relations}{, }\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Load a set of relationship\textquotesingle{}s min column values onto the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}string \$relations 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac13ed19c7da64071d63463887daa2635}\index{Collection@{Collection}!loadMissing@{loadMissing}}
+\index{loadMissing@{loadMissing}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadMissing()}{loadMissing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac13ed19c7da64071d63463887daa2635} 
+load\+Missing (\begin{DoxyParamCaption}\item[{}]{\$relations}{}\end{DoxyParamCaption})}
+
+Load a set of relationships onto the collection if they are not already eager loaded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}string \$relations \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a87df64ea9981a69254b9716e46985429}\index{Collection@{Collection}!loadMissingRelation@{loadMissingRelation}}
+\index{loadMissingRelation@{loadMissingRelation}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadMissingRelation()}{loadMissingRelation()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a87df64ea9981a69254b9716e46985429} 
+load\+Missing\+Relation (\begin{DoxyParamCaption}\item[{self}]{\$models}{, }\item[{array}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Load a relationship path if it is not already eager loaded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TModel\texorpdfstring{$>$}{>} \$models 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aa721ed044e63930eb892e127654e0db3}\index{Collection@{Collection}!loadMissingRelationshipChain@{loadMissingRelationshipChain}}
+\index{loadMissingRelationshipChain@{loadMissingRelationshipChain}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadMissingRelationshipChain()}{loadMissingRelationshipChain()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aa721ed044e63930eb892e127654e0db3} 
+load\+Missing\+Relationship\+Chain (\begin{DoxyParamCaption}\item[{array}]{\$tuples}{}\end{DoxyParamCaption})}
+
+Load a relationship path for models of the given type if it is not already eager loaded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,$<$string,class-\/string$>$$>$} & \$tuples \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a263f0c122580e85e98c019678b99dd9b}\index{Collection@{Collection}!loadMorph@{loadMorph}}
+\index{loadMorph@{loadMorph}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadMorph()}{loadMorph()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a263f0c122580e85e98c019678b99dd9b} 
+load\+Morph (\begin{DoxyParamCaption}\item[{}]{\$relation}{, }\item[{}]{\$relations}{}\end{DoxyParamCaption})}
+
+Load a set of relationships onto the mixed relationship collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$relation} & \\
+\hline
+ & {\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>} \$relations \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a1b57885b4fb111d1c634c75b3fda156c}\index{Collection@{Collection}!loadMorphCount@{loadMorphCount}}
+\index{loadMorphCount@{loadMorphCount}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadMorphCount()}{loadMorphCount()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a1b57885b4fb111d1c634c75b3fda156c} 
+load\+Morph\+Count (\begin{DoxyParamCaption}\item[{}]{\$relation}{, }\item[{}]{\$relations}{}\end{DoxyParamCaption})}
+
+Load a set of relationship counts onto the mixed relationship collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$relation} & \\
+\hline
+ & {\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>} \$relations \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a97c11801a4b0d868c74810156073f95b}\index{Collection@{Collection}!loadSum@{loadSum}}
+\index{loadSum@{loadSum}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{loadSum()}{loadSum()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a97c11801a4b0d868c74810156073f95b} 
+load\+Sum (\begin{DoxyParamCaption}\item[{}]{\$relations}{, }\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Load a set of relationship\textquotesingle{}s column summations onto the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,array\texorpdfstring{$\vert$}{|}(callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+: mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}string \$relations 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ad80f6f78129a9a63e44d6ff748ffb358}\index{Collection@{Collection}!makeHidden@{makeHidden}}
+\index{makeHidden@{makeHidden}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{makeHidden()}{makeHidden()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ad80f6f78129a9a63e44d6ff748ffb358} 
+make\+Hidden (\begin{DoxyParamCaption}\item[{}]{\$attributes}{}\end{DoxyParamCaption})}
+
+Make the given, typically visible, attributes hidden across the entire collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,string$>$\texorpdfstring{$\vert$}{|}string} & \$attributes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a8baf039db54c89197725a63dbb308b3a}\index{Collection@{Collection}!makeVisible@{makeVisible}}
+\index{makeVisible@{makeVisible}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{makeVisible()}{makeVisible()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a8baf039db54c89197725a63dbb308b3a} 
+make\+Visible (\begin{DoxyParamCaption}\item[{}]{\$attributes}{}\end{DoxyParamCaption})}
+
+Make the given, typically hidden, attributes visible across the entire collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,string$>$\texorpdfstring{$\vert$}{|}string} & \$attributes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ade08fa61bdaee2ece583f318bc44c314}\index{Collection@{Collection}!map@{map}}
+\index{map@{map}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ade08fa61bdaee2ece583f318bc44c314} 
+map (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Run a map over each of the items.
+
+@template TMap\+Value
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+TModel,TKey)} & TMap\+Value \$callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}TKey, TMap\+Value\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}static\texorpdfstring{$<$}{<}TKey, TMap\+Value\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ae0eec0d32374f834773ca3bf354a53cd}\index{Collection@{Collection}!mapWithKeys@{mapWithKeys}}
+\index{mapWithKeys@{mapWithKeys}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{mapWithKeys()}{mapWithKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ae0eec0d32374f834773ca3bf354a53cd} 
+map\+With\+Keys (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Run an associative map over each of the items.
+
+The callback should return an associative array with a single key / value pair.
+
+@template TMap\+With\+Keys\+Key of array-\/key @template TMap\+With\+Keys\+Value
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+TModel,TKey)} & array$<$\+TMap\+With\+Keys\+Key, TMap\+With\+Keys\+Value$>$ \$callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}TMap\+With\+Keys\+Key, TMap\+With\+Keys\+Value\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}static\texorpdfstring{$<$}{<}TMap\+With\+Keys\+Key, TMap\+With\+Keys\+Value\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab2a5406b2f5cf707ef80aa210c4cb3f5}\index{Collection@{Collection}!merge@{merge}}
+\index{merge@{merge}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ab2a5406b2f5cf707ef80aa210c4cb3f5} 
+merge (\begin{DoxyParamCaption}\item[{}]{\$items}{}\end{DoxyParamCaption})}
+
+Merge the collection with the given items.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$array-\/key,TModel$>$} & \$items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ad517e9a0cdb5ec516c1f156fc682b4b3}\index{Collection@{Collection}!modelKeys@{modelKeys}}
+\index{modelKeys@{modelKeys}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{modelKeys()}{modelKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ad517e9a0cdb5ec516c1f156fc682b4b3} 
+model\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the array of primary keys.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}int, array-\/key\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a40fcf523c77d019ea67b5a5b8ad4448c}\index{Collection@{Collection}!only@{only}}
+\index{only@{only}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{only()}{only()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a40fcf523c77d019ea67b5a5b8ad4448c} 
+only (\begin{DoxyParamCaption}\item[{}]{\$keys}{}\end{DoxyParamCaption})}
+
+Returns only the models from the collection with the specified keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$keys \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aa76c3decfeb2c8fe63c4a347b10caeef}\index{Collection@{Collection}!pad@{pad}}
+\index{pad@{pad}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{pad()}{pad()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aa76c3decfeb2c8fe63c4a347b10caeef} 
+pad (\begin{DoxyParamCaption}\item[{}]{\$size}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Pad collection to the specified length with a value.
+
+@template TPad\+Value
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size} & \\
+\hline
+TPad\+Value & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TModel\texorpdfstring{$\vert$}{|}\+TPad\+Value\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac73ed81e9fb06c843620ba21c2aecdd8}\index{Collection@{Collection}!partition@{partition}}
+\index{partition@{partition}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac73ed81e9fb06c843620ba21c2aecdd8} 
+partition (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$operator}{ = {\ttfamily null}, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Partition the collection into two arrays using the given callback or key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em (callable(\+TModel,TKey)} & bool)\texorpdfstring{$\vert$}{|}\+TModel\texorpdfstring{$\vert$}{|}string \$key \\
+\hline
+TModel | string | null & {\em \$operator} & \\
+\hline
+TModel | null & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int$<$0, 1$>$, static$<$\+TKey, TModel$>$\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a957c0c9837db2c325b9dcfe9751a279f}\index{Collection@{Collection}!pluck@{pluck}}
+\index{pluck@{pluck}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{pluck()}{pluck()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a957c0c9837db2c325b9dcfe9751a279f} 
+pluck (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get an array with the values of a given key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em string\texorpdfstring{$\vert$}{|}array$<$array-\/key,string$>$\texorpdfstring{$\vert$}{|}null} & \$value \\
+\hline
+string | null & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}array-\/key, mixed\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aac6b9efd3d5b8e8259ef99dccebfafc4}\index{Collection@{Collection}!setHidden@{setHidden}}
+\index{setHidden@{setHidden}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{setHidden()}{setHidden()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_aac6b9efd3d5b8e8259ef99dccebfafc4} 
+set\+Hidden (\begin{DoxyParamCaption}\item[{}]{\$hidden}{}\end{DoxyParamCaption})}
+
+Set the hidden attributes across the entire collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$} & \$hidden \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a18c0f238f66aed17fcfb419dced5596a}\index{Collection@{Collection}!setVisible@{setVisible}}
+\index{setVisible@{setVisible}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{setVisible()}{setVisible()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a18c0f238f66aed17fcfb419dced5596a} 
+set\+Visible (\begin{DoxyParamCaption}\item[{}]{\$visible}{}\end{DoxyParamCaption})}
+
+Set the visible attributes across the entire collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$} & \$visible \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac2ad490628edd9ef1d7779872eb0d0d0}\index{Collection@{Collection}!toQuery@{toQuery}}
+\index{toQuery@{toQuery}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{toQuery()}{toQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_ac2ad490628edd9ef1d7779872eb0d0d0} 
+to\+Query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the \doxylink{class_eloquent}{Eloquent} query builder from the collection.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$\+TModel$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception \Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a931f07da64c20257fd49da7e5fb9854f}\index{Collection@{Collection}!unique@{unique}}
+\index{unique@{unique}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{unique()}{unique()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a931f07da64c20257fd49da7e5fb9854f} 
+unique (\begin{DoxyParamCaption}\item[{}]{\$key}{ = {\ttfamily null}, }\item[{}]{\$strict}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Return only unique items from the collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em (callable(\+TModel,TKey)} & mixed)\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$key \\
+\hline
+bool & {\em \$strict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a198a8368f4bc0b96fb5a0c664a899d0a}\index{Collection@{Collection}!withRelationshipAutoloading@{withRelationshipAutoloading}}
+\index{withRelationshipAutoloading@{withRelationshipAutoloading}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{withRelationshipAutoloading()}{withRelationshipAutoloading()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a198a8368f4bc0b96fb5a0c664a899d0a} 
+with\+Relationship\+Autoloading (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Enable relationship autoloading for all models in this collection.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a90ef2477f46e96a1bc6421237c905a4e}\index{Collection@{Collection}!zip@{zip}}
+\index{zip@{zip}!Collection@{Collection}}
+\doxysubsubsection{\texorpdfstring{zip()}{zip()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_collection_a90ef2477f46e96a1bc6421237c905a4e} 
+zip (\begin{DoxyParamCaption}\item[{}]{\$items}{}\end{DoxyParamCaption})}
+
+Zip the collection together with one or more arrays.
+
+@template TZip\+Value
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable\texorpdfstring{$<$}{<}array-\/key, TZip\+Value\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}iterable\texorpdfstring{$<$}{<}array-\/key, TZip\+Value\texorpdfstring{$>$}{>} ...\$items \begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TModel\texorpdfstring{$\vert$}{|}\+TZip\+Value\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Eloquent/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_database_2_eloquent_2_collection_8php}{Collection.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\doxysection{Map\+Request\+Payload Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload}\index{MapRequestPayload@{MapRequestPayload}}
+Inheritance diagram for Map\+Request\+Payload\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload_ae40d1164862d4b4384a5c42b044b09d5}{\+\_\+\+\_\+construct}} (public readonly array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$accept\+Format=null, public readonly array \$serialization\+Context=\mbox{[}$\,$\mbox{]}, public readonly string\texorpdfstring{$\vert$}{|}Group\+Sequence\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$validation\+Groups=null, string \$resolver=Request\+Payload\+Value\+Resolver\+::class, public readonly int \$validation\+Failed\+Status\+Code=Response\+::\+HTTP\+\_\+\+UNPROCESSABLE\+\_\+\+ENTITY, public readonly ?string \$type=null,)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_value_resolver}{Value\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_value_resolver_a3fe71be5665bd581227b5f3e803b94e5}{\+\_\+\+\_\+construct}} (public string \$resolver, public bool \$disabled=false,)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_metadata_1_1_argument_metadata}{Argument\+Metadata}} \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload_a89a64f0fb2badf2f33fa8c1765de4d74}{\$metadata}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controller parameter tag to map the request content to typed object and validate it.
+
+\begin{DoxyAuthor}{Author}
+Konstantin Myakshin \href{mailto:molodchick@gmail.com}{\texttt{molodchick@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload_ae40d1164862d4b4384a5c42b044b09d5}\index{MapRequestPayload@{MapRequestPayload}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!MapRequestPayload@{MapRequestPayload}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload_ae40d1164862d4b4384a5c42b044b09d5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{public readonly array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$accept\+Format}{ = {\ttfamily null}, }\item[{public readonly array}]{\$serialization\+Context}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{public readonly string\texorpdfstring{$\vert$}{|}Group\+Sequence\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null}]{\$validation\+Groups}{ = {\ttfamily null}, }\item[{string}]{\$resolver}{ = {\ttfamily RequestPayloadValueResolver\+:\+:class}, }\item[{public readonly int}]{\$validation\+Failed\+Status\+Code}{ = {\ttfamily Response\+:\+:HTTP\+\_\+UNPROCESSABLE\+\_\+ENTITY}, }\item[{public readonly ?string}]{\$type}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string$>$\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null} & \$accept\+Format The payload formats to accept (i.\+e. "{}json"{}, "{}xml"{}) \\
+\hline
+ & {\em array$<$string,mixed$>$} & \$serialization\+Context The serialization context to use when deserializing the payload \\
+\hline
+ & {\em string\texorpdfstring{$\vert$}{|}\+Group\+Sequence\texorpdfstring{$\vert$}{|}array$<$string$>$\texorpdfstring{$\vert$}{|}null} & \$validation\+Groups The validation groups to use when validating the query string mapping \\
+\hline
+class-\/string & {\em \$resolver} & The class name of the resolver to use \\
+\hline
+int & {\em \$validation\+Failed\+Status\+Code} & The HTTP code to return if the validation fails \\
+\hline
+class-\/string | string | null & {\em \$type} & The element type for array deserialization \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload_a89a64f0fb2badf2f33fa8c1765de4d74}\index{MapRequestPayload@{MapRequestPayload}!\$metadata@{\$metadata}}
+\index{\$metadata@{\$metadata}!MapRequestPayload@{MapRequestPayload}}
+\doxysubsubsection{\texorpdfstring{\$metadata}{\$metadata}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_request_payload_a89a64f0fb2badf2f33fa8c1765de4d74} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_metadata_1_1_argument_metadata}{Argument\+Metadata}} \$metadata}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Attribute/\mbox{\hyperlink{_map_request_payload_8php}{Map\+Request\+Payload.\+php}}\end{DoxyCompactItemize}

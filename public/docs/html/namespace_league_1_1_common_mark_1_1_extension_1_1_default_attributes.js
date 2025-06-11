@@ -1,0 +1,5 @@
+var namespace_league_1_1_common_mark_1_1_extension_1_1_default_attributes =
+[
+    [ "ApplyDefaultAttributesProcessor", "class_league_1_1_common_mark_1_1_extension_1_1_default_attributes_1_1_apply_default_attributes_processor.html", "class_league_1_1_common_mark_1_1_extension_1_1_default_attributes_1_1_apply_default_attributes_processor" ],
+    [ "DefaultAttributesExtension", "class_league_1_1_common_mark_1_1_extension_1_1_default_attributes_1_1_default_attributes_extension.html", "class_league_1_1_common_mark_1_1_extension_1_1_default_attributes_1_1_default_attributes_extension" ]
+];

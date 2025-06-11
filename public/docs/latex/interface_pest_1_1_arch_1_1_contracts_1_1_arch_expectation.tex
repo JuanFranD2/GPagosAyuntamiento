@@ -1,0 +1,96 @@
+\doxysection{Arch\+Expectation Interface Reference}
+\hypertarget{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation}{}\label{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation}\index{ArchExpectation@{ArchExpectation}}
+Inheritance diagram for Arch\+Expectation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_ae608fd2e8d738912068a08ff17144cb0}{ignoring}} (array\texorpdfstring{$\vert$}{|}string \$targets\+Or\+Dependencies)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_ae7efdd57fbe996ab2767d6f2987141e3}{ignoring\+Global\+Functions}} ()
+\item 
+\mbox{\hyperlink{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_ae9bb2833cb02a43bd08dea64ed84988a}{merge\+Exclude\+Callbacks}} (array \$callbacks)
+\item 
+\mbox{\hyperlink{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_a62bd8f658695faf5dd49da50b4ec1b92}{exclude\+Callbacks}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_a62bd8f658695faf5dd49da50b4ec1b92}\index{ArchExpectation@{ArchExpectation}!excludeCallbacks@{excludeCallbacks}}
+\index{excludeCallbacks@{excludeCallbacks}!ArchExpectation@{ArchExpectation}}
+\doxysubsubsection{\texorpdfstring{excludeCallbacks()}{excludeCallbacks()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_a62bd8f658695faf5dd49da50b4ec1b92} 
+exclude\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the exclude callbacks.
+
+\begin{DoxyReturn}{Returns}
+array$<$int, callable(\+Object\+Description)\+: bool$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_arch_1_1_group_arch_expectation_a62bd8f658695faf5dd49da50b4ec1b92}{Group\+Arch\+Expectation}}, and \mbox{\hyperlink{class_pest_1_1_arch_1_1_single_arch_expectation_a62bd8f658695faf5dd49da50b4ec1b92}{Single\+Arch\+Expectation}}.
+
+\Hypertarget{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_ae608fd2e8d738912068a08ff17144cb0}\index{ArchExpectation@{ArchExpectation}!ignoring@{ignoring}}
+\index{ignoring@{ignoring}!ArchExpectation@{ArchExpectation}}
+\doxysubsubsection{\texorpdfstring{ignoring()}{ignoring()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_ae608fd2e8d738912068a08ff17144cb0} 
+ignoring (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$targets\+Or\+Dependencies}{}\end{DoxyParamCaption})}
+
+Ignores the given "{}targets"{} or "{}dependencies"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}string} & \$targets\+Or\+Dependencies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_arch_1_1_group_arch_expectation_ae608fd2e8d738912068a08ff17144cb0}{Group\+Arch\+Expectation}}, and \mbox{\hyperlink{class_pest_1_1_arch_1_1_single_arch_expectation_ae608fd2e8d738912068a08ff17144cb0}{Single\+Arch\+Expectation}}.
+
+\Hypertarget{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_ae7efdd57fbe996ab2767d6f2987141e3}\index{ArchExpectation@{ArchExpectation}!ignoringGlobalFunctions@{ignoringGlobalFunctions}}
+\index{ignoringGlobalFunctions@{ignoringGlobalFunctions}!ArchExpectation@{ArchExpectation}}
+\doxysubsubsection{\texorpdfstring{ignoringGlobalFunctions()}{ignoringGlobalFunctions()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_ae7efdd57fbe996ab2767d6f2987141e3} 
+ignoring\+Global\+Functions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ignores global "{}user defined"{} functions.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_arch_1_1_group_arch_expectation_ae7efdd57fbe996ab2767d6f2987141e3}{Group\+Arch\+Expectation}}, and \mbox{\hyperlink{class_pest_1_1_arch_1_1_single_arch_expectation_ae7efdd57fbe996ab2767d6f2987141e3}{Single\+Arch\+Expectation}}.
+
+\Hypertarget{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_ae9bb2833cb02a43bd08dea64ed84988a}\index{ArchExpectation@{ArchExpectation}!mergeExcludeCallbacks@{mergeExcludeCallbacks}}
+\index{mergeExcludeCallbacks@{mergeExcludeCallbacks}!ArchExpectation@{ArchExpectation}}
+\doxysubsubsection{\texorpdfstring{mergeExcludeCallbacks()}{mergeExcludeCallbacks()}}
+{\footnotesize\ttfamily \label{interface_pest_1_1_arch_1_1_contracts_1_1_arch_expectation_ae9bb2833cb02a43bd08dea64ed84988a} 
+merge\+Exclude\+Callbacks (\begin{DoxyParamCaption}\item[{array}]{\$callbacks}{}\end{DoxyParamCaption})}
+
+Merge the given exclude callbacks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,callable(\+Object\+Description)} & bool\texorpdfstring{$>$}{>} \$callbacks \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_pest_1_1_arch_1_1_group_arch_expectation_a765073a94a614bbffeff1ac9af3d70d3}{Group\+Arch\+Expectation}}, and \mbox{\hyperlink{class_pest_1_1_arch_1_1_single_arch_expectation_ae9bb2833cb02a43bd08dea64ed84988a}{Single\+Arch\+Expectation}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest-\/plugin-\/arch/src/\+Contracts/\mbox{\hyperlink{_arch_expectation_8php}{Arch\+Expectation.\+php}}\end{DoxyCompactItemize}

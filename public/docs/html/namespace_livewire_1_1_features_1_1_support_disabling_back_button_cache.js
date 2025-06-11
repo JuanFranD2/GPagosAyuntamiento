@@ -1,0 +1,5 @@
+var namespace_livewire_1_1_features_1_1_support_disabling_back_button_cache =
+[
+    [ "DisableBackButtonCacheMiddleware", "class_livewire_1_1_features_1_1_support_disabling_back_button_cache_1_1_disable_back_button_cache_middleware.html", "class_livewire_1_1_features_1_1_support_disabling_back_button_cache_1_1_disable_back_button_cache_middleware" ],
+    [ "SupportDisablingBackButtonCache", "class_livewire_1_1_features_1_1_support_disabling_back_button_cache_1_1_support_disabling_back_button_cache.html", "class_livewire_1_1_features_1_1_support_disabling_back_button_cache_1_1_support_disabling_back_button_cache" ]
+];

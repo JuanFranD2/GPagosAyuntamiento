@@ -1,0 +1,2534 @@
+\doxysection{Blueprint Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{}\label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}\index{Blueprint@{Blueprint}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a968c58c1f125601de6a6ac54b26a184b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}} \$connection, \$table, ?Closure \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3928875ef0ceb18a51c1061be3eb3a00}{build}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a63f8ba861f1ecabe359d454fde60d395}{to\+Sql}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_afc97cb45acc8242589f8c8957eef257f}{add\+Fluent\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa2dbdec803cea62b42dd91f8fdbd266a}{add\+Alter\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3b07466072e9149acf76859fed2dc0fb}{creating}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a435e7d7525d4bcd0ed5e34a469f3adf6}{create}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab9248a6e79072cb7ee1c618ec6fd8f4a}{engine}} (\$engine)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a288616b000dd6a2ae7455167e0c9d6f5}{inno\+Db}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aaa9f160000e06f659ba93637cd16e685}{charset}} (\$charset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5c783347ef5bcb90f610c1d95cf0389f}{collation}} (\$collation)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9dc556227b438deeb7c3ca459930d9cb}{temporary}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aeb639e5b2b713ed87ab8f2033af98ae8}{drop}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a69c4145b0e184ce708a8d1c15fa13775}{drop\+If\+Exists}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae34216318f8a10a242290e57fc29816a}{drop\+Column}} (\$columns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a340335a9235fe901c748730b204a6b59}{rename\+Column}} (\$from, \$to)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6e6dc94e2e93d12f2dde5ccda485a884}{drop\+Primary}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}{index}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9d80f77aabb3f53bd01f08862d406b90}{drop\+Unique}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}{index}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa6814906c90faade909731c5e451fdd9}{drop\+Index}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}{index}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad4d3cf9421e538e545b47c31af469257}{drop\+Full\+Text}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}{index}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8771167d5eb0ea606c4ef3f4e60d607b}{drop\+Spatial\+Index}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}{index}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1cfc0b66d0c499052b913ee474941189}{drop\+Foreign}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}{index}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_abc9d4118ffca509920c8d8821ff4fd28}{drop\+Constrained\+Foreign\+Id}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a77cfb78f6bec4c027aca6b0e64b58100}{drop\+Foreign\+Id\+For}} (\$model, \$column=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae927bc031562b346e5d21a7584675c60}{drop\+Constrained\+Foreign\+Id\+For}} (\$model, \$column=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a4f7e13ee9868cf635ce9d97a820eac0b}{rename\+Index}} (\$from, \$to)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_adbcc971adbdc128bdcc218ef40fdaa6d}{drop\+Timestamps}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9af6f3034f508c1f7d1be9e74f002692}{drop\+Timestamps\+Tz}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af0f6441fa48bd8b80faa4887fc295351}{drop\+Soft\+Deletes}} (\$column=\textquotesingle{}deleted\+\_\+at\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a496f8b928082f4b88db6ea784674d6b0}{drop\+Soft\+Deletes\+Tz}} (\$column=\textquotesingle{}deleted\+\_\+at\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9db3b6dce3636ba40c6a6d90dd1f849f}{drop\+Remember\+Token}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ada6a26ead1cd9bf12a58771994539e0a}{drop\+Morphs}} (\$name, \$index\+Name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9a18595b014544f70343c99a63ff8520}{rename}} (\$to)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a11a08b2853323426ca9414f7304c4193}{primary}} (\$columns, \$name=null, \$algorithm=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad3d15fdf4bff861e1a0bd267738e42e8}{unique}} (\$columns, \$name=null, \$algorithm=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}{index}} (\$columns, \$name=null, \$algorithm=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a273247020aac8764bf7863bdb3590c8d}{full\+Text}} (\$columns, \$name=null, \$algorithm=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a55a685a65deb19067eeaf086c7acff45}{spatial\+Index}} (\$columns, \$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8c5d1653ac633232a34a418db11efb4b}{raw\+Index}} (\$expression, \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0ab388ee1039e7569dccfeb15680e61a}{foreign}} (\$columns, \$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a08f9e3e6a7fcf32664e0e5d4ea2e56ac}{id}} (\$column=\textquotesingle{}id\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a14c11ea781af98b900cf98f189931861}{increments}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad3e82c7fe7998732dfb2e12ce7eca3dc}{integer\+Increments}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8af5da3a5c295fcc65c1f8f0249d2c00}{tiny\+Increments}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aaba66f7ea20ea8986f8ddef1ed7d5acd}{small\+Increments}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0025e8801c8b0d997a90dd1e3e7d1176}{medium\+Increments}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a37e5c6eebd9f12ea3acb832f499b2d59}{big\+Increments}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a71a0250916acf2df47d2a1aaaee36f7e}{char}} (\$column, \$length=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9de057d97e45c618a53c5c8191f0daa0}{string}} (\$column, \$length=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5d883d5cf4ebbd8ecaa89bd774d48685}{tiny\+Text}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aeaf5d09eb992d006f7d9c43e04dc421f}{text}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af6335024efde5713aa402579376b6890}{medium\+Text}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0c68a370343ee15ac43a336e5d98f997}{long\+Text}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1c6488c9dff3d2b82c449670b688aaaf}{integer}} (\$column, \$auto\+Increment=false, \$unsigned=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9dd0bd48dfe8e82d17591272a0e90e26}{tiny\+Integer}} (\$column, \$auto\+Increment=false, \$unsigned=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1540efa10489e2c06050305acfcedef8}{small\+Integer}} (\$column, \$auto\+Increment=false, \$unsigned=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae5d7a85a306aeef1057803c29fcf93d8}{medium\+Integer}} (\$column, \$auto\+Increment=false, \$unsigned=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab29e0dc4a93d71d647b830cab588a709}{big\+Integer}} (\$column, \$auto\+Increment=false, \$unsigned=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a17becb2b1f59d6aa87017cb84d4392aa}{unsigned\+Integer}} (\$column, \$auto\+Increment=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aab2921da0afe5e781d8e6b16a12da478}{unsigned\+Tiny\+Integer}} (\$column, \$auto\+Increment=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae0c12fb38ba5c5781dd40eafd58ae27c}{unsigned\+Small\+Integer}} (\$column, \$auto\+Increment=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a31087cff0d135b6f59de4d401414e15a}{unsigned\+Medium\+Integer}} (\$column, \$auto\+Increment=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5b500a4690a7fd6634925f6b6d0d7f33}{unsigned\+Big\+Integer}} (\$column, \$auto\+Increment=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0a65428af6f5e7bf8175dfc09da7fe8f}{foreign\+Id}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9390978a25b99837ff0492fbe83336dd}{foreign\+Id\+For}} (\$model, \$column=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_acb7b1684447e31f2ae6efd48f5401b9a}{float}} (\$column, \$precision=53)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac8b755a25443a431924210f985f7b0aa}{double}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac302163de5840761210e03f1ab4cc102}{decimal}} (\$column, \$total=8, \$places=2)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac53942b70c415d075fbd404c3171ae02}{boolean}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6d464a3820cd6708aaef691966ea44c0}{enum}} (\$column, array \$allowed)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6c33d83fe10788578ae8f986629f5364}{set}} (\$column, array \$allowed)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a83c154a24e5c367e41eb90117263b36e}{json}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a38f659ae9fa2b3d7cf98381f724e90a6}{jsonb}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6456b057aa56d0c0f3d698c9c54fe853}{date}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_afef3a061ab497911cfd0f9e3ddb3a8c3}{date\+Time}} (\$column, \$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a239354f1a7642dc5ef4acdd4dd03ac45}{date\+Time\+Tz}} (\$column, \$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a357dedec33f46118e37c7bb16ac1b703}{time}} (\$column, \$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa90ee5640f92ec5164a6b70202a60483}{time\+Tz}} (\$column, \$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab65b33eb471fa3899fc5c2d3c1a4886f}{timestamp}} (\$column, \$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aec1ad8ca1851cf2cf524aa9e9b8f38aa}{timestamp\+Tz}} (\$column, \$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6c7d2f77432d5d0a7326681a12772a5e}{timestamps}} (\$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3dfb0053bb2e1fe7dc13d16be4ef1cc9}{nullable\+Timestamps}} (\$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6fb1958a86d44f695fc47f5bddd1dd91}{timestamps\+Tz}} (\$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a520b5ab6b5fcc2f3858d4dd1a3901e36}{datetimes}} (\$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aebc4a0c7046edc1a945a8a0fb70ed1dd}{soft\+Deletes}} (\$column=\textquotesingle{}deleted\+\_\+at\textquotesingle{}, \$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a013fb090f59ecd7f8e58e2ca2aa8771c}{soft\+Deletes\+Tz}} (\$column=\textquotesingle{}deleted\+\_\+at\textquotesingle{}, \$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3337b96f81d0630e9c8dbb6ab7f743c5}{soft\+Deletes\+Datetime}} (\$column=\textquotesingle{}deleted\+\_\+at\textquotesingle{}, \$precision=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a46b08fd5a224c8c4784364e1a2c62a55}{year}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3a2274c15aca06b82eb1416bce6cdb7c}{binary}} (\$column, \$length=null, \$fixed=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_abfb81d928f887745c7e32e3d572775cc}{uuid}} (\$column=\textquotesingle{}uuid\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2dc9e37452902b9263120bf835b9457d}{foreign\+Uuid}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab8f02dc1706b68ea4ca55c5082e1ca79}{ulid}} (\$column=\textquotesingle{}ulid\textquotesingle{}, \$length=26)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af1e61a961616b1a3757d153352c1949e}{foreign\+Ulid}} (\$column, \$length=26)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2f41ec7c0bb3f144c53d536033fb8b94}{ip\+Address}} (\$column=\textquotesingle{}ip\+\_\+address\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2125e967c06a3ea09647b31672ad7e12}{mac\+Address}} (\$column=\textquotesingle{}mac\+\_\+address\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad11946ee2535c2b1921622659536d946}{geometry}} (\$column, \$subtype=null, \$srid=0)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aafe74a63e7a0e1fd18a9d0ea14a32b91}{geography}} (\$column, \$subtype=null, \$srid=4326)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a7c179dc17167fcf87d0a875815e05005}{computed}} (\$column, \$expression)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac1dde83fd269c6ffd296534190f6e7bb}{vector}} (\$column, \$dimensions=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab445588975c91ea900e7fd50b5614b27}{morphs}} (\$name, \$index\+Name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a72253064aa132f25e77eb74316f9dc97}{nullable\+Morphs}} (\$name, \$index\+Name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a398197a2e387f4a68cb0e841372a34a1}{numeric\+Morphs}} (\$name, \$index\+Name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9766563eaed42a76ce1353fc4098ad2a}{nullable\+Numeric\+Morphs}} (\$name, \$index\+Name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0197dbea036bd98737883e78e162d6ee}{uuid\+Morphs}} (\$name, \$index\+Name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6f3ce8ea7162b358abf75e3d619adac9}{nullable\+Uuid\+Morphs}} (\$name, \$index\+Name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_abbb75dece4075a05e5534ab1c4fbcbcc}{ulid\+Morphs}} (\$name, \$index\+Name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a85babf5d657e7133cbf04d32fee94e81}{nullable\+Ulid\+Morphs}} (\$name, \$index\+Name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_acfffc323738b5cd25c43efa0c4c923e0}{remember\+Token}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9d36d605683a70be174ced26b02ad3d5}{raw\+Column}} (\$column, \$definition)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_acbfa9874100f9bc0b8f698120156e2b7}{comment}} (\$comment)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a738bbe519e10ee72585a66e2fff78692}{add\+Column}} (\$type, \$name, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6b879c6209059b223c3b2bb9d92b2065}{after}} (\$column, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9b9d5c303403ad0a4ee54b2a08e2779b}{remove\+Column}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa0dd4bf57d57bc2a3697e40c9f6bddce}{get\+Table}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a7a333affb97cf092d50f3e59edaa9066}{get\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6287262cb9628d7a89d8fc16dcb51177}{get\+Columns}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a82f3474cee57fff1095b279dc4da9fc1}{get\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_afbf787ced76807989fb3093e1772c5a1}{get\+State}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a551ed38a46419762059f01956684fd2d}{get\+Added\+Columns}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2a1816b423720a0937cdf39f4c831675}{get\+Changed\+Columns}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8a3b012ad4844366d9207d8f0e174a00}{\$engine}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af10158dd74b75f1d337e83102d6b82ce}{\$charset}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a39e21e0bc9fbd03bb429e6a040a361aa}{\$collation}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1cb81bd683eb55bd7e42129cd73310f6}{\$temporary}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a335c90aa9e7c7ecca4cac38fc37d2d23}{\$after}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a58954a40a281dd32a27d86d6e02c2d1e}{ensure\+Commands\+Are\+Valid}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af93d02de3cd6685dfb494c4fc4e10aa5}{commands\+Named}} (array \$names)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad8a9b3e9e8a1313c1d92b711cf39a9a5}{add\+Implied\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a85f1675e26f11d970b8bbbe7239fcd17}{add\+Fluent\+Indexes}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a11870ed7b53eb4c45cd44e5281c8399f}{index\+Command}} (\$type, \$columns, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}{index}}, \$algorithm=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a17ee340b644e9d64e047734b20949e66}{drop\+Index\+Command}} (\$command, \$type, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}{index}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a7493bf6f2fb9a00347d264e00d9894a1}{create\+Index\+Name}} (\$type, array \$columns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a227b78ac33d480b6fd5d8b01b4e1e895}{add\+Column\+Definition}} (\$definition)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae9c9b4b1ff69b4523c8667b50bff5511}{add\+Command}} (\$name, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af9ba17945bfd8f0b0e70d4701c6ed7f1}{create\+Command}} (\$name, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6a62b75b725f219f14673e0c36d4d389}{default\+Time\+Precision}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}} \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a239762c0ce8c078686e70ec63bbf1ab3}{\$connection}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar}{Grammar}} \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aab14c1d66352d864bd581b60b4ed93e6}{\$grammar}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae8876a14058f368335baccf35af4a22b}{\$table}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a19d2a3d21fe02053311fde465e6ae2e9}{\$columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab63cd62b3b65fd223b6f3d57b6ca754d}{\$commands}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae82306c4f2d17d8dd5c7d8d916b33bed}{\$state}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a968c58c1f125601de6a6ac54b26a184b}\index{Blueprint@{Blueprint}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a968c58c1f125601de6a6ac54b26a184b} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}}}]{\$connection}{, }\item[{}]{\$table}{, }\item[{?Closure}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new schema blueprint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection & {\em \$connection} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\textbackslash{}\+Closure | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa2dbdec803cea62b42dd91f8fdbd266a}\index{Blueprint@{Blueprint}!addAlterCommands@{addAlterCommands}}
+\index{addAlterCommands@{addAlterCommands}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{addAlterCommands()}{addAlterCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa2dbdec803cea62b42dd91f8fdbd266a} 
+add\+Alter\+Commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Add the alter commands if whenever needed.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a738bbe519e10ee72585a66e2fff78692}\index{Blueprint@{Blueprint}!addColumn@{addColumn}}
+\index{addColumn@{addColumn}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{addColumn()}{addColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a738bbe519e10ee72585a66e2fff78692} 
+add\+Column (\begin{DoxyParamCaption}\item[{}]{\$type}{, }\item[{}]{\$name}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Add a new column to the blueprint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a227b78ac33d480b6fd5d8b01b4e1e895}\index{Blueprint@{Blueprint}!addColumnDefinition@{addColumnDefinition}}
+\index{addColumnDefinition@{addColumnDefinition}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{addColumnDefinition()}{addColumnDefinition()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a227b78ac33d480b6fd5d8b01b4e1e895} 
+add\+Column\+Definition (\begin{DoxyParamCaption}\item[{}]{\$definition}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add a new column definition to the blueprint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition & {\em \$definition} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae9c9b4b1ff69b4523c8667b50bff5511}\index{Blueprint@{Blueprint}!addCommand@{addCommand}}
+\index{addCommand@{addCommand}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{addCommand()}{addCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae9c9b4b1ff69b4523c8667b50bff5511} 
+add\+Command (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add a new command to the blueprint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_afc97cb45acc8242589f8c8957eef257f}\index{Blueprint@{Blueprint}!addFluentCommands@{addFluentCommands}}
+\index{addFluentCommands@{addFluentCommands}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{addFluentCommands()}{addFluentCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_afc97cb45acc8242589f8c8957eef257f} 
+add\+Fluent\+Commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Add the fluent commands specified on any columns.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a85f1675e26f11d970b8bbbe7239fcd17}\index{Blueprint@{Blueprint}!addFluentIndexes@{addFluentIndexes}}
+\index{addFluentIndexes@{addFluentIndexes}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{addFluentIndexes()}{addFluentIndexes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a85f1675e26f11d970b8bbbe7239fcd17} 
+add\+Fluent\+Indexes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the index commands fluently specified on columns.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad8a9b3e9e8a1313c1d92b711cf39a9a5}\index{Blueprint@{Blueprint}!addImpliedCommands@{addImpliedCommands}}
+\index{addImpliedCommands@{addImpliedCommands}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{addImpliedCommands()}{addImpliedCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad8a9b3e9e8a1313c1d92b711cf39a9a5} 
+add\+Implied\+Commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the commands that are implied by the blueprint\textquotesingle{}s state.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6b879c6209059b223c3b2bb9d92b2065}\index{Blueprint@{Blueprint}!after@{after}}
+\index{after@{after}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6b879c6209059b223c3b2bb9d92b2065} 
+after (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Add the columns from the callback after the given column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a37e5c6eebd9f12ea3acb832f499b2d59}\index{Blueprint@{Blueprint}!bigIncrements@{bigIncrements}}
+\index{bigIncrements@{bigIncrements}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{bigIncrements()}{bigIncrements()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a37e5c6eebd9f12ea3acb832f499b2d59} 
+big\+Increments (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new auto-\/incrementing big integer (8-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab29e0dc4a93d71d647b830cab588a709}\index{Blueprint@{Blueprint}!bigInteger@{bigInteger}}
+\index{bigInteger@{bigInteger}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{bigInteger()}{bigInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab29e0dc4a93d71d647b830cab588a709} 
+big\+Integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}, }\item[{}]{\$unsigned}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new big integer (8-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+bool & {\em \$unsigned} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3a2274c15aca06b82eb1416bce6cdb7c}\index{Blueprint@{Blueprint}!binary@{binary}}
+\index{binary@{binary}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{binary()}{binary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3a2274c15aca06b82eb1416bce6cdb7c} 
+binary (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$length}{ = {\ttfamily null}, }\item[{}]{\$fixed}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new binary column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$length} & \\
+\hline
+bool & {\em \$fixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac53942b70c415d075fbd404c3171ae02}\index{Blueprint@{Blueprint}!boolean@{boolean}}
+\index{boolean@{boolean}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{boolean()}{boolean()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac53942b70c415d075fbd404c3171ae02} 
+boolean (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new boolean column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3928875ef0ceb18a51c1061be3eb3a00}\index{Blueprint@{Blueprint}!build@{build}}
+\index{build@{build}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3928875ef0ceb18a51c1061be3eb3a00} 
+build (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Execute the blueprint against the database.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a71a0250916acf2df47d2a1aaaee36f7e}\index{Blueprint@{Blueprint}!char@{char}}
+\index{char@{char}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{char()}{char()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a71a0250916acf2df47d2a1aaaee36f7e} 
+char (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$length}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new char column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aaa9f160000e06f659ba93637cd16e685}\index{Blueprint@{Blueprint}!charset@{charset}}
+\index{charset@{charset}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{charset()}{charset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aaa9f160000e06f659ba93637cd16e685} 
+charset (\begin{DoxyParamCaption}\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+Specify the character set that should be used for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5c783347ef5bcb90f610c1d95cf0389f}\index{Blueprint@{Blueprint}!collation@{collation}}
+\index{collation@{collation}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{collation()}{collation()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5c783347ef5bcb90f610c1d95cf0389f} 
+collation (\begin{DoxyParamCaption}\item[{}]{\$collation}{}\end{DoxyParamCaption})}
+
+Specify the collation that should be used for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$collation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af93d02de3cd6685dfb494c4fc4e10aa5}\index{Blueprint@{Blueprint}!commandsNamed@{commandsNamed}}
+\index{commandsNamed@{commandsNamed}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{commandsNamed()}{commandsNamed()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af93d02de3cd6685dfb494c4fc4e10aa5} 
+commands\+Named (\begin{DoxyParamCaption}\item[{array}]{\$names}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get all of the commands matching the given names.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000112}{Deprecated}}]Will be removed in a future Laravel version.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$names} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_acbfa9874100f9bc0b8f698120156e2b7}\index{Blueprint@{Blueprint}!comment@{comment}}
+\index{comment@{comment}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{comment()}{comment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_acbfa9874100f9bc0b8f698120156e2b7} 
+comment (\begin{DoxyParamCaption}\item[{}]{\$comment}{}\end{DoxyParamCaption})}
+
+Add a comment to the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$comment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a7c179dc17167fcf87d0a875815e05005}\index{Blueprint@{Blueprint}!computed@{computed}}
+\index{computed@{computed}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{computed()}{computed()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a7c179dc17167fcf87d0a875815e05005} 
+computed (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$expression}{}\end{DoxyParamCaption})}
+
+Create a new generated, computed column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+string & {\em \$expression} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a435e7d7525d4bcd0ed5e34a469f3adf6}\index{Blueprint@{Blueprint}!create@{create}}
+\index{create@{create}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a435e7d7525d4bcd0ed5e34a469f3adf6} 
+create (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that the table needs to be created.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af9ba17945bfd8f0b0e70d4701c6ed7f1}\index{Blueprint@{Blueprint}!createCommand@{createCommand}}
+\index{createCommand@{createCommand}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{createCommand()}{createCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af9ba17945bfd8f0b0e70d4701c6ed7f1} 
+create\+Command (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new Fluent command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a7493bf6f2fb9a00347d264e00d9894a1}\index{Blueprint@{Blueprint}!createIndexName@{createIndexName}}
+\index{createIndexName@{createIndexName}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{createIndexName()}{createIndexName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a7493bf6f2fb9a00347d264e00d9894a1} 
+create\+Index\+Name (\begin{DoxyParamCaption}\item[{}]{\$type}{, }\item[{array}]{\$columns}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a default index name for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3b07466072e9149acf76859fed2dc0fb}\index{Blueprint@{Blueprint}!creating@{creating}}
+\index{creating@{creating}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{creating()}{creating()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3b07466072e9149acf76859fed2dc0fb} 
+creating (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the blueprint has a create command.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6456b057aa56d0c0f3d698c9c54fe853}\index{Blueprint@{Blueprint}!date@{date}}
+\index{date@{date}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6456b057aa56d0c0f3d698c9c54fe853} 
+date (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new date column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_afef3a061ab497911cfd0f9e3ddb3a8c3}\index{Blueprint@{Blueprint}!dateTime@{dateTime}}
+\index{dateTime@{dateTime}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dateTime()}{dateTime()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_afef3a061ab497911cfd0f9e3ddb3a8c3} 
+date\+Time (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new date-\/time column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a520b5ab6b5fcc2f3858d4dd1a3901e36}\index{Blueprint@{Blueprint}!datetimes@{datetimes}}
+\index{datetimes@{datetimes}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{datetimes()}{datetimes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a520b5ab6b5fcc2f3858d4dd1a3901e36} 
+datetimes (\begin{DoxyParamCaption}\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add creation and update datetime columns to the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a239354f1a7642dc5ef4acdd4dd03ac45}\index{Blueprint@{Blueprint}!dateTimeTz@{dateTimeTz}}
+\index{dateTimeTz@{dateTimeTz}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dateTimeTz()}{dateTimeTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a239354f1a7642dc5ef4acdd4dd03ac45} 
+date\+Time\+Tz (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new date-\/time column (with time zone) on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac302163de5840761210e03f1ab4cc102}\index{Blueprint@{Blueprint}!decimal@{decimal}}
+\index{decimal@{decimal}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{decimal()}{decimal()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac302163de5840761210e03f1ab4cc102} 
+decimal (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$total}{ = {\ttfamily 8}, }\item[{}]{\$places}{ = {\ttfamily 2}}\end{DoxyParamCaption})}
+
+Create a new decimal column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int & {\em \$total} & \\
+\hline
+int & {\em \$places} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6a62b75b725f219f14673e0c36d4d389}\index{Blueprint@{Blueprint}!defaultTimePrecision@{defaultTimePrecision}}
+\index{defaultTimePrecision@{defaultTimePrecision}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{defaultTimePrecision()}{defaultTimePrecision()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6a62b75b725f219f14673e0c36d4d389} 
+default\+Time\+Precision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the default time precision. \Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac8b755a25443a431924210f985f7b0aa}\index{Blueprint@{Blueprint}!double@{double}}
+\index{double@{double}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{double()}{double()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac8b755a25443a431924210f985f7b0aa} 
+double (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new double column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aeb639e5b2b713ed87ab8f2033af98ae8}\index{Blueprint@{Blueprint}!drop@{drop}}
+\index{drop@{drop}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{drop()}{drop()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aeb639e5b2b713ed87ab8f2033af98ae8} 
+drop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that the table should be dropped.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae34216318f8a10a242290e57fc29816a}\index{Blueprint@{Blueprint}!dropColumn@{dropColumn}}
+\index{dropColumn@{dropColumn}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropColumn()}{dropColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae34216318f8a10a242290e57fc29816a} 
+drop\+Column (\begin{DoxyParamCaption}\item[{}]{\$columns}{}\end{DoxyParamCaption})}
+
+Indicate that the given columns should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | mixed & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_abc9d4118ffca509920c8d8821ff4fd28}\index{Blueprint@{Blueprint}!dropConstrainedForeignId@{dropConstrainedForeignId}}
+\index{dropConstrainedForeignId@{dropConstrainedForeignId}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropConstrainedForeignId()}{dropConstrainedForeignId()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_abc9d4118ffca509920c8d8821ff4fd28} 
+drop\+Constrained\+Foreign\+Id (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Indicate that the given column and foreign key should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae927bc031562b346e5d21a7584675c60}\index{Blueprint@{Blueprint}!dropConstrainedForeignIdFor@{dropConstrainedForeignIdFor}}
+\index{dropConstrainedForeignIdFor@{dropConstrainedForeignIdFor}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropConstrainedForeignIdFor()}{dropConstrainedForeignIdFor()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae927bc031562b346e5d21a7584675c60} 
+drop\+Constrained\+Foreign\+Id\+For (\begin{DoxyParamCaption}\item[{}]{\$model}{, }\item[{}]{\$column}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Indicate that the given foreign key should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model | string & {\em \$model} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1cfc0b66d0c499052b913ee474941189}\index{Blueprint@{Blueprint}!dropForeign@{dropForeign}}
+\index{dropForeign@{dropForeign}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropForeign()}{dropForeign()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1cfc0b66d0c499052b913ee474941189} 
+drop\+Foreign (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})}
+
+Indicate that the given foreign key should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a77cfb78f6bec4c027aca6b0e64b58100}\index{Blueprint@{Blueprint}!dropForeignIdFor@{dropForeignIdFor}}
+\index{dropForeignIdFor@{dropForeignIdFor}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropForeignIdFor()}{dropForeignIdFor()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a77cfb78f6bec4c027aca6b0e64b58100} 
+drop\+Foreign\+Id\+For (\begin{DoxyParamCaption}\item[{}]{\$model}{, }\item[{}]{\$column}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Indicate that the given foreign key should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model | string & {\em \$model} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad4d3cf9421e538e545b47c31af469257}\index{Blueprint@{Blueprint}!dropFullText@{dropFullText}}
+\index{dropFullText@{dropFullText}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropFullText()}{dropFullText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad4d3cf9421e538e545b47c31af469257} 
+drop\+Full\+Text (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})}
+
+Indicate that the given fulltext index should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a69c4145b0e184ce708a8d1c15fa13775}\index{Blueprint@{Blueprint}!dropIfExists@{dropIfExists}}
+\index{dropIfExists@{dropIfExists}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropIfExists()}{dropIfExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a69c4145b0e184ce708a8d1c15fa13775} 
+drop\+If\+Exists (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that the table should be dropped if it exists.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa6814906c90faade909731c5e451fdd9}\index{Blueprint@{Blueprint}!dropIndex@{dropIndex}}
+\index{dropIndex@{dropIndex}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropIndex()}{dropIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa6814906c90faade909731c5e451fdd9} 
+drop\+Index (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})}
+
+Indicate that the given index should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a17ee340b644e9d64e047734b20949e66}\index{Blueprint@{Blueprint}!dropIndexCommand@{dropIndexCommand}}
+\index{dropIndexCommand@{dropIndexCommand}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropIndexCommand()}{dropIndexCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a17ee340b644e9d64e047734b20949e66} 
+drop\+Index\+Command (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{}]{\$type}{, }\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new drop index command on the blueprint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+string & {\em \$type} & \\
+\hline
+string | array & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ada6a26ead1cd9bf12a58771994539e0a}\index{Blueprint@{Blueprint}!dropMorphs@{dropMorphs}}
+\index{dropMorphs@{dropMorphs}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropMorphs()}{dropMorphs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ada6a26ead1cd9bf12a58771994539e0a} 
+drop\+Morphs (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$index\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Indicate that the polymorphic columns should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$index\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6e6dc94e2e93d12f2dde5ccda485a884}\index{Blueprint@{Blueprint}!dropPrimary@{dropPrimary}}
+\index{dropPrimary@{dropPrimary}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropPrimary()}{dropPrimary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6e6dc94e2e93d12f2dde5ccda485a884} 
+drop\+Primary (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Indicate that the given primary key should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array | null & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9db3b6dce3636ba40c6a6d90dd1f849f}\index{Blueprint@{Blueprint}!dropRememberToken@{dropRememberToken}}
+\index{dropRememberToken@{dropRememberToken}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropRememberToken()}{dropRememberToken()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9db3b6dce3636ba40c6a6d90dd1f849f} 
+drop\+Remember\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that the remember token column should be dropped.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af0f6441fa48bd8b80faa4887fc295351}\index{Blueprint@{Blueprint}!dropSoftDeletes@{dropSoftDeletes}}
+\index{dropSoftDeletes@{dropSoftDeletes}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropSoftDeletes()}{dropSoftDeletes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af0f6441fa48bd8b80faa4887fc295351} 
+drop\+Soft\+Deletes (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}deleted\+\_\+at\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Indicate that the soft delete column should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a496f8b928082f4b88db6ea784674d6b0}\index{Blueprint@{Blueprint}!dropSoftDeletesTz@{dropSoftDeletesTz}}
+\index{dropSoftDeletesTz@{dropSoftDeletesTz}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropSoftDeletesTz()}{dropSoftDeletesTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a496f8b928082f4b88db6ea784674d6b0} 
+drop\+Soft\+Deletes\+Tz (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}deleted\+\_\+at\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Indicate that the soft delete column should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8771167d5eb0ea606c4ef3f4e60d607b}\index{Blueprint@{Blueprint}!dropSpatialIndex@{dropSpatialIndex}}
+\index{dropSpatialIndex@{dropSpatialIndex}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropSpatialIndex()}{dropSpatialIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8771167d5eb0ea606c4ef3f4e60d607b} 
+drop\+Spatial\+Index (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})}
+
+Indicate that the given spatial index should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_adbcc971adbdc128bdcc218ef40fdaa6d}\index{Blueprint@{Blueprint}!dropTimestamps@{dropTimestamps}}
+\index{dropTimestamps@{dropTimestamps}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropTimestamps()}{dropTimestamps()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_adbcc971adbdc128bdcc218ef40fdaa6d} 
+drop\+Timestamps (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that the timestamp columns should be dropped.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9af6f3034f508c1f7d1be9e74f002692}\index{Blueprint@{Blueprint}!dropTimestampsTz@{dropTimestampsTz}}
+\index{dropTimestampsTz@{dropTimestampsTz}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropTimestampsTz()}{dropTimestampsTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9af6f3034f508c1f7d1be9e74f002692} 
+drop\+Timestamps\+Tz (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that the timestamp columns should be dropped.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9d80f77aabb3f53bd01f08862d406b90}\index{Blueprint@{Blueprint}!dropUnique@{dropUnique}}
+\index{dropUnique@{dropUnique}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{dropUnique()}{dropUnique()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9d80f77aabb3f53bd01f08862d406b90} 
+drop\+Unique (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})}
+
+Indicate that the given unique key should be dropped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab9248a6e79072cb7ee1c618ec6fd8f4a}\index{Blueprint@{Blueprint}!engine@{engine}}
+\index{engine@{engine}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{engine()}{engine()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab9248a6e79072cb7ee1c618ec6fd8f4a} 
+engine (\begin{DoxyParamCaption}\item[{}]{\$engine}{}\end{DoxyParamCaption})}
+
+Specify the storage engine that should be used for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$engine} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a58954a40a281dd32a27d86d6e02c2d1e}\index{Blueprint@{Blueprint}!ensureCommandsAreValid@{ensureCommandsAreValid}}
+\index{ensureCommandsAreValid@{ensureCommandsAreValid}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{ensureCommandsAreValid()}{ensureCommandsAreValid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a58954a40a281dd32a27d86d6e02c2d1e} 
+ensure\+Commands\+Are\+Valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the commands on the blueprint are valid for the connection type.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Bad\+Method\+Call\+Exception \Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6d464a3820cd6708aaef691966ea44c0}\index{Blueprint@{Blueprint}!enum@{enum}}
+\index{enum@{enum}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{enum()}{enum()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6d464a3820cd6708aaef691966ea44c0} 
+enum (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{array}]{\$allowed}{}\end{DoxyParamCaption})}
+
+Create a new enum column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+array & {\em \$allowed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_acb7b1684447e31f2ae6efd48f5401b9a}\index{Blueprint@{Blueprint}!float@{float}}
+\index{float@{float}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{float()}{float()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_acb7b1684447e31f2ae6efd48f5401b9a} 
+float (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$precision}{ = {\ttfamily 53}}\end{DoxyParamCaption})}
+
+Create a new float column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0ab388ee1039e7569dccfeb15680e61a}\index{Blueprint@{Blueprint}!foreign@{foreign}}
+\index{foreign@{foreign}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{foreign()}{foreign()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0ab388ee1039e7569dccfeb15680e61a} 
+foreign (\begin{DoxyParamCaption}\item[{}]{\$columns}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Specify a foreign key for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$columns} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Foreign\+Key\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0a65428af6f5e7bf8175dfc09da7fe8f}\index{Blueprint@{Blueprint}!foreignId@{foreignId}}
+\index{foreignId@{foreignId}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{foreignId()}{foreignId()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0a65428af6f5e7bf8175dfc09da7fe8f} 
+foreign\+Id (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new unsigned big integer (8-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Foreign\+Id\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9390978a25b99837ff0492fbe83336dd}\index{Blueprint@{Blueprint}!foreignIdFor@{foreignIdFor}}
+\index{foreignIdFor@{foreignIdFor}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{foreignIdFor()}{foreignIdFor()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9390978a25b99837ff0492fbe83336dd} 
+foreign\+Id\+For (\begin{DoxyParamCaption}\item[{}]{\$model}{, }\item[{}]{\$column}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a foreign ID column for the given model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model | string & {\em \$model} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Foreign\+Id\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af1e61a961616b1a3757d153352c1949e}\index{Blueprint@{Blueprint}!foreignUlid@{foreignUlid}}
+\index{foreignUlid@{foreignUlid}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{foreignUlid()}{foreignUlid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af1e61a961616b1a3757d153352c1949e} 
+foreign\+Ulid (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$length}{ = {\ttfamily 26}}\end{DoxyParamCaption})}
+
+Create a new ULID column on the table with a foreign key constraint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Foreign\+Id\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2dc9e37452902b9263120bf835b9457d}\index{Blueprint@{Blueprint}!foreignUuid@{foreignUuid}}
+\index{foreignUuid@{foreignUuid}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{foreignUuid()}{foreignUuid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2dc9e37452902b9263120bf835b9457d} 
+foreign\+Uuid (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new UUID column on the table with a foreign key constraint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Foreign\+Id\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a273247020aac8764bf7863bdb3590c8d}\index{Blueprint@{Blueprint}!fullText@{fullText}}
+\index{fullText@{fullText}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{fullText()}{fullText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a273247020aac8764bf7863bdb3590c8d} 
+full\+Text (\begin{DoxyParamCaption}\item[{}]{\$columns}{, }\item[{}]{\$name}{ = {\ttfamily null}, }\item[{}]{\$algorithm}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Specify a fulltext index for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$columns} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+string | null & {\em \$algorithm} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Index\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aafe74a63e7a0e1fd18a9d0ea14a32b91}\index{Blueprint@{Blueprint}!geography@{geography}}
+\index{geography@{geography}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{geography()}{geography()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aafe74a63e7a0e1fd18a9d0ea14a32b91} 
+geography (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$subtype}{ = {\ttfamily null}, }\item[{}]{\$srid}{ = {\ttfamily 4326}}\end{DoxyParamCaption})}
+
+Create a new geography column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+string | null & {\em \$subtype} & \\
+\hline
+int & {\em \$srid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad11946ee2535c2b1921622659536d946}\index{Blueprint@{Blueprint}!geometry@{geometry}}
+\index{geometry@{geometry}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{geometry()}{geometry()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad11946ee2535c2b1921622659536d946} 
+geometry (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$subtype}{ = {\ttfamily null}, }\item[{}]{\$srid}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Create a new geometry column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+string | null & {\em \$subtype} & \\
+\hline
+int & {\em \$srid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a551ed38a46419762059f01956684fd2d}\index{Blueprint@{Blueprint}!getAddedColumns@{getAddedColumns}}
+\index{getAddedColumns@{getAddedColumns}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{getAddedColumns()}{getAddedColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a551ed38a46419762059f01956684fd2d} 
+get\+Added\+Columns (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the columns on the blueprint that should be added.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2a1816b423720a0937cdf39f4c831675}\index{Blueprint@{Blueprint}!getChangedColumns@{getChangedColumns}}
+\index{getChangedColumns@{getChangedColumns}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{getChangedColumns()}{getChangedColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2a1816b423720a0937cdf39f4c831675} 
+get\+Changed\+Columns (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the columns on the blueprint that should be changed.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000114}{Deprecated}}]Will be removed in a future Laravel version.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6287262cb9628d7a89d8fc16dcb51177}\index{Blueprint@{Blueprint}!getColumns@{getColumns}}
+\index{getColumns@{getColumns}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{getColumns()}{getColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6287262cb9628d7a89d8fc16dcb51177} 
+get\+Columns (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the columns on the blueprint.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a82f3474cee57fff1095b279dc4da9fc1}\index{Blueprint@{Blueprint}!getCommands@{getCommands}}
+\index{getCommands@{getCommands}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{getCommands()}{getCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a82f3474cee57fff1095b279dc4da9fc1} 
+get\+Commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the commands on the blueprint.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a7a333affb97cf092d50f3e59edaa9066}\index{Blueprint@{Blueprint}!getPrefix@{getPrefix}}
+\index{getPrefix@{getPrefix}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{getPrefix()}{getPrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a7a333affb97cf092d50f3e59edaa9066} 
+get\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the table prefix.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000113}{Deprecated}}]Use DB\+::get\+Table\+Prefix()\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_afbf787ced76807989fb3093e1772c5a1}\index{Blueprint@{Blueprint}!getState@{getState}}
+\index{getState@{getState}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_afbf787ced76807989fb3093e1772c5a1} 
+get\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the state of the blueprint.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint\+State 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa0dd4bf57d57bc2a3697e40c9f6bddce}\index{Blueprint@{Blueprint}!getTable@{getTable}}
+\index{getTable@{getTable}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{getTable()}{getTable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa0dd4bf57d57bc2a3697e40c9f6bddce} 
+get\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the table the blueprint describes.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a08f9e3e6a7fcf32664e0e5d4ea2e56ac}\index{Blueprint@{Blueprint}!id@{id}}
+\index{id@{id}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a08f9e3e6a7fcf32664e0e5d4ea2e56ac} 
+id (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}id\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new auto-\/incrementing big integer (8-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a14c11ea781af98b900cf98f189931861}\index{Blueprint@{Blueprint}!increments@{increments}}
+\index{increments@{increments}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{increments()}{increments()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a14c11ea781af98b900cf98f189931861} 
+increments (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new auto-\/incrementing integer (4-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c}\index{Blueprint@{Blueprint}!index@{index}}
+\index{index@{index}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1ca953bf89d58013c3d14eef7d62061c} 
+index (\begin{DoxyParamCaption}\item[{}]{\$columns}{, }\item[{}]{\$name}{ = {\ttfamily null}, }\item[{}]{\$algorithm}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Specify an index for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$columns} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+string | null & {\em \$algorithm} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Index\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a11870ed7b53eb4c45cd44e5281c8399f}\index{Blueprint@{Blueprint}!indexCommand@{indexCommand}}
+\index{indexCommand@{indexCommand}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{indexCommand()}{indexCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a11870ed7b53eb4c45cd44e5281c8399f} 
+index\+Command (\begin{DoxyParamCaption}\item[{}]{\$type}{, }\item[{}]{\$columns}{, }\item[{}]{\$index}{, }\item[{}]{\$algorithm}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add a new index command to the blueprint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+string | array & {\em \$columns} & \\
+\hline
+string & {\em \$index} & \\
+\hline
+string | null & {\em \$algorithm} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a288616b000dd6a2ae7455167e0c9d6f5}\index{Blueprint@{Blueprint}!innoDb@{innoDb}}
+\index{innoDb@{innoDb}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{innoDb()}{innoDb()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a288616b000dd6a2ae7455167e0c9d6f5} 
+inno\+Db (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Specify that the Inno\+DB storage engine should be used for the table (My\+SQL only).
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1c6488c9dff3d2b82c449670b688aaaf}\index{Blueprint@{Blueprint}!integer@{integer}}
+\index{integer@{integer}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{integer()}{integer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1c6488c9dff3d2b82c449670b688aaaf} 
+integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}, }\item[{}]{\$unsigned}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new integer (4-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+bool & {\em \$unsigned} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad3e82c7fe7998732dfb2e12ce7eca3dc}\index{Blueprint@{Blueprint}!integerIncrements@{integerIncrements}}
+\index{integerIncrements@{integerIncrements}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{integerIncrements()}{integerIncrements()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad3e82c7fe7998732dfb2e12ce7eca3dc} 
+integer\+Increments (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new auto-\/incrementing integer (4-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2f41ec7c0bb3f144c53d536033fb8b94}\index{Blueprint@{Blueprint}!ipAddress@{ipAddress}}
+\index{ipAddress@{ipAddress}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{ipAddress()}{ipAddress()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2f41ec7c0bb3f144c53d536033fb8b94} 
+ip\+Address (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}ip\+\_\+address\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new IP address column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a83c154a24e5c367e41eb90117263b36e}\index{Blueprint@{Blueprint}!json@{json}}
+\index{json@{json}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a83c154a24e5c367e41eb90117263b36e} 
+json (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new json column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a38f659ae9fa2b3d7cf98381f724e90a6}\index{Blueprint@{Blueprint}!jsonb@{jsonb}}
+\index{jsonb@{jsonb}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{jsonb()}{jsonb()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a38f659ae9fa2b3d7cf98381f724e90a6} 
+jsonb (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new jsonb column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0c68a370343ee15ac43a336e5d98f997}\index{Blueprint@{Blueprint}!longText@{longText}}
+\index{longText@{longText}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{longText()}{longText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0c68a370343ee15ac43a336e5d98f997} 
+long\+Text (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new long text column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2125e967c06a3ea09647b31672ad7e12}\index{Blueprint@{Blueprint}!macAddress@{macAddress}}
+\index{macAddress@{macAddress}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{macAddress()}{macAddress()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a2125e967c06a3ea09647b31672ad7e12} 
+mac\+Address (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}mac\+\_\+address\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new MAC address column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0025e8801c8b0d997a90dd1e3e7d1176}\index{Blueprint@{Blueprint}!mediumIncrements@{mediumIncrements}}
+\index{mediumIncrements@{mediumIncrements}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{mediumIncrements()}{mediumIncrements()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0025e8801c8b0d997a90dd1e3e7d1176} 
+medium\+Increments (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new auto-\/incrementing medium integer (3-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae5d7a85a306aeef1057803c29fcf93d8}\index{Blueprint@{Blueprint}!mediumInteger@{mediumInteger}}
+\index{mediumInteger@{mediumInteger}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{mediumInteger()}{mediumInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae5d7a85a306aeef1057803c29fcf93d8} 
+medium\+Integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}, }\item[{}]{\$unsigned}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new medium integer (3-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+bool & {\em \$unsigned} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af6335024efde5713aa402579376b6890}\index{Blueprint@{Blueprint}!mediumText@{mediumText}}
+\index{mediumText@{mediumText}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{mediumText()}{mediumText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af6335024efde5713aa402579376b6890} 
+medium\+Text (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new medium text column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab445588975c91ea900e7fd50b5614b27}\index{Blueprint@{Blueprint}!morphs@{morphs}}
+\index{morphs@{morphs}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{morphs()}{morphs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab445588975c91ea900e7fd50b5614b27} 
+morphs (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$index\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add the proper columns for a polymorphic table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$index\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a72253064aa132f25e77eb74316f9dc97}\index{Blueprint@{Blueprint}!nullableMorphs@{nullableMorphs}}
+\index{nullableMorphs@{nullableMorphs}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{nullableMorphs()}{nullableMorphs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a72253064aa132f25e77eb74316f9dc97} 
+nullable\+Morphs (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$index\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add nullable columns for a polymorphic table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$index\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9766563eaed42a76ce1353fc4098ad2a}\index{Blueprint@{Blueprint}!nullableNumericMorphs@{nullableNumericMorphs}}
+\index{nullableNumericMorphs@{nullableNumericMorphs}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{nullableNumericMorphs()}{nullableNumericMorphs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9766563eaed42a76ce1353fc4098ad2a} 
+nullable\+Numeric\+Morphs (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$index\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add nullable columns for a polymorphic table using numeric IDs (incremental).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$index\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3dfb0053bb2e1fe7dc13d16be4ef1cc9}\index{Blueprint@{Blueprint}!nullableTimestamps@{nullableTimestamps}}
+\index{nullableTimestamps@{nullableTimestamps}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{nullableTimestamps()}{nullableTimestamps()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3dfb0053bb2e1fe7dc13d16be4ef1cc9} 
+nullable\+Timestamps (\begin{DoxyParamCaption}\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add nullable creation and update timestamps to the table.
+
+Alias for self\+::timestamps().
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a85babf5d657e7133cbf04d32fee94e81}\index{Blueprint@{Blueprint}!nullableUlidMorphs@{nullableUlidMorphs}}
+\index{nullableUlidMorphs@{nullableUlidMorphs}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{nullableUlidMorphs()}{nullableUlidMorphs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a85babf5d657e7133cbf04d32fee94e81} 
+nullable\+Ulid\+Morphs (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$index\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add nullable columns for a polymorphic table using ULIDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$index\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6f3ce8ea7162b358abf75e3d619adac9}\index{Blueprint@{Blueprint}!nullableUuidMorphs@{nullableUuidMorphs}}
+\index{nullableUuidMorphs@{nullableUuidMorphs}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{nullableUuidMorphs()}{nullableUuidMorphs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6f3ce8ea7162b358abf75e3d619adac9} 
+nullable\+Uuid\+Morphs (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$index\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add nullable columns for a polymorphic table using UUIDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$index\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a398197a2e387f4a68cb0e841372a34a1}\index{Blueprint@{Blueprint}!numericMorphs@{numericMorphs}}
+\index{numericMorphs@{numericMorphs}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{numericMorphs()}{numericMorphs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a398197a2e387f4a68cb0e841372a34a1} 
+numeric\+Morphs (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$index\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add the proper columns for a polymorphic table using numeric IDs (incremental).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$index\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a11a08b2853323426ca9414f7304c4193}\index{Blueprint@{Blueprint}!primary@{primary}}
+\index{primary@{primary}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{primary()}{primary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a11a08b2853323426ca9414f7304c4193} 
+primary (\begin{DoxyParamCaption}\item[{}]{\$columns}{, }\item[{}]{\$name}{ = {\ttfamily null}, }\item[{}]{\$algorithm}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Specify the primary key(s) for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$columns} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+string | null & {\em \$algorithm} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Index\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9d36d605683a70be174ced26b02ad3d5}\index{Blueprint@{Blueprint}!rawColumn@{rawColumn}}
+\index{rawColumn@{rawColumn}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{rawColumn()}{rawColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9d36d605683a70be174ced26b02ad3d5} 
+raw\+Column (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$definition}{}\end{DoxyParamCaption})}
+
+Create a new custom column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+string & {\em \$definition} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8c5d1653ac633232a34a418db11efb4b}\index{Blueprint@{Blueprint}!rawIndex@{rawIndex}}
+\index{rawIndex@{rawIndex}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{rawIndex()}{rawIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8c5d1653ac633232a34a418db11efb4b} 
+raw\+Index (\begin{DoxyParamCaption}\item[{}]{\$expression}{, }\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Specify a raw index for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expression} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Index\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_acfffc323738b5cd25c43efa0c4c923e0}\index{Blueprint@{Blueprint}!rememberToken@{rememberToken}}
+\index{rememberToken@{rememberToken}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{rememberToken()}{rememberToken()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_acfffc323738b5cd25c43efa0c4c923e0} 
+remember\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Add the {\ttfamily remember\+\_\+token} column to the table.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9b9d5c303403ad0a4ee54b2a08e2779b}\index{Blueprint@{Blueprint}!removeColumn@{removeColumn}}
+\index{removeColumn@{removeColumn}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{removeColumn()}{removeColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9b9d5c303403ad0a4ee54b2a08e2779b} 
+remove\+Column (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Remove a column from the schema blueprint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9a18595b014544f70343c99a63ff8520}\index{Blueprint@{Blueprint}!rename@{rename}}
+\index{rename@{rename}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{rename()}{rename()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9a18595b014544f70343c99a63ff8520} 
+rename (\begin{DoxyParamCaption}\item[{}]{\$to}{}\end{DoxyParamCaption})}
+
+Rename the table to a given name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a340335a9235fe901c748730b204a6b59}\index{Blueprint@{Blueprint}!renameColumn@{renameColumn}}
+\index{renameColumn@{renameColumn}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{renameColumn()}{renameColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a340335a9235fe901c748730b204a6b59} 
+rename\+Column (\begin{DoxyParamCaption}\item[{}]{\$from}{, }\item[{}]{\$to}{}\end{DoxyParamCaption})}
+
+Indicate that the given columns should be renamed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & \\
+\hline
+string & {\em \$to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a4f7e13ee9868cf635ce9d97a820eac0b}\index{Blueprint@{Blueprint}!renameIndex@{renameIndex}}
+\index{renameIndex@{renameIndex}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{renameIndex()}{renameIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a4f7e13ee9868cf635ce9d97a820eac0b} 
+rename\+Index (\begin{DoxyParamCaption}\item[{}]{\$from}{, }\item[{}]{\$to}{}\end{DoxyParamCaption})}
+
+Indicate that the given indexes should be renamed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & \\
+\hline
+string & {\em \$to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6c33d83fe10788578ae8f986629f5364}\index{Blueprint@{Blueprint}!set@{set}}
+\index{set@{set}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6c33d83fe10788578ae8f986629f5364} 
+set (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{array}]{\$allowed}{}\end{DoxyParamCaption})}
+
+Create a new set column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+array & {\em \$allowed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aaba66f7ea20ea8986f8ddef1ed7d5acd}\index{Blueprint@{Blueprint}!smallIncrements@{smallIncrements}}
+\index{smallIncrements@{smallIncrements}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{smallIncrements()}{smallIncrements()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aaba66f7ea20ea8986f8ddef1ed7d5acd} 
+small\+Increments (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new auto-\/incrementing small integer (2-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1540efa10489e2c06050305acfcedef8}\index{Blueprint@{Blueprint}!smallInteger@{smallInteger}}
+\index{smallInteger@{smallInteger}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{smallInteger()}{smallInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1540efa10489e2c06050305acfcedef8} 
+small\+Integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}, }\item[{}]{\$unsigned}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new small integer (2-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+bool & {\em \$unsigned} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aebc4a0c7046edc1a945a8a0fb70ed1dd}\index{Blueprint@{Blueprint}!softDeletes@{softDeletes}}
+\index{softDeletes@{softDeletes}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{softDeletes()}{softDeletes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aebc4a0c7046edc1a945a8a0fb70ed1dd} 
+soft\+Deletes (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}deleted\+\_\+at\textquotesingle{}}, }\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add a "{}deleted at"{} timestamp for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3337b96f81d0630e9c8dbb6ab7f743c5}\index{Blueprint@{Blueprint}!softDeletesDatetime@{softDeletesDatetime}}
+\index{softDeletesDatetime@{softDeletesDatetime}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{softDeletesDatetime()}{softDeletesDatetime()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a3337b96f81d0630e9c8dbb6ab7f743c5} 
+soft\+Deletes\+Datetime (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}deleted\+\_\+at\textquotesingle{}}, }\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add a "{}deleted at"{} datetime column to the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a013fb090f59ecd7f8e58e2ca2aa8771c}\index{Blueprint@{Blueprint}!softDeletesTz@{softDeletesTz}}
+\index{softDeletesTz@{softDeletesTz}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{softDeletesTz()}{softDeletesTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a013fb090f59ecd7f8e58e2ca2aa8771c} 
+soft\+Deletes\+Tz (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}deleted\+\_\+at\textquotesingle{}}, }\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add a "{}deleted at"{} timestamp\+Tz for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a55a685a65deb19067eeaf086c7acff45}\index{Blueprint@{Blueprint}!spatialIndex@{spatialIndex}}
+\index{spatialIndex@{spatialIndex}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{spatialIndex()}{spatialIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a55a685a65deb19067eeaf086c7acff45} 
+spatial\+Index (\begin{DoxyParamCaption}\item[{}]{\$columns}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Specify a spatial index for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$columns} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Index\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9de057d97e45c618a53c5c8191f0daa0}\index{Blueprint@{Blueprint}!string@{string}}
+\index{string@{string}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{string()}{string()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9de057d97e45c618a53c5c8191f0daa0} 
+string (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$length}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new string column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition
+\end{DoxyReturn}
+The table the blueprint describes.
+
+The storage engine that should be used for the table.
+
+The default character set that should be used for the table.
+
+The collation that should be used for the table.
+
+The column to add new columns after. \Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9dc556227b438deeb7c3ca459930d9cb}\index{Blueprint@{Blueprint}!temporary@{temporary}}
+\index{temporary@{temporary}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{temporary()}{temporary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9dc556227b438deeb7c3ca459930d9cb} 
+temporary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that the table needs to be temporary.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aeaf5d09eb992d006f7d9c43e04dc421f}\index{Blueprint@{Blueprint}!text@{text}}
+\index{text@{text}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aeaf5d09eb992d006f7d9c43e04dc421f} 
+text (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new text column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a357dedec33f46118e37c7bb16ac1b703}\index{Blueprint@{Blueprint}!time@{time}}
+\index{time@{time}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a357dedec33f46118e37c7bb16ac1b703} 
+time (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new time column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab65b33eb471fa3899fc5c2d3c1a4886f}\index{Blueprint@{Blueprint}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{timestamp()}{timestamp()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab65b33eb471fa3899fc5c2d3c1a4886f} 
+timestamp (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new timestamp column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6c7d2f77432d5d0a7326681a12772a5e}\index{Blueprint@{Blueprint}!timestamps@{timestamps}}
+\index{timestamps@{timestamps}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{timestamps()}{timestamps()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6c7d2f77432d5d0a7326681a12772a5e} 
+timestamps (\begin{DoxyParamCaption}\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add nullable creation and update timestamps to the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6fb1958a86d44f695fc47f5bddd1dd91}\index{Blueprint@{Blueprint}!timestampsTz@{timestampsTz}}
+\index{timestampsTz@{timestampsTz}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{timestampsTz()}{timestampsTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6fb1958a86d44f695fc47f5bddd1dd91} 
+timestamps\+Tz (\begin{DoxyParamCaption}\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add creation and update timestamp\+Tz columns to the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aec1ad8ca1851cf2cf524aa9e9b8f38aa}\index{Blueprint@{Blueprint}!timestampTz@{timestampTz}}
+\index{timestampTz@{timestampTz}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{timestampTz()}{timestampTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aec1ad8ca1851cf2cf524aa9e9b8f38aa} 
+timestamp\+Tz (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new timestamp (with time zone) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa90ee5640f92ec5164a6b70202a60483}\index{Blueprint@{Blueprint}!timeTz@{timeTz}}
+\index{timeTz@{timeTz}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{timeTz()}{timeTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aa90ee5640f92ec5164a6b70202a60483} 
+time\+Tz (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new time column (with time zone) on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8af5da3a5c295fcc65c1f8f0249d2c00}\index{Blueprint@{Blueprint}!tinyIncrements@{tinyIncrements}}
+\index{tinyIncrements@{tinyIncrements}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{tinyIncrements()}{tinyIncrements()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8af5da3a5c295fcc65c1f8f0249d2c00} 
+tiny\+Increments (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new auto-\/incrementing tiny integer (1-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9dd0bd48dfe8e82d17591272a0e90e26}\index{Blueprint@{Blueprint}!tinyInteger@{tinyInteger}}
+\index{tinyInteger@{tinyInteger}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{tinyInteger()}{tinyInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9dd0bd48dfe8e82d17591272a0e90e26} 
+tiny\+Integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}, }\item[{}]{\$unsigned}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new tiny integer (1-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+bool & {\em \$unsigned} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5d883d5cf4ebbd8ecaa89bd774d48685}\index{Blueprint@{Blueprint}!tinyText@{tinyText}}
+\index{tinyText@{tinyText}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{tinyText()}{tinyText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5d883d5cf4ebbd8ecaa89bd774d48685} 
+tiny\+Text (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new tiny text column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a63f8ba861f1ecabe359d454fde60d395}\index{Blueprint@{Blueprint}!toSql@{toSql}}
+\index{toSql@{toSql}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{toSql()}{toSql()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a63f8ba861f1ecabe359d454fde60d395} 
+to\+Sql (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the raw SQL statements for the blueprint.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab8f02dc1706b68ea4ca55c5082e1ca79}\index{Blueprint@{Blueprint}!ulid@{ulid}}
+\index{ulid@{ulid}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{ulid()}{ulid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab8f02dc1706b68ea4ca55c5082e1ca79} 
+ulid (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}ulid\textquotesingle{}}, }\item[{}]{\$length}{ = {\ttfamily 26}}\end{DoxyParamCaption})}
+
+Create a new ULID column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_abbb75dece4075a05e5534ab1c4fbcbcc}\index{Blueprint@{Blueprint}!ulidMorphs@{ulidMorphs}}
+\index{ulidMorphs@{ulidMorphs}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{ulidMorphs()}{ulidMorphs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_abbb75dece4075a05e5534ab1c4fbcbcc} 
+ulid\+Morphs (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$index\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add the proper columns for a polymorphic table using ULIDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$index\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad3d15fdf4bff861e1a0bd267738e42e8}\index{Blueprint@{Blueprint}!unique@{unique}}
+\index{unique@{unique}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{unique()}{unique()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ad3d15fdf4bff861e1a0bd267738e42e8} 
+unique (\begin{DoxyParamCaption}\item[{}]{\$columns}{, }\item[{}]{\$name}{ = {\ttfamily null}, }\item[{}]{\$algorithm}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Specify a unique index for the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$columns} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+string | null & {\em \$algorithm} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Index\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5b500a4690a7fd6634925f6b6d0d7f33}\index{Blueprint@{Blueprint}!unsignedBigInteger@{unsignedBigInteger}}
+\index{unsignedBigInteger@{unsignedBigInteger}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{unsignedBigInteger()}{unsignedBigInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5b500a4690a7fd6634925f6b6d0d7f33} 
+unsigned\+Big\+Integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new unsigned big integer (8-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a17becb2b1f59d6aa87017cb84d4392aa}\index{Blueprint@{Blueprint}!unsignedInteger@{unsignedInteger}}
+\index{unsignedInteger@{unsignedInteger}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{unsignedInteger()}{unsignedInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a17becb2b1f59d6aa87017cb84d4392aa} 
+unsigned\+Integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new unsigned integer (4-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a31087cff0d135b6f59de4d401414e15a}\index{Blueprint@{Blueprint}!unsignedMediumInteger@{unsignedMediumInteger}}
+\index{unsignedMediumInteger@{unsignedMediumInteger}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{unsignedMediumInteger()}{unsignedMediumInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a31087cff0d135b6f59de4d401414e15a} 
+unsigned\+Medium\+Integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new unsigned medium integer (3-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae0c12fb38ba5c5781dd40eafd58ae27c}\index{Blueprint@{Blueprint}!unsignedSmallInteger@{unsignedSmallInteger}}
+\index{unsignedSmallInteger@{unsignedSmallInteger}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{unsignedSmallInteger()}{unsignedSmallInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae0c12fb38ba5c5781dd40eafd58ae27c} 
+unsigned\+Small\+Integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new unsigned small integer (2-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aab2921da0afe5e781d8e6b16a12da478}\index{Blueprint@{Blueprint}!unsignedTinyInteger@{unsignedTinyInteger}}
+\index{unsignedTinyInteger@{unsignedTinyInteger}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{unsignedTinyInteger()}{unsignedTinyInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aab2921da0afe5e781d8e6b16a12da478} 
+unsigned\+Tiny\+Integer (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$auto\+Increment}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new unsigned tiny integer (1-\/byte) column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$auto\+Increment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_abfb81d928f887745c7e32e3d572775cc}\index{Blueprint@{Blueprint}!uuid@{uuid}}
+\index{uuid@{uuid}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{uuid()}{uuid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_abfb81d928f887745c7e32e3d572775cc} 
+uuid (\begin{DoxyParamCaption}\item[{}]{\$column}{ = {\ttfamily \textquotesingle{}uuid\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new UUID column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0197dbea036bd98737883e78e162d6ee}\index{Blueprint@{Blueprint}!uuidMorphs@{uuidMorphs}}
+\index{uuidMorphs@{uuidMorphs}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{uuidMorphs()}{uuidMorphs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a0197dbea036bd98737883e78e162d6ee} 
+uuid\+Morphs (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$index\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add the proper columns for a polymorphic table using UUIDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$index\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac1dde83fd269c6ffd296534190f6e7bb}\index{Blueprint@{Blueprint}!vector@{vector}}
+\index{vector@{vector}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{vector()}{vector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ac1dde83fd269c6ffd296534190f6e7bb} 
+vector (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$dimensions}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new vector column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+int | null & {\em \$dimensions} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a46b08fd5a224c8c4784364e1a2c62a55}\index{Blueprint@{Blueprint}!year@{year}}
+\index{year@{year}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{year()}{year()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a46b08fd5a224c8c4784364e1a2c62a55} 
+year (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Create a new year column on the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Column\+Definition 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a335c90aa9e7c7ecca4cac38fc37d2d23}\index{Blueprint@{Blueprint}!\$after@{\$after}}
+\index{\$after@{\$after}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$after}{\$after}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a335c90aa9e7c7ecca4cac38fc37d2d23} 
+\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a6b879c6209059b223c3b2bb9d92b2065}{after}}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af10158dd74b75f1d337e83102d6b82ce}\index{Blueprint@{Blueprint}!\$charset@{\$charset}}
+\index{\$charset@{\$charset}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$charset}{\$charset}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_af10158dd74b75f1d337e83102d6b82ce} 
+\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aaa9f160000e06f659ba93637cd16e685}{charset}}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a39e21e0bc9fbd03bb429e6a040a361aa}\index{Blueprint@{Blueprint}!\$collation@{\$collation}}
+\index{\$collation@{\$collation}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$collation}{\$collation}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a39e21e0bc9fbd03bb429e6a040a361aa} 
+\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a5c783347ef5bcb90f610c1d95cf0389f}{collation}}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a19d2a3d21fe02053311fde465e6ae2e9}\index{Blueprint@{Blueprint}!\$columns@{\$columns}}
+\index{\$columns@{\$columns}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$columns}{\$columns}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a19d2a3d21fe02053311fde465e6ae2e9} 
+\$columns = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab63cd62b3b65fd223b6f3d57b6ca754d}\index{Blueprint@{Blueprint}!\$commands@{\$commands}}
+\index{\$commands@{\$commands}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$commands}{\$commands}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab63cd62b3b65fd223b6f3d57b6ca754d} 
+\$commands = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a239762c0ce8c078686e70ec63bbf1ab3}\index{Blueprint@{Blueprint}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a239762c0ce8c078686e70ec63bbf1ab3} 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}} \$connection\hspace{0.3cm}{\ttfamily [protected]}}
+
+The database connection instance. \Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8a3b012ad4844366d9207d8f0e174a00}\index{Blueprint@{Blueprint}!\$engine@{\$engine}}
+\index{\$engine@{\$engine}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$engine}{\$engine}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a8a3b012ad4844366d9207d8f0e174a00} 
+\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ab9248a6e79072cb7ee1c618ec6fd8f4a}{engine}}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aab14c1d66352d864bd581b60b4ed93e6}\index{Blueprint@{Blueprint}!\$grammar@{\$grammar}}
+\index{\$grammar@{\$grammar}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$grammar}{\$grammar}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_aab14c1d66352d864bd581b60b4ed93e6} 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar}{Grammar}} \$grammar\hspace{0.3cm}{\ttfamily [protected]}}
+
+The schema grammar instance. \Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae82306c4f2d17d8dd5c7d8d916b33bed}\index{Blueprint@{Blueprint}!\$state@{\$state}}
+\index{\$state@{\$state}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$state}{\$state}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae82306c4f2d17d8dd5c7d8d916b33bed} 
+\$state\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae8876a14058f368335baccf35af4a22b}\index{Blueprint@{Blueprint}!\$table@{\$table}}
+\index{\$table@{\$table}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$table}{\$table}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_ae8876a14058f368335baccf35af4a22b} 
+\$table\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1cb81bd683eb55bd7e42129cd73310f6}\index{Blueprint@{Blueprint}!\$temporary@{\$temporary}}
+\index{\$temporary@{\$temporary}!Blueprint@{Blueprint}}
+\doxysubsubsection{\texorpdfstring{\$temporary}{\$temporary}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a1cb81bd683eb55bd7e42129cd73310f6} 
+\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint_a9dc556227b438deeb7c3ca459930d9cb}{temporary}} = false}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Schema/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_database_2_schema_2_blueprint_8php}{Blueprint.\+php}}\end{DoxyCompactItemize}

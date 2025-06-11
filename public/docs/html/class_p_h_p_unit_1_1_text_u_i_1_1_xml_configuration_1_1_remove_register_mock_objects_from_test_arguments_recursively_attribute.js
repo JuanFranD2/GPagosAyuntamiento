@@ -1,0 +1,4 @@
+var class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_remove_register_mock_objects_from_test_arguments_recursively_attribute =
+[
+    [ "migrate", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_remove_register_mock_objects_from_test_arguments_recursively_attribute.html#ad77632657fa54587023a2ddde8e06090", null ]
+];

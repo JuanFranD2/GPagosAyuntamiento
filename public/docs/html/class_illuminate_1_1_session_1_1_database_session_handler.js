@@ -1,0 +1,27 @@
+var class_illuminate_1_1_session_1_1_database_session_handler =
+[
+    [ "__construct", "class_illuminate_1_1_session_1_1_database_session_handler.html#a05470cc2b609a2a9b044cd8ca4955ee9", null ],
+    [ "addRequestInformation", "class_illuminate_1_1_session_1_1_database_session_handler.html#a3c99e84563aeec896cea623b72eb07e6", null ],
+    [ "addUserInformation", "class_illuminate_1_1_session_1_1_database_session_handler.html#a1a3a4bf104836274a006883b0a9446cf", null ],
+    [ "close", "class_illuminate_1_1_session_1_1_database_session_handler.html#aa69c8bf1f1dcf4e72552efff1fe3e87e", null ],
+    [ "destroy", "class_illuminate_1_1_session_1_1_database_session_handler.html#a7976894a2e2239ff937a9203c383c9c1", null ],
+    [ "expired", "class_illuminate_1_1_session_1_1_database_session_handler.html#a7fc20c8b9fb8c0dd5f63cd202bccd71f", null ],
+    [ "gc", "class_illuminate_1_1_session_1_1_database_session_handler.html#a6a4cf90dfad69cacbbd81a005cfb8006", null ],
+    [ "getDefaultPayload", "class_illuminate_1_1_session_1_1_database_session_handler.html#adebcc11a98ada4648d1243063e072373", null ],
+    [ "getQuery", "class_illuminate_1_1_session_1_1_database_session_handler.html#a55f162785567258fe5138af282e588c2", null ],
+    [ "ipAddress", "class_illuminate_1_1_session_1_1_database_session_handler.html#a25c5f86e691d6382891a8aecd7cda988", null ],
+    [ "open", "class_illuminate_1_1_session_1_1_database_session_handler.html#ac70d1623e67e5b6d1859856dcef15d82", null ],
+    [ "performInsert", "class_illuminate_1_1_session_1_1_database_session_handler.html#a641299fcf63349364c8eb9813c4c25f6", null ],
+    [ "performUpdate", "class_illuminate_1_1_session_1_1_database_session_handler.html#adb6e5e53c1cd00a6941e3ff96e021a49", null ],
+    [ "read", "class_illuminate_1_1_session_1_1_database_session_handler.html#a379d9c87c852c5901ff1976be29a5048", null ],
+    [ "setContainer", "class_illuminate_1_1_session_1_1_database_session_handler.html#abe9e47648b4fb0f312fa42e0c1198a7d", null ],
+    [ "setExists", "class_illuminate_1_1_session_1_1_database_session_handler.html#a15ba6edf6c007ec8dac915e2f600d8be", null ],
+    [ "userAgent", "class_illuminate_1_1_session_1_1_database_session_handler.html#ad98310eafebb721cdc2106b7c9e49538", null ],
+    [ "userId", "class_illuminate_1_1_session_1_1_database_session_handler.html#ab3611160d9a34bb9dadc778f2885eeb1", null ],
+    [ "write", "class_illuminate_1_1_session_1_1_database_session_handler.html#ad7b615bb92609350d2d9d0c07f6f58ed", null ],
+    [ "$connection", "class_illuminate_1_1_session_1_1_database_session_handler.html#a0d9c79b9b86b3f5891c6d3892f12c6a0", null ],
+    [ "$container", "class_illuminate_1_1_session_1_1_database_session_handler.html#ab97dd40df90f4ce6f0fce9091e7c7872", null ],
+    [ "$exists", "class_illuminate_1_1_session_1_1_database_session_handler.html#a9af419fd2ea17d70b30ccfca4e6c1496", null ],
+    [ "$minutes", "class_illuminate_1_1_session_1_1_database_session_handler.html#a1af3d05563ae6bd81f5914f55396e172", null ],
+    [ "$table", "class_illuminate_1_1_session_1_1_database_session_handler.html#ae8876a14058f368335baccf35af4a22b", null ]
+];

@@ -1,0 +1,373 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/barryvdh/laravel-\/ide-\/helper Directory Reference}
+\hypertarget{dir_9a796c067bea41b06ccccf8cd7789d8e}{}\label{dir_9a796c067bea41b06ccccf8cd7789d8e}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/ide-\/helper Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/ide-\/helper Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_4bf2ecbd4386c0af71c824f631e5aab6}{config}}
+\item 
+directory \mbox{\hyperlink{dir_850cb4f12303accc0667094391683711}{php-\/templates}}
+\item 
+directory \mbox{\hyperlink{dir_c97bddc1ee3475ff3f142c4eba64583c}{resources}}
+\item 
+directory \mbox{\hyperlink{dir_75266d6a886376a35c153fe672335329}{src}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{_8php-cs-fixer_8common_8php}{.\+php-\/cs-\/fixer.\+common.\+php}}
+\item 
+file \mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php}{.\+php-\/cs-\/fixer.\+dist.\+php}}
+\item 
+file \mbox{\hyperlink{_8php-cs-fixer_8tests_8php}{.\+php-\/cs-\/fixer.\+tests.\+php}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md8662}{}\doxysubsection{\texorpdfstring{IDE Helper Generator for Laravel}{IDE Helper Generator for Laravel}}\label{README.md_autotoc_md8662}
+\href{https://github.com/barryvdh/laravel-ide-helper/actions}{\texttt{}} \href{http://choosealicense.com/licenses/mit/}{\texttt{}} \href{https://packagist.org/packages/barryvdh/laravel-ide-helper}{\texttt{}} \href{https://packagist.org/packages/barryvdh/laravel-ide-helper}{\texttt{}} \href{https://fruitcake.nl/}{\texttt{}}
+
+{\bfseries{Complete PHPDocs, directly from the source}}
+
+This package generates helper files that enable your IDE to provide accurate autocompletion. Generation is done based on the files in your project, so they are always up-\/to-\/date.
+
+The 3.\+x branch supports Laravel 10 and 11. For older version, use the 2.\+x releases.
+
+
+\begin{DoxyItemize}
+\item Installation
+\item \doxylink{readme.md_usage}{Usage}
+\begin{DoxyItemize}
+\item Automatic PHPDoc generation for Laravel Facades
+\item Automatic PHPDocs for models
+\begin{DoxyItemize}
+\item Model Directories
+\item Ignore Models
+\item Model Hooks
+\end{DoxyItemize}
+\item Automatic PHPDocs generation for Laravel Fluent methods
+\item Auto-\/completion for factory builders
+\item Php\+Storm Meta for Container instances
+\end{DoxyItemize}
+\item \doxylink{README.md_license}{License}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md8663}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md8663}
+Require this package with composer using the following command\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ -\/-\/dev\ barryvdh/laravel-\/ide-\/helper}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8664}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md8664}
+\hypertarget{README.md_autotoc_md8665}{}\doxysubsubsection{\texorpdfstring{TL;DR}{TL;DR}}\label{README.md_autotoc_md8665}
+Run this to generate autocompletion for \doxylink{namespace_facades}{Facades}. This creates \doxylink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ ide-\/helper:generate}
+
+\end{DoxyCode}
+
+
+Run this to add phpdocs for your models. Add -\/RW to Reset existing phpdocs and Write to the models directly. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ ide-\/helper:models\ -\/RW}
+
+\end{DoxyCode}
+
+
+If you don\textquotesingle{}t want the full \doxylink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php} file, you can run add {\ttfamily -\/-\/write-\/eloquent-\/helper} to the model command to generate small version, which is required for the {\ttfamily @mixin \textbackslash{}\doxylink{class_eloquent}{Eloquent}} to be able to add the Query\+Builder methods.
+
+If you don\textquotesingle{}t want to add all the phpdocs to your Models directly, you can use {\ttfamily -\/-\/nowrite} to create a seperate file. The {\ttfamily -\/-\/write-\/mixin} option can be used to only add a {\ttfamily @mixin} to your models, but add the generated phpdocs in a seperate file. This avoids having the results marked as duplicate.
+
+{\itshape Check out \href{https://laracasts.com/series/how-to-be-awesome-in-phpstorm/episodes/15}{\texttt{this Laracasts video}} for a quick introduction/explanation!}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily php artisan ide-\/helper\+:generate} -\/ PHPDoc generation for Laravel Facades
+\item {\ttfamily php artisan ide-\/helper\+:models} -\/ PHPDocs for models
+\item {\ttfamily php artisan ide-\/helper\+:meta} -\/ Php\+Storm Meta file
+\end{DoxyItemize}
+
+\begin{quote}
+Note\+: You do need Code\+Complice for Sublime Text\+: \href{https://github.com/spectacles/CodeComplice}{\texttt{https\+://github.\+com/spectacles/\+Code\+Complice}} \end{quote}
+\hypertarget{README.md_autotoc_md8666}{}\doxysubsubsection{\texorpdfstring{Automatic PHPDoc generation for Laravel Facades}{Automatic PHPDoc generation for Laravel Facades}}\label{README.md_autotoc_md8666}
+You can now re-\/generate the docs yourself (for future updates)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ ide-\/helper:generate}
+
+\end{DoxyCode}
+
+
+This will generate the file {\ttfamily \doxylink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php}} which is expected to be additionally parsed by your IDE for autocomplete. You can use the config {\ttfamily filename} to change its name.
+
+You can configure your {\ttfamily composer.\+json} to do this each time you update your dependencies\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{"{}scripts"{}:\ \{}
+\DoxyCodeLine{\ \ \ \ "{}post-\/update-\/cmd"{}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ "{}Illuminate\(\backslash\)\(\backslash\)Foundation\(\backslash\)\(\backslash\)ComposerScripts::postUpdate"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ "{}@php\ artisan\ ide-\/helper:generate"{},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ "{}@php\ artisan\ ide-\/helper:meta"{}}
+\DoxyCodeLine{\ \ \ \ ]}
+\DoxyCodeLine{\},}
+
+\end{DoxyCode}
+
+
+You can also publish the config file to change implementations (ie. interface to specific class) or set defaults for {\ttfamily -\/-\/helpers}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ vendor:publish\ -\/-\/provider="{}Barryvdh\(\backslash\)LaravelIdeHelper\(\backslash\)IdeHelperServiceProvider"{}\ -\/-\/tag=config}
+
+\end{DoxyCode}
+
+
+The generator tries to identify the real class, but if it cannot be found, you can define it in the config file.
+
+Some classes need a working database connection. If you do not have a default working connection, some facades will not be included. You can use an in-\/memory SQLite driver by adding the {\ttfamily -\/M} option.
+
+If you use \href{https://laravel.com/docs/master/facades\#real-time-facades}{\texttt{real-\/time facades}} in your app, those will also be included in the generated file using a {\ttfamily @mixin} annotation and extending the original class underneath the facade.
+
+\begin{quote}
+{\bfseries{Note}}\+: this feature uses the generated real-\/time facades files in the {\ttfamily storage/framework/cache} folder. Those files are generated on-\/demand as you use the real-\/time facade, so if the framework has not generated that first, it will not be included in the helper file. Run the route/command/code first and then regenerate the helper file and this time the real-\/time facade will be included in it. \end{quote}
+
+
+You can choose to include helper files. This is not enabled by default, but you can override it with the {\ttfamily -\/-\/helpers (-\/H)} option. The {\ttfamily \doxylink{laravel_2framework_2src_2_illuminate_2_support_2_helpers_8php}{Illuminate/\+Support/helpers.\+php}} is already set up, but you can add/remove your own files in the config file.\hypertarget{README.md_autotoc_md8667}{}\doxysubsubsection{\texorpdfstring{Automatic PHPDoc generation for macros and mixins}{Automatic PHPDoc generation for macros and mixins}}\label{README.md_autotoc_md8667}
+This package can generate PHPDocs for macros and mixins which will be added to the {\ttfamily \doxylink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php}} file.
+
+But this only works if you use type hinting when declaring a macro.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Str::macro(\textcolor{stringliteral}{'concat'},\ \textcolor{keyword}{function}(\textcolor{keywordtype}{string}\ \$str1,\ \textcolor{keywordtype}{string}\ \$str2)\ :\ \textcolor{keywordtype}{string}\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \$str1\ .\ \$str2;}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+You can add any custom Macroable traits to detect in the {\ttfamily macroable\+\_\+traits} config option.\hypertarget{README.md_autotoc_md8668}{}\doxysubsubsection{\texorpdfstring{Automatic PHPDocs for models}{Automatic PHPDocs for models}}\label{README.md_autotoc_md8668}
+If you don\textquotesingle{}t want to write your properties yourself, you can use the command {\ttfamily php artisan ide-\/helper\+:models} to generate PHPDocs, based on table columns, relations and getters/setters.
+
+\begin{quote}
+Note\+: this command requires a working database connection to introspect the table of each model \end{quote}
+
+
+By default, you are asked to overwrite or write to a separate file ({\ttfamily \doxylink{__ide__helper__models_8php}{\+\_\+ide\+\_\+helper\+\_\+models.\+php}}). You can write the comments directly to your Model file, using the {\ttfamily -\/-\/write (-\/W)} option, or force to not write with {\ttfamily -\/-\/nowrite (-\/N)}.
+
+Alternatively using the {\ttfamily -\/-\/write-\/mixin (-\/M)} option will only add a mixin tag to your Model file, writing the rest in ({\ttfamily \doxylink{__ide__helper__models_8php}{\+\_\+ide\+\_\+helper\+\_\+models.\+php}}). The class name will be different from the model, avoiding the IDE duplicate annoyance.
+
+\begin{quote}
+Please make sure to back up your models, before writing the info. \end{quote}
+
+
+\begin{quote}
+You need the \doxylink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php} file to add the Query\+Builder methods. You can add --write-\/eloquent-\/helper/-\/E to generate a minimal version. If this file does not exist, you will be prompted for it. \end{quote}
+
+
+Writing to the models should keep the existing comments and only append new properties/methods. It will not update changed properties/methods.
+
+With the {\ttfamily -\/-\/reset (-\/R)} option, the whole existing PHPDoc is replaced, including any comments that have been made.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ ide-\/helper:models\ "{}App\(\backslash\)Models\(\backslash\)Post"{}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+
+\end{DoxyCode}
+
+
+With the {\ttfamily -\/-\/write-\/mixin (-\/M)} option 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8669}{}\doxysubsubsubsection{\texorpdfstring{Model Directories}{Model Directories}}\label{README.md_autotoc_md8669}
+By default, models in {\ttfamily app/models} are scanned. The optional argument tells what models to use (also outside app/models).
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ ide-\/helper:models\ "{}App\(\backslash\)Models\(\backslash\)Post"{}\ "{}App\(\backslash\)Models\(\backslash\)User"{}}
+
+\end{DoxyCode}
+
+
+You can also scan a different directory, using the {\ttfamily -\/-\/dir} option (relative from the base path)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ ide-\/helper:models\ -\/-\/dir="{}path/to/models"{}\ -\/-\/dir="{}app/src/Model"{}}
+
+\end{DoxyCode}
+
+
+You can publish the config file ({\ttfamily php artisan vendor\+:publish}) and set the default directories.\hypertarget{README.md_autotoc_md8670}{}\doxysubsubsubsection{\texorpdfstring{Ignore Models}{Ignore Models}}\label{README.md_autotoc_md8670}
+Models can be ignored using the {\ttfamily -\/-\/ignore (-\/I)} option
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ ide-\/helper:models\ -\/-\/ignore="{}App\(\backslash\)Models\(\backslash\)Post,App\(\backslash\)Models\(\backslash\)User"{}}
+
+\end{DoxyCode}
+
+
+Or can be ignored by setting the {\ttfamily ignored\+\_\+models} config
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{'ignored\_models'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ App\(\backslash\)Post::class,}
+\DoxyCodeLine{\ \ \ \ Api\(\backslash\)User::class}
+\DoxyCodeLine{],}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8671}{}\doxysubsubsubsection{\texorpdfstring{Magic {\ttfamily where\texorpdfstring{$\ast$}{*}} methods}{Magic {\ttfamily where\texorpdfstring{$\ast$}{*}} methods}}\label{README.md_autotoc_md8671}
+\doxylink{class_eloquent}{Eloquent} allows calling {\ttfamily where\texorpdfstring{$<$}{<}\doxylink{class_attribute}{Attribute}\texorpdfstring{$>$}{>}} on your models, e.\+g. {\ttfamily Post\+::where\+Title(…)} and automatically translates this to e.\+g. `Post\+::where(\textquotesingle{}title', \textquotesingle{}=\textquotesingle{}, \textquotesingle{}…\textquotesingle{})\`{}.
+
+If for some reason it\textquotesingle{}s undesired to have them generated (one for each column), you can disable this via config {\ttfamily write\+\_\+model\+\_\+magic\+\_\+where} and setting it to {\ttfamily false}.\hypertarget{README.md_autotoc_md8672}{}\doxysubsubsubsection{\texorpdfstring{Magic {\ttfamily \texorpdfstring{$\ast$}{*}\+\_\+count} properties}{Magic {\ttfamily \texorpdfstring{$\ast$}{*}\+\_\+count} properties}}\label{README.md_autotoc_md8672}
+You may use the \href{https://laravel.com/docs/master/eloquent-relationships\#counting-related-models}{\texttt{{\ttfamily \+::with\+Count}}} method to count the number results from a relationship without actually loading them. Those results are then placed in attributes following the {\ttfamily \texorpdfstring{$<$}{<}columname\texorpdfstring{$>$}{>}\+\_\+count} convention.
+
+By default, these attributes are generated in the phpdoc. You can turn them off by setting the config {\ttfamily write\+\_\+model\+\_\+relation\+\_\+count\+\_\+properties} to {\ttfamily false}.\hypertarget{README.md_autotoc_md8673}{}\doxysubsubsubsection{\texorpdfstring{Generics annotations}{Generics annotations}}\label{README.md_autotoc_md8673}
+Laravel 9 introduced generics annotations in Doc\+Blocks for collections. Php\+Storm 2022.\+3 and above support the use of generics annotations within {\ttfamily @property} and {\ttfamily @property-\/read} declarations in Doc\+Blocks, e.\+g. {\ttfamily Collection\texorpdfstring{$<$}{<}User\texorpdfstring{$>$}{>}} instead of {\ttfamily Collection\texorpdfstring{$\vert$}{|}\+User\mbox{[}\mbox{]}}.
+
+These can be disabled by setting the config {\ttfamily use\+\_\+generics\+\_\+annotations} to {\ttfamily false}.\hypertarget{README.md_autotoc_md8674}{}\doxysubsubsubsection{\texorpdfstring{Support {\ttfamily @comment} based on Doc\+Block}{Support {\ttfamily @comment} based on Doc\+Block}}\label{README.md_autotoc_md8674}
+In order to better support IDEs, relations and getters/setters can also add a comment to a property like table columns. Therefore a custom docblock {\ttfamily @comment} is used\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class\ }Users\ \textcolor{keyword}{extends}\ Model}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ getFullNameAttribute():\ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>first\_name\ .\ \textcolor{charliteral}{'\ '}\ .\$this-\/>last\_name\ ;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ =>\ after\ generate\ models}}
+\DoxyCodeLine{}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8675}{}\doxysubsubsubsection{\texorpdfstring{Dedicated Eloquent Builder methods}{Dedicated Eloquent Builder methods}}\label{README.md_autotoc_md8675}
+A new method to the eloquent models was added called {\ttfamily new\+Eloquent\+Builder} \href{https://timacdonald.me/dedicated-eloquent-model-query-builders/}{\texttt{Reference}} where we can add support for creating a new dedicated class instead of using local scopes in the model itself.
+
+If for some reason it\textquotesingle{}s undesired to have them generated (one for each column), you can disable this via config {\ttfamily write\+\_\+model\+\_\+external\+\_\+builder\+\_\+methods} and setting it to {\ttfamily false}.\hypertarget{README.md_autotoc_md8676}{}\doxysubsubsubsection{\texorpdfstring{Custom Relationship Types}{Custom Relationship Types}}\label{README.md_autotoc_md8676}
+If you are using relationships not built into Laravel you will need to specify the name and returning class in the config to get proper generation.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{'additional\_relation\_types'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'externalHasMany'}\ =>\ \(\backslash\)My\(\backslash\)Package\(\backslash\)externalHasMany::class}
+\DoxyCodeLine{],}
+
+\end{DoxyCode}
+
+
+Found relationships will typically generate a return value based on the name of the relationship.
+
+If your custom relationships don\textquotesingle{}t follow this traditional naming scheme you can define its return type manually. The available options are {\ttfamily many} and {\ttfamily morph\+To}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{'additional\_relation\_return\_types'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'externalHasMultiple'}\ =>\ \textcolor{stringliteral}{'many'}}
+\DoxyCodeLine{],}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8677}{}\doxysubsubsubsection{\texorpdfstring{Model Hooks}{Model Hooks}}\label{README.md_autotoc_md8677}
+If you need additional information on your model from sources that are not handled by default, you can hook in to the generation process with model hooks to add extra information on the fly. Simply create a class that implements {\ttfamily Model\+Hook\+Interface} and add it to the {\ttfamily model\+\_\+hooks} array in the config\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{'model\_hooks'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ MyCustomHook::class,}
+\DoxyCodeLine{],}
+
+\end{DoxyCode}
+
+
+The {\ttfamily run} method will be called during generation for every model and receives the current running {\ttfamily Models\+Command} and the current {\ttfamily Model}, e.\+g.\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class\ }MyCustomHook\ \textcolor{keyword}{implements}\ ModelHookInterface}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ run(ModelsCommand\ \$command,\ Model\ \$model):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\ \$model\ instanceof\ MyModel)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$command-\/>setProperty(\textcolor{stringliteral}{'custom'},\ \textcolor{stringliteral}{'string'},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{stringliteral}{'My\ custom\ property'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$command-\/>unsetMethod(\textcolor{stringliteral}{'method'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$command-\/>setMethod(\textcolor{stringliteral}{'method'},\ \$command-\/>getMethodType(\$model,\ \textcolor{stringliteral}{'\(\backslash\)Some\(\backslash\)Class'}),\ [\textcolor{stringliteral}{'\$param'}]);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8678}{}\doxysubsubsection{\texorpdfstring{Automatic PHPDocs generation for Laravel Fluent methods}{Automatic PHPDocs generation for Laravel Fluent methods}}\label{README.md_autotoc_md8678}
+If you need PHPDocs support for Fluent methods in migration, for example
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+After publishing vendor, simply change the {\ttfamily include\+\_\+fluent} line in your {\ttfamily config/ide-\/helper.\+php} file into\+:
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+Then run {\ttfamily php artisan ide-\/helper\+:generate}, you will now see all Fluent methods recognized by your IDE.\hypertarget{README.md_autotoc_md8679}{}\doxysubsubsection{\texorpdfstring{Auto-\/completion for factory builders}{Auto-\/completion for factory builders}}\label{README.md_autotoc_md8679}
+If you would like the {\ttfamily factory()-\/\texorpdfstring{$>$}{>}create()} and {\ttfamily factory()-\/\texorpdfstring{$>$}{>}make()} methods to return the correct model class, you can enable custom factory builders with the {\ttfamily include\+\_\+factory\+\_\+builders} line in your {\ttfamily config/ide-\/helper.\+php} file. Deprecated for Laravel 8 or latest.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+For this to work, you must also publish the Php\+Storm Meta file (see below).\hypertarget{README.md_autotoc_md8680}{}\doxysubsection{\texorpdfstring{Php\+Storm Meta for Container instances}{Php\+Storm Meta for Container instances}}\label{README.md_autotoc_md8680}
+It\textquotesingle{}s possible to generate a Php\+Storm meta file to \href{https://www.jetbrains.com/help/phpstorm/ide-advanced-metadata.html}{\texttt{add support for factory design pattern}}. For Laravel, this means we can make Php\+Storm understand what kind of object we are resolving from the IoC Container. For example, {\ttfamily events} will return an {\ttfamily Illuminate\textbackslash{}Events\textbackslash{}Dispatcher} object, so with the meta file you can call `app(\textquotesingle{}events')\`{} and it will autocomplete the Dispatcher methods.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+}
+\DoxyCodeLine{\mbox{\hyperlink{index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}}-\/>make(\textcolor{stringliteral}{'events'})-\/>fire();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ When\ the\ key\ is\ not\ found,\ it\ uses\ the\ argument\ as\ class\ name}}
+\DoxyCodeLine{app(\textcolor{stringliteral}{'App\(\backslash\)SomeClass'});}
+\DoxyCodeLine{\textcolor{comment}{//\ Also\ works\ with}}
+\DoxyCodeLine{app(\mbox{\hyperlink{namespace_app}{App}}\(\backslash\)SomeClass::class);}
+
+\end{DoxyCode}
+
+
+\begin{quote}
+Note\+: You might need to restart Php\+Storm and make sure {\ttfamily .phpstorm.\+meta.\+php} is indexed. \end{quote}
+
+
+\begin{quote}
+Note\+: When you receive a Fatal\+Exception\+: class not found, check your config (for example, remove S3 as cloud driver when you don\textquotesingle{}t have S3 configured. Remove Redis Service\+Provider when you don\textquotesingle{}t use it). \end{quote}
+
+
+You can change the generated filename via the config {\ttfamily meta\+\_\+filename}. This can be useful for cases where you want to take advantage of Php\+Storm\textquotesingle{}s support of the {\itshape directory} {\ttfamily .phpstorm.\+meta.\+php/}\+: all files placed there are parsed, should you want to provide additional files to Php\+Storm.\hypertarget{README.md_autotoc_md8681}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md8681}
+The Laravel IDE Helper Generator is open-\/sourced software licensed under the \href{http://opensource.org/licenses/MIT}{\texttt{MIT license}} 

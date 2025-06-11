@@ -1,0 +1,79 @@
+\doxysection{Abstract\+Request\+Rate\+Limiter Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter}\index{AbstractRequestRateLimiter@{AbstractRequestRateLimiter}}
+Inheritance diagram for Abstract\+Request\+Rate\+Limiter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_a826d7f017d9e045907d5e3de9c80679f}{consume}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_a2e7ff86d8147a7a10bb60a5e621c7160}{peek}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_ab8fabf38c1b3bad2f6a07c02005d6c5e}{reset}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_a3f3113e9b09d4e49d844ba0d5d517400}{get\+Limiters}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An implementation of Peekable\+Request\+Rate\+Limiter\+Interface that fits most use-\/cases.
+
+\begin{DoxyAuthor}{Author}
+Wouter de Jong \href{mailto:wouter@wouterj.nl}{\texttt{wouter@wouterj.\+nl}} 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_a826d7f017d9e045907d5e3de9c80679f}\index{AbstractRequestRateLimiter@{AbstractRequestRateLimiter}!consume@{consume}}
+\index{consume@{consume}!AbstractRequestRateLimiter@{AbstractRequestRateLimiter}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_a826d7f017d9e045907d5e3de9c80679f} 
+consume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_request_rate_limiter_interface_a826d7f017d9e045907d5e3de9c80679f}{Request\+Rate\+Limiter\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_a3f3113e9b09d4e49d844ba0d5d517400}\index{AbstractRequestRateLimiter@{AbstractRequestRateLimiter}!getLimiters@{getLimiters}}
+\index{getLimiters@{getLimiters}!AbstractRequestRateLimiter@{AbstractRequestRateLimiter}}
+\doxysubsubsection{\texorpdfstring{getLimiters()}{getLimiters()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_a3f3113e9b09d4e49d844ba0d5d517400} 
+get\+Limiters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+Limiter\+Interface\mbox{[}\mbox{]} a set of limiters using keys extracted from the request 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_a2e7ff86d8147a7a10bb60a5e621c7160}\index{AbstractRequestRateLimiter@{AbstractRequestRateLimiter}!peek@{peek}}
+\index{peek@{peek}!AbstractRequestRateLimiter@{AbstractRequestRateLimiter}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_a2e7ff86d8147a7a10bb60a5e621c7160} 
+peek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_peekable_request_rate_limiter_interface_a2e7ff86d8147a7a10bb60a5e621c7160}{Peekable\+Request\+Rate\+Limiter\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_ab8fabf38c1b3bad2f6a07c02005d6c5e}\index{AbstractRequestRateLimiter@{AbstractRequestRateLimiter}!reset@{reset}}
+\index{reset@{reset}!AbstractRequestRateLimiter@{AbstractRequestRateLimiter}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_abstract_request_rate_limiter_ab8fabf38c1b3bad2f6a07c02005d6c5e} 
+reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_request_rate_limiter_interface_ab8fabf38c1b3bad2f6a07c02005d6c5e}{Request\+Rate\+Limiter\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/foundation/\+Rate\+Limiter/\mbox{\hyperlink{_abstract_request_rate_limiter_8php}{Abstract\+Request\+Rate\+Limiter.\+php}}\end{DoxyCompactItemize}

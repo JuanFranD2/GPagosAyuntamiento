@@ -1,0 +1,104 @@
+\doxysection{Encrypter Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter}{}\label{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter}\index{Encrypter@{Encrypter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_a397c5e85d7dfa6e04665a60d41ef651f}{encrypt}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$value, \$serialize=true)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_ae8aa10bdaa928cc95319965b1cb6ff0e}{decrypt}} (\$payload, \$unserialize=true)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_ad40c766ec8aced9770fe6ae269a1e781}{get\+Key}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_a5df9315aee4ffec7bd8c0cb57ce58886}{get\+All\+Keys}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_ac1ed4a04f90406897d25c01b37ca53ac}{get\+Previous\+Keys}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_ae8aa10bdaa928cc95319965b1cb6ff0e}\index{Encrypter@{Encrypter}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_ae8aa10bdaa928cc95319965b1cb6ff0e} 
+decrypt (\begin{DoxyParamCaption}\item[{}]{\$payload}{, }\item[{}]{\$unserialize}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Decrypt the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$payload} & \\
+\hline
+bool & {\em \$unserialize} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Encryption\textbackslash{}\+Decrypt\+Exception \Hypertarget{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_a397c5e85d7dfa6e04665a60d41ef651f}\index{Encrypter@{Encrypter}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_a397c5e85d7dfa6e04665a60d41ef651f} 
+encrypt (\begin{DoxyParamCaption}\item[{\#}]{\$value}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{}]{\$serialize}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Encrypt the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+bool & {\em \$serialize} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Encryption\textbackslash{}\+Encrypt\+Exception \Hypertarget{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_a5df9315aee4ffec7bd8c0cb57ce58886}\index{Encrypter@{Encrypter}!getAllKeys@{getAllKeys}}
+\index{getAllKeys@{getAllKeys}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{getAllKeys()}{getAllKeys()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_a5df9315aee4ffec7bd8c0cb57ce58886} 
+get\+All\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current encryption key and all previous encryption keys.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_ad40c766ec8aced9770fe6ae269a1e781}\index{Encrypter@{Encrypter}!getKey@{getKey}}
+\index{getKey@{getKey}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_ad40c766ec8aced9770fe6ae269a1e781} 
+get\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the encryption key that the encrypter is currently using.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_ac1ed4a04f90406897d25c01b37ca53ac}\index{Encrypter@{Encrypter}!getPreviousKeys@{getPreviousKeys}}
+\index{getPreviousKeys@{getPreviousKeys}!Encrypter@{Encrypter}}
+\doxysubsubsection{\texorpdfstring{getPreviousKeys()}{getPreviousKeys()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter_ac1ed4a04f90406897d25c01b37ca53ac} 
+get\+Previous\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the previous encryption keys.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Encryption/\mbox{\hyperlink{_contracts_2_encryption_2_encrypter_8php}{Encrypter.\+php}}\end{DoxyCompactItemize}

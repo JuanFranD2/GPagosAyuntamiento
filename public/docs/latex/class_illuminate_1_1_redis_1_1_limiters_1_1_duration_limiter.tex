@@ -1,0 +1,164 @@
+\doxysection{Duration\+Limiter Class Reference}
+\hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter}{}\label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter}\index{DurationLimiter@{DurationLimiter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a6029f5e4d00d7458d3c5d38a8128cd90}{\+\_\+\+\_\+construct}} (\$redis, \$name, \$max\+Locks, \$decay)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a92853b47bef4aff0917e827201c5c18d}{block}} (\$timeout, \$callback=null, \$sleep=750)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_afb36e5d94e5d65b937c6eec4830313e7}{acquire}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a788e52ce75d18f8ae1d39fba09b7d45a}{too\+Many\+Attempts}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aa821bec12eaa7e0f649397c9675ff505}{clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aa93747afde4d923202bc5276b3b0819a}{\$decays\+At}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_af4b4dbadab0667c8ec103d04bfd3f101}{\$remaining}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_ae9122be54eb1b53d406dd66848fbb2fe}{lua\+Script}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a2dde828602e87c8929d9fd56aea4ed03}{too\+Many\+Attempts\+Lua\+Script}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a6029f5e4d00d7458d3c5d38a8128cd90}\index{DurationLimiter@{DurationLimiter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DurationLimiter@{DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a6029f5e4d00d7458d3c5d38a8128cd90} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$redis}{, }\item[{}]{\$name}{, }\item[{}]{\$max\+Locks}{, }\item[{}]{\$decay}{}\end{DoxyParamCaption})}
+
+Create a new duration limiter instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection & {\em \$redis} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+int & {\em \$max\+Locks} & \\
+\hline
+int & {\em \$decay} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_afb36e5d94e5d65b937c6eec4830313e7}\index{DurationLimiter@{DurationLimiter}!acquire@{acquire}}
+\index{acquire@{acquire}!DurationLimiter@{DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_afb36e5d94e5d65b937c6eec4830313e7} 
+acquire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Attempt to acquire the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a92853b47bef4aff0917e827201c5c18d}\index{DurationLimiter@{DurationLimiter}!block@{block}}
+\index{block@{block}!DurationLimiter@{DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{block()}{block()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a92853b47bef4aff0917e827201c5c18d} 
+block (\begin{DoxyParamCaption}\item[{}]{\$timeout}{, }\item[{}]{\$callback}{ = {\ttfamily null}, }\item[{}]{\$sleep}{ = {\ttfamily 750}}\end{DoxyParamCaption})}
+
+Attempt to acquire the lock for the given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \\
+\hline
+callable | null & {\em \$callback} & \\
+\hline
+int & {\em \$sleep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Limiter\+Timeout\+Exception \Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aa821bec12eaa7e0f649397c9675ff505}\index{DurationLimiter@{DurationLimiter}!clear@{clear}}
+\index{clear@{clear}!DurationLimiter@{DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aa821bec12eaa7e0f649397c9675ff505} 
+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clear the limiter.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_ae9122be54eb1b53d406dd66848fbb2fe}\index{DurationLimiter@{DurationLimiter}!luaScript@{luaScript}}
+\index{luaScript@{luaScript}!DurationLimiter@{DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{luaScript()}{luaScript()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_ae9122be54eb1b53d406dd66848fbb2fe} 
+lua\+Script (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Lua script for acquiring a lock.
+
+KEYS\mbox{[}1\mbox{]} -\/ The limiter name ARGV\mbox{[}1\mbox{]} -\/ Current time in microseconds ARGV\mbox{[}2\mbox{]} -\/ Current time in seconds ARGV\mbox{[}3\mbox{]} -\/ Duration of the bucket ARGV\mbox{[}4\mbox{]} -\/ Allowed number of tasks
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a788e52ce75d18f8ae1d39fba09b7d45a}\index{DurationLimiter@{DurationLimiter}!tooManyAttempts@{tooManyAttempts}}
+\index{tooManyAttempts@{tooManyAttempts}!DurationLimiter@{DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{tooManyAttempts()}{tooManyAttempts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a788e52ce75d18f8ae1d39fba09b7d45a} 
+too\+Many\+Attempts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the key has been "{}accessed"{} too many times.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a2dde828602e87c8929d9fd56aea4ed03}\index{DurationLimiter@{DurationLimiter}!tooManyAttemptsLuaScript@{tooManyAttemptsLuaScript}}
+\index{tooManyAttemptsLuaScript@{tooManyAttemptsLuaScript}!DurationLimiter@{DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{tooManyAttemptsLuaScript()}{tooManyAttemptsLuaScript()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a2dde828602e87c8929d9fd56aea4ed03} 
+too\+Many\+Attempts\+Lua\+Script (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Lua script to determine if the key has been "{}accessed"{} too many times.
+
+KEYS\mbox{[}1\mbox{]} -\/ The limiter name ARGV\mbox{[}1\mbox{]} -\/ Current time in microseconds ARGV\mbox{[}2\mbox{]} -\/ Current time in seconds ARGV\mbox{[}3\mbox{]} -\/ Duration of the bucket ARGV\mbox{[}4\mbox{]} -\/ Allowed number of tasks
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aa93747afde4d923202bc5276b3b0819a}\index{DurationLimiter@{DurationLimiter}!\$decaysAt@{\$decaysAt}}
+\index{\$decaysAt@{\$decaysAt}!DurationLimiter@{DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{\$decaysAt}{\$decaysAt}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aa93747afde4d923202bc5276b3b0819a} 
+\$decays\+At}
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_af4b4dbadab0667c8ec103d04bfd3f101}\index{DurationLimiter@{DurationLimiter}!\$remaining@{\$remaining}}
+\index{\$remaining@{\$remaining}!DurationLimiter@{DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{\$remaining}{\$remaining}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_af4b4dbadab0667c8ec103d04bfd3f101} 
+\$remaining}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Redis/\+Limiters/\mbox{\hyperlink{_duration_limiter_8php}{Duration\+Limiter.\+php}}\end{DoxyCompactItemize}

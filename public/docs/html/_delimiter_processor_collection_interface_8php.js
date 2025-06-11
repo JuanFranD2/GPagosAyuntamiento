@@ -1,0 +1,4 @@
+var _delimiter_processor_collection_interface_8php =
+[
+    [ "DelimiterProcessorCollectionInterface", "interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_collection_interface.html", "interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_collection_interface" ]
+];

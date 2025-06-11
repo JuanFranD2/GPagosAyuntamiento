@@ -1,0 +1,7 @@
+var namespace_symfony_1_1_component_1_1_translation_1_1_formatter =
+[
+    [ "IntlFormatter", "class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_intl_formatter.html", "class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_intl_formatter" ],
+    [ "IntlFormatterInterface", "interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_intl_formatter_interface.html", "interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_intl_formatter_interface" ],
+    [ "MessageFormatter", "class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter.html", "class_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter" ],
+    [ "MessageFormatterInterface", "interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_interface.html", "interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_interface" ]
+];

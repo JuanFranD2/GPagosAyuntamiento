@@ -1,0 +1,49 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/datatables.net Directory Reference}
+\hypertarget{dir_9d0d76805e89a985a937be0a8bcbb297}{}\label{dir_9d0d76805e89a985a937be0a8bcbb297}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/datatables.net Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/datatables.net Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{Readme.md_autotoc_md2322}{}\doxysubsection{\texorpdfstring{Data\+Tables}{Data\+Tables}}\label{Readme.md_autotoc_md2322}
+This package contains distribution files for the \href{https://datatables.net}{\texttt{Data\+Tables table enhancement library}}. Only the core software for this library is contained in this package -\/ to be correctly styled, a styling package for \doxylink{class_data_tables}{Data\+Tables} must also be included (e.\+g. default, Bootstrap, Bulma, Foundation or others) -\/ please see the \href{https://datatables.net/manual/installation\#Node.js-/-NPM}{\texttt{npm installation documentation on the Data\+Tables site}} for full details.
+
+\doxylink{class_data_tables}{Data\+Tables} is a table enhancing library which adds features such as paging, ordering, search, scrolling and many more to a static HTML page. A comprehensive API is also available that can be used to manipulate the table. Please refer to the \href{//datatables.net}{\texttt{Data\+Tables web-\/site}} for a full range of documentation and examples.\hypertarget{Readme.md_autotoc_md2323}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{Readme.md_autotoc_md2323}
+\hypertarget{Readme.md_autotoc_md2324}{}\doxysubsubsection{\texorpdfstring{Browser}{Browser}}\label{Readme.md_autotoc_md2324}
+To use \doxylink{class_data_tables}{Data\+Tables} with a simple {\ttfamily \texorpdfstring{$<$}{<}script\texorpdfstring{$>$}{>}} tag, rather than using this package, it is recommended that you use the \href{//datatables.net/download}{\texttt{Data\+Tables download builder}} which can create CDN or locally hosted packages for you, will all dependencies satisfied.\hypertarget{Readme.md_autotoc_md2325}{}\doxysubsubsection{\texorpdfstring{npm}{npm}}\label{Readme.md_autotoc_md2325}
+For installation via npm, yarn and other similar package managers, install this package with your package manager -\/ e.\+g.\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ install\ datatables.net}
+
+\end{DoxyCode}
+
+
+Then, to load and initialise \doxylink{class_data_tables}{Data\+Tables} in your code use\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{import\ DataTable\ from\ 'datatables.net';}
+\DoxyCodeLine{}
+\DoxyCodeLine{new\ DataTable('\#myTable',\ \{}
+\DoxyCodeLine{\ \ \ \ //\ initialisation\ options}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+If you are using an old version of Node or a Common\+JS loader, you might need to use the {\ttfamily require} syntax\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ DataTable\ =\ require('datatables.net');}
+\DoxyCodeLine{}
+\DoxyCodeLine{new\ DataTable('\#myTable',\ \{}
+\DoxyCodeLine{\ \ \ \ //\ initialisation\ options}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+\hypertarget{Readme.md_autotoc_md2326}{}\doxysubsection{\texorpdfstring{Documentation}{Documentation}}\label{Readme.md_autotoc_md2326}
+Full documentation of the \doxylink{class_data_tables}{Data\+Tables} options, API and plug-\/in interface are available on the \href{https://datatables.net/reference/index}{\texttt{website}}. The site also contains information on the wide variety of plug-\/ins that are available for \doxylink{class_data_tables}{Data\+Tables}, which can be used to enhance and customise your table even further.\hypertarget{Readme.md_autotoc_md2327}{}\doxysubsection{\texorpdfstring{Bug / Support}{Bug / Support}}\label{Readme.md_autotoc_md2327}
+Support for \doxylink{class_data_tables}{Data\+Tables} is available through the \href{//datatables.net/forums}{\texttt{Data\+Tables forums}} and \href{//datatables.net/support}{\texttt{commercial support options}} are available.\hypertarget{Readme.md_autotoc_md2328}{}\doxysubsubsection{\texorpdfstring{Contributing}{Contributing}}\label{Readme.md_autotoc_md2328}
+If you are thinking of contributing code to \doxylink{class_data_tables}{Data\+Tables}, first of all, thank you! All fixes, patches and enhancements to \doxylink{class_data_tables}{Data\+Tables} are very warmly welcomed. This repository is a distribution repo, so patches and issues sent to this repo will not be accepted. Instead, please direct pull requests to the \href{http://github.com/DataTables/DataTablesSrc}{\texttt{Data\+Tables/\+Data\+Tables\+Src}}. For issues / bugs, please direct your questions to the \href{//datatables.net/forums}{\texttt{Data\+Tables forums}}.\hypertarget{Readme.md_autotoc_md2329}{}\doxysubsection{\texorpdfstring{License}{License}}\label{Readme.md_autotoc_md2329}
+This software is released under the \href{//datatables.net/license}{\texttt{MIT license}}. You are free to use, modify and distribute this software, but all copyright information must remain. 

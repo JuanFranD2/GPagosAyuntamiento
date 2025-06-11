@@ -1,0 +1,4 @@
+var _cannot_clone_test_double_for_readonly_class_exception_8php =
+[
+    [ "CannotCloneTestDoubleForReadonlyClassException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_cannot_clone_test_double_for_readonly_class_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_cannot_clone_test_double_for_readonly_class_exception" ]
+];

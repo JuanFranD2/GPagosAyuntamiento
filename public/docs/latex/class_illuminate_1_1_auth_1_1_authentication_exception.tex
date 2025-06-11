@@ -1,0 +1,132 @@
+\doxysection{Authentication\+Exception Class Reference}
+\hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception}{}\label{class_illuminate_1_1_auth_1_1_authentication_exception}\index{AuthenticationException@{AuthenticationException}}
+Inheritance diagram for Authentication\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_auth_1_1_authentication_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a0b97210ebdd20879694404cd58e63bf9}{\+\_\+\+\_\+construct}} (\$message=\textquotesingle{}Unauthenticated.\textquotesingle{}, array \$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a7ba57187391b3370a5efb7d6cad3e506}{guards}}=\mbox{[}$\,$\mbox{]}, \$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a427c6e9474256652a4df41523ea51251}{redirect\+To}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a7ba57187391b3370a5efb7d6cad3e506}{guards}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a427c6e9474256652a4df41523ea51251}{redirect\+To}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a8f50802bb5d7a6da6f9d239eb60c7898}{redirect\+Using}} (callable \$redirect\+To\+Callback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a24f05db66076e987757fd0178c65d03e}{\$guards}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a1d19101ee5de7186666ce86a530cd501}{\$redirect\+To}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a4a2767b44a1ce6278852040d1f00411a}{\$redirect\+To\+Callback}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_a0b97210ebdd20879694404cd58e63bf9}\index{AuthenticationException@{AuthenticationException}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AuthenticationException@{AuthenticationException}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_authentication_exception_a0b97210ebdd20879694404cd58e63bf9} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$message}{ = {\ttfamily \textquotesingle{}Unauthenticated.\textquotesingle{}}, }\item[{array}]{\$guards}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$redirect\+To}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new authentication exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+array & {\em \$guards} & \\
+\hline
+string | null & {\em \$redirect\+To} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_a7ba57187391b3370a5efb7d6cad3e506}\index{AuthenticationException@{AuthenticationException}!guards@{guards}}
+\index{guards@{guards}!AuthenticationException@{AuthenticationException}}
+\doxysubsubsection{\texorpdfstring{guards()}{guards()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_authentication_exception_a7ba57187391b3370a5efb7d6cad3e506} 
+guards (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the guards that were checked.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_a427c6e9474256652a4df41523ea51251}\index{AuthenticationException@{AuthenticationException}!redirectTo@{redirectTo}}
+\index{redirectTo@{redirectTo}!AuthenticationException@{AuthenticationException}}
+\doxysubsubsection{\texorpdfstring{redirectTo()}{redirectTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_authentication_exception_a427c6e9474256652a4df41523ea51251} 
+redirect\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Get the path the user should be redirected to.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_a8f50802bb5d7a6da6f9d239eb60c7898}\index{AuthenticationException@{AuthenticationException}!redirectUsing@{redirectUsing}}
+\index{redirectUsing@{redirectUsing}!AuthenticationException@{AuthenticationException}}
+\doxysubsubsection{\texorpdfstring{redirectUsing()}{redirectUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_authentication_exception_a8f50802bb5d7a6da6f9d239eb60c7898} 
+redirect\+Using (\begin{DoxyParamCaption}\item[{callable}]{\$redirect\+To\+Callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Specify the callback that should be used to generate the redirect path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$redirect\+To\+Callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_a24f05db66076e987757fd0178c65d03e}\index{AuthenticationException@{AuthenticationException}!\$guards@{\$guards}}
+\index{\$guards@{\$guards}!AuthenticationException@{AuthenticationException}}
+\doxysubsubsection{\texorpdfstring{\$guards}{\$guards}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_authentication_exception_a24f05db66076e987757fd0178c65d03e} 
+\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a7ba57187391b3370a5efb7d6cad3e506}{guards}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_a1d19101ee5de7186666ce86a530cd501}\index{AuthenticationException@{AuthenticationException}!\$redirectTo@{\$redirectTo}}
+\index{\$redirectTo@{\$redirectTo}!AuthenticationException@{AuthenticationException}}
+\doxysubsubsection{\texorpdfstring{\$redirectTo}{\$redirectTo}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_authentication_exception_a1d19101ee5de7186666ce86a530cd501} 
+\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_authentication_exception_a427c6e9474256652a4df41523ea51251}{redirect\+To}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_authentication_exception_a4a2767b44a1ce6278852040d1f00411a}\index{AuthenticationException@{AuthenticationException}!\$redirectToCallback@{\$redirectToCallback}}
+\index{\$redirectToCallback@{\$redirectToCallback}!AuthenticationException@{AuthenticationException}}
+\doxysubsubsection{\texorpdfstring{\$redirectToCallback}{\$redirectToCallback}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_authentication_exception_a4a2767b44a1ce6278852040d1f00411a} 
+\$redirect\+To\+Callback\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Auth/\mbox{\hyperlink{_authentication_exception_8php}{Authentication\+Exception.\+php}}\end{DoxyCompactItemize}

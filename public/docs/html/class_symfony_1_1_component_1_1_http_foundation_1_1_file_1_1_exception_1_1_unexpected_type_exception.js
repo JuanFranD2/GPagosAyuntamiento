@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_exception_1_1_unexpected_type_exception =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_exception_1_1_unexpected_type_exception.html#ac7b2f68e5b657ce55f729513ecbdaffe", null ]
+];

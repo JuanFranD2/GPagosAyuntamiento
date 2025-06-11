@@ -1,0 +1,105 @@
+\doxysection{Database\+Service\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_database_service_provider}{}\label{class_illuminate_1_1_database_1_1_database_service_provider}\index{DatabaseServiceProvider@{DatabaseServiceProvider}}
+Inheritance diagram for Database\+Service\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_database_1_1_database_service_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_service_provider_a8814ea4b5beba763c570b4818980814e}{boot}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_service_provider_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_service_provider_a1ee41878aa5d724a1e6d487526b26936}{register\+Connection\+Services}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_service_provider_a1b2f1306ab2076e11ffd6b3a4bcd2a5b}{register\+Faker\+Generator}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_service_provider_a30e18b261cd2961458cd14bcfe86b80c}{register\+Queueable\+Entity\+Resolver}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_service_provider_a15b2db6494bf74f9a565ee576cfb8837}{\$fakers}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_service_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_service_provider_a8814ea4b5beba763c570b4818980814e}\index{DatabaseServiceProvider@{DatabaseServiceProvider}!boot@{boot}}
+\index{boot@{boot}!DatabaseServiceProvider@{DatabaseServiceProvider}}
+\doxysubsubsection{\texorpdfstring{boot()}{boot()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_service_provider_a8814ea4b5beba763c570b4818980814e} 
+boot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Bootstrap the application events.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_service_provider_acc294a6cc8e69743746820e3d15e3f78}\index{DatabaseServiceProvider@{DatabaseServiceProvider}!register@{register}}
+\index{register@{register}!DatabaseServiceProvider@{DatabaseServiceProvider}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_service_provider_acc294a6cc8e69743746820e3d15e3f78} 
+register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the service provider.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_service_provider_a1ee41878aa5d724a1e6d487526b26936}\index{DatabaseServiceProvider@{DatabaseServiceProvider}!registerConnectionServices@{registerConnectionServices}}
+\index{registerConnectionServices@{registerConnectionServices}!DatabaseServiceProvider@{DatabaseServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerConnectionServices()}{registerConnectionServices()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_service_provider_a1ee41878aa5d724a1e6d487526b26936} 
+register\+Connection\+Services (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the primary database bindings.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_service_provider_a1b2f1306ab2076e11ffd6b3a4bcd2a5b}\index{DatabaseServiceProvider@{DatabaseServiceProvider}!registerFakerGenerator@{registerFakerGenerator}}
+\index{registerFakerGenerator@{registerFakerGenerator}!DatabaseServiceProvider@{DatabaseServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerFakerGenerator()}{registerFakerGenerator()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_service_provider_a1b2f1306ab2076e11ffd6b3a4bcd2a5b} 
+register\+Faker\+Generator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the \doxylink{namespace_faker}{Faker} Generator instance in the container.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_service_provider_a30e18b261cd2961458cd14bcfe86b80c}\index{DatabaseServiceProvider@{DatabaseServiceProvider}!registerQueueableEntityResolver@{registerQueueableEntityResolver}}
+\index{registerQueueableEntityResolver@{registerQueueableEntityResolver}!DatabaseServiceProvider@{DatabaseServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerQueueableEntityResolver()}{registerQueueableEntityResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_service_provider_a30e18b261cd2961458cd14bcfe86b80c} 
+register\+Queueable\+Entity\+Resolver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the queueable entity resolver implementation.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_service_provider_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_service_provider_a15b2db6494bf74f9a565ee576cfb8837}\index{DatabaseServiceProvider@{DatabaseServiceProvider}!\$fakers@{\$fakers}}
+\index{\$fakers@{\$fakers}!DatabaseServiceProvider@{DatabaseServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$fakers}{\$fakers}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_service_provider_a15b2db6494bf74f9a565ee576cfb8837} 
+\$fakers = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\mbox{\hyperlink{_database_service_provider_8php}{Database\+Service\+Provider.\+php}}\end{DoxyCompactItemize}

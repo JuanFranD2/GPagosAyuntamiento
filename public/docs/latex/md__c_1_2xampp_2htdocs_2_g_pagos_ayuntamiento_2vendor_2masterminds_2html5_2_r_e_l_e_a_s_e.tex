@@ -1,0 +1,230 @@
+\chapter{Release Notes }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2masterminds_2html5_2_r_e_l_e_a_s_e}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2masterminds_2html5_2_r_e_l_e_a_s_e}\index{Release Notes@{Release Notes}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2masterminds_2html5_2_r_e_l_e_a_s_e_autotoc_md9814}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2masterminds_2html5_2_r_e_l_e_a_s_e_autotoc_md9814}%
+
+
+2.\+7.\+6 (2021-\/08-\/18)
+
+
+\begin{DoxyItemize}
+\item \#218\+: Address comment handling issues
+\end{DoxyItemize}
+
+2.\+7.\+5 (2021-\/07-\/01)
+
+
+\begin{DoxyItemize}
+\item \#204\+: Travis\+: Enable tests on PHP 8.\+0
+\item \#207\+: Fix PHP 8.\+1 deprecations
+\end{DoxyItemize}
+
+2.\+7.\+4 (2020-\/10-\/01)
+
+
+\begin{DoxyItemize}
+\item \#191\+: Fix travisci build
+\item \#195\+: Add .gitattributes file with export-\/ignore rules
+\item \#194\+: Fix query parameter parsed as character entity
+\end{DoxyItemize}
+
+2.\+7.\+3 (2020-\/07-\/05)
+
+
+\begin{DoxyItemize}
+\item \#190\+: mitigate cyclic reference between output rules and the traverser objects
+\end{DoxyItemize}
+
+2.\+7.\+2 (2020-\/07-\/01)
+
+
+\begin{DoxyItemize}
+\item \#187\+: Fixed memory leak in HTML5\+::save\+HTML()
+\item \#186\+: Add special case for end tag 
+\end{DoxyItemize}
+
+2.\+7.\+1 (2020-\/06-\/14)
+
+
+\begin{DoxyItemize}
+\item \#171\+: add PHP 7.\+4 job
+\item \#178\+: Prevent infinite loop on un-\/terminated entity declaration at EOF
+\end{DoxyItemize}
+
+2.\+7.\+0 (2019-\/07-\/25)
+
+
+\begin{DoxyItemize}
+\item \#164\+: Drop HHVM support
+\item \#168\+: Set default encoding in the DOMDocument object
+\end{DoxyItemize}
+
+2.\+6.\+0 (2019-\/03-\/10)
+
+
+\begin{DoxyItemize}
+\item \#163\+: Allow to pass a charset to the Scanner
+\end{DoxyItemize}
+
+2.\+5.\+0 (2018-\/12-\/27)
+
+
+\begin{DoxyItemize}
+\item \#162, \#161, \#155, \#154, \#153, \#151\+: big performance improvements
+\item \#156\+: fixed typos
+\item \#160\+: adopt and enforce code style
+\item \#159\+: remove deprecated php unit base test case
+\item \#150\+: backport changes from old master branch
+\end{DoxyItemize}
+
+2.\+4.\+0 (2018-\/11-\/17)
+
+
+\begin{DoxyItemize}
+\item \#148\+: Improve performance by moving sequence matching
+\item \#147\+: Improve the Tokenizer performance
+\item \#146\+: Improve performance by relying on a native string instead of Input\+Stream
+\item \#144\+: Add DOM extension in composer.\+json
+\item \#145\+: Add more extensions on composer.\+json, improve phpdocs and remove dead code
+\item \#143\+: Remove experimental comment
+\end{DoxyItemize}
+
+2.\+3.\+1 (2018-\/10-\/18)
+
+
+\begin{DoxyItemize}
+\item \#121\+: Audio is not a block tag (fixed by \#141)
+\item \#136\+: Handle illegal self-\/closing according to spec (fixed by \#137)
+\item \#141\+: Minor fixes in the README
+\end{DoxyItemize}
+
+2.\+3.\+0 (2017-\/09-\/04)
+
+
+\begin{DoxyItemize}
+\item \#129\+: image within inline svg breaks system (fixed by \#133)
+\item \#131\+: \texttwosuperior{} does not work (fixed by \#132)
+\item \#134\+: Improve tokenizer performance by 20\% (alternative version of \#130 thanks to @\+Michael\+Heerklotz)
+\item \#135\+: Raw \& in attributes
+\end{DoxyItemize}
+
+2.\+2.\+2 (2016-\/09-\/22)
+
+
+\begin{DoxyItemize}
+\item \#116\+: In XML mode, tags are case sensitive
+\item \#115\+: Fix PHP Notice in Output\+Rules
+\item \#112\+: fix parsing of options of an optgroup
+\item \#111\+: Adding test for the address tag
+\end{DoxyItemize}
+
+2.\+2.\+1 (2016-\/05-\/10)
+
+
+\begin{DoxyItemize}
+\item \#109\+: Fixed issue where address tag could be written without closing tag (thanks sylus)
+\end{DoxyItemize}
+
+2.\+2.\+0 (2016-\/04-\/11)
+
+
+\begin{DoxyItemize}
+\item \#105\+: Enable composer cache (for CI/\+CD)
+\item \#100\+: Use mb\+\_\+substitute\+\_\+character inset of ini\+\_\+set for environments where ini\+\_\+set is disable (e.\+g., shared hosting)
+\item \#98\+: Allow link, meta, style tags in noscript tags
+\item \#96\+: Fixed xml\+:href on svgs that use the "{}use"{} breaking
+\item \#94\+: Counting UTF8 characters performance improvement
+\item \#93\+: Use newer version of coveralls package
+\item \#90\+: Remove duplicate test
+\item \#87\+: Allow multiple root nodes
+\end{DoxyItemize}
+
+2.\+1.\+2 (2015-\/06-\/07)
+\begin{DoxyItemize}
+\item \#82\+: Support for PHP7
+\item \#84\+: Improved boolean attribute handling
+\end{DoxyItemize}
+
+2.\+1.\+1 (2015-\/03-\/23)
+\begin{DoxyItemize}
+\item \#78\+: Fixes bug where unmatched entity like string drops everything after \&.
+\end{DoxyItemize}
+
+2.\+1.\+0 (2015-\/02-\/01)
+\begin{DoxyItemize}
+\item \#74\+: Added {\ttfamily disable\+\_\+html\+\_\+ns} and {\ttfamily target\+\_\+doc} dom parsing options
+\item Unified option names
+\item \#73\+: Fixed alphabet, {\ss} now can be detected
+\item \#75 and \#76\+: Allow whitespace in RCDATA tags
+\item \#77\+: Fixed parsing blunder for json embeds
+\item \#72\+: Add options to HTML methods
+\end{DoxyItemize}
+
+2.\+0.\+2 (2014-\/12-\/17)
+\begin{DoxyItemize}
+\item \#50\+: empty document handling
+\item \#63\+: tags with strange capitalization
+\item \#65\+: dashes and underscores as allowed characters in tag names
+\item \#68\+: Fixed issue with non-\/inline elements inside inline containers
+\end{DoxyItemize}
+
+2.\+0.\+1 (2014-\/09-\/23)
+\begin{DoxyItemize}
+\item \#59\+: Fixed issue parsing some fragments.
+\item \#56\+: Incorrectly saw 0 as empty string
+\item Sami as new documentation generator
+\end{DoxyItemize}
+
+2.\+0.\+0 (2014-\/07-\/28)
+\begin{DoxyItemize}
+\item \#53\+: Improved boolean attributes handling
+\item \#52\+: Facebook HHVM compatibility
+\item \#48\+: Adopted PSR-\/2 as coding standard
+\item \#47\+: Moved everything to \doxylink{namespace_masterminds}{Masterminds} namespace
+\item \#45\+: Added custom namespaces
+\item \#44\+: Added support to XML-\/style namespaces
+\item \#37\+: Refactored HTML5 class removing static methods
+\end{DoxyItemize}
+
+1.\+0.\+5 (2014-\/06-\/10)
+\begin{DoxyItemize}
+\item \#38\+: Set the dev-\/master branch as the 1.\+0.\+x branch for composer (goetas)
+\item \#34\+: \doxylink{namespace_tests}{Tests} use PSR-\/4 for autoloading. (goetas)
+\item \#40, \#41\+: Fix entity handling in RCDATA sections. (Kitaiti\+Makoto)
+\item \#32\+: Fixed issue where wharacter references were being incorrectly encoded in style tags.
+\end{DoxyItemize}
+
+1.\+0.\+4 (2014-\/04-\/29)
+\begin{DoxyItemize}
+\item \#30/\#31 Don\textquotesingle{}t throw an exception for invalid tag names.
+\end{DoxyItemize}
+
+1.\+0.\+3 (2014-\/02-\/28)
+\begin{DoxyItemize}
+\item \#23 and \#29\+: Ignore attributes with illegal chars in name for the PHP DOM.
+\end{DoxyItemize}
+
+1.\+0.\+2 (2014-\/02-\/12)
+\begin{DoxyItemize}
+\item \#23\+: Handle missing tag close in attribute list.
+\item \#25\+: Fixed text escaping in the serializer (HTML\% 8.\+3).
+\item \#27\+: Fixed tests on Windows\+: changed "{}\textbackslash{}n"{} -\/\texorpdfstring{$>$}{>} PHP\+\_\+\+EOL.
+\item \#28\+: Fixed infinite loop for char "{}\&"{} in unquoted attribute in parser.
+\item \#26\+: Updated tag name case handling to deal with uppercase usage.
+\item \#24\+: Newlines and tabs are allowed inside quoted attributes (HTML5 8.\+2.\+4).
+\item Fixed Travis CI testing.
+\end{DoxyItemize}
+
+1.\+0.\+1 (2013-\/11-\/07)
+\begin{DoxyItemize}
+\item CDATA encoding is improved. (Non-\/standard; Issue \#19)
+\item Some parser rules were not returning the new current element. (Issue \#20)
+\item Added, to the README, details on code test coverage and to packagist version.
+\item Fixed processor instructions.
+\item Improved test coverage and documentation coverage.
+\end{DoxyItemize}
+
+1.\+0.\+0 (2013-\/10-\/02)
+\begin{DoxyItemize}
+\item Initial release. 
+\end{DoxyItemize}

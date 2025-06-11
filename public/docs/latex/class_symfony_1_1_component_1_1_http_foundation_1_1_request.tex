@@ -1,0 +1,1510 @@
+\doxysection{Request Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_request}\index{Request@{Request}}
+Inheritance diagram for Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_request}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a76c316bdcd1da16712c3dfc244b9786c}{\+\_\+\+\_\+construct}} (array \$query=\mbox{[}$\,$\mbox{]}, array \$request=\mbox{[}$\,$\mbox{]}, array \$attributes=\mbox{[}$\,$\mbox{]}, array \$cookies=\mbox{[}$\,$\mbox{]}, array \$files=\mbox{[}$\,$\mbox{]}, array \$server=\mbox{[}$\,$\mbox{]}, \$content=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae5baceee9b54e07f088980b6a0c28ff5}{initialize}} (array \$query=\mbox{[}$\,$\mbox{]}, array \$request=\mbox{[}$\,$\mbox{]}, array \$attributes=\mbox{[}$\,$\mbox{]}, array \$cookies=\mbox{[}$\,$\mbox{]}, array \$files=\mbox{[}$\,$\mbox{]}, array \$server=\mbox{[}$\,$\mbox{]}, \$content=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a48a44439ce2d0d2ca0803e4d04ac05aa}{duplicate}} (?array \$query=null, ?array \$request=null, ?array \$attributes=null, ?array \$cookies=null, ?array \$files=null, ?array \$server=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ac948c6b4a68bb06b0e4f4249cf5f067e}{override\+Globals}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4d1ec84d2ad9eee94a297ff6db1c0add}{get}} (string \$key, mixed \$default=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aefa4c5bd150e2a7d525576d7959c6911}{get\+Session}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab8f3d1fc3e1bf734f31a3a15180f9a30}{has\+Previous\+Session}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a1fd20747cf9cd10009df22748e08db6b}{has\+Session}} (bool \$skip\+If\+Uninitialized=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a571453e6e1324c8c0bc9126350c21b59}{set\+Session}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_interface}{Session\+Interface}} \$session)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a2d92f91994dfcd07c13704a188275540}{set\+Session\+Factory}} (callable \$factory)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a90b9c0e93c6af06cd856003dd66d1ee3}{get\+Client\+Ips}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a634fd25e27c51441792513975338839f}{get\+Client\+Ip}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a8fddbb7824b34991274f7a3e1211f556}{get\+Script\+Name}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a87a89a55d55c6cf0b2f266e98b798f55}{get\+Path\+Info}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aaf4a9649667a3904fae19e9bd27ebd67}{get\+Base\+Path}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae1ca0d2444e3cca6b147445348f686de}{get\+Base\+Url}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a812bc167005f6f5852c53693fb0156bb}{get\+Scheme}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_afd4db46d3c12f47f0bee19cd2101be64}{get\+Port}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae81b7186fb97a7c6457edcc68c9aa2ef}{get\+User}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a04e0957baeb7acde9c0c86556da2d43f}{get\+Password}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7e7999c3a04f08ffcc5e237fd28a6bc7}{get\+User\+Info}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5263d3f1625e785f736275365141308f}{get\+Http\+Host}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af9082177972a203cdb3d869a6d8f85da}{get\+Request\+Uri}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abde834eec71290dab0aae1513c8dec81}{get\+Scheme\+And\+Http\+Host}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a2ac86cae38fbe15a019d075d485ab702}{get\+Uri}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa18012b3369cf5d1712551d3fe878969}{get\+Uri\+For\+Path}} (string \$path)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa2b3fb976dcdea5e9aa3a236236d0b14}{get\+Relative\+Uri\+For\+Path}} (string \$path)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abd75dd4eab9b40cbe4ca9f8fc0dd462c}{get\+Query\+String}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa1f2844d6af0ec0d32e43bc58e9ad1ba}{is\+Secure}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a39895a44b52bdced039e698588aaf18e}{get\+Host}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a457a63d6abaf73743a688f9726877123}{set\+Method}} (string \$method)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af3e37e1a6ed9b8c87f86f659873a83b7}{get\+Method}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad4406084e353a7c3ec88712e37274c0d}{get\+Real\+Method}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a3e09a5fca0425cb93d310ce69f4afabd}{get\+Mime\+Type}} (string \$format)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab1729a1fac39ca2280b5a7061d75d785}{get\+Format}} (?string \$mime\+Type)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a671c8cd50dfb40a630a774a9aadaee9d}{set\+Format}} (?string \$format, string\texorpdfstring{$\vert$}{|}array \$mime\+Types)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a9a91fdcbfd6afd46d801c355b74ca7aa}{get\+Request\+Format}} (?string \$default=\textquotesingle{}html\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_add653a320cf1bc2f76f08b6af0c388a6}{set\+Request\+Format}} (?string \$format)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a446b1069dbe534a4808e057a8fea0195}{get\+Content\+Type\+Format}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a665ce0ee482c00d49279a8a44bcad728}{set\+Default\+Locale}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0d8ad1a87eab4f3577a5d7cb8ce9df38}{get\+Default\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab6643b93f57377aaca6ccff3a7b24022}{set\+Locale}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad532b661eb33c3e755bd3fa8ff1bd7af}{get\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a3f93afd9a56ea68f5d1c9560f2bf60f0}{is\+Method}} (string \$method)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aeca91e810c3495ce0a83662d989810d6}{is\+Method\+Safe}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab0e5f8bceecf5c66927d0a73e5985ea5}{is\+Method\+Idempotent}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a31c4fef4fda732bd4bc92b88831f7bb7}{is\+Method\+Cacheable}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a915c3328b367338a7c0eddb1e3294e9a}{get\+Protocol\+Version}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a41725cc047f6a92c46bbb5d8aff51e30}{get\+Content}} (bool \$as\+Resource=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad8c514205f07b96039027257b79d6407}{get\+Payload}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a658defb34762c8f40085aec87e16ba1a}{to\+Array}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a01fe8d5accec06ff6a2406346bfb6a47}{get\+ETags}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0de74b9724e863167f6f26cf7830bcdb}{is\+No\+Cache}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aefb05a444cc82d57d52edd07382635dd}{get\+Preferred\+Format}} (?string \$default=\textquotesingle{}html\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0bbe6799ba0de221db53a18bd344e90b}{get\+Preferred\+Language}} (?array \$locales=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ada2ef7bac2979b90332fe9a527c60667}{get\+Languages}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a86208cd55f8c21b7b3138f1502c0a4d9}{get\+Charsets}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a02b50d064c7e8499d459988b29066f48}{get\+Encodings}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a575b1c4167619497f7dc11eaceac6a69}{get\+Acceptable\+Content\+Types}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7f970395d954dfaebfe69d7e62d55c25}{is\+Xml\+Http\+Request}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7736ea2f38a17bf6a6852c43c1524361}{prefer\+Safe\+Content}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aeb7ccba5e669e7b43c1d7882858e565d}{is\+From\+Trusted\+Proxy}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a79ce60596ee2f79e24a5188ba3e3d74f}{create\+From\+Globals}} ()
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4804147e5a7727778a600b79ba52c01d}{create}} (string \$uri, string \$method=\textquotesingle{}GET\textquotesingle{}, array \$parameters=\mbox{[}$\,$\mbox{]}, array \$cookies=\mbox{[}$\,$\mbox{]}, array \$files=\mbox{[}$\,$\mbox{]}, array \$server=\mbox{[}$\,$\mbox{]}, \$content=null)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a643f97cf7b3173e948879010efcc8c5e}{set\+Factory}} (?callable \$callable)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7b091891d5619dcaf59b0a1a125b1a52}{set\+Trusted\+Proxies}} (array \$proxies, int \$trusted\+Header\+Set)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a3cddac35ea9719c383f3a0df228dcf88}{get\+Trusted\+Proxies}} ()
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a46ef68401e03b81ae8b087cfbf7840b3}{get\+Trusted\+Header\+Set}} ()
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aba850f7d71edbd68e19f3989503f19e8}{set\+Trusted\+Hosts}} (array \$host\+Patterns)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7dc95f1f0bac39a2264629ca4e2b46d7}{get\+Trusted\+Hosts}} ()
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a27023d6f919b126bd00ddffb002d82d1}{normalize\+Query\+String}} (?string \$qs)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ac81cc07ca85b2afbf6c67bfa85d3609d}{enable\+Http\+Method\+Parameter\+Override}} ()
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a621a4f34b25e59c3c1dda5f474296401}{get\+Http\+Method\+Parameter\+Override}} ()
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4e67db73259640499a6e0d00f98a47a9}{get\+Mime\+Types}} (string \$format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a6c6ed5cb04a938344200db18555c0ae0}{HEADER\+\_\+\+FORWARDED}} = 0b000001
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab89b7d8cdfed3dddc090d2265d53b15a}{HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+FOR}} = 0b000010
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af00ead3576760c233809e4d5f1b0b99b}{HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+HOST}} = 0b000100
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a61eb84baaf5fd7695cfdfd3e7bc37de9}{HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+PROTO}} = 0b001000
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a8c18856c69b02c9ef68a20ff1318003f}{HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+PORT}} = 0b010000
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a374c73afed5acc4e1370ceffa9b0a7ef}{HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+PREFIX}} = 0b100000
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a90bf08b31dd783ec6a2b9faa04402455}{HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+AWS\+\_\+\+ELB}} = 0b0011010
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a03b77e2455526ae3978649b333d3dd81}{HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+TRAEFIK}} = 0b0111110
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a43e1140ea9a3f114999234573591f12b}{METHOD\+\_\+\+HEAD}} = \textquotesingle{}HEAD\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7a788a98c38989512ddd041f45a28f8b}{METHOD\+\_\+\+GET}} = \textquotesingle{}GET\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5bdaa6579b64f53c2504e52d3c213be5}{METHOD\+\_\+\+POST}} = \textquotesingle{}POST\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a061f956bb7987afa895791f9f9910198}{METHOD\+\_\+\+PUT}} = \textquotesingle{}PUT\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a8f733865ef3d9466925df2a1ad496ae3}{METHOD\+\_\+\+PATCH}} = \textquotesingle{}PATCH\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a696713675b01d88c6828af7b19d91bb7}{METHOD\+\_\+\+DELETE}} = \textquotesingle{}DELETE\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a37c288755f614827c25e330412cf8b3e}{METHOD\+\_\+\+PURGE}} = \textquotesingle{}PURGE\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5dd3a5f80aa7fd8ee48c694c31e7b41a}{METHOD\+\_\+\+OPTIONS}} = \textquotesingle{}OPTIONS\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ac4e2b70f54a0afc3c9bc4f55a6c829bf}{METHOD\+\_\+\+TRACE}} = \textquotesingle{}TRACE\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_adee3588ac1a52f378d6d0f467411d38e}{METHOD\+\_\+\+CONNECT}} = \textquotesingle{}CONNECT\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag}{Parameter\+Bag}} \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa5ff99766af33024dbd4c923f6b70969}{\$attributes}}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag}{Input\+Bag}} \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a90d351091552717ae887580de316276f}{\$request}}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag}{Input\+Bag}} \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aed6a965b0ff46ee6698a1a8f8707ebee}{\$query}}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_server_bag}{Server\+Bag}} \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae9882f6023b9b4dd3959117be2d524a7}{\$server}}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_bag}{File\+Bag}} \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aed57aa308aeec7e4d464afe3934d9212}{\$files}}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag}{Input\+Bag}} \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a91fa86bc121121239cd2071a68b3bcf7}{\$cookies}}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag}{Header\+Bag}} \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a25c356d4d9c4a6c9770b4a053a9a11b0}{\$headers}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab1251ea0d460353df3cbaba8aaa92b59}{prepare\+Request\+Uri}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a2d2e1f25dba959c7531afb7152f0418a}{prepare\+Base\+Url}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af26b6987b6a8af8abcbb665acd838ece}{prepare\+Base\+Path}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab1b2dd995c3e4228bef63ec7664e1e14}{prepare\+Path\+Info}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a6c5270978973956bbdddadb329c541ef}{initialize\+Formats}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a57b284fe00866494b33afa80ba729bed}{\$content}}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0fdfd80d1e536fab424b2ebd0551dbc7}{\$languages}} = null
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a9d7acb35cb66452cc45ad4b9d65b80b0}{\$charsets}} = null
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae606b26dcd1f9696b47b0201a0aa1f5d}{\$encodings}} = null
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5e9aa9cad3e9ac4a550e063b6ceb0d51}{\$acceptable\+Content\+Types}} = null
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a9a4bc7e07289c0fbc5ae0fadce1b0b6a}{\$path\+Info}} = null
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_afb0520743a6406e01942ec133ffdf2af}{\$request\+Uri}} = null
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a333c94aac4b67d6dc1ec3d31a87294f4}{\$base\+Url}} = null
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad5d5c0a3615c500a0aea6b65e68ce597}{\$base\+Path}} = null
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a541f461bef66a749aaaa6e0595995007}{\$method}} = null
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a587175885c7f92ee54019f88fb71f82d}{\$format}} = null
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_interface}{Session\+Interface}} Closure null \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a49211e76db3231a1191509d792447a03}{\$session}} = null
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a33bb1f563aed6a5e329d046b5a8df206}{\$locale}} = null
+\item 
+string \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abd9a23a97c0048bbf665005425dc7b62}{\$default\+Locale}} = \textquotesingle{}en\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4ab3cb7c933a145b29f41ee1c339fa7d}{\$trusted\+Proxies}} = \mbox{[}$\,$\mbox{]}
+\item 
+static array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a705a5815e7774045d12c41cc7502b72e}{\$trusted\+Host\+Patterns}} = \mbox{[}$\,$\mbox{]}
+\item 
+static array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4e37a210778b429c9499553247528da6}{\$trusted\+Hosts}} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0af1fb25c5f9c1589e8b5174b01dd58e}{\$http\+Method\+Parameter\+Override}} = false
+\item 
+static array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a80610831d7dae720a9c7cabeba6ba64d}{\$formats}} = null
+\item 
+static Closure \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abd5ded2bf197d64f46a0ded41f2ea242}{\$request\+Factory}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_request}{Request} represents an HTTP request.
+
+The methods dealing with \doxylink{class_u_r_l}{URL} accept / return a raw path (\% encoded)\+:
+\begin{DoxyItemize}
+\item get\+Base\+Path
+\item get\+Base\+Url
+\item get\+Path\+Info
+\item get\+Request\+Uri
+\item get\+Uri
+\item get\+Uri\+For\+Path
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a76c316bdcd1da16712c3dfc244b9786c}\index{Request@{Request}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a76c316bdcd1da16712c3dfc244b9786c} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$query}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$request}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$cookies}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$files}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$server}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$content}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$query} & The GET parameters \\
+\hline
+array & {\em \$request} & The POST parameters \\
+\hline
+array & {\em \$attributes} & The request attributes (parameters parsed from the PATH\+\_\+\+INFO, ...) \\
+\hline
+array & {\em \$cookies} & The COOKIE parameters \\
+\hline
+array & {\em \$files} & The FILES parameters \\
+\hline
+array & {\em \$server} & The SERVER parameters \\
+\hline
+string | resource | null & {\em \$content} & The raw body data \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad0cb87b388bc74d63dc884accdca8713}\index{Request@{Request}!\_\_clone@{\_\_clone}}
+\index{\_\_clone@{\_\_clone}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\_\_clone()}{\_\_clone()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad0cb87b388bc74d63dc884accdca8713} 
+\+\_\+\+\_\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clones the current request.
+
+Note that the session is not cloned as duplicated requests are most of the time sub-\/requests of the main one. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7516ca30af0db3cdbf9a7739b48ce91d}\index{Request@{Request}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4804147e5a7727778a600b79ba52c01d}\index{Request@{Request}!create@{create}}
+\index{create@{create}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4804147e5a7727778a600b79ba52c01d} 
+create (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{string}]{\$method}{ = {\ttfamily \textquotesingle{}GET\textquotesingle{}}, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$cookies}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$files}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$server}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$content}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a \doxylink{class_request}{Request} based on a given URI and configuration.
+
+The information contained in the URI always take precedence over the other information (server and parameters).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & The URI \\
+\hline
+string & {\em \$method} & The HTTP method \\
+\hline
+array & {\em \$parameters} & The query (GET) or request (POST) parameters \\
+\hline
+array & {\em \$cookies} & The request cookies (\$\+\_\+\+COOKIE) \\
+\hline
+array & {\em \$files} & The request files (\$\+\_\+\+FILES) \\
+\hline
+array & {\em \$server} & The server parameters (\$\+\_\+\+SERVER) \\
+\hline
+string | resource | null & {\em \$content} & The raw body data\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Bad\+Request\+Exception} & When the URI is invalid \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a79ce60596ee2f79e24a5188ba3e3d74f}\index{Request@{Request}!createFromGlobals@{createFromGlobals}}
+\index{createFromGlobals@{createFromGlobals}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{createFromGlobals()}{createFromGlobals()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a79ce60596ee2f79e24a5188ba3e3d74f} 
+create\+From\+Globals (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new request with values from PHP\textquotesingle{}s super globals. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a48a44439ce2d0d2ca0803e4d04ac05aa}\index{Request@{Request}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{duplicate()}{duplicate()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a48a44439ce2d0d2ca0803e4d04ac05aa} 
+duplicate (\begin{DoxyParamCaption}\item[{?array}]{\$query}{ = {\ttfamily null}, }\item[{?array}]{\$request}{ = {\ttfamily null}, }\item[{?array}]{\$attributes}{ = {\ttfamily null}, }\item[{?array}]{\$cookies}{ = {\ttfamily null}, }\item[{?array}]{\$files}{ = {\ttfamily null}, }\item[{?array}]{\$server}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Clones a request and overrides some of its parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$query} & The GET parameters \\
+\hline
+array | null & {\em \$request} & The POST parameters \\
+\hline
+array | null & {\em \$attributes} & The request attributes (parameters parsed from the PATH\+\_\+\+INFO, ...) \\
+\hline
+array | null & {\em \$cookies} & The COOKIE parameters \\
+\hline
+array | null & {\em \$files} & The FILES parameters \\
+\hline
+array | null & {\em \$server} & The SERVER parameters \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ac81cc07ca85b2afbf6c67bfa85d3609d}\index{Request@{Request}!enableHttpMethodParameterOverride@{enableHttpMethodParameterOverride}}
+\index{enableHttpMethodParameterOverride@{enableHttpMethodParameterOverride}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{enableHttpMethodParameterOverride()}{enableHttpMethodParameterOverride()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ac81cc07ca85b2afbf6c67bfa85d3609d} 
+enable\+Http\+Method\+Parameter\+Override (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Enables support for the \+\_\+method request parameter to determine the intended HTTP method.
+
+Be warned that enabling this feature might lead to CSRF issues in your code. Check that you are using CSRF tokens when required. If the HTTP method parameter override is enabled, an html-\/form with method "{}\+POST"{} can be altered and used to send a "{}\+PUT"{} or "{}\+DELETE"{} request via the \+\_\+method request parameter. If these methods are not protected against CSRF, this presents a possible vulnerability.
+
+The HTTP method can only be overridden when the real HTTP method is POST. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4d1ec84d2ad9eee94a297ff6db1c0add}\index{Request@{Request}!get@{get}}
+\index{get@{get}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4d1ec84d2ad9eee94a297ff6db1c0add} 
+get (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets a "{}parameter"{} value from any bag.
+
+This method is mainly useful for libraries that want to provide some flexibility. If you don\textquotesingle{}t need the flexibility in controllers, it is better to explicitly get request parameters from the appropriate public property instead (attributes, query, request).
+
+Order of precedence\+: PATH (routing placeholders or custom attributes), GET, POST \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a575b1c4167619497f7dc11eaceac6a69}\index{Request@{Request}!getAcceptableContentTypes@{getAcceptableContentTypes}}
+\index{getAcceptableContentTypes@{getAcceptableContentTypes}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getAcceptableContentTypes()}{getAcceptableContentTypes()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a575b1c4167619497f7dc11eaceac6a69} 
+get\+Acceptable\+Content\+Types (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets a list of content types acceptable by the client browser in preferable order.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aaf4a9649667a3904fae19e9bd27ebd67}\index{Request@{Request}!getBasePath@{getBasePath}}
+\index{getBasePath@{getBasePath}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getBasePath()}{getBasePath()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aaf4a9649667a3904fae19e9bd27ebd67} 
+get\+Base\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the root path from which this request is executed.
+
+Suppose that an \doxylink{index_8php}{index.\+php} file instantiates this request object\+:
+
+
+\begin{DoxyItemize}
+\item \href{http://localhost/index.php}{\texttt{http\+://localhost/index.\+php}} returns an empty string
+\item \href{http://localhost/index.php/page}{\texttt{http\+://localhost/index.\+php/page}} returns an empty string
+\item \href{http://localhost/web/index.php}{\texttt{http\+://localhost/web/index.\+php}} returns \textquotesingle{}/web\textquotesingle{}
+\item \href{http://localhost/we\%20b/index.php}{\texttt{http\+://localhost/we\%20b/index.\+php}} returns \textquotesingle{}/we\%20b\textquotesingle{}
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+string The raw path (i.\+e. not urldecoded) 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae1ca0d2444e3cca6b147445348f686de}\index{Request@{Request}!getBaseUrl@{getBaseUrl}}
+\index{getBaseUrl@{getBaseUrl}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getBaseUrl()}{getBaseUrl()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae1ca0d2444e3cca6b147445348f686de} 
+get\+Base\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the root \doxylink{class_u_r_l}{URL} from which this request is executed.
+
+The base \doxylink{class_u_r_l}{URL} never ends with a /.
+
+This is similar to get\+Base\+Path(), except that it also includes the script filename (e.\+g. \doxylink{index_8php}{index.\+php}) if one exists.
+
+\begin{DoxyReturn}{Returns}
+string The raw \doxylink{class_u_r_l}{URL} (i.\+e. not urldecoded) 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a86208cd55f8c21b7b3138f1502c0a4d9}\index{Request@{Request}!getCharsets@{getCharsets}}
+\index{getCharsets@{getCharsets}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getCharsets()}{getCharsets()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a86208cd55f8c21b7b3138f1502c0a4d9} 
+get\+Charsets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets a list of charsets acceptable by the client browser in preferable order.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a634fd25e27c51441792513975338839f}\index{Request@{Request}!getClientIp@{getClientIp}}
+\index{getClientIp@{getClientIp}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getClientIp()}{getClientIp()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a634fd25e27c51441792513975338839f} 
+get\+Client\+Ip (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the client IP address.
+
+This method can read the client IP address from the "{}\+X-\/\+Forwarded-\/\+For"{} header when trusted proxies were set via "{}set\+Trusted\+Proxies()"{}. The "{}\+X-\/\+Forwarded-\/\+For"{} header value is a comma+space separated list of IP addresses, the left-\/most being the original client, and each successive proxy that passed the request adding the IP address where it received the request from.
+
+If your reverse proxy uses a different header name than "{}\+X-\/\+Forwarded-\/\+For"{}, ("{}\+Client-\/\+Ip"{} for instance), configure it via the \$trusted\+Header\+Set argument of the Request\+::set\+Trusted\+Proxies() method instead.
+
+\begin{DoxySeeAlso}{See also}
+get\+Client\+Ips() 
+
+\href{https://wikipedia.org/wiki/X-Forwarded-For}{\texttt{https\+://wikipedia.\+org/wiki/\+X-\/\+Forwarded-\/\+For}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_debug_1_1_cli_request_a634fd25e27c51441792513975338839f}{Cli\+Request}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a90b9c0e93c6af06cd856003dd66d1ee3}\index{Request@{Request}!getClientIps@{getClientIps}}
+\index{getClientIps@{getClientIps}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getClientIps()}{getClientIps()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a90b9c0e93c6af06cd856003dd66d1ee3} 
+get\+Client\+Ips (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the client IP addresses.
+
+In the returned array the most trusted IP address is first, and the least trusted one last. The "{}real"{} client IP address is the last one, but this is also the least trusted one. Trusted proxies are stripped.
+
+Use this method carefully; you should use get\+Client\+Ip() instead.
+
+\begin{DoxySeeAlso}{See also}
+get\+Client\+Ip() 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a41725cc047f6a92c46bbb5d8aff51e30}\index{Request@{Request}!getContent@{getContent}}
+\index{getContent@{getContent}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getContent()}{getContent()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a41725cc047f6a92c46bbb5d8aff51e30} 
+get\+Content (\begin{DoxyParamCaption}\item[{bool}]{\$as\+Resource}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Returns the request body content.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$as\+Resource} & If true, a resource will be returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}resource
+\end{DoxyReturn}
+@psalm-\/return (\$as\+Resource is true ? resource \+: string) \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a446b1069dbe534a4808e057a8fea0195}\index{Request@{Request}!getContentTypeFormat@{getContentTypeFormat}}
+\index{getContentTypeFormat@{getContentTypeFormat}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getContentTypeFormat()}{getContentTypeFormat()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a446b1069dbe534a4808e057a8fea0195} 
+get\+Content\+Type\+Format (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the usual name of the format associated with the request\textquotesingle{}s media type (provided in the Content-\/\+Type header).
+
+\begin{DoxySeeAlso}{See also}
+Request\+::\$formats 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0d8ad1a87eab4f3577a5d7cb8ce9df38}\index{Request@{Request}!getDefaultLocale@{getDefaultLocale}}
+\index{getDefaultLocale@{getDefaultLocale}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getDefaultLocale()}{getDefaultLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0d8ad1a87eab4f3577a5d7cb8ce9df38} 
+get\+Default\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the default locale. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a02b50d064c7e8499d459988b29066f48}\index{Request@{Request}!getEncodings@{getEncodings}}
+\index{getEncodings@{getEncodings}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getEncodings()}{getEncodings()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a02b50d064c7e8499d459988b29066f48} 
+get\+Encodings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets a list of encodings acceptable by the client browser in preferable order.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a01fe8d5accec06ff6a2406346bfb6a47}\index{Request@{Request}!getETags@{getETags}}
+\index{getETags@{getETags}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getETags()}{getETags()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a01fe8d5accec06ff6a2406346bfb6a47} 
+get\+ETags (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Etags. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab1729a1fac39ca2280b5a7061d75d785}\index{Request@{Request}!getFormat@{getFormat}}
+\index{getFormat@{getFormat}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getFormat()}{getFormat()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab1729a1fac39ca2280b5a7061d75d785} 
+get\+Format (\begin{DoxyParamCaption}\item[{?string}]{\$mime\+Type}{}\end{DoxyParamCaption})}
+
+Gets the format associated with the mime type. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a39895a44b52bdced039e698588aaf18e}\index{Request@{Request}!getHost@{getHost}}
+\index{getHost@{getHost}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getHost()}{getHost()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a39895a44b52bdced039e698588aaf18e} 
+get\+Host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the host name.
+
+This method can read the client host name from the "{}\+X-\/\+Forwarded-\/\+Host"{} header when trusted proxies were set via "{}set\+Trusted\+Proxies()"{}.
+
+The "{}\+X-\/\+Forwarded-\/\+Host"{} header must contain the client host name.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Suspicious\+Operation\+Exception} & when the host name is invalid or not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5263d3f1625e785f736275365141308f}\index{Request@{Request}!getHttpHost@{getHttpHost}}
+\index{getHttpHost@{getHttpHost}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getHttpHost()}{getHttpHost()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5263d3f1625e785f736275365141308f} 
+get\+Http\+Host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the HTTP host being requested.
+
+The port name will be appended to the host if it\textquotesingle{}s non-\/standard. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a621a4f34b25e59c3c1dda5f474296401}\index{Request@{Request}!getHttpMethodParameterOverride@{getHttpMethodParameterOverride}}
+\index{getHttpMethodParameterOverride@{getHttpMethodParameterOverride}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getHttpMethodParameterOverride()}{getHttpMethodParameterOverride()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a621a4f34b25e59c3c1dda5f474296401} 
+get\+Http\+Method\+Parameter\+Override (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether support for the \+\_\+method request parameter is enabled. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ada2ef7bac2979b90332fe9a527c60667}\index{Request@{Request}!getLanguages@{getLanguages}}
+\index{getLanguages@{getLanguages}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getLanguages()}{getLanguages()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ada2ef7bac2979b90332fe9a527c60667} 
+get\+Languages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets a list of languages acceptable by the client browser ordered in the user browser preferences.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad532b661eb33c3e755bd3fa8ff1bd7af}\index{Request@{Request}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getLocale()}{getLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad532b661eb33c3e755bd3fa8ff1bd7af} 
+get\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the locale. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af3e37e1a6ed9b8c87f86f659873a83b7}\index{Request@{Request}!getMethod@{getMethod}}
+\index{getMethod@{getMethod}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getMethod()}{getMethod()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af3e37e1a6ed9b8c87f86f659873a83b7} 
+get\+Method (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the request "{}intended"{} method.
+
+If the X-\/\+HTTP-\/\+Method-\/\+Override header is set, and if the method is a POST, then it is used to determine the "{}real"{} intended HTTP method.
+
+The \+\_\+method request parameter can also be used to determine the HTTP method, but only if enable\+Http\+Method\+Parameter\+Override() has been called.
+
+The method is always an uppercased string.
+
+\begin{DoxySeeAlso}{See also}
+get\+Real\+Method() 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_debug_1_1_cli_request_af3e37e1a6ed9b8c87f86f659873a83b7}{Cli\+Request}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a3e09a5fca0425cb93d310ce69f4afabd}\index{Request@{Request}!getMimeType@{getMimeType}}
+\index{getMimeType@{getMimeType}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getMimeType()}{getMimeType()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a3e09a5fca0425cb93d310ce69f4afabd} 
+get\+Mime\+Type (\begin{DoxyParamCaption}\item[{string}]{\$format}{}\end{DoxyParamCaption})}
+
+Gets the mime type associated with the format. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4e67db73259640499a6e0d00f98a47a9}\index{Request@{Request}!getMimeTypes@{getMimeTypes}}
+\index{getMimeTypes@{getMimeTypes}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getMimeTypes()}{getMimeTypes()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4e67db73259640499a6e0d00f98a47a9} 
+get\+Mime\+Types (\begin{DoxyParamCaption}\item[{string}]{\$format}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the mime types associated with the format.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a04e0957baeb7acde9c0c86556da2d43f}\index{Request@{Request}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a04e0957baeb7acde9c0c86556da2d43f} 
+get\+Password (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the password. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a87a89a55d55c6cf0b2f266e98b798f55}\index{Request@{Request}!getPathInfo@{getPathInfo}}
+\index{getPathInfo@{getPathInfo}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getPathInfo()}{getPathInfo()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a87a89a55d55c6cf0b2f266e98b798f55} 
+get\+Path\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the path being requested relative to the executed script.
+
+The path info always starts with a /.
+
+Suppose this request is instantiated from /mysite on localhost\+:
+
+
+\begin{DoxyItemize}
+\item \href{http://localhost/mysite}{\texttt{http\+://localhost/mysite}} returns an empty string
+\item \href{http://localhost/mysite/about}{\texttt{http\+://localhost/mysite/about}} returns \textquotesingle{}/about\textquotesingle{}
+\item \href{http://localhost/mysite/enco\%20ded}{\texttt{http\+://localhost/mysite/enco\%20ded}} returns \textquotesingle{}/enco\%20ded\textquotesingle{}
+\item \href{http://localhost/mysite/about?var=1}{\texttt{http\+://localhost/mysite/about?var=1}} returns \textquotesingle{}/about\textquotesingle{}
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+string The raw path (i.\+e. not urldecoded) 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad8c514205f07b96039027257b79d6407}\index{Request@{Request}!getPayload@{getPayload}}
+\index{getPayload@{getPayload}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getPayload()}{getPayload()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad8c514205f07b96039027257b79d6407} 
+get\+Payload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the decoded form or json request body.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Json\+Exception} & When the body cannot be decoded to an array \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_afd4db46d3c12f47f0bee19cd2101be64}\index{Request@{Request}!getPort@{getPort}}
+\index{getPort@{getPort}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_afd4db46d3c12f47f0bee19cd2101be64} 
+get\+Port (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the port on which the request is made.
+
+This method can read the client port from the "{}\+X-\/\+Forwarded-\/\+Port"{} header when trusted proxies were set via "{}set\+Trusted\+Proxies()"{}.
+
+The "{}\+X-\/\+Forwarded-\/\+Port"{} header must contain the client port.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null Can be a string if fetched from the server bag 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aefb05a444cc82d57d52edd07382635dd}\index{Request@{Request}!getPreferredFormat@{getPreferredFormat}}
+\index{getPreferredFormat@{getPreferredFormat}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getPreferredFormat()}{getPreferredFormat()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aefb05a444cc82d57d52edd07382635dd} 
+get\+Preferred\+Format (\begin{DoxyParamCaption}\item[{?string}]{\$default}{ = {\ttfamily \textquotesingle{}html\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Gets the preferred format for the response by inspecting, in the following order\+:
+\begin{DoxyItemize}
+\item the request format set using set\+Request\+Format;
+\item the values of the Accept HTTP header.
+\end{DoxyItemize}
+
+Note that if you use this method, you should send the "{}\+Vary\+: Accept"{} header in the response to prevent any issues with intermediary HTTP caches. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0bbe6799ba0de221db53a18bd344e90b}\index{Request@{Request}!getPreferredLanguage@{getPreferredLanguage}}
+\index{getPreferredLanguage@{getPreferredLanguage}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getPreferredLanguage()}{getPreferredLanguage()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0bbe6799ba0de221db53a18bd344e90b} 
+get\+Preferred\+Language (\begin{DoxyParamCaption}\item[{?array}]{\$locales}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the preferred language.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$locales} & An array of ordered available locales \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a915c3328b367338a7c0eddb1e3294e9a}\index{Request@{Request}!getProtocolVersion@{getProtocolVersion}}
+\index{getProtocolVersion@{getProtocolVersion}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getProtocolVersion()}{getProtocolVersion()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a915c3328b367338a7c0eddb1e3294e9a} 
+get\+Protocol\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the protocol version.
+
+If the application is behind a proxy, the protocol version used in the requests between the client and the proxy and between the proxy and the server might be different. This returns the former (from the "{}\+Via"{} header) if the proxy is trusted (see "{}set\+Trusted\+Proxies()"{}), otherwise it returns the latter (from the "{}\+SERVER\+\_\+\+PROTOCOL"{} server parameter). \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abd75dd4eab9b40cbe4ca9f8fc0dd462c}\index{Request@{Request}!getQueryString@{getQueryString}}
+\index{getQueryString@{getQueryString}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getQueryString()}{getQueryString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abd75dd4eab9b40cbe4ca9f8fc0dd462c} 
+get\+Query\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Generates the normalized query string for the \doxylink{class_request}{Request}.
+
+It builds a normalized query string, where keys/value pairs are alphabetized and have consistent escaping. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad4406084e353a7c3ec88712e37274c0d}\index{Request@{Request}!getRealMethod@{getRealMethod}}
+\index{getRealMethod@{getRealMethod}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getRealMethod()}{getRealMethod()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad4406084e353a7c3ec88712e37274c0d} 
+get\+Real\+Method (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the "{}real"{} request method.
+
+\begin{DoxySeeAlso}{See also}
+get\+Method() 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa2b3fb976dcdea5e9aa3a236236d0b14}\index{Request@{Request}!getRelativeUriForPath@{getRelativeUriForPath}}
+\index{getRelativeUriForPath@{getRelativeUriForPath}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getRelativeUriForPath()}{getRelativeUriForPath()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa2b3fb976dcdea5e9aa3a236236d0b14} 
+get\+Relative\+Uri\+For\+Path (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+Returns the path as relative reference from the current \doxylink{class_request}{Request} path.
+
+Only the URIs path component (no schema, host etc.) is relevant and must be given. Both paths must be absolute and not contain relative parts. Relative URLs from one resource to another are useful when generating self-\/contained downloadable document archives. Furthermore, they can be used to reduce the link size in documents.
+
+Example target paths, given a base path of "{}/a/b/c/d"{}\+:
+\begin{DoxyItemize}
+\item "{}/a/b/c/d"{} -\/\texorpdfstring{$>$}{>} "{}"{}
+\item "{}/a/b/c/"{} -\/\texorpdfstring{$>$}{>} "{}./"{}
+\item "{}/a/b/"{} -\/\texorpdfstring{$>$}{>} "{}../"{}
+\item "{}/a/b/c/other"{} -\/\texorpdfstring{$>$}{>} "{}other"{}
+\item "{}/a/x/y"{} -\/\texorpdfstring{$>$}{>} "{}../../x/y"{} 
+\end{DoxyItemize}\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a9a91fdcbfd6afd46d801c355b74ca7aa}\index{Request@{Request}!getRequestFormat@{getRequestFormat}}
+\index{getRequestFormat@{getRequestFormat}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getRequestFormat()}{getRequestFormat()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a9a91fdcbfd6afd46d801c355b74ca7aa} 
+get\+Request\+Format (\begin{DoxyParamCaption}\item[{?string}]{\$default}{ = {\ttfamily \textquotesingle{}html\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Gets the request format.
+
+Here is the process to determine the format\+:
+
+
+\begin{DoxyItemize}
+\item format defined by the user (with set\+Request\+Format())
+\item \+\_\+format request attribute
+\item \$default
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+get\+Preferred\+Format 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af9082177972a203cdb3d869a6d8f85da}\index{Request@{Request}!getRequestUri@{getRequestUri}}
+\index{getRequestUri@{getRequestUri}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getRequestUri()}{getRequestUri()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af9082177972a203cdb3d869a6d8f85da} 
+get\+Request\+Uri (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the requested URI (path and query string).
+
+\begin{DoxyReturn}{Returns}
+string The raw URI (i.\+e. not URI decoded) 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a812bc167005f6f5852c53693fb0156bb}\index{Request@{Request}!getScheme@{getScheme}}
+\index{getScheme@{getScheme}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getScheme()}{getScheme()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a812bc167005f6f5852c53693fb0156bb} 
+get\+Scheme (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the request\textquotesingle{}s scheme. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abde834eec71290dab0aae1513c8dec81}\index{Request@{Request}!getSchemeAndHttpHost@{getSchemeAndHttpHost}}
+\index{getSchemeAndHttpHost@{getSchemeAndHttpHost}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getSchemeAndHttpHost()}{getSchemeAndHttpHost()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abde834eec71290dab0aae1513c8dec81} 
+get\+Scheme\+And\+Http\+Host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the scheme and HTTP host.
+
+If the \doxylink{class_u_r_l}{URL} was called with basic authentication, the user and the password are not added to the generated string. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a8fddbb7824b34991274f7a3e1211f556}\index{Request@{Request}!getScriptName@{getScriptName}}
+\index{getScriptName@{getScriptName}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getScriptName()}{getScriptName()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a8fddbb7824b34991274f7a3e1211f556} 
+get\+Script\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns current script name. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aefa4c5bd150e2a7d525576d7959c6911}\index{Request@{Request}!getSession@{getSession}}
+\index{getSession@{getSession}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getSession()}{getSession()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aefa4c5bd150e2a7d525576d7959c6911} 
+get\+Session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the \doxylink{class_session}{Session}.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Session\+Not\+Found\+Exception} & When session is not set properly \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a46ef68401e03b81ae8b087cfbf7840b3}\index{Request@{Request}!getTrustedHeaderSet@{getTrustedHeaderSet}}
+\index{getTrustedHeaderSet@{getTrustedHeaderSet}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getTrustedHeaderSet()}{getTrustedHeaderSet()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a46ef68401e03b81ae8b087cfbf7840b3} 
+get\+Trusted\+Header\+Set (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the set of trusted headers from trusted proxies.
+
+\begin{DoxyReturn}{Returns}
+int A bit field of Request\+::\+HEADER\+\_\+\texorpdfstring{$\ast$}{*} that defines which headers are trusted from your proxies 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7dc95f1f0bac39a2264629ca4e2b46d7}\index{Request@{Request}!getTrustedHosts@{getTrustedHosts}}
+\index{getTrustedHosts@{getTrustedHosts}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getTrustedHosts()}{getTrustedHosts()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7dc95f1f0bac39a2264629ca4e2b46d7} 
+get\+Trusted\+Hosts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the list of trusted host patterns.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a3cddac35ea9719c383f3a0df228dcf88}\index{Request@{Request}!getTrustedProxies@{getTrustedProxies}}
+\index{getTrustedProxies@{getTrustedProxies}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getTrustedProxies()}{getTrustedProxies()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a3cddac35ea9719c383f3a0df228dcf88} 
+get\+Trusted\+Proxies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the list of trusted proxies.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a2ac86cae38fbe15a019d075d485ab702}\index{Request@{Request}!getUri@{getUri}}
+\index{getUri@{getUri}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getUri()}{getUri()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a2ac86cae38fbe15a019d075d485ab702} 
+get\+Uri (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Generates a normalized URI (\doxylink{class_u_r_l}{URL}) for the \doxylink{class_request}{Request}.
+
+\begin{DoxySeeAlso}{See also}
+get\+Query\+String() 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_debug_1_1_cli_request_a2ac86cae38fbe15a019d075d485ab702}{Cli\+Request}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa18012b3369cf5d1712551d3fe878969}\index{Request@{Request}!getUriForPath@{getUriForPath}}
+\index{getUriForPath@{getUriForPath}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getUriForPath()}{getUriForPath()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa18012b3369cf5d1712551d3fe878969} 
+get\+Uri\+For\+Path (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+Generates a normalized URI for the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & A path to use instead of the current one \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae81b7186fb97a7c6457edcc68c9aa2ef}\index{Request@{Request}!getUser@{getUser}}
+\index{getUser@{getUser}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae81b7186fb97a7c6457edcc68c9aa2ef} 
+get\+User (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the user. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7e7999c3a04f08ffcc5e237fd28a6bc7}\index{Request@{Request}!getUserInfo@{getUserInfo}}
+\index{getUserInfo@{getUserInfo}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getUserInfo()}{getUserInfo()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7e7999c3a04f08ffcc5e237fd28a6bc7} 
+get\+User\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the user info.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null A user name if any and, optionally, scheme-\/specific information about how to gain authorization to access the server 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab8f3d1fc3e1bf734f31a3a15180f9a30}\index{Request@{Request}!hasPreviousSession@{hasPreviousSession}}
+\index{hasPreviousSession@{hasPreviousSession}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{hasPreviousSession()}{hasPreviousSession()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab8f3d1fc3e1bf734f31a3a15180f9a30} 
+has\+Previous\+Session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether the request contains a \doxylink{class_session}{Session} which was started in one of the previous requests. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a1fd20747cf9cd10009df22748e08db6b}\index{Request@{Request}!hasSession@{hasSession}}
+\index{hasSession@{hasSession}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{hasSession()}{hasSession()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a1fd20747cf9cd10009df22748e08db6b} 
+has\+Session (\begin{DoxyParamCaption}\item[{bool}]{\$skip\+If\+Uninitialized}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Whether the request contains a \doxylink{class_session}{Session} object.
+
+This method does not give any information about the state of the session object, like whether the session is started or not. It is just a way to check if this \doxylink{class_request}{Request} is associated with a \doxylink{class_session}{Session} instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$skip\+If\+Uninitialized} & When true, ignores factories injected by {\ttfamily set\+Session\+Factory} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae5baceee9b54e07f088980b6a0c28ff5}\index{Request@{Request}!initialize@{initialize}}
+\index{initialize@{initialize}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae5baceee9b54e07f088980b6a0c28ff5} 
+initialize (\begin{DoxyParamCaption}\item[{array}]{\$query}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$request}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$cookies}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$files}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$server}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$content}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets the parameters for this request.
+
+This method also re-\/initializes all properties.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$query} & The GET parameters \\
+\hline
+array & {\em \$request} & The POST parameters \\
+\hline
+array & {\em \$attributes} & The request attributes (parameters parsed from the PATH\+\_\+\+INFO, ...) \\
+\hline
+array & {\em \$cookies} & The COOKIE parameters \\
+\hline
+array & {\em \$files} & The FILES parameters \\
+\hline
+array & {\em \$server} & The SERVER parameters \\
+\hline
+string | resource | null & {\em \$content} & The raw body data \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a6c5270978973956bbdddadb329c541ef}\index{Request@{Request}!initializeFormats@{initializeFormats}}
+\index{initializeFormats@{initializeFormats}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{initializeFormats()}{initializeFormats()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a6c5270978973956bbdddadb329c541ef} 
+initialize\+Formats (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Initializes HTTP request formats. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aeb7ccba5e669e7b43c1d7882858e565d}\index{Request@{Request}!isFromTrustedProxy@{isFromTrustedProxy}}
+\index{isFromTrustedProxy@{isFromTrustedProxy}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{isFromTrustedProxy()}{isFromTrustedProxy()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aeb7ccba5e669e7b43c1d7882858e565d} 
+is\+From\+Trusted\+Proxy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicates whether this request originated from a trusted proxy.
+
+This can be useful to determine whether or not to trust the contents of a proxy-\/specific header. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a3f93afd9a56ea68f5d1c9560f2bf60f0}\index{Request@{Request}!isMethod@{isMethod}}
+\index{isMethod@{isMethod}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{isMethod()}{isMethod()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a3f93afd9a56ea68f5d1c9560f2bf60f0} 
+is\+Method (\begin{DoxyParamCaption}\item[{string}]{\$method}{}\end{DoxyParamCaption})}
+
+Checks if the request method is of specified type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & Uppercase request method (GET, POST etc) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a31c4fef4fda732bd4bc92b88831f7bb7}\index{Request@{Request}!isMethodCacheable@{isMethodCacheable}}
+\index{isMethodCacheable@{isMethodCacheable}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{isMethodCacheable()}{isMethodCacheable()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a31c4fef4fda732bd4bc92b88831f7bb7} 
+is\+Method\+Cacheable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks whether the method is cacheable or not.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://tools.ietf.org/html/rfc7231\#section-4.2.3}{\texttt{https\+://tools.\+ietf.\+org/html/rfc7231\#section-\/4.\+2.\+3}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab0e5f8bceecf5c66927d0a73e5985ea5}\index{Request@{Request}!isMethodIdempotent@{isMethodIdempotent}}
+\index{isMethodIdempotent@{isMethodIdempotent}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{isMethodIdempotent()}{isMethodIdempotent()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab0e5f8bceecf5c66927d0a73e5985ea5} 
+is\+Method\+Idempotent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks whether or not the method is idempotent. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aeca91e810c3495ce0a83662d989810d6}\index{Request@{Request}!isMethodSafe@{isMethodSafe}}
+\index{isMethodSafe@{isMethodSafe}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{isMethodSafe()}{isMethodSafe()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aeca91e810c3495ce0a83662d989810d6} 
+is\+Method\+Safe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks whether or not the method is safe.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://tools.ietf.org/html/rfc7231\#section-4.2.1}{\texttt{https\+://tools.\+ietf.\+org/html/rfc7231\#section-\/4.\+2.\+1}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0de74b9724e863167f6f26cf7830bcdb}\index{Request@{Request}!isNoCache@{isNoCache}}
+\index{isNoCache@{isNoCache}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{isNoCache()}{isNoCache()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0de74b9724e863167f6f26cf7830bcdb} 
+is\+No\+Cache (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa1f2844d6af0ec0d32e43bc58e9ad1ba}\index{Request@{Request}!isSecure@{isSecure}}
+\index{isSecure@{isSecure}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{isSecure()}{isSecure()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa1f2844d6af0ec0d32e43bc58e9ad1ba} 
+is\+Secure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks whether the request is secure or not.
+
+This method can read the client protocol from the "{}\+X-\/\+Forwarded-\/\+Proto"{} header when trusted proxies were set via "{}set\+Trusted\+Proxies()"{}.
+
+The "{}\+X-\/\+Forwarded-\/\+Proto"{} header must contain the protocol\+: "{}https"{} or "{}http"{}. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7f970395d954dfaebfe69d7e62d55c25}\index{Request@{Request}!isXmlHttpRequest@{isXmlHttpRequest}}
+\index{isXmlHttpRequest@{isXmlHttpRequest}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{isXmlHttpRequest()}{isXmlHttpRequest()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7f970395d954dfaebfe69d7e62d55c25} 
+is\+Xml\+Http\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if the request is an XMLHttp\+Request.
+
+It works if your Java\+Script library sets an X-\/\+Requested-\/\+With HTTP header. It is known to work with common Java\+Script frameworks\+:
+
+\begin{DoxySeeAlso}{See also}
+\href{https://wikipedia.org/wiki/List_of_Ajax_frameworks\#JavaScript}{\texttt{https\+://wikipedia.\+org/wiki/\+List\+\_\+of\+\_\+\+Ajax\+\_\+frameworks\#\+Java\+Script}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a27023d6f919b126bd00ddffb002d82d1}\index{Request@{Request}!normalizeQueryString@{normalizeQueryString}}
+\index{normalizeQueryString@{normalizeQueryString}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{normalizeQueryString()}{normalizeQueryString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a27023d6f919b126bd00ddffb002d82d1} 
+normalize\+Query\+String (\begin{DoxyParamCaption}\item[{?string}]{\$qs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a query string.
+
+It builds a normalized query string, where keys/value pairs are alphabetized, have consistent escaping and unneeded delimiters are removed. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ac948c6b4a68bb06b0e4f4249cf5f067e}\index{Request@{Request}!overrideGlobals@{overrideGlobals}}
+\index{overrideGlobals@{overrideGlobals}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{overrideGlobals()}{overrideGlobals()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ac948c6b4a68bb06b0e4f4249cf5f067e} 
+override\+Globals (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Overrides the PHP global variables according to this request instance.
+
+It overrides \$\+\_\+\+GET, \$\+\_\+\+POST, \$\+\_\+\+REQUEST, \$\+\_\+\+SERVER, \$\+\_\+\+COOKIE. \$\+\_\+\+FILES is never overridden, see rfc1867 \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7736ea2f38a17bf6a6852c43c1524361}\index{Request@{Request}!preferSafeContent@{preferSafeContent}}
+\index{preferSafeContent@{preferSafeContent}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{preferSafeContent()}{preferSafeContent()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7736ea2f38a17bf6a6852c43c1524361} 
+prefer\+Safe\+Content (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks whether the client browser prefers safe content or not according to RFC8674.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://tools.ietf.org/html/rfc8674}{\texttt{https\+://tools.\+ietf.\+org/html/rfc8674}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af26b6987b6a8af8abcbb665acd838ece}\index{Request@{Request}!prepareBasePath@{prepareBasePath}}
+\index{prepareBasePath@{prepareBasePath}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{prepareBasePath()}{prepareBasePath()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af26b6987b6a8af8abcbb665acd838ece} 
+prepare\+Base\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepares the base path. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a2d2e1f25dba959c7531afb7152f0418a}\index{Request@{Request}!prepareBaseUrl@{prepareBaseUrl}}
+\index{prepareBaseUrl@{prepareBaseUrl}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{prepareBaseUrl()}{prepareBaseUrl()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a2d2e1f25dba959c7531afb7152f0418a} 
+prepare\+Base\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepares the base \doxylink{class_u_r_l}{URL}. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab1b2dd995c3e4228bef63ec7664e1e14}\index{Request@{Request}!preparePathInfo@{preparePathInfo}}
+\index{preparePathInfo@{preparePathInfo}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{preparePathInfo()}{preparePathInfo()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab1b2dd995c3e4228bef63ec7664e1e14} 
+prepare\+Path\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepares the path info. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab1251ea0d460353df3cbaba8aaa92b59}\index{Request@{Request}!prepareRequestUri@{prepareRequestUri}}
+\index{prepareRequestUri@{prepareRequestUri}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{prepareRequestUri()}{prepareRequestUri()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab1251ea0d460353df3cbaba8aaa92b59} 
+prepare\+Request\+Uri (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a665ce0ee482c00d49279a8a44bcad728}\index{Request@{Request}!setDefaultLocale@{setDefaultLocale}}
+\index{setDefaultLocale@{setDefaultLocale}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setDefaultLocale()}{setDefaultLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a665ce0ee482c00d49279a8a44bcad728} 
+set\+Default\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})}
+
+Sets the default locale. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a643f97cf7b3173e948879010efcc8c5e}\index{Request@{Request}!setFactory@{setFactory}}
+\index{setFactory@{setFactory}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setFactory()}{setFactory()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a643f97cf7b3173e948879010efcc8c5e} 
+set\+Factory (\begin{DoxyParamCaption}\item[{?callable}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets a callable able to create a \doxylink{class_request}{Request} instance.
+
+This is mainly useful when you need to override the \doxylink{class_request}{Request} class to keep BC with an existing system. It should not be used for any other purpose. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a671c8cd50dfb40a630a774a9aadaee9d}\index{Request@{Request}!setFormat@{setFormat}}
+\index{setFormat@{setFormat}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setFormat()}{setFormat()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a671c8cd50dfb40a630a774a9aadaee9d} 
+set\+Format (\begin{DoxyParamCaption}\item[{?string}]{\$format}{, }\item[{string\texorpdfstring{$\vert$}{|}array}]{\$mime\+Types}{}\end{DoxyParamCaption})}
+
+Associates a format with mime types.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$mime\+Types} & The associated mime types (the preferred one must be the first as it will be used as the content type) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab6643b93f57377aaca6ccff3a7b24022}\index{Request@{Request}!setLocale@{setLocale}}
+\index{setLocale@{setLocale}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setLocale()}{setLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab6643b93f57377aaca6ccff3a7b24022} 
+set\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})}
+
+Sets the locale. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a457a63d6abaf73743a688f9726877123}\index{Request@{Request}!setMethod@{setMethod}}
+\index{setMethod@{setMethod}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setMethod()}{setMethod()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a457a63d6abaf73743a688f9726877123} 
+set\+Method (\begin{DoxyParamCaption}\item[{string}]{\$method}{}\end{DoxyParamCaption})}
+
+Sets the request method. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_add653a320cf1bc2f76f08b6af0c388a6}\index{Request@{Request}!setRequestFormat@{setRequestFormat}}
+\index{setRequestFormat@{setRequestFormat}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setRequestFormat()}{setRequestFormat()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_add653a320cf1bc2f76f08b6af0c388a6} 
+set\+Request\+Format (\begin{DoxyParamCaption}\item[{?string}]{\$format}{}\end{DoxyParamCaption})}
+
+Sets the request format. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a571453e6e1324c8c0bc9126350c21b59}\index{Request@{Request}!setSession@{setSession}}
+\index{setSession@{setSession}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setSession()}{setSession()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a571453e6e1324c8c0bc9126350c21b59} 
+set\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_interface}{Session\+Interface}}}]{\$session}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a2d92f91994dfcd07c13704a188275540}\index{Request@{Request}!setSessionFactory@{setSessionFactory}}
+\index{setSessionFactory@{setSessionFactory}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setSessionFactory()}{setSessionFactory()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a2d92f91994dfcd07c13704a188275540} 
+set\+Session\+Factory (\begin{DoxyParamCaption}\item[{callable}]{\$factory}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aba850f7d71edbd68e19f3989503f19e8}\index{Request@{Request}!setTrustedHosts@{setTrustedHosts}}
+\index{setTrustedHosts@{setTrustedHosts}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setTrustedHosts()}{setTrustedHosts()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aba850f7d71edbd68e19f3989503f19e8} 
+set\+Trusted\+Hosts (\begin{DoxyParamCaption}\item[{array}]{\$host\+Patterns}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets a list of trusted host patterns.
+
+You should only list the hosts you manage using regexs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$host\+Patterns} & A list of trusted host patterns \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7b091891d5619dcaf59b0a1a125b1a52}\index{Request@{Request}!setTrustedProxies@{setTrustedProxies}}
+\index{setTrustedProxies@{setTrustedProxies}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setTrustedProxies()}{setTrustedProxies()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7b091891d5619dcaf59b0a1a125b1a52} 
+set\+Trusted\+Proxies (\begin{DoxyParamCaption}\item[{array}]{\$proxies}{, }\item[{int}]{\$trusted\+Header\+Set}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets a list of trusted proxies.
+
+You should only list the reverse proxies that you manage directly.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$proxies} & A list of trusted proxies, the string \textquotesingle{}REMOTE\+\_\+\+ADDR\textquotesingle{} will be replaced with \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REMOTE\+\_\+\+ADDR\textquotesingle{}\mbox{]} and \textquotesingle{}PRIVATE\+\_\+\+SUBNETS\textquotesingle{} by Ip\+Utils\+::\+PRIVATE\+\_\+\+SUBNETS \\
+\hline
+ & {\em int-\/mask-\/of$<$\+Request\+::\+HEADER\+\_\+\texorpdfstring{$\ast$}{*}$>$} & \$trusted\+Header\+Set A bit field to set which headers to trust from your proxies \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a658defb34762c8f40085aec87e16ba1a}\index{Request@{Request}!toArray@{toArray}}
+\index{toArray@{toArray}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{toArray()}{toArray()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a658defb34762c8f40085aec87e16ba1a} 
+to\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the request body decoded as array, typically from a JSON payload.
+
+\begin{DoxySeeAlso}{See also}
+get\+Payload() for portability between content types
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Json\+Exception} & When the body cannot be decoded to an array\\
+\hline
+\end{DoxyExceptions}
+Get all of the input and files for the request.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5e9aa9cad3e9ac4a550e063b6ceb0d51}\index{Request@{Request}!\$acceptableContentTypes@{\$acceptableContentTypes}}
+\index{\$acceptableContentTypes@{\$acceptableContentTypes}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$acceptableContentTypes}{\$acceptableContentTypes}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5e9aa9cad3e9ac4a550e063b6ceb0d51} 
+array \$acceptable\+Content\+Types = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa5ff99766af33024dbd4c923f6b70969}\index{Request@{Request}!\$attributes@{\$attributes}}
+\index{\$attributes@{\$attributes}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$attributes}{\$attributes}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aa5ff99766af33024dbd4c923f6b70969} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag}{Parameter\+Bag}} \$attributes}
+
+Custom parameters. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad5d5c0a3615c500a0aea6b65e68ce597}\index{Request@{Request}!\$basePath@{\$basePath}}
+\index{\$basePath@{\$basePath}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$basePath}{\$basePath}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ad5d5c0a3615c500a0aea6b65e68ce597} 
+string \$base\+Path = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a333c94aac4b67d6dc1ec3d31a87294f4}\index{Request@{Request}!\$baseUrl@{\$baseUrl}}
+\index{\$baseUrl@{\$baseUrl}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$baseUrl}{\$baseUrl}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a333c94aac4b67d6dc1ec3d31a87294f4} 
+string \$base\+Url = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a9d7acb35cb66452cc45ad4b9d65b80b0}\index{Request@{Request}!\$charsets@{\$charsets}}
+\index{\$charsets@{\$charsets}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$charsets}{\$charsets}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a9d7acb35cb66452cc45ad4b9d65b80b0} 
+array \$charsets = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a57b284fe00866494b33afa80ba729bed}\index{Request@{Request}!\$content@{\$content}}
+\index{\$content@{\$content}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$content}{\$content}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a57b284fe00866494b33afa80ba729bed} 
+\$content\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a91fa86bc121121239cd2071a68b3bcf7}\index{Request@{Request}!\$cookies@{\$cookies}}
+\index{\$cookies@{\$cookies}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$cookies}{\$cookies}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a91fa86bc121121239cd2071a68b3bcf7} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag}{Input\+Bag}} \$cookies}
+
+Cookies (\$\+\_\+\+COOKIE). \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abd9a23a97c0048bbf665005425dc7b62}\index{Request@{Request}!\$defaultLocale@{\$defaultLocale}}
+\index{\$defaultLocale@{\$defaultLocale}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$defaultLocale}{\$defaultLocale}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abd9a23a97c0048bbf665005425dc7b62} 
+string \$default\+Locale = \textquotesingle{}en\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae606b26dcd1f9696b47b0201a0aa1f5d}\index{Request@{Request}!\$encodings@{\$encodings}}
+\index{\$encodings@{\$encodings}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$encodings}{\$encodings}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae606b26dcd1f9696b47b0201a0aa1f5d} 
+array \$encodings = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aed57aa308aeec7e4d464afe3934d9212}\index{Request@{Request}!\$files@{\$files}}
+\index{\$files@{\$files}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$files}{\$files}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aed57aa308aeec7e4d464afe3934d9212} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_bag}{File\+Bag}} \$files}
+
+Uploaded files (\$\+\_\+\+FILES). \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a587175885c7f92ee54019f88fb71f82d}\index{Request@{Request}!\$format@{\$format}}
+\index{\$format@{\$format}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$format}{\$format}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a587175885c7f92ee54019f88fb71f82d} 
+string \$format = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a80610831d7dae720a9c7cabeba6ba64d}\index{Request@{Request}!\$formats@{\$formats}}
+\index{\$formats@{\$formats}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$formats}{\$formats}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a80610831d7dae720a9c7cabeba6ba64d} 
+array \$formats = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a25c356d4d9c4a6c9770b4a053a9a11b0}\index{Request@{Request}!\$headers@{\$headers}}
+\index{\$headers@{\$headers}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$headers}{\$headers}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a25c356d4d9c4a6c9770b4a053a9a11b0} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag}{Header\+Bag}} \$headers}
+
+Headers (taken from the \$\+\_\+\+SERVER). \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0af1fb25c5f9c1589e8b5174b01dd58e}\index{Request@{Request}!\$httpMethodParameterOverride@{\$httpMethodParameterOverride}}
+\index{\$httpMethodParameterOverride@{\$httpMethodParameterOverride}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$httpMethodParameterOverride}{\$httpMethodParameterOverride}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0af1fb25c5f9c1589e8b5174b01dd58e} 
+bool \$http\+Method\+Parameter\+Override = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0fdfd80d1e536fab424b2ebd0551dbc7}\index{Request@{Request}!\$languages@{\$languages}}
+\index{\$languages@{\$languages}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$languages}{\$languages}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a0fdfd80d1e536fab424b2ebd0551dbc7} 
+array \$languages = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a33bb1f563aed6a5e329d046b5a8df206}\index{Request@{Request}!\$locale@{\$locale}}
+\index{\$locale@{\$locale}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$locale}{\$locale}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a33bb1f563aed6a5e329d046b5a8df206} 
+string \$locale = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a541f461bef66a749aaaa6e0595995007}\index{Request@{Request}!\$method@{\$method}}
+\index{\$method@{\$method}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$method}{\$method}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a541f461bef66a749aaaa6e0595995007} 
+string \$method = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a9a4bc7e07289c0fbc5ae0fadce1b0b6a}\index{Request@{Request}!\$pathInfo@{\$pathInfo}}
+\index{\$pathInfo@{\$pathInfo}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$pathInfo}{\$pathInfo}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a9a4bc7e07289c0fbc5ae0fadce1b0b6a} 
+string \$path\+Info = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aed6a965b0ff46ee6698a1a8f8707ebee}\index{Request@{Request}!\$query@{\$query}}
+\index{\$query@{\$query}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$query}{\$query}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_aed6a965b0ff46ee6698a1a8f8707ebee} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag}{Input\+Bag}} \$query}
+
+Query string parameters (\$\+\_\+\+GET). \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a90d351091552717ae887580de316276f}\index{Request@{Request}!\$request@{\$request}}
+\index{\$request@{\$request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$request}{\$request}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a90d351091552717ae887580de316276f} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_input_bag}{Input\+Bag}} \$request}
+
+\doxylink{class_request}{Request} body parameters (\$\+\_\+\+POST).
+
+\begin{DoxySeeAlso}{See also}
+get\+Payload() for portability between content types 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abd5ded2bf197d64f46a0ded41f2ea242}\index{Request@{Request}!\$requestFactory@{\$requestFactory}}
+\index{\$requestFactory@{\$requestFactory}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$requestFactory}{\$requestFactory}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_abd5ded2bf197d64f46a0ded41f2ea242} 
+Closure \$request\+Factory = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_afb0520743a6406e01942ec133ffdf2af}\index{Request@{Request}!\$requestUri@{\$requestUri}}
+\index{\$requestUri@{\$requestUri}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$requestUri}{\$requestUri}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_afb0520743a6406e01942ec133ffdf2af} 
+string \$request\+Uri = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae9882f6023b9b4dd3959117be2d524a7}\index{Request@{Request}!\$server@{\$server}}
+\index{\$server@{\$server}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$server}{\$server}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ae9882f6023b9b4dd3959117be2d524a7} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_server_bag}{Server\+Bag}} \$server}
+
+Server and execution environment parameters (\$\+\_\+\+SERVER). \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a49211e76db3231a1191509d792447a03}\index{Request@{Request}!\$session@{\$session}}
+\index{\$session@{\$session}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$session}{\$session}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a49211e76db3231a1191509d792447a03} 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session_interface}{Session\+Interface}} Closure null \$session = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a705a5815e7774045d12c41cc7502b72e}\index{Request@{Request}!\$trustedHostPatterns@{\$trustedHostPatterns}}
+\index{\$trustedHostPatterns@{\$trustedHostPatterns}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$trustedHostPatterns}{\$trustedHostPatterns}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a705a5815e7774045d12c41cc7502b72e} 
+array \$trusted\+Host\+Patterns = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4e37a210778b429c9499553247528da6}\index{Request@{Request}!\$trustedHosts@{\$trustedHosts}}
+\index{\$trustedHosts@{\$trustedHosts}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$trustedHosts}{\$trustedHosts}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4e37a210778b429c9499553247528da6} 
+array \$trusted\+Hosts = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4ab3cb7c933a145b29f41ee1c339fa7d}\index{Request@{Request}!\$trustedProxies@{\$trustedProxies}}
+\index{\$trustedProxies@{\$trustedProxies}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{\$trustedProxies}{\$trustedProxies}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a4ab3cb7c933a145b29f41ee1c339fa7d} 
+array \$trusted\+Proxies = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a6c6ed5cb04a938344200db18555c0ae0}\index{Request@{Request}!HEADER\_FORWARDED@{HEADER\_FORWARDED}}
+\index{HEADER\_FORWARDED@{HEADER\_FORWARDED}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{HEADER\_FORWARDED}{HEADER\_FORWARDED}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a6c6ed5cb04a938344200db18555c0ae0} 
+const HEADER\+\_\+\+FORWARDED = 0b000001}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a90bf08b31dd783ec6a2b9faa04402455}\index{Request@{Request}!HEADER\_X\_FORWARDED\_AWS\_ELB@{HEADER\_X\_FORWARDED\_AWS\_ELB}}
+\index{HEADER\_X\_FORWARDED\_AWS\_ELB@{HEADER\_X\_FORWARDED\_AWS\_ELB}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{HEADER\_X\_FORWARDED\_AWS\_ELB}{HEADER\_X\_FORWARDED\_AWS\_ELB}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a90bf08b31dd783ec6a2b9faa04402455} 
+const HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+AWS\+\_\+\+ELB = 0b0011010}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab89b7d8cdfed3dddc090d2265d53b15a}\index{Request@{Request}!HEADER\_X\_FORWARDED\_FOR@{HEADER\_X\_FORWARDED\_FOR}}
+\index{HEADER\_X\_FORWARDED\_FOR@{HEADER\_X\_FORWARDED\_FOR}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{HEADER\_X\_FORWARDED\_FOR}{HEADER\_X\_FORWARDED\_FOR}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ab89b7d8cdfed3dddc090d2265d53b15a} 
+const HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+FOR = 0b000010}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af00ead3576760c233809e4d5f1b0b99b}\index{Request@{Request}!HEADER\_X\_FORWARDED\_HOST@{HEADER\_X\_FORWARDED\_HOST}}
+\index{HEADER\_X\_FORWARDED\_HOST@{HEADER\_X\_FORWARDED\_HOST}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{HEADER\_X\_FORWARDED\_HOST}{HEADER\_X\_FORWARDED\_HOST}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_af00ead3576760c233809e4d5f1b0b99b} 
+const HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+HOST = 0b000100}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a8c18856c69b02c9ef68a20ff1318003f}\index{Request@{Request}!HEADER\_X\_FORWARDED\_PORT@{HEADER\_X\_FORWARDED\_PORT}}
+\index{HEADER\_X\_FORWARDED\_PORT@{HEADER\_X\_FORWARDED\_PORT}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{HEADER\_X\_FORWARDED\_PORT}{HEADER\_X\_FORWARDED\_PORT}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a8c18856c69b02c9ef68a20ff1318003f} 
+const HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+PORT = 0b010000}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a374c73afed5acc4e1370ceffa9b0a7ef}\index{Request@{Request}!HEADER\_X\_FORWARDED\_PREFIX@{HEADER\_X\_FORWARDED\_PREFIX}}
+\index{HEADER\_X\_FORWARDED\_PREFIX@{HEADER\_X\_FORWARDED\_PREFIX}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{HEADER\_X\_FORWARDED\_PREFIX}{HEADER\_X\_FORWARDED\_PREFIX}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a374c73afed5acc4e1370ceffa9b0a7ef} 
+const HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+PREFIX = 0b100000}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a61eb84baaf5fd7695cfdfd3e7bc37de9}\index{Request@{Request}!HEADER\_X\_FORWARDED\_PROTO@{HEADER\_X\_FORWARDED\_PROTO}}
+\index{HEADER\_X\_FORWARDED\_PROTO@{HEADER\_X\_FORWARDED\_PROTO}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{HEADER\_X\_FORWARDED\_PROTO}{HEADER\_X\_FORWARDED\_PROTO}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a61eb84baaf5fd7695cfdfd3e7bc37de9} 
+const HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+PROTO = 0b001000}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a03b77e2455526ae3978649b333d3dd81}\index{Request@{Request}!HEADER\_X\_FORWARDED\_TRAEFIK@{HEADER\_X\_FORWARDED\_TRAEFIK}}
+\index{HEADER\_X\_FORWARDED\_TRAEFIK@{HEADER\_X\_FORWARDED\_TRAEFIK}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{HEADER\_X\_FORWARDED\_TRAEFIK}{HEADER\_X\_FORWARDED\_TRAEFIK}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a03b77e2455526ae3978649b333d3dd81} 
+const HEADER\+\_\+\+X\+\_\+\+FORWARDED\+\_\+\+TRAEFIK = 0b0111110}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_adee3588ac1a52f378d6d0f467411d38e}\index{Request@{Request}!METHOD\_CONNECT@{METHOD\_CONNECT}}
+\index{METHOD\_CONNECT@{METHOD\_CONNECT}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_CONNECT}{METHOD\_CONNECT}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_adee3588ac1a52f378d6d0f467411d38e} 
+const METHOD\+\_\+\+CONNECT = \textquotesingle{}CONNECT\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a696713675b01d88c6828af7b19d91bb7}\index{Request@{Request}!METHOD\_DELETE@{METHOD\_DELETE}}
+\index{METHOD\_DELETE@{METHOD\_DELETE}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_DELETE}{METHOD\_DELETE}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a696713675b01d88c6828af7b19d91bb7} 
+const METHOD\+\_\+\+DELETE = \textquotesingle{}DELETE\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7a788a98c38989512ddd041f45a28f8b}\index{Request@{Request}!METHOD\_GET@{METHOD\_GET}}
+\index{METHOD\_GET@{METHOD\_GET}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_GET}{METHOD\_GET}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a7a788a98c38989512ddd041f45a28f8b} 
+const METHOD\+\_\+\+GET = \textquotesingle{}GET\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a43e1140ea9a3f114999234573591f12b}\index{Request@{Request}!METHOD\_HEAD@{METHOD\_HEAD}}
+\index{METHOD\_HEAD@{METHOD\_HEAD}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_HEAD}{METHOD\_HEAD}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a43e1140ea9a3f114999234573591f12b} 
+const METHOD\+\_\+\+HEAD = \textquotesingle{}HEAD\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5dd3a5f80aa7fd8ee48c694c31e7b41a}\index{Request@{Request}!METHOD\_OPTIONS@{METHOD\_OPTIONS}}
+\index{METHOD\_OPTIONS@{METHOD\_OPTIONS}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_OPTIONS}{METHOD\_OPTIONS}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5dd3a5f80aa7fd8ee48c694c31e7b41a} 
+const METHOD\+\_\+\+OPTIONS = \textquotesingle{}OPTIONS\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a8f733865ef3d9466925df2a1ad496ae3}\index{Request@{Request}!METHOD\_PATCH@{METHOD\_PATCH}}
+\index{METHOD\_PATCH@{METHOD\_PATCH}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_PATCH}{METHOD\_PATCH}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a8f733865ef3d9466925df2a1ad496ae3} 
+const METHOD\+\_\+\+PATCH = \textquotesingle{}PATCH\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5bdaa6579b64f53c2504e52d3c213be5}\index{Request@{Request}!METHOD\_POST@{METHOD\_POST}}
+\index{METHOD\_POST@{METHOD\_POST}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_POST}{METHOD\_POST}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a5bdaa6579b64f53c2504e52d3c213be5} 
+const METHOD\+\_\+\+POST = \textquotesingle{}POST\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a37c288755f614827c25e330412cf8b3e}\index{Request@{Request}!METHOD\_PURGE@{METHOD\_PURGE}}
+\index{METHOD\_PURGE@{METHOD\_PURGE}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_PURGE}{METHOD\_PURGE}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a37c288755f614827c25e330412cf8b3e} 
+const METHOD\+\_\+\+PURGE = \textquotesingle{}PURGE\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a061f956bb7987afa895791f9f9910198}\index{Request@{Request}!METHOD\_PUT@{METHOD\_PUT}}
+\index{METHOD\_PUT@{METHOD\_PUT}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_PUT}{METHOD\_PUT}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_a061f956bb7987afa895791f9f9910198} 
+const METHOD\+\_\+\+PUT = \textquotesingle{}PUT\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ac4e2b70f54a0afc3c9bc4f55a6c829bf}\index{Request@{Request}!METHOD\_TRACE@{METHOD\_TRACE}}
+\index{METHOD\_TRACE@{METHOD\_TRACE}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{METHOD\_TRACE}{METHOD\_TRACE}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_ac4e2b70f54a0afc3c9bc4f55a6c829bf} 
+const METHOD\+\_\+\+TRACE = \textquotesingle{}TRACE\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/foundation/\mbox{\hyperlink{symfony_2http-foundation_2_request_8php}{Request.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/\mbox{\hyperlink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php}}\end{DoxyCompactItemize}

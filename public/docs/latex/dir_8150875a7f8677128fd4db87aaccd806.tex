@@ -1,0 +1,144 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/yajra/laravel-\/datatables-\/oracle Directory Reference}
+\hypertarget{dir_8150875a7f8677128fd4db87aaccd806}{}\label{dir_8150875a7f8677128fd4db87aaccd806}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/yajra/laravel-\/datatables-\/oracle Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/yajra/laravel-\/datatables-\/oracle Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_fe40d2d8005990f8ca0b89bebcfec181}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md11666}{}\doxysubsection{\texorpdfstring{j\+Query Data\+Tables API for Laravel}{j\+Query Data\+Tables API for Laravel}}\label{README.md_autotoc_md11666}
+\href{https://gitter.im/yajra/laravel-datatables?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge}{\texttt{}} \href{https://www.paypal.me/yajra}{\texttt{}} \href{https://www.patreon.com/bePatron?u=4521203}{\texttt{}}
+
+\href{http://laravel.com}{\texttt{}} \href{https://packagist.org/packages/yajra/laravel-datatables-oracle}{\texttt{}} \href{https://github.com/yajra/laravel-datatables/actions/workflows/continuous-integration.yml}{\texttt{}} \href{https://github.com/yajra/laravel-datatables/actions/workflows/static-analysis.yml}{\texttt{}}
+
+\href{https://packagist.org/packages/yajra/laravel-datatables-oracle}{\texttt{}} \href{https://packagist.org/packages/yajra/laravel-datatables-oracle}{\texttt{}}
+
+Laravel package for handling \href{https://www.datatables.net/manual/server-side}{\texttt{server-\/side}} works of \href{http://datatables.net}{\texttt{Data\+Tables}} j\+Query Plugin via \href{https://datatables.net/reference/option/ajax}{\texttt{AJAX option}} by using \doxylink{class_eloquent}{Eloquent} ORM, Fluent Query Builder or Collection.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_facades_1_1_data_tables}{Yajra\(\backslash\)DataTables\(\backslash\)Facades\(\backslash\)DataTables}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ DataTables::eloquent(User::query())-\/>toJson();}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ DataTables::query(DB::table(\textcolor{stringliteral}{'users'}))-\/>toJson();}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ DataTables::collection(User::all())-\/>toJson();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_facades_1_1_data_tables_aa502494d1bb9ea2934af2f8f2cc25dc0}{DataTables::make}}(User::query())-\/>toJson();}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_facades_1_1_data_tables_aa502494d1bb9ea2934af2f8f2cc25dc0}{DataTables::make}}(DB::table(\textcolor{stringliteral}{'users'}))-\/>toJson();}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_yajra_1_1_data_tables_1_1_facades_1_1_data_tables_aa502494d1bb9ea2934af2f8f2cc25dc0}{DataTables::make}}(User::all())-\/>toJson();}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11667}{}\doxysubsection{\texorpdfstring{Sponsors}{Sponsors}}\label{README.md_autotoc_md11667}
+
+
+A big thank you to \href{https://editor.datatables.net}{\texttt{Data\+Tables}} for supporting this project with a free \doxylink{class_data_tables}{Data\+Tables} Editor license.
+
+$<$/body$>$ 
+
+
+
+A big thank you to \href{https://www.jetbrains.com}{\texttt{Jet\+Brains}} for supporting this project with free open-\/source licenses of their IDEs.
+
+$<$/body$>$ 
+
+
+
+A big thank you to \href{https://blackfire.io/docs/introduction?utm_source=laravel-datatables&utm_medium=github_readme&utm_campaign=logo}{\texttt{Blackfire.\+io}} for supporting this project with a free open-\/source license.
+
+$<$/body$>$ \hypertarget{README.md_autotoc_md11668}{}\doxysubsection{\texorpdfstring{Requirements}{Requirements}}\label{README.md_autotoc_md11668}
+
+\begin{DoxyItemize}
+\item \href{http://php.net/}{\texttt{PHP \texorpdfstring{$>$}{>}= 8.\+2}}
+\item \href{https://github.com/laravel/framework}{\texttt{Laravel Framework}}
+\item \href{http://datatables.net/}{\texttt{Data\+Tables}}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11669}{}\doxysubsection{\texorpdfstring{Documentations}{Documentations}}\label{README.md_autotoc_md11669}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/yajra/laravel-datatables-docs}{\texttt{Github Docs}}
+\item \href{https://yajrabox.com/docs/laravel-datatables/master/quick-starter}{\texttt{Laravel Data\+Tables Quick Starter}}
+\item \href{https://yajrabox.com/docs/laravel-datatables}{\texttt{Laravel Data\+Tables Documentation}}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11670}{}\doxysubsection{\texorpdfstring{Laravel Version Compatibility}{Laravel Version Compatibility}}\label{README.md_autotoc_md11670}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Laravel  }&\cellcolor{\tableheadbgcolor}\textbf{ Package  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Laravel  }&\cellcolor{\tableheadbgcolor}\textbf{ Package  }\\\cline{1-2}
+\endhead
+4.\+2.\+x  &3.\+x  \\\cline{1-2}
+5.\+0.\+x  &6.\+x  \\\cline{1-2}
+5.\+1.\+x  &6.\+x  \\\cline{1-2}
+5.\+2.\+x  &6.\+x  \\\cline{1-2}
+5.\+3.\+x  &6.\+x  \\\cline{1-2}
+5.\+4.\+x  &7.\+x, 8.\+x  \\\cline{1-2}
+5.\+5.\+x  &8.\+x  \\\cline{1-2}
+5.\+6.\+x  &8.\+x  \\\cline{1-2}
+5.\+7.\+x  &8.\+x  \\\cline{1-2}
+5.\+8.\+x  &9.\+x  \\\cline{1-2}
+6.\+x  &9.\+x  \\\cline{1-2}
+7.\+x  &9.\+x  \\\cline{1-2}
+8.\+x  &9.\+x  \\\cline{1-2}
+9.\+x  &10.\+x  \\\cline{1-2}
+10.\+x  &10.\+x  \\\cline{1-2}
+11.\+x  &11.\+x  \\\cline{1-2}
+12.\+x  &12.\+x  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{README.md_autotoc_md11671}{}\doxysubsection{\texorpdfstring{Quick Installation}{Quick Installation}}\label{README.md_autotoc_md11671}
+\hypertarget{README.md_autotoc_md11672}{}\doxysubsubsection{\texorpdfstring{Option 1\+: Install all Data\+Tables libraries}{Option 1\+: Install all Data\+Tables libraries}}\label{README.md_autotoc_md11672}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ yajra/laravel-\/datatables:"{}\string^12"{}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11673}{}\doxysubsubsection{\texorpdfstring{Option 2\+: Install only this library}{Option 2\+: Install only this library}}\label{README.md_autotoc_md11673}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ yajra/laravel-\/datatables-\/oracle:"{}\string^12"{}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11674}{}\doxysubsubsubsection{\texorpdfstring{Service Provider \& Facade (Optional on Laravel 5.\+5+)}{Service Provider \& Facade (Optional on Laravel 5.\+5+)}}\label{README.md_autotoc_md11674}
+Register the provider and facade on your {\ttfamily config/app.\+php} file. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{'providers'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ ...,}
+\DoxyCodeLine{\ \ \ \ Yajra\(\backslash\)DataTables\(\backslash\)DataTablesServiceProvider::class,}
+\DoxyCodeLine{]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{stringliteral}{'aliases'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ ...,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'DataTables'}\ =>\ Yajra\(\backslash\)DataTables\(\backslash\)Facades\(\backslash\)DataTables::class,}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11675}{}\doxysubsubsubsection{\texorpdfstring{Configuration (Optional)}{Configuration (Optional)}}\label{README.md_autotoc_md11675}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ vendor:publish\ -\/-\/provider="{}Yajra\(\backslash\)DataTables\(\backslash\)DataTablesServiceProvider"{}}
+
+\end{DoxyCode}
+
+
+And that\textquotesingle{}s it! Start building out some awesome Data\+Tables!\hypertarget{README.md_autotoc_md11676}{}\doxysubsection{\texorpdfstring{Debugging Mode}{Debugging Mode}}\label{README.md_autotoc_md11676}
+To enable debugging mode, just set {\ttfamily APP\+\_\+\+DEBUG=true} and the package will include the queries and inputs used when processing the table.
+
+\begin{DoxyImportant}{Important}
+Please ensure that the {\ttfamily APP\+\_\+\+DEBUG} config is set to false when your app is in production.
+\end{DoxyImportant}
+\hypertarget{README.md_autotoc_md11677}{}\doxysubsection{\texorpdfstring{PHP ARTISAN SERVE BUG}{PHP ARTISAN SERVE BUG}}\label{README.md_autotoc_md11677}
+Please avoid using {\ttfamily php artisan serve} when developing the package. There are known bugs when using this where Laravel randomly returns a redirect and 401 (Unauthorized) if the route requires authentication and a 404 Not\+Found\+Http\+Exception on valid routes.
+
+It is advised to use \href{https://laravel.com/docs/5.4/homestead}{\texttt{Homestead}} or \href{https://laravel.com/docs/5.4/valet}{\texttt{Valet}} when working with the package.\hypertarget{README.md_autotoc_md11678}{}\doxysubsection{\texorpdfstring{Contributing}{Contributing}}\label{README.md_autotoc_md11678}
+Please see \href{https://github.com/yajra/laravel-datatables/blob/master/.github/CONTRIBUTING.md}{\texttt{CONTRIBUTING}} for details.\hypertarget{README.md_autotoc_md11679}{}\doxysubsection{\texorpdfstring{Security}{Security}}\label{README.md_autotoc_md11679}
+If you discover any security-\/related issues, please email \href{mailto:aqangeles@gmail.com}{\texttt{aqangeles@gmail.\+com}} instead of using the issue tracker.\hypertarget{README.md_autotoc_md11680}{}\doxysubsection{\texorpdfstring{Credits}{Credits}}\label{README.md_autotoc_md11680}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/yajra}{\texttt{Arjay Angeles}}
+\item \href{https://github.com/bllim/laravel4-datatables-package}{\texttt{bllim/laravel4-\/datatables-\/package}}
+\item \href{https://github.com/yajra/laravel-datatables/graphs/contributors}{\texttt{All Contributors}}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11681}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md11681}
+The MIT License (MIT). Please see \href{https://github.com/yajra/laravel-datatables/blob/master/LICENSE.md}{\texttt{License File}} for more information. 

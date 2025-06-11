@@ -1,0 +1,78 @@
+\doxysection{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator Namespace Reference}
+\hypertarget{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator}{}\label{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator}\index{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator@{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_add9a45b3268dfd36f7c2af74e5835350}{assert\+Each}} (\$list, callable \$check, callable \$message)
+\item 
+\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_aca04744e70c72805a6bb0cf0e76dddd6}{assert\+Not\+One}} (\$list, callable \$check, callable \$message)
+\item 
+\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_a5de6cb1e621f7aa819c11e994b2c2f4f}{assert\+Any}} (\$list, callable \$check, string \$message)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+trait \mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_a4e6b5c1a93b670488654257f01dddf09}{Iterator\+Asserts}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_a5de6cb1e621f7aa819c11e994b2c2f4f}\index{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator@{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator}!assertAny@{assertAny}}
+\index{assertAny@{assertAny}!PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator@{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator}}
+\doxysubsubsection{\texorpdfstring{assertAny()}{assertAny()}}
+{\footnotesize\ttfamily \label{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_a5de6cb1e621f7aa819c11e994b2c2f4f} 
+assert\+Any (\begin{DoxyParamCaption}\item[{}]{\$list}{, }\item[{callable}]{\$check}{, }\item[{string}]{\$message}{}\end{DoxyParamCaption})}
+
+@template TItem\+Value 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$string\texorpdfstring{$\vert$}{|}int,TItem\+Value$>$\texorpdfstring{$\vert$}{|}array$<$string\texorpdfstring{$\vert$}{|}int,TItem\+Value$>$} & \$list \\
+\hline
+{\em callable(\+TItem\+Value} & \$item)\+: bool \$check \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_add9a45b3268dfd36f7c2af74e5835350}\index{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator@{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator}!assertEach@{assertEach}}
+\index{assertEach@{assertEach}!PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator@{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator}}
+\doxysubsubsection{\texorpdfstring{assertEach()}{assertEach()}}
+{\footnotesize\ttfamily \label{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_add9a45b3268dfd36f7c2af74e5835350} 
+assert\+Each (\begin{DoxyParamCaption}\item[{}]{\$list}{, }\item[{callable}]{\$check}{, }\item[{callable}]{\$message}{}\end{DoxyParamCaption})}
+
+@template TItem\+Value 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$string\texorpdfstring{$\vert$}{|}int,TItem\+Value$>$\texorpdfstring{$\vert$}{|}array$<$string\texorpdfstring{$\vert$}{|}int,TItem\+Value$>$} & \$list \\
+\hline
+{\em callable(\+TItem\+Value} & \$item)\+: bool \$check \\
+\hline
+{\em callable(string\texorpdfstring{$\vert$}{|}int} & \$key, TItem\+Value \$item)\+: string \$message \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_aca04744e70c72805a6bb0cf0e76dddd6}\index{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator@{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator}!assertNotOne@{assertNotOne}}
+\index{assertNotOne@{assertNotOne}!PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator@{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator}}
+\doxysubsubsection{\texorpdfstring{assertNotOne()}{assertNotOne()}}
+{\footnotesize\ttfamily \label{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_aca04744e70c72805a6bb0cf0e76dddd6} 
+assert\+Not\+One (\begin{DoxyParamCaption}\item[{}]{\$list}{, }\item[{callable}]{\$check}{, }\item[{callable}]{\$message}{}\end{DoxyParamCaption})}
+
+@template TItem\+Value 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$string\texorpdfstring{$\vert$}{|}int,TItem\+Value$>$\texorpdfstring{$\vert$}{|}array$<$string\texorpdfstring{$\vert$}{|}int,TItem\+Value$>$} & \$list \\
+\hline
+{\em callable(\+TItem\+Value} & \$item)\+: bool \$check \\
+\hline
+{\em callable(string\texorpdfstring{$\vert$}{|}int} & \$key, TItem\+Value \$item)\+: string \$message \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-var-members}
+\Hypertarget{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_a4e6b5c1a93b670488654257f01dddf09}\index{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator@{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator}!IteratorAsserts@{IteratorAsserts}}
+\index{IteratorAsserts@{IteratorAsserts}!PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator@{PHPUnit\textbackslash{}Architecture\textbackslash{}Asserts\textbackslash{}Iterator}}
+\doxysubsubsection{\texorpdfstring{IteratorAsserts}{IteratorAsserts}}
+{\footnotesize\ttfamily \label{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_iterator_a4e6b5c1a93b670488654257f01dddf09} 
+trait Iterator\+Asserts}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}

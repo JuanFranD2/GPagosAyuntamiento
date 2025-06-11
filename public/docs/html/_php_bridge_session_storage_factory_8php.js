@@ -1,0 +1,4 @@
+var _php_bridge_session_storage_factory_8php =
+[
+    [ "PhpBridgeSessionStorageFactory", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_php_bridge_session_storage_factory.html", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_php_bridge_session_storage_factory" ]
+];

@@ -1,0 +1,104 @@
+\doxysection{Str Class Reference}
+\hypertarget{class_pest_1_1_support_1_1_str}{}\label{class_pest_1_1_support_1_1_str}\index{Str@{Str}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_str_a80056c3001e2d8ad866e2847795fbcbc}{random}} (int \$length=16)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_str_adccca5b953c12ad9849beb4a127838e9}{starts\+With}} (string \$target, string \$search)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_str_a2f52809dab25dc1f4b83eca71171844b}{ends\+With}} (string \$target, string \$search)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_str_a66841cc4a394b8204a500bab8790391b}{evaluable}} (string \$code)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_str_a00844d4607b98d44a48ca4d6d9943abe}{before\+Last}} (string \$subject, string \$search)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_str_a70faf0258e1e7bb238c6388ed4608899}{after}} (string \$subject, string \$search)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_str_a29d88bafc4f12feba436df01dd71fe00}{is\+Uuid}} (string \$value)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_str_af24fbee1645b2f976849487d756b5b3d}{describe}} (array \$describe\+Descriptions, string \$test\+Description)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_support_1_1_str_a44f60b1568b157108de0dd7f334eee63}{is\+Url}} (string \$value)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_support_1_1_str_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_support_1_1_str_a70faf0258e1e7bb238c6388ed4608899}\index{Str@{Str}!after@{after}}
+\index{after@{after}!Str@{Str}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_str_a70faf0258e1e7bb238c6388ed4608899} 
+after (\begin{DoxyParamCaption}\item[{string}]{\$subject}{, }\item[{string}]{\$search}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the content after the given "{}search"{}. \Hypertarget{class_pest_1_1_support_1_1_str_a00844d4607b98d44a48ca4d6d9943abe}\index{Str@{Str}!beforeLast@{beforeLast}}
+\index{beforeLast@{beforeLast}!Str@{Str}}
+\doxysubsubsection{\texorpdfstring{beforeLast()}{beforeLast()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_str_a00844d4607b98d44a48ca4d6d9943abe} 
+before\+Last (\begin{DoxyParamCaption}\item[{string}]{\$subject}{, }\item[{string}]{\$search}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the portion of a string before the last occurrence of a given value. \Hypertarget{class_pest_1_1_support_1_1_str_af24fbee1645b2f976849487d756b5b3d}\index{Str@{Str}!describe@{describe}}
+\index{describe@{describe}!Str@{Str}}
+\doxysubsubsection{\texorpdfstring{describe()}{describe()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_str_af24fbee1645b2f976849487d756b5b3d} 
+describe (\begin{DoxyParamCaption}\item[{array}]{\$describe\+Descriptions}{, }\item[{string}]{\$test\+Description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a describe block as {\ttfamily \$describe\+Description} → {\ttfamily \$test\+Description} format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$} & \$describe\+Descriptions \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_support_1_1_str_a2f52809dab25dc1f4b83eca71171844b}\index{Str@{Str}!endsWith@{endsWith}}
+\index{endsWith@{endsWith}!Str@{Str}}
+\doxysubsubsection{\texorpdfstring{endsWith()}{endsWith()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_str_a2f52809dab25dc1f4b83eca71171844b} 
+ends\+With (\begin{DoxyParamCaption}\item[{string}]{\$target}{, }\item[{string}]{\$search}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the given {\ttfamily \$target} ends with the given {\ttfamily \$search}. \Hypertarget{class_pest_1_1_support_1_1_str_a66841cc4a394b8204a500bab8790391b}\index{Str@{Str}!evaluable@{evaluable}}
+\index{evaluable@{evaluable}!Str@{Str}}
+\doxysubsubsection{\texorpdfstring{evaluable()}{evaluable()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_str_a66841cc4a394b8204a500bab8790391b} 
+evaluable (\begin{DoxyParamCaption}\item[{string}]{\$code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Makes the given string evaluable by an {\ttfamily eval}. \Hypertarget{class_pest_1_1_support_1_1_str_a44f60b1568b157108de0dd7f334eee63}\index{Str@{Str}!isUrl@{isUrl}}
+\index{isUrl@{isUrl}!Str@{Str}}
+\doxysubsubsection{\texorpdfstring{isUrl()}{isUrl()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_str_a44f60b1568b157108de0dd7f334eee63} 
+is\+Url (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determine if a given value is a valid \doxylink{class_u_r_l}{URL}. \Hypertarget{class_pest_1_1_support_1_1_str_a29d88bafc4f12feba436df01dd71fe00}\index{Str@{Str}!isUuid@{isUuid}}
+\index{isUuid@{isUuid}!Str@{Str}}
+\doxysubsubsection{\texorpdfstring{isUuid()}{isUuid()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_str_a29d88bafc4f12feba436df01dd71fe00} 
+is\+Uuid (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determine if a given value is a valid UUID. \Hypertarget{class_pest_1_1_support_1_1_str_a80056c3001e2d8ad866e2847795fbcbc}\index{Str@{Str}!random@{random}}
+\index{random@{random}!Str@{Str}}
+\doxysubsubsection{\texorpdfstring{random()}{random()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_str_a80056c3001e2d8ad866e2847795fbcbc} 
+random (\begin{DoxyParamCaption}\item[{int}]{\$length}{ = {\ttfamily 16}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a (unsecure \& non-\/cryptographically safe) random alpha-\/numeric string value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & the length of the resulting randomized string\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/laravel/framework/blob/4.2/src/Illuminate/Support/Str.php\#L240-L242}{\texttt{https\+://github.\+com/laravel/framework/blob/4.\+2/src/\+Illuminate/\+Support/\+Str.\+php\#\+L240-\/\+L242}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_pest_1_1_support_1_1_str_adccca5b953c12ad9849beb4a127838e9}\index{Str@{Str}!startsWith@{startsWith}}
+\index{startsWith@{startsWith}!Str@{Str}}
+\doxysubsubsection{\texorpdfstring{startsWith()}{startsWith()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_str_adccca5b953c12ad9849beb4a127838e9} 
+starts\+With (\begin{DoxyParamCaption}\item[{string}]{\$target}{, }\item[{string}]{\$search}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the given {\ttfamily \$target} starts with the given {\ttfamily \$search}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Support/\mbox{\hyperlink{pestphp_2pest_2src_2_support_2_str_8php}{Str.\+php}}\end{DoxyCompactItemize}

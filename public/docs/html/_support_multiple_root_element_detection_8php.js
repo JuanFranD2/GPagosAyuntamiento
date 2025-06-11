@@ -1,0 +1,4 @@
+var _support_multiple_root_element_detection_8php =
+[
+    [ "SupportMultipleRootElementDetection", "class_livewire_1_1_features_1_1_support_multiple_root_element_detection_1_1_support_multiple_root_element_detection.html", "class_livewire_1_1_features_1_1_support_multiple_root_element_detection_1_1_support_multiple_root_element_detection" ]
+];

@@ -1,0 +1,152 @@
+\doxysection{Database\+Transactions\+Manager Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager}{}\label{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+Inheritance diagram for Database\+Transactions\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a45d83772f222a6e9087e713583b3a76e}{\+\_\+\+\_\+construct}} (array \$connections\+Transacting)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a371fd2989fd197891d5cadd22ae415cd}{add\+Callback}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_ab9547758f22db7b9d94f6f1aa0154022}{callback\+Applicable\+Transactions}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a3820c7d9152e90e67a53d601bcf8b0a5}{after\+Commit\+Callbacks\+Should\+Be\+Executed}} (\$level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager}{Database\+Transactions\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a8e30c9dd15d0af509580b48716dbab78}{begin}} (\$connection, \$level)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a22f5215db45fea6932bcbc472ab7da20}{commit}} (\$connection, \$level\+Being\+Committed, \$new\+Transaction\+Level)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_abfca4aff026b1d1f7bce6a5314883515}{stage\+Transactions}} (\$connection, \$level\+Being\+Committed)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_acb9f7ab57aab1aa85e1729156927d499}{rollback}} (\$connection, \$new\+Transaction\+Level)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a3a7f8cf5ddc97d502397dc90a332bc17}{get\+Pending\+Transactions}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a719c6da11e0d1f96045c282adb9b67be}{get\+Committed\+Transactions}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a0e479f1677f2665fa5614b1c41a18782}{\$connections\+Transacting}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager}{Database\+Transactions\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_aaf2913a743df2c9d59ef2333bea752b6}{\$committed\+Transactions}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a1dae900768fe0949bae40f50e49e753d}{\$pending\+Transactions}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_ad9ddf9733584354c74c3c5ea8b25b0db}{\$current\+Transaction}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager}{Database\+Transactions\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a8e4b78900b3781b681e1f516380559c8}{remove\+All\+Transactions\+For\+Connection}} (\$connection)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_ab9abaa36b495b07592d8d1ac817c8bfa}{remove\+Committed\+Transactions\+That\+Are\+Children\+Of}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record}{Database\+Transaction\+Record}} \$transaction)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a45d83772f222a6e9087e713583b3a76e}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a45d83772f222a6e9087e713583b3a76e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$connections\+Transacting}{}\end{DoxyParamCaption})}
+
+Create a new database transaction manager instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$connections\+Transacting} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a371fd2989fd197891d5cadd22ae415cd}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!addCallback@{addCallback}}
+\index{addCallback@{addCallback}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{addCallback()}{addCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a371fd2989fd197891d5cadd22ae415cd} 
+add\+Callback (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a transaction callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a371fd2989fd197891d5cadd22ae415cd}{Database\+Transactions\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a3820c7d9152e90e67a53d601bcf8b0a5}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!afterCommitCallbacksShouldBeExecuted@{afterCommitCallbacksShouldBeExecuted}}
+\index{afterCommitCallbacksShouldBeExecuted@{afterCommitCallbacksShouldBeExecuted}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{afterCommitCallbacksShouldBeExecuted()}{afterCommitCallbacksShouldBeExecuted()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a3820c7d9152e90e67a53d601bcf8b0a5} 
+after\+Commit\+Callbacks\+Should\+Be\+Executed (\begin{DoxyParamCaption}\item[{}]{\$level}{}\end{DoxyParamCaption})}
+
+Determine if after commit callbacks should be executed for the given transaction level.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a3820c7d9152e90e67a53d601bcf8b0a5}{Database\+Transactions\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_ab9547758f22db7b9d94f6f1aa0154022}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!callbackApplicableTransactions@{callbackApplicableTransactions}}
+\index{callbackApplicableTransactions@{callbackApplicableTransactions}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{callbackApplicableTransactions()}{callbackApplicableTransactions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_ab9547758f22db7b9d94f6f1aa0154022} 
+callback\+Applicable\+Transactions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the transactions that are applicable to callbacks.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Database\+Transaction\+Record\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_ab9547758f22db7b9d94f6f1aa0154022}{Database\+Transactions\+Manager}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a0e479f1677f2665fa5614b1c41a18782}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!\$connectionsTransacting@{\$connectionsTransacting}}
+\index{\$connectionsTransacting@{\$connectionsTransacting}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{\$connectionsTransacting}{\$connectionsTransacting}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a0e479f1677f2665fa5614b1c41a18782} 
+array \$connections\+Transacting\hspace{0.3cm}{\ttfamily [protected]}}
+
+The names of the connections transacting during tests. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Testing/\mbox{\hyperlink{_foundation_2_testing_2_database_transactions_manager_8php}{Database\+Transactions\+Manager.\+php}}\end{DoxyCompactItemize}

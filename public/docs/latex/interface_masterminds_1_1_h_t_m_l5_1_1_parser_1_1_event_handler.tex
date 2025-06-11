@@ -1,0 +1,229 @@
+\doxysection{Event\+Handler Interface Reference}
+\hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler}{}\label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler}\index{EventHandler@{EventHandler}}
+Inheritance diagram for Event\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_aaaf95edb28fbfae8cbb3a8ab001773b3}{doctype}} (\$name, \$id\+Type=0, \$id=null, \$quirks=false)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a8db487096fdb6c481604ad7ef846fc00}{start\+Tag}} (\$name, \$attributes=array(), \$self\+Closing=false)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a8d878374b5929afdb0464bbbde3f184c}{end\+Tag}} (\$name)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ae05ea5674e928add0462a1c133630804}{comment}} (\$\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ac85255893f18dc4fab8d95152cae6751}{cdata}})
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_aa6e5104cc3ee9c12a1370c6c01a256bc}{text}} (\$\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ac85255893f18dc4fab8d95152cae6751}{cdata}})
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ada3799f740f09e3689d0054629e87feb}{eof}} ()
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a86ddb2a3758361f5d078248f2cc274a2}{parse\+Error}} (\$msg, \$line, \$col)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ac85255893f18dc4fab8d95152cae6751}{cdata}} (\$data)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a496181d70ca934b1f0cb4439dfd0fcc3}{processing\+Instruction}} (\$name, \$data=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a47ef213185f0fd9fe831d61437190693}{DOCTYPE\+\_\+\+NONE}} = 0
+\item 
+const \mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_afdb28c77e72dc789a44de8bdc5a091ce}{DOCTYPE\+\_\+\+PUBLIC}} = 1
+\item 
+const \mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ab438c8b5a762084009bc2a7e8bbb7400}{DOCTYPE\+\_\+\+SYSTEM}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Standard events for HTML5.
+
+This is roughly analogous to a SAX2 or expat-\/style interface. However, it is tuned specifically for HTML5, according to section 8 of the HTML5 specification.
+
+An event handler receives parser events. For a concrete implementation, see DOMTree\+Builder.
+
+Quirks support in the parser is limited to close-\/in syntax (malformed tags or attributes). Higher order syntax and semantic issues with a document (e.\+g. mismatched tags, illegal nesting, etc.) are the responsibility of the event handler implementation.
+
+See HTML5 spec section 8.\+2.\+4 
+
+\label{doc-func-members}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ac85255893f18dc4fab8d95152cae6751}\index{EventHandler@{EventHandler}!cdata@{cdata}}
+\index{cdata@{cdata}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{cdata()}{cdata()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ac85255893f18dc4fab8d95152cae6751} 
+cdata (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+A CDATA section.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & The unparsed character data \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_d_o_m_tree_builder_ac85255893f18dc4fab8d95152cae6751}{DOMTree\+Builder}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ae05ea5674e928add0462a1c133630804}\index{EventHandler@{EventHandler}!comment@{comment}}
+\index{comment@{comment}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{comment()}{comment()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ae05ea5674e928add0462a1c133630804} 
+comment (\begin{DoxyParamCaption}\item[{}]{\$cdata}{}\end{DoxyParamCaption})}
+
+A comment section (unparsed character data). 
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_d_o_m_tree_builder_ae05ea5674e928add0462a1c133630804}{DOMTree\+Builder}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_aaaf95edb28fbfae8cbb3a8ab001773b3}\index{EventHandler@{EventHandler}!doctype@{doctype}}
+\index{doctype@{doctype}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{doctype()}{doctype()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_aaaf95edb28fbfae8cbb3a8ab001773b3} 
+doctype (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$id\+Type}{ = {\ttfamily 0}, }\item[{}]{\$id}{ = {\ttfamily null}, }\item[{}]{\$quirks}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+A doctype declaration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the root element. \\
+\hline
+int & {\em \$id\+Type} & One of DOCTYPE\+\_\+\+NONE, DOCTYPE\+\_\+\+PUBLIC, or DOCTYPE\+\_\+\+SYSTEM \\
+\hline
+string & {\em \$id} & The identifier. For DOCTYPE\+\_\+\+PUBLIC, this is the public ID. If DOCTYPE\+\_\+\+SYSTEM, then this is a system ID. \\
+\hline
+bool & {\em \$quirks} & Indicates whether the builder should enter quirks mode. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_d_o_m_tree_builder_aaaf95edb28fbfae8cbb3a8ab001773b3}{DOMTree\+Builder}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a8d878374b5929afdb0464bbbde3f184c}\index{EventHandler@{EventHandler}!endTag@{endTag}}
+\index{endTag@{endTag}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{endTag()}{endTag()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a8d878374b5929afdb0464bbbde3f184c} 
+end\+Tag (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+An end-\/tag. 
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_d_o_m_tree_builder_a8d878374b5929afdb0464bbbde3f184c}{DOMTree\+Builder}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ada3799f740f09e3689d0054629e87feb}\index{EventHandler@{EventHandler}!eof@{eof}}
+\index{eof@{eof}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ada3799f740f09e3689d0054629e87feb} 
+eof (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicates that the document has been entirely processed. 
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_d_o_m_tree_builder_ada3799f740f09e3689d0054629e87feb}{DOMTree\+Builder}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a86ddb2a3758361f5d078248f2cc274a2}\index{EventHandler@{EventHandler}!parseError@{parseError}}
+\index{parseError@{parseError}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{parseError()}{parseError()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a86ddb2a3758361f5d078248f2cc274a2} 
+parse\+Error (\begin{DoxyParamCaption}\item[{}]{\$msg}{, }\item[{}]{\$line}{, }\item[{}]{\$col}{}\end{DoxyParamCaption})}
+
+Emitted when the parser encounters an error condition. 
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_d_o_m_tree_builder_a3a9c1d91c79d31ef5d30d8878dbbe336}{DOMTree\+Builder}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a496181d70ca934b1f0cb4439dfd0fcc3}\index{EventHandler@{EventHandler}!processingInstruction@{processingInstruction}}
+\index{processingInstruction@{processingInstruction}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{processingInstruction()}{processingInstruction()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a496181d70ca934b1f0cb4439dfd0fcc3} 
+processing\+Instruction (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$data}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+This is a holdover from the XML spec.
+
+While user agents don\textquotesingle{}t get PIs, server-\/side does.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the processor (e.\+g. \textquotesingle{}php\textquotesingle{}). \\
+\hline
+string & {\em \$data} & The unparsed data. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_d_o_m_tree_builder_a496181d70ca934b1f0cb4439dfd0fcc3}{DOMTree\+Builder}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a8db487096fdb6c481604ad7ef846fc00}\index{EventHandler@{EventHandler}!startTag@{startTag}}
+\index{startTag@{startTag}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{startTag()}{startTag()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a8db487096fdb6c481604ad7ef846fc00} 
+start\+Tag (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$attributes}{ = {\ttfamily array()}, }\item[{}]{\$self\+Closing}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+A start tag.
+
+IMPORTANT\+: The parser watches the return value of this event. If this returns an integer, the parser will switch TEXTMODE patters according to the int.
+
+This is how the Tree Builder can tell the Tokenizer when a certain tag should cause the parser to go into RAW text mode.
+
+The HTML5 standard requires that the builder is the one that initiates this step, and this is the only way short of a circular reference that we can do that.
+
+Example\+: if a start\+Tag even for a {\ttfamily script} name is fired, and the start\+Tag() implementation returns Tokenizer\+::\+TEXTMODE\+\_\+\+RAW, then the tokenizer will switch into RAW text mode and consume data until it reaches a closing {\ttfamily script} tag.
+
+The textmode is automatically reset to Tokenizer\+::\+TEXTMODE\+\_\+\+NORMAL when the closing tag is encounter. {\bfseries{This behavior may change.}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The tag name. \\
+\hline
+array & {\em \$attributes} & An array with all of the tag\textquotesingle{}s attributes. \\
+\hline
+bool & {\em \$self\+Closing} & An indicator of whether or not this tag is self-\/closing ($<$foo$>$).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int one of the Tokenizer\+::\+TEXTMODE\+\_\+\texorpdfstring{$\ast$}{*} constants 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_d_o_m_tree_builder_a8db487096fdb6c481604ad7ef846fc00}{DOMTree\+Builder}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_aa6e5104cc3ee9c12a1370c6c01a256bc}\index{EventHandler@{EventHandler}!text@{text}}
+\index{text@{text}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_aa6e5104cc3ee9c12a1370c6c01a256bc} 
+text (\begin{DoxyParamCaption}\item[{}]{\$cdata}{}\end{DoxyParamCaption})}
+
+A unit of parsed character data.
+
+Entities in this text are {\itshape already decoded}. 
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_d_o_m_tree_builder_a4d0166c4c7583b3c3480af070bacaa9e}{DOMTree\+Builder}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a47ef213185f0fd9fe831d61437190693}\index{EventHandler@{EventHandler}!DOCTYPE\_NONE@{DOCTYPE\_NONE}}
+\index{DOCTYPE\_NONE@{DOCTYPE\_NONE}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{DOCTYPE\_NONE}{DOCTYPE\_NONE}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_a47ef213185f0fd9fe831d61437190693} 
+const DOCTYPE\+\_\+\+NONE = 0}
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_afdb28c77e72dc789a44de8bdc5a091ce}\index{EventHandler@{EventHandler}!DOCTYPE\_PUBLIC@{DOCTYPE\_PUBLIC}}
+\index{DOCTYPE\_PUBLIC@{DOCTYPE\_PUBLIC}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{DOCTYPE\_PUBLIC}{DOCTYPE\_PUBLIC}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_afdb28c77e72dc789a44de8bdc5a091ce} 
+const DOCTYPE\+\_\+\+PUBLIC = 1}
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ab438c8b5a762084009bc2a7e8bbb7400}\index{EventHandler@{EventHandler}!DOCTYPE\_SYSTEM@{DOCTYPE\_SYSTEM}}
+\index{DOCTYPE\_SYSTEM@{DOCTYPE\_SYSTEM}!EventHandler@{EventHandler}}
+\doxysubsubsection{\texorpdfstring{DOCTYPE\_SYSTEM}{DOCTYPE\_SYSTEM}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_event_handler_ab438c8b5a762084009bc2a7e8bbb7400} 
+const DOCTYPE\+\_\+\+SYSTEM = 2}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Parser/\mbox{\hyperlink{_event_handler_8php}{Event\+Handler.\+php}}\end{DoxyCompactItemize}

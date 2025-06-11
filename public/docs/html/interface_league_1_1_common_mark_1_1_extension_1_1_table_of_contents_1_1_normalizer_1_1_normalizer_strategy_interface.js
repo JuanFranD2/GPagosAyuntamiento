@@ -1,0 +1,4 @@
+var interface_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_normalizer_1_1_normalizer_strategy_interface =
+[
+    [ "addItem", "interface_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_normalizer_1_1_normalizer_strategy_interface.html#a67513babc418f894ece64693bd323dc8", null ]
+];

@@ -1,0 +1,26 @@
+var interface_illuminate_1_1_contracts_1_1_queue_1_1_job =
+[
+    [ "attempts", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a8b665278088b7c0d5628e53030d010e5", null ],
+    [ "delete", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a13bdffdd926f26b825ea57066334ff01", null ],
+    [ "fail", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#abd66bf4b56f4946a50e5dae917c6b4be", null ],
+    [ "fire", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a8262e3bf76dfb0ee769031338948b332", null ],
+    [ "getConnectionName", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a4b199b80a35b58c716a31a1afbd6fe1a", null ],
+    [ "getJobId", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#ac4e33de833ea892529b0145f9c71412c", null ],
+    [ "getName", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a3d0963e68bb313b163a73f2803c64600", null ],
+    [ "getQueue", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#aa7a8055e5ee1eb792f29443ddb79c4d3", null ],
+    [ "getRawBody", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a5c67cc2000005354c0b21d0fbae309a7", null ],
+    [ "hasFailed", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#aab52cf3183d564c0d8ec05c4dffb13dd", null ],
+    [ "isDeleted", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#ae7c7709308082027ea2b479a7bc6c980", null ],
+    [ "isDeletedOrReleased", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a7ff234d9fd8095be0dda9fa1ee19bd2a", null ],
+    [ "isReleased", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#aac857a82cedd9ee7f50343c590d244cf", null ],
+    [ "markAsFailed", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a4371edea8f43a1ff8945b47f35b58c3f", null ],
+    [ "maxExceptions", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a2beeed3393d59ff0c02ec4ab4affcd9b", null ],
+    [ "maxTries", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a6fed45aaf42a29f7eea4239a5e144ae3", null ],
+    [ "payload", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a3465ae2c2aa8369e48a5bea234e96724", null ],
+    [ "release", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#ac5cc2a30abbe3afc2dc664c91489bb2d", null ],
+    [ "resolveName", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a9be0d422d13ac7b208cdd384b4cb477b", null ],
+    [ "resolveQueuedJobClass", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#aa11a1495b1435ee7aa4a8444ab3419fb", null ],
+    [ "retryUntil", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a57cc8b8b75dd1dcbe19f072ea7cfcc7e", null ],
+    [ "timeout", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a81b563fdd691382b8d9f83acdb81c6ef", null ],
+    [ "uuid", "interface_illuminate_1_1_contracts_1_1_queue_1_1_job.html#a0a684acda95e124d8596758e4986fe44", null ]
+];

@@ -1,0 +1,32 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/@isaacs/cliui/node\+\_\+modules/ansi-\/regex Directory Reference}
+\hypertarget{dir_c0202ed0b740fd15c58867d871a93734}{}\label{dir_c0202ed0b740fd15c58867d871a93734}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/"@isaacs/cliui/node\_modules/ansi-\/regex Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/"@isaacs/cliui/node\_modules/ansi-\/regex Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md366}{}\doxysubsection{\texorpdfstring{ansi-\/regex}{ansi-\/regex}}\label{readme.md_autotoc_md366}
+\begin{quote}
+Regular expression for matching \href{https://en.wikipedia.org/wiki/ANSI_escape_code}{\texttt{ANSI escape codes}} \end{quote}
+\hypertarget{readme.md_autotoc_md367}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md367}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md368}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md368}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md369}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md369}
+\hypertarget{readme.md_autotoc_md370}{}\doxysubsubsection{\texorpdfstring{ansi\+Regex(options?)}{ansi\+Regex(options?)}}\label{readme.md_autotoc_md370}
+Returns a regex for matching ANSI escape codes.\hypertarget{readme.md_autotoc_md371}{}\doxysubsubsubsection{\texorpdfstring{options}{options}}\label{readme.md_autotoc_md371}
+Type\+: {\ttfamily object}\hypertarget{readme.md_autotoc_md372}{}\doxysubsubsubsubsection{\texorpdfstring{only\+First}{only\+First}}\label{readme.md_autotoc_md372}
+Type\+: {\ttfamily boolean}\textbackslash{} Default\+: {\ttfamily false} {\itshape (Matches any ANSI escape codes in a string)}
+
+Match only the first ANSI escape.\hypertarget{readme.md_autotoc_md373}{}\doxysubsection{\texorpdfstring{FAQ}{FAQ}}\label{readme.md_autotoc_md373}
+\hypertarget{readme.md_autotoc_md374}{}\doxysubsubsection{\texorpdfstring{Why do you test for codes not in the ECMA 48 standard?}{Why do you test for codes not in the ECMA 48 standard?}}\label{readme.md_autotoc_md374}
+Some of the codes we run as a test are codes that we acquired finding various lists of non-\/standard or manufacturer specific codes. We test for both standard and non-\/standard codes, as most of them follow the same or similar format and can be safely matched in strings without the risk of removing actual string content. There are a few non-\/standard control codes that do not follow the traditional format (i.\+e. they end in numbers) thus forcing us to exclude them from the test because we cannot reliably match them.
+
+On the historical side, those ECMA standards were established in the early 90\textquotesingle{}s whereas the VT100, for example, was designed in the mid/late 70\textquotesingle{}s. At that point in time, control codes were still pretty ungoverned and engineers used them for a multitude of things, namely to activate hardware ports that may have been proprietary. Somewhere else you see a similar \textquotesingle{}anarchy\textquotesingle{} of codes is in the x86 architecture for processors; there are a ton of "{}interrupts"{} that can mean different things on certain brands of processors, most of which have been phased out.\hypertarget{readme.md_autotoc_md375}{}\doxysubsection{\texorpdfstring{Maintainers}{Maintainers}}\label{readme.md_autotoc_md375}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sindresorhus}{\texttt{Sindre Sorhus}}
+\item \href{https://github.com/qix-}{\texttt{Josh Junon}} 
+\end{DoxyItemize}

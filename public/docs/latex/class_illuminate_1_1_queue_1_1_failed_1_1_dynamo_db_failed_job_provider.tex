@@ -1,0 +1,215 @@
+\doxysection{Dynamo\+Db\+Failed\+Job\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider}{}\label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+Inheritance diagram for Dynamo\+Db\+Failed\+Job\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a44acbd204ab9af4f64e0d2bea05a9be7}{\+\_\+\+\_\+construct}} (Dynamo\+Db\+Client \$dynamo, \$application\+Name, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a7272667a5d0159d607bdf53d1d49a262}{log}} (\$connection, \$queue, \$payload, \$exception)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_aa841f67ececfd2adb39cfa074235199b}{ids}} (\$queue=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_af9d14e4ae6227970ad603987781573ca}{all}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a79cc82436f3290ec078b1aa19589da20}{find}} (\$id)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a81b436d2f6ce52e2c2a199a0aa2adf91}{forget}} (\$id)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_aba7379dfef7a95459fdceb765383ec94}{flush}} (\$hours=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a95618df2ee75fbb7f2b63bbfbe7dc83f}{\$dynamo}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_abb40c90d15ab55e6e3ea631a1a0100f6}{\$application\+Name}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_ae8876a14058f368335baccf35af4a22b}{\$table}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a44acbd204ab9af4f64e0d2bea05a9be7}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a44acbd204ab9af4f64e0d2bea05a9be7} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Dynamo\+Db\+Client}]{\$dynamo}{, }\item[{}]{\$application\+Name}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Create a new Dynamo\+Db failed job provider.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Aws\textbackslash{}\+Dynamo\+Db\textbackslash{}\+Dynamo\+Db\+Client & {\em \$dynamo} & \\
+\hline
+string & {\em \$application\+Name} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_af9d14e4ae6227970ad603987781573ca}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!all@{all}}
+\index{all@{all}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_af9d14e4ae6227970ad603987781573ca} 
+all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a list of all of the failed jobs.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_af9d14e4ae6227970ad603987781573ca}{Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a79cc82436f3290ec078b1aa19589da20}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!find@{find}}
+\index{find@{find}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a79cc82436f3290ec078b1aa19589da20} 
+find (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Get a single failed job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_a79cc82436f3290ec078b1aa19589da20}{Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_aba7379dfef7a95459fdceb765383ec94}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!flush@{flush}}
+\index{flush@{flush}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_aba7379dfef7a95459fdceb765383ec94} 
+flush (\begin{DoxyParamCaption}\item[{}]{\$hours}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Flush all of the failed jobs from storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$hours} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_aba7379dfef7a95459fdceb765383ec94}{Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a81b436d2f6ce52e2c2a199a0aa2adf91}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!forget@{forget}}
+\index{forget@{forget}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a81b436d2f6ce52e2c2a199a0aa2adf91} 
+forget (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Delete a single failed job from storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_a81b436d2f6ce52e2c2a199a0aa2adf91}{Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_aa841f67ececfd2adb39cfa074235199b}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!ids@{ids}}
+\index{ids@{ids}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{ids()}{ids()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_aa841f67ececfd2adb39cfa074235199b} 
+ids (\begin{DoxyParamCaption}\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the IDs of all of the failed jobs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_aa841f67ececfd2adb39cfa074235199b}{Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a7272667a5d0159d607bdf53d1d49a262}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!log@{log}}
+\index{log@{log}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a7272667a5d0159d607bdf53d1d49a262} 
+log (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$queue}{, }\item[{}]{\$payload}{, }\item[{}]{\$exception}{}\end{DoxyParamCaption})}
+
+\doxylink{class_log}{Log} a failed job into storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+string & {\em \$payload} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_a7272667a5d0159d607bdf53d1d49a262}{Failed\+Job\+Provider\+Interface}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_abb40c90d15ab55e6e3ea631a1a0100f6}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!\$applicationName@{\$applicationName}}
+\index{\$applicationName@{\$applicationName}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{\$applicationName}{\$applicationName}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_abb40c90d15ab55e6e3ea631a1a0100f6} 
+\$application\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a95618df2ee75fbb7f2b63bbfbe7dc83f}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!\$dynamo@{\$dynamo}}
+\index{\$dynamo@{\$dynamo}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{\$dynamo}{\$dynamo}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_a95618df2ee75fbb7f2b63bbfbe7dc83f} 
+\$dynamo\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_ae8876a14058f368335baccf35af4a22b}\index{DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}!\$table@{\$table}}
+\index{\$table@{\$table}!DynamoDbFailedJobProvider@{DynamoDbFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{\$table}{\$table}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_dynamo_db_failed_job_provider_ae8876a14058f368335baccf35af4a22b} 
+\$table\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Queue/\+Failed/\mbox{\hyperlink{_dynamo_db_failed_job_provider_8php}{Dynamo\+Db\+Failed\+Job\+Provider.\+php}}\end{DoxyCompactItemize}

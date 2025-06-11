@@ -1,0 +1,150 @@
+\doxysection{Cli\+Dumper Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper}{}\label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper}\index{CliDumper@{CliDumper}}
+Inheritance diagram for Cli\+Dumper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_ae2011b47b6436d6233002f7a2b8c6b01}{\+\_\+\+\_\+construct}} (\$output, \$base\+Path, \$compiled\+View\+Path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_ac60ba790ac963c4f5f21c2d4d6c70b9b}{dump\+With\+Source}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_data}{Data}} \$data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a5596a3c75e354b10df9556f96748e912}{register}} (\$base\+Path, \$compiled\+View\+Path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_ae9fd0a5e40da59dce16cd6c1269fab9d}{get\+Dump\+Source\+Content}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a388c164e14126c9d673f399673730da5}{supports\+Colors}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a9cd745428004768fe921475a29a7d870}{\$base\+Path}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a73004ce9cd673c1bfafd1dc351134797}{\$output}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a6e3d32b3243e7912c3e4f476def4a0c0}{\$compiled\+View\+Path}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a8bbbbbfe5c49e8e3e7cb503366b100f0}{\$dumping}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_ae2011b47b6436d6233002f7a2b8c6b01}\index{CliDumper@{CliDumper}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CliDumper@{CliDumper}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_ae2011b47b6436d6233002f7a2b8c6b01} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$output}{, }\item[{}]{\$base\+Path}{, }\item[{}]{\$compiled\+View\+Path}{}\end{DoxyParamCaption})}
+
+Create a new CLI dumper instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Output\textbackslash{}\+Output\+Interface & {\em \$output} & \\
+\hline
+string & {\em \$base\+Path} & \\
+\hline
+string & {\em \$compiled\+View\+Path} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_ac60ba790ac963c4f5f21c2d4d6c70b9b}\index{CliDumper@{CliDumper}!dumpWithSource@{dumpWithSource}}
+\index{dumpWithSource@{dumpWithSource}!CliDumper@{CliDumper}}
+\doxysubsubsection{\texorpdfstring{dumpWithSource()}{dumpWithSource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_ac60ba790ac963c4f5f21c2d4d6c70b9b} 
+dump\+With\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_data}{Data}}}]{\$data}{}\end{DoxyParamCaption})}
+
+Dump a variable with its source file / line.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Var\+Dumper\textbackslash{}\+Cloner\textbackslash{}\+Data & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_ae9fd0a5e40da59dce16cd6c1269fab9d}\index{CliDumper@{CliDumper}!getDumpSourceContent@{getDumpSourceContent}}
+\index{getDumpSourceContent@{getDumpSourceContent}!CliDumper@{CliDumper}}
+\doxysubsubsection{\texorpdfstring{getDumpSourceContent()}{getDumpSourceContent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_ae9fd0a5e40da59dce16cd6c1269fab9d} 
+get\+Dump\+Source\+Content (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the dump\textquotesingle{}s source console content.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a5596a3c75e354b10df9556f96748e912}\index{CliDumper@{CliDumper}!register@{register}}
+\index{register@{register}!CliDumper@{CliDumper}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a5596a3c75e354b10df9556f96748e912} 
+register (\begin{DoxyParamCaption}\item[{}]{\$base\+Path}{, }\item[{}]{\$compiled\+View\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new CLI dumper instance and register it as the default dumper.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$base\+Path} & \\
+\hline
+string & {\em \$compiled\+View\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a388c164e14126c9d673f399673730da5}\index{CliDumper@{CliDumper}!supportsColors@{supportsColors}}
+\index{supportsColors@{supportsColors}!CliDumper@{CliDumper}}
+\doxysubsubsection{\texorpdfstring{supportsColors()}{supportsColors()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a388c164e14126c9d673f399673730da5} 
+supports\+Colors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a9cd745428004768fe921475a29a7d870}\index{CliDumper@{CliDumper}!\$basePath@{\$basePath}}
+\index{\$basePath@{\$basePath}!CliDumper@{CliDumper}}
+\doxysubsubsection{\texorpdfstring{\$basePath}{\$basePath}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a9cd745428004768fe921475a29a7d870} 
+\$base\+Path\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a6e3d32b3243e7912c3e4f476def4a0c0}\index{CliDumper@{CliDumper}!\$compiledViewPath@{\$compiledViewPath}}
+\index{\$compiledViewPath@{\$compiledViewPath}!CliDumper@{CliDumper}}
+\doxysubsubsection{\texorpdfstring{\$compiledViewPath}{\$compiledViewPath}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a6e3d32b3243e7912c3e4f476def4a0c0} 
+\$compiled\+View\+Path\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a8bbbbbfe5c49e8e3e7cb503366b100f0}\index{CliDumper@{CliDumper}!\$dumping@{\$dumping}}
+\index{\$dumping@{\$dumping}!CliDumper@{CliDumper}}
+\doxysubsubsection{\texorpdfstring{\$dumping}{\$dumping}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a8bbbbbfe5c49e8e3e7cb503366b100f0} 
+\$dumping = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a73004ce9cd673c1bfafd1dc351134797}\index{CliDumper@{CliDumper}!\$output@{\$output}}
+\index{\$output@{\$output}!CliDumper@{CliDumper}}
+\doxysubsubsection{\texorpdfstring{\$output}{\$output}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_cli_dumper_a73004ce9cd673c1bfafd1dc351134797} 
+\$output\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Console/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_foundation_2_console_2_cli_dumper_8php}{Cli\+Dumper.\+php}}\end{DoxyCompactItemize}

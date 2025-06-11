@@ -1,0 +1,56 @@
+\doxysection{Higher\+Order\+Callables Class Reference}
+\hypertarget{class_pest_1_1_support_1_1_higher_order_callables}{}\label{class_pest_1_1_support_1_1_higher_order_callables}\index{HigherOrderCallables@{HigherOrderCallables}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_support_1_1_higher_order_callables_a384f2c41a79be209ea1bbd1f84216c3f}{\+\_\+\+\_\+construct}} (private object \$target)
+\item 
+\mbox{\hyperlink{class_pest_1_1_support_1_1_higher_order_callables_a950ee4fdc90dafa56bf4cff4cd3c894b}{and}} (mixed \$value)
+\item 
+\mbox{\hyperlink{class_pest_1_1_support_1_1_higher_order_callables_a67184156ef07d1ab0045fb78ac62b5e6}{defer}} (callable \$callable)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_callables_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_callables_a384f2c41a79be209ea1bbd1f84216c3f}\index{HigherOrderCallables@{HigherOrderCallables}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!HigherOrderCallables@{HigherOrderCallables}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_higher_order_callables_a384f2c41a79be209ea1bbd1f84216c3f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private object}]{\$target}{}\end{DoxyParamCaption})}
+
+Creates a new Higher Order Callables instances. 
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_callables_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_callables_a950ee4fdc90dafa56bf4cff4cd3c894b}\index{HigherOrderCallables@{HigherOrderCallables}!and@{and}}
+\index{and@{and}!HigherOrderCallables@{HigherOrderCallables}}
+\doxysubsubsection{\texorpdfstring{and()}{and()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_higher_order_callables_a950ee4fdc90dafa56bf4cff4cd3c894b} 
+and (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+@template TValue
+
+Create a new expectation. Callable values will be executed prior to returning the new expectation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | TValue & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expectation\texorpdfstring{$<$}{<}(callable()\+: mixed)\texorpdfstring{$\vert$}{|}\+TValue\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_callables_a67184156ef07d1ab0045fb78ac62b5e6}\index{HigherOrderCallables@{HigherOrderCallables}!defer@{defer}}
+\index{defer@{defer}!HigherOrderCallables@{HigherOrderCallables}}
+\doxysubsubsection{\texorpdfstring{defer()}{defer()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_higher_order_callables_a67184156ef07d1ab0045fb78ac62b5e6} 
+defer (\begin{DoxyParamCaption}\item[{callable}]{\$callable}{}\end{DoxyParamCaption})}
+
+Execute the given callable after the test has executed the setup method. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Support/\mbox{\hyperlink{_higher_order_callables_8php}{Higher\+Order\+Callables.\+php}}\end{DoxyCompactItemize}

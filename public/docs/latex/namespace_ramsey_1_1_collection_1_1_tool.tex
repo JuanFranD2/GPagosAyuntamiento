@@ -1,0 +1,59 @@
+\doxysection{Ramsey\textbackslash{}Collection\textbackslash{}Tool Namespace Reference}
+\hypertarget{namespace_ramsey_1_1_collection_1_1_tool}{}\label{namespace_ramsey_1_1_collection_1_1_tool}\index{Ramsey\textbackslash{}Collection\textbackslash{}Tool@{Ramsey\textbackslash{}Collection\textbackslash{}Tool}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ramsey_1_1_collection_1_1_tool_ae46dee95e153d59e93968c658ddc24e2}{extract\+Value}} (mixed \$element, ?string \$property\+Or\+Method)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+trait \mbox{\hyperlink{namespace_ramsey_1_1_collection_1_1_tool_aac59224a60413e77a16a7d5b14b071b1}{Value\+Extractor\+Trait}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_ramsey_1_1_collection_1_1_tool_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_ramsey_1_1_collection_1_1_tool_ae46dee95e153d59e93968c658ddc24e2}\index{Ramsey\textbackslash{}Collection\textbackslash{}Tool@{Ramsey\textbackslash{}Collection\textbackslash{}Tool}!extractValue@{extractValue}}
+\index{extractValue@{extractValue}!Ramsey\textbackslash{}Collection\textbackslash{}Tool@{Ramsey\textbackslash{}Collection\textbackslash{}Tool}}
+\doxysubsubsection{\texorpdfstring{extractValue()}{extractValue()}}
+{\footnotesize\ttfamily \label{namespace_ramsey_1_1_collection_1_1_tool_ae46dee95e153d59e93968c658ddc24e2} 
+extract\+Value (\begin{DoxyParamCaption}\item[{mixed}]{\$element}{, }\item[{?string}]{\$property\+Or\+Method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extracts the value of the given property, method, or array key from the element.
+
+If {\ttfamily \$property\+Or\+Method} is {\ttfamily null}, we return the element as-\/is.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$element} & The element to extract the value from. \\
+\hline
+string  |  null & {\em \$property\+Or\+Method} & The property or method for which the value should be extracted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed the value extracted from the specified property, method, or array key, or the element itself.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Property\+Or\+Method} & \\
+\hline
+{\em Unsupported\+Operation\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-var-members}
+\Hypertarget{namespace_ramsey_1_1_collection_1_1_tool_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_ramsey_1_1_collection_1_1_tool_aac59224a60413e77a16a7d5b14b071b1}\index{Ramsey\textbackslash{}Collection\textbackslash{}Tool@{Ramsey\textbackslash{}Collection\textbackslash{}Tool}!ValueExtractorTrait@{ValueExtractorTrait}}
+\index{ValueExtractorTrait@{ValueExtractorTrait}!Ramsey\textbackslash{}Collection\textbackslash{}Tool@{Ramsey\textbackslash{}Collection\textbackslash{}Tool}}
+\doxysubsubsection{\texorpdfstring{ValueExtractorTrait}{ValueExtractorTrait}}
+{\footnotesize\ttfamily \label{namespace_ramsey_1_1_collection_1_1_tool_aac59224a60413e77a16a7d5b14b071b1} 
+trait Value\+Extractor\+Trait}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+Provides functionality to extract the value of a property or method from an object. 

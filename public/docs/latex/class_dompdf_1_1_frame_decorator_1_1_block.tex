@@ -1,0 +1,503 @@
+\doxysection{Block Class Reference}
+\hypertarget{class_dompdf_1_1_frame_decorator_1_1_block}{}\label{class_dompdf_1_1_frame_decorator_1_1_block}\index{Block@{Block}}
+Inheritance diagram for Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_dompdf_1_1_frame_decorator_1_1_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a469f79997646fdd9cc2ff02998ac9e1b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$frame, \mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf}} \$dompdf)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a796df86a1c5ffc9ba8f875cf5da24f89}{get\+\_\+current\+\_\+line\+\_\+box}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a950b93865dd7373d992402e25486442d}{get\+\_\+current\+\_\+line\+\_\+number}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a34be044886b353f215f54259759245fa}{get\+\_\+line\+\_\+boxes}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a82b45ce4c43dfec3c6a4b48250aa6e5f}{set\+\_\+current\+\_\+line\+\_\+number}} (\$line\+\_\+number)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a102474df248b4a93eb98c6c0c55c240d}{clear\+\_\+line}} (\$i)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a1fa1587f537767ab94340103391176cf}{add\+\_\+frame\+\_\+to\+\_\+line}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$frame)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_aeaa85563d966df0a8bde02684b51e8dc}{remove\+\_\+frames\+\_\+from\+\_\+line}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$frame)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_aa6697fa7325ec46b581d00969ab7739a}{increase\+\_\+line\+\_\+width}} (float \$w)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a16e1ff40134bd24b1dff7abfdda202fa}{maximize\+\_\+line\+\_\+height}} (float \$val, \mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$frame)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a4451789a837709aad234337f37c406c5}{add\+\_\+line}} (bool \$br=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_aa96723920c5e7e682ed9d01ba8cf1b7d}{add\+\_\+dangling\+\_\+marker}} (\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_list_bullet}{List\+Bullet}} \$marker)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_afadafda4975fae6ef2830d7e17437bd0}{inherit\+\_\+dangling\+\_\+markers}} (self \$block)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator}{Abstract\+Frame\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ad8e22644d72c5fde03b7dc51dc44d676}{dispose}} (\$recursive=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a418ad16399ec56c39fc1da3f3ce0118b}{copy}} (DOMNode \$node)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a97bba2ea9bf5f0cda05152044e47f671}{deep\+\_\+copy}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aa92976c31ff466b6230c9342ecd5dabb}{create\+\_\+anonymous\+\_\+child}} (string \$node\+\_\+name, string \$display)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a8a94003b9d888b085c68d6eac44be175}{get\+\_\+id}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a086eeed6fc45b258aca7720985561472}{get\+\_\+frame}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a4eeae6e0f52361f2124e81f4aa9ac5fe}{get\+\_\+node}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a6e2dabd650220d62302ade9d3ecc1049}{get\+\_\+style}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a54fbe0c81e5e423da7574d9ae50ac79a}{get\+\_\+original\+\_\+style}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aa1ae04b017087df86ac0a9a42838bac2}{get\+\_\+containing\+\_\+block}} (\$i=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ad2e41534f9b2836b4cd062dfa28a45c8}{get\+\_\+position}} (\$i=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a566e3aab55d194c8ab4af51fc8dbe9fa}{get\+\_\+dompdf}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a3701d6c4b30bb4f16f08a30e9601be9e}{get\+\_\+margin\+\_\+width}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a1e64ddf74c9d0153fd179a7e95f70adf}{get\+\_\+margin\+\_\+height}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aeac00145e41e40e2ff98b1a4579b4d9b}{get\+\_\+content\+\_\+box}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a5880cb00b50c29b370660deabfd36124}{get\+\_\+padding\+\_\+box}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ad045bba7d8faef2bd4cc0442b920b3bf}{get\+\_\+border\+\_\+box}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_af3c735e21b51eaeb6c6e527c1ed89f59}{set\+\_\+id}} (\$id)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a63f7504d7db9557b61c6891fee0c6f75}{set\+\_\+style}} (\mbox{\hyperlink{class_dompdf_1_1_css_1_1_style}{Style}} \$style)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ab48a2c8e5305cad4f6163bd6a9229670}{set\+\_\+containing\+\_\+block}} (\$x=null, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}=null, \$w=null, \$h=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a86d26b8de5e330b6d1c58775c249e3a0}{set\+\_\+position}} (\$x=null, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a88c7b48807ba2e5fce26fd0cbde6128a}{is\+\_\+auto\+\_\+height}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a61d8379449dc1a8ac8dd1078d6371399}{is\+\_\+auto\+\_\+width}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ab91394364e52c8dfe1ba5f96ee503124}{prepend\+\_\+child}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$child, \$update\+\_\+node=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ae063c441baeadd3e64a580df84072ee3}{append\+\_\+child}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$child, \$update\+\_\+node=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ae2f717eb52112b8ecda3bc6d45b65743}{insert\+\_\+child\+\_\+before}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$new\+\_\+child, \mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$ref, \$update\+\_\+node=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a461f4bc32b257771148b6966c69ffe72}{insert\+\_\+child\+\_\+after}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$new\+\_\+child, \mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$ref, \$update\+\_\+node=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a832a43d330d568998d5af9bd8c8bea9a}{remove\+\_\+child}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$child, \$update\+\_\+node=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a4ac89c68966fd026faa68b13f6b7ed91}{get\+\_\+parent}} (\$use\+\_\+cache=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a0e8db2b5187316d683a7bba178e97aad}{get\+\_\+first\+\_\+child}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a46ff9a9aedbca9eeb39ba7c3eefbae29}{get\+\_\+last\+\_\+child}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a20cf1b90ab53758196ec0218d926e860}{get\+\_\+prev\+\_\+sibling}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a0af4a483ee937efd20d8b3915be71267}{get\+\_\+next\+\_\+sibling}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a8bd7359a34003f086e120edbc7db5f09}{get\+\_\+children}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a86c17a93b3f260239dff8b1cafa0db46}{get\+\_\+subtree}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a11b4036e4806c969e9c2571c003ab72b}{set\+\_\+positioner}} (\mbox{\hyperlink{class_dompdf_1_1_positioner_1_1_abstract_positioner}{Abstract\+Positioner}} \$posn)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ab2fef48a15249154489fffd8bd04062f}{set\+\_\+reflower}} (\mbox{\hyperlink{class_dompdf_1_1_frame_reflower_1_1_abstract_frame_reflower}{Abstract\+Frame\+Reflower}} \$reflower)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a1c845b304da9e19d5f1800b583ae36be}{get\+\_\+positioner}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aa087472b5162138938bc8d256c0b04bf}{get\+\_\+reflower}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_af903f04ed1c68ef915896a1971210267}{set\+\_\+root}} (\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$root)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a59f23db7ad802e3e7ebd1c5ded125943}{get\+\_\+root}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a8dcf84400717e97dcd5fca53f7ee05a7}{find\+\_\+block\+\_\+parent}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_af053b84cf74b2bb673071ce46417399b}{find\+\_\+positioned\+\_\+parent}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aedf89ca40e965f7892cf1033e0c8a59d}{split}} (?\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}} \$child=null, bool \$page\+\_\+break=false, bool \$forced=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a94d3b5c03ea1881ed61d13477b0d1b91}{reset\+\_\+counters}} (array \$counters)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ab4b4709e7f7e07f9fa261d6fc3a30d89}{reset\+\_\+counter}} (string \$id=self\+::\+DEFAULT\+\_\+\+COUNTER, int \$value=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aaa0524ecf3f69d625c2261dc42bb873f}{decrement\+\_\+counters}} (array \$counters)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_addab1255c50c62bb07ccca94db64ae35}{increment\+\_\+counters}} (array \$counters)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ab6cbc608b5944db20a60cf5ee49f2609}{increment\+\_\+counter}} (string \$id=self\+::\+DEFAULT\+\_\+\+COUNTER, int \$increment=1)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a0b062391e4dcee9ad221756df12c960c}{lookup\+\_\+counter\+\_\+frame}} (string \$id=self\+::\+DEFAULT\+\_\+\+COUNTER, bool \$auto\+\_\+reset=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_af96dc997a161721f09e5f89ade997054}{counter\+\_\+value}} (string \$id=self\+::\+DEFAULT\+\_\+\+COUNTER, string \$type="{}decimal"{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a78b2b4542074a67b9a7f22f29be979dd}{position}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a2c545f028bc885d6af7a412b4b690f25}{move}} (float \$offset\+\_\+x, float \$offset\+\_\+y, bool \$ignore\+\_\+self=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a0fdeecf48b8e772008b340c369c4fc7f}{reflow}} (?\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block}{Block}} \$block=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a139176699e8bfe68e03e3a1866e751b6}{get\+\_\+min\+\_\+max\+\_\+width}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a916315ff3df1b282d781d6d8cbcc7d2b}{\+\_\+\+\_\+construct}} (\textbackslash{}DOMNode \$node)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_acc5e288c90d164824375a4ef255a4684}{get\+\_\+parent}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a0a8a052124126f11803ab71497c4958e}{get\+\_\+decorator}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a3389eb304e864e0e15e76048af134ae0}{get\+\_\+opacity}} (?float \$opacity=null)
+\item 
+\& \mbox{\hyperlink{class_dompdf_1_1_frame_a992813a0fb5e8a67ceab31382b41f097}{get\+\_\+containing\+\_\+line}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_abe474f646fe4a15d4e23ec517dcd5216}{set\+\_\+decorator}} (\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator}{Frame\+Decorator\textbackslash{}\+Abstract\+Frame\+Decorator}} \$decorator)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_af221a78e285d816f7fb6dce35d752031}{set\+\_\+opacity}} (float \$opacity)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a99bf5413081b5e4525d266bcd4a6a91b}{set\+\_\+containing\+\_\+line}} (\mbox{\hyperlink{class_dompdf_1_1_line_box}{Line\+Box}} \$line)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a2f3e98d785eb294d390217a74967a08b}{is\+\_\+text\+\_\+node}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_af13027ab3b0fc646ba109f69e0e73944}{is\+\_\+positioned}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_aa3c9df9fabaac75d241a27c7c6bb0984}{is\+\_\+absolute}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a0f53224abe4273a967f3477b47ff4161}{is\+\_\+block}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_ae93c47fd9940b3ef948af5bb157fb8bb}{is\+\_\+block\+\_\+level}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_acbd7de5f4a037c485469acb3ac78e051}{is\+\_\+inline\+\_\+level}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a60502a39ab5dd171f9e94f05c22ec6fe}{is\+\_\+in\+\_\+flow}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_ad89ab5d66fc22bda0a3efa07c8fc5c16}{is\+\_\+pre}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_ac64ef053ecc0108a760d674cba1d441d}{is\+\_\+table}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_af4e2a0adf71d31b5bfd76e9cbab1962c}{\$\+\_\+cl}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_a617e92cb6979e867bf07a1e999b655a4}{\$\+\_\+line\+\_\+boxes}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_block_ac66d549b27eade41fcd09fe1cc07c83f}{\$dangling\+\_\+markers}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator}{Abstract\+Frame\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a15ea8c78d28d8d9b6023dedbe622c731}{\$\+\_\+root}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aff12a4858e57db8ae96bf92cb2337579}{\$\+\_\+frame}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a13102eecf80518feac5d499510457a31}{\$\+\_\+positioner}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_ab2001b9cd9ad8ddd42b760bb1f6c2231}{\$\+\_\+reflower}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a3d42c6b602f6b5a224b276b1efed7820}{\$\+\_\+dompdf}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_aed99b33031f3844d94b6ce228e196063}{\$\+\_\+node}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a64da16c4a1c7b2dc6784f6ef26341ed7}{\$\+\_\+id}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a25fdbee3c6e5d3c7fd080598f85eb439}{\$\+\_\+style}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a8c040f02d9e695416231845d2aaf7f59}{\$\+\_\+parent}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a56a1d18bbe309498221e42448b0798f4}{\$\+\_\+first\+\_\+child}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a4a17cf02bac75d0ed58e614259ad663b}{\$\+\_\+last\+\_\+child}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a8b708669caee2686a7bb5407e1a78837}{\$\+\_\+prev\+\_\+sibling}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a56b235463218fb98dde9852d611444f7}{\$\+\_\+next\+\_\+sibling}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a3830cb349b22a83c6bc3475d72e1b8a9}{\$\+\_\+containing\+\_\+block}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a3be83eaa240d017c6644eb673f660bbb}{\$\+\_\+position}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_ab09bbc77e22bd99b75425d4e091af683}{\$\+\_\+opacity}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a9fc8850f19f5da56a847bbf6067e0871}{\$\+\_\+decorator}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_acc4eb92420d4fe8e4437b2d5ebfd9b12}{\$\+\_\+containing\+\_\+line}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a316fdaf6ceaee99fde0f836ea86982a9}{\$\+\_\+is\+\_\+cache}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator}{Abstract\+Frame\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a6b0aa1694c3505ce13e3d5751680aee8}{DEFAULT\+\_\+\+COUNTER}} = "{}-\/dompdf-\/default-\/counter"{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aaf835d43da222685ea597276bdc6e68f}{\$\+\_\+counters}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a94e2d2951e9f6a9f9331508c8bb9ef49}{\$content\+\_\+set}} = false
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_abcd019862b2cd59156b1160c845dd007}{\$is\+\_\+split}} = false
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aee2011c163c0c190989ba69fe68f760d}{\$is\+\_\+split\+\_\+off}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_frame_a09b1f3861f9756cb2db42df3981e8c36}{WS\+\_\+\+TEXT}} = 1
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_frame_ad32ea4e9b98745d7b831f8a852b18fea}{WS\+\_\+\+SPACE}} = 2
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a5adb3e92dc763bfa6f087fdbd175ff8a}{\$\+\_\+already\+\_\+pushed}} = false
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_ae73be7429c2fec64b2e6e947fe350d64}{\$\+\_\+float\+\_\+next\+\_\+line}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_frame_ad39215997f4320d0009f6875d590496e}{\$\+ID\+\_\+\+COUNTER}} = 0
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_frame_a0363525bb739defbd53d31ef81fc2233}{\$\+\_\+ws\+\_\+state}} = self\+::\+WS\+\_\+\+SPACE
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator}{Abstract\+Frame\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a78ba2e3d4cdb03e0a3f614411434bd4f}{reset\+\_\+generated\+\_\+content}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_aff47553f7e1233b75c01cf6633d30c31}{revert\+\_\+counter\+\_\+increment}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_aa9045ddbf53ae45b0f778fc18f25ae3e}{ws\+\_\+trim}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_a6a7ee632dc864bda05e1ec800f4f9321}{ws\+\_\+keep}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_af5a739abda01e3148901b2d5da59c91b}{ws\+\_\+is\+\_\+text}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a469f79997646fdd9cc2ff02998ac9e1b}\index{Block@{Block}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a469f79997646fdd9cc2ff02998ac9e1b} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}]{\$frame}{, }\item[{\mbox{\hyperlink{class_dompdf_1_1_dompdf}{Dompdf}}}]{\$dompdf}{}\end{DoxyParamCaption})}
+
+Block constructor. 
+\begin{DoxyParams}[1]{Parameters}
+Frame & {\em \$frame} & \\
+\hline
+\doxylink{namespace_dompdf}{Dompdf} & {\em \$dompdf} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a469f79997646fdd9cc2ff02998ac9e1b}{Abstract\+Frame\+Decorator}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_table_cell_a469f79997646fdd9cc2ff02998ac9e1b}{Table\+Cell}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_aa96723920c5e7e682ed9d01ba8cf1b7d}\index{Block@{Block}!add\_dangling\_marker@{add\_dangling\_marker}}
+\index{add\_dangling\_marker@{add\_dangling\_marker}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{add\_dangling\_marker()}{add\_dangling\_marker()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_aa96723920c5e7e682ed9d01ba8cf1b7d} 
+add\+\_\+dangling\+\_\+marker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_list_bullet}{List\+Bullet}}}]{\$marker}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+List\+Bullet & {\em \$marker} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a1fa1587f537767ab94340103391176cf}\index{Block@{Block}!add\_frame\_to\_line@{add\_frame\_to\_line}}
+\index{add\_frame\_to\_line@{add\_frame\_to\_line}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{add\_frame\_to\_line()}{add\_frame\_to\_line()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a1fa1587f537767ab94340103391176cf} 
+add\+\_\+frame\+\_\+to\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}]{\$frame}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Frame & {\em \$frame} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Line\+Box\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a4451789a837709aad234337f37c406c5}\index{Block@{Block}!add\_line@{add\_line}}
+\index{add\_line@{add\_line}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{add\_line()}{add\_line()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a4451789a837709aad234337f37c406c5} 
+add\+\_\+line (\begin{DoxyParamCaption}\item[{bool}]{\$br}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$br} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a102474df248b4a93eb98c6c0c55c240d}\index{Block@{Block}!clear\_line@{clear\_line}}
+\index{clear\_line@{clear\_line}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{clear\_line()}{clear\_line()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a102474df248b4a93eb98c6c0c55c240d} 
+clear\+\_\+line (\begin{DoxyParamCaption}\item[{}]{\$i}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$i} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a796df86a1c5ffc9ba8f875cf5da24f89}\index{Block@{Block}!get\_current\_line\_box@{get\_current\_line\_box}}
+\index{get\_current\_line\_box@{get\_current\_line\_box}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{get\_current\_line\_box()}{get\_current\_line\_box()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a796df86a1c5ffc9ba8f875cf5da24f89} 
+get\+\_\+current\+\_\+line\+\_\+box (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Line\+Box 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a950b93865dd7373d992402e25486442d}\index{Block@{Block}!get\_current\_line\_number@{get\_current\_line\_number}}
+\index{get\_current\_line\_number@{get\_current\_line\_number}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{get\_current\_line\_number()}{get\_current\_line\_number()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a950b93865dd7373d992402e25486442d} 
+get\+\_\+current\+\_\+line\+\_\+number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a34be044886b353f215f54259759245fa}\index{Block@{Block}!get\_line\_boxes@{get\_line\_boxes}}
+\index{get\_line\_boxes@{get\_line\_boxes}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{get\_line\_boxes()}{get\_line\_boxes()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a34be044886b353f215f54259759245fa} 
+get\+\_\+line\+\_\+boxes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Line\+Box\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_aa6697fa7325ec46b581d00969ab7739a}\index{Block@{Block}!increase\_line\_width@{increase\_line\_width}}
+\index{increase\_line\_width@{increase\_line\_width}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{increase\_line\_width()}{increase\_line\_width()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_aa6697fa7325ec46b581d00969ab7739a} 
+increase\+\_\+line\+\_\+width (\begin{DoxyParamCaption}\item[{float}]{\$w}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$w} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_afadafda4975fae6ef2830d7e17437bd0}\index{Block@{Block}!inherit\_dangling\_markers@{inherit\_dangling\_markers}}
+\index{inherit\_dangling\_markers@{inherit\_dangling\_markers}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{inherit\_dangling\_markers()}{inherit\_dangling\_markers()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_afadafda4975fae6ef2830d7e17437bd0} 
+inherit\+\_\+dangling\+\_\+markers (\begin{DoxyParamCaption}\item[{self}]{\$block}{}\end{DoxyParamCaption})}
+
+Inherit any dangling markers from the parent block.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Block & {\em \$block} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a16e1ff40134bd24b1dff7abfdda202fa}\index{Block@{Block}!maximize\_line\_height@{maximize\_line\_height}}
+\index{maximize\_line\_height@{maximize\_line\_height}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{maximize\_line\_height()}{maximize\_line\_height()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a16e1ff40134bd24b1dff7abfdda202fa} 
+maximize\+\_\+line\+\_\+height (\begin{DoxyParamCaption}\item[{float}]{\$val}{, }\item[{\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}]{\$frame}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$val} & \\
+\hline
+Frame & {\em \$frame} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_aeaa85563d966df0a8bde02684b51e8dc}\index{Block@{Block}!remove\_frames\_from\_line@{remove\_frames\_from\_line}}
+\index{remove\_frames\_from\_line@{remove\_frames\_from\_line}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{remove\_frames\_from\_line()}{remove\_frames\_from\_line()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_aeaa85563d966df0a8bde02684b51e8dc} 
+remove\+\_\+frames\+\_\+from\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dompdf_1_1_frame}{Frame}}}]{\$frame}{}\end{DoxyParamCaption})}
+
+Remove the given frame and all following frames and lines from the block.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Frame & {\em \$frame} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a4a20559544fdf4dcb457e258dc976cf8}\index{Block@{Block}!reset@{reset}}
+\index{reset@{reset}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a4a20559544fdf4dcb457e258dc976cf8} 
+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Re-\/initialize the frame 
+
+Reimplemented from \mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_abstract_frame_decorator_a4a20559544fdf4dcb457e258dc976cf8}{Abstract\+Frame\+Decorator}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_dompdf_1_1_frame_decorator_1_1_table_cell_a4a20559544fdf4dcb457e258dc976cf8}{Table\+Cell}}.
+
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a82b45ce4c43dfec3c6a4b48250aa6e5f}\index{Block@{Block}!set\_current\_line\_number@{set\_current\_line\_number}}
+\index{set\_current\_line\_number@{set\_current\_line\_number}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{set\_current\_line\_number()}{set\_current\_line\_number()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a82b45ce4c43dfec3c6a4b48250aa6e5f} 
+set\+\_\+current\+\_\+line\+\_\+number (\begin{DoxyParamCaption}\item[{}]{\$line\+\_\+number}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$line\+\_\+number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_af4e2a0adf71d31b5bfd76e9cbab1962c}\index{Block@{Block}!\$\_cl@{\$\_cl}}
+\index{\$\_cl@{\$\_cl}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{\$\_cl}{\$\_cl}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_af4e2a0adf71d31b5bfd76e9cbab1962c} 
+\$\+\_\+cl\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_a617e92cb6979e867bf07a1e999b655a4}\index{Block@{Block}!\$\_line\_boxes@{\$\_line\_boxes}}
+\index{\$\_line\_boxes@{\$\_line\_boxes}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{\$\_line\_boxes}{\$\_line\_boxes}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_a617e92cb6979e867bf07a1e999b655a4} 
+\$\+\_\+line\+\_\+boxes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_frame_decorator_1_1_block_ac66d549b27eade41fcd09fe1cc07c83f}\index{Block@{Block}!\$dangling\_markers@{\$dangling\_markers}}
+\index{\$dangling\_markers@{\$dangling\_markers}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{\$dangling\_markers}{\$dangling\_markers}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_decorator_1_1_block_ac66d549b27eade41fcd09fe1cc07c83f} 
+\$dangling\+\_\+markers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/dompdf/src/\+Frame\+Decorator/\mbox{\hyperlink{dompdf_2dompdf_2src_2_frame_decorator_2_block_8php}{Block.\+php}}\end{DoxyCompactItemize}

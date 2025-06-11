@@ -1,0 +1,208 @@
+\doxysection{Data\+Collector\+Translator Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator}{}\label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator}\index{DataCollectorTranslator@{DataCollectorTranslator}}
+Inheritance diagram for Data\+Collector\+Translator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.818182cm]{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a6266a059f904ac67a3d8fb076324ad96}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Translator\+Interface}} \&\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface}{Translator\+Bag\+Interface}} \&\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_locale_aware_interface}{Locale\+Aware\+Interface}} \$translator,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a2673ba085fdd4acd7142e22944c34256}{trans}} (?string \$id, array \$parameters=\mbox{[}$\,$\mbox{]}, ?string \$domain=null, ?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_ab6643b93f57377aaca6ccff3a7b24022}{set\+Locale}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_ad532b661eb33c3e755bd3fa8ff1bd7af}{get\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a4f8d6d2fabc44a04f2e88c5818971eaa}{get\+Catalogue}} (?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a65922ebac5c6d59da543df43777d4ccc}{get\+Catalogues}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a71140687f6f45db8464c326370d0fea7}{warm\+Up}} (string \$cache\+Dir, ?string \$build\+Dir=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a1ba0e6d754495a9c3dd5110a95cdeb11}{get\+Fallback\+Locales}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a4b6bdd0cafcefd275b1190452d9fde4b}{\+\_\+\+\_\+call}} (string \$method, array \$args)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a8b9b112517b564bda7bd4316199d504b}{get\+Collected\+Messages}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Translator\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface_a26335c57b686d81a7c5a56ec91cb68ab}{trans}} (string \$id, array \$parameters=\mbox{[}$\,$\mbox{]}, ?string \$domain=null, ?string \$locale=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_acf87d8eb36f422ad0e5c406217f650f3}{MESSAGE\+\_\+\+DEFINED}} = 0
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a9cc58404345e278eab6939fd4b046f2e}{MESSAGE\+\_\+\+MISSING}} = 1
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a452ffd88c77bd316ff1d2206d97d76e2}{MESSAGE\+\_\+\+EQUALS\+\_\+\+FALLBACK}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Abdellatif Ait boudad \href{mailto:a.aitboudad@gmail.com}{\texttt{a.\+aitboudad@gmail.\+com}}
+\end{DoxyAuthor}
+@final since Symfony 7.\+1 
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a6266a059f904ac67a3d8fb076324ad96}\index{DataCollectorTranslator@{DataCollectorTranslator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a6266a059f904ac67a3d8fb076324ad96} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Translator\+Interface}} \&\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface}{Translator\+Bag\+Interface}} \&\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_locale_aware_interface}{Locale\+Aware\+Interface}}}]{\$translator}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a4b6bdd0cafcefd275b1190452d9fde4b}\index{DataCollectorTranslator@{DataCollectorTranslator}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a4b6bdd0cafcefd275b1190452d9fde4b} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{array}]{\$args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a4f8d6d2fabc44a04f2e88c5818971eaa}\index{DataCollectorTranslator@{DataCollectorTranslator}!getCatalogue@{getCatalogue}}
+\index{getCatalogue@{getCatalogue}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{getCatalogue()}{getCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a4f8d6d2fabc44a04f2e88c5818971eaa} 
+get\+Catalogue (\begin{DoxyParamCaption}\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets the catalogue by locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$locale} & The locale or null to use the default\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the locale contains invalid characters \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface_a4f8d6d2fabc44a04f2e88c5818971eaa}{Translator\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a65922ebac5c6d59da543df43777d4ccc}\index{DataCollectorTranslator@{DataCollectorTranslator}!getCatalogues@{getCatalogues}}
+\index{getCatalogues@{getCatalogues}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{getCatalogues()}{getCatalogues()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a65922ebac5c6d59da543df43777d4ccc} 
+get\+Catalogues (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all catalogues of the instance.
+
+\begin{DoxyReturn}{Returns}
+Message\+Catalogue\+Interface\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface_a65922ebac5c6d59da543df43777d4ccc}{Translator\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a8b9b112517b564bda7bd4316199d504b}\index{DataCollectorTranslator@{DataCollectorTranslator}!getCollectedMessages@{getCollectedMessages}}
+\index{getCollectedMessages@{getCollectedMessages}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{getCollectedMessages()}{getCollectedMessages()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a8b9b112517b564bda7bd4316199d504b} 
+get\+Collected\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a1ba0e6d754495a9c3dd5110a95cdeb11}\index{DataCollectorTranslator@{DataCollectorTranslator}!getFallbackLocales@{getFallbackLocales}}
+\index{getFallbackLocales@{getFallbackLocales}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{getFallbackLocales()}{getFallbackLocales()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a1ba0e6d754495a9c3dd5110a95cdeb11} 
+get\+Fallback\+Locales (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the fallback locales. \Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_ad532b661eb33c3e755bd3fa8ff1bd7af}\index{DataCollectorTranslator@{DataCollectorTranslator}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{getLocale()}{getLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_ad532b661eb33c3e755bd3fa8ff1bd7af} 
+get\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the default locale. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface_ad532b661eb33c3e755bd3fa8ff1bd7af}{Translator\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_ab6643b93f57377aaca6ccff3a7b24022}\index{DataCollectorTranslator@{DataCollectorTranslator}!setLocale@{setLocale}}
+\index{setLocale@{setLocale}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{setLocale()}{setLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_ab6643b93f57377aaca6ccff3a7b24022} 
+set\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})}
+
+Sets the current locale.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the locale contains invalid characters 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_locale_aware_interface_ab6643b93f57377aaca6ccff3a7b24022}{Locale\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a2673ba085fdd4acd7142e22944c34256}\index{DataCollectorTranslator@{DataCollectorTranslator}!trans@{trans}}
+\index{trans@{trans}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{trans()}{trans()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a2673ba085fdd4acd7142e22944c34256} 
+trans (\begin{DoxyParamCaption}\item[{?string}]{\$id}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$domain}{ = {\ttfamily null}, }\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a71140687f6f45db8464c326370d0fea7}\index{DataCollectorTranslator@{DataCollectorTranslator}!warmUp@{warmUp}}
+\index{warmUp@{warmUp}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{warmUp()}{warmUp()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a71140687f6f45db8464c326370d0fea7} 
+warm\+Up (\begin{DoxyParamCaption}\item[{string}]{\$cache\+Dir}{, }\item[{?string}]{\$build\+Dir}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Warms up the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cache\+Dir} & Where warm-\/up artifacts should be stored \\
+\hline
+string | null & {\em \$build\+Dir} & Where read-\/only artifacts should go; null when called after compile-\/time\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} A list of classes or files to preload 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_cache_warmer_1_1_warmable_interface_a71140687f6f45db8464c326370d0fea7}{Warmable\+Interface}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_acf87d8eb36f422ad0e5c406217f650f3}\index{DataCollectorTranslator@{DataCollectorTranslator}!MESSAGE\_DEFINED@{MESSAGE\_DEFINED}}
+\index{MESSAGE\_DEFINED@{MESSAGE\_DEFINED}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{MESSAGE\_DEFINED}{MESSAGE\_DEFINED}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_acf87d8eb36f422ad0e5c406217f650f3} 
+const MESSAGE\+\_\+\+DEFINED = 0}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a452ffd88c77bd316ff1d2206d97d76e2}\index{DataCollectorTranslator@{DataCollectorTranslator}!MESSAGE\_EQUALS\_FALLBACK@{MESSAGE\_EQUALS\_FALLBACK}}
+\index{MESSAGE\_EQUALS\_FALLBACK@{MESSAGE\_EQUALS\_FALLBACK}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{MESSAGE\_EQUALS\_FALLBACK}{MESSAGE\_EQUALS\_FALLBACK}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a452ffd88c77bd316ff1d2206d97d76e2} 
+const MESSAGE\+\_\+\+EQUALS\+\_\+\+FALLBACK = 2}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a9cc58404345e278eab6939fd4b046f2e}\index{DataCollectorTranslator@{DataCollectorTranslator}!MESSAGE\_MISSING@{MESSAGE\_MISSING}}
+\index{MESSAGE\_MISSING@{MESSAGE\_MISSING}!DataCollectorTranslator@{DataCollectorTranslator}}
+\doxysubsubsection{\texorpdfstring{MESSAGE\_MISSING}{MESSAGE\_MISSING}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_data_collector_translator_a9cc58404345e278eab6939fd4b046f2e} 
+const MESSAGE\+\_\+\+MISSING = 1}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/translation/\mbox{\hyperlink{_data_collector_translator_8php}{Data\+Collector\+Translator.\+php}}\end{DoxyCompactItemize}

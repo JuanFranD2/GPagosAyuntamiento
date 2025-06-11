@@ -1,0 +1,4 @@
+var _migrating_session_handler_8php =
+[
+    [ "MigratingSessionHandler", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_migrating_session_handler.html", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_migrating_session_handler" ]
+];

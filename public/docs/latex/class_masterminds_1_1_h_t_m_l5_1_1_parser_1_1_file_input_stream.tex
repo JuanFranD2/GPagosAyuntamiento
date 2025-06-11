@@ -1,0 +1,97 @@
+\doxysection{File\+Input\+Stream Class Reference}
+\hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_file_input_stream}{}\label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_file_input_stream}\index{FileInputStream@{FileInputStream}}
+Inheritance diagram for File\+Input\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_file_input_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_file_input_stream_a71c03d19e8ecd7fa0e9f3b49fee26988}{\+\_\+\+\_\+construct}} (\$data, \$encoding=\textquotesingle{}UTF-\/8\textquotesingle{}, \$debug=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream}{String\+Input\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a019496412a2398a981060c2b4d7bc7e6}{current\+Line}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a487fb614bab2b035a2a5171741fdf63b}{get\+Current\+Line}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_aed521896613e5f737b51b3d71e518b68}{column\+Offset}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a28c4c99c5ed48ae44554238c7e5e0193}{get\+Column\+Offset}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_af343507d1926e6ecf964625d41db528c}{current}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_acea62048bfee7b3cd80ed446c86fb78a}{next}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_ae619dcf2218c21549cb65d875bbc6c9c}{rewind}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_abb9f0d6adf1eb9b3b55712056861a247}{valid}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a2562abb4267acd3b1a0069e1feed9615}{remaining\+Chars}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a74d33a21f94236a18b7190a5fe8d28a0}{chars\+Until}} (\$bytes, \$max=null)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_af8acebcda5149d9199ff5e8ed5b3c179}{chars\+While}} (\$bytes, \$max=null)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a4b0ade74f44a42675edf96c92da7e1df}{unconsume}} (\$how\+Many=1)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_af0d2b98b49496eaef856a5b277fa775b}{peek}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a729e946b4ef600e71740113c6d4332c0}{key}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream}{String\+Input\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_ab24faf4aa647cdcee494fc48524ad4ff}{\$errors}} = array()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream}{String\+Input\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_af18d015753ad7dea81965775f99590e2}{replace\+Linefeeds}} (\$data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The File\+Input\+Stream loads a file to be parsed.
+
+So right now we read files into strings and then process the string. We chose to do this largely for the sake of expediency of development, and also because we could optimize toward processing arbitrarily large chunks of the input. But in the future, we\textquotesingle{}d really like to rewrite this class to efficiently handle lower level stream reads (and thus efficiently handle large documents).
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000158}{Deprecated}}]since 2.\+4, to remove in 3.\+0. Use a string in the scanner instead. \end{DoxyRefDesc}
+
+
+\label{doc-constructors}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_file_input_stream_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_file_input_stream_a71c03d19e8ecd7fa0e9f3b49fee26988}\index{FileInputStream@{FileInputStream}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!FileInputStream@{FileInputStream}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_file_input_stream_a71c03d19e8ecd7fa0e9f3b49fee26988} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$encoding}{ = {\ttfamily \textquotesingle{}UTF-\/8\textquotesingle{}}, }\item[{}]{\$debug}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Load a file input stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & The file or url path to load. \\
+\hline
+string & {\em \$encoding} & The encoding to use for the data. \\
+\hline
+string & {\em \$debug} & A fprintf format to use to echo the data on stdout. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a71c03d19e8ecd7fa0e9f3b49fee26988}{String\+Input\+Stream}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Parser/\mbox{\hyperlink{_file_input_stream_8php}{File\+Input\+Stream.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\doxysection{Conditional\+Rules Class Reference}
+\hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules}{}\label{class_illuminate_1_1_validation_1_1_conditional_rules}\index{ConditionalRules@{ConditionalRules}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_aa7c76788f0a4c7262bcc206b978ea374}{\+\_\+\+\_\+construct}} (\$condition, \$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a81d825bc65347a7be72007bdb779f4b9}{rules}}, \$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a38ddd50d4d916abd2b4aa7797d416c1c}{default\+Rules}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a375bee697727303c25227af67e3488ae}{passes}} (array \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a81d825bc65347a7be72007bdb779f4b9}{rules}} (array \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a38ddd50d4d916abd2b4aa7797d416c1c}{default\+Rules}} (array \$data=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a16bc4b377f5da473f62957e96700bc8f}{\$condition}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a811d22ac55b4592f7f2a202529629419}{\$rules}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a78bde1c1ea6430c18bbf66b0b4aa142d}{\$default\+Rules}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_aa7c76788f0a4c7262bcc206b978ea374}\index{ConditionalRules@{ConditionalRules}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ConditionalRules@{ConditionalRules}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_conditional_rules_aa7c76788f0a4c7262bcc206b978ea374} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$condition}{, }\item[{}]{\$rules}{, }\item[{}]{\$default\+Rules}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new conditional rules instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | bool & {\em \$condition} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Validation\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Invokable\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Rule | \textbackslash{}\+Closure | array | string & {\em \$rules} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Validation\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Invokable\+Rule | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Rule | \textbackslash{}\+Closure | array | string & {\em \$default\+Rules} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_a38ddd50d4d916abd2b4aa7797d416c1c}\index{ConditionalRules@{ConditionalRules}!defaultRules@{defaultRules}}
+\index{defaultRules@{defaultRules}!ConditionalRules@{ConditionalRules}}
+\doxysubsubsection{\texorpdfstring{defaultRules()}{defaultRules()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_conditional_rules_a38ddd50d4d916abd2b4aa7797d416c1c} 
+default\+Rules (\begin{DoxyParamCaption}\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Get the default rules.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_a375bee697727303c25227af67e3488ae}\index{ConditionalRules@{ConditionalRules}!passes@{passes}}
+\index{passes@{passes}!ConditionalRules@{ConditionalRules}}
+\doxysubsubsection{\texorpdfstring{passes()}{passes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_conditional_rules_a375bee697727303c25227af67e3488ae} 
+passes (\begin{DoxyParamCaption}\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if the conditional rules should be added.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_a81d825bc65347a7be72007bdb779f4b9}\index{ConditionalRules@{ConditionalRules}!rules@{rules}}
+\index{rules@{rules}!ConditionalRules@{ConditionalRules}}
+\doxysubsubsection{\texorpdfstring{rules()}{rules()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_conditional_rules_a81d825bc65347a7be72007bdb779f4b9} 
+rules (\begin{DoxyParamCaption}\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Get the rules.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_a16bc4b377f5da473f62957e96700bc8f}\index{ConditionalRules@{ConditionalRules}!\$condition@{\$condition}}
+\index{\$condition@{\$condition}!ConditionalRules@{ConditionalRules}}
+\doxysubsubsection{\texorpdfstring{\$condition}{\$condition}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_conditional_rules_a16bc4b377f5da473f62957e96700bc8f} 
+\$condition\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_a78bde1c1ea6430c18bbf66b0b4aa142d}\index{ConditionalRules@{ConditionalRules}!\$defaultRules@{\$defaultRules}}
+\index{\$defaultRules@{\$defaultRules}!ConditionalRules@{ConditionalRules}}
+\doxysubsubsection{\texorpdfstring{\$defaultRules}{\$defaultRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_conditional_rules_a78bde1c1ea6430c18bbf66b0b4aa142d} 
+\$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a38ddd50d4d916abd2b4aa7797d416c1c}{default\+Rules}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_conditional_rules_a811d22ac55b4592f7f2a202529629419}\index{ConditionalRules@{ConditionalRules}!\$rules@{\$rules}}
+\index{\$rules@{\$rules}!ConditionalRules@{ConditionalRules}}
+\doxysubsubsection{\texorpdfstring{\$rules}{\$rules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_conditional_rules_a811d22ac55b4592f7f2a202529629419} 
+\$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_conditional_rules_a81d825bc65347a7be72007bdb779f4b9}{rules}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Validation/\mbox{\hyperlink{_conditional_rules_8php}{Conditional\+Rules.\+php}}\end{DoxyCompactItemize}

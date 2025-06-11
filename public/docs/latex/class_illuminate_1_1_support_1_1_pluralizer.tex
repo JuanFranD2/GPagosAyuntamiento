@@ -1,0 +1,163 @@
+\doxysection{Pluralizer Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_pluralizer}{}\label{class_illuminate_1_1_support_1_1_pluralizer}\index{Pluralizer@{Pluralizer}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_a1f9f17530b09d9bb76c4a73d5ff33ae7}{plural}} (\$value, \$count=2)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_a41279a1b423f86fbb9251bd7a5fdfc55}{singular}} (\$value)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_afc48b5475fb33a70005f2257f357a4a5}{inflector}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_ab5de613665e2b049247ffa4eae44576a}{use\+Language}} (string \$language)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_a6c0ce8e9449bb15897cb2ef89d7e6c14}{\$uncountable}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_a815e2c8bc383fb0c84faf7b723cf5599}{uncountable}} (\$value)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_afea4189f9cdd48e2b9517d98ca8c7ce7}{match\+Case}} (\$value, \$comparison)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_a471d96bfe74d13a78d49d8faecd77abf}{\$inflector}}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_a83170d318260a5a2e2a79dccdd371b10}{\$language}} = \textquotesingle{}english\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_afc48b5475fb33a70005f2257f357a4a5}\index{Pluralizer@{Pluralizer}!inflector@{inflector}}
+\index{inflector@{inflector}!Pluralizer@{Pluralizer}}
+\doxysubsubsection{\texorpdfstring{inflector()}{inflector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_pluralizer_afc48b5475fb33a70005f2257f357a4a5} 
+inflector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the inflector instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Doctrine\textbackslash{}\+Inflector\textbackslash{}\+Inflector 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_afea4189f9cdd48e2b9517d98ca8c7ce7}\index{Pluralizer@{Pluralizer}!matchCase@{matchCase}}
+\index{matchCase@{matchCase}!Pluralizer@{Pluralizer}}
+\doxysubsubsection{\texorpdfstring{matchCase()}{matchCase()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_pluralizer_afea4189f9cdd48e2b9517d98ca8c7ce7} 
+match\+Case (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$comparison}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Attempt to match the case on two strings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+string & {\em \$comparison} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_a1f9f17530b09d9bb76c4a73d5ff33ae7}\index{Pluralizer@{Pluralizer}!plural@{plural}}
+\index{plural@{plural}!Pluralizer@{Pluralizer}}
+\doxysubsubsection{\texorpdfstring{plural()}{plural()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_pluralizer_a1f9f17530b09d9bb76c4a73d5ff33ae7} 
+plural (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$count}{ = {\ttfamily 2}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the plural form of an English word.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+int | array | \textbackslash{}\+Countable & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_a41279a1b423f86fbb9251bd7a5fdfc55}\index{Pluralizer@{Pluralizer}!singular@{singular}}
+\index{singular@{singular}!Pluralizer@{Pluralizer}}
+\doxysubsubsection{\texorpdfstring{singular()}{singular()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_pluralizer_a41279a1b423f86fbb9251bd7a5fdfc55} 
+singular (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the singular form of an English word.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_a815e2c8bc383fb0c84faf7b723cf5599}\index{Pluralizer@{Pluralizer}!uncountable@{uncountable}}
+\index{uncountable@{uncountable}!Pluralizer@{Pluralizer}}
+\doxysubsubsection{\texorpdfstring{uncountable()}{uncountable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_pluralizer_a815e2c8bc383fb0c84faf7b723cf5599} 
+uncountable (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Determine if the given value is uncountable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_ab5de613665e2b049247ffa4eae44576a}\index{Pluralizer@{Pluralizer}!useLanguage@{useLanguage}}
+\index{useLanguage@{useLanguage}!Pluralizer@{Pluralizer}}
+\doxysubsubsection{\texorpdfstring{useLanguage()}{useLanguage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_pluralizer_ab5de613665e2b049247ffa4eae44576a} 
+use\+Language (\begin{DoxyParamCaption}\item[{string}]{\$language}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Specify the language that should be used by the inflector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$language} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_a471d96bfe74d13a78d49d8faecd77abf}\index{Pluralizer@{Pluralizer}!\$inflector@{\$inflector}}
+\index{\$inflector@{\$inflector}!Pluralizer@{Pluralizer}}
+\doxysubsubsection{\texorpdfstring{\$inflector}{\$inflector}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_pluralizer_a471d96bfe74d13a78d49d8faecd77abf} 
+\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_afc48b5475fb33a70005f2257f357a4a5}{inflector}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_a83170d318260a5a2e2a79dccdd371b10}\index{Pluralizer@{Pluralizer}!\$language@{\$language}}
+\index{\$language@{\$language}!Pluralizer@{Pluralizer}}
+\doxysubsubsection{\texorpdfstring{\$language}{\$language}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_pluralizer_a83170d318260a5a2e2a79dccdd371b10} 
+\$language = \textquotesingle{}english\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_support_1_1_pluralizer_a6c0ce8e9449bb15897cb2ef89d7e6c14}\index{Pluralizer@{Pluralizer}!\$uncountable@{\$uncountable}}
+\index{\$uncountable@{\$uncountable}!Pluralizer@{Pluralizer}}
+\doxysubsubsection{\texorpdfstring{\$uncountable}{\$uncountable}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_pluralizer_a6c0ce8e9449bb15897cb2ef89d7e6c14} 
+\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_pluralizer_a815e2c8bc383fb0c84faf7b723cf5599}{uncountable}}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Support/\mbox{\hyperlink{_pluralizer_8php}{Pluralizer.\+php}}\end{DoxyCompactItemize}

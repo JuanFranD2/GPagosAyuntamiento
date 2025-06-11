@@ -1,0 +1,4 @@
+var class_livewire_1_1_exceptions_1_1_livewire_page_expired_because_new_deployment_has_significant_enough_changes =
+[
+    [ "__construct", "class_livewire_1_1_exceptions_1_1_livewire_page_expired_because_new_deployment_has_significant_enough_changes.html#a095c5d389db211932136b53f25f39685", null ]
+];

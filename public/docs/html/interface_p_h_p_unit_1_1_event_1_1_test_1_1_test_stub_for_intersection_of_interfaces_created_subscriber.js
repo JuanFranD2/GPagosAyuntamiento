@@ -1,0 +1,4 @@
+var interface_p_h_p_unit_1_1_event_1_1_test_1_1_test_stub_for_intersection_of_interfaces_created_subscriber =
+[
+    [ "notify", "interface_p_h_p_unit_1_1_event_1_1_test_1_1_test_stub_for_intersection_of_interfaces_created_subscriber.html#ae721bfe5f974782c0b5455563f9f0303", null ]
+];

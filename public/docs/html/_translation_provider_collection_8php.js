@@ -1,0 +1,4 @@
+var _translation_provider_collection_8php =
+[
+    [ "TranslationProviderCollection", "class_symfony_1_1_component_1_1_translation_1_1_provider_1_1_translation_provider_collection.html", "class_symfony_1_1_component_1_1_translation_1_1_provider_1_1_translation_provider_collection" ]
+];

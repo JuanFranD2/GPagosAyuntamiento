@@ -1,0 +1,4 @@
+var livewire_2livewire_2src_2_features_2_support_console_commands_2_commands_2_publish_command_8php =
+[
+    [ "PublishCommand", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_publish_command.html", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_publish_command" ]
+];

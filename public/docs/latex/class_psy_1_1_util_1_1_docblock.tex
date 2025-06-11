@@ -1,0 +1,229 @@
+\doxysection{Docblock Class Reference}
+\hypertarget{class_psy_1_1_util_1_1_docblock}{}\label{class_psy_1_1_util_1_1_docblock}\index{Docblock@{Docblock}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_aba5c09926c877f3cc8561aedec409ed5}{\+\_\+\+\_\+construct}} (\textbackslash{}Reflector \$reflector)
+\item 
+\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a4fbce8171563484e17f59dd316bc0160}{has\+Tag}} (string \$\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a8876cbccd319c0892a3ec547269c68e2}{tag}})
+\item 
+\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a8876cbccd319c0892a3ec547269c68e2}{tag}} (string \$tag)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a7b4973a8a2b4d926eaacbaddd6ecaa20}{is\+Tagged}} (string \$str)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_ab7f6c8619e8f1eefacb6b19ffbfe02ea}{str\+Tag}} (string \$str)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a31059b9e4d0c5af34df20da32232ea9a}{\$desc}}
+\item 
+\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a475a6a63b85186663d34151bcbd21590}{\$tags}}
+\item 
+\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a536677acc0163c53c067316a97456e6c}{\$comment}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a0801da08a30b4100672f80248a1a0805}{\$vectors}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_ae6f8544f51718e8bf62bbf260d0e6515}{set\+Comment}} (string \$comment)
+\item 
+\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a1cef637425ecedabdc006337ff8766f9}{parse\+Comment}} (string \$comment)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a82cd576925263858234d134a6ba6955c}{prefix\+Length}} (array \$lines)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_util_1_1_docblock_a115d92bb17a873ed18747549d1888b15}{\$reflector}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A docblock representation.
+
+Based on PHP-\/\+Doc\+Block-\/\+Parser by Paul Scott\+:
+
+{\ttfamily \doxylink{}{http\+://www.\+github.\+com/icio/\+PHP-\/\+Doc\+Block-\/\+Parser}}
+
+\begin{DoxyAuthor}{Author}
+Paul Scott \href{mailto:paul@duedil.com}{\texttt{paul@duedil.\+com}} 
+
+Justin Hileman \href{mailto:justin@justinhileman.info}{\texttt{justin@justinhileman.\+info}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_aba5c09926c877f3cc8561aedec409ed5}\index{Docblock@{Docblock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_aba5c09926c877f3cc8561aedec409ed5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflector}]{\$reflector}{}\end{DoxyParamCaption})}
+
+Docblock constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Reflector & {\em \$reflector} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a4fbce8171563484e17f59dd316bc0160}\index{Docblock@{Docblock}!hasTag@{hasTag}}
+\index{hasTag@{hasTag}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{hasTag()}{hasTag()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a4fbce8171563484e17f59dd316bc0160} 
+has\+Tag (\begin{DoxyParamCaption}\item[{string}]{\$tag}{}\end{DoxyParamCaption})}
+
+Whether or not a docblock contains a given @tag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag} & The name of the @tag to check for \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a7b4973a8a2b4d926eaacbaddd6ecaa20}\index{Docblock@{Docblock}!isTagged@{isTagged}}
+\index{isTagged@{isTagged}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{isTagged()}{isTagged()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a7b4973a8a2b4d926eaacbaddd6ecaa20} 
+is\+Tagged (\begin{DoxyParamCaption}\item[{string}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Whether or not a string begins with a @tag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a1cef637425ecedabdc006337ff8766f9}\index{Docblock@{Docblock}!parseComment@{parseComment}}
+\index{parseComment@{parseComment}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{parseComment()}{parseComment()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a1cef637425ecedabdc006337ff8766f9} 
+parse\+Comment (\begin{DoxyParamCaption}\item[{string}]{\$comment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the comment into the component parts and set the state of the object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$comment} & The docblock \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a82cd576925263858234d134a6ba6955c}\index{Docblock@{Docblock}!prefixLength@{prefixLength}}
+\index{prefixLength@{prefixLength}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{prefixLength()}{prefixLength()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a82cd576925263858234d134a6ba6955c} 
+prefix\+Length (\begin{DoxyParamCaption}\item[{array}]{\$lines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Find the length of the docblock prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$lines} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Prefix length 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_ae6f8544f51718e8bf62bbf260d0e6515}\index{Docblock@{Docblock}!setComment@{setComment}}
+\index{setComment@{setComment}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{setComment()}{setComment()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_ae6f8544f51718e8bf62bbf260d0e6515} 
+set\+Comment (\begin{DoxyParamCaption}\item[{string}]{\$comment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set and parse the docblock comment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$comment} & The docblock \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_ab7f6c8619e8f1eefacb6b19ffbfe02ea}\index{Docblock@{Docblock}!strTag@{strTag}}
+\index{strTag@{strTag}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{strTag()}{strTag()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_ab7f6c8619e8f1eefacb6b19ffbfe02ea} 
+str\+Tag (\begin{DoxyParamCaption}\item[{string}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The tag at the beginning of a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a8876cbccd319c0892a3ec547269c68e2}\index{Docblock@{Docblock}!tag@{tag}}
+\index{tag@{tag}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{tag()}{tag()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a8876cbccd319c0892a3ec547269c68e2} 
+tag (\begin{DoxyParamCaption}\item[{string}]{\$tag}{}\end{DoxyParamCaption})}
+
+The value of a tag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a536677acc0163c53c067316a97456e6c}\index{Docblock@{Docblock}!\$comment@{\$comment}}
+\index{\$comment@{\$comment}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{\$comment}{\$comment}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a536677acc0163c53c067316a97456e6c} 
+\$comment}
+
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a31059b9e4d0c5af34df20da32232ea9a}\index{Docblock@{Docblock}!\$desc@{\$desc}}
+\index{\$desc@{\$desc}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{\$desc}{\$desc}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a31059b9e4d0c5af34df20da32232ea9a} 
+\$desc}
+
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a115d92bb17a873ed18747549d1888b15}\index{Docblock@{Docblock}!\$reflector@{\$reflector}}
+\index{\$reflector@{\$reflector}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{\$reflector}{\$reflector}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a115d92bb17a873ed18747549d1888b15} 
+\$reflector\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a475a6a63b85186663d34151bcbd21590}\index{Docblock@{Docblock}!\$tags@{\$tags}}
+\index{\$tags@{\$tags}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{\$tags}{\$tags}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a475a6a63b85186663d34151bcbd21590} 
+\$tags}
+
+\Hypertarget{class_psy_1_1_util_1_1_docblock_a0801da08a30b4100672f80248a1a0805}\index{Docblock@{Docblock}!\$vectors@{\$vectors}}
+\index{\$vectors@{\$vectors}!Docblock@{Docblock}}
+\doxysubsubsection{\texorpdfstring{\$vectors}{\$vectors}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_docblock_a0801da08a30b4100672f80248a1a0805} 
+\$vectors\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Util/\mbox{\hyperlink{psy_2psysh_2src_2_util_2_doc_block_8php}{Docblock.\+php}}\end{DoxyCompactItemize}

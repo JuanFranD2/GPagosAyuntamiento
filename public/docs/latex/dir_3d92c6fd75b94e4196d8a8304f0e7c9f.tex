@@ -1,0 +1,61 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/jest-\/validate/node\+\_\+modules/camelcase Directory Reference}
+\hypertarget{dir_3d92c6fd75b94e4196d8a8304f0e7c9f}{}\label{dir_3d92c6fd75b94e4196d8a8304f0e7c9f}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/jest-\/validate/node\_modules/camelcase Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/jest-\/validate/node\_modules/camelcase Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md4412}{}\doxysubsection{\texorpdfstring{camelcase}{camelcase}}\label{readme.md_autotoc_md4412}
+\begin{quote}
+Convert a dash/dot/underscore/space separated string to camel\+Case or Pascal\+Case\+: {\ttfamily foo-\/bar} → {\ttfamily foo\+Bar} \end{quote}
+
+
+Correctly handles Unicode strings.
+
+If you use this on untrusted user input, don\textquotesingle{}t forget to limit the length to something reasonable.\hypertarget{readme.md_autotoc_md4413}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md4413}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+{\itshape If you need to support Firefox \texorpdfstring{$<$}{<} 78, stay on version 5 as version 6 uses regex features not available in Firefox \texorpdfstring{$<$}{<} 78.}\hypertarget{readme.md_autotoc_md4414}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md4414}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md4415}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md4415}
+\hypertarget{readme.md_autotoc_md4416}{}\doxysubsubsection{\texorpdfstring{camel\+Case(input, options?)}{camel\+Case(input, options?)}}\label{readme.md_autotoc_md4416}
+\hypertarget{readme.md_autotoc_md4417}{}\doxysubsubsubsection{\texorpdfstring{input}{input}}\label{readme.md_autotoc_md4417}
+Type\+: {\ttfamily string \texorpdfstring{$\vert$}{|} string\mbox{[}\mbox{]}}
+
+String to convert to camel case.\hypertarget{readme.md_autotoc_md4418}{}\doxysubsubsubsection{\texorpdfstring{options}{options}}\label{readme.md_autotoc_md4418}
+Type\+: {\ttfamily object}\hypertarget{readme.md_autotoc_md4419}{}\doxysubsubsubsubsection{\texorpdfstring{pascal\+Case}{pascal\+Case}}\label{readme.md_autotoc_md4419}
+Type\+: {\ttfamily boolean}\textbackslash{} Default\+: {\ttfamily false}
+
+Uppercase the first character\+: {\ttfamily foo-\/bar} → {\ttfamily Foo\+Bar}\hypertarget{readme.md_autotoc_md4420}{}\doxysubsubsubsubsection{\texorpdfstring{preserve\+Consecutive\+Uppercase}{preserve\+Consecutive\+Uppercase}}\label{readme.md_autotoc_md4420}
+Type\+: {\ttfamily boolean}\textbackslash{} Default\+: {\ttfamily false}
+
+Preserve the consecutive uppercase characters\+: {\ttfamily foo-\/\+BAR} → {\ttfamily Foo\+BAR}.\hypertarget{readme.md_autotoc_md4421}{}\doxysubsubsubsubsection{\texorpdfstring{locale}{locale}}\label{readme.md_autotoc_md4421}
+Type\+: {\ttfamily false \texorpdfstring{$\vert$}{|} string \texorpdfstring{$\vert$}{|} string\mbox{[}\mbox{]}}\textbackslash{} Default\+: The host environment’s current locale.
+
+The locale parameter indicates the locale to be used to convert to upper/lower case according to any locale-\/specific case mappings. If multiple locales are given in an array, the best available locale is used.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+Setting {\ttfamily locale\+: false} ignores the platform locale and uses the \href{https://unicode-org.github.io/icu/userguide/transforms/casemappings.html\#simple-single-character-case-mapping}{\texttt{Unicode Default Case Conversion}} algorithm\+:
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md4422}{}\doxysubsection{\texorpdfstring{camelcase for enterprise}{camelcase for enterprise}}\label{readme.md_autotoc_md4422}
+Available as part of the Tidelift Subscription.
+
+The maintainers of camelcase and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. \href{https://tidelift.com/subscription/pkg/npm-camelcase?utm_source=npm-camelcase&utm_medium=referral&utm_campaign=enterprise&utm_term=repo}{\texttt{Learn more.}}\hypertarget{readme.md_autotoc_md4423}{}\doxysubsection{\texorpdfstring{Related}{Related}}\label{readme.md_autotoc_md4423}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sindresorhus/decamelize}{\texttt{decamelize}} -\/ The inverse of this module
+\item \href{https://github.com/SamVerschueren/uppercamelcase}{\texttt{uppercamelcase}} -\/ Like this module, but to Pascal\+Case instead of camel\+Case
+\item \href{https://github.com/sindresorhus/titleize}{\texttt{titleize}} -\/ Capitalize every word in string
+\item \href{https://github.com/sindresorhus/humanize-string}{\texttt{humanize-\/string}} -\/ Convert a camelized/dasherized/underscored string into a humanized one
+\item \href{https://github.com/sindresorhus/camelcase-keys}{\texttt{camelcase-\/keys}} -\/ Convert object keys to camel case 
+\end{DoxyItemize}

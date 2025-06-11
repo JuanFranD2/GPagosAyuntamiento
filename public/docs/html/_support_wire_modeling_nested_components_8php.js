@@ -1,0 +1,4 @@
+var _support_wire_modeling_nested_components_8php =
+[
+    [ "SupportWireModelingNestedComponents", "class_livewire_1_1_features_1_1_support_wire_modeling_nested_components_1_1_support_wire_modeling_nested_components.html", "class_livewire_1_1_features_1_1_support_wire_modeling_nested_components_1_1_support_wire_modeling_nested_components" ]
+];

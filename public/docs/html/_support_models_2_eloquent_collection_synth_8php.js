@@ -1,0 +1,4 @@
+var _support_models_2_eloquent_collection_synth_8php =
+[
+    [ "EloquentCollectionSynth", "class_livewire_1_1_features_1_1_support_models_1_1_eloquent_collection_synth.html", "class_livewire_1_1_features_1_1_support_models_1_1_eloquent_collection_synth" ]
+];

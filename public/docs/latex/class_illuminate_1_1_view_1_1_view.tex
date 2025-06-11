@@ -1,0 +1,859 @@
+\doxysection{View Class Reference}
+\hypertarget{class_illuminate_1_1_view_1_1_view}{}\label{class_illuminate_1_1_view_1_1_view}\index{View@{View}}
+Inheritance diagram for View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_illuminate_1_1_view_1_1_view}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a86975794977accd671a88407fff97f48}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_view_1_1_factory}{Factory}} \$factory, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_engine}{Engine}} \$engine, \$view, \$path, \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_ac1d68bc7233abac8e38389e31844e625}{fragment}} (\$fragment)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a8d80aa6e0869a2279b0eb60dfadb4409}{fragments}} (?array \$fragments=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a8de53837dc03197871980667d05db426}{fragment\+If}} (\$boolean, \$\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_ac1d68bc7233abac8e38389e31844e625}{fragment}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_afe1cb3e033a455ca271b8e356155b832}{fragments\+If}} (\$boolean, ?array \$\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a8d80aa6e0869a2279b0eb60dfadb4409}{fragments}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_aac5ee51600bc505e8bfcbba44ed19343}{render}} (?callable \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_abc2181405785f0e04aa2051440ca38ff}{gather\+Data}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a0f8a41ef282472496937f2add105940f}{render\+Sections}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a17b7d86a55dc9070c9d743e3ae3147a5}{with}} (\$key, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a4c384d74e179da5b5cb87f0893142cbb}{nest}} (\$key, \$view, array \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_aed9b40ab870bd34e2b9354053d4d161d}{with\+Errors}} (\$provider, \$bag=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a4b516aaa5fa38da4fed24ab6001627e2}{name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a81a67162a6288d78fc4c55283325f0b4}{get\+Data}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a30c5c67b2bf8e2e2ccc7e361faa20afe}{get\+Path}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a5d101758b135bd36ba8992cc3bb67a24}{set\+Path}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a06e59b27675aceb8f4677694af9d6f57}{get\+Factory}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_aeb060f55c1b9b700005ae80d2d627654}{get\+Engine}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a72b9545b16ea105298bb0d2109bd2fbe}{offset\+Exists}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a6e8e2b3128ee9bd6be930cb296c02ac7}{offset\+Get}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a3199adfa66a63d34fb355f3ccf39bf0a}{offset\+Set}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a1d11d3dade07ef846d01a397abfaf0d9}{offset\+Unset}} (\$key)
+\item 
+\& \mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_ae23a2c24bd42a7be642cdb71b58dbc5a}{\+\_\+\+\_\+get}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a79b36d71c6f1d4f9e6c4c3e34c081456}{\+\_\+\+\_\+set}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_ae858fed7cd2822fbceac154138b68baa}{\+\_\+\+\_\+isset}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a41af7dd29c879b4c30978876ebdf4ba7}{\+\_\+\+\_\+unset}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_ac565bd6a9d062c73a0a0db7afe0ffea9}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a816fd0d968beb38c3fffe1cce71a0b58}{to\+Html}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a6db4be8ae87c6e028eea226bec390f16}{layout\+Data}} (\$data=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_ab5c5e41a2d801b11c05056a3107591a6}{section}} (\$section)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a11ca07120addf0e3ab059def1db8a028}{title}} (\$title)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a2516551b36ca22e78ee39e67e392c34e}{slot}} (\$slot)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a04f3cdf74420de113e1b8e714d5f2177}{extends}} (\$view, \$params=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_afdfd4a026745e9cb43bd19582f253565}{layout}} (\$view, \$params=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a6f5736a581a42889dc59b3750a4e074f}{response}} (\$callback)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_view}{View}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_view_a343c2366163fd12cb70a6fac94ce4ba6}{macro}} (\$name, \$macro)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_view_a3b876110bfbf6deb10c4c790999d79eb}{mixin}} (\$mixin, \$replace=true)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_view_a40c94433295da2b92b8f892c91f6f2be}{has\+Macro}} (\$name)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_view_abd61b9d3cbe8191a2482615c68fdc73d}{flush\+Macros}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_view_a92308b19deb9fe013cb0c2ff34c888fb}{parent\+Placeholder}} (\$section=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade}{Facade}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_abe078c1d0396a262999176c6d4bfbb76}{resolved}} (Closure \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a82534392feeca758003062cd36fc972d}{spy}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a0bc5626176404445d5121201c6986e49}{partial\+Mock}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a2031d73ea8b441b364bd1396e0555676}{should\+Receive}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_afad083b1bb72721818f067bfbb79ea77}{expects}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a8e43e171b55086d83f542b4305e34154}{swap}} (\$instance)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a4ec04ee8c57fd1fd710db01612ecba9d}{is\+Fake}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_af15d3da29baf52a7c734b57786e23038}{get\+Facade\+Root}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a77f6083ae7d479e3a4575e02aae448ad}{clear\+Resolved\+Instance}} (\$name)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a0506878f0b9d8b2c08e02d4937bdfeb1}{clear\+Resolved\+Instances}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_ad10f68f117b658a2e1b7936233f82c64}{default\+Aliases}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a91fcaec089f8ebe0f4e6ca39644c638c}{get\+Facade\+Application}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a900e0581ad1be62ea93b77c859afa086}{set\+Facade\+Application}} (\$app)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_acd52b9339ad39307a96fbb723e6e399e}{\+\_\+\+\_\+call\+Static}} (\$method, \$args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_afe0f34dfa159cbcf73cb2fc740888a92}{all\+Fragments}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a58db7ff056c196b9c2fe3d913bfef975}{render\+Contents}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a14814e04b348120748912692645f3a75}{get\+Contents}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a185dbf12c88d9df929e08b84b530b564}{format\+Errors}} (\$provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a099b374dc664ee043fffcd6ea05e3e70}{\$factory}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a8a3b012ad4844366d9207d8f0e174a00}{\$engine}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_acccf2eac8663e0cebe8101e90fbab089}{\$view}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_view_a0a4baf0b22973c07685c3981f0d17fc4}{\$path}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_view}{View}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_view_a19a808201f41f32f71a0532cb49b450f}{get\+Facade\+Accessor}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade}{Facade}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a3777fbe6ab2554a625a7b1aba8981da0}{create\+Fresh\+Mock\+Instance}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a2e9b99c094ef4cc927f626ec6b17e013}{create\+Mock}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a3b6c4dc34f38d2df223d9a923cfead45}{is\+Mock}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a7261bb2a8a97b7e17e0c71ef5dd6ff36}{get\+Mockable\+Class}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a944b45ebcd0cbbc9fb860935be1847c6}{resolve\+Facade\+Instance}} (\$name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade}{Facade}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_adfb117f244076aa9bc269269f7e57403}{\$app}}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_aba0d9150a4c3bbfa2d2c2f2f43e93e5c}{\$resolved\+Instance}}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a08619db687a5f201c64d968c0055e2db}{\$cached}} = true
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a86975794977accd671a88407fff97f48}\index{View@{View}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a86975794977accd671a88407fff97f48} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_view_1_1_factory}{Factory}}}]{\$factory}{, }\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_engine}{Engine}}}]{\$engine}{, }\item[{}]{\$view}{, }\item[{}]{\$path}{, }\item[{}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new view instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+Factory & {\em \$factory} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Engine & {\em \$engine} & \\
+\hline
+string & {\em \$view} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+mixed & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_ac565bd6a9d062c73a0a0db7afe0ffea9}\index{View@{View}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_ac565bd6a9d062c73a0a0db7afe0ffea9} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically bind parameters to the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+View
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Bad\+Method\+Call\+Exception \Hypertarget{class_illuminate_1_1_view_1_1_view_ae23a2c24bd42a7be642cdb71b58dbc5a}\index{View@{View}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_ae23a2c24bd42a7be642cdb71b58dbc5a} 
+\& \+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Get a piece of data from the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_ae858fed7cd2822fbceac154138b68baa}\index{View@{View}!\_\_isset@{\_\_isset}}
+\index{\_\_isset@{\_\_isset}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\_\_isset()}{\_\_isset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_ae858fed7cd2822fbceac154138b68baa} 
+\+\_\+\+\_\+isset (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Check if a piece of data is bound to the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a79b36d71c6f1d4f9e6c4c3e34c081456}\index{View@{View}!\_\_set@{\_\_set}}
+\index{\_\_set@{\_\_set}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\_\_set()}{\_\_set()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a79b36d71c6f1d4f9e6c4c3e34c081456} 
+\+\_\+\+\_\+set (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Set a piece of data on the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a7516ca30af0db3cdbf9a7739b48ce91d}\index{View@{View}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the string contents of the view.
+
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable \Hypertarget{class_illuminate_1_1_view_1_1_view_a41af7dd29c879b4c30978876ebdf4ba7}\index{View@{View}!\_\_unset@{\_\_unset}}
+\index{\_\_unset@{\_\_unset}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\_\_unset()}{\_\_unset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a41af7dd29c879b4c30978876ebdf4ba7} 
+\+\_\+\+\_\+unset (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Remove a piece of bound data from the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_afe0f34dfa159cbcf73cb2fc740888a92}\index{View@{View}!allFragments@{allFragments}}
+\index{allFragments@{allFragments}!View@{View}}
+\doxysubsubsection{\texorpdfstring{allFragments()}{allFragments()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_afe0f34dfa159cbcf73cb2fc740888a92} 
+all\+Fragments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get all fragments as a single string.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a04f3cdf74420de113e1b8e714d5f2177}\index{View@{View}!extends@{extends}}
+\index{extends@{extends}!View@{View}}
+\doxysubsubsection{\texorpdfstring{extends()}{extends()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a04f3cdf74420de113e1b8e714d5f2177} 
+extends (\begin{DoxyParamCaption}\item[{}]{\$view}{, }\item[{}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Livewire\textbackslash{}\+Features\textbackslash{}\+Support\+Page\+Components\textbackslash{}\+Support\+Page\+Components\+::register\+Layout\+View\+Macros() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$view} & \\
+\hline
+mixed & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a185dbf12c88d9df929e08b84b530b564}\index{View@{View}!formatErrors@{formatErrors}}
+\index{formatErrors@{formatErrors}!View@{View}}
+\doxysubsubsection{\texorpdfstring{formatErrors()}{formatErrors()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a185dbf12c88d9df929e08b84b530b564} 
+format\+Errors (\begin{DoxyParamCaption}\item[{}]{\$provider}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the given errors into an appropriate value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Message\+Provider | array | string & {\em \$provider} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Message\+Bag 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_ac1d68bc7233abac8e38389e31844e625}\index{View@{View}!fragment@{fragment}}
+\index{fragment@{fragment}!View@{View}}
+\doxysubsubsection{\texorpdfstring{fragment()}{fragment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_ac1d68bc7233abac8e38389e31844e625} 
+fragment (\begin{DoxyParamCaption}\item[{}]{\$fragment}{}\end{DoxyParamCaption})}
+
+Get the evaluated contents of a given fragment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$fragment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a8de53837dc03197871980667d05db426}\index{View@{View}!fragmentIf@{fragmentIf}}
+\index{fragmentIf@{fragmentIf}!View@{View}}
+\doxysubsubsection{\texorpdfstring{fragmentIf()}{fragmentIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a8de53837dc03197871980667d05db426} 
+fragment\+If (\begin{DoxyParamCaption}\item[{}]{\$boolean}{, }\item[{}]{\$fragment}{}\end{DoxyParamCaption})}
+
+Get the evaluated contents of a given fragment if the given condition is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$boolean} & \\
+\hline
+string & {\em \$fragment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a8d80aa6e0869a2279b0eb60dfadb4409}\index{View@{View}!fragments@{fragments}}
+\index{fragments@{fragments}!View@{View}}
+\doxysubsubsection{\texorpdfstring{fragments()}{fragments()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a8d80aa6e0869a2279b0eb60dfadb4409} 
+fragments (\begin{DoxyParamCaption}\item[{?array}]{\$fragments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the evaluated contents for a given array of fragments or return all fragments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$fragments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_afe1cb3e033a455ca271b8e356155b832}\index{View@{View}!fragmentsIf@{fragmentsIf}}
+\index{fragmentsIf@{fragmentsIf}!View@{View}}
+\doxysubsubsection{\texorpdfstring{fragmentsIf()}{fragmentsIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_afe1cb3e033a455ca271b8e356155b832} 
+fragments\+If (\begin{DoxyParamCaption}\item[{}]{\$boolean}{, }\item[{?array}]{\$fragments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the evaluated contents for a given array of fragments if the given condition is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$boolean} & \\
+\hline
+array | null & {\em \$fragments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_abc2181405785f0e04aa2051440ca38ff}\index{View@{View}!gatherData@{gatherData}}
+\index{gatherData@{gatherData}!View@{View}}
+\doxysubsubsection{\texorpdfstring{gatherData()}{gatherData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_abc2181405785f0e04aa2051440ca38ff} 
+gather\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the data bound to the view instance.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a14814e04b348120748912692645f3a75}\index{View@{View}!getContents@{getContents}}
+\index{getContents@{getContents}!View@{View}}
+\doxysubsubsection{\texorpdfstring{getContents()}{getContents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a14814e04b348120748912692645f3a75} 
+get\+Contents (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the evaluated contents of the view.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a81a67162a6288d78fc4c55283325f0b4}\index{View@{View}!getData@{getData}}
+\index{getData@{getData}!View@{View}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a81a67162a6288d78fc4c55283325f0b4} 
+get\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the array of view data.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_aeb060f55c1b9b700005ae80d2d627654}\index{View@{View}!getEngine@{getEngine}}
+\index{getEngine@{getEngine}!View@{View}}
+\doxysubsubsection{\texorpdfstring{getEngine()}{getEngine()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_aeb060f55c1b9b700005ae80d2d627654} 
+get\+Engine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the view\textquotesingle{}s rendering engine.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Engine 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a06e59b27675aceb8f4677694af9d6f57}\index{View@{View}!getFactory@{getFactory}}
+\index{getFactory@{getFactory}!View@{View}}
+\doxysubsubsection{\texorpdfstring{getFactory()}{getFactory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a06e59b27675aceb8f4677694af9d6f57} 
+get\+Factory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the view factory instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+View\textbackslash{}\+Factory 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a3d0963e68bb313b163a73f2803c64600}\index{View@{View}!getName@{getName}}
+\index{getName@{getName}!View@{View}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the view.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a30c5c67b2bf8e2e2ccc7e361faa20afe}\index{View@{View}!getPath@{getPath}}
+\index{getPath@{getPath}!View@{View}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a30c5c67b2bf8e2e2ccc7e361faa20afe} 
+get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the path to the view file.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_afdfd4a026745e9cb43bd19582f253565}\index{View@{View}!layout@{layout}}
+\index{layout@{layout}!View@{View}}
+\doxysubsubsection{\texorpdfstring{layout()}{layout()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_afdfd4a026745e9cb43bd19582f253565} 
+layout (\begin{DoxyParamCaption}\item[{}]{\$view}{, }\item[{}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Livewire\textbackslash{}\+Features\textbackslash{}\+Support\+Page\+Components\textbackslash{}\+Support\+Page\+Components\+::register\+Layout\+View\+Macros() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$view} & \\
+\hline
+mixed & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a6db4be8ae87c6e028eea226bec390f16}\index{View@{View}!layoutData@{layoutData}}
+\index{layoutData@{layoutData}!View@{View}}
+\doxysubsubsection{\texorpdfstring{layoutData()}{layoutData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a6db4be8ae87c6e028eea226bec390f16} 
+layout\+Data (\begin{DoxyParamCaption}\item[{}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Livewire\textbackslash{}\+Features\textbackslash{}\+Support\+Page\+Components\textbackslash{}\+Support\+Page\+Components\+::register\+Layout\+View\+Macros() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a4b516aaa5fa38da4fed24ab6001627e2}\index{View@{View}!name@{name}}
+\index{name@{name}!View@{View}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a4b516aaa5fa38da4fed24ab6001627e2} 
+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the view.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a4c384d74e179da5b5cb87f0893142cbb}\index{View@{View}!nest@{nest}}
+\index{nest@{nest}!View@{View}}
+\doxysubsubsection{\texorpdfstring{nest()}{nest()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a4c384d74e179da5b5cb87f0893142cbb} 
+nest (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$view}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Add a view instance to the view data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string & {\em \$view} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a72b9545b16ea105298bb0d2109bd2fbe}\index{View@{View}!offsetExists@{offsetExists}}
+\index{offsetExists@{offsetExists}!View@{View}}
+\doxysubsubsection{\texorpdfstring{offsetExists()}{offsetExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a72b9545b16ea105298bb0d2109bd2fbe} 
+offset\+Exists (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Determine if a piece of data is bound.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a6e8e2b3128ee9bd6be930cb296c02ac7}\index{View@{View}!offsetGet@{offsetGet}}
+\index{offsetGet@{offsetGet}!View@{View}}
+\doxysubsubsection{\texorpdfstring{offsetGet()}{offsetGet()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a6e8e2b3128ee9bd6be930cb296c02ac7} 
+offset\+Get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Get a piece of bound data to the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a3199adfa66a63d34fb355f3ccf39bf0a}\index{View@{View}!offsetSet@{offsetSet}}
+\index{offsetSet@{offsetSet}!View@{View}}
+\doxysubsubsection{\texorpdfstring{offsetSet()}{offsetSet()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a3199adfa66a63d34fb355f3ccf39bf0a} 
+offset\+Set (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Set a piece of data on the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a1d11d3dade07ef846d01a397abfaf0d9}\index{View@{View}!offsetUnset@{offsetUnset}}
+\index{offsetUnset@{offsetUnset}!View@{View}}
+\doxysubsubsection{\texorpdfstring{offsetUnset()}{offsetUnset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a1d11d3dade07ef846d01a397abfaf0d9} 
+offset\+Unset (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Unset a piece of data from the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_aac5ee51600bc505e8bfcbba44ed19343}\index{View@{View}!render@{render}}
+\index{render@{render}!View@{View}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_aac5ee51600bc505e8bfcbba44ed19343} 
+render (\begin{DoxyParamCaption}\item[{?callable}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the string contents of the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable \Hypertarget{class_illuminate_1_1_view_1_1_view_a58db7ff056c196b9c2fe3d913bfef975}\index{View@{View}!renderContents@{renderContents}}
+\index{renderContents@{renderContents}!View@{View}}
+\doxysubsubsection{\texorpdfstring{renderContents()}{renderContents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a58db7ff056c196b9c2fe3d913bfef975} 
+render\+Contents (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the contents of the view instance.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a0f8a41ef282472496937f2add105940f}\index{View@{View}!renderSections@{renderSections}}
+\index{renderSections@{renderSections}!View@{View}}
+\doxysubsubsection{\texorpdfstring{renderSections()}{renderSections()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a0f8a41ef282472496937f2add105940f} 
+render\+Sections (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the sections of the rendered view.
+
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable \Hypertarget{class_illuminate_1_1_view_1_1_view_a6f5736a581a42889dc59b3750a4e074f}\index{View@{View}!response@{response}}
+\index{response@{response}!View@{View}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a6f5736a581a42889dc59b3750a4e074f} 
+response (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Livewire\textbackslash{}\+Features\textbackslash{}\+Support\+Page\+Components\textbackslash{}\+Support\+Page\+Components\+::register\+Layout\+View\+Macros() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_ab5c5e41a2d801b11c05056a3107591a6}\index{View@{View}!section@{section}}
+\index{section@{section}!View@{View}}
+\doxysubsubsection{\texorpdfstring{section()}{section()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_ab5c5e41a2d801b11c05056a3107591a6} 
+section (\begin{DoxyParamCaption}\item[{}]{\$section}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Livewire\textbackslash{}\+Features\textbackslash{}\+Support\+Page\+Components\textbackslash{}\+Support\+Page\+Components\+::register\+Layout\+View\+Macros() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$section} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a5d101758b135bd36ba8992cc3bb67a24}\index{View@{View}!setPath@{setPath}}
+\index{setPath@{setPath}!View@{View}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a5d101758b135bd36ba8992cc3bb67a24} 
+set\+Path (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Set the path to the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a2516551b36ca22e78ee39e67e392c34e}\index{View@{View}!slot@{slot}}
+\index{slot@{slot}!View@{View}}
+\doxysubsubsection{\texorpdfstring{slot()}{slot()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a2516551b36ca22e78ee39e67e392c34e} 
+slot (\begin{DoxyParamCaption}\item[{}]{\$slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Livewire\textbackslash{}\+Features\textbackslash{}\+Support\+Page\+Components\textbackslash{}\+Support\+Page\+Components\+::register\+Layout\+View\+Macros() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$slot} & \\
+\hline
+\end{DoxyParams}
+Start the slot rendering process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$content} & \\
+\hline
+array & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a11ca07120addf0e3ab059def1db8a028}\index{View@{View}!title@{title}}
+\index{title@{title}!View@{View}}
+\doxysubsubsection{\texorpdfstring{title()}{title()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a11ca07120addf0e3ab059def1db8a028} 
+title (\begin{DoxyParamCaption}\item[{}]{\$title}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Livewire\textbackslash{}\+Features\textbackslash{}\+Support\+Page\+Components\textbackslash{}\+Support\+Page\+Components\+::register\+Layout\+View\+Macros() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$title} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a816fd0d968beb38c3fffe1cce71a0b58}\index{View@{View}!toHtml@{toHtml}}
+\index{toHtml@{toHtml}!View@{View}}
+\doxysubsubsection{\texorpdfstring{toHtml()}{toHtml()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a816fd0d968beb38c3fffe1cce71a0b58} 
+to\+Html (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get content as a string of HTML.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_support_1_1_htmlable_a816fd0d968beb38c3fffe1cce71a0b58}{Htmlable}}.
+
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a17b7d86a55dc9070c9d743e3ae3147a5}\index{View@{View}!with@{with}}
+\index{with@{with}!View@{View}}
+\doxysubsubsection{\texorpdfstring{with()}{with()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a17b7d86a55dc9070c9d743e3ae3147a5} 
+with (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add a piece of data to the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_aed9b40ab870bd34e2b9354053d4d161d}\index{View@{View}!withErrors@{withErrors}}
+\index{withErrors@{withErrors}!View@{View}}
+\doxysubsubsection{\texorpdfstring{withErrors()}{withErrors()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_aed9b40ab870bd34e2b9354053d4d161d} 
+with\+Errors (\begin{DoxyParamCaption}\item[{}]{\$provider}{, }\item[{}]{\$bag}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Add validation errors to the view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Message\+Provider | array | string & {\em \$provider} & \\
+\hline
+string & {\em \$bag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a6efc15b5a2314dd4b5aaa556a375c6d6}\index{View@{View}!\$data@{\$data}}
+\index{\$data@{\$data}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\$data}{\$data}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a6efc15b5a2314dd4b5aaa556a375c6d6} 
+\$data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a8a3b012ad4844366d9207d8f0e174a00}\index{View@{View}!\$engine@{\$engine}}
+\index{\$engine@{\$engine}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\$engine}{\$engine}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a8a3b012ad4844366d9207d8f0e174a00} 
+\$engine\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a099b374dc664ee043fffcd6ea05e3e70}\index{View@{View}!\$factory@{\$factory}}
+\index{\$factory@{\$factory}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\$factory}{\$factory}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a099b374dc664ee043fffcd6ea05e3e70} 
+\$factory\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_view_1_1_view_a0a4baf0b22973c07685c3981f0d17fc4}\index{View@{View}!\$path@{\$path}}
+\index{\$path@{\$path}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\$path}{\$path}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_a0a4baf0b22973c07685c3981f0d17fc4} 
+\$path\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_view_1_1_view_acccf2eac8663e0cebe8101e90fbab089}\index{View@{View}!\$view@{\$view}}
+\index{\$view@{\$view}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\$view}{\$view}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_view_acccf2eac8663e0cebe8101e90fbab089} 
+\$view\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/\mbox{\hyperlink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+View/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_view_2view_8php}{View.\+php}}\end{DoxyCompactItemize}

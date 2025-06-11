@@ -1,0 +1,147 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/ta-\/tikoma/phpunit-\/architecture-\/test Directory Reference}
+\hypertarget{dir_afe282f26e6a1e24fac53fdab0de1cda}{}\label{dir_afe282f26e6a1e24fac53fdab0de1cda}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/ta-\/tikoma/phpunit-\/architecture-\/test Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/ta-\/tikoma/phpunit-\/architecture-\/test Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_fa0792fe75ebce70937feb9a5bb75ca5}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md11464}{}\doxysubsection{\texorpdfstring{PHPUnit Application Architecture Test}{PHPUnit Application Architecture Test}}\label{README.md_autotoc_md11464}
+{\bfseries{Idea}}\+: write architecture tests as well as feature and unit tests. Protect your architecture code style!\hypertarget{README.md_autotoc_md11465}{}\doxysubsection{\texorpdfstring{Example}{Example}}\label{README.md_autotoc_md11465}
+Don\textquotesingle{}t use repositories in controllers use only in services classes. Take three layers "{}repositories"{}, "{}services"{}, "{}controllers"{} and add asserts on dependencies. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$controllers\ \ =\ \$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_builders_a07f780fa3db45a27b17034c388f84e6b}{layer}}()-\/>leaveByNameStart(\textcolor{stringliteral}{'App\(\backslash\)\(\backslash\)Controllers'});}
+\DoxyCodeLine{\$services\ \ \ \ \ =\ \$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_builders_a07f780fa3db45a27b17034c388f84e6b}{layer}}()-\/>leaveByNameStart(\textcolor{stringliteral}{'App\(\backslash\)\(\backslash\)Services'});}
+\DoxyCodeLine{\$repositories\ =\ \$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_builders_a07f780fa3db45a27b17034c388f84e6b}{layer}}()-\/>leaveByNameStart(\textcolor{stringliteral}{'App\(\backslash\)\(\backslash\)Repositories'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_dependencies_a19697b942b267453a99129904a15258f}{assertDoesNotDependOn}}(\$controllers,\ \$repositories);}
+\DoxyCodeLine{\$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_dependencies_ae3968ff49ffc5b0b1f039f54f530e339}{assertDependOn}}(\$controllers,\ \$services);}
+\DoxyCodeLine{\$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_dependencies_ae3968ff49ffc5b0b1f039f54f530e339}{assertDependOn}}(\$services,\ \$repositories);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11466}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md11466}
+\hypertarget{README.md_autotoc_md11467}{}\doxysubsubsubsection{\texorpdfstring{Install via composer}{Install via composer}}\label{README.md_autotoc_md11467}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ -\/-\/dev\ ta-\/tikoma/phpunit-\/architecture-\/test}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11468}{}\doxysubsubsubsection{\texorpdfstring{Add trait to Test class}{Add trait to Test class}}\label{README.md_autotoc_md11468}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{abstract}\ \textcolor{keyword}{class\ }TestCase\ \textcolor{keyword}{extends}\ BaseTestCase}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ use\ \mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_a1df9cdbbec32ee64caabb2e6b15ca4a3}{ArchitectureAsserts}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11469}{}\doxysubsection{\texorpdfstring{Use}{Use}}\label{README.md_autotoc_md11469}
+
+\begin{DoxyItemize}
+\item Create test
+\item Make layers of application
+\item Add asserts
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{function}\ test\_make\_layer\_from\_namespace()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}}\ =\ \$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_builders_a07f780fa3db45a27b17034c388f84e6b}{layer}}()-\/>leaveByNameStart(\textcolor{stringliteral}{'PHPUnit\(\backslash\)\(\backslash\)Architecture'});}
+\DoxyCodeLine{\ \ \ \ \$tests\ =\ \$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_builders_a07f780fa3db45a27b17034c388f84e6b}{layer}}()-\/>leaveByNameStart(\textcolor{stringliteral}{'tests'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_dependencies_a19697b942b267453a99129904a15258f}{assertDoesNotDependOn}}(\mbox{\hyperlink{index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}},\ \$tests);}
+\DoxyCodeLine{\ \ \ \ \$this-\/>\mbox{\hyperlink{namespace_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_dependencies_ae3968ff49ffc5b0b1f039f54f530e339}{assertDependOn}}(\$tests,\ \mbox{\hyperlink{index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11470}{}\doxysubsubsubsection{\texorpdfstring{Run}{Run}}\label{README.md_autotoc_md11470}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./vendor/bin/phpunit}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md11471}{}\doxysubsection{\texorpdfstring{Test files structure}{Test files structure}}\label{README.md_autotoc_md11471}
+
+\begin{DoxyItemize}
+\item tests
+\begin{DoxyItemize}
+\item Architecture
+\begin{DoxyItemize}
+\item Some\+Test.\+php
+\end{DoxyItemize}
+\item Feature
+\item Unit
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11472}{}\doxysubsection{\texorpdfstring{How to build Layer}{How to build Layer}}\label{README.md_autotoc_md11472}
+
+\begin{DoxyItemize}
+\item {\ttfamily \$this-\/\texorpdfstring{$>$}{>}layer()} take access to layer with all objects and filter for create your layer\+:
+\begin{DoxyItemize}
+\item leave objects in layer only\+:
+\begin{DoxyItemize}
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}leave(\$closure)} by closure
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}leave\+By\+Path\+Start(\$path)} by object path start
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}leave\+By\+Name\+Start(\$name)} by object name start
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}leave\+By\+Name\+Regex(\$name)} by object name regex
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}leave\+By\+Type(\$name)} by object type
+\end{DoxyItemize}
+\item remove objects from layer\+:
+\begin{DoxyItemize}
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}exclude(\$closure)} by closure
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}exclude\+By\+Path\+Start(\$path)} by object path start
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}exclude\+By\+Name\+Start(\$name)} by object name start
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}exclude\+By\+Name\+Regex(\$name)} by object name regex
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}exclude\+By\+Type(\$name)} by object type
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item you can create multiple layers with split\+:
+\begin{DoxyItemize}
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}split(\$closure)} by closure
+\item {\ttfamily -\/\texorpdfstring{$>$}{>}split\+By\+Name\+Regex(\$closure)} by object name
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11473}{}\doxysubsection{\texorpdfstring{Asserts}{Asserts}}\label{README.md_autotoc_md11473}
+\hypertarget{README.md_autotoc_md11474}{}\doxysubsubsection{\texorpdfstring{Dependencies}{Dependencies}}\label{README.md_autotoc_md11474}
+{\bfseries{Example\+:}} Controllers don\textquotesingle{}t use Repositories only via Services
+
+
+\begin{DoxyItemize}
+\item {\ttfamily assert\+Depend\+On(\$A, \$B)} Layer A must contains dependencies by layer B.
+\item {\ttfamily assert\+Does\+Not\+Depend\+On(\$A, \$B)} Layer A (or layers in array A) must not contains dependencies by layer B (or layers in array B).
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11475}{}\doxysubsubsection{\texorpdfstring{Methods}{Methods}}\label{README.md_autotoc_md11475}
+
+\begin{DoxyItemize}
+\item {\ttfamily assert\+Incomings\+From(\$A, \$B)} Layer A must contains arguments with types from Layer B
+\item {\ttfamily assert\+Incomings\+Not\+From(\$A, \$B)} Layer A must not contains arguments with types from Layer B
+\item {\ttfamily assert\+Outgoing\+From(\$A, \$B)} Layer A must contains methods return types from Layer B
+\item {\ttfamily assert\+Outgoing\+Not\+From(\$A, \$B)} Layer A must not contains methods return types from Layer B
+\item {\ttfamily assert\+Method\+Size\+Less\+Than(\$A, \$SIZE)} Layer A must not contains methods with size less than SIZE
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11476}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{README.md_autotoc_md11476}
+
+\begin{DoxyItemize}
+\item {\ttfamily assert\+Has\+Not\+Public\+Properties(\$A)} Objects in Layer A must not contains public properties
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11477}{}\doxysubsubsection{\texorpdfstring{Essence}{Essence}}\label{README.md_autotoc_md11477}
+You can use {\ttfamily \$layer-\/\texorpdfstring{$>$}{>}essence(\$path)} method for collect data from layer. For example get visibility of all properties in layer\+: `\$visibilities = \$layer-\/\texorpdfstring{$>$}{>}essence(\textquotesingle{}properties.\texorpdfstring{$\ast$}{*}.visibility');\`{} .
+
+
+\begin{DoxyItemize}
+\item {\ttfamily assert\+Each(\$list, \$check, \$message)} -\/ each item of list must passed tested by \$check-\/function
+\item {\ttfamily assert\+Not\+One(\$list, \$check, \$message)} -\/ not one item of list must not passed tested by \$check-\/function
+\item {\ttfamily assert\+Any(\$list, \$check, \$message)} -\/ one or more item of list must not passed tested by \$check-\/function
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11478}{}\doxysubsection{\texorpdfstring{Alternatives}{Alternatives}}\label{README.md_autotoc_md11478}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/qossmic/deptrac}{\texttt{Deptrac}}
+\item \href{https://github.com/carlosas/phpat}{\texttt{PHP Architecture Tester}}
+\item \href{https://github.com/j6s/phparch}{\texttt{PHPArch}}
+\item \href{https://github.com/phparkitect/arkitect}{\texttt{Arkitect}}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md11479}{}\doxysubsubsubsection{\texorpdfstring{Advantages}{Advantages}}\label{README.md_autotoc_md11479}
+
+\begin{DoxyItemize}
+\item Dynamic creation of layers by regular expression (not need declare each module)
+\item Run along with the rest of tests from \href{https://github.com/sebastianbergmann/phpunit}{\texttt{phpunit}}
+\item Asserts to method arguments and return types (for check dependent injection)
+\item Asserts to properties visibility 
+\end{DoxyItemize}

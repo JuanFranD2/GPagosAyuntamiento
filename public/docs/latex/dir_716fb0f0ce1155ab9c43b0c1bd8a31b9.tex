@@ -1,0 +1,49 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psr/clock Directory Reference}
+\hypertarget{dir_716fb0f0ce1155ab9c43b0c1bd8a31b9}{}\label{dir_716fb0f0ce1155ab9c43b0c1bd8a31b9}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/psr/clock Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/psr/clock Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_ffa6a1994a69cb4ba06f3f4649720c0b}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md10380}{}\doxysubsection{\texorpdfstring{PSR Clock}{PSR Clock}}\label{README.md_autotoc_md10380}
+This repository holds the interface for \href{https://www.php-fig.org/psr/psr-20}{\texttt{PSR-\/20}}.
+
+Note that this is not a clock of its own. It is merely an interface that describes a clock. See the specification for more details.\hypertarget{README.md_autotoc_md10381}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md10381}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10382}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md10382}
+If you need a clock, you can use the interface like this\+:
+
+
+\begin{DoxyCode}{0}
+}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$currentDateAndTime\ =\ \$this-\/>clock-\/>now();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ do\ something\ useful\ with\ that\ information}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+You can then pick one of the \href{https://packagist.org/providers/psr/clock-implementation}{\texttt{implementations}} of the interface to get a clock.
+
+If you want to implement the interface, you can require this package and implement {\ttfamily Psr\textbackslash{}Clock\textbackslash{}Clock\+Interface} in your code.
+
+Don\textquotesingle{}t forget to add {\ttfamily psr/clock-\/implementation} to your {\ttfamily composer.\+json}s {\ttfamily provides}-\/section like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ "{}provides"{}:\ \{}
+\DoxyCodeLine{\ \ \ \ "{}psr/clock-\/implementation"{}:\ "{}1.0"{}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+And please read the \href{https://github.com/php-fig/fig-standards/blob/master/proposed/clock.md}{\texttt{specification text}} for details on the interface. 

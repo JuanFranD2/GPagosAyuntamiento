@@ -1,0 +1,5 @@
+var class_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_normalizer_1_1_flat_normalizer_strategy =
+[
+    [ "__construct", "class_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_normalizer_1_1_flat_normalizer_strategy.html#ac8ef2d523bb319a81b0430fe537f609b", null ],
+    [ "addItem", "class_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_normalizer_1_1_flat_normalizer_strategy.html#a67513babc418f894ece64693bd323dc8", null ]
+];

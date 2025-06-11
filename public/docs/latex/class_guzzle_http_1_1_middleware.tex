@@ -1,0 +1,195 @@
+\doxysection{Middleware Class Reference}
+\hypertarget{class_guzzle_http_1_1_middleware}{}\label{class_guzzle_http_1_1_middleware}\index{Middleware@{Middleware}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_a0a7386d15097842933da8159c4921c90}{cookies}} ()
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_ae903f88198ac5fdc6fb3addb9d4813c8}{http\+Errors}} (?\mbox{\hyperlink{interface_guzzle_http_1_1_body_summarizer_interface}{Body\+Summarizer\+Interface}} \$body\+Summarizer=null)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_abf75088bbab516ae9edd82d01b1b1244}{history}} (\&\$container)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_a65c5575b09c35dc7bf2b4fe8ebdbda92}{tap}} (?callable \$before=null, ?callable \$after=null)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_a0ae541ec78dc5ad44024ab710600611b}{redirect}} ()
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_a89f5d44d75573af8b3912bae622668fd}{retry}} (callable \$decider, ?callable \$delay=null)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_abb36cb3bde4197bf46e2daba27f63359}{log}} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger, \$formatter, string \$log\+Level=\textquotesingle{}info\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_a0e5486498b3a2342a5b8370fa696380c}{prepare\+Body}} ()
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_a9018f0e7032d680fb3c4c2d479bf3b65}{map\+Request}} (callable \$fn)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_middleware_a1bc5b856b7d9d0bb24f42b81dd2a654b}{map\+Response}} (callable \$fn)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions used to create and wrap handlers with handler middleware. 
+
+\label{doc-func-members}
+\Hypertarget{class_guzzle_http_1_1_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_middleware_a0a7386d15097842933da8159c4921c90}\index{Middleware@{Middleware}!cookies@{cookies}}
+\index{cookies@{cookies}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{cookies()}{cookies()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_a0a7386d15097842933da8159c4921c90} 
+cookies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Middleware that adds cookies to requests.
+
+The options array must be set to a Cookie\+Jar\+Interface in order to use cookies. This is typically handled for you by a client.
+
+\begin{DoxyReturn}{Returns}
+callable Returns a function that accepts the next handler. 
+\end{DoxyReturn}
+\Hypertarget{class_guzzle_http_1_1_middleware_abf75088bbab516ae9edd82d01b1b1244}\index{Middleware@{Middleware}!history@{history}}
+\index{history@{history}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{history()}{history()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_abf75088bbab516ae9edd82d01b1b1244} 
+history (\begin{DoxyParamCaption}\item[{\&}]{\$container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Middleware that pushes history data to an Array\+Access container.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\texorpdfstring{$\vert$}{|}} & \\
+\hline
+\end{DoxyParams}
+Array\+Access$<$int, array$>$ \$container Container to hold the history (by reference).
+
+\begin{DoxyReturn}{Returns}
+callable(callable)\+: callable Returns a function that accepts the next handler.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if container is not an array or Array\+Access. \Hypertarget{class_guzzle_http_1_1_middleware_ae903f88198ac5fdc6fb3addb9d4813c8}\index{Middleware@{Middleware}!httpErrors@{httpErrors}}
+\index{httpErrors@{httpErrors}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{httpErrors()}{httpErrors()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_ae903f88198ac5fdc6fb3addb9d4813c8} 
+http\+Errors (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_guzzle_http_1_1_body_summarizer_interface}{Body\+Summarizer\+Interface}}}]{\$body\+Summarizer}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Middleware that throws exceptions for 4xx or 5xx responses when the "{}http\+\_\+errors"{} request option is set to true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Body\+Summarizer\+Interface | null & {\em \$body\+Summarizer} & The body summarizer to use in exception messages.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable(callable)\+: callable Returns a function that accepts the next handler. 
+\end{DoxyReturn}
+\Hypertarget{class_guzzle_http_1_1_middleware_abb36cb3bde4197bf46e2daba27f63359}\index{Middleware@{Middleware}!log@{log}}
+\index{log@{log}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_abb36cb3bde4197bf46e2daba27f63359} 
+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{, }\item[{}]{\$formatter}{, }\item[{string}]{\$log\+Level}{ = {\ttfamily \textquotesingle{}info\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Middleware that logs requests, responses, and errors using a message formatter.
+
+@phpstan-\/param \textbackslash{}\+Psr\textbackslash{}\+Log\textbackslash{}\+Log\+Level\+::\texorpdfstring{$\ast$}{*} \$log\+Level Level at which to log requests.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Logger\+Interface & {\em \$logger} & Logs messages. \\
+\hline
+Message\+Formatter\+Interface | Message\+Formatter & {\em \$formatter} & Formatter used to create message strings. \\
+\hline
+string & {\em \$log\+Level} & Level at which to log requests.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable Returns a function that accepts the next handler. 
+\end{DoxyReturn}
+\Hypertarget{class_guzzle_http_1_1_middleware_a9018f0e7032d680fb3c4c2d479bf3b65}\index{Middleware@{Middleware}!mapRequest@{mapRequest}}
+\index{mapRequest@{mapRequest}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{mapRequest()}{mapRequest()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_a9018f0e7032d680fb3c4c2d479bf3b65} 
+map\+Request (\begin{DoxyParamCaption}\item[{callable}]{\$fn}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Middleware that applies a map function to the request before passing to the next handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$fn} & Function that accepts a Request\+Interface and returns a Request\+Interface. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_middleware_a1bc5b856b7d9d0bb24f42b81dd2a654b}\index{Middleware@{Middleware}!mapResponse@{mapResponse}}
+\index{mapResponse@{mapResponse}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{mapResponse()}{mapResponse()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_a1bc5b856b7d9d0bb24f42b81dd2a654b} 
+map\+Response (\begin{DoxyParamCaption}\item[{callable}]{\$fn}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Middleware that applies a map function to the resolved promise\textquotesingle{}s response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$fn} & Function that accepts a Response\+Interface and returns a Response\+Interface. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_middleware_a0e5486498b3a2342a5b8370fa696380c}\index{Middleware@{Middleware}!prepareBody@{prepareBody}}
+\index{prepareBody@{prepareBody}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{prepareBody()}{prepareBody()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_a0e5486498b3a2342a5b8370fa696380c} 
+prepare\+Body (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This middleware adds a default content-\/type if possible, a default content-\/length or transfer-\/encoding header, and the expect header. \Hypertarget{class_guzzle_http_1_1_middleware_a0ae541ec78dc5ad44024ab710600611b}\index{Middleware@{Middleware}!redirect@{redirect}}
+\index{redirect@{redirect}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_a0ae541ec78dc5ad44024ab710600611b} 
+redirect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Middleware that handles request redirects.
+
+\begin{DoxyReturn}{Returns}
+callable Returns a function that accepts the next handler. 
+\end{DoxyReturn}
+\Hypertarget{class_guzzle_http_1_1_middleware_a89f5d44d75573af8b3912bae622668fd}\index{Middleware@{Middleware}!retry@{retry}}
+\index{retry@{retry}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{retry()}{retry()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_a89f5d44d75573af8b3912bae622668fd} 
+retry (\begin{DoxyParamCaption}\item[{callable}]{\$decider}{, }\item[{?callable}]{\$delay}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Middleware that retries requests based on the boolean result of invoking the provided "{}decider"{} function.
+
+If no delay function is provided, a simple implementation of exponential backoff will be utilized.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$decider} & Function that accepts the number of retries, a request, \mbox{[}response\mbox{]}, and \mbox{[}exception\mbox{]} and returns true if the request is to be retried. \\
+\hline
+callable & {\em \$delay} & Function that accepts the number of retries and returns the number of milliseconds to delay.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable Returns a function that accepts the next handler. 
+\end{DoxyReturn}
+\Hypertarget{class_guzzle_http_1_1_middleware_a65c5575b09c35dc7bf2b4fe8ebdbda92}\index{Middleware@{Middleware}!tap@{tap}}
+\index{tap@{tap}!Middleware@{Middleware}}
+\doxysubsubsection{\texorpdfstring{tap()}{tap()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_middleware_a65c5575b09c35dc7bf2b4fe8ebdbda92} 
+tap (\begin{DoxyParamCaption}\item[{?callable}]{\$before}{ = {\ttfamily null}, }\item[{?callable}]{\$after}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Middleware that invokes a callback before and after sending a request.
+
+The provided listener cannot modify or alter the response. It simply "{}taps"{} into the chain to be notified before returning the promise. The before listener accepts a request and options array, and the after listener accepts a request, options array, and response promise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$before} & Function to invoke before forwarding the request. \\
+\hline
+callable & {\em \$after} & Function invoked after forwarding.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable Returns a function that accepts the next handler. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/guzzlehttp/guzzle/src/\mbox{\hyperlink{guzzlehttp_2guzzle_2src_2middleware_8php}{Middleware.\+php}}\end{DoxyCompactItemize}

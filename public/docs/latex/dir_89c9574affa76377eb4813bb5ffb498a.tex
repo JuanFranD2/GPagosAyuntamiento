@@ -1,0 +1,67 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/wrap-\/ansi-\/cjs Directory Reference}
+\hypertarget{dir_89c9574affa76377eb4813bb5ffb498a}{}\label{dir_89c9574affa76377eb4813bb5ffb498a}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/wrap-\/ansi-\/cjs Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/wrap-\/ansi-\/cjs Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md8240}{}\doxysubsection{\texorpdfstring{wrap-\/ansi \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.com/chalk/wrap-ansi.svg?branch=master}{\texttt{https\+://travis-\/ci.\+com/chalk/wrap-\/ansi.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.com/chalk/wrap-ansi}{\texttt{https\+://travis-\/ci.\+com/chalk/wrap-\/ansi}}) \mbox{[}!\mbox{[}Coverage Status\mbox{]}(\href{https://coveralls.io/repos/github/chalk/wrap-ansi/badge.svg?branch=master}{\texttt{https\+://coveralls.\+io/repos/github/chalk/wrap-\/ansi/badge.\+svg?branch=master}})\mbox{]}(\href{https://coveralls.io/github/chalk/wrap-ansi?branch=master}{\texttt{https\+://coveralls.\+io/github/chalk/wrap-\/ansi?branch=master}})}{wrap-\/ansi \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.com/chalk/wrap-ansi.svg?branch=master}{\texttt{https\+://travis-\/ci.\+com/chalk/wrap-\/ansi.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.com/chalk/wrap-ansi}{\texttt{https\+://travis-\/ci.\+com/chalk/wrap-\/ansi}}) \mbox{[}!\mbox{[}Coverage Status\mbox{]}(\href{https://coveralls.io/repos/github/chalk/wrap-ansi/badge.svg?branch=master}{\texttt{https\+://coveralls.\+io/repos/github/chalk/wrap-\/ansi/badge.\+svg?branch=master}})\mbox{]}(\href{https://coveralls.io/github/chalk/wrap-ansi?branch=master}{\texttt{https\+://coveralls.\+io/github/chalk/wrap-\/ansi?branch=master}})}}\label{readme.md_autotoc_md8240}
+\begin{quote}
+Wordwrap a string with \href{https://en.wikipedia.org/wiki/ANSI_escape_code\#Colors_and_Styles}{\texttt{ANSI escape codes}} \end{quote}
+\hypertarget{readme.md_autotoc_md8241}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md8241}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ wrap-\/ansi}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md8242}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md8242}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ chalk\ =\ require('chalk');}
+\DoxyCodeLine{const\ wrapAnsi\ =\ require('wrap-\/ansi');}
+\DoxyCodeLine{}
+\DoxyCodeLine{const\ input\ =\ 'The\ quick\ brown\ '\ +\ chalk.red('fox\ jumped\ over\ ')\ +}
+\DoxyCodeLine{\ \ \ \ 'the\ lazy\ '\ +\ chalk.green('dog\ and\ then\ ran\ away\ with\ the\ unicorn.');}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(wrapAnsi(input,\ 20));}
+
+\end{DoxyCode}
+
+
+\hypertarget{readme.md_autotoc_md8243}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md8243}
+\hypertarget{readme.md_autotoc_md8244}{}\doxysubsubsection{\texorpdfstring{wrap\+Ansi(string, columns, options?)}{wrap\+Ansi(string, columns, options?)}}\label{readme.md_autotoc_md8244}
+Wrap words to the specified column width.\hypertarget{readme.md_autotoc_md8245}{}\doxysubsubsubsection{\texorpdfstring{string}{string}}\label{readme.md_autotoc_md8245}
+Type\+: {\ttfamily string}
+
+String with ANSI escape codes. Like one styled by \href{https://github.com/chalk/chalk}{\texttt{{\ttfamily chalk}}}. Newline characters will be normalized to {\ttfamily \textbackslash{}n}.\hypertarget{readme.md_autotoc_md8246}{}\doxysubsubsubsection{\texorpdfstring{columns}{columns}}\label{readme.md_autotoc_md8246}
+Type\+: {\ttfamily number}
+
+\doxylink{class_number}{Number} of columns to wrap the text to.\hypertarget{readme.md_autotoc_md8247}{}\doxysubsubsubsection{\texorpdfstring{options}{options}}\label{readme.md_autotoc_md8247}
+Type\+: {\ttfamily object}\hypertarget{readme.md_autotoc_md8248}{}\doxysubsubsubsubsection{\texorpdfstring{hard}{hard}}\label{readme.md_autotoc_md8248}
+Type\+: {\ttfamily boolean}\textbackslash{} Default\+: {\ttfamily false}
+
+By default the wrap is soft, meaning long words may extend past the column width. Setting this to {\ttfamily true} will make it hard wrap at the column width.\hypertarget{readme.md_autotoc_md8249}{}\doxysubsubsubsubsection{\texorpdfstring{word\+Wrap}{word\+Wrap}}\label{readme.md_autotoc_md8249}
+Type\+: {\ttfamily boolean}\textbackslash{} Default\+: {\ttfamily true}
+
+By default, an attempt is made to split words at spaces, ensuring that they don\textquotesingle{}t extend past the configured columns. If word\+Wrap is {\ttfamily false}, each column will instead be completely filled splitting words as necessary.\hypertarget{readme.md_autotoc_md8250}{}\doxysubsubsubsubsection{\texorpdfstring{trim}{trim}}\label{readme.md_autotoc_md8250}
+Type\+: {\ttfamily boolean}\textbackslash{} Default\+: {\ttfamily true}
+
+Whitespace on all lines is removed by default. Set this option to {\ttfamily false} if you don\textquotesingle{}t want to trim.\hypertarget{readme.md_autotoc_md8251}{}\doxysubsection{\texorpdfstring{Related}{Related}}\label{readme.md_autotoc_md8251}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/chalk/slice-ansi}{\texttt{slice-\/ansi}} -\/ Slice a string with ANSI escape codes
+\item \href{https://github.com/sindresorhus/cli-truncate}{\texttt{cli-\/truncate}} -\/ Truncate a string to a specific width in the terminal
+\item \href{https://github.com/chalk/chalk}{\texttt{chalk}} -\/ Terminal string styling done right
+\item \href{https://github.com/mathiasbynens/jsesc}{\texttt{jsesc}} -\/ Generate ASCII-\/only output from Unicode strings. Useful for creating test fixtures.
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md8252}{}\doxysubsection{\texorpdfstring{Maintainers}{Maintainers}}\label{readme.md_autotoc_md8252}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sindresorhus}{\texttt{Sindre Sorhus}}
+\item \href{https://github.com/qix-}{\texttt{Josh Junon}}
+\item \href{https://github.com/bcoe}{\texttt{Benjamin Coe}}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+
+
+ {\bfseries{ \href{https://tidelift.com/subscription/pkg/npm-wrap_ansi?utm_source=npm-wrap-ansi&utm_medium=referral&utm_campaign=readme}{\texttt{Get professional support for this package with a Tidelift subscription}} }} ~\newline
+ \textsubscript{ Tidelift helps make open source sustainable for maintainers while giving companies~\newline
+assurances about security, maintenance, and licensing for their dependencies. }  

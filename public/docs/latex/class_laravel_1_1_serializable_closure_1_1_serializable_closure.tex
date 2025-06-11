@@ -1,0 +1,191 @@
+\doxysection{Serializable\+Closure Class Reference}
+\hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure}{}\label{class_laravel_1_1_serializable_closure_1_1_serializable_closure}\index{SerializableClosure@{SerializableClosure}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a678599941cfae4917f85e03a75cb2ed0}{\+\_\+\+\_\+construct}} (Closure \$closure)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a9aac7e1475efe923de4e19cc2511f092}{\+\_\+\+\_\+invoke}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a0c14ffb33fde54c492dbf82e39c905bf}{get\+Closure}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}{\+\_\+\+\_\+serialize}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_aece9561d22d6ba341c36c371e50c2a8a}{\+\_\+\+\_\+unserialize}} (\$data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_aa3359305ad766ffb9c450aaf29f881bc}{unsigned}} (Closure \$closure)
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_ac52f4a1fcaf124aa928c70a4ba86f0aa}{set\+Secret\+Key}} (\$secret)
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a5b343cbea7893e43a0c2b5ab855fab7a}{transform\+Use\+Variables\+Using}} (\$transformer)
+\item 
+static \mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a21740167dd8085898388eb92bafadcab}{resolve\+Use\+Variables\+Using}} (\$resolver)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a91802705edad014093fe0e733b4f615b}{\$serializable}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a678599941cfae4917f85e03a75cb2ed0}\index{SerializableClosure@{SerializableClosure}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a678599941cfae4917f85e03a75cb2ed0} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Closure}]{\$closure}{}\end{DoxyParamCaption})}
+
+Creates a new serializable closure instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$closure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-func-members}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a9aac7e1475efe923de4e19cc2511f092}\index{SerializableClosure@{SerializableClosure}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a9aac7e1475efe923de4e19cc2511f092} 
+\+\_\+\+\_\+invoke (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Resolve the closure with the given arguments.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}\index{SerializableClosure@{SerializableClosure}!\_\_serialize@{\_\_serialize}}
+\index{\_\_serialize@{\_\_serialize}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{\_\_serialize()}{\_\_serialize()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_ab1d6abfbdcd8c9dd63dfef565bd2cfcf} 
+\+\_\+\+\_\+serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the serializable representation of the closure.
+
+\begin{DoxyReturn}{Returns}
+array\{serializable\+: \textbackslash{}\+Laravel\textbackslash{}\+Serializable\+Closure\textbackslash{}\+Serializers\textbackslash{}\+Signed\texorpdfstring{$\vert$}{|}\textbackslash{}\+Laravel\textbackslash{}\+Serializable\+Closure\textbackslash{}\+Contracts\textbackslash{}\+Serializable\} 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_aece9561d22d6ba341c36c371e50c2a8a}\index{SerializableClosure@{SerializableClosure}!\_\_unserialize@{\_\_unserialize}}
+\index{\_\_unserialize@{\_\_unserialize}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{\_\_unserialize()}{\_\_unserialize()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_aece9561d22d6ba341c36c371e50c2a8a} 
+\+\_\+\+\_\+unserialize (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+Restore the closure after serialization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\{serializable} & \textbackslash{}\+Laravel\textbackslash{}\+Serializable\+Closure\textbackslash{}\+Serializers\textbackslash{}\+Signed\texorpdfstring{$\vert$}{|}\textbackslash{}\+Laravel\textbackslash{}\+Serializable\+Closure\textbackslash{}\+Contracts\textbackslash{}\+Serializable\} \$data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Laravel\textbackslash{}\+Serializable\+Closure\textbackslash{}\+Exceptions\textbackslash{}\+Invalid\+Signature\+Exception \Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a0c14ffb33fde54c492dbf82e39c905bf}\index{SerializableClosure@{SerializableClosure}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{getClosure()}{getClosure()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a0c14ffb33fde54c492dbf82e39c905bf} 
+get\+Closure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the closure.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a21740167dd8085898388eb92bafadcab}\index{SerializableClosure@{SerializableClosure}!resolveUseVariablesUsing@{resolveUseVariablesUsing}}
+\index{resolveUseVariablesUsing@{resolveUseVariablesUsing}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{resolveUseVariablesUsing()}{resolveUseVariablesUsing()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a21740167dd8085898388eb92bafadcab} 
+resolve\+Use\+Variables\+Using (\begin{DoxyParamCaption}\item[{}]{\$resolver}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the serializable closure secret key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | null & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_ac52f4a1fcaf124aa928c70a4ba86f0aa}\index{SerializableClosure@{SerializableClosure}!setSecretKey@{setSecretKey}}
+\index{setSecretKey@{setSecretKey}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{setSecretKey()}{setSecretKey()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_ac52f4a1fcaf124aa928c70a4ba86f0aa} 
+set\+Secret\+Key (\begin{DoxyParamCaption}\item[{}]{\$secret}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the serializable closure secret key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$secret} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a5b343cbea7893e43a0c2b5ab855fab7a}\index{SerializableClosure@{SerializableClosure}!transformUseVariablesUsing@{transformUseVariablesUsing}}
+\index{transformUseVariablesUsing@{transformUseVariablesUsing}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{transformUseVariablesUsing()}{transformUseVariablesUsing()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a5b343cbea7893e43a0c2b5ab855fab7a} 
+transform\+Use\+Variables\+Using (\begin{DoxyParamCaption}\item[{}]{\$transformer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the serializable closure secret key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | null & {\em \$transformer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_aa3359305ad766ffb9c450aaf29f881bc}\index{SerializableClosure@{SerializableClosure}!unsigned@{unsigned}}
+\index{unsigned@{unsigned}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{unsigned()}{unsigned()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_aa3359305ad766ffb9c450aaf29f881bc} 
+unsigned (\begin{DoxyParamCaption}\item[{Closure}]{\$closure}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new unsigned serializable closure instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Closure & {\em \$closure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Laravel\textbackslash{}\+Serializable\+Closure\textbackslash{}\+Unsigned\+Serializable\+Closure 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a91802705edad014093fe0e733b4f615b}\index{SerializableClosure@{SerializableClosure}!\$serializable@{\$serializable}}
+\index{\$serializable@{\$serializable}!SerializableClosure@{SerializableClosure}}
+\doxysubsubsection{\texorpdfstring{\$serializable}{\$serializable}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_serializable_closure_1_1_serializable_closure_a91802705edad014093fe0e733b4f615b} 
+\$serializable\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/serializable-\/closure/src/\mbox{\hyperlink{_serializable_closure_8php}{Serializable\+Closure.\+php}}\end{DoxyCompactItemize}

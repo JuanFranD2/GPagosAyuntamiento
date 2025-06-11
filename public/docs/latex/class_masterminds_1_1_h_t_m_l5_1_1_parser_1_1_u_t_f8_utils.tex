@@ -1,0 +1,89 @@
+\doxysection{UTF8\+Utils Class Reference}
+\hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils}{}\label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils}\index{UTF8Utils@{UTF8Utils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a309c836ee6492f538e2555d511c10e54}{count\+Chars}} (\$string)
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a6ded621bce547d031185095054ccb4dc}{convert\+To\+UTF8}} (\$data, \$encoding=\textquotesingle{}UTF-\/8\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a4e02098c40000ffa3dbb6053e19362f8}{check\+For\+Illegal\+Codepoints}} (\$data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a0a5d65fb4ddfdf44d585ac109cfdb628}{FFFD}} = "{}\textbackslash{}x\+EF\textbackslash{}x\+BF\textbackslash{}x\+BD"{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a4e02098c40000ffa3dbb6053e19362f8}\index{UTF8Utils@{UTF8Utils}!checkForIllegalCodepoints@{checkForIllegalCodepoints}}
+\index{checkForIllegalCodepoints@{checkForIllegalCodepoints}!UTF8Utils@{UTF8Utils}}
+\doxysubsubsection{\texorpdfstring{checkForIllegalCodepoints()}{checkForIllegalCodepoints()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a4e02098c40000ffa3dbb6053e19362f8} 
+check\+For\+Illegal\+Codepoints (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks for Unicode code points that are not valid in a document.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & A string to analyze\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array An array of (string) error messages produced by the scanning 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a6ded621bce547d031185095054ccb4dc}\index{UTF8Utils@{UTF8Utils}!convertToUTF8@{convertToUTF8}}
+\index{convertToUTF8@{convertToUTF8}!UTF8Utils@{UTF8Utils}}
+\doxysubsubsection{\texorpdfstring{convertToUTF8()}{convertToUTF8()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a6ded621bce547d031185095054ccb4dc} 
+convert\+To\+UTF8 (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$encoding}{ = {\ttfamily \textquotesingle{}UTF-\/8\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert data from the given encoding to UTF-\/8.
+
+This has not yet been tested with charactersets other than UTF-\/8. It should work with ISO-\/8859-\/1/-\/13 and standard Latin Win charsets.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & The data to convert \\
+\hline
+string & {\em \$encoding} & A valid encoding. Examples\+: \href{http://www.php.net/manual/en/mbstring.supported-encodings.php}{\texttt{http\+://www.\+php.\+net/manual/en/mbstring.\+supported-\/encodings.\+php}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a309c836ee6492f538e2555d511c10e54}\index{UTF8Utils@{UTF8Utils}!countChars@{countChars}}
+\index{countChars@{countChars}!UTF8Utils@{UTF8Utils}}
+\doxysubsubsection{\texorpdfstring{countChars()}{countChars()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a309c836ee6492f538e2555d511c10e54} 
+count\+Chars (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Count the number of characters in a string. UTF-\/8 aware. This will try (in order) iconv, MB, and finally a custom counter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a0a5d65fb4ddfdf44d585ac109cfdb628}\index{UTF8Utils@{UTF8Utils}!FFFD@{FFFD}}
+\index{FFFD@{FFFD}!UTF8Utils@{UTF8Utils}}
+\doxysubsubsection{\texorpdfstring{FFFD}{FFFD}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_u_t_f8_utils_a0a5d65fb4ddfdf44d585ac109cfdb628} 
+const FFFD = "{}\textbackslash{}x\+EF\textbackslash{}x\+BF\textbackslash{}x\+BD"{}}
+
+The Unicode replacement character. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Parser/\mbox{\hyperlink{_u_t_f8_utils_8php}{UTF8\+Utils.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/path-\/exists Directory Reference}
+\hypertarget{dir_172cea85a66ea911f62c5f682cc3c63f}{}\label{dir_172cea85a66ea911f62c5f682cc3c63f}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/path-\/exists Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/path-\/exists Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md5431}{}\doxysubsection{\texorpdfstring{path-\/exists \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/path-exists.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/path-\/exists.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/path-exists}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/path-\/exists}})}{path-\/exists \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/path-exists.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/path-\/exists.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/path-exists}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/path-\/exists}})}}\label{readme.md_autotoc_md5431}
+\begin{quote}
+Check if a path exists \end{quote}
+
+
+NOTE\+: {\ttfamily fs.\+exists\+Sync} has been un-\/deprecated in Node.\+js since 6.\+8.\+0. If you only need to check synchronously, this module is not needed.
+
+While \href{https://nodejs.org/api/fs.html\#fs_fs_exists_path_callback}{\texttt{{\ttfamily fs.\+exists()}}} is being \href{https://github.com/iojs/io.js/issues/103}{\texttt{deprecated}}, there\textquotesingle{}s still a genuine use-\/case of being able to check if a path exists for other purposes than doing IO with it.
+
+Never use this before handling a file though\+:
+
+\begin{quote}
+In particular, checking if a file exists before opening it is an anti-\/pattern that leaves you vulnerable to race conditions\+: another process may remove the file between the calls to {\ttfamily fs.\+exists()} and {\ttfamily fs.\+open()}. Just open the file and handle the error when it\textquotesingle{}s not there. \end{quote}
+\hypertarget{readme.md_autotoc_md5432}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md5432}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ path-\/exists}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md5433}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md5433}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ foo.js}
+\DoxyCodeLine{const\ pathExists\ =\ require('path-\/exists');}
+\DoxyCodeLine{}
+\DoxyCodeLine{(async\ ()\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ console.log(await\ pathExists('foo.js'));}
+\DoxyCodeLine{\ \ \ \ //=>\ true}
+\DoxyCodeLine{\})();}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md5434}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md5434}
+\hypertarget{readme.md_autotoc_md5435}{}\doxysubsubsection{\texorpdfstring{path\+Exists(path)}{path\+Exists(path)}}\label{readme.md_autotoc_md5435}
+Returns a {\ttfamily Promise\texorpdfstring{$<$}{<}boolean\texorpdfstring{$>$}{>}} of whether the path exists.\hypertarget{readme.md_autotoc_md5436}{}\doxysubsubsection{\texorpdfstring{path\+Exists.\+sync(path)}{path\+Exists.\+sync(path)}}\label{readme.md_autotoc_md5436}
+Returns a {\ttfamily boolean} of whether the path exists.\hypertarget{readme.md_autotoc_md5437}{}\doxysubsection{\texorpdfstring{Related}{Related}}\label{readme.md_autotoc_md5437}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sindresorhus/path-exists-cli}{\texttt{path-\/exists-\/cli}} -\/ CLI for this module
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md5438}{}\doxysubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md5438}
+MIT © \href{https://sindresorhus.com}{\texttt{Sindre Sorhus}} 

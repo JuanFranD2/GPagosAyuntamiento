@@ -1,0 +1,114 @@
+\doxysection{Volt\+Manager Class Reference}
+\hypertarget{class_livewire_1_1_volt_1_1_volt_manager}{}\label{class_livewire_1_1_volt_1_1_volt_manager}\index{VoltManager@{VoltManager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_a4a48efe72b033b02c3d4e6e126be9026}{\+\_\+\+\_\+construct}} (protected \mbox{\hyperlink{class_livewire_1_1_volt_1_1_livewire_manager}{Livewire\+Manager}} \$manager, protected \mbox{\hyperlink{class_livewire_1_1_volt_1_1_mounted_directories}{Mounted\+Directories}} \$mounted\+Directories, protected \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar}{Registrar}} \$router,)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_a32d197fb00e69dffe2accb91780ec85f}{route}} (string \$uri, string \$component\+Name)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_a3d2923492a4e72889229fdc533f0201f}{mount}} (array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_aa337558e16e6f00013857db04f501711}{paths}}=\mbox{[}$\,$\mbox{]}, array\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{namespace_livewire_1_1_volt_a88fac1ec019fa0e7dde99a5c305d01be}{uses}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_ac0bda682454bd2eff7d6ffd5fdc5acb0}{test}} (string \$name, array \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_affffa1845bd99968256c478c321b33c2}{with\+Query\+Params}} (array \$params)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_a305ba4211b1f6e201763ac5dec051bc0}{acting\+As}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, ?string \$driver=null)
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_ab1913b9ec87bf21d09dec8e3d18f2cbc}{ensure\+Views\+Are\+Cached}} ()
+\item 
+\mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_aa337558e16e6f00013857db04f501711}{paths}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_livewire_1_1_volt_1_1_volt_manager_a96ff655f5f94753ad06d06a1c092e3a7}{\$views\+Are\+Cached}} = false
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_a4a48efe72b033b02c3d4e6e126be9026}\index{VoltManager@{VoltManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!VoltManager@{VoltManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_volt_manager_a4a48efe72b033b02c3d4e6e126be9026} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected \mbox{\hyperlink{class_livewire_1_1_volt_1_1_livewire_manager}{Livewire\+Manager}}}]{\$manager}{, }\item[{protected \mbox{\hyperlink{class_livewire_1_1_volt_1_1_mounted_directories}{Mounted\+Directories}}}]{\$mounted\+Directories}{, }\item[{protected \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar}{Registrar}}}]{\$router}{}\end{DoxyParamCaption})}
+
+Create a new volt manager instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_a305ba4211b1f6e201763ac5dec051bc0}\index{VoltManager@{VoltManager}!actingAs@{actingAs}}
+\index{actingAs@{actingAs}!VoltManager@{VoltManager}}
+\doxysubsubsection{\texorpdfstring{actingAs()}{actingAs()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_volt_manager_a305ba4211b1f6e201763ac5dec051bc0} 
+acting\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}}}]{\$user}{, }\item[{?string}]{\$driver}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the currently logged in user for the application. \Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_ab1913b9ec87bf21d09dec8e3d18f2cbc}\index{VoltManager@{VoltManager}!ensureViewsAreCached@{ensureViewsAreCached}}
+\index{ensureViewsAreCached@{ensureViewsAreCached}!VoltManager@{VoltManager}}
+\doxysubsubsection{\texorpdfstring{ensureViewsAreCached()}{ensureViewsAreCached()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_volt_manager_ab1913b9ec87bf21d09dec8e3d18f2cbc} 
+ensure\+Views\+Are\+Cached (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ensure that the views are cached for testing. \Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_a3d2923492a4e72889229fdc533f0201f}\index{VoltManager@{VoltManager}!mount@{mount}}
+\index{mount@{mount}!VoltManager@{VoltManager}}
+\doxysubsubsection{\texorpdfstring{mount()}{mount()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_volt_manager_a3d2923492a4e72889229fdc533f0201f} 
+mount (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$paths}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$uses}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Mount the given path and auto-\/register its Volt components.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}string} & \$paths \\
+\hline
+{\em array$<$int,class-\/string$>$\texorpdfstring{$\vert$}{|}class-\/string} & \$uses \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_aa337558e16e6f00013857db04f501711}\index{VoltManager@{VoltManager}!paths@{paths}}
+\index{paths@{paths}!VoltManager@{VoltManager}}
+\doxysubsubsection{\texorpdfstring{paths()}{paths()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_volt_manager_aa337558e16e6f00013857db04f501711} 
+paths (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the mounted directory paths.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}int, \textbackslash{}\+Livewire\textbackslash{}\+Volt\textbackslash{}\+Mounted\+Directory\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_a32d197fb00e69dffe2accb91780ec85f}\index{VoltManager@{VoltManager}!route@{route}}
+\index{route@{route}!VoltManager@{VoltManager}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_volt_manager_a32d197fb00e69dffe2accb91780ec85f} 
+route (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{string}]{\$component\+Name}{}\end{DoxyParamCaption})}
+
+Registers a new Volt route. \Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_ac0bda682454bd2eff7d6ffd5fdc5acb0}\index{VoltManager@{VoltManager}!test@{test}}
+\index{test@{test}!VoltManager@{VoltManager}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_volt_manager_ac0bda682454bd2eff7d6ffd5fdc5acb0} 
+test (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Test a Volt / \doxylink{class_livewire}{Livewire} component. \Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_affffa1845bd99968256c478c321b33c2}\index{VoltManager@{VoltManager}!withQueryParams@{withQueryParams}}
+\index{withQueryParams@{withQueryParams}!VoltManager@{VoltManager}}
+\doxysubsubsection{\texorpdfstring{withQueryParams()}{withQueryParams()}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_volt_manager_affffa1845bd99968256c478c321b33c2} 
+with\+Query\+Params (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})}
+
+Define the query parameters for testing. 
+
+\label{doc-variable-members}
+\Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_livewire_1_1_volt_1_1_volt_manager_a96ff655f5f94753ad06d06a1c092e3a7}\index{VoltManager@{VoltManager}!\$viewsAreCached@{\$viewsAreCached}}
+\index{\$viewsAreCached@{\$viewsAreCached}!VoltManager@{VoltManager}}
+\doxysubsubsection{\texorpdfstring{\$viewsAreCached}{\$viewsAreCached}}
+{\footnotesize\ttfamily \label{class_livewire_1_1_volt_1_1_volt_manager_a96ff655f5f94753ad06d06a1c092e3a7} 
+bool \$views\+Are\+Cached = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Indicates if the views have been cached for testing. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/livewire/volt/src/\mbox{\hyperlink{_volt_manager_8php}{Volt\+Manager.\+php}}\end{DoxyCompactItemize}

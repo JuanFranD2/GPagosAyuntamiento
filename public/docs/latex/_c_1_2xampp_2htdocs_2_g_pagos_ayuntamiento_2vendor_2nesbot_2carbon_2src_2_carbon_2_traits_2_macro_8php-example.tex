@@ -1,0 +1,76 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nesbot/carbon/src/\+Carbon/\+Traits/\+Macro.\+php}
+\hypertarget{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_traits_2_macro_8php-example}{}\label{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_traits_2_macro_8php-example}Register a custom macro.
+
+Pass null macro to remove it.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$userSettings\ =\ [}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'locale'}\ =>\ \textcolor{stringliteral}{'pt'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'timezone'}\ =>\ \textcolor{stringliteral}{'America/Sao\_Paulo'},}
+\DoxyCodeLine{];}
+\DoxyCodeLine{Carbon::macro(\textcolor{stringliteral}{'userFormat'},\ \textcolor{keyword}{function}\ ()\ use\ (\$userSettings)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \$this-\/>copy()-\/>locale(\$userSettings[\textcolor{stringliteral}{'locale'}])-\/>tz(\$userSettings[\textcolor{stringliteral}{'timezone'}])-\/>calendar();}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{echo\ Carbon::yesterday()-\/>hours(11)-\/>userFormat();}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{declare(strict\_types=1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }Carbon\(\backslash\)Traits;}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ Carbon\(\backslash\)FactoryImmutable;}
+\DoxyCodeLine{}
+\DoxyCodeLine{trait\ Macro}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ use\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aaa50e87f3e72625cd43c14b65db2ddf1}{Mixin}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface_a61ad533b6336db9fed21859878ba45b9}{macro}}(\textcolor{keywordtype}{string}\ \$name,\ ?callable\ \$macro):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_carbon_1_1_factory_immutable_acc8fefd976c89e24bf495512dda05a7e}{FactoryImmutable::getDefaultInstance}}()-\/>macro(\$name,\ \$macro);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface_acc2b2cf70a4c5db7a9719591a4fe7dff}{resetMacros}}():\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_carbon_1_1_factory_immutable_acc8fefd976c89e24bf495512dda05a7e}{FactoryImmutable::getDefaultInstance}}()-\/>resetMacros();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface_a0ed2c7a1921bc278b170d192132c51ab}{genericMacro}}(callable\ \$macro,\ \textcolor{keywordtype}{int}\ \$priority\ =\ 0):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_carbon_1_1_factory_immutable_acc8fefd976c89e24bf495512dda05a7e}{FactoryImmutable::getDefaultInstance}}()-\/>genericMacro(\$macro,\ \$priority);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface_ad9c8abd2643bbb5d58b2f5263488801c}{hasMacro}}(\textcolor{keywordtype}{string}\ \$name):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_carbon_1_1_factory_immutable_ac93fbec81f07e5d15f80db907e63dc10}{FactoryImmutable::getInstance}}()-\/>hasMacro(\$name);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface_a49687a9cd1928d111c4e87bad8cd6455}{getMacro}}(\textcolor{keywordtype}{string}\ \$name):\ ?callable}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_carbon_1_1_factory_immutable_ac93fbec81f07e5d15f80db907e63dc10}{FactoryImmutable::getInstance}}()-\/>getMacro(\$name);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a3013c89b3e450776b687935b579b1fc1}{hasLocalMacro}}(\textcolor{keywordtype}{string}\ \$name):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\$this-\/>localMacros\ \&\&\ isset(\$this-\/>localMacros[\$name]))\ ||\ \$this-\/>transmitFactory(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ fn\ ()\ =>\ static::hasMacro(\$name),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a51893816dbbe730c68e2370b68b0b52b}{getLocalMacro}}(\textcolor{keywordtype}{string}\ \$name):\ ?callable}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\$this-\/>localMacros\ ??\ [])[\mbox{\hyperlink{namespace_symfony_1_1_component_1_1_routing_1_1_loader_1_1_configurator_1_1_traits_a58551b63ba97fb35b928f11f36b1fac6}{\$name}}]\ ??\ \$this-\/>transmitFactory(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ fn\ ()\ =>\ static::getMacro(\$name),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

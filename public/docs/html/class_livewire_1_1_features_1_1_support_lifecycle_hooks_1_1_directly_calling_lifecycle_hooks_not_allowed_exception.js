@@ -1,0 +1,4 @@
+var class_livewire_1_1_features_1_1_support_lifecycle_hooks_1_1_directly_calling_lifecycle_hooks_not_allowed_exception =
+[
+    [ "__construct", "class_livewire_1_1_features_1_1_support_lifecycle_hooks_1_1_directly_calling_lifecycle_hooks_not_allowed_exception.html#a8853e2e6f75cee741f55af9ba4aa1d97", null ]
+];

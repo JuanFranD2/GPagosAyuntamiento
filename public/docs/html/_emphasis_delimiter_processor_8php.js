@@ -1,0 +1,4 @@
+var _emphasis_delimiter_processor_8php =
+[
+    [ "EmphasisDelimiterProcessor", "class_league_1_1_common_mark_1_1_extension_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_emphasis_delimiter_processor.html", "class_league_1_1_common_mark_1_1_extension_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_emphasis_delimiter_processor" ]
+];

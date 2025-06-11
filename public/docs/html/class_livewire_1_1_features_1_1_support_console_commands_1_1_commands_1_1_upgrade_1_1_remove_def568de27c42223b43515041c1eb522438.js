@@ -1,0 +1,4 @@
+var class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_remove_def568de27c42223b43515041c1eb522438 =
+[
+    [ "handle", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_remove_def568de27c42223b43515041c1eb522438.html#a9930acdf09509c095728c44243f8ac76", null ]
+];

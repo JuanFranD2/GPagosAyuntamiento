@@ -1,0 +1,78 @@
+\doxysection{Http\+Client\+Kernel Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel}\index{HttpClientKernel@{HttpClientKernel}}
+Inheritance diagram for Http\+Client\+Kernel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel_ab3d2ac27fcfc7f22347f650316b207a8}{\+\_\+\+\_\+construct}} (?Http\+Client\+Interface \$client=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel_afef0298a7838467257c48e0e03fb00cd}{handle}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request, int \$type=\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface_a337f4c2284fc7fe34931decf54fb7830}{Http\+Kernel\+Interface\+::\+MAIN\+\_\+\+REQUEST}}, bool \$\mbox{\hyperlink{discover-1180853afdec2df68b8101f27487d6f9_8php_a1779b58e59344448e6f0077de3112b24}{catch}}=true)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface}{Http\+Kernel\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface_a337f4c2284fc7fe34931decf54fb7830}{MAIN\+\_\+\+REQUEST}} = 1
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface_acdeb30993941c75c590393a2043b80b8}{SUB\+\_\+\+REQUEST}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An implementation of a Symfony HTTP kernel using a "{}real"{} HTTP client.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel_ab3d2ac27fcfc7f22347f650316b207a8}\index{HttpClientKernel@{HttpClientKernel}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!HttpClientKernel@{HttpClientKernel}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel_ab3d2ac27fcfc7f22347f650316b207a8} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?Http\+Client\+Interface}]{\$client}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel_afef0298a7838467257c48e0e03fb00cd}\index{HttpClientKernel@{HttpClientKernel}!handle@{handle}}
+\index{handle@{handle}!HttpClientKernel@{HttpClientKernel}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_http_client_kernel_afef0298a7838467257c48e0e03fb00cd} 
+handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{, }\item[{int}]{\$type}{ = {\ttfamily \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface_a337f4c2284fc7fe34931decf54fb7830}{Http\+Kernel\+Interface\+::\+MAIN\+\_\+\+REQUEST}}}, }\item[{bool}]{\$catch}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Handles a \doxylink{class_request}{Request} to convert it to a \doxylink{class_response}{Response}.
+
+When \$catch is true, the implementation must catch all exceptions and do its best to convert them to a \doxylink{class_response}{Response} instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & The type of the request (one of Http\+Kernel\+Interface\+::\+MAIN\+\_\+\+REQUEST or Http\+Kernel\+Interface\+::\+SUB\+\_\+\+REQUEST) \\
+\hline
+bool & {\em \$catch} & Whether to catch exceptions or not\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception When an Exception occurs during processing 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface_ae486b8cf73ca0a8173e3ed476a86357d}{Http\+Kernel\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\mbox{\hyperlink{_http_client_kernel_8php}{Http\+Client\+Kernel.\+php}}\end{DoxyCompactItemize}

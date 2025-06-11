@@ -1,0 +1,4 @@
+var _remove_be_strict_about_resource_usage_during_small_tests_attribute_8php =
+[
+    [ "RemoveBeStrictAboutResourceUsageDuringSmallTestsAttribute", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_remove_be_strict_about_resource_usage_during_small_tests_attribute.html", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_remove_be_strict_about_resource_usage_during_small_tests_attribute" ]
+];

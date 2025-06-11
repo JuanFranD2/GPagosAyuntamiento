@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_exception_1_1_access_denied_exception =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_exception_1_1_access_denied_exception.html#a627530c72b5836c8e07d88b4c4fadb96", null ]
+];

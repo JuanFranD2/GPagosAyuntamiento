@@ -1,0 +1,4 @@
+var _rename_backup_static_attributes_attribute_8php =
+[
+    [ "RenameBackupStaticAttributesAttribute", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_rename_backup_static_attributes_attribute.html", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_rename_backup_static_attributes_attribute" ]
+];

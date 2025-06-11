@@ -1,0 +1,143 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/tough-\/cookie Directory Reference}
+\hypertarget{dir_8b9e93a3998fd5f24a9537473c88d0e8}{}\label{dir_8b9e93a3998fd5f24a9537473c88d0e8}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/tough-\/cookie Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/tough-\/cookie Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md7742}{}\doxysubsection{\texorpdfstring{Tough Cookie \textperiodcentered{} \mbox{[}!\mbox{[}RFC6265\mbox{]}\mbox{[}rfc6265-\/badge\mbox{]}\mbox{]}\mbox{[}rfc6265-\/tracker\mbox{]} \mbox{[}!\mbox{[}RFC6265bis\mbox{]}\mbox{[}rfc6265bis-\/badge\mbox{]}\mbox{]}\mbox{[}rfc6265bis-\/tracker\mbox{]} \mbox{[}!\mbox{[}npm version\mbox{]}\mbox{[}npm-\/badge\mbox{]}\mbox{]}\mbox{[}npm-\/repo\mbox{]} \mbox{[}!\mbox{[}CI on Github Actions\+: salesforce/tough-\/cookie\mbox{]}\mbox{[}ci-\/badge\mbox{]}\mbox{]}\mbox{[}ci-\/url\mbox{]} !\mbox{[}PRs Welcome\mbox{]}\mbox{[}prs-\/welcome-\/badge\mbox{]}}{Tough Cookie \textperiodcentered{} \mbox{[}!\mbox{[}RFC6265\mbox{]}\mbox{[}rfc6265-\/badge\mbox{]}\mbox{]}\mbox{[}rfc6265-\/tracker\mbox{]} \mbox{[}!\mbox{[}RFC6265bis\mbox{]}\mbox{[}rfc6265bis-\/badge\mbox{]}\mbox{]}\mbox{[}rfc6265bis-\/tracker\mbox{]} \mbox{[}!\mbox{[}npm version\mbox{]}\mbox{[}npm-\/badge\mbox{]}\mbox{]}\mbox{[}npm-\/repo\mbox{]} \mbox{[}!\mbox{[}CI on Github Actions\+: salesforce/tough-\/cookie\mbox{]}\mbox{[}ci-\/badge\mbox{]}\mbox{]}\mbox{[}ci-\/url\mbox{]} !\mbox{[}PRs Welcome\mbox{]}\mbox{[}prs-\/welcome-\/badge\mbox{]}}}\label{README.md_autotoc_md7742}
+A Node.\+js implementation of \href{https://datatracker.ietf.org/doc/rfc6265/}{\texttt{RFC6265}} for cookie parsing, storage, and retrieval.\hypertarget{README.md_autotoc_md7743}{}\doxysubsection{\texorpdfstring{Getting Started}{Getting Started}}\label{README.md_autotoc_md7743}
+Install Tough \doxylink{class_cookie}{Cookie} using \href{https://www.npmjs.com/package/tough-cookie}{\texttt{{\ttfamily npm}}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ install\ tough-\/cookie}
+
+\end{DoxyCode}
+
+
+or \href{https://yarnpkg.com/package?name=tough-cookie}{\texttt{{\ttfamily yarn}}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{yarn\ add\ tough-\/cookie}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7744}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md7744}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{import\ \{\ Cookie,\ CookieJar\ \}\ from\ 'tough-\/cookie'}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ parse\ a\ \`{}Cookie`\ request\ header}
+\DoxyCodeLine{const\ reqCookies\ =\ 'ID=298zf09hf012fh2;\ csrf=u32t4o3tb3gg43;\ \_gat=1'}
+\DoxyCodeLine{\ \ .split(';')}
+\DoxyCodeLine{\ \ .map(Cookie.parse)}
+\DoxyCodeLine{//\ generate\ a\ \`{}Cookie`\ request\ header}
+\DoxyCodeLine{const\ cookieHeader\ =\ reqCookies.map((cookie)\ =>\ cookie.cookieString()).join(';')}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ parse\ a\ Set-\/Cookie\ response\ header}
+\DoxyCodeLine{const\ resCookie\ =\ Cookie.parse(}
+\DoxyCodeLine{\ \ 'foo=bar;\ Domain=example.com;\ Path=/;\ Expires=Tue,\ 21\ Oct\ 2025\ 00:00:00\ GMT',}
+\DoxyCodeLine{)}
+\DoxyCodeLine{//\ generate\ a\ Set-\/Cookie\ response\ header}
+\DoxyCodeLine{const\ setCookieHeader\ =\ cookie.toString()}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ store\ and\ retrieve\ cookies}
+\DoxyCodeLine{const\ cookieJar\ =\ new\ CookieJar()\ //\ uses\ the\ in-\/memory\ store\ by\ default}
+\DoxyCodeLine{await\ cookieJar.setCookie(resCookie,\ 'https://example.com/')}
+\DoxyCodeLine{const\ matchingCookies\ =\ await\ cookieJar.getCookies('https://example.com/')}
+
+\end{DoxyCode}
+
+
+\begin{DoxyImportant}{Important}
+For more detailed usage information, refer to the API docs.
+\end{DoxyImportant}
+\hypertarget{README.md_autotoc_md7745}{}\doxysubsection{\texorpdfstring{RFC6265bis}{RFC6265bis}}\label{README.md_autotoc_md7745}
+Support for \href{https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis/}{\texttt{RFC6265bis}} is being developed. As these revisions to \href{https://datatracker.ietf.org/doc/rfc6265/}{\texttt{RFC6252}} are still in {\ttfamily Active Internet-\/\+Draft} state, the areas of support that follow are subject to change.\hypertarget{README.md_autotoc_md7746}{}\doxysubsubsection{\texorpdfstring{Same\+Site Cookies}{Same\+Site Cookies}}\label{README.md_autotoc_md7746}
+This change makes it possible for servers, and supporting clients, to mitigate certain types of CSRF attacks by disallowing {\ttfamily Same\+Site} cookies from being sent cross-\/origin.\hypertarget{README.md_autotoc_md7747}{}\doxysubsubsubsection{\texorpdfstring{Example}{Example}}\label{README.md_autotoc_md7747}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{import\ \{\ CookieJar\ \}\ from\ 'tough-\/cookie'}
+\DoxyCodeLine{}
+\DoxyCodeLine{const\ cookieJar\ =\ new\ CookieJar()\ //\ uses\ the\ in-\/memory\ store\ by\ default}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ storing\ cookies\ with\ various\ SameSite\ attributes}
+\DoxyCodeLine{await\ cookieJar.setCookie(}
+\DoxyCodeLine{\ \ 'strict=authorized;\ SameSite=strict',}
+\DoxyCodeLine{\ \ 'http://example.com/index.html',}
+\DoxyCodeLine{)}
+\DoxyCodeLine{await\ cookieJar.setCookie(}
+\DoxyCodeLine{\ \ 'lax=okay;\ SameSite=lax',}
+\DoxyCodeLine{\ \ 'http://example.com/index.html',}
+\DoxyCodeLine{)}
+\DoxyCodeLine{await\ cookieJar.setCookie('normal=whatever',\ 'http://example.com/index.html')}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ retrieving\ cookies\ using\ a\ SameSite\ context}
+\DoxyCodeLine{const\ laxCookies\ =\ await\ cookieJar.getCookies('http://example.com/index.html',\ \{}
+\DoxyCodeLine{\ \ //\ the\ first\ cookie\ (strict=authorized)\ will\ not\ be\ returned\ if\ the\ context\ is\ 'lax'}
+\DoxyCodeLine{\ \ //\ but\ the\ other\ two\ cookies\ will\ be\ returned}
+\DoxyCodeLine{\ \ sameSiteContext:\ 'lax',}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+It is highly recommended that you read \href{https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-02\#section-8.8}{\texttt{RFC6265bis -\/ Section 8.\+8}} for more details on Same\+Site cookies, security considerations, and defense in depth.
+\end{DoxyNote}
+\hypertarget{README.md_autotoc_md7748}{}\doxysubsubsection{\texorpdfstring{Cookie Prefixes}{Cookie Prefixes}}\label{README.md_autotoc_md7748}
+\doxylink{class_cookie}{Cookie} prefixes are a way to indicate that a given cookie was set with a set of attributes simply by inspecting the first few characters of the cookie\textquotesingle{}s name.
+
+Two prefixes are defined\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily "{}\+\_\+\+\_\+\+Secure-\/"{}}
+
+If a cookie\textquotesingle{}s name begins with a case-\/sensitive match for the string {\ttfamily \+\_\+\+\_\+\+Secure-\/}, then the cookie was set with a "{}\+Secure"{} attribute.
+\item {\ttfamily "{}\+\_\+\+\_\+\+Host-\/"{}}
+
+If a cookie\textquotesingle{}s name begins with a case-\/sensitive match for the string {\ttfamily \+\_\+\+\_\+\+Host-\/}, then the cookie was set with a "{}\+Secure"{} attribute, a "{}\+Path"{} attribute with a value of "{}/"{}, and no "{}\+Domain"{} attribute.
+\end{DoxyItemize}
+
+If {\ttfamily prefix\+Security} is enabled for {\ttfamily Cookie\+Jar}, then cookies that match the prefixes defined above but do not obey the attribute restrictions are not added.
+
+You can define this functionality by passing in the {\ttfamily prefix\+Security} option to {\ttfamily Cookie\+Jar}. It can be one of 3 values\+:
+
+
+\begin{DoxyEnumerate}
+\item {\ttfamily silent}\+: ({\bfseries{default}}) Enable cookie prefix checking but silently fail to add the cookie if conditions are not met.
+\item {\ttfamily strict}\+: Enable cookie prefix checking and error out if conditions are not met.
+\item {\ttfamily unsafe-\/disabled}\+: Disable cookie prefix checking.
+\end{DoxyEnumerate}
+
+\begin{quote}
+If {\ttfamily ignore\+Error} is passed in as {\ttfamily true} when setting a cookie then the error is silent regardless of the {\ttfamily prefix\+Security} option (assuming it\textquotesingle{}s enabled). \end{quote}
+\hypertarget{README.md_autotoc_md7749}{}\doxysubsubsubsection{\texorpdfstring{Example}{Example}}\label{README.md_autotoc_md7749}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{import\ \{\ CookieJar,\ MemoryCookieStore\ \}\ from\ 'tough-\/cookie'}
+\DoxyCodeLine{}
+\DoxyCodeLine{const\ cookieJar\ =\ new\ CookieJar(new\ MemoryCookieStore(),\ \{}
+\DoxyCodeLine{\ \ prefixSecurity:\ 'silent',}
+\DoxyCodeLine{\})}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ this\ cookie\ will\ be\ silently\ ignored\ since\ the\ url\ is\ insecure\ (http)}
+\DoxyCodeLine{await\ cookieJar.setCookie(}
+\DoxyCodeLine{\ \ '\_\_Secure-\/SID=12345;\ Domain=example.com;\ Secure;',}
+\DoxyCodeLine{\ \ 'http://example.com',}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ this\ cookie\ will\ be\ stored\ since\ the\ url\ is\ secure\ (https)}
+\DoxyCodeLine{await\ cookieJar.setCookie(}
+\DoxyCodeLine{\ \ '\_\_Secure-\/SID=12345;\ Domain=example.com;\ Secure;',}
+\DoxyCodeLine{\ \ 'https://example.com',}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+It is highly recommended that you read \href{https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-02\#section-4.1.3}{\texttt{RFC6265bis -\/ Section 4.\+1.\+3}} for more details on \doxylink{class_cookie}{Cookie} Prefixes.
+\end{DoxyNote}
+\hypertarget{README.md_autotoc_md7750}{}\doxysubsection{\texorpdfstring{Node.\+js Version Support}{Node.\+js Version Support}}\label{README.md_autotoc_md7750}
+We follow the \href{https://github.com/nodejs/Release\#release-schedule}{\texttt{Node.\+js release schedule}} and support all versions that are in Active LTS or Maintenance. We will always do a major release when dropping support for older versions of node, and we will do so in consultation with our community. 

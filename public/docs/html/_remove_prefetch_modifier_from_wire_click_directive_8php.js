@@ -1,0 +1,4 @@
+var _remove_prefetch_modifier_from_wire_click_directive_8php =
+[
+    [ "RemovePrefetchModifierFromWireClickDirective", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_remove_prea9dec84bc0f281a3ade8fd9d73f4bc53.html", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_remove_prea9dec84bc0f281a3ade8fd9d73f4bc53" ]
+];

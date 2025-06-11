@@ -1,0 +1,81 @@
+\doxysection{Constraint\+Visitor Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor}{}\label{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor}\index{ConstraintVisitor@{ConstraintVisitor}}
+Inheritance diagram for Constraint\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a51865fe53ca7e96c39fcca108c1cc0d1}{\+\_\+\+\_\+construct}} (private readonly array \$constraint\+Class\+Names=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a61cf9be18190b38cbe8e0778f4cb2fd8}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (Node \$node)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a85d622872e004eec9219c62ed111a79b}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_abstract_visitor}{Abstract\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_abstract_visitor_a994c958aab659c63267c2c625d6e6a67}{initialize}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue}{Message\+Catalogue}} \$catalogue, \textbackslash{}Spl\+File\+Info \$file, string \$message\+Prefix)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_abstract_visitor}{Abstract\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_abstract_visitor_ad600e4b5281dd192a0c5904e76c1f375}{add\+Message\+To\+Catalogue}} (string \$message, ?string \$domain, int \$line)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_abstract_visitor_ad18d39b1ae6cf1082a9297061e7ad362}{get\+String\+Arguments}} (Node\textbackslash{}\+Expr\textbackslash{}\+Call\+Like\texorpdfstring{$\vert$}{|}Node\textbackslash{}\+Attribute\texorpdfstring{$\vert$}{|}Node\textbackslash{}\+Expr\textbackslash{}\+New\+\_\+ \$node, int\texorpdfstring{$\vert$}{|}string \$index, bool \$index\+Is\+Regex=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_abstract_visitor_a3f9d11d6393b839285ee696bbe2d1e43}{has\+Node\+Named\+Arguments}} (Node\textbackslash{}\+Expr\textbackslash{}\+Call\+Like\texorpdfstring{$\vert$}{|}Node\textbackslash{}\+Attribute\texorpdfstring{$\vert$}{|}Node\textbackslash{}\+Expr\textbackslash{}\+New\+\_\+ \$node)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_abstract_visitor_a7659861b03814cb2986552705b78a719}{node\+First\+Named\+Argument\+Index}} (Node\textbackslash{}\+Expr\textbackslash{}\+Call\+Like\texorpdfstring{$\vert$}{|}Node\textbackslash{}\+Attribute\texorpdfstring{$\vert$}{|}Node\textbackslash{}\+Expr\textbackslash{}\+New\+\_\+ \$node)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Mathieu Santostefano \href{mailto:msantostefano@protonmail.com}{\texttt{msantostefano@protonmail.\+com}}
+\end{DoxyAuthor}
+Code mostly comes from \href{https://github.com/php-translation/extractor/blob/master/src/Visitor/Php/Symfony/Constraint.php}{\texttt{https\+://github.\+com/php-\/translation/extractor/blob/master/src/\+Visitor/\+Php/\+Symfony/\+Constraint.\+php}} 
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a51865fe53ca7e96c39fcca108c1cc0d1}\index{ConstraintVisitor@{ConstraintVisitor}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ConstraintVisitor@{ConstraintVisitor}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a51865fe53ca7e96c39fcca108c1cc0d1} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly array}]{\$constraint\+Class\+Names}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a85d622872e004eec9219c62ed111a79b}\index{ConstraintVisitor@{ConstraintVisitor}!afterTraverse@{afterTraverse}}
+\index{afterTraverse@{afterTraverse}!ConstraintVisitor@{ConstraintVisitor}}
+\doxysubsubsection{\texorpdfstring{afterTraverse()}{afterTraverse()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a85d622872e004eec9219c62ed111a79b} 
+after\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a61cf9be18190b38cbe8e0778f4cb2fd8}\index{ConstraintVisitor@{ConstraintVisitor}!beforeTraverse@{beforeTraverse}}
+\index{beforeTraverse@{beforeTraverse}!ConstraintVisitor@{ConstraintVisitor}}
+\doxysubsubsection{\texorpdfstring{beforeTraverse()}{beforeTraverse()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a61cf9be18190b38cbe8e0778f4cb2fd8} 
+before\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}\index{ConstraintVisitor@{ConstraintVisitor}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!ConstraintVisitor@{ConstraintVisitor}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_extractor_1_1_visitor_1_1_constraint_visitor_a72d9ab2b97095f3bf1c97eb453a386d1} 
+enter\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/translation/\+Extractor/\+Visitor/\mbox{\hyperlink{_constraint_visitor_8php}{Constraint\+Visitor.\+php}}\end{DoxyCompactItemize}

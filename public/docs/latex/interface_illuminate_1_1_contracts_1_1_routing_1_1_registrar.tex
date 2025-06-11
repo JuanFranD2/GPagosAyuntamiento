@@ -1,0 +1,235 @@
+\doxysection{Registrar Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar}{}\label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar}\index{Registrar@{Registrar}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a5881741515db3c3d3a89573a45ffeb8b}{get}} (\$uri, \$action)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ab48482b981776470e4c297fc6a7399ba}{post}} (\$uri, \$action)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ad4de98e9460f761831bd951830a2e1b2}{put}} (\$uri, \$action)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a0c6262eff16f6758358e04d6b6bd301e}{delete}} (\$uri, \$action)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a9753f32bc6746b6a8674b0fdd40f272f}{patch}} (\$uri, \$action)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a771d4f4a78380ed441cfc4f7592b0e92}{options}} (\$uri, \$action)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ae1a1620f8c7de02690855bf0741d923b}{match}} (\$methods, \$uri, \$action)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a9f6e08b5f0bab700132b7df07018252a}{resource}} (\$name, \$controller, array \$\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a771d4f4a78380ed441cfc4f7592b0e92}{options}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ac6059a9a3661f1cf4cbd153f2a7c9fde}{group}} (array \$attributes, \$routes)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a126e9a6ed72f6f4c82ea305427ec9e13}{substitute\+Bindings}} (\$route)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a50b8ec665246c3eba9361cf5b693a290}{substitute\+Implicit\+Bindings}} (\$route)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a0c6262eff16f6758358e04d6b6bd301e}\index{Registrar@{Registrar}!delete@{delete}}
+\index{delete@{delete}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a0c6262eff16f6758358e04d6b6bd301e} 
+delete (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Register a new DELETE route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a5881741515db3c3d3a89573a45ffeb8b}\index{Registrar@{Registrar}!get@{get}}
+\index{get@{get}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a5881741515db3c3d3a89573a45ffeb8b} 
+get (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Register a new GET route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ac6059a9a3661f1cf4cbd153f2a7c9fde}\index{Registrar@{Registrar}!group@{group}}
+\index{group@{group}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{group()}{group()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ac6059a9a3661f1cf4cbd153f2a7c9fde} 
+group (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{, }\item[{}]{\$routes}{}\end{DoxyParamCaption})}
+
+Create a route group with shared attributes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+\textbackslash{}\+Closure | string & {\em \$routes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ae1a1620f8c7de02690855bf0741d923b}\index{Registrar@{Registrar}!match@{match}}
+\index{match@{match}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ae1a1620f8c7de02690855bf0741d923b} 
+match (\begin{DoxyParamCaption}\item[{}]{\$methods}{, }\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Register a new route with the given verbs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$methods} & \\
+\hline
+string & {\em \$uri} & \\
+\hline
+array | string | callable & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a771d4f4a78380ed441cfc4f7592b0e92}\index{Registrar@{Registrar}!options@{options}}
+\index{options@{options}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a771d4f4a78380ed441cfc4f7592b0e92} 
+options (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Register a new OPTIONS route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a9753f32bc6746b6a8674b0fdd40f272f}\index{Registrar@{Registrar}!patch@{patch}}
+\index{patch@{patch}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a9753f32bc6746b6a8674b0fdd40f272f} 
+patch (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Register a new PATCH route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ab48482b981776470e4c297fc6a7399ba}\index{Registrar@{Registrar}!post@{post}}
+\index{post@{post}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ab48482b981776470e4c297fc6a7399ba} 
+post (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Register a new POST route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ad4de98e9460f761831bd951830a2e1b2}\index{Registrar@{Registrar}!put@{put}}
+\index{put@{put}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_ad4de98e9460f761831bd951830a2e1b2} 
+put (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Register a new PUT route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a9f6e08b5f0bab700132b7df07018252a}\index{Registrar@{Registrar}!resource@{resource}}
+\index{resource@{resource}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{resource()}{resource()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a9f6e08b5f0bab700132b7df07018252a} 
+resource (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$controller}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\doxylink{class_route}{Route} a resource to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$controller} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Pending\+Resource\+Registration 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a126e9a6ed72f6f4c82ea305427ec9e13}\index{Registrar@{Registrar}!substituteBindings@{substituteBindings}}
+\index{substituteBindings@{substituteBindings}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{substituteBindings()}{substituteBindings()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a126e9a6ed72f6f4c82ea305427ec9e13} 
+substitute\+Bindings (\begin{DoxyParamCaption}\item[{}]{\$route}{}\end{DoxyParamCaption})}
+
+Substitute the route bindings onto the route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a50b8ec665246c3eba9361cf5b693a290}\index{Registrar@{Registrar}!substituteImplicitBindings@{substituteImplicitBindings}}
+\index{substituteImplicitBindings@{substituteImplicitBindings}!Registrar@{Registrar}}
+\doxysubsubsection{\texorpdfstring{substituteImplicitBindings()}{substituteImplicitBindings()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_routing_1_1_registrar_a50b8ec665246c3eba9361cf5b693a290} 
+substitute\+Implicit\+Bindings (\begin{DoxyParamCaption}\item[{}]{\$route}{}\end{DoxyParamCaption})}
+
+Substitute the implicit \doxylink{class_eloquent}{Eloquent} model bindings for the route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Routing/\mbox{\hyperlink{_registrar_8php}{Registrar.\+php}}\end{DoxyCompactItemize}

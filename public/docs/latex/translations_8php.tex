@@ -1,0 +1,133 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/php-\/templates/translations.php File Reference}
+\hypertarget{translations_8php}{}\label{translations_8php}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/php-\/templates/translations.php@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/php-\/templates/translations.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{translations_8php_a9e917c620fb7ed210597de586dbaa4dd}{vs\+Code\+Get\+Translations\+From\+File}} (\$file, \$path, \$namespace)
+\item 
+\mbox{\hyperlink{translations_8php_a2ca017cae6770bc5d97bea20e464cece}{vs\+Code\+Translation\+Value}} (\$key, \$value, \$file, \$lines)
+\item 
+\mbox{\hyperlink{translations_8php_a914697bdf6c2494319c54e6aece4bdef}{vscode\+Collect\+Translations}} (string \$path, ?string \$namespace=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{translations_8php_ab832f4c463ee1c9ba2e9464265f7ea3b}{\$loader}} = app(\textquotesingle{}translator\textquotesingle{})-\/$>$get\+Loader()
+\item 
+\mbox{\hyperlink{translations_8php_a5a7d9500de9f7c938443d65cef9a074e}{\$namespaces}} = \$loader-\/$>$namespaces()
+\item 
+\mbox{\hyperlink{translations_8php_a14c8191c99bdbb6e58e026ff4a6b2033}{\$reflection}} = \mbox{\hyperlink{resources_2views_2livewire_2pages_2auth_2confirm-password_8blade_8php_ae3b81d385ca4c26109dfbda28c563e2b}{new}} Reflection\+Class(\$loader)
+\item 
+\mbox{\hyperlink{translations_8php_aca07184a1d9c6d3817265d594c356071}{\$property}}
+\item 
+\mbox{\hyperlink{translations_8php_a20dd412769e0754189f5ce036e857a37}{\$paths}} = \mbox{\hyperlink{class_illuminate_1_1_support_1_1_arr_a553aa881a4efee1131415cbef79d122f}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Arr\+::wrap}}(\$property-\/$>$get\+Value(\$loader))
+\item 
+\mbox{\hyperlink{translations_8php_a9df479534ecf05fd7575c6275d381687}{\$default}}
+\item 
+\mbox{\hyperlink{translations_8php_a3623c7ab2aa74ee63df7e729afe5ed90}{\$namespaced}}
+\item 
+\mbox{\hyperlink{translations_8php_a8b38f0aed731abbde3e1381b1777d497}{\$final}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{translations_8php_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{translations_8php_a914697bdf6c2494319c54e6aece4bdef}\index{translations.php@{translations.php}!vscodeCollectTranslations@{vscodeCollectTranslations}}
+\index{vscodeCollectTranslations@{vscodeCollectTranslations}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{vscodeCollectTranslations()}{vscodeCollectTranslations()}}
+{\footnotesize\ttfamily \label{translations_8php_a914697bdf6c2494319c54e6aece4bdef} 
+vscode\+Collect\+Translations (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{?string}]{\$namespace}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{translations_8php_a9e917c620fb7ed210597de586dbaa4dd}\index{translations.php@{translations.php}!vsCodeGetTranslationsFromFile@{vsCodeGetTranslationsFromFile}}
+\index{vsCodeGetTranslationsFromFile@{vsCodeGetTranslationsFromFile}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{vsCodeGetTranslationsFromFile()}{vsCodeGetTranslationsFromFile()}}
+{\footnotesize\ttfamily \label{translations_8php_a9e917c620fb7ed210597de586dbaa4dd} 
+vs\+Code\+Get\+Translations\+From\+File (\begin{DoxyParamCaption}\item[{}]{\$file}{, }\item[{}]{\$path}{, }\item[{}]{\$namespace}{}\end{DoxyParamCaption})}
+
+\Hypertarget{translations_8php_a2ca017cae6770bc5d97bea20e464cece}\index{translations.php@{translations.php}!vsCodeTranslationValue@{vsCodeTranslationValue}}
+\index{vsCodeTranslationValue@{vsCodeTranslationValue}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{vsCodeTranslationValue()}{vsCodeTranslationValue()}}
+{\footnotesize\ttfamily \label{translations_8php_a2ca017cae6770bc5d97bea20e464cece} 
+vs\+Code\+Translation\+Value (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$file}{, }\item[{}]{\$lines}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{translations_8php_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{translations_8php_a9df479534ecf05fd7575c6275d381687}\index{translations.php@{translations.php}!\$default@{\$default}}
+\index{\$default@{\$default}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{\$default}{\$default}}
+{\footnotesize\ttfamily \label{translations_8php_a9df479534ecf05fd7575c6275d381687} 
+\$default}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ collect(\$paths)-\/>flatMap(}
+\DoxyCodeLine{\ \ \ \ fn\ (\$path)\ =>\ \mbox{\hyperlink{translations_8php_a914697bdf6c2494319c54e6aece4bdef}{vscodeCollectTranslations}}(\$path)}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_carbon_interface_8php-example}{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nesbot/carbon/src/\+Carbon/\+Carbon\+Interface.\+php}}, and \mbox{\hyperlink{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_carbon_interval_8php-example}{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nesbot/carbon/src/\+Carbon/\+Carbon\+Interval.\+php}}.\end{Desc}
+\Hypertarget{translations_8php_a8b38f0aed731abbde3e1381b1777d497}\index{translations.php@{translations.php}!\$final@{\$final}}
+\index{\$final@{\$final}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{\$final}{\$final}}
+{\footnotesize\ttfamily \label{translations_8php_a8b38f0aed731abbde3e1381b1777d497} 
+\$final = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{translations_8php_ab832f4c463ee1c9ba2e9464265f7ea3b}\index{translations.php@{translations.php}!\$loader@{\$loader}}
+\index{\$loader@{\$loader}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{\$loader}{\$loader}}
+{\footnotesize\ttfamily \label{translations_8php_ab832f4c463ee1c9ba2e9464265f7ea3b} 
+\$loader = app(\textquotesingle{}translator\textquotesingle{})-\/$>$get\+Loader()}
+
+\Hypertarget{translations_8php_a3623c7ab2aa74ee63df7e729afe5ed90}\index{translations.php@{translations.php}!\$namespaced@{\$namespaced}}
+\index{\$namespaced@{\$namespaced}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{\$namespaced}{\$namespaced}}
+{\footnotesize\ttfamily \label{translations_8php_a3623c7ab2aa74ee63df7e729afe5ed90} 
+\$namespaced}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ collect(\mbox{\hyperlink{translations_8php_a5a7d9500de9f7c938443d65cef9a074e}{\$namespaces}})-\/>flatMap(}
+\DoxyCodeLine{\ \ \ \ fn\ (\$path,\ \mbox{\hyperlink{traces_8html_8php_a3825c9b9060c2d6ef594385997cd60aa}{\$namespace}})\ =>\ \mbox{\hyperlink{translations_8php_a914697bdf6c2494319c54e6aece4bdef}{vscodeCollectTranslations}}(\$path,\ \mbox{\hyperlink{traces_8html_8php_a3825c9b9060c2d6ef594385997cd60aa}{\$namespace}})}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{translations_8php_a5a7d9500de9f7c938443d65cef9a074e}\index{translations.php@{translations.php}!\$namespaces@{\$namespaces}}
+\index{\$namespaces@{\$namespaces}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{\$namespaces}{\$namespaces}}
+{\footnotesize\ttfamily \label{translations_8php_a5a7d9500de9f7c938443d65cef9a074e} 
+\$namespaces = \$loader-\/$>$namespaces()}
+
+\Hypertarget{translations_8php_a20dd412769e0754189f5ce036e857a37}\index{translations.php@{translations.php}!\$paths@{\$paths}}
+\index{\$paths@{\$paths}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{\$paths}{\$paths}}
+{\footnotesize\ttfamily \label{translations_8php_a20dd412769e0754189f5ce036e857a37} 
+\$paths = \mbox{\hyperlink{class_illuminate_1_1_support_1_1_arr_a553aa881a4efee1131415cbef79d122f}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Arr\+::wrap}}(\$property-\/$>$get\+Value(\$loader))}
+
+\Hypertarget{translations_8php_aca07184a1d9c6d3817265d594c356071}\index{translations.php@{translations.php}!\$property@{\$property}}
+\index{\$property@{\$property}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{\$property}{\$property}}
+{\footnotesize\ttfamily \label{translations_8php_aca07184a1d9c6d3817265d594c356071} 
+\$property}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{translations_8php_a14c8191c99bdbb6e58e026ff4a6b2033}{\$reflection}}-\/>hasProperty(\textcolor{stringliteral}{'paths'})}
+\DoxyCodeLine{\ \ \ \ ?\ \mbox{\hyperlink{translations_8php_a14c8191c99bdbb6e58e026ff4a6b2033}{\$reflection}}-\/>getProperty(\textcolor{stringliteral}{'paths'})}
+\DoxyCodeLine{\ \ \ \ :\ \mbox{\hyperlink{translations_8php_a14c8191c99bdbb6e58e026ff4a6b2033}{\$reflection}}-\/>getProperty(\textcolor{stringliteral}{'path'})}
+
+\end{DoxyCode}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nesbot_2carbon_2src_2_carbon_2_carbon_interval_8php-example}{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nesbot/carbon/src/\+Carbon/\+Carbon\+Interval.\+php}}.\end{Desc}
+\Hypertarget{translations_8php_a14c8191c99bdbb6e58e026ff4a6b2033}\index{translations.php@{translations.php}!\$reflection@{\$reflection}}
+\index{\$reflection@{\$reflection}!translations.php@{translations.php}}
+\doxysubsubsection{\texorpdfstring{\$reflection}{\$reflection}}
+{\footnotesize\ttfamily \label{translations_8php_a14c8191c99bdbb6e58e026ff4a6b2033} 
+\$reflection = \mbox{\hyperlink{resources_2views_2livewire_2pages_2auth_2confirm-password_8blade_8php_ae3b81d385ca4c26109dfbda28c563e2b}{new}} Reflection\+Class(\$loader)}
+

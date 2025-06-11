@@ -1,0 +1,57 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/resources/server.php File Reference}
+\hypertarget{server_8php}{}\label{server_8php}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{server_8php_ac96fbe5fa144b51c615daac2de047408}{\$public\+Path}} = getcwd()
+\item 
+\mbox{\hyperlink{server_8php_a653b5458163d338546c47271b4fb81b7}{\$uri}}
+\item 
+if(\$uri !==\textquotesingle{}/\textquotesingle{} \&\&file\+\_\+exists(\$public\+Path. \$uri) \mbox{\hyperlink{server_8php_a8b7b6cd93bc78ea92b097a058241d227}{\$formatted\+Date\+Time}} ) = date(\textquotesingle{}D M j H\+:i\+:s Y\textquotesingle{})
+\item 
+\mbox{\hyperlink{server_8php_a37c866e0dd005b2054896f4c4fb88132}{\$request\+Method}} = \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REQUEST\+\_\+\+METHOD\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{server_8php_a0d7d185d88b719d60267315a2d95fa8b}{\$remote\+Address}} = \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REMOTE\+\_\+\+ADDR\textquotesingle{}\mbox{]}.\textquotesingle{}\+:\textquotesingle{}.\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REMOTE\+\_\+\+PORT\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{server_8php_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{server_8php_a8b7b6cd93bc78ea92b097a058241d227}\index{server.php@{server.php}!\$formattedDateTime@{\$formattedDateTime}}
+\index{\$formattedDateTime@{\$formattedDateTime}!server.php@{server.php}}
+\doxysubsubsection{\texorpdfstring{\$formattedDateTime}{\$formattedDateTime}}
+{\footnotesize\ttfamily \label{server_8php_a8b7b6cd93bc78ea92b097a058241d227} 
+if ( \$uri !==\textquotesingle{}/\textquotesingle{} \&\&file\+\_\+exists( \$public\+Path. \$uri) \$formatted\+Date\+Time)  = date(\textquotesingle{}D M j H\+:i\+:s Y\textquotesingle{})}
+
+\Hypertarget{server_8php_ac96fbe5fa144b51c615daac2de047408}\index{server.php@{server.php}!\$publicPath@{\$publicPath}}
+\index{\$publicPath@{\$publicPath}!server.php@{server.php}}
+\doxysubsubsection{\texorpdfstring{\$publicPath}{\$publicPath}}
+{\footnotesize\ttfamily \label{server_8php_ac96fbe5fa144b51c615daac2de047408} 
+\$public\+Path = getcwd()}
+
+\Hypertarget{server_8php_a0d7d185d88b719d60267315a2d95fa8b}\index{server.php@{server.php}!\$remoteAddress@{\$remoteAddress}}
+\index{\$remoteAddress@{\$remoteAddress}!server.php@{server.php}}
+\doxysubsubsection{\texorpdfstring{\$remoteAddress}{\$remoteAddress}}
+{\footnotesize\ttfamily \label{server_8php_a0d7d185d88b719d60267315a2d95fa8b} 
+\$remote\+Address = \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REMOTE\+\_\+\+ADDR\textquotesingle{}\mbox{]}.\textquotesingle{}\+:\textquotesingle{}.\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REMOTE\+\_\+\+PORT\textquotesingle{}\mbox{]}}
+
+\Hypertarget{server_8php_a37c866e0dd005b2054896f4c4fb88132}\index{server.php@{server.php}!\$requestMethod@{\$requestMethod}}
+\index{\$requestMethod@{\$requestMethod}!server.php@{server.php}}
+\doxysubsubsection{\texorpdfstring{\$requestMethod}{\$requestMethod}}
+{\footnotesize\ttfamily \label{server_8php_a37c866e0dd005b2054896f4c4fb88132} 
+\$request\+Method = \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REQUEST\+\_\+\+METHOD\textquotesingle{}\mbox{]}}
+
+\Hypertarget{server_8php_a653b5458163d338546c47271b4fb81b7}\index{server.php@{server.php}!\$uri@{\$uri}}
+\index{\$uri@{\$uri}!server.php@{server.php}}
+\doxysubsubsection{\texorpdfstring{\$uri}{\$uri}}
+{\footnotesize\ttfamily \label{server_8php_a653b5458163d338546c47271b4fb81b7} 
+\$uri}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ urldecode(}
+\DoxyCodeLine{\ \ \ \ parse\_url(\$\_SERVER[\textcolor{stringliteral}{'REQUEST\_URI'}],\ PHP\_URL\_PATH)\ ??\ \textcolor{stringliteral}{''}}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}

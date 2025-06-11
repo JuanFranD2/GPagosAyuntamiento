@@ -1,0 +1,343 @@
+\doxysection{Eloquent\+User\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider}{}\label{class_illuminate_1_1_auth_1_1_eloquent_user_provider}\index{EloquentUserProvider@{EloquentUserProvider}}
+Inheritance diagram for Eloquent\+User\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_auth_1_1_eloquent_user_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a34776e29c06193d75605e22e8312ac54}{\+\_\+\+\_\+construct}} (Hasher\+Contract \$hasher, \$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_affdb511d38ff1bbadffea0082ca2c92b}{retrieve\+By\+Id}} (\$identifier)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a5006ea696b4fee698174cd08b513ab74}{retrieve\+By\+Token}} (\$identifier, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$token)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a2cc49aa3148621552824bde7d26e8af2}{update\+Remember\+Token}} (User\+Contract \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$token)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a03b927813a83052c007325efb088cf47}{retrieve\+By\+Credentials}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a636bf6024043b08c7c721c90fd175cc5}{validate\+Credentials}} (User\+Contract \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a014cfb31655f96292f6999f607fa7f81}{rehash\+Password\+If\+Required}} (User\+Contract \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials, bool \$force=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a0ed924cc869985de5bfd963b245b6fff}{create\+Model}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a9ef6974b36a21cf521d8b494a0b143ee}{get\+Hasher}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_aedb096173771543f1a5db31b21c34c12}{set\+Hasher}} (Hasher\+Contract \$hasher)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a0a086ca877b41192556a2de7e4a97b98}{get\+Model}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a1c15df021d82870005f4f4925a4f613e}{set\+Model}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_aa6ed7c2ed17c16d98eba98e67d9d5d6b}{get\+Query\+Callback}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a458fa485e5d059719bc5cc1d5febe38a}{with\+Query}} (\$query\+Callback=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider}{User\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_a37b7a8fe31313d36b1479bf1bd19462b}{update\+Remember\+Token}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$token)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_a1f635c0ad5186f23d3176951bbf6d1bf}{validate\+Credentials}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_af2c5d55c463b14331678e9c68559576f}{rehash\+Password\+If\+Required}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$user, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$credentials, bool \$force=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_abe563b3d70e09b254f2417cbecf97df4}{new\+Model\+Query}} (\$model=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_afd2ecddb9047719af6380d0266485722}{\$hasher}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a08fdd91bde255dbe3e2d15a22d9663e8}{\$model}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a57466b5ea58c52a29162624e257efada}{\$query\+Callback}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a34776e29c06193d75605e22e8312ac54}\index{EloquentUserProvider@{EloquentUserProvider}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a34776e29c06193d75605e22e8312ac54} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Hasher\+Contract}]{\$hasher}{, }\item[{}]{\$model}{}\end{DoxyParamCaption})}
+
+Create a new database user provider.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Hashing\textbackslash{}\+Hasher & {\em \$hasher} & \\
+\hline
+string & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a0ed924cc869985de5bfd963b245b6fff}\index{EloquentUserProvider@{EloquentUserProvider}!createModel@{createModel}}
+\index{createModel@{createModel}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a0ed924cc869985de5bfd963b245b6fff} 
+create\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a new instance of the model.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a9ef6974b36a21cf521d8b494a0b143ee}\index{EloquentUserProvider@{EloquentUserProvider}!getHasher@{getHasher}}
+\index{getHasher@{getHasher}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{getHasher()}{getHasher()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a9ef6974b36a21cf521d8b494a0b143ee} 
+get\+Hasher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the hasher implementation.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Hashing\textbackslash{}\+Hasher 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a0a086ca877b41192556a2de7e4a97b98}\index{EloquentUserProvider@{EloquentUserProvider}!getModel@{getModel}}
+\index{getModel@{getModel}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a0a086ca877b41192556a2de7e4a97b98} 
+get\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the name of the \doxylink{class_eloquent}{Eloquent} user model.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_aa6ed7c2ed17c16d98eba98e67d9d5d6b}\index{EloquentUserProvider@{EloquentUserProvider}!getQueryCallback@{getQueryCallback}}
+\index{getQueryCallback@{getQueryCallback}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{getQueryCallback()}{getQueryCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_aa6ed7c2ed17c16d98eba98e67d9d5d6b} 
+get\+Query\+Callback (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the callback that modifies the query before retrieving users.
+
+\begin{DoxyReturn}{Returns}
+(\textbackslash{}\+Closure(\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+:mixed)\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_abe563b3d70e09b254f2417cbecf97df4}\index{EloquentUserProvider@{EloquentUserProvider}!newModelQuery@{newModelQuery}}
+\index{newModelQuery@{newModelQuery}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{newModelQuery()}{newModelQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_abe563b3d70e09b254f2417cbecf97df4} 
+new\+Model\+Query (\begin{DoxyParamCaption}\item[{}]{\$model}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a new query builder for the model instance.
+
+@template TModel of \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model
+
+
+\begin{DoxyParams}[1]{Parameters}
+TModel | null & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$\+TModel$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a014cfb31655f96292f6999f607fa7f81}\index{EloquentUserProvider@{EloquentUserProvider}!rehashPasswordIfRequired@{rehashPasswordIfRequired}}
+\index{rehashPasswordIfRequired@{rehashPasswordIfRequired}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{rehashPasswordIfRequired()}{rehashPasswordIfRequired()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a014cfb31655f96292f6999f607fa7f81} 
+rehash\+Password\+If\+Required (\begin{DoxyParamCaption}\item[{User\+Contract}]{\$user}{, }\item[{\# array}]{\$credentials}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{bool}]{\$force}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Rehash the user\textquotesingle{}s password if required and supported.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable & {\em \$user} & \\
+\hline
+array & {\em \$credentials} & \\
+\hline
+bool & {\em \$force} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a03b927813a83052c007325efb088cf47}\index{EloquentUserProvider@{EloquentUserProvider}!retrieveByCredentials@{retrieveByCredentials}}
+\index{retrieveByCredentials@{retrieveByCredentials}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{retrieveByCredentials()}{retrieveByCredentials()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a03b927813a83052c007325efb088cf47} 
+retrieve\+By\+Credentials (\begin{DoxyParamCaption}\item[{\# array}]{\$credentials}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+Retrieve a user by the given credentials.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$credentials} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_a03b927813a83052c007325efb088cf47}{User\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_affdb511d38ff1bbadffea0082ca2c92b}\index{EloquentUserProvider@{EloquentUserProvider}!retrieveById@{retrieveById}}
+\index{retrieveById@{retrieveById}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{retrieveById()}{retrieveById()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_affdb511d38ff1bbadffea0082ca2c92b} 
+retrieve\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$identifier}{}\end{DoxyParamCaption})}
+
+Retrieve a user by their unique identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$identifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_affdb511d38ff1bbadffea0082ca2c92b}{User\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a5006ea696b4fee698174cd08b513ab74}\index{EloquentUserProvider@{EloquentUserProvider}!retrieveByToken@{retrieveByToken}}
+\index{retrieveByToken@{retrieveByToken}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{retrieveByToken()}{retrieveByToken()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a5006ea696b4fee698174cd08b513ab74} 
+retrieve\+By\+Token (\begin{DoxyParamCaption}\item[{}]{\$identifier}{, }\item[{\#}]{\$token}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+Retrieve a user by their unique identifier and "{}remember me"{} token.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$identifier} & \\
+\hline
+string & {\em \$token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider_a5006ea696b4fee698174cd08b513ab74}{User\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_aedb096173771543f1a5db31b21c34c12}\index{EloquentUserProvider@{EloquentUserProvider}!setHasher@{setHasher}}
+\index{setHasher@{setHasher}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{setHasher()}{setHasher()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_aedb096173771543f1a5db31b21c34c12} 
+set\+Hasher (\begin{DoxyParamCaption}\item[{Hasher\+Contract}]{\$hasher}{}\end{DoxyParamCaption})}
+
+Sets the hasher implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Hashing\textbackslash{}\+Hasher & {\em \$hasher} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a1c15df021d82870005f4f4925a4f613e}\index{EloquentUserProvider@{EloquentUserProvider}!setModel@{setModel}}
+\index{setModel@{setModel}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{setModel()}{setModel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a1c15df021d82870005f4f4925a4f613e} 
+set\+Model (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})}
+
+Sets the name of the \doxylink{class_eloquent}{Eloquent} user model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a2cc49aa3148621552824bde7d26e8af2}\index{EloquentUserProvider@{EloquentUserProvider}!updateRememberToken@{updateRememberToken}}
+\index{updateRememberToken@{updateRememberToken}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{updateRememberToken()}{updateRememberToken()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a2cc49aa3148621552824bde7d26e8af2} 
+update\+Remember\+Token (\begin{DoxyParamCaption}\item[{User\+Contract}]{\$user}{, }\item[{\#}]{\$token}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+Update the "{}remember me"{} token for the given user in storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable & {\em \$user} & \\
+\hline
+string & {\em \$token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a636bf6024043b08c7c721c90fd175cc5}\index{EloquentUserProvider@{EloquentUserProvider}!validateCredentials@{validateCredentials}}
+\index{validateCredentials@{validateCredentials}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{validateCredentials()}{validateCredentials()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a636bf6024043b08c7c721c90fd175cc5} 
+validate\+Credentials (\begin{DoxyParamCaption}\item[{User\+Contract}]{\$user}{, }\item[{\# array}]{\$credentials}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+Validate a user against the given credentials.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable & {\em \$user} & \\
+\hline
+array & {\em \$credentials} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a458fa485e5d059719bc5cc1d5febe38a}\index{EloquentUserProvider@{EloquentUserProvider}!withQuery@{withQuery}}
+\index{withQuery@{withQuery}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{withQuery()}{withQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a458fa485e5d059719bc5cc1d5febe38a} 
+with\+Query (\begin{DoxyParamCaption}\item[{}]{\$query\+Callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets the callback to modify the query before retrieving users.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (} & \\
+\hline
+\end{DoxyParams}
+Closure(\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>})\+:mixed)\texorpdfstring{$\vert$}{|}null \$query\+Callback \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_afd2ecddb9047719af6380d0266485722}\index{EloquentUserProvider@{EloquentUserProvider}!\$hasher@{\$hasher}}
+\index{\$hasher@{\$hasher}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{\$hasher}{\$hasher}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_afd2ecddb9047719af6380d0266485722} 
+\$hasher\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a08fdd91bde255dbe3e2d15a22d9663e8}\index{EloquentUserProvider@{EloquentUserProvider}!\$model@{\$model}}
+\index{\$model@{\$model}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{\$model}{\$model}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a08fdd91bde255dbe3e2d15a22d9663e8} 
+\$model\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a57466b5ea58c52a29162624e257efada}\index{EloquentUserProvider@{EloquentUserProvider}!\$queryCallback@{\$queryCallback}}
+\index{\$queryCallback@{\$queryCallback}!EloquentUserProvider@{EloquentUserProvider}}
+\doxysubsubsection{\texorpdfstring{\$queryCallback}{\$queryCallback}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_eloquent_user_provider_a57466b5ea58c52a29162624e257efada} 
+\$query\+Callback\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Auth/\mbox{\hyperlink{_eloquent_user_provider_8php}{Eloquent\+User\+Provider.\+php}}\end{DoxyCompactItemize}

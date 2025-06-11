@@ -1,0 +1,120 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/@jest/environment-\/jsdom-\/abstract/node\+\_\+modules/ansi-\/styles Directory Reference}
+\hypertarget{dir_9d5c3e860137e395eb6781fedeaede13}{}\label{dir_9d5c3e860137e395eb6781fedeaede13}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/"@jest/environment-\/jsdom-\/abstract/node\_modules/ansi-\/styles Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/"@jest/environment-\/jsdom-\/abstract/node\_modules/ansi-\/styles Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md580}{}\doxysubsection{\texorpdfstring{ansi-\/styles}{ansi-\/styles}}\label{readme.md_autotoc_md580}
+\begin{quote}
+\href{https://en.wikipedia.org/wiki/ANSI_escape_code\#Colors_and_Styles}{\texttt{ANSI escape codes}} for styling strings in the terminal \end{quote}
+
+
+You probably want the higher-\/level \href{https://github.com/chalk/chalk}{\texttt{chalk}} module for styling your strings.
+
+\hypertarget{readme.md_autotoc_md581}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md581}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md582}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md582}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md583}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md583}
+Each style has an {\ttfamily open} and {\ttfamily close} property.\hypertarget{readme.md_autotoc_md584}{}\doxysubsection{\texorpdfstring{Styles}{Styles}}\label{readme.md_autotoc_md584}
+\hypertarget{readme.md_autotoc_md585}{}\doxysubsubsection{\texorpdfstring{Modifiers}{Modifiers}}\label{readme.md_autotoc_md585}
+
+\begin{DoxyItemize}
+\item {\ttfamily reset}
+\item {\ttfamily bold}
+\item {\ttfamily dim}
+\item {\ttfamily italic} {\itshape (Not widely supported)}
+\item {\ttfamily underline}
+\item {\ttfamily overline} {\itshape Supported on VTE-\/based terminals, the GNOME terminal, mintty, and Git Bash.}
+\item {\ttfamily inverse}
+\item {\ttfamily hidden}
+\item {\ttfamily strikethrough} {\itshape (Not widely supported)}
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md586}{}\doxysubsubsection{\texorpdfstring{Colors}{Colors}}\label{readme.md_autotoc_md586}
+
+\begin{DoxyItemize}
+\item {\ttfamily black}
+\item {\ttfamily red}
+\item {\ttfamily green}
+\item {\ttfamily yellow}
+\item {\ttfamily blue}
+\item {\ttfamily magenta}
+\item {\ttfamily cyan}
+\item {\ttfamily white}
+\item {\ttfamily black\+Bright} (alias\+: {\ttfamily gray}, {\ttfamily grey})
+\item {\ttfamily red\+Bright}
+\item {\ttfamily green\+Bright}
+\item {\ttfamily yellow\+Bright}
+\item {\ttfamily blue\+Bright}
+\item {\ttfamily magenta\+Bright}
+\item {\ttfamily cyan\+Bright}
+\item {\ttfamily white\+Bright}
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md587}{}\doxysubsubsection{\texorpdfstring{Background colors}{Background colors}}\label{readme.md_autotoc_md587}
+
+\begin{DoxyItemize}
+\item {\ttfamily bg\+Black}
+\item {\ttfamily bg\+Red}
+\item {\ttfamily bg\+Green}
+\item {\ttfamily bg\+Yellow}
+\item {\ttfamily bg\+Blue}
+\item {\ttfamily bg\+Magenta}
+\item {\ttfamily bg\+Cyan}
+\item {\ttfamily bg\+White}
+\item {\ttfamily bg\+Black\+Bright} (alias\+: {\ttfamily bg\+Gray}, {\ttfamily bg\+Grey})
+\item {\ttfamily bg\+Red\+Bright}
+\item {\ttfamily bg\+Green\+Bright}
+\item {\ttfamily bg\+Yellow\+Bright}
+\item {\ttfamily bg\+Blue\+Bright}
+\item {\ttfamily bg\+Magenta\+Bright}
+\item {\ttfamily bg\+Cyan\+Bright}
+\item {\ttfamily bg\+White\+Bright}
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md588}{}\doxysubsection{\texorpdfstring{Advanced usage}{Advanced usage}}\label{readme.md_autotoc_md588}
+By default, you get a map of styles, but the styles are also available as groups. They are non-\/enumerable so they don\textquotesingle{}t show up unless you access them explicitly. This makes it easier to expose only a subset in a higher-\/level module.
+
+
+\begin{DoxyItemize}
+\item {\ttfamily style.\+modifier}
+\item {\ttfamily style.\+color}
+\item {\ttfamily style.\+bg\+Color}
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md589}{}\doxysubsubsubsubsubsection{\texorpdfstring{Example}{Example}}\label{readme.md_autotoc_md589}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+Raw escape codes (i.\+e. without the CSI escape prefix {\ttfamily \textbackslash{}u001B\mbox{[}} and render mode postfix {\ttfamily m}) are available under {\ttfamily style.\+codes}, which returns a {\ttfamily Map} with the open codes as keys and close codes as values.\hypertarget{readme.md_autotoc_md590}{}\doxysubsubsubsubsubsection{\texorpdfstring{Example}{Example}}\label{readme.md_autotoc_md590}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md591}{}\doxysubsection{\texorpdfstring{\href{https://gist.github.com/XVilka/8346728}{\texttt{256 / 16 million (True\+Color) support}}}{\href{https://gist.github.com/XVilka/8346728}{\texttt{256 / 16 million (True\+Color) support}}}}\label{readme.md_autotoc_md591}
+{\ttfamily ansi-\/styles} allows converting between various color formats and ANSI escapes, with support for 256 and 16 million colors.
+
+The following color spaces from {\ttfamily color-\/convert} are supported\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily rgb}
+\item {\ttfamily hex}
+\item {\ttfamily ansi256}
+\end{DoxyItemize}
+
+To use these, call the associated conversion function with the intended output, for example\+:
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md592}{}\doxysubsection{\texorpdfstring{Related}{Related}}\label{readme.md_autotoc_md592}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sindresorhus/ansi-escapes}{\texttt{ansi-\/escapes}} -\/ ANSI escape codes for manipulating the terminal
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md593}{}\doxysubsection{\texorpdfstring{Maintainers}{Maintainers}}\label{readme.md_autotoc_md593}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sindresorhus}{\texttt{Sindre Sorhus}}
+\item \href{https://github.com/qix-}{\texttt{Josh Junon}}
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md594}{}\doxysubsection{\texorpdfstring{For enterprise}{For enterprise}}\label{readme.md_autotoc_md594}
+Available as part of the Tidelift Subscription.
+
+The maintainers of {\ttfamily ansi-\/styles} and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. \href{https://tidelift.com/subscription/pkg/npm-ansi-styles?utm_source=npm-ansi-styles&utm_medium=referral&utm_campaign=enterprise&utm_term=repo}{\texttt{Learn more.}} 

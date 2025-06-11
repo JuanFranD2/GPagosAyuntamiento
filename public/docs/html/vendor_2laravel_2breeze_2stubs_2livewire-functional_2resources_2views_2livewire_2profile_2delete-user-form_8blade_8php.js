@@ -1,0 +1,4 @@
+var vendor_2laravel_2breeze_2stubs_2livewire_functional_2resources_2views_2livewire_2profile_2delete_user_form_8blade_8php =
+[
+    [ "$deleteUser", "vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2profile_2delete-user-form_8blade_8php.html#a9a038279f17c8bec96534a2211894f2d", null ]
+];

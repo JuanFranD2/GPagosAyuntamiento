@@ -1,0 +1,99 @@
+\doxysection{Onceable Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_onceable}{}\label{class_illuminate_1_1_support_1_1_onceable}\index{Onceable@{Onceable}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_onceable_ae9a33b1cd2774b8f14e7c364d44f0a57}{\+\_\+\+\_\+construct}} (public string \$hash, public ?object \$object, public \$callable,)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_onceable_a2c5059cb867ea9080d0f16e90db4e179}{try\+From\+Trace}} (array \$trace, callable \$callable)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_onceable_a5db7d6a1af36c58183d3611b6c3a9db6}{object\+From\+Trace}} (array \$trace)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_onceable_afa16ba96b85831dbb069529547c91d0e}{hash\+From\+Trace}} (array \$trace, callable \$callable)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_support_1_1_onceable_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_onceable_ae9a33b1cd2774b8f14e7c364d44f0a57}\index{Onceable@{Onceable}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Onceable@{Onceable}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_onceable_ae9a33b1cd2774b8f14e7c364d44f0a57} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{public string}]{\$hash}{, }\item[{public ?object}]{\$object}{, }\item[{public}]{\$callable}{}\end{DoxyParamCaption})}
+
+Create a new onceable instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hash} & \\
+\hline
+object | null & {\em \$object} & \\
+\hline
+callable & {\em \$callable} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_onceable_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_onceable_afa16ba96b85831dbb069529547c91d0e}\index{Onceable@{Onceable}!hashFromTrace@{hashFromTrace}}
+\index{hashFromTrace@{hashFromTrace}!Onceable@{Onceable}}
+\doxysubsubsection{\texorpdfstring{hashFromTrace()}{hashFromTrace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_onceable_afa16ba96b85831dbb069529547c91d0e} 
+hash\+From\+Trace (\begin{DoxyParamCaption}\item[{array}]{\$trace}{, }\item[{callable}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Computes the hash of the onceable from the given trace.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,array$<$string,mixed$>$$>$} & \$trace \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_onceable_a5db7d6a1af36c58183d3611b6c3a9db6}\index{Onceable@{Onceable}!objectFromTrace@{objectFromTrace}}
+\index{objectFromTrace@{objectFromTrace}!Onceable@{Onceable}}
+\doxysubsubsection{\texorpdfstring{objectFromTrace()}{objectFromTrace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_onceable_a5db7d6a1af36c58183d3611b6c3a9db6} 
+object\+From\+Trace (\begin{DoxyParamCaption}\item[{array}]{\$trace}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Computes the object of the onceable from the given trace, if any.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,array$<$string,mixed$>$$>$} & \$trace \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_onceable_a2c5059cb867ea9080d0f16e90db4e179}\index{Onceable@{Onceable}!tryFromTrace@{tryFromTrace}}
+\index{tryFromTrace@{tryFromTrace}!Onceable@{Onceable}}
+\doxysubsubsection{\texorpdfstring{tryFromTrace()}{tryFromTrace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_onceable_a2c5059cb867ea9080d0f16e90db4e179} 
+try\+From\+Trace (\begin{DoxyParamCaption}\item[{array}]{\$trace}{, }\item[{callable}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tries to create a new onceable instance from the given trace.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,array$<$string,mixed$>$$>$} & \$trace \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Support/\mbox{\hyperlink{_onceable_8php}{Onceable.\+php}}\end{DoxyCompactItemize}

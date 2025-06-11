@@ -1,0 +1,148 @@
+\doxysection{Renderer Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer}{}\label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer}\index{Renderer@{Renderer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a96335d8832387fa364ab51af7fbf64de}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory}{Factory}} \$view\+Factory, \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener}{Listener}} \$listener, \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_html_error_renderer}{Html\+Error\+Renderer}} \$html\+Error\+Renderer, \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper}{Blade\+Mapper}} \$blade\+Mapper, string \$base\+Path,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a45bb8298e36a335000bd357811bf402d}{render}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, Throwable \$throwable)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a9b497cfc8c4bf36c914d2a9e0cce4a5d}{css}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a8949242bccc133882b39593ba50518e9}{js}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a942a3d3b8a26f77943bb95d5f7cc8cca}{DIST}} = \+\_\+\+\_\+\+DIR\+\_\+\+\_\+.\textquotesingle{}/../../resources/exceptions/renderer/dist/\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a939994c2a4fdfdbb697b585b6f6948bc}{\$view\+Factory}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a5bc3ce34e9885b3dcd4c4844f65570a9}{\$listener}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a751639d4b5869ad4293742c7dca619ab}{\$html\+Error\+Renderer}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a3ef365e9216a6f0dc818d4c7c65a95da}{\$blade\+Mapper}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a9cd745428004768fe921475a29a7d870}{\$base\+Path}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a96335d8832387fa364ab51af7fbf64de}\index{Renderer@{Renderer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a96335d8832387fa364ab51af7fbf64de} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory}{Factory}}}]{\$view\+Factory}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_listener}{Listener}}}]{\$listener}{, }\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_renderer_1_1_html_error_renderer}{Html\+Error\+Renderer}}}]{\$html\+Error\+Renderer}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_mappers_1_1_blade_mapper}{Blade\+Mapper}}}]{\$blade\+Mapper}{, }\item[{string}]{\$base\+Path}{}\end{DoxyParamCaption})}
+
+Creates a new exception renderer instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory & {\em \$view\+Factory} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Exceptions\textbackslash{}\+Renderer\textbackslash{}\+Listener & {\em \$listener} & \\
+\hline
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Renderer\textbackslash{}\+Html\+Error\+Renderer & {\em \$html\+Error\+Renderer} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Exceptions\textbackslash{}\+Renderer\textbackslash{}\+Mappers\textbackslash{}\+Blade\+Mapper & {\em \$blade\+Mapper} & \\
+\hline
+string & {\em \$base\+Path} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a9b497cfc8c4bf36c914d2a9e0cce4a5d}\index{Renderer@{Renderer}!css@{css}}
+\index{css@{css}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{css()}{css()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a9b497cfc8c4bf36c914d2a9e0cce4a5d} 
+css (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the renderer\textquotesingle{}s CSS content.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a8949242bccc133882b39593ba50518e9}\index{Renderer@{Renderer}!js@{js}}
+\index{js@{js}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{js()}{js()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a8949242bccc133882b39593ba50518e9} 
+js (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the renderer\textquotesingle{}s Java\+Script content.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a45bb8298e36a335000bd357811bf402d}\index{Renderer@{Renderer}!render@{render}}
+\index{render@{render}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a45bb8298e36a335000bd357811bf402d} 
+render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{Throwable}]{\$throwable}{}\end{DoxyParamCaption})}
+
+Render the given exception as an HTML string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$throwable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a9cd745428004768fe921475a29a7d870}\index{Renderer@{Renderer}!\$basePath@{\$basePath}}
+\index{\$basePath@{\$basePath}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{\$basePath}{\$basePath}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a9cd745428004768fe921475a29a7d870} 
+\$base\+Path\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a3ef365e9216a6f0dc818d4c7c65a95da}\index{Renderer@{Renderer}!\$bladeMapper@{\$bladeMapper}}
+\index{\$bladeMapper@{\$bladeMapper}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{\$bladeMapper}{\$bladeMapper}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a3ef365e9216a6f0dc818d4c7c65a95da} 
+\$blade\+Mapper\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a751639d4b5869ad4293742c7dca619ab}\index{Renderer@{Renderer}!\$htmlErrorRenderer@{\$htmlErrorRenderer}}
+\index{\$htmlErrorRenderer@{\$htmlErrorRenderer}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{\$htmlErrorRenderer}{\$htmlErrorRenderer}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a751639d4b5869ad4293742c7dca619ab} 
+\$html\+Error\+Renderer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a5bc3ce34e9885b3dcd4c4844f65570a9}\index{Renderer@{Renderer}!\$listener@{\$listener}}
+\index{\$listener@{\$listener}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{\$listener}{\$listener}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a5bc3ce34e9885b3dcd4c4844f65570a9} 
+\$listener\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a939994c2a4fdfdbb697b585b6f6948bc}\index{Renderer@{Renderer}!\$viewFactory@{\$viewFactory}}
+\index{\$viewFactory@{\$viewFactory}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{\$viewFactory}{\$viewFactory}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a939994c2a4fdfdbb697b585b6f6948bc} 
+\$view\+Factory\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a942a3d3b8a26f77943bb95d5f7cc8cca}\index{Renderer@{Renderer}!DIST@{DIST}}
+\index{DIST@{DIST}!Renderer@{Renderer}}
+\doxysubsubsection{\texorpdfstring{DIST}{DIST}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_exceptions_1_1_renderer_1_1_renderer_a942a3d3b8a26f77943bb95d5f7cc8cca} 
+const DIST = \+\_\+\+\_\+\+DIR\+\_\+\+\_\+.\textquotesingle{}/../../resources/exceptions/renderer/dist/\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Exceptions/\+Renderer/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_foundation_2_exceptions_2_renderer_2_renderer_8php}{Renderer.\+php}}\end{DoxyCompactItemize}

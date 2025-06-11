@@ -1,0 +1,134 @@
+\doxysection{Invoked\+Process\+Pool Class Reference}
+\hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool}{}\label{class_illuminate_1_1_process_1_1_invoked_process_pool}\index{InvokedProcessPool@{InvokedProcessPool}}
+Inheritance diagram for Invoked\+Process\+Pool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_process_1_1_invoked_process_pool}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_invoked_process_pool_a36a654403ed81070ca3b4da4090d2021}{\+\_\+\+\_\+construct}} (array \$invoked\+Processes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_invoked_process_pool_ae95906ce6626ce411bb8995b9a329a79}{signal}} (int \$signal)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_invoked_process_pool_aed8dfb4793b712e85b0ec23f9aaf3780}{stop}} (float \$timeout=10, ?int \$\mbox{\hyperlink{class_illuminate_1_1_process_1_1_invoked_process_pool_ae95906ce6626ce411bb8995b9a329a79}{signal}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_invoked_process_pool_a777b3bdaee6d812a1994c79051178149}{running}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_invoked_process_pool_a918ab4827f83fa4abb9c445acc36f533}{wait}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_invoked_process_pool_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_invoked_process_pool_a5dd052ec294b18e48dbc25a5092ab461}{\$invoked\+Processes}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_a36a654403ed81070ca3b4da4090d2021}\index{InvokedProcessPool@{InvokedProcessPool}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!InvokedProcessPool@{InvokedProcessPool}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_invoked_process_pool_a36a654403ed81070ca3b4da4090d2021} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$invoked\+Processes}{}\end{DoxyParamCaption})}
+
+Create a new invoked process pool.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$invoked\+Processes} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_ac751e87b3d4c4bf2feb03bee8b092755}\index{InvokedProcessPool@{InvokedProcessPool}!count@{count}}
+\index{count@{count}!InvokedProcessPool@{InvokedProcessPool}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_invoked_process_pool_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the total number of processes.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_a777b3bdaee6d812a1994c79051178149}\index{InvokedProcessPool@{InvokedProcessPool}!running@{running}}
+\index{running@{running}!InvokedProcessPool@{InvokedProcessPool}}
+\doxysubsubsection{\texorpdfstring{running()}{running()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_invoked_process_pool_a777b3bdaee6d812a1994c79051178149} 
+running (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the processes in the pool that are still currently running.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_ae95906ce6626ce411bb8995b9a329a79}\index{InvokedProcessPool@{InvokedProcessPool}!signal@{signal}}
+\index{signal@{signal}!InvokedProcessPool@{InvokedProcessPool}}
+\doxysubsubsection{\texorpdfstring{signal()}{signal()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_invoked_process_pool_ae95906ce6626ce411bb8995b9a329a79} 
+signal (\begin{DoxyParamCaption}\item[{int}]{\$signal}{}\end{DoxyParamCaption})}
+
+Send a signal to each running process in the pool, returning the processes that were signalled.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$signal} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_aed8dfb4793b712e85b0ec23f9aaf3780}\index{InvokedProcessPool@{InvokedProcessPool}!stop@{stop}}
+\index{stop@{stop}!InvokedProcessPool@{InvokedProcessPool}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_invoked_process_pool_aed8dfb4793b712e85b0ec23f9aaf3780} 
+stop (\begin{DoxyParamCaption}\item[{float}]{\$timeout}{ = {\ttfamily 10}, }\item[{?int}]{\$signal}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Stop all processes that are still running.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$timeout} & \\
+\hline
+int | null & {\em \$signal} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_a918ab4827f83fa4abb9c445acc36f533}\index{InvokedProcessPool@{InvokedProcessPool}!wait@{wait}}
+\index{wait@{wait}!InvokedProcessPool@{InvokedProcessPool}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_invoked_process_pool_a918ab4827f83fa4abb9c445acc36f533} 
+wait (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Wait for the processes to finish.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Process\+Pool\+Results 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_process_1_1_invoked_process_pool_a5dd052ec294b18e48dbc25a5092ab461}\index{InvokedProcessPool@{InvokedProcessPool}!\$invokedProcesses@{\$invokedProcesses}}
+\index{\$invokedProcesses@{\$invokedProcesses}!InvokedProcessPool@{InvokedProcessPool}}
+\doxysubsubsection{\texorpdfstring{\$invokedProcesses}{\$invokedProcesses}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_invoked_process_pool_a5dd052ec294b18e48dbc25a5092ab461} 
+\$invoked\+Processes\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Process/\mbox{\hyperlink{_invoked_process_pool_8php}{Invoked\+Process\+Pool.\+php}}\end{DoxyCompactItemize}

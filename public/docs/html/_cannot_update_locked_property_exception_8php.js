@@ -1,0 +1,4 @@
+var _cannot_update_locked_property_exception_8php =
+[
+    [ "CannotUpdateLockedPropertyException", "class_livewire_1_1_features_1_1_support_locked_properties_1_1_cannot_update_locked_property_exception.html", "class_livewire_1_1_features_1_1_support_locked_properties_1_1_cannot_update_locked_property_exception" ]
+];

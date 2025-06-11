@@ -1,0 +1,4 @@
+var class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_1_1_progress_printer_1_1_test_triggered_phpunit_deprecation_subscriber =
+[
+    [ "notify", "class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_1_1_progress_printer_1_1_test_triggered_phpunit_deprecation_subscriber.html#a9990a2f43d05640c070fef7523b943b3", null ]
+];

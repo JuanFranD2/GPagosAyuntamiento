@@ -1,0 +1,455 @@
+\doxysection{Number Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_number}{}\label{class_illuminate_1_1_support_1_1_number}\index{Number@{Number}}
+Inheritance diagram for Number\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_support_1_1_number}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a4d1403885342add2c753248e7e781cef}{format}} (int\texorpdfstring{$\vert$}{|}float \$number, ?int \$precision=null, ?int \$max\+Precision=null, ?string \$locale=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a07956687b43e19b1dac6ffe056d514d7}{spell}} (int\texorpdfstring{$\vert$}{|}float \$number, ?string \$locale=null, ?int \$after=null, ?int \$until=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a7dcc4cacede8ef856ca60613c116cfd1}{ordinal}} (int\texorpdfstring{$\vert$}{|}float \$number, ?string \$locale=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a1bc78dc1d5baf67c76a85fba684d5696}{spell\+Ordinal}} (int\texorpdfstring{$\vert$}{|}float \$number, ?string \$locale=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_abf7aaa254e41a0bade0affd0b80ce4ff}{percentage}} (int\texorpdfstring{$\vert$}{|}float \$number, int \$precision=0, ?int \$max\+Precision=null, ?string \$locale=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a68d52aa04a7176ad827c6df139d856f9}{currency}} (int\texorpdfstring{$\vert$}{|}float \$number, string \$in=\textquotesingle{}\textquotesingle{}, ?string \$locale=null, ?int \$precision=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a4291e29b5ce48994e33359d9cea1f2fe}{file\+Size}} (int\texorpdfstring{$\vert$}{|}float \$bytes, int \$precision=0, ?int \$max\+Precision=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_ae61537c068488682933f02ee70944c9c}{abbreviate}} (int\texorpdfstring{$\vert$}{|}float \$number, int \$precision=0, ?int \$max\+Precision=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a01c3a65d2254b96b44325df2bc28ff08}{for\+Humans}} (int\texorpdfstring{$\vert$}{|}float \$number, int \$precision=0, ?int \$max\+Precision=null, bool \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_ae61537c068488682933f02ee70944c9c}{abbreviate}}=false)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a1f41915be369eb3e0bef076c54cd45fd}{clamp}} (int\texorpdfstring{$\vert$}{|}float \$number, int\texorpdfstring{$\vert$}{|}float \$min, int\texorpdfstring{$\vert$}{|}float \$max)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a1baf9197d989443413c63b625aa65083}{pairs}} (int\texorpdfstring{$\vert$}{|}float \$to, int\texorpdfstring{$\vert$}{|}float \$by, int\texorpdfstring{$\vert$}{|}float \$start=0, int\texorpdfstring{$\vert$}{|}float \$offset=1)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_abdfaedee5d02a02d5bb1efa59d3c8eef}{trim}} (int\texorpdfstring{$\vert$}{|}float \$number)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a04489a1c40bd4af666093438953b8096}{with\+Locale}} (string \$locale, callable \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a84fdacacbaa616767e28708458202022}{with\+Currency}} (string \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a68d52aa04a7176ad827c6df139d856f9}{currency}}, callable \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_ae568aa66535962fe52cf716a637e3faf}{use\+Locale}} (string \$locale)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a66743b632e8c966b9eebd0dbb5de44cd}{use\+Currency}} (string \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a68d52aa04a7176ad827c6df139d856f9}{currency}})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a0525851d23383bef40ce703b80762810}{default\+Locale}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_aefc7f9b18ad2a44f5c7aaa0f7fb42a73}{default\+Currency}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a9d1282ea9c8d026b0f372da86f71e6d5}{summarize}} (int\texorpdfstring{$\vert$}{|}float \$number, int \$precision=0, ?int \$max\+Precision=null, array \$units=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a1a86de9fcf3cd0e37799f309df9bd70f}{ensure\+Intl\+Extension\+Is\+Installed}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a3b392f5a691b803e728f1fb42b35f6e1}{\$locale}} = \textquotesingle{}en\textquotesingle{}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a37d22fd3b896e9d5488f3479a4d8f451}{\$currency}} = \textquotesingle{}USD\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_ae61537c068488682933f02ee70944c9c}\index{Number@{Number}!abbreviate@{abbreviate}}
+\index{abbreviate@{abbreviate}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{abbreviate()}{abbreviate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_ae61537c068488682933f02ee70944c9c} 
+abbreviate (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{int}]{\$precision}{ = {\ttfamily 0}, }\item[{?int}]{\$max\+Precision}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the number to its human-\/readable equivalent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+int & {\em \$precision} & \\
+\hline
+int | null & {\em \$max\+Precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a1f41915be369eb3e0bef076c54cd45fd}\index{Number@{Number}!clamp@{clamp}}
+\index{clamp@{clamp}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{clamp()}{clamp()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a1f41915be369eb3e0bef076c54cd45fd} 
+clamp (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{int\texorpdfstring{$\vert$}{|}float}]{\$min}{, }\item[{int\texorpdfstring{$\vert$}{|}float}]{\$max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Clamp the given number between the given minimum and maximum.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+int | float & {\em \$min} & \\
+\hline
+int | float & {\em \$max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}float 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a68d52aa04a7176ad827c6df139d856f9}\index{Number@{Number}!currency@{currency}}
+\index{currency@{currency}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{currency()}{currency()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a68d52aa04a7176ad827c6df139d856f9} 
+currency (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{string}]{\$in}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$locale}{ = {\ttfamily null}, }\item[{?int}]{\$precision}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the given number to its currency equivalent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+string & {\em \$in} & \\
+\hline
+string | null & {\em \$locale} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_aefc7f9b18ad2a44f5c7aaa0f7fb42a73}\index{Number@{Number}!defaultCurrency@{defaultCurrency}}
+\index{defaultCurrency@{defaultCurrency}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{defaultCurrency()}{defaultCurrency()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_aefc7f9b18ad2a44f5c7aaa0f7fb42a73} 
+default\+Currency (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the default currency.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a0525851d23383bef40ce703b80762810}\index{Number@{Number}!defaultLocale@{defaultLocale}}
+\index{defaultLocale@{defaultLocale}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{defaultLocale()}{defaultLocale()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a0525851d23383bef40ce703b80762810} 
+default\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the default locale.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a1a86de9fcf3cd0e37799f309df9bd70f}\index{Number@{Number}!ensureIntlExtensionIsInstalled@{ensureIntlExtensionIsInstalled}}
+\index{ensureIntlExtensionIsInstalled@{ensureIntlExtensionIsInstalled}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{ensureIntlExtensionIsInstalled()}{ensureIntlExtensionIsInstalled()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a1a86de9fcf3cd0e37799f309df9bd70f} 
+ensure\+Intl\+Extension\+Is\+Installed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Ensure the "{}intl"{} PHP extension is installed.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a4291e29b5ce48994e33359d9cea1f2fe}\index{Number@{Number}!fileSize@{fileSize}}
+\index{fileSize@{fileSize}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{fileSize()}{fileSize()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a4291e29b5ce48994e33359d9cea1f2fe} 
+file\+Size (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$bytes}{, }\item[{int}]{\$precision}{ = {\ttfamily 0}, }\item[{?int}]{\$max\+Precision}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the given number to its file size equivalent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$bytes} & \\
+\hline
+int & {\em \$precision} & \\
+\hline
+int | null & {\em \$max\+Precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a01c3a65d2254b96b44325df2bc28ff08}\index{Number@{Number}!forHumans@{forHumans}}
+\index{forHumans@{forHumans}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{forHumans()}{forHumans()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a01c3a65d2254b96b44325df2bc28ff08} 
+for\+Humans (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{int}]{\$precision}{ = {\ttfamily 0}, }\item[{?int}]{\$max\+Precision}{ = {\ttfamily null}, }\item[{bool}]{\$abbreviate}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the number to its human-\/readable equivalent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+int & {\em \$precision} & \\
+\hline
+int | null & {\em \$max\+Precision} & \\
+\hline
+bool & {\em \$abbreviate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a4d1403885342add2c753248e7e781cef}\index{Number@{Number}!format@{format}}
+\index{format@{format}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a4d1403885342add2c753248e7e781cef} 
+format (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{?int}]{\$precision}{ = {\ttfamily null}, }\item[{?int}]{\$max\+Precision}{ = {\ttfamily null}, }\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Format the given number according to the current locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+int | null & {\em \$precision} & \\
+\hline
+int | null & {\em \$max\+Precision} & \\
+\hline
+string | null & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a7dcc4cacede8ef856ca60613c116cfd1}\index{Number@{Number}!ordinal@{ordinal}}
+\index{ordinal@{ordinal}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{ordinal()}{ordinal()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a7dcc4cacede8ef856ca60613c116cfd1} 
+ordinal (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the given number to ordinal form.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+string | null & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a1baf9197d989443413c63b625aa65083}\index{Number@{Number}!pairs@{pairs}}
+\index{pairs@{pairs}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{pairs()}{pairs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a1baf9197d989443413c63b625aa65083} 
+pairs (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$to}{, }\item[{int\texorpdfstring{$\vert$}{|}float}]{\$by}{, }\item[{int\texorpdfstring{$\vert$}{|}float}]{\$start}{ = {\ttfamily 0}, }\item[{int\texorpdfstring{$\vert$}{|}float}]{\$offset}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Split the given number into pairs of min/max values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$to} & \\
+\hline
+int | float & {\em \$by} & \\
+\hline
+int | float & {\em \$start} & \\
+\hline
+int | float & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_abf7aaa254e41a0bade0affd0b80ce4ff}\index{Number@{Number}!percentage@{percentage}}
+\index{percentage@{percentage}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{percentage()}{percentage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_abf7aaa254e41a0bade0affd0b80ce4ff} 
+percentage (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{int}]{\$precision}{ = {\ttfamily 0}, }\item[{?int}]{\$max\+Precision}{ = {\ttfamily null}, }\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the given number to its percentage equivalent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+int & {\em \$precision} & \\
+\hline
+int | null & {\em \$max\+Precision} & \\
+\hline
+string | null & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a07956687b43e19b1dac6ffe056d514d7}\index{Number@{Number}!spell@{spell}}
+\index{spell@{spell}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{spell()}{spell()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a07956687b43e19b1dac6ffe056d514d7} 
+spell (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{?string}]{\$locale}{ = {\ttfamily null}, }\item[{?int}]{\$after}{ = {\ttfamily null}, }\item[{?int}]{\$until}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Spell out the given number in the given locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+string | null & {\em \$locale} & \\
+\hline
+int | null & {\em \$after} & \\
+\hline
+int | null & {\em \$until} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a1bc78dc1d5baf67c76a85fba684d5696}\index{Number@{Number}!spellOrdinal@{spellOrdinal}}
+\index{spellOrdinal@{spellOrdinal}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{spellOrdinal()}{spellOrdinal()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a1bc78dc1d5baf67c76a85fba684d5696} 
+spell\+Ordinal (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Spell out the given number in the given locale in ordinal form.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+string | null & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a9d1282ea9c8d026b0f372da86f71e6d5}\index{Number@{Number}!summarize@{summarize}}
+\index{summarize@{summarize}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{summarize()}{summarize()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a9d1282ea9c8d026b0f372da86f71e6d5} 
+summarize (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{, }\item[{int}]{\$precision}{ = {\ttfamily 0}, }\item[{?int}]{\$max\+Precision}{ = {\ttfamily null}, }\item[{array}]{\$units}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Convert the number to its human-\/readable equivalent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+int & {\em \$precision} & \\
+\hline
+int | null & {\em \$max\+Precision} & \\
+\hline
+array & {\em \$units} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_abdfaedee5d02a02d5bb1efa59d3c8eef}\index{Number@{Number}!trim@{trim}}
+\index{trim@{trim}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_abdfaedee5d02a02d5bb1efa59d3c8eef} 
+trim (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Remove any trailing zero digits after the decimal point of the given number.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}float 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a66743b632e8c966b9eebd0dbb5de44cd}\index{Number@{Number}!useCurrency@{useCurrency}}
+\index{useCurrency@{useCurrency}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{useCurrency()}{useCurrency()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a66743b632e8c966b9eebd0dbb5de44cd} 
+use\+Currency (\begin{DoxyParamCaption}\item[{string}]{\$currency}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set the default currency.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$currency} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_ae568aa66535962fe52cf716a637e3faf}\index{Number@{Number}!useLocale@{useLocale}}
+\index{useLocale@{useLocale}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{useLocale()}{useLocale()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_ae568aa66535962fe52cf716a637e3faf} 
+use\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set the default locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a84fdacacbaa616767e28708458202022}\index{Number@{Number}!withCurrency@{withCurrency}}
+\index{withCurrency@{withCurrency}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{withCurrency()}{withCurrency()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a84fdacacbaa616767e28708458202022} 
+with\+Currency (\begin{DoxyParamCaption}\item[{string}]{\$currency}{, }\item[{callable}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Execute the given callback using the given currency.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$currency} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a04489a1c40bd4af666093438953b8096}\index{Number@{Number}!withLocale@{withLocale}}
+\index{withLocale@{withLocale}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{withLocale()}{withLocale()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a04489a1c40bd4af666093438953b8096} 
+with\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{, }\item[{callable}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Execute the given callback using the given locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a37d22fd3b896e9d5488f3479a4d8f451}\index{Number@{Number}!\$currency@{\$currency}}
+\index{\$currency@{\$currency}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{\$currency}{\$currency}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a37d22fd3b896e9d5488f3479a4d8f451} 
+\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_number_a68d52aa04a7176ad827c6df139d856f9}{currency}} = \textquotesingle{}USD\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_support_1_1_number_a3b392f5a691b803e728f1fb42b35f6e1}\index{Number@{Number}!\$locale@{\$locale}}
+\index{\$locale@{\$locale}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{\$locale}{\$locale}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_number_a3b392f5a691b803e728f1fb42b35f6e1} 
+\$locale = \textquotesingle{}en\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Support/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_support_2_number_8php}{Number.\+php}}\end{DoxyCompactItemize}

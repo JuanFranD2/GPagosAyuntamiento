@@ -1,0 +1,7 @@
+var namespace_livewire_1_1_features_1_1_support_legacy_models =
+[
+    [ "CannotBindToModelDataWithoutValidationRuleException", "class_livewire_1_1_features_1_1_support_legacy_models_1_1_cannot_bind_to_model_data_without_validation_rule_exception.html", "class_livewire_1_1_features_1_1_support_legacy_models_1_1_cannot_bind_to_model_data_without_validation_rule_exception" ],
+    [ "EloquentCollectionSynth", "class_livewire_1_1_features_1_1_support_legacy_models_1_1_eloquent_collection_synth.html", "class_livewire_1_1_features_1_1_support_legacy_models_1_1_eloquent_collection_synth" ],
+    [ "EloquentModelSynth", "class_livewire_1_1_features_1_1_support_legacy_models_1_1_eloquent_model_synth.html", "class_livewire_1_1_features_1_1_support_legacy_models_1_1_eloquent_model_synth" ],
+    [ "SupportLegacyModels", "class_livewire_1_1_features_1_1_support_legacy_models_1_1_support_legacy_models.html", null ]
+];

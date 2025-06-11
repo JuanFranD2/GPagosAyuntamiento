@@ -1,0 +1,97 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/monolog/monolog Directory Reference}
+\hypertarget{dir_81b9572fa7897a12e488ddfb8ea14064}{}\label{dir_81b9572fa7897a12e488ddfb8ea14064}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/monolog/monolog Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/monolog/monolog Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_b3f91143ddf7fd332a9c4594ec1b5761}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+!\mbox{[}\doxylink{namespace_monolog}{Monolog}\mbox{]}(logo.\+jpg)\hypertarget{README.md_autotoc_md9983}{}\doxysubsection{\texorpdfstring{Monolog -\/ Logging for PHP \href{https://github.com/Seldaek/monolog/actions}{\texttt{}}}{Monolog -\/ Logging for PHP \href{https://github.com/Seldaek/monolog/actions}{\texttt{}}}}\label{README.md_autotoc_md9983}
+\href{https://packagist.org/packages/monolog/monolog}{\texttt{}} \href{https://packagist.org/packages/monolog/monolog}{\texttt{}}
+
+\texorpdfstring{$>$}{>}{\bfseries{Note}} This is the {\bfseries{documentation for \doxylink{namespace_monolog}{Monolog} 3.\+x}}, if you are using older releases \texorpdfstring{$>$}{>}see the documentation for \href{https://github.com/Seldaek/monolog/blob/2.x/README.md}{\texttt{Monolog 2.\+x}} or \href{https://github.com/Seldaek/monolog/blob/1.x/README.md}{\texttt{Monolog 1.\+x}}
+
+\doxylink{namespace_monolog}{Monolog} sends your logs to files, sockets, inboxes, databases and various web services. See the complete list of handlers below. Special handlers allow you to build advanced logging strategies.
+
+This library implements the \href{https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md}{\texttt{PSR-\/3}} interface that you can type-\/hint against in your own libraries to keep a maximum of interoperability. You can also use it in your applications to make sure you can always use another compatible logger at a later time. As of 1.\+11.\+0 \doxylink{namespace_monolog}{Monolog} public APIs will also accept PSR-\/3 log levels. Internally \doxylink{namespace_monolog}{Monolog} still uses its own level scheme since it predates PSR-\/3.
+
+ \DoxyHorRuler{0}
+ \textsuperscript{{\bfseries{Sponsored by\+:}}} ~\newline
+ \href{https://betterstack.com}{\texttt{   Better Stack lets you centralize, search, and visualize your logs.  }} ~\newline
+ \DoxyHorRuler{0}
+ \hypertarget{README.md_autotoc_md9984}{}\doxysubsubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md9984}
+Install the latest version with
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ monolog/monolog}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md9985}{}\doxysubsubsection{\texorpdfstring{Basic Usage}{Basic Usage}}\label{README.md_autotoc_md9985}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{namespace_monolog_aeff7a6f4b907e38ff6e974c6166a9ac6}{Monolog\(\backslash\)Level}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_monolog_1_1_logger}{Monolog\(\backslash\)Logger}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_monolog_1_1_handler_1_1_stream_handler}{Monolog\(\backslash\)Handler\(\backslash\)StreamHandler}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ create\ a\ log\ channel}}
+\DoxyCodeLine{\$log\ =\ \textcolor{keyword}{new}\ Logger(\textcolor{stringliteral}{'name'});}
+\DoxyCodeLine{\$log-\/>pushHandler(\textcolor{keyword}{new}\ StreamHandler(\textcolor{stringliteral}{'path/to/your.log'},\ Level::Warning));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ add\ records\ to\ the\ log}}
+\DoxyCodeLine{\$log-\/>warning(\textcolor{stringliteral}{'Foo'});}
+\DoxyCodeLine{\$log-\/>error(\textcolor{stringliteral}{'Bar'});}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md9986}{}\doxysubsubsection{\texorpdfstring{Documentation}{Documentation}}\label{README.md_autotoc_md9986}
+
+\begin{DoxyItemize}
+\item Usage Instructions
+\item Handlers, Formatters and Processors
+\item Utility Classes
+\item Extending Monolog
+\item Log Record Structure
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md9987}{}\doxysubsubsection{\texorpdfstring{Support Monolog Financially}{Support Monolog Financially}}\label{README.md_autotoc_md9987}
+Get supported \doxylink{namespace_monolog}{Monolog} and help fund the project with the \href{https://tidelift.com/subscription/pkg/packagist-monolog-monolog?utm_source=packagist-monolog-monolog&utm_medium=referral&utm_campaign=enterprise}{\texttt{Tidelift Subscription}} or via \href{https://github.com/sponsors/Seldaek}{\texttt{Git\+Hub sponsorship}}.
+
+Tidelift delivers commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use.\hypertarget{README.md_autotoc_md9988}{}\doxysubsubsection{\texorpdfstring{Third Party Packages}{Third Party Packages}}\label{README.md_autotoc_md9988}
+Third party handlers, formatters and processors are \href{https://github.com/Seldaek/monolog/wiki/Third-Party-Packages}{\texttt{listed in the wiki}}. You can also add your own there if you publish one.\hypertarget{README.md_autotoc_md9989}{}\doxysubsubsection{\texorpdfstring{About}{About}}\label{README.md_autotoc_md9989}
+\hypertarget{README.md_autotoc_md9990}{}\doxysubsubsubsection{\texorpdfstring{Requirements}{Requirements}}\label{README.md_autotoc_md9990}
+
+\begin{DoxyItemize}
+\item \doxylink{namespace_monolog}{Monolog} {\ttfamily \texorpdfstring{$^\wedge$}{\string^}3.0} works with PHP 8.\+1 or above.
+\item \doxylink{namespace_monolog}{Monolog} {\ttfamily \texorpdfstring{$^\wedge$}{\string^}2.5} works with PHP 7.\+2 or above.
+\item \doxylink{namespace_monolog}{Monolog} {\ttfamily \texorpdfstring{$^\wedge$}{\string^}1.25} works with PHP 5.\+3 up to 8.\+1, but is not very maintained anymore and will not receive PHP support fixes anymore.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md9991}{}\doxysubsubsubsection{\texorpdfstring{Support}{Support}}\label{README.md_autotoc_md9991}
+\doxylink{namespace_monolog}{Monolog} 1.\+x support is somewhat limited at this point and only important fixes will be done. You should migrate to \doxylink{namespace_monolog}{Monolog} 2 or 3 where possible to benefit from all the latest features and fixes.\hypertarget{README.md_autotoc_md9992}{}\doxysubsubsubsection{\texorpdfstring{Submitting bugs and feature requests}{Submitting bugs and feature requests}}\label{README.md_autotoc_md9992}
+Bugs and feature request are tracked on \href{https://github.com/Seldaek/monolog/issues}{\texttt{Git\+Hub}}\hypertarget{README.md_autotoc_md9993}{}\doxysubsubsubsection{\texorpdfstring{Framework Integrations}{Framework Integrations}}\label{README.md_autotoc_md9993}
+
+\begin{DoxyItemize}
+\item Frameworks and libraries using \href{https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md}{\texttt{PSR-\/3}} can be used very easily with \doxylink{namespace_monolog}{Monolog} since it implements the interface.
+\item \href{http://symfony.com}{\texttt{Symfony}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{http://laravel.com/}{\texttt{Laravel}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{http://lumen.laravel.com/}{\texttt{Lumen}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{https://github.com/ppi/framework}{\texttt{PPI}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{http://cakephp.org/}{\texttt{Cake\+PHP}} is usable with \doxylink{namespace_monolog}{Monolog} via the \href{https://github.com/jadb/cakephp-monolog}{\texttt{cakephp-\/monolog}} plugin.
+\item \href{http://xoops.org/}{\texttt{XOOPS 2.\+6}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{https://github.com/auraphp/Aura.Web_Project}{\texttt{Aura.\+Web\+\_\+\+Project}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{http://nette.org/en/}{\texttt{Nette Framework}} is usable with \doxylink{namespace_monolog}{Monolog} via the \href{https://github.com/contributte/monolog}{\texttt{contributte/monolog}} or \href{https://github.com/orisai/nette-monolog}{\texttt{orisai/nette-\/monolog}} extensions.
+\item \href{https://github.com/alexbilbie/Proton}{\texttt{Proton Micro Framework}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{http://fuelphp.com/}{\texttt{Fuel\+PHP}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{https://github.com/equip/framework}{\texttt{Equip Framework}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{http://www.yiiframework.com/}{\texttt{Yii 2}} is usable with \doxylink{namespace_monolog}{Monolog} via the \href{https://github.com/merorafael/yii2-monolog}{\texttt{yii2-\/monolog}} or \href{https://github.com/samdark/yii2-psr-log-target}{\texttt{yii2-\/psr-\/log-\/target}} plugins.
+\item \href{https://github.com/HawkBitPhp/hawkbit}{\texttt{Hawkbit Micro Framework}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{https://www.silverstripe.org/}{\texttt{Silver\+Stripe 4}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{https://www.drupal.org/}{\texttt{Drupal}} is usable with \doxylink{namespace_monolog}{Monolog} via the \href{https://www.drupal.org/project/monolog}{\texttt{monolog}} module.
+\item \href{https://aimeos.org/}{\texttt{Aimeos ecommerce framework}} is usable with \doxylink{namespace_monolog}{Monolog} via the \href{https://github.com/aimeos/ai-monolog}{\texttt{ai-\/monolog}} extension.
+\item \href{https://magento.com/}{\texttt{Magento}} comes out of the box with \doxylink{namespace_monolog}{Monolog}.
+\item \href{https://spiral.dev}{\texttt{Spiral Framework}} comes out of the box with \doxylink{namespace_monolog}{Monolog} bridge.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md9994}{}\doxysubsubsubsection{\texorpdfstring{Author}{Author}}\label{README.md_autotoc_md9994}
+Jordi Boggiano -\/ \href{mailto:j.boggiano@seld.be}{\texttt{j.\+boggiano@seld.\+be}} -\/ \href{http://twitter.com/seldaek}{\texttt{http\+://twitter.\+com/seldaek}}~\newline
+ See also the list of \href{https://github.com/Seldaek/monolog/contributors}{\texttt{contributors}} who participated in this project.\hypertarget{README.md_autotoc_md9995}{}\doxysubsubsubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md9995}
+\doxylink{namespace_monolog}{Monolog} is licensed under the MIT License -\/ see the \mbox{[}LICENSE\mbox{]}(LICENSE) file for details\hypertarget{README.md_autotoc_md9996}{}\doxysubsubsubsection{\texorpdfstring{Acknowledgements}{Acknowledgements}}\label{README.md_autotoc_md9996}
+This library is heavily inspired by Python\textquotesingle{}s \href{https://logbook.readthedocs.io/en/stable/}{\texttt{Logbook}} library, although most concepts have been adjusted to fit to the PHP world. 

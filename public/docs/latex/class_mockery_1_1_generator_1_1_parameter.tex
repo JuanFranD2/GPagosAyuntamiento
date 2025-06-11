@@ -1,0 +1,117 @@
+\doxysection{Parameter Class Reference}
+\hypertarget{class_mockery_1_1_generator_1_1_parameter}{}\label{class_mockery_1_1_generator_1_1_parameter}\index{Parameter@{Parameter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mockery_1_1_generator_1_1_parameter_a27f48a78e9a14ca649e563980f631b99}{\+\_\+\+\_\+construct}} (Reflection\+Parameter \$rfp)
+\item 
+\mbox{\hyperlink{class_mockery_1_1_generator_1_1_parameter_a23ecbde357f7f6bde5a50f876334a74d}{get\+Class}} ()
+\item 
+\mbox{\hyperlink{class_mockery_1_1_generator_1_1_parameter_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_mockery_1_1_generator_1_1_parameter_a996e921c33e075c453f344e4a6e2bacd}{get\+Type\+Hint}} ()
+\item 
+\mbox{\hyperlink{class_mockery_1_1_generator_1_1_parameter_a079a959fb82132d2f41ea081c0abbb00}{get\+Type\+Hint\+As\+String}} ()
+\item 
+\mbox{\hyperlink{class_mockery_1_1_generator_1_1_parameter_a2f0ab131ec6fa3f6f91721eb72ca10f0}{is\+Array}} ()
+\item 
+\mbox{\hyperlink{class_mockery_1_1_generator_1_1_parameter_ab2aa651fb210b4868f4c2a846ab40ebb}{is\+Variadic}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin Reflection\+Parameter 
+
+\label{doc-constructors}
+\Hypertarget{class_mockery_1_1_generator_1_1_parameter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mockery_1_1_generator_1_1_parameter_a27f48a78e9a14ca649e563980f631b99}\index{Parameter@{Parameter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Parameter@{Parameter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_parameter_a27f48a78e9a14ca649e563980f631b99} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Reflection\+Parameter}]{\$rfp}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_mockery_1_1_generator_1_1_parameter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mockery_1_1_generator_1_1_parameter_a23ecbde357f7f6bde5a50f876334a74d}\index{Parameter@{Parameter}!getClass@{getClass}}
+\index{getClass@{getClass}!Parameter@{Parameter}}
+\doxysubsubsection{\texorpdfstring{getClass()}{getClass()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_parameter_a23ecbde357f7f6bde5a50f876334a74d} 
+get\+Class (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the reflection class for the parameter type, if it exists.
+
+This will be null if there was no type, or it was a scalar or a union.
+
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Reflection\+Class
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000167}{Deprecated}}]since 1.\+3.\+3 and will be removed in 2.\+0. \end{DoxyRefDesc}
+\Hypertarget{class_mockery_1_1_generator_1_1_parameter_a3d0963e68bb313b163a73f2803c64600}\index{Parameter@{Parameter}!getName@{getName}}
+\index{getName@{getName}!Parameter@{Parameter}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_parameter_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the parameter.
+
+Some internal classes have funny looking definitions!
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_mockery_1_1_generator_1_1_parameter_a996e921c33e075c453f344e4a6e2bacd}\index{Parameter@{Parameter}!getTypeHint@{getTypeHint}}
+\index{getTypeHint@{getTypeHint}!Parameter@{Parameter}}
+\doxysubsubsection{\texorpdfstring{getTypeHint()}{getTypeHint()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_parameter_a996e921c33e075c453f344e4a6e2bacd} 
+get\+Type\+Hint (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the string representation for the paramater type.
+
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_mockery_1_1_generator_1_1_parameter_a079a959fb82132d2f41ea081c0abbb00}\index{Parameter@{Parameter}!getTypeHintAsString@{getTypeHintAsString}}
+\index{getTypeHintAsString@{getTypeHintAsString}!Parameter@{Parameter}}
+\doxysubsubsection{\texorpdfstring{getTypeHintAsString()}{getTypeHintAsString()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_parameter_a079a959fb82132d2f41ea081c0abbb00} 
+get\+Type\+Hint\+As\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the string representation for the paramater type.
+
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000168}{Deprecated}}]since 1.\+3.\+2 and will be removed in 2.\+0. Use get\+Type\+Hint() instead. \end{DoxyRefDesc}
+\Hypertarget{class_mockery_1_1_generator_1_1_parameter_a2f0ab131ec6fa3f6f91721eb72ca10f0}\index{Parameter@{Parameter}!isArray@{isArray}}
+\index{isArray@{isArray}!Parameter@{Parameter}}
+\doxysubsubsection{\texorpdfstring{isArray()}{isArray()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_parameter_a2f0ab131ec6fa3f6f91721eb72ca10f0} 
+is\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the parameter is an array.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_mockery_1_1_generator_1_1_parameter_ab2aa651fb210b4868f4c2a846ab40ebb}\index{Parameter@{Parameter}!isVariadic@{isVariadic}}
+\index{isVariadic@{isVariadic}!Parameter@{Parameter}}
+\doxysubsubsection{\texorpdfstring{isVariadic()}{isVariadic()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_generator_1_1_parameter_ab2aa651fb210b4868f4c2a846ab40ebb} 
+is\+Variadic (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the parameter is variadic.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/mockery/mockery/library/\+Mockery/\+Generator/\mbox{\hyperlink{mockery_2mockery_2library_2_mockery_2_generator_2_parameter_8php}{Parameter.\+php}}\end{DoxyCompactItemize}

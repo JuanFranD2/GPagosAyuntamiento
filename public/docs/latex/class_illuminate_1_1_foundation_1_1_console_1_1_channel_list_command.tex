@@ -1,0 +1,218 @@
+\doxysection{Channel\+List\+Command Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command}{}\label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command}\index{ChannelListCommand@{ChannelListCommand}}
+Inheritance diagram for Channel\+List\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_aba04fad57a317b02107d76244866bc92}{handle}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_broadcasting_1_1_broadcaster}{Broadcaster}} \$broadcaster)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acc17fc4b2880856deb16661a443fe08e}{run}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a645d49a93702949a651360c7bdc0a0b0}{fail}} (Throwable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$exception=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acbd42dc98fc1c0649ae7b1aeaf842b3d}{is\+Hidden}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a352b564237d3f16ca19a07d6ac036196}{set\+Hidden}} (bool \$hidden=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aab7aca3854218cb065a030769a143418}{get\+Laravel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a94bbb27e66c6b8dafd84410ede30c6af}{set\+Laravel}} (\$laravel)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a15ecea9d6fe702c3c53a9da65ec04b44}{get\+Terminal\+Width}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a5d4d584a9708f6c6586a840cb59e9617}{resolve\+Terminal\+Width\+Using}} (\$resolver)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_accf1edf6df6a619b8f81369527d264f6}{display\+Channels}} (\$channels)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a93f8df0bde42f57de113cfa988c629a3}{for\+Cli}} (\$channels)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_aedd10d8256cba3e60c6b3d0136ba1e35}{determine\+Channel\+Count\+Output}} (\$channels, \$terminal\+Width)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aef18ba6dc42644207c37bf5de362a4bd}{configure\+Using\+Fluent\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a05e39d241c3e3400b03d3b63dfbd8929}{configure\+Isolation}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab31c72b72ddaf7116db5d84c055d3c0b}{execute}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac8094b40d2f975480f91e5a3b7040769}{command\+Isolation\+Mutex}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac1aba88abc23023836393a7f4ea231ca}{resolve\+Command}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}} = \textquotesingle{}channel\+:list\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a87b032cba06009e3467abf1c8018d960}{\$description}} = \textquotesingle{}List all registered private broadcast channels\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a2483b0a3df07768a50dd53f90fd7ae4b}{\$laravel}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a87b032cba06009e3467abf1c8018d960}{\$description}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ae8c606891eb7e59cb0674a2dd63c5498}{\$help}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a4a374564d2858d8ae869a8fb890aad56}{\$hidden}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a568541fc9a0d312709894fe344c5aa13}{\$isolated}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a11ba5862b76c657e950bdde51f6e54b0}{\$isolated\+Exit\+Code}} = self\+::\+SUCCESS
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a7e6d29edbd9ec5d8ec9d478cf98fba03}{\$aliases}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a2c21348ede7ea7bbfc7fad917490d44b}{\$terminal\+Width\+Resolver}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_aedd10d8256cba3e60c6b3d0136ba1e35}\index{ChannelListCommand@{ChannelListCommand}!determineChannelCountOutput@{determineChannelCountOutput}}
+\index{determineChannelCountOutput@{determineChannelCountOutput}!ChannelListCommand@{ChannelListCommand}}
+\doxysubsubsection{\texorpdfstring{determineChannelCountOutput()}{determineChannelCountOutput()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_aedd10d8256cba3e60c6b3d0136ba1e35} 
+determine\+Channel\+Count\+Output (\begin{DoxyParamCaption}\item[{}]{\$channels}{, }\item[{}]{\$terminal\+Width}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine and return the output for displaying the number of registered channels in the CLI output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$channels} & \\
+\hline
+int & {\em \$terminal\+Width} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_accf1edf6df6a619b8f81369527d264f6}\index{ChannelListCommand@{ChannelListCommand}!displayChannels@{displayChannels}}
+\index{displayChannels@{displayChannels}!ChannelListCommand@{ChannelListCommand}}
+\doxysubsubsection{\texorpdfstring{displayChannels()}{displayChannels()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_accf1edf6df6a619b8f81369527d264f6} 
+display\+Channels (\begin{DoxyParamCaption}\item[{}]{\$channels}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Display the channel information on the console.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Collection & {\em \$channels} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a93f8df0bde42f57de113cfa988c629a3}\index{ChannelListCommand@{ChannelListCommand}!forCli@{forCli}}
+\index{forCli@{forCli}!ChannelListCommand@{ChannelListCommand}}
+\doxysubsubsection{\texorpdfstring{forCli()}{forCli()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a93f8df0bde42f57de113cfa988c629a3} 
+for\+Cli (\begin{DoxyParamCaption}\item[{}]{\$channels}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Convert the given channels to regular CLI output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$channels} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a15ecea9d6fe702c3c53a9da65ec04b44}\index{ChannelListCommand@{ChannelListCommand}!getTerminalWidth@{getTerminalWidth}}
+\index{getTerminalWidth@{getTerminalWidth}!ChannelListCommand@{ChannelListCommand}}
+\doxysubsubsection{\texorpdfstring{getTerminalWidth()}{getTerminalWidth()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a15ecea9d6fe702c3c53a9da65ec04b44} 
+get\+Terminal\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the terminal width.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_aba04fad57a317b02107d76244866bc92}\index{ChannelListCommand@{ChannelListCommand}!handle@{handle}}
+\index{handle@{handle}!ChannelListCommand@{ChannelListCommand}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_aba04fad57a317b02107d76244866bc92} 
+handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_broadcasting_1_1_broadcaster}{Broadcaster}}}]{\$broadcaster}{}\end{DoxyParamCaption})}
+
+Execute the console command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcaster & {\em \$broadcaster} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a5d4d584a9708f6c6586a840cb59e9617}\index{ChannelListCommand@{ChannelListCommand}!resolveTerminalWidthUsing@{resolveTerminalWidthUsing}}
+\index{resolveTerminalWidthUsing@{resolveTerminalWidthUsing}!ChannelListCommand@{ChannelListCommand}}
+\doxysubsubsection{\texorpdfstring{resolveTerminalWidthUsing()}{resolveTerminalWidthUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a5d4d584a9708f6c6586a840cb59e9617} 
+resolve\+Terminal\+Width\+Using (\begin{DoxyParamCaption}\item[{}]{\$resolver}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set a callback that should be used when resolving the terminal width.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | null & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a87b032cba06009e3467abf1c8018d960}\index{ChannelListCommand@{ChannelListCommand}!\$description@{\$description}}
+\index{\$description@{\$description}!ChannelListCommand@{ChannelListCommand}}
+\doxysubsubsection{\texorpdfstring{\$description}{\$description}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a87b032cba06009e3467abf1c8018d960} 
+\$description = \textquotesingle{}List all registered private broadcast channels\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_ab2fc40d43824ea3e1ce5d86dee0d763b}\index{ChannelListCommand@{ChannelListCommand}!\$name@{\$name}}
+\index{\$name@{\$name}!ChannelListCommand@{ChannelListCommand}}
+\doxysubsubsection{\texorpdfstring{\$name}{\$name}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_ab2fc40d43824ea3e1ce5d86dee0d763b} 
+\$name = \textquotesingle{}channel\+:list\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a2c21348ede7ea7bbfc7fad917490d44b}\index{ChannelListCommand@{ChannelListCommand}!\$terminalWidthResolver@{\$terminalWidthResolver}}
+\index{\$terminalWidthResolver@{\$terminalWidthResolver}!ChannelListCommand@{ChannelListCommand}}
+\doxysubsubsection{\texorpdfstring{\$terminalWidthResolver}{\$terminalWidthResolver}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_channel_list_command_a2c21348ede7ea7bbfc7fad917490d44b} 
+\$terminal\+Width\+Resolver\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Console/\mbox{\hyperlink{_channel_list_command_8php}{Channel\+List\+Command.\+php}}\end{DoxyCompactItemize}

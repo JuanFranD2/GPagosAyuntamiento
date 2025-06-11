@@ -1,0 +1,5 @@
+var class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_identity_marshaller =
+[
+    [ "marshall", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_identity_marshaller.html#aa733a0e9ed3b934fbaeb08d88ac03e2a", null ],
+    [ "unmarshall", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_identity_marshaller.html#a26d731f36c299240031f2df2561d2980", null ]
+];

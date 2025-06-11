@@ -1,0 +1,4 @@
+var _object_dependencies_description_8php =
+[
+    [ "ObjectDependenciesDescription", "class_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_dependencies_1_1_object_dependencies_description.html", "class_p_h_p_unit_1_1_architecture_1_1_asserts_1_1_dependencies_1_1_object_dependencies_description" ]
+];

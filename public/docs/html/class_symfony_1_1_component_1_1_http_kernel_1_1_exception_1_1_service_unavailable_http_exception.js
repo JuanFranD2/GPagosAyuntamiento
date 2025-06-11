@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_service_unavailable_http_exception =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_service_unavailable_http_exception.html#aea1c5d69e149eb657410cb7bdaa84593", null ]
+];

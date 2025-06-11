@@ -1,0 +1,30 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/es-\/set-\/tostringtag Directory Reference}
+\hypertarget{dir_7e4f523321d882d05008d9f08a929431}{}\label{dir_7e4f523321d882d05008d9f08a929431}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/es-\/set-\/tostringtag Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/es-\/set-\/tostringtag Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md2647}{}\doxysubsection{\texorpdfstring{es-\/set-\/tostringtag \textsuperscript{\mbox{[}!\mbox{[}Version Badge\mbox{]}\mbox{[}npm-\/version-\/svg\mbox{]}\mbox{]}\mbox{[}package-\/url\mbox{]}}}{es-\/set-\/tostringtag \textsuperscript{\mbox{[}!\mbox{[}Version Badge\mbox{]}\mbox{[}npm-\/version-\/svg\mbox{]}\mbox{]}\mbox{[}package-\/url\mbox{]}}}}\label{README.md_autotoc_md2647}
+\href{https://github.com/es-shims/es-set-tostringtag/actions}{\texttt{}} \href{https://app.codecov.io/gh/es-shims/es-set-tostringtag/}{\texttt{}} \mbox{[}\mbox{]}\mbox{[}license-\/url\mbox{]} \href{https://npm-stat.com/charts.html?package=es-set-tostringtag}{\texttt{}}
+
+\href{https://npmjs.com/package/es-set-tostringtag}{\texttt{}}
+
+A helper to optimistically set Symbol.\+to\+String\+Tag, when possible.\hypertarget{README.md_autotoc_md2648}{}\doxysubsection{\texorpdfstring{Example}{Example}}\label{README.md_autotoc_md2648}
+Most common usage\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ assert\ =\ require('assert');}
+\DoxyCodeLine{var\ setToStringTag\ =\ require('es-\/set-\/tostringtag');}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ obj\ =\ \{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{assert.equal(Object.prototype.toString.call(obj),\ '[object\ Object]');}
+\DoxyCodeLine{}
+\DoxyCodeLine{setToStringTag(obj,\ 'tagged!');}
+\DoxyCodeLine{}
+\DoxyCodeLine{assert.equal(Object.prototype.toString.call(obj),\ '[object\ tagged!]');}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md2649}{}\doxysubsection{\texorpdfstring{Options}{Options}}\label{README.md_autotoc_md2649}
+An optional options argument can be provided as the third argument. The available options are\+:\hypertarget{README.md_autotoc_md2650}{}\doxysubsubsection{\texorpdfstring{{\ttfamily force}}{{\ttfamily force}}}\label{README.md_autotoc_md2650}
+If the {\ttfamily force} option is set to {\ttfamily true}, the to\+String\+Tag will be set even if it is already set.\hypertarget{README.md_autotoc_md2651}{}\doxysubsubsection{\texorpdfstring{{\ttfamily non\+Configurable}}{{\ttfamily non\+Configurable}}}\label{README.md_autotoc_md2651}
+If the {\ttfamily non\+Configurable} option is set to {\ttfamily true}, the to\+String\+Tag will be defined as non-\/configurable when possible.\hypertarget{README.md_autotoc_md2652}{}\doxysubsection{\texorpdfstring{Tests}{Tests}}\label{README.md_autotoc_md2652}
+Simply clone the repo, {\ttfamily npm install}, and run {\ttfamily npm test} 

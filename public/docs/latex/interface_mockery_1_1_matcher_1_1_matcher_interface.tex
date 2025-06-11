@@ -1,0 +1,62 @@
+\doxysection{Matcher\+Interface Interface Reference}
+\hypertarget{interface_mockery_1_1_matcher_1_1_matcher_interface}{}\label{interface_mockery_1_1_matcher_1_1_matcher_interface}\index{MatcherInterface@{MatcherInterface}}
+Inheritance diagram for Matcher\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_mockery_1_1_matcher_1_1_matcher_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_mockery_1_1_matcher_1_1_matcher_interface_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_mockery_1_1_matcher_1_1_matcher_interface_ad4e26ceb06c105250f1b408e55ba5f49}{match}} (\&\$actual)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_mockery_1_1_matcher_1_1_matcher_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_mockery_1_1_matcher_1_1_matcher_interface_a7516ca30af0db3cdbf9a7739b48ce91d}\index{MatcherInterface@{MatcherInterface}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!MatcherInterface@{MatcherInterface}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{interface_mockery_1_1_matcher_1_1_matcher_interface_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return a string representation of this Matcher
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_and_any_other_args_a7516ca30af0db3cdbf9a7739b48ce91d}{And\+Any\+Other\+Args}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_any_a7516ca30af0db3cdbf9a7739b48ce91d}{Any}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_any_args_a7516ca30af0db3cdbf9a7739b48ce91d}{Any\+Args}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_any_of_a7516ca30af0db3cdbf9a7739b48ce91d}{Any\+Of}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_closure_a7516ca30af0db3cdbf9a7739b48ce91d}{Closure}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_contains_a7516ca30af0db3cdbf9a7739b48ce91d}{Contains}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_ducktype_a7516ca30af0db3cdbf9a7739b48ce91d}{Ducktype}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_has_key_a7516ca30af0db3cdbf9a7739b48ce91d}{Has\+Key}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_has_value_a7516ca30af0db3cdbf9a7739b48ce91d}{Has\+Value}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_is_equal_a7516ca30af0db3cdbf9a7739b48ce91d}{Is\+Equal}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_is_same_a7516ca30af0db3cdbf9a7739b48ce91d}{Is\+Same}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_multi_argument_closure_a7516ca30af0db3cdbf9a7739b48ce91d}{Multi\+Argument\+Closure}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_must_be_a7516ca30af0db3cdbf9a7739b48ce91d}{Must\+Be}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_no_args_a7516ca30af0db3cdbf9a7739b48ce91d}{No\+Args}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_not_a7516ca30af0db3cdbf9a7739b48ce91d}{Not}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_not_any_of_a7516ca30af0db3cdbf9a7739b48ce91d}{Not\+Any\+Of}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_pattern_a7516ca30af0db3cdbf9a7739b48ce91d}{Pattern}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_subset_a7516ca30af0db3cdbf9a7739b48ce91d}{Subset}}, and \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_type_a7516ca30af0db3cdbf9a7739b48ce91d}{Type}}.
+
+\Hypertarget{interface_mockery_1_1_matcher_1_1_matcher_interface_ad4e26ceb06c105250f1b408e55ba5f49}\index{MatcherInterface@{MatcherInterface}!match@{match}}
+\index{match@{match}!MatcherInterface@{MatcherInterface}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{interface_mockery_1_1_matcher_1_1_matcher_interface_ad4e26ceb06c105250f1b408e55ba5f49} 
+match (\begin{DoxyParamCaption}\item[{\&}]{\$actual}{}\end{DoxyParamCaption})}
+
+Check if the actual value matches the expected. Actual passed by reference to preserve reference trail (where applicable) back to the original method parameter.
+
+@template TMixed
+
+
+\begin{DoxyParams}[1]{Parameters}
+TMixed & {\em \$actual} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_and_any_other_args_ad4e26ceb06c105250f1b408e55ba5f49}{And\+Any\+Other\+Args}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_any_ad4e26ceb06c105250f1b408e55ba5f49}{Any}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_any_args_ad4e26ceb06c105250f1b408e55ba5f49}{Any\+Args}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_any_of_ad4e26ceb06c105250f1b408e55ba5f49}{Any\+Of}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_closure_ad4e26ceb06c105250f1b408e55ba5f49}{Closure}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_contains_ad4e26ceb06c105250f1b408e55ba5f49}{Contains}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_ducktype_ad4e26ceb06c105250f1b408e55ba5f49}{Ducktype}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_has_key_ad4e26ceb06c105250f1b408e55ba5f49}{Has\+Key}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_has_value_ad4e26ceb06c105250f1b408e55ba5f49}{Has\+Value}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_is_equal_ad4e26ceb06c105250f1b408e55ba5f49}{Is\+Equal}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_is_same_ad4e26ceb06c105250f1b408e55ba5f49}{Is\+Same}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_multi_argument_closure_ad4e26ceb06c105250f1b408e55ba5f49}{Multi\+Argument\+Closure}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_must_be_ad4e26ceb06c105250f1b408e55ba5f49}{Must\+Be}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_no_args_ad4e26ceb06c105250f1b408e55ba5f49}{No\+Args}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_not_ad4e26ceb06c105250f1b408e55ba5f49}{Not}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_not_any_of_ad4e26ceb06c105250f1b408e55ba5f49}{Not\+Any\+Of}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_pattern_ad4e26ceb06c105250f1b408e55ba5f49}{Pattern}}, \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_subset_ad4e26ceb06c105250f1b408e55ba5f49}{Subset}}, and \mbox{\hyperlink{class_mockery_1_1_matcher_1_1_type_ad4e26ceb06c105250f1b408e55ba5f49}{Type}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/mockery/mockery/library/\+Mockery/\+Matcher/\mbox{\hyperlink{_matcher_interface_8php}{Matcher\+Interface.\+php}}\end{DoxyCompactItemize}

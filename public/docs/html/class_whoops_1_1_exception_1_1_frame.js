@@ -1,0 +1,25 @@
+var class_whoops_1_1_exception_1_1_frame =
+[
+    [ "__construct", "class_whoops_1_1_exception_1_1_frame.html#a5e848051b020872e681ef995a1009a18", null ],
+    [ "__serialize", "class_whoops_1_1_exception_1_1_frame.html#ab1d6abfbdcd8c9dd63dfef565bd2cfcf", null ],
+    [ "__unserialize", "class_whoops_1_1_exception_1_1_frame.html#aef31c516a388d099cc0db1353b1d6b5e", null ],
+    [ "addComment", "class_whoops_1_1_exception_1_1_frame.html#acae4d7b5692272f26733bcb8554de880", null ],
+    [ "equals", "class_whoops_1_1_exception_1_1_frame.html#a68999f62c34c11faf3792e5e6c6aefee", null ],
+    [ "getArgs", "class_whoops_1_1_exception_1_1_frame.html#a19dde99d8deb1c2e72d40e191fee96b0", null ],
+    [ "getClass", "class_whoops_1_1_exception_1_1_frame.html#a23ecbde357f7f6bde5a50f876334a74d", null ],
+    [ "getComments", "class_whoops_1_1_exception_1_1_frame.html#ab5a3dce20706bef7ed4d07d1bd4c5715", null ],
+    [ "getFile", "class_whoops_1_1_exception_1_1_frame.html#a8c66093e4fe2415f7eb3ded10a1ff307", null ],
+    [ "getFileContents", "class_whoops_1_1_exception_1_1_frame.html#a71d3aea4c3258499121250cc1adbcb35", null ],
+    [ "getFileLines", "class_whoops_1_1_exception_1_1_frame.html#ae32565f19773a68b86b422a4939b5fc8", null ],
+    [ "getFunction", "class_whoops_1_1_exception_1_1_frame.html#a3cb728ca27acfebd282caecdb8a1f5fc", null ],
+    [ "getLine", "class_whoops_1_1_exception_1_1_frame.html#aef9c32f6066788a101028a1d4150f8cb", null ],
+    [ "getRawFrame", "class_whoops_1_1_exception_1_1_frame.html#aad6a092972c6dec440343a424628ddcb", null ],
+    [ "isApplication", "class_whoops_1_1_exception_1_1_frame.html#a8ffb01dc319c6b842e6eb96a0484df06", null ],
+    [ "serialize", "class_whoops_1_1_exception_1_1_frame.html#a4d9813fea8525b19a1d370eeb8fe41d6", null ],
+    [ "setApplication", "class_whoops_1_1_exception_1_1_frame.html#a2db51aae9da45631f2d5a56ebbb444ee", null ],
+    [ "unserialize", "class_whoops_1_1_exception_1_1_frame.html#a554310d84aaa938f5c40a2943fbf9f72", null ],
+    [ "$application", "class_whoops_1_1_exception_1_1_frame.html#a537fa9b460dddc2a67074faab810398a", null ],
+    [ "$comments", "class_whoops_1_1_exception_1_1_frame.html#a35e8cdeb473a5eb016fea893d14de951", null ],
+    [ "$fileContentsCache", "class_whoops_1_1_exception_1_1_frame.html#a2a1485860d15828f59a4c1eece6875af", null ],
+    [ "$frame", "class_whoops_1_1_exception_1_1_frame.html#a2c5e909bcaf7c8dfc4672361f47867ee", null ]
+];

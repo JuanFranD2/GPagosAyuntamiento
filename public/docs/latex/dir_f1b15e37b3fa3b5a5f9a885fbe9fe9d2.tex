@@ -1,0 +1,59 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Parser Directory Reference}
+\hypertarget{dir_f1b15e37b3fa3b5a5f9a885fbe9fe9d2}{}\label{dir_f1b15e37b3fa3b5a5f9a885fbe9fe9d2}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/masterminds/html5/src/HTML5/Parser Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/masterminds/html5/src/HTML5/Parser Directory Reference}}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{_character_reference_8php}{Character\+Reference.\+php}}
+\item 
+file \mbox{\hyperlink{_d_o_m_tree_builder_8php}{DOMTree\+Builder.\+php}}
+\item 
+file \mbox{\hyperlink{_event_handler_8php}{Event\+Handler.\+php}}
+\item 
+file \mbox{\hyperlink{_file_input_stream_8php}{File\+Input\+Stream.\+php}}
+\item 
+file \mbox{\hyperlink{masterminds_2html5_2src_2_h_t_m_l5_2_parser_2_input_stream_8php}{Input\+Stream.\+php}}
+\item 
+file \mbox{\hyperlink{_parse_error_8php}{Parse\+Error.\+php}}
+\item 
+file \mbox{\hyperlink{_scanner_8php}{Scanner.\+php}}
+\item 
+file \mbox{\hyperlink{_string_input_stream_8php}{String\+Input\+Stream.\+php}}
+\item 
+file \mbox{\hyperlink{masterminds_2html5_2src_2_h_t_m_l5_2_parser_2_tokenizer_8php}{Tokenizer.\+php}}
+\item 
+file \mbox{\hyperlink{_tree_building_rules_8php}{Tree\+Building\+Rules.\+php}}
+\item 
+file \mbox{\hyperlink{_u_t_f8_utils_8php}{UTF8\+Utils.\+php}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md9815}{}\doxysubsection{\texorpdfstring{The Parser Model}{The Parser Model}}\label{README.md_autotoc_md9815}
+The parser model here follows the model in section \href{http://www.w3.org/TR/2012/CR-html5-20121217/syntax.html\#parsing}{\texttt{8.\+2.\+1}} of the HTML5 specification, though we do not assume a networking layer. \begin{DoxyVerb} [ InputStream ]    // Generic support for reading input.
+       ||
+  [ Scanner ]       // Breaks down the stream into characters.
+       ||
+ [ Tokenizer ]      // Groups characters into syntactic
+       ||
+[ Tree Builder ]    // Organizes units into a tree of objects
+       ||
+ [ DOM Document ]     // The final state of the parsed document.
+\end{DoxyVerb}
+\hypertarget{README.md_autotoc_md9816}{}\doxysubsection{\texorpdfstring{Input\+Stream}{Input\+Stream}}\label{README.md_autotoc_md9816}
+This is an interface with at least two concrete implementations\+:
+
+
+\begin{DoxyItemize}
+\item String\+Input\+Stream\+: Reads an HTML5 string.
+\item File\+Input\+Stream\+: Reads an HTML5 file.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md9817}{}\doxysubsection{\texorpdfstring{Scanner}{Scanner}}\label{README.md_autotoc_md9817}
+This is a mechanical piece of the parser.\hypertarget{README.md_autotoc_md9818}{}\doxysubsection{\texorpdfstring{Tokenizer}{Tokenizer}}\label{README.md_autotoc_md9818}
+This follows section 8.\+4 of the HTML5 spec. It is (roughly) a recursive descent parser. (Though there are plenty of optimizations that are less than purely functional.\hypertarget{README.md_autotoc_md9819}{}\doxysubsection{\texorpdfstring{Event\+Handler and DOMTree}{Event\+Handler and DOMTree}}\label{README.md_autotoc_md9819}
+Event\+Handler is the interface for tree builders. Since not all implementations will necessarily build trees, we\textquotesingle{}ve chosen a more generic name.
+
+The event handler emits tokens during tokenization.
+
+The DOMTree is an event handler that builds a DOM tree. The output of the DOMTree builder is a DOMDocument.\hypertarget{README.md_autotoc_md9820}{}\doxysubsection{\texorpdfstring{DOMDocument}{DOMDocument}}\label{README.md_autotoc_md9820}
+PHP has a DOMDocument class built-\/in (technically, it\textquotesingle{}s part of libxml.) We use that, thus rendering the output of this process compatible with Simple\+XML, Query\+Path, and many other XML/\+HTML processing tools.
+
+For cases where the HTML5 is a fragment of a HTML5 document a DOMDocument\+Fragment is returned instead. This is another built-\/in class. 

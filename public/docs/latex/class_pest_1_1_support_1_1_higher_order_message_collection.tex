@@ -1,0 +1,76 @@
+\doxysection{Higher\+Order\+Message\+Collection Class Reference}
+\hypertarget{class_pest_1_1_support_1_1_higher_order_message_collection}{}\label{class_pest_1_1_support_1_1_higher_order_message_collection}\index{HigherOrderMessageCollection@{HigherOrderMessageCollection}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_support_1_1_higher_order_message_collection_a7829ac39d5388fb812812b9836b58a59}{add}} (string \$filename, int \$line, string \$name, ?array \$arguments)
+\item 
+\mbox{\hyperlink{class_pest_1_1_support_1_1_higher_order_message_collection_ad3461782a2e867c5a586d895b11c547b}{add\+When}} (callable \$condition, string \$filename, int \$line, string \$name, ?array \$arguments)
+\item 
+\mbox{\hyperlink{class_pest_1_1_support_1_1_higher_order_message_collection_a2834a787e971cdbeea4c2ddec48fb66f}{chain}} (object \$target)
+\item 
+\mbox{\hyperlink{class_pest_1_1_support_1_1_higher_order_message_collection_a784c20a920a13c9e40d38acd89fcd207}{proxy}} (object \$target)
+\item 
+\mbox{\hyperlink{class_pest_1_1_support_1_1_higher_order_message_collection_a728ce6d319c281879dd3cc8bd30d7fc3}{count}} (string \$name)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_message_collection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_message_collection_a7829ac39d5388fb812812b9836b58a59}\index{HigherOrderMessageCollection@{HigherOrderMessageCollection}!add@{add}}
+\index{add@{add}!HigherOrderMessageCollection@{HigherOrderMessageCollection}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_higher_order_message_collection_a7829ac39d5388fb812812b9836b58a59} 
+add (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{int}]{\$line}{, }\item[{string}]{\$name}{, }\item[{?array}]{\$arguments}{}\end{DoxyParamCaption})}
+
+Adds a new higher order message to the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$arguments \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_message_collection_ad3461782a2e867c5a586d895b11c547b}\index{HigherOrderMessageCollection@{HigherOrderMessageCollection}!addWhen@{addWhen}}
+\index{addWhen@{addWhen}!HigherOrderMessageCollection@{HigherOrderMessageCollection}}
+\doxysubsubsection{\texorpdfstring{addWhen()}{addWhen()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_higher_order_message_collection_ad3461782a2e867c5a586d895b11c547b} 
+add\+When (\begin{DoxyParamCaption}\item[{callable}]{\$condition}{, }\item[{string}]{\$filename}{, }\item[{int}]{\$line}{, }\item[{string}]{\$name}{, }\item[{?array}]{\$arguments}{}\end{DoxyParamCaption})}
+
+Adds a new higher order message to the collection if the callable condition is does not return false.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$arguments \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_message_collection_a2834a787e971cdbeea4c2ddec48fb66f}\index{HigherOrderMessageCollection@{HigherOrderMessageCollection}!chain@{chain}}
+\index{chain@{chain}!HigherOrderMessageCollection@{HigherOrderMessageCollection}}
+\doxysubsubsection{\texorpdfstring{chain()}{chain()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_higher_order_message_collection_a2834a787e971cdbeea4c2ddec48fb66f} 
+chain (\begin{DoxyParamCaption}\item[{object}]{\$target}{}\end{DoxyParamCaption})}
+
+Proxy all the messages starting from the target. \Hypertarget{class_pest_1_1_support_1_1_higher_order_message_collection_a728ce6d319c281879dd3cc8bd30d7fc3}\index{HigherOrderMessageCollection@{HigherOrderMessageCollection}!count@{count}}
+\index{count@{count}!HigherOrderMessageCollection@{HigherOrderMessageCollection}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_higher_order_message_collection_a728ce6d319c281879dd3cc8bd30d7fc3} 
+count (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Count the number of messages with the given name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & A higher order message name (usually a method name) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_support_1_1_higher_order_message_collection_a784c20a920a13c9e40d38acd89fcd207}\index{HigherOrderMessageCollection@{HigherOrderMessageCollection}!proxy@{proxy}}
+\index{proxy@{proxy}!HigherOrderMessageCollection@{HigherOrderMessageCollection}}
+\doxysubsubsection{\texorpdfstring{proxy()}{proxy()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_support_1_1_higher_order_message_collection_a784c20a920a13c9e40d38acd89fcd207} 
+proxy (\begin{DoxyParamCaption}\item[{object}]{\$target}{}\end{DoxyParamCaption})}
+
+Proxy all the messages to the target. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Support/\mbox{\hyperlink{_higher_order_message_collection_8php}{Higher\+Order\+Message\+Collection.\+php}}\end{DoxyCompactItemize}

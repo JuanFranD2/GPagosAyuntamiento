@@ -1,0 +1,323 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/tldts Directory Reference}
+\hypertarget{dir_fc15d73028d79d83aa7545a3ea65a229}{}\label{dir_fc15d73028d79d83aa7545a3ea65a229}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/tldts Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/tldts Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md7705}{}\doxysubsection{\texorpdfstring{tldts -\/ Blazing Fast URL Parsing}{tldts -\/ Blazing Fast URL Parsing}}\label{README.md_autotoc_md7705}
+{\ttfamily tldts} is a Java\+Script library to extract hostnames, domains, public suffixes, top-\/level domains and subdomains from URLs.
+
+{\bfseries{Features}}\+:
+
+
+\begin{DoxyEnumerate}
+\item Tuned for {\bfseries{performance}} (order of 0.\+1 to 1 μs per input)
+\item Handles both URLs and hostnames
+\item Full Unicode/\+IDNA support
+\item Support parsing email addresses
+\item Detect IPv4 and IPv6 addresses
+\item Continuously updated version of the public suffix list
+\item {\bfseries{Type\+Script}}, ships with {\ttfamily umd}, {\ttfamily esm}, {\ttfamily cjs} bundles and {\itshape type definitions}
+\item Small bundles and small memory footprint
+\item Battle tested\+: full test coverage and production use
+\end{DoxyEnumerate}\hypertarget{README.md_autotoc_md7706}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{README.md_autotoc_md7706}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ install\ -\/-\/save\ tldts}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7707}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md7707}
+Using the command-\/line interface\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npx\ tldts\ 'http://www.writethedocs.org/conf/eu/2017/'}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ "{}domain"{}:\ "{}writethedocs.org"{},}
+\DoxyCodeLine{\ \ "{}domainWithoutSuffix"{}:\ "{}writethedocs"{},}
+\DoxyCodeLine{\ \ "{}hostname"{}:\ "{}www.writethedocs.org"{},}
+\DoxyCodeLine{\ \ "{}isIcann"{}:\ true,}
+\DoxyCodeLine{\ \ "{}isIp"{}:\ false,}
+\DoxyCodeLine{\ \ "{}isPrivate"{}:\ false,}
+\DoxyCodeLine{\ \ "{}publicSuffix"{}:\ "{}org"{},}
+\DoxyCodeLine{\ \ "{}subdomain"{}:\ "{}www"{}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Programmatically\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ \{\ parse\ \}\ =\ require('tldts');}
+\DoxyCodeLine{}
+\DoxyCodeLine{//\ Retrieving\ hostname\ related\ informations\ of\ a\ given\ URL}
+\DoxyCodeLine{parse('http://www.writethedocs.org/conf/eu/2017/');}
+\DoxyCodeLine{//\ \{\ domain:\ 'writethedocs.org',}
+\DoxyCodeLine{//\ \ \ domainWithoutSuffix:\ 'writethedocs',}
+\DoxyCodeLine{//\ \ \ hostname:\ 'www.writethedocs.org',}
+\DoxyCodeLine{//\ \ \ isIcann:\ true,}
+\DoxyCodeLine{//\ \ \ isIp:\ false,}
+\DoxyCodeLine{//\ \ \ isPrivate:\ false,}
+\DoxyCodeLine{//\ \ \ publicSuffix:\ 'org',}
+\DoxyCodeLine{//\ \ \ subdomain:\ 'www'\ \}}
+
+\end{DoxyCode}
+
+
+Modern {\itshape ES6 modules import} is also supported\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{import\ \{\ parse\ \}\ from\ 'tldts';}
+
+\end{DoxyCode}
+
+
+Alternatively, you can try it {\itshape directly in your browser} here\+: \href{https://npm.runkit.com/tldts}{\texttt{https\+://npm.\+runkit.\+com/tldts}}\hypertarget{README.md_autotoc_md7708}{}\doxysubsection{\texorpdfstring{API}{API}}\label{README.md_autotoc_md7708}
+
+\begin{DoxyItemize}
+\item {\ttfamily tldts.\+parse(url \texorpdfstring{$\vert$}{|} hostname, options)}
+\item {\ttfamily tldts.\+get\+Hostname(url \texorpdfstring{$\vert$}{|} hostname, options)}
+\item {\ttfamily tldts.\+get\+Domain(url \texorpdfstring{$\vert$}{|} hostname, options)}
+\item {\ttfamily tldts.\+get\+Public\+Suffix(url \texorpdfstring{$\vert$}{|} hostname, options)}
+\item {\ttfamily tldts.\+get\+Subdomain(url, \texorpdfstring{$\vert$}{|} hostname, options)}
+\item {\ttfamily tldts.\+get\+Domain\+Without\+Suffix(url \texorpdfstring{$\vert$}{|} hostname, options)}
+\end{DoxyItemize}
+
+The behavior of {\ttfamily tldts} can be customized using an {\ttfamily options} argument for all the functions exposed as part of the public API. This is useful to both change the behavior of the library as well as fine-\/tune the performance depending on your inputs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ //\ Use\ suffixes\ from\ ICANN\ section\ (default:\ true)}
+\DoxyCodeLine{\ \ allowIcannDomains:\ boolean;}
+\DoxyCodeLine{\ \ //\ Use\ suffixes\ from\ Private\ section\ (default:\ false)}
+\DoxyCodeLine{\ \ allowPrivateDomains:\ boolean;}
+\DoxyCodeLine{\ \ //\ Extract\ and\ validate\ hostname\ (default:\ true)}
+\DoxyCodeLine{\ \ //\ When\ set\ to\ \`{}false`,\ inputs\ will\ be\ considered\ valid\ hostnames.}
+\DoxyCodeLine{\ \ extractHostname:\ boolean;}
+\DoxyCodeLine{\ \ //\ Validate\ hostnames\ after\ parsing\ (default:\ true)}
+\DoxyCodeLine{\ \ //\ If\ a\ hostname\ is\ not\ valid,\ not\ further\ processing\ is\ performed.\ When\ set}
+\DoxyCodeLine{\ \ //\ to\ \`{}false`,\ inputs\ to\ the\ library\ will\ be\ considered\ valid\ and\ parsing\ will}
+\DoxyCodeLine{\ \ //\ proceed\ regardless.}
+\DoxyCodeLine{\ \ validateHostname:\ boolean;}
+\DoxyCodeLine{\ \ //\ Perform\ IP\ address\ detection\ (default:\ true).}
+\DoxyCodeLine{\ \ detectIp:\ boolean;}
+\DoxyCodeLine{\ \ //\ Assume\ that\ both\ URLs\ and\ hostnames\ can\ be\ given\ as\ input\ (default:\ true)}
+\DoxyCodeLine{\ \ //\ If\ set\ to\ \`{}false`\ we\ assume\ only\ URLs\ will\ be\ given\ as\ input,\ which}
+\DoxyCodeLine{\ \ //\ speed-\/ups\ processing.}
+\DoxyCodeLine{\ \ mixedInputs:\ boolean;}
+\DoxyCodeLine{\ \ //\ Specifies\ extra\ valid\ suffixes\ (default:\ null)}
+\DoxyCodeLine{\ \ validHosts:\ string[]\ |\ null;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+The {\ttfamily parse} method returns handy {\bfseries{properties about a \doxylink{class_u_r_l}{URL} or a hostname}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ tldts\ =\ require('tldts');}
+\DoxyCodeLine{}
+\DoxyCodeLine{tldts.parse('https://spark-\/public.s3.amazonaws.com/dataanalysis/loansData.csv');}
+\DoxyCodeLine{//\ \{\ domain:\ 'amazonaws.com',}
+\DoxyCodeLine{//\ \ \ domainWithoutSuffix:\ 'amazonaws',}
+\DoxyCodeLine{//\ \ \ hostname:\ 'spark-\/public.s3.amazonaws.com',}
+\DoxyCodeLine{//\ \ \ isIcann:\ true,}
+\DoxyCodeLine{//\ \ \ isIp:\ false,}
+\DoxyCodeLine{//\ \ \ isPrivate:\ false,}
+\DoxyCodeLine{//\ \ \ publicSuffix:\ 'com',}
+\DoxyCodeLine{//\ \ \ subdomain:\ 'spark-\/public.s3'\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{tldts.parse(}
+\DoxyCodeLine{\ \ 'https://spark-\/public.s3.amazonaws.com/dataanalysis/loansData.csv',}
+\DoxyCodeLine{\ \ \{\ allowPrivateDomains:\ true\ \},}
+\DoxyCodeLine{);}
+\DoxyCodeLine{//\ \{\ domain:\ 'spark-\/public.s3.amazonaws.com',}
+\DoxyCodeLine{//\ \ \ domainWithoutSuffix:\ 'spark-\/public',}
+\DoxyCodeLine{//\ \ \ hostname:\ 'spark-\/public.s3.amazonaws.com',}
+\DoxyCodeLine{//\ \ \ isIcann:\ false,}
+\DoxyCodeLine{//\ \ \ isIp:\ false,}
+\DoxyCodeLine{//\ \ \ isPrivate:\ true,}
+\DoxyCodeLine{//\ \ \ publicSuffix:\ 's3.amazonaws.com',}
+\DoxyCodeLine{//\ \ \ subdomain:\ ''\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{tldts.parse('gopher://domain.unknown/');}
+\DoxyCodeLine{//\ \{\ domain:\ 'domain.unknown',}
+\DoxyCodeLine{//\ \ \ domainWithoutSuffix:\ 'domain',}
+\DoxyCodeLine{//\ \ \ hostname:\ 'domain.unknown',}
+\DoxyCodeLine{//\ \ \ isIcann:\ false,}
+\DoxyCodeLine{//\ \ \ isIp:\ false,}
+\DoxyCodeLine{//\ \ \ isPrivate:\ true,}
+\DoxyCodeLine{//\ \ \ publicSuffix:\ 'unknown',}
+\DoxyCodeLine{//\ \ \ subdomain:\ ''\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{tldts.parse('https://192.168.0.0');\ //\ IPv4}
+\DoxyCodeLine{//\ \{\ domain:\ null,}
+\DoxyCodeLine{//\ \ \ domainWithoutSuffix:\ null,}
+\DoxyCodeLine{//\ \ \ hostname:\ '192.168.0.0',}
+\DoxyCodeLine{//\ \ \ isIcann:\ null,}
+\DoxyCodeLine{//\ \ \ isIp:\ true,}
+\DoxyCodeLine{//\ \ \ isPrivate:\ null,}
+\DoxyCodeLine{//\ \ \ publicSuffix:\ null,}
+\DoxyCodeLine{//\ \ \ subdomain:\ null\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{tldts.parse('https://[::1]');\ //\ IPv6}
+\DoxyCodeLine{//\ \{\ domain:\ null,}
+\DoxyCodeLine{//\ \ \ domainWithoutSuffix:\ null,}
+\DoxyCodeLine{//\ \ \ hostname:\ '::1',}
+\DoxyCodeLine{//\ \ \ isIcann:\ null,}
+\DoxyCodeLine{//\ \ \ isIp:\ true,}
+\DoxyCodeLine{//\ \ \ isPrivate:\ null,}
+\DoxyCodeLine{//\ \ \ publicSuffix:\ null,}
+\DoxyCodeLine{//\ \ \ subdomain:\ null\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{tldts.parse('tldts@emailprovider.co.uk');\ //\ email}
+\DoxyCodeLine{//\ \{\ domain:\ 'emailprovider.co.uk',}
+\DoxyCodeLine{//\ \ \ domainWithoutSuffix:\ 'emailprovider',}
+\DoxyCodeLine{//\ \ \ hostname:\ 'emailprovider.co.uk',}
+\DoxyCodeLine{//\ \ \ isIcann:\ true,}
+\DoxyCodeLine{//\ \ \ isIp:\ false,}
+\DoxyCodeLine{//\ \ \ isPrivate:\ false,}
+\DoxyCodeLine{//\ \ \ publicSuffix:\ 'co.uk',}
+\DoxyCodeLine{//\ \ \ subdomain:\ ''\ \}}
+
+\end{DoxyCode}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Property Name  }&\cellcolor{\tableheadbgcolor}\textbf{ Type  }&\cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Property Name  }&\cellcolor{\tableheadbgcolor}\textbf{ Type  }&\cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endhead
+{\ttfamily hostname}  &{\ttfamily str}  &{\ttfamily hostname} of the input extracted automatically  \\\cline{1-3}
+{\ttfamily domain}  &{\ttfamily str}  &Domain (tld + sld)  \\\cline{1-3}
+{\ttfamily domain\+Without\+Suffix}  &{\ttfamily str}  &Domain without public suffix  \\\cline{1-3}
+{\ttfamily subdomain}  &{\ttfamily str}  &Sub domain (what comes after {\ttfamily domain})  \\\cline{1-3}
+{\ttfamily public\+Suffix}  &{\ttfamily str}  &Public Suffix (tld) of {\ttfamily hostname}  \\\cline{1-3}
+{\ttfamily is\+Icann}  &{\ttfamily bool}  &Does TLD come from ICANN part of the list  \\\cline{1-3}
+{\ttfamily is\+Private}  &{\ttfamily bool}  &Does TLD come from Private part of the list  \\\cline{1-3}
+{\ttfamily is\+IP}  &{\ttfamily bool}  &Is {\ttfamily hostname} an IP address?  \\\cline{1-3}
+\end{longtabu}
+\hypertarget{README.md_autotoc_md7709}{}\doxysubsubsection{\texorpdfstring{Single purpose methods}{Single purpose methods}}\label{README.md_autotoc_md7709}
+These methods are shorthands if you want to retrieve only a single value (and will perform better than {\ttfamily parse} because less work will be needed).\hypertarget{README.md_autotoc_md7710}{}\doxysubsubsubsection{\texorpdfstring{get\+Hostname(url \texorpdfstring{$\vert$}{|} hostname, options?)}{get\+Hostname(url \texorpdfstring{$\vert$}{|} hostname, options?)}}\label{README.md_autotoc_md7710}
+Returns the hostname from a given string.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ \{\ getHostname\ \}\ =\ require('tldts');}
+\DoxyCodeLine{}
+\DoxyCodeLine{getHostname('google.com');\ //\ returns\ \`{}google.com`}
+\DoxyCodeLine{getHostname('fr.google.com');\ //\ returns\ \`{}fr.google.com`}
+\DoxyCodeLine{getHostname('fr.google.google');\ //\ returns\ \`{}fr.google.google`}
+\DoxyCodeLine{getHostname('foo.google.co.uk');\ //\ returns\ \`{}foo.google.co.uk`}
+\DoxyCodeLine{getHostname('t.co');\ //\ returns\ \`{}t.co`}
+\DoxyCodeLine{getHostname('fr.t.co');\ //\ returns\ \`{}fr.t.co`}
+\DoxyCodeLine{getHostname(}
+\DoxyCodeLine{\ \ 'https://user:password@example.co.uk:8080/some/path?and\&query\#hash',}
+\DoxyCodeLine{);\ //\ returns\ \`{}example.co.uk`}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7711}{}\doxysubsubsubsection{\texorpdfstring{get\+Domain(url \texorpdfstring{$\vert$}{|} hostname, options?)}{get\+Domain(url \texorpdfstring{$\vert$}{|} hostname, options?)}}\label{README.md_autotoc_md7711}
+Returns the fully qualified domain from a given string.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ \{\ getDomain\ \}\ =\ require('tldts');}
+\DoxyCodeLine{}
+\DoxyCodeLine{getDomain('google.com');\ //\ returns\ \`{}google.com`}
+\DoxyCodeLine{getDomain('fr.google.com');\ //\ returns\ \`{}google.com`}
+\DoxyCodeLine{getDomain('fr.google.google');\ //\ returns\ \`{}google.google`}
+\DoxyCodeLine{getDomain('foo.google.co.uk');\ //\ returns\ \`{}google.co.uk`}
+\DoxyCodeLine{getDomain('t.co');\ //\ returns\ \`{}t.co`}
+\DoxyCodeLine{getDomain('fr.t.co');\ //\ returns\ \`{}t.co`}
+\DoxyCodeLine{getDomain('https://user:password@example.co.uk:8080/some/path?and\&query\#hash');\ //\ returns\ \`{}example.co.uk`}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7712}{}\doxysubsubsubsection{\texorpdfstring{get\+Domain\+Without\+Suffix(url \texorpdfstring{$\vert$}{|} hostname, options?)}{get\+Domain\+Without\+Suffix(url \texorpdfstring{$\vert$}{|} hostname, options?)}}\label{README.md_autotoc_md7712}
+Returns the domain (as returned by {\ttfamily get\+Domain(...)}) without the public suffix part.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ \{\ getDomainWithoutSuffix\ \}\ =\ require('tldts');}
+\DoxyCodeLine{}
+\DoxyCodeLine{getDomainWithoutSuffix('google.com');\ //\ returns\ \`{}google`}
+\DoxyCodeLine{getDomainWithoutSuffix('fr.google.com');\ //\ returns\ \`{}google`}
+\DoxyCodeLine{getDomainWithoutSuffix('fr.google.google');\ //\ returns\ \`{}google`}
+\DoxyCodeLine{getDomainWithoutSuffix('foo.google.co.uk');\ //\ returns\ \`{}google`}
+\DoxyCodeLine{getDomainWithoutSuffix('t.co');\ //\ returns\ \`{}t`}
+\DoxyCodeLine{getDomainWithoutSuffix('fr.t.co');\ //\ returns\ \`{}t`}
+\DoxyCodeLine{getDomainWithoutSuffix(}
+\DoxyCodeLine{\ \ 'https://user:password@example.co.uk:8080/some/path?and\&query\#hash',}
+\DoxyCodeLine{);\ //\ returns\ \`{}example`}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7713}{}\doxysubsubsubsection{\texorpdfstring{get\+Subdomain(url \texorpdfstring{$\vert$}{|} hostname, options?)}{get\+Subdomain(url \texorpdfstring{$\vert$}{|} hostname, options?)}}\label{README.md_autotoc_md7713}
+Returns the complete subdomain for a given string.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ \{\ getSubdomain\ \}\ =\ require('tldts');}
+\DoxyCodeLine{}
+\DoxyCodeLine{getSubdomain('google.com');\ //\ returns\ \`{}\`{}}
+\DoxyCodeLine{getSubdomain('fr.google.com');\ //\ returns\ \`{}fr`}
+\DoxyCodeLine{getSubdomain('google.co.uk');\ //\ returns\ \`{}\`{}}
+\DoxyCodeLine{getSubdomain('foo.google.co.uk');\ //\ returns\ \`{}foo`}
+\DoxyCodeLine{getSubdomain('moar.foo.google.co.uk');\ //\ returns\ \`{}moar.foo`}
+\DoxyCodeLine{getSubdomain('t.co');\ //\ returns\ \`{}\`{}}
+\DoxyCodeLine{getSubdomain('fr.t.co');\ //\ returns\ \`{}fr`}
+\DoxyCodeLine{getSubdomain(}
+\DoxyCodeLine{\ \ 'https://user:password@secure.example.co.uk:443/some/path?and\&query\#hash',}
+\DoxyCodeLine{);\ //\ returns\ \`{}secure`}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7714}{}\doxysubsubsubsection{\texorpdfstring{get\+Public\+Suffix(url \texorpdfstring{$\vert$}{|} hostname, options?)}{get\+Public\+Suffix(url \texorpdfstring{$\vert$}{|} hostname, options?)}}\label{README.md_autotoc_md7714}
+Returns the \href{https://publicsuffix.org/learn/}{\texttt{public suffix}} for a given string.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ \{\ getPublicSuffix\ \}\ =\ require('tldts');}
+\DoxyCodeLine{}
+\DoxyCodeLine{getPublicSuffix('google.com');\ //\ returns\ \`{}com`}
+\DoxyCodeLine{getPublicSuffix('fr.google.com');\ //\ returns\ \`{}com`}
+\DoxyCodeLine{getPublicSuffix('google.co.uk');\ //\ returns\ \`{}co.uk`}
+\DoxyCodeLine{getPublicSuffix('s3.amazonaws.com');\ //\ returns\ \`{}com`}
+\DoxyCodeLine{getPublicSuffix('s3.amazonaws.com',\ \{\ allowPrivateDomains:\ true\ \});\ //\ returns\ \`{}s3.amazonaws.com`}
+\DoxyCodeLine{getPublicSuffix('tld.is.unknown');\ //\ returns\ \`{}unknown`}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7715}{}\doxysubsection{\texorpdfstring{Troubleshooting}{Troubleshooting}}\label{README.md_autotoc_md7715}
+\hypertarget{README.md_autotoc_md7716}{}\doxysubsubsection{\texorpdfstring{Retrieving subdomain of {\ttfamily localhost} and custom hostnames}{Retrieving subdomain of {\ttfamily localhost} and custom hostnames}}\label{README.md_autotoc_md7716}
+{\ttfamily tldts} methods {\ttfamily get\+Domain} and {\ttfamily get\+Subdomain} are designed to {\bfseries{work only with {\itshape known and valid} TLDs}}. This way, you can trust what a domain is.
+
+{\ttfamily localhost} is a valid hostname but not a TLD. You can pass additional options to each method exposed by {\ttfamily tldts}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ tldts\ =\ require('tldts');}
+\DoxyCodeLine{}
+\DoxyCodeLine{tldts.getDomain('localhost');\ //\ returns\ null}
+\DoxyCodeLine{tldts.getSubdomain('vhost.localhost');\ //\ returns\ null}
+\DoxyCodeLine{}
+\DoxyCodeLine{tldts.getDomain('localhost',\ \{\ validHosts:\ ['localhost']\ \});\ //\ returns\ 'localhost'}
+\DoxyCodeLine{tldts.getSubdomain('vhost.localhost',\ \{\ validHosts:\ ['localhost']\ \});\ //\ returns\ 'vhost'}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7717}{}\doxysubsubsection{\texorpdfstring{Updating the TLDs List}{Updating the TLDs List}}\label{README.md_autotoc_md7717}
+{\ttfamily tldts} made the opinionated choice of shipping with a list of suffixes directly in its bundle. There is currently no mechanism to update the lists yourself, but we make sure that the version shipped is always up-\/to-\/date.
+
+If you keep {\ttfamily tldts} updated, the lists should be up-\/to-\/date as well!\hypertarget{README.md_autotoc_md7718}{}\doxysubsection{\texorpdfstring{Performance}{Performance}}\label{README.md_autotoc_md7718}
+{\ttfamily tldts} is the {\itshape fastest Java\+Script library} available for parsing hostnames. It is able to parse {\itshape millions of inputs per second} (typically 2-\/3M depending on your hardware and inputs). It also offers granular options to fine-\/tune the behavior and performance of the library depending on the kind of inputs you are dealing with (e.\+g.\+: if you know you only manipulate valid hostnames you can disable the hostname extraction step with {\ttfamily \{ extract\+Hostname\+: false \}}).
+
+Please see this detailed comparison with other available libraries.\hypertarget{README.md_autotoc_md7719}{}\doxysubsubsection{\texorpdfstring{Contributors}{Contributors}}\label{README.md_autotoc_md7719}
+{\ttfamily tldts} is based upon the excellent {\ttfamily tld.\+js} library and would not exist without the many contributors who worked on the project\+: \href{graphs/contributors}{\texttt{}}
+
+This project would not be possible without the amazing Mozilla\textquotesingle{}s \href{https://publicsuffix.org/list/}{\texttt{public suffix list}}. Thank you for your hard work!\hypertarget{README.md_autotoc_md7720}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md7720}
+\mbox{[}MIT License\mbox{]}(LICENSE). 

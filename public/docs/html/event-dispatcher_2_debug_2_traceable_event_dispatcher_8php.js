@@ -1,0 +1,4 @@
+var event_dispatcher_2_debug_2_traceable_event_dispatcher_8php =
+[
+    [ "TraceableEventDispatcher", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher.html", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher" ]
+];

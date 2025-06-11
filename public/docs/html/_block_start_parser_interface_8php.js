@@ -1,0 +1,4 @@
+var _block_start_parser_interface_8php =
+[
+    [ "BlockStartParserInterface", "interface_league_1_1_common_mark_1_1_parser_1_1_block_1_1_block_start_parser_interface.html", "interface_league_1_1_common_mark_1_1_parser_1_1_block_1_1_block_start_parser_interface" ]
+];

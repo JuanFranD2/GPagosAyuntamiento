@@ -1,0 +1,4 @@
+var _front_matter_provider_interface_8php =
+[
+    [ "FrontMatterProviderInterface", "interface_league_1_1_common_mark_1_1_extension_1_1_front_matter_1_1_front_matter_provider_interface.html", "interface_league_1_1_common_mark_1_1_extension_1_1_front_matter_1_1_front_matter_provider_interface" ]
+];

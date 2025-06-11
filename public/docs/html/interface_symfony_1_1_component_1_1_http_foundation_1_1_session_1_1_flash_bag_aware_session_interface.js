@@ -1,0 +1,4 @@
+var interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_flash_bag_aware_session_interface =
+[
+    [ "getFlashBag", "interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_flash_bag_aware_session_interface.html#ac010cfc527a5a7251798d16495c43859", null ]
+];

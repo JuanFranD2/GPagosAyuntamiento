@@ -1,0 +1,51 @@
+\doxysection{Instruction\+Processor Interface Reference}
+\hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_instruction_processor}{}\label{interface_masterminds_1_1_h_t_m_l5_1_1_instruction_processor}\index{InstructionProcessor@{InstructionProcessor}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_instruction_processor_affd5358ce9c52a3a2bbca266ac5a366c}{process}} (\textbackslash{}DOMElement \$element, \$name, \$data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provide an processor to handle embedded instructions.
+
+XML defines a mechanism for inserting instructions (like PHP) into a document. These are called "{}\+Processor Instructions."{} The HTML5 parser provides an opportunity to handle these processor instructions during the tree-\/building phase (before the DOM is constructed), which makes it possible to alter the document as it is being created.
+
+One could, for example, use this mechanism to execute well-\/formed PHP code embedded inside of an HTML5 document. 
+
+\label{doc-func-members}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_instruction_processor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_instruction_processor_affd5358ce9c52a3a2bbca266ac5a366c}\index{InstructionProcessor@{InstructionProcessor}!process@{process}}
+\index{process@{process}!InstructionProcessor@{InstructionProcessor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_instruction_processor_affd5358ce9c52a3a2bbca266ac5a366c} 
+process (\begin{DoxyParamCaption}\item[{\textbackslash{}DOMElement}]{\$element}{, }\item[{}]{\$name}{, }\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} an individual processing instruction.
+
+The process() function is responsible for doing the following\+:
+\begin{DoxyItemize}
+\item Determining whether \$name is an instruction type it can handle.
+\item Determining what to do with the data passed in.
+\item Making any subsequent modifications to the DOM by modifying the DOMElement or its attached DOM tree.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+DOMElement & {\em \$element} & The parent element for the current processing instruction. \\
+\hline
+string & {\em \$name} & The instruction\textquotesingle{}s name. E.\+g. {\ttfamily \&lt;?php} has the name {\ttfamily php}. \\
+\hline
+string & {\em \$data} & All of the data between the opening and closing PI marks.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+DOMElement The element that should be considered "{}\+Current"{}. This may just be the element passed in, but if the processor added more elements, it may choose to reset the current element to one of the elements it created. (When in doubt, return the element passed in.) 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\mbox{\hyperlink{_instruction_processor_8php}{Instruction\+Processor.\+php}}\end{DoxyCompactItemize}

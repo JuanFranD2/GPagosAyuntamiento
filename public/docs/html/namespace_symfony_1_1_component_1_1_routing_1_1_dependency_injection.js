@@ -1,0 +1,5 @@
+var namespace_symfony_1_1_component_1_1_routing_1_1_dependency_injection =
+[
+    [ "AddExpressionLanguageProvidersPass", "class_symfony_1_1_component_1_1_routing_1_1_dependency_injection_1_1_add_expression_language_providers_pass.html", "class_symfony_1_1_component_1_1_routing_1_1_dependency_injection_1_1_add_expression_language_providers_pass" ],
+    [ "RoutingResolverPass", "class_symfony_1_1_component_1_1_routing_1_1_dependency_injection_1_1_routing_resolver_pass.html", "class_symfony_1_1_component_1_1_routing_1_1_dependency_injection_1_1_routing_resolver_pass" ]
+];

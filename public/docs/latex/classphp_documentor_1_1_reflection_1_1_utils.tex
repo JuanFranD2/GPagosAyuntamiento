@@ -1,0 +1,46 @@
+\doxysection{Utils Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_utils}{}\label{classphp_documentor_1_1_reflection_1_1_utils}\index{Utils@{Utils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_utils_a03f09715efd93c1dcaa7a89ded577659}{preg\+Split}} (string \$pattern, string \$subject, int \$limit=-\/1, int \$flags=0)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_utils_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_utils_a03f09715efd93c1dcaa7a89ded577659}\index{Utils@{Utils}!pregSplit@{pregSplit}}
+\index{pregSplit@{pregSplit}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{pregSplit()}{pregSplit()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_utils_a03f09715efd93c1dcaa7a89ded577659} 
+preg\+Split (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wrapper function for phps preg\+\_\+split
+
+This function is inspired by {\ttfamily \doxylink{}{https\+://github.\+com/thecodingmachine/safe/blob/master/generated/pcre.\+php}}. But since this library is all about performance we decided to strip everything we don\textquotesingle{}t need. Reducing the amount of files that have to be loaded, etc.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & The pattern to search for, as a string. \\
+\hline
+string & {\em \$subject} & The input string. \\
+\hline
+int & {\em \$limit} & If specified, then only substrings up to limit are returned with the rest of the string being placed in the last substring. A limit of -\/1 or 0 means "{}no limit"{}. \\
+\hline
+int & {\em \$flags} & flags can be any combination of the following flags (combined with the \texorpdfstring{$\vert$}{|} bitwise operator)\+: {\itshape PREG\+\_\+\+SPLIT\+\_\+\+NO\+\_\+\+EMPTY} If this flag is set, only non-\/empty pieces will be returned by preg\+\_\+split(). {\itshape PREG\+\_\+\+SPLIT\+\_\+\+DELIM\+\_\+\+CAPTURE} If this flag is set, parenthesized expression in the delimiter pattern will be captured and returned as well. {\itshape PREG\+\_\+\+SPLIT\+\_\+\+OFFSET\+\_\+\+CAPTURE} If this flag is set, for every occurring match the appendant string offset will also be returned. Note that this changes the return value in an array where every element is an array consisting of the matched string at offset 0 and its string offset into subject at offset 1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} Returns an array containing substrings of subject split along boundaries matched by pattern
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Pcre\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock/src/\mbox{\hyperlink{phpdocumentor_2reflection-docblock_2src_2_utils_8php}{Utils.\+php}}\end{DoxyCompactItemize}

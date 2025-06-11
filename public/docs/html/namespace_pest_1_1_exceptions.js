@@ -1,0 +1,28 @@
+var namespace_pest_1_1_exceptions =
+[
+    [ "AfterAllAlreadyExist", "class_pest_1_1_exceptions_1_1_after_all_already_exist.html", "class_pest_1_1_exceptions_1_1_after_all_already_exist" ],
+    [ "AfterAllWithinDescribe", "class_pest_1_1_exceptions_1_1_after_all_within_describe.html", "class_pest_1_1_exceptions_1_1_after_all_within_describe" ],
+    [ "AfterBeforeTestFunction", "class_pest_1_1_exceptions_1_1_after_before_test_function.html", "class_pest_1_1_exceptions_1_1_after_before_test_function" ],
+    [ "BeforeAllAlreadyExist", "class_pest_1_1_exceptions_1_1_before_all_already_exist.html", "class_pest_1_1_exceptions_1_1_before_all_already_exist" ],
+    [ "BeforeAllWithinDescribe", "class_pest_1_1_exceptions_1_1_before_all_within_describe.html", "class_pest_1_1_exceptions_1_1_before_all_within_describe" ],
+    [ "DatasetAlreadyExists", "class_pest_1_1_exceptions_1_1_dataset_already_exists.html", "class_pest_1_1_exceptions_1_1_dataset_already_exists" ],
+    [ "DatasetArgumentsMismatch", "class_pest_1_1_exceptions_1_1_dataset_arguments_mismatch.html", "class_pest_1_1_exceptions_1_1_dataset_arguments_mismatch" ],
+    [ "DatasetDoesNotExist", "class_pest_1_1_exceptions_1_1_dataset_does_not_exist.html", "class_pest_1_1_exceptions_1_1_dataset_does_not_exist" ],
+    [ "DatasetMissing", "class_pest_1_1_exceptions_1_1_dataset_missing.html", "class_pest_1_1_exceptions_1_1_dataset_missing" ],
+    [ "ExpectationNotFound", "class_pest_1_1_exceptions_1_1_expectation_not_found.html", null ],
+    [ "FatalException", "class_pest_1_1_exceptions_1_1_fatal_exception.html", null ],
+    [ "FileOrFolderNotFound", "class_pest_1_1_exceptions_1_1_file_or_folder_not_found.html", "class_pest_1_1_exceptions_1_1_file_or_folder_not_found" ],
+    [ "InvalidArgumentException", "class_pest_1_1_exceptions_1_1_invalid_argument_exception.html", "class_pest_1_1_exceptions_1_1_invalid_argument_exception" ],
+    [ "InvalidExpectation", "class_pest_1_1_exceptions_1_1_invalid_expectation.html", null ],
+    [ "InvalidExpectationValue", "class_pest_1_1_exceptions_1_1_invalid_expectation_value.html", null ],
+    [ "InvalidOption", "class_pest_1_1_exceptions_1_1_invalid_option.html", "class_pest_1_1_exceptions_1_1_invalid_option" ],
+    [ "InvalidPestCommand", "class_pest_1_1_exceptions_1_1_invalid_pest_command.html", "class_pest_1_1_exceptions_1_1_invalid_pest_command" ],
+    [ "MissingDependency", "class_pest_1_1_exceptions_1_1_missing_dependency.html", "class_pest_1_1_exceptions_1_1_missing_dependency" ],
+    [ "NoDirtyTestsFound", "class_pest_1_1_exceptions_1_1_no_dirty_tests_found.html", "class_pest_1_1_exceptions_1_1_no_dirty_tests_found" ],
+    [ "ShouldNotHappen", "class_pest_1_1_exceptions_1_1_should_not_happen.html", "class_pest_1_1_exceptions_1_1_should_not_happen" ],
+    [ "TestAlreadyExist", "class_pest_1_1_exceptions_1_1_test_already_exist.html", "class_pest_1_1_exceptions_1_1_test_already_exist" ],
+    [ "TestCaseAlreadyInUse", "class_pest_1_1_exceptions_1_1_test_case_already_in_use.html", "class_pest_1_1_exceptions_1_1_test_case_already_in_use" ],
+    [ "TestCaseClassOrTraitNotFound", "class_pest_1_1_exceptions_1_1_test_case_class_or_trait_not_found.html", "class_pest_1_1_exceptions_1_1_test_case_class_or_trait_not_found" ],
+    [ "TestClosureMustNotBeStatic", "class_pest_1_1_exceptions_1_1_test_closure_must_not_be_static.html", "class_pest_1_1_exceptions_1_1_test_closure_must_not_be_static" ],
+    [ "TestDescriptionMissing", "class_pest_1_1_exceptions_1_1_test_description_missing.html", "class_pest_1_1_exceptions_1_1_test_description_missing" ]
+];

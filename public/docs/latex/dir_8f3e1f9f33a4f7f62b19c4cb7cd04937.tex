@@ -1,0 +1,125 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpstan/phpdoc-\/parser Directory Reference}
+\hypertarget{dir_8f3e1f9f33a4f7f62b19c4cb7cd04937}{}\label{dir_8f3e1f9f33a4f7f62b19c4cb7cd04937}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/phpstan/phpdoc-\/parser Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/phpstan/phpdoc-\/parser Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_9fcae115b06f7bd0b2d0c95dd616df83}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxysubsection*{PHPDoc Parser for PHPStan}
+
+
+
+\href{https://github.com/phpstan/phpdoc-parser/actions}{\texttt{}} \href{https://packagist.org/packages/phpstan/phpdoc-parser}{\texttt{}} \href{https://choosealicense.com/licenses/mit/}{\texttt{}} \href{https://phpstan.org/}{\texttt{}} 
+
+This library {\ttfamily phpstan/phpdoc-\/parser} represents PHPDocs with an AST (Abstract Syntax Tree). It supports parsing and modifying PHPDocs.
+
+For the complete list of supported PHPDoc features check out PHPStan documentation. PHPStan is the main (but not the only) user of this library.
+
+
+\begin{DoxyItemize}
+\item \href{https://phpstan.org/writing-php-code/phpdocs-basics}{\texttt{PHPDoc Basics}} (list of PHPDoc tags)
+\item \href{https://phpstan.org/writing-php-code/phpdoc-types}{\texttt{PHPDoc Types}} (list of PHPDoc types)
+\item \href{https://phpstan.github.io/phpdoc-parser/2.1.x/namespace-PHPStan.PhpDocParser.html}{\texttt{phpdoc-\/parser API Reference}} with all the AST node types etc.
+\end{DoxyItemize}
+
+This parser also supports parsing \href{https://github.com/doctrine/annotations}{\texttt{Doctrine Annotations}}. The AST nodes live in the \href{https://phpstan.github.io/phpdoc-parser/2.1.x/namespace-PHPStan.PhpDocParser.Ast.PhpDoc.Doctrine.html}{\texttt{PHPStan\textbackslash{}\+Php\+Doc\+Parser\textbackslash{}\+Ast\textbackslash{}\+Php\+Doc\textbackslash{}\+Doctrine namespace}}.\hypertarget{README.md_autotoc_md10128}{}\doxysubsubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md10128}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ phpstan/phpdoc-\/parser}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10129}{}\doxysubsubsection{\texorpdfstring{Basic usage}{Basic usage}}\label{README.md_autotoc_md10129}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{require\_once\ \_\_DIR\_\_\ .\ \textcolor{stringliteral}{'/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_php_doc_1_1_param_tag_value_node}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Ast\(\backslash\)PhpDoc\(\backslash\)ParamTagValueNode}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_php_doc_1_1_php_doc_node}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Ast\(\backslash\)PhpDoc\(\backslash\)PhpDocNode}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_type_1_1_identifier_type_node}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Ast\(\backslash\)Type\(\backslash\)IdentifierTypeNode}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Lexer\(\backslash\)Lexer}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_config}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)ParserConfig}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_const_expr_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)ConstExprParser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_php_doc_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)PhpDocParser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)TokenIterator}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)TypeParser}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ basic\ setup}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}}\ =\ \textcolor{keyword}{new}\ ParserConfig(usedAttributes:\ []);}
+\DoxyCodeLine{\$lexer\ =\ \textcolor{keyword}{new}\ Lexer(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}});}
+\DoxyCodeLine{\$constExprParser\ =\ \textcolor{keyword}{new}\ ConstExprParser(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}});}
+\DoxyCodeLine{\$typeParser\ =\ \textcolor{keyword}{new}\ TypeParser(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}},\ \$constExprParser);}
+\DoxyCodeLine{\$phpDocParser\ =\ \textcolor{keyword}{new}\ PhpDocParser(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}},\ \$typeParser,\ \$constExprParser);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ parsing\ and\ reading\ a\ PHPDoc\ string}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$tokens\ =\ \textcolor{keyword}{new}\ TokenIterator(\$lexer-\/>tokenize(\textcolor{stringliteral}{'/**\ @param\ Lorem\ \$a\ */'}));}
+\DoxyCodeLine{\$phpDocNode\ =\ \$phpDocParser-\/>parse(\$tokens);\ \textcolor{comment}{//\ PhpDocNode}}
+\DoxyCodeLine{\$paramTags\ =\ \$phpDocNode-\/>getParamTagValues();\ \textcolor{comment}{//\ ParamTagValueNode[]}}
+\DoxyCodeLine{echo\ \$paramTags[0]-\/>parameterName;\ \textcolor{comment}{//\ '\$a'}}
+\DoxyCodeLine{echo\ \$paramTags[0]-\/>type;\ \textcolor{comment}{//\ IdentifierTypeNode\ -\/\ 'Lorem'}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10130}{}\doxysubsubsubsection{\texorpdfstring{Format-\/preserving printer}{Format-\/preserving printer}}\label{README.md_autotoc_md10130}
+This component can be used to modify the AST and print it again as close as possible to the original.
+
+It\textquotesingle{}s heavily inspired by format-\/preserving printer component in \href{https://github.com/nikic/PHP-Parser}{\texttt{nikic/\+PHP-\/\+Parser}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{require\_once\ \_\_DIR\_\_\ .\ \textcolor{stringliteral}{'/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Ast\(\backslash\)NodeTraverser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_visitor_1_1_cloning_visitor}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Ast\(\backslash\)NodeVisitor\(\backslash\)CloningVisitor}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_php_doc_1_1_php_doc_node}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Ast\(\backslash\)PhpDoc\(\backslash\)PhpDocNode}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_type_1_1_identifier_type_node}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Ast\(\backslash\)Type\(\backslash\)IdentifierTypeNode}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Lexer\(\backslash\)Lexer}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_config}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)ParserConfig}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_const_expr_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)ConstExprParser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_php_doc_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)PhpDocParser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)TokenIterator}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)TypeParser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_printer_1_1_printer}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Printer\(\backslash\)Printer}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ basic\ setup\ with\ enabled\ required\ lexer\ attributes}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}}\ =\ \textcolor{keyword}{new}\ ParserConfig(usedAttributes:\ [\textcolor{stringliteral}{'lines'}\ =>\ \textcolor{keyword}{true},\ \textcolor{stringliteral}{'indexes'}\ =>\ \textcolor{keyword}{true},\ \textcolor{stringliteral}{'comments'}\ =>\ \textcolor{keyword}{true}]);}
+\DoxyCodeLine{\$lexer\ =\ \textcolor{keyword}{new}\ Lexer(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}});}
+\DoxyCodeLine{\$constExprParser\ =\ \textcolor{keyword}{new}\ ConstExprParser(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}});}
+\DoxyCodeLine{\$typeParser\ =\ \textcolor{keyword}{new}\ TypeParser(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}},\ \$constExprParser);}
+\DoxyCodeLine{\$phpDocParser\ =\ \textcolor{keyword}{new}\ PhpDocParser(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}},\ \$typeParser,\ \$constExprParser);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$tokens\ =\ \textcolor{keyword}{new}\ TokenIterator(\$lexer-\/>tokenize(\textcolor{stringliteral}{'/**\ @param\ Lorem\ \$a\ */'}));}
+\DoxyCodeLine{\$phpDocNode\ =\ \$phpDocParser-\/>parse(\$tokens);\ \textcolor{comment}{//\ PhpDocNode}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$cloningTraverser\ =\ \textcolor{keyword}{new}\ NodeTraverser([\textcolor{keyword}{new}\ CloningVisitor()]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{[\$newPhpDocNode]\ =\ \$cloningTraverser-\/>traverse([\$phpDocNode]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ change\ something\ in\ \$newPhpDocNode}}
+\DoxyCodeLine{\$newPhpDocNode-\/>getParamTagValues()[0]-\/>type\ =\ \textcolor{keyword}{new}\ IdentifierTypeNode(\textcolor{stringliteral}{'Ipsum'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ print\ changed\ PHPDoc}}
+\DoxyCodeLine{\$printer\ =\ \textcolor{keyword}{new}\ Printer();}
+\DoxyCodeLine{\$newPhpDoc\ =\ \$printer-\/>printFormatPreserving(\$newPhpDocNode,\ \$phpDocNode,\ \$tokens);}
+\DoxyCodeLine{echo\ \$newPhpDoc;\ \textcolor{comment}{//\ '/**\ @param\ Ipsum\ \$a\ */'}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10131}{}\doxysubsubsection{\texorpdfstring{Code of Conduct}{Code of Conduct}}\label{README.md_autotoc_md10131}
+This project adheres to a \doxylink{tw-elements_2_c_o_d_e___o_f___c_o_n_d_u_c_t_8md}{Contributor Code of Conduct}. By participating in this project and its community, you are expected to uphold this code.\hypertarget{README.md_autotoc_md10132}{}\doxysubsubsection{\texorpdfstring{Building}{Building}}\label{README.md_autotoc_md10132}
+Initially you need to run {\ttfamily composer install}, or {\ttfamily composer update} in case you aren\textquotesingle{}t working in a folder which was built before.
+
+Afterwards you can either run the whole build including linting and coding standards using \begin{DoxyVerb}make
+\end{DoxyVerb}
+
+
+or run only tests using \begin{DoxyVerb}make tests
+\end{DoxyVerb}
+ 

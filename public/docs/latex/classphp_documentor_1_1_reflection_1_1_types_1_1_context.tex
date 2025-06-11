@@ -1,0 +1,72 @@
+\doxysection{Context Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_context}{}\label{classphp_documentor_1_1_reflection_1_1_types_1_1_context}\index{Context@{Context}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context_a87d65f8f81498505604e950bda2ed1b5}{\+\_\+\+\_\+construct}} (string \$namespace, array \$namespace\+Aliases=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context_a2614df64646ac71b70b1e1074258052b}{get\+Namespace}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_context_a71755ccbbbe1fb3ccd7446448d8e2e04}{get\+Namespace\+Aliases}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides information about the \doxylink{class_context}{Context} in which the Doc\+Block occurs that receives this context.
+
+A Doc\+Block does not know of its own accord in which namespace it occurs and which namespace aliases are applicable for the block of code in which it is in. This information is however necessary to resolve Class names in tags since you can provide a short form or make use of namespace aliases.
+
+The php\+Documentor Reflection component knows how to create this class but if you use the Doc\+Block parser from your own application it is possible to generate a \doxylink{class_context}{Context} class using the Context\+Factory; this will analyze the file in which an associated class resides for its namespace and imports.
+
+\begin{DoxySeeAlso}{See also}
+Context\+Factory\+::create\+From\+Class\+Reflector() 
+
+Context\+Factory\+::create\+For\+Namespace()
+\end{DoxySeeAlso}
+@psalm-\/immutable 
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_context_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_context_a87d65f8f81498505604e950bda2ed1b5}\index{Context@{Context}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Context@{Context}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_context_a87d65f8f81498505604e950bda2ed1b5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$namespace}{, }\item[{array}]{\$namespace\+Aliases}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Initializes the new context and normalizes all passed namespaces to be in Qualified Namespace Name (QNN) format (without a preceding {\ttfamily \textbackslash{}}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & The namespace where this Doc\+Block resides in. \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$namespace\+Aliases} & List of namespace aliases =\texorpdfstring{$>$}{>} Fully Qualified Namespace. @psalm-\/param array$<$string, string$>$ \$namespace\+Aliases \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_context_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_context_a2614df64646ac71b70b1e1074258052b}\index{Context@{Context}!getNamespace@{getNamespace}}
+\index{getNamespace@{getNamespace}!Context@{Context}}
+\doxysubsubsection{\texorpdfstring{getNamespace()}{getNamespace()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_context_a2614df64646ac71b70b1e1074258052b} 
+get\+Namespace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the Qualified Namespace Name (thus without {\ttfamily \textbackslash{}} in front) where the associated element is in. \Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_context_a71755ccbbbe1fb3ccd7446448d8e2e04}\index{Context@{Context}!getNamespaceAliases@{getNamespaceAliases}}
+\index{getNamespaceAliases@{getNamespaceAliases}!Context@{Context}}
+\doxysubsubsection{\texorpdfstring{getNamespaceAliases()}{getNamespaceAliases()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_context_a71755ccbbbe1fb3ccd7446448d8e2e04} 
+get\+Namespace\+Aliases (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a list of Qualified Namespace Names (thus without {\ttfamily \textbackslash{}} in front) that are imported, the keys represent the alias for the imported Namespace.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} @psalm-\/return array$<$string, string$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/type-\/resolver/src/\+Types/\mbox{\hyperlink{phpdocumentor_2type-resolver_2src_2_types_2_context_8php}{Context.\+php}}\end{DoxyCompactItemize}

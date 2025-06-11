@@ -1,0 +1,257 @@
+\doxysection{Event\+Service\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider}{}\label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider}\index{EventServiceProvider@{EventServiceProvider}}
+Inheritance diagram for Event\+Service\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a8814ea4b5beba763c570b4818980814e}{boot}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_af85621a017576b8cac0f2c4e9f809296}{listens}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a54ecee00f83d387598096653b07f10c5}{get\+Events}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a364bb57fa3279a24dbf7090e064a5ade}{should\+Discover\+Events}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_aae603aee922beb88ad4328ef12373325}{discover\+Events}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a86942f92d09d8331f12f85a664a83b7f}{add\+Event\+Discovery\+Paths}} (array\texorpdfstring{$\vert$}{|}string \$paths)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a2ea601217a1740e07840661b59dec563}{set\+Event\+Discovery\+Paths}} (array \$paths)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a5973f1d7e8f292a09d4d2f6a91a68602}{disable\+Event\+Discovery}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_af1699e873c7efa9316440b8be4a387fa}{discovered\+Events}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a63c6698f359655d0289d6b1ad160bbf4}{discover\+Events\+Within}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a9f3a0975080fe24e8ed462812811afa0}{event\+Discovery\+Base\+Path}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a37ab8f5b202dddbec44c7bd1d503f4f4}{configure\+Email\+Verification}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_abdfd4689e0597f0b6c63b970c101e810}{\$listen}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a9a8721814ce811e56d4e0a7ca08fffca}{\$subscribe}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a0ed57b12acd2e13b148c558ea8cf9262}{\$observers}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_add0ab9c2d1d61da60661273bdced2e7d}{\$should\+Discover\+Events}} = true
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a6209ba2900f782a93c06cbd683b7758a}{\$event\+Discovery\+Paths}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a86942f92d09d8331f12f85a664a83b7f}\index{EventServiceProvider@{EventServiceProvider}!addEventDiscoveryPaths@{addEventDiscoveryPaths}}
+\index{addEventDiscoveryPaths@{addEventDiscoveryPaths}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{addEventDiscoveryPaths()}{addEventDiscoveryPaths()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a86942f92d09d8331f12f85a664a83b7f} 
+add\+Event\+Discovery\+Paths (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Add the given event discovery paths to the application\textquotesingle{}s event discovery paths.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$paths} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a8814ea4b5beba763c570b4818980814e}\index{EventServiceProvider@{EventServiceProvider}!boot@{boot}}
+\index{boot@{boot}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{boot()}{boot()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a8814ea4b5beba763c570b4818980814e} 
+boot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Boot any application services.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a37ab8f5b202dddbec44c7bd1d503f4f4}\index{EventServiceProvider@{EventServiceProvider}!configureEmailVerification@{configureEmailVerification}}
+\index{configureEmailVerification@{configureEmailVerification}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{configureEmailVerification()}{configureEmailVerification()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a37ab8f5b202dddbec44c7bd1d503f4f4} 
+configure\+Email\+Verification (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Configure the proper event listeners for email verification.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a5973f1d7e8f292a09d4d2f6a91a68602}\index{EventServiceProvider@{EventServiceProvider}!disableEventDiscovery@{disableEventDiscovery}}
+\index{disableEventDiscovery@{disableEventDiscovery}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{disableEventDiscovery()}{disableEventDiscovery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a5973f1d7e8f292a09d4d2f6a91a68602} 
+disable\+Event\+Discovery (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Disable event discovery for the application.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_af1699e873c7efa9316440b8be4a387fa}\index{EventServiceProvider@{EventServiceProvider}!discoveredEvents@{discoveredEvents}}
+\index{discoveredEvents@{discoveredEvents}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{discoveredEvents()}{discoveredEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_af1699e873c7efa9316440b8be4a387fa} 
+discovered\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the discovered events for the application.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_aae603aee922beb88ad4328ef12373325}\index{EventServiceProvider@{EventServiceProvider}!discoverEvents@{discoverEvents}}
+\index{discoverEvents@{discoverEvents}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{discoverEvents()}{discoverEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_aae603aee922beb88ad4328ef12373325} 
+discover\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Discover the events and listeners for the application.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a63c6698f359655d0289d6b1ad160bbf4}\index{EventServiceProvider@{EventServiceProvider}!discoverEventsWithin@{discoverEventsWithin}}
+\index{discoverEventsWithin@{discoverEventsWithin}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{discoverEventsWithin()}{discoverEventsWithin()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a63c6698f359655d0289d6b1ad160bbf4} 
+discover\+Events\+Within (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the listener directories that should be used to discover events.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a9f3a0975080fe24e8ed462812811afa0}\index{EventServiceProvider@{EventServiceProvider}!eventDiscoveryBasePath@{eventDiscoveryBasePath}}
+\index{eventDiscoveryBasePath@{eventDiscoveryBasePath}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{eventDiscoveryBasePath()}{eventDiscoveryBasePath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a9f3a0975080fe24e8ed462812811afa0} 
+event\+Discovery\+Base\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the base path to be used during event discovery.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a54ecee00f83d387598096653b07f10c5}\index{EventServiceProvider@{EventServiceProvider}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a54ecee00f83d387598096653b07f10c5} 
+get\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the discovered events and listeners for the application.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_af85621a017576b8cac0f2c4e9f809296}\index{EventServiceProvider@{EventServiceProvider}!listens@{listens}}
+\index{listens@{listens}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{listens()}{listens()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_af85621a017576b8cac0f2c4e9f809296} 
+listens (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the events and handlers.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_acc294a6cc8e69743746820e3d15e3f78}\index{EventServiceProvider@{EventServiceProvider}!register@{register}}
+\index{register@{register}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_acc294a6cc8e69743746820e3d15e3f78} 
+register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the application\textquotesingle{}s event listeners.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a2ea601217a1740e07840661b59dec563}\index{EventServiceProvider@{EventServiceProvider}!setEventDiscoveryPaths@{setEventDiscoveryPaths}}
+\index{setEventDiscoveryPaths@{setEventDiscoveryPaths}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{setEventDiscoveryPaths()}{setEventDiscoveryPaths()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a2ea601217a1740e07840661b59dec563} 
+set\+Event\+Discovery\+Paths (\begin{DoxyParamCaption}\item[{array}]{\$paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set the globally configured event discovery paths.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$paths} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a364bb57fa3279a24dbf7090e064a5ade}\index{EventServiceProvider@{EventServiceProvider}!shouldDiscoverEvents@{shouldDiscoverEvents}}
+\index{shouldDiscoverEvents@{shouldDiscoverEvents}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{shouldDiscoverEvents()}{shouldDiscoverEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a364bb57fa3279a24dbf7090e064a5ade} 
+should\+Discover\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if events and listeners should be automatically discovered.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a6209ba2900f782a93c06cbd683b7758a}\index{EventServiceProvider@{EventServiceProvider}!\$eventDiscoveryPaths@{\$eventDiscoveryPaths}}
+\index{\$eventDiscoveryPaths@{\$eventDiscoveryPaths}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$eventDiscoveryPaths}{\$eventDiscoveryPaths}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a6209ba2900f782a93c06cbd683b7758a} 
+\$event\+Discovery\+Paths\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_abdfd4689e0597f0b6c63b970c101e810}\index{EventServiceProvider@{EventServiceProvider}!\$listen@{\$listen}}
+\index{\$listen@{\$listen}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$listen}{\$listen}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_abdfd4689e0597f0b6c63b970c101e810} 
+\$listen = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a0ed57b12acd2e13b148c558ea8cf9262}\index{EventServiceProvider@{EventServiceProvider}!\$observers@{\$observers}}
+\index{\$observers@{\$observers}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$observers}{\$observers}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a0ed57b12acd2e13b148c558ea8cf9262} 
+\$observers = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_add0ab9c2d1d61da60661273bdced2e7d}\index{EventServiceProvider@{EventServiceProvider}!\$shouldDiscoverEvents@{\$shouldDiscoverEvents}}
+\index{\$shouldDiscoverEvents@{\$shouldDiscoverEvents}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$shouldDiscoverEvents}{\$shouldDiscoverEvents}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_add0ab9c2d1d61da60661273bdced2e7d} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a364bb57fa3279a24dbf7090e064a5ade}{should\+Discover\+Events}} = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a9a8721814ce811e56d4e0a7ca08fffca}\index{EventServiceProvider@{EventServiceProvider}!\$subscribe@{\$subscribe}}
+\index{\$subscribe@{\$subscribe}!EventServiceProvider@{EventServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$subscribe}{\$subscribe}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_support_1_1_providers_1_1_event_service_provider_a9a8721814ce811e56d4e0a7ca08fffca} 
+\$subscribe = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Support/\+Providers/\mbox{\hyperlink{_foundation_2_support_2_providers_2_event_service_provider_8php}{Event\+Service\+Provider.\+php}}\end{DoxyCompactItemize}

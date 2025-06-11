@@ -1,0 +1,547 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Concerns Namespace Reference}
+\hypertarget{namespace_illuminate_1_1_database_1_1_concerns}{}\label{namespace_illuminate_1_1_database_1_1_concerns}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a2f69b852143529f0c599dc6a7f2c983c}{chunk}} (\$count, callable \$callback)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a501fc9570ddf5836e1561fb33c4cfba0}{chunk\+Map}} (callable \$callback, \$count=1000)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_ac5bdddcb80753e4058205f3d67cc9bd2}{each}} (callable \$callback, \$count=1000)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a0419d82809c8385f3a60d9de797b1701}{chunk\+By\+Id}} (\$count, callable \$callback, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_ac96dc057e52e2a3bd10982959a8a81fa}{chunk\+By\+Id\+Desc}} (\$count, callable \$callback, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a1cfd2dc088d176be595820471886ae7c}{ordered\+Chunk\+By\+Id}} (\$count, callable \$callback, \$column=null, \$alias=null, \$descending=false)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_ab0fc19897d93b1638721beb5b0b73084}{each\+By\+Id}} (callable \$callback, \$count=1000, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a829ed29a7040ada9255bd922ed60f2c7}{lazy}} (\$chunk\+Size=1000)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a453f4d19efd72b43a3e851507dc87ed3}{lazy\+By\+Id}} (\$chunk\+Size=1000, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a289cbed30642bee8c71d1af09dda3843}{lazy\+By\+Id\+Desc}} (\$chunk\+Size=1000, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a45ef1b30c413be6187dadba68905a021}{ordered\+Lazy\+By\+Id}} (\$chunk\+Size=1000, \$column=null, \$alias=null, \$descending=false)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a1237563aedbde148c7c54f9b4141856d}{first}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a9f81fd574d046e51af62d80b320bca1e}{first\+Or\+Fail}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, \$message=null)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_aed257c71fd25561097fe13a66c0a8660}{sole}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_aa652604b61cc24235bacc4d7d66dfbb3}{paginate\+Using\+Cursor}} (\$per\+Page, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, \$cursor\+Name=\textquotesingle{}cursor\textquotesingle{}, \$cursor=null)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a362863783b0c0d3efa6fdfe772b0e803}{get\+Original\+Column\+Name\+For\+Cursor\+Pagination}} (\$builder, string \$parameter)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a7aa9f6876430857eb83b841f64c93bf8}{paginator}} (\$items, \$total, \$per\+Page, \$current\+Page, \$options)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_af5af8795f70210173c997e0186367fd5}{simple\+Paginator}} (\$items, \$per\+Page, \$current\+Page, \$options)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a7a225867010d193f4abd930f77b53a1e}{cursor\+Paginator}} (\$items, \$per\+Page, \$cursor, \$options)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a44730c3ed702baf07d0d420c35c44e51}{tap}} (\$callback)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_ac3d1db786cc6e8f2ff16b4b00d0e2a31}{pipe}} (\$callback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+trait \mbox{\hyperlink{namespace_illuminate_1_1_database_1_1_concerns_a9fdf36dc0a6376ddd58348e7f31b809f}{Builds\+Queries}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a2f69b852143529f0c599dc6a7f2c983c}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!chunk@{chunk}}
+\index{chunk@{chunk}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{chunk()}{chunk()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a2f69b852143529f0c599dc6a7f2c983c} 
+chunk (\begin{DoxyParamCaption}\item[{}]{\$count}{, }\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Chunk the results of the query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+ & {\em callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TValue\texorpdfstring{$>$}{>}, int)\+: mixed \$callback \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a0419d82809c8385f3a60d9de797b1701}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!chunkById@{chunkById}}
+\index{chunkById@{chunkById}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{chunkById()}{chunkById()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a0419d82809c8385f3a60d9de797b1701} 
+chunk\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$count}{, }\item[{callable}]{\$callback}{, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Chunk the results of a query by comparing IDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+ & {\em callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TValue\texorpdfstring{$>$}{>}, int)\+: mixed \$callback 
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_ac96dc057e52e2a3bd10982959a8a81fa}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!chunkByIdDesc@{chunkByIdDesc}}
+\index{chunkByIdDesc@{chunkByIdDesc}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{chunkByIdDesc()}{chunkByIdDesc()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_ac96dc057e52e2a3bd10982959a8a81fa} 
+chunk\+By\+Id\+Desc (\begin{DoxyParamCaption}\item[{}]{\$count}{, }\item[{callable}]{\$callback}{, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Chunk the results of a query by comparing IDs in descending order.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+ & {\em callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TValue\texorpdfstring{$>$}{>}, int)\+: mixed \$callback 
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a501fc9570ddf5836e1561fb33c4cfba0}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!chunkMap@{chunkMap}}
+\index{chunkMap@{chunkMap}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{chunkMap()}{chunkMap()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a501fc9570ddf5836e1561fb33c4cfba0} 
+chunk\+Map (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{, }\item[{}]{\$count}{ = {\ttfamily 1000}}\end{DoxyParamCaption})}
+
+Run a map over each item while chunking.
+
+@template TReturn
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em callable(\+TValue)} & TReturn \$callback \\
+\hline
+int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TReturn\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a7a225867010d193f4abd930f77b53a1e}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!cursorPaginator@{cursorPaginator}}
+\index{cursorPaginator@{cursorPaginator}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{cursorPaginator()}{cursorPaginator()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a7a225867010d193f4abd930f77b53a1e} 
+cursor\+Paginator (\begin{DoxyParamCaption}\item[{}]{\$items}{, }\item[{}]{\$per\+Page}{, }\item[{}]{\$cursor}{, }\item[{}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new cursor paginator instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$items} & \\
+\hline
+int & {\em \$per\+Page} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Pagination\textbackslash{}\+Cursor & {\em \$cursor} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Pagination\textbackslash{}\+Cursor\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_ac5bdddcb80753e4058205f3d67cc9bd2}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!each@{each}}
+\index{each@{each}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_ac5bdddcb80753e4058205f3d67cc9bd2} 
+each (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{, }\item[{}]{\$count}{ = {\ttfamily 1000}}\end{DoxyParamCaption})}
+
+Execute a callback over each item while chunking.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em callable(\+TValue,int)} & mixed \$callback \\
+\hline
+int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_ab0fc19897d93b1638721beb5b0b73084}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!eachById@{eachById}}
+\index{eachById@{eachById}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{eachById()}{eachById()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_ab0fc19897d93b1638721beb5b0b73084} 
+each\+By\+Id (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{, }\item[{}]{\$count}{ = {\ttfamily 1000}, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Execute a callback over each item while chunking by ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em callable(\+TValue,int)} & mixed \$callback \\
+\hline
+int & {\em \$count} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a1237563aedbde148c7c54f9b4141856d}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!first@{first}}
+\index{first@{first}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a1237563aedbde148c7c54f9b4141856d} 
+first (\begin{DoxyParamCaption}\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Execute the query and get the first result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TValue\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a9f81fd574d046e51af62d80b320bca1e}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!firstOrFail@{firstOrFail}}
+\index{firstOrFail@{firstOrFail}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{firstOrFail()}{firstOrFail()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a9f81fd574d046e51af62d80b320bca1e} 
+first\+Or\+Fail (\begin{DoxyParamCaption}\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}, }\item[{}]{\$message}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Execute the query and get the first result or throw an exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$columns} & \\
+\hline
+string | null & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TValue
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Record\+Not\+Found\+Exception \Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a362863783b0c0d3efa6fdfe772b0e803}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!getOriginalColumnNameForCursorPagination@{getOriginalColumnNameForCursorPagination}}
+\index{getOriginalColumnNameForCursorPagination@{getOriginalColumnNameForCursorPagination}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{getOriginalColumnNameForCursorPagination()}{getOriginalColumnNameForCursorPagination()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a362863783b0c0d3efa6fdfe772b0e803} 
+get\+Original\+Column\+Name\+For\+Cursor\+Pagination (\begin{DoxyParamCaption}\item[{}]{\$builder}{, }\item[{string}]{\$parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the original column name of the given column, without any aliasing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder\texorpdfstring{$\vert$}{|}\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>} \$builder 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$parameter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a829ed29a7040ada9255bd922ed60f2c7}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!lazy@{lazy}}
+\index{lazy@{lazy}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{lazy()}{lazy()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a829ed29a7040ada9255bd922ed60f2c7} 
+lazy (\begin{DoxyParamCaption}\item[{}]{\$chunk\+Size}{ = {\ttfamily 1000}}\end{DoxyParamCaption})}
+
+Query lazily, by chunks of the given size.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$chunk\+Size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection\texorpdfstring{$<$}{<}int, TValue\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a453f4d19efd72b43a3e851507dc87ed3}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!lazyById@{lazyById}}
+\index{lazyById@{lazyById}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{lazyById()}{lazyById()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a453f4d19efd72b43a3e851507dc87ed3} 
+lazy\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$chunk\+Size}{ = {\ttfamily 1000}, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Query lazily, by chunking the results of a query by comparing IDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$chunk\+Size} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection\texorpdfstring{$<$}{<}int, TValue\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a289cbed30642bee8c71d1af09dda3843}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!lazyByIdDesc@{lazyByIdDesc}}
+\index{lazyByIdDesc@{lazyByIdDesc}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{lazyByIdDesc()}{lazyByIdDesc()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a289cbed30642bee8c71d1af09dda3843} 
+lazy\+By\+Id\+Desc (\begin{DoxyParamCaption}\item[{}]{\$chunk\+Size}{ = {\ttfamily 1000}, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Query lazily, by chunking the results of a query by comparing IDs in descending order.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$chunk\+Size} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection\texorpdfstring{$<$}{<}int, TValue\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a1cfd2dc088d176be595820471886ae7c}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!orderedChunkById@{orderedChunkById}}
+\index{orderedChunkById@{orderedChunkById}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{orderedChunkById()}{orderedChunkById()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a1cfd2dc088d176be595820471886ae7c} 
+ordered\+Chunk\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$count}{, }\item[{callable}]{\$callback}{, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}, }\item[{}]{\$descending}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Chunk the results of a query by comparing IDs in a given order.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+ & {\em callable(} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TValue\texorpdfstring{$>$}{>}, int)\+: mixed \$callback 
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+bool & {\em \$descending} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a45ef1b30c413be6187dadba68905a021}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!orderedLazyById@{orderedLazyById}}
+\index{orderedLazyById@{orderedLazyById}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{orderedLazyById()}{orderedLazyById()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a45ef1b30c413be6187dadba68905a021} 
+ordered\+Lazy\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$chunk\+Size}{ = {\ttfamily 1000}, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}, }\item[{}]{\$descending}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Query lazily, by chunking the results of a query by comparing IDs in a given order.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$chunk\+Size} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+bool & {\em \$descending} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_aa652604b61cc24235bacc4d7d66dfbb3}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!paginateUsingCursor@{paginateUsingCursor}}
+\index{paginateUsingCursor@{paginateUsingCursor}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{paginateUsingCursor()}{paginateUsingCursor()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_aa652604b61cc24235bacc4d7d66dfbb3} 
+paginate\+Using\+Cursor (\begin{DoxyParamCaption}\item[{}]{\$per\+Page}{, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}, }\item[{}]{\$cursor\+Name}{ = {\ttfamily \textquotesingle{}cursor\textquotesingle{}}, }\item[{}]{\$cursor}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Paginate the given query using a cursor paginator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$per\+Page} & \\
+\hline
+array | string & {\em \$columns} & \\
+\hline
+string & {\em \$cursor\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Pagination\textbackslash{}\+Cursor | string | null & {\em \$cursor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Cursor\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a7aa9f6876430857eb83b841f64c93bf8}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!paginator@{paginator}}
+\index{paginator@{paginator}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{paginator()}{paginator()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a7aa9f6876430857eb83b841f64c93bf8} 
+paginator (\begin{DoxyParamCaption}\item[{}]{\$items}{, }\item[{}]{\$total}{, }\item[{}]{\$per\+Page}{, }\item[{}]{\$current\+Page}{, }\item[{}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new length-\/aware paginator instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$items} & \\
+\hline
+int & {\em \$total} & \\
+\hline
+int & {\em \$per\+Page} & \\
+\hline
+int & {\em \$current\+Page} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Pagination\textbackslash{}\+Length\+Aware\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_ac3d1db786cc6e8f2ff16b4b00d0e2a31}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!pipe@{pipe}}
+\index{pipe@{pipe}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{pipe()}{pipe()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_ac3d1db786cc6e8f2ff16b4b00d0e2a31} 
+pipe (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Pass the query to a given callback and return the result.
+
+@template TReturn
+
+
+\begin{DoxyParams}{Parameters}
+{\em (callable(\$this)} & TReturn) \$callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(TReturn is null\texorpdfstring{$\vert$}{|}void ? \$this \+: TReturn) 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_af5af8795f70210173c997e0186367fd5}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!simplePaginator@{simplePaginator}}
+\index{simplePaginator@{simplePaginator}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{simplePaginator()}{simplePaginator()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_af5af8795f70210173c997e0186367fd5} 
+simple\+Paginator (\begin{DoxyParamCaption}\item[{}]{\$items}{, }\item[{}]{\$per\+Page}{, }\item[{}]{\$current\+Page}{, }\item[{}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new simple paginator instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$items} & \\
+\hline
+int & {\em \$per\+Page} & \\
+\hline
+int & {\em \$current\+Page} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Pagination\textbackslash{}\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_aed257c71fd25561097fe13a66c0a8660}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!sole@{sole}}
+\index{sole@{sole}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{sole()}{sole()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_aed257c71fd25561097fe13a66c0a8660} 
+sole (\begin{DoxyParamCaption}\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Execute the query and get the first result if it\textquotesingle{}s the sole matching record.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TValue
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Records\+Not\+Found\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Multiple\+Records\+Found\+Exception \Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a44730c3ed702baf07d0d420c35c44e51}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!tap@{tap}}
+\index{tap@{tap}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{tap()}{tap()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a44730c3ed702baf07d0d420c35c44e51} 
+tap (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Pass the query to a given callback and then return it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\$this)} & mixed \$callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-var-members}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_illuminate_1_1_database_1_1_concerns_a9fdf36dc0a6376ddd58348e7f31b809f}\index{Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}!BuildsQueries@{BuildsQueries}}
+\index{BuildsQueries@{BuildsQueries}!Illuminate\textbackslash{}Database\textbackslash{}Concerns@{Illuminate\textbackslash{}Database\textbackslash{}Concerns}}
+\doxysubsubsection{\texorpdfstring{BuildsQueries}{BuildsQueries}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_database_1_1_concerns_a9fdf36dc0a6376ddd58348e7f31b809f} 
+trait Builds\+Queries}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+@template TValue
+
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder 

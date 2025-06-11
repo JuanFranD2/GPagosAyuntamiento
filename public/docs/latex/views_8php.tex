@@ -1,0 +1,70 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/php-\/templates/views.php File Reference}
+\hypertarget{views_8php}{}\label{views_8php}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/php-\/templates/views.php@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/php-\/templates/views.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{views_8php_a7336dff29763624c76c021dc702ff985}{vs\+Code\+Find\+Blade\+Files}} (\$path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{views_8php_a20dd412769e0754189f5ce036e857a37}{\$paths}}
+\item 
+\mbox{\hyperlink{views_8php_a0a5807804c2a804ed34c2872aacc6e07}{\$hints}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{views_8php_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{views_8php_a7336dff29763624c76c021dc702ff985}\index{views.php@{views.php}!vsCodeFindBladeFiles@{vsCodeFindBladeFiles}}
+\index{vsCodeFindBladeFiles@{vsCodeFindBladeFiles}!views.php@{views.php}}
+\doxysubsubsection{\texorpdfstring{vsCodeFindBladeFiles()}{vsCodeFindBladeFiles()}}
+{\footnotesize\ttfamily \label{views_8php_a7336dff29763624c76c021dc702ff985} 
+vs\+Code\+Find\+Blade\+Files (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{views_8php_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{views_8php_a0a5807804c2a804ed34c2872aacc6e07}\index{views.php@{views.php}!\$hints@{\$hints}}
+\index{\$hints@{\$hints}!views.php@{views.php}}
+\doxysubsubsection{\texorpdfstring{\$hints}{\$hints}}
+{\footnotesize\ttfamily \label{views_8php_a0a5807804c2a804ed34c2872aacc6e07} 
+\$hints}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ collect(}
+\DoxyCodeLine{\ \ \ \ app(\textcolor{stringliteral}{'view'})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ -\/>getFinder()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ -\/>getHints()}
+\DoxyCodeLine{)-\/>flatMap(\textcolor{keyword}{function}\ (\$paths,\ \$key)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ collect(\$paths)-\/>flatMap(\textcolor{keyword}{function}\ (\$path)\ use\ (\$key)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ collect(\mbox{\hyperlink{views_8php_a7336dff29763624c76c021dc702ff985}{vsCodeFindBladeFiles}}(\$path))-\/>map(\textcolor{keyword}{function}\ (\$value)\ use\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$key}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ array\_merge(\$value,\ [\textcolor{stringliteral}{'key'}\ =>\ \textcolor{stringliteral}{"{}\{\$key\}::\{\$value['key']\}"{}}]);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\ \ \ \ \});}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\Hypertarget{views_8php_a20dd412769e0754189f5ce036e857a37}\index{views.php@{views.php}!\$paths@{\$paths}}
+\index{\$paths@{\$paths}!views.php@{views.php}}
+\doxysubsubsection{\texorpdfstring{\$paths}{\$paths}}
+{\footnotesize\ttfamily \label{views_8php_a20dd412769e0754189f5ce036e857a37} 
+\$paths}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ collect(}
+\DoxyCodeLine{\ \ \ \ app(\textcolor{stringliteral}{'view'})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ -\/>getFinder()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ -\/>getPaths()}
+\DoxyCodeLine{)-\/>flatMap(\textcolor{keyword}{function}\ (\$path)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{views_8php_a7336dff29763624c76c021dc702ff985}{vsCodeFindBladeFiles}}(\$path);}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}

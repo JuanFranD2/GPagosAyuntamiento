@@ -1,0 +1,237 @@
+\doxysection{Pending\+Chain Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain}{}\label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain}\index{PendingChain@{PendingChain}}
+Inheritance diagram for Pending\+Chain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a93476eccd7349453168665168a001f8d}{\+\_\+\+\_\+construct}} (\$job, \$chain)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a812a88f9019f82a60a19d7bd3f1e7830}{on\+Connection}} (\$connection)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_ab667e9cdac7e8961d4f9d9fa0152ea7c}{on\+Queue}} (\$queue)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a7660d851bdbe3a24d1e284d97d2bfacb}{delay}} (\$delay)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a987268db5348e4671c19f530b47509fd}{catch}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_afb097cdb736d45506aebc8f8d93763e9}{catch\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_ac9b4976d41cd6b50add18c46b165c03d}{dispatch}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a5674109ce4928f445b84509eb3743706}{dispatch\+If}} (\$boolean)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_ad74e3ff180d735be55029b4e76143de2}{dispatch\+Unless}} (\$boolean)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_aab0e16ecbc63a8e57fdd9823b66be5a1}{\$job}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a3a5fbe4fdfec4aa8174ae3f49fca13ec}{\$chain}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a4a0b48f6ae2fcb248a4f0288c7c344a6}{\$queue}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a1856a58de270f1a5050a5abac47cd4b3}{\$delay}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a98eaf74f59232fde451d39e07ea2f389}{\$catch\+Callbacks}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a93476eccd7349453168665168a001f8d}\index{PendingChain@{PendingChain}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a93476eccd7349453168665168a001f8d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{}]{\$chain}{}\end{DoxyParamCaption})}
+
+Create a new Pending\+Chain instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$job} & \\
+\hline
+array & {\em \$chain} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a987268db5348e4671c19f530b47509fd}\index{PendingChain@{PendingChain}!catch@{catch}}
+\index{catch@{catch}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{catch()}{catch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a987268db5348e4671c19f530b47509fd} 
+catch (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Add a callback to be executed on job failure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_afb097cdb736d45506aebc8f8d93763e9}\index{PendingChain@{PendingChain}!catchCallbacks@{catchCallbacks}}
+\index{catchCallbacks@{catchCallbacks}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{catchCallbacks()}{catchCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_afb097cdb736d45506aebc8f8d93763e9} 
+catch\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the "{}catch"{} callbacks that have been registered.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a7660d851bdbe3a24d1e284d97d2bfacb}\index{PendingChain@{PendingChain}!delay@{delay}}
+\index{delay@{delay}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a7660d851bdbe3a24d1e284d97d2bfacb} 
+delay (\begin{DoxyParamCaption}\item[{}]{\$delay}{}\end{DoxyParamCaption})}
+
+Set the desired delay in seconds for the chain.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int | null & {\em \$delay} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_ac9b4976d41cd6b50add18c46b165c03d}\index{PendingChain@{PendingChain}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_ac9b4976d41cd6b50add18c46b165c03d} 
+dispatch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Dispatch the job chain.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Bus\textbackslash{}\+Pending\+Dispatch 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_pending_chain_fake_ac9b4976d41cd6b50add18c46b165c03d}{Pending\+Chain\+Fake}}.
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a5674109ce4928f445b84509eb3743706}\index{PendingChain@{PendingChain}!dispatchIf@{dispatchIf}}
+\index{dispatchIf@{dispatchIf}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{dispatchIf()}{dispatchIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a5674109ce4928f445b84509eb3743706} 
+dispatch\+If (\begin{DoxyParamCaption}\item[{}]{\$boolean}{}\end{DoxyParamCaption})}
+
+Dispatch the job chain if the given truth test passes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool | \textbackslash{}\+Closure & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Bus\textbackslash{}\+Pending\+Dispatch\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_ad74e3ff180d735be55029b4e76143de2}\index{PendingChain@{PendingChain}!dispatchUnless@{dispatchUnless}}
+\index{dispatchUnless@{dispatchUnless}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{dispatchUnless()}{dispatchUnless()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_ad74e3ff180d735be55029b4e76143de2} 
+dispatch\+Unless (\begin{DoxyParamCaption}\item[{}]{\$boolean}{}\end{DoxyParamCaption})}
+
+Dispatch the job chain unless the given truth test passes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool | \textbackslash{}\+Closure & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Bus\textbackslash{}\+Pending\+Dispatch\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a812a88f9019f82a60a19d7bd3f1e7830}\index{PendingChain@{PendingChain}!onConnection@{onConnection}}
+\index{onConnection@{onConnection}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{onConnection()}{onConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a812a88f9019f82a60a19d7bd3f1e7830} 
+on\+Connection (\begin{DoxyParamCaption}\item[{}]{\$connection}{}\end{DoxyParamCaption})}
+
+Set the desired connection for the job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Unit\+Enum | string | null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_ab667e9cdac7e8961d4f9d9fa0152ea7c}\index{PendingChain@{PendingChain}!onQueue@{onQueue}}
+\index{onQueue@{onQueue}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{onQueue()}{onQueue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_ab667e9cdac7e8961d4f9d9fa0152ea7c} 
+on\+Queue (\begin{DoxyParamCaption}\item[{}]{\$queue}{}\end{DoxyParamCaption})}
+
+Set the desired queue for the job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Unit\+Enum | string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a98eaf74f59232fde451d39e07ea2f389}\index{PendingChain@{PendingChain}!\$catchCallbacks@{\$catchCallbacks}}
+\index{\$catchCallbacks@{\$catchCallbacks}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{\$catchCallbacks}{\$catchCallbacks}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a98eaf74f59232fde451d39e07ea2f389} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_afb097cdb736d45506aebc8f8d93763e9}{catch\+Callbacks}} = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a3a5fbe4fdfec4aa8174ae3f49fca13ec}\index{PendingChain@{PendingChain}!\$chain@{\$chain}}
+\index{\$chain@{\$chain}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{\$chain}{\$chain}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a3a5fbe4fdfec4aa8174ae3f49fca13ec} 
+\$chain}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a0d9c79b9b86b3f5891c6d3892f12c6a0}\index{PendingChain@{PendingChain}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{\$connection}{\$connection}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a0d9c79b9b86b3f5891c6d3892f12c6a0} 
+\$connection}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a1856a58de270f1a5050a5abac47cd4b3}\index{PendingChain@{PendingChain}!\$delay@{\$delay}}
+\index{\$delay@{\$delay}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{\$delay}{\$delay}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a1856a58de270f1a5050a5abac47cd4b3} 
+\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a7660d851bdbe3a24d1e284d97d2bfacb}{delay}}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_aab0e16ecbc63a8e57fdd9823b66be5a1}\index{PendingChain@{PendingChain}!\$job@{\$job}}
+\index{\$job@{\$job}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{\$job}{\$job}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_aab0e16ecbc63a8e57fdd9823b66be5a1} 
+\$job}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a4a0b48f6ae2fcb248a4f0288c7c344a6}\index{PendingChain@{PendingChain}!\$queue@{\$queue}}
+\index{\$queue@{\$queue}!PendingChain@{PendingChain}}
+\doxysubsubsection{\texorpdfstring{\$queue}{\$queue}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_bus_1_1_pending_chain_a4a0b48f6ae2fcb248a4f0288c7c344a6} 
+\$queue}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Bus/\mbox{\hyperlink{_pending_chain_8php}{Pending\+Chain.\+php}}\end{DoxyCompactItemize}

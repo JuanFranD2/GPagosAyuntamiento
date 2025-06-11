@@ -1,0 +1,218 @@
+\doxysection{Send\+Queued\+Notifications Class Reference}
+\hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications}{}\label{class_illuminate_1_1_notifications_1_1_send_queued_notifications}\index{SendQueuedNotifications@{SendQueuedNotifications}}
+Inheritance diagram for Send\+Queued\+Notifications\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_notifications_1_1_send_queued_notifications}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a74b1474b6e236a7bc2a0d67ec57e9414}{\+\_\+\+\_\+construct}} (\$notifiables, \$notification, ?array \$channels=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a4bea551351fe298129ee684567d850f8}{handle}} (\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channel_manager}{Channel\+Manager}} \$manager)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a37393c99aabe6581131b20a1a0fdfdd8}{display\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a2a330f1b0a49cbc3ff2f855b8f6c62ef}{failed}} (\$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a52fa44f4014ac5f6a7aa1ae947d075cc}{backoff}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a57cc8b8b75dd1dcbe19f072ea7cfcc7e}{retry\+Until}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a6b1f9be2879af65a220303d2db9e9c4a}{\$notifiables}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a31b24031fc7fcaa7848766b56934949b}{\$notification}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a9b23cf9543064689fdb1b5e350b790e2}{\$channels}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a6f93c614f3a908999ccfe3b65a6ebee4}{\$tries}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a84320a9bf3e591d7ae20dfcb0dfe6a0d}{\$timeout}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_ab01138319b115e56c1821ea6b9942790}{\$max\+Exceptions}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_aec523e1521a030be16aff2f5ff669fa3}{\$should\+Be\+Encrypted}} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a27634a639b3311a9db8ae31a362fcdf7}{wrap\+Notifiables}} (\$notifiables)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a74b1474b6e236a7bc2a0d67ec57e9414}\index{SendQueuedNotifications@{SendQueuedNotifications}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a74b1474b6e236a7bc2a0d67ec57e9414} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{, }\item[{?array}]{\$channels}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new job instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notifiable | \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$notifiables} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification & {\em \$notification} & \\
+\hline
+array | null & {\em \$channels} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_ad0cb87b388bc74d63dc884accdca8713}\index{SendQueuedNotifications@{SendQueuedNotifications}!\_\_clone@{\_\_clone}}
+\index{\_\_clone@{\_\_clone}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{\_\_clone()}{\_\_clone()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_ad0cb87b388bc74d63dc884accdca8713} 
+\+\_\+\+\_\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Prepare the instance for cloning.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a52fa44f4014ac5f6a7aa1ae947d075cc}\index{SendQueuedNotifications@{SendQueuedNotifications}!backoff@{backoff}}
+\index{backoff@{backoff}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{backoff()}{backoff()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a52fa44f4014ac5f6a7aa1ae947d075cc} 
+backoff (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the number of seconds before a released notification will be available.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a37393c99aabe6581131b20a1a0fdfdd8}\index{SendQueuedNotifications@{SendQueuedNotifications}!displayName@{displayName}}
+\index{displayName@{displayName}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{displayName()}{displayName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a37393c99aabe6581131b20a1a0fdfdd8} 
+display\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the display name for the queued job.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a2a330f1b0a49cbc3ff2f855b8f6c62ef}\index{SendQueuedNotifications@{SendQueuedNotifications}!failed@{failed}}
+\index{failed@{failed}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{failed()}{failed()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a2a330f1b0a49cbc3ff2f855b8f6c62ef} 
+failed (\begin{DoxyParamCaption}\item[{}]{\$e}{}\end{DoxyParamCaption})}
+
+Call the failed method on the notification instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a4bea551351fe298129ee684567d850f8}\index{SendQueuedNotifications@{SendQueuedNotifications}!handle@{handle}}
+\index{handle@{handle}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a4bea551351fe298129ee684567d850f8} 
+handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channel_manager}{Channel\+Manager}}}]{\$manager}{}\end{DoxyParamCaption})}
+
+Send the notifications.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channel\+Manager & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a57cc8b8b75dd1dcbe19f072ea7cfcc7e}\index{SendQueuedNotifications@{SendQueuedNotifications}!retryUntil@{retryUntil}}
+\index{retryUntil@{retryUntil}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{retryUntil()}{retryUntil()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a57cc8b8b75dd1dcbe19f072ea7cfcc7e} 
+retry\+Until (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine the time at which the job should timeout.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a27634a639b3311a9db8ae31a362fcdf7}\index{SendQueuedNotifications@{SendQueuedNotifications}!wrapNotifiables@{wrapNotifiables}}
+\index{wrapNotifiables@{wrapNotifiables}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{wrapNotifiables()}{wrapNotifiables()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a27634a639b3311a9db8ae31a362fcdf7} 
+wrap\+Notifiables (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrap the notifiable(s) in a collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notifiable | \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$notifiables} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a9b23cf9543064689fdb1b5e350b790e2}\index{SendQueuedNotifications@{SendQueuedNotifications}!\$channels@{\$channels}}
+\index{\$channels@{\$channels}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{\$channels}{\$channels}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a9b23cf9543064689fdb1b5e350b790e2} 
+\$channels}
+
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_ab01138319b115e56c1821ea6b9942790}\index{SendQueuedNotifications@{SendQueuedNotifications}!\$maxExceptions@{\$maxExceptions}}
+\index{\$maxExceptions@{\$maxExceptions}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{\$maxExceptions}{\$maxExceptions}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_ab01138319b115e56c1821ea6b9942790} 
+\$max\+Exceptions}
+
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a6b1f9be2879af65a220303d2db9e9c4a}\index{SendQueuedNotifications@{SendQueuedNotifications}!\$notifiables@{\$notifiables}}
+\index{\$notifiables@{\$notifiables}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{\$notifiables}{\$notifiables}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a6b1f9be2879af65a220303d2db9e9c4a} 
+\$notifiables}
+
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a31b24031fc7fcaa7848766b56934949b}\index{SendQueuedNotifications@{SendQueuedNotifications}!\$notification@{\$notification}}
+\index{\$notification@{\$notification}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{\$notification}{\$notification}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a31b24031fc7fcaa7848766b56934949b} 
+\$notification}
+
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_aec523e1521a030be16aff2f5ff669fa3}\index{SendQueuedNotifications@{SendQueuedNotifications}!\$shouldBeEncrypted@{\$shouldBeEncrypted}}
+\index{\$shouldBeEncrypted@{\$shouldBeEncrypted}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{\$shouldBeEncrypted}{\$shouldBeEncrypted}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_aec523e1521a030be16aff2f5ff669fa3} 
+\$should\+Be\+Encrypted = false}
+
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a84320a9bf3e591d7ae20dfcb0dfe6a0d}\index{SendQueuedNotifications@{SendQueuedNotifications}!\$timeout@{\$timeout}}
+\index{\$timeout@{\$timeout}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{\$timeout}{\$timeout}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a84320a9bf3e591d7ae20dfcb0dfe6a0d} 
+\$timeout}
+
+\Hypertarget{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a6f93c614f3a908999ccfe3b65a6ebee4}\index{SendQueuedNotifications@{SendQueuedNotifications}!\$tries@{\$tries}}
+\index{\$tries@{\$tries}!SendQueuedNotifications@{SendQueuedNotifications}}
+\doxysubsubsection{\texorpdfstring{\$tries}{\$tries}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_send_queued_notifications_a6f93c614f3a908999ccfe3b65a6ebee4} 
+\$tries}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Notifications/\mbox{\hyperlink{_send_queued_notifications_8php}{Send\+Queued\+Notifications.\+php}}\end{DoxyCompactItemize}

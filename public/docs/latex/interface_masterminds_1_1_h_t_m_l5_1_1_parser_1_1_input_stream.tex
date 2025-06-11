@@ -1,0 +1,169 @@
+\doxysection{Input\+Stream Interface Reference}
+\hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream}{}\label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream}\index{InputStream@{InputStream}}
+Inheritance diagram for Input\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a019496412a2398a981060c2b4d7bc7e6}{current\+Line}} ()
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_aed521896613e5f737b51b3d71e518b68}{column\+Offset}} ()
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a2562abb4267acd3b1a0069e1feed9615}{remaining\+Chars}} ()
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a74d33a21f94236a18b7190a5fe8d28a0}{chars\+Until}} (\$bytes, \$max=null)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_af8acebcda5149d9199ff5e8ed5b3c179}{chars\+While}} (\$bytes, \$max=null)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a4b0ade74f44a42675edf96c92da7e1df}{unconsume}} (\$how\+Many=1)
+\item 
+\mbox{\hyperlink{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_af0d2b98b49496eaef856a5b277fa775b}{peek}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for stream readers.
+
+The parser only reads from streams. Various input sources can write an adapater to this Input\+Stream.
+
+Currently provided Input\+Stream implementations include File\+Input\+Stream and String\+Input\+Stream.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000159}{Deprecated}}]since 2.\+4, to remove in 3.\+0. Use a string in the scanner instead. \end{DoxyRefDesc}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a74d33a21f94236a18b7190a5fe8d28a0}\index{InputStream@{InputStream}!charsUntil@{charsUntil}}
+\index{charsUntil@{charsUntil}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{charsUntil()}{charsUntil()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a74d33a21f94236a18b7190a5fe8d28a0} 
+chars\+Until (\begin{DoxyParamCaption}\item[{}]{\$bytes}{, }\item[{}]{\$max}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Read to a particular match (or until \$max bytes are consumed).
+
+This operates on byte sequences, not characters.
+
+Matches as far as possible until we reach a certain set of bytes and returns the matched substring.
+
+\begin{DoxySeeAlso}{See also}
+strcspn
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bytes} & Bytes to match. \\
+\hline
+int & {\em \$max} & Maximum number of bytes to scan.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Index or false if no match is found. You should use strong equality when checking the result, since index could be 0. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a74d33a21f94236a18b7190a5fe8d28a0}{String\+Input\+Stream}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_af8acebcda5149d9199ff5e8ed5b3c179}\index{InputStream@{InputStream}!charsWhile@{charsWhile}}
+\index{charsWhile@{charsWhile}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{charsWhile()}{charsWhile()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_af8acebcda5149d9199ff5e8ed5b3c179} 
+chars\+While (\begin{DoxyParamCaption}\item[{}]{\$bytes}{, }\item[{}]{\$max}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the string so long as \$bytes matches.
+
+Matches as far as possible with a certain set of bytes and returns the matched substring.
+
+\begin{DoxySeeAlso}{See also}
+strspn
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bytes} & A mask of bytes to match. If ANY byte in this mask matches the current char, the pointer advances and the char is part of the substring. \\
+\hline
+int & {\em \$max} & The max number of chars to read. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_af8acebcda5149d9199ff5e8ed5b3c179}{String\+Input\+Stream}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_aed521896613e5f737b51b3d71e518b68}\index{InputStream@{InputStream}!columnOffset@{columnOffset}}
+\index{columnOffset@{columnOffset}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{columnOffset()}{columnOffset()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_aed521896613e5f737b51b3d71e518b68} 
+column\+Offset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current column of the current line that the tokenizer is at.
+
+Newlines are column 0. The first char after a newline is column 1.
+
+@\+TODO Move this to the scanner.
+
+\begin{DoxyReturn}{Returns}
+int The column number. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_aed521896613e5f737b51b3d71e518b68}{String\+Input\+Stream}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a019496412a2398a981060c2b4d7bc7e6}\index{InputStream@{InputStream}!currentLine@{currentLine}}
+\index{currentLine@{currentLine}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{currentLine()}{currentLine()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a019496412a2398a981060c2b4d7bc7e6} 
+current\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current line that is being consumed.
+
+TODO\+: Move this to the scanner. 
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a019496412a2398a981060c2b4d7bc7e6}{String\+Input\+Stream}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_af0d2b98b49496eaef856a5b277fa775b}\index{InputStream@{InputStream}!peek@{peek}}
+\index{peek@{peek}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_af0d2b98b49496eaef856a5b277fa775b} 
+peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieve the next character without advancing the pointer. 
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_af0d2b98b49496eaef856a5b277fa775b}{String\+Input\+Stream}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a2562abb4267acd3b1a0069e1feed9615}\index{InputStream@{InputStream}!remainingChars@{remainingChars}}
+\index{remainingChars@{remainingChars}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{remainingChars()}{remainingChars()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a2562abb4267acd3b1a0069e1feed9615} 
+remaining\+Chars (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all characters until EOF.
+
+This consumes characters until the EOF. 
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a2562abb4267acd3b1a0069e1feed9615}{String\+Input\+Stream}}.
+
+\Hypertarget{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a4b0ade74f44a42675edf96c92da7e1df}\index{InputStream@{InputStream}!unconsume@{unconsume}}
+\index{unconsume@{unconsume}!InputStream@{InputStream}}
+\doxysubsubsection{\texorpdfstring{unconsume()}{unconsume()}}
+{\footnotesize\ttfamily \label{interface_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_input_stream_a4b0ade74f44a42675edf96c92da7e1df} 
+unconsume (\begin{DoxyParamCaption}\item[{}]{\$how\+Many}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Unconsume one character.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$how\+Many} & The number of characters to move the pointer back. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_string_input_stream_a4b0ade74f44a42675edf96c92da7e1df}{String\+Input\+Stream}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Parser/\mbox{\hyperlink{masterminds_2html5_2src_2_h_t_m_l5_2_parser_2_input_stream_8php}{Input\+Stream.\+php}}\end{DoxyCompactItemize}

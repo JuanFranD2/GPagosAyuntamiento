@@ -1,0 +1,301 @@
+\doxysection{Header\+Bag Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag}\index{HeaderBag@{HeaderBag}}
+Inheritance diagram for Header\+Bag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_abd1113e3c9b55e7668dde983afa5075d}{\+\_\+\+\_\+construct}} (array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a48d7c4f745902ed428570fedd97c4249}{all}} (?string \$key=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a3b0db17d4be3aff5451d2764e7c88beb}{keys}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5}{replace}} (array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a18c95da11f8e1f72043140089d7a72ab}{add}} (array \$headers)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6c6ab7751a60b2d90fb00c99eb75f673}{get}} (string \$key, ?string \$default=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_af4a0d17af3a2bcbfdda82db461caea6b}{set}} (string \$key, string\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$values, bool \$\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5}{replace}}=true)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_afdce603da130f170b2e650649949b544}{has}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a66e480c373bf47057e09de17b9f38f09}{contains}} (string \$key, string \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_ab454eea7bf82990572fe4017b8dd4ca3}{remove}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a50ae6436c51d416996e7c1fe27fdbea6}{get\+Date}} (string \$key, ?\textbackslash{}Date\+Time\+Interface \$default=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6601a8922a72f12da83db03bb1737081}{add\+Cache\+Control\+Directive}} (string \$key, bool\texorpdfstring{$\vert$}{|}string \$value=true)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_af856cccefacf92695f352fb97f09dcee}{has\+Cache\+Control\+Directive}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a987badafdb6359a7fe1cb8a1b710e316}{get\+Cache\+Control\+Directive}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a5d54a5ac03e668da378b18ef3381bfc5}{remove\+Cache\+Control\+Directive}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6fc724839b161909f18269c24d644160}{get\+Cache\+Control\+Header}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a3ef581ba68beac074e2530c5993e4445}{parse\+Cache\+Control}} (string \$header)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_afd876bc3395c67e3838f70b46381e4fc}{UPPER}} = \textquotesingle{}\+\_\+\+ABCDEFGHIJKLMNOPQRSTUVWXYZ\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_accae88c9f25b2325723f9a64f955ab27}{LOWER}} = \textquotesingle{}-\/abcdefghijklmnopqrstuvwxyz\textquotesingle{}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a914c4187a92589e98dc298a488c6f4ca}{\$headers}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_add6c461cf306c4662ae59cb0732382d3}{\$cache\+Control}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header\+Bag is a container for HTTP headers.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}}
+\end{DoxyAuthor}
+\texorpdfstring{$<$}{<}string, list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_abd1113e3c9b55e7668dde983afa5075d}\index{HeaderBag@{HeaderBag}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_abd1113e3c9b55e7668dde983afa5075d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_abd1113e3c9b55e7668dde983afa5075d}{Response\+Header\+Bag}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a7516ca30af0db3cdbf9a7739b48ce91d}\index{HeaderBag@{HeaderBag}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the headers as a string. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a18c95da11f8e1f72043140089d7a72ab}\index{HeaderBag@{HeaderBag}!add@{add}}
+\index{add@{add}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a18c95da11f8e1f72043140089d7a72ab} 
+add (\begin{DoxyParamCaption}\item[{array}]{\$headers}{}\end{DoxyParamCaption})}
+
+Adds new headers the current HTTP headers set. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6601a8922a72f12da83db03bb1737081}\index{HeaderBag@{HeaderBag}!addCacheControlDirective@{addCacheControlDirective}}
+\index{addCacheControlDirective@{addCacheControlDirective}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{addCacheControlDirective()}{addCacheControlDirective()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6601a8922a72f12da83db03bb1737081} 
+add\+Cache\+Control\+Directive (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$value}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Adds a custom Cache-\/\+Control directive. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a48d7c4f745902ed428570fedd97c4249}\index{HeaderBag@{HeaderBag}!all@{all}}
+\index{all@{all}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a48d7c4f745902ed428570fedd97c4249} 
+all (\begin{DoxyParamCaption}\item[{?string}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the headers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$key} & The name of the headers to return or null to get them all\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\$key is null ? array\texorpdfstring{$<$}{<}string, list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \+: list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}) 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a48d7c4f745902ed428570fedd97c4249}{Response\+Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a66e480c373bf47057e09de17b9f38f09}\index{HeaderBag@{HeaderBag}!contains@{contains}}
+\index{contains@{contains}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a66e480c373bf47057e09de17b9f38f09} 
+contains (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Returns true if the given HTTP header contains the given value. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_ac751e87b3d4c4bf2feb03bee8b092755}\index{HeaderBag@{HeaderBag}!count@{count}}
+\index{count@{count}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the number of headers. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6c6ab7751a60b2d90fb00c99eb75f673}\index{HeaderBag@{HeaderBag}!get@{get}}
+\index{get@{get}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6c6ab7751a60b2d90fb00c99eb75f673} 
+get (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{?string}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the first header by name or the default one. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a987badafdb6359a7fe1cb8a1b710e316}\index{HeaderBag@{HeaderBag}!getCacheControlDirective@{getCacheControlDirective}}
+\index{getCacheControlDirective@{getCacheControlDirective}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{getCacheControlDirective()}{getCacheControlDirective()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a987badafdb6359a7fe1cb8a1b710e316} 
+get\+Cache\+Control\+Directive (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns a Cache-\/\+Control directive value by name. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a987badafdb6359a7fe1cb8a1b710e316}{Response\+Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6fc724839b161909f18269c24d644160}\index{HeaderBag@{HeaderBag}!getCacheControlHeader@{getCacheControlHeader}}
+\index{getCacheControlHeader@{getCacheControlHeader}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{getCacheControlHeader()}{getCacheControlHeader()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a6fc724839b161909f18269c24d644160} 
+get\+Cache\+Control\+Header (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a50ae6436c51d416996e7c1fe27fdbea6}\index{HeaderBag@{HeaderBag}!getDate@{getDate}}
+\index{getDate@{getDate}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a50ae6436c51d416996e7c1fe27fdbea6} 
+get\+Date (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{?\textbackslash{}Date\+Time\+Interface}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the HTTP header value converted to a date.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception When the HTTP header is not parseable \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{HeaderBag@{HeaderBag}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an iterator for headers.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Array\+Iterator\texorpdfstring{$<$}{<}string, list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_afdce603da130f170b2e650649949b544}\index{HeaderBag@{HeaderBag}!has@{has}}
+\index{has@{has}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_afdce603da130f170b2e650649949b544} 
+has (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns true if the HTTP header is defined. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_af856cccefacf92695f352fb97f09dcee}\index{HeaderBag@{HeaderBag}!hasCacheControlDirective@{hasCacheControlDirective}}
+\index{hasCacheControlDirective@{hasCacheControlDirective}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{hasCacheControlDirective()}{hasCacheControlDirective()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_af856cccefacf92695f352fb97f09dcee} 
+has\+Cache\+Control\+Directive (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns true if the Cache-\/\+Control directive is defined. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af856cccefacf92695f352fb97f09dcee}{Response\+Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a3b0db17d4be3aff5451d2764e7c88beb}\index{HeaderBag@{HeaderBag}!keys@{keys}}
+\index{keys@{keys}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a3b0db17d4be3aff5451d2764e7c88beb} 
+keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the parameter keys.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a3ef581ba68beac074e2530c5993e4445}\index{HeaderBag@{HeaderBag}!parseCacheControl@{parseCacheControl}}
+\index{parseCacheControl@{parseCacheControl}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{parseCacheControl()}{parseCacheControl()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a3ef581ba68beac074e2530c5993e4445} 
+parse\+Cache\+Control (\begin{DoxyParamCaption}\item[{string}]{\$header}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parses a Cache-\/\+Control HTTP header. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_ab454eea7bf82990572fe4017b8dd4ca3}\index{HeaderBag@{HeaderBag}!remove@{remove}}
+\index{remove@{remove}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_ab454eea7bf82990572fe4017b8dd4ca3} 
+remove (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Removes a header. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_ab454eea7bf82990572fe4017b8dd4ca3}{Response\+Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a5d54a5ac03e668da378b18ef3381bfc5}\index{HeaderBag@{HeaderBag}!removeCacheControlDirective@{removeCacheControlDirective}}
+\index{removeCacheControlDirective@{removeCacheControlDirective}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{removeCacheControlDirective()}{removeCacheControlDirective()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a5d54a5ac03e668da378b18ef3381bfc5} 
+remove\+Cache\+Control\+Directive (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Removes a Cache-\/\+Control directive. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5}\index{HeaderBag@{HeaderBag}!replace@{replace}}
+\index{replace@{replace}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5} 
+replace (\begin{DoxyParamCaption}\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Replaces the current HTTP headers by a new set. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_a74a292f988bd8d5ddbf108494f9ea4f5}{Response\+Header\+Bag}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_af4a0d17af3a2bcbfdda82db461caea6b}\index{HeaderBag@{HeaderBag}!set@{set}}
+\index{set@{set}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_af4a0d17af3a2bcbfdda82db461caea6b} 
+set (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null}]{\$values}{, }\item[{bool}]{\$replace}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Sets a header by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$values} & The value or an array of values \\
+\hline
+bool & {\em \$replace} & Whether to replace the actual value or not (true by default) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response_header_bag_af4a0d17af3a2bcbfdda82db461caea6b}{Response\+Header\+Bag}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_add6c461cf306c4662ae59cb0732382d3}\index{HeaderBag@{HeaderBag}!\$cacheControl@{\$cacheControl}}
+\index{\$cacheControl@{\$cacheControl}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{\$cacheControl}{\$cacheControl}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_add6c461cf306c4662ae59cb0732382d3} 
+array \$cache\+Control = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a914c4187a92589e98dc298a488c6f4ca}\index{HeaderBag@{HeaderBag}!\$headers@{\$headers}}
+\index{\$headers@{\$headers}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{\$headers}{\$headers}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_a914c4187a92589e98dc298a488c6f4ca} 
+array \$headers = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_accae88c9f25b2325723f9a64f955ab27}\index{HeaderBag@{HeaderBag}!LOWER@{LOWER}}
+\index{LOWER@{LOWER}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{LOWER}{LOWER}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_accae88c9f25b2325723f9a64f955ab27} 
+const LOWER = \textquotesingle{}-\/abcdefghijklmnopqrstuvwxyz\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_afd876bc3395c67e3838f70b46381e4fc}\index{HeaderBag@{HeaderBag}!UPPER@{UPPER}}
+\index{UPPER@{UPPER}!HeaderBag@{HeaderBag}}
+\doxysubsubsection{\texorpdfstring{UPPER}{UPPER}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_bag_afd876bc3395c67e3838f70b46381e4fc} 
+const UPPER = \textquotesingle{}\+\_\+\+ABCDEFGHIJKLMNOPQRSTUVWXYZ\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/foundation/\mbox{\hyperlink{_header_bag_8php}{Header\+Bag.\+php}}\end{DoxyCompactItemize}

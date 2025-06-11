@@ -1,0 +1,4 @@
+var _test_runner_triggered_deprecation_subscriber_8php =
+[
+    [ "TestRunnerTriggeredDeprecationSubscriber", "class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_runner_triggered_deprecation_subscriber.html", "class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_runner_triggered_deprecation_subscriber" ]
+];

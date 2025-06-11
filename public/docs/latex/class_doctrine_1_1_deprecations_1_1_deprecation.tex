@@ -1,0 +1,146 @@
+\doxysection{Deprecation Class Reference}
+\hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation}{}\label{class_doctrine_1_1_deprecations_1_1_deprecation}\index{Deprecation@{Deprecation}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_a1f761f43956fd80d86129ca1a86ed897}{trigger}} (string \$package, string \$link, string \$message,... \$args)
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_a213bd7ec4e6e5468b9b39eeafab493b4}{trigger\+If\+Called\+From\+Outside}} (string \$package, string \$link, string \$message,... \$args)
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_a837f35b7ba5c26cd978d0eaf2961477b}{enable\+Tracking\+Deprecations}} ()
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_ac58d541653f4f5ec3e17283b63b2caae}{enable\+With\+Trigger\+Error}} ()
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_a5347405b2fa0455a3d7cd80a33533843}{enable\+With\+Psr\+Logger}} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger)
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_a8498ac7de0d052b14f48d723bdc56a38}{without\+Deduplication}} ()
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_a5471c4c9c443d5a497b7383a6fc63fcc}{disable}} ()
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_af14fd9b3b335de815b5afeee7d1f80f5}{ignore\+Package}} (string \$package\+Name)
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_a004c719f3b809ec37525b14f8c301a95}{ignore\+Deprecations}} (string ... \$links)
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_a5c4034f0210aecf2e20efd9e0f768795}{get\+Unique\+Triggered\+Deprecations\+Count}} ()
+\item 
+static \mbox{\hyperlink{class_doctrine_1_1_deprecations_1_1_deprecation_afc998b295c40d8db5a6a7bfff00048e3}{get\+Triggered\+Deprecations}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages Deprecation logging in different ways.
+
+By default triggered exceptions are not logged.
+
+To enable different deprecation logging mechanisms you can call the following methods\+:
+
+
+\begin{DoxyItemize}
+\item Minimal collection of deprecations via get\+Triggered\+Deprecations() \textbackslash{}\+Doctrine\textbackslash{}\+Deprecations\textbackslash{}\+Deprecation\+::enable\+Tracking\+Deprecations();
+\item Uses @trigger\+\_\+error with E\+\_\+\+USER\+\_\+\+DEPRECATED \textbackslash{}\+Doctrine\textbackslash{}\+Deprecations\textbackslash{}\+Deprecation\+::enable\+With\+Trigger\+Error();
+\item Sends deprecation messages via a PSR-\/3 logger \textbackslash{}\+Doctrine\textbackslash{}\+Deprecations\textbackslash{}\+Deprecation\+::enable\+With\+Psr\+Logger(\$logger);
+\end{DoxyItemize}
+
+Packages that trigger deprecations should use the {\ttfamily trigger()} or {\ttfamily trigger\+If\+Called\+From\+Outside()} methods. 
+
+\label{doc-func-members}
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_a5471c4c9c443d5a497b7383a6fc63fcc}\index{Deprecation@{Deprecation}!disable@{disable}}
+\index{disable@{disable}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_a5471c4c9c443d5a497b7383a6fc63fcc} 
+disable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_a837f35b7ba5c26cd978d0eaf2961477b}\index{Deprecation@{Deprecation}!enableTrackingDeprecations@{enableTrackingDeprecations}}
+\index{enableTrackingDeprecations@{enableTrackingDeprecations}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{enableTrackingDeprecations()}{enableTrackingDeprecations()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_a837f35b7ba5c26cd978d0eaf2961477b} 
+enable\+Tracking\+Deprecations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_a5347405b2fa0455a3d7cd80a33533843}\index{Deprecation@{Deprecation}!enableWithPsrLogger@{enableWithPsrLogger}}
+\index{enableWithPsrLogger@{enableWithPsrLogger}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{enableWithPsrLogger()}{enableWithPsrLogger()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_a5347405b2fa0455a3d7cd80a33533843} 
+enable\+With\+Psr\+Logger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_ac58d541653f4f5ec3e17283b63b2caae}\index{Deprecation@{Deprecation}!enableWithTriggerError@{enableWithTriggerError}}
+\index{enableWithTriggerError@{enableWithTriggerError}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{enableWithTriggerError()}{enableWithTriggerError()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_ac58d541653f4f5ec3e17283b63b2caae} 
+enable\+With\+Trigger\+Error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_afc998b295c40d8db5a6a7bfff00048e3}\index{Deprecation@{Deprecation}!getTriggeredDeprecations@{getTriggeredDeprecations}}
+\index{getTriggeredDeprecations@{getTriggeredDeprecations}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{getTriggeredDeprecations()}{getTriggeredDeprecations()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_afc998b295c40d8db5a6a7bfff00048e3} 
+get\+Triggered\+Deprecations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns each triggered deprecation link identifier and the amount of occurrences.
+
+\begin{DoxyReturn}{Returns}
+array$<$string,int$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_a5c4034f0210aecf2e20efd9e0f768795}\index{Deprecation@{Deprecation}!getUniqueTriggeredDeprecationsCount@{getUniqueTriggeredDeprecationsCount}}
+\index{getUniqueTriggeredDeprecationsCount@{getUniqueTriggeredDeprecationsCount}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{getUniqueTriggeredDeprecationsCount()}{getUniqueTriggeredDeprecationsCount()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_a5c4034f0210aecf2e20efd9e0f768795} 
+get\+Unique\+Triggered\+Deprecations\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_a004c719f3b809ec37525b14f8c301a95}\index{Deprecation@{Deprecation}!ignoreDeprecations@{ignoreDeprecations}}
+\index{ignoreDeprecations@{ignoreDeprecations}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{ignoreDeprecations()}{ignoreDeprecations()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_a004c719f3b809ec37525b14f8c301a95} 
+ignore\+Deprecations (\begin{DoxyParamCaption}\item[{string ...}]{\$links}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_af14fd9b3b335de815b5afeee7d1f80f5}\index{Deprecation@{Deprecation}!ignorePackage@{ignorePackage}}
+\index{ignorePackage@{ignorePackage}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{ignorePackage()}{ignorePackage()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_af14fd9b3b335de815b5afeee7d1f80f5} 
+ignore\+Package (\begin{DoxyParamCaption}\item[{string}]{\$package\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_a1f761f43956fd80d86129ca1a86ed897}\index{Deprecation@{Deprecation}!trigger@{trigger}}
+\index{trigger@{trigger}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{trigger()}{trigger()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_a1f761f43956fd80d86129ca1a86ed897} 
+trigger (\begin{DoxyParamCaption}\item[{string}]{\$package}{, }\item[{string}]{\$link}{, }\item[{string}]{\$message}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Trigger a deprecation for the given package and identfier.
+
+The link should point to a Github issue or Wiki entry detailing the deprecation. It is additionally used to de-\/duplicate the trigger of the same deprecation during a request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float | int | string & {\em \$args} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_a213bd7ec4e6e5468b9b39eeafab493b4}\index{Deprecation@{Deprecation}!triggerIfCalledFromOutside@{triggerIfCalledFromOutside}}
+\index{triggerIfCalledFromOutside@{triggerIfCalledFromOutside}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{triggerIfCalledFromOutside()}{triggerIfCalledFromOutside()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_a213bd7ec4e6e5468b9b39eeafab493b4} 
+trigger\+If\+Called\+From\+Outside (\begin{DoxyParamCaption}\item[{string}]{\$package}{, }\item[{string}]{\$link}{, }\item[{string}]{\$message}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Trigger a deprecation for the given package and identifier when called from outside.
+
+"{}\+Outside"{} means we assume that \$package is currently installed as a dependency and the caller is not a file in that package. When \$package is installed as a root package then deprecations triggered from the tests folder are also considered "{}outside"{}.
+
+This deprecation method assumes that you are using \doxylink{namespace_composer}{Composer} to install the dependency and are using the default /vendor/ folder and not a \doxylink{namespace_composer}{Composer} plugin to change the install location. The assumption is also that \$package is the exact composer packge name.
+
+Compared to {\ttfamily \doxylink{}{trigger()}} this method causes some overhead when deprecation tracking is enabled even during deduplication, because it needs to call {\ttfamily \doxylink{}{debug\+\_\+backtrace()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+float | int | string & {\em \$args} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_doctrine_1_1_deprecations_1_1_deprecation_a8498ac7de0d052b14f48d723bdc56a38}\index{Deprecation@{Deprecation}!withoutDeduplication@{withoutDeduplication}}
+\index{withoutDeduplication@{withoutDeduplication}!Deprecation@{Deprecation}}
+\doxysubsubsection{\texorpdfstring{withoutDeduplication()}{withoutDeduplication()}}
+{\footnotesize\ttfamily \label{class_doctrine_1_1_deprecations_1_1_deprecation_a8498ac7de0d052b14f48d723bdc56a38} 
+without\+Deduplication (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/doctrine/deprecations/src/\mbox{\hyperlink{doctrine_2deprecations_2src_2_deprecation_8php}{Deprecation.\+php}}\end{DoxyCompactItemize}

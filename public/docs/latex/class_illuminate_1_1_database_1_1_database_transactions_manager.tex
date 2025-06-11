@@ -1,0 +1,274 @@
+\doxysection{Database\+Transactions\+Manager Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager}{}\label{class_illuminate_1_1_database_1_1_database_transactions_manager}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+Inheritance diagram for Database\+Transactions\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_database_1_1_database_transactions_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a8e30c9dd15d0af509580b48716dbab78}{begin}} (\$connection, \$level)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a22f5215db45fea6932bcbc472ab7da20}{commit}} (\$connection, \$level\+Being\+Committed, \$new\+Transaction\+Level)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_abfca4aff026b1d1f7bce6a5314883515}{stage\+Transactions}} (\$connection, \$level\+Being\+Committed)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_acb9f7ab57aab1aa85e1729156927d499}{rollback}} (\$connection, \$new\+Transaction\+Level)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a371fd2989fd197891d5cadd22ae415cd}{add\+Callback}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_ab9547758f22db7b9d94f6f1aa0154022}{callback\+Applicable\+Transactions}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a3820c7d9152e90e67a53d601bcf8b0a5}{after\+Commit\+Callbacks\+Should\+Be\+Executed}} (\$level)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a3a7f8cf5ddc97d502397dc90a332bc17}{get\+Pending\+Transactions}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a719c6da11e0d1f96045c282adb9b67be}{get\+Committed\+Transactions}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a8e4b78900b3781b681e1f516380559c8}{remove\+All\+Transactions\+For\+Connection}} (\$connection)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_ab9abaa36b495b07592d8d1ac817c8bfa}{remove\+Committed\+Transactions\+That\+Are\+Children\+Of}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record}{Database\+Transaction\+Record}} \$transaction)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_aaf2913a743df2c9d59ef2333bea752b6}{\$committed\+Transactions}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_a1dae900768fe0949bae40f50e49e753d}{\$pending\+Transactions}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transactions_manager_ad9ddf9733584354c74c3c5ea8b25b0db}{\$current\+Transaction}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_a095c5d389db211932136b53f25f39685}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a new database transactions manager instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_a371fd2989fd197891d5cadd22ae415cd}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!addCallback@{addCallback}}
+\index{addCallback@{addCallback}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{addCallback()}{addCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_a371fd2989fd197891d5cadd22ae415cd} 
+add\+Callback (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a transaction callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a371fd2989fd197891d5cadd22ae415cd}{Database\+Transactions\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_a3820c7d9152e90e67a53d601bcf8b0a5}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!afterCommitCallbacksShouldBeExecuted@{afterCommitCallbacksShouldBeExecuted}}
+\index{afterCommitCallbacksShouldBeExecuted@{afterCommitCallbacksShouldBeExecuted}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{afterCommitCallbacksShouldBeExecuted()}{afterCommitCallbacksShouldBeExecuted()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_a3820c7d9152e90e67a53d601bcf8b0a5} 
+after\+Commit\+Callbacks\+Should\+Be\+Executed (\begin{DoxyParamCaption}\item[{}]{\$level}{}\end{DoxyParamCaption})}
+
+Determine if after commit callbacks should be executed for the given transaction level.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_a3820c7d9152e90e67a53d601bcf8b0a5}{Database\+Transactions\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_a8e30c9dd15d0af509580b48716dbab78}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!begin@{begin}}
+\index{begin@{begin}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_a8e30c9dd15d0af509580b48716dbab78} 
+begin (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$level}{}\end{DoxyParamCaption})}
+
+Start a new database transaction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+int & {\em \$level} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_ab9547758f22db7b9d94f6f1aa0154022}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!callbackApplicableTransactions@{callbackApplicableTransactions}}
+\index{callbackApplicableTransactions@{callbackApplicableTransactions}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{callbackApplicableTransactions()}{callbackApplicableTransactions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_ab9547758f22db7b9d94f6f1aa0154022} 
+callback\+Applicable\+Transactions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the transactions that are applicable to callbacks.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Database\+Transaction\+Record\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_testing_1_1_database_transactions_manager_ab9547758f22db7b9d94f6f1aa0154022}{Database\+Transactions\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_a22f5215db45fea6932bcbc472ab7da20}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!commit@{commit}}
+\index{commit@{commit}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_a22f5215db45fea6932bcbc472ab7da20} 
+commit (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$level\+Being\+Committed}{, }\item[{}]{\$new\+Transaction\+Level}{}\end{DoxyParamCaption})}
+
+Commit the root database transaction and execute callbacks.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+int & {\em \$level\+Being\+Committed} & \\
+\hline
+int & {\em \$new\+Transaction\+Level} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_a719c6da11e0d1f96045c282adb9b67be}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!getCommittedTransactions@{getCommittedTransactions}}
+\index{getCommittedTransactions@{getCommittedTransactions}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{getCommittedTransactions()}{getCommittedTransactions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_a719c6da11e0d1f96045c282adb9b67be} 
+get\+Committed\+Transactions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the committed transactions.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_a3a7f8cf5ddc97d502397dc90a332bc17}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!getPendingTransactions@{getPendingTransactions}}
+\index{getPendingTransactions@{getPendingTransactions}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{getPendingTransactions()}{getPendingTransactions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_a3a7f8cf5ddc97d502397dc90a332bc17} 
+get\+Pending\+Transactions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the pending transactions.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_a8e4b78900b3781b681e1f516380559c8}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!removeAllTransactionsForConnection@{removeAllTransactionsForConnection}}
+\index{removeAllTransactionsForConnection@{removeAllTransactionsForConnection}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{removeAllTransactionsForConnection()}{removeAllTransactionsForConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_a8e4b78900b3781b681e1f516380559c8} 
+remove\+All\+Transactions\+For\+Connection (\begin{DoxyParamCaption}\item[{}]{\$connection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove all pending, completed, and current transactions for the given connection name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_ab9abaa36b495b07592d8d1ac817c8bfa}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!removeCommittedTransactionsThatAreChildrenOf@{removeCommittedTransactionsThatAreChildrenOf}}
+\index{removeCommittedTransactionsThatAreChildrenOf@{removeCommittedTransactionsThatAreChildrenOf}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{removeCommittedTransactionsThatAreChildrenOf()}{removeCommittedTransactionsThatAreChildrenOf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_ab9abaa36b495b07592d8d1ac817c8bfa} 
+remove\+Committed\+Transactions\+That\+Are\+Children\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_database_transaction_record}{Database\+Transaction\+Record}}}]{\$transaction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove all transactions that are children of the given transaction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Database\+Transaction\+Record & {\em \$transaction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_acb9f7ab57aab1aa85e1729156927d499}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!rollback@{rollback}}
+\index{rollback@{rollback}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_acb9f7ab57aab1aa85e1729156927d499} 
+rollback (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$new\+Transaction\+Level}{}\end{DoxyParamCaption})}
+
+Rollback the active database transaction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+int & {\em \$new\+Transaction\+Level} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_abfca4aff026b1d1f7bce6a5314883515}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!stageTransactions@{stageTransactions}}
+\index{stageTransactions@{stageTransactions}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{stageTransactions()}{stageTransactions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_abfca4aff026b1d1f7bce6a5314883515} 
+stage\+Transactions (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$level\+Being\+Committed}{}\end{DoxyParamCaption})}
+
+Move relevant pending transactions to a committed state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+int & {\em \$level\+Being\+Committed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_aaf2913a743df2c9d59ef2333bea752b6}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!\$committedTransactions@{\$committedTransactions}}
+\index{\$committedTransactions@{\$committedTransactions}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{\$committedTransactions}{\$committedTransactions}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_aaf2913a743df2c9d59ef2333bea752b6} 
+\$committed\+Transactions\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_ad9ddf9733584354c74c3c5ea8b25b0db}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!\$currentTransaction@{\$currentTransaction}}
+\index{\$currentTransaction@{\$currentTransaction}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{\$currentTransaction}{\$currentTransaction}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_ad9ddf9733584354c74c3c5ea8b25b0db} 
+\$current\+Transaction = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_database_transactions_manager_a1dae900768fe0949bae40f50e49e753d}\index{DatabaseTransactionsManager@{DatabaseTransactionsManager}!\$pendingTransactions@{\$pendingTransactions}}
+\index{\$pendingTransactions@{\$pendingTransactions}!DatabaseTransactionsManager@{DatabaseTransactionsManager}}
+\doxysubsubsection{\texorpdfstring{\$pendingTransactions}{\$pendingTransactions}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_database_transactions_manager_a1dae900768fe0949bae40f50e49e753d} 
+\$pending\+Transactions\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\mbox{\hyperlink{_database_2_database_transactions_manager_8php}{Database\+Transactions\+Manager.\+php}}\end{DoxyCompactItemize}

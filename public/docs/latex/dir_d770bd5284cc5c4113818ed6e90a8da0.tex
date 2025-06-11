@@ -1,0 +1,89 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/tree-\/kill Directory Reference}
+\hypertarget{dir_d770bd5284cc5c4113818ed6e90a8da0}{}\label{dir_d770bd5284cc5c4113818ed6e90a8da0}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/tree-\/kill Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/tree-\/kill Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+Kill all processes in the process tree, including the root process.\hypertarget{README.md_autotoc_md7763}{}\doxysubsection{\texorpdfstring{Examples}{Examples}}\label{README.md_autotoc_md7763}
+Kill all the descendent processes of the process with pid {\ttfamily 1}, including the process with pid {\ttfamily 1} itself\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ kill\ =\ require('tree-\/kill');}
+\DoxyCodeLine{kill(1);}
+
+\end{DoxyCode}
+
+
+Send a signal other than SIGTERM.\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ kill\ =\ require('tree-\/kill');}
+\DoxyCodeLine{kill(1,\ 'SIGKILL');}
+
+\end{DoxyCode}
+
+
+Run a callback when done killing the processes. Passes an error argument if there was an error. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ kill\ =\ require('tree-\/kill');}
+\DoxyCodeLine{kill(1,\ 'SIGKILL',\ function(err)\ \{}
+\DoxyCodeLine{\ \ \ \ //\ Do\ things}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+You can also install tree-\/kill globally and use it as a command\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tree-\/kill\ 1\ \ \ \ \ \ \ \ \ \ \#\ sends\ SIGTERM\ to\ process\ 1\ and\ its\ descendents}
+\DoxyCodeLine{tree-\/kill\ 1\ SIGTERM\ \ \#\ same}
+\DoxyCodeLine{tree-\/kill\ 1\ SIGKILL\ \ \#\ sends\ KILL\ instead\ of\ TERMINATE}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7764}{}\doxysubsection{\texorpdfstring{Methods}{Methods}}\label{README.md_autotoc_md7764}
+\hypertarget{README.md_autotoc_md7765}{}\doxysubsubsection{\texorpdfstring{require(\textquotesingle{}tree-\/kill\textquotesingle{})(pid, \mbox{[}signal\mbox{]}, \mbox{[}callback\mbox{]});}{require(\textquotesingle{}tree-\/kill\textquotesingle{})(pid, \mbox{[}signal\mbox{]}, \mbox{[}callback\mbox{]});}}\label{README.md_autotoc_md7765}
+Sends signal {\ttfamily signal} to all children processes of the process with pid {\ttfamily pid}, including {\ttfamily pid}. Signal defaults to {\ttfamily SIGTERM}.
+
+For Linux, this uses {\ttfamily ps -\/o pid -\/-\/no-\/headers -\/-\/ppid PID} to find the parent pids of {\ttfamily PID}.
+
+For Darwin/\+OSX, this uses {\ttfamily pgrep -\/P PID} to find the parent pids of {\ttfamily PID}.
+
+For Windows, this uses `\textquotesingle{}taskkill /pid PID /T /F'\`{} to kill the process tree. Note that on Windows, sending the different kinds of POSIX signals is not possible.\hypertarget{README.md_autotoc_md7766}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{README.md_autotoc_md7766}
+With \href{https://npmjs.org}{\texttt{npm}} do\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ install\ tree-\/kill}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md7767}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md7767}
+MIT\hypertarget{README.md_autotoc_md7768}{}\doxysubsection{\texorpdfstring{Changelog}{Changelog}}\label{README.md_autotoc_md7768}
+\hypertarget{README.md_autotoc_md7769}{}\doxysubsubsection{\texorpdfstring{\mbox{[}1.\+2.\+2\mbox{]} -\/ 2019-\/12-\/11}{\mbox{[}1.\+2.\+2\mbox{]} -\/ 2019-\/12-\/11}}\label{README.md_autotoc_md7769}
+\hypertarget{README.md_autotoc_md7770}{}\doxysubsubsubsection{\texorpdfstring{Changed}{Changed}}\label{README.md_autotoc_md7770}
+
+\begin{DoxyItemize}
+\item security fix\+: sanitize {\ttfamily pid} parameter to fix arbitrary code execution vulnerability
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md7771}{}\doxysubsubsection{\texorpdfstring{\mbox{[}1.\+2.\+1\mbox{]} -\/ 2018-\/11-\/05}{\mbox{[}1.\+2.\+1\mbox{]} -\/ 2018-\/11-\/05}}\label{README.md_autotoc_md7771}
+\hypertarget{README.md_autotoc_md7772}{}\doxysubsubsubsection{\texorpdfstring{Changed}{Changed}}\label{README.md_autotoc_md7772}
+
+\begin{DoxyItemize}
+\item added missing LICENSE file
+\item updated Type\+Script definitions
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md7773}{}\doxysubsubsection{\texorpdfstring{\mbox{[}1.\+2.\+0\mbox{]} -\/ 2017-\/09-\/19}{\mbox{[}1.\+2.\+0\mbox{]} -\/ 2017-\/09-\/19}}\label{README.md_autotoc_md7773}
+\hypertarget{README.md_autotoc_md7774}{}\doxysubsubsubsection{\texorpdfstring{Added}{Added}}\label{README.md_autotoc_md7774}
+
+\begin{DoxyItemize}
+\item Type\+Script definitions 
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md7775}{}\doxysubsubsubsection{\texorpdfstring{Changed}{Changed}}\label{README.md_autotoc_md7775}
+
+\begin{DoxyItemize}
+\item {\ttfamily kill(pid, callback)} works. Before you had to use {\ttfamily kill(pid, signal, callback)}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md7776}{}\doxysubsubsection{\texorpdfstring{\mbox{[}1.\+1.\+0\mbox{]} -\/ 2016-\/05-\/13}{\mbox{[}1.\+1.\+0\mbox{]} -\/ 2016-\/05-\/13}}\label{README.md_autotoc_md7776}
+\hypertarget{README.md_autotoc_md7777}{}\doxysubsubsubsection{\texorpdfstring{Added}{Added}}\label{README.md_autotoc_md7777}
+
+\begin{DoxyItemize}
+\item A {\ttfamily tree-\/kill} CLI
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md7778}{}\doxysubsubsection{\texorpdfstring{\mbox{[}1.\+0.\+0\mbox{]} -\/ 2015-\/09-\/17}{\mbox{[}1.\+0.\+0\mbox{]} -\/ 2015-\/09-\/17}}\label{README.md_autotoc_md7778}
+\hypertarget{README.md_autotoc_md7779}{}\doxysubsubsubsection{\texorpdfstring{Added}{Added}}\label{README.md_autotoc_md7779}
+
+\begin{DoxyItemize}
+\item optional callback
+\item Darwin support 
+\end{DoxyItemize}

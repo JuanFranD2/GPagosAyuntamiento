@@ -1,0 +1,26 @@
+var namespace_symfony_1_1_component_1_1_http_kernel_1_1_exception =
+[
+    [ "AccessDeniedHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_access_denied_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_access_denied_http_exception" ],
+    [ "BadRequestHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_bad_request_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_bad_request_http_exception" ],
+    [ "ConflictHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_conflict_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_conflict_http_exception" ],
+    [ "ControllerDoesNotReturnResponseException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_controller_does_not_return_response_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_controller_does_not_return_response_exception" ],
+    [ "GoneHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_gone_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_gone_http_exception" ],
+    [ "HttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception" ],
+    [ "HttpExceptionInterface", "interface_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_interface.html", "interface_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_http_exception_interface" ],
+    [ "InvalidMetadataException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_invalid_metadata_exception.html", null ],
+    [ "LengthRequiredHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_length_required_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_length_required_http_exception" ],
+    [ "LockedHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_locked_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_locked_http_exception" ],
+    [ "MethodNotAllowedHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_method_not_allowed_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_method_not_allowed_http_exception" ],
+    [ "NearMissValueResolverException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_near_miss_value_resolver_exception.html", null ],
+    [ "NotAcceptableHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_not_acceptable_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_not_acceptable_http_exception" ],
+    [ "NotFoundHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_not_found_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_not_found_http_exception" ],
+    [ "PreconditionFailedHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_precondition_failed_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_precondition_failed_http_exception" ],
+    [ "PreconditionRequiredHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_precondition_required_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_precondition_required_http_exception" ],
+    [ "ResolverNotFoundException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_resolver_not_found_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_resolver_not_found_exception" ],
+    [ "ServiceUnavailableHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_service_unavailable_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_service_unavailable_http_exception" ],
+    [ "TooManyRequestsHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_too_many_requests_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_too_many_requests_http_exception" ],
+    [ "UnauthorizedHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_unauthorized_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_unauthorized_http_exception" ],
+    [ "UnexpectedSessionUsageException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_unexpected_session_usage_exception.html", null ],
+    [ "UnprocessableEntityHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_unprocessable_entity_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_unprocessable_entity_http_exception" ],
+    [ "UnsupportedMediaTypeHttpException", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_unsupported_media_type_http_exception.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_unsupported_media_type_http_exception" ]
+];

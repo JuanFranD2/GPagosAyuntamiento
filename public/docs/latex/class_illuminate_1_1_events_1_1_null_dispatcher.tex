@@ -1,0 +1,362 @@
+\doxysection{Null\+Dispatcher Class Reference}
+\hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher}{}\label{class_illuminate_1_1_events_1_1_null_dispatcher}\index{NullDispatcher@{NullDispatcher}}
+Inheritance diagram for Null\+Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_events_1_1_null_dispatcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a4c7381f0403cb72e464062dcd84427b8}{\+\_\+\+\_\+construct}} (Dispatcher\+Contract \$dispatcher)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a066a7bbd32131d4c8e56517c2ede70d2}{dispatch}} (\$event, \$payload=\mbox{[}$\,$\mbox{]}, \$halt=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_af7723a32758567fc2031070b8a4b0909}{push}} (\$event, \$payload=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a5d7f061a6b162233469ff0502b130ee1}{until}} (\$event, \$payload=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_ae0c057c9296d25c2c430afca63475dae}{listen}} (\$events, \$listener=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a6a09bcade0e7e5dcfec49dd3e837c1a6}{has\+Listeners}} (\$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_ac18277095f037bd82f1bb6510ac9d442}{subscribe}} (\$subscriber)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a7242fe442d232bb90c8f40b5f9dcd3a2}{flush}} (\$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a02f5a60ef65fd314d50c2949cc07a92a}{forget}} (\$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a4e85bdffc6ab9445580126186d8219dd}{forget\+Pushed}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_ac565bd6a9d062c73a0a0db7afe0ffea9}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher}{Dispatcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a69f64be9462b9468a290dd70c9af7796}{\+\_\+\+\_\+construct}} (?Container\+Contract \$container=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a88af3d18f454a982fd228fc2c0e1b997}{has\+Wildcard\+Listeners}} (\$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a82fa978ba62c31c8712e04b0ae8109fe}{get\+Listeners}} (\$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a6da76d08ea43fea92a370582f78c84ea}{make\+Listener}} (\$listener, \$wildcard=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_acf668f5b6ca6769b7a23d035f8223d9d}{create\+Class\+Listener}} (\$listener, \$wildcard=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_aaa5fe8516119e5fabcf0d9148deb82a8}{set\+Queue\+Resolver}} (callable \$resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a57eb3c22e94d177703f4749c69e1d727}{set\+Transaction\+Manager\+Resolver}} (callable \$resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a22789363e32e29271de20e23324f4f61}{get\+Raw\+Listeners}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_ab1d5b769b8d51cf3de5b1f1c4a9e6298}{\$dispatcher}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher}{Dispatcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ab97dd40df90f4ce6f0fce9091e7c7872}{\$container}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a980b440b9984f3e17e3824f0197f68a7}{\$listeners}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a0e51fc27a82b1f03b67bf48dfb59052c}{\$wildcards}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_abc34e934a3b6cf2a8cd7d76d3a36b59d}{\$wildcards\+Cache}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_abfdcbb37d78f83112bceebaec1d5258f}{\$queue\+Resolver}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a3ba71e395071c850642fe7e29b7a271f}{\$transaction\+Manager\+Resolver}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher}{Dispatcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a0d6f81a509eecc65e5174e8a7be4cf3f}{setup\+Wildcard\+Listen}} (\$event, \$listener)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_af2c17243c0337278a5dcc6156d06aa00}{resolve\+Subscriber}} (\$subscriber)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a4296a34d4d2e89d791a492f8814b41a5}{invoke\+Listeners}} (\$event, \$payload, \$halt=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_abd6797f9e00e0500fbe5e6edc6c0b03c}{parse\+Event\+And\+Payload}} (\$event, \$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ac56d33880e7d44e4fe1d56a40e6d21cd}{should\+Broadcast}} (array \$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ac6dc097a730fad3db6151b0ecb3c550f}{broadcast\+When}} (\$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a6c54cbf33f1c2bbf0ab4e45f7735088b}{broadcast\+Event}} (\$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a6f56af51ed5978cf295ca8970ed775c5}{get\+Wildcard\+Listeners}} (\$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a83d7b75b2a66056976940556b71d9921}{add\+Interface\+Listeners}} (\$event\+Name, array \$listeners=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a9a327308818dd53442aa7ec822e6a1d1}{prepare\+Listeners}} (string \$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a0c244375277f90c6b8ec3ce831a27e7d}{create\+Class\+Callable}} (\$listener)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a3bca55b618053198d38e677295d67426}{parse\+Class\+Callable}} (\$listener)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a0230a763b5215c5975bb05b84fa80d2e}{handler\+Should\+Be\+Queued}} (\$class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_aa998700d25404b81639208c00e25cb5f}{create\+Queued\+Handler\+Callable}} (\$class, \$method)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ac924b3859208eaf3202b55d06cca5968}{handler\+Should\+Be\+Dispatched\+After\+Database\+Transactions}} (\$listener)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a810a5be0ae7ce6ef06af16f4455c1f95}{create\+Callback\+For\+Listener\+Running\+After\+Commits}} (\$listener, \$method)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a50548cea67c4068457434b33076cfdbc}{handler\+Wants\+To\+Be\+Queued}} (\$class, \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_afcac4c0870f78a9f2a352454e7aae57e}{queue\+Handler}} (\$class, \$method, \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ae5cd91c196ea96432e8fde2150cc17b1}{create\+Listener\+And\+Job}} (\$class, \$method, \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_aef3c902ec50dbf419739439c9bce7846}{propagate\+Listener\+Options}} (\$listener, \$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ad2cd561b416d99ecb3d29dfb89721658}{resolve\+Queue}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ac0ba997d952fc2470d52557b6a61b263}{resolve\+Transaction\+Manager}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_a4c7381f0403cb72e464062dcd84427b8}\index{NullDispatcher@{NullDispatcher}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_a4c7381f0403cb72e464062dcd84427b8} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Dispatcher\+Contract}]{\$dispatcher}{}\end{DoxyParamCaption})}
+
+Create a new event dispatcher instance that does not fire.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$dispatcher} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_ac565bd6a9d062c73a0a0db7afe0ffea9}\index{NullDispatcher@{NullDispatcher}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_ac565bd6a9d062c73a0a0db7afe0ffea9} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically pass method calls to the underlying dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_a066a7bbd32131d4c8e56517c2ede70d2}\index{NullDispatcher@{NullDispatcher}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_a066a7bbd32131d4c8e56517c2ede70d2} 
+dispatch (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{}]{\$payload}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$halt}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Don\textquotesingle{}t fire an event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | object & {\em \$event} & \\
+\hline
+mixed & {\em \$payload} & \\
+\hline
+bool & {\em \$halt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a066a7bbd32131d4c8e56517c2ede70d2}{Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_a7242fe442d232bb90c8f40b5f9dcd3a2}\index{NullDispatcher@{NullDispatcher}!flush@{flush}}
+\index{flush@{flush}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_a7242fe442d232bb90c8f40b5f9dcd3a2} 
+flush (\begin{DoxyParamCaption}\item[{}]{\$event}{}\end{DoxyParamCaption})}
+
+Flush a set of pushed events.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a7242fe442d232bb90c8f40b5f9dcd3a2}{Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_a02f5a60ef65fd314d50c2949cc07a92a}\index{NullDispatcher@{NullDispatcher}!forget@{forget}}
+\index{forget@{forget}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_a02f5a60ef65fd314d50c2949cc07a92a} 
+forget (\begin{DoxyParamCaption}\item[{}]{\$event}{}\end{DoxyParamCaption})}
+
+Remove a set of listeners from the dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a02f5a60ef65fd314d50c2949cc07a92a}{Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_a4e85bdffc6ab9445580126186d8219dd}\index{NullDispatcher@{NullDispatcher}!forgetPushed@{forgetPushed}}
+\index{forgetPushed@{forgetPushed}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{forgetPushed()}{forgetPushed()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_a4e85bdffc6ab9445580126186d8219dd} 
+forget\+Pushed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Forget all of the queued listeners.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a4e85bdffc6ab9445580126186d8219dd}{Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_a6a09bcade0e7e5dcfec49dd3e837c1a6}\index{NullDispatcher@{NullDispatcher}!hasListeners@{hasListeners}}
+\index{hasListeners@{hasListeners}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{hasListeners()}{hasListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_a6a09bcade0e7e5dcfec49dd3e837c1a6} 
+has\+Listeners (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{}\end{DoxyParamCaption})}
+
+Determine if a given event has listeners.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a6a09bcade0e7e5dcfec49dd3e837c1a6}{Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_ae0c057c9296d25c2c430afca63475dae}\index{NullDispatcher@{NullDispatcher}!listen@{listen}}
+\index{listen@{listen}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_ae0c057c9296d25c2c430afca63475dae} 
+listen (\begin{DoxyParamCaption}\item[{}]{\$events}{, }\item[{}]{\$listener}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register an event listener with the dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string | array & {\em \$events} & \\
+\hline
+\textbackslash{}\+Closure | string | array | null & {\em \$listener} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ae0c057c9296d25c2c430afca63475dae}{Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_af7723a32758567fc2031070b8a4b0909}\index{NullDispatcher@{NullDispatcher}!push@{push}}
+\index{push@{push}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_af7723a32758567fc2031070b8a4b0909} 
+push (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{}]{\$payload}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Don\textquotesingle{}t register an event and payload to be fired later.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event} & \\
+\hline
+array & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_af7723a32758567fc2031070b8a4b0909}{Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_ac18277095f037bd82f1bb6510ac9d442}\index{NullDispatcher@{NullDispatcher}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_ac18277095f037bd82f1bb6510ac9d442} 
+subscribe (\begin{DoxyParamCaption}\item[{}]{\$subscriber}{}\end{DoxyParamCaption})}
+
+Register an event subscriber with the dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$subscriber} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ac18277095f037bd82f1bb6510ac9d442}{Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_a5d7f061a6b162233469ff0502b130ee1}\index{NullDispatcher@{NullDispatcher}!until@{until}}
+\index{until@{until}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{until()}{until()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_a5d7f061a6b162233469ff0502b130ee1} 
+until (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{}]{\$payload}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Don\textquotesingle{}t dispatch an event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | object & {\em \$event} & \\
+\hline
+mixed & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a5d7f061a6b162233469ff0502b130ee1}{Dispatcher}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_events_1_1_null_dispatcher_ab1d5b769b8d51cf3de5b1f1c4a9e6298}\index{NullDispatcher@{NullDispatcher}!\$dispatcher@{\$dispatcher}}
+\index{\$dispatcher@{\$dispatcher}!NullDispatcher@{NullDispatcher}}
+\doxysubsubsection{\texorpdfstring{\$dispatcher}{\$dispatcher}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_null_dispatcher_ab1d5b769b8d51cf3de5b1f1c4a9e6298} 
+\$dispatcher\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Events/\mbox{\hyperlink{_null_dispatcher_8php}{Null\+Dispatcher.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,611 @@
+\doxysection{Tokenizer Class Reference}
+\hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer}{}\label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer}\index{Tokenizer@{Tokenizer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a1d3ec398847d72d13496db0059e2bdee}{\+\_\+\+\_\+construct}} (\$scanner, \$event\+Handler, \$mode=self\+::\+CONFORMANT\+\_\+\+HTML)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a38d99acc70a1d8fd8f94455743b2d237}{parse}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a6e39ffaf25ec9e8a64c2713bd8780352}{set\+Text\+Mode}} (\$textmode, \$until\+Tag=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a07b28a6cfe770b75d35ec966b99b6857}{CONFORMANT\+\_\+\+XML}} = \textquotesingle{}xml\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_adf90db0f1f3c7188f5b65a2efdd81b91}{CONFORMANT\+\_\+\+HTML}} = \textquotesingle{}html\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ab9117c17a7abbaef912806b5c0957fd3}{consume\+Data}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae1a8a3723297e2449279170801c2b0a6}{character\+Data}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_af2be769089abb4605d6ad481056e0ffa}{text}} (\$tok)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3e4508f22d9fed30a951b66b0f79f2d7}{raw\+Text}} (\$tok)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a2c2e12408871a05d6c6d6ca452e1eca8}{rcdata}} (\$tok)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ada3799f740f09e3689d0054629e87feb}{eof}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a56a8e9ff2455f4836266b057c2b7b050}{markup\+Declaration}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a29b592ca857bb2309aa66779f6facc82}{end\+Tag}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a4d800a4ebb04fb70faa0a08518756e5a}{tag\+Name}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a54bd999176133ed0d3458dc3e165472c}{is\+Tag\+End}} (\&\$self\+Close)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_af3b1872973140993054f6cf7422d9843}{attribute}} (\&\$attributes)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ad679873d94533970adb097afd82c5577}{attribute\+Value}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3578f6af5206144af5f1bff65a3e0d38}{quoted\+Attribute\+Value}} (\$quote)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a6f971e52ce0c237fdfd2a2a1ec443ac5}{unquoted\+Attribute\+Value}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a9ae627ef53745f6a8e4962f8eda7969d}{bogus\+Comment}} (\$leading=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae2095edae4e260d028c208cead4e5c9a}{comment}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3c4d90a78381a6f7d21361b64a7b12b3}{is\+Comment\+End}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a598525592b24959b145b8638c1c0b2ef}{doctype}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae73a87258b9e560e41f57546be450316}{quoted\+String}} (\$stopchars)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_aec6ec6f7ddfb490c082f417be82f1218}{cdata\+Section}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ace5eea10db5050dd1ab9a6f51c9bc3aa}{processing\+Instruction}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a74a18c1b5866b63ca40b756228538187}{read\+Until\+Sequence}} (\$sequence)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ab9870aabcde11bd3e55f89308521f79d}{sequence\+Matches}} (\$sequence, \$case\+Sensitive=true)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a09d689c8a47b12ccabd772c5a62de3c3}{flush\+Buffer}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_adc8a7992138e54b2cbdb4d4596162a30}{buffer}} (\$str)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_aeb554f4141a72857bddb59cc3134a44a}{parse\+Error}} (\$msg)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_acc083071f5da491b0849a62eec8bea42}{decode\+Character\+Reference}} (\$in\+Attribute=false)
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a1ef4077a93f421ffdbdf911abfd0ef83}{is\+\_\+alpha}} (\$input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3d631ffac04e400617e95699da40a500}{\$scanner}}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a1bcec9bbd34255927faaf155bf3a940a}{\$events}}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ac1dbaadf1b5ee5c64f5679884405b643}{\$tok}}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_adf95f30eaafccead90ab5e2cdb55e9b9}{\$text}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a7a69dd6c6b93bd1cd39835e76deead02}{\$carry\+On}} = true
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a08a52175ef4846a717fad133840bfb60}{\$text\+Mode}} = 0
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae7d3404ab1163c44a6fc2c78cd55c97c}{\$until\+Tag}} = null
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3aaf40baac36e278c7d7c9139df1750c}{\$mode}} = self\+::\+CONFORMANT\+\_\+\+HTML
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The HTML5 tokenizer.
+
+The tokenizer\textquotesingle{}s role is reading data from the scanner and gathering it into semantic units. From the tokenizer, data is emitted to an event handler, which may (for example) create a DOM tree.
+
+The HTML5 specification has a detailed explanation of tokenizing HTML5. We follow that specification to the maximum extent that we can. If you find a discrepancy that is not documented, please file a bug and/or submit a patch.
+
+This tokenizer is implemented as a recursive descent parser.
+
+Within the API documentation, you may see references to the specific section of the HTML5 spec that the code attempts to reproduce. Example\+: 8.\+2.\+4.\+1. This refers to section 8.\+2.\+4.\+1 of the HTML5 CR specification.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://www.w3.org/TR/2012/CR-html5-20121217/}{\texttt{http\+://www.\+w3.\+org/\+TR/2012/\+CR-\/html5-\/20121217/}} 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a1d3ec398847d72d13496db0059e2bdee}\index{Tokenizer@{Tokenizer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a1d3ec398847d72d13496db0059e2bdee} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$scanner}{, }\item[{}]{\$event\+Handler}{, }\item[{}]{\$mode}{ = {\ttfamily self\+:\+:CONFORMANT\+\_\+HTML}}\end{DoxyParamCaption})}
+
+Create a new tokenizer.
+
+Typically, parsing a document involves creating a new tokenizer, giving it a scanner (input) and an event handler (output), and then calling the Tokenizer\+::parse() method.\`{}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Scanner & {\em \$scanner} & A scanner initialized with an input stream. \\
+\hline
+Event\+Handler & {\em \$event\+Handler} & An event handler, initialized and ready to receive events. \\
+\hline
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_af3b1872973140993054f6cf7422d9843}\index{Tokenizer@{Tokenizer}!attribute@{attribute}}
+\index{attribute@{attribute}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{attribute()}{attribute()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_af3b1872973140993054f6cf7422d9843} 
+attribute (\begin{DoxyParamCaption}\item[{\&}]{\$attributes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse attributes from inside of a tag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ad679873d94533970adb097afd82c5577}\index{Tokenizer@{Tokenizer}!attributeValue@{attributeValue}}
+\index{attributeValue@{attributeValue}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{attributeValue()}{attributeValue()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ad679873d94533970adb097afd82c5577} 
+attribute\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Consume an attribute value. See section 8.\+2.\+4.\+37 and after.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a9ae627ef53745f6a8e4962f8eda7969d}\index{Tokenizer@{Tokenizer}!bogusComment@{bogusComment}}
+\index{bogusComment@{bogusComment}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{bogusComment()}{bogusComment()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a9ae627ef53745f6a8e4962f8eda7969d} 
+bogus\+Comment (\begin{DoxyParamCaption}\item[{}]{\$leading}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Consume malformed markup as if it were a comment. 8.\+2.\+4.\+44.
+
+The spec requires that the ENTIRE tag-\/like thing be enclosed inside of the comment. So this will generate comments like\+:
+
+\texorpdfstring{$<$}{<}!--\&lt/+foo\texorpdfstring{$>$}{>}--\texorpdfstring{$>$}{>}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$leading} & Prepend any leading characters. This essentially negates the need to backtrack, but it\textquotesingle{}s sort of a hack.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_adc8a7992138e54b2cbdb4d4596162a30}\index{Tokenizer@{Tokenizer}!buffer@{buffer}}
+\index{buffer@{buffer}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{buffer()}{buffer()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_adc8a7992138e54b2cbdb4d4596162a30} 
+buffer (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add text to the temporary buffer.
+
+\begin{DoxySeeAlso}{See also}
+flush\+Buffer()
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_aec6ec6f7ddfb490c082f417be82f1218}\index{Tokenizer@{Tokenizer}!cdataSection@{cdataSection}}
+\index{cdataSection@{cdataSection}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{cdataSection()}{cdataSection()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_aec6ec6f7ddfb490c082f417be82f1218} 
+cdata\+Section (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle a CDATA section.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae1a8a3723297e2449279170801c2b0a6}\index{Tokenizer@{Tokenizer}!characterData@{characterData}}
+\index{characterData@{characterData}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{characterData()}{characterData()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae1a8a3723297e2449279170801c2b0a6} 
+character\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse anything that looks like character data.
+
+Different rules apply based on the current text mode.
+
+\begin{DoxySeeAlso}{See also}
+Elements\+::\+TEXT\+\_\+\+RAW Elements\+::\+TEXT\+\_\+\+RCDATA. 
+\end{DoxySeeAlso}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae2095edae4e260d028c208cead4e5c9a}\index{Tokenizer@{Tokenizer}!comment@{comment}}
+\index{comment@{comment}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{comment()}{comment()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae2095edae4e260d028c208cead4e5c9a} 
+comment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Read a comment. Expects the first tok to be inside of the comment.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ab9117c17a7abbaef912806b5c0957fd3}\index{Tokenizer@{Tokenizer}!consumeData@{consumeData}}
+\index{consumeData@{consumeData}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{consumeData()}{consumeData()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ab9117c17a7abbaef912806b5c0957fd3} 
+consume\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Consume a character and make a move. HTML5 8.\+2.\+4.\+1. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_acc083071f5da491b0849a62eec8bea42}\index{Tokenizer@{Tokenizer}!decodeCharacterReference@{decodeCharacterReference}}
+\index{decodeCharacterReference@{decodeCharacterReference}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{decodeCharacterReference()}{decodeCharacterReference()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_acc083071f5da491b0849a62eec8bea42} 
+decode\+Character\+Reference (\begin{DoxyParamCaption}\item[{}]{\$in\+Attribute}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Decode a character reference and return the string.
+
+If \$in\+Attribute is set to true, a bare \& will be returned as-\/is.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$in\+Attribute} & Set to true if the text is inside of an attribute value. false otherwise.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a598525592b24959b145b8638c1c0b2ef}\index{Tokenizer@{Tokenizer}!doctype@{doctype}}
+\index{doctype@{doctype}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{doctype()}{doctype()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a598525592b24959b145b8638c1c0b2ef} 
+doctype (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse a DOCTYPE.
+
+Parse a DOCTYPE declaration. This method has strong bearing on whether or not Quirksmode is enabled on the event handler.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000019}{Todo}}]This method is a little long. Should probably refactor.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a29b592ca857bb2309aa66779f6facc82}\index{Tokenizer@{Tokenizer}!endTag@{endTag}}
+\index{endTag@{endTag}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{endTag()}{endTag()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a29b592ca857bb2309aa66779f6facc82} 
+end\+Tag (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Consume an end tag. See section 8.\+2.\+4.\+9. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ada3799f740f09e3689d0054629e87feb}\index{Tokenizer@{Tokenizer}!eof@{eof}}
+\index{eof@{eof}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ada3799f740f09e3689d0054629e87feb} 
+eof (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+If the document is read, emit an EOF event. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a09d689c8a47b12ccabd772c5a62de3c3}\index{Tokenizer@{Tokenizer}!flushBuffer@{flushBuffer}}
+\index{flushBuffer@{flushBuffer}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{flushBuffer()}{flushBuffer()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a09d689c8a47b12ccabd772c5a62de3c3} 
+flush\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send a TEXT event with the contents of the text buffer.
+
+This emits an Event\+Handler\+::text() event with the current contents of the temporary text buffer. (The buffer is used to group as much PCDATA as we can instead of emitting lots and lots of TEXT events.) \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a1ef4077a93f421ffdbdf911abfd0ef83}\index{Tokenizer@{Tokenizer}!is\_alpha@{is\_alpha}}
+\index{is\_alpha@{is\_alpha}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{is\_alpha()}{is\_alpha()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a1ef4077a93f421ffdbdf911abfd0ef83} 
+is\+\_\+alpha (\begin{DoxyParamCaption}\item[{}]{\$input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether a (single-\/byte) character is an ASCII letter or not.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & A single-\/byte string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if it is a letter, False otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3c4d90a78381a6f7d21361b64a7b12b3}\index{Tokenizer@{Tokenizer}!isCommentEnd@{isCommentEnd}}
+\index{isCommentEnd@{isCommentEnd}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{isCommentEnd()}{isCommentEnd()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3c4d90a78381a6f7d21361b64a7b12b3} 
+is\+Comment\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if the scanner has reached the end of a comment.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a54bd999176133ed0d3458dc3e165472c}\index{Tokenizer@{Tokenizer}!isTagEnd@{isTagEnd}}
+\index{isTagEnd@{isTagEnd}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{isTagEnd()}{isTagEnd()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a54bd999176133ed0d3458dc3e165472c} 
+is\+Tag\+End (\begin{DoxyParamCaption}\item[{\&}]{\$self\+Close}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if the scanner has reached the end of a tag. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a56a8e9ff2455f4836266b057c2b7b050}\index{Tokenizer@{Tokenizer}!markupDeclaration@{markupDeclaration}}
+\index{markupDeclaration@{markupDeclaration}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{markupDeclaration()}{markupDeclaration()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a56a8e9ff2455f4836266b057c2b7b050} 
+markup\+Declaration (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Look for markup. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a38d99acc70a1d8fd8f94455743b2d237}\index{Tokenizer@{Tokenizer}!parse@{parse}}
+\index{parse@{parse}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a38d99acc70a1d8fd8f94455743b2d237} 
+parse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Begin parsing.
+
+This will begin scanning the document, tokenizing as it goes. Tokens are emitted into the event handler.
+
+Tokenizing will continue until the document is completely read. Errors are emitted into the event handler, but the parser will attempt to continue parsing until the entire input stream is read. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_aeb554f4141a72857bddb59cc3134a44a}\index{Tokenizer@{Tokenizer}!parseError@{parseError}}
+\index{parseError@{parseError}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{parseError()}{parseError()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_aeb554f4141a72857bddb59cc3134a44a} 
+parse\+Error (\begin{DoxyParamCaption}\item[{}]{\$msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Emit a parse error.
+
+A parse error always returns false because it never consumes any characters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ace5eea10db5050dd1ab9a6f51c9bc3aa}\index{Tokenizer@{Tokenizer}!processingInstruction@{processingInstruction}}
+\index{processingInstruction@{processingInstruction}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{processingInstruction()}{processingInstruction()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ace5eea10db5050dd1ab9a6f51c9bc3aa} 
+processing\+Instruction (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle a processing instruction.
+
+XML processing instructions are supposed to be ignored in HTML5, treated as "{}bogus comments"{}. However, since we\textquotesingle{}re not a user agent, we allow them. We consume until ?\texorpdfstring{$>$}{>} and then issue a Event\+Listener\+::processing\+Instruction() event.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3578f6af5206144af5f1bff65a3e0d38}\index{Tokenizer@{Tokenizer}!quotedAttributeValue@{quotedAttributeValue}}
+\index{quotedAttributeValue@{quotedAttributeValue}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{quotedAttributeValue()}{quotedAttributeValue()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3578f6af5206144af5f1bff65a3e0d38} 
+quoted\+Attribute\+Value (\begin{DoxyParamCaption}\item[{}]{\$quote}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get an attribute value string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$quote} & IMPORTANT\+: This is a series of chars! Any one of which will be considered termination of an attribute\textquotesingle{}s value. E.\+g. "{}\textbackslash{}"{}\textquotesingle{}"{} will stop at either \textquotesingle{} or "{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The attribute value. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae73a87258b9e560e41f57546be450316}\index{Tokenizer@{Tokenizer}!quotedString@{quotedString}}
+\index{quotedString@{quotedString}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{quotedString()}{quotedString()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae73a87258b9e560e41f57546be450316} 
+quoted\+String (\begin{DoxyParamCaption}\item[{}]{\$stopchars}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Utility for reading a quoted string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$stopchars} & Characters (in addition to a close-\/quote) that should stop the string. E.\+g. sometimes \textquotesingle{}\texorpdfstring{$>$}{>}\textquotesingle{} is higher precedence than \textquotesingle{}"{}\textquotesingle{} or "{}\textquotesingle{}"{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed String if one is found (quotations omitted). 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3e4508f22d9fed30a951b66b0f79f2d7}\index{Tokenizer@{Tokenizer}!rawText@{rawText}}
+\index{rawText@{rawText}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{rawText()}{rawText()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3e4508f22d9fed30a951b66b0f79f2d7} 
+raw\+Text (\begin{DoxyParamCaption}\item[{}]{\$tok}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Read text in RAW mode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tok} & The current token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a2c2e12408871a05d6c6d6ca452e1eca8}\index{Tokenizer@{Tokenizer}!rcdata@{rcdata}}
+\index{rcdata@{rcdata}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{rcdata()}{rcdata()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a2c2e12408871a05d6c6d6ca452e1eca8} 
+rcdata (\begin{DoxyParamCaption}\item[{}]{\$tok}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Read text in RCDATA mode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tok} & The current token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a74a18c1b5866b63ca40b756228538187}\index{Tokenizer@{Tokenizer}!readUntilSequence@{readUntilSequence}}
+\index{readUntilSequence@{readUntilSequence}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{readUntilSequence()}{readUntilSequence()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a74a18c1b5866b63ca40b756228538187} 
+read\+Until\+Sequence (\begin{DoxyParamCaption}\item[{}]{\$sequence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Read from the input stream until we get to the desired sequene or hit the end of the input stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sequence} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ab9870aabcde11bd3e55f89308521f79d}\index{Tokenizer@{Tokenizer}!sequenceMatches@{sequenceMatches}}
+\index{sequenceMatches@{sequenceMatches}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{sequenceMatches()}{sequenceMatches()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ab9870aabcde11bd3e55f89308521f79d} 
+sequence\+Matches (\begin{DoxyParamCaption}\item[{}]{\$sequence}{, }\item[{}]{\$case\+Sensitive}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if upcomming chars match the given sequence.
+
+This will read the stream for the \$sequence. If it\textquotesingle{}s found, this will return true. If not, return false. Since this unconsumes any chars it reads, the caller will still need to read the next sequence, even if this returns true.
+
+Example\+: \$this-\/\texorpdfstring{$>$}{>}scanner-\/\texorpdfstring{$>$}{>}sequence\+Matches(\textquotesingle{}$<$/script$>$\textquotesingle{}) will see if the input stream is at the start of a \textquotesingle{}$<$/script$>$\textquotesingle{} string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sequence} & \\
+\hline
+bool & {\em \$case\+Sensitive} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a6e39ffaf25ec9e8a64c2713bd8780352}\index{Tokenizer@{Tokenizer}!setTextMode@{setTextMode}}
+\index{setTextMode@{setTextMode}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{setTextMode()}{setTextMode()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a6e39ffaf25ec9e8a64c2713bd8780352} 
+set\+Text\+Mode (\begin{DoxyParamCaption}\item[{}]{\$textmode}{, }\item[{}]{\$until\+Tag}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the text mode for the character data reader.
+
+HTML5 defines three different modes for reading text\+:
+\begin{DoxyItemize}
+\item Normal\+: Read until a tag is encountered.
+\item RCDATA\+: Read until a tag is encountered, but skip a few otherwise-\/ special characters.
+\item Raw\+: Read until a special closing tag is encountered (viz. pre, script)
+\end{DoxyItemize}
+
+This allows those modes to be set.
+
+Normally, setting is done by the event handler via a special return code on start\+Tag(), but it can also be set manually using this function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$textmode} & One of Elements\+::\+TEXT\+\_\+\texorpdfstring{$\ast$}{*}. \\
+\hline
+string & {\em \$until\+Tag} & The tag that should stop RAW or RCDATA mode. Normal mode does not use this indicator. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a4d800a4ebb04fb70faa0a08518756e5a}\index{Tokenizer@{Tokenizer}!tagName@{tagName}}
+\index{tagName@{tagName}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{tagName()}{tagName()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a4d800a4ebb04fb70faa0a08518756e5a} 
+tag\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Consume a tag name and body. See section 8.\+2.\+4.\+10. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_af2be769089abb4605d6ad481056e0ffa}\index{Tokenizer@{Tokenizer}!text@{text}}
+\index{text@{text}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_af2be769089abb4605d6ad481056e0ffa} 
+text (\begin{DoxyParamCaption}\item[{}]{\$tok}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This buffers the current token as character data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tok} & The current token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a6f971e52ce0c237fdfd2a2a1ec443ac5}\index{Tokenizer@{Tokenizer}!unquotedAttributeValue@{unquotedAttributeValue}}
+\index{unquotedAttributeValue@{unquotedAttributeValue}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{unquotedAttributeValue()}{unquotedAttributeValue()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a6f971e52ce0c237fdfd2a2a1ec443ac5} 
+unquoted\+Attribute\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a7a69dd6c6b93bd1cd39835e76deead02}\index{Tokenizer@{Tokenizer}!\$carryOn@{\$carryOn}}
+\index{\$carryOn@{\$carryOn}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\$carryOn}{\$carryOn}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a7a69dd6c6b93bd1cd39835e76deead02} 
+\$carry\+On = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a1bcec9bbd34255927faaf155bf3a940a}\index{Tokenizer@{Tokenizer}!\$events@{\$events}}
+\index{\$events@{\$events}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\$events}{\$events}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a1bcec9bbd34255927faaf155bf3a940a} 
+\$events\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3aaf40baac36e278c7d7c9139df1750c}\index{Tokenizer@{Tokenizer}!\$mode@{\$mode}}
+\index{\$mode@{\$mode}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\$mode}{\$mode}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3aaf40baac36e278c7d7c9139df1750c} 
+\$mode = self\+::\+CONFORMANT\+\_\+\+HTML\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3d631ffac04e400617e95699da40a500}\index{Tokenizer@{Tokenizer}!\$scanner@{\$scanner}}
+\index{\$scanner@{\$scanner}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\$scanner}{\$scanner}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a3d631ffac04e400617e95699da40a500} 
+\$scanner\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_adf95f30eaafccead90ab5e2cdb55e9b9}\index{Tokenizer@{Tokenizer}!\$text@{\$text}}
+\index{\$text@{\$text}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\$text}{\$text}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_adf95f30eaafccead90ab5e2cdb55e9b9} 
+\$\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_af2be769089abb4605d6ad481056e0ffa}{text}} = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Buffer for text. \Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a08a52175ef4846a717fad133840bfb60}\index{Tokenizer@{Tokenizer}!\$textMode@{\$textMode}}
+\index{\$textMode@{\$textMode}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\$textMode}{\$textMode}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a08a52175ef4846a717fad133840bfb60} 
+\$text\+Mode = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ac1dbaadf1b5ee5c64f5679884405b643}\index{Tokenizer@{Tokenizer}!\$tok@{\$tok}}
+\index{\$tok@{\$tok}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\$tok}{\$tok}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ac1dbaadf1b5ee5c64f5679884405b643} 
+\$tok\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae7d3404ab1163c44a6fc2c78cd55c97c}\index{Tokenizer@{Tokenizer}!\$untilTag@{\$untilTag}}
+\index{\$untilTag@{\$untilTag}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\$untilTag}{\$untilTag}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_ae7d3404ab1163c44a6fc2c78cd55c97c} 
+\$until\+Tag = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_adf90db0f1f3c7188f5b65a2efdd81b91}\index{Tokenizer@{Tokenizer}!CONFORMANT\_HTML@{CONFORMANT\_HTML}}
+\index{CONFORMANT\_HTML@{CONFORMANT\_HTML}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{CONFORMANT\_HTML}{CONFORMANT\_HTML}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_adf90db0f1f3c7188f5b65a2efdd81b91} 
+const CONFORMANT\+\_\+\+HTML = \textquotesingle{}html\textquotesingle{}}
+
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a07b28a6cfe770b75d35ec966b99b6857}\index{Tokenizer@{Tokenizer}!CONFORMANT\_XML@{CONFORMANT\_XML}}
+\index{CONFORMANT\_XML@{CONFORMANT\_XML}!Tokenizer@{Tokenizer}}
+\doxysubsubsection{\texorpdfstring{CONFORMANT\_XML}{CONFORMANT\_XML}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_1_1_parser_1_1_tokenizer_a07b28a6cfe770b75d35ec966b99b6857} 
+const CONFORMANT\+\_\+\+XML = \textquotesingle{}xml\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\+HTML5/\+Parser/\mbox{\hyperlink{masterminds_2html5_2src_2_h_t_m_l5_2_parser_2_tokenizer_8php}{Tokenizer.\+php}}\end{DoxyCompactItemize}

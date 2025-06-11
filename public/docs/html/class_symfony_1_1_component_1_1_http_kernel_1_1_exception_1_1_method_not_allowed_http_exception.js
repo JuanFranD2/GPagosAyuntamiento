@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_method_not_allowed_http_exception =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_method_not_allowed_http_exception.html#a74dfc41812a414170cda9a85b02b30d1", null ]
+];

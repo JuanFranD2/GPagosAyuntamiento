@@ -1,0 +1,17 @@
+\chapter{Configuration }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2configuration}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2configuration}\index{Configuration@{Configuration}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2configuration_autotoc_md2238}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2configuration_autotoc_md2238}%
+
+
+You might want to configure concurrently to always have certain flags on. Any of concurrently\textquotesingle{}s flags can be set via environment variables that are prefixed with {\ttfamily CONCURRENTLY\+\_\+}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ export\ CONCURRENTLY\_KILL\_OTHERS=true}
+\DoxyCodeLine{\$\ export\ CONCURRENTLY\_HANDLE\_INPUT=true}
+\DoxyCodeLine{\#\ Equivalent\ to\ passing\ -\/-\/kill-\/others\ and\ -\/-\/handle-\/input}
+\DoxyCodeLine{\$\ concurrently\ nodemon\ "{}echo\ 'hey\ nodemon,\ you\ won't\ last\ long'"{}}
+
+\end{DoxyCode}
+ 

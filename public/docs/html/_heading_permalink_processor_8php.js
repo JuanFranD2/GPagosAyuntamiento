@@ -1,0 +1,4 @@
+var _heading_permalink_processor_8php =
+[
+    [ "HeadingPermalinkProcessor", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_processor.html", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_processor" ]
+];

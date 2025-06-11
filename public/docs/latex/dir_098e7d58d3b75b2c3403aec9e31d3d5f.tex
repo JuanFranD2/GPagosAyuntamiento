@@ -1,0 +1,643 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/sabberworm/php-\/css-\/parser Directory Reference}
+\hypertarget{dir_098e7d58d3b75b2c3403aec9e31d3d5f}{}\label{dir_098e7d58d3b75b2c3403aec9e31d3d5f}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/sabberworm/php-\/css-\/parser Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/sabberworm/php-\/css-\/parser Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_e1c0e7f4c37e32024f936da9042fc88d}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md10525}{}\doxysubsection{\texorpdfstring{PHP CSS Parser}{PHP CSS Parser}}\label{README.md_autotoc_md10525}
+\href{https://github.com/sabberworm/PHP-CSS-Parser/actions/}{\texttt{}}
+
+A Parser for CSS Files written in PHP. Allows extraction of CSS files into a data structure, manipulation of said structure and output as (optimized) CSS.\hypertarget{README.md_autotoc_md10526}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md10526}
+\hypertarget{README.md_autotoc_md10527}{}\doxysubsubsection{\texorpdfstring{Installation using Composer}{Installation using Composer}}\label{README.md_autotoc_md10527}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ sabberworm/php-\/css-\/parser}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10528}{}\doxysubsubsection{\texorpdfstring{Extraction}{Extraction}}\label{README.md_autotoc_md10528}
+To use the CSS Parser, create a new instance. The constructor takes the following form\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{new\ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Parser(\$css);}
+
+\end{DoxyCode}
+
+
+To read a file, for example, you’d do the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$parser\ =\ new\ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Parser(file\_get\_contents(\textcolor{stringliteral}{'somefile.css'}));}
+\DoxyCodeLine{\$cssDocument\ =\ \$parser-\/>parse();}
+
+\end{DoxyCode}
+
+
+The resulting CSS document structure can be manipulated prior to being output.\hypertarget{README.md_autotoc_md10529}{}\doxysubsubsection{\texorpdfstring{Options}{Options}}\label{README.md_autotoc_md10529}
+\hypertarget{README.md_autotoc_md10530}{}\doxysubsubsubsection{\texorpdfstring{Charset}{Charset}}\label{README.md_autotoc_md10530}
+The charset option will only be used if the CSS file does not contain an {\ttfamily @charset} declaration. UTF-\/8 is the default, so you won’t have to create a settings object at all if you don’t intend to change that.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$settings\ =\ \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_settings_a239b1c70258014a86569483c2d009de6}{\(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Settings::create}}()}
+\DoxyCodeLine{\ \ \ \ -\/>withDefaultCharset(\textcolor{stringliteral}{'windows-\/1252'});}
+\DoxyCodeLine{\$parser\ =\ new\ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Parser(\$css,\ \$settings);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10531}{}\doxysubsubsubsection{\texorpdfstring{Strict parsing}{Strict parsing}}\label{README.md_autotoc_md10531}
+To have the parser throw an exception when encountering invalid/unknown constructs (as opposed to trying to ignore them and carry on parsing), supply a thusly configured {\ttfamily \textbackslash{}Sabberworm\textbackslash{}CSS\textbackslash{}Settings} object\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$parser\ =\ new\ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Parser(}
+\DoxyCodeLine{\ \ \ \ file\_get\_contents(\textcolor{stringliteral}{'somefile.css'}),}
+\DoxyCodeLine{\ \ \ \ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Settings::create()-\/>beStrict()}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+
+
+Note that this will also disable a workaround for parsing the unquoted variant of the legacy IE-\/specific {\ttfamily filter} rule.\hypertarget{README.md_autotoc_md10532}{}\doxysubsubsubsection{\texorpdfstring{Disable multibyte functions}{Disable multibyte functions}}\label{README.md_autotoc_md10532}
+To achieve faster parsing, you can choose to have PHP-\/\+CSS-\/\+Parser use regular string functions instead of {\ttfamily mb\+\_\+\texorpdfstring{$\ast$}{*}} functions. This should work fine in most cases, even for UTF-\/8 files, as all the multibyte characters are in string literals. Still it’s not recommended using this with input you have no control over as it’s not thoroughly covered by test cases.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$settings\ =\ \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_settings_a239b1c70258014a86569483c2d009de6}{\(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Settings::create}}()-\/>withMultibyteSupport(\textcolor{keyword}{false});}
+\DoxyCodeLine{\$parser\ =\ new\ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Parser(\$css,\ \$settings);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10533}{}\doxysubsubsection{\texorpdfstring{Manipulation}{Manipulation}}\label{README.md_autotoc_md10533}
+The resulting data structure consists mainly of five basic types\+: {\ttfamily CSSList}, {\ttfamily Rule\+Set}, {\ttfamily Rule}, {\ttfamily Selector} and {\ttfamily Value}. There are two additional types used\+: {\ttfamily Import} and {\ttfamily Charset}, which you won’t use often.\hypertarget{README.md_autotoc_md10534}{}\doxysubsubsubsection{\texorpdfstring{CSSList}{CSSList}}\label{README.md_autotoc_md10534}
+{\ttfamily CSSList} represents a generic CSS container, most likely containing declaration blocks (rule sets with a selector), but it may also contain at-\/rules, charset declarations, etc.
+
+To access the items stored in a {\ttfamily CSSList} – like the document you got back when calling {\ttfamily \$parser-\/\texorpdfstring{$>$}{>}parse()} –, use {\ttfamily get\+Contents()}, then iterate over that collection and use {\ttfamily instanceof} to check whether you’re dealing with another {\ttfamily CSSList}, a {\ttfamily Rule\+Set}, a {\ttfamily Import} or a {\ttfamily Charset}.
+
+To append a new item (selector, media query, etc.) to an existing {\ttfamily CSSList}, construct it using the constructor for this class and use the {\ttfamily append(\$o\+Item)} method.\hypertarget{README.md_autotoc_md10535}{}\doxysubsubsubsection{\texorpdfstring{Rule\+Set}{Rule\+Set}}\label{README.md_autotoc_md10535}
+{\ttfamily Rule\+Set} is a container for individual rules. The most common form of a rule set is one constrained by a selector. The following concrete subtypes exist\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily At\+Rule\+Set} – for generic at-\/rules for generic at-\/rules which are not covered by specific classes, i.\+e., not {\ttfamily @import}, {\ttfamily @charset} or {\ttfamily @media}. A common example for this is {\ttfamily @font-\/face}.
+\item {\ttfamily Declaration\+Block} – a {\ttfamily Rule\+Set} constrained by a {\ttfamily Selector}; contains an array of selector objects (comma-\/separated in the CSS) as well as the rules to be applied to the matching elements.
+\end{DoxyItemize}
+
+Note\+: A {\ttfamily CSSList} can contain other {\ttfamily CSSList}s (and {\ttfamily Import}s as well as a {\ttfamily Charset}), while a {\ttfamily Rule\+Set} can only contain {\ttfamily Rule}s.
+
+If you want to manipulate a {\ttfamily Rule\+Set}, use the methods {\ttfamily add\+Rule(Rule \$rule)}, {\ttfamily get\+Rules()} and {\ttfamily remove\+Rule(\$rule)} (which accepts either a {\ttfamily Rule} or a rule name; optionally suffixed by a dash to remove all related rules).\hypertarget{README.md_autotoc_md10536}{}\doxysubsubsubsection{\texorpdfstring{Rule}{Rule}}\label{README.md_autotoc_md10536}
+{\ttfamily Rule}s just have a string key (the rule) and a {\ttfamily Value}.\hypertarget{README.md_autotoc_md10537}{}\doxysubsubsubsection{\texorpdfstring{Value}{Value}}\label{README.md_autotoc_md10537}
+{\ttfamily Value} is an abstract class that only defines the {\ttfamily render} method. The concrete subclasses for atomic value types are\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Size} – consists of a numeric {\ttfamily size} value and a unit.
+\item {\ttfamily Color} – colors can be input in the form \#rrggbb, \#rgb or schema(val1, val2, …) but are always stored as an array of (\textquotesingle{}s\textquotesingle{} =\texorpdfstring{$>$}{>} val1, \textquotesingle{}c\textquotesingle{} =\texorpdfstring{$>$}{>} val2, \textquotesingle{}h\textquotesingle{} =\texorpdfstring{$>$}{>} val3, …) and output in the second form.
+\item {\ttfamily CSSString} – this is just a wrapper for quoted strings to distinguish them from keywords; always output with double quotes.
+\item {\ttfamily \doxylink{class_u_r_l}{URL}} – URLs in CSS; always output in {\ttfamily \doxylink{class_u_r_l}{URL}("{}"{})} notation.
+\end{DoxyItemize}
+
+There is another abstract subclass of {\ttfamily Value}, {\ttfamily Value\+List}\+: A {\ttfamily Value\+List} represents a lists of {\ttfamily Value}s, separated by some separation character (mostly {\ttfamily ,}, whitespace, or {\ttfamily /}).
+
+There are two types of {\ttfamily Value\+List}s\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Rule\+Value\+List} – The default type, used to represent all multivalued rules like {\ttfamily font\+: bold 12px/3 Helvetica, Verdana, sans-\/serif;} (where the value would be a whitespace-\/separated list of the primitive value {\ttfamily bold}, a slash-\/separated list and a comma-\/separated list).
+\item {\ttfamily CSSFunction} – A special kind of value that also contains a function name and where the values are the function’s arguments. Also handles equals-\/sign-\/separated argument lists like {\ttfamily filter\+: alpha(opacity=90);}.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md10538}{}\doxysubsubsubsection{\texorpdfstring{Convenience methods}{Convenience methods}}\label{README.md_autotoc_md10538}
+There are a few convenience methods on {\ttfamily Document} to ease finding, manipulating and deleting rules\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily get\+All\+Declaration\+Blocks()} – does what it says; no matter how deeply nested the selectors are. Aliased as {\ttfamily get\+All\+Selectors()}.
+\item {\ttfamily get\+All\+Rule\+Sets()} – does what it says; no matter how deeply nested the rule sets are.
+\item {\ttfamily get\+All\+Values()} – finds all {\ttfamily Value} objects inside {\ttfamily Rule}s.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md10539}{}\doxysubsection{\texorpdfstring{To-\/\+Do}{To-\/\+Do}}\label{README.md_autotoc_md10539}
+
+\begin{DoxyItemize}
+\item More convenience methods (like {\ttfamily selectors\+With\+Element(\$s\+Id/\+Class/\+Tag\+Name)}, {\ttfamily attributes\+Of\+Type(\$type)}, {\ttfamily remove\+Attributes\+Of\+Type(\$type)})
+\item Real multibyte support. Currently, only multibyte charsets whose first 255 code points take up only one byte and are identical with ASCII are supported (yes, UTF-\/8 fits this description).
+\item Named color support (using {\ttfamily Color} instead of an anonymous string literal)
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md10540}{}\doxysubsection{\texorpdfstring{Use cases}{Use cases}}\label{README.md_autotoc_md10540}
+\hypertarget{README.md_autotoc_md10541}{}\doxysubsubsection{\texorpdfstring{Use {\ttfamily Parser} to prepend an ID to all selectors}{Use {\ttfamily Parser} to prepend an ID to all selectors}}\label{README.md_autotoc_md10541}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$myId\ =\ \textcolor{stringliteral}{"{}\#my\_id"{}};}
+\DoxyCodeLine{\$parser\ =\ new\ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Parser(\$css);}
+\DoxyCodeLine{\$cssDocument\ =\ \$parser-\/>parse();}
+\DoxyCodeLine{\textcolor{keywordflow}{foreach}\ (\$cssDocument-\/>getAllDeclarationBlocks()\ as\ \$block)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{foreach}\ (\$block-\/>getSelectors()\ as\ \$selector)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Loop\ over\ all\ selector\ parts\ (the\ comma-\/separated\ strings\ in\ a}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ selector)\ and\ prepend\ the\ ID.}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$selector-\/>setSelector(\$myId.\textcolor{charliteral}{'\ '}.\$selector-\/>getSelector());}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10542}{}\doxysubsubsection{\texorpdfstring{Shrink all absolute sizes to half}{Shrink all absolute sizes to half}}\label{README.md_autotoc_md10542}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$parser\ =\ new\ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Parser(\$css);}
+\DoxyCodeLine{\$cssDocument\ =\ \$parser-\/>parse();}
+\DoxyCodeLine{\textcolor{keywordflow}{foreach}\ (\$cssDocument-\/>getAllValues()\ as\ \$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\$value\ instanceof\ CSSSize\ \&\&\ !\$value-\/>isRelative())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$value-\/>setSize(\$value-\/>getSize()\ /\ 2);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10543}{}\doxysubsubsection{\texorpdfstring{Remove unwanted rules}{Remove unwanted rules}}\label{README.md_autotoc_md10543}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$parser\ =\ new\ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Parser(\$css);}
+\DoxyCodeLine{\$cssDocument\ =\ \$parser-\/>parse();}
+\DoxyCodeLine{\textcolor{keywordflow}{foreach}(\$cssDocument-\/>getAllRuleSets()\ as\ \$oRuleSet)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Note\ that\ the\ added\ dash\ will\ make\ this\ remove\ all\ rules\ starting\ with}}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ \`{}font-\/`\ (like\ \`{}font-\/size`,\ \`{}font-\/weight`,\ etc.)\ as\ well\ as\ a\ potential}}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ \`{}font`\ rule.}}
+\DoxyCodeLine{\ \ \ \ \$oRuleSet-\/>removeRule(\textcolor{stringliteral}{'font-\/'});\ }
+\DoxyCodeLine{\ \ \ \ \$oRuleSet-\/>removeRule(\textcolor{stringliteral}{'cursor'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10544}{}\doxysubsubsection{\texorpdfstring{Output}{Output}}\label{README.md_autotoc_md10544}
+To output the entire CSS document into a variable, just use {\ttfamily -\/\texorpdfstring{$>$}{>}render()}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$parser\ =\ new\ \(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)Parser(file\_get\_contents(\textcolor{stringliteral}{'somefile.css'}));}
+\DoxyCodeLine{\$cssDocument\ =\ \$parser-\/>parse();}
+\DoxyCodeLine{print\ \$cssDocument-\/>render();}
+
+\end{DoxyCode}
+
+
+If you want to format the output, pass an instance of type {\ttfamily \textbackslash{}Sabberworm\textbackslash{}CSS\textbackslash{}Output\+Format}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$format\ =\ \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_output_format_a239b1c70258014a86569483c2d009de6}{\(\backslash\)Sabberworm\(\backslash\)CSS\(\backslash\)OutputFormat::create}}()}
+\DoxyCodeLine{\ \ \ \ -\/>indentWithSpaces(4)-\/>setSpaceBetweenRules(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{print\ \$cssDocument-\/>render(\$format);}
+
+\end{DoxyCode}
+
+
+Or use one of the predefined formats\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{print\ \$cssDocument-\/>render(Sabberworm\(\backslash\)CSS\(\backslash\)OutputFormat::createPretty());}
+\DoxyCodeLine{print\ \$cssDocument-\/>render(Sabberworm\(\backslash\)CSS\(\backslash\)OutputFormat::createCompact());}
+
+\end{DoxyCode}
+
+
+To see what you can do with output formatting, look at the tests in {\ttfamily tests/\+Output\+Format\+Test.\+php}.\hypertarget{README.md_autotoc_md10545}{}\doxysubsection{\texorpdfstring{Examples}{Examples}}\label{README.md_autotoc_md10545}
+\hypertarget{README.md_autotoc_md10546}{}\doxysubsubsection{\texorpdfstring{Example 1 (At-\/\+Rules)}{Example 1 (At-\/\+Rules)}}\label{README.md_autotoc_md10546}
+\hypertarget{README.md_autotoc_md10547}{}\doxysubsubsubsection{\texorpdfstring{Input}{Input}}\label{README.md_autotoc_md10547}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@charset\ "{}utf-\/8"{};}
+\DoxyCodeLine{}
+\DoxyCodeLine{@font-\/face\ \{}
+\DoxyCodeLine{\ \ font-\/family:\ "{}CrassRoots"{};}
+\DoxyCodeLine{\ \ src:\ url("{}../media/cr.ttf"{});}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{html,\ body\ \{}
+\DoxyCodeLine{\ \ \ \ font-\/size:\ 1.6em;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{@keyframes\ mymove\ \{}
+\DoxyCodeLine{\ \ \ \ from\ \{\ top:\ 0px;\ \}}
+\DoxyCodeLine{\ \ \ \ to\ \{\ top:\ 200px;\ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+
+{\bfseries{{\bfseries{Structure ({\ttfamily var\+\_\+dump()})}}}}\begin{adjustwidth}{1em}{0em}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)CSSList\(\backslash\)Document\#4\ (2)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_c_s_s_list_1_1_c_s_s_list_a52a5abaca8a00a902bc2c6f548d59024}{\$aContents}}\ =>}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(4)\ \{}
+\DoxyCodeLine{\ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Property\(\backslash\)Charset\#6\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$sCharset\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)CSSString\#5\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sString\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(5)\ \textcolor{stringliteral}{"{}utf-\/8"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}}(1)}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{protected}\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}}(1)}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ [1]\ =>}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)RuleSet\(\backslash\)AtRuleSet\#7\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$sType\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(9)\ \textcolor{stringliteral}{"{}font-\/face"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$sArgs\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(0)\ \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$aRules\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'font-\/family'}\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Rule\(\backslash\)Rule\#8\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sRule\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(11)\ \textcolor{stringliteral}{"{}font-\/family"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$mValue\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)CSSString\#9\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sString\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(10)\ \textcolor{stringliteral}{"{}CrassRoots"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}}(4)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$bIsImportant\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ bool(\textcolor{keyword}{false})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(4)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 'src'\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ array(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Rule\(\backslash\)Rule\#10\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sRule\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(3)\ \textcolor{stringliteral}{"{}src"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$mValue\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)URL\#11\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$oURL\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)CSSString\#12\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sString\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(15)\ \textcolor{stringliteral}{"{}../media/cr.ttf"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}}(5)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}}(5)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$bIsImportant\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ bool(\textcolor{keyword}{false})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(5)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordtype}{int}(3)}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ [2]\ =>}
+\DoxyCodeLine{\ \ \ \ class\ Sabberworm\(\backslash\)CSS\(\backslash\)RuleSet\(\backslash\)DeclarationBlock\textcolor{preprocessor}{\#13\ (3)\ \{}}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$aSelectors\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Property\(\backslash\)Selector\#14\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sSelector\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(4)\ \textcolor{stringliteral}{"{}html"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$iSpecificity\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ NULL}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [1]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Property\(\backslash\)Selector\#15\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sSelector\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(4)\ \textcolor{stringliteral}{"{}body"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$iSpecificity\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ NULL}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$aRules\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'font-\/size'}\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Rule\(\backslash\)Rule\#16\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sRule\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(9)\ \textcolor{stringliteral}{"{}font-\/size"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$mValue\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)Size\#17\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$fSize\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ double(1.6)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$sUnit\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}(2)\ \textcolor{stringliteral}{"{}em"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsColorComponent\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(9)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsImportant\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(9)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordtype}{int}(8)}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ [3]\ =>}
+\DoxyCodeLine{\ \ \ \ class\ Sabberworm\(\backslash\)CSS\(\backslash\)CSSList\(\backslash\)KeyFrame\textcolor{preprocessor}{\#18\ (4)\ \{}}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$vendorKeyFrame\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(9)\ \textcolor{stringliteral}{"{}keyframes"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$animationName\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(6)\ \textcolor{stringliteral}{"{}mymove"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{protected}\ \$aContents\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)RuleSet\(\backslash\)DeclarationBlock\#19\ (3)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$aSelectors\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Property\(\backslash\)Selector\#20\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sSelector\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(4)\ \textcolor{stringliteral}{"{}from"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$iSpecificity\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ NULL}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$aRules\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'top'}\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Rule\(\backslash\)Rule\#21\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sRule\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(3)\ \textcolor{stringliteral}{"{}top"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$mValue\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)Size\#22\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$fSize\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double(0)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$sUnit\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}(2)\ \textcolor{stringliteral}{"{}px"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsColorComponent\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(13)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsImportant\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(13)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(13)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [1]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ class\ Sabberworm\(\backslash\)CSS\(\backslash\)RuleSet\(\backslash\)DeclarationBlock\textcolor{preprocessor}{\#23\ (3)\ \{}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$aSelectors\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Property\(\backslash\)Selector\#24\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sSelector\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(2)\ \textcolor{stringliteral}{"{}to"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$iSpecificity\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ NULL}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$aRules\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'top'}\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Rule\(\backslash\)Rule\#25\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sRule\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(3)\ \textcolor{stringliteral}{"{}top"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$mValue\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)Size\#26\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$fSize\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double(200)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$sUnit\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}(2)\ \textcolor{stringliteral}{"{}px"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsColorComponent\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(14)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsImportant\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(14)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(14)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordtype}{int}(12)}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}(1)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \end{adjustwidth}
+\hypertarget{README.md_autotoc_md10548}{}\doxysubsubsubsection{\texorpdfstring{Output ({\ttfamily render()})}{Output ({\ttfamily render()})}}\label{README.md_autotoc_md10548}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@charset\ "{}utf-\/8"{};}
+\DoxyCodeLine{@font-\/face\ \{font-\/family:\ "{}CrassRoots"{};src:\ url("{}../media/cr.ttf"{});\}}
+\DoxyCodeLine{html,\ body\ \{font-\/size:\ 1.6em;\}}
+\DoxyCodeLine{@keyframes\ mymove\ \{from\ \{top:\ 0px;\}\ to\ \{top:\ 200px;\}\}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10549}{}\doxysubsubsection{\texorpdfstring{Example 2 (Values)}{Example 2 (Values)}}\label{README.md_autotoc_md10549}
+\hypertarget{README.md_autotoc_md10550}{}\doxysubsubsubsection{\texorpdfstring{Input}{Input}}\label{README.md_autotoc_md10550}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#header\ \{}
+\DoxyCodeLine{\ \ \ \ margin:\ 10px\ 2em\ 1cm\ 2\%;}
+\DoxyCodeLine{\ \ \ \ font-\/family:\ Verdana,\ Helvetica,\ "{}Gill\ Sans"{},\ sans-\/serif;}
+\DoxyCodeLine{\ \ \ \ color:\ red\ !important;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+
+{\bfseries{{\bfseries{Structure ({\ttfamily var\+\_\+dump()})}}}}\begin{adjustwidth}{1em}{0em}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)CSSList\(\backslash\)Document\#4\ (2)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_c_s_s_list_1_1_c_s_s_list_a52a5abaca8a00a902bc2c6f548d59024}{\$aContents}}\ =>}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)RuleSet\(\backslash\)DeclarationBlock\#5\ (3)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$aSelectors\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Property\(\backslash\)Selector\#6\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sSelector\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(7)\ \textcolor{stringliteral}{"{}\#header"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$iSpecificity\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ NULL}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{private}\ \$aRules\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(3)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'margin'}\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Rule\(\backslash\)Rule\#7\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sRule\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(6)\ \textcolor{stringliteral}{"{}margin"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$mValue\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)RuleValueList\#12\ (3)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \$aComponents\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)Size\#8\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$fSize\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double(10)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$sUnit\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}(2)\ \textcolor{stringliteral}{"{}px"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsColorComponent\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(2)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [1]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ class\ Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)Size\textcolor{preprocessor}{\#9\ (4)\ \{}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$fSize\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double(2)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$sUnit\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}(2)\ \textcolor{stringliteral}{"{}em"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsColorComponent\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(2)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [2]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ class\ Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)Size\textcolor{preprocessor}{\#10\ (4)\ \{}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$fSize\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double(1)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$sUnit\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}(2)\ \textcolor{stringliteral}{"{}cm"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsColorComponent\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(2)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [3]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ class\ Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)Size\textcolor{preprocessor}{\#11\ (4)\ \{}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$fSize\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double(2)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$sUnit\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}(1)\ \textcolor{stringliteral}{"{}\%"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsColorComponent\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(2)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$sSeparator\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}(1)\ \textcolor{stringliteral}{"{}\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(2)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ private\ \$bIsImportant\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}(false)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(2)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 'font-\/family'\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ array(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Rule\(\backslash\)Rule\#13\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sRule\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(11)\ \textcolor{stringliteral}{"{}font-\/family"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$mValue\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)RuleValueList\#15\ (3)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \$aComponents\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a141d5fb858fa6c89a703e21717c1bb4b}{array}}(4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(7)\ \textcolor{stringliteral}{"{}Verdana"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [1]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(9)\ \textcolor{stringliteral}{"{}Helvetica"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [2]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Value\(\backslash\)CSSString\#14\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sString\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(9)\ \textcolor{stringliteral}{"{}Gill\ Sans"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}}(3)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [3]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(10)\ \textcolor{stringliteral}{"{}sans-\/serif"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \$sSeparator\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(1)\ \textcolor{stringliteral}{"{},"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_a3a759da26a0e7e7b22a85dddef939c05}{int}}(3)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$bIsImportant\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ bool(\textcolor{keyword}{false})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(3)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 'color'\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ array(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ [0]\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Sabberworm\(\backslash\)CSS\(\backslash\)Rule\(\backslash\)Rule\#16\ (4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$sRule\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(5)\ \textcolor{stringliteral}{"{}color"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$mValue\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_illuminate_1_1_support_1_1_traits_a0fddcd2deb3b8c8c7745c9763d3704b7}{string}}(3)\ \textcolor{stringliteral}{"{}red"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \$bIsImportant\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ bool(\textcolor{keyword}{true})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}(4)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordtype}{int}(1)}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ protected\ \$iLineNo\ =>}
+\DoxyCodeLine{\ \ \textcolor{keywordtype}{int}(1)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \end{adjustwidth}
+\hypertarget{README.md_autotoc_md10551}{}\doxysubsubsubsection{\texorpdfstring{Output ({\ttfamily render()})}{Output ({\ttfamily render()})}}\label{README.md_autotoc_md10551}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#header\ \{margin:\ 10px\ 2em\ 1cm\ 2\%;font-\/family:\ Verdana,Helvetica,"{}Gill\ Sans"{},sans-\/serif;color:\ red\ !important;\}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10552}{}\doxysubsection{\texorpdfstring{Contributors/\+Thanks to}{Contributors/\+Thanks to}}\label{README.md_autotoc_md10552}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/oliverklee}{\texttt{oliverklee}} for lots of refactorings, code modernizations and CI integrations
+\item \href{https://github.com/raxbg}{\texttt{raxbg}} for contributions to parse {\ttfamily calc}, grid lines, and various bugfixes.
+\item \href{https://github.com/westonruter}{\texttt{westonruter}} for bugfixes and improvements.
+\item \href{https://github.com/FMCorz}{\texttt{FMCorz}} for many patches and suggestions, for being able to parse comments and IE hacks (in lenient mode).
+\item \href{https://github.com/Lullabot}{\texttt{Lullabot}} for a patch that allows to know the line number for each parsed token.
+\item \href{https://github.com/ju1ius}{\texttt{ju1ius}} for the specificity parsing code and the ability to expand/compact shorthand properties.
+\item \href{https://github.com/ossinkine}{\texttt{ossinkine}} for a 150 time performance boost.
+\item \href{https://github.com/GaryJones}{\texttt{Gary\+Jones}} for lots of input and \href{https://css-specificity.info/}{\texttt{https\+://css-\/specificity.\+info/}}.
+\item \href{https://github.com/docteurklein}{\texttt{docteurklein}} for output formatting and {\ttfamily CSSList-\/\texorpdfstring{$>$}{>}remove()} inspiration.
+\item \href{https://github.com/nicolopignatelli}{\texttt{nicolopignatelli}} for PSR-\/0 compatibility.
+\item \href{https://github.com/diegoembarcadero}{\texttt{diegoembarcadero}} for keyframe at-\/rule parsing.
+\item \href{https://github.com/goetas}{\texttt{goetas}} for 
+\end{DoxyItemize}

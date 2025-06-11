@@ -1,0 +1,4 @@
+var _data_collector_translator_pass_8php =
+[
+    [ "DataCollectorTranslatorPass", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_data_collector_translator_pass.html", "class_symfony_1_1_component_1_1_translation_1_1_dependency_injection_1_1_data_collector_translator_pass" ]
+];

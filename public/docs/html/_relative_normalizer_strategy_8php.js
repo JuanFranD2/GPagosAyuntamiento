@@ -1,0 +1,4 @@
+var _relative_normalizer_strategy_8php =
+[
+    [ "RelativeNormalizerStrategy", "class_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_normalizer_1_1_relative_normalizer_strategy.html", "class_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_normalizer_1_1_relative_normalizer_strategy" ]
+];

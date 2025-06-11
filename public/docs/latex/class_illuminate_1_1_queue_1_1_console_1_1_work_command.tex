@@ -1,0 +1,362 @@
+\doxysection{Work\+Command Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command}{}\label{class_illuminate_1_1_queue_1_1_console_1_1_work_command}\index{WorkCommand@{WorkCommand}}
+Inheritance diagram for Work\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_queue_1_1_console_1_1_work_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_af61eb9e21ea01f882af32ca109d7066e}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker}{Worker}} \$worker, \mbox{\hyperlink{class_cache}{Cache}} \$cache)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a66eb7514ea7f7f8a5738a180b14e9b48}{handle}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acc17fc4b2880856deb16661a443fe08e}{run}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a645d49a93702949a651360c7bdc0a0b0}{fail}} (Throwable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$exception=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acbd42dc98fc1c0649ae7b1aeaf842b3d}{is\+Hidden}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a352b564237d3f16ca19a07d6ac036196}{set\+Hidden}} (bool \$hidden=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aab7aca3854218cb065a030769a143418}{get\+Laravel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a94bbb27e66c6b8dafd84410ede30c6af}{set\+Laravel}} (\$laravel)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a0904294c306d5c182f2ffbc8b939bfae}{flush\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_ad203b47a4bb4ac9c864ae7549400938b}{run\+Worker}} (\$connection, \$queue)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a2d6d1b154ec51fc9b5541a7d08fde730}{gather\+Worker\+Options}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_ae90404d2494a71b7be8f4ffd3f98371f}{listen\+For\+Events}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_aab250a4d8310e5b77f3b9224b5df50ef}{write\+Output}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}} \$job, \$status, ?Throwable \$exception=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a9e06908edbbe4dc1fc45acae1237e4d2}{write\+Output\+For\+Cli}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}} \$job, \$status)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a6d098289840d11d98aa3c80615b1cc9e}{write\+Output\+As\+Json}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}} \$job, \$status, ?Throwable \$exception=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a80593ccdc0339775ddd5d82c37ca4f6b}{now}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a5f65859d6d53f87b4f9e09fec641bff1}{log\+Failed\+Job}} (\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_failed}{Job\+Failed}} \$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_acffa616a8c5143b4b4f1b4c449af24cb}{get\+Queue}} (\$connection)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a8ed3cf73d90418e68126580cc68e0284}{down\+For\+Maintenance}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a948879bc6dc4b15450f8d290482abba0}{output\+Using\+Json}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aef18ba6dc42644207c37bf5de362a4bd}{configure\+Using\+Fluent\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a05e39d241c3e3400b03d3b63dfbd8929}{configure\+Isolation}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab31c72b72ddaf7116db5d84c055d3c0b}{execute}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac8094b40d2f975480f91e5a3b7040769}{command\+Isolation\+Mutex}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac1aba88abc23023836393a7f4ea231ca}{resolve\+Command}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a87b032cba06009e3467abf1c8018d960}{\$description}} = \textquotesingle{}Start processing jobs on the queue as a daemon\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_acc96b7a4d76c3c869cb3c1bca5acb4d0}{\$worker}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_ac2dc76d756ec398393d4b1d23659276c}{\$cache}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_work_command_afb8017d4438e1aa055611416fbfae532}{\$latest\+Started\+At}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a2483b0a3df07768a50dd53f90fd7ae4b}{\$laravel}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a87b032cba06009e3467abf1c8018d960}{\$description}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ae8c606891eb7e59cb0674a2dd63c5498}{\$help}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a4a374564d2858d8ae869a8fb890aad56}{\$hidden}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a568541fc9a0d312709894fe344c5aa13}{\$isolated}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a11ba5862b76c657e950bdde51f6e54b0}{\$isolated\+Exit\+Code}} = self\+::\+SUCCESS
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a7e6d29edbd9ec5d8ec9d478cf98fba03}{\$aliases}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_af61eb9e21ea01f882af32ca109d7066e}\index{WorkCommand@{WorkCommand}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_af61eb9e21ea01f882af32ca109d7066e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker}{Worker}}}]{\$worker}{, }\item[{\mbox{\hyperlink{class_cache}{Cache}}}]{\$cache}{}\end{DoxyParamCaption})}
+
+Create a new queue work command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker & {\em \$worker} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Repository & {\em \$cache} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a8ed3cf73d90418e68126580cc68e0284}\index{WorkCommand@{WorkCommand}!downForMaintenance@{downForMaintenance}}
+\index{downForMaintenance@{downForMaintenance}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{downForMaintenance()}{downForMaintenance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a8ed3cf73d90418e68126580cc68e0284} 
+down\+For\+Maintenance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the worker should run in maintenance mode.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a0904294c306d5c182f2ffbc8b939bfae}\index{WorkCommand@{WorkCommand}!flushState@{flushState}}
+\index{flushState@{flushState}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{flushState()}{flushState()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a0904294c306d5c182f2ffbc8b939bfae} 
+flush\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reset static variables.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a2d6d1b154ec51fc9b5541a7d08fde730}\index{WorkCommand@{WorkCommand}!gatherWorkerOptions@{gatherWorkerOptions}}
+\index{gatherWorkerOptions@{gatherWorkerOptions}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{gatherWorkerOptions()}{gatherWorkerOptions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a2d6d1b154ec51fc9b5541a7d08fde730} 
+gather\+Worker\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gather all of the queue worker options as a single object.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_acffa616a8c5143b4b4f1b4c449af24cb}\index{WorkCommand@{WorkCommand}!getQueue@{getQueue}}
+\index{getQueue@{getQueue}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{getQueue()}{getQueue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_acffa616a8c5143b4b4f1b4c449af24cb} 
+get\+Queue (\begin{DoxyParamCaption}\item[{}]{\$connection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the queue name for the worker.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a66eb7514ea7f7f8a5738a180b14e9b48}\index{WorkCommand@{WorkCommand}!handle@{handle}}
+\index{handle@{handle}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a66eb7514ea7f7f8a5738a180b14e9b48} 
+handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Execute the console command.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_ae90404d2494a71b7be8f4ffd3f98371f}\index{WorkCommand@{WorkCommand}!listenForEvents@{listenForEvents}}
+\index{listenForEvents@{listenForEvents}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{listenForEvents()}{listenForEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_ae90404d2494a71b7be8f4ffd3f98371f} 
+listen\+For\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Listen for the queue events in order to update the console output.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a5f65859d6d53f87b4f9e09fec641bff1}\index{WorkCommand@{WorkCommand}!logFailedJob@{logFailedJob}}
+\index{logFailedJob@{logFailedJob}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{logFailedJob()}{logFailedJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a5f65859d6d53f87b4f9e09fec641bff1} 
+log\+Failed\+Job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_events_1_1_job_failed}{Job\+Failed}}}]{\$event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Store a failed job event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Events\textbackslash{}\+Job\+Failed & {\em \$event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a80593ccdc0339775ddd5d82c37ca4f6b}\index{WorkCommand@{WorkCommand}!now@{now}}
+\index{now@{now}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a80593ccdc0339775ddd5d82c37ca4f6b} 
+now (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the current date / time.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a948879bc6dc4b15450f8d290482abba0}\index{WorkCommand@{WorkCommand}!outputUsingJson@{outputUsingJson}}
+\index{outputUsingJson@{outputUsingJson}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{outputUsingJson()}{outputUsingJson()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a948879bc6dc4b15450f8d290482abba0} 
+output\+Using\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the worker should output using JSON.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_ad203b47a4bb4ac9c864ae7549400938b}\index{WorkCommand@{WorkCommand}!runWorker@{runWorker}}
+\index{runWorker@{runWorker}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{runWorker()}{runWorker()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_ad203b47a4bb4ac9c864ae7549400938b} 
+run\+Worker (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$queue}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Run the worker instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_aab250a4d8310e5b77f3b9224b5df50ef}\index{WorkCommand@{WorkCommand}!writeOutput@{writeOutput}}
+\index{writeOutput@{writeOutput}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{writeOutput()}{writeOutput()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_aab250a4d8310e5b77f3b9224b5df50ef} 
+write\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}}}]{\$job}{, }\item[{}]{\$status}{, }\item[{?Throwable}]{\$exception}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Write the status output for the queue worker for JSON or TTY.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Job & {\em \$job} & \\
+\hline
+string & {\em \$status} & \\
+\hline
+Throwable | null & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a6d098289840d11d98aa3c80615b1cc9e}\index{WorkCommand@{WorkCommand}!writeOutputAsJson@{writeOutputAsJson}}
+\index{writeOutputAsJson@{writeOutputAsJson}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{writeOutputAsJson()}{writeOutputAsJson()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a6d098289840d11d98aa3c80615b1cc9e} 
+write\+Output\+As\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}}}]{\$job}{, }\item[{}]{\$status}{, }\item[{?Throwable}]{\$exception}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Write the status output for the queue worker in JSON format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+string & {\em \$status} & \\
+\hline
+Throwable | null & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a9e06908edbbe4dc1fc45acae1237e4d2}\index{WorkCommand@{WorkCommand}!writeOutputForCli@{writeOutputForCli}}
+\index{writeOutputForCli@{writeOutputForCli}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{writeOutputForCli()}{writeOutputForCli()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a9e06908edbbe4dc1fc45acae1237e4d2} 
+write\+Output\+For\+Cli (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}}}]{\$job}{, }\item[{}]{\$status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Write the status output for the queue worker.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+string & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_ac2dc76d756ec398393d4b1d23659276c}\index{WorkCommand@{WorkCommand}!\$cache@{\$cache}}
+\index{\$cache@{\$cache}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{\$cache}{\$cache}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_ac2dc76d756ec398393d4b1d23659276c} 
+\$cache\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a87b032cba06009e3467abf1c8018d960}\index{WorkCommand@{WorkCommand}!\$description@{\$description}}
+\index{\$description@{\$description}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{\$description}{\$description}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a87b032cba06009e3467abf1c8018d960} 
+\$description = \textquotesingle{}Start processing jobs on the queue as a daemon\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_afb8017d4438e1aa055611416fbfae532}\index{WorkCommand@{WorkCommand}!\$latestStartedAt@{\$latestStartedAt}}
+\index{\$latestStartedAt@{\$latestStartedAt}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{\$latestStartedAt}{\$latestStartedAt}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_afb8017d4438e1aa055611416fbfae532} 
+\$latest\+Started\+At\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a8f34ca1e46a621ab10a3a40addb794f5}\index{WorkCommand@{WorkCommand}!\$signature@{\$signature}}
+\index{\$signature@{\$signature}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{\$signature}{\$signature}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_a8f34ca1e46a621ab10a3a40addb794f5} 
+\$signature\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_work_command_acc96b7a4d76c3c869cb3c1bca5acb4d0}\index{WorkCommand@{WorkCommand}!\$worker@{\$worker}}
+\index{\$worker@{\$worker}!WorkCommand@{WorkCommand}}
+\doxysubsubsection{\texorpdfstring{\$worker}{\$worker}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_work_command_acc96b7a4d76c3c869cb3c1bca5acb4d0} 
+\$worker\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Queue/\+Console/\mbox{\hyperlink{_work_command_8php}{Work\+Command.\+php}}\end{DoxyCompactItemize}

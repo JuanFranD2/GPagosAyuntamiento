@@ -1,0 +1,4 @@
+var _prevent_requests_during_maintenance_8php =
+[
+    [ "PreventRequestsDuringMaintenance", "class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_prevent_requests_during_maintenance.html", "class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_prevent_requests_during_maintenance" ]
+];

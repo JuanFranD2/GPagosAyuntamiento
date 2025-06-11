@@ -1,0 +1,239 @@
+\doxysection{Frame\+Tree Class Reference}
+\hypertarget{class_dompdf_1_1_frame_1_1_frame_tree}{}\label{class_dompdf_1_1_frame_1_1_frame_tree}\index{FrameTree@{FrameTree}}
+Inheritance diagram for Frame\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dompdf_1_1_frame_1_1_frame_tree}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a9d8bea594b0f83c8bfc4bd1b5b832cd2}{\+\_\+\+\_\+construct}} (Dom\+Document \$dom)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a1fc876c0d241f69b0f91974fb8dce2ae}{get\+\_\+dom}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a59f23db7ad802e3e7ebd1c5ded125943}{get\+\_\+root}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a1dcea530689923640c61bc942c615ebc}{get\+\_\+frame}} (\$id)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a38952e737d8c00cffbcf786c48cae9a3}{get\+\_\+frames}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a4fceac6560240e0fe26bbc0b2a0c8587}{build\+\_\+tree}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a36dcb81fbdf5709c6d3a9b72a9df5cc5}{insert\+\_\+node}} (DOMElement \$node, DOMElement \$new\+\_\+node, \$pos)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a289bf3444ff28bd12693d6d2e8e74cc9}{\+\_\+remove\+\_\+node}} (DOMNode \$node, array \&\$children, \$index)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_ac05e20f3830cee35f224c8dadcc8c063}{\+\_\+build\+\_\+tree\+\_\+r}} (DOMNode \$node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_ad1f474a249e71feedcdb00628bb3b90f}{\$\+\_\+dom}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a15ea8c78d28d8d9b6023dedbe622c731}{\$\+\_\+root}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_a9b5e6d663ccd7eb44d091d5c3c4d9f98}{\$\+\_\+absolute\+\_\+frames}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_ae0e3c924fea4379d7badf81088d98149}{\$\+\_\+registry}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_frame_1_1_frame_tree_ab0dee1436fc3f7428f6d32bdea2a4352}{\$\+HIDDEN\+\_\+\+TAGS}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a9d8bea594b0f83c8bfc4bd1b5b832cd2}\index{FrameTree@{FrameTree}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a9d8bea594b0f83c8bfc4bd1b5b832cd2} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Dom\+Document}]{\$dom}{}\end{DoxyParamCaption})}
+
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+DOMDocument & {\em \$dom} & the main Dom\+Document object representing the current html document \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_ac05e20f3830cee35f224c8dadcc8c063}\index{FrameTree@{FrameTree}!\_build\_tree\_r@{\_build\_tree\_r}}
+\index{\_build\_tree\_r@{\_build\_tree\_r}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{\_build\_tree\_r()}{\_build\_tree\_r()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_ac05e20f3830cee35f224c8dadcc8c063} 
+\+\_\+build\+\_\+tree\+\_\+r (\begin{DoxyParamCaption}\item[{DOMNode}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Recursively adds {\ttfamily \doxylink{}{Frame}} objects to the tree
+
+Recursively build a tree of Frame objects based on a dom tree. No layout information is calculated at this time, although the tree may be adjusted (i.\+e. nodes and frames for generated content and images may be created).
+
+
+\begin{DoxyParams}[1]{Parameters}
+DOMNode & {\em \$node} & the current DOMNode being considered\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Frame 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a289bf3444ff28bd12693d6d2e8e74cc9}\index{FrameTree@{FrameTree}!\_remove\_node@{\_remove\_node}}
+\index{\_remove\_node@{\_remove\_node}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{\_remove\_node()}{\_remove\_node()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a289bf3444ff28bd12693d6d2e8e74cc9} 
+\+\_\+remove\+\_\+node (\begin{DoxyParamCaption}\item[{DOMNode}]{\$node}{, }\item[{array \&}]{\$children}{, }\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove a child from a node
+
+Remove a child from a node. If the removed node results in two adjacent \#text nodes then combine them.
+
+
+\begin{DoxyParams}[1]{Parameters}
+DOMNode & {\em \$node} & the current DOMNode being considered \\
+\hline
+array & {\em \$children} & an array of nodes that are the children of \$node \\
+\hline
+int & {\em \$index} & index from the \$children array of the node to remove \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a4fceac6560240e0fe26bbc0b2a0c8587}\index{FrameTree@{FrameTree}!build\_tree@{build\_tree}}
+\index{build\_tree@{build\_tree}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{build\_tree()}{build\_tree()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a4fceac6560240e0fe26bbc0b2a0c8587} 
+build\+\_\+tree (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Builds the tree \Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a1fc876c0d241f69b0f91974fb8dce2ae}\index{FrameTree@{FrameTree}!get\_dom@{get\_dom}}
+\index{get\_dom@{get\_dom}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{get\_dom()}{get\_dom()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a1fc876c0d241f69b0f91974fb8dce2ae} 
+get\+\_\+dom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the DOMDocument object representing the current html document
+
+\begin{DoxyReturn}{Returns}
+DOMDocument 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a1dcea530689923640c61bc942c615ebc}\index{FrameTree@{FrameTree}!get\_frame@{get\_frame}}
+\index{get\_frame@{get\_frame}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{get\_frame()}{get\_frame()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a1dcea530689923640c61bc942c615ebc} 
+get\+\_\+frame (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Returns a specific frame given its id
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Frame\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a38952e737d8c00cffbcf786c48cae9a3}\index{FrameTree@{FrameTree}!get\_frames@{get\_frames}}
+\index{get\_frames@{get\_frames}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{get\_frames()}{get\_frames()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a38952e737d8c00cffbcf786c48cae9a3} 
+get\+\_\+frames (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a post-\/order iterator for all frames in the tree
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000043}{Deprecated}}]Iterate the tree directly instead \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+Frame\+Tree\+Iterator 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a59f23db7ad802e3e7ebd1c5ded125943}\index{FrameTree@{FrameTree}!get\_root@{get\_root}}
+\index{get\_root@{get\_root}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{get\_root()}{get\_root()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a59f23db7ad802e3e7ebd1c5ded125943} 
+get\+\_\+root (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the root frame of the tree
+
+\begin{DoxyReturn}{Returns}
+Frame 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{FrameTree@{FrameTree}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a post-\/order iterator for all frames in the tree
+
+\begin{DoxyReturn}{Returns}
+Frame\+Tree\+Iterator 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a36dcb81fbdf5709c6d3a9b72a9df5cc5}\index{FrameTree@{FrameTree}!insert\_node@{insert\_node}}
+\index{insert\_node@{insert\_node}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{insert\_node()}{insert\_node()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a36dcb81fbdf5709c6d3a9b72a9df5cc5} 
+insert\+\_\+node (\begin{DoxyParamCaption}\item[{DOMElement}]{\$node}{, }\item[{DOMElement}]{\$new\+\_\+node}{, }\item[{}]{\$pos}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+DOMElement & {\em \$node} & \\
+\hline
+DOMElement & {\em \$new\+\_\+node} & \\
+\hline
+string & {\em \$pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a9b5e6d663ccd7eb44d091d5c3c4d9f98}\index{FrameTree@{FrameTree}!\$\_absolute\_frames@{\$\_absolute\_frames}}
+\index{\$\_absolute\_frames@{\$\_absolute\_frames}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{\$\_absolute\_frames}{\$\_absolute\_frames}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a9b5e6d663ccd7eb44d091d5c3c4d9f98} 
+\$\+\_\+absolute\+\_\+frames\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_ad1f474a249e71feedcdb00628bb3b90f}\index{FrameTree@{FrameTree}!\$\_dom@{\$\_dom}}
+\index{\$\_dom@{\$\_dom}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{\$\_dom}{\$\_dom}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_ad1f474a249e71feedcdb00628bb3b90f} 
+\$\+\_\+dom\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_ae0e3c924fea4379d7badf81088d98149}\index{FrameTree@{FrameTree}!\$\_registry@{\$\_registry}}
+\index{\$\_registry@{\$\_registry}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{\$\_registry}{\$\_registry}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_ae0e3c924fea4379d7badf81088d98149} 
+\$\+\_\+registry\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_a15ea8c78d28d8d9b6023dedbe622c731}\index{FrameTree@{FrameTree}!\$\_root@{\$\_root}}
+\index{\$\_root@{\$\_root}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{\$\_root}{\$\_root}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_a15ea8c78d28d8d9b6023dedbe622c731} 
+\$\+\_\+root\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_frame_1_1_frame_tree_ab0dee1436fc3f7428f6d32bdea2a4352}\index{FrameTree@{FrameTree}!\$HIDDEN\_TAGS@{\$HIDDEN\_TAGS}}
+\index{\$HIDDEN\_TAGS@{\$HIDDEN\_TAGS}!FrameTree@{FrameTree}}
+\doxysubsubsection{\texorpdfstring{\$HIDDEN\_TAGS}{\$HIDDEN\_TAGS}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_frame_1_1_frame_tree_ab0dee1436fc3f7428f6d32bdea2a4352} 
+\$HIDDEN\+\_\+\+TAGS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/dompdf/src/\+Frame/\mbox{\hyperlink{_frame_tree_8php}{Frame\+Tree.\+php}}\end{DoxyCompactItemize}

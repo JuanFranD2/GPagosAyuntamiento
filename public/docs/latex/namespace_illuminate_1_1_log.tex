@@ -1,0 +1,122 @@
+\doxysection{Illuminate\textbackslash{}Log Namespace Reference}
+\hypertarget{namespace_illuminate_1_1_log}{}\label{namespace_illuminate_1_1_log}\index{Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_log_1_1_context}{Context}}
+\item 
+namespace \mbox{\hyperlink{namespace_illuminate_1_1_log_1_1_events}{Events}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_log_1_1_logger}{Logger}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_log_1_1_log_manager}{Log\+Manager}}
+\item 
+class \mbox{\hyperlink{class_illuminate_1_1_log_1_1_log_service_provider}{Log\+Service\+Provider}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_log_aa220619bf3b356c172cc750c031c7fd5}{get\+Fallback\+Channel\+Name}} ()
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_log_a00f4fb9df2a7498230d1f520fe0d3424}{level}} (array \$config)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_log_a0dc5d0adeb02c46e2ac8659a0e9a4d92}{action\+Level}} (array \$config)
+\item 
+\mbox{\hyperlink{namespace_illuminate_1_1_log_a894e688dc6348fa686e5f94f891dc512}{parse\+Channel}} (array \$config)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+trait \mbox{\hyperlink{namespace_illuminate_1_1_log_ac945d3bd6df47b64f78b67197974c98a}{Parses\+Log\+Configuration}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_illuminate_1_1_log_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_illuminate_1_1_log_a0dc5d0adeb02c46e2ac8659a0e9a4d92}\index{Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}!actionLevel@{actionLevel}}
+\index{actionLevel@{actionLevel}!Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}}
+\doxysubsubsection{\texorpdfstring{actionLevel()}{actionLevel()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_log_a0dc5d0adeb02c46e2ac8659a0e9a4d92} 
+action\+Level (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the action level from the given configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{namespace_illuminate_1_1_log_aa220619bf3b356c172cc750c031c7fd5}\index{Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}!getFallbackChannelName@{getFallbackChannelName}}
+\index{getFallbackChannelName@{getFallbackChannelName}!Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}}
+\doxysubsubsection{\texorpdfstring{getFallbackChannelName()}{getFallbackChannelName()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_log_aa220619bf3b356c172cc750c031c7fd5} 
+get\+Fallback\+Channel\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Get fallback log channel name.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{namespace_illuminate_1_1_log_a00f4fb9df2a7498230d1f520fe0d3424}\index{Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}!level@{level}}
+\index{level@{level}!Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}}
+\doxysubsubsection{\texorpdfstring{level()}{level()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_log_a00f4fb9df2a7498230d1f520fe0d3424} 
+level (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the string level into a \doxylink{namespace_monolog}{Monolog} constant.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{namespace_illuminate_1_1_log_a894e688dc6348fa686e5f94f891dc512}\index{Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}!parseChannel@{parseChannel}}
+\index{parseChannel@{parseChannel}!Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}}
+\doxysubsubsection{\texorpdfstring{parseChannel()}{parseChannel()}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_log_a894e688dc6348fa686e5f94f891dc512} 
+parse\+Channel (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extract the log channel from the given configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\label{doc-var-members}
+\Hypertarget{namespace_illuminate_1_1_log_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_illuminate_1_1_log_ac945d3bd6df47b64f78b67197974c98a}\index{Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}!ParsesLogConfiguration@{ParsesLogConfiguration}}
+\index{ParsesLogConfiguration@{ParsesLogConfiguration}!Illuminate\textbackslash{}Log@{Illuminate\textbackslash{}Log}}
+\doxysubsubsection{\texorpdfstring{ParsesLogConfiguration}{ParsesLogConfiguration}}
+{\footnotesize\ttfamily \label{namespace_illuminate_1_1_log_ac945d3bd6df47b64f78b67197974c98a} 
+trait Parses\+Log\+Configuration}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}

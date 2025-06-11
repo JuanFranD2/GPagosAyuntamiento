@@ -1,0 +1,185 @@
+\doxysection{Wrapper\+Worker Class Reference}
+\hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker}{}\label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker}\index{WrapperWorker@{WrapperWorker}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a6aad863cfe36e6cc9cf2d8b1783c8db8}{\+\_\+\+\_\+construct}} (private readonly \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output, private readonly \mbox{\hyperlink{class_para_test_1_1_options}{Options}} \$options, array \$parameters, private readonly int \$token)
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_aa3919271b8ed991327f43aefe0af7eeb}{get\+Worker\+Crashed\+Exception}} (?Throwable \$previous\+Exception=null)
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a0fa3da3379fad6b430473531ee64ddda}{assign}} (string \$test)
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_adc5f91c0e458ad8c722ede69081fdd12}{is\+Free}} ()
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a946e1b288785f27fbc87ae08742b16c3}{get\+Exit\+Code}} ()
+\item 
+\mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_ad7e54aa55e82e9be1428d9fa8eb559a5}{is\+Running}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a1adb1e9a30e0922fb5d307b6fd1807a1}{COMMAND\+\_\+\+EXIT}} = "{}EXIT\textbackslash{}n"{}
+\item 
+readonly Spl\+File\+Info \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a115a187f1c23c4b6710b33fcb07e02c7}{\$status\+File}}
+\item 
+readonly Spl\+File\+Info \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a740cccdf5741aaa6cd01aa3e9249140d}{\$progress\+File}}
+\item 
+readonly Spl\+File\+Info \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a8abba0b55dcf95e7c16bb0bd59c2eafc}{\$unexpected\+Output\+File}}
+\item 
+readonly Spl\+File\+Info \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a8f9331fc1026108ab14075e921e7bc1b}{\$test\+Result\+File}}
+\item 
+readonly Spl\+File\+Info \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a80147cae99549e2fda76afebe55314eb}{\$result\+Cache\+File}}
+\item 
+readonly Spl\+File\+Info \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_ad64de754433cb466cf36da2b50b9a32d}{\$junit\+File}}
+\item 
+readonly Spl\+File\+Info \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a3c3ae760668f9ad37b0f187d42a1bfcb}{\$coverage\+File}}
+\item 
+readonly Spl\+File\+Info \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_ab525a0fb179ead48d1d41cfe33098c36}{\$teamcity\+File}}
+\item 
+readonly Spl\+File\+Info \mbox{\hyperlink{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a4a22e513c8aff7321edbe7cba61988ed}{\$testdox\+File}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a6aad863cfe36e6cc9cf2d8b1783c8db8}\index{WrapperWorker@{WrapperWorker}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a6aad863cfe36e6cc9cf2d8b1783c8db8} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}}}]{\$output}{, }\item[{private readonly \mbox{\hyperlink{class_para_test_1_1_options}{Options}}}]{\$options}{, }\item[{array}]{\$parameters}{, }\item[{private readonly int}]{\$token}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string\mbox{[}$\,$\mbox{]} & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a0fa3da3379fad6b430473531ee64ddda}\index{WrapperWorker@{WrapperWorker}!assign@{assign}}
+\index{assign@{assign}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a0fa3da3379fad6b430473531ee64ddda} 
+assign (\begin{DoxyParamCaption}\item[{string}]{\$test}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a946e1b288785f27fbc87ae08742b16c3}\index{WrapperWorker@{WrapperWorker}!getExitCode@{getExitCode}}
+\index{getExitCode@{getExitCode}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{getExitCode()}{getExitCode()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a946e1b288785f27fbc87ae08742b16c3} 
+get\+Exit\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_aa3919271b8ed991327f43aefe0af7eeb}\index{WrapperWorker@{WrapperWorker}!getWorkerCrashedException@{getWorkerCrashedException}}
+\index{getWorkerCrashedException@{getWorkerCrashedException}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{getWorkerCrashedException()}{getWorkerCrashedException()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_aa3919271b8ed991327f43aefe0af7eeb} 
+get\+Worker\+Crashed\+Exception (\begin{DoxyParamCaption}\item[{?Throwable}]{\$previous\+Exception}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_adc5f91c0e458ad8c722ede69081fdd12}\index{WrapperWorker@{WrapperWorker}!isFree@{isFree}}
+\index{isFree@{isFree}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{isFree()}{isFree()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_adc5f91c0e458ad8c722ede69081fdd12} 
+is\+Free (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_ad7e54aa55e82e9be1428d9fa8eb559a5}\index{WrapperWorker@{WrapperWorker}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_ad7e54aa55e82e9be1428d9fa8eb559a5} 
+is\+Running (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a4a20559544fdf4dcb457e258dc976cf8}\index{WrapperWorker@{WrapperWorker}!reset@{reset}}
+\index{reset@{reset}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a4a20559544fdf4dcb457e258dc976cf8} 
+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_af8fa59992209e36dccb3eefb0f75531f}\index{WrapperWorker@{WrapperWorker}!start@{start}}
+\index{start@{start}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_af8fa59992209e36dccb3eefb0f75531f} 
+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a8b6fc76a620d7557d06e9a11a9ffb509}\index{WrapperWorker@{WrapperWorker}!stop@{stop}}
+\index{stop@{stop}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a8b6fc76a620d7557d06e9a11a9ffb509} 
+stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a3c3ae760668f9ad37b0f187d42a1bfcb}\index{WrapperWorker@{WrapperWorker}!\$coverageFile@{\$coverageFile}}
+\index{\$coverageFile@{\$coverageFile}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\$coverageFile}{\$coverageFile}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a3c3ae760668f9ad37b0f187d42a1bfcb} 
+readonly Spl\+File\+Info \$coverage\+File}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_ad64de754433cb466cf36da2b50b9a32d}\index{WrapperWorker@{WrapperWorker}!\$junitFile@{\$junitFile}}
+\index{\$junitFile@{\$junitFile}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\$junitFile}{\$junitFile}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_ad64de754433cb466cf36da2b50b9a32d} 
+readonly Spl\+File\+Info \$junit\+File}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a740cccdf5741aaa6cd01aa3e9249140d}\index{WrapperWorker@{WrapperWorker}!\$progressFile@{\$progressFile}}
+\index{\$progressFile@{\$progressFile}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\$progressFile}{\$progressFile}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a740cccdf5741aaa6cd01aa3e9249140d} 
+readonly Spl\+File\+Info \$progress\+File}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a80147cae99549e2fda76afebe55314eb}\index{WrapperWorker@{WrapperWorker}!\$resultCacheFile@{\$resultCacheFile}}
+\index{\$resultCacheFile@{\$resultCacheFile}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\$resultCacheFile}{\$resultCacheFile}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a80147cae99549e2fda76afebe55314eb} 
+readonly Spl\+File\+Info \$result\+Cache\+File}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a115a187f1c23c4b6710b33fcb07e02c7}\index{WrapperWorker@{WrapperWorker}!\$statusFile@{\$statusFile}}
+\index{\$statusFile@{\$statusFile}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\$statusFile}{\$statusFile}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a115a187f1c23c4b6710b33fcb07e02c7} 
+readonly Spl\+File\+Info \$status\+File}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_ab525a0fb179ead48d1d41cfe33098c36}\index{WrapperWorker@{WrapperWorker}!\$teamcityFile@{\$teamcityFile}}
+\index{\$teamcityFile@{\$teamcityFile}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\$teamcityFile}{\$teamcityFile}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_ab525a0fb179ead48d1d41cfe33098c36} 
+readonly Spl\+File\+Info \$teamcity\+File}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a4a22e513c8aff7321edbe7cba61988ed}\index{WrapperWorker@{WrapperWorker}!\$testdoxFile@{\$testdoxFile}}
+\index{\$testdoxFile@{\$testdoxFile}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\$testdoxFile}{\$testdoxFile}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a4a22e513c8aff7321edbe7cba61988ed} 
+readonly Spl\+File\+Info \$testdox\+File}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a8f9331fc1026108ab14075e921e7bc1b}\index{WrapperWorker@{WrapperWorker}!\$testResultFile@{\$testResultFile}}
+\index{\$testResultFile@{\$testResultFile}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\$testResultFile}{\$testResultFile}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a8f9331fc1026108ab14075e921e7bc1b} 
+readonly Spl\+File\+Info \$test\+Result\+File}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a8abba0b55dcf95e7c16bb0bd59c2eafc}\index{WrapperWorker@{WrapperWorker}!\$unexpectedOutputFile@{\$unexpectedOutputFile}}
+\index{\$unexpectedOutputFile@{\$unexpectedOutputFile}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{\$unexpectedOutputFile}{\$unexpectedOutputFile}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a8abba0b55dcf95e7c16bb0bd59c2eafc} 
+readonly Spl\+File\+Info \$unexpected\+Output\+File}
+
+\Hypertarget{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a1adb1e9a30e0922fb5d307b6fd1807a1}\index{WrapperWorker@{WrapperWorker}!COMMAND\_EXIT@{COMMAND\_EXIT}}
+\index{COMMAND\_EXIT@{COMMAND\_EXIT}!WrapperWorker@{WrapperWorker}}
+\doxysubsubsection{\texorpdfstring{COMMAND\_EXIT}{COMMAND\_EXIT}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_wrapper_runner_1_1_wrapper_worker_a1adb1e9a30e0922fb5d307b6fd1807a1} 
+const COMMAND\+\_\+\+EXIT = "{}EXIT\textbackslash{}n"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/brianium/paratest/src/\+Wrapper\+Runner/\mbox{\hyperlink{_wrapper_worker_8php}{Wrapper\+Worker.\+php}}\end{DoxyCompactItemize}

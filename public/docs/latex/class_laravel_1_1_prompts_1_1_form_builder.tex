@@ -1,0 +1,314 @@
+\doxysection{Form\+Builder Class Reference}
+\hypertarget{class_laravel_1_1_prompts_1_1_form_builder}{}\label{class_laravel_1_1_prompts_1_1_form_builder}\index{FormBuilder@{FormBuilder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a3bfaa9e01346d781597d5c9f87a7259a}{add}} (Closure \$step, ?string \$name=null, bool \$ignore\+When\+Reverting=false)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a06cb62b035221ccf133c2eee16cbe6f8}{add\+If}} (Closure\texorpdfstring{$\vert$}{|}bool \$condition, Closure \$step, ?string \$name=null, bool \$ignore\+When\+Reverting=false)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_ab9e356f2165bc12df16964044bf8bd24}{submit}} ()
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_aa920c10a971d6ef02c56251b79bdb5dd}{text}} (string \$label, string \$placeholder=\textquotesingle{}\textquotesingle{}, string \$default=\textquotesingle{}\textquotesingle{}, bool\texorpdfstring{$\vert$}{|}string \$required=false, mixed \$validate=null, string \$hint=\textquotesingle{}\textquotesingle{}, ?string \$name=null, ?Closure \$transform=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a749ec337af854e1cd1c871cc017fe432}{textarea}} (string \$label, string \$placeholder=\textquotesingle{}\textquotesingle{}, string \$default=\textquotesingle{}\textquotesingle{}, bool\texorpdfstring{$\vert$}{|}string \$required=false, ?Closure \$validate=null, string \$hint=\textquotesingle{}\textquotesingle{}, int \$rows=5, ?string \$name=null, ?Closure \$transform=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a25d81793f8b0d4226b9535e53759f239}{password}} (string \$label, string \$placeholder=\textquotesingle{}\textquotesingle{}, bool\texorpdfstring{$\vert$}{|}string \$required=false, mixed \$validate=null, string \$hint=\textquotesingle{}\textquotesingle{}, ?string \$name=null, ?Closure \$transform=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_ad21df11426fd2da04f2233cf72d28a5e}{select}} (string \$label, array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}} \$options, int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$default=null, int \$scroll=5, mixed \$validate=null, string \$hint=\textquotesingle{}\textquotesingle{}, bool\texorpdfstring{$\vert$}{|}string \$required=true, ?string \$name=null, ?Closure \$transform=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_ac332fa4d16623bf2736a364fe3562bb1}{multiselect}} (string \$label, array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}} \$options, array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}} \$default=\mbox{[}$\,$\mbox{]}, int \$scroll=5, bool\texorpdfstring{$\vert$}{|}string \$required=false, mixed \$validate=null, string \$hint=\textquotesingle{}Use the space bar to \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_ad21df11426fd2da04f2233cf72d28a5e}{select}} options.\textquotesingle{}, ?string \$name=null, ?Closure \$transform=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_aba6fb3da61d136d876892782386903bf}{confirm}} (string \$label, bool \$default=true, string \$yes=\textquotesingle{}Yes\textquotesingle{}, string \$no=\textquotesingle{}No\textquotesingle{}, bool\texorpdfstring{$\vert$}{|}string \$required=false, mixed \$validate=null, string \$hint=\textquotesingle{}\textquotesingle{}, ?string \$name=null, ?Closure \$transform=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a552bcade07c5dc2cae1406f00ad6238f}{pause}} (string \$message=\textquotesingle{}Press enter to continue...\textquotesingle{}, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a37015a15a6cfdf31ee283b3afb80efa3}{suggest}} (string \$label, array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}\texorpdfstring{$\vert$}{|}Closure \$options, string \$placeholder=\textquotesingle{}\textquotesingle{}, string \$default=\textquotesingle{}\textquotesingle{}, int \$scroll=5, bool\texorpdfstring{$\vert$}{|}string \$required=false, mixed \$validate=null, string \$hint=\textquotesingle{}\textquotesingle{}, ?string \$name=null, ?Closure \$transform=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a6356439ff9b9030854d712be0039561d}{search}} (string \$label, Closure \$options, string \$placeholder=\textquotesingle{}\textquotesingle{}, int \$scroll=5, mixed \$validate=null, string \$hint=\textquotesingle{}\textquotesingle{}, bool\texorpdfstring{$\vert$}{|}string \$required=true, ?string \$name=null, ?Closure \$transform=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a86493d9d502bf74b5bf5c23d0ced40d8}{multisearch}} (string \$label, Closure \$options, string \$placeholder=\textquotesingle{}\textquotesingle{}, int \$scroll=5, bool\texorpdfstring{$\vert$}{|}string \$required=false, mixed \$validate=null, string \$hint=\textquotesingle{}Use the space bar to \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_ad21df11426fd2da04f2233cf72d28a5e}{select}} options.\textquotesingle{}, ?string \$name=null, ?Closure \$transform=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_aa51fbc9633b43fcfe651d124c8d60c33}{spin}} (Closure \$callback, string \$message=\textquotesingle{}\textquotesingle{}, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a44d2582a3f1dc9cedd7203b8b15c4d8b}{note}} (string \$message, ?string \$type=null, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a0715f5ea416c188ad2ddb659a85ed3ad}{error}} (string \$message, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_ad9c5f1f76370d055baaea8dff326601e}{warning}} (string \$message, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_aabbd2e43582017e96d0c5bdb41bef6c6}{alert}} (string \$message, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a441a1ef47ee2d1b7cd5edbaf24d6b3d1}{info}} (string \$message, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a5eb0619880c6a2326f393bffa71a2166}{intro}} (string \$message, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a9d405d06ca5d17bf708a2a530f77747c}{outro}} (string \$message, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_aab4728b170b9b45c548df4e6d924df40}{table}} (array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}} \$headers=\mbox{[}$\,$\mbox{]}, array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}\texorpdfstring{$\vert$}{|}null \$rows=null, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a8e25399b465cf98aef3f708e29c2bc51}{progress}} (string \$label, iterable\texorpdfstring{$\vert$}{|}int \$steps, ?Closure \$callback=null, string \$hint=\textquotesingle{}\textquotesingle{}, ?string \$name=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a579ff56fd2df8a651f13d180268dd8ee}{run\+Prompt}} (callable \$prompt, array \$arguments, bool \$ignore\+When\+Reverting=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_a90d263432deeb461b7fd9b553949c23d}{\$steps}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_abb64882993891ba65a469f2e9776b053}{\$responses}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a3bfaa9e01346d781597d5c9f87a7259a}\index{FormBuilder@{FormBuilder}!add@{add}}
+\index{add@{add}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a3bfaa9e01346d781597d5c9f87a7259a} 
+add (\begin{DoxyParamCaption}\item[{Closure}]{\$step}{, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{bool}]{\$ignore\+When\+Reverting}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Add a new step. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a06cb62b035221ccf133c2eee16cbe6f8}\index{FormBuilder@{FormBuilder}!addIf@{addIf}}
+\index{addIf@{addIf}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{addIf()}{addIf()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a06cb62b035221ccf133c2eee16cbe6f8} 
+add\+If (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}bool}]{\$condition}{, }\item[{Closure}]{\$step}{, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{bool}]{\$ignore\+When\+Reverting}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Add a new conditional step. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_aabbd2e43582017e96d0c5bdb41bef6c6}\index{FormBuilder@{FormBuilder}!alert@{alert}}
+\index{alert@{alert}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{alert()}{alert()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_aabbd2e43582017e96d0c5bdb41bef6c6} 
+alert (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Display an alert. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_aba6fb3da61d136d876892782386903bf}\index{FormBuilder@{FormBuilder}!confirm@{confirm}}
+\index{confirm@{confirm}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{confirm()}{confirm()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_aba6fb3da61d136d876892782386903bf} 
+confirm (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{bool}]{\$default}{ = {\ttfamily true}, }\item[{string}]{\$yes}{ = {\ttfamily \textquotesingle{}Yes\textquotesingle{}}, }\item[{string}]{\$no}{ = {\ttfamily \textquotesingle{}No\textquotesingle{}}, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily false}, }\item[{mixed}]{\$validate}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Prompt the user to confirm an action. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a0715f5ea416c188ad2ddb659a85ed3ad}\index{FormBuilder@{FormBuilder}!error@{error}}
+\index{error@{error}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a0715f5ea416c188ad2ddb659a85ed3ad} 
+error (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Display an error. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a441a1ef47ee2d1b7cd5edbaf24d6b3d1}\index{FormBuilder@{FormBuilder}!info@{info}}
+\index{info@{info}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a441a1ef47ee2d1b7cd5edbaf24d6b3d1} 
+info (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Display an informational message. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a5eb0619880c6a2326f393bffa71a2166}\index{FormBuilder@{FormBuilder}!intro@{intro}}
+\index{intro@{intro}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{intro()}{intro()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a5eb0619880c6a2326f393bffa71a2166} 
+intro (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Display an introduction. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a86493d9d502bf74b5bf5c23d0ced40d8}\index{FormBuilder@{FormBuilder}!multisearch@{multisearch}}
+\index{multisearch@{multisearch}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{multisearch()}{multisearch()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a86493d9d502bf74b5bf5c23d0ced40d8} 
+multisearch (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{Closure}]{\$options}{, }\item[{string}]{\$placeholder}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{int}]{\$scroll}{ = {\ttfamily 5}, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily false}, }\item[{mixed}]{\$validate}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}Use~the~space~bar~to~\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_ad21df11426fd2da04f2233cf72d28a5e}{select}}~options.\textquotesingle{}}, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Allow the user to search for multiple option.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Closure(string)} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$>$}{>} \$options \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_ac332fa4d16623bf2736a364fe3562bb1}\index{FormBuilder@{FormBuilder}!multiselect@{multiselect}}
+\index{multiselect@{multiselect}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{multiselect()}{multiselect()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_ac332fa4d16623bf2736a364fe3562bb1} 
+multiselect (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}}]{\$options}{, }\item[{array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}}]{\$default}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{int}]{\$scroll}{ = {\ttfamily 5}, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily false}, }\item[{mixed}]{\$validate}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}Use~the~space~bar~to~\mbox{\hyperlink{class_laravel_1_1_prompts_1_1_form_builder_ad21df11426fd2da04f2233cf72d28a5e}{select}}~options.\textquotesingle{}}, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Prompt the user to select multiple options.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int\texorpdfstring{$\vert$}{|}string,string$>$\texorpdfstring{$\vert$}{|}\+Collection$<$int\texorpdfstring{$\vert$}{|}string,string$>$} & \$options \\
+\hline
+{\em array$<$int\texorpdfstring{$\vert$}{|}string$>$\texorpdfstring{$\vert$}{|}\+Collection$<$int,int\texorpdfstring{$\vert$}{|}string$>$} & \$default \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a44d2582a3f1dc9cedd7203b8b15c4d8b}\index{FormBuilder@{FormBuilder}!note@{note}}
+\index{note@{note}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{note()}{note()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a44d2582a3f1dc9cedd7203b8b15c4d8b} 
+note (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{?string}]{\$type}{ = {\ttfamily null}, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Display a note. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a9d405d06ca5d17bf708a2a530f77747c}\index{FormBuilder@{FormBuilder}!outro@{outro}}
+\index{outro@{outro}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{outro()}{outro()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a9d405d06ca5d17bf708a2a530f77747c} 
+outro (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Display a closing message. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a25d81793f8b0d4226b9535e53759f239}\index{FormBuilder@{FormBuilder}!password@{password}}
+\index{password@{password}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{password()}{password()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a25d81793f8b0d4226b9535e53759f239} 
+password (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{string}]{\$placeholder}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily false}, }\item[{mixed}]{\$validate}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Prompt the user for input, hiding the value. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a552bcade07c5dc2cae1406f00ad6238f}\index{FormBuilder@{FormBuilder}!pause@{pause}}
+\index{pause@{pause}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a552bcade07c5dc2cae1406f00ad6238f} 
+pause (\begin{DoxyParamCaption}\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}Press~enter~to~continue...\textquotesingle{}}, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Prompt the user to continue or cancel after pausing. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a8e25399b465cf98aef3f708e29c2bc51}\index{FormBuilder@{FormBuilder}!progress@{progress}}
+\index{progress@{progress}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{progress()}{progress()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a8e25399b465cf98aef3f708e29c2bc51} 
+progress (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{iterable\texorpdfstring{$\vert$}{|}int}]{\$steps}{, }\item[{?Closure}]{\$callback}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Display a progress bar.
+
+@template TSteps of iterable$<$mixed$>$\texorpdfstring{$\vert$}{|}int @template TReturn
+
+
+\begin{DoxyParams}[1]{Parameters}
+TSteps & {\em \$steps} & \\
+\hline
+ & {\em ?\+Closure((\+TSteps} & is int ? int \+: value-\/of$<$\+TSteps$>$), Progress$<$\+TSteps$>$)\+: TReturn \$callback \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a579ff56fd2df8a651f13d180268dd8ee}\index{FormBuilder@{FormBuilder}!runPrompt@{runPrompt}}
+\index{runPrompt@{runPrompt}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{runPrompt()}{runPrompt()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a579ff56fd2df8a651f13d180268dd8ee} 
+run\+Prompt (\begin{DoxyParamCaption}\item[{callable}]{\$prompt}{, }\item[{array}]{\$arguments}{, }\item[{bool}]{\$ignore\+When\+Reverting}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Execute the given prompt passing the given arguments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$} & \$arguments \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a6356439ff9b9030854d712be0039561d}\index{FormBuilder@{FormBuilder}!search@{search}}
+\index{search@{search}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a6356439ff9b9030854d712be0039561d} 
+search (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{Closure}]{\$options}{, }\item[{string}]{\$placeholder}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{int}]{\$scroll}{ = {\ttfamily 5}, }\item[{mixed}]{\$validate}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily true}, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Allow the user to search for an option.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em Closure(string)} & array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, string\texorpdfstring{$>$}{>} \$options \\
+\hline
+true | string & {\em \$required} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_ad21df11426fd2da04f2233cf72d28a5e}\index{FormBuilder@{FormBuilder}!select@{select}}
+\index{select@{select}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_ad21df11426fd2da04f2233cf72d28a5e} 
+select (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}}]{\$options}{, }\item[{int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$default}{ = {\ttfamily null}, }\item[{int}]{\$scroll}{ = {\ttfamily 5}, }\item[{mixed}]{\$validate}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily true}, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Prompt the user to select an option.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$int\texorpdfstring{$\vert$}{|}string,string$>$\texorpdfstring{$\vert$}{|}\+Collection$<$int\texorpdfstring{$\vert$}{|}string,string$>$} & \$options \\
+\hline
+true | string & {\em \$required} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_aa51fbc9633b43fcfe651d124c8d60c33}\index{FormBuilder@{FormBuilder}!spin@{spin}}
+\index{spin@{spin}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{spin()}{spin()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_aa51fbc9633b43fcfe651d124c8d60c33} 
+spin (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Render a spinner while the given callback is executing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Closure()\+: mixed \$callback \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_ab9e356f2165bc12df16964044bf8bd24}\index{FormBuilder@{FormBuilder}!submit@{submit}}
+\index{submit@{submit}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_ab9e356f2165bc12df16964044bf8bd24} 
+submit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Run all of the given steps.
+
+\begin{DoxyReturn}{Returns}
+array$<$mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a37015a15a6cfdf31ee283b3afb80efa3}\index{FormBuilder@{FormBuilder}!suggest@{suggest}}
+\index{suggest@{suggest}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{suggest()}{suggest()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a37015a15a6cfdf31ee283b3afb80efa3} 
+suggest (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}\texorpdfstring{$\vert$}{|}Closure}]{\$options}{, }\item[{string}]{\$placeholder}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$default}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{int}]{\$scroll}{ = {\ttfamily 5}, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily false}, }\item[{mixed}]{\$validate}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Prompt the user for text input with auto-\/completion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$\texorpdfstring{$\vert$}{|}\+Collection$<$int,string$>$\texorpdfstring{$\vert$}{|}\+Closure(string)} & array$<$string$>$ \$options \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_aab4728b170b9b45c548df4e6d924df40}\index{FormBuilder@{FormBuilder}!table@{table}}
+\index{table@{table}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{table()}{table()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_aab4728b170b9b45c548df4e6d924df40} 
+table (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}\texorpdfstring{$\vert$}{|}null}]{\$rows}{ = {\ttfamily null}, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Display a table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string\texorpdfstring{$\vert$}{|}array$<$int,string$>$$>$\texorpdfstring{$\vert$}{|}\+Collection$<$int,string\texorpdfstring{$\vert$}{|}array$<$int,string$>$$>$} & \$headers \\
+\hline
+{\em array$<$int,array$<$int,string$>$$>$\texorpdfstring{$\vert$}{|}\+Collection$<$int,array$<$int,string$>$$>$} & \$rows \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_aa920c10a971d6ef02c56251b79bdb5dd}\index{FormBuilder@{FormBuilder}!text@{text}}
+\index{text@{text}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_aa920c10a971d6ef02c56251b79bdb5dd} 
+text (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{string}]{\$placeholder}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$default}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily false}, }\item[{mixed}]{\$validate}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Prompt the user for text input. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a749ec337af854e1cd1c871cc017fe432}\index{FormBuilder@{FormBuilder}!textarea@{textarea}}
+\index{textarea@{textarea}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{textarea()}{textarea()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a749ec337af854e1cd1c871cc017fe432} 
+textarea (\begin{DoxyParamCaption}\item[{string}]{\$label}{, }\item[{string}]{\$placeholder}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$default}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{bool\texorpdfstring{$\vert$}{|}string}]{\$required}{ = {\ttfamily false}, }\item[{?Closure}]{\$validate}{ = {\ttfamily null}, }\item[{string}]{\$hint}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{int}]{\$rows}{ = {\ttfamily 5}, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{?Closure}]{\$transform}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Prompt the user for multiline text input. \Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_ad9c5f1f76370d055baaea8dff326601e}\index{FormBuilder@{FormBuilder}!warning@{warning}}
+\index{warning@{warning}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{warning()}{warning()}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_ad9c5f1f76370d055baaea8dff326601e} 
+warning (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Display a warning. 
+
+\label{doc-variable-members}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_abb64882993891ba65a469f2e9776b053}\index{FormBuilder@{FormBuilder}!\$responses@{\$responses}}
+\index{\$responses@{\$responses}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{\$responses}{\$responses}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_abb64882993891ba65a469f2e9776b053} 
+array \$responses = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_laravel_1_1_prompts_1_1_form_builder_a90d263432deeb461b7fd9b553949c23d}\index{FormBuilder@{FormBuilder}!\$steps@{\$steps}}
+\index{\$steps@{\$steps}!FormBuilder@{FormBuilder}}
+\doxysubsubsection{\texorpdfstring{\$steps}{\$steps}}
+{\footnotesize\ttfamily \label{class_laravel_1_1_prompts_1_1_form_builder_a90d263432deeb461b7fd9b553949c23d} 
+array \$steps = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/prompts/src/\mbox{\hyperlink{_form_builder_8php}{Form\+Builder.\+php}}\end{DoxyCompactItemize}

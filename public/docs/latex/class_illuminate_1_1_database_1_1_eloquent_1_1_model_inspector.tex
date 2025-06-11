@@ -1,0 +1,337 @@
+\doxysection{Model\+Inspector Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector}{}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector}\index{ModelInspector@{ModelInspector}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a2649bea9628906af84eedc23f383af8e}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}} \$app)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a014429379f75e73e9e89f942f65d377e}{get\+Attributes}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ac3ae67173d1825b78c7d96fa904fb923}{get\+Virtual\+Attributes}} (\$model, \$columns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a9aa6fb0977729fb95f72efb168074c42}{get\+Relations}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_aeedb5a1d388fc23a52ca2ab4ebd1a0b5}{get\+Policy}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ad31041bfb1609be11d3f7f96d0834255}{get\+Events}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a4aaf71c972912e16d5c4698038698ea2}{get\+Observers}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a0bd9fc550f2d3d6148e53cf19c33b144}{get\+Collected\+By}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ac2f64b90ced1b8e8f4fbb7e0c7b04c93}{get\+Builder}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a8b56925a8af22774deee80873ccc0b36}{qualify\+Model}} (string \$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a99b3cc932b6b3e6828c00a5a72330175}{get\+Cast\+Type}} (\$column, \$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ac8015e3c69fbd6057302cf27cdbdf201}{get\+Casts\+With\+Dates}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ad67650c5def2b8b4b03f36529ee51baa}{attribute\+Is\+Hidden}} (\$attribute, \$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a97fdbef74ceeec39abf7b01726066968}{get\+Column\+Default}} (\$column, \$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a20d685a86b56ce9f5f1caab98cc9ed4d}{column\+Is\+Unique}} (\$column, \$indexes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_adfb117f244076aa9bc269269f7e57403}{\$app}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_acd3a4a0b18992c84adfe7ca682518f7d}{\$relation\+Methods}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a2649bea9628906af84eedc23f383af8e}\index{ModelInspector@{ModelInspector}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a2649bea9628906af84eedc23f383af8e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}}}]{\$app}{}\end{DoxyParamCaption})}
+
+Create a new model inspector instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ad67650c5def2b8b4b03f36529ee51baa}\index{ModelInspector@{ModelInspector}!attributeIsHidden@{attributeIsHidden}}
+\index{attributeIsHidden@{attributeIsHidden}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{attributeIsHidden()}{attributeIsHidden()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ad67650c5def2b8b4b03f36529ee51baa} 
+attribute\+Is\+Hidden (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given attribute is hidden.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a20d685a86b56ce9f5f1caab98cc9ed4d}\index{ModelInspector@{ModelInspector}!columnIsUnique@{columnIsUnique}}
+\index{columnIsUnique@{columnIsUnique}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{columnIsUnique()}{columnIsUnique()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a20d685a86b56ce9f5f1caab98cc9ed4d} 
+column\+Is\+Unique (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$indexes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given attribute is unique.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+array & {\em \$indexes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a014429379f75e73e9e89f942f65d377e}\index{ModelInspector@{ModelInspector}!getAttributes@{getAttributes}}
+\index{getAttributes@{getAttributes}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getAttributes()}{getAttributes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a014429379f75e73e9e89f942f65d377e} 
+get\+Attributes (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the column attributes for the given model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, array$<$string, mixed$>$\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ac2f64b90ced1b8e8f4fbb7e0c7b04c93}\index{ModelInspector@{ModelInspector}!getBuilder@{getBuilder}}
+\index{getBuilder@{getBuilder}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getBuilder()}{getBuilder()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ac2f64b90ced1b8e8f4fbb7e0c7b04c93} 
+get\+Builder (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the builder class being used by the model.
+
+@template TModel of \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model
+
+
+\begin{DoxyParams}[1]{Parameters}
+TModel & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+class-\/string\texorpdfstring{$<$}{<}\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$\+TModel$>$\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ac8015e3c69fbd6057302cf27cdbdf201}\index{ModelInspector@{ModelInspector}!getCastsWithDates@{getCastsWithDates}}
+\index{getCastsWithDates@{getCastsWithDates}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getCastsWithDates()}{getCastsWithDates()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ac8015e3c69fbd6057302cf27cdbdf201} 
+get\+Casts\+With\+Dates (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the model casts, including any date casts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a99b3cc932b6b3e6828c00a5a72330175}\index{ModelInspector@{ModelInspector}!getCastType@{getCastType}}
+\index{getCastType@{getCastType}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getCastType()}{getCastType()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a99b3cc932b6b3e6828c00a5a72330175} 
+get\+Cast\+Type (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the cast type for the given column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a0bd9fc550f2d3d6148e53cf19c33b144}\index{ModelInspector@{ModelInspector}!getCollectedBy@{getCollectedBy}}
+\index{getCollectedBy@{getCollectedBy}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getCollectedBy()}{getCollectedBy()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a0bd9fc550f2d3d6148e53cf19c33b144} 
+get\+Collected\+By (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the collection class being used by the model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+class-\/string\texorpdfstring{$<$}{<}\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a97fdbef74ceeec39abf7b01726066968}\index{ModelInspector@{ModelInspector}!getColumnDefault@{getColumnDefault}}
+\index{getColumnDefault@{getColumnDefault}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getColumnDefault()}{getColumnDefault()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a97fdbef74ceeec39abf7b01726066968} 
+get\+Column\+Default (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the default value for the given column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string,mixed$>$} & \$column \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ad31041bfb1609be11d3f7f96d0834255}\index{ModelInspector@{ModelInspector}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ad31041bfb1609be11d3f7f96d0834255} 
+get\+Events (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the events that the model dispatches.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a4aaf71c972912e16d5c4698038698ea2}\index{ModelInspector@{ModelInspector}!getObservers@{getObservers}}
+\index{getObservers@{getObservers}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getObservers()}{getObservers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a4aaf71c972912e16d5c4698038698ea2} 
+get\+Observers (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the observers watching this model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Binding\+Resolution\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_aeedb5a1d388fc23a52ca2ab4ebd1a0b5}\index{ModelInspector@{ModelInspector}!getPolicy@{getPolicy}}
+\index{getPolicy@{getPolicy}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getPolicy()}{getPolicy()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_aeedb5a1d388fc23a52ca2ab4ebd1a0b5} 
+get\+Policy (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the first policy associated with this model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a9aa6fb0977729fb95f72efb168074c42}\index{ModelInspector@{ModelInspector}!getRelations@{getRelations}}
+\index{getRelations@{getRelations}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getRelations()}{getRelations()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a9aa6fb0977729fb95f72efb168074c42} 
+get\+Relations (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the relations from the given model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ac3ae67173d1825b78c7d96fa904fb923}\index{ModelInspector@{ModelInspector}!getVirtualAttributes@{getVirtualAttributes}}
+\index{getVirtualAttributes@{getVirtualAttributes}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{getVirtualAttributes()}{getVirtualAttributes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_ac3ae67173d1825b78c7d96fa904fb923} 
+get\+Virtual\+Attributes (\begin{DoxyParamCaption}\item[{}]{\$model}{, }\item[{}]{\$columns}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the virtual (non-\/column) attributes for the given model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model & {\em \$model} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a8b56925a8af22774deee80873ccc0b36}\index{ModelInspector@{ModelInspector}!qualifyModel@{qualifyModel}}
+\index{qualifyModel@{qualifyModel}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{qualifyModel()}{qualifyModel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_a8b56925a8af22774deee80873ccc0b36} 
+qualify\+Model (\begin{DoxyParamCaption}\item[{string}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Qualify the given model class base name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+class-\/string\texorpdfstring{$<$}{<}\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Generator\+Command 
+\end{DoxySeeAlso}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_adfb117f244076aa9bc269269f7e57403}\index{ModelInspector@{ModelInspector}!\$app@{\$app}}
+\index{\$app@{\$app}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{\$app}{\$app}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_adfb117f244076aa9bc269269f7e57403} 
+\$app\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_acd3a4a0b18992c84adfe7ca682518f7d}\index{ModelInspector@{ModelInspector}!\$relationMethods@{\$relationMethods}}
+\index{\$relationMethods@{\$relationMethods}!ModelInspector@{ModelInspector}}
+\doxysubsubsection{\texorpdfstring{\$relationMethods}{\$relationMethods}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_model_inspector_acd3a4a0b18992c84adfe7ca682518f7d} 
+\$relation\+Methods\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Eloquent/\mbox{\hyperlink{_model_inspector_8php}{Model\+Inspector.\+php}}\end{DoxyCompactItemize}

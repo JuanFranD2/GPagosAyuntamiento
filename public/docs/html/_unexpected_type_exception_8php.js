@@ -1,0 +1,4 @@
+var _unexpected_type_exception_8php =
+[
+    [ "UnexpectedTypeException", "class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_exception_1_1_unexpected_type_exception.html", "class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_exception_1_1_unexpected_type_exception" ]
+];

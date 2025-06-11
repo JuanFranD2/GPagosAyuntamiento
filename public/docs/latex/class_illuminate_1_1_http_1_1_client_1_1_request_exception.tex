@@ -1,0 +1,136 @@
+\doxysection{Request\+Exception Class Reference}
+\hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception}{}\label{class_illuminate_1_1_http_1_1_client_1_1_request_exception}\index{RequestException@{RequestException}}
+Inheritance diagram for Request\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_http_1_1_client_1_1_request_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_request_exception_a2cf795e9e7f03461bb42098d5b7d08dd}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response}{Response}} \$response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_request_exception_aa6c3ac3f820b84788bd483fe569f3c01}{truncate}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_request_exception_a9dd14e1d8582d1ec473289c1107add94}{truncate\+At}} (int \$length)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_request_exception_a8e675e7dbc489fd98fe4d07de99ee675}{dont\+Truncate}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_request_exception_af4b6fb1bbc77ccc05f10da3b16935b99}{\$response}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_request_exception_aaeb62c7d75ef9e0e340cf9299a576e32}{\$truncate\+At}} = 120
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_request_exception_aa740cb559ba27af7bbd572b62bda31a0}{prepare\+Message}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response}{Response}} \$response)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_a2cf795e9e7f03461bb42098d5b7d08dd}\index{RequestException@{RequestException}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!RequestException@{RequestException}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_request_exception_a2cf795e9e7f03461bb42098d5b7d08dd} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Create a new exception instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_a8e675e7dbc489fd98fe4d07de99ee675}\index{RequestException@{RequestException}!dontTruncate@{dontTruncate}}
+\index{dontTruncate@{dontTruncate}!RequestException@{RequestException}}
+\doxysubsubsection{\texorpdfstring{dontTruncate()}{dontTruncate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_request_exception_a8e675e7dbc489fd98fe4d07de99ee675} 
+dont\+Truncate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Disable truncation of request exception messages.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_aa740cb559ba27af7bbd572b62bda31a0}\index{RequestException@{RequestException}!prepareMessage@{prepareMessage}}
+\index{prepareMessage@{prepareMessage}!RequestException@{RequestException}}
+\doxysubsubsection{\texorpdfstring{prepareMessage()}{prepareMessage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_request_exception_aa740cb559ba27af7bbd572b62bda31a0} 
+prepare\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepare the exception message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_aa6c3ac3f820b84788bd483fe569f3c01}\index{RequestException@{RequestException}!truncate@{truncate}}
+\index{truncate@{truncate}!RequestException@{RequestException}}
+\doxysubsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_request_exception_aa6c3ac3f820b84788bd483fe569f3c01} 
+truncate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Enable truncation of request exception messages.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_a9dd14e1d8582d1ec473289c1107add94}\index{RequestException@{RequestException}!truncateAt@{truncateAt}}
+\index{truncateAt@{truncateAt}!RequestException@{RequestException}}
+\doxysubsubsection{\texorpdfstring{truncateAt()}{truncateAt()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_request_exception_a9dd14e1d8582d1ec473289c1107add94} 
+truncate\+At (\begin{DoxyParamCaption}\item[{int}]{\$length}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set the truncation length for request exception messages.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_af4b6fb1bbc77ccc05f10da3b16935b99}\index{RequestException@{RequestException}!\$response@{\$response}}
+\index{\$response@{\$response}!RequestException@{RequestException}}
+\doxysubsubsection{\texorpdfstring{\$response}{\$response}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_request_exception_af4b6fb1bbc77ccc05f10da3b16935b99} 
+\$response}
+
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_request_exception_aaeb62c7d75ef9e0e340cf9299a576e32}\index{RequestException@{RequestException}!\$truncateAt@{\$truncateAt}}
+\index{\$truncateAt@{\$truncateAt}!RequestException@{RequestException}}
+\doxysubsubsection{\texorpdfstring{\$truncateAt}{\$truncateAt}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_request_exception_aaeb62c7d75ef9e0e340cf9299a576e32} 
+\$truncate\+At = 120\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Http/\+Client/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_http_2_client_2_request_exception_8php}{Request\+Exception.\+php}}\end{DoxyCompactItemize}

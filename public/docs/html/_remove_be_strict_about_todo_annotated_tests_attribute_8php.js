@@ -1,0 +1,4 @@
+var _remove_be_strict_about_todo_annotated_tests_attribute_8php =
+[
+    [ "RemoveBeStrictAboutTodoAnnotatedTestsAttribute", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_remove_be_strict_about_todo_annotated_tests_attribute.html", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_remove_be_strict_about_todo_annotated_tests_attribute" ]
+];

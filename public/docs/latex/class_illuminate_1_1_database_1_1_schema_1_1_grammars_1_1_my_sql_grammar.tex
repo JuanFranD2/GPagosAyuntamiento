@@ -1,0 +1,1874 @@
+\doxysection{My\+Sql\+Grammar Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar}{}\label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar}\index{MySqlGrammar@{MySqlGrammar}}
+Inheritance diagram for My\+Sql\+Grammar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a9bad26d92244ff9af20eaa95c8837d54}{compile\+Create\+Database}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1e2a197c61fde0a02928dd1153846abf}{compile\+Schemas}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aef1fe0be1e02c1d2fde8b073c9d6a0aa}{compile\+Table\+Exists}} (\$schema, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a6eb42d053cd1d4c72d95975259dd22d9}{compile\+Tables}} (\$schema)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5597b2543133292bddaced02c39dcb16}{compile\+Views}} (\$schema)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a683128e820c1767a21fd4b7e422d2422}{compile\+Columns}} (\$schema, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7b21fcc75a261ee264883d1421b51029}{compile\+Indexes}} (\$schema, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a808c078ab4110d20ea903c6c699fb77e}{compile\+Foreign\+Keys}} (\$schema, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_af765675c4c516485bb11f09b4d9c7f5f}{compile\+Create}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a82584e4dc7a2a3d0cae0ec60afa4085b}{compile\+Add}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_af694372eed7664366b7249db2a8eee54}{compile\+Auto\+Increment\+Starting\+Values}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2116522f0a509b88f91755cc23447a12}{compile\+Rename\+Column}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a024c8e38e0397820f121a17e66812789}{compile\+Change}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac33a3e52e7ef705e3d9aa45d9d96096b}{compile\+Primary}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a74caed0dea1bdc0240a6aa921088b056}{compile\+Unique}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a0f926bb22b5ff12bd818dca8fc926ae5}{compile\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae68e481af6f641e76135e4ea4b0904f8}{compile\+Full\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7dc3c3dda42927aa0e872186ef6f3eb6}{compile\+Spatial\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aead2f199df5cecea92de8cfd964f2741}{compile\+Drop}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aa15ab74bb37f0fdcc559f771b1c79a2a}{compile\+Drop\+If\+Exists}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a3adb41ee9b4ccd70ecac1391340ff414}{compile\+Drop\+Column}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac093ab4dcec068257ebfd1df34ab6ec9}{compile\+Drop\+Primary}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a4aa0035711999be08be2a0132590b14b}{compile\+Drop\+Unique}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a515bc4108db787ede21878eb266dd400}{compile\+Drop\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7aece4426d652967055a33f81b5d30ef}{compile\+Drop\+Full\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a56ce8344453afba2776db0216cbba821}{compile\+Drop\+Spatial\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a10161b2f28ecbc84e2ec89455582b698}{compile\+Drop\+Foreign}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac1d399b11ca0b010946afe6de29e252a}{compile\+Rename}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae25156c7ed7b653deddb99f335856769}{compile\+Rename\+Index}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a146cb19ceb1448ca3d793017e2bffc86}{compile\+Drop\+All\+Tables}} (\$tables)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1690045d5d2fd7e4bfba8e8fdc55bc0b}{compile\+Drop\+All\+Views}} (\$views)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab900224ca63098e03fa2593b5b135830}{compile\+Enable\+Foreign\+Key\+Constraints}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a98f451e3ddef663fa26ba79144c7657d}{compile\+Disable\+Foreign\+Key\+Constraints}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a48f036a3d47403f1b01af0aa120c7e59}{compile\+Table\+Comment}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a03c46aa2d546ddc54c1c93a519873030}{escape\+Names}} (\$names)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar}{Grammar}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_af6b275bd6fc7a5d0759c82bf2b754279}{compile\+Drop\+Database\+If\+Exists}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aa87dfd8ff5fa9949c474813f02b36b6c}{compile\+Types}} (\$schema)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a3d0026f5709b787dc83696d0a28329c1}{compile\+Fulltext}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_ade455e059a35b928da33846c8c17cc74}{compile\+Foreign}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a8d546d668a604a1deb1d5e046e1c32c3}{prefix\+Array}} (\$prefix, array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aa7b8a4cd774cfe7ef408d4042ced1e03}{wrap\+Table}} (\$table, \$prefix=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a09e2b9d182ef63a09ef8d91ae5a89e40}{wrap}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a1ab14fc2762aade38def29785315043f}{get\+Fluent\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_ae6ef76c1763dbc67d7d7dfc38972ba45}{supports\+Schema\+Transactions}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a9bf677b1d571cfd2379d40b57d7fc6db}{compile\+Schema\+Where\+Clause}} (\$schema, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5e37cd899bf755a630ca817099e1fbf4}{compile\+Create\+Table}} (\$blueprint, \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2b9110018223064fa33fdb0831e699fa}{compile\+Create\+Encoding}} (\$sql, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2e4f63f5b201d194d55ccec0de3ff8ee}{compile\+Create\+Engine}} (\$sql, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a41515bb5ed5b515cf9288a72bc4dae26}{compile\+Legacy\+Rename\+Column}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae3f64fb11f048aa15e982d3c59a6f3e4}{compile\+Key}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$command, \$type)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a671a5d2f9b13e89002b798ffdc2f2df4}{type\+Char}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a388abe6b9beac57152215493f8aefce6}{type\+String}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac4edfb43bc703db74cfa18e7c0640b6c}{type\+Tiny\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8c686868a89dbd039f35308eef26fd8f}{type\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_afa87362b86157e2f37dcea2f23bd37cc}{type\+Medium\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a60c26b88c281f192a9357bb6d88df7c2}{type\+Long\+Text}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5ed83288b82e30d172f40e41434b1a2e}{type\+Big\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a20dc55ca50eef6e7f4a61d93bfd984ed}{type\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ade2e43aa53b2f06fd8e1071aa339bfd3}{type\+Medium\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_abca25411a812abad9b2383ae6d609918}{type\+Tiny\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aad2df322e9a4e4bc7508a18c54d1978d}{type\+Small\+Integer}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae52d34dd85fb7a878ec9fab0f706f1c8}{type\+Float}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a0399bbf2b8baa4b3fe6cb750da912b1d}{type\+Double}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7fc1d2d3a6ccf22ca619f326ac1d384d}{type\+Decimal}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_adb893a7fdd4d2ab1fb1bbd83770f0aa7}{type\+Boolean}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a87cedcc10ad27382e20d274980268c33}{type\+Enum}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a68e6a3fd173ff5fdd2d3ebdfac2101c9}{type\+Set}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a425caf2c70040ba2774c61e5d09d4e15}{type\+Json}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aeceee01d5c726e568c96f781445a3c47}{type\+Jsonb}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_adf7f02c626032a8878d9fe2a0b30d4ef}{type\+Date}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a55deb9f5895a1bc2aca45ce0f51eb9c8}{type\+Date\+Time}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a6516648db9c70dbdc06b51c1904daabe}{type\+Date\+Time\+Tz}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a239adf939b7dcf77cc77ef4fb41c5365}{type\+Time}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5966809347f4a101b474b75e8a7c5166}{type\+Time\+Tz}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7515216c9600b06fb2fab0a26bf530fd}{type\+Timestamp}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab6493229383ef043d2949a893c9b3ae3}{type\+Timestamp\+Tz}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a86b4fc703f9100960526a4123d7a69c7}{type\+Year}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab3799e9f2d78a97761f7a8d51250b536}{type\+Binary}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1fe4f44117625a028efa1d70a0d56735}{type\+Uuid}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1a4b0b132dba03331f4fc95616fdc89b}{type\+Ip\+Address}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a351aff67e2be5f28bf648fe581a821a7}{type\+Mac\+Address}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a68ba20c6614b248c15d9b45345be8ff3}{type\+Geometry}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a32ccd504a670587ed006ecb984328b49}{type\+Geography}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a4d2cf0c3ee9c0b9fe24e4e3678c5d45d}{type\+Computed}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a801da715aec781e976974a5adf21f980}{type\+Vector}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a061ea67aa1b03cf03e7b7acf6f81dbdf}{modify\+Virtual\+As}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2513d8b9fa7204ddfa545c4e9b35a433}{modify\+Stored\+As}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab2e9dd5e1da8da76683c28b1a41c4d43}{modify\+Unsigned}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a393a3cca002b20eaaab2e1534e7fbd54}{modify\+Charset}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_abb6ff76bb99b90d5af1600deb962ce31}{modify\+Collate}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a9c7776a862d64a4316782e6bdd20ba1e}{modify\+Nullable}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a929857d141afdc77353277d47903abbe}{modify\+Invisible}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8843ec1889fbcdc5229791781576c2d2}{modify\+Default}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a98c7573a3f2dda931ab35b4ec649a2dc}{modify\+On\+Update}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a4d9495e2ec2f4216ba15a01c5db69c7e}{modify\+Increment}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a761016a694202e8e3d9d6837403012a4}{modify\+First}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2f2f13770094e83699c2bec668bba552}{modify\+After}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8081b8be82aba9326089b3df263dfa05}{modify\+Comment}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a75621695c2611919480ca34071df760a}{wrap\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8d1eca626241a546bbbcf36d768969bf}{wrap\+Json\+Selector}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar}{Grammar}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a0470593e4c1de8da055fb5edb124377c}{get\+Columns}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aba039baec9373722914d0745c65ac3c4}{get\+Column}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a7ebd97ab3628b9ac55d04d0a60890a5f}{get\+Type}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a9cd6ba85938418868a62423578e544ff}{type\+Raw}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a864f1bd18d2a3c8025e6d87de1f1e995}{add\+Modifiers}} (\$sql, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}} \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_af03d389c465abfb6bf586232fa1e2e95}{get\+Command\+By\+Name}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a0ca8d8ca12e5a967448471523920fdf6}{get\+Commands\+By\+Name}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aaac7e0a88ee22e0ce7dca423e0228995}{has\+Command}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}} \$blueprint, \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a663441b597c9ad03cf80568cd83f46a0}{get\+Default\+Value}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a160987fb6b313e736e282e85282c6a30}{\$modifiers}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a151ecd4bab2e85de938891e925a040c2}{\$serials}} = \mbox{[}\textquotesingle{}big\+Integer\textquotesingle{}, \textquotesingle{}integer\textquotesingle{}, \textquotesingle{}medium\+Integer\textquotesingle{}, \textquotesingle{}small\+Integer\textquotesingle{}, \textquotesingle{}tiny\+Integer\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8819395a8920e6fc292fcb27f5491269}{\$fluent\+Commands}} = \mbox{[}\textquotesingle{}Auto\+Increment\+Starting\+Values\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar}{Grammar}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a160987fb6b313e736e282e85282c6a30}{\$modifiers}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_acf491548539fb3e48517eae4df476304}{\$transactions}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a8819395a8920e6fc292fcb27f5491269}{\$fluent\+Commands}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a82584e4dc7a2a3d0cae0ec60afa4085b}\index{MySqlGrammar@{MySqlGrammar}!compileAdd@{compileAdd}}
+\index{compileAdd@{compileAdd}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileAdd()}{compileAdd()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a82584e4dc7a2a3d0cae0ec60afa4085b} 
+compile\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile an add column command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_af694372eed7664366b7249db2a8eee54}\index{MySqlGrammar@{MySqlGrammar}!compileAutoIncrementStartingValues@{compileAutoIncrementStartingValues}}
+\index{compileAutoIncrementStartingValues@{compileAutoIncrementStartingValues}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileAutoIncrementStartingValues()}{compileAutoIncrementStartingValues()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_af694372eed7664366b7249db2a8eee54} 
+compile\+Auto\+Increment\+Starting\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile the auto-\/incrementing column starting values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a024c8e38e0397820f121a17e66812789}\index{MySqlGrammar@{MySqlGrammar}!compileChange@{compileChange}}
+\index{compileChange@{compileChange}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileChange()}{compileChange()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a024c8e38e0397820f121a17e66812789} 
+compile\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a024c8e38e0397820f121a17e66812789}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a683128e820c1767a21fd4b7e422d2422}\index{MySqlGrammar@{MySqlGrammar}!compileColumns@{compileColumns}}
+\index{compileColumns@{compileColumns}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileColumns()}{compileColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a683128e820c1767a21fd4b7e422d2422} 
+compile\+Columns (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the columns.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a683128e820c1767a21fd4b7e422d2422}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_af765675c4c516485bb11f09b4d9c7f5f}\index{MySqlGrammar@{MySqlGrammar}!compileCreate@{compileCreate}}
+\index{compileCreate@{compileCreate}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileCreate()}{compileCreate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_af765675c4c516485bb11f09b4d9c7f5f} 
+compile\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a create table command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a9bad26d92244ff9af20eaa95c8837d54}\index{MySqlGrammar@{MySqlGrammar}!compileCreateDatabase@{compileCreateDatabase}}
+\index{compileCreateDatabase@{compileCreateDatabase}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileCreateDatabase()}{compileCreateDatabase()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a9bad26d92244ff9af20eaa95c8837d54} 
+compile\+Create\+Database (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Compile a create database command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a9bad26d92244ff9af20eaa95c8837d54}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2b9110018223064fa33fdb0831e699fa}\index{MySqlGrammar@{MySqlGrammar}!compileCreateEncoding@{compileCreateEncoding}}
+\index{compileCreateEncoding@{compileCreateEncoding}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileCreateEncoding()}{compileCreateEncoding()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2b9110018223064fa33fdb0831e699fa} 
+compile\+Create\+Encoding (\begin{DoxyParamCaption}\item[{}]{\$sql}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Append the character set specifications to a command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2e4f63f5b201d194d55ccec0de3ff8ee}\index{MySqlGrammar@{MySqlGrammar}!compileCreateEngine@{compileCreateEngine}}
+\index{compileCreateEngine@{compileCreateEngine}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileCreateEngine()}{compileCreateEngine()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2e4f63f5b201d194d55ccec0de3ff8ee} 
+compile\+Create\+Engine (\begin{DoxyParamCaption}\item[{}]{\$sql}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Append the engine specifications to a command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5e37cd899bf755a630ca817099e1fbf4}\index{MySqlGrammar@{MySqlGrammar}!compileCreateTable@{compileCreateTable}}
+\index{compileCreateTable@{compileCreateTable}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileCreateTable()}{compileCreateTable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5e37cd899bf755a630ca817099e1fbf4} 
+compile\+Create\+Table (\begin{DoxyParamCaption}\item[{}]{\$blueprint}{, }\item[{}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the main create table clause.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a98f451e3ddef663fa26ba79144c7657d}\index{MySqlGrammar@{MySqlGrammar}!compileDisableForeignKeyConstraints@{compileDisableForeignKeyConstraints}}
+\index{compileDisableForeignKeyConstraints@{compileDisableForeignKeyConstraints}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDisableForeignKeyConstraints()}{compileDisableForeignKeyConstraints()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a98f451e3ddef663fa26ba79144c7657d} 
+compile\+Disable\+Foreign\+Key\+Constraints (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Compile the command to disable foreign key constraints.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aead2f199df5cecea92de8cfd964f2741}\index{MySqlGrammar@{MySqlGrammar}!compileDrop@{compileDrop}}
+\index{compileDrop@{compileDrop}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDrop()}{compileDrop()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aead2f199df5cecea92de8cfd964f2741} 
+compile\+Drop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop table command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a146cb19ceb1448ca3d793017e2bffc86}\index{MySqlGrammar@{MySqlGrammar}!compileDropAllTables@{compileDropAllTables}}
+\index{compileDropAllTables@{compileDropAllTables}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropAllTables()}{compileDropAllTables()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a146cb19ceb1448ca3d793017e2bffc86} 
+compile\+Drop\+All\+Tables (\begin{DoxyParamCaption}\item[{}]{\$tables}{}\end{DoxyParamCaption})}
+
+Compile the SQL needed to drop all tables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$} & \$tables \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1690045d5d2fd7e4bfba8e8fdc55bc0b}\index{MySqlGrammar@{MySqlGrammar}!compileDropAllViews@{compileDropAllViews}}
+\index{compileDropAllViews@{compileDropAllViews}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropAllViews()}{compileDropAllViews()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1690045d5d2fd7e4bfba8e8fdc55bc0b} 
+compile\+Drop\+All\+Views (\begin{DoxyParamCaption}\item[{}]{\$views}{}\end{DoxyParamCaption})}
+
+Compile the SQL needed to drop all views.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$} & \$views \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a3adb41ee9b4ccd70ecac1391340ff414}\index{MySqlGrammar@{MySqlGrammar}!compileDropColumn@{compileDropColumn}}
+\index{compileDropColumn@{compileDropColumn}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropColumn()}{compileDropColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a3adb41ee9b4ccd70ecac1391340ff414} 
+compile\+Drop\+Column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop column command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a10161b2f28ecbc84e2ec89455582b698}\index{MySqlGrammar@{MySqlGrammar}!compileDropForeign@{compileDropForeign}}
+\index{compileDropForeign@{compileDropForeign}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropForeign()}{compileDropForeign()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a10161b2f28ecbc84e2ec89455582b698} 
+compile\+Drop\+Foreign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop foreign key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a10161b2f28ecbc84e2ec89455582b698}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7aece4426d652967055a33f81b5d30ef}\index{MySqlGrammar@{MySqlGrammar}!compileDropFullText@{compileDropFullText}}
+\index{compileDropFullText@{compileDropFullText}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropFullText()}{compileDropFullText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7aece4426d652967055a33f81b5d30ef} 
+compile\+Drop\+Full\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop fulltext index command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a7aece4426d652967055a33f81b5d30ef}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aa15ab74bb37f0fdcc559f771b1c79a2a}\index{MySqlGrammar@{MySqlGrammar}!compileDropIfExists@{compileDropIfExists}}
+\index{compileDropIfExists@{compileDropIfExists}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropIfExists()}{compileDropIfExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aa15ab74bb37f0fdcc559f771b1c79a2a} 
+compile\+Drop\+If\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop table (if exists) command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a515bc4108db787ede21878eb266dd400}\index{MySqlGrammar@{MySqlGrammar}!compileDropIndex@{compileDropIndex}}
+\index{compileDropIndex@{compileDropIndex}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropIndex()}{compileDropIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a515bc4108db787ede21878eb266dd400} 
+compile\+Drop\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop index command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac093ab4dcec068257ebfd1df34ab6ec9}\index{MySqlGrammar@{MySqlGrammar}!compileDropPrimary@{compileDropPrimary}}
+\index{compileDropPrimary@{compileDropPrimary}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropPrimary()}{compileDropPrimary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac093ab4dcec068257ebfd1df34ab6ec9} 
+compile\+Drop\+Primary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop primary key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a56ce8344453afba2776db0216cbba821}\index{MySqlGrammar@{MySqlGrammar}!compileDropSpatialIndex@{compileDropSpatialIndex}}
+\index{compileDropSpatialIndex@{compileDropSpatialIndex}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropSpatialIndex()}{compileDropSpatialIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a56ce8344453afba2776db0216cbba821} 
+compile\+Drop\+Spatial\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop spatial index command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a4aa0035711999be08be2a0132590b14b}\index{MySqlGrammar@{MySqlGrammar}!compileDropUnique@{compileDropUnique}}
+\index{compileDropUnique@{compileDropUnique}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileDropUnique()}{compileDropUnique()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a4aa0035711999be08be2a0132590b14b} 
+compile\+Drop\+Unique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a drop unique key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab900224ca63098e03fa2593b5b135830}\index{MySqlGrammar@{MySqlGrammar}!compileEnableForeignKeyConstraints@{compileEnableForeignKeyConstraints}}
+\index{compileEnableForeignKeyConstraints@{compileEnableForeignKeyConstraints}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileEnableForeignKeyConstraints()}{compileEnableForeignKeyConstraints()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab900224ca63098e03fa2593b5b135830} 
+compile\+Enable\+Foreign\+Key\+Constraints (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Compile the command to enable foreign key constraints.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a808c078ab4110d20ea903c6c699fb77e}\index{MySqlGrammar@{MySqlGrammar}!compileForeignKeys@{compileForeignKeys}}
+\index{compileForeignKeys@{compileForeignKeys}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileForeignKeys()}{compileForeignKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a808c078ab4110d20ea903c6c699fb77e} 
+compile\+Foreign\+Keys (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the foreign keys.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a808c078ab4110d20ea903c6c699fb77e}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae68e481af6f641e76135e4ea4b0904f8}\index{MySqlGrammar@{MySqlGrammar}!compileFullText@{compileFullText}}
+\index{compileFullText@{compileFullText}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileFullText()}{compileFullText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae68e481af6f641e76135e4ea4b0904f8} 
+compile\+Full\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a fulltext index key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a0f926bb22b5ff12bd818dca8fc926ae5}\index{MySqlGrammar@{MySqlGrammar}!compileIndex@{compileIndex}}
+\index{compileIndex@{compileIndex}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileIndex()}{compileIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a0f926bb22b5ff12bd818dca8fc926ae5} 
+compile\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a plain index key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7b21fcc75a261ee264883d1421b51029}\index{MySqlGrammar@{MySqlGrammar}!compileIndexes@{compileIndexes}}
+\index{compileIndexes@{compileIndexes}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileIndexes()}{compileIndexes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7b21fcc75a261ee264883d1421b51029} 
+compile\+Indexes (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the indexes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a7b21fcc75a261ee264883d1421b51029}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae3f64fb11f048aa15e982d3c59a6f3e4}\index{MySqlGrammar@{MySqlGrammar}!compileKey@{compileKey}}
+\index{compileKey@{compileKey}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileKey()}{compileKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae3f64fb11f048aa15e982d3c59a6f3e4} 
+compile\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{, }\item[{}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile an index creation command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a41515bb5ed5b515cf9288a72bc4dae26}\index{MySqlGrammar@{MySqlGrammar}!compileLegacyRenameColumn@{compileLegacyRenameColumn}}
+\index{compileLegacyRenameColumn@{compileLegacyRenameColumn}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileLegacyRenameColumn()}{compileLegacyRenameColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a41515bb5ed5b515cf9288a72bc4dae26} 
+compile\+Legacy\+Rename\+Column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile a rename column command for legacy versions of My\+SQL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac33a3e52e7ef705e3d9aa45d9d96096b}\index{MySqlGrammar@{MySqlGrammar}!compilePrimary@{compilePrimary}}
+\index{compilePrimary@{compilePrimary}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compilePrimary()}{compilePrimary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac33a3e52e7ef705e3d9aa45d9d96096b} 
+compile\+Primary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a primary key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac1d399b11ca0b010946afe6de29e252a}\index{MySqlGrammar@{MySqlGrammar}!compileRename@{compileRename}}
+\index{compileRename@{compileRename}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileRename()}{compileRename()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac1d399b11ca0b010946afe6de29e252a} 
+compile\+Rename (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a rename table command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2116522f0a509b88f91755cc23447a12}\index{MySqlGrammar@{MySqlGrammar}!compileRenameColumn@{compileRenameColumn}}
+\index{compileRenameColumn@{compileRenameColumn}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileRenameColumn()}{compileRenameColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2116522f0a509b88f91755cc23447a12} 
+compile\+Rename\+Column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a2116522f0a509b88f91755cc23447a12}{Grammar}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_maria_db_grammar_a2116522f0a509b88f91755cc23447a12}{Maria\+Db\+Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae25156c7ed7b653deddb99f335856769}\index{MySqlGrammar@{MySqlGrammar}!compileRenameIndex@{compileRenameIndex}}
+\index{compileRenameIndex@{compileRenameIndex}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileRenameIndex()}{compileRenameIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae25156c7ed7b653deddb99f335856769} 
+compile\+Rename\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a rename index command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1e2a197c61fde0a02928dd1153846abf}\index{MySqlGrammar@{MySqlGrammar}!compileSchemas@{compileSchemas}}
+\index{compileSchemas@{compileSchemas}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileSchemas()}{compileSchemas()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1e2a197c61fde0a02928dd1153846abf} 
+compile\+Schemas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the schemas.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a1e2a197c61fde0a02928dd1153846abf}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a9bf677b1d571cfd2379d40b57d7fc6db}\index{MySqlGrammar@{MySqlGrammar}!compileSchemaWhereClause@{compileSchemaWhereClause}}
+\index{compileSchemaWhereClause@{compileSchemaWhereClause}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileSchemaWhereClause()}{compileSchemaWhereClause()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a9bf677b1d571cfd2379d40b57d7fc6db} 
+compile\+Schema\+Where\+Clause (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile the query to compare the schema.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$schema} & \\
+\hline
+string & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7dc3c3dda42927aa0e872186ef6f3eb6}\index{MySqlGrammar@{MySqlGrammar}!compileSpatialIndex@{compileSpatialIndex}}
+\index{compileSpatialIndex@{compileSpatialIndex}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileSpatialIndex()}{compileSpatialIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7dc3c3dda42927aa0e872186ef6f3eb6} 
+compile\+Spatial\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a spatial index key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a48f036a3d47403f1b01af0aa120c7e59}\index{MySqlGrammar@{MySqlGrammar}!compileTableComment@{compileTableComment}}
+\index{compileTableComment@{compileTableComment}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileTableComment()}{compileTableComment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a48f036a3d47403f1b01af0aa120c7e59} 
+compile\+Table\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a table comment command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aef1fe0be1e02c1d2fde8b073c9d6a0aa}\index{MySqlGrammar@{MySqlGrammar}!compileTableExists@{compileTableExists}}
+\index{compileTableExists@{compileTableExists}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileTableExists()}{compileTableExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aef1fe0be1e02c1d2fde8b073c9d6a0aa} 
+compile\+Table\+Exists (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Compile the query to determine if the given table exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_aef1fe0be1e02c1d2fde8b073c9d6a0aa}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a6eb42d053cd1d4c72d95975259dd22d9}\index{MySqlGrammar@{MySqlGrammar}!compileTables@{compileTables}}
+\index{compileTables@{compileTables}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileTables()}{compileTables()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a6eb42d053cd1d4c72d95975259dd22d9} 
+compile\+Tables (\begin{DoxyParamCaption}\item[{}]{\$schema}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the tables.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$schema} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a6eb42d053cd1d4c72d95975259dd22d9}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a74caed0dea1bdc0240a6aa921088b056}\index{MySqlGrammar@{MySqlGrammar}!compileUnique@{compileUnique}}
+\index{compileUnique@{compileUnique}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileUnique()}{compileUnique()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a74caed0dea1bdc0240a6aa921088b056} 
+compile\+Unique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$command}{}\end{DoxyParamCaption})}
+
+Compile a unique key command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5597b2543133292bddaced02c39dcb16}\index{MySqlGrammar@{MySqlGrammar}!compileViews@{compileViews}}
+\index{compileViews@{compileViews}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{compileViews()}{compileViews()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5597b2543133292bddaced02c39dcb16} 
+compile\+Views (\begin{DoxyParamCaption}\item[{}]{\$schema}{}\end{DoxyParamCaption})}
+
+Compile the query to determine the views.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$schema} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a5597b2543133292bddaced02c39dcb16}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a03c46aa2d546ddc54c1c93a519873030}\index{MySqlGrammar@{MySqlGrammar}!escapeNames@{escapeNames}}
+\index{escapeNames@{escapeNames}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{escapeNames()}{escapeNames()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a03c46aa2d546ddc54c1c93a519873030} 
+escape\+Names (\begin{DoxyParamCaption}\item[{}]{\$names}{}\end{DoxyParamCaption})}
+
+Quote-\/escape the given tables, views, or types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string$>$} & \$names \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2f2f13770094e83699c2bec668bba552}\index{MySqlGrammar@{MySqlGrammar}!modifyAfter@{modifyAfter}}
+\index{modifyAfter@{modifyAfter}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyAfter()}{modifyAfter()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2f2f13770094e83699c2bec668bba552} 
+modify\+After (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for an "{}after"{} column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a393a3cca002b20eaaab2e1534e7fbd54}\index{MySqlGrammar@{MySqlGrammar}!modifyCharset@{modifyCharset}}
+\index{modifyCharset@{modifyCharset}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyCharset()}{modifyCharset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a393a3cca002b20eaaab2e1534e7fbd54} 
+modify\+Charset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a character set column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_abb6ff76bb99b90d5af1600deb962ce31}\index{MySqlGrammar@{MySqlGrammar}!modifyCollate@{modifyCollate}}
+\index{modifyCollate@{modifyCollate}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyCollate()}{modifyCollate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_abb6ff76bb99b90d5af1600deb962ce31} 
+modify\+Collate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a collation column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8081b8be82aba9326089b3df263dfa05}\index{MySqlGrammar@{MySqlGrammar}!modifyComment@{modifyComment}}
+\index{modifyComment@{modifyComment}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyComment()}{modifyComment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8081b8be82aba9326089b3df263dfa05} 
+modify\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a "{}comment"{} column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8843ec1889fbcdc5229791781576c2d2}\index{MySqlGrammar@{MySqlGrammar}!modifyDefault@{modifyDefault}}
+\index{modifyDefault@{modifyDefault}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyDefault()}{modifyDefault()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8843ec1889fbcdc5229791781576c2d2} 
+modify\+Default (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a default column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a761016a694202e8e3d9d6837403012a4}\index{MySqlGrammar@{MySqlGrammar}!modifyFirst@{modifyFirst}}
+\index{modifyFirst@{modifyFirst}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyFirst()}{modifyFirst()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a761016a694202e8e3d9d6837403012a4} 
+modify\+First (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a "{}first"{} column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a4d9495e2ec2f4216ba15a01c5db69c7e}\index{MySqlGrammar@{MySqlGrammar}!modifyIncrement@{modifyIncrement}}
+\index{modifyIncrement@{modifyIncrement}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyIncrement()}{modifyIncrement()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a4d9495e2ec2f4216ba15a01c5db69c7e} 
+modify\+Increment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for an auto-\/increment column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a929857d141afdc77353277d47903abbe}\index{MySqlGrammar@{MySqlGrammar}!modifyInvisible@{modifyInvisible}}
+\index{modifyInvisible@{modifyInvisible}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyInvisible()}{modifyInvisible()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a929857d141afdc77353277d47903abbe} 
+modify\+Invisible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for an invisible column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a9c7776a862d64a4316782e6bdd20ba1e}\index{MySqlGrammar@{MySqlGrammar}!modifyNullable@{modifyNullable}}
+\index{modifyNullable@{modifyNullable}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyNullable()}{modifyNullable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a9c7776a862d64a4316782e6bdd20ba1e} 
+modify\+Nullable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a nullable column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a98c7573a3f2dda931ab35b4ec649a2dc}\index{MySqlGrammar@{MySqlGrammar}!modifyOnUpdate@{modifyOnUpdate}}
+\index{modifyOnUpdate@{modifyOnUpdate}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyOnUpdate()}{modifyOnUpdate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a98c7573a3f2dda931ab35b4ec649a2dc} 
+modify\+On\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for an "{}on update"{} column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2513d8b9fa7204ddfa545c4e9b35a433}\index{MySqlGrammar@{MySqlGrammar}!modifyStoredAs@{modifyStoredAs}}
+\index{modifyStoredAs@{modifyStoredAs}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyStoredAs()}{modifyStoredAs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a2513d8b9fa7204ddfa545c4e9b35a433} 
+modify\+Stored\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a generated stored column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab2e9dd5e1da8da76683c28b1a41c4d43}\index{MySqlGrammar@{MySqlGrammar}!modifyUnsigned@{modifyUnsigned}}
+\index{modifyUnsigned@{modifyUnsigned}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyUnsigned()}{modifyUnsigned()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab2e9dd5e1da8da76683c28b1a41c4d43} 
+modify\+Unsigned (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for an unsigned column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a061ea67aa1b03cf03e7b7acf6f81dbdf}\index{MySqlGrammar@{MySqlGrammar}!modifyVirtualAs@{modifyVirtualAs}}
+\index{modifyVirtualAs@{modifyVirtualAs}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{modifyVirtualAs()}{modifyVirtualAs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a061ea67aa1b03cf03e7b7acf6f81dbdf} 
+modify\+Virtual\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_blueprint}{Blueprint}}}]{\$blueprint}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the SQL for a generated virtual column modifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Blueprint & {\em \$blueprint} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5ed83288b82e30d172f40e41434b1a2e}\index{MySqlGrammar@{MySqlGrammar}!typeBigInteger@{typeBigInteger}}
+\index{typeBigInteger@{typeBigInteger}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeBigInteger()}{typeBigInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5ed83288b82e30d172f40e41434b1a2e} 
+type\+Big\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a big integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab3799e9f2d78a97761f7a8d51250b536}\index{MySqlGrammar@{MySqlGrammar}!typeBinary@{typeBinary}}
+\index{typeBinary@{typeBinary}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeBinary()}{typeBinary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab3799e9f2d78a97761f7a8d51250b536} 
+type\+Binary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a binary type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_adb893a7fdd4d2ab1fb1bbd83770f0aa7}\index{MySqlGrammar@{MySqlGrammar}!typeBoolean@{typeBoolean}}
+\index{typeBoolean@{typeBoolean}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeBoolean()}{typeBoolean()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_adb893a7fdd4d2ab1fb1bbd83770f0aa7} 
+type\+Boolean (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a boolean type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a671a5d2f9b13e89002b798ffdc2f2df4}\index{MySqlGrammar@{MySqlGrammar}!typeChar@{typeChar}}
+\index{typeChar@{typeChar}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeChar()}{typeChar()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a671a5d2f9b13e89002b798ffdc2f2df4} 
+type\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a char type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a4d2cf0c3ee9c0b9fe24e4e3678c5d45d}\index{MySqlGrammar@{MySqlGrammar}!typeComputed@{typeComputed}}
+\index{typeComputed@{typeComputed}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeComputed()}{typeComputed()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a4d2cf0c3ee9c0b9fe24e4e3678c5d45d} 
+type\+Computed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a generated, computed column type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a4d2cf0c3ee9c0b9fe24e4e3678c5d45d}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_adf7f02c626032a8878d9fe2a0b30d4ef}\index{MySqlGrammar@{MySqlGrammar}!typeDate@{typeDate}}
+\index{typeDate@{typeDate}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDate()}{typeDate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_adf7f02c626032a8878d9fe2a0b30d4ef} 
+type\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a date type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a55deb9f5895a1bc2aca45ce0f51eb9c8}\index{MySqlGrammar@{MySqlGrammar}!typeDateTime@{typeDateTime}}
+\index{typeDateTime@{typeDateTime}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDateTime()}{typeDateTime()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a55deb9f5895a1bc2aca45ce0f51eb9c8} 
+type\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a date-\/time type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a6516648db9c70dbdc06b51c1904daabe}\index{MySqlGrammar@{MySqlGrammar}!typeDateTimeTz@{typeDateTimeTz}}
+\index{typeDateTimeTz@{typeDateTimeTz}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDateTimeTz()}{typeDateTimeTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a6516648db9c70dbdc06b51c1904daabe} 
+type\+Date\+Time\+Tz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a date-\/time (with time zone) type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7fc1d2d3a6ccf22ca619f326ac1d384d}\index{MySqlGrammar@{MySqlGrammar}!typeDecimal@{typeDecimal}}
+\index{typeDecimal@{typeDecimal}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDecimal()}{typeDecimal()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7fc1d2d3a6ccf22ca619f326ac1d384d} 
+type\+Decimal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a decimal type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a0399bbf2b8baa4b3fe6cb750da912b1d}\index{MySqlGrammar@{MySqlGrammar}!typeDouble@{typeDouble}}
+\index{typeDouble@{typeDouble}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeDouble()}{typeDouble()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a0399bbf2b8baa4b3fe6cb750da912b1d} 
+type\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a double type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a87cedcc10ad27382e20d274980268c33}\index{MySqlGrammar@{MySqlGrammar}!typeEnum@{typeEnum}}
+\index{typeEnum@{typeEnum}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeEnum()}{typeEnum()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a87cedcc10ad27382e20d274980268c33} 
+type\+Enum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for an enumeration type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae52d34dd85fb7a878ec9fab0f706f1c8}\index{MySqlGrammar@{MySqlGrammar}!typeFloat@{typeFloat}}
+\index{typeFloat@{typeFloat}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeFloat()}{typeFloat()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ae52d34dd85fb7a878ec9fab0f706f1c8} 
+type\+Float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a float type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a32ccd504a670587ed006ecb984328b49}\index{MySqlGrammar@{MySqlGrammar}!typeGeography@{typeGeography}}
+\index{typeGeography@{typeGeography}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeGeography()}{typeGeography()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a32ccd504a670587ed006ecb984328b49} 
+type\+Geography (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a spatial Geography type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a68ba20c6614b248c15d9b45345be8ff3}\index{MySqlGrammar@{MySqlGrammar}!typeGeometry@{typeGeometry}}
+\index{typeGeometry@{typeGeometry}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeGeometry()}{typeGeometry()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a68ba20c6614b248c15d9b45345be8ff3} 
+type\+Geometry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a spatial Geometry type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_maria_db_grammar_a68ba20c6614b248c15d9b45345be8ff3}{Maria\+Db\+Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a20dc55ca50eef6e7f4a61d93bfd984ed}\index{MySqlGrammar@{MySqlGrammar}!typeInteger@{typeInteger}}
+\index{typeInteger@{typeInteger}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeInteger()}{typeInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a20dc55ca50eef6e7f4a61d93bfd984ed} 
+type\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for an integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1a4b0b132dba03331f4fc95616fdc89b}\index{MySqlGrammar@{MySqlGrammar}!typeIpAddress@{typeIpAddress}}
+\index{typeIpAddress@{typeIpAddress}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeIpAddress()}{typeIpAddress()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1a4b0b132dba03331f4fc95616fdc89b} 
+type\+Ip\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for an IP address type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a425caf2c70040ba2774c61e5d09d4e15}\index{MySqlGrammar@{MySqlGrammar}!typeJson@{typeJson}}
+\index{typeJson@{typeJson}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeJson()}{typeJson()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a425caf2c70040ba2774c61e5d09d4e15} 
+type\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a json type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aeceee01d5c726e568c96f781445a3c47}\index{MySqlGrammar@{MySqlGrammar}!typeJsonb@{typeJsonb}}
+\index{typeJsonb@{typeJsonb}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeJsonb()}{typeJsonb()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aeceee01d5c726e568c96f781445a3c47} 
+type\+Jsonb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a jsonb type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a60c26b88c281f192a9357bb6d88df7c2}\index{MySqlGrammar@{MySqlGrammar}!typeLongText@{typeLongText}}
+\index{typeLongText@{typeLongText}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeLongText()}{typeLongText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a60c26b88c281f192a9357bb6d88df7c2} 
+type\+Long\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a long text type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a351aff67e2be5f28bf648fe581a821a7}\index{MySqlGrammar@{MySqlGrammar}!typeMacAddress@{typeMacAddress}}
+\index{typeMacAddress@{typeMacAddress}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeMacAddress()}{typeMacAddress()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a351aff67e2be5f28bf648fe581a821a7} 
+type\+Mac\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a MAC address type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ade2e43aa53b2f06fd8e1071aa339bfd3}\index{MySqlGrammar@{MySqlGrammar}!typeMediumInteger@{typeMediumInteger}}
+\index{typeMediumInteger@{typeMediumInteger}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeMediumInteger()}{typeMediumInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ade2e43aa53b2f06fd8e1071aa339bfd3} 
+type\+Medium\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a medium integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_afa87362b86157e2f37dcea2f23bd37cc}\index{MySqlGrammar@{MySqlGrammar}!typeMediumText@{typeMediumText}}
+\index{typeMediumText@{typeMediumText}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeMediumText()}{typeMediumText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_afa87362b86157e2f37dcea2f23bd37cc} 
+type\+Medium\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a medium text type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a68e6a3fd173ff5fdd2d3ebdfac2101c9}\index{MySqlGrammar@{MySqlGrammar}!typeSet@{typeSet}}
+\index{typeSet@{typeSet}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeSet()}{typeSet()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a68e6a3fd173ff5fdd2d3ebdfac2101c9} 
+type\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a set enumeration type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aad2df322e9a4e4bc7508a18c54d1978d}\index{MySqlGrammar@{MySqlGrammar}!typeSmallInteger@{typeSmallInteger}}
+\index{typeSmallInteger@{typeSmallInteger}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeSmallInteger()}{typeSmallInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_aad2df322e9a4e4bc7508a18c54d1978d} 
+type\+Small\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a small integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a388abe6b9beac57152215493f8aefce6}\index{MySqlGrammar@{MySqlGrammar}!typeString@{typeString}}
+\index{typeString@{typeString}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeString()}{typeString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a388abe6b9beac57152215493f8aefce6} 
+type\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a string type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8c686868a89dbd039f35308eef26fd8f}\index{MySqlGrammar@{MySqlGrammar}!typeText@{typeText}}
+\index{typeText@{typeText}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeText()}{typeText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8c686868a89dbd039f35308eef26fd8f} 
+type\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a text type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a239adf939b7dcf77cc77ef4fb41c5365}\index{MySqlGrammar@{MySqlGrammar}!typeTime@{typeTime}}
+\index{typeTime@{typeTime}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTime()}{typeTime()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a239adf939b7dcf77cc77ef4fb41c5365} 
+type\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a time type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7515216c9600b06fb2fab0a26bf530fd}\index{MySqlGrammar@{MySqlGrammar}!typeTimestamp@{typeTimestamp}}
+\index{typeTimestamp@{typeTimestamp}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTimestamp()}{typeTimestamp()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a7515216c9600b06fb2fab0a26bf530fd} 
+type\+Timestamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a timestamp type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab6493229383ef043d2949a893c9b3ae3}\index{MySqlGrammar@{MySqlGrammar}!typeTimestampTz@{typeTimestampTz}}
+\index{typeTimestampTz@{typeTimestampTz}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTimestampTz()}{typeTimestampTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ab6493229383ef043d2949a893c9b3ae3} 
+type\+Timestamp\+Tz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a timestamp (with time zone) type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5966809347f4a101b474b75e8a7c5166}\index{MySqlGrammar@{MySqlGrammar}!typeTimeTz@{typeTimeTz}}
+\index{typeTimeTz@{typeTimeTz}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTimeTz()}{typeTimeTz()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a5966809347f4a101b474b75e8a7c5166} 
+type\+Time\+Tz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a time (with time zone) type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_abca25411a812abad9b2383ae6d609918}\index{MySqlGrammar@{MySqlGrammar}!typeTinyInteger@{typeTinyInteger}}
+\index{typeTinyInteger@{typeTinyInteger}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTinyInteger()}{typeTinyInteger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_abca25411a812abad9b2383ae6d609918} 
+type\+Tiny\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a tiny integer type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac4edfb43bc703db74cfa18e7c0640b6c}\index{MySqlGrammar@{MySqlGrammar}!typeTinyText@{typeTinyText}}
+\index{typeTinyText@{typeTinyText}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeTinyText()}{typeTinyText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_ac4edfb43bc703db74cfa18e7c0640b6c} 
+type\+Tiny\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a tiny text type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1fe4f44117625a028efa1d70a0d56735}\index{MySqlGrammar@{MySqlGrammar}!typeUuid@{typeUuid}}
+\index{typeUuid@{typeUuid}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeUuid()}{typeUuid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a1fe4f44117625a028efa1d70a0d56735} 
+type\+Uuid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a uuid type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_maria_db_grammar_a1fe4f44117625a028efa1d70a0d56735}{Maria\+Db\+Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a801da715aec781e976974a5adf21f980}\index{MySqlGrammar@{MySqlGrammar}!typeVector@{typeVector}}
+\index{typeVector@{typeVector}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeVector()}{typeVector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a801da715aec781e976974a5adf21f980} 
+type\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a vector type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar_a801da715aec781e976974a5adf21f980}{Grammar}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a86b4fc703f9100960526a4123d7a69c7}\index{MySqlGrammar@{MySqlGrammar}!typeYear@{typeYear}}
+\index{typeYear@{typeYear}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{typeYear()}{typeYear()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a86b4fc703f9100960526a4123d7a69c7} 
+type\+Year (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_fluent}{Fluent}}}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the column definition for a year type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Fluent & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8d1eca626241a546bbbcf36d768969bf}\index{MySqlGrammar@{MySqlGrammar}!wrapJsonSelector@{wrapJsonSelector}}
+\index{wrapJsonSelector@{wrapJsonSelector}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{wrapJsonSelector()}{wrapJsonSelector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8d1eca626241a546bbbcf36d768969bf} 
+wrap\+Json\+Selector (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrap the given JSON selector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a75621695c2611919480ca34071df760a}\index{MySqlGrammar@{MySqlGrammar}!wrapValue@{wrapValue}}
+\index{wrapValue@{wrapValue}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{wrapValue()}{wrapValue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a75621695c2611919480ca34071df760a} 
+wrap\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrap a single string in keyword identifiers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8819395a8920e6fc292fcb27f5491269}\index{MySqlGrammar@{MySqlGrammar}!\$fluentCommands@{\$fluentCommands}}
+\index{\$fluentCommands@{\$fluentCommands}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{\$fluentCommands}{\$fluentCommands}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a8819395a8920e6fc292fcb27f5491269} 
+\$fluent\+Commands = \mbox{[}\textquotesingle{}Auto\+Increment\+Starting\+Values\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a160987fb6b313e736e282e85282c6a30}\index{MySqlGrammar@{MySqlGrammar}!\$modifiers@{\$modifiers}}
+\index{\$modifiers@{\$modifiers}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{\$modifiers}{\$modifiers}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a160987fb6b313e736e282e85282c6a30} 
+\$modifiers\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a151ecd4bab2e85de938891e925a040c2}\index{MySqlGrammar@{MySqlGrammar}!\$serials@{\$serials}}
+\index{\$serials@{\$serials}!MySqlGrammar@{MySqlGrammar}}
+\doxysubsubsection{\texorpdfstring{\$serials}{\$serials}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_my_sql_grammar_a151ecd4bab2e85de938891e925a040c2} 
+\$serials = \mbox{[}\textquotesingle{}big\+Integer\textquotesingle{}, \textquotesingle{}integer\textquotesingle{}, \textquotesingle{}medium\+Integer\textquotesingle{}, \textquotesingle{}small\+Integer\textquotesingle{}, \textquotesingle{}tiny\+Integer\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Schema/\+Grammars/\mbox{\hyperlink{_schema_2_grammars_2_my_sql_grammar_8php}{My\+Sql\+Grammar.\+php}}\end{DoxyCompactItemize}

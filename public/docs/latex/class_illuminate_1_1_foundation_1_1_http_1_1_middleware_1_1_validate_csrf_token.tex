@@ -1,0 +1,68 @@
+\doxysection{Validate\+Csrf\+Token Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_validate_csrf_token}{}\label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_validate_csrf_token}\index{ValidateCsrfToken@{ValidateCsrfToken}}
+Inheritance diagram for Validate\+Csrf\+Token\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_validate_csrf_token}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token}{Verify\+Csrf\+Token}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a7d5a7a47256f9f3c76c52cb1ba207956}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}} \$app, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_encryption_1_1_encrypter}{Encrypter}} \$encrypter)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_acef7660b2651389395d139e8af42d670}{handle}} (\$request, Closure \$next)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_aa032f48480cc3365e4bd4bcf764bacb6}{get\+Excluded\+Paths}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a9cea310bfc9b60f5536b1993b069fc3c}{should\+Add\+Xsrf\+Token\+Cookie}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token}{Verify\+Csrf\+Token}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a87100805e2fe57fbfeadbc9104e99341}{except}} (\$uris)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a1f3104022583f21672a7d2bd5c5aa065}{serialized}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a0904294c306d5c182f2ffbc8b939bfae}{flush\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token}{Verify\+Csrf\+Token}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_ad04e8828c83dc422e1ce3553017816b0}{is\+Reading}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_ad93370e733f0253ebce6b3234de3eef4}{running\+Unit\+Tests}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a971bb55a3ba680ad7f468692baee708e}{tokens\+Match}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_aa04541ca331b7d3246ca6c00d1624d3a}{get\+Token\+From\+Request}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a69552b59cb6af05aad0a0b189e40f6ca}{add\+Cookie\+To\+Response}} (\$request, \$response)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a6aba97b08c4ce87af7ca9930b145356c}{new\+Cookie}} (\$request, \$config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token}{Verify\+Csrf\+Token}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_adfb117f244076aa9bc269269f7e57403}{\$app}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_aa530488e72521efa6320ae4a47cd54a1}{\$encrypter}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a20aee92e768748d175898c2dba356c51}{\$except}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a5f7f7fe94dbcbe77a5dde32a3fc0f7f8}{\$add\+Http\+Cookie}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token}{Verify\+Csrf\+Token}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_verify_csrf_token_a94ee966b3d79af80aeef6246b7790ab8}{\$never\+Verify}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Alias of Verify\+Csrf\+Token for consistency. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Http/\+Middleware/\mbox{\hyperlink{_validate_csrf_token_8php}{Validate\+Csrf\+Token.\+php}}\end{DoxyCompactItemize}

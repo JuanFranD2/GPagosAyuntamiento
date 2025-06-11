@@ -1,0 +1,169 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database Directory Reference}
+\hypertarget{dir_743a6bf3f8b0b504586f16fc02fd18f4}{}\label{dir_743a6bf3f8b0b504586f16fc02fd18f4}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/framework/src/Illuminate/Database Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/framework/src/Illuminate/Database Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_0a582afe8db2ba16486045d9a3aae388}{Capsule}}
+\item 
+directory \mbox{\hyperlink{dir_049b7f665ea606f1ed68a39f6f96c322}{Concerns}}
+\item 
+directory \mbox{\hyperlink{dir_5597aa45d422c8ab256aa0c121d6a308}{Connectors}}
+\item 
+directory \mbox{\hyperlink{dir_219cbccedf6646eafc83f7f3d8c78789}{Console}}
+\item 
+directory \mbox{\hyperlink{dir_c6e288ba6693c9514240ccca214210e7}{Eloquent}}
+\item 
+directory \mbox{\hyperlink{dir_d1795bf2880ace585b1f5b71a70e064d}{Events}}
+\item 
+directory \mbox{\hyperlink{dir_dfc5e51729c4ba28c3de9db682561772}{Migrations}}
+\item 
+directory \mbox{\hyperlink{dir_8a744ef18fc8dc60f50a27be3d784ef7}{Query}}
+\item 
+directory \mbox{\hyperlink{dir_a831264017337531ae92560189dea7d3}{Schema}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{_class_morph_violation_exception_8php}{Class\+Morph\+Violation\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_database_2_configuration_url_parser_8php}{Configuration\+Url\+Parser.\+php}}
+\item 
+file \mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_database_2_connection_8php}{Connection.\+php}}
+\item 
+file \mbox{\hyperlink{_connection_interface_8php}{Connection\+Interface.\+php}}
+\item 
+file \mbox{\hyperlink{_connection_resolver_8php}{Connection\+Resolver.\+php}}
+\item 
+file \mbox{\hyperlink{_connection_resolver_interface_8php}{Connection\+Resolver\+Interface.\+php}}
+\item 
+file \mbox{\hyperlink{_database_manager_8php}{Database\+Manager.\+php}}
+\item 
+file \mbox{\hyperlink{_database_service_provider_8php}{Database\+Service\+Provider.\+php}}
+\item 
+file \mbox{\hyperlink{_database_transaction_record_8php}{Database\+Transaction\+Record.\+php}}
+\item 
+file \mbox{\hyperlink{_database_2_database_transactions_manager_8php}{Database\+Transactions\+Manager.\+php}}
+\item 
+file \mbox{\hyperlink{_deadlock_exception_8php}{Deadlock\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_detects_concurrency_errors_8php}{Detects\+Concurrency\+Errors.\+php}}
+\item 
+file \mbox{\hyperlink{_detects_lost_connections_8php}{Detects\+Lost\+Connections.\+php}}
+\item 
+file \mbox{\hyperlink{_grammar_8php}{Grammar.\+php}}
+\item 
+file \mbox{\hyperlink{_lazy_loading_violation_exception_8php}{Lazy\+Loading\+Violation\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_lost_connection_exception_8php}{Lost\+Connection\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_maria_db_connection_8php}{Maria\+Db\+Connection.\+php}}
+\item 
+file \mbox{\hyperlink{_migration_service_provider_8php}{Migration\+Service\+Provider.\+php}}
+\item 
+file \mbox{\hyperlink{_multiple_columns_selected_exception_8php}{Multiple\+Columns\+Selected\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_multiple_records_found_exception_8php}{Multiple\+Records\+Found\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_my_sql_connection_8php}{My\+Sql\+Connection.\+php}}
+\item 
+file \mbox{\hyperlink{_postgres_connection_8php}{Postgres\+Connection.\+php}}
+\item 
+file \mbox{\hyperlink{_query_exception_8php}{Query\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_record_not_found_exception_8php}{Record\+Not\+Found\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_records_not_found_exception_8php}{Records\+Not\+Found\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_seeder_8php}{Seeder.\+php}}
+\item 
+file \mbox{\hyperlink{_s_q_lite_connection_8php}{SQLite\+Connection.\+php}}
+\item 
+file \mbox{\hyperlink{_s_q_lite_database_does_not_exist_exception_8php}{SQLite\+Database\+Does\+Not\+Exist\+Exception.\+php}}
+\item 
+file \mbox{\hyperlink{_sql_server_connection_8php}{Sql\+Server\+Connection.\+php}}
+\item 
+file \mbox{\hyperlink{_unique_constraint_violation_exception_8php}{Unique\+Constraint\+Violation\+Exception.\+php}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md9588}{}\doxysubsection{\texorpdfstring{Illuminate Database}{Illuminate Database}}\label{README.md_autotoc_md9588}
+The Illuminate Database component is a full database toolkit for PHP, providing an expressive query builder, Active\+Record style ORM, and schema builder. It currently supports My\+SQL, Postgres, SQL Server, and SQLite. It also serves as the database layer of the Laravel PHP framework.\hypertarget{README.md_autotoc_md9589}{}\doxysubsubsection{\texorpdfstring{Usage Instructions}{Usage Instructions}}\label{README.md_autotoc_md9589}
+First, create a new "{}\+Capsule"{} manager instance. Capsule aims to make configuring the library for usage outside of the Laravel framework as easy as possible.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager}{Illuminate\(\backslash\)Database\(\backslash\)Capsule\(\backslash\)Manager}}\ as\ Capsule;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$capsule\ =\ \textcolor{keyword}{new}\ Capsule;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$capsule-\/>\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a70b4cf5a4892ab65e81ec54d0c8f0454}{addConnection}}([}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'driver'}\ =>\ \textcolor{stringliteral}{'mysql'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'host'}\ =>\ \textcolor{stringliteral}{'localhost'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'database'}\ =>\ \textcolor{stringliteral}{'database'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'username'}\ =>\ \textcolor{stringliteral}{'root'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'password'}\ =>\ \textcolor{stringliteral}{'password'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'charset'}\ =>\ \textcolor{stringliteral}{'utf8'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'collation'}\ =>\ \textcolor{stringliteral}{'utf8\_unicode\_ci'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'prefix'}\ =>\ \textcolor{stringliteral}{''},}
+\DoxyCodeLine{]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Set\ the\ event\ dispatcher\ used\ by\ Eloquent\ models...\ (optional)}}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher}{Illuminate\(\backslash\)Events\(\backslash\)Dispatcher}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Illuminate\(\backslash\)Container\(\backslash\)Container}};}
+\DoxyCodeLine{\$capsule-\/>setEventDispatcher(\textcolor{keyword}{new}\ Dispatcher(\textcolor{keyword}{new}\ Container));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Make\ this\ Capsule\ instance\ available\ globally\ via\ static\ methods...\ (optional)}}
+\DoxyCodeLine{\$capsule-\/>setAsGlobal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Setup\ the\ Eloquent\ ORM...\ (optional;\ unless\ you've\ used\ setEventDispatcher())}}
+\DoxyCodeLine{\$capsule-\/>bootEloquent();}
+
+\end{DoxyCode}
+
+
+\begin{quote}
+{\ttfamily composer require "{}illuminate/events"{}} required when you need to use observers with \doxylink{class_eloquent}{Eloquent}. \end{quote}
+
+
+Once the Capsule instance has been registered. You may use it like so\+:
+
+{\bfseries{Using The Query Builder}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$users\ =\ Capsule::table(\textcolor{stringliteral}{'users'})-\/>where(\textcolor{stringliteral}{'votes'},\ \textcolor{charliteral}{'>'},\ 100)-\/>get();}
+
+\end{DoxyCode}
+ Other core methods may be accessed directly from the Capsule in the same manner as from the \doxylink{class_d_b}{DB} facade\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$results\ =\ Capsule::select(\textcolor{stringliteral}{'select\ *\ from\ users\ where\ id\ =\ ?'},\ [1]);}
+
+\end{DoxyCode}
+
+
+{\bfseries{Using The \doxylink{class_schema}{Schema} Builder}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Capsule::schema()-\/>create(\textcolor{stringliteral}{'users'},\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{bin_2entities_8php_ae8876a14058f368335baccf35af4a22b}{\$table}})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{bin_2entities_8php_ae8876a14058f368335baccf35af4a22b}{\$table}}-\/>increments(\textcolor{stringliteral}{'id'});}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{bin_2entities_8php_ae8876a14058f368335baccf35af4a22b}{\$table}}-\/>string(\textcolor{stringliteral}{'email'})-\/>unique();}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{bin_2entities_8php_ae8876a14058f368335baccf35af4a22b}{\$table}}-\/>timestamps();}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+{\bfseries{Using The \doxylink{class_eloquent}{Eloquent} ORM}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class\ }User\ \textcolor{keyword}{extends}\ \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Illuminate\(\backslash\)Database\(\backslash\)Eloquent\(\backslash\)Model}}\ \{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$users\ =\ User::where(\textcolor{stringliteral}{'votes'},\ \textcolor{charliteral}{'>'},\ 1)-\/>get();}
+
+\end{DoxyCode}
+
+
+For further documentation on using the various database facilities this library provides, consult the \href{https://laravel.com/docs}{\texttt{Laravel framework documentation}}. 

@@ -1,0 +1,80 @@
+\doxysection{Monotonic\+Clock Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock}{}\label{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock}\index{MonotonicClock@{MonotonicClock}}
+Inheritance diagram for Monotonic\+Clock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a48c6df076b2f08f9a548bcd45d135257}{\+\_\+\+\_\+construct}} (\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$timezone=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a80593ccdc0339775ddd5d82c37ca4f6b}{now}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a054e3676a73249049b5babe7f5b47620}{sleep}} (float\texorpdfstring{$\vert$}{|}int \$seconds)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a8b67eb3fef58c4f323b96454e3e34841}{with\+Time\+Zone}} (\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string \$timezone)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A monotonic clock suitable for performance profiling.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a48c6df076b2f08f9a548bcd45d135257}\index{MonotonicClock@{MonotonicClock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!MonotonicClock@{MonotonicClock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a48c6df076b2f08f9a548bcd45d135257} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$timezone}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Invalid\+Time\+Zone\+Exception When \$timezone is invalid 
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a80593ccdc0339775ddd5d82c37ca4f6b}\index{MonotonicClock@{MonotonicClock}!now@{now}}
+\index{now@{now}!MonotonicClock@{MonotonicClock}}
+\doxysubsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a80593ccdc0339775ddd5d82c37ca4f6b} 
+now (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current time as a Date\+Time\+Immutable Object 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a80593ccdc0339775ddd5d82c37ca4f6b}{Clock\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a054e3676a73249049b5babe7f5b47620}\index{MonotonicClock@{MonotonicClock}!sleep@{sleep}}
+\index{sleep@{sleep}!MonotonicClock@{MonotonicClock}}
+\doxysubsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a054e3676a73249049b5babe7f5b47620} 
+sleep (\begin{DoxyParamCaption}\item[{float\texorpdfstring{$\vert$}{|}int}]{\$seconds}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a8b67eb3fef58c4f323b96454e3e34841}\index{MonotonicClock@{MonotonicClock}!withTimeZone@{withTimeZone}}
+\index{withTimeZone@{withTimeZone}!MonotonicClock@{MonotonicClock}}
+\doxysubsubsection{\texorpdfstring{withTimeZone()}{withTimeZone()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_monotonic_clock_a8b67eb3fef58c4f323b96454e3e34841} 
+with\+Time\+Zone (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string}]{\$timezone}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Invalid\+Time\+Zone\+Exception When \$timezone is invalid 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/clock/\mbox{\hyperlink{_monotonic_clock_8php}{Monotonic\+Clock.\+php}}\end{DoxyCompactItemize}

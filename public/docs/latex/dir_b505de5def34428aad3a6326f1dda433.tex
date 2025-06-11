@@ -1,0 +1,108 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/human-\/signals Directory Reference}
+\hypertarget{dir_b505de5def34428aad3a6326f1dda433}{}\label{dir_b505de5def34428aad3a6326f1dda433}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/human-\/signals Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/human-\/signals Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}!\mbox{[}Codecov\mbox{]}(\href{https://img.shields.io/codecov/c/github/ehmicky/human-signals.svg?label=tested&logo=codecov}{\texttt{https\+://img.\+shields.\+io/codecov/c/github/ehmicky/human-\/signals.\+svg?label=tested\&logo=codecov}})\mbox{]}(\href{https://codecov.io/gh/ehmicky/human-signals}{\texttt{https\+://codecov.\+io/gh/ehmicky/human-\/signals}}) \href{https://travis-ci.org/ehmicky/human-signals}{\texttt{}} \href{https://www.npmjs.com/package/human-signals}{\texttt{}} \href{https://gitter.im/ehmicky/human-signals}{\texttt{}} \href{https://twitter.com/intent/follow?screen_name=ehmicky}{\texttt{}} \href{https://medium.com/@ehmicky}{\texttt{}}
+
+Human-\/friendly process signals.
+
+This is a map of known process signals with some information about each signal.
+
+Unlike \href{https://nodejs.org/api/os.html\#os_signal_constants}{\texttt{{\ttfamily os.\+constants.\+signals}}} this includes\+:
+
+
+\begin{DoxyItemize}
+\item human-\/friendly descriptions
+\item default actions, including whether they can be prevented
+\item whether the signal is supported by the current OS
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md3295}{}\doxysubsection{\texorpdfstring{Example}{Example}}\label{README.md_autotoc_md3295}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ \{\ signalsByName,\ signalsByNumber\ \}\ =\ require('human-\/signals')}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(signalsByName.SIGINT)}
+\DoxyCodeLine{//\ \{}
+\DoxyCodeLine{//\ \ \ name:\ 'SIGINT',}
+\DoxyCodeLine{//\ \ \ number:\ 2,}
+\DoxyCodeLine{//\ \ \ description:\ 'User\ interruption\ with\ CTRL-\/C',}
+\DoxyCodeLine{//\ \ \ supported:\ true,}
+\DoxyCodeLine{//\ \ \ action:\ 'terminate',}
+\DoxyCodeLine{//\ \ \ forced:\ false,}
+\DoxyCodeLine{//\ \ \ standard:\ 'ansi'}
+\DoxyCodeLine{//\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(signalsByNumber[8])}
+\DoxyCodeLine{//\ \{}
+\DoxyCodeLine{//\ \ \ name:\ 'SIGFPE',}
+\DoxyCodeLine{//\ \ \ number:\ 8,}
+\DoxyCodeLine{//\ \ \ description:\ 'Floating\ point\ arithmetic\ error',}
+\DoxyCodeLine{//\ \ \ supported:\ true,}
+\DoxyCodeLine{//\ \ \ action:\ 'core',}
+\DoxyCodeLine{//\ \ \ forced:\ false,}
+\DoxyCodeLine{//\ \ \ standard:\ 'ansi'}
+\DoxyCodeLine{//\ \}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md3296}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{README.md_autotoc_md3296}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{npm\ install\ human-\/signals}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md3297}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md3297}
+\hypertarget{README.md_autotoc_md3298}{}\doxysubsubsection{\texorpdfstring{signals\+By\+Name}{signals\+By\+Name}}\label{README.md_autotoc_md3298}
+{\itshape Type}\+: {\ttfamily object}
+
+Object whose keys are signal names and values are signal objects.\hypertarget{README.md_autotoc_md3299}{}\doxysubsubsection{\texorpdfstring{signals\+By\+Number}{signals\+By\+Number}}\label{README.md_autotoc_md3299}
+{\itshape Type}\+: {\ttfamily object}
+
+Object whose keys are signal numbers and values are signal objects.\hypertarget{README.md_autotoc_md3300}{}\doxysubsubsection{\texorpdfstring{signal}{signal}}\label{README.md_autotoc_md3300}
+{\itshape Type}\+: {\ttfamily object}
+
+Signal object with the following properties.\hypertarget{README.md_autotoc_md3301}{}\doxysubsubsubsection{\texorpdfstring{name}{name}}\label{README.md_autotoc_md3301}
+{\itshape Type}\+: {\ttfamily string}
+
+Standard name of the signal, for example `\textquotesingle{}SIGINT'\`{}.\hypertarget{README.md_autotoc_md3302}{}\doxysubsubsubsection{\texorpdfstring{number}{number}}\label{README.md_autotoc_md3302}
+{\itshape Type}\+: {\ttfamily number}
+
+Code number of the signal, for example {\ttfamily 2}. While most {\ttfamily number} are cross-\/platform, some are different between different OS.\hypertarget{README.md_autotoc_md3303}{}\doxysubsubsubsection{\texorpdfstring{description}{description}}\label{README.md_autotoc_md3303}
+{\itshape Type}\+: {\ttfamily string}
+
+Human-\/friendly description for the signal, for example `\textquotesingle{}User interruption with CTRL-\/C'\`{}.\hypertarget{README.md_autotoc_md3304}{}\doxysubsubsubsection{\texorpdfstring{supported}{supported}}\label{README.md_autotoc_md3304}
+{\itshape Type}\+: {\ttfamily boolean}
+
+Whether the current OS can handle this signal in Node.\+js using \href{https://nodejs.org/api/process.html\#process_signal_events}{\texttt{{\ttfamily process.\+on(name, handler)}}}.
+
+The list of supported signals \href{https://github.com/ehmicky/cross-platform-node-guide/blob/master/docs/6_networking_ipc/signals.md\#cross-platform-signals}{\texttt{is OS-\/specific}}.\hypertarget{README.md_autotoc_md3305}{}\doxysubsubsubsection{\texorpdfstring{action}{action}}\label{README.md_autotoc_md3305}
+{\itshape Type}\+: {\ttfamily string}\textbackslash{} {\itshape Enum}\+: `\textquotesingle{}terminate'{\ttfamily , }\textquotesingle{}core\textquotesingle{}{\ttfamily , }\textquotesingle{}ignore\textquotesingle{}{\ttfamily , }\textquotesingle{}pause\textquotesingle{}{\ttfamily , }\textquotesingle{}unpause\textquotesingle{}\`{}
+
+What is the default action for this signal when it is not handled.\hypertarget{README.md_autotoc_md3306}{}\doxysubsubsubsection{\texorpdfstring{forced}{forced}}\label{README.md_autotoc_md3306}
+{\itshape Type}\+: {\ttfamily boolean}
+
+Whether the signal\textquotesingle{}s default action cannot be prevented. This is {\ttfamily true} for {\ttfamily SIGTERM}, {\ttfamily SIGKILL} and {\ttfamily SIGSTOP}.\hypertarget{README.md_autotoc_md3307}{}\doxysubsubsubsection{\texorpdfstring{standard}{standard}}\label{README.md_autotoc_md3307}
+{\itshape Type}\+: {\ttfamily string}\textbackslash{} {\itshape Enum}\+: `\textquotesingle{}ansi'{\ttfamily , }\textquotesingle{}posix\textquotesingle{}{\ttfamily , }\textquotesingle{}bsd\textquotesingle{}{\ttfamily , }\textquotesingle{}systemv\textquotesingle{}{\ttfamily , }\textquotesingle{}other\textquotesingle{}\`{}
+
+Which standard defined that signal.\hypertarget{README.md_autotoc_md3308}{}\doxysubsection{\texorpdfstring{Support}{Support}}\label{README.md_autotoc_md3308}
+If you found a bug or would like a new feature, {\itshape don\textquotesingle{}t hesitate} to \href{../../issues}{\texttt{submit an issue on Git\+Hub}}.
+
+For other questions, feel free to \href{https://gitter.im/ehmicky/human-signals}{\texttt{chat with us on Gitter}}.
+
+Everyone is welcome regardless of personal background. We enforce a \doxylink{tw-elements_2_c_o_d_e___o_f___c_o_n_d_u_c_t_8md}{Code of conduct} in order to promote a positive and inclusive environment.\hypertarget{README.md_autotoc_md3309}{}\doxysubsection{\texorpdfstring{Contributing}{Contributing}}\label{README.md_autotoc_md3309}
+This project was made with ❤️. The simplest way to give back is by starring and sharing it online.
+
+If the documentation is unclear or has a typo, please click on the page\textquotesingle{}s {\ttfamily Edit} button (pencil icon) and suggest a correction.
+
+If you would like to help us fix a bug or add a new feature, please check our \doxylink{mockery_2mockery_2_c_o_n_t_r_i_b_u_t_i_n_g_8md}{guidelines}. Pull requests are welcome!
+
+Thanks go to our wonderful contributors\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \href{https://twitter.com/ehmicky}{\texttt{~\newline
+\textsubscript{{\bfseries{ehmicky}}}}}~\newline
+\href{https://github.com/ehmicky/human-signals/commits?author=ehmicky}{\texttt{💻}} \href{\#design-ehmicky}{\texttt{🎨}} \href{\#ideas-ehmicky}{\texttt{🤔}} \href{https://github.com/ehmicky/human-signals/commits?author=ehmicky}{\texttt{📖}}&\PBS\centering \href{http://www.electrovir.com}{\texttt{~\newline
+\textsubscript{{\bfseries{electrovir}}}}}~\newline
+\href{https://github.com/ehmicky/human-signals/commits?author=electrovir}{\texttt{💻}}\\\cline{1-2}
+\end{longtabu}

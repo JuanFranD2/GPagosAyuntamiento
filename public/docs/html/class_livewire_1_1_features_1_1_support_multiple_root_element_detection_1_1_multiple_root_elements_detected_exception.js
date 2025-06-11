@@ -1,0 +1,4 @@
+var class_livewire_1_1_features_1_1_support_multiple_root_element_detection_1_1_multiple_root_elements_detected_exception =
+[
+    [ "__construct", "class_livewire_1_1_features_1_1_support_multiple_root_element_detection_1_1_multiple_root_elements_detected_exception.html#ab7fb3bd1d276cb7f15ea5165b9dbe8fc", null ]
+];

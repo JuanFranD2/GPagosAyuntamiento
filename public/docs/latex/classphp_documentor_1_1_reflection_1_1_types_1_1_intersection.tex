@@ -1,0 +1,58 @@
+\doxysection{Intersection Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_intersection}{}\label{classphp_documentor_1_1_reflection_1_1_types_1_1_intersection}\index{Intersection@{Intersection}}
+Inheritance diagram for Intersection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classphp_documentor_1_1_reflection_1_1_types_1_1_intersection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_intersection_a66c0bd71b182b3e6d120705f4e011f0c}{\+\_\+\+\_\+construct}} (array \$types)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type}{Aggregated\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a99a1e1469317a4bfa1215db1f82dcbf0}{\+\_\+\+\_\+construct}} (array \$types, string \$token)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_ae91f4299eda89a730fb0389f8f066952}{get}} (int \$index)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a16bf9e79b54f995fe41cbdcf84d46b66}{has}} (int \$index)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7bbfd41e2173df4830d3f07041e8c769}{contains}} (\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} \$type)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_aggregated_type_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Value Object representing a Compound Type.
+
+A Intersection Type is not so much a special keyword or object reference but is a series of Types that are separated using an AND operator ({\ttfamily \&}). This combination of types signifies that whatever is associated with this Intersection type may contain a value with any of the given types.
+
+@psalm-\/immutable 
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_intersection_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_intersection_a66c0bd71b182b3e6d120705f4e011f0c}\index{Intersection@{Intersection}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_types_1_1_intersection_a66c0bd71b182b3e6d120705f4e011f0c} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$types}{}\end{DoxyParamCaption})}
+
+Initializes a intersection type (i.\+e. {\ttfamily \textbackslash{}A\&\textbackslash{}B}) and tests if the provided types all implement the Type interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$\+Type$>$} & \$types \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/type-\/resolver/src/\+Types/\mbox{\hyperlink{_intersection_8php}{Intersection.\+php}}\end{DoxyCompactItemize}

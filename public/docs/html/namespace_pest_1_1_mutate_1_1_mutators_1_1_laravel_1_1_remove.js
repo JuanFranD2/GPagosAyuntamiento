@@ -1,0 +1,4 @@
+var namespace_pest_1_1_mutate_1_1_mutators_1_1_laravel_1_1_remove =
+[
+    [ "LaravelRemoveStringableUpper", "class_pest_1_1_mutate_1_1_mutators_1_1_laravel_1_1_remove_1_1_laravel_remove_stringable_upper.html", "class_pest_1_1_mutate_1_1_mutators_1_1_laravel_1_1_remove_1_1_laravel_remove_stringable_upper" ]
+];

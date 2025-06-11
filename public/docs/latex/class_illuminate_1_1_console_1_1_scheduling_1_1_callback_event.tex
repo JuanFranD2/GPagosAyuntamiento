@@ -1,0 +1,401 @@
+\doxysection{Callback\+Event Class Reference}
+\hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event}{}\label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event}\index{CallbackEvent@{CallbackEvent}}
+Inheritance diagram for Callback\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a3ad2737197094485fc1f45df52fb8204}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_console_1_1_scheduling_1_1_event_mutex}{Event\+Mutex}} \$mutex, \$callback, array \$parameters=\mbox{[}$\,$\mbox{]}, \$timezone=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a323aac382e40a916ec33b20956c7e7f1}{run}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_aa55e908d120057b4b5bff4e5e7b27c30}{should\+Skip\+Due\+To\+Overlapping}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a5d8d23eeefb30d442928cdd9362620b3}{run\+In\+Background}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a978e2a1db311f75acffa1815a5d0782b}{without\+Overlapping}} (\$expires\+At=1440)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a5e89046bf11efa112ae97a6333b10a6a}{on\+One\+Server}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a518984dd2f7b77841e01c2b1c1fde2da}{get\+Summary\+For\+Display}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_aff946477faceb32b02be63c44295804e}{mutex\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event}{Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af81a38127d93181353836132c30b4b9f}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_console_1_1_scheduling_1_1_event_mutex}{Event\+Mutex}} \$mutex, \$command, \$timezone=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5de0a5529ec79b9e1df6fe90828dcb12}{get\+Default\+Output}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a7b12f5d119d88c8a5ded8aa18e51613a}{is\+Repeatable}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a742192db3ebcc2eb8564222a098f731b}{should\+Repeat\+Now}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a8f89a4ad0f7833ffaf8ec794abf27a19}{finish}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container, \$exit\+Code)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af95fed6ca5c56126c871b69cb41af97d}{call\+Before\+Callbacks}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_acdd216984fb03194b5980a561f517731}{call\+After\+Callbacks}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ae5784111842555ca64ff370a1dc2dd8d}{build\+Command}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad90b1961e82b89a4f0cfb31c56c54eff}{is\+Due}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5e2d3faa063e3a293a8d6cbd03f725fb}{runs\+In\+Maintenance\+Mode}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a57bffe2bea8782926cb3cfff6d568d18}{runs\+In\+Environment}} (\$environment)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad46fab18fd47774133231a4aaa1f8489}{filters\+Pass}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a642566a54378ccebf749925dd2109953}{store\+Output}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a1c916197fddba21af401cec576c9270a}{send\+Output\+To}} (\$location, \$append=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a319428a10267789b6645695fecfff94a}{append\+Output\+To}} (\$location)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3f6837911765635ac3eba4ec4df35140}{email\+Output\+To}} (\$addresses, \$only\+If\+Output\+Exists=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad27139e5efc5be9c356ab9f27daa9070}{email\+Written\+Output\+To}} (\$addresses)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a5f470f8db762c2b241f67e149f46b36b}{email\+Output\+On\+Failure}} (\$addresses)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a4318134ec1a27b4da86e465c758e4547}{ping\+Before}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a0c3ffa5c0656e5d5da7a6299718fc930}{ping\+Before\+If}} (\$value, \$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa4bc37cefff29aa5a2dc76f6d6a336e4}{then\+Ping}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_afd1a747fe6f578520224322a0b6465c0}{then\+Ping\+If}} (\$value, \$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac716e829eab634cd2245d7561b2f3844}{ping\+On\+Success}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a934026fff1303daa3b6527018f595e4d}{ping\+On\+Success\+If}} (\$value, \$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a9e5bc45a1f086d6ce6e6b763ea586756}{ping\+On\+Failure}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aee664c6dd38094696c526df3cc484083}{ping\+On\+Failure\+If}} (\$value, \$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a905ff7056a0304a4d773c811f789df8b}{before}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a347a39f48f468a4e920a8f3b1e0c1e6d}{after}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a6085eed98176787b3714474cc107a445}{then}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3d443dcb2809416ee3c45e7378f87e93}{then\+With\+Output}} (Closure \$callback, \$only\+If\+Output\+Exists=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aef2b2a7a92908baf1de6b9f4a538e8d3}{on\+Success}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a3b656cc0c45877194ba60d1f9f33cd27}{on\+Success\+With\+Output}} (Closure \$callback, \$only\+If\+Output\+Exists=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a64315b25aef39a949a4c12d0f9181075}{on\+Failure}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ad99675777dcf608d441acadbffcdff17}{on\+Failure\+With\+Output}} (Closure \$callback, \$only\+If\+Output\+Exists=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ace96f543504090a0fcb4d237960c05b6}{next\+Run\+Date}} (\$current\+Time=\textquotesingle{}now\textquotesingle{}, \$nth=0, \$allow\+Current\+Date=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ab1cefb04a11dacd3164f79373c1294f0}{get\+Expression}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a46a1d049985a827cdee7068e37f6fc5b}{prevent\+Overlaps\+Using}} (\mbox{\hyperlink{interface_illuminate_1_1_console_1_1_scheduling_1_1_event_mutex}{Event\+Mutex}} \$mutex)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a30050804aaa24514bb5675744135dc50}{create\+Mutex\+Name\+Using}} (Closure\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aff946477faceb32b02be63c44295804e}{mutex\+Name}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a1a875d3606dba730110d574896934841}{execute}} (\$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a0f0005049b5f82db13d628a963c68f9b}{remove\+Mutex}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event}{Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a2219c9d4e70a93ae4445e67324134b09}{start}} (\$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac3e31b4d465d543ea2be0531a50f3e86}{expression\+Passes}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a473ba2ca55d95dc4a5005dc09bbb5dcf}{ensure\+Output\+Is\+Being\+Captured}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_af1ee2ad54db4564c7b68a394048f8062}{email\+Output}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_mail_1_1_mailer}{Mailer}} \$mailer, \$addresses, \$only\+If\+Output\+Exists=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_ac91b5aa3ce2d40c869f79b6bcb73d2ac}{get\+Email\+Subject}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a948e1ddf9f39d74f16fc2efffa890631}{ping\+Callback}} (\$url)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aef0762a5dfd10c69ed8b470c6b55392f}{get\+Http\+Client}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a6f7aa61ce265ad7ca40a6e672227c7f7}{with\+Output\+Callback}} (Closure \$callback, \$only\+If\+Output\+Exists=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_abc7c2ac0d93d22f71221e8b60512c860}{\$callback}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_ab79d246480c4ac3a0db6bbceca92ad32}{\$parameters}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a7b8c95284212c3072a7a96bd4233eb79}{\$exception}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event}{Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a24df4c31c4342dee99836c7743c5214e}{\$before\+Callbacks}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a00897481ee44ab5081efc1a131f4ba63}{\$after\+Callbacks}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a521aea05de15b85949c5fe79e4e5f1c1}{\$last\+Checked}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event}{Event}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a75ddcbc7e51b297078189d67edbfc7d4}{normalize\+Command}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event}{Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a8f120409eb9f635ac30b3f9a6d5becdc}{\$command}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a73004ce9cd673c1bfafd1dc351134797}{\$output}} = \textquotesingle{}/dev/null\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a516965430dfc93297a4215a291d6e9a9}{\$should\+Append\+Output}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_acee1058d5349fea786e5fc3170e08a24}{\$mutex}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa99e20fff59925dedc85c70627dbef16}{\$mutex\+Name\+Resolver}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a354f17f08a3db07ffff5a6b5ab6d1c84}{\$exit\+Code}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a3ad2737197094485fc1f45df52fb8204}\index{CallbackEvent@{CallbackEvent}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a3ad2737197094485fc1f45df52fb8204} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_console_1_1_scheduling_1_1_event_mutex}{Event\+Mutex}}}]{\$mutex}{, }\item[{}]{\$callback}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$timezone}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new event instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Scheduling\textbackslash{}\+Event\+Mutex & {\em \$mutex} & \\
+\hline
+string | callable & {\em \$callback} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\textbackslash{}\+Date\+Time\+Zone | string | null & {\em \$timezone} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a1a875d3606dba730110d574896934841}\index{CallbackEvent@{CallbackEvent}!execute@{execute}}
+\index{execute@{execute}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a1a875d3606dba730110d574896934841} 
+execute (\begin{DoxyParamCaption}\item[{}]{\$container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Run the callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a1a875d3606dba730110d574896934841}{Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a518984dd2f7b77841e01c2b1c1fde2da}\index{CallbackEvent@{CallbackEvent}!getSummaryForDisplay@{getSummaryForDisplay}}
+\index{getSummaryForDisplay@{getSummaryForDisplay}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{getSummaryForDisplay()}{getSummaryForDisplay()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a518984dd2f7b77841e01c2b1c1fde2da} 
+get\+Summary\+For\+Display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the summary of the event for display.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a518984dd2f7b77841e01c2b1c1fde2da}{Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_aff946477faceb32b02be63c44295804e}\index{CallbackEvent@{CallbackEvent}!mutexName@{mutexName}}
+\index{mutexName@{mutexName}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{mutexName()}{mutexName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_aff946477faceb32b02be63c44295804e} 
+mutex\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the mutex name for the scheduled command.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aff946477faceb32b02be63c44295804e}{Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a5e89046bf11efa112ae97a6333b10a6a}\index{CallbackEvent@{CallbackEvent}!onOneServer@{onOneServer}}
+\index{onOneServer@{onOneServer}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{onOneServer()}{onOneServer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a5e89046bf11efa112ae97a6333b10a6a} 
+on\+One\+Server (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Allow the event to only run on one server for each cron expression.
+
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception \Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a0f0005049b5f82db13d628a963c68f9b}\index{CallbackEvent@{CallbackEvent}!removeMutex@{removeMutex}}
+\index{removeMutex@{removeMutex}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{removeMutex()}{removeMutex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a0f0005049b5f82db13d628a963c68f9b} 
+remove\+Mutex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clear the mutex for the event.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a0f0005049b5f82db13d628a963c68f9b}{Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a323aac382e40a916ec33b20956c7e7f1}\index{CallbackEvent@{CallbackEvent}!run@{run}}
+\index{run@{run}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a323aac382e40a916ec33b20956c7e7f1} 
+run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Run the callback event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_a323aac382e40a916ec33b20956c7e7f1}{Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a5d8d23eeefb30d442928cdd9362620b3}\index{CallbackEvent@{CallbackEvent}!runInBackground@{runInBackground}}
+\index{runInBackground@{runInBackground}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{runInBackground()}{runInBackground()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a5d8d23eeefb30d442928cdd9362620b3} 
+run\+In\+Background (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that the callback should run in the background.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_aa55e908d120057b4b5bff4e5e7b27c30}\index{CallbackEvent@{CallbackEvent}!shouldSkipDueToOverlapping@{shouldSkipDueToOverlapping}}
+\index{shouldSkipDueToOverlapping@{shouldSkipDueToOverlapping}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{shouldSkipDueToOverlapping()}{shouldSkipDueToOverlapping()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_aa55e908d120057b4b5bff4e5e7b27c30} 
+should\+Skip\+Due\+To\+Overlapping (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the event should skip because another process is overlapping.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event_aa55e908d120057b4b5bff4e5e7b27c30}{Event}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a978e2a1db311f75acffa1815a5d0782b}\index{CallbackEvent@{CallbackEvent}!withoutOverlapping@{withoutOverlapping}}
+\index{withoutOverlapping@{withoutOverlapping}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{withoutOverlapping()}{withoutOverlapping()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a978e2a1db311f75acffa1815a5d0782b} 
+without\+Overlapping (\begin{DoxyParamCaption}\item[{}]{\$expires\+At}{ = {\ttfamily 1440}}\end{DoxyParamCaption})}
+
+Do not allow the event to overlap each other.
+
+The expiration time of the underlying cache lock may be specified in minutes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$expires\+At} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception 
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_abc7c2ac0d93d22f71221e8b60512c860}\index{CallbackEvent@{CallbackEvent}!\$callback@{\$callback}}
+\index{\$callback@{\$callback}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{\$callback}{\$callback}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_abc7c2ac0d93d22f71221e8b60512c860} 
+\$callback\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a7b8c95284212c3072a7a96bd4233eb79}\index{CallbackEvent@{CallbackEvent}!\$exception@{\$exception}}
+\index{\$exception@{\$exception}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{\$exception}{\$exception}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a7b8c95284212c3072a7a96bd4233eb79} 
+\$exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_ab79d246480c4ac3a0db6bbceca92ad32}\index{CallbackEvent@{CallbackEvent}!\$parameters@{\$parameters}}
+\index{\$parameters@{\$parameters}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{\$parameters}{\$parameters}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_ab79d246480c4ac3a0db6bbceca92ad32} 
+\$parameters\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a112ef069ddc0454086e3d1e6d8d55d07}\index{CallbackEvent@{CallbackEvent}!\$result@{\$result}}
+\index{\$result@{\$result}!CallbackEvent@{CallbackEvent}}
+\doxysubsubsection{\texorpdfstring{\$result}{\$result}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_callback_event_a112ef069ddc0454086e3d1e6d8d55d07} 
+\$result\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Console/\+Scheduling/\mbox{\hyperlink{_callback_event_8php}{Callback\+Event.\+php}}\end{DoxyCompactItemize}

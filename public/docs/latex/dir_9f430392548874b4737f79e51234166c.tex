@@ -1,0 +1,73 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/has-\/flag Directory Reference}
+\hypertarget{dir_9f430392548874b4737f79e51234166c}{}\label{dir_9f430392548874b4737f79e51234166c}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/has-\/flag Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/has-\/flag Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md3224}{}\doxysubsection{\texorpdfstring{has-\/flag \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/has-flag.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/has-\/flag.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/has-flag}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/has-\/flag}})}{has-\/flag \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/has-flag.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/has-\/flag.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/has-flag}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/has-\/flag}})}}\label{readme.md_autotoc_md3224}
+\begin{quote}
+Check if \href{https://nodejs.org/docs/latest/api/process.html\#process_process_argv}{\texttt{{\ttfamily argv}}} has a specific flag \end{quote}
+
+
+Correctly stops looking after an {\ttfamily -\/-\/} argument terminator.
+
+\DoxyHorRuler{0}
+
+
+ {\bfseries{ \href{https://tidelift.com/subscription/pkg/npm-has-flag?utm_source=npm-has-flag&utm_medium=referral&utm_campaign=readme}{\texttt{Get professional support for this package with a Tidelift subscription}} }} ~\newline
+ \textsubscript{ Tidelift helps make open source sustainable for maintainers while giving companies~\newline
+assurances about security, maintenance, and licensing for their dependencies. } 
+
+\DoxyHorRuler{0}
+\hypertarget{readme.md_autotoc_md3227}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md3227}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ has-\/flag}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md3228}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md3228}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ foo.js}
+\DoxyCodeLine{const\ hasFlag\ =\ require('has-\/flag');}
+\DoxyCodeLine{}
+\DoxyCodeLine{hasFlag('unicorn');}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{}
+\DoxyCodeLine{hasFlag('-\/-\/unicorn');}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{}
+\DoxyCodeLine{hasFlag('f');}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{}
+\DoxyCodeLine{hasFlag('-\/f');}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{}
+\DoxyCodeLine{hasFlag('foo=bar');}
+\DoxyCodeLine{//=>\ true}
+\DoxyCodeLine{}
+\DoxyCodeLine{hasFlag('foo');}
+\DoxyCodeLine{//=>\ false}
+\DoxyCodeLine{}
+\DoxyCodeLine{hasFlag('rainbow');}
+\DoxyCodeLine{//=>\ false}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ node\ foo.js\ -\/f\ -\/-\/unicorn\ -\/-\/foo=bar\ -\/-\/\ -\/-\/rainbow}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md3229}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md3229}
+\hypertarget{readme.md_autotoc_md3230}{}\doxysubsubsection{\texorpdfstring{has\+Flag(flag, \mbox{[}argv\mbox{]})}{has\+Flag(flag, \mbox{[}argv\mbox{]})}}\label{readme.md_autotoc_md3230}
+Returns a boolean for whether the flag exists.\hypertarget{readme.md_autotoc_md3231}{}\doxysubsubsubsection{\texorpdfstring{flag}{flag}}\label{readme.md_autotoc_md3231}
+Type\+: {\ttfamily string}
+
+CLI flag to look for. The {\ttfamily -\/-\/} prefix is optional.\hypertarget{readme.md_autotoc_md3232}{}\doxysubsubsubsection{\texorpdfstring{argv}{argv}}\label{readme.md_autotoc_md3232}
+Type\+: {\ttfamily string\mbox{[}\mbox{]}}~\newline
+ Default\+: {\ttfamily process.\+argv}
+
+CLI arguments.\hypertarget{readme.md_autotoc_md3233}{}\doxysubsection{\texorpdfstring{Security}{Security}}\label{readme.md_autotoc_md3233}
+To report a security vulnerability, please use the \href{https://tidelift.com/security}{\texttt{Tidelift security contact}}. Tidelift will coordinate the fix and disclosure.\hypertarget{readme.md_autotoc_md3234}{}\doxysubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md3234}
+MIT © \href{https://sindresorhus.com}{\texttt{Sindre Sorhus}} 

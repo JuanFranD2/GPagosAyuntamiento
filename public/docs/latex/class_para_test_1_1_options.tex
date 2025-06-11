@@ -1,0 +1,118 @@
+\doxysection{Options Class Reference}
+\hypertarget{class_para_test_1_1_options}{}\label{class_para_test_1_1_options}\index{Options@{Options}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_para_test_1_1_options_aef7e5834351e5e744aa8360088a87fdb}{\+\_\+\+\_\+construct}} (public \mbox{\hyperlink{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration}{Configuration}} \$configuration, public string \$phpunit, public string \$cwd, public int \$max\+Batch\+Size, public bool \$no\+Test\+Tokens, public ?array \$passthru\+Php, public array \$phpunit\+Options, public int \$processes, public string \$runner, public string \$tmp\+Dir, public bool \$verbose, public bool \$functional,)
+\item 
+\mbox{\hyperlink{class_para_test_1_1_options_afadb8e078abceba0e6267dbd4735a1f0}{fill\+Env\+With\+Tokens}} (int \$inc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_para_test_1_1_options_a53e25fd9bd4953b438bf2bacc2844906}{from\+Console\+Input}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, string \$cwd)
+\item 
+static \mbox{\hyperlink{class_para_test_1_1_options_a9a52d6702fca1276c1a842ec3a982ef5}{set\+Input\+Definition}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_definition}{Input\+Definition}} \$input\+Definition)
+\item 
+static \mbox{\hyperlink{class_para_test_1_1_options_a45c4138532def3a3712e4961e9a240b1}{get\+Number\+Of\+CPUCores}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_para_test_1_1_options_a301cd8133d4535c95670c5d4cfce6edd}{ENV\+\_\+\+KEY\+\_\+\+TOKEN}} = \textquotesingle{}TEST\+\_\+\+TOKEN\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_para_test_1_1_options_a23826f015098904c2e7340021a975f98}{ENV\+\_\+\+KEY\+\_\+\+UNIQUE\+\_\+\+TOKEN}} = \textquotesingle{}UNIQUE\+\_\+\+TEST\+\_\+\+TOKEN\textquotesingle{}
+\item 
+readonly bool \mbox{\hyperlink{class_para_test_1_1_options_adae1e22018f31b407d909144acc4f3ff}{\$needs\+Teamcity}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_para_test_1_1_options_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_para_test_1_1_options_aef7e5834351e5e744aa8360088a87fdb}\index{Options@{Options}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_options_aef7e5834351e5e744aa8360088a87fdb} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{public \mbox{\hyperlink{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration}{Configuration}}}]{\$configuration}{, }\item[{public string}]{\$phpunit}{, }\item[{public string}]{\$cwd}{, }\item[{public int}]{\$max\+Batch\+Size}{, }\item[{public bool}]{\$no\+Test\+Tokens}{, }\item[{public ?array}]{\$passthru\+Php}{, }\item[{public array}]{\$phpunit\+Options}{, }\item[{public int}]{\$processes}{, }\item[{public string}]{\$runner}{, }\item[{public string}]{\$tmp\+Dir}{, }\item[{public bool}]{\$verbose}{, }\item[{public bool}]{\$functional}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$phpunit} & \\
+\hline
+non-\/empty-\/string & {\em \$cwd} & \\
+\hline
+ & {\em list$<$non-\/empty-\/string$>$\texorpdfstring{$\vert$}{|}null} & \$passthru\+Php \\
+\hline
+ & {\em array$<$non-\/empty-\/string,non-\/empty-\/string\texorpdfstring{$\vert$}{|}true\texorpdfstring{$\vert$}{|}list$<$non-\/empty-\/string$>$$>$} & \$phpunit\+Options \\
+\hline
+non-\/empty-\/string & {\em \$runner} & \\
+\hline
+non-\/empty-\/string & {\em \$tmp\+Dir} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_para_test_1_1_options_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_para_test_1_1_options_afadb8e078abceba0e6267dbd4735a1f0}\index{Options@{Options}!fillEnvWithTokens@{fillEnvWithTokens}}
+\index{fillEnvWithTokens@{fillEnvWithTokens}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{fillEnvWithTokens()}{fillEnvWithTokens()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_options_afadb8e078abceba0e6267dbd4735a1f0} 
+fill\+Env\+With\+Tokens (\begin{DoxyParamCaption}\item[{int}]{\$inc}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array\{PARATEST\+: int, TEST\+\_\+\+TOKEN?\+: int, UNIQUE\+\_\+\+TEST\+\_\+\+TOKEN?\+: non-\/empty-\/string\} 
+\end{DoxyReturn}
+\Hypertarget{class_para_test_1_1_options_a53e25fd9bd4953b438bf2bacc2844906}\index{Options@{Options}!fromConsoleInput@{fromConsoleInput}}
+\index{fromConsoleInput@{fromConsoleInput}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{fromConsoleInput()}{fromConsoleInput()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_options_a53e25fd9bd4953b438bf2bacc2844906} 
+from\+Console\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}}}]{\$input}{, }\item[{string}]{\$cwd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$cwd} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_para_test_1_1_options_a45c4138532def3a3712e4961e9a240b1}\index{Options@{Options}!getNumberOfCPUCores@{getNumberOfCPUCores}}
+\index{getNumberOfCPUCores@{getNumberOfCPUCores}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{getNumberOfCPUCores()}{getNumberOfCPUCores()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_options_a45c4138532def3a3712e4961e9a240b1} 
+get\+Number\+Of\+CPUCores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_para_test_1_1_options_a9a52d6702fca1276c1a842ec3a982ef5}\index{Options@{Options}!setInputDefinition@{setInputDefinition}}
+\index{setInputDefinition@{setInputDefinition}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{setInputDefinition()}{setInputDefinition()}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_options_a9a52d6702fca1276c1a842ec3a982ef5} 
+set\+Input\+Definition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_definition}{Input\+Definition}}}]{\$input\+Definition}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_para_test_1_1_options_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_para_test_1_1_options_adae1e22018f31b407d909144acc4f3ff}\index{Options@{Options}!\$needsTeamcity@{\$needsTeamcity}}
+\index{\$needsTeamcity@{\$needsTeamcity}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{\$needsTeamcity}{\$needsTeamcity}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_options_adae1e22018f31b407d909144acc4f3ff} 
+readonly bool \$needs\+Teamcity}
+
+\Hypertarget{class_para_test_1_1_options_a301cd8133d4535c95670c5d4cfce6edd}\index{Options@{Options}!ENV\_KEY\_TOKEN@{ENV\_KEY\_TOKEN}}
+\index{ENV\_KEY\_TOKEN@{ENV\_KEY\_TOKEN}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{ENV\_KEY\_TOKEN}{ENV\_KEY\_TOKEN}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_options_a301cd8133d4535c95670c5d4cfce6edd} 
+const ENV\+\_\+\+KEY\+\_\+\+TOKEN = \textquotesingle{}TEST\+\_\+\+TOKEN\textquotesingle{}}
+
+\Hypertarget{class_para_test_1_1_options_a23826f015098904c2e7340021a975f98}\index{Options@{Options}!ENV\_KEY\_UNIQUE\_TOKEN@{ENV\_KEY\_UNIQUE\_TOKEN}}
+\index{ENV\_KEY\_UNIQUE\_TOKEN@{ENV\_KEY\_UNIQUE\_TOKEN}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{ENV\_KEY\_UNIQUE\_TOKEN}{ENV\_KEY\_UNIQUE\_TOKEN}}
+{\footnotesize\ttfamily \label{class_para_test_1_1_options_a23826f015098904c2e7340021a975f98} 
+const ENV\+\_\+\+KEY\+\_\+\+UNIQUE\+\_\+\+TOKEN = \textquotesingle{}UNIQUE\+\_\+\+TEST\+\_\+\+TOKEN\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/brianium/paratest/src/\mbox{\hyperlink{brianium_2paratest_2src_2_options_8php}{Options.\+php}}\end{DoxyCompactItemize}

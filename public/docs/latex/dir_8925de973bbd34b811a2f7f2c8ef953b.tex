@@ -1,0 +1,76 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/asynckit Directory Reference}
+\hypertarget{dir_8925de973bbd34b811a2f7f2c8ef953b}{}\label{dir_8925de973bbd34b811a2f7f2c8ef953b}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/asynckit Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/asynckit Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md1312}{}\doxysubsection{\texorpdfstring{asynckit \mbox{[}!\mbox{[}NPM Module\mbox{]}(\href{https://img.shields.io/npm/v/asynckit.svg?style=flat}{\texttt{https\+://img.\+shields.\+io/npm/v/asynckit.\+svg?style=flat}})\mbox{]}(\href{https://www.npmjs.com/package/asynckit}{\texttt{https\+://www.\+npmjs.\+com/package/asynckit}})}{asynckit \mbox{[}!\mbox{[}NPM Module\mbox{]}(\href{https://img.shields.io/npm/v/asynckit.svg?style=flat}{\texttt{https\+://img.\+shields.\+io/npm/v/asynckit.\+svg?style=flat}})\mbox{]}(\href{https://www.npmjs.com/package/asynckit}{\texttt{https\+://www.\+npmjs.\+com/package/asynckit}})}}\label{README.md_autotoc_md1312}
+Minimal async jobs utility library, with streams support.
+
+\href{https://travis-ci.org/alexindigo/asynckit}{\texttt{}} \href{https://travis-ci.org/alexindigo/asynckit}{\texttt{}} \href{https://ci.appveyor.com/project/alexindigo/asynckit}{\texttt{}}
+
+\href{https://coveralls.io/github/alexindigo/asynckit?branch=master}{\texttt{}} \href{https://david-dm.org/alexindigo/asynckit}{\texttt{}} \href{https://www.bithound.io/github/alexindigo/asynckit}{\texttt{}}
+
+Async\+Kit provides harness for {\ttfamily parallel} and {\ttfamily serial} iterators over list of items represented by arrays or objects. Optionally it accepts abort function (should be synchronously return by iterator for each item), and terminates left over jobs upon an error event. For specific iteration order built-\/in ({\ttfamily ascending} and {\ttfamily descending}) and custom sort helpers also supported, via {\ttfamily asynckit.\+serial\+Ordered} method.
+
+It ensures async operations to keep behavior more stable and prevent {\ttfamily Maximum call stack size exceeded} errors, from sync iterators.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ compression  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ size  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ compression  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ size  }\\\cline{1-2}
+\endhead
+asynckit.\+js  &\PBS\raggedleft 12.\+34 kB  \\\cline{1-2}
+asynckit.\+min.\+js  &\PBS\raggedleft 4.\+11 kB  \\\cline{1-2}
+asynckit.\+min.\+js.\+gz  &\PBS\raggedleft 1.\+47 kB  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{README.md_autotoc_md1313}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{README.md_autotoc_md1313}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md1314}{}\doxysubsection{\texorpdfstring{Examples}{Examples}}\label{README.md_autotoc_md1314}
+\hypertarget{README.md_autotoc_md1315}{}\doxysubsubsection{\texorpdfstring{Parallel Jobs}{Parallel Jobs}}\label{README.md_autotoc_md1315}
+Runs iterator over provided array in parallel. Stores output in the {\ttfamily result} array, on the matching positions. In unlikely event of an error from one of the jobs, will terminate rest of the active jobs (if abort function is provided) and return error along with salvaged data to the main callback function.\hypertarget{README.md_autotoc_md1316}{}\doxysubsubsubsection{\texorpdfstring{Input Array}{Input Array}}\label{README.md_autotoc_md1316}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+More examples could be found in \href{test/test-parallel-array.js}{\texttt{test/test-\/parallel-\/array.\+js}}.\hypertarget{README.md_autotoc_md1317}{}\doxysubsubsubsection{\texorpdfstring{Input Object}{Input Object}}\label{README.md_autotoc_md1317}
+Also it supports named jobs, listed via object.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+More examples could be found in \href{test/test-parallel-object.js}{\texttt{test/test-\/parallel-\/object.\+js}}.\hypertarget{README.md_autotoc_md1318}{}\doxysubsubsection{\texorpdfstring{Serial Jobs}{Serial Jobs}}\label{README.md_autotoc_md1318}
+Runs iterator over provided array sequentially. Stores output in the {\ttfamily result} array, on the matching positions. In unlikely event of an error from one of the jobs, will not proceed to the rest of the items in the list and return error along with salvaged data to the main callback function.\hypertarget{README.md_autotoc_md1319}{}\doxysubsubsubsection{\texorpdfstring{Input Array}{Input Array}}\label{README.md_autotoc_md1319}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+More examples could be found in \href{test/test-serial-array.js}{\texttt{test/test-\/serial-\/array.\+js}}.\hypertarget{README.md_autotoc_md1320}{}\doxysubsubsubsection{\texorpdfstring{Input Object}{Input Object}}\label{README.md_autotoc_md1320}
+Also it supports named jobs, listed via object.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+More examples could be found in \href{test/test-serial-object.js}{\texttt{test/test-\/serial-\/object.\+js}}.
+
+{\itshape Note\+: Since \+\_\+object} is an {\itshape unordered} collection of properties, it may produce unexpected results with sequential iterations. Whenever order of the jobs\textquotesingle{} execution is important please use {\ttfamily serial\+Ordered} method.\+\_\+\hypertarget{README.md_autotoc_md1321}{}\doxysubsubsection{\texorpdfstring{Ordered Serial Iterations}{Ordered Serial Iterations}}\label{README.md_autotoc_md1321}
+TBD
+
+For example \mbox{[}compare-\/property\mbox{]}(compare-\/property) package.\hypertarget{README.md_autotoc_md1322}{}\doxysubsubsection{\texorpdfstring{Streaming interface}{Streaming interface}}\label{README.md_autotoc_md1322}
+TBD\hypertarget{README.md_autotoc_md1323}{}\doxysubsection{\texorpdfstring{Want to Know More?}{Want to Know More?}}\label{README.md_autotoc_md1323}
+More examples can be found in \href{test/}{\texttt{test folder}}.
+
+Or open an \href{https://github.com/alexindigo/asynckit/issues}{\texttt{issue}} with questions and/or suggestions.\hypertarget{README.md_autotoc_md1324}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md1324}
+Async\+Kit is licensed under the MIT license. 

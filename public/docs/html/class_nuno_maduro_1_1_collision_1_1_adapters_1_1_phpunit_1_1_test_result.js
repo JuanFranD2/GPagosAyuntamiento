@@ -1,0 +1,27 @@
+var class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result =
+[
+    [ "setDuration", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#ac14a8951e4e317edcef8171716ed0649", null ],
+    [ "$color", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a9338253668a55c6ca266ac7068b21965", null ],
+    [ "$compactColor", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a8067dac792079710af7465d47b530b34", null ],
+    [ "$compactIcon", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a49f3de289e091a3c88f940eb2e1146f1", null ],
+    [ "$context", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a3d7b0bc9668e7e120dd1d0454cc9e341", null ],
+    [ "$description", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a166882b9613466de882dd8727762f2db", null ],
+    [ "$duration", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#ae33ee2e7bd8e7b5ae4a8d59640b6a720", null ],
+    [ "$icon", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a519e4c30a0c23f5648976a1f7ca3d8e9", null ],
+    [ "$id", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a426cfb78b707e9d9541e9c8ea5a6af57", null ],
+    [ "$testCaseName", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#ab1cd78605a19bd9c8f7ca2ff5f18d7d7", null ],
+    [ "$throwable", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a8d36320d350e313a19d19cccf09effda", null ],
+    [ "$type", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#aa40cc7876dc0b694eda3c898140a0ac8", null ],
+    [ "$warning", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a6d2e3968d8957956e44bd2be9973745f", null ],
+    [ "$warningSource", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a628cd20ca23cc1e41549119cee595d49", null ],
+    [ "DEPRECATED", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#acdf745874c55a69c07c42ae7403e9078", null ],
+    [ "FAIL", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#af51bf014241fcd1e8447fe833514b928", null ],
+    [ "INCOMPLETE", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a3d80ce213b6415172034b1b5817dd463", null ],
+    [ "NOTICE", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a0b32ca69140ca26e6614dddf004ae3d9", null ],
+    [ "PASS", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a721e0e48b7536b275be96f3018324f28", null ],
+    [ "RISKY", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a7398fa80c93482273d96242088099000", null ],
+    [ "RUNS", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#acf667fc1c94c5ff1b6029ff05b240d42", null ],
+    [ "SKIPPED", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a3d6b43fc87d5cc30d7516323b76310a6", null ],
+    [ "TODO", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#a76369c8d78533dcc41bed4d7702268d2", null ],
+    [ "WARN", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_phpunit_1_1_test_result.html#abd1339a4c3a81762b7990ed8f2205566", null ]
+];

@@ -1,0 +1,4 @@
+var _runner_2_test_result_2_subscriber_2_test_triggered_notice_subscriber_8php =
+[
+    [ "TestTriggeredNoticeSubscriber", "class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_triggered_notice_subscriber.html", "class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_triggered_notice_subscriber" ]
+];

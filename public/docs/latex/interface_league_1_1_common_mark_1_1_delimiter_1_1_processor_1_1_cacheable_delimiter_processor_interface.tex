@@ -1,0 +1,57 @@
+\doxysection{Cacheable\+Delimiter\+Processor\+Interface Interface Reference}
+\hypertarget{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_cacheable_delimiter_processor_interface}{}\label{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_cacheable_delimiter_processor_interface}\index{CacheableDelimiterProcessorInterface@{CacheableDelimiterProcessorInterface}}
+Inheritance diagram for Cacheable\+Delimiter\+Processor\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_cacheable_delimiter_processor_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_cacheable_delimiter_processor_interface_a95268d38ef41ad511b0e05ab83dc59b5}{get\+Cache\+Key}} (\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_delimiter_interface}{Delimiter\+Interface}} \$closer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_interface}{Delimiter\+Processor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_interface_ac5fd0c66be2f2fba4e126ec531a94784}{get\+Opening\+Character}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_interface_a69d3f1e5c0428e694afa3e65b22a94cd}{get\+Closing\+Character}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_interface_a66d206d1c1210030d89ed2d07c9d1755}{get\+Min\+Length}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_interface_a7f49b2f203dbbddd2a9484865d48cfd4}{get\+Delimiter\+Use}} (\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_delimiter_interface}{Delimiter\+Interface}} \$opener, \mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_delimiter_interface}{Delimiter\+Interface}} \$closer)
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_interface_a67ed9e4317d28e27aee2d3c0d1a264b6}{process}} (\mbox{\hyperlink{class_league_1_1_common_mark_1_1_node_1_1_inline_1_1_abstract_string_container}{Abstract\+String\+Container}} \$opener, \mbox{\hyperlink{class_league_1_1_common_mark_1_1_node_1_1_inline_1_1_abstract_string_container}{Abstract\+String\+Container}} \$closer, int \$delimiter\+Use)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Special marker interface for delimiter processors that return dynamic values from get\+Delimiter\+Use()
+
+In order to guarantee linear performance of delimiter processing, the delimiter stack must be able to cache the lower bound when searching for a matching opener. This gets complicated for delimiter processors that use a dynamic number of characters (like with emphasis and its "{}multiple of 3"{} rule). 
+
+\label{doc-func-members}
+\Hypertarget{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_cacheable_delimiter_processor_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_cacheable_delimiter_processor_interface_a95268d38ef41ad511b0e05ab83dc59b5}\index{CacheableDelimiterProcessorInterface@{CacheableDelimiterProcessorInterface}!getCacheKey@{getCacheKey}}
+\index{getCacheKey@{getCacheKey}!CacheableDelimiterProcessorInterface@{CacheableDelimiterProcessorInterface}}
+\doxysubsubsection{\texorpdfstring{getCacheKey()}{getCacheKey()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_cacheable_delimiter_processor_interface_a95268d38ef41ad511b0e05ab83dc59b5} 
+get\+Cache\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_delimiter_interface}{Delimiter\+Interface}}}]{\$closer}{}\end{DoxyParamCaption})}
+
+Returns a cache key of the factors that determine the number of characters to use.
+
+In order to guarantee linear performance of delimiter processing, the delimiter stack must be able to cache the lower bound when searching for a matching opener. This lower bound is usually quite simple; for example, with quotes, it\textquotesingle{}s just the last opener with that characted. However, this gets complicated for delimiter processors that use a dynamic number of characters (like with emphasis and its "{}multiple of 3"{} rule), because the delimiter length being considered may change during processing because of that dynamic logic in get\+Delimiter\+Use(). Therefore, we cannot safely cache the lower bound for these dynamic processors without knowing the factors that determine the number of characters to use.
+
+At a minimum, this should include the delimiter character, plus any other factors used to determine the result of get\+Delimiter\+Use(). The format of the string is not important so long as it is unique (compared to other processors) and consistent for a given set of factors.
+
+If get\+Delimiter\+Use() always returns the same hard-\/coded value, this method should return just the delimiter character. 
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_extension_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_emphasis_delimiter_processor_a95268d38ef41ad511b0e05ab83dc59b5}{Emphasis\+Delimiter\+Processor}}, and \mbox{\hyperlink{class_league_1_1_common_mark_1_1_extension_1_1_strikethrough_1_1_strikethrough_delimiter_processor_a95268d38ef41ad511b0e05ab83dc59b5}{Strikethrough\+Delimiter\+Processor}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/commonmark/src/\+Delimiter/\+Processor/\mbox{\hyperlink{_cacheable_delimiter_processor_interface_8php}{Cacheable\+Delimiter\+Processor\+Interface.\+php}}\end{DoxyCompactItemize}

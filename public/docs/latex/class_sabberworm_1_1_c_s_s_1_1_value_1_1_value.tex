@@ -1,0 +1,130 @@
+\doxysection{Value Class Reference}
+\hypertarget{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value}{}\label{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value}\index{Value@{Value}}
+Inheritance diagram for Value\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.794038cm]{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_add22f11a0f367e5ae553265f5d83782f}{\+\_\+\+\_\+construct}} (\$i\+Line\+No=0)
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_a16d247e18fc050dffcf5ed26439b2905}{get\+Line\+No}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_renderable}{Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_renderable_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_renderable_ad56bbc0284de9b11bf0426503984f37d}{render}} (\$o\+Output\+Format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_a925c57c33113818eaea75a8636c548d7}{parse\+Identifier\+Or\+Function}} (\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parsing_1_1_parser_state}{Parser\+State}} \$o\+Parser\+State, \$b\+Ignore\+Case=false)
+\item 
+static \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_aaf2596ee8c7aab108e17148da25ae755}{parse\+Primitive\+Value}} (\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parsing_1_1_parser_state}{Parser\+State}} \$o\+Parser\+State)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_a1019368868955f64e3173e8f40d62582}{\$i\+Line\+No}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for specific classes of CSS values\+: {\ttfamily Size}, {\ttfamily Color}, {\ttfamily CSSString} and {\ttfamily \doxylink{class_u_r_l}{URL}}, and another abstract subclass {\ttfamily Value\+List}. 
+
+\label{doc-constructors}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_add22f11a0f367e5ae553265f5d83782f}\index{Value@{Value}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Value@{Value}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_add22f11a0f367e5ae553265f5d83782f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$i\+Line\+No}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$i\+Line\+No} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_value_1_1_calc_rule_value_list_add22f11a0f367e5ae553265f5d83782f}{Calc\+Rule\+Value\+List}}, and \mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_value_1_1_primitive_value_add22f11a0f367e5ae553265f5d83782f}{Primitive\+Value}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_a16d247e18fc050dffcf5ed26439b2905}\index{Value@{Value}!getLineNo@{getLineNo}}
+\index{getLineNo@{getLineNo}!Value@{Value}}
+\doxysubsubsection{\texorpdfstring{getLineNo()}{getLineNo()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_a16d247e18fc050dffcf5ed26439b2905} 
+get\+Line\+No (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_sabberworm_1_1_c_s_s_1_1_renderable_a16d247e18fc050dffcf5ed26439b2905}{Renderable}}.
+
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_a925c57c33113818eaea75a8636c548d7}\index{Value@{Value}!parseIdentifierOrFunction@{parseIdentifierOrFunction}}
+\index{parseIdentifierOrFunction@{parseIdentifierOrFunction}!Value@{Value}}
+\doxysubsubsection{\texorpdfstring{parseIdentifierOrFunction()}{parseIdentifierOrFunction()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_a925c57c33113818eaea75a8636c548d7} 
+parse\+Identifier\+Or\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parsing_1_1_parser_state}{Parser\+State}}}]{\$o\+Parser\+State}{, }\item[{}]{\$b\+Ignore\+Case}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$b\+Ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSSFunction\texorpdfstring{$\vert$}{|}string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+EOFException} & \\
+\hline
+{\em Unexpected\+Token\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_aaf2596ee8c7aab108e17148da25ae755}\index{Value@{Value}!parsePrimitiveValue@{parsePrimitiveValue}}
+\index{parsePrimitiveValue@{parsePrimitiveValue}!Value@{Value}}
+\doxysubsubsection{\texorpdfstring{parsePrimitiveValue()}{parsePrimitiveValue()}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_aaf2596ee8c7aab108e17148da25ae755} 
+parse\+Primitive\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sabberworm_1_1_c_s_s_1_1_parsing_1_1_parser_state}{Parser\+State}}}]{\$o\+Parser\+State}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+CSSFunction\texorpdfstring{$\vert$}{|}\+CSSString\texorpdfstring{$\vert$}{|}\+Line\+Name\texorpdfstring{$\vert$}{|}\+Size\texorpdfstring{$\vert$}{|}\+URL\texorpdfstring{$\vert$}{|}string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unexpected\+EOFException} & \\
+\hline
+{\em Unexpected\+Token\+Exception} & \\
+\hline
+{\em Source\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_a1019368868955f64e3173e8f40d62582}\index{Value@{Value}!\$iLineNo@{\$iLineNo}}
+\index{\$iLineNo@{\$iLineNo}!Value@{Value}}
+\doxysubsubsection{\texorpdfstring{\$iLineNo}{\$iLineNo}}
+{\footnotesize\ttfamily \label{class_sabberworm_1_1_c_s_s_1_1_value_1_1_value_a1019368868955f64e3173e8f40d62582} 
+\$i\+Line\+No\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/sabberworm/php-\/css-\/parser/src/\+Value/\mbox{\hyperlink{sabberworm_2php-css-parser_2src_2_value_2_value_8php}{Value.\+php}}\end{DoxyCompactItemize}

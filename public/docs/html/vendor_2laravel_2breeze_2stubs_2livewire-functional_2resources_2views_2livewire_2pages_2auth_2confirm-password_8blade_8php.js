@@ -1,0 +1,4 @@
+var vendor_2laravel_2breeze_2stubs_2livewire_functional_2resources_2views_2livewire_2pages_2auth_2confirm_password_8blade_8php =
+[
+    [ "$confirmPassword", "vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2pages_2auth_2confirm-password_8blade_8php.html#adbfd0d4f3732ede106e134ca15f773f1", null ]
+];

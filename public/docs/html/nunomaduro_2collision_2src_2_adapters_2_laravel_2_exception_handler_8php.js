@@ -1,0 +1,4 @@
+var nunomaduro_2collision_2src_2_adapters_2_laravel_2_exception_handler_8php =
+[
+    [ "ExceptionHandler", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_laravel_1_1_exception_handler.html", "class_nuno_maduro_1_1_collision_1_1_adapters_1_1_laravel_1_1_exception_handler" ]
+];

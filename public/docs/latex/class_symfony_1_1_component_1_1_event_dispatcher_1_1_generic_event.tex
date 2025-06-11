@@ -1,0 +1,203 @@
+\doxysection{Generic\+Event Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event}{}\label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event}\index{GenericEvent@{GenericEvent}}
+Inheritance diagram for Generic\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.126582cm]{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_afb4fb28408688d806c474997835de77e}{\+\_\+\+\_\+construct}} (protected mixed \$subject=null, protected array \$arguments=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a7ec8f5b794ded8f3c0df9afd96c8233c}{get\+Subject}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_aebdaeca5556a39245d6e443e2434769c}{get\+Argument}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_ad0728ff3212e3bef01fa3a679f4f5df6}{set\+Argument}} (string \$key, mixed \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a1d4c324c5a088be98d99d3efbf3502e1}{get\+Arguments}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a37d1f555570bf4b35d882fa1b5104aa4}{set\+Arguments}} (array \$args=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a8ad9aad2f66e0d80d2a3728561bf9205}{has\+Argument}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a57681e81d8440e98b97a8bdde5fefc22}{offset\+Get}} (mixed \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a3f48b08b7cdcda77333a376aaf7b8979}{offset\+Set}} (mixed \$key, mixed \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a084d0306f1e88f3fd75d8d86c46f1306}{offset\+Unset}} (mixed \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a9af219f5cfbfa8535f325d29e2b5131a}{offset\+Exists}} (mixed \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event}{Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_aabfd0a1205a80881b10962db51a2902c}{is\+Propagation\+Stopped}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_adc3f4b7596e176069cd179814c05c66d}{stop\+Propagation}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_event}{Event} encapsulation class.
+
+Encapsulates events thus decoupling the observer from the subject they encapsulate.
+
+\begin{DoxyAuthor}{Author}
+Drak \href{mailto:drak@zikula.org}{\texttt{drak@zikula.\+org}}
+\end{DoxyAuthor}
+\texorpdfstring{$<$}{<}string, mixed\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}string, mixed\texorpdfstring{$>$}{>} 
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_afb4fb28408688d806c474997835de77e}\index{GenericEvent@{GenericEvent}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_afb4fb28408688d806c474997835de77e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected mixed}]{\$subject}{ = {\ttfamily null}, }\item[{protected array}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Encapsulate an event with \$subject and \$arguments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$subject} & The subject of the event, usually an object or a callable \\
+\hline
+array & {\em \$arguments} & Arguments to store in the event \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_aebdaeca5556a39245d6e443e2434769c}\index{GenericEvent@{GenericEvent}!getArgument@{getArgument}}
+\index{getArgument@{getArgument}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{getArgument()}{getArgument()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_aebdaeca5556a39245d6e443e2434769c} 
+get\+Argument (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Get argument by key.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if key is not found \Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a1d4c324c5a088be98d99d3efbf3502e1}\index{GenericEvent@{GenericEvent}!getArguments@{getArguments}}
+\index{getArguments@{getArguments}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{getArguments()}{getArguments()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a1d4c324c5a088be98d99d3efbf3502e1} 
+get\+Arguments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Getter for all arguments. \Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{GenericEvent@{GenericEvent}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Iterator\+Aggregate for iterating over the object like an array.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Array\+Iterator\texorpdfstring{$<$}{<}string, mixed\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a7ec8f5b794ded8f3c0df9afd96c8233c}\index{GenericEvent@{GenericEvent}!getSubject@{getSubject}}
+\index{getSubject@{getSubject}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{getSubject()}{getSubject()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a7ec8f5b794ded8f3c0df9afd96c8233c} 
+get\+Subject (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Getter for subject property. \Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a8ad9aad2f66e0d80d2a3728561bf9205}\index{GenericEvent@{GenericEvent}!hasArgument@{hasArgument}}
+\index{hasArgument@{hasArgument}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{hasArgument()}{hasArgument()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a8ad9aad2f66e0d80d2a3728561bf9205} 
+has\+Argument (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Has argument. \Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a9af219f5cfbfa8535f325d29e2b5131a}\index{GenericEvent@{GenericEvent}!offsetExists@{offsetExists}}
+\index{offsetExists@{offsetExists}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{offsetExists()}{offsetExists()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a9af219f5cfbfa8535f325d29e2b5131a} 
+offset\+Exists (\begin{DoxyParamCaption}\item[{mixed}]{\$key}{}\end{DoxyParamCaption})}
+
+Array\+Access has argument.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Array key \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a57681e81d8440e98b97a8bdde5fefc22}\index{GenericEvent@{GenericEvent}!offsetGet@{offsetGet}}
+\index{offsetGet@{offsetGet}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{offsetGet()}{offsetGet()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a57681e81d8440e98b97a8bdde5fefc22} 
+offset\+Get (\begin{DoxyParamCaption}\item[{mixed}]{\$key}{}\end{DoxyParamCaption})}
+
+Array\+Access for argument getter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Array key\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if key does not exist in \$this-\/\texorpdfstring{$>$}{>}args \Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a3f48b08b7cdcda77333a376aaf7b8979}\index{GenericEvent@{GenericEvent}!offsetSet@{offsetSet}}
+\index{offsetSet@{offsetSet}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{offsetSet()}{offsetSet()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a3f48b08b7cdcda77333a376aaf7b8979} 
+offset\+Set (\begin{DoxyParamCaption}\item[{mixed}]{\$key}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Array\+Access for argument setter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Array key to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a084d0306f1e88f3fd75d8d86c46f1306}\index{GenericEvent@{GenericEvent}!offsetUnset@{offsetUnset}}
+\index{offsetUnset@{offsetUnset}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{offsetUnset()}{offsetUnset()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a084d0306f1e88f3fd75d8d86c46f1306} 
+offset\+Unset (\begin{DoxyParamCaption}\item[{mixed}]{\$key}{}\end{DoxyParamCaption})}
+
+Array\+Access for unset argument.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Array key \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_ad0728ff3212e3bef01fa3a679f4f5df6}\index{GenericEvent@{GenericEvent}!setArgument@{setArgument}}
+\index{setArgument@{setArgument}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{setArgument()}{setArgument()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_ad0728ff3212e3bef01fa3a679f4f5df6} 
+set\+Argument (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Add argument to event.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a37d1f555570bf4b35d882fa1b5104aa4}\index{GenericEvent@{GenericEvent}!setArguments@{setArguments}}
+\index{setArguments@{setArguments}!GenericEvent@{GenericEvent}}
+\doxysubsubsection{\texorpdfstring{setArguments()}{setArguments()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_generic_event_a37d1f555570bf4b35d882fa1b5104aa4} 
+set\+Arguments (\begin{DoxyParamCaption}\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Set args property.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/event-\/dispatcher/\mbox{\hyperlink{_generic_event_8php}{Generic\+Event.\+php}}\end{DoxyCompactItemize}

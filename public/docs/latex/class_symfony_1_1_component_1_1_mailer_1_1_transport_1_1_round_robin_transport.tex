@@ -1,0 +1,119 @@
+\doxysection{Round\+Robin\+Transport Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport}\index{RoundRobinTransport@{RoundRobinTransport}}
+Inheritance diagram for Round\+Robin\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a28822e1c498ae6fa4d3f6a38705da1c6}{\+\_\+\+\_\+construct}} (private array \$transports, private int \$retry\+Period=60,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a25d696d916e4c2862bd7ac1cb998b491}{send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}} \$message, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}} \$envelope=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_af64dc468c020e131bdd990b0a8632b95}{get\+Next\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_afd0ad3133d92b7c4527dea9d44ddadd2}{is\+Transport\+Dead}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface}{Transport\+Interface}} \$transport)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_ae5566213ecfcb91289c331a9311d3d6e}{get\+Initial\+Cursor}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_af10e253f76eccacdda4edca00bb90beb}{get\+Name\+Symbol}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Uses several Transports using a round robin algorithm.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a28822e1c498ae6fa4d3f6a38705da1c6}\index{RoundRobinTransport@{RoundRobinTransport}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!RoundRobinTransport@{RoundRobinTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a28822e1c498ae6fa4d3f6a38705da1c6} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private array}]{\$transports}{, }\item[{private int}]{\$retry\+Period}{ = {\ttfamily 60}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Transport\+Interface\mbox{[}$\,$\mbox{]} & {\em \$transports} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a7516ca30af0db3cdbf9a7739b48ce91d}\index{RoundRobinTransport@{RoundRobinTransport}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!RoundRobinTransport@{RoundRobinTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_ae5566213ecfcb91289c331a9311d3d6e}\index{RoundRobinTransport@{RoundRobinTransport}!getInitialCursor@{getInitialCursor}}
+\index{getInitialCursor@{getInitialCursor}!RoundRobinTransport@{RoundRobinTransport}}
+\doxysubsubsection{\texorpdfstring{getInitialCursor()}{getInitialCursor()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_ae5566213ecfcb91289c331a9311d3d6e} 
+get\+Initial\+Cursor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_ae5566213ecfcb91289c331a9311d3d6e}{Failover\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_af10e253f76eccacdda4edca00bb90beb}\index{RoundRobinTransport@{RoundRobinTransport}!getNameSymbol@{getNameSymbol}}
+\index{getNameSymbol@{getNameSymbol}!RoundRobinTransport@{RoundRobinTransport}}
+\doxysubsubsection{\texorpdfstring{getNameSymbol()}{getNameSymbol()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_af10e253f76eccacdda4edca00bb90beb} 
+get\+Name\+Symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_af10e253f76eccacdda4edca00bb90beb}{Failover\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_af64dc468c020e131bdd990b0a8632b95}\index{RoundRobinTransport@{RoundRobinTransport}!getNextTransport@{getNextTransport}}
+\index{getNextTransport@{getNextTransport}!RoundRobinTransport@{RoundRobinTransport}}
+\doxysubsubsection{\texorpdfstring{getNextTransport()}{getNextTransport()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_af64dc468c020e131bdd990b0a8632b95} 
+get\+Next\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rotates the transport list around and returns the first instance. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_af64dc468c020e131bdd990b0a8632b95}{Failover\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_afd0ad3133d92b7c4527dea9d44ddadd2}\index{RoundRobinTransport@{RoundRobinTransport}!isTransportDead@{isTransportDead}}
+\index{isTransportDead@{isTransportDead}!RoundRobinTransport@{RoundRobinTransport}}
+\doxysubsubsection{\texorpdfstring{isTransportDead()}{isTransportDead()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_afd0ad3133d92b7c4527dea9d44ddadd2} 
+is\+Transport\+Dead (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface}{Transport\+Interface}}}]{\$transport}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a25d696d916e4c2862bd7ac1cb998b491}\index{RoundRobinTransport@{RoundRobinTransport}!send@{send}}
+\index{send@{send}!RoundRobinTransport@{RoundRobinTransport}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a25d696d916e4c2862bd7ac1cb998b491} 
+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}}}]{\$message}{, }\item[{?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}}}]{\$envelope}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Transport\+Exception\+Interface} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface_a25d696d916e4c2862bd7ac1cb998b491}{Transport\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/mailer/\+Transport/\mbox{\hyperlink{_round_robin_transport_8php}{Round\+Robin\+Transport.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\doxysection{Only\+In\+Power\+Shell\+Finder Class Reference}
+\hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder}{}\label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder}\index{OnlyInPowerShellFinder@{OnlyInPowerShellFinder}}
+Inheritance diagram for Only\+In\+Power\+Shell\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a64b778cc53b081528c928ff1602ca884}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder}{Cpu\+Core\+Finder}} \$decorated\+Finder)
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{diagnose}} ()
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a39ec161e9a5372e002b889d276208899}{find}} ()
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a64b778cc53b081528c928ff1602ca884}\index{OnlyInPowerShellFinder@{OnlyInPowerShellFinder}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!OnlyInPowerShellFinder@{OnlyInPowerShellFinder}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a64b778cc53b081528c928ff1602ca884} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder}{Cpu\+Core\+Finder}}}]{\$decorated\+Finder}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}\index{OnlyInPowerShellFinder@{OnlyInPowerShellFinder}!diagnose@{diagnose}}
+\index{diagnose@{diagnose}!OnlyInPowerShellFinder@{OnlyInPowerShellFinder}}
+\doxysubsubsection{\texorpdfstring{diagnose()}{diagnose()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8} 
+diagnose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Provides an explanation which may offer some insight as to what the finder will be able to find.
+
+This is practical to have an idea of what each finder will find collect information for the unit tests, since integration tests are quite complicated as dependent on complex infrastructures. 
+
+Implements \mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_ad8eac455cb7b2c2d3e2c556a3307e1f8}{Cpu\+Core\+Finder}}.
+
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a39ec161e9a5372e002b889d276208899}\index{OnlyInPowerShellFinder@{OnlyInPowerShellFinder}!find@{find}}
+\index{find@{find}!OnlyInPowerShellFinder@{OnlyInPowerShellFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a39ec161e9a5372e002b889d276208899} 
+find (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Find the number of CPU cores. If it could not find it, returns null. The means used to find the cores are at the implementation discretion.
+
+\begin{DoxyReturn}{Returns}
+positive-\/int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a39ec161e9a5372e002b889d276208899}{Cpu\+Core\+Finder}}.
+
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a5558c5d549f41597377fa1ea8a1cefa3}\index{OnlyInPowerShellFinder@{OnlyInPowerShellFinder}!toString@{toString}}
+\index{toString@{toString}!OnlyInPowerShellFinder@{OnlyInPowerShellFinder}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder_a5558c5d549f41597377fa1ea8a1cefa3} 
+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder_a5558c5d549f41597377fa1ea8a1cefa3}{Cpu\+Core\+Finder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/fidry/cpu-\/core-\/counter/src/\+Finder/\mbox{\hyperlink{_only_in_power_shell_finder_8php}{Only\+In\+Power\+Shell\+Finder.\+php}}\end{DoxyCompactItemize}

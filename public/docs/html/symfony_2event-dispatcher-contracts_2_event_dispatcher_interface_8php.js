@@ -1,0 +1,4 @@
+var symfony_2event_dispatcher_contracts_2_event_dispatcher_interface_8php =
+[
+    [ "EventDispatcherInterface", "interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface.html", "interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface" ]
+];

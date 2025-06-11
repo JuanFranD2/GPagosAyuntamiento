@@ -1,0 +1,127 @@
+\doxysection{Parser Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser}{}\label{class_symfony_1_1_component_1_1_yaml_1_1_parser}\index{Parser@{Parser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_a86235cd393547eda50a86594250d8959}{parse\+File}} (string \$filename, int \$flags=0)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_a6e8a026bbadb3fdcd9595ae40a5baf8e}{parse}} (string \$value, int \$flags=0)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_afed732413dcd90e7e27f15f9a693a933}{get\+Real\+Current\+Line\+Nb}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_a95afed5da5c35208793e332c8eecea82}{preg\+\_\+match}} (string \$pattern, string \$subject, ?array \&\$matches=null, int \$flags=0, int \$offset=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_ae26b8cbd52e33c09fcaf5ccd09a21f19}{TAG\+\_\+\+PATTERN}} = \textquotesingle{}(?P$<$tag$>$!\mbox{[}\textbackslash{}w!.\textbackslash{}/\+:-\/\mbox{]}+)\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_a76585a097a4e94d76ade259db4dfdfeb}{BLOCK\+\_\+\+SCALAR\+\_\+\+HEADER\+\_\+\+PATTERN}} = \textquotesingle{}(?P$<$separator$>$\textbackslash{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}$>$)(?P$<$modifiers$>$\textbackslash{}+\texorpdfstring{$\vert$}{|}\textbackslash{}-\/\texorpdfstring{$\vert$}{|}\textbackslash{}d+\texorpdfstring{$\vert$}{|}\textbackslash{}+\textbackslash{}d+\texorpdfstring{$\vert$}{|}\textbackslash{}-\/\textbackslash{}d+\texorpdfstring{$\vert$}{|}\textbackslash{}d+\textbackslash{}+\texorpdfstring{$\vert$}{|}\textbackslash{}d+\textbackslash{}-\/)?(?P$<$comments$>$ +\#.\texorpdfstring{$\ast$}{*})?\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_a974008edfb40d57493996210456d59b6}{REFERENCE\+\_\+\+PATTERN}} = \textquotesingle{}\#\texorpdfstring{$^\wedge$}{\string^}\&(?P$<$ref$>$\mbox{[}\texorpdfstring{$^\wedge$}{\string^} \mbox{]}++) \texorpdfstring{$\ast$}{*}+(?P$<$value$>$.\texorpdfstring{$\ast$}{*})\#u\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parser parses YAML strings to convert them to PHP arrays.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}}
+\end{DoxyAuthor}
+@final 
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_afed732413dcd90e7e27f15f9a693a933}\index{Parser@{Parser}!getRealCurrentLineNb@{getRealCurrentLineNb}}
+\index{getRealCurrentLineNb@{getRealCurrentLineNb}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getRealCurrentLineNb()}{getRealCurrentLineNb()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_yaml_1_1_parser_afed732413dcd90e7e27f15f9a693a933} 
+get\+Real\+Current\+Line\+Nb (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current line number (takes the offset into account). \Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_a6e8a026bbadb3fdcd9595ae40a5baf8e}\index{Parser@{Parser}!parse@{parse}}
+\index{parse@{parse}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_yaml_1_1_parser_a6e8a026bbadb3fdcd9595ae40a5baf8e} 
+parse (\begin{DoxyParamCaption}\item[{string}]{\$value}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Parses a YAML string to a PHP value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & A YAML string \\
+\hline
+ & {\em int-\/mask-\/of$<$\+Yaml\+::\+PARSE\+\_\+\texorpdfstring{$\ast$}{*}$>$} & \$flags A bit field of Yaml\+::\+PARSE\+\_\+\texorpdfstring{$\ast$}{*} constants to customize the YAML parser behavior\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & If the YAML is not valid \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_a86235cd393547eda50a86594250d8959}\index{Parser@{Parser}!parseFile@{parseFile}}
+\index{parseFile@{parseFile}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{parseFile()}{parseFile()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_yaml_1_1_parser_a86235cd393547eda50a86594250d8959} 
+parse\+File (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Parses a YAML file into a PHP value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & The path to the YAML file to be parsed \\
+\hline
+ & {\em int-\/mask-\/of$<$\+Yaml\+::\+PARSE\+\_\+\texorpdfstring{$\ast$}{*}$>$} & \$flags A bit field of Yaml\+::\+PARSE\+\_\+\texorpdfstring{$\ast$}{*} constants to customize the YAML parser behavior\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & If the file could not be read or the YAML is not valid \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_a95afed5da5c35208793e332c8eecea82}\index{Parser@{Parser}!preg\_match@{preg\_match}}
+\index{preg\_match@{preg\_match}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{preg\_match()}{preg\_match()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_yaml_1_1_parser_a95afed5da5c35208793e332c8eecea82} 
+preg\+\_\+match (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{?array \&}]{\$matches}{ = {\ttfamily null}, }\item[{int}]{\$flags}{ = {\ttfamily 0}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A local wrapper for "{}preg\+\_\+match"{} which will throw a Parse\+Exception if there is an internal error in the PCRE engine.
+
+This avoids us needing to check for "{}false"{} every time PCRE is used in the YAML engine
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & on a PCRE internal error \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_a76585a097a4e94d76ade259db4dfdfeb}\index{Parser@{Parser}!BLOCK\_SCALAR\_HEADER\_PATTERN@{BLOCK\_SCALAR\_HEADER\_PATTERN}}
+\index{BLOCK\_SCALAR\_HEADER\_PATTERN@{BLOCK\_SCALAR\_HEADER\_PATTERN}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{BLOCK\_SCALAR\_HEADER\_PATTERN}{BLOCK\_SCALAR\_HEADER\_PATTERN}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_yaml_1_1_parser_a76585a097a4e94d76ade259db4dfdfeb} 
+const BLOCK\+\_\+\+SCALAR\+\_\+\+HEADER\+\_\+\+PATTERN = \textquotesingle{}(?P$<$separator$>$\textbackslash{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}$>$)(?P$<$modifiers$>$\textbackslash{}+\texorpdfstring{$\vert$}{|}\textbackslash{}-\/\texorpdfstring{$\vert$}{|}\textbackslash{}d+\texorpdfstring{$\vert$}{|}\textbackslash{}+\textbackslash{}d+\texorpdfstring{$\vert$}{|}\textbackslash{}-\/\textbackslash{}d+\texorpdfstring{$\vert$}{|}\textbackslash{}d+\textbackslash{}+\texorpdfstring{$\vert$}{|}\textbackslash{}d+\textbackslash{}-\/)?(?P$<$comments$>$ +\#.\texorpdfstring{$\ast$}{*})?\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_a974008edfb40d57493996210456d59b6}\index{Parser@{Parser}!REFERENCE\_PATTERN@{REFERENCE\_PATTERN}}
+\index{REFERENCE\_PATTERN@{REFERENCE\_PATTERN}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{REFERENCE\_PATTERN}{REFERENCE\_PATTERN}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_yaml_1_1_parser_a974008edfb40d57493996210456d59b6} 
+const REFERENCE\+\_\+\+PATTERN = \textquotesingle{}\#\texorpdfstring{$^\wedge$}{\string^}\&(?P$<$ref$>$\mbox{[}\texorpdfstring{$^\wedge$}{\string^} \mbox{]}++) \texorpdfstring{$\ast$}{*}+(?P$<$value$>$.\texorpdfstring{$\ast$}{*})\#u\textquotesingle{}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_ae26b8cbd52e33c09fcaf5ccd09a21f19}\index{Parser@{Parser}!TAG\_PATTERN@{TAG\_PATTERN}}
+\index{TAG\_PATTERN@{TAG\_PATTERN}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{TAG\_PATTERN}{TAG\_PATTERN}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_yaml_1_1_parser_ae26b8cbd52e33c09fcaf5ccd09a21f19} 
+const TAG\+\_\+\+PATTERN = \textquotesingle{}(?P$<$tag$>$!\mbox{[}\textbackslash{}w!.\textbackslash{}/\+:-\/\mbox{]}+)\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/yaml/\mbox{\hyperlink{symfony_2yaml_2_parser_8php}{Parser.\+php}}\end{DoxyCompactItemize}

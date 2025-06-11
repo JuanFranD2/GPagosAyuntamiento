@@ -1,0 +1,87 @@
+\doxysection{Datasets\+Repository Class Reference}
+\hypertarget{class_pest_1_1_repositories_1_1_datasets_repository}{}\label{class_pest_1_1_repositories_1_1_datasets_repository}\index{DatasetsRepository@{DatasetsRepository}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pest_1_1_repositories_1_1_datasets_repository_aa480cd94331a7e6286742ba8bc940f8a}{set}} (string \$name, Closure\texorpdfstring{$\vert$}{|}iterable \$data, string \$scope)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_repositories_1_1_datasets_repository_a37407532ccd52167e70e8ec362e5a553}{with}} (string \$filename, string \$description, array \$with)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_repositories_1_1_datasets_repository_a2dfc62cb7ebec8fb8bf84b4782669aee}{has}} (string \$filename, string \$description)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_repositories_1_1_datasets_repository_aa8d355e8c616264144418589fe1660fe}{get}} (string \$filename, string \$description)
+\item 
+static \mbox{\hyperlink{class_pest_1_1_repositories_1_1_datasets_repository_ae3a7c248c74e7a20979cf9cbbaf8ca80}{resolve}} (array \$dataset, string \$current\+Test\+File)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_repositories_1_1_datasets_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_repositories_1_1_datasets_repository_aa8d355e8c616264144418589fe1660fe}\index{DatasetsRepository@{DatasetsRepository}!get@{get}}
+\index{get@{get}!DatasetsRepository@{DatasetsRepository}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_datasets_repository_aa8d355e8c616264144418589fe1660fe} 
+get (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, mixed\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Should\+Not\+Happen} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pest_1_1_repositories_1_1_datasets_repository_a2dfc62cb7ebec8fb8bf84b4782669aee}\index{DatasetsRepository@{DatasetsRepository}!has@{has}}
+\index{has@{has}!DatasetsRepository@{DatasetsRepository}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_datasets_repository_a2dfc62cb7ebec8fb8bf84b4782669aee} 
+has (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_pest_1_1_repositories_1_1_datasets_repository_ae3a7c248c74e7a20979cf9cbbaf8ca80}\index{DatasetsRepository@{DatasetsRepository}!resolve@{resolve}}
+\index{resolve@{resolve}!DatasetsRepository@{DatasetsRepository}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_datasets_repository_ae3a7c248c74e7a20979cf9cbbaf8ca80} 
+resolve (\begin{DoxyParamCaption}\item[{array}]{\$dataset}{, }\item[{string}]{\$current\+Test\+File}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Resolves the current dataset to an array value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$\+Closure\texorpdfstring{$\vert$}{|}iterable$<$int\texorpdfstring{$\vert$}{|}string,mixed$>$\texorpdfstring{$\vert$}{|}string$>$} & \$dataset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_pest_1_1_repositories_1_1_datasets_repository_aa480cd94331a7e6286742ba8bc940f8a}\index{DatasetsRepository@{DatasetsRepository}!set@{set}}
+\index{set@{set}!DatasetsRepository@{DatasetsRepository}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_datasets_repository_aa480cd94331a7e6286742ba8bc940f8a} 
+set (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{Closure\texorpdfstring{$\vert$}{|}iterable}]{\$data}{, }\item[{string}]{\$scope}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Closure\texorpdfstring{$\vert$}{|}iterable$<$int\texorpdfstring{$\vert$}{|}string,mixed$>$} & \$data \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_repositories_1_1_datasets_repository_a37407532ccd52167e70e8ec362e5a553}\index{DatasetsRepository@{DatasetsRepository}!with@{with}}
+\index{with@{with}!DatasetsRepository@{DatasetsRepository}}
+\doxysubsubsection{\texorpdfstring{with()}{with()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_repositories_1_1_datasets_repository_a37407532ccd52167e70e8ec362e5a553} 
+with (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$description}{, }\item[{array}]{\$with}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the given "{}with"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$\+Closure\texorpdfstring{$\vert$}{|}iterable$<$int\texorpdfstring{$\vert$}{|}string,mixed$>$\texorpdfstring{$\vert$}{|}string$>$} & \$with \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Repositories/\mbox{\hyperlink{_datasets_repository_8php}{Datasets\+Repository.\+php}}\end{DoxyCompactItemize}

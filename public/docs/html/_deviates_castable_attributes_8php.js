@@ -1,0 +1,4 @@
+var _deviates_castable_attributes_8php =
+[
+    [ "DeviatesCastableAttributes", "interface_illuminate_1_1_contracts_1_1_database_1_1_eloquent_1_1_deviates_castable_attributes.html", "interface_illuminate_1_1_contracts_1_1_database_1_1_eloquent_1_1_deviates_castable_attributes" ]
+];

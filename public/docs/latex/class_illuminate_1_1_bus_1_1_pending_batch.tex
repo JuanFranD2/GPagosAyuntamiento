@@ -1,0 +1,538 @@
+\doxysection{Pending\+Batch Class Reference}
+\hypertarget{class_illuminate_1_1_bus_1_1_pending_batch}{}\label{class_illuminate_1_1_bus_1_1_pending_batch}\index{PendingBatch@{PendingBatch}}
+Inheritance diagram for Pending\+Batch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_bus_1_1_pending_batch}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a11ae9bbd6657e6f776a0a7c662d88969}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container, \mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}} \$jobs)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a6af936ecd19a6d926774191d0b86a6b6}{add}} (\$jobs)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a8fd72ebf77e35afac6dab000e122d41b}{before}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a43e88fc25d131039666c5405ebf2a92c}{before\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ac8bef56bb52c97dd52d7cccea85d390f}{progress}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a63f1dd18ce9e50e16bd3cab195afdf80}{progress\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a628322b04e2ba2f2173afad8d09f81e4}{then}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a67c9d4eccf992815d3cdf35c96406db1}{then\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a987268db5348e4671c19f530b47509fd}{catch}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_afb097cdb736d45506aebc8f8d93763e9}{catch\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a6f7ef6a0dd72abf21dd48a684c5bb01a}{finally}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a61b2146fed20881b2e85c0901ed14f27}{finally\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_aad3e3c0817ce059e5af786d72b04f802}{allow\+Failures}} (\$allow\+Failures=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a8f80fe79e765bc800d6ccf67aa257b8c}{allows\+Failures}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_aacc7ea0fada1defae97e37d617865d39}{name}} (string \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a56b8824a2b04b3dfb48e6e169a8a8bba}{on\+Connection}} (string \$\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a7fa48f6882eccec91ea9c433e1ad2a57}{connection}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a7fa48f6882eccec91ea9c433e1ad2a57}{connection}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ab667e9cdac7e8961d4f9d9fa0152ea7c}{on\+Queue}} (\$\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ae8b79ba88a610d47081602a758aac023}{queue}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ae8b79ba88a610d47081602a758aac023}{queue}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a347319656873ab3d85cde3e5c835a6f7}{with\+Option}} (string \$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ac9b4976d41cd6b50add18c46b165c03d}{dispatch}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_aad1bcb5960d0daedbe4988d82340a6bc}{dispatch\+After\+Response}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a5674109ce4928f445b84509eb3743706}{dispatch\+If}} (\$boolean)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ad74e3ff180d735be55029b4e76143de2}{dispatch\+Unless}} (\$boolean)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ac13ada6f351dcfe07322887ed53869ef}{\$jobs}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a011800c63ece4cbbfa77136a20607023}{\$options}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a9a1866f95638c7d7e05384979db90a9d}{ensure\+Job\+Is\+Batchable}} (object\texorpdfstring{$\vert$}{|}array \$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ad3eea049d42c1897aa466ce6b1276201}{dispatch\+Existing\+Batch}} (\$\mbox{\hyperlink{namespace_illuminate_1_1_bus_ad6dce806493a6f32a189bff4ece4fa23}{batch}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_a702e65b02bfa25646c6015d6aa56fdc3}{store}} (\$repository)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ab97dd40df90f4ce6f0fce9091e7c7872}{\$container}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_ae79f6f7bb30968dba6ee59009f36d1b1}{\$batchable\+Classes}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a11ae9bbd6657e6f776a0a7c662d88969}\index{PendingBatch@{PendingBatch}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a11ae9bbd6657e6f776a0a7c662d88969} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}}]{\$jobs}{}\end{DoxyParamCaption})}
+
+Create a new pending batch instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$jobs} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a6af936ecd19a6d926774191d0b86a6b6}\index{PendingBatch@{PendingBatch}!add@{add}}
+\index{add@{add}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a6af936ecd19a6d926774191d0b86a6b6} 
+add (\begin{DoxyParamCaption}\item[{}]{\$jobs}{}\end{DoxyParamCaption})}
+
+Add jobs to the batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+iterable | object | array & {\em \$jobs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_aad3e3c0817ce059e5af786d72b04f802}\index{PendingBatch@{PendingBatch}!allowFailures@{allowFailures}}
+\index{allowFailures@{allowFailures}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{allowFailures()}{allowFailures()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_aad3e3c0817ce059e5af786d72b04f802} 
+allow\+Failures (\begin{DoxyParamCaption}\item[{}]{\$allow\+Failures}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Indicate that the batch should not be cancelled when a job within the batch fails.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$allow\+Failures} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a8f80fe79e765bc800d6ccf67aa257b8c}\index{PendingBatch@{PendingBatch}!allowsFailures@{allowsFailures}}
+\index{allowsFailures@{allowsFailures}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{allowsFailures()}{allowsFailures()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a8f80fe79e765bc800d6ccf67aa257b8c} 
+allows\+Failures (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the pending batch allows jobs to fail without cancelling the batch.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a8fd72ebf77e35afac6dab000e122d41b}\index{PendingBatch@{PendingBatch}!before@{before}}
+\index{before@{before}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a8fd72ebf77e35afac6dab000e122d41b} 
+before (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Add a callback to be executed when the batch is stored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a43e88fc25d131039666c5405ebf2a92c}\index{PendingBatch@{PendingBatch}!beforeCallbacks@{beforeCallbacks}}
+\index{beforeCallbacks@{beforeCallbacks}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{beforeCallbacks()}{beforeCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a43e88fc25d131039666c5405ebf2a92c} 
+before\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the "{}before"{} callbacks that have been registered with the pending batch.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a987268db5348e4671c19f530b47509fd}\index{PendingBatch@{PendingBatch}!catch@{catch}}
+\index{catch@{catch}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{catch()}{catch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a987268db5348e4671c19f530b47509fd} 
+catch (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Add a callback to be executed after the first failing job in the batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_afb097cdb736d45506aebc8f8d93763e9}\index{PendingBatch@{PendingBatch}!catchCallbacks@{catchCallbacks}}
+\index{catchCallbacks@{catchCallbacks}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{catchCallbacks()}{catchCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_afb097cdb736d45506aebc8f8d93763e9} 
+catch\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the "{}catch"{} callbacks that have been registered with the pending batch.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a7fa48f6882eccec91ea9c433e1ad2a57}\index{PendingBatch@{PendingBatch}!connection@{connection}}
+\index{connection@{connection}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a7fa48f6882eccec91ea9c433e1ad2a57} 
+connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the connection used by the pending batch.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ac9b4976d41cd6b50add18c46b165c03d}\index{PendingBatch@{PendingBatch}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ac9b4976d41cd6b50add18c46b165c03d} 
+dispatch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Dispatch the batch.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable 
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_pending_batch_fake_ac9b4976d41cd6b50add18c46b165c03d}{Pending\+Batch\+Fake}}.
+
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_aad1bcb5960d0daedbe4988d82340a6bc}\index{PendingBatch@{PendingBatch}!dispatchAfterResponse@{dispatchAfterResponse}}
+\index{dispatchAfterResponse@{dispatchAfterResponse}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{dispatchAfterResponse()}{dispatchAfterResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_aad1bcb5960d0daedbe4988d82340a6bc} 
+dispatch\+After\+Response (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Dispatch the batch after the response is sent to the browser.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_pending_batch_fake_aad1bcb5960d0daedbe4988d82340a6bc}{Pending\+Batch\+Fake}}.
+
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ad3eea049d42c1897aa466ce6b1276201}\index{PendingBatch@{PendingBatch}!dispatchExistingBatch@{dispatchExistingBatch}}
+\index{dispatchExistingBatch@{dispatchExistingBatch}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{dispatchExistingBatch()}{dispatchExistingBatch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ad3eea049d42c1897aa466ce6b1276201} 
+dispatch\+Existing\+Batch (\begin{DoxyParamCaption}\item[{}]{\$batch}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Dispatch an existing batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch & {\em \$batch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable \Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a5674109ce4928f445b84509eb3743706}\index{PendingBatch@{PendingBatch}!dispatchIf@{dispatchIf}}
+\index{dispatchIf@{dispatchIf}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{dispatchIf()}{dispatchIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a5674109ce4928f445b84509eb3743706} 
+dispatch\+If (\begin{DoxyParamCaption}\item[{}]{\$boolean}{}\end{DoxyParamCaption})}
+
+Dispatch the batch if the given truth test passes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool | \textbackslash{}\+Closure & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ad74e3ff180d735be55029b4e76143de2}\index{PendingBatch@{PendingBatch}!dispatchUnless@{dispatchUnless}}
+\index{dispatchUnless@{dispatchUnless}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{dispatchUnless()}{dispatchUnless()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ad74e3ff180d735be55029b4e76143de2} 
+dispatch\+Unless (\begin{DoxyParamCaption}\item[{}]{\$boolean}{}\end{DoxyParamCaption})}
+
+Dispatch the batch unless the given truth test passes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool | \textbackslash{}\+Closure & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a9a1866f95638c7d7e05384979db90a9d}\index{PendingBatch@{PendingBatch}!ensureJobIsBatchable@{ensureJobIsBatchable}}
+\index{ensureJobIsBatchable@{ensureJobIsBatchable}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{ensureJobIsBatchable()}{ensureJobIsBatchable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a9a1866f95638c7d7e05384979db90a9d} 
+ensure\+Job\+Is\+Batchable (\begin{DoxyParamCaption}\item[{object\texorpdfstring{$\vert$}{|}array}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the given job is batchable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | array & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a6f7ef6a0dd72abf21dd48a684c5bb01a}\index{PendingBatch@{PendingBatch}!finally@{finally}}
+\index{finally@{finally}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{finally()}{finally()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a6f7ef6a0dd72abf21dd48a684c5bb01a} 
+finally (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Add a callback to be executed after the batch has finished executing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a61b2146fed20881b2e85c0901ed14f27}\index{PendingBatch@{PendingBatch}!finallyCallbacks@{finallyCallbacks}}
+\index{finallyCallbacks@{finallyCallbacks}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{finallyCallbacks()}{finallyCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a61b2146fed20881b2e85c0901ed14f27} 
+finally\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the "{}finally"{} callbacks that have been registered with the pending batch.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_aacc7ea0fada1defae97e37d617865d39}\index{PendingBatch@{PendingBatch}!name@{name}}
+\index{name@{name}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_aacc7ea0fada1defae97e37d617865d39} 
+name (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Set the name for the batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a56b8824a2b04b3dfb48e6e169a8a8bba}\index{PendingBatch@{PendingBatch}!onConnection@{onConnection}}
+\index{onConnection@{onConnection}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{onConnection()}{onConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a56b8824a2b04b3dfb48e6e169a8a8bba} 
+on\+Connection (\begin{DoxyParamCaption}\item[{string}]{\$connection}{}\end{DoxyParamCaption})}
+
+Specify the queue connection that the batched jobs should run on.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ab667e9cdac7e8961d4f9d9fa0152ea7c}\index{PendingBatch@{PendingBatch}!onQueue@{onQueue}}
+\index{onQueue@{onQueue}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{onQueue()}{onQueue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ab667e9cdac7e8961d4f9d9fa0152ea7c} 
+on\+Queue (\begin{DoxyParamCaption}\item[{}]{\$queue}{}\end{DoxyParamCaption})}
+
+Specify the queue that the batched jobs should run on.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Unit\+Enum | string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ac8bef56bb52c97dd52d7cccea85d390f}\index{PendingBatch@{PendingBatch}!progress@{progress}}
+\index{progress@{progress}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{progress()}{progress()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ac8bef56bb52c97dd52d7cccea85d390f} 
+progress (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Add a callback to be executed after a job in the batch have executed successfully.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a63f1dd18ce9e50e16bd3cab195afdf80}\index{PendingBatch@{PendingBatch}!progressCallbacks@{progressCallbacks}}
+\index{progressCallbacks@{progressCallbacks}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{progressCallbacks()}{progressCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a63f1dd18ce9e50e16bd3cab195afdf80} 
+progress\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the "{}progress"{} callbacks that have been registered with the pending batch.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ae8b79ba88a610d47081602a758aac023}\index{PendingBatch@{PendingBatch}!queue@{queue}}
+\index{queue@{queue}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{queue()}{queue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ae8b79ba88a610d47081602a758aac023} 
+queue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the queue used by the pending batch.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a702e65b02bfa25646c6015d6aa56fdc3}\index{PendingBatch@{PendingBatch}!store@{store}}
+\index{store@{store}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a702e65b02bfa25646c6015d6aa56fdc3} 
+store (\begin{DoxyParamCaption}\item[{}]{\$repository}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Store the batch using the given repository.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository & {\em \$repository} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a628322b04e2ba2f2173afad8d09f81e4}\index{PendingBatch@{PendingBatch}!then@{then}}
+\index{then@{then}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{then()}{then()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a628322b04e2ba2f2173afad8d09f81e4} 
+then (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Add a callback to be executed after all jobs in the batch have executed successfully.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a67c9d4eccf992815d3cdf35c96406db1}\index{PendingBatch@{PendingBatch}!thenCallbacks@{thenCallbacks}}
+\index{thenCallbacks@{thenCallbacks}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{thenCallbacks()}{thenCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a67c9d4eccf992815d3cdf35c96406db1} 
+then\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the "{}then"{} callbacks that have been registered with the pending batch.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a347319656873ab3d85cde3e5c835a6f7}\index{PendingBatch@{PendingBatch}!withOption@{withOption}}
+\index{withOption@{withOption}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{withOption()}{withOption()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a347319656873ab3d85cde3e5c835a6f7} 
+with\+Option (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Add additional data into the batch\textquotesingle{}s options array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ae79f6f7bb30968dba6ee59009f36d1b1}\index{PendingBatch@{PendingBatch}!\$batchableClasses@{\$batchableClasses}}
+\index{\$batchableClasses@{\$batchableClasses}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{\$batchableClasses}{\$batchableClasses}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ae79f6f7bb30968dba6ee59009f36d1b1} 
+\$batchable\+Classes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ab97dd40df90f4ce6f0fce9091e7c7872}\index{PendingBatch@{PendingBatch}!\$container@{\$container}}
+\index{\$container@{\$container}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{\$container}{\$container}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ab97dd40df90f4ce6f0fce9091e7c7872} 
+\$container\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ac13ada6f351dcfe07322887ed53869ef}\index{PendingBatch@{PendingBatch}!\$jobs@{\$jobs}}
+\index{\$jobs@{\$jobs}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{\$jobs}{\$jobs}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ac13ada6f351dcfe07322887ed53869ef} 
+\$jobs}
+
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_ab2fc40d43824ea3e1ce5d86dee0d763b}\index{PendingBatch@{PendingBatch}!\$name@{\$name}}
+\index{\$name@{\$name}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{\$name}{\$name}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_ab2fc40d43824ea3e1ce5d86dee0d763b} 
+\$\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch_aacc7ea0fada1defae97e37d617865d39}{name}} = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_illuminate_1_1_bus_1_1_pending_batch_a011800c63ece4cbbfa77136a20607023}\index{PendingBatch@{PendingBatch}!\$options@{\$options}}
+\index{\$options@{\$options}!PendingBatch@{PendingBatch}}
+\doxysubsubsection{\texorpdfstring{\$options}{\$options}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_pending_batch_a011800c63ece4cbbfa77136a20607023} 
+\$options = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Bus/\mbox{\hyperlink{_pending_batch_8php}{Pending\+Batch.\+php}}\end{DoxyCompactItemize}

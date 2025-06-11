@@ -1,0 +1,4 @@
+var class_pest_1_1_logging_1_1_team_city_1_1_subscriber_1_1_test_suite_started_subscriber =
+[
+    [ "notify", "class_pest_1_1_logging_1_1_team_city_1_1_subscriber_1_1_test_suite_started_subscriber.html#aca90bb52b7138d42bddb19f1fcc4cdc7", null ]
+];

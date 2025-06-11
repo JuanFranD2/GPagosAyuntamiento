@@ -1,0 +1,64 @@
+\doxysection{Application\+Tester Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester}{}\label{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester}\index{ApplicationTester@{ApplicationTester}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester_a214135e7a27f05b1b5e9df176515f60c}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application}{Application}} \$application,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester_a63aa362f6161f246b8b39e25f0b57606}{run}} (array \$input, array \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Eases the testing of console applications.
+
+When testing an application, don\textquotesingle{}t forget to disable the auto exit flag\+: \begin{DoxyVerb}$application = new Application();
+$application->setAutoExit(false);
+\end{DoxyVerb}
+
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester_a214135e7a27f05b1b5e9df176515f60c}\index{ApplicationTester@{ApplicationTester}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ApplicationTester@{ApplicationTester}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester_a214135e7a27f05b1b5e9df176515f60c} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application}{Application}}}]{\$application}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester_a63aa362f6161f246b8b39e25f0b57606}\index{ApplicationTester@{ApplicationTester}!run@{run}}
+\index{run@{run}!ApplicationTester@{ApplicationTester}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_tester_1_1_application_tester_a63aa362f6161f246b8b39e25f0b57606} 
+run (\begin{DoxyParamCaption}\item[{array}]{\$input}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Executes the application.
+
+Available options\+:
+
+
+\begin{DoxyItemize}
+\item interactive\+: Sets the input interactive flag
+\item decorated\+: Sets the output decorated flag
+\item verbosity\+: Sets the output verbosity flag
+\item capture\+\_\+stderr\+\_\+separately\+: Make output of std\+Out and std\+Err separately available
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+int The command exit code 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/console/\+Tester/\mbox{\hyperlink{_application_tester_8php}{Application\+Tester.\+php}}\end{DoxyCompactItemize}

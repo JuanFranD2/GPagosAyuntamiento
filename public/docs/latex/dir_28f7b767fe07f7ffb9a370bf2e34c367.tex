@@ -1,0 +1,174 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/composer/pcre Directory Reference}
+\hypertarget{dir_28f7b767fe07f7ffb9a370bf2e34c367}{}\label{dir_28f7b767fe07f7ffb9a370bf2e34c367}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/composer/pcre Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/composer/pcre Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_2314917e95dad2f79e0bc7e4341c617d}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+PCRE wrapping library that offers type-\/safe {\ttfamily preg\+\_\+\texorpdfstring{$\ast$}{*}} replacements.
+
+This library gives you a way to ensure {\ttfamily preg\+\_\+\texorpdfstring{$\ast$}{*}} functions do not fail silently, returning unexpected {\ttfamily null}s that may not be handled.
+
+As of 3.\+0 this library enforces \`{}\+PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL\`{} usage for all matching and replace\+Callback functions, read more below to understand the implications.
+
+It thus makes it easier to work with static analysis tools like PHPStan or Psalm as it simplifies and reduces the possible return values from all the {\ttfamily preg\+\_\+\texorpdfstring{$\ast$}{*}} functions which are quite packed with edge cases. As of v2.\+2.\+0 / v3.\+2.\+0 the library also comes with a PHPStan extension for parsing regular expressions and giving you even better output types.
+
+This library is a thin wrapper around {\ttfamily preg\+\_\+\texorpdfstring{$\ast$}{*}} functions with some limitations. If you are looking for a richer API to handle regular expressions have a look at \href{https://packagist.org/packages/rawr/t-regx}{\texttt{rawr/t-\/regx}} instead.
+
+\href{https://github.com/composer/pcre/actions}{\texttt{}}\hypertarget{README.md_autotoc_md8764}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md8764}
+Install the latest version with\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ composer\ require\ composer/pcre}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md8765}{}\doxysubsection{\texorpdfstring{Requirements}{Requirements}}\label{README.md_autotoc_md8765}
+
+\begin{DoxyItemize}
+\item PHP 7.\+4.\+0 is required for 3.\+x versions
+\item PHP 7.\+2.\+0 is required for 2.\+x versions
+\item PHP 5.\+3.\+2 is required for 1.\+x versions
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md8766}{}\doxysubsection{\texorpdfstring{Basic usage}{Basic usage}}\label{README.md_autotoc_md8766}
+Instead of\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (preg\_match(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches))\ \{\ ...\ \}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (preg\_match(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches,\ PREG\_OFFSET\_CAPTURE))\ \{\ ...\ \}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (preg\_match\_all(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches))\ \{\ ...\ \}}
+\DoxyCodeLine{\$newString\ =\ preg\_replace(\textcolor{stringliteral}{'\{fo+\}'},\ \textcolor{stringliteral}{'bar'},\ \$string);}
+\DoxyCodeLine{\$newString\ =\ preg\_replace\_callback(\textcolor{stringliteral}{'\{fo+\}'},\ \textcolor{keyword}{function}\ (\$match)\ \{\ \textcolor{keywordflow}{return}\ strtoupper(\$match[0]);\ \},\ \$string);}
+\DoxyCodeLine{\$newString\ =\ preg\_replace\_callback\_array([\textcolor{stringliteral}{'\{fo+\}'}\ =>\ fn\ (\$match)\ =>\ strtoupper(\$match[0])],\ \$string);}
+\DoxyCodeLine{\$filtered\ =\ preg\_grep(\textcolor{stringliteral}{'\{[a-\/z]\}'},\ \$elements);}
+\DoxyCodeLine{\$array\ =\ preg\_split(\textcolor{stringliteral}{'\{[a-\/z]+\}'},\ \$string);}
+
+\end{DoxyCode}
+
+
+You can now call these on the {\ttfamily Preg} class\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg}{Composer\(\backslash\)Pcre\(\backslash\)Preg}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (Preg::match(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches))\ \{\ ...\ \}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (Preg::matchWithOffsets(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches))\ \{\ ...\ \}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (Preg::matchAll(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches))\ \{\ ...\ \}}
+\DoxyCodeLine{\$newString\ =\ Preg::replace(\textcolor{stringliteral}{'\{fo+\}'},\ \textcolor{stringliteral}{'bar'},\ \$string);}
+\DoxyCodeLine{\$newString\ =\ Preg::replaceCallback(\textcolor{stringliteral}{'\{fo+\}'},\ \textcolor{keyword}{function}\ (\$match)\ \{\ \textcolor{keywordflow}{return}\ strtoupper(\$match[0]);\ \},\ \$string);}
+\DoxyCodeLine{\$newString\ =\ Preg::replaceCallbackArray([\textcolor{stringliteral}{'\{fo+\}'}\ =>\ fn\ (\$match)\ =>\ strtoupper(\$match[0])],\ \$string);}
+\DoxyCodeLine{\$filtered\ =\ Preg::grep(\textcolor{stringliteral}{'\{[a-\/z]\}'},\ \$elements);}
+\DoxyCodeLine{\$array\ =\ Preg::split(\textcolor{stringliteral}{'\{[a-\/z]+\}'},\ \$string);}
+
+\end{DoxyCode}
+
+
+The main difference is if anything fails to match/replace/.., it will throw a {\ttfamily \doxylink{namespace_composer}{Composer}\textbackslash{}Pcre\textbackslash{}Pcre\+Exception} instead of returning {\ttfamily null} (or false in some cases), so you can now use the return values safely relying on the fact that they can only be strings (for replace), ints (for match) or arrays (for grep/split).
+
+Additionally the {\ttfamily Preg} class provides match methods that return {\ttfamily bool} rather than {\ttfamily int}, for stricter type safety when the number of pattern matches is not useful\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg}{Composer\(\backslash\)Pcre\(\backslash\)Preg}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (Preg::isMatch(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches))\ \textcolor{comment}{//\ bool}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (Preg::isMatchAll(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches))\ \textcolor{comment}{//\ bool}}
+
+\end{DoxyCode}
+
+
+Finally the {\ttfamily Preg} class provides a few {\ttfamily \texorpdfstring{$\ast$}{*}\+Strict\+Groups} method variants that ensure match groups are always present and thus non-\/nullable, making it easier to write type-\/safe code\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_composer_1_1_pcre_1_1_preg}{Composer\(\backslash\)Pcre\(\backslash\)Preg}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ \$matches\ is\ guaranteed\ to\ be\ an\ array\ of\ strings,\ if\ a\ subpattern\ does\ not\ match\ and\ produces\ a\ null\ it\ will\ throw}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (Preg::matchStrictGroups(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches))}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (Preg::matchAllStrictGroups(\textcolor{stringliteral}{'\{fo+\}'},\ \$string,\ \$matches))}
+
+\end{DoxyCode}
+
+
+{\bfseries{Note\+:}} This is generally safe to use as long as you do not have optional subpatterns (i.\+e. {\ttfamily (something)?} or {\ttfamily (something)\texorpdfstring{$\ast$}{*}} or branches with a {\ttfamily \texorpdfstring{$\vert$}{|}} that result in some groups not being matched at all). A subpattern that can match an empty string like {\ttfamily (.\texorpdfstring{$\ast$}{*})} is {\bfseries{not}} optional, it will be present as an empty string in the matches. A non-\/matching subpattern, even if optional like {\ttfamily (?\+:foo)?} will anyway not be present in matches so it is also not a problem to use these with {\ttfamily \texorpdfstring{$\ast$}{*}\+Strict\+Groups} methods.
+
+If you would prefer a slightly more verbose usage, replacing by-\/ref arguments by result objects, you can use the {\ttfamily Regex} class\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_composer_1_1_pcre_1_1_regex}{Composer\(\backslash\)Pcre\(\backslash\)Regex}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ this\ is\ useful\ when\ you\ are\ just\ interested\ in\ knowing\ if\ something\ matched}}
+\DoxyCodeLine{\textcolor{comment}{//\ as\ it\ returns\ a\ bool\ instead\ of\ int(1/0)\ for\ match}}
+\DoxyCodeLine{\$bool\ =\ Regex::isMatch(\textcolor{stringliteral}{'\{fo+\}'},\ \$string);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$result\ =\ Regex::match(\textcolor{stringliteral}{'\{fo+\}'},\ \$string);}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (\$result-\/>matched)\ \{\ \mbox{\hyperlink{laravel_2breeze_2stubs_2api_2pest-tests_2_pest_8php_afcdc764190fe985e2bcfddaad80973a8}{something}}(\$result-\/>matches);\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$result\ =\ Regex::matchWithOffsets(\textcolor{stringliteral}{'\{fo+\}'},\ \$string);}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (\$result-\/>matched)\ \{\ \mbox{\hyperlink{laravel_2breeze_2stubs_2api_2pest-tests_2_pest_8php_afcdc764190fe985e2bcfddaad80973a8}{something}}(\$result-\/>matches);\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$result\ =\ Regex::matchAll(\textcolor{stringliteral}{'\{fo+\}'},\ \$string);}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (\$result-\/>matched\ \&\&\ \$result-\/>count\ >\ 3)\ \{\ \mbox{\hyperlink{laravel_2breeze_2stubs_2api_2pest-tests_2_pest_8php_afcdc764190fe985e2bcfddaad80973a8}{something}}(\$result-\/>matches);\ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$newString\ =\ Regex::replace(\textcolor{stringliteral}{'\{fo+\}'},\ \textcolor{stringliteral}{'bar'},\ \$string)-\/>result;}
+\DoxyCodeLine{\$newString\ =\ Regex::replaceCallback(\textcolor{stringliteral}{'\{fo+\}'},\ \textcolor{keyword}{function}\ (\$match)\ \{\ \textcolor{keywordflow}{return}\ strtoupper(\$match[0]);\ \},\ \$string)-\/>result;}
+\DoxyCodeLine{\$newString\ =\ Regex::replaceCallbackArray([\textcolor{stringliteral}{'\{fo+\}'}\ =>\ fn\ (\$match)\ =>\ strtoupper(\$match[0])],\ \$string)-\/>result;}
+
+\end{DoxyCode}
+
+
+Note that {\ttfamily preg\+\_\+grep} and {\ttfamily preg\+\_\+split} are only callable via the {\ttfamily Preg} class as they do not have complex return types warranting a specific result object.
+
+See the \href{src/MatchResult.php}{\texttt{Match\+Result}}, \href{src/MatchWithOffsetsResult.php}{\texttt{Match\+With\+Offsets\+Result}}, \href{src/MatchAllResult.php}{\texttt{Match\+All\+Result}}, \href{src/MatchAllWithOffsetsResult.php}{\texttt{Match\+All\+With\+Offsets\+Result}}, and \href{src/ReplaceResult.php}{\texttt{Replace\+Result}} class sources for more details.\hypertarget{README.md_autotoc_md8767}{}\doxysubsection{\texorpdfstring{Restrictions / Limitations}{Restrictions / Limitations}}\label{README.md_autotoc_md8767}
+Due to type safety requirements a few restrictions are in place.
+
+
+\begin{DoxyItemize}
+\item matching using {\ttfamily PREG\+\_\+\+OFFSET\+\_\+\+CAPTURE} is made available via {\ttfamily match\+With\+Offsets} and {\ttfamily match\+All\+With\+Offsets}. You cannot pass the flag to {\ttfamily match}/{\ttfamily match\+All}.
+\item {\ttfamily Preg\+::split} will also reject {\ttfamily PREG\+\_\+\+SPLIT\+\_\+\+OFFSET\+\_\+\+CAPTURE} and you should use {\ttfamily split\+With\+Offsets} instead.
+\item {\ttfamily match\+All} rejects {\ttfamily PREG\+\_\+\+SET\+\_\+\+ORDER} as it also changes the shape of the returned matches. There is no alternative provided as you can fairly easily code around it.
+\item {\ttfamily preg\+\_\+filter} is not supported as it has a rather crazy API, most likely you should rather use {\ttfamily Preg\+::grep} in combination with some loop and {\ttfamily Preg\+::replace}.
+\item {\ttfamily replace}, {\ttfamily replace\+Callback} and {\ttfamily replace\+Callback\+Array} do not support an array {\ttfamily \$subject}, only simple strings.
+\item As of 2.\+0, the library always uses {\ttfamily PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL} for matching, which offers much saner/more predictable results. As of 3.\+0 the flag is also set for {\ttfamily replace\+Callback} and {\ttfamily replace\+Callback\+Array}.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md8768}{}\doxysubsubsubsection{\texorpdfstring{PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL}{PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL}}\label{README.md_autotoc_md8768}
+As of 2.\+0, this library always uses PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL for all {\ttfamily match\texorpdfstring{$\ast$}{*}} and {\ttfamily is\+Match\texorpdfstring{$\ast$}{*}} functions. As of 3.\+0 it is also done for {\ttfamily replace\+Callback} and {\ttfamily replace\+Callback\+Array}.
+
+This means your matches will always contain all matching groups, either as null if unmatched or as string if it matched.
+
+The advantages in clarity and predictability are clearer if you compare the two outputs of running this with and without PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL in \$flags\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{preg\_match(\textcolor{stringliteral}{'/(a)(b)*(c)(d)*/'},\ \textcolor{stringliteral}{'ac'},\ \$matches,\ \$flags);}
+
+\end{DoxyCode}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ no flag  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ no flag  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ PREG\+\_\+\+UNMATCHED\+\_\+\+AS\+\_\+\+NULL  }\\\cline{1-2}
+\endhead
+array (size=4)  &array (size=5)  \\\cline{1-2}
+0 =\texorpdfstring{$>$}{>} string \textquotesingle{}ac\textquotesingle{} (length=2)  &0 =\texorpdfstring{$>$}{>} string \textquotesingle{}ac\textquotesingle{} (length=2)  \\\cline{1-2}
+1 =\texorpdfstring{$>$}{>} string \textquotesingle{}a\textquotesingle{} (length=1)  &1 =\texorpdfstring{$>$}{>} string \textquotesingle{}a\textquotesingle{} (length=1)  \\\cline{1-2}
+2 =\texorpdfstring{$>$}{>} string \textquotesingle{}\textquotesingle{} (length=0)  &2 =\texorpdfstring{$>$}{>} null  \\\cline{1-2}
+3 =\texorpdfstring{$>$}{>} string \textquotesingle{}c\textquotesingle{} (length=1)  &3 =\texorpdfstring{$>$}{>} string \textquotesingle{}c\textquotesingle{} (length=1)  \\\cline{1-2}
+&4 =\texorpdfstring{$>$}{>} null  \\\cline{1-2}
+group 2 (any unmatched group preceding one that matched) is set to `'\textquotesingle{}{\ttfamily . You cannot tell if it matched an empty string or did not match at all \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} group 2 is }null{\ttfamily  when unmatched and a string if it matched, easy to check for \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}/tr\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}tr class="{}markdown\+Table\+Row\+Even"{}\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} group 4 (any optional group without a matching one following) is missing altogether. So you have to check with }isset(){\ttfamily , but really you want }isset(\$m\mbox{[}4\mbox{]}) \&\& \$m\mbox{[}4\mbox{]} !== \textquotesingle{}\textquotesingle{}{\ttfamily  for safety unless you are very careful to check that a non-\/optional group follows it \textbackslash{}ilinebr \texorpdfstring{$<$}{<}/td\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}td class="{}markdown\+Table\+Body\+None"{}\texorpdfstring{$>$}{>} group 4 is always set, and null in this case as there was no match, easy to check for with }\$m\mbox{[}4\mbox{]} !== null\`{}  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{README.md_autotoc_md8769}{}\doxysubsection{\texorpdfstring{PHPStan Extension}{PHPStan Extension}}\label{README.md_autotoc_md8769}
+To use the PHPStan extension if you do not use {\ttfamily phpstan/extension-\/installer} you can include {\ttfamily vendor/composer/pcre/extension.\+neon} in your PHPStan config.
+
+The extension provides much better type information for \$matches as well as regex validation where possible.\hypertarget{README.md_autotoc_md8770}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md8770}
+composer/pcre is licensed under the MIT License, see the LICENSE file for details. 

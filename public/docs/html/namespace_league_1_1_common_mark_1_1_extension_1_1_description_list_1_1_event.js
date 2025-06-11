@@ -1,0 +1,5 @@
+var namespace_league_1_1_common_mark_1_1_extension_1_1_description_list_1_1_event =
+[
+    [ "ConsecutiveDescriptionListMerger", "class_league_1_1_common_mark_1_1_extension_1_1_description_list_1_1_event_1_1_consecutive_description_list_merger.html", "class_league_1_1_common_mark_1_1_extension_1_1_description_list_1_1_event_1_1_consecutive_description_list_merger" ],
+    [ "LooseDescriptionHandler", "class_league_1_1_common_mark_1_1_extension_1_1_description_list_1_1_event_1_1_loose_description_handler.html", "class_league_1_1_common_mark_1_1_extension_1_1_description_list_1_1_event_1_1_loose_description_handler" ]
+];

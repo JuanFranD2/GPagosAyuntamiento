@@ -1,0 +1,115 @@
+\doxysection{Converter Class Reference}
+\hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter}{}\label{class_league_1_1_uri_1_1_i_pv4_1_1_converter}\index{Converter@{Converter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a052cb78a94338f180e03d113b32e0e39}{\+\_\+\+\_\+construct}} (private readonly \mbox{\hyperlink{interface_league_1_1_uri_1_1_i_pv4_1_1_calculator}{Calculator}} \$calculator)
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a9a275c4e550117eafacc4f326c298f98}{is\+Ipv4}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$host)
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a06dffbef84c34f20b5556f0fef63bbc6}{to\+IPv6\+Using\+Mapping}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$host)
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a44823cdc5247b93437ec6a14a21f0605}{to\+Octal}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$host)
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_ad8f969d0b76d1196788c5d07412d9cbd}{to\+Hexadecimal}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$host)
+\item 
+\mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_ac28f38c64ab514a664a94b188f8906f1}{to\+Decimal}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$host)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_ac06e178ea519f2aa9c440fa577f0dc98}{from\+GMP}} ()
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a14ab3bf67aa99fb97fd0186a09ed0f9a}{from\+BCMath}} ()
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a42a0f1a3be3b577b50f58217a120940f}{from\+Native}} ()
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a1f712fb66470356a672dfee134cd9d29}{from\+Environment}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a052cb78a94338f180e03d113b32e0e39}\index{Converter@{Converter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a052cb78a94338f180e03d113b32e0e39} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly \mbox{\hyperlink{interface_league_1_1_uri_1_1_i_pv4_1_1_calculator}{Calculator}}}]{\$calculator}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a14ab3bf67aa99fb97fd0186a09ed0f9a}\index{Converter@{Converter}!fromBCMath@{fromBCMath}}
+\index{fromBCMath@{fromBCMath}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{fromBCMath()}{fromBCMath()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a14ab3bf67aa99fb97fd0186a09ed0f9a} 
+from\+BCMath (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an instance using a Bcmath calculator. \Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a1f712fb66470356a672dfee134cd9d29}\index{Converter@{Converter}!fromEnvironment@{fromEnvironment}}
+\index{fromEnvironment@{fromEnvironment}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{fromEnvironment()}{fromEnvironment()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a1f712fb66470356a672dfee134cd9d29} 
+from\+Environment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an instance using a detected calculator depending on the PHP environment.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Missing\+Feature} & If no Calculator implementing object can be used on the platform\\
+\hline
+\end{DoxyExceptions}
+@code\+Coverage\+Ignore \Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_ac06e178ea519f2aa9c440fa577f0dc98}\index{Converter@{Converter}!fromGMP@{fromGMP}}
+\index{fromGMP@{fromGMP}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{fromGMP()}{fromGMP()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_ac06e178ea519f2aa9c440fa577f0dc98} 
+from\+GMP (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an instance using a GMP calculator. \Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a42a0f1a3be3b577b50f58217a120940f}\index{Converter@{Converter}!fromNative@{fromNative}}
+\index{fromNative@{fromNative}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{fromNative()}{fromNative()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a42a0f1a3be3b577b50f58217a120940f} 
+from\+Native (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an instance using a PHP native calculator (requires 64bits PHP). \Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a9a275c4e550117eafacc4f326c298f98}\index{Converter@{Converter}!isIpv4@{isIpv4}}
+\index{isIpv4@{isIpv4}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{isIpv4()}{isIpv4()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a9a275c4e550117eafacc4f326c298f98} 
+is\+Ipv4 (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$host}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_ac28f38c64ab514a664a94b188f8906f1}\index{Converter@{Converter}!toDecimal@{toDecimal}}
+\index{toDecimal@{toDecimal}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{toDecimal()}{toDecimal()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_ac28f38c64ab514a664a94b188f8906f1} 
+to\+Decimal (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$host}{}\end{DoxyParamCaption})}
+
+Tries to convert a IPv4 hexadecimal or a IPv4 octal notation into a IPv4 dot-\/decimal notation if possible otherwise returns null.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://url.spec.whatwg.org/\#concept-ipv4-parser}{\texttt{https\+://url.\+spec.\+whatwg.\+org/\#concept-\/ipv4-\/parser}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_ad8f969d0b76d1196788c5d07412d9cbd}\index{Converter@{Converter}!toHexadecimal@{toHexadecimal}}
+\index{toHexadecimal@{toHexadecimal}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{toHexadecimal()}{toHexadecimal()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_ad8f969d0b76d1196788c5d07412d9cbd} 
+to\+Hexadecimal (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$host}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a06dffbef84c34f20b5556f0fef63bbc6}\index{Converter@{Converter}!toIPv6UsingMapping@{toIPv6UsingMapping}}
+\index{toIPv6UsingMapping@{toIPv6UsingMapping}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{toIPv6UsingMapping()}{toIPv6UsingMapping()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a06dffbef84c34f20b5556f0fef63bbc6} 
+to\+IPv6\+Using\+Mapping (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$host}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a44823cdc5247b93437ec6a14a21f0605}\index{Converter@{Converter}!toOctal@{toOctal}}
+\index{toOctal@{toOctal}!Converter@{Converter}}
+\doxysubsubsection{\texorpdfstring{toOctal()}{toOctal()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_i_pv4_1_1_converter_a44823cdc5247b93437ec6a14a21f0605} 
+to\+Octal (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$host}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/league/uri-\/interfaces/\+IPv4/\mbox{\hyperlink{league_2uri-interfaces_2_i_pv4_2_converter_8php}{Converter.\+php}}\end{DoxyCompactItemize}

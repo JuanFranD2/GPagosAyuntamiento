@@ -1,0 +1,128 @@
+\doxysection{Xcallable Class Reference}
+\hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable}{}\label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable}\index{Xcallable@{Xcallable}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_ac114e19b994f363444189d5ba0af1f3e}{\+\_\+\+\_\+construct}} (\$call, \$able=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a05090b522aa9b9a1d1424a71e8df2458}{\+\_\+\+\_\+invoke}} (... \$arguments)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a827c19ba888230ea1dcfe098332dbb4b}{get\+Valid\+Callback}} (array \&\$arguments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a10220afb27800deb78f48b4698a74742}{get\+Hash}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a74459492bb448c43875717c61140ba6b}{from}} (\$call, \$able=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a225c35e9ec50b839420fa144cdb0e84d}{\$\+\_\+callback}} = null
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a78be0798419383c61d92d75d7f2b3e98}{\$\+\_\+hash}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Build a callable object, i.\+e. {\ttfamily function}, {\ttfamily class\+::method}, {\ttfamily object-\/\texorpdfstring{$>$}{>}method} or closure. They all have the same behaviour. This callable is an extension of native PHP callable (aka callback) to integrate Hoa\textquotesingle{}s structures. 
+
+\label{doc-constructors}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_ac114e19b994f363444189d5ba0af1f3e}\index{Xcallable@{Xcallable}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Xcallable@{Xcallable}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_ac114e19b994f363444189d5ba0af1f3e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$call}{, }\item[{}]{\$able}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Allocates a xcallable based on a callback.
+
+Accepted forms\+:
+\begin{DoxyItemize}
+\item `\textquotesingle{}function'{\ttfamily ,}
+\item {\ttfamily }\textquotesingle{}class\+::method\textquotesingle{}{\ttfamily ,}
+\item {\ttfamily }\textquotesingle{}class\textquotesingle{}, \textquotesingle{}method\textquotesingle{}{\ttfamily ,}
+\item {\ttfamily }\$object, \textquotesingle{}method\textquotesingle{}{\ttfamily ,}
+\item {\ttfamily }\$object, \textquotesingle{}\textquotesingle{}{\ttfamily ,}
+\item {\ttfamily }function (…) \{ … \}{\ttfamily ,}
+\item {\ttfamily }\mbox{[}\textquotesingle{}class\textquotesingle{}, \textquotesingle{}method\textquotesingle{}\mbox{]}{\ttfamily ,}
+\item {\ttfamily }\mbox{[}\$object, \textquotesingle{}method\textquotesingle{}\mbox{]}\`{}.
+\end{DoxyItemize}\hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_autotoc_md10434}{}\doxysubsection{\texorpdfstring{Examples}{Examples}}\label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_autotoc_md10434}
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_autotoc_md10435}{}\doxysubsection{\texorpdfstring{Exceptions}{Exceptions}}\label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_autotoc_md10435}
+A {\ttfamily Hoa\textbackslash{}Consistency\textbackslash{}Exception} exception is thrown if the callback form is invalid.
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a05090b522aa9b9a1d1424a71e8df2458}\index{Xcallable@{Xcallable}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!Xcallable@{Xcallable}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a05090b522aa9b9a1d1424a71e8df2458} 
+\+\_\+\+\_\+invoke (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Calls the callable. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a7516ca30af0db3cdbf9a7739b48ce91d}\index{Xcallable@{Xcallable}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Xcallable@{Xcallable}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+The string representation of a callable is its hash. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a74459492bb448c43875717c61140ba6b}\index{Xcallable@{Xcallable}!from@{from}}
+\index{from@{from}!Xcallable@{Xcallable}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a74459492bb448c43875717c61140ba6b} 
+from (\begin{DoxyParamCaption}\item[{}]{\$call}{, }\item[{}]{\$able}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Hoa\textquotesingle{}s xcallable() helper. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a10220afb27800deb78f48b4698a74742}\index{Xcallable@{Xcallable}!getHash@{getHash}}
+\index{getHash@{getHash}!Xcallable@{Xcallable}}
+\doxysubsubsection{\texorpdfstring{getHash()}{getHash()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a10220afb27800deb78f48b4698a74742} 
+get\+Hash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Computes the hash of this callable.
+
+Will produce\+:
+\begin{DoxyItemize}
+\item {\ttfamily function\#…},
+\item {\ttfamily class\#…\+::…},
+\item {\ttfamily object(…)\#…\+::…},
+\item {\ttfamily closure(…)}. 
+\end{DoxyItemize}\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a827c19ba888230ea1dcfe098332dbb4b}\index{Xcallable@{Xcallable}!getValidCallback@{getValidCallback}}
+\index{getValidCallback@{getValidCallback}!Xcallable@{Xcallable}}
+\doxysubsubsection{\texorpdfstring{getValidCallback()}{getValidCallback()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a827c19ba888230ea1dcfe098332dbb4b} 
+get\+Valid\+Callback (\begin{DoxyParamCaption}\item[{array \&}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Returns a valid PHP callback. 
+
+\label{doc-variable-members}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a225c35e9ec50b839420fa144cdb0e84d}\index{Xcallable@{Xcallable}!\$\_callback@{\$\_callback}}
+\index{\$\_callback@{\$\_callback}!Xcallable@{Xcallable}}
+\doxysubsubsection{\texorpdfstring{\$\_callback}{\$\_callback}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a225c35e9ec50b839420fa144cdb0e84d} 
+\$\+\_\+callback = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Callback with the PHP format. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a78be0798419383c61d92d75d7f2b3e98}\index{Xcallable@{Xcallable}!\$\_hash@{\$\_hash}}
+\index{\$\_hash@{\$\_hash}!Xcallable@{Xcallable}}
+\doxysubsubsection{\texorpdfstring{\$\_hash}{\$\_hash}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_xcallable_a78be0798419383c61d92d75d7f2b3e98} 
+\$\+\_\+hash = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Callable hash. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Readline/\+Hoa/\mbox{\hyperlink{_xcallable_8php}{Xcallable.\+php}}\end{DoxyCompactItemize}

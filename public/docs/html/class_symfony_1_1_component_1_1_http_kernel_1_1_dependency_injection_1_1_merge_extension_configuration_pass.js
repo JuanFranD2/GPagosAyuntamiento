@@ -1,0 +1,5 @@
+var class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_merge_extension_configuration_pass =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_merge_extension_configuration_pass.html#ae02dcce52d17e2e958f6f44a5acf235e", null ],
+    [ "process", "class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_merge_extension_configuration_pass.html#adef3899ca00d6a8d23b6e6b2db40e456", null ]
+];

@@ -1,0 +1,25 @@
+var _builds_queries_8php =
+[
+    [ "Illuminate\\Database\\Concerns\\chunk", "namespace_illuminate_1_1_database_1_1_concerns.html#a2f69b852143529f0c599dc6a7f2c983c", null ],
+    [ "Illuminate\\Database\\Concerns\\chunkById", "namespace_illuminate_1_1_database_1_1_concerns.html#a0419d82809c8385f3a60d9de797b1701", null ],
+    [ "Illuminate\\Database\\Concerns\\chunkByIdDesc", "namespace_illuminate_1_1_database_1_1_concerns.html#ac96dc057e52e2a3bd10982959a8a81fa", null ],
+    [ "Illuminate\\Database\\Concerns\\chunkMap", "namespace_illuminate_1_1_database_1_1_concerns.html#a501fc9570ddf5836e1561fb33c4cfba0", null ],
+    [ "Illuminate\\Database\\Concerns\\cursorPaginator", "namespace_illuminate_1_1_database_1_1_concerns.html#a7a225867010d193f4abd930f77b53a1e", null ],
+    [ "Illuminate\\Database\\Concerns\\each", "namespace_illuminate_1_1_database_1_1_concerns.html#ac5bdddcb80753e4058205f3d67cc9bd2", null ],
+    [ "Illuminate\\Database\\Concerns\\eachById", "namespace_illuminate_1_1_database_1_1_concerns.html#ab0fc19897d93b1638721beb5b0b73084", null ],
+    [ "Illuminate\\Database\\Concerns\\first", "namespace_illuminate_1_1_database_1_1_concerns.html#a1237563aedbde148c7c54f9b4141856d", null ],
+    [ "Illuminate\\Database\\Concerns\\firstOrFail", "namespace_illuminate_1_1_database_1_1_concerns.html#a9f81fd574d046e51af62d80b320bca1e", null ],
+    [ "Illuminate\\Database\\Concerns\\getOriginalColumnNameForCursorPagination", "namespace_illuminate_1_1_database_1_1_concerns.html#a362863783b0c0d3efa6fdfe772b0e803", null ],
+    [ "Illuminate\\Database\\Concerns\\lazy", "namespace_illuminate_1_1_database_1_1_concerns.html#a829ed29a7040ada9255bd922ed60f2c7", null ],
+    [ "Illuminate\\Database\\Concerns\\lazyById", "namespace_illuminate_1_1_database_1_1_concerns.html#a453f4d19efd72b43a3e851507dc87ed3", null ],
+    [ "Illuminate\\Database\\Concerns\\lazyByIdDesc", "namespace_illuminate_1_1_database_1_1_concerns.html#a289cbed30642bee8c71d1af09dda3843", null ],
+    [ "Illuminate\\Database\\Concerns\\orderedChunkById", "namespace_illuminate_1_1_database_1_1_concerns.html#a1cfd2dc088d176be595820471886ae7c", null ],
+    [ "Illuminate\\Database\\Concerns\\orderedLazyById", "namespace_illuminate_1_1_database_1_1_concerns.html#a45ef1b30c413be6187dadba68905a021", null ],
+    [ "Illuminate\\Database\\Concerns\\paginateUsingCursor", "namespace_illuminate_1_1_database_1_1_concerns.html#aa652604b61cc24235bacc4d7d66dfbb3", null ],
+    [ "Illuminate\\Database\\Concerns\\paginator", "namespace_illuminate_1_1_database_1_1_concerns.html#a7aa9f6876430857eb83b841f64c93bf8", null ],
+    [ "Illuminate\\Database\\Concerns\\pipe", "namespace_illuminate_1_1_database_1_1_concerns.html#ac3d1db786cc6e8f2ff16b4b00d0e2a31", null ],
+    [ "Illuminate\\Database\\Concerns\\simplePaginator", "namespace_illuminate_1_1_database_1_1_concerns.html#af5af8795f70210173c997e0186367fd5", null ],
+    [ "Illuminate\\Database\\Concerns\\sole", "namespace_illuminate_1_1_database_1_1_concerns.html#aed257c71fd25561097fe13a66c0a8660", null ],
+    [ "Illuminate\\Database\\Concerns\\tap", "namespace_illuminate_1_1_database_1_1_concerns.html#a44730c3ed702baf07d0d420c35c44e51", null ],
+    [ "Illuminate\\Database\\Concerns\\BuildsQueries", "namespace_illuminate_1_1_database_1_1_concerns.html#a9fdf36dc0a6376ddd58348e7f31b809f", null ]
+];

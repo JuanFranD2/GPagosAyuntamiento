@@ -1,0 +1,274 @@
+\doxysection{Table\+Command Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command}{}\label{class_illuminate_1_1_database_1_1_console_1_1_table_command}\index{TableCommand@{TableCommand}}
+Inheritance diagram for Table\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_illuminate_1_1_database_1_1_console_1_1_table_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_a9a146f7356f57b645c82284457e48760}{handle}} (\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_resolver_interface}{Connection\+Resolver\+Interface}} \$connections)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acc17fc4b2880856deb16661a443fe08e}{run}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a645d49a93702949a651360c7bdc0a0b0}{fail}} (Throwable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$exception=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acbd42dc98fc1c0649ae7b1aeaf842b3d}{is\+Hidden}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a352b564237d3f16ca19a07d6ac036196}{set\+Hidden}} (bool \$hidden=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aab7aca3854218cb065a030769a143418}{get\+Laravel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a94bbb27e66c6b8dafd84410ede30c6af}{set\+Laravel}} (\$laravel)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_acba6dc8fde375be11cef46788523caf7}{columns}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_builder}{Builder}} \$schema, string \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_a31a5f69791da06f22d5fc25fed756f38}{get\+Attributes\+For\+Column}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_a2fd0f41114a8e0d0731a59637d52f71d}{indexes}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_builder}{Builder}} \$schema, string \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_ad2ce8f2758bcf1eadbea36871782bb45}{get\+Attributes\+For\+Index}} (\$index)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_a046a7e1b0e235082d37639b4f8bbc2bf}{foreign\+Keys}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_builder}{Builder}} \$schema, string \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_abb245ff75c7d44690c537b8a43e58edf}{display}} (array \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_acd0637340c499066bb4c0f257b82a8b7}{display\+Json}} (array \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_ae62f1a9830cc524df8a48ba8be519a96}{display\+For\+Cli}} (array \$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_database_inspection_command}{Database\+Inspection\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_database_inspection_command_a38ce61a7b68971237feef9988fbc255f}{get\+Connection\+Name}} (\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$connection, \$database)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_database_inspection_command_a2c3dbb5b0693ecaf4b441446e614cd11}{get\+Connection\+Count}} (\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$connection)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_database_inspection_command_a91327d2704d4865896f9e2953b1c73a8}{get\+Config\+From\+Database}} (\$database)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aef18ba6dc42644207c37bf5de362a4bd}{configure\+Using\+Fluent\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a05e39d241c3e3400b03d3b63dfbd8929}{configure\+Isolation}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab31c72b72ddaf7116db5d84c055d3c0b}{execute}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac8094b40d2f975480f91e5a3b7040769}{command\+Isolation\+Mutex}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac1aba88abc23023836393a7f4ea231ca}{resolve\+Command}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_table_command_a87b032cba06009e3467abf1c8018d960}{\$description}} = \textquotesingle{}Display information about the given database table\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a2483b0a3df07768a50dd53f90fd7ae4b}{\$laravel}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a87b032cba06009e3467abf1c8018d960}{\$description}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ae8c606891eb7e59cb0674a2dd63c5498}{\$help}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a4a374564d2858d8ae869a8fb890aad56}{\$hidden}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a568541fc9a0d312709894fe344c5aa13}{\$isolated}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a11ba5862b76c657e950bdde51f6e54b0}{\$isolated\+Exit\+Code}} = self\+::\+SUCCESS
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a7e6d29edbd9ec5d8ec9d478cf98fba03}{\$aliases}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_acba6dc8fde375be11cef46788523caf7}\index{TableCommand@{TableCommand}!columns@{columns}}
+\index{columns@{columns}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{columns()}{columns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_acba6dc8fde375be11cef46788523caf7} 
+columns (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_builder}{Builder}}}]{\$schema}{, }\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the information regarding the table\textquotesingle{}s columns.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Builder & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_abb245ff75c7d44690c537b8a43e58edf}\index{TableCommand@{TableCommand}!display@{display}}
+\index{display@{display}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_abb245ff75c7d44690c537b8a43e58edf} 
+display (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Render the table information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_ae62f1a9830cc524df8a48ba8be519a96}\index{TableCommand@{TableCommand}!displayForCli@{displayForCli}}
+\index{displayForCli@{displayForCli}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{displayForCli()}{displayForCli()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_ae62f1a9830cc524df8a48ba8be519a96} 
+display\+For\+Cli (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Render the table information formatted for the CLI.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_acd0637340c499066bb4c0f257b82a8b7}\index{TableCommand@{TableCommand}!displayJson@{displayJson}}
+\index{displayJson@{displayJson}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{displayJson()}{displayJson()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_acd0637340c499066bb4c0f257b82a8b7} 
+display\+Json (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Render the table information as JSON.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_a046a7e1b0e235082d37639b4f8bbc2bf}\index{TableCommand@{TableCommand}!foreignKeys@{foreignKeys}}
+\index{foreignKeys@{foreignKeys}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{foreignKeys()}{foreignKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_a046a7e1b0e235082d37639b4f8bbc2bf} 
+foreign\+Keys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_builder}{Builder}}}]{\$schema}{, }\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the information regarding the table\textquotesingle{}s foreign keys.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Builder & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_a31a5f69791da06f22d5fc25fed756f38}\index{TableCommand@{TableCommand}!getAttributesForColumn@{getAttributesForColumn}}
+\index{getAttributesForColumn@{getAttributesForColumn}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{getAttributesForColumn()}{getAttributesForColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_a31a5f69791da06f22d5fc25fed756f38} 
+get\+Attributes\+For\+Column (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the attributes for a table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_ad2ce8f2758bcf1eadbea36871782bb45}\index{TableCommand@{TableCommand}!getAttributesForIndex@{getAttributesForIndex}}
+\index{getAttributesForIndex@{getAttributesForIndex}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{getAttributesForIndex()}{getAttributesForIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_ad2ce8f2758bcf1eadbea36871782bb45} 
+get\+Attributes\+For\+Index (\begin{DoxyParamCaption}\item[{}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the attributes for a table index.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_a9a146f7356f57b645c82284457e48760}\index{TableCommand@{TableCommand}!handle@{handle}}
+\index{handle@{handle}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_a9a146f7356f57b645c82284457e48760} 
+handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_resolver_interface}{Connection\+Resolver\+Interface}}}]{\$connections}{}\end{DoxyParamCaption})}
+
+Execute the console command.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_a2fd0f41114a8e0d0731a59637d52f71d}\index{TableCommand@{TableCommand}!indexes@{indexes}}
+\index{indexes@{indexes}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{indexes()}{indexes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_a2fd0f41114a8e0d0731a59637d52f71d} 
+indexes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_builder}{Builder}}}]{\$schema}{, }\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the information regarding the table\textquotesingle{}s indexes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Builder & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_a87b032cba06009e3467abf1c8018d960}\index{TableCommand@{TableCommand}!\$description@{\$description}}
+\index{\$description@{\$description}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{\$description}{\$description}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_a87b032cba06009e3467abf1c8018d960} 
+\$description = \textquotesingle{}Display information about the given database table\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_table_command_a8f34ca1e46a621ab10a3a40addb794f5}\index{TableCommand@{TableCommand}!\$signature@{\$signature}}
+\index{\$signature@{\$signature}!TableCommand@{TableCommand}}
+\doxysubsubsection{\texorpdfstring{\$signature}{\$signature}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_table_command_a8f34ca1e46a621ab10a3a40addb794f5} 
+\$signature\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Console/\mbox{\hyperlink{_database_2_console_2_table_command_8php}{Table\+Command.\+php}}\end{DoxyCompactItemize}

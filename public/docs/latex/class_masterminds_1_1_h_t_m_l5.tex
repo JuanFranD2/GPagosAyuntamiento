@@ -1,0 +1,264 @@
+\doxysection{HTML5 Class Reference}
+\hypertarget{class_masterminds_1_1_h_t_m_l5}{}\label{class_masterminds_1_1_h_t_m_l5}\index{HTML5@{HTML5}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_afe67dd5773f4808bb94a58d833a8c88d}{\+\_\+\+\_\+construct}} (array \$default\+Options=array())
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_a1a49b8dded6e91a52e2fd07195d334da}{get\+Options}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_aec4355fd7bab4e362b13f49443204bbb}{load}} (\$file, array \$options=array())
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_ab88a13a119926490e9024b39b7b2480d}{load\+HTML}} (\$string, array \$options=array())
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_a9a49f79fb4bf8c85cf1e151c5d377368}{load\+HTMLFile}} (\$file, array \$options=array())
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_aca2734d6aa02be9d655e4c049ab2989c}{load\+HTMLFragment}} (\$string, array \$options=array())
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_a6e548ebf2656742bfd19939ead923ed2}{get\+Errors}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_aada71735dcc56f4cae3b82c55e090e8d}{has\+Errors}} ()
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_aa24ff88f51df4b6d336c34e875fbc028}{parse}} (\$input, array \$options=array())
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_a65b390c9191afbace41644c38321ee6b}{parse\+Fragment}} (\$input, array \$options=array())
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_ad131825a839b96333f8ee7a5b251e10c}{save}} (\$dom, \$file, \$options=array())
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_af108ced4fcb1cb34dd4c8d2a7df67728}{save\+HTML}} (\$dom, \$options=array())
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_masterminds_1_1_h_t_m_l5_ab24faf4aa647cdcee494fc48524ad4ff}{\$errors}} = array()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class offers convenience methods for parsing and serializing HTML5. It is roughly designed to mirror the \textbackslash{}\+DOMDocument native class. 
+
+\label{doc-constructors}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_afe67dd5773f4808bb94a58d833a8c88d}\index{HTML5@{HTML5}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_afe67dd5773f4808bb94a58d833a8c88d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$default\+Options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_a6e548ebf2656742bfd19939ead923ed2}\index{HTML5@{HTML5}!getErrors@{getErrors}}
+\index{getErrors@{getErrors}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{getErrors()}{getErrors()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_a6e548ebf2656742bfd19939ead923ed2} 
+get\+Errors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return all errors encountered into parsing phase.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_a1a49b8dded6e91a52e2fd07195d334da}\index{HTML5@{HTML5}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_a1a49b8dded6e91a52e2fd07195d334da} 
+get\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current default options.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_aada71735dcc56f4cae3b82c55e090e8d}\index{HTML5@{HTML5}!hasErrors@{hasErrors}}
+\index{hasErrors@{hasErrors}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{hasErrors()}{hasErrors()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_aada71735dcc56f4cae3b82c55e090e8d} 
+has\+Errors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return true it some errors were encountered into parsing phase.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_aec4355fd7bab4e362b13f49443204bbb}\index{HTML5@{HTML5}!load@{load}}
+\index{load@{load}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_aec4355fd7bab4e362b13f49443204bbb} 
+load (\begin{DoxyParamCaption}\item[{}]{\$file}{, }\item[{array}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Load and parse an HTML file.
+
+This will apply the HTML5 parser, which is tolerant of many varieties of HTML, including XHTML 1, HTML 4, and well-\/formed HTML
+\begin{DoxyEnumerate}
+\item Note that in these cases, not all of the old data will be preserved. For example, XHTML\textquotesingle{}s XML declaration will be removed.
+\end{DoxyEnumerate}
+
+The rules governing parsing are set out in the HTML 5 spec.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | resource & {\em \$file} & The path to the file to parse. If this is a resource, it is assumed to be an open stream whose pointer is set to the first byte of input. \\
+\hline
+array & {\em \$options} & Configuration options when parsing the HTML.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+DOMDocument A DOM document. These object type is defined by the libxml library, and should have been included with your version of PHP. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_ab88a13a119926490e9024b39b7b2480d}\index{HTML5@{HTML5}!loadHTML@{loadHTML}}
+\index{loadHTML@{loadHTML}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{loadHTML()}{loadHTML()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_ab88a13a119926490e9024b39b7b2480d} 
+load\+HTML (\begin{DoxyParamCaption}\item[{}]{\$string}{, }\item[{array}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Parse a HTML Document from a string.
+
+Take a string of HTML 5 (or earlier) and parse it into a DOMDocument.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & A html5 document as a string. \\
+\hline
+array & {\em \$options} & Configuration options when parsing the HTML.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+DOMDocument A DOM document. DOM is part of libxml, which is included with almost all distribtions of PHP. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_a9a49f79fb4bf8c85cf1e151c5d377368}\index{HTML5@{HTML5}!loadHTMLFile@{loadHTMLFile}}
+\index{loadHTMLFile@{loadHTMLFile}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{loadHTMLFile()}{loadHTMLFile()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_a9a49f79fb4bf8c85cf1e151c5d377368} 
+load\+HTMLFile (\begin{DoxyParamCaption}\item[{}]{\$file}{, }\item[{array}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Convenience function to load an HTML file.
+
+This is here to provide backwards compatibility with the PHP DOM implementation. It simply calls load().
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & The path to the file to parse. If this is a resource, it is assumed to be an open stream whose pointer is set to the first byte of input. \\
+\hline
+array & {\em \$options} & Configuration options when parsing the HTML.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+DOMDocument A DOM document. These object type is defined by the libxml library, and should have been included with your version of PHP. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_aca2734d6aa02be9d655e4c049ab2989c}\index{HTML5@{HTML5}!loadHTMLFragment@{loadHTMLFragment}}
+\index{loadHTMLFragment@{loadHTMLFragment}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{loadHTMLFragment()}{loadHTMLFragment()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_aca2734d6aa02be9d655e4c049ab2989c} 
+load\+HTMLFragment (\begin{DoxyParamCaption}\item[{}]{\$string}{, }\item[{array}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Parse a HTML fragment from a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & the HTML5 fragment as a string \\
+\hline
+array & {\em \$options} & Configuration options when parsing the HTML\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+DOMDocument\+Fragment A DOM fragment. The DOM is part of libxml, which is included with almost all distributions of PHP. 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_aa24ff88f51df4b6d336c34e875fbc028}\index{HTML5@{HTML5}!parse@{parse}}
+\index{parse@{parse}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_aa24ff88f51df4b6d336c34e875fbc028} 
+parse (\begin{DoxyParamCaption}\item[{}]{\$input}{, }\item[{array}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Parse an input string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+DOMDocument 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_a65b390c9191afbace41644c38321ee6b}\index{HTML5@{HTML5}!parseFragment@{parseFragment}}
+\index{parseFragment@{parseFragment}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{parseFragment()}{parseFragment()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_a65b390c9191afbace41644c38321ee6b} 
+parse\+Fragment (\begin{DoxyParamCaption}\item[{}]{\$input}{, }\item[{array}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Parse an input stream where the stream is a fragment.
+
+Lower-\/level loading function. This requires an input stream instead of a string, file, or resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & The input data to parse in the form of a string. \\
+\hline
+array & {\em \$options} & An array of options.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+DOMDocument\+Fragment 
+\end{DoxyReturn}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_ad131825a839b96333f8ee7a5b251e10c}\index{HTML5@{HTML5}!save@{save}}
+\index{save@{save}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_ad131825a839b96333f8ee7a5b251e10c} 
+save (\begin{DoxyParamCaption}\item[{}]{\$dom}{, }\item[{}]{\$file}{, }\item[{}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Save a DOM into a given file as HTML5.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$dom} & The DOM to be serialized. \\
+\hline
+string | resource & {\em \$file} & The filename to be written or resource to write to. \\
+\hline
+array & {\em \$options} & Configuration options when serializing the DOM. These include\+:
+\begin{DoxyItemize}
+\item encode\+\_\+entities\+: Text written to the output is escaped by default and not all entities are encoded. If this is set to true all entities will be encoded. Defaults to false. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_af108ced4fcb1cb34dd4c8d2a7df67728}\index{HTML5@{HTML5}!saveHTML@{saveHTML}}
+\index{saveHTML@{saveHTML}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{saveHTML()}{saveHTML()}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_af108ced4fcb1cb34dd4c8d2a7df67728} 
+save\+HTML (\begin{DoxyParamCaption}\item[{}]{\$dom}{, }\item[{}]{\$options}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Convert a DOM into an HTML5 string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$dom} & The DOM to be serialized. \\
+\hline
+array & {\em \$options} & Configuration options when serializing the DOM. These include\+:
+\begin{DoxyItemize}
+\item encode\+\_\+entities\+: Text written to the output is escaped by default and not all entities are encoded. If this is set to true all entities will be encoded. Defaults to false.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string A HTML5 documented generated from the DOM. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_masterminds_1_1_h_t_m_l5_ab24faf4aa647cdcee494fc48524ad4ff}\index{HTML5@{HTML5}!\$errors@{\$errors}}
+\index{\$errors@{\$errors}!HTML5@{HTML5}}
+\doxysubsubsection{\texorpdfstring{\$errors}{\$errors}}
+{\footnotesize\ttfamily \label{class_masterminds_1_1_h_t_m_l5_ab24faf4aa647cdcee494fc48524ad4ff} 
+\$errors = array()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/src/\mbox{\hyperlink{_h_t_m_l5_8php}{HTML5.\+php}}\end{DoxyCompactItemize}

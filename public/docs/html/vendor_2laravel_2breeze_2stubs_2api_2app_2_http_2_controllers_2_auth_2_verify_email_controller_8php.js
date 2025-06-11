@@ -1,0 +1,4 @@
+var vendor_2laravel_2breeze_2stubs_2api_2app_2_http_2_controllers_2_auth_2_verify_email_controller_8php =
+[
+    [ "VerifyEmailController", "class_app_1_1_http_1_1_controllers_1_1_auth_1_1_verify_email_controller.html", "class_app_1_1_http_1_1_controllers_1_1_auth_1_1_verify_email_controller" ]
+];

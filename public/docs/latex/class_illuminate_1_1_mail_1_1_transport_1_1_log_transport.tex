@@ -1,0 +1,121 @@
+\doxysection{Log\+Transport Class Reference}
+\hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport}{}\label{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport}\index{LogTransport@{LogTransport}}
+Inheritance diagram for Log\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a2bd426f7ee55a596b1893454a77a006a}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a97e3b3adabf67bc7d3650ed14214ddaa}{logger}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a25d696d916e4c2862bd7ac1cb998b491}{send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}} \$message, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}} \$envelope=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a97e3b3adabf67bc7d3650ed14214ddaa}{logger}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a22ccee881ff5974cd782a0f325162feb}{decode\+Quoted\+Printable\+Content}} (string \$part)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_aebfec76216371ef236acc5910e90933d}{\$logger}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a2bd426f7ee55a596b1893454a77a006a}\index{LogTransport@{LogTransport}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!LogTransport@{LogTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a2bd426f7ee55a596b1893454a77a006a} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{}\end{DoxyParamCaption})}
+
+Create a new log transport instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface & {\em \$logger} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a7516ca30af0db3cdbf9a7739b48ce91d}\index{LogTransport@{LogTransport}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!LogTransport@{LogTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the string representation of the transport.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a22ccee881ff5974cd782a0f325162feb}\index{LogTransport@{LogTransport}!decodeQuotedPrintableContent@{decodeQuotedPrintableContent}}
+\index{decodeQuotedPrintableContent@{decodeQuotedPrintableContent}!LogTransport@{LogTransport}}
+\doxysubsubsection{\texorpdfstring{decodeQuotedPrintableContent()}{decodeQuotedPrintableContent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a22ccee881ff5974cd782a0f325162feb} 
+decode\+Quoted\+Printable\+Content (\begin{DoxyParamCaption}\item[{string}]{\$part}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Decode the given quoted printable content.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$part} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a97e3b3adabf67bc7d3650ed14214ddaa}\index{LogTransport@{LogTransport}!logger@{logger}}
+\index{logger@{logger}!LogTransport@{LogTransport}}
+\doxysubsubsection{\texorpdfstring{logger()}{logger()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a97e3b3adabf67bc7d3650ed14214ddaa} 
+logger (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the logger for the Log\+Transport instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a25d696d916e4c2862bd7ac1cb998b491}\index{LogTransport@{LogTransport}!send@{send}}
+\index{send@{send}!LogTransport@{LogTransport}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a25d696d916e4c2862bd7ac1cb998b491} 
+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}}}]{\$message}{, }\item[{?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}}}]{\$envelope}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\{
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{interface_symfony_1_1_component_1_1_mailer_1_1_exception_1_1_transport_exception_interface}{Transport\+Exception\+Interface}} & \\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface_a25d696d916e4c2862bd7ac1cb998b491}{Transport\+Interface}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_aebfec76216371ef236acc5910e90933d}\index{LogTransport@{LogTransport}!\$logger@{\$logger}}
+\index{\$logger@{\$logger}!LogTransport@{LogTransport}}
+\doxysubsubsection{\texorpdfstring{\$logger}{\$logger}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_aebfec76216371ef236acc5910e90933d} 
+\$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_log_transport_a97e3b3adabf67bc7d3650ed14214ddaa}{logger}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Mail/\+Transport/\mbox{\hyperlink{_log_transport_8php}{Log\+Transport.\+php}}\end{DoxyCompactItemize}

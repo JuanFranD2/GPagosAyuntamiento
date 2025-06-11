@@ -1,0 +1,207 @@
+\doxysection{Monitor\+Command Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command}{}\label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command}\index{MonitorCommand@{MonitorCommand}}
+Inheritance diagram for Monitor\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_ae7733c7bd1f33b28d5d616b0ea58d50f}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_factory}{Factory}} \$manager, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$events)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a66eb7514ea7f7f8a5738a180b14e9b48}{handle}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acc17fc4b2880856deb16661a443fe08e}{run}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a645d49a93702949a651360c7bdc0a0b0}{fail}} (Throwable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$exception=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acbd42dc98fc1c0649ae7b1aeaf842b3d}{is\+Hidden}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a352b564237d3f16ca19a07d6ac036196}{set\+Hidden}} (bool \$hidden=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aab7aca3854218cb065a030769a143418}{get\+Laravel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a94bbb27e66c6b8dafd84410ede30c6af}{set\+Laravel}} (\$laravel)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a2c033d26eff3043fc7989f30fb570d14}{parse\+Queues}} (\$queues)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a9a304c75a2ee0447393acc8bbd53bf6c}{display\+Sizes}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}} \$queues)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a7675fabb0f7bd9620c32c8b9bcec01d9}{dispatch\+Events}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}} \$queues)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aef18ba6dc42644207c37bf5de362a4bd}{configure\+Using\+Fluent\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a05e39d241c3e3400b03d3b63dfbd8929}{configure\+Isolation}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab31c72b72ddaf7116db5d84c055d3c0b}{execute}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac8094b40d2f975480f91e5a3b7040769}{command\+Isolation\+Mutex}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac1aba88abc23023836393a7f4ea231ca}{resolve\+Command}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a87b032cba06009e3467abf1c8018d960}{\$description}} = \textquotesingle{}Monitor the size of the specified queues\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a4621b1cd69b1417c9fb966c825299de1}{\$manager}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a1bcec9bbd34255927faaf155bf3a940a}{\$events}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a2483b0a3df07768a50dd53f90fd7ae4b}{\$laravel}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a87b032cba06009e3467abf1c8018d960}{\$description}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ae8c606891eb7e59cb0674a2dd63c5498}{\$help}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a4a374564d2858d8ae869a8fb890aad56}{\$hidden}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a568541fc9a0d312709894fe344c5aa13}{\$isolated}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a11ba5862b76c657e950bdde51f6e54b0}{\$isolated\+Exit\+Code}} = self\+::\+SUCCESS
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a7e6d29edbd9ec5d8ec9d478cf98fba03}{\$aliases}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_ae7733c7bd1f33b28d5d616b0ea58d50f}\index{MonitorCommand@{MonitorCommand}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!MonitorCommand@{MonitorCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_ae7733c7bd1f33b28d5d616b0ea58d50f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_factory}{Factory}}}]{\$manager}{, }\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}}}]{\$events}{}\end{DoxyParamCaption})}
+
+Create a new queue monitor command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Factory & {\em \$manager} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$events} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a7675fabb0f7bd9620c32c8b9bcec01d9}\index{MonitorCommand@{MonitorCommand}!dispatchEvents@{dispatchEvents}}
+\index{dispatchEvents@{dispatchEvents}!MonitorCommand@{MonitorCommand}}
+\doxysubsubsection{\texorpdfstring{dispatchEvents()}{dispatchEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a7675fabb0f7bd9620c32c8b9bcec01d9} 
+dispatch\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}}]{\$queues}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fire the monitoring events.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$queues} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a9a304c75a2ee0447393acc8bbd53bf6c}\index{MonitorCommand@{MonitorCommand}!displaySizes@{displaySizes}}
+\index{displaySizes@{displaySizes}!MonitorCommand@{MonitorCommand}}
+\doxysubsubsection{\texorpdfstring{displaySizes()}{displaySizes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a9a304c75a2ee0447393acc8bbd53bf6c} 
+display\+Sizes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}}]{\$queues}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Display the queue sizes in the console.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$queues} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a66eb7514ea7f7f8a5738a180b14e9b48}\index{MonitorCommand@{MonitorCommand}!handle@{handle}}
+\index{handle@{handle}!MonitorCommand@{MonitorCommand}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a66eb7514ea7f7f8a5738a180b14e9b48} 
+handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Execute the console command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a2c033d26eff3043fc7989f30fb570d14}\index{MonitorCommand@{MonitorCommand}!parseQueues@{parseQueues}}
+\index{parseQueues@{parseQueues}!MonitorCommand@{MonitorCommand}}
+\doxysubsubsection{\texorpdfstring{parseQueues()}{parseQueues()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a2c033d26eff3043fc7989f30fb570d14} 
+parse\+Queues (\begin{DoxyParamCaption}\item[{}]{\$queues}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the queues into an array of the connections and queues.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$queues} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a87b032cba06009e3467abf1c8018d960}\index{MonitorCommand@{MonitorCommand}!\$description@{\$description}}
+\index{\$description@{\$description}!MonitorCommand@{MonitorCommand}}
+\doxysubsubsection{\texorpdfstring{\$description}{\$description}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a87b032cba06009e3467abf1c8018d960} 
+\$description = \textquotesingle{}Monitor the size of the specified queues\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a1bcec9bbd34255927faaf155bf3a940a}\index{MonitorCommand@{MonitorCommand}!\$events@{\$events}}
+\index{\$events@{\$events}!MonitorCommand@{MonitorCommand}}
+\doxysubsubsection{\texorpdfstring{\$events}{\$events}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a1bcec9bbd34255927faaf155bf3a940a} 
+\$events\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a4621b1cd69b1417c9fb966c825299de1}\index{MonitorCommand@{MonitorCommand}!\$manager@{\$manager}}
+\index{\$manager@{\$manager}!MonitorCommand@{MonitorCommand}}
+\doxysubsubsection{\texorpdfstring{\$manager}{\$manager}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a4621b1cd69b1417c9fb966c825299de1} 
+\$manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a8f34ca1e46a621ab10a3a40addb794f5}\index{MonitorCommand@{MonitorCommand}!\$signature@{\$signature}}
+\index{\$signature@{\$signature}!MonitorCommand@{MonitorCommand}}
+\doxysubsubsection{\texorpdfstring{\$signature}{\$signature}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_console_1_1_monitor_command_a8f34ca1e46a621ab10a3a40addb794f5} 
+\$signature\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Queue/\+Console/\mbox{\hyperlink{_queue_2_console_2_monitor_command_8php}{Monitor\+Command.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{Pending\+Event\+Attributes Class Reference}
+\hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes}{}\label{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes}\index{PendingEventAttributes@{PendingEventAttributes}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_aac4d92ddfbd0e8876eb0700473f38065}{\+\_\+\+\_\+construct}} (protected \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_schedule}{Schedule}} \$schedule,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_a978e2a1db311f75acffa1815a5d0782b}{without\+Overlapping}} (\$expires\+At=1440)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_aec86cadd7d976b29c8305d9bafbb9f91}{merge\+Attributes}} (\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event}{Event}} \$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_ab802c6452543039ee585e9f13c80e3fe}{\+\_\+\+\_\+call}} (string \$method, array \$parameters)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Scheduling\textbackslash{}\+Schedule 
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_aac4d92ddfbd0e8876eb0700473f38065}\index{PendingEventAttributes@{PendingEventAttributes}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PendingEventAttributes@{PendingEventAttributes}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_aac4d92ddfbd0e8876eb0700473f38065} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected \mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_schedule}{Schedule}}}]{\$schedule}{}\end{DoxyParamCaption})}
+
+Create a new pending event attributes instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_ab802c6452543039ee585e9f13c80e3fe}\index{PendingEventAttributes@{PendingEventAttributes}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!PendingEventAttributes@{PendingEventAttributes}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_ab802c6452543039ee585e9f13c80e3fe} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{array}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Proxy missing methods onto the underlying schedule. \Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_aec86cadd7d976b29c8305d9bafbb9f91}\index{PendingEventAttributes@{PendingEventAttributes}!mergeAttributes@{mergeAttributes}}
+\index{mergeAttributes@{mergeAttributes}!PendingEventAttributes@{PendingEventAttributes}}
+\doxysubsubsection{\texorpdfstring{mergeAttributes()}{mergeAttributes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_aec86cadd7d976b29c8305d9bafbb9f91} 
+merge\+Attributes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_event}{Event}}}]{\$event}{}\end{DoxyParamCaption})}
+
+Merge the current attributes into the given event. \Hypertarget{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_a978e2a1db311f75acffa1815a5d0782b}\index{PendingEventAttributes@{PendingEventAttributes}!withoutOverlapping@{withoutOverlapping}}
+\index{withoutOverlapping@{withoutOverlapping}!PendingEventAttributes@{PendingEventAttributes}}
+\doxysubsubsection{\texorpdfstring{withoutOverlapping()}{withoutOverlapping()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_scheduling_1_1_pending_event_attributes_a978e2a1db311f75acffa1815a5d0782b} 
+without\+Overlapping (\begin{DoxyParamCaption}\item[{}]{\$expires\+At}{ = {\ttfamily 1440}}\end{DoxyParamCaption})}
+
+Do not allow the event to overlap each other.
+
+The expiration time of the underlying cache lock may be specified in minutes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$expires\+At} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Console/\+Scheduling/\mbox{\hyperlink{_pending_event_attributes_8php}{Pending\+Event\+Attributes.\+php}}\end{DoxyCompactItemize}

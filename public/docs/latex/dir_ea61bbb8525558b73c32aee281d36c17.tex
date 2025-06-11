@@ -1,0 +1,59 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/serializable-\/closure Directory Reference}
+\hypertarget{dir_ea61bbb8525558b73c32aee281d36c17}{}\label{dir_ea61bbb8525558b73c32aee281d36c17}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/serializable-\/closure Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/laravel/serializable-\/closure Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_54ef070b55b0aa934f570e6f1d2d12a5}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md9605}{}\doxysubsection{\texorpdfstring{Serializable Closure}{Serializable Closure}}\label{README.md_autotoc_md9605}
+\href{https://github.com/laravel/serializable-closure/actions}{\texttt{ }} \href{https://packagist.org/packages/laravel/serializable-closure}{\texttt{ }} \href{https://packagist.org/packages/laravel/serializable-closure}{\texttt{ }} \href{https://packagist.org/packages/laravel/serializable-closure}{\texttt{ }}\hypertarget{README.md_autotoc_md9606}{}\doxysubsection{\texorpdfstring{Introduction}{Introduction}}\label{README.md_autotoc_md9606}
+\begin{quote}
+This project is a fork of the excellent \href{https://github.com/opis/closure}{\texttt{opis/closure\+: 3.\+x}} package. At Laravel, we decided to fork this package as the upcoming version \href{https://github.com/opis/closure}{\texttt{4.\+x}} is a complete rewrite on top of the \href{https://www.php.net/manual/en/book.ffi.php}{\texttt{FFI extension}}. As Laravel is a web framework, and FFI is not enabled by default in web requests, this fork allows us to keep using the {\ttfamily 3.\+x} series while adding support for new PHP versions. \end{quote}
+
+
+Laravel Serializable Closure provides an easy and secure way to {\bfseries{serialize closures in PHP}}.\hypertarget{README.md_autotoc_md9607}{}\doxysubsection{\texorpdfstring{Official Documentation}{Official Documentation}}\label{README.md_autotoc_md9607}
+\hypertarget{README.md_autotoc_md9608}{}\doxysubsubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md9608}
+\begin{quote}
+{\bfseries{Requires \href{https://php.net/releases/}{\texttt{PHP 7.\+4+}}}} \end{quote}
+
+
+First, install Laravel Serializable Closure via the \href{https://getcomposer.org/}{\texttt{Composer}} package manager\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ laravel/serializable-\/closure}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md9609}{}\doxysubsubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md9609}
+You may serialize a closure this way\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_laravel_1_1_serializable_closure_1_1_serializable_closure}{Laravel\(\backslash\)SerializableClosure\(\backslash\)SerializableClosure}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$closure\ =\ fn\ ()\ =>\ \textcolor{stringliteral}{'james'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Recommended}}
+\DoxyCodeLine{SerializableClosure::setSecretKey(\textcolor{stringliteral}{'secret'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$serialized\ =\ serialize(\textcolor{keyword}{new}\ SerializableClosure(\$closure));}
+\DoxyCodeLine{\$closure\ =\ unserialize(\$serialized)-\/>getClosure();}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo\ \$closure();\ \textcolor{comment}{//\ james;}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md9610}{}\doxysubsubsection{\texorpdfstring{Caveats}{Caveats}}\label{README.md_autotoc_md9610}
+
+\begin{DoxyItemize}
+\item Anonymous classes cannot be created within closures.
+\item Attributes cannot be used within closures.
+\item Serializing closures on REPL environments like Laravel Tinker is not supported.
+\item Serializing closures that reference objects with readonly properties is not supported.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md9611}{}\doxysubsection{\texorpdfstring{Contributing}{Contributing}}\label{README.md_autotoc_md9611}
+Thank you for considering contributing to Serializable Closure! The contribution guide can be found in the \href{https://laravel.com/docs/contributions}{\texttt{Laravel documentation}}.\hypertarget{README.md_autotoc_md9612}{}\doxysubsection{\texorpdfstring{Code of Conduct}{Code of Conduct}}\label{README.md_autotoc_md9612}
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the \href{https://laravel.com/docs/contributions\#code-of-conduct}{\texttt{Code of Conduct}}.\hypertarget{README.md_autotoc_md9613}{}\doxysubsection{\texorpdfstring{Security Vulnerabilities}{Security Vulnerabilities}}\label{README.md_autotoc_md9613}
+Please review \href{https://github.com/laravel/serializable-closure/security/policy}{\texttt{our security policy}} on how to report security vulnerabilities.\hypertarget{README.md_autotoc_md9614}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md9614}
+Serializable Closure is open-\/sourced software licensed under the \doxysectlink{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2laravel_2serializable-closure_2_l_i_c_e_n_s_e}{MIT license}{0}. 

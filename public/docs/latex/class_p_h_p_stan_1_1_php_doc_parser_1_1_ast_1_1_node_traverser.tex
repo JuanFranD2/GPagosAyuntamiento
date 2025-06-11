@@ -1,0 +1,104 @@
+\doxysection{Node\+Traverser Class Reference}
+\hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser}{}\label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser}\index{NodeTraverser@{NodeTraverser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a3c74fecff18e51ef468c66e5fd674925}{\+\_\+\+\_\+construct}} (array \$visitors)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a9dc499251d1af2e6f5e5657ec1e5f08f}{traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a6d11bd165a2ecd3a965f1a64df677f96}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a48cbae280b53266294ddbc517de2e59b}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_ae379b14ba14de6999485d1e6bc22c94f}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_ae5987b64591d5fb77abdcf3c51cbb238}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Inspired by \href{https://github.com/nikic/PHP-Parser/tree/36a6dcd04e7b0285e8f0868f44bd4927802f7df1}{\texttt{https\+://github.\+com/nikic/\+PHP-\/\+Parser/tree/36a6dcd04e7b0285e8f0868f44bd4927802f7df1}}
+
+Copyright (c) 2011, Nikita Popov All rights reserved. 
+
+\label{doc-constructors}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a3c74fecff18e51ef468c66e5fd674925}\index{NodeTraverser@{NodeTraverser}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!NodeTraverser@{NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a3c74fecff18e51ef468c66e5fd674925} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$visitors}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$\+Node\+Visitor$>$} & \$visitors \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a9dc499251d1af2e6f5e5657ec1e5f08f}\index{NodeTraverser@{NodeTraverser}!traverse@{traverse}}
+\index{traverse@{traverse}!NodeTraverser@{NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{traverse()}{traverse()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a9dc499251d1af2e6f5e5657ec1e5f08f} 
+traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+Traverses an array of nodes using the registered visitors.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]} Traversed array of nodes 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a6d11bd165a2ecd3a965f1a64df677f96}\index{NodeTraverser@{NodeTraverser}!DONT\_TRAVERSE\_CHILDREN@{DONT\_TRAVERSE\_CHILDREN}}
+\index{DONT\_TRAVERSE\_CHILDREN@{DONT\_TRAVERSE\_CHILDREN}!NodeTraverser@{NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{DONT\_TRAVERSE\_CHILDREN}{DONT\_TRAVERSE\_CHILDREN}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a6d11bd165a2ecd3a965f1a64df677f96} 
+const DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN = 1}
+
+If Node\+Visitor\+::enter\+Node() returns DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN, child nodes of the current node will not be traversed for any visitors.
+
+For subsequent visitors enter\+Node() will still be called on the current node and leave\+Node() will also be invoked for the current node. \Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_ae5987b64591d5fb77abdcf3c51cbb238}\index{NodeTraverser@{NodeTraverser}!DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN@{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN}}
+\index{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN@{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN}!NodeTraverser@{NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN}{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_ae5987b64591d5fb77abdcf3c51cbb238} 
+const DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN = 4}
+
+If Node\+Visitor\+::enter\+Node() returns DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN, child nodes of the current node will not be traversed for any visitors.
+
+For subsequent visitors enter\+Node() will not be called as well. leave\+Node() will be invoked for visitors that has enter\+Node() method invoked. \Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_ae379b14ba14de6999485d1e6bc22c94f}\index{NodeTraverser@{NodeTraverser}!REMOVE\_NODE@{REMOVE\_NODE}}
+\index{REMOVE\_NODE@{REMOVE\_NODE}!NodeTraverser@{NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{REMOVE\_NODE}{REMOVE\_NODE}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_ae379b14ba14de6999485d1e6bc22c94f} 
+const REMOVE\+\_\+\+NODE = 3}
+
+If Node\+Visitor\+::leave\+Node() returns REMOVE\+\_\+\+NODE for a node that occurs in an array, it will be removed from the array.
+
+For subsequent visitors leave\+Node() will still be invoked for the removed node. \Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a48cbae280b53266294ddbc517de2e59b}\index{NodeTraverser@{NodeTraverser}!STOP\_TRAVERSAL@{STOP\_TRAVERSAL}}
+\index{STOP\_TRAVERSAL@{STOP\_TRAVERSAL}!NodeTraverser@{NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{STOP\_TRAVERSAL}{STOP\_TRAVERSAL}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node_traverser_a48cbae280b53266294ddbc517de2e59b} 
+const STOP\+\_\+\+TRAVERSAL = 2}
+
+If Node\+Visitor\+::enter\+Node() or Node\+Visitor\+::leave\+Node() returns STOP\+\_\+\+TRAVERSAL, traversal is aborted.
+
+The after\+Traverse() method will still be invoked. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpstan/phpdoc-\/parser/src/\+Ast/\mbox{\hyperlink{phpstan_2phpdoc-parser_2src_2_ast_2_node_traverser_8php}{Node\+Traverser.\+php}}\end{DoxyCompactItemize}

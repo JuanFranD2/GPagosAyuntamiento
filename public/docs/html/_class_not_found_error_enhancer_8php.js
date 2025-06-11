@@ -1,0 +1,4 @@
+var _class_not_found_error_enhancer_8php =
+[
+    [ "ClassNotFoundErrorEnhancer", "class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_class_not_found_error_enhancer.html", "class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_class_not_found_error_enhancer" ]
+];

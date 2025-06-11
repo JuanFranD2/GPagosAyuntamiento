@@ -1,0 +1,384 @@
+\doxysection{Application Class Reference}
+\hypertarget{class_illuminate_1_1_console_1_1_application}{}\label{class_illuminate_1_1_console_1_1_application}\index{Application@{Application}}
+Inheritance diagram for Application\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_console_1_1_application}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_aa6660856e176689e96898360266b81f2}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}} \$laravel, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$events, \$version)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_ad43f78ba802372febb14d4d1c7cc60b8}{call}} (\$command, array \$parameters=\mbox{[}$\,$\mbox{]}, \$output\+Buffer=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a3939045b11b9aaefdf692feb963f0dfc}{output}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_aed4f0cbd88db98bc10cfaa1a73f36a04}{add}} (Symfony\+Command \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a3c33231281c062a8ad442d71db29557b}{resolve}} (\$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a4f056c12ed6069b91cfdd4cd6ae4d8a8}{resolve\+Commands}} (\$commands)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a53563e166549b31dd398e45c1eec9014}{set\+Container\+Command\+Loader}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_aab7aca3854218cb065a030769a143418}{get\+Laravel}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a7cfc91dbecf6a15045ada5ef87aa759a}{php\+Binary}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a60ddeda30c23cfae1664a60ff7b9352d}{artisan\+Binary}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a977905543cb34015f98a288c66ec338f}{format\+Command\+String}} (\$string)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a6e3af1e4640b989290d2c0990914dfab}{starting}} (Closure \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a084d7f4aada74b29d2e89903cabf1f07}{forget\+Bootstrappers}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a1220bc28aca374cd4510d925eb05bccc}{bootstrap}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a3e62d8ed2feb1377df5c51750145eebc}{parse\+Command}} (\$command, \$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a86c2bb33cb6e7e796930dc04b46d6812}{add\+To\+Parent}} (Symfony\+Command \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_ad134976d6a592eb596114fd87959aa2c}{get\+Default\+Input\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a2c8cd8a38a4173995fa22bfd36a09a50}{get\+Environment\+Option}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a2483b0a3df07768a50dd53f90fd7ae4b}{\$laravel}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a1bcec9bbd34255927faaf155bf3a940a}{\$events}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a93e1ef44914066958357b0f1961837cc}{\$last\+Output}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_a00937c7e6f48f25b4325396657ec7e2f}{\$command\+Map}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_application_acd6a2a843b6db758554b40650f1cfd21}{\$bootstrappers}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_aa6660856e176689e96898360266b81f2}\index{Application@{Application}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_aa6660856e176689e96898360266b81f2} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}}}]{\$laravel}{, }\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}}}]{\$events}{, }\item[{}]{\$version}{}\end{DoxyParamCaption})}
+
+Create a new \doxylink{class_artisan}{Artisan} console application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$laravel} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$events} & \\
+\hline
+string & {\em \$version} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_aed4f0cbd88db98bc10cfaa1a73f36a04}\index{Application@{Application}!add@{add}}
+\index{add@{add}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_aed4f0cbd88db98bc10cfaa1a73f36a04} 
+add (\begin{DoxyParamCaption}\item[{Symfony\+Command}]{\$command}{}\end{DoxyParamCaption})}
+
+Add a command to the console.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a86c2bb33cb6e7e796930dc04b46d6812}\index{Application@{Application}!addToParent@{addToParent}}
+\index{addToParent@{addToParent}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{addToParent()}{addToParent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a86c2bb33cb6e7e796930dc04b46d6812} 
+add\+To\+Parent (\begin{DoxyParamCaption}\item[{Symfony\+Command}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the command to the parent instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a60ddeda30c23cfae1664a60ff7b9352d}\index{Application@{Application}!artisanBinary@{artisanBinary}}
+\index{artisanBinary@{artisanBinary}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{artisanBinary()}{artisanBinary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a60ddeda30c23cfae1664a60ff7b9352d} 
+artisan\+Binary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determine the proper \doxylink{class_artisan}{Artisan} executable.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a1220bc28aca374cd4510d925eb05bccc}\index{Application@{Application}!bootstrap@{bootstrap}}
+\index{bootstrap@{bootstrap}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{bootstrap()}{bootstrap()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a1220bc28aca374cd4510d925eb05bccc} 
+bootstrap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Bootstrap the console application.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_ad43f78ba802372febb14d4d1c7cc60b8}\index{Application@{Application}!call@{call}}
+\index{call@{call}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_ad43f78ba802372febb14d4d1c7cc60b8} 
+call (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$output\+Buffer}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Run an \doxylink{class_artisan}{Artisan} console command by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Output\textbackslash{}\+Output\+Interface | null & {\em \$output\+Buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Exception\textbackslash{}\+Command\+Not\+Found\+Exception 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_application_ad43f78ba802372febb14d4d1c7cc60b8}{Application}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a084d7f4aada74b29d2e89903cabf1f07}\index{Application@{Application}!forgetBootstrappers@{forgetBootstrappers}}
+\index{forgetBootstrappers@{forgetBootstrappers}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{forgetBootstrappers()}{forgetBootstrappers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a084d7f4aada74b29d2e89903cabf1f07} 
+forget\+Bootstrappers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Clear the console application bootstrappers.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a977905543cb34015f98a288c66ec338f}\index{Application@{Application}!formatCommandString@{formatCommandString}}
+\index{formatCommandString@{formatCommandString}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{formatCommandString()}{formatCommandString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a977905543cb34015f98a288c66ec338f} 
+format\+Command\+String (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Format the given command as a fully-\/qualified executable command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_ad134976d6a592eb596114fd87959aa2c}\index{Application@{Application}!getDefaultInputDefinition@{getDefaultInputDefinition}}
+\index{getDefaultInputDefinition@{getDefaultInputDefinition}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{getDefaultInputDefinition()}{getDefaultInputDefinition()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_ad134976d6a592eb596114fd87959aa2c} 
+get\+Default\+Input\+Definition (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the default input definition for the application.
+
+This is used to add the --env option to every available command.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Definition 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a2c8cd8a38a4173995fa22bfd36a09a50}\index{Application@{Application}!getEnvironmentOption@{getEnvironmentOption}}
+\index{getEnvironmentOption@{getEnvironmentOption}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{getEnvironmentOption()}{getEnvironmentOption()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a2c8cd8a38a4173995fa22bfd36a09a50} 
+get\+Environment\+Option (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the global environment option for the definition.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Option 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_aab7aca3854218cb065a030769a143418}\index{Application@{Application}!getLaravel@{getLaravel}}
+\index{getLaravel@{getLaravel}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{getLaravel()}{getLaravel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_aab7aca3854218cb065a030769a143418} 
+get\+Laravel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Laravel application instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a3939045b11b9aaefdf692feb963f0dfc}\index{Application@{Application}!output@{output}}
+\index{output@{output}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a3939045b11b9aaefdf692feb963f0dfc} 
+output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the output for the last run command.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_application_a3939045b11b9aaefdf692feb963f0dfc}{Application}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a3e62d8ed2feb1377df5c51750145eebc}\index{Application@{Application}!parseCommand@{parseCommand}}
+\index{parseCommand@{parseCommand}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{parseCommand()}{parseCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a3e62d8ed2feb1377df5c51750145eebc} 
+parse\+Command (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the incoming \doxylink{class_artisan}{Artisan} command and its input.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a7cfc91dbecf6a15045ada5ef87aa759a}\index{Application@{Application}!phpBinary@{phpBinary}}
+\index{phpBinary@{phpBinary}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{phpBinary()}{phpBinary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a7cfc91dbecf6a15045ada5ef87aa759a} 
+php\+Binary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determine the proper PHP executable.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a3c33231281c062a8ad442d71db29557b}\index{Application@{Application}!resolve@{resolve}}
+\index{resolve@{resolve}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a3c33231281c062a8ad442d71db29557b} 
+resolve (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Add a command, resolving through the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Command | string & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a4f056c12ed6069b91cfdd4cd6ae4d8a8}\index{Application@{Application}!resolveCommands@{resolveCommands}}
+\index{resolveCommands@{resolveCommands}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{resolveCommands()}{resolveCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a4f056c12ed6069b91cfdd4cd6ae4d8a8} 
+resolve\+Commands (\begin{DoxyParamCaption}\item[{}]{\$commands}{}\end{DoxyParamCaption})}
+
+Resolve an array of commands through the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | mixed & {\em \$commands} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a53563e166549b31dd398e45c1eec9014}\index{Application@{Application}!setContainerCommandLoader@{setContainerCommandLoader}}
+\index{setContainerCommandLoader@{setContainerCommandLoader}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{setContainerCommandLoader()}{setContainerCommandLoader()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a53563e166549b31dd398e45c1eec9014} 
+set\+Container\+Command\+Loader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Set the container command loader for lazy resolution.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a6e3af1e4640b989290d2c0990914dfab}\index{Application@{Application}!starting@{starting}}
+\index{starting@{starting}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{starting()}{starting()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a6e3af1e4640b989290d2c0990914dfab} 
+starting (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Register a console "{}starting"{} bootstrapper.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Closure(\$this)\+: void \$callback \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_application_acd6a2a843b6db758554b40650f1cfd21}\index{Application@{Application}!\$bootstrappers@{\$bootstrappers}}
+\index{\$bootstrappers@{\$bootstrappers}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{\$bootstrappers}{\$bootstrappers}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_acd6a2a843b6db758554b40650f1cfd21} 
+\$bootstrappers = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a00937c7e6f48f25b4325396657ec7e2f}\index{Application@{Application}!\$commandMap@{\$commandMap}}
+\index{\$commandMap@{\$commandMap}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{\$commandMap}{\$commandMap}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a00937c7e6f48f25b4325396657ec7e2f} 
+\$command\+Map = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a1bcec9bbd34255927faaf155bf3a940a}\index{Application@{Application}!\$events@{\$events}}
+\index{\$events@{\$events}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{\$events}{\$events}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a1bcec9bbd34255927faaf155bf3a940a} 
+\$events\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a2483b0a3df07768a50dd53f90fd7ae4b}\index{Application@{Application}!\$laravel@{\$laravel}}
+\index{\$laravel@{\$laravel}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{\$laravel}{\$laravel}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a2483b0a3df07768a50dd53f90fd7ae4b} 
+\$laravel\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_console_1_1_application_a93e1ef44914066958357b0f1961837cc}\index{Application@{Application}!\$lastOutput@{\$lastOutput}}
+\index{\$lastOutput@{\$lastOutput}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{\$lastOutput}{\$lastOutput}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_application_a93e1ef44914066958357b0f1961837cc} 
+\$last\+Output\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Console/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_console_2_application_8php}{Application.\+php}}\end{DoxyCompactItemize}

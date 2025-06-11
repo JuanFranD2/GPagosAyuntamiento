@@ -1,0 +1,117 @@
+\chapter{Upgrading from phpstan/phpdoc-\/parser 1.\+x to 2.\+0 }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g}\index{Upgrading from phpstan/phpdoc-\/parser 1.x to 2.0@{Upgrading from phpstan/phpdoc-\/parser 1.x to 2.0}}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10133}{}\doxysubsection{\texorpdfstring{PHP version requirements}{PHP version requirements}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10133}
+phpstan/phpdoc-\/parser now requires PHP 7.\+4 or newer to run.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10134}{}\doxysubsection{\texorpdfstring{Changed constructors of parser classes}{Changed constructors of parser classes}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10134}
+Instead of different arrays and boolean values passed into class constructors during setup, parser classes now share a common Parser\+Config object.
+
+Before\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Lexer\(\backslash\)Lexer}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_const_expr_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)ConstExprParser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)TypeParser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_php_doc_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)PhpDocParser}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$usedAttributes\ =\ [\textcolor{stringliteral}{'lines'}\ =>\ \textcolor{keyword}{true},\ \textcolor{stringliteral}{'indexes'}\ =>\ \textcolor{keyword}{true}];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$lexer\ =\ \textcolor{keyword}{new}\ Lexer();}
+\DoxyCodeLine{\$constExprParser\ =\ \textcolor{keyword}{new}\ ConstExprParser(\textcolor{keyword}{true},\ \textcolor{keyword}{true},\ \$usedAttributes);}
+\DoxyCodeLine{\$typeParser\ =\ \textcolor{keyword}{new}\ TypeParser(\$constExprParser,\ \textcolor{keyword}{true},\ \$usedAttributes);}
+\DoxyCodeLine{\$phpDocParser\ =\ \textcolor{keyword}{new}\ PhpDocParser(\$typeParser,\ \$constExprParser,\ \textcolor{keyword}{true},\ \textcolor{keyword}{true},\ \$usedAttributes);}
+
+\end{DoxyCode}
+
+
+After\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_lexer_1_1_lexer}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Lexer\(\backslash\)Lexer}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_config}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)ParserConfig}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_const_expr_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)ConstExprParser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)TypeParser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_php_doc_parser}{PHPStan\(\backslash\)PhpDocParser\(\backslash\)Parser\(\backslash\)PhpDocParser}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}}\ =\ \textcolor{keyword}{new}\ ParserConfig(usedAttributes:\ [\textcolor{stringliteral}{'lines'}\ =>\ \textcolor{keyword}{true},\ \textcolor{stringliteral}{'indexes'}\ =>\ \textcolor{keyword}{true}]);}
+\DoxyCodeLine{\$lexer\ =\ \textcolor{keyword}{new}\ Lexer(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}});}
+\DoxyCodeLine{\$constExprParser\ =\ \textcolor{keyword}{new}\ ConstExprParser(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}});}
+\DoxyCodeLine{\$typeParser\ =\ \textcolor{keyword}{new}\ TypeParser(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}},\ \$constExprParser);}
+\DoxyCodeLine{\$phpDocParser\ =\ \textcolor{keyword}{new}\ PhpDocParser(\mbox{\hyperlink{barryvdh_2laravel-ide-helper_2_8php-cs-fixer_8dist_8php_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}},\ \$typeParser,\ \$constExprParser);}
+
+\end{DoxyCode}
+
+
+The point of Parser\+Config is that over the course of phpstan/phpdoc-\/parser 2.\+x development series it\textquotesingle{}s most likely going to gain new optional parameters akin to PHPStan\textquotesingle{}s \href{https://phpstan.org/blog/what-is-bleeding-edge}{\texttt{bleeding edge}}. These parameters will allow opting in to new behaviour which will become the default in 3.\+0.
+
+With Parser\+Config object, it\textquotesingle{}s now going to be impossible to configure parser classes inconsistently. Which \href{https://github.com/phpstan/phpdoc-parser/issues/251\#issuecomment-2333927959}{\texttt{happened to users}} when they were separate boolean values.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10135}{}\doxysubsection{\texorpdfstring{Support for parsing Doctrine annotations}{Support for parsing Doctrine annotations}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10135}
+This parser now supports parsing \href{https://github.com/doctrine/annotations}{\texttt{Doctrine Annotations}}. The AST nodes representing Doctrine Annotations live in the \href{https://phpstan.github.io/phpdoc-parser/2.0.x/namespace-PHPStan.PhpDocParser.Ast.PhpDoc.Doctrine.html}{\texttt{PHPStan\textbackslash{}\+Php\+Doc\+Parser\textbackslash{}\+Ast\textbackslash{}\+Php\+Doc\textbackslash{}\+Doctrine namespace}}.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10136}{}\doxysubsection{\texorpdfstring{Whitespace before description is required}{Whitespace before description is required}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10136}
+phpdoc-\/parser 1.\+x sometimes silently consumed invalid part of a PHPDoc type as description\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+
+\end{DoxyCode}
+
+
+This became {\ttfamily Identifier\+Type\+Node} of {\ttfamily \textbackslash{}Closure} and with {\ttfamily (...int, string)\+: string} as description. (Valid callable syntax is\+: {\ttfamily \textbackslash{}Closure(int ...\$u, string)\+: string}.)
+
+Another example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+
+\end{DoxyCode}
+
+
+The extra {\ttfamily \}} also became description.
+
+Both of these examples are now Invalid\+Tag\+Value\+Node.
+
+If these parts are supposed to be PHPDoc descriptions, you need to put whitespace between the type and the description text\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10137}{}\doxysubsection{\texorpdfstring{Type aliases with invalid types are preserved}{Type aliases with invalid types are preserved}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10137}
+In phpdoc-\/parser 1.\+x, invalid type alias syntax was represented as \href{https://phpstan.github.io/phpdoc-parser/2.0.x/PHPStan.PhpDocParser.Ast.PhpDoc.InvalidTagValueNode.html}{\texttt{{\ttfamily Invalid\+Tag\+Value\+Node}}}, losing information about a type alias being present.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+
+\end{DoxyCode}
+
+
+This {\ttfamily @phpstan-\/type} is missing the actual type to alias. In phpdoc-\/parser 2.\+0 this is now represented as \href{https://phpstan.github.io/phpdoc-parser/2.0.x/PHPStan.PhpDocParser.Ast.PhpDoc.TypeAliasTagValueNode.html}{\texttt{{\ttfamily Type\+Alias\+Tag\+Value\+Node}}} (instead of {\ttfamily Invalid\+Tag\+Value\+Node}) with \href{https://phpstan.github.io/phpdoc-parser/2.0.x/PHPStan.PhpDocParser.Ast.Type.InvalidTypeNode.html}{\texttt{{\ttfamily Invalid\+Type\+Node}}} in place of the type.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10138}{}\doxysubsection{\texorpdfstring{Removal of Quote\+Aware\+Const\+Expr\+String\+Node}{Removal of Quote\+Aware\+Const\+Expr\+String\+Node}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10138}
+The class \href{https://phpstan.github.io/phpdoc-parser/1.23.x/PHPStan.PhpDocParser.Ast.ConstExpr.QuoteAwareConstExprStringNode.html}{\texttt{Quote\+Aware\+Const\+Expr\+String\+Node}} has been removed.
+
+Instead, \href{https://phpstan.github.io/phpdoc-parser/2.0.x/PHPStan.PhpDocParser.Ast.ConstExpr.ConstExprStringNode.html}{\texttt{Const\+Expr\+String\+Node}} gained information about the kind of quotes being used.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10139}{}\doxysubsection{\texorpdfstring{Removed 2nd parameter of {\ttfamily Const\+Expr\+Parser\+::parse()} ({\ttfamily \$trim\+Strings})}{Removed 2nd parameter of {\ttfamily Const\+Expr\+Parser\+::parse()} ({\ttfamily \$trim\+Strings})}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10139}
+{\ttfamily Const\+Expr\+String\+Node\+:\+:\$value} now contains unescaped values without surrounding `'\textquotesingle{}{\ttfamily  or }"{}"{}\`{} quotes.
+
+Use {\ttfamily Const\+Expr\+String\+Node\+::\+\_\+\+\_\+to\+String()} or \href{https://phpstan.github.io/phpdoc-parser/2.0.x/PHPStan.PhpDocParser.Printer.Printer.html}{\texttt{{\ttfamily Printer}}} to get the escaped value along with surrounding quotes.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10140}{}\doxysubsection{\texorpdfstring{Text between tags always belongs to description}{Text between tags always belongs to description}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10140}
+Multi-\/line descriptions between tags were previously represented as separate \href{https://phpstan.github.io/phpdoc-parser/2.0.x/PHPStan.PhpDocParser.Ast.PhpDoc.PhpDocTextNode.html}{\texttt{Php\+Doc\+Text\+Node}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+
+\end{DoxyCode}
+
+
+The line with {\ttfamily some text in the middle} in phpdoc-\/parser 2.\+0 is now part of the description of the first {\ttfamily @param} tag.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10141}{}\doxysubsection{\texorpdfstring{{\ttfamily Array\+Shape\+Node} construction changes}{{\ttfamily Array\+Shape\+Node} construction changes}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10141}
+{\ttfamily Array\+Shape\+Node} constructor made private, added public static methods {\ttfamily create\+Sealed()} and {\ttfamily create\+Unsealed()}.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10142}{}\doxysubsection{\texorpdfstring{Minor BC breaks}{Minor BC breaks}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2phpstan_2phpdoc-parser_2_u_p_g_r_a_d_i_n_g_autotoc_md10142}
+
+\begin{DoxyItemize}
+\item Constructor parameter {\ttfamily \$is\+Equality} in {\ttfamily Assert\+Tag\texorpdfstring{$\ast$}{*}\+Value\+Node} made required
+\item Constructor parameter {\ttfamily \$template\+Types} in {\ttfamily Method\+Tag\+Value\+Node} made required
+\item Constructor parameter {\ttfamily \$is\+Reference} in {\ttfamily Param\+Tag\+Value\+Node} made required
+\item Constructor parameter {\ttfamily \$is\+Reference} in {\ttfamily Typeless\+Param\+Tag\+Value\+Node} made required
+\item Constructor parameter {\ttfamily \$template\+Types} in {\ttfamily Callable\+Type\+Node} made required
+\item Constructor parameters {\ttfamily \$expected\+Token\+Value} and {\ttfamily \$current\+Token\+Line} in {\ttfamily Parser\+Exception} made required
+\item {\ttfamily Array\+Shape\+Item\+Node} and {\ttfamily Object\+Shape\+Item\+Node} are not standalone Type\+Node, just Node 
+\end{DoxyItemize}

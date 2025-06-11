@@ -1,0 +1,395 @@
+\doxysection{Abstract\+Translator Class Reference}
+\hypertarget{class_carbon_1_1_abstract_translator}{}\label{class_carbon_1_1_abstract_translator}\index{AbstractTranslator@{AbstractTranslator}}
+Inheritance diagram for Abstract\+Translator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_carbon_1_1_abstract_translator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_aba42989ea956b331438d123577bd64a2}{\+\_\+\+\_\+construct}} (\$locale, ?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_interface}{Message\+Formatter\+Interface}} \$formatter=null, \$cache\+Dir=null, \$debug=false)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_a67901c2e59ffc4bb1c0010ac9cce2560}{get\+Directories}} ()
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_a2f7a263f296b0b74269e8ad3bab69ffe}{set\+Directories}} (array \$directories)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_a9d8e21a57d7a4edee9c12c533d9a10e0}{add\+Directory}} (string \$directory)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_a375c7ccd34377e1ac68f75ebf284097d}{remove\+Directory}} (string \$directory)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_ac3f3965fff337da8d742971020d5f720}{reset\+Messages}} (?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_ace2b4a46ae3c0e80aef8424eb9c5d66d}{get\+Locales\+Files}} (string \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_a50a3465d9326986c16d74c8ff6e85324}{get\+Available\+Locales}} (string \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_a0e80f4d380451d231d9733d39b8ef76f}{set\+Messages}} (string \$locale, array \$messages)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_abe912e58fac427491e44e04dccc84b14}{set\+Translations}} (array \$messages)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_acc1e8df9a5971cbcb6ac5dfcf126c011}{get\+Messages}} (?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_a1bef7c51e9f6a97840f016a8f0a615ae}{set\+Locale}} (\$locale)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_aca922c6f7bcc068784112a8e402a59f7}{\+\_\+\+\_\+debug\+Info}} ()
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}{\+\_\+\+\_\+serialize}} ()
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_a2fe5966ad9b8e1d91a37d3e055ac4938}{\+\_\+\+\_\+unserialize}} (array \$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator}{Translator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_aae85807e73087f24996579bd6cb42569}{\+\_\+\+\_\+construct}} (string \$locale, ?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_interface}{Message\+Formatter\+Interface}} \$formatter=null, private ?string \$cache\+Dir=null, private bool \$debug=false, private array \$cache\+Vary=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a273136e5893ff406e878816666562030}{set\+Config\+Cache\+Factory}} (Config\+Cache\+Factory\+Interface \$config\+Cache\+Factory)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a2fbf2d76db735aa4cf56b3391bb7124b}{add\+Loader}} (string \$format, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_loader_1_1_loader_interface}{Loader\+Interface}} \$loader)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ac1dc9ed923850151c574de855469422b}{add\+Resource}} (string \$format, mixed \$resource, string \$locale, ?string \$domain=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ab6643b93f57377aaca6ccff3a7b24022}{set\+Locale}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ad532b661eb33c3e755bd3fa8ff1bd7af}{get\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_aa5a31d23135c9b57ae2bc2b1b7174d90}{set\+Fallback\+Locales}} (array \$locales)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a1ba0e6d754495a9c3dd5110a95cdeb11}{get\+Fallback\+Locales}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a2673ba085fdd4acd7142e22944c34256}{trans}} (?string \$id, array \$parameters=\mbox{[}$\,$\mbox{]}, ?string \$domain=null, ?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a4f8d6d2fabc44a04f2e88c5818971eaa}{get\+Catalogue}} (?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a65922ebac5c6d59da543df43777d4ccc}{get\+Catalogues}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Translator\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface_a26335c57b686d81a7c5a56ec91cb68ab}{trans}} (string \$id, array \$parameters=\mbox{[}$\,$\mbox{]}, ?string \$domain=null, ?string \$locale=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_carbon_1_1_abstract_translator_a6b05b8bd387309fb7e4c886ea422d1e4}{get}} (?string \$locale=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_carbon_1_1_abstract_translator_a66b27481a35b2472126016236f8fd18c}{REGION\+\_\+\+CODE\+\_\+\+LENGTH}} = 2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_ad5465afb6b5fe2bb0814e90883ac3595}{translate}} (?string \$id, array \$parameters=\mbox{[}$\,$\mbox{]}, ?string \$domain=null, ?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_carbon_1_1_abstract_translator_a650b5261ead6c27d9f10293540a0c2ab}{load\+Messages\+From\+File}} (string \$locale)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator}{Translator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a79dac4a40aa2f03009e4e625d2543f3e}{get\+Loaders}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a137b50572cac5c1d8f673d9076eddc74}{load\+Catalogue}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a527fcea36ae1b694efca32596e69f68a}{initialize\+Catalogue}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ae4d2a59dddb4c069873f8218c58bbe35}{do\+Load\+Catalogue}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_a00e9dc754233d786825c5019c7dd2315}{compute\+Fallback\+Locales}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_ae5dc2d0a08680e85f572b7f544d3ea26}{assert\+Valid\+Locale}} (string \$locale)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_carbon_1_1_abstract_translator_aaf8d38bd4e7d07a3d97cc2f497f6d13f}{\$messages}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_carbon_1_1_abstract_translator_af780c1ce347170464264295bad64baba}{\$directories}} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \mbox{\hyperlink{class_carbon_1_1_abstract_translator_a7e3c3d897990a114e05c1c6e4450475c}{\$initializing}} = false
+\item 
+array \mbox{\hyperlink{class_carbon_1_1_abstract_translator_a30c35e4d7f0e56c0bdb6a00e6c5f1beb}{\$aliases}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator}{Translator}}}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_translator_abf928efad81dd9d8014b7ea68b0405a2}{\$catalogues}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static array \mbox{\hyperlink{class_carbon_1_1_abstract_translator_a2dd43e118eed4687bc5717a4fe42f96b}{\$singletons}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_carbon_1_1_abstract_translator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_carbon_1_1_abstract_translator_aba42989ea956b331438d123577bd64a2}\index{AbstractTranslator@{AbstractTranslator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_aba42989ea956b331438d123577bd64a2} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$locale}{, }\item[{?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_formatter_1_1_message_formatter_interface}{Message\+Formatter\+Interface}}}]{\$formatter}{ = {\ttfamily null}, }\item[{}]{\$cache\+Dir}{ = {\ttfamily null}, }\item[{}]{\$debug}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_carbon_1_1_abstract_translator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_carbon_1_1_abstract_translator_aca922c6f7bcc068784112a8e402a59f7}\index{AbstractTranslator@{AbstractTranslator}!\_\_debugInfo@{\_\_debugInfo}}
+\index{\_\_debugInfo@{\_\_debugInfo}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{\_\_debugInfo()}{\_\_debugInfo()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_aca922c6f7bcc068784112a8e402a59f7} 
+\+\_\+\+\_\+debug\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Show locale on var\+\_\+dump().
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_ab1d6abfbdcd8c9dd63dfef565bd2cfcf}\index{AbstractTranslator@{AbstractTranslator}!\_\_serialize@{\_\_serialize}}
+\index{\_\_serialize@{\_\_serialize}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{\_\_serialize()}{\_\_serialize()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_ab1d6abfbdcd8c9dd63dfef565bd2cfcf} 
+\+\_\+\+\_\+serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_carbon_1_1_abstract_translator_a2fe5966ad9b8e1d91a37d3e055ac4938}\index{AbstractTranslator@{AbstractTranslator}!\_\_unserialize@{\_\_unserialize}}
+\index{\_\_unserialize@{\_\_unserialize}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{\_\_unserialize()}{\_\_unserialize()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a2fe5966ad9b8e1d91a37d3e055ac4938} 
+\+\_\+\+\_\+unserialize (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_carbon_1_1_abstract_translator_a9d8e21a57d7a4edee9c12c533d9a10e0}\index{AbstractTranslator@{AbstractTranslator}!addDirectory@{addDirectory}}
+\index{addDirectory@{addDirectory}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{addDirectory()}{addDirectory()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a9d8e21a57d7a4edee9c12c533d9a10e0} 
+add\+Directory (\begin{DoxyParamCaption}\item[{string}]{\$directory}{}\end{DoxyParamCaption})}
+
+Add a directory to the list translation files are searched in.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & new directory\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_a6b05b8bd387309fb7e4c886ea422d1e4}\index{AbstractTranslator@{AbstractTranslator}!get@{get}}
+\index{get@{get}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a6b05b8bd387309fb7e4c886ea422d1e4} 
+get (\begin{DoxyParamCaption}\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return a singleton instance of Translator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$locale} & optional initial locale ("{}en"{} -\/ english by default)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_a50a3465d9326986c16d74c8ff6e85324}\index{AbstractTranslator@{AbstractTranslator}!getAvailableLocales@{getAvailableLocales}}
+\index{getAvailableLocales@{getAvailableLocales}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{getAvailableLocales()}{getAvailableLocales()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a50a3465d9326986c16d74c8ff6e85324} 
+get\+Available\+Locales (\begin{DoxyParamCaption}\item[{string}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the list of internally available locales and already loaded custom locales. (It will ignore custom translator dynamic loading.)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & prefix required to filter result\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_a67901c2e59ffc4bb1c0010ac9cce2560}\index{AbstractTranslator@{AbstractTranslator}!getDirectories@{getDirectories}}
+\index{getDirectories@{getDirectories}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{getDirectories()}{getDirectories()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a67901c2e59ffc4bb1c0010ac9cce2560} 
+get\+Directories (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the list of directories translation files are searched in. \Hypertarget{class_carbon_1_1_abstract_translator_ace2b4a46ae3c0e80aef8424eb9c5d66d}\index{AbstractTranslator@{AbstractTranslator}!getLocalesFiles@{getLocalesFiles}}
+\index{getLocalesFiles@{getLocalesFiles}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{getLocalesFiles()}{getLocalesFiles()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_ace2b4a46ae3c0e80aef8424eb9c5d66d} 
+get\+Locales\+Files (\begin{DoxyParamCaption}\item[{string}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the list of files matching a given locale prefix (or all if empty).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & prefix required to filter result\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_acc1e8df9a5971cbcb6ac5dfcf126c011}\index{AbstractTranslator@{AbstractTranslator}!getMessages@{getMessages}}
+\index{getMessages@{getMessages}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{getMessages()}{getMessages()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_acc1e8df9a5971cbcb6ac5dfcf126c011} 
+get\+Messages (\begin{DoxyParamCaption}\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get messages of a locale, if none given, return all the languages. \Hypertarget{class_carbon_1_1_abstract_translator_a650b5261ead6c27d9f10293540a0c2ab}\index{AbstractTranslator@{AbstractTranslator}!loadMessagesFromFile@{loadMessagesFromFile}}
+\index{loadMessagesFromFile@{loadMessagesFromFile}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{loadMessagesFromFile()}{loadMessagesFromFile()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a650b5261ead6c27d9f10293540a0c2ab} 
+load\+Messages\+From\+File (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Init messages language from matching file in \doxylink{class_lang}{Lang} directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_a375c7ccd34377e1ac68f75ebf284097d}\index{AbstractTranslator@{AbstractTranslator}!removeDirectory@{removeDirectory}}
+\index{removeDirectory@{removeDirectory}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{removeDirectory()}{removeDirectory()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a375c7ccd34377e1ac68f75ebf284097d} 
+remove\+Directory (\begin{DoxyParamCaption}\item[{string}]{\$directory}{}\end{DoxyParamCaption})}
+
+Remove a directory from the list translation files are searched in.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & directory path\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_ac3f3965fff337da8d742971020d5f720}\index{AbstractTranslator@{AbstractTranslator}!resetMessages@{resetMessages}}
+\index{resetMessages@{resetMessages}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{resetMessages()}{resetMessages()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_ac3f3965fff337da8d742971020d5f720} 
+reset\+Messages (\begin{DoxyParamCaption}\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Reset messages of a locale (all locale if no locale passed). Remove custom messages and reload initial messages from matching file in \doxylink{class_lang}{Lang} directory. \Hypertarget{class_carbon_1_1_abstract_translator_a2f7a263f296b0b74269e8ad3bab69ffe}\index{AbstractTranslator@{AbstractTranslator}!setDirectories@{setDirectories}}
+\index{setDirectories@{setDirectories}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{setDirectories()}{setDirectories()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a2f7a263f296b0b74269e8ad3bab69ffe} 
+set\+Directories (\begin{DoxyParamCaption}\item[{array}]{\$directories}{}\end{DoxyParamCaption})}
+
+Set list of directories translation files are searched in.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$directories} & new directories list\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_a1bef7c51e9f6a97840f016a8f0a615ae}\index{AbstractTranslator@{AbstractTranslator}!setLocale@{setLocale}}
+\index{setLocale@{setLocale}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{setLocale()}{setLocale()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a1bef7c51e9f6a97840f016a8f0a615ae} 
+set\+Locale (\begin{DoxyParamCaption}\item[{}]{\$locale}{}\end{DoxyParamCaption})}
+
+Set the current translator locale and indicate if the source locale file exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & locale ex. en \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_carbon_1_1_abstract_translator_a0e80f4d380451d231d9733d39b8ef76f}\index{AbstractTranslator@{AbstractTranslator}!setMessages@{setMessages}}
+\index{setMessages@{setMessages}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{setMessages()}{setMessages()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a0e80f4d380451d231d9733d39b8ef76f} 
+set\+Messages (\begin{DoxyParamCaption}\item[{string}]{\$locale}{, }\item[{array}]{\$messages}{}\end{DoxyParamCaption})}
+
+Set messages of a locale and take file first if present.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+array & {\em \$messages} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_abe912e58fac427491e44e04dccc84b14}\index{AbstractTranslator@{AbstractTranslator}!setTranslations@{setTranslations}}
+\index{setTranslations@{setTranslations}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{setTranslations()}{setTranslations()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_abe912e58fac427491e44e04dccc84b14} 
+set\+Translations (\begin{DoxyParamCaption}\item[{array}]{\$messages}{}\end{DoxyParamCaption})}
+
+Set messages of the current locale and take file first if present.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$messages} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_carbon_1_1_abstract_translator_ad5465afb6b5fe2bb0814e90883ac3595}\index{AbstractTranslator@{AbstractTranslator}!translate@{translate}}
+\index{translate@{translate}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_ad5465afb6b5fe2bb0814e90883ac3595} 
+translate (\begin{DoxyParamCaption}\item[{?string}]{\$id}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$domain}{ = {\ttfamily null}, }\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_carbon_1_1_abstract_translator_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_carbon_1_1_abstract_translator_a30c35e4d7f0e56c0bdb6a00e6c5f1beb}\index{AbstractTranslator@{AbstractTranslator}!\$aliases@{\$aliases}}
+\index{\$aliases@{\$aliases}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{\$aliases}{\$aliases}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a30c35e4d7f0e56c0bdb6a00e6c5f1beb} 
+array \$aliases\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_carbon_1_1_abstract_translator_af780c1ce347170464264295bad64baba}\index{AbstractTranslator@{AbstractTranslator}!\$directories@{\$directories}}
+\index{\$directories@{\$directories}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{\$directories}{\$directories}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_af780c1ce347170464264295bad64baba} 
+array \$directories = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_carbon_1_1_abstract_translator_a7e3c3d897990a114e05c1c6e4450475c}\index{AbstractTranslator@{AbstractTranslator}!\$initializing@{\$initializing}}
+\index{\$initializing@{\$initializing}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{\$initializing}{\$initializing}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a7e3c3d897990a114e05c1c6e4450475c} 
+bool \$initializing = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set to true while constructing. \Hypertarget{class_carbon_1_1_abstract_translator_aaf8d38bd4e7d07a3d97cc2f497f6d13f}\index{AbstractTranslator@{AbstractTranslator}!\$messages@{\$messages}}
+\index{\$messages@{\$messages}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{\$messages}{\$messages}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_aaf8d38bd4e7d07a3d97cc2f497f6d13f} 
+array \$messages = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_carbon_1_1_abstract_translator_a2dd43e118eed4687bc5717a4fe42f96b}\index{AbstractTranslator@{AbstractTranslator}!\$singletons@{\$singletons}}
+\index{\$singletons@{\$singletons}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{\$singletons}{\$singletons}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a2dd43e118eed4687bc5717a4fe42f96b} 
+array \$singletons = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_carbon_1_1_abstract_translator_a66b27481a35b2472126016236f8fd18c}\index{AbstractTranslator@{AbstractTranslator}!REGION\_CODE\_LENGTH@{REGION\_CODE\_LENGTH}}
+\index{REGION\_CODE\_LENGTH@{REGION\_CODE\_LENGTH}!AbstractTranslator@{AbstractTranslator}}
+\doxysubsubsection{\texorpdfstring{REGION\_CODE\_LENGTH}{REGION\_CODE\_LENGTH}}
+{\footnotesize\ttfamily \label{class_carbon_1_1_abstract_translator_a66b27481a35b2472126016236f8fd18c} 
+const REGION\+\_\+\+CODE\+\_\+\+LENGTH = 2}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nesbot/carbon/src/\+Carbon/\mbox{\hyperlink{_abstract_translator_8php}{Abstract\+Translator.\+php}}\end{DoxyCompactItemize}

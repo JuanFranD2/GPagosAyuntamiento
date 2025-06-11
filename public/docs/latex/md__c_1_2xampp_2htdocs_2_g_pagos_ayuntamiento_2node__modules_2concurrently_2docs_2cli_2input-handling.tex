@@ -1,0 +1,59 @@
+\chapter{Input Handling }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2input-handling}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2input-handling}\index{Input Handling@{Input Handling}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2input-handling_autotoc_md2239}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2input-handling_autotoc_md2239}%
+
+
+By default, concurrently doesn\textquotesingle{}t send input to any commands it spawns.~\newline
+ In the below example, typing {\ttfamily rs} to manually restart \href{https://nodemon.io/}{\texttt{nodemon}} does nothing\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ "{}nodemon"{}\ "{}npm\ run\ watch-\/js"{}}
+\DoxyCodeLine{rs}
+
+\end{DoxyCode}
+
+
+To turn on input handling, it\textquotesingle{}s necessary to set the {\ttfamily -\/-\/handle-\/input}/{\ttfamily -\/i} flag.~\newline
+ This will send {\ttfamily rs} to the first command\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/handle-\/input\ "{}nodemon"{}\ "{}npm\ run\ watch-\/js"{}}
+\DoxyCodeLine{rs}
+
+\end{DoxyCode}
+
+
+To send input to a different command instead, it\textquotesingle{}s possible to prefix the input with the command index, followed by a {\ttfamily \+:}.~\newline
+ For example, the below sends {\ttfamily rs} to the second command\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/handle-\/input\ "{}npm\ run\ watch-\/js"{}\ "{}nodemon"{}}
+\DoxyCodeLine{1:rs}
+
+\end{DoxyCode}
+
+
+If the command has a name, it\textquotesingle{}s also possible to target it using that command\textquotesingle{}s name\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/handle-\/input\ -\/-\/names\ js,server\ "{}npm\ run\ watch-\/js"{}\ "{}nodemon"{}}
+\DoxyCodeLine{server:rs}
+
+\end{DoxyCode}
+
+
+It\textquotesingle{}s also possible to change the default command that receives input.~\newline
+ To do this, set the {\ttfamily -\/-\/default-\/input-\/target} flag to a command\textquotesingle{}s index or name.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/handle-\/input\ -\/-\/default-\/input-\/target\ 1\ "{}npm\ run\ watch-\/js"{}\ "{}nodemon"{}}
+\DoxyCodeLine{rs}
+
+\end{DoxyCode}
+ 

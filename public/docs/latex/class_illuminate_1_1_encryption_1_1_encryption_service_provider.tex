@@ -1,0 +1,104 @@
+\doxysection{Encryption\+Service\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_encryption_1_1_encryption_service_provider}{}\label{class_illuminate_1_1_encryption_1_1_encryption_service_provider}\index{EncryptionServiceProvider@{EncryptionServiceProvider}}
+Inheritance diagram for Encryption\+Service\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_encryption_1_1_encryption_service_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encryption_service_provider_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encryption_service_provider_ac0e602436d27a006d472b77f32a581e9}{register\+Encrypter}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encryption_service_provider_a9a9bcdfd1c59101e2b3f8c3e74b38e73}{register\+Serializable\+Closure\+Security\+Key}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encryption_service_provider_a42c4716a56c94e0f0d1c85c2fc67707e}{parse\+Key}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_encryption_1_1_encryption_service_provider_a9ad2306e112dbd664f530706f0759644}{key}} (array \$config)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encryption_service_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encryption_service_provider_a9ad2306e112dbd664f530706f0759644}\index{EncryptionServiceProvider@{EncryptionServiceProvider}!key@{key}}
+\index{key@{key}!EncryptionServiceProvider@{EncryptionServiceProvider}}
+\doxysubsubsection{\texorpdfstring{key()}{key()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encryption_service_provider_a9ad2306e112dbd664f530706f0759644} 
+key (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extract the encryption key from the given configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Encryption\textbackslash{}\+Missing\+App\+Key\+Exception \Hypertarget{class_illuminate_1_1_encryption_1_1_encryption_service_provider_a42c4716a56c94e0f0d1c85c2fc67707e}\index{EncryptionServiceProvider@{EncryptionServiceProvider}!parseKey@{parseKey}}
+\index{parseKey@{parseKey}!EncryptionServiceProvider@{EncryptionServiceProvider}}
+\doxysubsubsection{\texorpdfstring{parseKey()}{parseKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encryption_service_provider_a42c4716a56c94e0f0d1c85c2fc67707e} 
+parse\+Key (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the encryption key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encryption_service_provider_acc294a6cc8e69743746820e3d15e3f78}\index{EncryptionServiceProvider@{EncryptionServiceProvider}!register@{register}}
+\index{register@{register}!EncryptionServiceProvider@{EncryptionServiceProvider}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encryption_service_provider_acc294a6cc8e69743746820e3d15e3f78} 
+register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the service provider.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encryption_service_provider_ac0e602436d27a006d472b77f32a581e9}\index{EncryptionServiceProvider@{EncryptionServiceProvider}!registerEncrypter@{registerEncrypter}}
+\index{registerEncrypter@{registerEncrypter}!EncryptionServiceProvider@{EncryptionServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerEncrypter()}{registerEncrypter()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encryption_service_provider_ac0e602436d27a006d472b77f32a581e9} 
+register\+Encrypter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the encrypter.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_encryption_1_1_encryption_service_provider_a9a9bcdfd1c59101e2b3f8c3e74b38e73}\index{EncryptionServiceProvider@{EncryptionServiceProvider}!registerSerializableClosureSecurityKey@{registerSerializableClosureSecurityKey}}
+\index{registerSerializableClosureSecurityKey@{registerSerializableClosureSecurityKey}!EncryptionServiceProvider@{EncryptionServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerSerializableClosureSecurityKey()}{registerSerializableClosureSecurityKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_encryption_1_1_encryption_service_provider_a9a9bcdfd1c59101e2b3f8c3e74b38e73} 
+register\+Serializable\+Closure\+Security\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Configure Serializable Closure signing for security.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Encryption/\mbox{\hyperlink{_encryption_service_provider_8php}{Encryption\+Service\+Provider.\+php}}\end{DoxyCompactItemize}

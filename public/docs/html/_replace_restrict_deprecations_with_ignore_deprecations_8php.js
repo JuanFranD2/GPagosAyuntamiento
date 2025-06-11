@@ -1,0 +1,4 @@
+var _replace_restrict_deprecations_with_ignore_deprecations_8php =
+[
+    [ "ReplaceRestrictDeprecationsWithIgnoreDeprecations", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_replace_restrict_deprecations_with_ignore_deprecations.html", "class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_replace_restrict_deprecations_with_ignore_deprecations" ]
+];

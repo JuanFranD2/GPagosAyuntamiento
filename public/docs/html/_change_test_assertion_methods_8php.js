@@ -1,0 +1,4 @@
+var _change_test_assertion_methods_8php =
+[
+    [ "ChangeTestAssertionMethods", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_change_test_assertion_methods.html", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_change_test_assertion_methods" ]
+];

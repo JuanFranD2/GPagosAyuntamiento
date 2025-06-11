@@ -1,0 +1,144 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/barryvdh/laravel-\/dompdf Directory Reference}
+\hypertarget{dir_6d9b65a635ad700274019b0b88b98397}{}\label{dir_6d9b65a635ad700274019b0b88b98397}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/dompdf Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/dompdf Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_eab8fdf68325afb5eee675980027b27c}{config}}
+\item 
+directory \mbox{\hyperlink{dir_5a249e0ef2ba4f7fee6f144cd46232ce}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md8552}{}\doxysubsection{\texorpdfstring{DOMPDF Wrapper for Laravel}{DOMPDF Wrapper for Laravel}}\label{readme.md_autotoc_md8552}
+\hypertarget{readme.md_autotoc_md8553}{}\doxysubsubsection{\texorpdfstring{Laravel wrapper for \href{https://github.com/dompdf/dompdf}{\texttt{Dompdf HTML to PDF Converter}}}{Laravel wrapper for \href{https://github.com/dompdf/dompdf}{\texttt{Dompdf HTML to PDF Converter}}}}\label{readme.md_autotoc_md8553}
+\href{https://github.com/barryvdh/laravel-dompdf/actions}{\texttt{}} \href{http://choosealicense.com/licenses/mit/}{\texttt{}} \href{https://packagist.org/packages/barryvdh/laravel-dompdf}{\texttt{}} \href{https://packagist.org/packages/barryvdh/laravel-dompdf}{\texttt{}} \href{https://fruitcake.nl/}{\texttt{}}\hypertarget{readme.md_autotoc_md8554}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{readme.md_autotoc_md8554}
+\hypertarget{readme.md_autotoc_md8555}{}\doxysubsubsection{\texorpdfstring{Laravel}{Laravel}}\label{readme.md_autotoc_md8555}
+Require this package in your composer.\+json and update composer. This will download the package and the dompdf + fontlib libraries also. \begin{DoxyVerb}composer require barryvdh/laravel-dompdf
+\end{DoxyVerb}
+\hypertarget{readme.md_autotoc_md8556}{}\doxysubsubsection{\texorpdfstring{Lumen}{Lumen}}\label{readme.md_autotoc_md8556}
+After updating composer add the following lines to register provider in {\ttfamily \doxylink{bootstrap_2app_8php}{bootstrap/app.\+php}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$app-\/>register(\(\backslash\)Barryvdh\(\backslash\)DomPDF\(\backslash\)ServiceProvider::class);}
+
+\end{DoxyCode}
+
+
+To change the configuration, copy the config file to your config folder and enable it in {\ttfamily \doxylink{bootstrap_2app_8php}{bootstrap/app.\+php}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$app-\/>configure('dompdf');}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md8557}{}\doxysubsection{\texorpdfstring{Using}{Using}}\label{readme.md_autotoc_md8557}
+You can create a new DOMPDF instance and load a HTML string, file or view name. You can save it to a file, or stream (show in browser) or download.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_barryvdh_1_1_dom_p_d_f_1_1_facade_1_1_pdf}{Barryvdh\(\backslash\)DomPDF\(\backslash\)Facade\(\backslash\)Pdf}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$pdf\ =\ Pdf::loadView(\textcolor{stringliteral}{'pdf.invoice'},\ \$data);}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ \$pdf-\/>download(\textcolor{stringliteral}{'invoice.pdf'});}
+
+\end{DoxyCode}
+
+
+or use the \doxylink{class_app}{App} container\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$pdf\ =\ App::make(\textcolor{stringliteral}{'dompdf.wrapper'});}
+\DoxyCodeLine{\$pdf-\/>loadHTML(\textcolor{stringliteral}{'<h1>Test</h1>'});}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ \$pdf-\/>stream();}
+
+\end{DoxyCode}
+
+
+Or use the facade\+:
+
+You can chain the methods\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{return}\ Pdf::loadFile(public\_path().\textcolor{stringliteral}{'/myfile.html'})-\/>save(\textcolor{stringliteral}{'/path-\/to/my\_stored\_file.pdf'})-\/>stream(\textcolor{stringliteral}{'download.pdf'});}
+
+\end{DoxyCode}
+
+
+You can change the orientation and paper size, and hide or show errors (by default, errors are shown when debug is on)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Pdf::loadHTML(\$html)-\/>setPaper(\textcolor{stringliteral}{'a4'},\ \textcolor{stringliteral}{'landscape'})-\/>setWarnings(\textcolor{keyword}{false})-\/>save(\textcolor{stringliteral}{'myfile.pdf'})}
+
+\end{DoxyCode}
+
+
+If you need the output as a string, you can get the rendered \doxylink{class_p_d_f}{PDF} with the output() function, so you can save/output it yourself.
+
+Use {\ttfamily php artisan vendor\+:publish} to create a config file located at {\ttfamily config/dompdf.\+php} which will allow you to define local configurations to change some settings (default paper etc). You can also use your Config\+Provider to set certain keys.\hypertarget{readme.md_autotoc_md8558}{}\doxysubsubsection{\texorpdfstring{Configuration}{Configuration}}\label{readme.md_autotoc_md8558}
+The defaults configuration settings are set in {\ttfamily config/dompdf.\+php}. Copy this file to your own config directory to modify the values. You can publish the config using this command\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php\ artisan\ vendor:publish\ -\/-\/provider="{}Barryvdh\(\backslash\)DomPDF\(\backslash\)ServiceProvider"{}}
+
+\end{DoxyCode}
+
+
+You can still alter the dompdf options in your code before generating the pdf using this command\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Pdf::setOption([\textcolor{stringliteral}{'dpi'}\ =>\ 150,\ \textcolor{stringliteral}{'defaultFont'}\ =>\ \textcolor{stringliteral}{'sans-\/serif'}]);}
+
+\end{DoxyCode}
+
+
+Available options and their defaults\+:
+\begin{DoxyItemize}
+\item {\bfseries{root\+Dir}}\+: "{}\{app\+\_\+directory\}/vendor/dompdf/dompdf"{}
+\item {\bfseries{temp\+Dir}}\+: "{}/tmp"{} {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{font\+Dir}}\+: "{}\{app\+\_\+directory\}/storage/fonts"{} {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{font\+Cache}}\+: "{}\{app\+\_\+directory\}/storage/fonts"{} {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{chroot}}\+: "{}\{app\+\_\+directory\}"{} {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{log\+Output\+File}}\+: "{}/tmp/log.\+htm"{}
+\item {\bfseries{default\+Media\+Type}}\+: "{}screen"{} {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{default\+Paper\+Size}}\+: "{}a4"{} {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{default\+Font}}\+: "{}serif"{} {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{dpi}}\+: 96 {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{font\+Height\+Ratio}}\+: 1.\+1 {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{is\+Php\+Enabled}}\+: false {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{is\+Remote\+Enabled}}\+: false {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{is\+Javascript\+Enabled}}\+: true {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{is\+Html5\+Parser\+Enabled}}\+: true {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{allowed\+Remote\+Hosts}}\+: null {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{is\+Font\+Subsetting\+Enabled}}\+: false {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{debug\+Png}}\+: false
+\item {\bfseries{debug\+Keep\+Temp}}\+: false
+\item {\bfseries{debug\+Css}}\+: false
+\item {\bfseries{debug\+Layout}}\+: false
+\item {\bfseries{debug\+Layout\+Lines}}\+: true
+\item {\bfseries{debug\+Layout\+Blocks}}\+: true
+\item {\bfseries{debug\+Layout\+Inline}}\+: true
+\item {\bfseries{debug\+Layout\+Padding\+Box}}\+: true
+\item {\bfseries{pdf\+Backend}}\+: "{}\+CPDF"{} {\itshape (available in config/dompdf.\+php)}
+\item {\bfseries{pdflib\+License}}\+: "{}"{}
+\item {\bfseries{admin\+Username}}\+: "{}user"{}
+\item {\bfseries{admin\+Password}}\+: "{}password"{}
+\item {\bfseries{artifact\+Path\+Validation}}\+: null {\itshape (available in config/dompdf.\+php)}
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md8559}{}\doxysubsubsubsection{\texorpdfstring{Note\+: Since 3.\+x the remote access is disabled by default, to provide more security. Use with caution!}{Note\+: Since 3.\+x the remote access is disabled by default, to provide more security. Use with caution!}}\label{readme.md_autotoc_md8559}
+\hypertarget{readme.md_autotoc_md8560}{}\doxysubsubsection{\texorpdfstring{Tip\+: UTF-\/8 support}{Tip\+: UTF-\/8 support}}\label{readme.md_autotoc_md8560}
+In your templates, set the UTF-\/8 Metatag\+: \begin{DoxyVerb}<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+\end{DoxyVerb}
+\hypertarget{readme.md_autotoc_md8561}{}\doxysubsubsection{\texorpdfstring{Tip\+: Page breaks}{Tip\+: Page breaks}}\label{readme.md_autotoc_md8561}
+You can use the CSS {\ttfamily page-\/break-\/before}/{\ttfamily page-\/break-\/after} properties to create a new page. \begin{DoxyVerb}<style>
+.page-break {
+    page-break-after: always;
+}
+</style>
+<h1>Page 1</h1>
+<div class="page-break"></div>
+<h1>Page 2</h1>
+\end{DoxyVerb}
+\hypertarget{readme.md_autotoc_md8562}{}\doxysubsubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md8562}
+This DOMPDF Wrapper for Laravel is open-\/sourced software licensed under the \href{http://opensource.org/licenses/MIT}{\texttt{MIT license}} 

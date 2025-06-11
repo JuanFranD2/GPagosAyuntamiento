@@ -1,0 +1,713 @@
+\chapter{Change Log }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g}\index{Change Log@{Change Log}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9621}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9621}%
+
+
+All notable changes to this project will be documented in this file. Updates should follow the \href{https://keepachangelog.com/}{\texttt{Keep a CHANGELOG}} principles.
+
+{\bfseries{Upgrading from 1.\+x?}} See \href{https://commonmark.thephpleague.com/2.0/upgrading/}{\texttt{https\+://commonmark.\+thephpleague.\+com/2.\+0/upgrading/}} for additional information.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9622}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.6.1...main}{\texttt{Unreleased}}}{\href{https://github.com/thephpleague/commonmark/compare/2.6.1...main}{\texttt{Unreleased}}}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9622}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9623}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.6.0...2.6.1}{\texttt{2.\+6.\+1}} -\/ 2024-\/12-\/29}{\href{https://github.com/thephpleague/commonmark/compare/2.6.0...2.6.1}{\texttt{2.\+6.\+1}} -\/ 2024-\/12-\/29}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9623}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9624}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9624}
+
+\begin{DoxyItemize}
+\item Rendered list items should only add newlines around block-\/level children (\#1059, \#1061)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9625}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.5.3...2.6.0}{\texttt{2.\+6.\+0}} -\/ 2024-\/12-\/07}{\href{https://github.com/thephpleague/commonmark/compare/2.5.3...2.6.0}{\texttt{2.\+6.\+0}} -\/ 2024-\/12-\/07}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9625}
+This is a {\bfseries{security release}} to address potential denial of service attacks when parsing specially crafted, malicious input from untrusted sources (like user input).\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9626}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9626}
+
+\begin{DoxyItemize}
+\item Added {\ttfamily max\+\_\+delimiters\+\_\+per\+\_\+line} config option to prevent denial of service attacks when parsing malicious input
+\item Added {\ttfamily table/max\+\_\+autocompleted\+\_\+cells} config option to prevent denial of service attacks when parsing large tables
+\item The {\ttfamily Attributes\+Extension} now supports attributes without values (\#985, \#986)
+\item The {\ttfamily Autolink\+Extension} exposes two new configuration options to override the default behavior (\#969, \#987)\+:
+\begin{DoxyItemize}
+\item {\ttfamily autolink/allowed\+\_\+protocols} -\/ an array of protocols to allow autolinking for
+\item {\ttfamily autolink/default\+\_\+protocol} -\/ the default protocol to use when none is specified
+\end{DoxyItemize}
+\item Added {\ttfamily Regex\+Helper\+::is\+Whitespace()} method to check if a given character is an ASCII whitespace character
+\item Added {\ttfamily Cacheable\+Delimiter\+Processor\+Interface} to ensure linear complexity for dynamic delimiter processing
+\item Added {\ttfamily Bracket} delimiter type to optimize bracket parsing
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9627}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9627}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{[}} and {\ttfamily \mbox{]}} are no longer added as {\ttfamily Delimiter} objects on the stack; a new {\ttfamily Bracket} type with its own stack is used instead
+\item {\ttfamily Url\+Autolink\+Parser} no longer parses URLs with more than 127 subdomains
+\item Expanded reference links can no longer exceed 100kb, or the size of the input document (whichever is greater)
+\item Delimiters should always provide a non-\/null value via {\ttfamily Delimiter\+Interface\+::get\+Index()}
+\begin{DoxyItemize}
+\item We\textquotesingle{}ll attempt to infer the index based on surrounding delimiters where possible
+\end{DoxyItemize}
+\item The {\ttfamily Delimiter\+Stack} now accepts integer positions for any {\ttfamily \$stack\+Bottom} argument
+\item Several small performance optimizations
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9628}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.5.2...2.5.3}{\texttt{2.\+5.\+3}} -\/ 2024-\/08-\/16}{\href{https://github.com/thephpleague/commonmark/compare/2.5.2...2.5.3}{\texttt{2.\+5.\+3}} -\/ 2024-\/08-\/16}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9628}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9629}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9629}
+
+\begin{DoxyItemize}
+\item Made compatible with Common\+Mark spec 0.\+31.\+1, including\+:
+\begin{DoxyItemize}
+\item Remove {\ttfamily source}, add {\ttfamily search} to list of recognized block tags
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9630}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.5.1...2.5.2}{\texttt{2.\+5.\+2}} -\/ 2024-\/08-\/14}{\href{https://github.com/thephpleague/commonmark/compare/2.5.1...2.5.2}{\texttt{2.\+5.\+2}} -\/ 2024-\/08-\/14}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9630}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9631}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9631}
+
+\begin{DoxyItemize}
+\item Boolean attributes now require an explicit {\ttfamily true} value (\#1040)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9632}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9632}
+
+\begin{DoxyItemize}
+\item Fixed regression where text could be misinterpreted as an attribute (\#1040)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9633}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.5.0...2.5.1}{\texttt{2.\+5.\+1}} -\/ 2024-\/07-\/24}{\href{https://github.com/thephpleague/commonmark/compare/2.5.0...2.5.1}{\texttt{2.\+5.\+1}} -\/ 2024-\/07-\/24}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9633}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9634}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9634}
+
+\begin{DoxyItemize}
+\item Fixed attribute parsing incorrectly parsing mustache-\/like syntax (\#1035)
+\item Fixed incorrect {\ttfamily Table} start line numbers (\#1037)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9635}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.4.4...2.5.0}{\texttt{2.\+5.\+0}} -\/ 2024-\/07-\/22}{\href{https://github.com/thephpleague/commonmark/compare/2.4.4...2.5.0}{\texttt{2.\+5.\+0}} -\/ 2024-\/07-\/22}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9635}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9636}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9636}
+
+\begin{DoxyItemize}
+\item The {\ttfamily Attributes\+Extension} now supports attributes without values (\#985, \#986)
+\item The {\ttfamily Autolink\+Extension} exposes two new configuration options to override the default behavior (\#969, \#987)\+:
+\begin{DoxyItemize}
+\item {\ttfamily autolink/allowed\+\_\+protocols} -\/ an array of protocols to allow autolinking for
+\item {\ttfamily autolink/default\+\_\+protocol} -\/ the default protocol to use when none is specified
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9637}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9637}
+
+\begin{DoxyItemize}
+\item Made compatible with Common\+Mark spec 0.\+31.\+0, including\+:
+\begin{DoxyItemize}
+\item Allow closing fence to be followed by tabs
+\item Remove restrictive limitation on inline comments
+\item Unicode symbols now treated like punctuation (for purposes of flankingness)
+\item Trailing tabs on the last line of indented code blocks will be excluded
+\item Improved HTML comment matching
+\end{DoxyItemize}
+\item {\ttfamily Paragraph}s only containing link reference definitions will be kept in the AST until the {\ttfamily Document} is finalized
+\begin{DoxyItemize}
+\item (These were previously removed immediately after parsing the {\ttfamily Paragraph})
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9638}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9638}
+
+\begin{DoxyItemize}
+\item Fixed list tightness not being determined properly in some edge cases
+\item Fixed incorrect ending line numbers for several block types in various scenarios
+\item Fixed lowercase inline HTML declarations not being accepted
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9639}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.4.3...2.4.4}{\texttt{2.\+4.\+4}} -\/ 2024-\/07-\/22}{\href{https://github.com/thephpleague/commonmark/compare/2.4.3...2.4.4}{\texttt{2.\+4.\+4}} -\/ 2024-\/07-\/22}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9639}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9640}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9640}
+
+\begin{DoxyItemize}
+\item Fixed Smart\+Punct extension changing already-\/formatted quotation marks (\#1030)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9641}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.4.2...2.4.3}{\texttt{2.\+4.\+3}} -\/ 2024-\/07-\/22}{\href{https://github.com/thephpleague/commonmark/compare/2.4.2...2.4.3}{\texttt{2.\+4.\+3}} -\/ 2024-\/07-\/22}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9641}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9642}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9642}
+
+\begin{DoxyItemize}
+\item Fixed the Attributes extension not supporting CSS level 3 selectors (\#1013)
+\item Fixed {\ttfamily Url\+Autolink\+Parser} incorrectly parsing text containing {\ttfamily www} anywhere before an autolink (\#1025)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9643}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.4.1...2.4.2}{\texttt{2.\+4.\+2}} -\/ 2024-\/02-\/02}{\href{https://github.com/thephpleague/commonmark/compare/2.4.1...2.4.2}{\texttt{2.\+4.\+2}} -\/ 2024-\/02-\/02}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9643}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9644}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9644}
+
+\begin{DoxyItemize}
+\item Fixed declaration parser being too strict
+\item {\ttfamily Fenced\+Code\+Renderer}\+: don\textquotesingle{}t add {\ttfamily language-\/} to class if already prefixed
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9645}{}\doxysubsection{\texorpdfstring{Deprecated}{Deprecated}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9645}
+
+\begin{DoxyItemize}
+\item Returning dynamic values from {\ttfamily Delimiter\+Processor\+Interface\+::get\+Delimiter\+Use()} is deprecated
+\begin{DoxyItemize}
+\item You should instead implement {\ttfamily Cacheable\+Delimiter\+Processor\+Interface} to help the engine perform caching to avoid performance issues.
+\end{DoxyItemize}
+\item Failing to set a delimiter\textquotesingle{}s index (or returning {\ttfamily null} from {\ttfamily Delimiter\+Interface\+::get\+Index()}) is deprecated and will not be supported in 3.\+0
+\item Deprecated {\ttfamily Delimiter\+Interface\+::is\+Active()} and {\ttfamily Delimiter\+Interface\+::set\+Active()}, as these are no longer used by the engine
+\item Deprecated {\ttfamily Delimiter\+Stack\+::remove\+Earlier\+Matches()} and {\ttfamily Delimiter\+Stack\+::search\+By\+Character()}, as these are no longer used by the engine
+\item Passing a {\ttfamily Delimiter\+Interface} as the {\ttfamily \$stack\+Bottom} argument to {\ttfamily Delimiter\+Stack\+::process\+Delimiters()} or {\ttfamily \+::remove\+All()} is deprecated and will not be supported in 3.\+0; pass the integer position instead.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9646}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9646}
+
+\begin{DoxyItemize}
+\item Fixed NUL characters not being replaced in the input
+\item Fixed quadratic complexity parsing unclosed inline links
+\item Fixed quadratic complexity parsing emphasis and strikethrough delimiters
+\item Fixed issue where having 500,000+ delimiters could trigger a \href{https://bugs.php.net/bug.php?id=68606}{\texttt{known segmentation fault issue in PHP\textquotesingle{}s garbage collection}}
+\item Fixed quadratic complexity deactivating link openers
+\item Fixed quadratic complexity parsing long backtick code spans with no matching closers
+\item Fixed catastrophic backtracking when parsing link labels/titles
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9647}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.4.0...2.4.1}{\texttt{2.\+4.\+1}} -\/ 2023-\/08-\/30}{\href{https://github.com/thephpleague/commonmark/compare/2.4.0...2.4.1}{\texttt{2.\+4.\+1}} -\/ 2023-\/08-\/30}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9647}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9648}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9648}
+
+\begin{DoxyItemize}
+\item Fixed {\ttfamily External\+Link\+Processor} not fully disabling the {\ttfamily rel} attribute when configured to do so (\#992)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9649}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.9...2.4.0}{\texttt{2.\+4.\+0}} -\/ 2023-\/03-\/24}{\href{https://github.com/thephpleague/commonmark/compare/2.3.9...2.4.0}{\texttt{2.\+4.\+0}} -\/ 2023-\/03-\/24}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9649}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9650}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9650}
+
+\begin{DoxyItemize}
+\item Added generic {\ttfamily Common\+Mark\+Exception} marker interface for all exceptions thrown by the library
+\item Added several new specific exception types implementing that marker interface\+:
+\begin{DoxyItemize}
+\item {\ttfamily Already\+Initialized\+Exception}
+\item {\ttfamily Invalid\+Argument\+Exception}
+\item {\ttfamily IOException}
+\item {\ttfamily Logic\+Exception}
+\item {\ttfamily Missing\+Dependency\+Exception}
+\item {\ttfamily No\+Matching\+Renderer\+Exception}
+\item {\ttfamily Parser\+Logic\+Exception}
+\end{DoxyItemize}
+\item Added more configuration options to the Heading Permalinks extension (\#939)\+:
+\begin{DoxyItemize}
+\item {\ttfamily heading\+\_\+permalink/apply\+\_\+id\+\_\+to\+\_\+heading} -\/ When {\ttfamily true}, the {\ttfamily id} attribute will be applied to the heading element itself instead of the {\ttfamily \texorpdfstring{$<$}{<}a\texorpdfstring{$>$}{>}} tag
+\item {\ttfamily heading\+\_\+permalink/heading\+\_\+class} -\/ class to apply to the heading element
+\item {\ttfamily heading\+\_\+permalink/insert} -\/ now accepts {\ttfamily none} to prevent the creation of the {\ttfamily \texorpdfstring{$<$}{<}a\texorpdfstring{$>$}{>}} link
+\end{DoxyItemize}
+\item Added new {\ttfamily table/alignment\+\_\+attributes} configuration option to control how table cell alignment is rendered (\#959)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9651}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9651}
+
+\begin{DoxyItemize}
+\item Change several thrown exceptions from {\ttfamily Runtime\+Exception} to {\ttfamily Logic\+Exception} (or something extending it), including\+:
+\begin{DoxyItemize}
+\item {\ttfamily Callback\+Generator}s that fail to set a \doxylink{class_u_r_l}{URL} or return an expected value
+\item {\ttfamily Markdown\+Parser} when deactivating the last block parser or attempting to get an active block parser when they\textquotesingle{}ve all been closed
+\item Adding items to an already-\/initialized {\ttfamily Environment}
+\item Rendering a {\ttfamily Node} when no renderer has been registered for it
+\end{DoxyItemize}
+\item {\ttfamily Heading\+Permalink\+Processor} now throws {\ttfamily Invalid\+Configuration\+Exception} instead of {\ttfamily Runtime\+Exception} when invalid config values are given.
+\item {\ttfamily Html\+Element\+::set\+Attribute()} no longer requires the second parameter for boolean attributes
+\item Several small micro-\/optimizations
+\item Changed Strikethrough to only allow 1 or 2 tildes per the updated GFM spec
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9652}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9652}
+
+\begin{DoxyItemize}
+\item Fixed inaccurate {\ttfamily @throws} docblocks throughout the codebase, including {\ttfamily Converter\+Interface}, {\ttfamily Markdown\+Converter}, and {\ttfamily Markdown\+Converter\+Interface}.
+\begin{DoxyItemize}
+\item These previously suggested that only {\ttfamily \textbackslash{}Runtime\+Exception}s were thrown, which was inaccurate as {\ttfamily \textbackslash{}Logic\+Exception}s were also possible.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9653}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.8...2.3.9}{\texttt{2.\+3.\+9}} -\/ 2023-\/02-\/15}{\href{https://github.com/thephpleague/commonmark/compare/2.3.8...2.3.9}{\texttt{2.\+3.\+9}} -\/ 2023-\/02-\/15}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9653}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9654}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9654}
+
+\begin{DoxyItemize}
+\item Fixed autolink extension not detecting some URIs with underscores (\#956)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9655}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.7...2.3.8}{\texttt{2.\+3.\+8}} -\/ 2022-\/12-\/10}{\href{https://github.com/thephpleague/commonmark/compare/2.3.7...2.3.8}{\texttt{2.\+3.\+8}} -\/ 2022-\/12-\/10}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9655}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9656}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9656}
+
+\begin{DoxyItemize}
+\item Fixed parsing issues when {\ttfamily mb\+\_\+internal\+\_\+encoding()} is set to something other than {\ttfamily UTF-\/8} (\#951)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9657}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.6...2.3.7}{\texttt{2.\+3.\+7}} -\/ 2022-\/11-\/03}{\href{https://github.com/thephpleague/commonmark/compare/2.3.6...2.3.7}{\texttt{2.\+3.\+7}} -\/ 2022-\/11-\/03}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9657}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9658}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9658}
+
+\begin{DoxyItemize}
+\item Fixed {\ttfamily Task\+List\+Item\+Marker\+Renderer} not including HTML attributes set on the node by other extensions (\#947)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9659}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.5...2.3.6}{\texttt{2.\+3.\+6}} -\/ 2022-\/10-\/30}{\href{https://github.com/thephpleague/commonmark/compare/2.3.5...2.3.6}{\texttt{2.\+3.\+6}} -\/ 2022-\/10-\/30}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9659}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9660}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9660}
+
+\begin{DoxyItemize}
+\item Fixed unquoted attribute parsing when closing curly brace is followed by certain characters (like a {\ttfamily .}) (\#943)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9661}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.4...2.3.5}{\texttt{2.\+3.\+5}} -\/ 2022-\/07-\/29}{\href{https://github.com/thephpleague/commonmark/compare/2.3.4...2.3.5}{\texttt{2.\+3.\+5}} -\/ 2022-\/07-\/29}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9661}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9662}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9662}
+
+\begin{DoxyItemize}
+\item Fixed error using {\ttfamily Inline\+Parser\+Engine} when no inline parsers are registered in the {\ttfamily Environment} (\#908)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9663}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.3...2.3.4}{\texttt{2.\+3.\+4}} -\/ 2022-\/07-\/17}{\href{https://github.com/thephpleague/commonmark/compare/2.3.3...2.3.4}{\texttt{2.\+3.\+4}} -\/ 2022-\/07-\/17}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9663}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9664}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9664}
+
+\begin{DoxyItemize}
+\item Made a number of small tweaks to the embed extension\textquotesingle{}s parsing behavior to fix \#898\+:
+\begin{DoxyItemize}
+\item Changed {\ttfamily Embed\+Start\+Parser} to always capture embed-\/like lines in container blocks, regardless of parent block type
+\item Changed {\ttfamily Embed\+Processor} to also remove {\ttfamily Embed} blocks that aren\textquotesingle{}t direct children of the {\ttfamily Document}
+\item Increased the priority of {\ttfamily Embed\+Processor} to {\ttfamily 1010}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9665}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9665}
+
+\begin{DoxyItemize}
+\item Fixed {\ttfamily Embed\+Extension} not parsing embeds following a list block (\#898)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9666}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.2...2.3.3}{\texttt{2.\+3.\+3}} -\/ 2022-\/06-\/07}{\href{https://github.com/thephpleague/commonmark/compare/2.3.2...2.3.3}{\texttt{2.\+3.\+3}} -\/ 2022-\/06-\/07}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9666}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9667}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9667}
+
+\begin{DoxyItemize}
+\item Fixed {\ttfamily Domain\+Filtering\+Adapter} not reindexing the embed list (\#884, \#885)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9668}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.2...main}{\texttt{2.\+3.\+2}} -\/ 2022-\/06-\/03}{\href{https://github.com/thephpleague/commonmark/compare/2.3.2...main}{\texttt{2.\+3.\+2}} -\/ 2022-\/06-\/03}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9668}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9669}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9669}
+
+\begin{DoxyItemize}
+\item Fixed Footnote\+Extension stripping extra characters from tab-\/indented footnotes (\#881)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9670}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.2.4...2.2.5}{\texttt{2.\+2.\+5}} -\/ 2022-\/06-\/03}{\href{https://github.com/thephpleague/commonmark/compare/2.2.4...2.2.5}{\texttt{2.\+2.\+5}} -\/ 2022-\/06-\/03}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9670}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9671}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9671}
+
+\begin{DoxyItemize}
+\item Fixed Footnote\+Extension stripping extra characters from tab-\/indented footnotes (\#881)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9672}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.3.0...2.3.1}{\texttt{2.\+3.\+1}} -\/ 2022-\/05-\/14}{\href{https://github.com/thephpleague/commonmark/compare/2.3.0...2.3.1}{\texttt{2.\+3.\+1}} -\/ 2022-\/05-\/14}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9672}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9673}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9673}
+
+\begin{DoxyItemize}
+\item Fixed Autolink\+Extension not ignoring trailing strikethrough syntax (\#867)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9674}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.2.3...2.2.4}{\texttt{2.\+2.\+4}} -\/ 2022-\/05-\/14}{\href{https://github.com/thephpleague/commonmark/compare/2.2.3...2.2.4}{\texttt{2.\+2.\+4}} -\/ 2022-\/05-\/14}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9674}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9675}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9675}
+
+\begin{DoxyItemize}
+\item Fixed Autolink\+Extension not ignoring trailing strikethrough syntax (\#867)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9676}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.2.3...2.3.0}{\texttt{2.\+3.\+0}} -\/ 2022-\/04-\/07}{\href{https://github.com/thephpleague/commonmark/compare/2.2.3...2.3.0}{\texttt{2.\+3.\+0}} -\/ 2022-\/04-\/07}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9676}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9677}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9677}
+
+\begin{DoxyItemize}
+\item Added new {\ttfamily Embed\+Extension} (\#805)
+\item Added {\ttfamily Document\+Renderer\+Interface} as a replacement for the now-\/deprecated {\ttfamily Markdown\+Renderer\+Interface}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9678}{}\doxysubsection{\texorpdfstring{Deprecated}{Deprecated}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9678}
+
+\begin{DoxyItemize}
+\item Deprecated {\ttfamily Markdown\+Renderer\+Interface}; use {\ttfamily Document\+Renderer\+Interface} instead
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9679}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.2.2...2.2.3}{\texttt{2.\+2.\+3}} -\/ 2022-\/02-\/26}{\href{https://github.com/thephpleague/commonmark/compare/2.2.2...2.2.3}{\texttt{2.\+2.\+3}} -\/ 2022-\/02-\/26}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9679}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9680}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9680}
+
+\begin{DoxyItemize}
+\item Fixed front matter parsing with Windows line endings (\#821)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9681}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.1.2...2.1.3}{\texttt{2.\+1.\+3}} -\/ 2022-\/02-\/26}{\href{https://github.com/thephpleague/commonmark/compare/2.1.2...2.1.3}{\texttt{2.\+1.\+3}} -\/ 2022-\/02-\/26}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9681}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9682}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9682}
+
+\begin{DoxyItemize}
+\item Fixed front matter parsing with Windows line endings (\#821)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9683}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.3...2.0.4}{\texttt{2.\+0.\+4}} -\/ 2022-\/02-\/26}{\href{https://github.com/thephpleague/commonmark/compare/2.0.3...2.0.4}{\texttt{2.\+0.\+4}} -\/ 2022-\/02-\/26}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9683}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9684}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9684}
+
+\begin{DoxyItemize}
+\item Fixed front matter parsing with Windows line endings (\#821)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9685}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.2.1...2.2.2}{\texttt{2.\+2.\+2}} -\/ 2022-\/02-\/13}{\href{https://github.com/thephpleague/commonmark/compare/2.2.1...2.2.2}{\texttt{2.\+2.\+2}} -\/ 2022-\/02-\/13}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9685}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9686}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9686}
+
+\begin{DoxyItemize}
+\item Fixed double-\/escaping of image alt text (\#806, \#810)
+\item Fixed Psalm typehints for event class names
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9687}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.2.0...2.2.1}{\texttt{2.\+2.\+1}} -\/ 2022-\/01-\/25}{\href{https://github.com/thephpleague/commonmark/compare/2.2.0...2.2.1}{\texttt{2.\+2.\+1}} -\/ 2022-\/01-\/25}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9687}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9688}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9688}
+
+\begin{DoxyItemize}
+\item Fixed {\ttfamily symfony/deprecation-\/contracts} constraint
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9689}{}\doxysubsection{\texorpdfstring{Removed}{Removed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9689}
+
+\begin{DoxyItemize}
+\item Removed deprecation trigger from {\ttfamily Markdown\+Converter\+Interface} to reduce noise
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9690}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.1.1...2.2.0}{\texttt{2.\+2.\+0}} -\/ 2022-\/01-\/22}{\href{https://github.com/thephpleague/commonmark/compare/2.1.1...2.2.0}{\texttt{2.\+2.\+0}} -\/ 2022-\/01-\/22}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9690}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9691}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9691}
+
+\begin{DoxyItemize}
+\item Added new {\ttfamily Converter\+Interface}
+\item Added new {\ttfamily Markdown\+To\+Xml\+Converter} class
+\item Added new {\ttfamily Html\+Decorator} class which can wrap existing renderers with additional HTML tags
+\item Added new {\ttfamily table/wrap} config to apply an optional wrapping/container element around a table (\#780)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9692}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9692}
+
+\begin{DoxyItemize}
+\item {\ttfamily Html\+Element} contents can now consist of any {\ttfamily Stringable}, not just {\ttfamily Html\+Element} and {\ttfamily string}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9693}{}\doxysubsection{\texorpdfstring{Deprecated}{Deprecated}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9693}
+
+\begin{DoxyItemize}
+\item Deprecated {\ttfamily Markdown\+Converter\+Interface} and its {\ttfamily convert\+To\+Html()} method; use {\ttfamily Converter\+Interface} and {\ttfamily convert()} instead
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9694}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.1.1...2.1.2}{\texttt{2.\+1.\+2}} -\/ 2022-\/02-\/13}{\href{https://github.com/thephpleague/commonmark/compare/2.1.1...2.1.2}{\texttt{2.\+1.\+2}} -\/ 2022-\/02-\/13}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9694}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9695}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9695}
+
+\begin{DoxyItemize}
+\item Fixed double-\/escaping of image alt text (\#806, \#810)
+\item Fixed Psalm typehints for event class names
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9696}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.2...2.1.1}{\texttt{2.\+1.\+1}} -\/ 2022-\/01-\/02}{\href{https://github.com/thephpleague/commonmark/compare/2.0.2...2.1.1}{\texttt{2.\+1.\+1}} -\/ 2022-\/01-\/02}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9696}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9697}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9697}
+
+\begin{DoxyItemize}
+\item Added missing return type to {\ttfamily Environment\+::dispatch()} to fix deprecation warning (\#778)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9698}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.2...2.1.0}{\texttt{2.\+1.\+0}} -\/ 2021-\/12-\/05}{\href{https://github.com/thephpleague/commonmark/compare/2.0.2...2.1.0}{\texttt{2.\+1.\+0}} -\/ 2021-\/12-\/05}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9698}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9699}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9699}
+
+\begin{DoxyItemize}
+\item Added support for ext-\/yaml in Front\+Matter\+Extension (\#715)
+\item Added support for symfony/yaml v6.\+0 in Front\+Matter\+Extension (\#739)
+\item Added new {\ttfamily heading\+\_\+permalink/aria\+\_\+hidden} config option (\#741)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9700}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9700}
+
+\begin{DoxyItemize}
+\item Fixed PHP 8.\+1 deprecation warning (\#759, \#762)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9701}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.2...2.0.3}{\texttt{2.\+0.\+3}} -\/ 2022-\/02-\/13}{\href{https://github.com/thephpleague/commonmark/compare/2.0.2...2.0.3}{\texttt{2.\+0.\+3}} -\/ 2022-\/02-\/13}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9701}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9702}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9702}
+
+\begin{DoxyItemize}
+\item Fixed double-\/escaping of image alt text (\#806, \#810)
+\item Fixed Psalm typehints for event class names
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9703}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.1...2.0.2}{\texttt{2.\+0.\+2}} -\/ 2021-\/08-\/14}{\href{https://github.com/thephpleague/commonmark/compare/2.0.1...2.0.2}{\texttt{2.\+0.\+2}} -\/ 2021-\/08-\/14}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9703}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9704}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9704}
+
+\begin{DoxyItemize}
+\item Bumped minimum version of league/config to support PHP 8.\+1
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9705}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9705}
+
+\begin{DoxyItemize}
+\item Fixed ability to register block parsers that identify lines starting with letters (\#706)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9706}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.0...2.0.1}{\texttt{2.\+0.\+1}} -\/ 2021-\/07-\/31}{\href{https://github.com/thephpleague/commonmark/compare/2.0.0...2.0.1}{\texttt{2.\+0.\+1}} -\/ 2021-\/07-\/31}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9706}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9707}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9707}
+
+\begin{DoxyItemize}
+\item Fixed nested autolinks (\#689)
+\item Fixed description lists being parsed incorrectly (\#692)
+\item Fixed Table of Contents not respecting Heading Permalink prefixes (\#690)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9708}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-rc2...2.0.0}{\texttt{2.\+0.\+0}} -\/ 2021-\/07-\/24}{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-rc2...2.0.0}{\texttt{2.\+0.\+0}} -\/ 2021-\/07-\/24}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9708}
+No changes were introduced since the previous RC2 release. See all entries below for a list of changes between 1.\+x and 2.\+0.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9709}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-rc1...2.0.0-rc2}{\texttt{2.\+0.\+0-\/rc2}} -\/ 2021-\/07-\/17}{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-rc1...2.0.0-rc2}{\texttt{2.\+0.\+0-\/rc2}} -\/ 2021-\/07-\/17}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9709}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9710}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9710}
+
+\begin{DoxyItemize}
+\item Fixed Mentions inside of links creating nested links against the spec\textquotesingle{}s rules (\#688)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9711}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-beta3...2.0.0-rc1}{\texttt{2.\+0.\+0-\/rc1}} -\/ 2021-\/07-\/10}{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-beta3...2.0.0-rc1}{\texttt{2.\+0.\+0-\/rc1}} -\/ 2021-\/07-\/10}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9711}
+No changes were introduced since the previous release.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9712}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-beta2...2.0.0-beta3}{\texttt{2.\+0.\+0-\/beta3}} -\/ 2021-\/07-\/03}{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-beta2...2.0.0-beta3}{\texttt{2.\+0.\+0-\/beta3}} -\/ 2021-\/07-\/03}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9712}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9713}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9713}
+
+\begin{DoxyItemize}
+\item Any leading UTF-\/8 BOM will be stripped from the input
+\item The {\ttfamily get\+Environment()} method of {\ttfamily Common\+Mark\+Converter} and {\ttfamily Github\+Flavored\+Markdown\+Converter} will always return the concrete, configurable {\ttfamily Environment} for upgrading convenience
+\item Optimized AST iteration
+\item Lots of small micro-\/optimizations
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9714}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-beta1...2.0.0-beta2}{\texttt{2.\+0.\+0-\/beta2}} -\/ 2021-\/06-\/27}{\href{https://github.com/thephpleague/commonmark/compare/2.0.0-beta1...2.0.0-beta2}{\texttt{2.\+0.\+0-\/beta2}} -\/ 2021-\/06-\/27}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9714}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9715}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9715}
+
+\begin{DoxyItemize}
+\item Added new {\ttfamily Node\+::iterator()} method and {\ttfamily Node\+Iterator} class for faster AST iteration (\#683, \#684)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9716}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9716}
+
+\begin{DoxyItemize}
+\item Made compatible with Common\+Mark spec 0.\+30.\+0
+\item Optimized link label parsing
+\item Optimized AST iteration for a 50\% performance boost in some event listeners (\#683, \#684)
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9717}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9717}
+
+\begin{DoxyItemize}
+\item Fixed processing instructions with EOLs
+\item Fixed case-\/insensitive matching for HTML tag types
+\item Fixed type 7 HTML blocks incorrectly interrupting lazy paragraphs
+\item Fixed newlines in reference labels not collapsing into spaces
+\item Fixed link label normalization with escaped newlines
+\item Fixed unnecessary AST iteration when no default attributes are configured
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9718}{}\doxysection{\texorpdfstring{\href{https://github.com/thephpleague/commonmark/compare/1.6...2.0.0-beta1}{\texttt{2.\+0.\+0-\/beta1}} -\/ 2021-\/06-\/20}{\href{https://github.com/thephpleague/commonmark/compare/1.6...2.0.0-beta1}{\texttt{2.\+0.\+0-\/beta1}} -\/ 2021-\/06-\/20}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9718}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9719}{}\doxysubsection{\texorpdfstring{Added}{Added}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9719}
+
+\begin{DoxyItemize}
+\item {\bfseries{Added three new extensions\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily Front\+Matter\+Extension} (\href{https://commonmark.thephpleague.com/extensions/front-matter/}{\texttt{see documentation}})
+\item {\ttfamily Description\+List\+Extension} (\href{https://commonmark.thephpleague.com/extensions/description-lists/}{\texttt{see documentation}})
+\item {\ttfamily Default\+Attributes\+Extension} (\href{https://commonmark.thephpleague.com/extensions/default-attributes/}{\texttt{see documentation}})
+\end{DoxyItemize}
+\item {\bfseries{Added new {\ttfamily Xml\+Renderer} to simplify AST debugging}} (\href{https://commonmark.thephpleague.com/xml/}{\texttt{see documentation}}) (\#431)
+\item {\bfseries{Added the ability to configure disallowed raw HTML tags}} (\#507)
+\item {\bfseries{Added the ability for Mentions to use multiple characters for their symbol}} (\#514, \#550)
+\item {\bfseries{Added the ability to delegate event dispatching to PSR-\/14 compliant event dispatcher libraries}}
+\item {\bfseries{Added new configuration options\+:}}
+\begin{DoxyItemize}
+\item Added {\ttfamily heading\+\_\+permalink/min\+\_\+heading\+\_\+level} and {\ttfamily heading\+\_\+permalink/max\+\_\+heading\+\_\+level} options to control which headings get permalinks (\#519)
+\item Added {\ttfamily heading\+\_\+permalink/fragment\+\_\+prefix} to allow customizing the \doxylink{class_u_r_l}{URL} fragment prefix (\#602)
+\item Added {\ttfamily footnote/backref\+\_\+symbol} option for customizing backreference link appearance (\#522)
+\item Added {\ttfamily slug\+\_\+normalizer/max\+\_\+length} option to control the maximum length of generated \doxylink{class_u_r_l}{URL} slugs
+\item Added {\ttfamily slug\+\_\+normalizer/unique} option to control whether unique slugs should be generated per-\/document or per-\/environment
+\end{DoxyItemize}
+\item {\bfseries{Added purity markers throughout the codebase}} (verified with Psalm)
+\item Added {\ttfamily Query} class to simplify Node traversal when looking to take action on certain Nodes
+\item Added new {\ttfamily Html\+Filter} and {\ttfamily String\+Container\+Helper} utility classes
+\item Added new {\ttfamily Abstract\+Block\+Continue\+Parser} class to simplify the creation of custom block parsers
+\item Added several new classes and interfaces\+:
+\begin{DoxyItemize}
+\item {\ttfamily Block\+Continue}
+\item {\ttfamily Block\+Continue\+Parser\+Interface}
+\item {\ttfamily Block\+Continue\+Parser\+With\+Inlines\+Interface}
+\item {\ttfamily Block\+Start}
+\item {\ttfamily Block\+Start\+Parser\+Interface}
+\item {\ttfamily Child\+Node\+Renderer\+Interface}
+\item {\ttfamily Configurable\+Extension\+Interface}
+\item {\ttfamily Cursor\+State}
+\item {\ttfamily Dash\+Parser} (extracted from {\ttfamily Punctuation\+Parser})
+\item {\ttfamily Delimiter\+Parser}
+\item {\ttfamily Document\+Block\+Parser}
+\item {\ttfamily Document\+Pre\+Render\+Event}
+\item {\ttfamily Document\+Rendered\+Event}
+\item {\ttfamily Ellipses\+Parser} (extracted from {\ttfamily Punctuation\+Parser})
+\item {\ttfamily Expression\+Interface}
+\item {\ttfamily Fallback\+Node\+Xml\+Renderer}
+\item {\ttfamily Inline\+Parser\+Engine\+Interface}
+\item {\ttfamily Inline\+Parser\+Match}
+\item {\ttfamily Markdown\+Parser\+State}
+\item {\ttfamily Markdown\+Parser\+State\+Interface}
+\item {\ttfamily Markdown\+Renderer\+Interface}
+\item {\ttfamily Query}
+\item {\ttfamily Raw\+Markup\+Container\+Interface}
+\item {\ttfamily Referenceable\+Interface}
+\item {\ttfamily Rendered\+Content}
+\item {\ttfamily Rendered\+Content\+Interface}
+\item {\ttfamily Replace\+Unpaired\+Quotes\+Listener}
+\item {\ttfamily Spec\+Reader}
+\item {\ttfamily Table\+Of\+Contents\+Renderer}
+\item {\ttfamily Unique\+Slug\+Normalizer}
+\item {\ttfamily Unique\+Slug\+Normalizer\+Interface}
+\item {\ttfamily Xml\+Renderer}
+\item {\ttfamily Xml\+Node\+Renderer\+Interface}
+\end{DoxyItemize}
+\item Added several new methods\+:
+\begin{DoxyItemize}
+\item {\ttfamily Cursor\+::get\+Current\+Character()}
+\item {\ttfamily Environment\+::create\+Default\+Configuration()}
+\item {\ttfamily Environment\+::set\+Event\+Dispatcher()}
+\item {\ttfamily Environment\+Interface\+::get\+Extensions()}
+\item {\ttfamily Environment\+Interface\+::get\+Inline\+Parsers()}
+\item {\ttfamily Environment\+Interface\+::get\+Slug\+Normalizer()}
+\item {\ttfamily Fenced\+Code\+::set\+Info()}
+\item {\ttfamily Heading\+::set\+Level()}
+\item {\ttfamily Html\+Renderer\+::render\+Document()}
+\item {\ttfamily Inline\+Parser\+Context\+::get\+Full\+Match()}
+\item {\ttfamily Inline\+Parser\+Context\+::get\+Full\+Match\+Length()}
+\item {\ttfamily Inline\+Parser\+Context\+::get\+Matches()}
+\item {\ttfamily Inline\+Parser\+Context\+::get\+Sub\+Matches()}
+\item {\ttfamily Link\+Parser\+Helper\+::parse\+Partial\+Link\+Label()}
+\item {\ttfamily Link\+Parser\+Helper\+::parse\+Partial\+Link\+Title()}
+\item {\ttfamily Node\+::assert\+Instance\+Of()}
+\item {\ttfamily Regex\+Helper\+::is\+Letter()}
+\item {\ttfamily String\+Container\+Interface\+::set\+Literal()}
+\item {\ttfamily Table\+Cell\+::get\+Type()}
+\item {\ttfamily Table\+Cell\+::set\+Type()}
+\item {\ttfamily Table\+Cell\+::get\+Align()}
+\item {\ttfamily Table\+Cell\+::set\+Align()}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9720}{}\doxysubsection{\texorpdfstring{Changed}{Changed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9720}
+
+\begin{DoxyItemize}
+\item {\bfseries{Changed the converter return type}}
+\begin{DoxyItemize}
+\item {\ttfamily Common\+Mark\+Converter\+::convert\+To\+Html()} now returns an instance of {\ttfamily Rendered\+Content\+Interface}. This can be cast to a string for backward compatibility with 1.\+x.
+\end{DoxyItemize}
+\item {\bfseries{Table of Contents items are no longer wrapped with {\ttfamily \texorpdfstring{$<$}{<}p\texorpdfstring{$>$}{>}} tags}} (\#613)
+\item {\bfseries{Heading Permalinks now link to element IDs instead of using {\ttfamily name} attributes}} (\#602)
+\item {\bfseries{Heading Permalink IDs and \doxylink{class_u_r_l}{URL} fragments now have a {\ttfamily content} prefix by default}} (\#602)
+\item {\bfseries{Changes to configuration options\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily enable\+\_\+em} has been renamed to {\ttfamily commonmark/enable\+\_\+em}
+\item {\ttfamily enable\+\_\+strong} has been renamed to {\ttfamily commonmark/enable\+\_\+strong}
+\item {\ttfamily use\+\_\+asterisk} has been renamed to {\ttfamily commonmark/use\+\_\+asterisk}
+\item {\ttfamily use\+\_\+underscore} has been renamed to {\ttfamily commonmark/use\+\_\+underscore}
+\item {\ttfamily unordered\+\_\+list\+\_\+markers} has been renamed to {\ttfamily commonmark/unordered\+\_\+list\+\_\+markers}
+\item {\ttfamily mentions/\texorpdfstring{$\ast$}{*}/symbol} has been renamed to {\ttfamily mentions/\texorpdfstring{$\ast$}{*}/prefix}
+\item {\ttfamily mentions/\texorpdfstring{$\ast$}{*}/regex} has been renamed to {\ttfamily mentions/\texorpdfstring{$\ast$}{*}/pattern} and requires partial regular expressions (without delimiters or flags)
+\item {\ttfamily max\+\_\+nesting\+\_\+level} now defaults to {\ttfamily PHP\+\_\+\+INT\+\_\+\+MAX} and no longer supports floats
+\item {\ttfamily heading\+\_\+permalink/slug\+\_\+normalizer} has been renamed to {\ttfamily slug\+\_\+normalizer/instance}
+\end{DoxyItemize}
+\item {\bfseries{\doxylink{class_event}{Event} dispatching is now fully PSR-\/14 compliant}}
+\item {\bfseries{Moved and renamed several classes}} -\/ \href{https://commonmark.thephpleague.com/2.0/upgrading/\#classesnamespaces-renamed}{\texttt{see the full list here}}
+\item The {\ttfamily Heading\+Permalink\+Extension} and {\ttfamily Footnote\+Extension} were modified to ensure they never produce a slug which conflicts with slugs created by the other extension
+\item {\ttfamily Slug\+Normalizer\+::normalizer()} now supports optional prefixes and max length options passed in via the {\ttfamily \$context} argument
+\item The {\ttfamily Abstract\+Block\+:\+:\$data} and {\ttfamily Abstract\+Inline\+:\+:\$data} arrays were replaced with a {\ttfamily Data} array-\/like object on the base {\ttfamily Node} class
+\item {\bfseries{Implemented a new approach to block parsing.}} This was a massive change, so here are the highlights\+:
+\begin{DoxyItemize}
+\item Functionality previously found in block parsers and node elements has moved to block parser factories and block parsers, respectively (\href{https://commonmark.thephpleague.com/2.0/upgrading/\#new-block-parsing-approach}{\texttt{more details}})
+\item {\ttfamily Configurable\+Environment\+Interface\+::add\+Block\+Parser()} is now {\ttfamily Environment\+Builder\+Interface\+::add\+Block\+Parser\+Factory()}
+\item {\ttfamily Reference\+Parser} was re-\/implemented and works completely different than before
+\item The paragraph parser no longer needs to be added manually to the environment
+\end{DoxyItemize}
+\item {\bfseries{Implemented a new approach to inline parsing}} where parsers can now specify longer strings or regular expressions they want to parse (instead of just single characters)\+:
+\begin{DoxyItemize}
+\item {\ttfamily Inline\+Parser\+Interface\+::get\+Characters()} is now {\ttfamily get\+Match\+Definition()} and returns an instance of {\ttfamily Inline\+Parser\+Match}
+\item {\ttfamily Inline\+Parser\+Context\+::\+\_\+\+\_\+construct()} now requires the contents to be provided as a {\ttfamily Cursor} instead of a {\ttfamily string}
+\end{DoxyItemize}
+\item {\bfseries{Implemented delimiter parsing as a special type of inline parser}} (via the new {\ttfamily Delimiter\+Parser} class)
+\item {\bfseries{Changed block and inline rendering to use common methods and interfaces}}
+\begin{DoxyItemize}
+\item {\ttfamily Block\+Renderer\+Interface} and {\ttfamily Inline\+Renderer\+Interface} were replaced by {\ttfamily Node\+Renderer\+Interface} with slightly different parameters. All core renderers now implement this interface.
+\item {\ttfamily Configurable\+Environment\+Interface\+::add\+Block\+Renderer()} and {\ttfamily add\+Inline\+Renderer()} were combined into {\ttfamily Environment\+Builder\+Interface\+::add\+Renderer()}
+\item {\ttfamily Environment\+Interface\+::get\+Block\+Renderers\+For\+Class()} and {\ttfamily get\+Inline\+Renderers\+For\+Class()} are now just {\ttfamily get\+Renderers\+For\+Class()}
+\end{DoxyItemize}
+\item {\bfseries{Completely refactored the Configuration implementation}}
+\begin{DoxyItemize}
+\item All configuration-\/specific classes have been moved into a new {\ttfamily league/config} package with a new namespace
+\item {\ttfamily Configuration} objects must now be configured with a schema and all options must match that schema -\/ arbitrary keys are no longer permitted
+\item {\ttfamily Configuration\+::\+\_\+\+\_\+construct()} no longer accepts the default configuration values -\/ use {\ttfamily Configuration\+::merge()} instead
+\item {\ttfamily Configuration\+Interface} now only contains a {\ttfamily get(string \$key)}; this method no longer allows arbitrary default values to be returned if the option is missing
+\item {\ttfamily Configurable\+Environment\+Interface} was renamed to {\ttfamily Environment\+Builder\+Interface}
+\item {\ttfamily Extension\+Interface\+::register()} now requires an {\ttfamily Environment\+Builder\+Interface} param instead of {\ttfamily Configurable\+Environment\+Interface}
+\end{DoxyItemize}
+\item {\bfseries{Added missing return types to virtually every class and interface method}}
+\item Re-\/implemented the GFM Autolink extension using the new inline parser approach instead of document processors
+\begin{DoxyItemize}
+\item {\ttfamily Email\+Autolink\+Processor} is now {\ttfamily Email\+Autolink\+Parser}
+\item {\ttfamily Url\+Autolink\+Processor} is now {\ttfamily Url\+Autolink\+Parser}
+\end{DoxyItemize}
+\item {\ttfamily Html\+Element} can now properly handle array (i.\+e. {\ttfamily class}) and boolean (i.\+e. {\ttfamily checked}) attribute values
+\item {\ttfamily Html\+Element} automatically flattens any attributes with array values into space-\/separated strings, removing duplicate entries
+\item Combined separate classes/interfaces into one\+:
+\begin{DoxyItemize}
+\item {\ttfamily Disallowed\+Raw\+Html\+Renderer} replaces {\ttfamily Disallowed\+Raw\+Html\+Block\+Renderer} and {\ttfamily Disallowed\+Raw\+Html\+Inline\+Renderer}
+\item {\ttfamily Node\+Renderer\+Interface} replaces {\ttfamily Block\+Renderer\+Interface} and {\ttfamily Inline\+Renderer\+Interface}
+\end{DoxyItemize}
+\item Renamed the following methods\+:
+\begin{DoxyItemize}
+\item {\ttfamily Environment} and {\ttfamily Configurable\+Environment\+Interface}\+:
+\begin{DoxyItemize}
+\item {\ttfamily add\+Block\+Parser()} is now {\ttfamily add\+Block\+Start\+Parser()}
+\end{DoxyItemize}
+\item {\ttfamily Reference\+Map} and {\ttfamily Reference\+Map\+Interface}\+:
+\begin{DoxyItemize}
+\item {\ttfamily add\+Reference()} is now {\ttfamily add()}
+\item {\ttfamily get\+Reference()} is now {\ttfamily get()}
+\item {\ttfamily list\+References()} is now {\ttfamily get\+Iterator()}
+\end{DoxyItemize}
+\item Various node (block/inline) classes\+:
+\begin{DoxyItemize}
+\item {\ttfamily get\+Content()} is now {\ttfamily get\+Literal()}
+\item {\ttfamily set\+Content()} is now {\ttfamily set\+Literal()}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Moved and renamed the following constants\+:
+\begin{DoxyItemize}
+\item {\ttfamily Environment\+Interface\+::\+HTML\+\_\+\+INPUT\+\_\+\+ALLOW} is now {\ttfamily Html\+Filter\+::\+ALLOW}
+\item {\ttfamily Environment\+Interface\+::\+HTML\+\_\+\+INPUT\+\_\+\+ESCAPE} is now {\ttfamily Html\+Filter\+::\+ESCAPE}
+\item {\ttfamily Environment\+Interface\+::\+HTML\+\_\+\+INPUT\+\_\+\+STRIP} is now {\ttfamily Html\+Filter\+::\+STRIP}
+\item {\ttfamily Table\+Cell\+::\+TYPE\+\_\+\+HEAD} is now {\ttfamily Table\+Cell\+::\+TYPE\+\_\+\+HEADER}
+\item {\ttfamily Table\+Cell\+::\+TYPE\+\_\+\+BODY} is now {\ttfamily Table\+Cell\+::\+TYPE\+\_\+\+DATA}
+\end{DoxyItemize}
+\item Changed the visibility of the following properties\+:
+\begin{DoxyItemize}
+\item {\ttfamily Attributes\+Inline\+:\+:\$attributes} is now {\ttfamily private}
+\item {\ttfamily Attributes\+Inline\+:\+:\$block} is now {\ttfamily private}
+\item {\ttfamily Table\+Cell\+:\+:\$align} is now {\ttfamily private}
+\item {\ttfamily Table\+Cell\+:\+:\$type} is now {\ttfamily private}
+\item {\ttfamily Table\+Section\+:\+:\$type} is now {\ttfamily private}
+\end{DoxyItemize}
+\item Several methods which previously returned {\ttfamily \$this} now return {\ttfamily void}
+\begin{DoxyItemize}
+\item {\ttfamily Delimiter\+::set\+Previous()}
+\item {\ttfamily Node\+::replace\+Children()}
+\item {\ttfamily Context\+::set\+Tip()}
+\item {\ttfamily Context\+::set\+Container()}
+\item {\ttfamily Context\+::set\+Blocks\+Parsed()}
+\item {\ttfamily Abstract\+String\+Container\+::set\+Content()}
+\item {\ttfamily Abstract\+Web\+Resource\+::set\+Url()}
+\end{DoxyItemize}
+\item Several classes are now marked {\ttfamily final}\+:
+\begin{DoxyItemize}
+\item {\ttfamily Array\+Collection}
+\item {\ttfamily Emphasis}
+\item {\ttfamily Fenced\+Code}
+\item {\ttfamily Heading}
+\item {\ttfamily Html\+Block}
+\item {\ttfamily Html\+Element}
+\item {\ttfamily Html\+Inline}
+\item {\ttfamily Indented\+Code}
+\item {\ttfamily Newline}
+\item {\ttfamily Strikethrough}
+\item {\ttfamily Strong}
+\item {\ttfamily Text}
+\end{DoxyItemize}
+\item {\ttfamily Heading} nodes no longer directly contain a copy of their inner text
+\item {\ttfamily String\+Container\+Interface} can now be used for inlines, not just blocks
+\item {\ttfamily Array\+Collection} only supports integer keys
+\item {\ttfamily Html\+Element} now implements {\ttfamily Stringable}
+\item {\ttfamily Cursor\+::save\+State()} and {\ttfamily Cursor\+::restore\+State()} now use {\ttfamily Cursor\+State} objects instead of arrays
+\item {\ttfamily Node\+Walker\+::next()} now enters, traverses any children, and leaves all elements which may have children (basically all blocks plus any inlines with children). Previously, it only did this for elements explicitly marked as "{}containers"{}.
+\item {\ttfamily Invalid\+Option\+Exception} was removed
+\item Anything with a {\ttfamily get\+Reference()\+: Reference\+Interface} method now implements {\ttfamily Referencable\+Interface}
+\item The {\ttfamily Smart\+Punct} extension now replaces all unpaired {\ttfamily Quote} elements with {\ttfamily Text} elements towards the end of parsing, making the {\ttfamily Quote\+Renderer} unnecessary
+\item Several changes made to the Footnote extension\+:
+\begin{DoxyItemize}
+\item Footnote identifiers can no longer contain spaces
+\item Anonymous footnotes can now span subsequent lines
+\item Footnotes can now contain multiple lines of content, including sub-\/blocks, by indenting them
+\item Footnote event listeners now have numbered priorities (but still execute in the same order)
+\item Footnotes must now be separated from previous content by a blank line
+\end{DoxyItemize}
+\item The line numbers (keys) returned via {\ttfamily Markdown\+Input\+::get\+Lines()} now start at 1 instead of 0
+\item {\ttfamily Delimiter\+Processor\+Collection\+Interface} now extends {\ttfamily Countable}
+\item {\ttfamily Regex\+Helper\+::\+PARTIAL\+\_\+} constants must always be used in case-\/insensitive contexts
+\item {\ttfamily Heading\+Permalink\+Processor} no longer accepts text normalizers via the constructor -\/ these must be provided via configuration instead
+\item Blocks which can\textquotesingle{}t contain inlines will no longer be asked to render inlines
+\item {\ttfamily Anonymous\+Footnote\+Ref\+Parser} and {\ttfamily Heading\+Permalink\+Processor} now implement {\ttfamily Environment\+Aware\+Interface} instead of {\ttfamily Configuration\+Aware\+Interface}
+\item The second argument to {\ttfamily Text\+Normalizer\+Interface\+::normalize()} must now be an array
+\item The {\ttfamily title} attribute for {\ttfamily Link} and {\ttfamily Image} nodes is now stored using a dedicated property instead of stashing it in {\ttfamily \$data}
+\item {\ttfamily List\+Data\+:\+:\$delimiter} now returns either {\ttfamily List\+Block\+::\+DELIM\+\_\+\+PERIOD} or {\ttfamily List\+Block\+::\+DELIM\+\_\+\+PAREN} instead of the literal delimiter
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9721}{}\doxysubsection{\texorpdfstring{Fixed}{Fixed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9721}
+
+\begin{DoxyItemize}
+\item {\bfseries{Fixed parsing of footnotes without content}}
+\item {\bfseries{Fixed rendering of orphaned footnotes and footnote refs}}
+\item {\bfseries{Fixed some \doxylink{class_u_r_l}{URL} autolinks breaking too early}} (\#492)
+\item Fixed {\ttfamily Abstract\+String\+Container} not actually being {\ttfamily abstract}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9722}{}\doxysubsection{\texorpdfstring{Removed}{Removed}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9722}
+
+\begin{DoxyItemize}
+\item {\bfseries{Removed support for PHP 7.\+1, 7.\+2, and 7.\+3}} (\#625, \#671)
+\item {\bfseries{Removed all previously-\/deprecated functionality\+:}}
+\begin{DoxyItemize}
+\item Removed the ability to pass custom {\ttfamily Environment} instances into the {\ttfamily Common\+Mark\+Converter} and {\ttfamily Github\+Flavored\+Markdown\+Converter} constructors
+\item Removed the {\ttfamily Converter} class and {\ttfamily Converter\+Interface}
+\item Removed the {\ttfamily bin/commonmark} script
+\item Removed the {\ttfamily Html5\+Entities} utility class
+\item Removed the {\ttfamily Inline\+Mention\+Parser} (use {\ttfamily Mention\+Parser} instead)
+\item Removed {\ttfamily Default\+Slug\+Generator} and {\ttfamily Slug\+Generator\+Interface} from the {\ttfamily Extension/\+Heading\+Permalink/\+Slug} sub-\/namespace (use the new ones under {\ttfamily ./\+Slug\+Generator} instead)
+\item Removed the following {\ttfamily Array\+Collection} methods\+:
+\begin{DoxyItemize}
+\item {\ttfamily add()}
+\item {\ttfamily set()}
+\item {\ttfamily get()}
+\item {\ttfamily remove()}
+\item {\ttfamily is\+Empty()}
+\item {\ttfamily contains()}
+\item {\ttfamily index\+Of()}
+\item {\ttfamily contains\+Key()}
+\item {\ttfamily replace\+With()}
+\item {\ttfamily remove\+Gaps()}
+\end{DoxyItemize}
+\item Removed the {\ttfamily Configurable\+Environment\+Interface\+::set\+Config()} method
+\item Removed the {\ttfamily List\+Block\+::\+TYPE\+\_\+\+UNORDERED} constant
+\item Removed the {\ttfamily Common\+Mark\+Converter\+::\+VERSION} constant
+\item Removed the {\ttfamily Heading\+Permalink\+Renderer\+::\+DEFAULT\+\_\+\+INNER\+\_\+\+CONTENTS} constant
+\item Removed the {\ttfamily heading\+\_\+permalink/inner\+\_\+contents} configuration option
+\end{DoxyItemize}
+\item {\bfseries{Removed now-\/unused classes\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily Abstract\+String\+Container\+Block}
+\item {\ttfamily Block\+Renderer\+Interface}
+\item {\ttfamily \doxylink{class_context}{Context}}
+\item {\ttfamily Context\+Interface}
+\item {\ttfamily Converter}
+\item {\ttfamily Converter\+Interface}
+\item {\ttfamily Inline\+Renderer\+Interface}
+\item {\ttfamily Punctuation\+Parser} (was split into two classes\+: {\ttfamily Dash\+Parser} and {\ttfamily Ellipses\+Parser})
+\item {\ttfamily Quote\+Renderer}
+\item {\ttfamily Unmatched\+Block\+Closer}
+\end{DoxyItemize}
+\item Removed the following methods, properties, and constants\+:
+\begin{DoxyItemize}
+\item {\ttfamily Abstract\+Block\+:\+:\$open}
+\item {\ttfamily Abstract\+Block\+:\+:\$last\+Line\+Blank}
+\item {\ttfamily Abstract\+Block\+::is\+Container()}
+\item {\ttfamily Abstract\+Block\+::can\+Contain()}
+\item {\ttfamily Abstract\+Block\+::is\+Code()}
+\item {\ttfamily Abstract\+Block\+::matches\+Next\+Line()}
+\item {\ttfamily Abstract\+Block\+::ends\+With\+Blank\+Line()}
+\item {\ttfamily Abstract\+Block\+::set\+Last\+Line\+Blank()}
+\item {\ttfamily Abstract\+Block\+::should\+Last\+Line\+Be\+Blank()}
+\item {\ttfamily Abstract\+Block\+::is\+Open()}
+\item {\ttfamily Abstract\+Block\+::finalize()}
+\item {\ttfamily Abstract\+Block\+::get\+Data()}
+\item {\ttfamily Abstract\+Inline\+::get\+Data()}
+\item {\ttfamily Configurable\+Environment\+Interface\+::add\+Block\+Parser()}
+\item {\ttfamily Configurable\+Environment\+Interface\+::merge\+Config()}
+\item {\ttfamily Delimiter\+::set\+Can\+Close()}
+\item {\ttfamily Environment\+Interface\+::get\+Config()}
+\item {\ttfamily Environment\+Interface\+::get\+Inline\+Parsers\+For\+Character()}
+\item {\ttfamily Environment\+Interface\+::get\+Inline\+Parser\+Character\+Regex()}
+\item {\ttfamily Html\+Renderer\+::render\+Block()}
+\item {\ttfamily Html\+Renderer\+::render\+Blocks()}
+\item {\ttfamily Html\+Renderer\+::render\+Inline()}
+\item {\ttfamily Html\+Renderer\+::render\+Inlines()}
+\item {\ttfamily Node\+::is\+Container()}
+\item {\ttfamily Regex\+Helper\+::match\+All()} (use the new {\ttfamily match\+First()} method instead)
+\item {\ttfamily Regex\+Helper\+::\+REGEX\+\_\+\+WHITESPACE}
+\end{DoxyItemize}
+\item Removed the second {\ttfamily \$contents} argument from the {\ttfamily Heading} constructor
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9723}{}\doxysubsection{\texorpdfstring{Deprecated}{Deprecated}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2league_2commonmark_2_c_h_a_n_g_e_l_o_g_autotoc_md9723}
+{\bfseries{The following things have been deprecated and will not be supported in v3.\+0\+:}}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Environment\+::merge\+Config()} (set configuration before instantiation instead)
+\item {\ttfamily Environment\+::create\+Common\+Mark\+Environment()} and {\ttfamily Environment\+::create\+GFMEnvironment()}
+\begin{DoxyItemize}
+\item Alternative 1\+: Use {\ttfamily Common\+Mark\+Converter} or {\ttfamily Github\+Flavored\+Markdown\+Converter} if you don\textquotesingle{}t need to customize the environment
+\item Alternative 2\+: Instantiate a new {\ttfamily Environment} and add the necessary extensions yourself 
+\end{DoxyItemize}
+\end{DoxyItemize}

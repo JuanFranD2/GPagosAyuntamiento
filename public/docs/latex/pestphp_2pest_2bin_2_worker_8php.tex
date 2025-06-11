@@ -1,0 +1,37 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/bin/worker.php File Reference}
+\hypertarget{pestphp_2pest_2bin_2_worker_8php}{}\label{pestphp_2pest_2bin_2_worker_8php}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/pestphp/pest/bin/worker.php@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/pestphp/pest/bin/worker.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pestphp_2pest_2bin_2_worker_8php_ab223fd4c2eba15b418bf3ba67a732b59}{\$boot\+Pest}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{pestphp_2pest_2bin_2_worker_8php_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{pestphp_2pest_2bin_2_worker_8php_ab223fd4c2eba15b418bf3ba67a732b59}\index{worker.php@{worker.php}!\$bootPest@{\$bootPest}}
+\index{\$bootPest@{\$bootPest}!worker.php@{worker.php}}
+\doxysubsubsection{\texorpdfstring{\$bootPest}{\$bootPest}}
+{\footnotesize\ttfamily \label{pestphp_2pest_2bin_2_worker_8php_ab223fd4c2eba15b418bf3ba67a732b59} 
+\$boot\+Pest}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{static}\ \textcolor{keyword}{function}\ ():\ \textcolor{keywordtype}{void}\ \{}
+\DoxyCodeLine{\ \ \ \ \$workerArgv\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_argv_input}{ArgvInput}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$rootPath\ =\ dirname(PHPUNIT\_COMPOSER\_INSTALL,\ 2);}
+\DoxyCodeLine{\ \ \ \ \$testSuite\ =\ TestSuite::getInstance(\$rootPath,\ \$workerArgv-\/>getParameterOption(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/test-\/directory'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'tests'}}
+\DoxyCodeLine{\ \ \ \ ));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$input\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_argv_input}{ArgvInput}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \$output\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_output_1_1_console_output}{ConsoleOutput}}(OutputInterface::VERBOSITY\_NORMAL,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ Kernel::boot(\$testSuite,\ \$input,\ \$output);}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}

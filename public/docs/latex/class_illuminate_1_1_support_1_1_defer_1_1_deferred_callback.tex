@@ -1,0 +1,84 @@
+\doxysection{Deferred\+Callback Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback}{}\label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback}\index{DeferredCallback@{DeferredCallback}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_aeb5a589531c1676bcec719e67ba8938f}{\+\_\+\+\_\+construct}} (public \$callback, public ?string \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_aacc7ea0fada1defae97e37d617865d39}{name}}=null, public bool \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_ae48e0645c5da8e39e031e770d8817220}{always}}=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_aacc7ea0fada1defae97e37d617865d39}{name}} (string \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_ae48e0645c5da8e39e031e770d8817220}{always}} (bool \$always=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_a9aac7e1475efe923de4e19cc2511f092}{\+\_\+\+\_\+invoke}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_aeb5a589531c1676bcec719e67ba8938f}\index{DeferredCallback@{DeferredCallback}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DeferredCallback@{DeferredCallback}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_aeb5a589531c1676bcec719e67ba8938f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{public}]{\$callback}{, }\item[{public ?string}]{\$name}{ = {\ttfamily null}, }\item[{public bool}]{\$always}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new deferred callback instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_a9aac7e1475efe923de4e19cc2511f092}\index{DeferredCallback@{DeferredCallback}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!DeferredCallback@{DeferredCallback}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_a9aac7e1475efe923de4e19cc2511f092} 
+\+\_\+\+\_\+invoke (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Invoke the deferred callback.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_ae48e0645c5da8e39e031e770d8817220}\index{DeferredCallback@{DeferredCallback}!always@{always}}
+\index{always@{always}!DeferredCallback@{DeferredCallback}}
+\doxysubsubsection{\texorpdfstring{always()}{always()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_ae48e0645c5da8e39e031e770d8817220} 
+always (\begin{DoxyParamCaption}\item[{bool}]{\$always}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Indicate that the deferred callback should run even on unsuccessful requests and jobs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$always} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_aacc7ea0fada1defae97e37d617865d39}\index{DeferredCallback@{DeferredCallback}!name@{name}}
+\index{name@{name}!DeferredCallback@{DeferredCallback}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_defer_1_1_deferred_callback_aacc7ea0fada1defae97e37d617865d39} 
+name (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Specify the name of the deferred callback so it can be cancelled later.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Support/\+Defer/\mbox{\hyperlink{_deferred_callback_8php}{Deferred\+Callback.\+php}}\end{DoxyCompactItemize}

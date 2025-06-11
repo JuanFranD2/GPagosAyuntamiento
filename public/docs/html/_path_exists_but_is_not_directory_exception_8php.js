@@ -1,0 +1,4 @@
+var _path_exists_but_is_not_directory_exception_8php =
+[
+    [ "PathExistsButIsNotDirectoryException", "class_sebastian_bergmann_1_1_code_coverage_1_1_driver_1_1_path_exists_but_is_not_directory_exception.html", "class_sebastian_bergmann_1_1_code_coverage_1_1_driver_1_1_path_exists_but_is_not_directory_exception" ]
+];

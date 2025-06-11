@@ -1,0 +1,387 @@
+\doxysection{Application\+Builder Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder}{}\label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder}\index{ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_aceecb2250f1eefeb234e8b3ac64ec0b6}{\+\_\+\+\_\+construct}} (protected \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_application}{Application}} \$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a14a1c0997b835918ba47eebe738cb8f3}{with\+Kernels}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_ac496eb61856f4fbce467c4fc95ecd37a}{with\+Providers}} (array \$providers=\mbox{[}$\,$\mbox{]}, bool \$with\+Bootstrap\+Providers=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a3e94bc1da7579a58c0f626e74a05b446}{with\+Events}} (array\texorpdfstring{$\vert$}{|}bool \$discover=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_aadc91e66a37690922ec228675b98a201}{with\+Broadcasting}} (string \$channels, array \$attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a8a637265c8d135f31e2ff8418c73e2d2}{with\+Routing}} (?Closure \$using=null, array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$web=null, array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$api=null, ?string \$commands=null, ?string \$channels=null, ?string \$pages=null, ?string \$health=null, string \$api\+Prefix=\textquotesingle{}api\textquotesingle{}, ?callable \$then=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_ab95e8f67d848df32f207e08e646d4c0c}{with\+Middleware}} (?callable \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_aa1a580aa3335fe7219d58d4856ab82e1}{with\+Commands}} (array \$commands=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a27418e25f632d8d532554267215ef98d}{with\+Schedule}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a7e39cbd1540d14dc836b22271bc4c3ab}{with\+Exceptions}} (?callable \$using=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a614d31332cdf93a67e69810867c17b89}{with\+Bindings}} (array \$bindings)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a1d5e8328187f6f9da133952f2ef00774}{with\+Singletons}} (array \$singletons)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a524fa55a188402bb567e67f22cf3df21}{registered}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a8f3525a4be8b87dff28c3d786766879a}{booting}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a5875e7924d0499c146cef7e61f7545fd}{booted}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a435e7d7525d4bcd0ed5e34a469f3adf6}{create}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a4f815050cc6cfb579ecff134ffb536f9}{build\+Routing\+Callback}} (array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$web, array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$api, ?string \$pages, ?string \$health, string \$api\+Prefix, ?callable \$then)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a2599c770920845301e4867d957ab0d88}{with\+Command\+Routing}} (array \$paths)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a1b2426550c0058ce4e5a0878f47bd66d}{\$pending\+Providers}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a81ce2d6157b9fca941a991ae341d30b7}{\$additional\+Routing\+Callbacks}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_adca5e4c58e057b0eb0de9ade246d7477}{\$page\+Middleware}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_aceecb2250f1eefeb234e8b3ac64ec0b6}\index{ApplicationBuilder@{ApplicationBuilder}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_aceecb2250f1eefeb234e8b3ac64ec0b6} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_application}{Application}}}]{\$app}{}\end{DoxyParamCaption})}
+
+Create a new application builder instance. 
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a5875e7924d0499c146cef7e61f7545fd}\index{ApplicationBuilder@{ApplicationBuilder}!booted@{booted}}
+\index{booted@{booted}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{booted()}{booted()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a5875e7924d0499c146cef7e61f7545fd} 
+booted (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be invoked when the application is "{}booted"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a8f3525a4be8b87dff28c3d786766879a}\index{ApplicationBuilder@{ApplicationBuilder}!booting@{booting}}
+\index{booting@{booting}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{booting()}{booting()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a8f3525a4be8b87dff28c3d786766879a} 
+booting (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be invoked when the application is "{}booting"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a4f815050cc6cfb579ecff134ffb536f9}\index{ApplicationBuilder@{ApplicationBuilder}!buildRoutingCallback@{buildRoutingCallback}}
+\index{buildRoutingCallback@{buildRoutingCallback}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{buildRoutingCallback()}{buildRoutingCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a4f815050cc6cfb579ecff134ffb536f9} 
+build\+Routing\+Callback (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$web}{, }\item[{array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$api}{, }\item[{?string}]{\$pages}{, }\item[{?string}]{\$health}{, }\item[{string}]{\$api\+Prefix}{, }\item[{?callable}]{\$then}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the routing callback for the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$web} & \\
+\hline
+array | string | null & {\em \$api} & \\
+\hline
+string | null & {\em \$pages} & \\
+\hline
+string | null & {\em \$health} & \\
+\hline
+string & {\em \$api\+Prefix} & \\
+\hline
+callable | null & {\em \$then} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a435e7d7525d4bcd0ed5e34a469f3adf6}\index{ApplicationBuilder@{ApplicationBuilder}!create@{create}}
+\index{create@{create}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a435e7d7525d4bcd0ed5e34a469f3adf6} 
+create (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the application instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Application 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a524fa55a188402bb567e67f22cf3df21}\index{ApplicationBuilder@{ApplicationBuilder}!registered@{registered}}
+\index{registered@{registered}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{registered()}{registered()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a524fa55a188402bb567e67f22cf3df21} 
+registered (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be invoked when the application\textquotesingle{}s service providers are registered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a614d31332cdf93a67e69810867c17b89}\index{ApplicationBuilder@{ApplicationBuilder}!withBindings@{withBindings}}
+\index{withBindings@{withBindings}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withBindings()}{withBindings()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a614d31332cdf93a67e69810867c17b89} 
+with\+Bindings (\begin{DoxyParamCaption}\item[{array}]{\$bindings}{}\end{DoxyParamCaption})}
+
+Register an array of container bindings to be bound when the application is booting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$bindings} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_aadc91e66a37690922ec228675b98a201}\index{ApplicationBuilder@{ApplicationBuilder}!withBroadcasting@{withBroadcasting}}
+\index{withBroadcasting@{withBroadcasting}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withBroadcasting()}{withBroadcasting()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_aadc91e66a37690922ec228675b98a201} 
+with\+Broadcasting (\begin{DoxyParamCaption}\item[{string}]{\$channels}{, }\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Register the broadcasting services for the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$channels} & \\
+\hline
+array & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a2599c770920845301e4867d957ab0d88}\index{ApplicationBuilder@{ApplicationBuilder}!withCommandRouting@{withCommandRouting}}
+\index{withCommandRouting@{withCommandRouting}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withCommandRouting()}{withCommandRouting()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a2599c770920845301e4867d957ab0d88} 
+with\+Command\+Routing (\begin{DoxyParamCaption}\item[{array}]{\$paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register additional \doxylink{class_artisan}{Artisan} route paths.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$paths} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_aa1a580aa3335fe7219d58d4856ab82e1}\index{ApplicationBuilder@{ApplicationBuilder}!withCommands@{withCommands}}
+\index{withCommands@{withCommands}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withCommands()}{withCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_aa1a580aa3335fe7219d58d4856ab82e1} 
+with\+Commands (\begin{DoxyParamCaption}\item[{array}]{\$commands}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Register additional \doxylink{class_artisan}{Artisan} commands with the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$commands} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a3e94bc1da7579a58c0f626e74a05b446}\index{ApplicationBuilder@{ApplicationBuilder}!withEvents@{withEvents}}
+\index{withEvents@{withEvents}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withEvents()}{withEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a3e94bc1da7579a58c0f626e74a05b446} 
+with\+Events (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}bool}]{\$discover}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Register the core event service provider for the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | bool & {\em \$discover} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a7e39cbd1540d14dc836b22271bc4c3ab}\index{ApplicationBuilder@{ApplicationBuilder}!withExceptions@{withExceptions}}
+\index{withExceptions@{withExceptions}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withExceptions()}{withExceptions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a7e39cbd1540d14dc836b22271bc4c3ab} 
+with\+Exceptions (\begin{DoxyParamCaption}\item[{?callable}]{\$using}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register and configure the application\textquotesingle{}s exception handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$using} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a14a1c0997b835918ba47eebe738cb8f3}\index{ApplicationBuilder@{ApplicationBuilder}!withKernels@{withKernels}}
+\index{withKernels@{withKernels}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withKernels()}{withKernels()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a14a1c0997b835918ba47eebe738cb8f3} 
+with\+Kernels (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the standard kernel classes for the application.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_ab95e8f67d848df32f207e08e646d4c0c}\index{ApplicationBuilder@{ApplicationBuilder}!withMiddleware@{withMiddleware}}
+\index{withMiddleware@{withMiddleware}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withMiddleware()}{withMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_ab95e8f67d848df32f207e08e646d4c0c} 
+with\+Middleware (\begin{DoxyParamCaption}\item[{?callable}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register the global middleware, middleware groups, and middleware aliases for the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_ac496eb61856f4fbce467c4fc95ecd37a}\index{ApplicationBuilder@{ApplicationBuilder}!withProviders@{withProviders}}
+\index{withProviders@{withProviders}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withProviders()}{withProviders()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_ac496eb61856f4fbce467c4fc95ecd37a} 
+with\+Providers (\begin{DoxyParamCaption}\item[{array}]{\$providers}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{bool}]{\$with\+Bootstrap\+Providers}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Register additional service providers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$providers} & \\
+\hline
+bool & {\em \$with\+Bootstrap\+Providers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a8a637265c8d135f31e2ff8418c73e2d2}\index{ApplicationBuilder@{ApplicationBuilder}!withRouting@{withRouting}}
+\index{withRouting@{withRouting}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withRouting()}{withRouting()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a8a637265c8d135f31e2ff8418c73e2d2} 
+with\+Routing (\begin{DoxyParamCaption}\item[{?Closure}]{\$using}{ = {\ttfamily null}, }\item[{array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$web}{ = {\ttfamily null}, }\item[{array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$api}{ = {\ttfamily null}, }\item[{?string}]{\$commands}{ = {\ttfamily null}, }\item[{?string}]{\$channels}{ = {\ttfamily null}, }\item[{?string}]{\$pages}{ = {\ttfamily null}, }\item[{?string}]{\$health}{ = {\ttfamily null}, }\item[{string}]{\$api\+Prefix}{ = {\ttfamily \textquotesingle{}api\textquotesingle{}}, }\item[{?callable}]{\$then}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register the routing services for the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | null & {\em \$using} & \\
+\hline
+array | string | null & {\em \$web} & \\
+\hline
+array | string | null & {\em \$api} & \\
+\hline
+string | null & {\em \$commands} & \\
+\hline
+string | null & {\em \$channels} & \\
+\hline
+string | null & {\em \$pages} & \\
+\hline
+string & {\em \$api\+Prefix} & \\
+\hline
+callable | null & {\em \$then} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a27418e25f632d8d532554267215ef98d}\index{ApplicationBuilder@{ApplicationBuilder}!withSchedule@{withSchedule}}
+\index{withSchedule@{withSchedule}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withSchedule()}{withSchedule()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a27418e25f632d8d532554267215ef98d} 
+with\+Schedule (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register the scheduled tasks for the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Scheduling\textbackslash{}\+Schedule & {\em callable(,\$schedule,)} & void \$callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a1d5e8328187f6f9da133952f2ef00774}\index{ApplicationBuilder@{ApplicationBuilder}!withSingletons@{withSingletons}}
+\index{withSingletons@{withSingletons}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{withSingletons()}{withSingletons()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a1d5e8328187f6f9da133952f2ef00774} 
+with\+Singletons (\begin{DoxyParamCaption}\item[{array}]{\$singletons}{}\end{DoxyParamCaption})}
+
+Register an array of singleton container bindings to be bound when the application is booting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$singletons} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a81ce2d6157b9fca941a991ae341d30b7}\index{ApplicationBuilder@{ApplicationBuilder}!\$additionalRoutingCallbacks@{\$additionalRoutingCallbacks}}
+\index{\$additionalRoutingCallbacks@{\$additionalRoutingCallbacks}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{\$additionalRoutingCallbacks}{\$additionalRoutingCallbacks}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a81ce2d6157b9fca941a991ae341d30b7} 
+array \$additional\+Routing\+Callbacks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_adca5e4c58e057b0eb0de9ade246d7477}\index{ApplicationBuilder@{ApplicationBuilder}!\$pageMiddleware@{\$pageMiddleware}}
+\index{\$pageMiddleware@{\$pageMiddleware}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{\$pageMiddleware}{\$pageMiddleware}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_adca5e4c58e057b0eb0de9ade246d7477} 
+array \$page\+Middleware = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a1b2426550c0058ce4e5a0878f47bd66d}\index{ApplicationBuilder@{ApplicationBuilder}!\$pendingProviders@{\$pendingProviders}}
+\index{\$pendingProviders@{\$pendingProviders}!ApplicationBuilder@{ApplicationBuilder}}
+\doxysubsubsection{\texorpdfstring{\$pendingProviders}{\$pendingProviders}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_configuration_1_1_application_builder_a1b2426550c0058ce4e5a0878f47bd66d} 
+array \$pending\+Providers = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Configuration/\mbox{\hyperlink{_application_builder_8php}{Application\+Builder.\+php}}\end{DoxyCompactItemize}

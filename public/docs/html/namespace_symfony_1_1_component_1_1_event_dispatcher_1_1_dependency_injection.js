@@ -1,0 +1,6 @@
+var namespace_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection =
+[
+    [ "AddEventAliasesPass", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_add_event_aliases_pass.html", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_add_event_aliases_pass" ],
+    [ "ExtractingEventDispatcher", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_extracting_event_dispatcher.html", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_extracting_event_dispatcher" ],
+    [ "RegisterListenersPass", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_register_listeners_pass.html", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_register_listeners_pass" ]
+];

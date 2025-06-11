@@ -1,0 +1,135 @@
+\doxysection{Test\+Suite Class Reference}
+\hypertarget{class_pest_1_1_test_suite}{}\label{class_pest_1_1_test_suite}\index{TestSuite@{TestSuite}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_test_suite_a3e40d19bd2559f39a885c5938c249cae}{\+\_\+\+\_\+construct}} (string \$root\+Path, public string \$test\+Path,)
+\item 
+\mbox{\hyperlink{class_pest_1_1_test_suite_a2982abe8d7b767602a1485dfb4cf653d}{get\+Filename}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_test_suite_a2e7bb35c71bf1824456ceb944cb7a845}{get\+Description}} ()
+\item 
+\mbox{\hyperlink{class_pest_1_1_test_suite_aea816666cda02405a6b5d27423f331ee}{register\+Snapshot\+Change}} (string \$message)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pest_1_1_test_suite_a97779e8d336e4a40e0175dc15fb73f1f}{get\+Instance}} (?string \$root\+Path=null, ?string \$test\+Path=null,)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_case}{Test\+Case}} \mbox{\hyperlink{class_pest_1_1_test_suite_a3200e8578b0a318bd060196cbdc6262f}{\$test}} = null
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository}{Test\+Repository}} \mbox{\hyperlink{class_pest_1_1_test_suite_ab6f54d69ebf82adcc1b447a612218940}{\$tests}}
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_before_each_repository}{Before\+Each\+Repository}} \mbox{\hyperlink{class_pest_1_1_test_suite_aee4afcd12021542dfb271b1044e40275}{\$before\+Each}}
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_before_all_repository}{Before\+All\+Repository}} \mbox{\hyperlink{class_pest_1_1_test_suite_aa2846379d65a98bfcd6dca7bcb20c80a}{\$before\+All}}
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_after_each_repository}{After\+Each\+Repository}} \mbox{\hyperlink{class_pest_1_1_test_suite_a0f23d09a316a4b41c6b7b0f6fa2b4232}{\$after\+Each}}
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_after_all_repository}{After\+All\+Repository}} \mbox{\hyperlink{class_pest_1_1_test_suite_aa6caaabd77737186d6cc833b048e6dad}{\$after\+All}}
+\item 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_snapshot_repository}{Snapshot\+Repository}} \mbox{\hyperlink{class_pest_1_1_test_suite_a3369294a02f58b4d3c5b8f6214961201}{\$snapshots}}
+\item 
+string \mbox{\hyperlink{class_pest_1_1_test_suite_abaa9f54c924a22e8c0169f443efd1055}{\$root\+Path}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_pest_1_1_test_suite_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pest_1_1_test_suite_a3e40d19bd2559f39a885c5938c249cae}\index{TestSuite@{TestSuite}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_a3e40d19bd2559f39a885c5938c249cae} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$root\+Path}{, }\item[{public string}]{\$test\+Path}{}\end{DoxyParamCaption})}
+
+Creates a new instance of the test suite. 
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_test_suite_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_test_suite_a2e7bb35c71bf1824456ceb944cb7a845}\index{TestSuite@{TestSuite}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_a2e7bb35c71bf1824456ceb944cb7a845} 
+get\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pest_1_1_test_suite_a2982abe8d7b767602a1485dfb4cf653d}\index{TestSuite@{TestSuite}!getFilename@{getFilename}}
+\index{getFilename@{getFilename}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{getFilename()}{getFilename()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_a2982abe8d7b767602a1485dfb4cf653d} 
+get\+Filename (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_pest_1_1_test_suite_a97779e8d336e4a40e0175dc15fb73f1f}\index{TestSuite@{TestSuite}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_a97779e8d336e4a40e0175dc15fb73f1f} 
+get\+Instance (\begin{DoxyParamCaption}\item[{?string}]{\$root\+Path}{ = {\ttfamily null}, }\item[{?string}]{\$test\+Path}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the current instance of the test suite. \Hypertarget{class_pest_1_1_test_suite_aea816666cda02405a6b5d27423f331ee}\index{TestSuite@{TestSuite}!registerSnapshotChange@{registerSnapshotChange}}
+\index{registerSnapshotChange@{registerSnapshotChange}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{registerSnapshotChange()}{registerSnapshotChange()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_aea816666cda02405a6b5d27423f331ee} 
+register\+Snapshot\+Change (\begin{DoxyParamCaption}\item[{string}]{\$message}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_pest_1_1_test_suite_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_pest_1_1_test_suite_aa6caaabd77737186d6cc833b048e6dad}\index{TestSuite@{TestSuite}!\$afterAll@{\$afterAll}}
+\index{\$afterAll@{\$afterAll}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\$afterAll}{\$afterAll}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_aa6caaabd77737186d6cc833b048e6dad} 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_after_all_repository}{After\+All\+Repository}} \$after\+All}
+
+Holds the after all repository. \Hypertarget{class_pest_1_1_test_suite_a0f23d09a316a4b41c6b7b0f6fa2b4232}\index{TestSuite@{TestSuite}!\$afterEach@{\$afterEach}}
+\index{\$afterEach@{\$afterEach}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\$afterEach}{\$afterEach}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_a0f23d09a316a4b41c6b7b0f6fa2b4232} 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_after_each_repository}{After\+Each\+Repository}} \$after\+Each}
+
+Holds the after each repository. \Hypertarget{class_pest_1_1_test_suite_aa2846379d65a98bfcd6dca7bcb20c80a}\index{TestSuite@{TestSuite}!\$beforeAll@{\$beforeAll}}
+\index{\$beforeAll@{\$beforeAll}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\$beforeAll}{\$beforeAll}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_aa2846379d65a98bfcd6dca7bcb20c80a} 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_before_all_repository}{Before\+All\+Repository}} \$before\+All}
+
+Holds the before all repository. \Hypertarget{class_pest_1_1_test_suite_aee4afcd12021542dfb271b1044e40275}\index{TestSuite@{TestSuite}!\$beforeEach@{\$beforeEach}}
+\index{\$beforeEach@{\$beforeEach}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\$beforeEach}{\$beforeEach}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_aee4afcd12021542dfb271b1044e40275} 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_before_each_repository}{Before\+Each\+Repository}} \$before\+Each}
+
+Holds the before each repository. \Hypertarget{class_pest_1_1_test_suite_abaa9f54c924a22e8c0169f443efd1055}\index{TestSuite@{TestSuite}!\$rootPath@{\$rootPath}}
+\index{\$rootPath@{\$rootPath}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\$rootPath}{\$rootPath}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_abaa9f54c924a22e8c0169f443efd1055} 
+string \$root\+Path}
+
+Holds the root path. \Hypertarget{class_pest_1_1_test_suite_a3369294a02f58b4d3c5b8f6214961201}\index{TestSuite@{TestSuite}!\$snapshots@{\$snapshots}}
+\index{\$snapshots@{\$snapshots}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\$snapshots}{\$snapshots}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_a3369294a02f58b4d3c5b8f6214961201} 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_snapshot_repository}{Snapshot\+Repository}} \$snapshots}
+
+Holds the snapshots repository. \Hypertarget{class_pest_1_1_test_suite_a3200e8578b0a318bd060196cbdc6262f}\index{TestSuite@{TestSuite}!\$test@{\$test}}
+\index{\$test@{\$test}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\$test}{\$test}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_a3200e8578b0a318bd060196cbdc6262f} 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_case}{Test\+Case}} \$test = null}
+
+Holds the current test case. \Hypertarget{class_pest_1_1_test_suite_ab6f54d69ebf82adcc1b447a612218940}\index{TestSuite@{TestSuite}!\$tests@{\$tests}}
+\index{\$tests@{\$tests}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\$tests}{\$tests}}
+{\footnotesize\ttfamily \label{class_pest_1_1_test_suite_ab6f54d69ebf82adcc1b447a612218940} 
+\mbox{\hyperlink{class_pest_1_1_repositories_1_1_test_repository}{Test\+Repository}} \$tests}
+
+Holds the tests repository. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\mbox{\hyperlink{pestphp_2pest_2src_2_test_suite_8php}{Test\+Suite.\+php}}\end{DoxyCompactItemize}

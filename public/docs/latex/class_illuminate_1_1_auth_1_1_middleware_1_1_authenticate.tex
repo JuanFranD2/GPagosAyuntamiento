@@ -1,0 +1,207 @@
+\doxysection{Authenticate Class Reference}
+\hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate}{}\label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate}\index{Authenticate@{Authenticate}}
+Inheritance diagram for Authenticate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a4fc8a33bcaac7c3af3e9969dda3711ce}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_auth}{Auth}} \$auth)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a81266b4a30976cf10a2836943d97f0f7}{handle}} (\$request, Closure \$next,... \$guards)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_af6f2c53dfbc1f72363d64d216db51744}{using}} (\$guard,... \$others)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a8f50802bb5d7a6da6f9d239eb60c7898}{redirect\+Using}} (callable \$redirect\+To\+Callback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a0dc74c9c12c696ba6ac4455202a6ef2d}{authenticate}} (\$request, array \$guards)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_ac3a471d2e210f3bf359b6d4d32fc8d5b}{unauthenticated}} (\$request, array \$guards)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a427c6e9474256652a4df41523ea51251}{redirect\+To}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a4a2767b44a1ce6278852040d1f00411a}{\$redirect\+To\+Callback}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a4fc8a33bcaac7c3af3e9969dda3711ce}\index{Authenticate@{Authenticate}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a4fc8a33bcaac7c3af3e9969dda3711ce} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_auth}{Auth}}}]{\$auth}{}\end{DoxyParamCaption})}
+
+Create a new middleware instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Factory & {\em \$auth} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a0dc74c9c12c696ba6ac4455202a6ef2d}\index{Authenticate@{Authenticate}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a0dc74c9c12c696ba6ac4455202a6ef2d} 
+authenticate (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{array}]{\$guards}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the user is logged in to any of the given guards.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+array & {\em \$guards} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Authentication\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a81266b4a30976cf10a2836943d97f0f7}\index{Authenticate@{Authenticate}!handle@{handle}}
+\index{handle@{handle}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a81266b4a30976cf10a2836943d97f0f7} 
+handle (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{Closure}]{\$next}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Handle an incoming request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+ & {\em string} & ...\$guards \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Authentication\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a427c6e9474256652a4df41523ea51251}\index{Authenticate@{Authenticate}!redirectTo@{redirectTo}}
+\index{redirectTo@{redirectTo}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{redirectTo()}{redirectTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a427c6e9474256652a4df41523ea51251} 
+redirect\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the path the user should be redirected to when they are not authenticated.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a8f50802bb5d7a6da6f9d239eb60c7898}\index{Authenticate@{Authenticate}!redirectUsing@{redirectUsing}}
+\index{redirectUsing@{redirectUsing}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{redirectUsing()}{redirectUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a8f50802bb5d7a6da6f9d239eb60c7898} 
+redirect\+Using (\begin{DoxyParamCaption}\item[{callable}]{\$redirect\+To\+Callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Specify the callback that should be used to generate the redirect path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$redirect\+To\+Callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_ac3a471d2e210f3bf359b6d4d32fc8d5b}\index{Authenticate@{Authenticate}!unauthenticated@{unauthenticated}}
+\index{unauthenticated@{unauthenticated}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{unauthenticated()}{unauthenticated()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_ac3a471d2e210f3bf359b6d4d32fc8d5b} 
+unauthenticated (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{array}]{\$guards}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle an unauthenticated user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+array & {\em \$guards} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+never
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Authentication\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_af6f2c53dfbc1f72363d64d216db51744}\index{Authenticate@{Authenticate}!using@{using}}
+\index{using@{using}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{using()}{using()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_af6f2c53dfbc1f72363d64d216db51744} 
+using (\begin{DoxyParamCaption}\item[{}]{\$guard}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Specify the guards for the middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$guard} & \\
+\hline
+string & {\em \$others} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a20d7415a9c3391b32d7fe2136fce6e2c}\index{Authenticate@{Authenticate}!\$auth@{\$auth}}
+\index{\$auth@{\$auth}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{\$auth}{\$auth}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a20d7415a9c3391b32d7fe2136fce6e2c} 
+\$auth\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a4a2767b44a1ce6278852040d1f00411a}\index{Authenticate@{Authenticate}!\$redirectToCallback@{\$redirectToCallback}}
+\index{\$redirectToCallback@{\$redirectToCallback}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{\$redirectToCallback}{\$redirectToCallback}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_middleware_1_1_authenticate_a4a2767b44a1ce6278852040d1f00411a} 
+\$redirect\+To\+Callback\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Auth/\+Middleware/\mbox{\hyperlink{_authenticate_8php}{Authenticate.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var _mock_object_from_wsdl_created_subscriber_8php =
+[
+    [ "MockObjectFromWsdlCreatedSubscriber", "interface_p_h_p_unit_1_1_event_1_1_test_1_1_mock_object_from_wsdl_created_subscriber.html", "interface_p_h_p_unit_1_1_event_1_1_test_1_1_mock_object_from_wsdl_created_subscriber" ]
+];

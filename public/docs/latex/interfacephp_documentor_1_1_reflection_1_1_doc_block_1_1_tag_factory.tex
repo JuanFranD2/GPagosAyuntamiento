@@ -1,0 +1,112 @@
+\doxysection{Tag\+Factory Interface Reference}
+\hypertarget{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory}{}\label{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory}\index{TagFactory@{TagFactory}}
+Inheritance diagram for Tag\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_a6d2792e725a373eec55e9c8ca43665a6}{add\+Parameter}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_aa7cac3b00ed953b89d7d9d8c4373f4a0}{add\+Service}} (object \$service)
+\item 
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_a05856bac6ac7add813d6d516cb6aa29b}{register\+Tag\+Handler}} (string \$tag\+Name, \$handler)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_factory}{Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tags_1_1_factory_1_1_factory_acd6cf6c525ed41b9359da491c7d70aa1}{create}} (string \$tag\+Line, ?Type\+Context \$context=null)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_a6d2792e725a373eec55e9c8ca43665a6}\index{TagFactory@{TagFactory}!addParameter@{addParameter}}
+\index{addParameter@{addParameter}!TagFactory@{TagFactory}}
+\doxysubsubsection{\texorpdfstring{addParameter()}{addParameter()}}
+{\footnotesize\ttfamily \label{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_a6d2792e725a373eec55e9c8ca43665a6} 
+add\+Parameter (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Adds a parameter to the service locator that can be injected in a tag\textquotesingle{}s factory method.
+
+When calling a tag\textquotesingle{}s "{}create"{} method we always check the signature for dependencies to inject. One way is to typehint a parameter in the signature so that we can use that interface or class name to inject a dependency (see \{\begin{DoxySeeAlso}{See also}
+add\+Service()\} for more information on that).
+\end{DoxySeeAlso}
+Another way is to check the name of the argument against the names in the Service Locator. With this method you can add a variable that will be inserted when a tag\textquotesingle{}s create method is not typehinted and has a matching name.
+
+Be aware that there are two reserved names\+:
+
+
+\begin{DoxyItemize}
+\item name, representing the name of the tag.
+\item body, representing the complete body of the tag.
+\end{DoxyItemize}
+
+These parameters are injected at the last moment and will override any existing parameter with those names.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a6d2792e725a373eec55e9c8ca43665a6}{Standard\+Tag\+Factory}}.
+
+\Hypertarget{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_aa7cac3b00ed953b89d7d9d8c4373f4a0}\index{TagFactory@{TagFactory}!addService@{addService}}
+\index{addService@{addService}!TagFactory@{TagFactory}}
+\doxysubsubsection{\texorpdfstring{addService()}{addService()}}
+{\footnotesize\ttfamily \label{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_aa7cac3b00ed953b89d7d9d8c4373f4a0} 
+add\+Service (\begin{DoxyParamCaption}\item[{object}]{\$service}{}\end{DoxyParamCaption})}
+
+Registers a service with the Service Locator using the FQCN of the class or the alias, if provided.
+
+When calling a tag\textquotesingle{}s "{}create"{} method we always check the signature for dependencies to inject. If a parameter has a typehint then the Service\+Locator is queried to see if a Service is registered for that typehint.
+
+Because interfaces are regularly used as type-\/hints this method provides an alias parameter; if the FQCN of the interface is passed as alias then every time that interface is requested the provided service will be returned. \Hypertarget{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_a05856bac6ac7add813d6d516cb6aa29b}\index{TagFactory@{TagFactory}!registerTagHandler@{registerTagHandler}}
+\index{registerTagHandler@{registerTagHandler}!TagFactory@{TagFactory}}
+\doxysubsubsection{\texorpdfstring{registerTagHandler()}{registerTagHandler()}}
+{\footnotesize\ttfamily \label{interfacephp_documentor_1_1_reflection_1_1_doc_block_1_1_tag_factory_a05856bac6ac7add813d6d516cb6aa29b} 
+register\+Tag\+Handler (\begin{DoxyParamCaption}\item[{string}]{\$tag\+Name}{, }\item[{}]{\$handler}{}\end{DoxyParamCaption})}
+
+Registers a handler for tags.
+
+If you want to use your own tags then you can use this method to instruct the Tag\+Factory to register the name of a tag with the FQCN of a \textquotesingle{}Tag Handler\textquotesingle{}. The Tag handler should implement the \{\begin{DoxySeeAlso}{See also}
+Tag\} interface (and thus the create method).
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag\+Name} & Name of tag to register a handler for. When registering a namespaced tag, the full name, along with a prefixing slash MUST be provided. \\
+\hline
+ & {\em class-\/string$<$\+Tag$>$\texorpdfstring{$\vert$}{|}\+Factory} & \$handler FQCN of handler.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the tag name is not a string. \\
+\hline
+{\em Invalid\+Argument\+Exception} & If the tag name is namespaced (contains backslashes) but does not start with a backslash. \\
+\hline
+{\em Invalid\+Argument\+Exception} & If the handler is not a string. \\
+\hline
+{\em Invalid\+Argument\+Exception} & If the handler is not an existing class. \\
+\hline
+{\em Invalid\+Argument\+Exception} & If the handler does not implement the \{\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Tag\} interface. 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_standard_tag_factory_a05856bac6ac7add813d6d516cb6aa29b}{Standard\+Tag\+Factory}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock/src/\+Doc\+Block/\mbox{\hyperlink{_tag_factory_8php}{Tag\+Factory.\+php}}\end{DoxyCompactItemize}

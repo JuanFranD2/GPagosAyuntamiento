@@ -1,0 +1,1754 @@
+\doxysection{Validator Class Reference}
+\hypertarget{class_illuminate_1_1_validation_1_1_validator}{}\label{class_illuminate_1_1_validation_1_1_validator}\index{Validator@{Validator}}
+Inheritance diagram for Validator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_illuminate_1_1_validation_1_1_validator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a70d8aef0066bbc6c5007a571813d33a6}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_translation_1_1_translator}{Translator}} \$translator, array \$data, array \$rules, array \$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_af2cb60735cac74cfa9da534eea973929}{messages}}=\mbox{[}$\,$\mbox{]}, array \$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_abf818560327272e8a0d310101d9dcb88}{attributes}}=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a582587a5e09739e7b0e5aff8cdf927c8}{parse\+Data}} (array \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a50da401fdaaa46264648d3b78ffb8e6e}{after}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a7e6ce9993d38f5ad5aad2d0e2579be0a}{passes}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a5c5d7977a3fcc64e5eed96d3127c6ade}{fails}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a184909dab34698899937d810a9f5d393}{validate}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a6abb946cccc1fed45dd75db5692ae02d}{validate\+With\+Bag}} (string \$error\+Bag)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a76d596f2730ef51089a3ce6214454c2b}{safe}} (?array \$keys=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a36f47c876f4c2ebd7e44c34e99e01f0d}{validated}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a6597a898f7d81c70f7db3be66305361b}{add\+Failure}} (\$attribute, \$rule, \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_abb9f0d6adf1eb9b3b55712056861a247}{valid}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a40bf9041e7b8a8df9097af443bb0b922}{invalid}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ab3e7c26f41cef1f8169fd263c28e17b3}{failed}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_af2cb60735cac74cfa9da534eea973929}{messages}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_adab0d6dea21cca5e7097732c8a33b8a5}{errors}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a31d7621137c1faeac54b9b10eaf53402}{get\+Message\+Bag}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_acfcde7abd5d3615e3653224705620451}{has\+Rule}} (\$attribute, \$rules)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_abf818560327272e8a0d310101d9dcb88}{attributes}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a81a67162a6288d78fc4c55283325f0b4}{get\+Data}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a87449bdd364c33ff024d32896342bf31}{set\+Data}} (array \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ad9a194f18f41de3de10a271d2b559e68}{get\+Value}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a91e240b5a8c3f8dc5791d6beefe617ec}{set\+Value}} (\$attribute, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a85c15a4eb3192c0e23b1a7355052ba18}{get\+Rules}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_aec23a01e7d1cbe17003c63b854b733b9}{get\+Rules\+Without\+Placeholders}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a2089d260fb5d73d9a03ba72b219ce98b}{set\+Rules}} (array \$rules)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a4ce8c44ef9c87636e3c05ab65a5e9626}{add\+Rules}} (\$rules)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a8f17c3e81120fae9dac9a0c84c804ea4}{sometimes}} (\$attribute, \$rules, callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a427409cf5c3178667e3b95b0edd3e097}{stop\+On\+First\+Failure}} (\$stop\+On\+First\+Failure=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a2bfc5ed5218d0aa1875e986ef895754a}{add\+Extensions}} (array \$extensions)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a016a5ea7121f978ef79799c5797abeed}{add\+Implicit\+Extensions}} (array \$extensions)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_abbcea2a56790625efd3ee93eb3d2f517}{add\+Dependent\+Extensions}} (array \$extensions)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a28112bcea6f20d8b5d4ae854069c0f29}{add\+Extension}} (\$rule, \$extension)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a6a3554f91792167c6e65ffc2aa96712c}{add\+Implicit\+Extension}} (\$rule, \$extension)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_af5d73b9fa6a309394b62f1d0860954f0}{add\+Dependent\+Extension}} (\$rule, \$extension)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ad096c7e643d254512ef319048b06e209}{add\+Replacers}} (array \$replacers)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a6d5e6444794fdeca5e9de5340cc842cb}{add\+Replacer}} (\$rule, \$replacer)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ae01bf5eb32d4ba10f77b269316c0a04b}{set\+Custom\+Messages}} (array \$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_af2cb60735cac74cfa9da534eea973929}{messages}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a4ca2ed2d03621e91bd90ca7a33ba9219}{set\+Attribute\+Names}} (array \$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_abf818560327272e8a0d310101d9dcb88}{attributes}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a97920203959fa19628c606293fe07865}{add\+Custom\+Attributes}} (array \$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_abf818560327272e8a0d310101d9dcb88}{attributes}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ab64f73c01414a7fa95742d36f31686e1}{set\+Implicit\+Attributes\+Formatter}} (?callable \$formatter=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a103c8ec939831b0dfbfcd329c9dd5a75}{set\+Value\+Names}} (array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a981407a88cabb877ea7522b715a73e0c}{add\+Custom\+Values}} (array \$custom\+Values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_aaf04f6d15d2ed8f7bfed7a5c000396fa}{set\+Fallback\+Messages}} (array \$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_af2cb60735cac74cfa9da534eea973929}{messages}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a0b4ee8b95a7e712e405aa5e156177acd}{get\+Presence\+Verifier}} (\$connection=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_aef48af0ff1aaf233c593ed8209a62837}{set\+Presence\+Verifier}} (\mbox{\hyperlink{interface_illuminate_1_1_validation_1_1_presence_verifier_interface}{Presence\+Verifier\+Interface}} \$presence\+Verifier)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a31ec439e56ccf74108b96587373a112c}{get\+Exception}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a2bcf0d0d35725aba976ffe97684fad49}{set\+Exception}} (\$exception)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ab4b0b7695305742fefb71a61ee4c65ad}{ensure\+Exponent\+Within\+Allowed\+Range\+Using}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a4b5bf5bf92166dc1c551fe8cfabfb5ae}{get\+Translator}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a60f35b3e4a6949ab806677678c66c712}{set\+Translator}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_translation_1_1_translator}{Translator}} \$translator)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a1ae42afbd11583595c4b7828cb602b08}{set\+Container}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ac565bd6a9d062c73a0a0db7afe0ffea9}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a0049a2949a470cf4a98aa6c3965976fa}{\$custom\+Messages}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a4b2c467fd337db9df9deb4453ed9e8d8}{\$fallback\+Messages}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ae57da64e721dba4c7bb2018abb202413}{\$custom\+Attributes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a750ac46b7b56c2acd8bd0f44ad8f669e}{\$custom\+Values}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a62f88ffbf7b9c91dd2ad9e905b6e8391}{\$exclude\+Unvalidated\+Array\+Keys}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a78dd0f5a8f983099dc6499a2d7cdf7aa}{\$extensions}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ad4ab4477056fb195970cf37103e96789}{\$replacers}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a2e3bd9507c41a978d2e769d6c202436d}{replace\+Placeholders}} (\$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a4f3a6402a97459d3ad5e5e82771b1cec}{replace\+Placeholder\+In\+String}} (string \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a2f7c6e0b0db3c15b77a2d29fb0f256c9}{replace\+Dot\+Placeholder\+In\+Parameters}} (array \$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a9cfcc907aca2e8bfbaed4496def934e7}{should\+Be\+Excluded}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_aa9df0db0de5074a5872304e67b8760b9}{remove\+Attribute}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a0a21327146663bf5a3a0abd1aa5cb288}{validate\+Attribute}} (\$attribute, \$rule)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_aeb6b0ac0592c73e7855a908a382ecd4a}{depends\+On\+Other\+Fields}} (\$rule)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a7320d5a04de3f69757a51af27a11b9e7}{get\+Explicit\+Keys}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a0564d751ca314b58ad64ca3f9410b8a2}{get\+Primary\+Attribute}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a5fa89269eccf84573b22d9109f72c7c0}{replace\+Dot\+In\+Parameters}} (array \$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ab89afdf7868c8f5c435d0c494f145bab}{replace\+Asterisks\+In\+Parameters}} (array \$parameters, array \$keys)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a83129abf3a77a19f6c0dbf61865e4bb1}{is\+Validatable}} (\$rule, \$attribute, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a9d8549171bad6e96c2e65a6a6c1abb60}{present\+Or\+Rule\+Is\+Implicit}} (\$rule, \$attribute, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a8aec313c1fc0631e44e48c2d8c4837c5}{is\+Implicit}} (\$rule)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a11007770c37f9102acc7916eb415d9b9}{passes\+Optional\+Check}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a22b55a198b19eeff32e0306d1eea8d91}{is\+Not\+Null\+If\+Marked\+As\+Nullable}} (\$rule, \$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a119d62da807598b12e0676dc9b251152}{has\+Not\+Failed\+Previous\+Rule\+If\+Presence\+Rule}} (\$rule, \$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a79c1401bbcb1974446755eaa8fa02d2a}{validate\+Using\+Custom\+Rule}} (\$attribute, \$value, \$rule)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a3165e59eb815b08a5f58332353a95aea}{should\+Stop\+Validating}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ac0c4aa51d24fb54cec2c7e3ae45d2dd3}{exclude\+Attribute}} (string \$attribute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a1b279e543df45d6950cabe9ce63f2e3c}{attributes\+That\+Have\+Messages}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_adf73f16b75f224cccf31a9c04ed05d35}{get\+Rule}} (\$attribute, \$rules)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_afef1c80fb6f4cae2618f5a3cb675b2ca}{call\+Extension}} (\$rule, \$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a6ac1a2b0eb4ecb70a3e8dd010a805c32}{call\+Class\+Based\+Extension}} (\$callback, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ad1bd0a7c70da186307de0136d0f0c2e3}{\$translator}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ab97dd40df90f4ce6f0fce9091e7c7872}{\$container}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a52af6cf649a79c72ea2384c1236f1d3d}{\$presence\+Verifier}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_adf52a552038ba325d39e36bc6f74bf42}{\$failed\+Rules}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a7b18e69c86c2c3e16f3fd1f66e65bdc8}{\$exclude\+Attributes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a21a183f927a6d243fe6b4ba3a6c4d4c8}{\$messages}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a41b3ea2780b45f1f0dc3d9286f20536f}{\$initial\+Rules}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a811d22ac55b4592f7f2a202529629419}{\$rules}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a9873adebf51f9099ced471ea9e4c6d99}{\$current\+Rule}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ad5c1b579f8adae8caaa10d050f8e09c9}{\$implicit\+Attributes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a385099b4d81975dd3fae6109c16096d7}{\$implicit\+Attributes\+Formatter}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a1d5db09fd9b40642f3214e3ecdbc66a3}{\$distinct\+Values}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a335c90aa9e7c7ecca4cac38fc37d2d23}{\$after}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a162929b763d9d82acd9fabdaaa1b5bc0}{\$stop\+On\+First\+Failure}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ae21ef971965753c59bddd38551baa131}{\$file\+Rules}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a502c616c5f38426a48739468203e1a03}{\$implicit\+Rules}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_adf390418ececebb530683882aeb1d181}{\$dependent\+Rules}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ae41a580a1a05bf253dca13dc3bf50d77}{\$exclude\+Rules}} = \mbox{[}\textquotesingle{}Exclude\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rules_1_1_exclude_if}{Exclude\+If}}\textquotesingle{}, \textquotesingle{}Exclude\+Unless\textquotesingle{}, \textquotesingle{}Exclude\+With\textquotesingle{}, \textquotesingle{}Exclude\+Without\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a0132eaa58a1cd16ed9cd954a835cc539}{\$size\+Rules}} = \mbox{[}\textquotesingle{}Size\textquotesingle{}, \textquotesingle{}Between\textquotesingle{}, \textquotesingle{}Min\textquotesingle{}, \textquotesingle{}Max\textquotesingle{}, \textquotesingle{}Gt\textquotesingle{}, \textquotesingle{}Lt\textquotesingle{}, \textquotesingle{}Gte\textquotesingle{}, \textquotesingle{}Lte\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a8ec7a1b71b089b68362b3a58e58e2e98}{\$numeric\+Rules}} = \mbox{[}\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rules_1_1_numeric}{Numeric}}\textquotesingle{}, \textquotesingle{}Integer\textquotesingle{}, \textquotesingle{}Decimal\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a49032fe35be3387adb6a3ee447362286}{\$default\+Numeric\+Rules}} = \mbox{[}\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rules_1_1_numeric}{Numeric}}\textquotesingle{}, \textquotesingle{}Integer\textquotesingle{}, \textquotesingle{}Decimal\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a7b8c95284212c3072a7a96bd4233eb79}{\$exception}} = Validation\+Exception\+::class
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a9226b910caa62ebdc7b181f41700be2e}{\$ensure\+Exponent\+Within\+Allowed\+Range\+Using}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a84b91a3aa80d3f0275b590f339a85286}{\$placeholder\+Hash}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade}{Facade}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_adfb117f244076aa9bc269269f7e57403}{\$app}}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_aba0d9150a4c3bbfa2d2c2f2f43e93e5c}{\$resolved\+Instance}}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a08619db687a5f201c64d968c0055e2db}{\$cached}} = true
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade}{Facade}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_abe078c1d0396a262999176c6d4bfbb76}{resolved}} (Closure \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a82534392feeca758003062cd36fc972d}{spy}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a0bc5626176404445d5121201c6986e49}{partial\+Mock}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a2031d73ea8b441b364bd1396e0555676}{should\+Receive}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_afad083b1bb72721818f067bfbb79ea77}{expects}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a8e43e171b55086d83f542b4305e34154}{swap}} (\$instance)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a4ec04ee8c57fd1fd710db01612ecba9d}{is\+Fake}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_af15d3da29baf52a7c734b57786e23038}{get\+Facade\+Root}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a77f6083ae7d479e3a4575e02aae448ad}{clear\+Resolved\+Instance}} (\$name)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a0506878f0b9d8b2c08e02d4937bdfeb1}{clear\+Resolved\+Instances}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_ad10f68f117b658a2e1b7936233f82c64}{default\+Aliases}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a91fcaec089f8ebe0f4e6ca39644c638c}{get\+Facade\+Application}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a900e0581ad1be62ea93b77c859afa086}{set\+Facade\+Application}} (\$app)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_acd52b9339ad39307a96fbb723e6e399e}{\+\_\+\+\_\+call\+Static}} (\$method, \$args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_validator}{Validator}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_validator_a19a808201f41f32f71a0532cb49b450f}{get\+Facade\+Accessor}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade}{Facade}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a3777fbe6ab2554a625a7b1aba8981da0}{create\+Fresh\+Mock\+Instance}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a2e9b99c094ef4cc927f626ec6b17e013}{create\+Mock}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a3b6c4dc34f38d2df223d9a923cfead45}{is\+Mock}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a7261bb2a8a97b7e17e0c71ef5dd6ff36}{get\+Mockable\+Class}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_facades_1_1_facade_a944b45ebcd0cbbc9fb860935be1847c6}{resolve\+Facade\+Instance}} (\$name)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a70d8aef0066bbc6c5007a571813d33a6}\index{Validator@{Validator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a70d8aef0066bbc6c5007a571813d33a6} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_translation_1_1_translator}{Translator}}}]{\$translator}{, }\item[{array}]{\$data}{, }\item[{array}]{\$rules}{, }\item[{array}]{\$messages}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new \doxylink{class_validator}{Validator} instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Translator & {\em \$translator} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+array & {\em \$rules} & \\
+\hline
+array & {\em \$messages} & \\
+\hline
+array & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ac565bd6a9d062c73a0a0db7afe0ffea9}\index{Validator@{Validator}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ac565bd6a9d062c73a0a0db7afe0ffea9} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Handle dynamic calls to class methods.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Bad\+Method\+Call\+Exception \Hypertarget{class_illuminate_1_1_validation_1_1_validator_a97920203959fa19628c606293fe07865}\index{Validator@{Validator}!addCustomAttributes@{addCustomAttributes}}
+\index{addCustomAttributes@{addCustomAttributes}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addCustomAttributes()}{addCustomAttributes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a97920203959fa19628c606293fe07865} 
+add\+Custom\+Attributes (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{}\end{DoxyParamCaption})}
+
+Add custom attributes to the validator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a981407a88cabb877ea7522b715a73e0c}\index{Validator@{Validator}!addCustomValues@{addCustomValues}}
+\index{addCustomValues@{addCustomValues}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addCustomValues()}{addCustomValues()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a981407a88cabb877ea7522b715a73e0c} 
+add\+Custom\+Values (\begin{DoxyParamCaption}\item[{array}]{\$custom\+Values}{}\end{DoxyParamCaption})}
+
+Add the custom values for the validator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$custom\+Values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_af5d73b9fa6a309394b62f1d0860954f0}\index{Validator@{Validator}!addDependentExtension@{addDependentExtension}}
+\index{addDependentExtension@{addDependentExtension}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addDependentExtension()}{addDependentExtension()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_af5d73b9fa6a309394b62f1d0860954f0} 
+add\+Dependent\+Extension (\begin{DoxyParamCaption}\item[{}]{\$rule}{, }\item[{}]{\$extension}{}\end{DoxyParamCaption})}
+
+Register a custom dependent validator extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rule} & \\
+\hline
+\textbackslash{}\+Closure | string & {\em \$extension} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_abbcea2a56790625efd3ee93eb3d2f517}\index{Validator@{Validator}!addDependentExtensions@{addDependentExtensions}}
+\index{addDependentExtensions@{addDependentExtensions}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addDependentExtensions()}{addDependentExtensions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_abbcea2a56790625efd3ee93eb3d2f517} 
+add\+Dependent\+Extensions (\begin{DoxyParamCaption}\item[{array}]{\$extensions}{}\end{DoxyParamCaption})}
+
+Register an array of custom dependent validator extensions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$extensions} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a28112bcea6f20d8b5d4ae854069c0f29}\index{Validator@{Validator}!addExtension@{addExtension}}
+\index{addExtension@{addExtension}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addExtension()}{addExtension()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a28112bcea6f20d8b5d4ae854069c0f29} 
+add\+Extension (\begin{DoxyParamCaption}\item[{}]{\$rule}{, }\item[{}]{\$extension}{}\end{DoxyParamCaption})}
+
+Register a custom validator extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rule} & \\
+\hline
+\textbackslash{}\+Closure | string & {\em \$extension} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a2bfc5ed5218d0aa1875e986ef895754a}\index{Validator@{Validator}!addExtensions@{addExtensions}}
+\index{addExtensions@{addExtensions}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addExtensions()}{addExtensions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a2bfc5ed5218d0aa1875e986ef895754a} 
+add\+Extensions (\begin{DoxyParamCaption}\item[{array}]{\$extensions}{}\end{DoxyParamCaption})}
+
+Register an array of custom validator extensions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$extensions} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a6597a898f7d81c70f7db3be66305361b}\index{Validator@{Validator}!addFailure@{addFailure}}
+\index{addFailure@{addFailure}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addFailure()}{addFailure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a6597a898f7d81c70f7db3be66305361b} 
+add\+Failure (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$rule}{, }\item[{}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Add a failed rule and error message to the collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+string & {\em \$rule} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a6a3554f91792167c6e65ffc2aa96712c}\index{Validator@{Validator}!addImplicitExtension@{addImplicitExtension}}
+\index{addImplicitExtension@{addImplicitExtension}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addImplicitExtension()}{addImplicitExtension()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a6a3554f91792167c6e65ffc2aa96712c} 
+add\+Implicit\+Extension (\begin{DoxyParamCaption}\item[{}]{\$rule}{, }\item[{}]{\$extension}{}\end{DoxyParamCaption})}
+
+Register a custom implicit validator extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rule} & \\
+\hline
+\textbackslash{}\+Closure | string & {\em \$extension} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a016a5ea7121f978ef79799c5797abeed}\index{Validator@{Validator}!addImplicitExtensions@{addImplicitExtensions}}
+\index{addImplicitExtensions@{addImplicitExtensions}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addImplicitExtensions()}{addImplicitExtensions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a016a5ea7121f978ef79799c5797abeed} 
+add\+Implicit\+Extensions (\begin{DoxyParamCaption}\item[{array}]{\$extensions}{}\end{DoxyParamCaption})}
+
+Register an array of custom implicit validator extensions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$extensions} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a6d5e6444794fdeca5e9de5340cc842cb}\index{Validator@{Validator}!addReplacer@{addReplacer}}
+\index{addReplacer@{addReplacer}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addReplacer()}{addReplacer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a6d5e6444794fdeca5e9de5340cc842cb} 
+add\+Replacer (\begin{DoxyParamCaption}\item[{}]{\$rule}{, }\item[{}]{\$replacer}{}\end{DoxyParamCaption})}
+
+Register a custom validator message replacer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rule} & \\
+\hline
+\textbackslash{}\+Closure | string & {\em \$replacer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ad096c7e643d254512ef319048b06e209}\index{Validator@{Validator}!addReplacers@{addReplacers}}
+\index{addReplacers@{addReplacers}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addReplacers()}{addReplacers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ad096c7e643d254512ef319048b06e209} 
+add\+Replacers (\begin{DoxyParamCaption}\item[{array}]{\$replacers}{}\end{DoxyParamCaption})}
+
+Register an array of custom validator message replacers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$replacers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a4ce8c44ef9c87636e3c05ab65a5e9626}\index{Validator@{Validator}!addRules@{addRules}}
+\index{addRules@{addRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{addRules()}{addRules()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a4ce8c44ef9c87636e3c05ab65a5e9626} 
+add\+Rules (\begin{DoxyParamCaption}\item[{}]{\$rules}{}\end{DoxyParamCaption})}
+
+Parse the given rules and merge them into current rules.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$rules} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a50da401fdaaa46264648d3b78ffb8e6e}\index{Validator@{Validator}!after@{after}}
+\index{after@{after}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a50da401fdaaa46264648d3b78ffb8e6e} 
+after (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Add an after validation callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | array | string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_abf818560327272e8a0d310101d9dcb88}\index{Validator@{Validator}!attributes@{attributes}}
+\index{attributes@{attributes}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{attributes()}{attributes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_abf818560327272e8a0d310101d9dcb88} 
+attributes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the data under validation.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a1b279e543df45d6950cabe9ce63f2e3c}\index{Validator@{Validator}!attributesThatHaveMessages@{attributesThatHaveMessages}}
+\index{attributesThatHaveMessages@{attributesThatHaveMessages}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{attributesThatHaveMessages()}{attributesThatHaveMessages()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a1b279e543df45d6950cabe9ce63f2e3c} 
+attributes\+That\+Have\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate an array of all attributes that have messages.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a6ac1a2b0eb4ecb70a3e8dd010a805c32}\index{Validator@{Validator}!callClassBasedExtension@{callClassBasedExtension}}
+\index{callClassBasedExtension@{callClassBasedExtension}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{callClassBasedExtension()}{callClassBasedExtension()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a6ac1a2b0eb4ecb70a3e8dd010a805c32} 
+call\+Class\+Based\+Extension (\begin{DoxyParamCaption}\item[{}]{\$callback}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Call a class based validator extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$callback} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_afef1c80fb6f4cae2618f5a3cb675b2ca}\index{Validator@{Validator}!callExtension@{callExtension}}
+\index{callExtension@{callExtension}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{callExtension()}{callExtension()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_afef1c80fb6f4cae2618f5a3cb675b2ca} 
+call\+Extension (\begin{DoxyParamCaption}\item[{}]{\$rule}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Call a custom validator extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rule} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_aeb6b0ac0592c73e7855a908a382ecd4a}\index{Validator@{Validator}!dependsOnOtherFields@{dependsOnOtherFields}}
+\index{dependsOnOtherFields@{dependsOnOtherFields}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{dependsOnOtherFields()}{dependsOnOtherFields()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_aeb6b0ac0592c73e7855a908a382ecd4a} 
+depends\+On\+Other\+Fields (\begin{DoxyParamCaption}\item[{}]{\$rule}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given rule depends on other fields.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rule} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ab4b0b7695305742fefb71a61ee4c65ad}\index{Validator@{Validator}!ensureExponentWithinAllowedRangeUsing@{ensureExponentWithinAllowedRangeUsing}}
+\index{ensureExponentWithinAllowedRangeUsing@{ensureExponentWithinAllowedRangeUsing}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{ensureExponentWithinAllowedRangeUsing()}{ensureExponentWithinAllowedRangeUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ab4b0b7695305742fefb71a61ee4c65ad} 
+ensure\+Exponent\+Within\+Allowed\+Range\+Using (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Ensure exponents are within range using the given callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(int} & \$scale, string \$attribute, mixed \$value) \$callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_adab0d6dea21cca5e7097732c8a33b8a5}\index{Validator@{Validator}!errors@{errors}}
+\index{errors@{errors}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{errors()}{errors()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_adab0d6dea21cca5e7097732c8a33b8a5} 
+errors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+An alternative more semantic shortcut to the message container.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Message\+Bag 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ac0c4aa51d24fb54cec2c7e3ae45d2dd3}\index{Validator@{Validator}!excludeAttribute@{excludeAttribute}}
+\index{excludeAttribute@{excludeAttribute}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{excludeAttribute()}{excludeAttribute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ac0c4aa51d24fb54cec2c7e3ae45d2dd3} 
+exclude\+Attribute (\begin{DoxyParamCaption}\item[{string}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the given attribute to the list of excluded attributes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ab3e7c26f41cef1f8169fd263c28e17b3}\index{Validator@{Validator}!failed@{failed}}
+\index{failed@{failed}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{failed()}{failed()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ab3e7c26f41cef1f8169fd263c28e17b3} 
+failed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the failed validation rules.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a5c5d7977a3fcc64e5eed96d3127c6ade}\index{Validator@{Validator}!fails@{fails}}
+\index{fails@{fails}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{fails()}{fails()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a5c5d7977a3fcc64e5eed96d3127c6ade} 
+fails (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the data fails the validation rules.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a81a67162a6288d78fc4c55283325f0b4}\index{Validator@{Validator}!getData@{getData}}
+\index{getData@{getData}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a81a67162a6288d78fc4c55283325f0b4} 
+get\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the data under validation.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a31ec439e56ccf74108b96587373a112c}\index{Validator@{Validator}!getException@{getException}}
+\index{getException@{getException}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getException()}{getException()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a31ec439e56ccf74108b96587373a112c} 
+get\+Exception (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the exception to throw upon failed validation.
+
+\begin{DoxyReturn}{Returns}
+class-\/string\texorpdfstring{$<$}{<}\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Exception\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a7320d5a04de3f69757a51af27a11b9e7}\index{Validator@{Validator}!getExplicitKeys@{getExplicitKeys}}
+\index{getExplicitKeys@{getExplicitKeys}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getExplicitKeys()}{getExplicitKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a7320d5a04de3f69757a51af27a11b9e7} 
+get\+Explicit\+Keys (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the explicit keys from an attribute flattened with dot notation.
+
+E.\+g. \textquotesingle{}foo.\+1.\+bar.\+spark.\+baz\textquotesingle{} -\/\texorpdfstring{$>$}{>} \mbox{[}1, \textquotesingle{}spark\textquotesingle{}\mbox{]} for \textquotesingle{}foo.\texorpdfstring{$\ast$}{*}.bar.\texorpdfstring{$\ast$}{*}.baz\textquotesingle{}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a31d7621137c1faeac54b9b10eaf53402}\index{Validator@{Validator}!getMessageBag@{getMessageBag}}
+\index{getMessageBag@{getMessageBag}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getMessageBag()}{getMessageBag()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a31d7621137c1faeac54b9b10eaf53402} 
+get\+Message\+Bag (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the messages for the instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Message\+Bag 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a0b4ee8b95a7e712e405aa5e156177acd}\index{Validator@{Validator}!getPresenceVerifier@{getPresenceVerifier}}
+\index{getPresenceVerifier@{getPresenceVerifier}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getPresenceVerifier()}{getPresenceVerifier()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a0b4ee8b95a7e712e405aa5e156177acd} 
+get\+Presence\+Verifier (\begin{DoxyParamCaption}\item[{}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the Presence Verifier implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Presence\+Verifier\+Interface
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception
+
+Get the Presence Verifier implementation.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Presence\+Verifier\+Interface 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a0564d751ca314b58ad64ca3f9410b8a2}\index{Validator@{Validator}!getPrimaryAttribute@{getPrimaryAttribute}}
+\index{getPrimaryAttribute@{getPrimaryAttribute}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getPrimaryAttribute()}{getPrimaryAttribute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a0564d751ca314b58ad64ca3f9410b8a2} 
+get\+Primary\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the primary attribute name.
+
+For example, if "{}name.\+0"{} is given, "{}name.\texorpdfstring{$\ast$}{*}"{} will be returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_adf73f16b75f224cccf31a9c04ed05d35}\index{Validator@{Validator}!getRule@{getRule}}
+\index{getRule@{getRule}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getRule()}{getRule()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_adf73f16b75f224cccf31a9c04ed05d35} 
+get\+Rule (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$rules}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a rule and its parameters for a given attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+string | array & {\em \$rules} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a85c15a4eb3192c0e23b1a7355052ba18}\index{Validator@{Validator}!getRules@{getRules}}
+\index{getRules@{getRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getRules()}{getRules()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a85c15a4eb3192c0e23b1a7355052ba18} 
+get\+Rules (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the validation rules.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_aec23a01e7d1cbe17003c63b854b733b9}\index{Validator@{Validator}!getRulesWithoutPlaceholders@{getRulesWithoutPlaceholders}}
+\index{getRulesWithoutPlaceholders@{getRulesWithoutPlaceholders}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getRulesWithoutPlaceholders()}{getRulesWithoutPlaceholders()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_aec23a01e7d1cbe17003c63b854b733b9} 
+get\+Rules\+Without\+Placeholders (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the validation rules with key placeholders removed.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a4b5bf5bf92166dc1c551fe8cfabfb5ae}\index{Validator@{Validator}!getTranslator@{getTranslator}}
+\index{getTranslator@{getTranslator}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getTranslator()}{getTranslator()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a4b5bf5bf92166dc1c551fe8cfabfb5ae} 
+get\+Translator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Translator implementation.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Translator 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ad9a194f18f41de3de10a271d2b559e68}\index{Validator@{Validator}!getValue@{getValue}}
+\index{getValue@{getValue}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ad9a194f18f41de3de10a271d2b559e68} 
+get\+Value (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})}
+
+Get the value of a given attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a119d62da807598b12e0676dc9b251152}\index{Validator@{Validator}!hasNotFailedPreviousRuleIfPresenceRule@{hasNotFailedPreviousRuleIfPresenceRule}}
+\index{hasNotFailedPreviousRuleIfPresenceRule@{hasNotFailedPreviousRuleIfPresenceRule}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{hasNotFailedPreviousRuleIfPresenceRule()}{hasNotFailedPreviousRuleIfPresenceRule()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a119d62da807598b12e0676dc9b251152} 
+has\+Not\+Failed\+Previous\+Rule\+If\+Presence\+Rule (\begin{DoxyParamCaption}\item[{}]{\$rule}{, }\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if it\textquotesingle{}s a necessary presence validation.
+
+This is to avoid possible database type comparison errors.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rule} & \\
+\hline
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_acfcde7abd5d3615e3653224705620451}\index{Validator@{Validator}!hasRule@{hasRule}}
+\index{hasRule@{hasRule}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{hasRule()}{hasRule()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_acfcde7abd5d3615e3653224705620451} 
+has\+Rule (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$rules}{}\end{DoxyParamCaption})}
+
+Determine if the given attribute has a rule in the given set.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+string | array & {\em \$rules} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a40bf9041e7b8a8df9097af443bb0b922}\index{Validator@{Validator}!invalid@{invalid}}
+\index{invalid@{invalid}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{invalid()}{invalid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a40bf9041e7b8a8df9097af443bb0b922} 
+invalid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the data which was invalid.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a8aec313c1fc0631e44e48c2d8c4837c5}\index{Validator@{Validator}!isImplicit@{isImplicit}}
+\index{isImplicit@{isImplicit}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{isImplicit()}{isImplicit()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a8aec313c1fc0631e44e48c2d8c4837c5} 
+is\+Implicit (\begin{DoxyParamCaption}\item[{}]{\$rule}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if a given rule implies the attribute is required.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$rule} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a22b55a198b19eeff32e0306d1eea8d91}\index{Validator@{Validator}!isNotNullIfMarkedAsNullable@{isNotNullIfMarkedAsNullable}}
+\index{isNotNullIfMarkedAsNullable@{isNotNullIfMarkedAsNullable}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{isNotNullIfMarkedAsNullable()}{isNotNullIfMarkedAsNullable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a22b55a198b19eeff32e0306d1eea8d91} 
+is\+Not\+Null\+If\+Marked\+As\+Nullable (\begin{DoxyParamCaption}\item[{}]{\$rule}{, }\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the attribute fails the nullable check.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rule} & \\
+\hline
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a83129abf3a77a19f6c0dbf61865e4bb1}\index{Validator@{Validator}!isValidatable@{isValidatable}}
+\index{isValidatable@{isValidatable}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{isValidatable()}{isValidatable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a83129abf3a77a19f6c0dbf61865e4bb1} 
+is\+Validatable (\begin{DoxyParamCaption}\item[{}]{\$rule}{, }\item[{}]{\$attribute}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the attribute is validatable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$rule} & \\
+\hline
+string & {\em \$attribute} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_af2cb60735cac74cfa9da534eea973929}\index{Validator@{Validator}!messages@{messages}}
+\index{messages@{messages}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{messages()}{messages()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_af2cb60735cac74cfa9da534eea973929} 
+messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the message container for the validator.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Message\+Bag 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a582587a5e09739e7b0e5aff8cdf927c8}\index{Validator@{Validator}!parseData@{parseData}}
+\index{parseData@{parseData}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{parseData()}{parseData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a582587a5e09739e7b0e5aff8cdf927c8} 
+parse\+Data (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+Parse the data array, converting dots and asterisks.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a7e6ce9993d38f5ad5aad2d0e2579be0a}\index{Validator@{Validator}!passes@{passes}}
+\index{passes@{passes}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{passes()}{passes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a7e6ce9993d38f5ad5aad2d0e2579be0a} 
+passes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the data passes the validation rules.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a11007770c37f9102acc7916eb415d9b9}\index{Validator@{Validator}!passesOptionalCheck@{passesOptionalCheck}}
+\index{passesOptionalCheck@{passesOptionalCheck}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{passesOptionalCheck()}{passesOptionalCheck()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a11007770c37f9102acc7916eb415d9b9} 
+passes\+Optional\+Check (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the attribute passes any optional check.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a9d8549171bad6e96c2e65a6a6c1abb60}\index{Validator@{Validator}!presentOrRuleIsImplicit@{presentOrRuleIsImplicit}}
+\index{presentOrRuleIsImplicit@{presentOrRuleIsImplicit}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{presentOrRuleIsImplicit()}{presentOrRuleIsImplicit()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a9d8549171bad6e96c2e65a6a6c1abb60} 
+present\+Or\+Rule\+Is\+Implicit (\begin{DoxyParamCaption}\item[{}]{\$rule}{, }\item[{}]{\$attribute}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the field is present, or the rule implies required.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$rule} & \\
+\hline
+string & {\em \$attribute} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_aa9df0db0de5074a5872304e67b8760b9}\index{Validator@{Validator}!removeAttribute@{removeAttribute}}
+\index{removeAttribute@{removeAttribute}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{removeAttribute()}{removeAttribute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_aa9df0db0de5074a5872304e67b8760b9} 
+remove\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove the given attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ab89afdf7868c8f5c435d0c494f145bab}\index{Validator@{Validator}!replaceAsterisksInParameters@{replaceAsterisksInParameters}}
+\index{replaceAsterisksInParameters@{replaceAsterisksInParameters}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{replaceAsterisksInParameters()}{replaceAsterisksInParameters()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ab89afdf7868c8f5c435d0c494f145bab} 
+replace\+Asterisks\+In\+Parameters (\begin{DoxyParamCaption}\item[{array}]{\$parameters}{, }\item[{array}]{\$keys}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace each field parameter which has asterisks with the given keys.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$parameters} & \\
+\hline
+array & {\em \$keys} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a5fa89269eccf84573b22d9109f72c7c0}\index{Validator@{Validator}!replaceDotInParameters@{replaceDotInParameters}}
+\index{replaceDotInParameters@{replaceDotInParameters}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{replaceDotInParameters()}{replaceDotInParameters()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a5fa89269eccf84573b22d9109f72c7c0} 
+replace\+Dot\+In\+Parameters (\begin{DoxyParamCaption}\item[{array}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace each field parameter which has an escaped dot with the dot placeholder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a2f7c6e0b0db3c15b77a2d29fb0f256c9}\index{Validator@{Validator}!replaceDotPlaceholderInParameters@{replaceDotPlaceholderInParameters}}
+\index{replaceDotPlaceholderInParameters@{replaceDotPlaceholderInParameters}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{replaceDotPlaceholderInParameters()}{replaceDotPlaceholderInParameters()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a2f7c6e0b0db3c15b77a2d29fb0f256c9} 
+replace\+Dot\+Placeholder\+In\+Parameters (\begin{DoxyParamCaption}\item[{array}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace each field parameter dot placeholder with dot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a4f3a6402a97459d3ad5e5e82771b1cec}\index{Validator@{Validator}!replacePlaceholderInString@{replacePlaceholderInString}}
+\index{replacePlaceholderInString@{replacePlaceholderInString}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{replacePlaceholderInString()}{replacePlaceholderInString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a4f3a6402a97459d3ad5e5e82771b1cec} 
+replace\+Placeholder\+In\+String (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace the placeholders in the given string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a2e3bd9507c41a978d2e769d6c202436d}\index{Validator@{Validator}!replacePlaceholders@{replacePlaceholders}}
+\index{replacePlaceholders@{replacePlaceholders}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{replacePlaceholders()}{replacePlaceholders()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a2e3bd9507c41a978d2e769d6c202436d} 
+replace\+Placeholders (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace the placeholders used in data keys.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a76d596f2730ef51089a3ce6214454c2b}\index{Validator@{Validator}!safe@{safe}}
+\index{safe@{safe}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{safe()}{safe()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a76d596f2730ef51089a3ce6214454c2b} 
+safe (\begin{DoxyParamCaption}\item[{?array}]{\$keys}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a validated input container for the validated input.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$keys} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Validated\+Input\texorpdfstring{$\vert$}{|}array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a4ca2ed2d03621e91bd90ca7a33ba9219}\index{Validator@{Validator}!setAttributeNames@{setAttributeNames}}
+\index{setAttributeNames@{setAttributeNames}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setAttributeNames()}{setAttributeNames()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a4ca2ed2d03621e91bd90ca7a33ba9219} 
+set\+Attribute\+Names (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{}\end{DoxyParamCaption})}
+
+Set the custom attributes on the validator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a1ae42afbd11583595c4b7828cb602b08}\index{Validator@{Validator}!setContainer@{setContainer}}
+\index{setContainer@{setContainer}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setContainer()}{setContainer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a1ae42afbd11583595c4b7828cb602b08} 
+set\+Container (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Set the IoC container instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Set the container instance used by the validation factory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Factory 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ae01bf5eb32d4ba10f77b269316c0a04b}\index{Validator@{Validator}!setCustomMessages@{setCustomMessages}}
+\index{setCustomMessages@{setCustomMessages}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setCustomMessages()}{setCustomMessages()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ae01bf5eb32d4ba10f77b269316c0a04b} 
+set\+Custom\+Messages (\begin{DoxyParamCaption}\item[{array}]{\$messages}{}\end{DoxyParamCaption})}
+
+Set the custom messages for the validator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$messages} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a87449bdd364c33ff024d32896342bf31}\index{Validator@{Validator}!setData@{setData}}
+\index{setData@{setData}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a87449bdd364c33ff024d32896342bf31} 
+set\+Data (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+Set the data under validation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a2bcf0d0d35725aba976ffe97684fad49}\index{Validator@{Validator}!setException@{setException}}
+\index{setException@{setException}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setException()}{setException()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a2bcf0d0d35725aba976ffe97684fad49} 
+set\+Exception (\begin{DoxyParamCaption}\item[{}]{\$exception}{}\end{DoxyParamCaption})}
+
+Set the exception to throw upon failed validation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class-\/string$<$} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Exception\texorpdfstring{$>$}{>} \$exception \begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_validation_1_1_validator_aaf04f6d15d2ed8f7bfed7a5c000396fa}\index{Validator@{Validator}!setFallbackMessages@{setFallbackMessages}}
+\index{setFallbackMessages@{setFallbackMessages}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setFallbackMessages()}{setFallbackMessages()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_aaf04f6d15d2ed8f7bfed7a5c000396fa} 
+set\+Fallback\+Messages (\begin{DoxyParamCaption}\item[{array}]{\$messages}{}\end{DoxyParamCaption})}
+
+Set the fallback messages for the validator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$messages} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ab64f73c01414a7fa95742d36f31686e1}\index{Validator@{Validator}!setImplicitAttributesFormatter@{setImplicitAttributesFormatter}}
+\index{setImplicitAttributesFormatter@{setImplicitAttributesFormatter}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setImplicitAttributesFormatter()}{setImplicitAttributesFormatter()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ab64f73c01414a7fa95742d36f31686e1} 
+set\+Implicit\+Attributes\+Formatter (\begin{DoxyParamCaption}\item[{?callable}]{\$formatter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the callback that used to format an implicit attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$formatter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_aef48af0ff1aaf233c593ed8209a62837}\index{Validator@{Validator}!setPresenceVerifier@{setPresenceVerifier}}
+\index{setPresenceVerifier@{setPresenceVerifier}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setPresenceVerifier()}{setPresenceVerifier()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_aef48af0ff1aaf233c593ed8209a62837} 
+set\+Presence\+Verifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_validation_1_1_presence_verifier_interface}{Presence\+Verifier\+Interface}}}]{\$presence\+Verifier}{}\end{DoxyParamCaption})}
+
+Set the Presence Verifier implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Presence\+Verifier\+Interface & {\em \$presence\+Verifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a2089d260fb5d73d9a03ba72b219ce98b}\index{Validator@{Validator}!setRules@{setRules}}
+\index{setRules@{setRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setRules()}{setRules()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a2089d260fb5d73d9a03ba72b219ce98b} 
+set\+Rules (\begin{DoxyParamCaption}\item[{array}]{\$rules}{}\end{DoxyParamCaption})}
+
+Set the validation rules.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$rules} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a60f35b3e4a6949ab806677678c66c712}\index{Validator@{Validator}!setTranslator@{setTranslator}}
+\index{setTranslator@{setTranslator}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setTranslator()}{setTranslator()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a60f35b3e4a6949ab806677678c66c712} 
+set\+Translator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_translation_1_1_translator}{Translator}}}]{\$translator}{}\end{DoxyParamCaption})}
+
+Set the Translator implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Translator & {\em \$translator} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a91e240b5a8c3f8dc5791d6beefe617ec}\index{Validator@{Validator}!setValue@{setValue}}
+\index{setValue@{setValue}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a91e240b5a8c3f8dc5791d6beefe617ec} 
+set\+Value (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Set the value of a given attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a103c8ec939831b0dfbfcd329c9dd5a75}\index{Validator@{Validator}!setValueNames@{setValueNames}}
+\index{setValueNames@{setValueNames}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{setValueNames()}{setValueNames()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a103c8ec939831b0dfbfcd329c9dd5a75} 
+set\+Value\+Names (\begin{DoxyParamCaption}\item[{array}]{\$values}{}\end{DoxyParamCaption})}
+
+Set the custom values on the validator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a9cfcc907aca2e8bfbaed4496def934e7}\index{Validator@{Validator}!shouldBeExcluded@{shouldBeExcluded}}
+\index{shouldBeExcluded@{shouldBeExcluded}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{shouldBeExcluded()}{shouldBeExcluded()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a9cfcc907aca2e8bfbaed4496def934e7} 
+should\+Be\+Excluded (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the attribute should be excluded.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a3165e59eb815b08a5f58332353a95aea}\index{Validator@{Validator}!shouldStopValidating@{shouldStopValidating}}
+\index{shouldStopValidating@{shouldStopValidating}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{shouldStopValidating()}{shouldStopValidating()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a3165e59eb815b08a5f58332353a95aea} 
+should\+Stop\+Validating (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if we should stop further validations on a given attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a8f17c3e81120fae9dac9a0c84c804ea4}\index{Validator@{Validator}!sometimes@{sometimes}}
+\index{sometimes@{sometimes}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{sometimes()}{sometimes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a8f17c3e81120fae9dac9a0c84c804ea4} 
+sometimes (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$rules}{, }\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Add conditions to a given field based on a Closure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$attribute} & \\
+\hline
+string | array & {\em \$rules} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a427409cf5c3178667e3b95b0edd3e097}\index{Validator@{Validator}!stopOnFirstFailure@{stopOnFirstFailure}}
+\index{stopOnFirstFailure@{stopOnFirstFailure}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{stopOnFirstFailure()}{stopOnFirstFailure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a427409cf5c3178667e3b95b0edd3e097} 
+stop\+On\+First\+Failure (\begin{DoxyParamCaption}\item[{}]{\$stop\+On\+First\+Failure}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Instruct the validator to stop validating after the first rule failure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$stop\+On\+First\+Failure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_abb9f0d6adf1eb9b3b55712056861a247}\index{Validator@{Validator}!valid@{valid}}
+\index{valid@{valid}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{valid()}{valid()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_abb9f0d6adf1eb9b3b55712056861a247} 
+valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the data which was valid.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a184909dab34698899937d810a9f5d393}\index{Validator@{Validator}!validate@{validate}}
+\index{validate@{validate}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a184909dab34698899937d810a9f5d393} 
+validate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Run the validator\textquotesingle{}s rules against its data.
+
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Exception \Hypertarget{class_illuminate_1_1_validation_1_1_validator_a0a21327146663bf5a3a0abd1aa5cb288}\index{Validator@{Validator}!validateAttribute@{validateAttribute}}
+\index{validateAttribute@{validateAttribute}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{validateAttribute()}{validateAttribute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a0a21327146663bf5a3a0abd1aa5cb288} 
+validate\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$rule}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate a given attribute against a rule.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+string & {\em \$rule} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a36f47c876f4c2ebd7e44c34e99e01f0d}\index{Validator@{Validator}!validated@{validated}}
+\index{validated@{validated}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{validated()}{validated()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a36f47c876f4c2ebd7e44c34e99e01f0d} 
+validated (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the attributes and values that were validated.
+
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Exception \Hypertarget{class_illuminate_1_1_validation_1_1_validator_a79c1401bbcb1974446755eaa8fa02d2a}\index{Validator@{Validator}!validateUsingCustomRule@{validateUsingCustomRule}}
+\index{validateUsingCustomRule@{validateUsingCustomRule}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{validateUsingCustomRule()}{validateUsingCustomRule()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a79c1401bbcb1974446755eaa8fa02d2a} 
+validate\+Using\+Custom\+Rule (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$value}{, }\item[{}]{\$rule}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate an attribute using a custom rule object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Validation\textbackslash{}\+Rule & {\em \$rule} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a6abb946cccc1fed45dd75db5692ae02d}\index{Validator@{Validator}!validateWithBag@{validateWithBag}}
+\index{validateWithBag@{validateWithBag}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{validateWithBag()}{validateWithBag()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a6abb946cccc1fed45dd75db5692ae02d} 
+validate\+With\+Bag (\begin{DoxyParamCaption}\item[{string}]{\$error\+Bag}{}\end{DoxyParamCaption})}
+
+Run the validator\textquotesingle{}s rules against its data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$error\+Bag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Exception 
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a335c90aa9e7c7ecca4cac38fc37d2d23}\index{Validator@{Validator}!\$after@{\$after}}
+\index{\$after@{\$after}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$after}{\$after}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a335c90aa9e7c7ecca4cac38fc37d2d23} 
+\$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a50da401fdaaa46264648d3b78ffb8e6e}{after}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ab97dd40df90f4ce6f0fce9091e7c7872}\index{Validator@{Validator}!\$container@{\$container}}
+\index{\$container@{\$container}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$container}{\$container}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ab97dd40df90f4ce6f0fce9091e7c7872} 
+\$container\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a9873adebf51f9099ced471ea9e4c6d99}\index{Validator@{Validator}!\$currentRule@{\$currentRule}}
+\index{\$currentRule@{\$currentRule}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$currentRule}{\$currentRule}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a9873adebf51f9099ced471ea9e4c6d99} 
+\$current\+Rule\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ae57da64e721dba4c7bb2018abb202413}\index{Validator@{Validator}!\$customAttributes@{\$customAttributes}}
+\index{\$customAttributes@{\$customAttributes}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$customAttributes}{\$customAttributes}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ae57da64e721dba4c7bb2018abb202413} 
+\$custom\+Attributes = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a0049a2949a470cf4a98aa6c3965976fa}\index{Validator@{Validator}!\$customMessages@{\$customMessages}}
+\index{\$customMessages@{\$customMessages}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$customMessages}{\$customMessages}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a0049a2949a470cf4a98aa6c3965976fa} 
+\$custom\+Messages = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a750ac46b7b56c2acd8bd0f44ad8f669e}\index{Validator@{Validator}!\$customValues@{\$customValues}}
+\index{\$customValues@{\$customValues}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$customValues}{\$customValues}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a750ac46b7b56c2acd8bd0f44ad8f669e} 
+\$custom\+Values = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a6efc15b5a2314dd4b5aaa556a375c6d6}\index{Validator@{Validator}!\$data@{\$data}}
+\index{\$data@{\$data}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$data}{\$data}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a6efc15b5a2314dd4b5aaa556a375c6d6} 
+\$data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a49032fe35be3387adb6a3ee447362286}\index{Validator@{Validator}!\$defaultNumericRules@{\$defaultNumericRules}}
+\index{\$defaultNumericRules@{\$defaultNumericRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$defaultNumericRules}{\$defaultNumericRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a49032fe35be3387adb6a3ee447362286} 
+\$default\+Numeric\+Rules = \mbox{[}\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rules_1_1_numeric}{Numeric}}\textquotesingle{}, \textquotesingle{}Integer\textquotesingle{}, \textquotesingle{}Decimal\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_adf390418ececebb530683882aeb1d181}\index{Validator@{Validator}!\$dependentRules@{\$dependentRules}}
+\index{\$dependentRules@{\$dependentRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$dependentRules}{\$dependentRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_adf390418ececebb530683882aeb1d181} 
+\$dependent\+Rules\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a1d5db09fd9b40642f3214e3ecdbc66a3}\index{Validator@{Validator}!\$distinctValues@{\$distinctValues}}
+\index{\$distinctValues@{\$distinctValues}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$distinctValues}{\$distinctValues}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a1d5db09fd9b40642f3214e3ecdbc66a3} 
+\$distinct\+Values = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a9226b910caa62ebdc7b181f41700be2e}\index{Validator@{Validator}!\$ensureExponentWithinAllowedRangeUsing@{\$ensureExponentWithinAllowedRangeUsing}}
+\index{\$ensureExponentWithinAllowedRangeUsing@{\$ensureExponentWithinAllowedRangeUsing}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$ensureExponentWithinAllowedRangeUsing}{\$ensureExponentWithinAllowedRangeUsing}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a9226b910caa62ebdc7b181f41700be2e} 
+\$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_ab4b0b7695305742fefb71a61ee4c65ad}{ensure\+Exponent\+Within\+Allowed\+Range\+Using}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a7b8c95284212c3072a7a96bd4233eb79}\index{Validator@{Validator}!\$exception@{\$exception}}
+\index{\$exception@{\$exception}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$exception}{\$exception}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a7b8c95284212c3072a7a96bd4233eb79} 
+\$exception = Validation\+Exception\+::class\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a7b18e69c86c2c3e16f3fd1f66e65bdc8}\index{Validator@{Validator}!\$excludeAttributes@{\$excludeAttributes}}
+\index{\$excludeAttributes@{\$excludeAttributes}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$excludeAttributes}{\$excludeAttributes}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a7b18e69c86c2c3e16f3fd1f66e65bdc8} 
+\$exclude\+Attributes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ae41a580a1a05bf253dca13dc3bf50d77}\index{Validator@{Validator}!\$excludeRules@{\$excludeRules}}
+\index{\$excludeRules@{\$excludeRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$excludeRules}{\$excludeRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ae41a580a1a05bf253dca13dc3bf50d77} 
+\$exclude\+Rules = \mbox{[}\textquotesingle{}Exclude\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rules_1_1_exclude_if}{Exclude\+If}}\textquotesingle{}, \textquotesingle{}Exclude\+Unless\textquotesingle{}, \textquotesingle{}Exclude\+With\textquotesingle{}, \textquotesingle{}Exclude\+Without\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a62f88ffbf7b9c91dd2ad9e905b6e8391}\index{Validator@{Validator}!\$excludeUnvalidatedArrayKeys@{\$excludeUnvalidatedArrayKeys}}
+\index{\$excludeUnvalidatedArrayKeys@{\$excludeUnvalidatedArrayKeys}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$excludeUnvalidatedArrayKeys}{\$excludeUnvalidatedArrayKeys}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a62f88ffbf7b9c91dd2ad9e905b6e8391} 
+\$exclude\+Unvalidated\+Array\+Keys = false}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a78dd0f5a8f983099dc6499a2d7cdf7aa}\index{Validator@{Validator}!\$extensions@{\$extensions}}
+\index{\$extensions@{\$extensions}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$extensions}{\$extensions}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a78dd0f5a8f983099dc6499a2d7cdf7aa} 
+\$extensions = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_adf52a552038ba325d39e36bc6f74bf42}\index{Validator@{Validator}!\$failedRules@{\$failedRules}}
+\index{\$failedRules@{\$failedRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$failedRules}{\$failedRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_adf52a552038ba325d39e36bc6f74bf42} 
+\$failed\+Rules = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a4b2c467fd337db9df9deb4453ed9e8d8}\index{Validator@{Validator}!\$fallbackMessages@{\$fallbackMessages}}
+\index{\$fallbackMessages@{\$fallbackMessages}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$fallbackMessages}{\$fallbackMessages}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a4b2c467fd337db9df9deb4453ed9e8d8} 
+\$fallback\+Messages = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ae21ef971965753c59bddd38551baa131}\index{Validator@{Validator}!\$fileRules@{\$fileRules}}
+\index{\$fileRules@{\$fileRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$fileRules}{\$fileRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ae21ef971965753c59bddd38551baa131} 
+\$file\+Rules\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ad5c1b579f8adae8caaa10d050f8e09c9}\index{Validator@{Validator}!\$implicitAttributes@{\$implicitAttributes}}
+\index{\$implicitAttributes@{\$implicitAttributes}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$implicitAttributes}{\$implicitAttributes}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ad5c1b579f8adae8caaa10d050f8e09c9} 
+\$implicit\+Attributes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a385099b4d81975dd3fae6109c16096d7}\index{Validator@{Validator}!\$implicitAttributesFormatter@{\$implicitAttributesFormatter}}
+\index{\$implicitAttributesFormatter@{\$implicitAttributesFormatter}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$implicitAttributesFormatter}{\$implicitAttributesFormatter}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a385099b4d81975dd3fae6109c16096d7} 
+\$implicit\+Attributes\+Formatter\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a502c616c5f38426a48739468203e1a03}\index{Validator@{Validator}!\$implicitRules@{\$implicitRules}}
+\index{\$implicitRules@{\$implicitRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$implicitRules}{\$implicitRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a502c616c5f38426a48739468203e1a03} 
+\$implicit\+Rules\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a41b3ea2780b45f1f0dc3d9286f20536f}\index{Validator@{Validator}!\$initialRules@{\$initialRules}}
+\index{\$initialRules@{\$initialRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$initialRules}{\$initialRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a41b3ea2780b45f1f0dc3d9286f20536f} 
+\$initial\+Rules\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a21a183f927a6d243fe6b4ba3a6c4d4c8}\index{Validator@{Validator}!\$messages@{\$messages}}
+\index{\$messages@{\$messages}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$messages}{\$messages}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a21a183f927a6d243fe6b4ba3a6c4d4c8} 
+\$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_af2cb60735cac74cfa9da534eea973929}{messages}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a8ec7a1b71b089b68362b3a58e58e2e98}\index{Validator@{Validator}!\$numericRules@{\$numericRules}}
+\index{\$numericRules@{\$numericRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$numericRules}{\$numericRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a8ec7a1b71b089b68362b3a58e58e2e98} 
+\$numeric\+Rules = \mbox{[}\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_rules_1_1_numeric}{Numeric}}\textquotesingle{}, \textquotesingle{}Integer\textquotesingle{}, \textquotesingle{}Decimal\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a84b91a3aa80d3f0275b590f339a85286}\index{Validator@{Validator}!\$placeholderHash@{\$placeholderHash}}
+\index{\$placeholderHash@{\$placeholderHash}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$placeholderHash}{\$placeholderHash}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a84b91a3aa80d3f0275b590f339a85286} 
+\$placeholder\+Hash\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a52af6cf649a79c72ea2384c1236f1d3d}\index{Validator@{Validator}!\$presenceVerifier@{\$presenceVerifier}}
+\index{\$presenceVerifier@{\$presenceVerifier}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$presenceVerifier}{\$presenceVerifier}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a52af6cf649a79c72ea2384c1236f1d3d} 
+\$presence\+Verifier\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ad4ab4477056fb195970cf37103e96789}\index{Validator@{Validator}!\$replacers@{\$replacers}}
+\index{\$replacers@{\$replacers}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$replacers}{\$replacers}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ad4ab4477056fb195970cf37103e96789} 
+\$replacers = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a811d22ac55b4592f7f2a202529629419}\index{Validator@{Validator}!\$rules@{\$rules}}
+\index{\$rules@{\$rules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$rules}{\$rules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a811d22ac55b4592f7f2a202529629419} 
+\$rules\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a0132eaa58a1cd16ed9cd954a835cc539}\index{Validator@{Validator}!\$sizeRules@{\$sizeRules}}
+\index{\$sizeRules@{\$sizeRules}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$sizeRules}{\$sizeRules}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a0132eaa58a1cd16ed9cd954a835cc539} 
+\$size\+Rules = \mbox{[}\textquotesingle{}Size\textquotesingle{}, \textquotesingle{}Between\textquotesingle{}, \textquotesingle{}Min\textquotesingle{}, \textquotesingle{}Max\textquotesingle{}, \textquotesingle{}Gt\textquotesingle{}, \textquotesingle{}Lt\textquotesingle{}, \textquotesingle{}Gte\textquotesingle{}, \textquotesingle{}Lte\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_a162929b763d9d82acd9fabdaaa1b5bc0}\index{Validator@{Validator}!\$stopOnFirstFailure@{\$stopOnFirstFailure}}
+\index{\$stopOnFirstFailure@{\$stopOnFirstFailure}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$stopOnFirstFailure}{\$stopOnFirstFailure}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_a162929b763d9d82acd9fabdaaa1b5bc0} 
+\$\mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validator_a427409cf5c3178667e3b95b0edd3e097}{stop\+On\+First\+Failure}} = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_validation_1_1_validator_ad1bd0a7c70da186307de0136d0f0c2e3}\index{Validator@{Validator}!\$translator@{\$translator}}
+\index{\$translator@{\$translator}!Validator@{Validator}}
+\doxysubsubsection{\texorpdfstring{\$translator}{\$translator}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validator_ad1bd0a7c70da186307de0136d0f0c2e3} 
+\$translator\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Validation/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_validation_2_validator_8php}{Validator.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/\mbox{\hyperlink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\doxysection{Cpu\+Core\+Counter Class Reference}
+\hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter}{}\label{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter}\index{CpuCoreCounter@{CpuCoreCounter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_a0ab6d67d9caf1922b33f616e14a330f6}{\+\_\+\+\_\+construct}} (?array \$finders=null)
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_a4d8cd73949763b10ba286751730f319e}{get\+Available\+For\+Parallelisation}} (int \$reserved\+Cpus=0, ?int \$count\+Limit=null, ?float \$load\+Limit=null, ?float \$system\+Load\+Average=0.)
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_a24d4dbc71552d9387256a3cc426e3898}{get\+Count}} ()
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_ac436dbb90143daeb31dfcb3ccb9f944c}{get\+Count\+With\+Fallback}} (int \$fallback)
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_adf6e151f76b1209e675d2f0e7c506397}{trace}} ()
+\item 
+\mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_ac08ff8d71faf9016a8ec962f20f92b84}{get\+Finder\+And\+Cores}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_af147e4915504e23ffc7896411b9a5812}{get\+Kubernetes\+Limit}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_a0ab6d67d9caf1922b33f616e14a330f6}\index{CpuCoreCounter@{CpuCoreCounter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CpuCoreCounter@{CpuCoreCounter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_a0ab6d67d9caf1922b33f616e14a330f6} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?array}]{\$finders}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$\+Cpu\+Core\+Finder$>$\texorpdfstring{$\vert$}{|}null} & \$finders \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_a4d8cd73949763b10ba286751730f319e}\index{CpuCoreCounter@{CpuCoreCounter}!getAvailableForParallelisation@{getAvailableForParallelisation}}
+\index{getAvailableForParallelisation@{getAvailableForParallelisation}!CpuCoreCounter@{CpuCoreCounter}}
+\doxysubsubsection{\texorpdfstring{getAvailableForParallelisation()}{getAvailableForParallelisation()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_a4d8cd73949763b10ba286751730f319e} 
+get\+Available\+For\+Parallelisation (\begin{DoxyParamCaption}\item[{int}]{\$reserved\+Cpus}{ = {\ttfamily 0}, }\item[{?int}]{\$count\+Limit}{ = {\ttfamily null}, }\item[{?float}]{\$load\+Limit}{ = {\ttfamily null}, }\item[{?float}]{\$system\+Load\+Average}{ = {\ttfamily 0.}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+positive-\/int | 0 & {\em \$reserved\+Cpus} & \doxylink{class_number}{Number} of CPUs to reserve. This is useful when you want to reserve some CPUs for other processes. If the main process is going to be busy still, you may want to set this value to 1. \\
+\hline
+non-\/zero-\/int | null & {\em \$count\+Limit} & The maximum number of CPUs to return. If not provided, it may look for a limit in the environment variables, e.\+g. KUBERNETES\+\_\+\+CPU\+\_\+\+LIMIT. If negative, the limit will be the total number of cores found minus the absolute value. For instance if the system has 10 cores and count\+Limit=-\/2, then the effective limit considered will be 8. \\
+\hline
+float | null & {\em \$load\+Limit} & Element of \mbox{[}0., 1.\mbox{]}. Percentage representing the amount of cores that should be used among the available resources. For instance, if set to 0.\+7, it will use 70\% of the available cores, i.\+e. if 1 core is reserved, 11 cores are available and 5 are busy, it will use 70\% of (11-\/1-\/5)=5 cores, so 3 cores. Set this parameter to null to skip this check. Beware that 1 does not mean "{}no limit"{}, but 100\% of the {\itshape available} resources, i.\+e. with the previous example, it will return 5 cores. How busy is the system is determined by the system load average (see \$system\+Load\+Average). \\
+\hline
+float | null & {\em \$system\+Load\+Average} & The system load average. If passed, it will use this information to limit the available cores based on the {\itshape available} resources. For instance, if there is 10 cores but 3 are busy, then only 7 cores will be considered for further calculation. If set to {\ttfamily null}, it will use {\ttfamily sys\+\_\+getloadavg()} to check the load of the system in the past minute. You can otherwise pass an arbitrary value. Should be a positive float.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://php.net/manual/en/function.sys-getloadavg.php}{\texttt{https\+://php.\+net/manual/en/function.\+sys-\/getloadavg.\+php}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_a24d4dbc71552d9387256a3cc426e3898}\index{CpuCoreCounter@{CpuCoreCounter}!getCount@{getCount}}
+\index{getCount@{getCount}!CpuCoreCounter@{CpuCoreCounter}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_a24d4dbc71552d9387256a3cc426e3898} 
+get\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Number\+Of\+Cpu\+Core\+Not\+Found} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+positive-\/int 
+\end{DoxyReturn}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_ac436dbb90143daeb31dfcb3ccb9f944c}\index{CpuCoreCounter@{CpuCoreCounter}!getCountWithFallback@{getCountWithFallback}}
+\index{getCountWithFallback@{getCountWithFallback}!CpuCoreCounter@{CpuCoreCounter}}
+\doxysubsubsection{\texorpdfstring{getCountWithFallback()}{getCountWithFallback()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_ac436dbb90143daeb31dfcb3ccb9f944c} 
+get\+Count\+With\+Fallback (\begin{DoxyParamCaption}\item[{int}]{\$fallback}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+positive-\/int & {\em \$fallback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+positive-\/int 
+\end{DoxyReturn}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_ac08ff8d71faf9016a8ec962f20f92b84}\index{CpuCoreCounter@{CpuCoreCounter}!getFinderAndCores@{getFinderAndCores}}
+\index{getFinderAndCores@{getFinderAndCores}!CpuCoreCounter@{CpuCoreCounter}}
+\doxysubsubsection{\texorpdfstring{getFinderAndCores()}{getFinderAndCores()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_ac08ff8d71faf9016a8ec962f20f92b84} 
+get\+Finder\+And\+Cores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Number\+Of\+Cpu\+Core\+Not\+Found} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+array\{Cpu\+Core\+Finder, positive-\/int\} 
+\end{DoxyReturn}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_af147e4915504e23ffc7896411b9a5812}\index{CpuCoreCounter@{CpuCoreCounter}!getKubernetesLimit@{getKubernetesLimit}}
+\index{getKubernetesLimit@{getKubernetesLimit}!CpuCoreCounter@{CpuCoreCounter}}
+\doxysubsubsection{\texorpdfstring{getKubernetesLimit()}{getKubernetesLimit()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_af147e4915504e23ffc7896411b9a5812} 
+get\+Kubernetes\+Limit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+positive-\/int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_adf6e151f76b1209e675d2f0e7c506397}\index{CpuCoreCounter@{CpuCoreCounter}!trace@{trace}}
+\index{trace@{trace}!CpuCoreCounter@{CpuCoreCounter}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{class_fidry_1_1_cpu_core_counter_1_1_cpu_core_counter_adf6e151f76b1209e675d2f0e7c506397} 
+trace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This method is mostly for debugging purposes. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/fidry/cpu-\/core-\/counter/src/\mbox{\hyperlink{_cpu_core_counter_8php}{Cpu\+Core\+Counter.\+php}}\end{DoxyCompactItemize}

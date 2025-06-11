@@ -1,0 +1,215 @@
+\doxysection{Traceable\+Event\+Dispatcher Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher}{}\label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher}\index{TraceableEventDispatcher@{TraceableEventDispatcher}}
+Inheritance diagram for Traceable\+Event\+Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a3489ad63402acd4a17dd8090f801902f}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher, protected Stopwatch \$stopwatch, protected ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null, private ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{Request\+Stack}} \$request\+Stack=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a6846af88a45494203b88634db7f2fb15}{add\+Listener}} (string \$event\+Name, callable\texorpdfstring{$\vert$}{|}array \$listener, int \$priority=0)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a2f54737e2e4b383a901cae736143bd2d}{add\+Subscriber}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}{Event\+Subscriber\+Interface}} \$subscriber)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a998aec23411fcc35f6b105fa8722a198}{remove\+Listener}} (string \$event\+Name, callable\texorpdfstring{$\vert$}{|}array \$listener)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a34aa2b525612f9c0d3b6b7e9c72c6393}{remove\+Subscriber}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}{Event\+Subscriber\+Interface}} \$subscriber)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_aa031b71a016003d9785c7fd6083c6170}{get\+Listeners}} (?string \$event\+Name=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a5caa2fb371b15f50007020b7948a0c9e}{get\+Listener\+Priority}} (string \$event\+Name, callable\texorpdfstring{$\vert$}{|}array \$listener)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a77b8211af77d7acdb682fa2135061526}{has\+Listeners}} (?string \$event\+Name=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a4cca2207e4c39bf2c23458860978633f}{dispatch}} (object \$event, ?string \$event\+Name=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a34a00f36757bf4c97d9046977e231576}{get\+Called\+Listeners}} (?\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a385b61e0d63ec74299a71d03840ac2f3}{get\+Not\+Called\+Listeners}} (?\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a2d88a365bca5cf1d9532f6bb2ee0d4ec}{get\+Orphaned\+Events}} (?\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a5db2fdbd96ce7dab1d643eb7e4c5fc18}{\+\_\+\+\_\+call}} (string \$method, array \$arguments)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_af2724409020fcdd04da4fd07369d4142}{add\+Listener}} (string \$event\+Name, callable \$listener, int \$priority=0)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_a0e747e11d0882655ee8a77dd1f4b5298}{remove\+Listener}} (string \$event\+Name, callable \$listener)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_ac96aeba0b14e0e4c1334cbbaca3442fa}{get\+Listener\+Priority}} (string \$event\+Name, callable \$listener)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a96f098d8c5cac5d150d9f095ed052b68}{before\+Dispatch}} (string \$event\+Name, object \$event)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_ad3382266b7407a2a5aafaa69a3b81c5a}{after\+Dispatch}} (string \$event\+Name, object \$event)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Collects some data about event listeners.
+
+This event dispatcher delegates the dispatching to another one.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a3489ad63402acd4a17dd8090f801902f}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a3489ad63402acd4a17dd8090f801902f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}}}]{\$dispatcher}{, }\item[{protected Stopwatch}]{\$stopwatch}{, }\item[{protected ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{ = {\ttfamily null}, }\item[{private ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{Request\+Stack}}}]{\$request\+Stack}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a5db2fdbd96ce7dab1d643eb7e4c5fc18}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a5db2fdbd96ce7dab1d643eb7e4c5fc18} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})}
+
+Proxies all method calls to the original event dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & The method name \\
+\hline
+array & {\em \$arguments} & The method arguments \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a6846af88a45494203b88634db7f2fb15}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!addListener@{addListener}}
+\index{addListener@{addListener}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{addListener()}{addListener()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a6846af88a45494203b88634db7f2fb15} 
+add\+Listener (\begin{DoxyParamCaption}\item[{string}]{\$event\+Name}{, }\item[{callable\texorpdfstring{$\vert$}{|}array}]{\$listener}{, }\item[{int}]{\$priority}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a2f54737e2e4b383a901cae736143bd2d}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!addSubscriber@{addSubscriber}}
+\index{addSubscriber@{addSubscriber}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{addSubscriber()}{addSubscriber()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a2f54737e2e4b383a901cae736143bd2d} 
+add\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}{Event\+Subscriber\+Interface}}}]{\$subscriber}{}\end{DoxyParamCaption})}
+
+Adds an event subscriber.
+
+The subscriber is asked for all the events it is interested in and added as a listener for these events. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_a2f54737e2e4b383a901cae736143bd2d}{Event\+Dispatcher\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_ad3382266b7407a2a5aafaa69a3b81c5a}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!afterDispatch@{afterDispatch}}
+\index{afterDispatch@{afterDispatch}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{afterDispatch()}{afterDispatch()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_ad3382266b7407a2a5aafaa69a3b81c5a} 
+after\+Dispatch (\begin{DoxyParamCaption}\item[{string}]{\$event\+Name}{, }\item[{object}]{\$event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called after dispatching the event. \Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a96f098d8c5cac5d150d9f095ed052b68}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!beforeDispatch@{beforeDispatch}}
+\index{beforeDispatch@{beforeDispatch}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{beforeDispatch()}{beforeDispatch()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a96f098d8c5cac5d150d9f095ed052b68} 
+before\+Dispatch (\begin{DoxyParamCaption}\item[{string}]{\$event\+Name}{, }\item[{object}]{\$event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called before dispatching the event. \Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a4cca2207e4c39bf2c23458860978633f}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a4cca2207e4c39bf2c23458860978633f} 
+dispatch (\begin{DoxyParamCaption}\item[{object}]{\$event}{, }\item[{?string}]{\$event\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a34a00f36757bf4c97d9046977e231576}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!getCalledListeners@{getCalledListeners}}
+\index{getCalledListeners@{getCalledListeners}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{getCalledListeners()}{getCalledListeners()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a34a00f36757bf4c97d9046977e231576} 
+get\+Called\+Listeners (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a5caa2fb371b15f50007020b7948a0c9e}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!getListenerPriority@{getListenerPriority}}
+\index{getListenerPriority@{getListenerPriority}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{getListenerPriority()}{getListenerPriority()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a5caa2fb371b15f50007020b7948a0c9e} 
+get\+Listener\+Priority (\begin{DoxyParamCaption}\item[{string}]{\$event\+Name}{, }\item[{callable\texorpdfstring{$\vert$}{|}array}]{\$listener}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_aa031b71a016003d9785c7fd6083c6170}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!getListeners@{getListeners}}
+\index{getListeners@{getListeners}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{getListeners()}{getListeners()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_aa031b71a016003d9785c7fd6083c6170} 
+get\+Listeners (\begin{DoxyParamCaption}\item[{?string}]{\$event\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets the listeners of a specific event or all listeners sorted by descending priority.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}callable\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}callable\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_aa031b71a016003d9785c7fd6083c6170}{Event\+Dispatcher\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a385b61e0d63ec74299a71d03840ac2f3}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!getNotCalledListeners@{getNotCalledListeners}}
+\index{getNotCalledListeners@{getNotCalledListeners}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{getNotCalledListeners()}{getNotCalledListeners()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a385b61e0d63ec74299a71d03840ac2f3} 
+get\+Not\+Called\+Listeners (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a2d88a365bca5cf1d9532f6bb2ee0d4ec}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!getOrphanedEvents@{getOrphanedEvents}}
+\index{getOrphanedEvents@{getOrphanedEvents}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{getOrphanedEvents()}{getOrphanedEvents()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a2d88a365bca5cf1d9532f6bb2ee0d4ec} 
+get\+Orphaned\+Events (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a77b8211af77d7acdb682fa2135061526}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!hasListeners@{hasListeners}}
+\index{hasListeners@{hasListeners}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{hasListeners()}{hasListeners()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a77b8211af77d7acdb682fa2135061526} 
+has\+Listeners (\begin{DoxyParamCaption}\item[{?string}]{\$event\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Checks whether an event has any registered listeners. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_a77b8211af77d7acdb682fa2135061526}{Event\+Dispatcher\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a998aec23411fcc35f6b105fa8722a198}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!removeListener@{removeListener}}
+\index{removeListener@{removeListener}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{removeListener()}{removeListener()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a998aec23411fcc35f6b105fa8722a198} 
+remove\+Listener (\begin{DoxyParamCaption}\item[{string}]{\$event\+Name}{, }\item[{callable\texorpdfstring{$\vert$}{|}array}]{\$listener}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a34aa2b525612f9c0d3b6b7e9c72c6393}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!removeSubscriber@{removeSubscriber}}
+\index{removeSubscriber@{removeSubscriber}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{removeSubscriber()}{removeSubscriber()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a34aa2b525612f9c0d3b6b7e9c72c6393} 
+remove\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}{Event\+Subscriber\+Interface}}}]{\$subscriber}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_a34aa2b525612f9c0d3b6b7e9c72c6393}{Event\+Dispatcher\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a4a20559544fdf4dcb457e258dc976cf8}\index{TraceableEventDispatcher@{TraceableEventDispatcher}!reset@{reset}}
+\index{reset@{reset}!TraceableEventDispatcher@{TraceableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_a4a20559544fdf4dcb457e258dc976cf8} 
+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface_a4a20559544fdf4dcb457e258dc976cf8}{Reset\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/event-\/dispatcher/\+Debug/\mbox{\hyperlink{event-dispatcher_2_debug_2_traceable_event_dispatcher_8php}{Traceable\+Event\+Dispatcher.\+php}}\end{DoxyCompactItemize}

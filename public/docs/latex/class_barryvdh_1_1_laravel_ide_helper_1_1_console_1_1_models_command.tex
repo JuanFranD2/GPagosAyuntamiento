@@ -1,0 +1,814 @@
+\doxysection{Models\+Command Class Reference}
+\hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command}{}\label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command}\index{ModelsCommand@{ModelsCommand}}
+Inheritance diagram for Models\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a182890c1358abffdc7d820f7bf8470f1}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}} \$files, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_config_1_1_repository}{Repository}} \$config, View\+Factory \$view)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a66eb7514ea7f7f8a5738a180b14e9b48}{handle}} ()
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a6232c38371ad8c3e8f5a924126cab629}{cast\+Properties\+Type}} (\$model)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a424c7b552bf52853674684e02a4aff54}{get\+Properties\+From\+Table}} (\$model)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acf6385c48486016afde92e1f60170834}{get\+Properties\+From\+Methods}} (\$model)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0bb744a6bd13bff6ebea15fe4313f45a}{set\+Property}} (\$name, \$type=null, \$read=null, \$write=null, \$comment=\textquotesingle{}\textquotesingle{}, \$nullable=false)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a41dd4cabc3611ed6555fd82fab6e040b}{set\+Method}} (\$name, \$type=\textquotesingle{}\textquotesingle{}, \$arguments=\mbox{[}$\,$\mbox{]}, \$comment=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a50c480fd98bba07bc2e7526b5e1e6d3e}{unset\+Method}} (\$name)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a3b08f6eeac95cd4fe828dd7cbc868c06}{get\+Method\+Type}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$model, string \$class\+Type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acc17fc4b2880856deb16661a443fe08e}{run}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a645d49a93702949a651360c7bdc0a0b0}{fail}} (Throwable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$exception=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_acbd42dc98fc1c0649ae7b1aeaf842b3d}{is\+Hidden}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a352b564237d3f16ca19a07d6ac036196}{set\+Hidden}} (bool \$hidden=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aab7aca3854218cb065a030769a143418}{get\+Laravel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a94bbb27e66c6b8dafd84410ede30c6af}{set\+Laravel}} (\$laravel)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1d4c324c5a088be98d99d3efbf3502e1}{get\+Arguments}} ()
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1a49b8dded6e91a52e2fd07195d334da}{get\+Options}} ()
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a544d727c32889647bdaddc9a9515ca40}{generate\+Docs}} (\$\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1dda48c9a4a3583ea459402ffaaebd48}{load\+Models}}, \$ignore=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1dda48c9a4a3583ea459402ffaaebd48}{load\+Models}} ()
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1aaa908333137e44db131312f94de5b7}{apply\+Nullability}} (?string \$type, bool \$is\+Nullable)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_aefa8b4943944742d8a0e65c2330d8ec5}{get\+Type\+Override}} (\$type)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a9f39e6f15f609abf55b543c83a8bf266}{is\+Relation\+Nullable}} (string \$relation, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Relation}} \$relation\+Obj)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_add0e190b4ca9d1439e0c8151165f1119}{is\+Morph\+To\+Relation\+Nullable}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Relation}} \$relation\+Obj)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a4e4a8fb9db57c0500b504bfbe1560c3a}{create\+Php\+Docs}} (\$class)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_adcf6dc837c7cfde696af4ab8d8295073}{get\+Collection\+Type\+Hint}} (string \$collection\+Class\+Name\+In\+Model, string \$related\+Model)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0f034566387ca70d2f4bd3932ae67a38}{get\+Relation\+Types}} ()
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a37ed60d300419ac40b2572be76d68b6d}{get\+Relation\+Return\+Types}} ()
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab8cf5fdc0facd98ab246183e41fedcf6}{has\+Camel\+Case\+Model\+Properties}} ()
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acd7143a8a87a424562589381e947d169}{get\+Return\+Type}} (\textbackslash{}Reflection\+Method \$reflection)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a91e9d66d27129916e7c5c03e4ea45d0b}{get\+Comment\+From\+Doc\+Block}} (\textbackslash{}Reflection\+Method \$reflection)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7cd49a25b36d03353c2f188bb1d7ebed}{get\+Return\+Type\+From\+Doc\+Block}} (\textbackslash{}Reflection\+Method \$reflection, ?\textbackslash{}Reflector \$reflector\+For\+Context=null)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a610eaf82bc5b4013e559577621bad859}{get\+Return\+Type\+From\+Reflection}} (\textbackslash{}Reflection\+Method \$reflection)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a27313dac80ef42a6b36e3c9b5e085ec9}{get\+Soft\+Delete\+Methods}} (\$model)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0249c119784e20d2a04b1728b44361dd}{get\+Factory\+Methods}} (\$model)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a77fdefa0c9c6171f845e7ead640a6c03}{get\+Collection\+Methods}} (\$model)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a9e3d6715a0cc502801bb31fd38521669}{get\+Class\+Keyword}} (Reflection\+Class \$reflection)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a8efd650f16a37aca263fbeb079241d36}{is\+Inbound\+Cast}} (string \$type)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_afab4b321f15a824cf1b4f8e89aa2f87e}{check\+For\+Castable\+Casts}} (string \$type, array \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7a250ac7ce1bbd3eabbcc49fdf2616d8}{check\+For\+Custom\+Laravel\+Casts}} (string \$type)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0243f49593a1362cf8947fff279a91da}{get\+Type\+In\+Model}} (object \$model, ?string \$type)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab5218c239f678be5edf2ebf70e60e64f}{get\+Class\+Name\+In\+Destination\+File}} (object \$model, string \$class\+Name)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab7e93b5282e86416c98fa79bcabfdcc8}{get\+Used\+Class\+Names}} (Reflection\+Class \$reflection)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7b8b331ef276f29199e73f62098bb4c3}{write\+Model\+External\+Builder\+Methods}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$model)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a5fdf8a43bd2d4d4bc7ccbba5b07316a7}{get\+Param\+Type}} (\textbackslash{}Reflection\+Method \$method, \textbackslash{}Reflection\+Parameter \$parameter)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a17bce2aba67db2ab95fd55596dc1b9c3}{extract\+Reflection\+Types}} (Reflection\+Type \$reflection\+\_\+type)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_addc481b488bd552eda7da461beb171ef}{get\+Reflection\+Named\+Type}} (Reflection\+Named\+Type \$param\+Type)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ae5f34d7f3dc91791eacf5094bc47cd7d}{run\+Model\+Hooks}} (\$model)
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a18527105f67de90beb68a3e3bace932d}{set\+Foreign\+Keys}} (\$schema, \$table)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_aef18ba6dc42644207c37bf5de362a4bd}{configure\+Using\+Fluent\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a05e39d241c3e3400b03d3b63dfbd8929}{configure\+Isolation}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab31c72b72ddaf7116db5d84c055d3c0b}{execute}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac8094b40d2f975480f91e5a3b7040769}{command\+Isolation\+Mutex}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ac1aba88abc23023836393a7f4ea231ca}{resolve\+Command}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acb88ebb4002a894976bc2cf01d03fce8}{RELATION\+\_\+\+TYPES}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a9590b15215a21e9b42eb546aeef79704}{\$files}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acccf2eac8663e0cebe8101e90fbab089}{\$view}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}} = \textquotesingle{}ide-\/helper\+:models\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0722441477f957078ee2437054556cbc}{\$filename}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a87b032cba06009e3467abf1c8018d960}{\$description}} = \textquotesingle{}Generate autocompletion for models\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a552423875807aa09ffaa494b434029f4}{\$write\+\_\+model\+\_\+magic\+\_\+where}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_aa04eefe7330d13d4cce52aa2b6283594}{\$write\+\_\+model\+\_\+relation\+\_\+count\+\_\+properties}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7f675de4b5983d7e84f6573b7d4d453d}{\$properties}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a802753499268a04da139bd6e6ef89b35}{\$methods}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ac6598621cae648379f44e4715c503416}{\$write}} = false
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_aff2e45fae48dcce183e7ecae832c099d}{\$write\+\_\+mixin}} = false
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1b709c1d79631ebc8320b41bda028b54}{\$dirs}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a8ce36ea943153596f82b8c93f4091f7d}{\$reset}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0691efa8891abceccca994954cf801d0}{\$phpstorm\+\_\+noinspections}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a50fbff783ffb0de183118309c16dabd1}{\$write\+\_\+model\+\_\+external\+\_\+builder\+\_\+methods}}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_af87a189148a2442fd65fbd7bb9659630}{\$nullable\+Columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a2af3d2e934820ec4e9942dc4a94ab52d}{\$foreign\+Key\+Constraints\+Columns}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1fdee7c690fe9b0597d14d4ee2946047}{\$date\+Class}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_console_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a2483b0a3df07768a50dd53f90fd7ae4b}{\$laravel}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a8f34ca1e46a621ab10a3a40addb794f5}{\$signature}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a87b032cba06009e3467abf1c8018d960}{\$description}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_ae8c606891eb7e59cb0674a2dd63c5498}{\$help}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a4a374564d2858d8ae869a8fb890aad56}{\$hidden}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a568541fc9a0d312709894fe344c5aa13}{\$isolated}} = false
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a11ba5862b76c657e950bdde51f6e54b0}{\$isolated\+Exit\+Code}} = self\+::\+SUCCESS
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_command_a7e6d29edbd9ec5d8ec9d478cf98fba03}{\$aliases}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command to generate autocomplete information for your IDE
+
+\begin{DoxyAuthor}{Author}
+Barry vd. Heuvel \href{mailto:barryvdh@gmail.com}{\texttt{barryvdh@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a182890c1358abffdc7d820f7bf8470f1}\index{ModelsCommand@{ModelsCommand}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a182890c1358abffdc7d820f7bf8470f1} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}}}]{\$files}{, }\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_config_1_1_repository}{Repository}}}]{\$config}{, }\item[{View\+Factory}]{\$view}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Filesystem & {\em \$files} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1aaa908333137e44db131312f94de5b7}\index{ModelsCommand@{ModelsCommand}!applyNullability@{applyNullability}}
+\index{applyNullability@{applyNullability}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{applyNullability()}{applyNullability()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1aaa908333137e44db131312f94de5b7} 
+apply\+Nullability (\begin{DoxyParamCaption}\item[{?string}]{\$type}{, }\item[{bool}]{\$is\+Nullable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a6232c38371ad8c3e8f5a924126cab629}\index{ModelsCommand@{ModelsCommand}!castPropertiesType@{castPropertiesType}}
+\index{castPropertiesType@{castPropertiesType}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{castPropertiesType()}{castPropertiesType()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a6232c38371ad8c3e8f5a924126cab629} 
+cast\+Properties\+Type (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})}
+
+cast the properties\textquotesingle{}s type from \$casts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_afab4b321f15a824cf1b4f8e89aa2f87e}\index{ModelsCommand@{ModelsCommand}!checkForCastableCasts@{checkForCastableCasts}}
+\index{checkForCastableCasts@{checkForCastableCasts}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{checkForCastableCasts()}{checkForCastableCasts()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_afab4b321f15a824cf1b4f8e89aa2f87e} 
+check\+For\+Castable\+Casts (\begin{DoxyParamCaption}\item[{string}]{\$type}{, }\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7a250ac7ce1bbd3eabbcc49fdf2616d8}\index{ModelsCommand@{ModelsCommand}!checkForCustomLaravelCasts@{checkForCustomLaravelCasts}}
+\index{checkForCustomLaravelCasts@{checkForCustomLaravelCasts}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{checkForCustomLaravelCasts()}{checkForCustomLaravelCasts()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7a250ac7ce1bbd3eabbcc49fdf2616d8} 
+check\+For\+Custom\+Laravel\+Casts (\begin{DoxyParamCaption}\item[{string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Reflection\+Exception \Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a4e4a8fb9db57c0500b504bfbe1560c3a}\index{ModelsCommand@{ModelsCommand}!createPhpDocs@{createPhpDocs}}
+\index{createPhpDocs@{createPhpDocs}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{createPhpDocs()}{createPhpDocs()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a4e4a8fb9db57c0500b504bfbe1560c3a} 
+create\+Php\+Docs (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\doxylink{namespace_facades}{Facades}, \doxylink{class_eloquent}{Eloquent} API \begin{DoxySeeAlso}{See also}
+\href{https://www.jetbrains.com/help/phpstorm/php-fully-qualified-name-usage.html}{\texttt{https\+://www.\+jetbrains.\+com/help/phpstorm/php-\/fully-\/qualified-\/name-\/usage.\+html}}
+\end{DoxySeeAlso}
+Relations, other models in the same namespace \begin{DoxySeeAlso}{See also}
+\href{https://www.jetbrains.com/help/phpstorm/php-unnecessary-fully-qualified-name.html}{\texttt{https\+://www.\+jetbrains.\+com/help/phpstorm/php-\/unnecessary-\/fully-\/qualified-\/name.\+html}}
+\end{DoxySeeAlso}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a17bce2aba67db2ab95fd55596dc1b9c3}\index{ModelsCommand@{ModelsCommand}!extractReflectionTypes@{extractReflectionTypes}}
+\index{extractReflectionTypes@{extractReflectionTypes}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{extractReflectionTypes()}{extractReflectionTypes()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a17bce2aba67db2ab95fd55596dc1b9c3} 
+extract\+Reflection\+Types (\begin{DoxyParamCaption}\item[{Reflection\+Type}]{\$reflection\+\_\+type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a544d727c32889647bdaddc9a9515ca40}\index{ModelsCommand@{ModelsCommand}!generateDocs@{generateDocs}}
+\index{generateDocs@{generateDocs}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{generateDocs()}{generateDocs()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a544d727c32889647bdaddc9a9515ca40} 
+generate\+Docs (\begin{DoxyParamCaption}\item[{}]{\$load\+Models}{, }\item[{}]{\$ignore}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1d4c324c5a088be98d99d3efbf3502e1}\index{ModelsCommand@{ModelsCommand}!getArguments@{getArguments}}
+\index{getArguments@{getArguments}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getArguments()}{getArguments()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1d4c324c5a088be98d99d3efbf3502e1} 
+get\+Arguments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the console command arguments.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a9e3d6715a0cc502801bb31fd38521669}\index{ModelsCommand@{ModelsCommand}!getClassKeyword@{getClassKeyword}}
+\index{getClassKeyword@{getClassKeyword}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getClassKeyword()}{getClassKeyword()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a9e3d6715a0cc502801bb31fd38521669} 
+get\+Class\+Keyword (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$reflection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Reflection\+Class & {\em \$reflection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab5218c239f678be5edf2ebf70e60e64f}\index{ModelsCommand@{ModelsCommand}!getClassNameInDestinationFile@{getClassNameInDestinationFile}}
+\index{getClassNameInDestinationFile@{getClassNameInDestinationFile}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getClassNameInDestinationFile()}{getClassNameInDestinationFile()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab5218c239f678be5edf2ebf70e60e64f} 
+get\+Class\+Name\+In\+Destination\+File (\begin{DoxyParamCaption}\item[{object}]{\$model}{, }\item[{string}]{\$class\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a77fdefa0c9c6171f845e7ead640a6c03}\index{ModelsCommand@{ModelsCommand}!getCollectionMethods@{getCollectionMethods}}
+\index{getCollectionMethods@{getCollectionMethods}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getCollectionMethods()}{getCollectionMethods()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a77fdefa0c9c6171f845e7ead640a6c03} 
+get\+Collection\+Methods (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates methods that return collections 
+\begin{DoxyParams}[1]{Parameters}
+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_adcf6dc837c7cfde696af4ab8d8295073}\index{ModelsCommand@{ModelsCommand}!getCollectionTypeHint@{getCollectionTypeHint}}
+\index{getCollectionTypeHint@{getCollectionTypeHint}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getCollectionTypeHint()}{getCollectionTypeHint()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_adcf6dc837c7cfde696af4ab8d8295073} 
+get\+Collection\+Type\+Hint (\begin{DoxyParamCaption}\item[{string}]{\$collection\+Class\+Name\+In\+Model}{, }\item[{string}]{\$related\+Model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine a model classes\textquotesingle{} collection type hint.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$collection\+Class\+Name\+In\+Model} & \\
+\hline
+string & {\em \$related\+Model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a91e9d66d27129916e7c5c03e4ea45d0b}\index{ModelsCommand@{ModelsCommand}!getCommentFromDocBlock@{getCommentFromDocBlock}}
+\index{getCommentFromDocBlock@{getCommentFromDocBlock}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getCommentFromDocBlock()}{getCommentFromDocBlock()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a91e9d66d27129916e7c5c03e4ea45d0b} 
+get\+Comment\+From\+Doc\+Block (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Method}]{\$reflection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get method comment based on it Doc\+Block comment
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Reflection\+Method & {\em \$reflection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0249c119784e20d2a04b1728b44361dd}\index{ModelsCommand@{ModelsCommand}!getFactoryMethods@{getFactoryMethods}}
+\index{getFactoryMethods@{getFactoryMethods}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getFactoryMethods()}{getFactoryMethods()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0249c119784e20d2a04b1728b44361dd} 
+get\+Factory\+Methods (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate factory method from "{}\+Has\+Factory"{} trait.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a3b08f6eeac95cd4fe828dd7cbc868c06}\index{ModelsCommand@{ModelsCommand}!getMethodType@{getMethodType}}
+\index{getMethodType@{getMethodType}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getMethodType()}{getMethodType()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a3b08f6eeac95cd4fe828dd7cbc868c06} 
+get\+Method\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}}]{\$model}{, }\item[{string}]{\$class\+Type}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1a49b8dded6e91a52e2fd07195d334da}\index{ModelsCommand@{ModelsCommand}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1a49b8dded6e91a52e2fd07195d334da} 
+get\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the console command options.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a5fdf8a43bd2d4d4bc7ccbba5b07316a7}\index{ModelsCommand@{ModelsCommand}!getParamType@{getParamType}}
+\index{getParamType@{getParamType}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getParamType()}{getParamType()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a5fdf8a43bd2d4d4bc7ccbba5b07316a7} 
+get\+Param\+Type (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Method}]{\$method}{, }\item[{\textbackslash{}Reflection\+Parameter}]{\$parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acf6385c48486016afde92e1f60170834}\index{ModelsCommand@{ModelsCommand}!getPropertiesFromMethods@{getPropertiesFromMethods}}
+\index{getPropertiesFromMethods@{getPropertiesFromMethods}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getPropertiesFromMethods()}{getPropertiesFromMethods()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acf6385c48486016afde92e1f60170834} 
+get\+Properties\+From\+Methods (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a424c7b552bf52853674684e02a4aff54}\index{ModelsCommand@{ModelsCommand}!getPropertiesFromTable@{getPropertiesFromTable}}
+\index{getPropertiesFromTable@{getPropertiesFromTable}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getPropertiesFromTable()}{getPropertiesFromTable()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a424c7b552bf52853674684e02a4aff54} 
+get\+Properties\+From\+Table (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})}
+
+Load the properties from the database table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_addc481b488bd552eda7da461beb171ef}\index{ModelsCommand@{ModelsCommand}!getReflectionNamedType@{getReflectionNamedType}}
+\index{getReflectionNamedType@{getReflectionNamedType}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getReflectionNamedType()}{getReflectionNamedType()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_addc481b488bd552eda7da461beb171ef} 
+get\+Reflection\+Named\+Type (\begin{DoxyParamCaption}\item[{Reflection\+Named\+Type}]{\$param\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a37ed60d300419ac40b2572be76d68b6d}\index{ModelsCommand@{ModelsCommand}!getRelationReturnTypes@{getRelationReturnTypes}}
+\index{getRelationReturnTypes@{getRelationReturnTypes}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getRelationReturnTypes()}{getRelationReturnTypes()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a37ed60d300419ac40b2572be76d68b6d} 
+get\+Relation\+Return\+Types (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the return types of relations \Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0f034566387ca70d2f4bd3932ae67a38}\index{ModelsCommand@{ModelsCommand}!getRelationTypes@{getRelationTypes}}
+\index{getRelationTypes@{getRelationTypes}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getRelationTypes()}{getRelationTypes()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0f034566387ca70d2f4bd3932ae67a38} 
+get\+Relation\+Types (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the available relation types \Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acd7143a8a87a424562589381e947d169}\index{ModelsCommand@{ModelsCommand}!getReturnType@{getReturnType}}
+\index{getReturnType@{getReturnType}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getReturnType()}{getReturnType()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acd7143a8a87a424562589381e947d169} 
+get\+Return\+Type (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Method}]{\$reflection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7cd49a25b36d03353c2f188bb1d7ebed}\index{ModelsCommand@{ModelsCommand}!getReturnTypeFromDocBlock@{getReturnTypeFromDocBlock}}
+\index{getReturnTypeFromDocBlock@{getReturnTypeFromDocBlock}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getReturnTypeFromDocBlock()}{getReturnTypeFromDocBlock()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7cd49a25b36d03353c2f188bb1d7ebed} 
+get\+Return\+Type\+From\+Doc\+Block (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Method}]{\$reflection}{, }\item[{?\textbackslash{}Reflector}]{\$reflector\+For\+Context}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get method return type based on it Doc\+Block comment
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Reflection\+Method & {\em \$reflection} & \\
+\hline
+?\textbackslash{}\+Reflector & {\em \$reflector\+For\+Context} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a610eaf82bc5b4013e559577621bad859}\index{ModelsCommand@{ModelsCommand}!getReturnTypeFromReflection@{getReturnTypeFromReflection}}
+\index{getReturnTypeFromReflection@{getReturnTypeFromReflection}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getReturnTypeFromReflection()}{getReturnTypeFromReflection()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a610eaf82bc5b4013e559577621bad859} 
+get\+Return\+Type\+From\+Reflection (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Method}]{\$reflection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a27313dac80ef42a6b36e3c9b5e085ec9}\index{ModelsCommand@{ModelsCommand}!getSoftDeleteMethods@{getSoftDeleteMethods}}
+\index{getSoftDeleteMethods@{getSoftDeleteMethods}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getSoftDeleteMethods()}{getSoftDeleteMethods()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a27313dac80ef42a6b36e3c9b5e085ec9} 
+get\+Soft\+Delete\+Methods (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates methods provided by the Soft\+Deletes trait 
+\begin{DoxyParams}[1]{Parameters}
+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0243f49593a1362cf8947fff279a91da}\index{ModelsCommand@{ModelsCommand}!getTypeInModel@{getTypeInModel}}
+\index{getTypeInModel@{getTypeInModel}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getTypeInModel()}{getTypeInModel()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0243f49593a1362cf8947fff279a91da} 
+get\+Type\+In\+Model (\begin{DoxyParamCaption}\item[{object}]{\$model}{, }\item[{?string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_aefa8b4943944742d8a0e65c2330d8ec5}\index{ModelsCommand@{ModelsCommand}!getTypeOverride@{getTypeOverride}}
+\index{getTypeOverride@{getTypeOverride}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getTypeOverride()}{getTypeOverride()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_aefa8b4943944742d8a0e65c2330d8ec5} 
+get\+Type\+Override (\begin{DoxyParamCaption}\item[{}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the override type for the give type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab7e93b5282e86416c98fa79bcabfdcc8}\index{ModelsCommand@{ModelsCommand}!getUsedClassNames@{getUsedClassNames}}
+\index{getUsedClassNames@{getUsedClassNames}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{getUsedClassNames()}{getUsedClassNames()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab7e93b5282e86416c98fa79bcabfdcc8} 
+get\+Used\+Class\+Names (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$reflection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Reflection\+Class & {\em \$reflection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a66eb7514ea7f7f8a5738a180b14e9b48}\index{ModelsCommand@{ModelsCommand}!handle@{handle}}
+\index{handle@{handle}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a66eb7514ea7f7f8a5738a180b14e9b48} 
+handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Execute the console command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab8cf5fdc0facd98ab246183e41fedcf6}\index{ModelsCommand@{ModelsCommand}!hasCamelCaseModelProperties@{hasCamelCaseModelProperties}}
+\index{hasCamelCaseModelProperties@{hasCamelCaseModelProperties}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{hasCamelCaseModelProperties()}{hasCamelCaseModelProperties()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab8cf5fdc0facd98ab246183e41fedcf6} 
+has\+Camel\+Case\+Model\+Properties (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a8efd650f16a37aca263fbeb079241d36}\index{ModelsCommand@{ModelsCommand}!isInboundCast@{isInboundCast}}
+\index{isInboundCast@{isInboundCast}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{isInboundCast()}{isInboundCast()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a8efd650f16a37aca263fbeb079241d36} 
+is\+Inbound\+Cast (\begin{DoxyParamCaption}\item[{string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_add0e190b4ca9d1439e0c8151165f1119}\index{ModelsCommand@{ModelsCommand}!isMorphToRelationNullable@{isMorphToRelationNullable}}
+\index{isMorphToRelationNullable@{isMorphToRelationNullable}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{isMorphToRelationNullable()}{isMorphToRelationNullable()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_add0e190b4ca9d1439e0c8151165f1119} 
+is\+Morph\+To\+Relation\+Nullable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Relation}}}]{\$relation\+Obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if the morph\+To relation is nullable
+
+
+\begin{DoxyParams}[1]{Parameters}
+Relation & {\em \$relation\+Obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a9f39e6f15f609abf55b543c83a8bf266}\index{ModelsCommand@{ModelsCommand}!isRelationNullable@{isRelationNullable}}
+\index{isRelationNullable@{isRelationNullable}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{isRelationNullable()}{isRelationNullable()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a9f39e6f15f609abf55b543c83a8bf266} 
+is\+Relation\+Nullable (\begin{DoxyParamCaption}\item[{string}]{\$relation}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Relation}}}]{\$relation\+Obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if the relation is nullable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$relation} & \\
+\hline
+Relation & {\em \$relation\+Obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1dda48c9a4a3583ea459402ffaaebd48}\index{ModelsCommand@{ModelsCommand}!loadModels@{loadModels}}
+\index{loadModels@{loadModels}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{loadModels()}{loadModels()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1dda48c9a4a3583ea459402ffaaebd48} 
+load\+Models (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ae5f34d7f3dc91791eacf5094bc47cd7d}\index{ModelsCommand@{ModelsCommand}!runModelHooks@{runModelHooks}}
+\index{runModelHooks@{runModelHooks}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{runModelHooks()}{runModelHooks()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ae5f34d7f3dc91791eacf5094bc47cd7d} 
+run\+Model\+Hooks (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Binding\+Resolution\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a18527105f67de90beb68a3e3bace932d}\index{ModelsCommand@{ModelsCommand}!setForeignKeys@{setForeignKeys}}
+\index{setForeignKeys@{setForeignKeys}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{setForeignKeys()}{setForeignKeys()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a18527105f67de90beb68a3e3bace932d} 
+set\+Foreign\+Keys (\begin{DoxyParamCaption}\item[{}]{\$schema}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Builder & {\em \$schema} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a41dd4cabc3611ed6555fd82fab6e040b}\index{ModelsCommand@{ModelsCommand}!setMethod@{setMethod}}
+\index{setMethod@{setMethod}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{setMethod()}{setMethod()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a41dd4cabc3611ed6555fd82fab6e040b} 
+set\+Method (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$type}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$comment}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0bb744a6bd13bff6ebea15fe4313f45a}\index{ModelsCommand@{ModelsCommand}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{setProperty()}{setProperty()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0bb744a6bd13bff6ebea15fe4313f45a} 
+set\+Property (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$type}{ = {\ttfamily null}, }\item[{}]{\$read}{ = {\ttfamily null}, }\item[{}]{\$write}{ = {\ttfamily null}, }\item[{}]{\$comment}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$nullable}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$type} & \\
+\hline
+bool | null & {\em \$read} & \\
+\hline
+bool | null & {\em \$write} & \\
+\hline
+string | null & {\em \$comment} & \\
+\hline
+bool & {\em \$nullable} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a50c480fd98bba07bc2e7526b5e1e6d3e}\index{ModelsCommand@{ModelsCommand}!unsetMethod@{unsetMethod}}
+\index{unsetMethod@{unsetMethod}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{unsetMethod()}{unsetMethod()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a50c480fd98bba07bc2e7526b5e1e6d3e} 
+unset\+Method (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7b8b331ef276f29199e73f62098bb4c3}\index{ModelsCommand@{ModelsCommand}!writeModelExternalBuilderMethods@{writeModelExternalBuilderMethods}}
+\index{writeModelExternalBuilderMethods@{writeModelExternalBuilderMethods}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{writeModelExternalBuilderMethods()}{writeModelExternalBuilderMethods()}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7b8b331ef276f29199e73f62098bb4c3} 
+write\+Model\+External\+Builder\+Methods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a49c7011be9c979d9174c52a8b83e5d8e}\index{ModelsCommand@{ModelsCommand}!\$config@{\$config}}
+\index{\$config@{\$config}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$config}{\$config}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a49c7011be9c979d9174c52a8b83e5d8e} 
+\$config\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1fdee7c690fe9b0597d14d4ee2946047}\index{ModelsCommand@{ModelsCommand}!\$dateClass@{\$dateClass}}
+\index{\$dateClass@{\$dateClass}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$dateClass}{\$dateClass}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1fdee7c690fe9b0597d14d4ee2946047} 
+\$date\+Class\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a87b032cba06009e3467abf1c8018d960}\index{ModelsCommand@{ModelsCommand}!\$description@{\$description}}
+\index{\$description@{\$description}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$description}{\$description}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a87b032cba06009e3467abf1c8018d960} 
+\$description = \textquotesingle{}Generate autocompletion for models\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1b709c1d79631ebc8320b41bda028b54}\index{ModelsCommand@{ModelsCommand}!\$dirs@{\$dirs}}
+\index{\$dirs@{\$dirs}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$dirs}{\$dirs}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a1b709c1d79631ebc8320b41bda028b54} 
+\$dirs = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0722441477f957078ee2437054556cbc}\index{ModelsCommand@{ModelsCommand}!\$filename@{\$filename}}
+\index{\$filename@{\$filename}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$filename}{\$filename}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0722441477f957078ee2437054556cbc} 
+\$filename\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a9590b15215a21e9b42eb546aeef79704}\index{ModelsCommand@{ModelsCommand}!\$files@{\$files}}
+\index{\$files@{\$files}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$files}{\$files}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a9590b15215a21e9b42eb546aeef79704} 
+\$files\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a2af3d2e934820ec4e9942dc4a94ab52d}\index{ModelsCommand@{ModelsCommand}!\$foreignKeyConstraintsColumns@{\$foreignKeyConstraintsColumns}}
+\index{\$foreignKeyConstraintsColumns@{\$foreignKeyConstraintsColumns}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$foreignKeyConstraintsColumns}{\$foreignKeyConstraintsColumns}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a2af3d2e934820ec4e9942dc4a94ab52d} 
+\$foreign\+Key\+Constraints\+Columns = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a802753499268a04da139bd6e6ef89b35}\index{ModelsCommand@{ModelsCommand}!\$methods@{\$methods}}
+\index{\$methods@{\$methods}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$methods}{\$methods}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a802753499268a04da139bd6e6ef89b35} 
+\$methods = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab2fc40d43824ea3e1ce5d86dee0d763b}\index{ModelsCommand@{ModelsCommand}!\$name@{\$name}}
+\index{\$name@{\$name}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$name}{\$name}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ab2fc40d43824ea3e1ce5d86dee0d763b} 
+\$name = \textquotesingle{}ide-\/helper\+:models\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_af87a189148a2442fd65fbd7bb9659630}\index{ModelsCommand@{ModelsCommand}!\$nullableColumns@{\$nullableColumns}}
+\index{\$nullableColumns@{\$nullableColumns}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$nullableColumns}{\$nullableColumns}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_af87a189148a2442fd65fbd7bb9659630} 
+\$nullable\+Columns = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0691efa8891abceccca994954cf801d0}\index{ModelsCommand@{ModelsCommand}!\$phpstorm\_noinspections@{\$phpstorm\_noinspections}}
+\index{\$phpstorm\_noinspections@{\$phpstorm\_noinspections}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$phpstorm\_noinspections}{\$phpstorm\_noinspections}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a0691efa8891abceccca994954cf801d0} 
+\$phpstorm\+\_\+noinspections\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7f675de4b5983d7e84f6573b7d4d453d}\index{ModelsCommand@{ModelsCommand}!\$properties@{\$properties}}
+\index{\$properties@{\$properties}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$properties}{\$properties}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a7f675de4b5983d7e84f6573b7d4d453d} 
+\$properties = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a8ce36ea943153596f82b8c93f4091f7d}\index{ModelsCommand@{ModelsCommand}!\$reset@{\$reset}}
+\index{\$reset@{\$reset}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$reset}{\$reset}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a8ce36ea943153596f82b8c93f4091f7d} 
+\$reset\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acccf2eac8663e0cebe8101e90fbab089}\index{ModelsCommand@{ModelsCommand}!\$view@{\$view}}
+\index{\$view@{\$view}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$view}{\$view}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acccf2eac8663e0cebe8101e90fbab089} 
+\$view\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ac6598621cae648379f44e4715c503416}\index{ModelsCommand@{ModelsCommand}!\$write@{\$write}}
+\index{\$write@{\$write}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$write}{\$write}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_ac6598621cae648379f44e4715c503416} 
+\$write = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_aff2e45fae48dcce183e7ecae832c099d}\index{ModelsCommand@{ModelsCommand}!\$write\_mixin@{\$write\_mixin}}
+\index{\$write\_mixin@{\$write\_mixin}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$write\_mixin}{\$write\_mixin}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_aff2e45fae48dcce183e7ecae832c099d} 
+\$write\+\_\+mixin = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a50fbff783ffb0de183118309c16dabd1}\index{ModelsCommand@{ModelsCommand}!\$write\_model\_external\_builder\_methods@{\$write\_model\_external\_builder\_methods}}
+\index{\$write\_model\_external\_builder\_methods@{\$write\_model\_external\_builder\_methods}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$write\_model\_external\_builder\_methods}{\$write\_model\_external\_builder\_methods}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a50fbff783ffb0de183118309c16dabd1} 
+\$write\+\_\+model\+\_\+external\+\_\+builder\+\_\+methods\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a552423875807aa09ffaa494b434029f4}\index{ModelsCommand@{ModelsCommand}!\$write\_model\_magic\_where@{\$write\_model\_magic\_where}}
+\index{\$write\_model\_magic\_where@{\$write\_model\_magic\_where}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$write\_model\_magic\_where}{\$write\_model\_magic\_where}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_a552423875807aa09ffaa494b434029f4} 
+\$write\+\_\+model\+\_\+magic\+\_\+where\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_aa04eefe7330d13d4cce52aa2b6283594}\index{ModelsCommand@{ModelsCommand}!\$write\_model\_relation\_count\_properties@{\$write\_model\_relation\_count\_properties}}
+\index{\$write\_model\_relation\_count\_properties@{\$write\_model\_relation\_count\_properties}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{\$write\_model\_relation\_count\_properties}{\$write\_model\_relation\_count\_properties}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_aa04eefe7330d13d4cce52aa2b6283594} 
+\$write\+\_\+model\+\_\+relation\+\_\+count\+\_\+properties\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acb88ebb4002a894976bc2cf01d03fce8}\index{ModelsCommand@{ModelsCommand}!RELATION\_TYPES@{RELATION\_TYPES}}
+\index{RELATION\_TYPES@{RELATION\_TYPES}!ModelsCommand@{ModelsCommand}}
+\doxysubsubsection{\texorpdfstring{RELATION\_TYPES}{RELATION\_TYPES}}
+{\footnotesize\ttfamily \label{class_barryvdh_1_1_laravel_ide_helper_1_1_console_1_1_models_command_acb88ebb4002a894976bc2cf01d03fce8} 
+const RELATION\+\_\+\+TYPES\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hasMany'}\ =>\ HasMany::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hasManyThrough'}\ =>\ HasManyThrough::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hasOneThrough'}\ =>\ HasOneThrough::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'belongsToMany'}\ =>\ BelongsToMany::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hasOne'}\ =>\ HasOne::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'belongsTo'}\ =>\ BelongsTo::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'morphOne'}\ =>\ MorphOne::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'morphTo'}\ =>\ MorphTo::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'morphMany'}\ =>\ MorphMany::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'morphToMany'}\ =>\ MorphToMany::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'morphedByMany'}\ =>\ MorphToMany::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/src/\+Console/\mbox{\hyperlink{_models_command_8php}{Models\+Command.\+php}}\end{DoxyCompactItemize}

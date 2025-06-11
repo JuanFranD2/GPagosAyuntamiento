@@ -1,0 +1,43 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/tr46 Directory Reference}
+\hypertarget{dir_cc351b081ca674072e7be6c53d0558db}{}\label{dir_cc351b081ca674072e7be6c53d0558db}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/tr46 Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/tr46 Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md7751}{}\doxysubsection{\texorpdfstring{tr46}{tr46}}\label{README.md_autotoc_md7751}
+An Java\+Script implementation of \href{https://unicode.org/reports/tr46/}{\texttt{Unicode Technical Standard \#46\+: Unicode IDNA Compatibility Processing}}.\hypertarget{README.md_autotoc_md7752}{}\doxysubsection{\texorpdfstring{API}{API}}\label{README.md_autotoc_md7752}
+\hypertarget{README.md_autotoc_md7753}{}\doxysubsubsection{\texorpdfstring{{\ttfamily to\+ASCII(domain\+Name\mbox{[}, options\mbox{]})}}{{\ttfamily to\+ASCII(domain\+Name\mbox{[}, options\mbox{]})}}}\label{README.md_autotoc_md7753}
+Converts a string of Unicode symbols to a case-\/folded Punycode string of ASCII symbols.
+
+Available options\+:
+
+
+\begin{DoxyItemize}
+\item \`{}check\+Bidi\`{}
+\item \`{}check\+Hyphens\`{}
+\item \`{}check\+Joiners\`{}
+\item \`{}ignore\+Invalid\+Punycode\`{}
+\item \`{}transitional\+Processing\`{}
+\item \`{}use\+STD3\+ASCIIRules\`{}
+\item \`{}verify\+DNSLength\`{}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md7754}{}\doxysubsubsection{\texorpdfstring{{\ttfamily to\+Unicode(domain\+Name\mbox{[}, options\mbox{]})}}{{\ttfamily to\+Unicode(domain\+Name\mbox{[}, options\mbox{]})}}}\label{README.md_autotoc_md7754}
+Converts a case-\/folded Punycode string of ASCII symbols to a string of Unicode symbols.
+
+Available options\+:
+
+
+\begin{DoxyItemize}
+\item \`{}check\+Bidi\`{}
+\item \`{}check\+Hyphens\`{}
+\item \`{}check\+Joiners\`{}
+\item \`{}ignore\+Invalid\+Punycode\`{}
+\item \`{}transitional\+Processing\`{}
+\item \`{}use\+STD3\+ASCIIRules\`{}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md7755}{}\doxysubsection{\texorpdfstring{Options}{Options}}\label{README.md_autotoc_md7755}
+\hypertarget{README.md_autotoc_md7756}{}\doxysubsubsection{\texorpdfstring{{\ttfamily check\+Bidi}}{{\ttfamily check\+Bidi}}}\label{README.md_autotoc_md7756}
+Type\+: {\ttfamily boolean} Default value\+: {\ttfamily false} When set to {\ttfamily true}, any bi-\/directional text within the input will be checked for validation.\hypertarget{README.md_autotoc_md7757}{}\doxysubsubsection{\texorpdfstring{{\ttfamily check\+Hyphens}}{{\ttfamily check\+Hyphens}}}\label{README.md_autotoc_md7757}
+Type\+: {\ttfamily boolean} Default value\+: {\ttfamily false} When set to {\ttfamily true}, the positions of any hyphen characters within the input will be checked for validation.\hypertarget{README.md_autotoc_md7758}{}\doxysubsubsection{\texorpdfstring{{\ttfamily check\+Joiners}}{{\ttfamily check\+Joiners}}}\label{README.md_autotoc_md7758}
+Type\+: {\ttfamily boolean} Default value\+: {\ttfamily false} When set to {\ttfamily true}, any word joiner characters within the input will be checked for validation.\hypertarget{README.md_autotoc_md7759}{}\doxysubsubsection{\texorpdfstring{{\ttfamily ignore\+Invalid\+Punycode}}{{\ttfamily ignore\+Invalid\+Punycode}}}\label{README.md_autotoc_md7759}
+Type\+: {\ttfamily boolean} Default value\+: {\ttfamily false} When set to {\ttfamily true}, invalid Punycode strings within the input will be allowed.\hypertarget{README.md_autotoc_md7760}{}\doxysubsubsection{\texorpdfstring{{\ttfamily transitional\+Processing}}{{\ttfamily transitional\+Processing}}}\label{README.md_autotoc_md7760}
+Type\+: {\ttfamily boolean} Default value\+: {\ttfamily false} When set to {\ttfamily true}, uses \href{https://unicode.org/reports/tr46/\#Compatibility_Processing}{\texttt{transitional (compatibility) processing}} of the deviation characters.\hypertarget{README.md_autotoc_md7761}{}\doxysubsubsection{\texorpdfstring{{\ttfamily use\+STD3\+ASCIIRules}}{{\ttfamily use\+STD3\+ASCIIRules}}}\label{README.md_autotoc_md7761}
+Type\+: {\ttfamily boolean} Default value\+: {\ttfamily false} When set to {\ttfamily true}, input will be validated according to \href{http://unicode.org/reports/tr46/\#STD3_Rules}{\texttt{STD3 Rules}}.\hypertarget{README.md_autotoc_md7762}{}\doxysubsubsection{\texorpdfstring{{\ttfamily verify\+DNSLength}}{{\ttfamily verify\+DNSLength}}}\label{README.md_autotoc_md7762}
+Type\+: {\ttfamily boolean} Default value\+: {\ttfamily false} When set to {\ttfamily true}, the length of each DNS label within the input will be checked for validation. 

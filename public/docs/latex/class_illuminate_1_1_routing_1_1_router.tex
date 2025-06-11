@@ -1,0 +1,1834 @@
+\doxysection{Router Class Reference}
+\hypertarget{class_illuminate_1_1_routing_1_1_router}{}\label{class_illuminate_1_1_routing_1_1_router}\index{Router@{Router}}
+Inheritance diagram for Router\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_routing_1_1_router}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ac1ca7a9b687da4dac75b8baa98f4b55b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$events, ?\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a876b8b06f9a3f6b7a17667c4e8b25596}{get}} (\$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ada36945938cffa5ee139ee24d1c1b6a1}{post}} (\$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a9ad945555d0d37738f56422f5189f754}{put}} (\$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ab41a772bfa27c6a01529a206f14a5e66}{patch}} (\$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aa07359eb383c844eeea491c1f1a02e31}{delete}} (\$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}{options}} (\$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a09b332fdea6ce54075a3e966ce76f3d6}{any}} (\$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aea6d46c42cc3fafd0b401f7b1a1c25a2}{fallback}} (\$action)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a79936a0c11fdc4db64ce476b2b22b517}{redirect}} (\$uri, \$destination, \$status=302)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a69b069d8bc295d5812b608f0f1380e1a}{permanent\+Redirect}} (\$uri, \$destination)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a9950a8a51435e832ac673bbfd6b253a7}{view}} (\$uri, \$view, \$data=\mbox{[}$\,$\mbox{]}, \$status=200, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ae95e88099b6b143330beb3867a60a285}{match}} (\$methods, \$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ab212e47d5b9198bb55a159a666ce01b1}{resources}} (array \$resources, array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}{options}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a9f6e08b5f0bab700132b7df07018252a}{resource}} (\$name, \$controller, array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}{options}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a814946f9d7ff82651fbdfc2bbf1a2c34}{api\+Resources}} (array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ab212e47d5b9198bb55a159a666ce01b1}{resources}}, array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}{options}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a79b4222aee91e428750345d0f039e7ca}{api\+Resource}} (\$name, \$controller, array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}{options}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a93f750129c60d474023f7cfb3e5f7f62}{singletons}} (array \$singletons, array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}{options}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a6c0232fa638898be3fa9f3e0b4d5af6e}{singleton}} (\$name, \$controller, array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}{options}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a78eb96e283b1feb66be2879fa1c0bd8e}{api\+Singletons}} (array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a93f750129c60d474023f7cfb3e5f7f62}{singletons}}, array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}{options}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a2f12596baff736857bebbfd795465f76}{api\+Singleton}} (\$name, \$controller, array \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}{options}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ac6059a9a3661f1cf4cbd153f2a7c9fde}{group}} (array \$attributes, \$routes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ae4f470d2c497b2e80071c3815f574560}{merge\+With\+Last\+Group}} (\$\mbox{\hyperlink{resources_2views_2livewire_2pages_2auth_2confirm-password_8blade_8php_ae3b81d385ca4c26109dfbda28c563e2b}{new}}, \$prepend\+Existing\+Prefix=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_abf98c75911ee8ecc001048500f05042b}{get\+Last\+Group\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aa6f84b006db480421de82446fb2d6326}{add\+Route}} (\$methods, \$uri, \$action)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ae5f8a8caf8c6b0f7b2531ec118e58c70}{new\+Route}} (\$methods, \$uri, \$action)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ae06394a992e1d8925f936d818d69e93f}{respond\+With\+Route}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aaabf4dda617c109a2cafd13cd7941b61}{dispatch}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ad031bdb6dd3384448dee66b438e50524}{dispatch\+To\+Route}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a5df406788209d1ee2a6b6474c773b703}{gather\+Route\+Middleware}} (\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route}{Route}} \$route)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a05910641b2e8c5bf60630d7ce0f5135e}{resolve\+Middleware}} (array \$middleware, array \$excluded=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a21c159e73bfc7c1712dd9e44cec8b98d}{prepare\+Response}} (\$request, \$response)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a126e9a6ed72f6f4c82ea305427ec9e13}{substitute\+Bindings}} (\$route)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a50b8ec665246c3eba9361cf5b693a290}{substitute\+Implicit\+Bindings}} (\$route)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aaa7c001e2d226978b467f87e76701031}{substitute\+Implicit\+Bindings\+Using}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a9c8a96dc1f1d37b8fd6e0148943c96e3}{matched}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_af09a4d42693ca813040ddf1ebb7a306f}{get\+Middleware}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_adeb7dd20b64856ec8354855c91200ac2}{alias\+Middleware}} (\$name, \$class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aaa4eb7221531b55454727a9a8bfba0a5}{has\+Middleware\+Group}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a3c2ad3433b8a60b7c9452f01f1d19c0b}{get\+Middleware\+Groups}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a371870dad280faed03a384449a60a56c}{middleware\+Group}} (\$name, array \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a43127aa7530f76c5dc8e11c3d897edfd}{prepend\+Middleware\+To\+Group}} (\$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ac6059a9a3661f1cf4cbd153f2a7c9fde}{group}}, \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ad096d1c45253684cd3e8b76d720bb40b}{push\+Middleware\+To\+Group}} (\$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ac6059a9a3661f1cf4cbd153f2a7c9fde}{group}}, \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a2579017b852dfc02a759b3b59d1e5d94}{remove\+Middleware\+From\+Group}} (\$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ac6059a9a3661f1cf4cbd153f2a7c9fde}{group}}, \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_adec962794ae016d43eec905b37053e54}{flush\+Middleware\+Groups}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a34f43c903a3ea151ff61049343515460}{bind}} (\$key, \$binder)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aac22ff4af26a857d4e7a885895b7188e}{model}} (\$key, \$class, ?Closure \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a3443013d7f4a31f66637144263eeb3f1}{get\+Binding\+Callback}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a148a61db3ecd914e55580fcdcab20f92}{get\+Patterns}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ab5615cd24c744d7f5eaade84fbf02491}{pattern}} (\$key, \$pattern)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a6e857a53910301d378a83f66217e6a32}{patterns}} (\$patterns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_abe199b0eba5681ae8cc93598bceab456}{has\+Group\+Stack}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a47f02c5f307444c577ad44044cc16617}{get\+Group\+Stack}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aa20a90cb3b93b31f71a0e30756aad9f2}{input}} (\$key, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ab5ea9169d54bd7cabaa4e469f0d69714}{get\+Current\+Request}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ad93c6ce23abda2b716ec074b54b369a2}{get\+Current\+Route}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_af343507d1926e6ecf964625d41db528c}{current}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a623d004aa083376c599112f235c0af9d}{has}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a3ba152fd4fa9da496972a36e057ebba0}{current\+Route\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a505c3dd0043a77670038b896d1625075}{is}} (... \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a6e857a53910301d378a83f66217e6a32}{patterns}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a61b39d7a5c0fcbbd2083348237699589}{current\+Route\+Named}} (... \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a6e857a53910301d378a83f66217e6a32}{patterns}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_aa08c026f75a92bcda5f8ef925bb545bf}{current\+Route\+Action}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a28eecad7cf67e17e178d486b6e06cc29}{uses}} (... \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a6e857a53910301d378a83f66217e6a32}{patterns}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a7ef334a8b970fc1f04755ff9e3278304}{current\+Route\+Uses}} (\$action)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ac4a334d01c2fd542db498bb525f54c30}{singular\+Resource\+Parameters}} (\$singular=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a8f3d59cfdf6fcfcc017e5b8e30707d0d}{resource\+Parameters}} (array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a5123206a56ea43f21b289dbe7805611b}{resource\+Verbs}} (array \$verbs=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a18da86bf318ebe47e501aaad267d59ed}{get\+Routes}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ad27e68b6c5bfd2f0359d46859ab68c70}{set\+Routes}} (\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_collection}{Route\+Collection}} \$routes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ad9375d84510b0d0b4fd7bbb704e0139a}{set\+Compiled\+Routes}} (array \$routes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a1ae42afbd11583595c4b7828cb602b08}{set\+Container}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ac565bd6a9d062c73a0a0db7afe0ffea9}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ac93cff4f1fbdad1d0b0f86c8348e6fca}{to\+Response}} (\$request, \$response)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a19b55685e83aacc5ef7979e1bb8fb369}{unique\+Middleware}} (array \$middleware)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a646ac979aa6a9b827dd0872b8c3adfc0}{\$middleware\+Priority}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_adaaebbd0053e4fd92bc3e0697b8c7056}{\$verbs}} = \mbox{[}\textquotesingle{}GET\textquotesingle{}, \textquotesingle{}HEAD\textquotesingle{}, \textquotesingle{}POST\textquotesingle{}, \textquotesingle{}PUT\textquotesingle{}, \textquotesingle{}PATCH\textquotesingle{}, \textquotesingle{}DELETE\textquotesingle{}, \textquotesingle{}OPTIONS\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ab581ebe17f8004762725dbe37dc9bb9b}{update\+Group\+Stack}} (array \$attributes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a2dd436365c0910ec5710ecb55eb1adda}{load\+Routes}} (\$routes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a3aeca2c75fe0b8aa31ddaa4d12686a44}{create\+Route}} (\$methods, \$uri, \$action)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a1e877b62a412a6e23c1171e70dc8f080}{action\+References\+Controller}} (\$action)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a7e89fc0d99dcfbc3dd511177d76522a3}{convert\+To\+Controller\+Action}} (\$action)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a777bc8ec06be2506dac960c78bb6b464}{prepend\+Group\+Namespace}} (\$class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a51efd5b3f57e1d6670d4b215eeea532e}{prepend\+Group\+Controller}} (\$class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ae52d3e52d930910fef6553cb4c605aa9}{prefix}} (\$uri)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a08fa6933281410b904fcf16f7294c726}{add\+Where\+Clauses\+To\+Route}} (\$route)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a6fc045f8ea069cbae8d6bfb8e4d54068}{merge\+Group\+Attributes\+Into\+Route}} (\$route)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a4264950c062dace24e4c7cb853bc0bf2}{find\+Route}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a0d7ce63c106e1050f51f46b7c351dcbe}{run\+Route}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route}{Route}} \$route)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ab2e6fc29787d2f8319845d628f27c83b}{run\+Route\+Within\+Stack}} (\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route}{Route}} \$route, \mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_abb26fab86e3d9d5698339b4f2d7aa0e4}{sort\+Middleware}} (\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}} \$middlewares)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a1adca4b1733ae58a25881117b1986fc0}{perform\+Binding}} (\$key, \$value, \$route)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a1bcec9bbd34255927faaf155bf3a940a}{\$events}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ab97dd40df90f4ce6f0fce9091e7c7872}{\$container}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a8f7eb04a54e0f0bfc0cedeb9899ce4a8}{\$routes}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a2c4c58e377f6c66ca38c8ea97666fc5e}{\$current}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ad49fa03c9c50a22d1d48bfd99f2d76c1}{\$current\+Request}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a36a993ea76b635c84749f6e5e6562344}{\$middleware}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a000642ef1cfc62ea5e829d8a3b17431a}{\$middleware\+Groups}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a96a9341d6fe308c57524bacc9b0123b2}{\$binders}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a99c668c59ad650ca9b31ad5313dc5720}{\$patterns}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a9747384f253bb2db805fa94a50a9f650}{\$group\+Stack}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_ac22ea6f239faab12e54dc4ca34e08f91}{\$implicit\+Binding\+Callback}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar 
+
+\label{doc-constructors}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ac1ca7a9b687da4dac75b8baa98f4b55b}\index{Router@{Router}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ac1ca7a9b687da4dac75b8baa98f4b55b} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}}}]{\$events}{, }\item[{?\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new Router instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$events} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container | null & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ac565bd6a9d062c73a0a0db7afe0ffea9}\index{Router@{Router}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ac565bd6a9d062c73a0a0db7afe0ffea9} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically handle calls into the router instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a1e877b62a412a6e23c1171e70dc8f080}\index{Router@{Router}!actionReferencesController@{actionReferencesController}}
+\index{actionReferencesController@{actionReferencesController}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{actionReferencesController()}{actionReferencesController()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a1e877b62a412a6e23c1171e70dc8f080} 
+action\+References\+Controller (\begin{DoxyParamCaption}\item[{}]{\$action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the action is routing to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_aa6f84b006db480421de82446fb2d6326}\index{Router@{Router}!addRoute@{addRoute}}
+\index{addRoute@{addRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{addRoute()}{addRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aa6f84b006db480421de82446fb2d6326} 
+add\+Route (\begin{DoxyParamCaption}\item[{}]{\$methods}{, }\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Add a route to the underlying route collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$methods} & \\
+\hline
+string & {\em \$uri} & \\
+\hline
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a08fa6933281410b904fcf16f7294c726}\index{Router@{Router}!addWhereClausesToRoute@{addWhereClausesToRoute}}
+\index{addWhereClausesToRoute@{addWhereClausesToRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{addWhereClausesToRoute()}{addWhereClausesToRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a08fa6933281410b904fcf16f7294c726} 
+add\+Where\+Clauses\+To\+Route (\begin{DoxyParamCaption}\item[{}]{\$route}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the necessary where clauses to the route based on its initial registration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_adeb7dd20b64856ec8354855c91200ac2}\index{Router@{Router}!aliasMiddleware@{aliasMiddleware}}
+\index{aliasMiddleware@{aliasMiddleware}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{aliasMiddleware()}{aliasMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_adeb7dd20b64856ec8354855c91200ac2} 
+alias\+Middleware (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$class}{}\end{DoxyParamCaption})}
+
+Register a short-\/hand name for a middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a09b332fdea6ce54075a3e966ce76f3d6}\index{Router@{Router}!any@{any}}
+\index{any@{any}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{any()}{any()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a09b332fdea6ce54075a3e966ce76f3d6} 
+any (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a new route responding to all verbs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a79b4222aee91e428750345d0f039e7ca}\index{Router@{Router}!apiResource@{apiResource}}
+\index{apiResource@{apiResource}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{apiResource()}{apiResource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a79b4222aee91e428750345d0f039e7ca} 
+api\+Resource (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$controller}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\doxylink{class_route}{Route} an API resource to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$controller} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Pending\+Resource\+Registration 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a814946f9d7ff82651fbdfc2bbf1a2c34}\index{Router@{Router}!apiResources@{apiResources}}
+\index{apiResources@{apiResources}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{apiResources()}{apiResources()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a814946f9d7ff82651fbdfc2bbf1a2c34} 
+api\+Resources (\begin{DoxyParamCaption}\item[{array}]{\$resources}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Register an array of API resource controllers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$resources} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a2f12596baff736857bebbfd795465f76}\index{Router@{Router}!apiSingleton@{apiSingleton}}
+\index{apiSingleton@{apiSingleton}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{apiSingleton()}{apiSingleton()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a2f12596baff736857bebbfd795465f76} 
+api\+Singleton (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$controller}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\doxylink{class_route}{Route} an API singleton resource to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$controller} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Pending\+Singleton\+Resource\+Registration 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a78eb96e283b1feb66be2879fa1c0bd8e}\index{Router@{Router}!apiSingletons@{apiSingletons}}
+\index{apiSingletons@{apiSingletons}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{apiSingletons()}{apiSingletons()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a78eb96e283b1feb66be2879fa1c0bd8e} 
+api\+Singletons (\begin{DoxyParamCaption}\item[{array}]{\$singletons}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Register an array of API singleton resource controllers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$singletons} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a34f43c903a3ea151ff61049343515460}\index{Router@{Router}!bind@{bind}}
+\index{bind@{bind}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a34f43c903a3ea151ff61049343515460} 
+bind (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$binder}{}\end{DoxyParamCaption})}
+
+Add a new route parameter binder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string | callable & {\em \$binder} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_binding_registrar_a34f43c903a3ea151ff61049343515460}{Binding\+Registrar}}.
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a7e89fc0d99dcfbc3dd511177d76522a3}\index{Router@{Router}!convertToControllerAction@{convertToControllerAction}}
+\index{convertToControllerAction@{convertToControllerAction}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{convertToControllerAction()}{convertToControllerAction()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a7e89fc0d99dcfbc3dd511177d76522a3} 
+convert\+To\+Controller\+Action (\begin{DoxyParamCaption}\item[{}]{\$action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add a controller based route action to the action array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a3aeca2c75fe0b8aa31ddaa4d12686a44}\index{Router@{Router}!createRoute@{createRoute}}
+\index{createRoute@{createRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{createRoute()}{createRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a3aeca2c75fe0b8aa31ddaa4d12686a44} 
+create\+Route (\begin{DoxyParamCaption}\item[{}]{\$methods}{, }\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new route instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$methods} & \\
+\hline
+string & {\em \$uri} & \\
+\hline
+mixed & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_af343507d1926e6ecf964625d41db528c}\index{Router@{Router}!current@{current}}
+\index{current@{current}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_af343507d1926e6ecf964625d41db528c} 
+current (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the currently dispatched route instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_aa08c026f75a92bcda5f8ef925bb545bf}\index{Router@{Router}!currentRouteAction@{currentRouteAction}}
+\index{currentRouteAction@{currentRouteAction}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{currentRouteAction()}{currentRouteAction()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aa08c026f75a92bcda5f8ef925bb545bf} 
+current\+Route\+Action (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current route action.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a3ba152fd4fa9da496972a36e057ebba0}\index{Router@{Router}!currentRouteName@{currentRouteName}}
+\index{currentRouteName@{currentRouteName}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{currentRouteName()}{currentRouteName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a3ba152fd4fa9da496972a36e057ebba0} 
+current\+Route\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current route name.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a61b39d7a5c0fcbbd2083348237699589}\index{Router@{Router}!currentRouteNamed@{currentRouteNamed}}
+\index{currentRouteNamed@{currentRouteNamed}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{currentRouteNamed()}{currentRouteNamed()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a61b39d7a5c0fcbbd2083348237699589} 
+current\+Route\+Named (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Determine if the current route matches a pattern.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & ...\$patterns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a7ef334a8b970fc1f04755ff9e3278304}\index{Router@{Router}!currentRouteUses@{currentRouteUses}}
+\index{currentRouteUses@{currentRouteUses}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{currentRouteUses()}{currentRouteUses()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a7ef334a8b970fc1f04755ff9e3278304} 
+current\+Route\+Uses (\begin{DoxyParamCaption}\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Determine if the current route action matches a given action.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_aa07359eb383c844eeea491c1f1a02e31}\index{Router@{Router}!delete@{delete}}
+\index{delete@{delete}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aa07359eb383c844eeea491c1f1a02e31} 
+delete (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a new DELETE route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_aaabf4dda617c109a2cafd13cd7941b61}\index{Router@{Router}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aaabf4dda617c109a2cafd13cd7941b61} 
+dispatch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Dispatch the request to the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ad031bdb6dd3384448dee66b438e50524}\index{Router@{Router}!dispatchToRoute@{dispatchToRoute}}
+\index{dispatchToRoute@{dispatchToRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{dispatchToRoute()}{dispatchToRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ad031bdb6dd3384448dee66b438e50524} 
+dispatch\+To\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Dispatch the request to a route and return the response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_aea6d46c42cc3fafd0b401f7b1a1c25a2}\index{Router@{Router}!fallback@{fallback}}
+\index{fallback@{fallback}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{fallback()}{fallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aea6d46c42cc3fafd0b401f7b1a1c25a2} 
+fallback (\begin{DoxyParamCaption}\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Register a new fallback route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a4264950c062dace24e4c7cb853bc0bf2}\index{Router@{Router}!findRoute@{findRoute}}
+\index{findRoute@{findRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{findRoute()}{findRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a4264950c062dace24e4c7cb853bc0bf2} 
+find\+Route (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Find the route matching a given request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_adec962794ae016d43eec905b37053e54}\index{Router@{Router}!flushMiddlewareGroups@{flushMiddlewareGroups}}
+\index{flushMiddlewareGroups@{flushMiddlewareGroups}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{flushMiddlewareGroups()}{flushMiddlewareGroups()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_adec962794ae016d43eec905b37053e54} 
+flush\+Middleware\+Groups (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Flush the router\textquotesingle{}s middleware groups.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a5df406788209d1ee2a6b6474c773b703}\index{Router@{Router}!gatherRouteMiddleware@{gatherRouteMiddleware}}
+\index{gatherRouteMiddleware@{gatherRouteMiddleware}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{gatherRouteMiddleware()}{gatherRouteMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a5df406788209d1ee2a6b6474c773b703} 
+gather\+Route\+Middleware (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route}{Route}}}]{\$route}{}\end{DoxyParamCaption})}
+
+Gather the middleware for the given route with resolved class names.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a876b8b06f9a3f6b7a17667c4e8b25596}\index{Router@{Router}!get@{get}}
+\index{get@{get}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a876b8b06f9a3f6b7a17667c4e8b25596} 
+get (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a new GET route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a3443013d7f4a31f66637144263eeb3f1}\index{Router@{Router}!getBindingCallback@{getBindingCallback}}
+\index{getBindingCallback@{getBindingCallback}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getBindingCallback()}{getBindingCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a3443013d7f4a31f66637144263eeb3f1} 
+get\+Binding\+Callback (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Get the binding callback for a given binding.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_routing_1_1_binding_registrar_a3443013d7f4a31f66637144263eeb3f1}{Binding\+Registrar}}.
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ab5ea9169d54bd7cabaa4e469f0d69714}\index{Router@{Router}!getCurrentRequest@{getCurrentRequest}}
+\index{getCurrentRequest@{getCurrentRequest}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getCurrentRequest()}{getCurrentRequest()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ab5ea9169d54bd7cabaa4e469f0d69714} 
+get\+Current\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the request currently being dispatched.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ad93c6ce23abda2b716ec074b54b369a2}\index{Router@{Router}!getCurrentRoute@{getCurrentRoute}}
+\index{getCurrentRoute@{getCurrentRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getCurrentRoute()}{getCurrentRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ad93c6ce23abda2b716ec074b54b369a2} 
+get\+Current\+Route (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the currently dispatched route instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a47f02c5f307444c577ad44044cc16617}\index{Router@{Router}!getGroupStack@{getGroupStack}}
+\index{getGroupStack@{getGroupStack}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getGroupStack()}{getGroupStack()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a47f02c5f307444c577ad44044cc16617} 
+get\+Group\+Stack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current group stack for the router.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_abf98c75911ee8ecc001048500f05042b}\index{Router@{Router}!getLastGroupPrefix@{getLastGroupPrefix}}
+\index{getLastGroupPrefix@{getLastGroupPrefix}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getLastGroupPrefix()}{getLastGroupPrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_abf98c75911ee8ecc001048500f05042b} 
+get\+Last\+Group\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the prefix from the last group on the stack.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_af09a4d42693ca813040ddf1ebb7a306f}\index{Router@{Router}!getMiddleware@{getMiddleware}}
+\index{getMiddleware@{getMiddleware}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getMiddleware()}{getMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_af09a4d42693ca813040ddf1ebb7a306f} 
+get\+Middleware (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the defined middleware short-\/hand names.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a3c2ad3433b8a60b7c9452f01f1d19c0b}\index{Router@{Router}!getMiddlewareGroups@{getMiddlewareGroups}}
+\index{getMiddlewareGroups@{getMiddlewareGroups}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getMiddlewareGroups()}{getMiddlewareGroups()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a3c2ad3433b8a60b7c9452f01f1d19c0b} 
+get\+Middleware\+Groups (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the defined middleware groups.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a148a61db3ecd914e55580fcdcab20f92}\index{Router@{Router}!getPatterns@{getPatterns}}
+\index{getPatterns@{getPatterns}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getPatterns()}{getPatterns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a148a61db3ecd914e55580fcdcab20f92} 
+get\+Patterns (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the global "{}where"{} patterns.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a18da86bf318ebe47e501aaad267d59ed}\index{Router@{Router}!getRoutes@{getRoutes}}
+\index{getRoutes@{getRoutes}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getRoutes()}{getRoutes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a18da86bf318ebe47e501aaad267d59ed} 
+get\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the underlying route collection.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Collection\+Interface 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ac6059a9a3661f1cf4cbd153f2a7c9fde}\index{Router@{Router}!group@{group}}
+\index{group@{group}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{group()}{group()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ac6059a9a3661f1cf4cbd153f2a7c9fde} 
+group (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{, }\item[{}]{\$routes}{}\end{DoxyParamCaption})}
+
+Create a route group with shared attributes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+\textbackslash{}\+Closure | array | string & {\em \$routes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a623d004aa083376c599112f235c0af9d}\index{Router@{Router}!has@{has}}
+\index{has@{has}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a623d004aa083376c599112f235c0af9d} 
+has (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Check if a route with the given name exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_abe199b0eba5681ae8cc93598bceab456}\index{Router@{Router}!hasGroupStack@{hasGroupStack}}
+\index{hasGroupStack@{hasGroupStack}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{hasGroupStack()}{hasGroupStack()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_abe199b0eba5681ae8cc93598bceab456} 
+has\+Group\+Stack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the router currently has a group stack.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_aaa4eb7221531b55454727a9a8bfba0a5}\index{Router@{Router}!hasMiddlewareGroup@{hasMiddlewareGroup}}
+\index{hasMiddlewareGroup@{hasMiddlewareGroup}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{hasMiddlewareGroup()}{hasMiddlewareGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aaa4eb7221531b55454727a9a8bfba0a5} 
+has\+Middleware\+Group (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Check if a middleware\+Group with the given name exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_aa20a90cb3b93b31f71a0e30756aad9f2}\index{Router@{Router}!input@{input}}
+\index{input@{input}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aa20a90cb3b93b31f71a0e30756aad9f2} 
+input (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a route parameter for the current route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string | null & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a505c3dd0043a77670038b896d1625075}\index{Router@{Router}!is@{is}}
+\index{is@{is}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{is()}{is()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a505c3dd0043a77670038b896d1625075} 
+is (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Alias for the "{}current\+Route\+Named"{} method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & ...\$patterns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a2dd436365c0910ec5710ecb55eb1adda}\index{Router@{Router}!loadRoutes@{loadRoutes}}
+\index{loadRoutes@{loadRoutes}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{loadRoutes()}{loadRoutes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a2dd436365c0910ec5710ecb55eb1adda} 
+load\+Routes (\begin{DoxyParamCaption}\item[{}]{\$routes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Load the provided routes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string & {\em \$routes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ae95e88099b6b143330beb3867a60a285}\index{Router@{Router}!match@{match}}
+\index{match@{match}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ae95e88099b6b143330beb3867a60a285} 
+match (\begin{DoxyParamCaption}\item[{}]{\$methods}{, }\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a new route with the given verbs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$methods} & \\
+\hline
+string & {\em \$uri} & \\
+\hline
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a9c8a96dc1f1d37b8fd6e0148943c96e3}\index{Router@{Router}!matched@{matched}}
+\index{matched@{matched}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{matched()}{matched()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a9c8a96dc1f1d37b8fd6e0148943c96e3} 
+matched (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a route matched event listener.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a6fc045f8ea069cbae8d6bfb8e4d54068}\index{Router@{Router}!mergeGroupAttributesIntoRoute@{mergeGroupAttributesIntoRoute}}
+\index{mergeGroupAttributesIntoRoute@{mergeGroupAttributesIntoRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{mergeGroupAttributesIntoRoute()}{mergeGroupAttributesIntoRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a6fc045f8ea069cbae8d6bfb8e4d54068} 
+merge\+Group\+Attributes\+Into\+Route (\begin{DoxyParamCaption}\item[{}]{\$route}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Merge the group stack with the controller action.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ae4f470d2c497b2e80071c3815f574560}\index{Router@{Router}!mergeWithLastGroup@{mergeWithLastGroup}}
+\index{mergeWithLastGroup@{mergeWithLastGroup}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{mergeWithLastGroup()}{mergeWithLastGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ae4f470d2c497b2e80071c3815f574560} 
+merge\+With\+Last\+Group (\begin{DoxyParamCaption}\item[{}]{\$new}{, }\item[{}]{\$prepend\+Existing\+Prefix}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Merge the given array with the last group stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$new} & \\
+\hline
+bool & {\em \$prepend\+Existing\+Prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a371870dad280faed03a384449a60a56c}\index{Router@{Router}!middlewareGroup@{middlewareGroup}}
+\index{middlewareGroup@{middlewareGroup}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{middlewareGroup()}{middlewareGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a371870dad280faed03a384449a60a56c} 
+middleware\+Group (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{array}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Register a group of middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_aac22ff4af26a857d4e7a885895b7188e}\index{Router@{Router}!model@{model}}
+\index{model@{model}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{model()}{model()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aac22ff4af26a857d4e7a885895b7188e} 
+model (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$class}{, }\item[{?Closure}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a model binder for a wildcard.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string & {\em \$class} & \\
+\hline
+\textbackslash{}\+Closure | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ae5f8a8caf8c6b0f7b2531ec118e58c70}\index{Router@{Router}!newRoute@{newRoute}}
+\index{newRoute@{newRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{newRoute()}{newRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ae5f8a8caf8c6b0f7b2531ec118e58c70} 
+new\+Route (\begin{DoxyParamCaption}\item[{}]{\$methods}{, }\item[{}]{\$uri}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+Create a new \doxylink{class_route}{Route} object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$methods} & \\
+\hline
+string & {\em \$uri} & \\
+\hline
+mixed & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a}\index{Router@{Router}!options@{options}}
+\index{options@{options}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aeb68c61b6a2c3200344e69ef54692a6a} 
+options (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a new OPTIONS route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ab41a772bfa27c6a01529a206f14a5e66}\index{Router@{Router}!patch@{patch}}
+\index{patch@{patch}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ab41a772bfa27c6a01529a206f14a5e66} 
+patch (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a new PATCH route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ab5615cd24c744d7f5eaade84fbf02491}\index{Router@{Router}!pattern@{pattern}}
+\index{pattern@{pattern}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{pattern()}{pattern()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ab5615cd24c744d7f5eaade84fbf02491} 
+pattern (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$pattern}{}\end{DoxyParamCaption})}
+
+Set a global where pattern on all routes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string & {\em \$pattern} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a6e857a53910301d378a83f66217e6a32}\index{Router@{Router}!patterns@{patterns}}
+\index{patterns@{patterns}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{patterns()}{patterns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a6e857a53910301d378a83f66217e6a32} 
+patterns (\begin{DoxyParamCaption}\item[{}]{\$patterns}{}\end{DoxyParamCaption})}
+
+Set a group of global where patterns on all routes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$patterns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a1adca4b1733ae58a25881117b1986fc0}\index{Router@{Router}!performBinding@{performBinding}}
+\index{performBinding@{performBinding}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{performBinding()}{performBinding()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a1adca4b1733ae58a25881117b1986fc0} 
+perform\+Binding (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$route}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Call the binding callback for the given key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\+Not\+Found\+Exception\texorpdfstring{$<$}{<}\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\texorpdfstring{$>$}{>} \Hypertarget{class_illuminate_1_1_routing_1_1_router_a69b069d8bc295d5812b608f0f1380e1a}\index{Router@{Router}!permanentRedirect@{permanentRedirect}}
+\index{permanentRedirect@{permanentRedirect}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{permanentRedirect()}{permanentRedirect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a69b069d8bc295d5812b608f0f1380e1a} 
+permanent\+Redirect (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$destination}{}\end{DoxyParamCaption})}
+
+Create a permanent redirect from one URI to another.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+string & {\em \$destination} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ada36945938cffa5ee139ee24d1c1b6a1}\index{Router@{Router}!post@{post}}
+\index{post@{post}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ada36945938cffa5ee139ee24d1c1b6a1} 
+post (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a new POST route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ae52d3e52d930910fef6553cb4c605aa9}\index{Router@{Router}!prefix@{prefix}}
+\index{prefix@{prefix}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{prefix()}{prefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ae52d3e52d930910fef6553cb4c605aa9} 
+prefix (\begin{DoxyParamCaption}\item[{}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prefix the given URI with the last prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a21c159e73bfc7c1712dd9e44cec8b98d}\index{Router@{Router}!prepareResponse@{prepareResponse}}
+\index{prepareResponse@{prepareResponse}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{prepareResponse()}{prepareResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a21c159e73bfc7c1712dd9e44cec8b98d} 
+prepare\+Response (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{}]{\$response}{}\end{DoxyParamCaption})}
+
+Create a response instance from the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+mixed & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a51efd5b3f57e1d6670d4b215eeea532e}\index{Router@{Router}!prependGroupController@{prependGroupController}}
+\index{prependGroupController@{prependGroupController}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{prependGroupController()}{prependGroupController()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a51efd5b3f57e1d6670d4b215eeea532e} 
+prepend\+Group\+Controller (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepend the last group controller onto the use clause.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a777bc8ec06be2506dac960c78bb6b464}\index{Router@{Router}!prependGroupNamespace@{prependGroupNamespace}}
+\index{prependGroupNamespace@{prependGroupNamespace}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{prependGroupNamespace()}{prependGroupNamespace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a777bc8ec06be2506dac960c78bb6b464} 
+prepend\+Group\+Namespace (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepend the last group namespace onto the use clause.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a43127aa7530f76c5dc8e11c3d897edfd}\index{Router@{Router}!prependMiddlewareToGroup@{prependMiddlewareToGroup}}
+\index{prependMiddlewareToGroup@{prependMiddlewareToGroup}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{prependMiddlewareToGroup()}{prependMiddlewareToGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a43127aa7530f76c5dc8e11c3d897edfd} 
+prepend\+Middleware\+To\+Group (\begin{DoxyParamCaption}\item[{}]{\$group}{, }\item[{}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Add a middleware to the beginning of a middleware group.
+
+If the middleware is already in the group, it will not be added again.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & \\
+\hline
+string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ad096d1c45253684cd3e8b76d720bb40b}\index{Router@{Router}!pushMiddlewareToGroup@{pushMiddlewareToGroup}}
+\index{pushMiddlewareToGroup@{pushMiddlewareToGroup}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{pushMiddlewareToGroup()}{pushMiddlewareToGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ad096d1c45253684cd3e8b76d720bb40b} 
+push\+Middleware\+To\+Group (\begin{DoxyParamCaption}\item[{}]{\$group}{, }\item[{}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Add a middleware to the end of a middleware group.
+
+If the middleware is already in the group, it will not be added again.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & \\
+\hline
+string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a9ad945555d0d37738f56422f5189f754}\index{Router@{Router}!put@{put}}
+\index{put@{put}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a9ad945555d0d37738f56422f5189f754} 
+put (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a new PUT route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+array | string | callable | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a79936a0c11fdc4db64ce476b2b22b517}\index{Router@{Router}!redirect@{redirect}}
+\index{redirect@{redirect}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a79936a0c11fdc4db64ce476b2b22b517} 
+redirect (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$destination}{, }\item[{}]{\$status}{ = {\ttfamily 302}}\end{DoxyParamCaption})}
+
+Create a redirect from one URI to another.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+string & {\em \$destination} & \\
+\hline
+int & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a2579017b852dfc02a759b3b59d1e5d94}\index{Router@{Router}!removeMiddlewareFromGroup@{removeMiddlewareFromGroup}}
+\index{removeMiddlewareFromGroup@{removeMiddlewareFromGroup}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{removeMiddlewareFromGroup()}{removeMiddlewareFromGroup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a2579017b852dfc02a759b3b59d1e5d94} 
+remove\+Middleware\+From\+Group (\begin{DoxyParamCaption}\item[{}]{\$group}{, }\item[{}]{\$middleware}{}\end{DoxyParamCaption})}
+
+Remove the given middleware from the specified group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & \\
+\hline
+string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a05910641b2e8c5bf60630d7ce0f5135e}\index{Router@{Router}!resolveMiddleware@{resolveMiddleware}}
+\index{resolveMiddleware@{resolveMiddleware}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{resolveMiddleware()}{resolveMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a05910641b2e8c5bf60630d7ce0f5135e} 
+resolve\+Middleware (\begin{DoxyParamCaption}\item[{array}]{\$middleware}{, }\item[{array}]{\$excluded}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Resolve a flat array of middleware classes from the provided array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$middleware} & \\
+\hline
+array & {\em \$excluded} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a9f6e08b5f0bab700132b7df07018252a}\index{Router@{Router}!resource@{resource}}
+\index{resource@{resource}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{resource()}{resource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a9f6e08b5f0bab700132b7df07018252a} 
+resource (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$controller}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\doxylink{class_route}{Route} a resource to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$controller} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Pending\+Resource\+Registration 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a8f3d59cfdf6fcfcc017e5b8e30707d0d}\index{Router@{Router}!resourceParameters@{resourceParameters}}
+\index{resourceParameters@{resourceParameters}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{resourceParameters()}{resourceParameters()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a8f3d59cfdf6fcfcc017e5b8e30707d0d} 
+resource\+Parameters (\begin{DoxyParamCaption}\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Set the global resource parameter mapping.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ab212e47d5b9198bb55a159a666ce01b1}\index{Router@{Router}!resources@{resources}}
+\index{resources@{resources}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{resources()}{resources()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ab212e47d5b9198bb55a159a666ce01b1} 
+resources (\begin{DoxyParamCaption}\item[{array}]{\$resources}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Register an array of resource controllers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$resources} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a5123206a56ea43f21b289dbe7805611b}\index{Router@{Router}!resourceVerbs@{resourceVerbs}}
+\index{resourceVerbs@{resourceVerbs}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{resourceVerbs()}{resourceVerbs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a5123206a56ea43f21b289dbe7805611b} 
+resource\+Verbs (\begin{DoxyParamCaption}\item[{array}]{\$verbs}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Get or set the verbs used in the resource URIs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$verbs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ae06394a992e1d8925f936d818d69e93f}\index{Router@{Router}!respondWithRoute@{respondWithRoute}}
+\index{respondWithRoute@{respondWithRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{respondWithRoute()}{respondWithRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ae06394a992e1d8925f936d818d69e93f} 
+respond\+With\+Route (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Return the response returned by the given route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a0d7ce63c106e1050f51f46b7c351dcbe}\index{Router@{Router}!runRoute@{runRoute}}
+\index{runRoute@{runRoute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{runRoute()}{runRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a0d7ce63c106e1050f51f46b7c351dcbe} 
+run\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route}{Route}}}]{\$route}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Return the response for the given route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ab2e6fc29787d2f8319845d628f27c83b}\index{Router@{Router}!runRouteWithinStack@{runRouteWithinStack}}
+\index{runRouteWithinStack@{runRouteWithinStack}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{runRouteWithinStack()}{runRouteWithinStack()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ab2e6fc29787d2f8319845d628f27c83b} 
+run\+Route\+Within\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route}{Route}}}]{\$route}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Run the given route within a Stack "{}onion"{} instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ad9375d84510b0d0b4fd7bbb704e0139a}\index{Router@{Router}!setCompiledRoutes@{setCompiledRoutes}}
+\index{setCompiledRoutes@{setCompiledRoutes}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{setCompiledRoutes()}{setCompiledRoutes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ad9375d84510b0d0b4fd7bbb704e0139a} 
+set\+Compiled\+Routes (\begin{DoxyParamCaption}\item[{array}]{\$routes}{}\end{DoxyParamCaption})}
+
+Set the compiled route collection instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$routes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a1ae42afbd11583595c4b7828cb602b08}\index{Router@{Router}!setContainer@{setContainer}}
+\index{setContainer@{setContainer}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{setContainer()}{setContainer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a1ae42afbd11583595c4b7828cb602b08} 
+set\+Container (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Set the container instance used by the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ad27e68b6c5bfd2f0359d46859ab68c70}\index{Router@{Router}!setRoutes@{setRoutes}}
+\index{setRoutes@{setRoutes}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{setRoutes()}{setRoutes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ad27e68b6c5bfd2f0359d46859ab68c70} 
+set\+Routes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_collection}{Route\+Collection}}}]{\$routes}{}\end{DoxyParamCaption})}
+
+Set the route collection instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Collection & {\em \$routes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a6c0232fa638898be3fa9f3e0b4d5af6e}\index{Router@{Router}!singleton@{singleton}}
+\index{singleton@{singleton}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{singleton()}{singleton()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a6c0232fa638898be3fa9f3e0b4d5af6e} 
+singleton (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$controller}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\doxylink{class_route}{Route} a singleton resource to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$controller} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Pending\+Singleton\+Resource\+Registration 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a93f750129c60d474023f7cfb3e5f7f62}\index{Router@{Router}!singletons@{singletons}}
+\index{singletons@{singletons}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{singletons()}{singletons()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a93f750129c60d474023f7cfb3e5f7f62} 
+singletons (\begin{DoxyParamCaption}\item[{array}]{\$singletons}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Register an array of singleton resource controllers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$singletons} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ac4a334d01c2fd542db498bb525f54c30}\index{Router@{Router}!singularResourceParameters@{singularResourceParameters}}
+\index{singularResourceParameters@{singularResourceParameters}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{singularResourceParameters()}{singularResourceParameters()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ac4a334d01c2fd542db498bb525f54c30} 
+singular\+Resource\+Parameters (\begin{DoxyParamCaption}\item[{}]{\$singular}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Set the unmapped global resource parameters to singular.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$singular} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_abb26fab86e3d9d5698339b4f2d7aa0e4}\index{Router@{Router}!sortMiddleware@{sortMiddleware}}
+\index{sortMiddleware@{sortMiddleware}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{sortMiddleware()}{sortMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_abb26fab86e3d9d5698339b4f2d7aa0e4} 
+sort\+Middleware (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Collection}}}]{\$middlewares}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sort the given middleware by priority.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection & {\em \$middlewares} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a126e9a6ed72f6f4c82ea305427ec9e13}\index{Router@{Router}!substituteBindings@{substituteBindings}}
+\index{substituteBindings@{substituteBindings}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{substituteBindings()}{substituteBindings()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a126e9a6ed72f6f4c82ea305427ec9e13} 
+substitute\+Bindings (\begin{DoxyParamCaption}\item[{}]{\$route}{}\end{DoxyParamCaption})}
+
+Substitute the route bindings onto the route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\+Not\+Found\+Exception\texorpdfstring{$<$}{<}\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\texorpdfstring{$>$}{>} 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Exceptions\textbackslash{}\+Backed\+Enum\+Case\+Not\+Found\+Exception \Hypertarget{class_illuminate_1_1_routing_1_1_router_a50b8ec665246c3eba9361cf5b693a290}\index{Router@{Router}!substituteImplicitBindings@{substituteImplicitBindings}}
+\index{substituteImplicitBindings@{substituteImplicitBindings}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{substituteImplicitBindings()}{substituteImplicitBindings()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a50b8ec665246c3eba9361cf5b693a290} 
+substitute\+Implicit\+Bindings (\begin{DoxyParamCaption}\item[{}]{\$route}{}\end{DoxyParamCaption})}
+
+Substitute the implicit route bindings for the given route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\+Not\+Found\+Exception\texorpdfstring{$<$}{<}\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\texorpdfstring{$>$}{>} 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Exceptions\textbackslash{}\+Backed\+Enum\+Case\+Not\+Found\+Exception \Hypertarget{class_illuminate_1_1_routing_1_1_router_aaa7c001e2d226978b467f87e76701031}\index{Router@{Router}!substituteImplicitBindingsUsing@{substituteImplicitBindingsUsing}}
+\index{substituteImplicitBindingsUsing@{substituteImplicitBindingsUsing}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{substituteImplicitBindingsUsing()}{substituteImplicitBindingsUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_aaa7c001e2d226978b467f87e76701031} 
+substitute\+Implicit\+Bindings\+Using (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to run after implicit bindings are substituted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ac93cff4f1fbdad1d0b0f86c8348e6fca}\index{Router@{Router}!toResponse@{toResponse}}
+\index{toResponse@{toResponse}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{toResponse()}{toResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ac93cff4f1fbdad1d0b0f86c8348e6fca} 
+to\+Response (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{}]{\$response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Static version of prepare\+Response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+mixed & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a19b55685e83aacc5ef7979e1bb8fb369}\index{Router@{Router}!uniqueMiddleware@{uniqueMiddleware}}
+\index{uniqueMiddleware@{uniqueMiddleware}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{uniqueMiddleware()}{uniqueMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a19b55685e83aacc5ef7979e1bb8fb369} 
+unique\+Middleware (\begin{DoxyParamCaption}\item[{array}]{\$middleware}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Remove any duplicate middleware from the given array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ab581ebe17f8004762725dbe37dc9bb9b}\index{Router@{Router}!updateGroupStack@{updateGroupStack}}
+\index{updateGroupStack@{updateGroupStack}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{updateGroupStack()}{updateGroupStack()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ab581ebe17f8004762725dbe37dc9bb9b} 
+update\+Group\+Stack (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the group stack with the given attributes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a28eecad7cf67e17e178d486b6e06cc29}\index{Router@{Router}!uses@{uses}}
+\index{uses@{uses}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{uses()}{uses()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a28eecad7cf67e17e178d486b6e06cc29} 
+uses (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Alias for the "{}current\+Route\+Uses"{} method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\texorpdfstring{$\vert$}{|}string} & ...\$patterns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a9950a8a51435e832ac673bbfd6b253a7}\index{Router@{Router}!view@{view}}
+\index{view@{view}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a9950a8a51435e832ac673bbfd6b253a7} 
+view (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$view}{, }\item[{}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$status}{ = {\ttfamily 200}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Register a new route that returns a view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+string & {\em \$view} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+int | array & {\em \$status} & \\
+\hline
+array & {\em \$headers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a96a9341d6fe308c57524bacc9b0123b2}\index{Router@{Router}!\$binders@{\$binders}}
+\index{\$binders@{\$binders}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$binders}{\$binders}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a96a9341d6fe308c57524bacc9b0123b2} 
+\$binders = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ab97dd40df90f4ce6f0fce9091e7c7872}\index{Router@{Router}!\$container@{\$container}}
+\index{\$container@{\$container}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$container}{\$container}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ab97dd40df90f4ce6f0fce9091e7c7872} 
+\$container\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a2c4c58e377f6c66ca38c8ea97666fc5e}\index{Router@{Router}!\$current@{\$current}}
+\index{\$current@{\$current}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$current}{\$current}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a2c4c58e377f6c66ca38c8ea97666fc5e} 
+\$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_af343507d1926e6ecf964625d41db528c}{current}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ad49fa03c9c50a22d1d48bfd99f2d76c1}\index{Router@{Router}!\$currentRequest@{\$currentRequest}}
+\index{\$currentRequest@{\$currentRequest}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$currentRequest}{\$currentRequest}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ad49fa03c9c50a22d1d48bfd99f2d76c1} 
+\$current\+Request\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a1bcec9bbd34255927faaf155bf3a940a}\index{Router@{Router}!\$events@{\$events}}
+\index{\$events@{\$events}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$events}{\$events}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a1bcec9bbd34255927faaf155bf3a940a} 
+\$events\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a9747384f253bb2db805fa94a50a9f650}\index{Router@{Router}!\$groupStack@{\$groupStack}}
+\index{\$groupStack@{\$groupStack}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$groupStack}{\$groupStack}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a9747384f253bb2db805fa94a50a9f650} 
+\$group\+Stack = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_ac22ea6f239faab12e54dc4ca34e08f91}\index{Router@{Router}!\$implicitBindingCallback@{\$implicitBindingCallback}}
+\index{\$implicitBindingCallback@{\$implicitBindingCallback}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$implicitBindingCallback}{\$implicitBindingCallback}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_ac22ea6f239faab12e54dc4ca34e08f91} 
+\$implicit\+Binding\+Callback\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a36a993ea76b635c84749f6e5e6562344}\index{Router@{Router}!\$middleware@{\$middleware}}
+\index{\$middleware@{\$middleware}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$middleware}{\$middleware}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a36a993ea76b635c84749f6e5e6562344} 
+\$middleware = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a000642ef1cfc62ea5e829d8a3b17431a}\index{Router@{Router}!\$middlewareGroups@{\$middlewareGroups}}
+\index{\$middlewareGroups@{\$middlewareGroups}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$middlewareGroups}{\$middlewareGroups}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a000642ef1cfc62ea5e829d8a3b17431a} 
+\$middleware\+Groups = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a646ac979aa6a9b827dd0872b8c3adfc0}\index{Router@{Router}!\$middlewarePriority@{\$middlewarePriority}}
+\index{\$middlewarePriority@{\$middlewarePriority}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$middlewarePriority}{\$middlewarePriority}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a646ac979aa6a9b827dd0872b8c3adfc0} 
+\$middleware\+Priority = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a99c668c59ad650ca9b31ad5313dc5720}\index{Router@{Router}!\$patterns@{\$patterns}}
+\index{\$patterns@{\$patterns}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$patterns}{\$patterns}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a99c668c59ad650ca9b31ad5313dc5720} 
+\$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router_a6e857a53910301d378a83f66217e6a32}{patterns}} = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_a8f7eb04a54e0f0bfc0cedeb9899ce4a8}\index{Router@{Router}!\$routes@{\$routes}}
+\index{\$routes@{\$routes}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$routes}{\$routes}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_a8f7eb04a54e0f0bfc0cedeb9899ce4a8} 
+\$routes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_router_adaaebbd0053e4fd92bc3e0697b8c7056}\index{Router@{Router}!\$verbs@{\$verbs}}
+\index{\$verbs@{\$verbs}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\$verbs}{\$verbs}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_router_adaaebbd0053e4fd92bc3e0697b8c7056} 
+\$verbs = \mbox{[}\textquotesingle{}GET\textquotesingle{}, \textquotesingle{}HEAD\textquotesingle{}, \textquotesingle{}POST\textquotesingle{}, \textquotesingle{}PUT\textquotesingle{}, \textquotesingle{}PATCH\textquotesingle{}, \textquotesingle{}DELETE\textquotesingle{}, \textquotesingle{}OPTIONS\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Routing/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_routing_2_router_8php}{Router.\+php}}\end{DoxyCompactItemize}

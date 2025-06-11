@@ -1,0 +1,4 @@
+var _test_suite_for_test_method_with_data_provider_8php =
+[
+    [ "TestSuiteForTestMethodWithDataProvider", "class_p_h_p_unit_1_1_event_1_1_test_suite_1_1_test_suite_for_test_method_with_data_provider.html", "class_p_h_p_unit_1_1_event_1_1_test_suite_1_1_test_suite_for_test_method_with_data_provider" ]
+];

@@ -1,0 +1,89 @@
+\doxysection{Type\+Parser Class Reference}
+\hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser}{}\label{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser}\index{TypeParser@{TypeParser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a93928d7fcfe2f804b9d584e4129827ac}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_config}{Parser\+Config}} \$config, \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_const_expr_parser}{Const\+Expr\+Parser}} \$const\+Expr\+Parser)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a916383fda2c0f25b04c76d39e92c2ddc}{parse}} (\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}} \$tokens)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_aeab6396578931cfaaba24c044a296818}{enrich\+With\+Attributes}} (\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}} \$tokens, \mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node}{Ast\textbackslash{}\+Node}} \$type, int \$start\+Line, int \$start\+Index)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a612aa2f2e884ca1ec432cc14e8d28a56}{is\+Html}} (\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}} \$tokens)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a8aa44136753a9b23cc9324d5e0a04ee1}{parse\+Generic}} (\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}} \$tokens, \mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_type_1_1_identifier_type_node}{Ast\textbackslash{}\+Type\textbackslash{}\+Identifier\+Type\+Node}} \$base\+Type)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a21f44cf1f3a2c2569a4ef2a57d7c465c}{parse\+Generic\+Type\+Argument}} (\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}} \$tokens)
+\item 
+\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a7914e958b490feaacc9ec8b6e6c65d21}{parse\+Template\+Tag\+Value}} (\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}} \$tokens, ?callable \$parse\+Description=null)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a93928d7fcfe2f804b9d584e4129827ac}\index{TypeParser@{TypeParser}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TypeParser@{TypeParser}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a93928d7fcfe2f804b9d584e4129827ac} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_config}{Parser\+Config}}}]{\$config}{, }\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_const_expr_parser}{Const\+Expr\+Parser}}}]{\$const\+Expr\+Parser}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_aeab6396578931cfaaba24c044a296818}\index{TypeParser@{TypeParser}!enrichWithAttributes@{enrichWithAttributes}}
+\index{enrichWithAttributes@{enrichWithAttributes}!TypeParser@{TypeParser}}
+\doxysubsubsection{\texorpdfstring{enrichWithAttributes()}{enrichWithAttributes()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_aeab6396578931cfaaba24c044a296818} 
+enrich\+With\+Attributes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}}}]{\$tokens}{, }\item[{\mbox{\hyperlink{interface_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_node}{Ast\textbackslash{}\+Node}}}]{\$type}{, }\item[{int}]{\$start\+Line}{, }\item[{int}]{\$start\+Index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a612aa2f2e884ca1ec432cc14e8d28a56}\index{TypeParser@{TypeParser}!isHtml@{isHtml}}
+\index{isHtml@{isHtml}!TypeParser@{TypeParser}}
+\doxysubsubsection{\texorpdfstring{isHtml()}{isHtml()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a612aa2f2e884ca1ec432cc14e8d28a56} 
+is\+Html (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}}}]{\$tokens}{}\end{DoxyParamCaption})}
+
+@phpstan-\/impure \Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a916383fda2c0f25b04c76d39e92c2ddc}\index{TypeParser@{TypeParser}!parse@{parse}}
+\index{parse@{parse}!TypeParser@{TypeParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a916383fda2c0f25b04c76d39e92c2ddc} 
+parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}}}]{\$tokens}{}\end{DoxyParamCaption})}
+
+@phpstan-\/impure \Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a8aa44136753a9b23cc9324d5e0a04ee1}\index{TypeParser@{TypeParser}!parseGeneric@{parseGeneric}}
+\index{parseGeneric@{parseGeneric}!TypeParser@{TypeParser}}
+\doxysubsubsection{\texorpdfstring{parseGeneric()}{parseGeneric()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a8aa44136753a9b23cc9324d5e0a04ee1} 
+parse\+Generic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}}}]{\$tokens}{, }\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_ast_1_1_type_1_1_identifier_type_node}{Ast\textbackslash{}\+Type\textbackslash{}\+Identifier\+Type\+Node}}}]{\$base\+Type}{}\end{DoxyParamCaption})}
+
+@phpstan-\/impure \Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a21f44cf1f3a2c2569a4ef2a57d7c465c}\index{TypeParser@{TypeParser}!parseGenericTypeArgument@{parseGenericTypeArgument}}
+\index{parseGenericTypeArgument@{parseGenericTypeArgument}!TypeParser@{TypeParser}}
+\doxysubsubsection{\texorpdfstring{parseGenericTypeArgument()}{parseGenericTypeArgument()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a21f44cf1f3a2c2569a4ef2a57d7c465c} 
+parse\+Generic\+Type\+Argument (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}}}]{\$tokens}{}\end{DoxyParamCaption})}
+
+@phpstan-\/impure \begin{DoxyReturn}{Returns}
+array\{Ast\textbackslash{}\+Type\textbackslash{}\+Type\+Node, Ast\textbackslash{}\+Type\textbackslash{}\+Generic\+Type\+Node\+::\+VARIANCE\+\_\+\texorpdfstring{$\ast$}{*}\} 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a7914e958b490feaacc9ec8b6e6c65d21}\index{TypeParser@{TypeParser}!parseTemplateTagValue@{parseTemplateTagValue}}
+\index{parseTemplateTagValue@{parseTemplateTagValue}!TypeParser@{TypeParser}}
+\doxysubsubsection{\texorpdfstring{parseTemplateTagValue()}{parseTemplateTagValue()}}
+{\footnotesize\ttfamily \label{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_type_parser_a7914e958b490feaacc9ec8b6e6c65d21} 
+parse\+Template\+Tag\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_stan_1_1_php_doc_parser_1_1_parser_1_1_token_iterator}{Token\+Iterator}}}]{\$tokens}{, }\item[{?callable}]{\$parse\+Description}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parser\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em ?callable(\+Token\+Iterator)} & string \$parse\+Description \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpstan/phpdoc-\/parser/src/\+Parser/\mbox{\hyperlink{_type_parser_8php}{Type\+Parser.\+php}}\end{DoxyCompactItemize}

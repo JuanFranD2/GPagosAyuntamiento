@@ -1,0 +1,27 @@
+var class_illuminate_1_1_support_1_1_sleep =
+[
+    [ "__construct", "class_illuminate_1_1_support_1_1_sleep.html#aae9b438ab00dc8259db06b2200e46865", null ],
+    [ "__destruct", "class_illuminate_1_1_support_1_1_sleep.html#a421831a265621325e1fdd19aace0c758", null ],
+    [ "and", "class_illuminate_1_1_support_1_1_sleep.html#a0ae5f793b50ab51249085ac4a79d87cd", null ],
+    [ "duration", "class_illuminate_1_1_support_1_1_sleep.html#ae6f4f6b275fd016a9168a3203f710177", null ],
+    [ "goodnight", "class_illuminate_1_1_support_1_1_sleep.html#ad8b3781a88b3dddb2468a1e9d35910b1", null ],
+    [ "microsecond", "class_illuminate_1_1_support_1_1_sleep.html#a722942c27295871bc55b6ca8c9629ca2", null ],
+    [ "microseconds", "class_illuminate_1_1_support_1_1_sleep.html#a7657ed289f1aa5812d3c1af2067c677d", null ],
+    [ "millisecond", "class_illuminate_1_1_support_1_1_sleep.html#ab5f8fb208f824698a4d438b7020142bb", null ],
+    [ "milliseconds", "class_illuminate_1_1_support_1_1_sleep.html#a5394a4523e70b980602ba86639e9affc", null ],
+    [ "minute", "class_illuminate_1_1_support_1_1_sleep.html#ad670f5b984d9665f8d8a42f866bdc671", null ],
+    [ "minutes", "class_illuminate_1_1_support_1_1_sleep.html#afb710674d124bc48f297ed55661fceff", null ],
+    [ "pullPending", "class_illuminate_1_1_support_1_1_sleep.html#a9349bbf56f1f4165cf2699afa548c1cb", null ],
+    [ "second", "class_illuminate_1_1_support_1_1_sleep.html#a2a2f3b48793b937a0921412e56871dc6", null ],
+    [ "seconds", "class_illuminate_1_1_support_1_1_sleep.html#ab0b41e6c27434051be7bb881d3ac45a9", null ],
+    [ "shouldNotSleep", "class_illuminate_1_1_support_1_1_sleep.html#a8bf8b6fa7bd1122cb5b08a837d390f92", null ],
+    [ "then", "class_illuminate_1_1_support_1_1_sleep.html#a964adb4b2e8e775758b446e607d0d05d", null ],
+    [ "unless", "class_illuminate_1_1_support_1_1_sleep.html#a65968f414e26cef87c7dfd8a2e99b757", null ],
+    [ "when", "class_illuminate_1_1_support_1_1_sleep.html#aeaa007db4b390e498fe4c66a95af1228", null ],
+    [ "while", "class_illuminate_1_1_support_1_1_sleep.html#a8b8cdaa6eeacea6af71754417568bffa", null ],
+    [ "$alreadySlept", "class_illuminate_1_1_support_1_1_sleep.html#a1983eab09c9e77f4b4ca7359285d73db", null ],
+    [ "$duration", "class_illuminate_1_1_support_1_1_sleep.html#acae43950182b63cd06434397298dad7d", null ],
+    [ "$pending", "class_illuminate_1_1_support_1_1_sleep.html#adaed99ff585f0cb5fcebe150f2c27380", null ],
+    [ "$shouldSleep", "class_illuminate_1_1_support_1_1_sleep.html#a7a9a68f8b631436018948b56b613bb66", null ],
+    [ "$while", "class_illuminate_1_1_support_1_1_sleep.html#a845d32af51e3743385a6fa3860998270", null ]
+];

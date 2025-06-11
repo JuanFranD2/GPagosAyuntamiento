@@ -1,0 +1,4 @@
+var vendor_2laravel_2breeze_2stubs_2livewire_functional_2resources_2views_2livewire_2pages_2auth_2forgot_password_8blade_8php =
+[
+    [ "$sendPasswordResetLink", "vendor_2laravel_2breeze_2stubs_2livewire-functional_2resources_2views_2livewire_2pages_2auth_2forgot-password_8blade_8php.html#acae958aeb36a45a6ec4b4aea03e607cb", null ]
+];

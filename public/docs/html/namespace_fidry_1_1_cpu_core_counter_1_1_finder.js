@@ -1,0 +1,25 @@
+var namespace_fidry_1_1_cpu_core_counter_1_1_finder =
+[
+    [ "_NProcessorFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1___n_processor_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1___n_processor_finder" ],
+    [ "CmiCmdletLogicalFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cmi_cmdlet_logical_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cmi_cmdlet_logical_finder" ],
+    [ "CmiCmdletPhysicalFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cmi_cmdlet_physical_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cmi_cmdlet_physical_finder" ],
+    [ "CpuCoreFinder", "interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder.html", "interface_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_core_finder" ],
+    [ "CpuInfoFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_cpu_info_finder" ],
+    [ "DummyCpuCoreFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_dummy_cpu_core_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_dummy_cpu_core_finder" ],
+    [ "EnvVariableFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_env_variable_finder" ],
+    [ "FinderRegistry", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_finder_registry.html", null ],
+    [ "HwLogicalFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_hw_logical_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_hw_logical_finder" ],
+    [ "HwPhysicalFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_hw_physical_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_hw_physical_finder" ],
+    [ "LscpuLogicalFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_lscpu_logical_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_lscpu_logical_finder" ],
+    [ "LscpuPhysicalFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_lscpu_physical_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_lscpu_physical_finder" ],
+    [ "NProcessorFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_n_processor_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_n_processor_finder" ],
+    [ "NProcFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_n_proc_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_n_proc_finder" ],
+    [ "NullCpuCoreFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_null_cpu_core_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_null_cpu_core_finder" ],
+    [ "OnlyInPowerShellFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_in_power_shell_finder" ],
+    [ "OnlyOnOSFamilyFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_on_o_s_family_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_only_on_o_s_family_finder" ],
+    [ "ProcOpenBasedFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_proc_open_based_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_proc_open_based_finder" ],
+    [ "SkipOnOSFamilyFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_skip_on_o_s_family_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_skip_on_o_s_family_finder" ],
+    [ "WindowsRegistryLogicalFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_windows_registry_logical_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_windows_registry_logical_finder" ],
+    [ "WmicLogicalFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_wmic_logical_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_wmic_logical_finder" ],
+    [ "WmicPhysicalFinder", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_wmic_physical_finder.html", "class_fidry_1_1_cpu_core_counter_1_1_finder_1_1_wmic_physical_finder" ]
+];

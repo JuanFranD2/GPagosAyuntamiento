@@ -1,0 +1,161 @@
+\doxysection{Invoice\+Controller Class Reference}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller}{}\label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller}\index{InvoiceController@{InvoiceController}}
+Inheritance diagram for Invoice\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_1_1_http_1_1_controllers_1_1_invoice_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_ab567a949f50e20ea3d95ad062a17e3c3}{index}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a435e7d7525d4bcd0ed5e34a469f3adf6}{create}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a0db3b00afff77e95aeab0eb0b9ab31f1}{store}} (\mbox{\hyperlink{class_app_1_1_http_1_1_requests_1_1_store_invoice_request}{Store\+Invoice\+Request}} \$request)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a33dcb17de7173e74c530f56a7c8e87c6}{show}} (\mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}} \$invoice)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_af8d45925de401446cf02423abc57b04c}{edit}} (\mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}} \$invoice)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a6f9deb01898ffc7e8b51caa5ae423443}{update}} (\mbox{\hyperlink{class_app_1_1_http_1_1_requests_1_1_update_invoice_request}{Update\+Invoice\+Request}} \$request, \mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}} \$invoice)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a49e2244a3f0d26649843ee5ae4bf6422}{destroy}} (\mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}} \$invoice)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a8148a5c18d39a68ab64a33d8b5bc4841}{see\+Pays}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_ab7727422d42ab3aa60f669d98aa2a346}{find\+Client\+By\+Cif\+Nif}} (string \$cif\+\_\+nif)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a0ddc3936b32be68a126f9a6735b058be}{find\+Concept\+By\+File\+Number}} (string \$file\+\_\+number)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a01b3246b74a781e10d08345669c02af0}{download\+Pdf}} (\mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}} \$invoice)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a435e7d7525d4bcd0ed5e34a469f3adf6}\index{InvoiceController@{InvoiceController}!create@{create}}
+\index{create@{create}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a435e7d7525d4bcd0ed5e34a469f3adf6} 
+create (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Show the form for creating a new invoice. \Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a49e2244a3f0d26649843ee5ae4bf6422}\index{InvoiceController@{InvoiceController}!destroy@{destroy}}
+\index{destroy@{destroy}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a49e2244a3f0d26649843ee5ae4bf6422} 
+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}}}]{\$invoice}{}\end{DoxyParamCaption})}
+
+Remove the specified invoice from storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+App\textbackslash{}\+Models\textbackslash{}\+Invoice & {\em \$invoice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Json\+Response\texorpdfstring{$\vert$}{|}\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Redirect\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a01b3246b74a781e10d08345669c02af0}\index{InvoiceController@{InvoiceController}!downloadPdf@{downloadPdf}}
+\index{downloadPdf@{downloadPdf}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{downloadPdf()}{downloadPdf()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a01b3246b74a781e10d08345669c02af0} 
+download\+Pdf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}}}]{\$invoice}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_af8d45925de401446cf02423abc57b04c}\index{InvoiceController@{InvoiceController}!edit@{edit}}
+\index{edit@{edit}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_af8d45925de401446cf02423abc57b04c} 
+edit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}}}]{\$invoice}{}\end{DoxyParamCaption})}
+
+Show the form for editing the specified invoice. \Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_ab7727422d42ab3aa60f669d98aa2a346}\index{InvoiceController@{InvoiceController}!findClientByCifNif@{findClientByCifNif}}
+\index{findClientByCifNif@{findClientByCifNif}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{findClientByCifNif()}{findClientByCifNif()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_ab7727422d42ab3aa60f669d98aa2a346} 
+find\+Client\+By\+Cif\+Nif (\begin{DoxyParamCaption}\item[{string}]{\$cif\+\_\+nif}{}\end{DoxyParamCaption})}
+
+Find a client by CIF/\+NIF.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cif\+\_\+nif} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Json\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a0ddc3936b32be68a126f9a6735b058be}\index{InvoiceController@{InvoiceController}!findConceptByFileNumber@{findConceptByFileNumber}}
+\index{findConceptByFileNumber@{findConceptByFileNumber}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{findConceptByFileNumber()}{findConceptByFileNumber()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a0ddc3936b32be68a126f9a6735b058be} 
+find\+Concept\+By\+File\+Number (\begin{DoxyParamCaption}\item[{string}]{\$file\+\_\+number}{}\end{DoxyParamCaption})}
+
+Find the concept for a proceeding by file number.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+\_\+number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Json\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_ab567a949f50e20ea3d95ad062a17e3c3}\index{InvoiceController@{InvoiceController}!index@{index}}
+\index{index@{index}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_ab567a949f50e20ea3d95ad062a17e3c3} 
+index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Display a listing of the invoices. \Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a8148a5c18d39a68ab64a33d8b5bc4841}\index{InvoiceController@{InvoiceController}!seePays@{seePays}}
+\index{seePays@{seePays}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{seePays()}{seePays()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a8148a5c18d39a68ab64a33d8b5bc4841} 
+see\+Pays (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Display a listing of the invoices for the pays view. NOTA\+: Esta función parece ser para otra vista (\textquotesingle{}see\+Pays\textquotesingle{}) y usa paginación, diferente del index reestructurado con \doxylink{class_data_tables}{Data\+Tables}. La mantenemos aparte. \Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a33dcb17de7173e74c530f56a7c8e87c6}\index{InvoiceController@{InvoiceController}!show@{show}}
+\index{show@{show}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a33dcb17de7173e74c530f56a7c8e87c6} 
+show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}}}]{\$invoice}{}\end{DoxyParamCaption})}
+
+Display the specified invoice. \Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a0db3b00afff77e95aeab0eb0b9ab31f1}\index{InvoiceController@{InvoiceController}!store@{store}}
+\index{store@{store}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a0db3b00afff77e95aeab0eb0b9ab31f1} 
+store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_app_1_1_http_1_1_requests_1_1_store_invoice_request}{Store\+Invoice\+Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Store a newly created invoice in storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+App\textbackslash{}\+Http\textbackslash{}\+Requests\textbackslash{}\+Store\+Invoice\+Request & {\em \$request} & // Usar el Form \doxylink{class_request}{Request} aquí \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Redirect\+Response // O Json\+Response si manejas AJAX aquí, pero para \doxylink{create_8blade_8php}{create.\+blade.\+php} es Redirección 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a6f9deb01898ffc7e8b51caa5ae423443}\index{InvoiceController@{InvoiceController}!update@{update}}
+\index{update@{update}!InvoiceController@{InvoiceController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_app_1_1_http_1_1_controllers_1_1_invoice_controller_a6f9deb01898ffc7e8b51caa5ae423443} 
+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_app_1_1_http_1_1_requests_1_1_update_invoice_request}{Update\+Invoice\+Request}}}]{\$request}{, }\item[{\mbox{\hyperlink{class_app_1_1_models_1_1_invoice}{Invoice}}}]{\$invoice}{}\end{DoxyParamCaption})}
+
+Update the specified invoice in storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+App\textbackslash{}\+Http\textbackslash{}\+Requests\textbackslash{}\+Update\+Invoice\+Request & {\em \$request} & // Usamos el Form \doxylink{class_request}{Request} aquí \\
+\hline
+\textbackslash{}\+App\textbackslash{}\+Models\textbackslash{}\+Invoice & {\em \$invoice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Json\+Response\texorpdfstring{$\vert$}{|}\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Redirect\+Response 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/app/\+Http/\+Controllers/\mbox{\hyperlink{_invoice_controller_8php}{Invoice\+Controller.\+php}}\end{DoxyCompactItemize}

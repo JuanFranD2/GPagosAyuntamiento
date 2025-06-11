@@ -1,0 +1,4 @@
+var _peekable_request_rate_limiter_interface_8php =
+[
+    [ "PeekableRequestRateLimiterInterface", "interface_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_peekable_request_rate_limiter_interface.html", "interface_symfony_1_1_component_1_1_http_foundation_1_1_rate_limiter_1_1_peekable_request_rate_limiter_interface" ]
+];

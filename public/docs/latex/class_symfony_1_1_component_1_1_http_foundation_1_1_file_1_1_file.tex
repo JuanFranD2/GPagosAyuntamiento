@@ -1,0 +1,164 @@
+\doxysection{File Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file}\index{File@{File}}
+Inheritance diagram for File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_acdccfe9757e81da70ead8b8c42c08f62}{\+\_\+\+\_\+construct}} (string \$path, bool \$check\+Path=true)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a29719c9c64efd17a9b84c463e041693d}{guess\+Extension}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_ac06e9f7b10fca30eb41e41d4dc108b1c}{get\+Mime\+Type}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a99a296613db8d409a10a91c9805a9b62}{move}} (string \$directory, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a58e43f09a06ce4e29b192c4e17ce7915}{get\+Content}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a96b40b4fc4ac9585428b6f5845c0b6b3}{get\+Target\+File}} (string \$directory, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_ac61090b35682fd82d206c08fde431593}{get\+Name}} (string \$name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file in the file system.
+
+\begin{DoxyAuthor}{Author}
+Bernhard Schussek \href{mailto:bschussek@gmail.com}{\texttt{bschussek@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_acdccfe9757e81da70ead8b8c42c08f62}\index{File@{File}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!File@{File}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_acdccfe9757e81da70ead8b8c42c08f62} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{bool}]{\$check\+Path}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Constructs a new file from the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path to the file \\
+\hline
+bool & {\em \$check\+Path} & Whether to check the path or not\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & If the given path is not a file \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a58e43f09a06ce4e29b192c4e17ce7915}\index{File@{File}!getContent@{getContent}}
+\index{getContent@{getContent}!File@{File}}
+\doxysubsubsection{\texorpdfstring{getContent()}{getContent()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a58e43f09a06ce4e29b192c4e17ce7915} 
+get\+Content (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_ac06e9f7b10fca30eb41e41d4dc108b1c}\index{File@{File}!getMimeType@{getMimeType}}
+\index{getMimeType@{getMimeType}!File@{File}}
+\doxysubsubsection{\texorpdfstring{getMimeType()}{getMimeType()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_ac06e9f7b10fca30eb41e41d4dc108b1c} 
+get\+Mime\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the mime type of the file.
+
+The mime type is guessed using a Mime\+Type\+Guesser\+Interface instance, which uses finfo\+\_\+file() then the "{}file"{} system binary, depending on which of those are available.
+
+\begin{DoxySeeAlso}{See also}
+Mime\+Types 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_ac61090b35682fd82d206c08fde431593}\index{File@{File}!getName@{getName}}
+\index{getName@{getName}!File@{File}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_ac61090b35682fd82d206c08fde431593} 
+get\+Name (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns locale independent base name of the given path. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a96b40b4fc4ac9585428b6f5845c0b6b3}\index{File@{File}!getTargetFile@{getTargetFile}}
+\index{getTargetFile@{getTargetFile}!File@{File}}
+\doxysubsubsection{\texorpdfstring{getTargetFile()}{getTargetFile()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a96b40b4fc4ac9585428b6f5845c0b6b3} 
+get\+Target\+File (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a29719c9c64efd17a9b84c463e041693d}\index{File@{File}!guessExtension@{guessExtension}}
+\index{guessExtension@{guessExtension}!File@{File}}
+\doxysubsubsection{\texorpdfstring{guessExtension()}{guessExtension()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a29719c9c64efd17a9b84c463e041693d} 
+guess\+Extension (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the extension based on the mime type.
+
+If the mime type is unknown, returns null.
+
+This method uses the mime type as guessed by get\+Mime\+Type() to guess the file extension.
+
+\begin{DoxySeeAlso}{See also}
+Mime\+Types 
+
+get\+Mime\+Type()
+\end{DoxySeeAlso}
+Guess the file extension from the mime-\/type of a given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a99a296613db8d409a10a91c9805a9b62}\index{File@{File}!move@{move}}
+\index{move@{move}!File@{File}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a99a296613db8d409a10a91c9805a9b62} 
+move (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Moves the file to a new location.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Exception} & if the target file could not be created\\
+\hline
+\end{DoxyExceptions}
+Move a file to a new location.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_uploaded_file_a99a296613db8d409a10a91c9805a9b62}{Uploaded\+File}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/foundation/\+File/\mbox{\hyperlink{symfony_2http-foundation_2_file_2_file_8php}{File.\+php}}\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/\mbox{\hyperlink{__ide__helper_8php}{\+\_\+ide\+\_\+helper.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/php-\/templates/configs.php File Reference}
+\hypertarget{configs_8php}{}\label{configs_8php}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/php-\/templates/configs.php@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/barryvdh/laravel-\/ide-\/helper/php-\/templates/configs.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{configs_8php_a3dcaa99bf10b1080ea7fe4009ea9fa62}{vs\+Code\+Get\+Config\+Value}} (\$value, \$key, \$config\+Paths)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{configs_8php_a6d3acd7bb365291cea0fc4b71fe5682a}{\$local}}
+\item 
+\mbox{\hyperlink{configs_8php_ac84b1343f1ae1b92e3f9be60eb34719b}{\$vendor}}
+\item 
+\mbox{\hyperlink{configs_8php_a2b9179afa8b01b5877206f5aaa3528f4}{\$config\+Paths}}
+\item 
+\mbox{\hyperlink{configs_8php_a0bd2b0f01282fe90b46e9b3a14da638a}{\$cached\+Contents}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{configs_8php_adb9b2ba28f8d9f0a841f5713be185d32}{\$cached\+Parsed}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{configs_8php_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{configs_8php_a3dcaa99bf10b1080ea7fe4009ea9fa62}\index{configs.php@{configs.php}!vsCodeGetConfigValue@{vsCodeGetConfigValue}}
+\index{vsCodeGetConfigValue@{vsCodeGetConfigValue}!configs.php@{configs.php}}
+\doxysubsubsection{\texorpdfstring{vsCodeGetConfigValue()}{vsCodeGetConfigValue()}}
+{\footnotesize\ttfamily \label{configs_8php_a3dcaa99bf10b1080ea7fe4009ea9fa62} 
+vs\+Code\+Get\+Config\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$key}{, }\item[{}]{\$config\+Paths}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{configs_8php_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{configs_8php_a0bd2b0f01282fe90b46e9b3a14da638a}\index{configs.php@{configs.php}!\$cachedContents@{\$cachedContents}}
+\index{\$cachedContents@{\$cachedContents}!configs.php@{configs.php}}
+\doxysubsubsection{\texorpdfstring{\$cachedContents}{\$cachedContents}}
+{\footnotesize\ttfamily \label{configs_8php_a0bd2b0f01282fe90b46e9b3a14da638a} 
+\$cached\+Contents = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{configs_8php_adb9b2ba28f8d9f0a841f5713be185d32}\index{configs.php@{configs.php}!\$cachedParsed@{\$cachedParsed}}
+\index{\$cachedParsed@{\$cachedParsed}!configs.php@{configs.php}}
+\doxysubsubsection{\texorpdfstring{\$cachedParsed}{\$cachedParsed}}
+{\footnotesize\ttfamily \label{configs_8php_adb9b2ba28f8d9f0a841f5713be185d32} 
+\$cached\+Parsed = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{configs_8php_a2b9179afa8b01b5877206f5aaa3528f4}\index{configs.php@{configs.php}!\$configPaths@{\$configPaths}}
+\index{\$configPaths@{\$configPaths}!configs.php@{configs.php}}
+\doxysubsubsection{\texorpdfstring{\$configPaths}{\$configPaths}}
+{\footnotesize\ttfamily \label{configs_8php_a2b9179afa8b01b5877206f5aaa3528f4} 
+\$config\+Paths}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{discover-6f0f1acd77de9f7869cf9462ed4d802b_8php_a6d3acd7bb365291cea0fc4b71fe5682a}{\$local}}}
+\DoxyCodeLine{\ \ \ \ -\/>merge(\mbox{\hyperlink{discover-6f0f1acd77de9f7869cf9462ed4d802b_8php_ac84b1343f1ae1b92e3f9be60eb34719b}{\$vendor}})}
+\DoxyCodeLine{\ \ \ \ -\/>groupBy(0)}
+\DoxyCodeLine{\ \ \ \ -\/>map(fn\ (\$items)\ =>\ \$items-\/>pluck(1))}
+
+\end{DoxyCode}
+\Hypertarget{configs_8php_a6d3acd7bb365291cea0fc4b71fe5682a}\index{configs.php@{configs.php}!\$local@{\$local}}
+\index{\$local@{\$local}!configs.php@{configs.php}}
+\doxysubsubsection{\texorpdfstring{\$local}{\$local}}
+{\footnotesize\ttfamily \label{configs_8php_a6d3acd7bb365291cea0fc4b71fe5682a} 
+\$local}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ collect(glob(config\_path(\textcolor{stringliteral}{'/*.php'})))}
+\DoxyCodeLine{\ \ \ \ -\/>merge(glob(config\_path(\textcolor{stringliteral}{'**/*.php'})))}
+\DoxyCodeLine{\ \ \ \ -\/>map(fn\ (\$path)\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{string})\ \mbox{\hyperlink{namespace_illuminate}{Illuminate}}\(\backslash\)Support\(\backslash\)Str::of(\$path)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>replace([config\_path(\textcolor{charliteral}{'/'}),\ \textcolor{stringliteral}{'.php'}],\ \textcolor{stringliteral}{''})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>replace(\textcolor{charliteral}{'/'},\ \textcolor{charliteral}{'.'}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$path,}
+\DoxyCodeLine{\ \ \ \ ])}
+
+\end{DoxyCode}
+\Hypertarget{configs_8php_ac84b1343f1ae1b92e3f9be60eb34719b}\index{configs.php@{configs.php}!\$vendor@{\$vendor}}
+\index{\$vendor@{\$vendor}!configs.php@{configs.php}}
+\doxysubsubsection{\texorpdfstring{\$vendor}{\$vendor}}
+{\footnotesize\ttfamily \label{configs_8php_ac84b1343f1ae1b92e3f9be60eb34719b} 
+\$vendor}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ collect(glob(base\_path(\textcolor{stringliteral}{'vendor/**/**/config/*.php'})))-\/>map(fn\ (}
+\DoxyCodeLine{\ \ \ \ \$path}
+\DoxyCodeLine{)\ =>\ [}
+\DoxyCodeLine{\ \ \ \ (\textcolor{keywordtype}{string})\ \mbox{\hyperlink{namespace_illuminate}{Illuminate}}\(\backslash\)Support\(\backslash\)Str::of(\$path)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ -\/>afterLast(\textcolor{stringliteral}{'/config/'})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ -\/>replace(\textcolor{stringliteral}{'.php'},\ \textcolor{stringliteral}{''})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ -\/>replace(\textcolor{charliteral}{'/'},\ \textcolor{charliteral}{'.'}),}
+\DoxyCodeLine{\ \ \ \ \$path,}
+\DoxyCodeLine{])}
+
+\end{DoxyCode}

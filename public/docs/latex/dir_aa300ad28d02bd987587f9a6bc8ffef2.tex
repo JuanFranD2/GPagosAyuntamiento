@@ -1,0 +1,50 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/sebastian/comparator Directory Reference}
+\hypertarget{dir_aa300ad28d02bd987587f9a6bc8ffef2}{}\label{dir_aa300ad28d02bd987587f9a6bc8ffef2}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/sebastian/comparator Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/sebastian/comparator Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_c4f43ebb262bd968c9ef11bc76d5a54b}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{[}!\mbox{[}Latest Stable Version\mbox{]}(\href{https://poser.pugx.org/sebastian/comparator/v}{\texttt{https\+://poser.\+pugx.\+org/sebastian/comparator/v}})\mbox{]}(\href{https://packagist.org/packages/sebastian/comparator}{\texttt{https\+://packagist.\+org/packages/sebastian/comparator}}) \href{https://github.com/sebastianbergmann/comparator/actions}{\texttt{}} \href{https://codecov.io/gh/sebastianbergmann/comparator}{\texttt{}}\hypertarget{README.md_autotoc_md10693}{}\doxysubsection{\texorpdfstring{sebastian/comparator}{sebastian/comparator}}\label{README.md_autotoc_md10693}
+This component provides the functionality to compare PHP values for equality.\hypertarget{README.md_autotoc_md10694}{}\doxysubsubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md10694}
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\texttt{Composer}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ sebastian/comparator}
+
+\end{DoxyCode}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ -\/-\/dev\ sebastian/comparator}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10695}{}\doxysubsubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md10695}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory}{SebastianBergmann\(\backslash\)Comparator\(\backslash\)Factory}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparison_failure}{SebastianBergmann\(\backslash\)Comparator\(\backslash\)ComparisonFailure}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$date1\ =\ \textcolor{keyword}{new}\ DateTime(\textcolor{stringliteral}{'2013-\/03-\/29\ 04:13:35'},\ \textcolor{keyword}{new}\ DateTimeZone(\textcolor{stringliteral}{'America/New\_York'}));}
+\DoxyCodeLine{\$date2\ =\ \textcolor{keyword}{new}\ DateTime(\textcolor{stringliteral}{'2013-\/03-\/29\ 03:13:35'},\ \textcolor{keyword}{new}\ DateTimeZone(\textcolor{stringliteral}{'America/Chicago'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$factory\ =\ \textcolor{keyword}{new}\ Factory;}
+\DoxyCodeLine{\$comparator\ =\ \$factory-\/>getComparatorFor(\$date1,\ \$date2);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \$comparator-\/>assertEquals(\$date1,\ \$date2);}
+\DoxyCodeLine{\ \ \ \ print\ \textcolor{stringliteral}{"{}Dates\ match"{}};}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{catch}\ (ComparisonFailure\ \$failure)\ \{}
+\DoxyCodeLine{\ \ \ \ print\ \textcolor{stringliteral}{"{}Dates\ don't\ match"{}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 

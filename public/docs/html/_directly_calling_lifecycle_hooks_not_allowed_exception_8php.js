@@ -1,0 +1,4 @@
+var _directly_calling_lifecycle_hooks_not_allowed_exception_8php =
+[
+    [ "DirectlyCallingLifecycleHooksNotAllowedException", "class_livewire_1_1_features_1_1_support_lifecycle_hooks_1_1_directly_calling_lifecycle_hooks_not_allowed_exception.html", "class_livewire_1_1_features_1_1_support_lifecycle_hooks_1_1_directly_calling_lifecycle_hooks_not_allowed_exception" ]
+];

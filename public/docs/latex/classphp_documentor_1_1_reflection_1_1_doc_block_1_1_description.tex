@@ -1,0 +1,107 @@
+\doxysection{Description Class Reference}
+\hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description}{}\label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description}\index{Description@{Description}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_af2700461d46c0c3702a3cec2e63ed630}{\+\_\+\+\_\+construct}} (string \$body\+Template, array \$tags=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_aa2bbf27a8752f8b99939c9ab7745ddad}{get\+Body\+Template}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_ae07173ab06a20e2f5bd928cc0518e01f}{get\+Tags}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_aa6be4c653601299c8bf8a25987bbe0f3}{render}} (?Formatter \$formatter=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Object representing to description for a Doc\+Block.
+
+A Description object can consist of plain text but can also include tags. A Description Formatter can then combine a body template with sprintf-\/style placeholders together with formatted tags in order to reconstitute a complete description text using the format that you would prefer.
+
+Because parsing a Description text can be a verbose process this is handled by the \{\begin{DoxySeeAlso}{See also}
+Description\+Factory\}. It is thus recommended to use that to create a Description object, like this\+: \begin{DoxyVerb}$description = $descriptionFactory->create('This is a {@see Description}', $context);
+\end{DoxyVerb}
+
+\end{DoxySeeAlso}
+The description factory will interpret the given body and create a body template and list of tags from them, and pass that onto the constructor if this class.
+
+\begin{quote}
+The \$context variable is a class of type \{\begin{DoxySeeAlso}{See also}
+\textbackslash{}php\+Documentor\textbackslash{}\+Reflection\textbackslash{}\+Types\textbackslash{}\+Context\} and contains the namespace and the namespace aliases that apply to this Doc\+Block. These are used by the Factory to resolve and expand partial type names and FQSENs. 
+\end{DoxySeeAlso}
+\end{quote}
+
+
+If you do not want to use the Description\+Factory you can pass a body template and tag listing like this\+: \begin{DoxyVerb}$description = new Description(
+    'This is a %1$s',
+    [ new See(new Fqsen('\phpDocumentor\Reflection\DocBlock\Description')) ]
+);
+\end{DoxyVerb}
+
+
+It is generally recommended to use the Factory as that will also apply escaping rules, while the Description object is mainly responsible for rendering.
+
+\begin{DoxySeeAlso}{See also}
+Description\+Factory to create a \doxylink{resources_2views_2livewire_2pages_2auth_2confirm-password_8blade_8php_ae3b81d385ca4c26109dfbda28c563e2b}{new} Description. 
+
+Tags\textbackslash{}\+Formatter for the formatting of the body and tags. 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_af2700461d46c0c3702a3cec2e63ed630}\index{Description@{Description}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Description@{Description}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_af2700461d46c0c3702a3cec2e63ed630} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$body\+Template}{, }\item[{array}]{\$tags}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Initializes a Description with its body (template) and a listing of the tags used in the body template.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Tag\mbox{[}$\,$\mbox{]} & {\em \$tags} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_a7516ca30af0db3cdbf9a7739b48ce91d}\index{Description@{Description}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Description@{Description}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a plain string representation of this description. \Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_aa2bbf27a8752f8b99939c9ab7745ddad}\index{Description@{Description}!getBodyTemplate@{getBodyTemplate}}
+\index{getBodyTemplate@{getBodyTemplate}!Description@{Description}}
+\doxysubsubsection{\texorpdfstring{getBodyTemplate()}{getBodyTemplate()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_aa2bbf27a8752f8b99939c9ab7745ddad} 
+get\+Body\+Template (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the body template. \Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_ae07173ab06a20e2f5bd928cc0518e01f}\index{Description@{Description}!getTags@{getTags}}
+\index{getTags@{getTags}!Description@{Description}}
+\doxysubsubsection{\texorpdfstring{getTags()}{getTags()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_ae07173ab06a20e2f5bd928cc0518e01f} 
+get\+Tags (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the tags for this Doc\+Block.
+
+\begin{DoxyReturn}{Returns}
+Tag\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_aa6be4c653601299c8bf8a25987bbe0f3}\index{Description@{Description}!render@{render}}
+\index{render@{render}!Description@{Description}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classphp_documentor_1_1_reflection_1_1_doc_block_1_1_description_aa6be4c653601299c8bf8a25987bbe0f3} 
+render (\begin{DoxyParamCaption}\item[{?Formatter}]{\$formatter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Renders this description as a string where the provided formatter will format the tags in the expected string format. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpdocumentor/reflection-\/docblock/src/\+Doc\+Block/\mbox{\hyperlink{phpdocumentor_2reflection-docblock_2src_2_doc_block_2_description_8php}{Description.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\doxysection{Ean Class Reference}
+\hypertarget{class_faker_1_1_calculator_1_1_ean}{}\label{class_faker_1_1_calculator_1_1_ean}\index{Ean@{Ean}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_faker_1_1_calculator_1_1_ean_a6ee6a5524abc0584747bd6d0d24370a2}{checksum}} (string \$digits)
+\item 
+static \mbox{\hyperlink{class_faker_1_1_calculator_1_1_ean_aae918a0033079effef6e25851a4158a8}{is\+Valid}} (string \$ean)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_faker_1_1_calculator_1_1_ean_adbea7aecf921fdde8d0e63011e6c3ee6}{PATTERN}} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}(?\+:\textbackslash{}d\{8\}\texorpdfstring{$\vert$}{|}\textbackslash{}d\{13\})\$/\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class for validating EAN-\/8 and EAN-\/13 numbers 
+
+\label{doc-func-members}
+\Hypertarget{class_faker_1_1_calculator_1_1_ean_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_faker_1_1_calculator_1_1_ean_a6ee6a5524abc0584747bd6d0d24370a2}\index{Ean@{Ean}!checksum@{checksum}}
+\index{checksum@{checksum}!Ean@{Ean}}
+\doxysubsubsection{\texorpdfstring{checksum()}{checksum()}}
+{\footnotesize\ttfamily \label{class_faker_1_1_calculator_1_1_ean_a6ee6a5524abc0584747bd6d0d24370a2} 
+checksum (\begin{DoxyParamCaption}\item[{string}]{\$digits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Computes the checksum of an EAN number.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/International_Article_Number}{\texttt{https\+://en.\+wikipedia.\+org/wiki/\+International\+\_\+\+Article\+\_\+\+Number}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_faker_1_1_calculator_1_1_ean_aae918a0033079effef6e25851a4158a8}\index{Ean@{Ean}!isValid@{isValid}}
+\index{isValid@{isValid}!Ean@{Ean}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily \label{class_faker_1_1_calculator_1_1_ean_aae918a0033079effef6e25851a4158a8} 
+is\+Valid (\begin{DoxyParamCaption}\item[{string}]{\$ean}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether the provided number is an EAN compliant number and that the checksum is correct.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ean} & An EAN number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_faker_1_1_calculator_1_1_ean_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_faker_1_1_calculator_1_1_ean_adbea7aecf921fdde8d0e63011e6c3ee6}\index{Ean@{Ean}!PATTERN@{PATTERN}}
+\index{PATTERN@{PATTERN}!Ean@{Ean}}
+\doxysubsubsection{\texorpdfstring{PATTERN}{PATTERN}}
+{\footnotesize\ttfamily \label{class_faker_1_1_calculator_1_1_ean_adbea7aecf921fdde8d0e63011e6c3ee6} 
+const PATTERN = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}(?\+:\textbackslash{}d\{8\}\texorpdfstring{$\vert$}{|}\textbackslash{}d\{13\})\$/\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/fakerphp/faker/src/\+Faker/\+Calculator/\mbox{\hyperlink{_ean_8php}{Ean.\+php}}\end{DoxyCompactItemize}

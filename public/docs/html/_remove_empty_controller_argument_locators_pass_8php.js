@@ -1,0 +1,4 @@
+var _remove_empty_controller_argument_locators_pass_8php =
+[
+    [ "RemoveEmptyControllerArgumentLocatorsPass", "class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_remove_empty_controller_argument_locators_pass.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_remove_empty_controller_argument_locators_pass" ]
+];

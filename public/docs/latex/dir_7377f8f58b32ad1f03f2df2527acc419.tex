@@ -1,0 +1,93 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/nunomaduro/collision Directory Reference}
+\hypertarget{dir_7377f8f58b32ad1f03f2df2527acc419}{}\label{dir_7377f8f58b32ad1f03f2df2527acc419}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/nunomaduro/collision Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/nunomaduro/collision Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_ca4e3862c30591faca1163c39c23ca7a}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+ ~\newline
+  
+
+
+
+\href{https://github.com/nunomaduro/collision/actions}{\texttt{}} \href{https://scrutinizer-ci.com/g/nunomaduro/collision}{\texttt{}} \href{https://packagist.org/packages/nunomaduro/collision}{\texttt{}} \href{https://packagist.org/packages/nunomaduro/collision}{\texttt{}} 
+
+\DoxyHorRuler{0}
+
+
+Collision was created by, and is maintained by {\bfseries{\href{https://github.com/nunomaduro}{\texttt{Nuno Maduro}}}}, and is a package designed to give you beautiful error reporting when interacting with your app through the command line.
+
+
+\begin{DoxyItemize}
+\item It\textquotesingle{}s included on {\bfseries{\href{https://laravel.com}{\texttt{Laravel}}}}, the most popular free, open-\/source PHP framework in the world.
+\item Built on top of the {\bfseries{\href{https://github.com/filp/whoops}{\texttt{Whoops}}}} error handler.
+\item Supports \href{https://github.com/laravel/laravel}{\texttt{Laravel}}, \href{https://symfony.com}{\texttt{Symfony}}, \href{https://github.com/sebastianbergmann/phpunit}{\texttt{PHPUnit}}, and many other frameworks.
+\item Follow the creator Nuno Maduro\+:
+\begin{DoxyItemize}
+\item You\+Tube\+: \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\href{https://www.youtube.com/@nunomaduro}{\texttt{youtube.\+com/@nunomaduro}}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} — Videos every weekday
+\item Twitch\+: {\bfseries{\href{https://www.twitch.tv/enunomaduro}{\texttt{twitch.\+tv/enunomaduro}}}} — Streams (almost) every weekday
+\item Twitter / X\+: {\bfseries{\href{https://x.com/enunomaduro}{\texttt{x.\+com/enunomaduro}}}}
+\item Linked\+In\+: {\bfseries{\href{https://www.linkedin.com/in/nunomaduro}{\texttt{linkedin.\+com/in/nunomaduro}}}}
+\item Instagram\+: {\bfseries{\href{https://www.instagram.com/enunomaduro}{\texttt{instagram.\+com/enunomaduro}}}}
+\item Tiktok\+: \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\href{https://www.tiktok.com/@enunomaduro}{\texttt{tiktok.\+com/@enunomaduro}}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md10062}{}\doxysubsubsection{\texorpdfstring{Installation \& Usage}{Installation \& Usage}}\label{README.md_autotoc_md10062}
+\begin{quote}
+{\bfseries{Requires \href{https://php.net/releases/}{\texttt{PHP 8.\+2+}}}} \end{quote}
+
+
+Require Collision using \href{https://getcomposer.org}{\texttt{Composer}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ nunomaduro/collision\ -\/-\/dev}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10063}{}\doxysubsubsection{\texorpdfstring{Version Compatibility}{Version Compatibility}}\label{README.md_autotoc_md10063}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Laravel  }&\cellcolor{\tableheadbgcolor}\textbf{ Collision  }&\cellcolor{\tableheadbgcolor}\textbf{ \doxylink{namespace_p_h_p_unit}{PHPUnit}  }&\cellcolor{\tableheadbgcolor}\textbf{ \doxylink{namespace_pest}{Pest}  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Laravel  }&\cellcolor{\tableheadbgcolor}\textbf{ Collision  }&\cellcolor{\tableheadbgcolor}\textbf{ \doxylink{namespace_p_h_p_unit}{PHPUnit}  }&\cellcolor{\tableheadbgcolor}\textbf{ \doxylink{namespace_pest}{Pest}  }\\\cline{1-4}
+\endhead
+6.\+x  &3.\+x  &&\\\cline{1-4}
+7.\+x  &4.\+x  &&\\\cline{1-4}
+8.\+x  &5.\+x  &&\\\cline{1-4}
+9.\+x, 10.\+x  &6.\+x  &&\\\cline{1-4}
+10.\+x  &6.\+x  &9.\+x  &1.\+x  \\\cline{1-4}
+10.\+x  &7.\+x  &10.\+x  &2.\+x  \\\cline{1-4}
+11.\+x, 12.\+x  &8.\+x  &10.\+x, 11.\+x, 12.\+x  &2.\+x, 3.\+x  \\\cline{1-4}
+\end{longtabu}
+
+
+As an example, here is how to require Collision on Laravel 8.\+x\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ nunomaduro/collision:\string^5.0\ -\/-\/dev}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10064}{}\doxysubsubsection{\texorpdfstring{No adapter}{No adapter}}\label{README.md_autotoc_md10064}
+You need to register the handler in your code\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(new\ \(\backslash\)NunoMaduro\(\backslash\)Collision\(\backslash\)Provider)-\/>\textcolor{keyword}{register}();}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10065}{}\doxysubsubsection{\texorpdfstring{Contributing}{Contributing}}\label{README.md_autotoc_md10065}
+Thank you for considering to contribute to Collision. All the contribution guidelines are mentioned \doxylink{mockery_2mockery_2_c_o_n_t_r_i_b_u_t_i_n_g_8md}{here}.
+
+You can also follow the twitter account for latest announcements or just come say hi!\+: \href{https://twitter.com/enunomaduro}{\texttt{@enunomaduro}}\hypertarget{README.md_autotoc_md10066}{}\doxysubsubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md10066}
+Collision is an open-\/sourced software licensed under the \doxysectlink{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2nunomaduro_2collision_2_l_i_c_e_n_s_e}{MIT license}{0}.
+
+Logo by \href{https://twitter.com/caneco}{\texttt{Caneco}}. 

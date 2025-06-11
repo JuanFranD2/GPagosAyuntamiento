@@ -1,0 +1,6 @@
+var namespace_symfony_1_1_component_1_1_http_kernel_1_1_debug =
+[
+    [ "ErrorHandlerConfigurator", "class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_error_handler_configurator.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_error_handler_configurator" ],
+    [ "TraceableEventDispatcher", "class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_traceable_event_dispatcher.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_traceable_event_dispatcher" ],
+    [ "VirtualRequestStack", "class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_virtual_request_stack.html", "class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_virtual_request_stack" ]
+];

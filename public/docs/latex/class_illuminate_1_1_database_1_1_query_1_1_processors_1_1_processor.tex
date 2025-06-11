@@ -1,0 +1,211 @@
+\doxysection{Processor Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor}{}\label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor}\index{Processor@{Processor}}
+Inheritance diagram for Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ab7523450d20a0f391ebce81bfeeb932b}{process\+Select}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}} \$query, \$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_adb28f2adfcbc913380a80836a0e4a7ec}{process\+Insert\+Get\+Id}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}} \$query, \$sql, \$values, \$sequence=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2b05f465e0fd060a458e3539e390a85f}{process\+Schemas}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2db9aa9849e65a0f0dae4b3a3a7ac1c6}{process\+Tables}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a77c10af71a0e57679c1b9f9eeadc6854}{process\+Views}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a11983c69a64f1a92b2a309a00389a29f}{process\+Types}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a319e40d71f88887017e917f17d58bcc0}{process\+Columns}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ac38866f53035f91bd145c84c802f3422}{process\+Indexes}} (\$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a12229b914a46336a6a448e6c3aade32c}{process\+Foreign\+Keys}} (\$results)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a319e40d71f88887017e917f17d58bcc0}\index{Processor@{Processor}!processColumns@{processColumns}}
+\index{processColumns@{processColumns}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processColumns()}{processColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a319e40d71f88887017e917f17d58bcc0} 
+process\+Columns (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a columns query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_a319e40d71f88887017e917f17d58bcc0}{My\+Sql\+Processor}}, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_postgres_processor_a319e40d71f88887017e917f17d58bcc0}{Postgres\+Processor}}, and \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_a319e40d71f88887017e917f17d58bcc0}{Sql\+Server\+Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a12229b914a46336a6a448e6c3aade32c}\index{Processor@{Processor}!processForeignKeys@{processForeignKeys}}
+\index{processForeignKeys@{processForeignKeys}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processForeignKeys()}{processForeignKeys()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a12229b914a46336a6a448e6c3aade32c} 
+process\+Foreign\+Keys (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a foreign keys query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_a12229b914a46336a6a448e6c3aade32c}{My\+Sql\+Processor}}, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_postgres_processor_a12229b914a46336a6a448e6c3aade32c}{Postgres\+Processor}}, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_a12229b914a46336a6a448e6c3aade32c}{SQLite\+Processor}}, and \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_a12229b914a46336a6a448e6c3aade32c}{Sql\+Server\+Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ac38866f53035f91bd145c84c802f3422}\index{Processor@{Processor}!processIndexes@{processIndexes}}
+\index{processIndexes@{processIndexes}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processIndexes()}{processIndexes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ac38866f53035f91bd145c84c802f3422} 
+process\+Indexes (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of an indexes query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_ac38866f53035f91bd145c84c802f3422}{My\+Sql\+Processor}}, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_postgres_processor_ac38866f53035f91bd145c84c802f3422}{Postgres\+Processor}}, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_s_q_lite_processor_ac38866f53035f91bd145c84c802f3422}{SQLite\+Processor}}, and \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_ac38866f53035f91bd145c84c802f3422}{Sql\+Server\+Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_adb28f2adfcbc913380a80836a0e4a7ec}\index{Processor@{Processor}!processInsertGetId@{processInsertGetId}}
+\index{processInsertGetId@{processInsertGetId}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processInsertGetId()}{processInsertGetId()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_adb28f2adfcbc913380a80836a0e4a7ec} 
+process\+Insert\+Get\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}}}]{\$query}{, }\item[{}]{\$sql}{, }\item[{}]{\$values}{, }\item[{}]{\$sequence}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} an "{}insert get ID"{} query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder & {\em \$query} & \\
+\hline
+string & {\em \$sql} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+string | null & {\em \$sequence} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_my_sql_processor_adb28f2adfcbc913380a80836a0e4a7ec}{My\+Sql\+Processor}}, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_postgres_processor_adb28f2adfcbc913380a80836a0e4a7ec}{Postgres\+Processor}}, and \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_sql_server_processor_adb28f2adfcbc913380a80836a0e4a7ec}{Sql\+Server\+Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2b05f465e0fd060a458e3539e390a85f}\index{Processor@{Processor}!processSchemas@{processSchemas}}
+\index{processSchemas@{processSchemas}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processSchemas()}{processSchemas()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2b05f465e0fd060a458e3539e390a85f} 
+process\+Schemas (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a schemas query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ab7523450d20a0f391ebce81bfeeb932b}\index{Processor@{Processor}!processSelect@{processSelect}}
+\index{processSelect@{processSelect}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processSelect()}{processSelect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_ab7523450d20a0f391ebce81bfeeb932b} 
+process\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}}}]{\$query}{, }\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a "{}select"{} query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder & {\em \$query} & \\
+\hline
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2db9aa9849e65a0f0dae4b3a3a7ac1c6}\index{Processor@{Processor}!processTables@{processTables}}
+\index{processTables@{processTables}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processTables()}{processTables()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a2db9aa9849e65a0f0dae4b3a3a7ac1c6} 
+process\+Tables (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a tables query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a11983c69a64f1a92b2a309a00389a29f}\index{Processor@{Processor}!processTypes@{processTypes}}
+\index{processTypes@{processTypes}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processTypes()}{processTypes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a11983c69a64f1a92b2a309a00389a29f} 
+process\+Types (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a types query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_postgres_processor_a11983c69a64f1a92b2a309a00389a29f}{Postgres\+Processor}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a77c10af71a0e57679c1b9f9eeadc6854}\index{Processor@{Processor}!processViews@{processViews}}
+\index{processViews@{processViews}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{processViews()}{processViews()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor_a77c10af71a0e57679c1b9f9eeadc6854} 
+process\+Views (\begin{DoxyParamCaption}\item[{}]{\$results}{}\end{DoxyParamCaption})}
+
+\doxylink{class_process}{Process} the results of a views query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$results} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Database/\+Query/\+Processors/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_database_2_query_2_processors_2_processor_8php}{Processor.\+php}}\end{DoxyCompactItemize}

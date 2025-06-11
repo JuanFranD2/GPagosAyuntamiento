@@ -1,0 +1,46 @@
+\doxysection{Event\+Dispatcher\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface}{}\label{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface}\index{EventDispatcherInterface@{EventDispatcherInterface}}
+Inheritance diagram for Event\+Dispatcher\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface_a4cca2207e4c39bf2c23458860978633f}{dispatch}} (object \$event, ?string \$event\+Name=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows providing hooks on domain-\/specific lifecycles by dispatching events. 
+
+\label{doc-func-members}
+\Hypertarget{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface_a4cca2207e4c39bf2c23458860978633f}\index{EventDispatcherInterface@{EventDispatcherInterface}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!EventDispatcherInterface@{EventDispatcherInterface}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface_a4cca2207e4c39bf2c23458860978633f} 
+dispatch (\begin{DoxyParamCaption}\item[{object}]{\$event}{, }\item[{?string}]{\$event\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Dispatches an event to all registered listeners.
+
+@template T of object
+
+
+\begin{DoxyParams}[1]{Parameters}
+T & {\em \$event} & The event to pass to the event handlers/listeners \\
+\hline
+string | null & {\em \$event\+Name} & The name of the event to dispatch. If not supplied, the class of \$event should be used instead.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T The passed \$event MUST be returned 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/event-\/dispatcher-\/contracts/\mbox{\hyperlink{symfony_2event-dispatcher-contracts_2_event_dispatcher_interface_8php}{Event\+Dispatcher\+Interface.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_translation_1_1_exception_1_1_missing_required_option_exception =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_translation_1_1_exception_1_1_missing_required_option_exception.html#a1466ad22c5cddb872b7ac206e043244c", null ]
+];

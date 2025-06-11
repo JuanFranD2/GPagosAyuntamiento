@@ -1,0 +1,150 @@
+\doxysection{Validate\+Signature Class Reference}
+\hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature}{}\label{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature}\index{ValidateSignature@{ValidateSignature}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_abf44f4b74fdd268ede95134855f9228c}{handle}} (\$request, Closure \$next,... \$args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_adfc208ed735e0368690e4d3f1ab341ea}{relative}} (\$ignore=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_a23c4a639528bae2dbc86c3ea343f2f9b}{absolute}} (\$ignore=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_afd9ff9b36b91daa7fb721b695789584c}{except}} (\$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_a608312d0279c45bc06758fe908904d2d}{parse\+Arguments}} (array \$args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_a442f628e2139e0335194a8e88fc3bd63}{\$ignore}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_aa926c71bd0dc372329279825602d948d}{\$never\+Validate}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_a23c4a639528bae2dbc86c3ea343f2f9b}\index{ValidateSignature@{ValidateSignature}!absolute@{absolute}}
+\index{absolute@{absolute}!ValidateSignature@{ValidateSignature}}
+\doxysubsubsection{\texorpdfstring{absolute()}{absolute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_a23c4a639528bae2dbc86c3ea343f2f9b} 
+absolute (\begin{DoxyParamCaption}\item[{}]{\$ignore}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Specify that the \doxylink{class_u_r_l}{URL} signature is for an absolute \doxylink{class_u_r_l}{URL}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$ignore} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+class-\/string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_afd9ff9b36b91daa7fb721b695789584c}\index{ValidateSignature@{ValidateSignature}!except@{except}}
+\index{except@{except}!ValidateSignature@{ValidateSignature}}
+\doxysubsubsection{\texorpdfstring{except()}{except()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_afd9ff9b36b91daa7fb721b695789584c} 
+except (\begin{DoxyParamCaption}\item[{}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Indicate that the given parameters should be ignored during signature validation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_abf44f4b74fdd268ede95134855f9228c}\index{ValidateSignature@{ValidateSignature}!handle@{handle}}
+\index{handle@{handle}!ValidateSignature@{ValidateSignature}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_abf44f4b74fdd268ede95134855f9228c} 
+handle (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{Closure}]{\$next}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Handle an incoming request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+array | null & {\em \$args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Exceptions\textbackslash{}\+Invalid\+Signature\+Exception \Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_a608312d0279c45bc06758fe908904d2d}\index{ValidateSignature@{ValidateSignature}!parseArguments@{parseArguments}}
+\index{parseArguments@{parseArguments}!ValidateSignature@{ValidateSignature}}
+\doxysubsubsection{\texorpdfstring{parseArguments()}{parseArguments()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_a608312d0279c45bc06758fe908904d2d} 
+parse\+Arguments (\begin{DoxyParamCaption}\item[{array}]{\$args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the additional arguments given to the middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_adfc208ed735e0368690e4d3f1ab341ea}\index{ValidateSignature@{ValidateSignature}!relative@{relative}}
+\index{relative@{relative}!ValidateSignature@{ValidateSignature}}
+\doxysubsubsection{\texorpdfstring{relative()}{relative()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_adfc208ed735e0368690e4d3f1ab341ea} 
+relative (\begin{DoxyParamCaption}\item[{}]{\$ignore}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Specify that the \doxylink{class_u_r_l}{URL} signature is for a relative \doxylink{class_u_r_l}{URL}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$ignore} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_a442f628e2139e0335194a8e88fc3bd63}\index{ValidateSignature@{ValidateSignature}!\$ignore@{\$ignore}}
+\index{\$ignore@{\$ignore}!ValidateSignature@{ValidateSignature}}
+\doxysubsubsection{\texorpdfstring{\$ignore}{\$ignore}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_a442f628e2139e0335194a8e88fc3bd63} 
+\$ignore\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_aa926c71bd0dc372329279825602d948d}\index{ValidateSignature@{ValidateSignature}!\$neverValidate@{\$neverValidate}}
+\index{\$neverValidate@{\$neverValidate}!ValidateSignature@{ValidateSignature}}
+\doxysubsubsection{\texorpdfstring{\$neverValidate}{\$neverValidate}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_validate_signature_aa926c71bd0dc372329279825602d948d} 
+\$never\+Validate = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Routing/\+Middleware/\mbox{\hyperlink{_validate_signature_8php}{Validate\+Signature.\+php}}\end{DoxyCompactItemize}

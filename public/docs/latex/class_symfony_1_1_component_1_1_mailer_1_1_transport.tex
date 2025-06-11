@@ -1,0 +1,95 @@
+\doxysection{Transport Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport}\index{Transport@{Transport}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_a8a2647cb82572cccf0eb9dafddd3e06b}{\+\_\+\+\_\+construct}} (private iterable \$factories,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_a9bd148be9c19a34c0d81d0715b4e1a57}{from\+Strings}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$dsns)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_aad3f9e121ec950370da072c054fd5f52}{from\+String}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$dsn)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_a44f173033594197530591a45cfd36cb6}{from\+Dsn\+Object}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_dsn}{Dsn}} \$dsn)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_a80ccace0ba56fb0e47dc48ab1ed4c905}{from\+Dsn}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$dsn, ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?Http\+Client\+Interface \$client=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_ae9813a02614176264e3b4f500b6645a5}{from\+Dsns}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$dsns, ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?Http\+Client\+Interface \$client=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_adfaf6773e58063e876c26420c6804cd8}{get\+Default\+Factories}} (?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?Http\+Client\+Interface \$client=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{fabien@symfony.\+com}} 
+
+Konstantin Myakshin \href{mailto:molodchick@gmail.com}{\texttt{molodchick@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_a8a2647cb82572cccf0eb9dafddd3e06b}\index{Transport@{Transport}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Transport@{Transport}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_a8a2647cb82572cccf0eb9dafddd3e06b} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private iterable}]{\$factories}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Transport\+Factory\+Interface\mbox{[}$\,$\mbox{]} & {\em \$factories} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_a80ccace0ba56fb0e47dc48ab1ed4c905}\index{Transport@{Transport}!fromDsn@{fromDsn}}
+\index{fromDsn@{fromDsn}!Transport@{Transport}}
+\doxysubsubsection{\texorpdfstring{fromDsn()}{fromDsn()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_a80ccace0ba56fb0e47dc48ab1ed4c905} 
+from\+Dsn (\begin{DoxyParamCaption}\item[{\# string}]{\$dsn}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}}}]{\$dispatcher}{ = {\ttfamily null}, }\item[{?Http\+Client\+Interface}]{\$client}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_a44f173033594197530591a45cfd36cb6}\index{Transport@{Transport}!fromDsnObject@{fromDsnObject}}
+\index{fromDsnObject@{fromDsnObject}!Transport@{Transport}}
+\doxysubsubsection{\texorpdfstring{fromDsnObject()}{fromDsnObject()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_a44f173033594197530591a45cfd36cb6} 
+from\+Dsn\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_dsn}{Dsn}}}]{\$dsn}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_ae9813a02614176264e3b4f500b6645a5}\index{Transport@{Transport}!fromDsns@{fromDsns}}
+\index{fromDsns@{fromDsns}!Transport@{Transport}}
+\doxysubsubsection{\texorpdfstring{fromDsns()}{fromDsns()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_ae9813a02614176264e3b4f500b6645a5} 
+from\+Dsns (\begin{DoxyParamCaption}\item[{\# array}]{\$dsns}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}}}]{\$dispatcher}{ = {\ttfamily null}, }\item[{?Http\+Client\+Interface}]{\$client}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_aad3f9e121ec950370da072c054fd5f52}\index{Transport@{Transport}!fromString@{fromString}}
+\index{fromString@{fromString}!Transport@{Transport}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_aad3f9e121ec950370da072c054fd5f52} 
+from\+String (\begin{DoxyParamCaption}\item[{\# string}]{\$dsn}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_a9bd148be9c19a34c0d81d0715b4e1a57}\index{Transport@{Transport}!fromStrings@{fromStrings}}
+\index{fromStrings@{fromStrings}!Transport@{Transport}}
+\doxysubsubsection{\texorpdfstring{fromStrings()}{fromStrings()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_a9bd148be9c19a34c0d81d0715b4e1a57} 
+from\+Strings (\begin{DoxyParamCaption}\item[{\# array}]{\$dsns}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_adfaf6773e58063e876c26420c6804cd8}\index{Transport@{Transport}!getDefaultFactories@{getDefaultFactories}}
+\index{getDefaultFactories@{getDefaultFactories}!Transport@{Transport}}
+\doxysubsubsection{\texorpdfstring{getDefaultFactories()}{getDefaultFactories()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_adfaf6773e58063e876c26420c6804cd8} 
+get\+Default\+Factories (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}}}]{\$dispatcher}{ = {\ttfamily null}, }\item[{?Http\+Client\+Interface}]{\$client}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Traversable\texorpdfstring{$<$}{<}int, Transport\+Factory\+Interface\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/mailer/\mbox{\hyperlink{_transport_8php}{Transport.\+php}}\end{DoxyCompactItemize}

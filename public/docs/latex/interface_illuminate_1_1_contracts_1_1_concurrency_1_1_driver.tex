@@ -1,0 +1,45 @@
+\doxysection{Driver Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver}{}\label{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver}\index{Driver@{Driver}}
+Inheritance diagram for Driver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver_a33749a8acca1f2f7fe819f69b7cf989a}{run}} (Closure\texorpdfstring{$\vert$}{|}array \$tasks)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver_a29b484d7ce2444b6af2f78054a465c8f}{defer}} (Closure\texorpdfstring{$\vert$}{|}array \$tasks)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver_a29b484d7ce2444b6af2f78054a465c8f}\index{Driver@{Driver}!defer@{defer}}
+\index{defer@{defer}!Driver@{Driver}}
+\doxysubsubsection{\texorpdfstring{defer()}{defer()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver_a29b484d7ce2444b6af2f78054a465c8f} 
+defer (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}array}]{\$tasks}{}\end{DoxyParamCaption})}
+
+Defer the execution of the given tasks. 
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_fork_driver_a29b484d7ce2444b6af2f78054a465c8f}{Fork\+Driver}}, \mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_process_driver_a29b484d7ce2444b6af2f78054a465c8f}{Process\+Driver}}, and \mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_sync_driver_a29b484d7ce2444b6af2f78054a465c8f}{Sync\+Driver}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver_a33749a8acca1f2f7fe819f69b7cf989a}\index{Driver@{Driver}!run@{run}}
+\index{run@{run}!Driver@{Driver}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_concurrency_1_1_driver_a33749a8acca1f2f7fe819f69b7cf989a} 
+run (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}array}]{\$tasks}{}\end{DoxyParamCaption})}
+
+Run the given tasks concurrently and return an array containing the results. 
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_fork_driver_a33749a8acca1f2f7fe819f69b7cf989a}{Fork\+Driver}}, \mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_process_driver_a33749a8acca1f2f7fe819f69b7cf989a}{Process\+Driver}}, and \mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_sync_driver_a33749a8acca1f2f7fe819f69b7cf989a}{Sync\+Driver}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Concurrency/\mbox{\hyperlink{laravel_2framework_2src_2_illuminate_2_contracts_2_concurrency_2_driver_8php}{Driver.\+php}}\end{DoxyCompactItemize}

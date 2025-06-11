@@ -1,0 +1,32 @@
+\chapter{UPGRADE GUIDE }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e}\index{UPGRADE GUIDE@{UPGRADE GUIDE}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11682}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11682}%
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11683}{}\doxysection{\texorpdfstring{Upgrading from v11.\+x to v12.\+x}{Upgrading from v11.\+x to v12.\+x}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11683}
+
+\begin{DoxyItemize}
+\item See PR \href{https://github.com/yajra/laravel-datatables/pull/3216}{\texttt{https\+://github.\+com/yajra/laravel-\/datatables/pull/3216}}
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11684}{}\doxysection{\texorpdfstring{Upgrading from v9.\+x to v10.\+x}{Upgrading from v9.\+x to v10.\+x}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11684}
+
+\begin{DoxyItemize}
+\item {\ttfamily Api\+Resource\+Data\+Table} support dropped, use {\ttfamily Collection\+Data\+Table} instead.
+\item {\ttfamily query\+Builder()} deprecated method removed, use {\ttfamily query()} instead.
+\item Methods signature were updated to PHP8 syntax, adjust as needed if you extended the package.
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11685}{}\doxysection{\texorpdfstring{Upgrading from v8.\+x to v9.\+x}{Upgrading from v8.\+x to v9.\+x}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11685}
+No breaking changes with only a bump on php version requirements.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11686}{}\doxysection{\texorpdfstring{Upgrading from v7.\+x to v8.\+x}{Upgrading from v7.\+x to v8.\+x}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11686}
+There are breaking changes since \doxylink{class_data_tables}{Data\+Tables} v8.\+x. If you are upgrading from v7.\+x to v8.\+x, please see \href{https://yajrabox.com/docs/laravel-datatables/master/upgrade}{\texttt{upgrade guide}}.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11687}{}\doxysection{\texorpdfstring{Upgrading from v6.\+x to v7.\+x}{Upgrading from v6.\+x to v7.\+x}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11687}
+
+\begin{DoxyItemize}
+\item composer require yajra/laravel-\/datatables-\/oracle
+\item composer require yajra/laravel-\/datatables-\/buttons
+\item php artisan vendor\+:publish --tag=datatables --force
+\item php artisan vendor\+:publish --tag=datatables-\/buttons --force
+\end{DoxyItemize}\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11688}{}\doxysection{\texorpdfstring{Upgrading from v5.\+x to v6.\+x}{Upgrading from v5.\+x to v6.\+x}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2yajra_2laravel-datatables-oracle_2_u_p_g_r_a_d_e_autotoc_md11688}
+
+\begin{DoxyItemize}
+\item Change all occurrences of {\ttfamily yajra\textbackslash{}Datatables} to {\ttfamily \doxylink{namespace_yajra}{Yajra}\textbackslash{}Datatables}. (Use Sublime\textquotesingle{}s find and replace all for faster update).
+\item Remove {\ttfamily Datatables} facade registration.
+\item Temporarily comment out {\ttfamily \doxylink{namespace_yajra}{Yajra}\textbackslash{}Datatables\textbackslash{}Datatables\+Service\+Provider}.
+\item Update package version on your composer.\+json and use {\ttfamily yajra/laravel-\/datatables-\/oracle\+: \texorpdfstring{$\sim$}{\string~}6.0}
+\item Uncomment the provider {\ttfamily \doxylink{namespace_yajra}{Yajra}\textbackslash{}Datatables\textbackslash{}Datatables\+Service\+Provider}. 
+\end{DoxyItemize}

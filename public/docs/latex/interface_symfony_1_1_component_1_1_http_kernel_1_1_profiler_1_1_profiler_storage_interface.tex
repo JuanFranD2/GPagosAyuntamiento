@@ -1,0 +1,93 @@
+\doxysection{Profiler\+Storage\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface}{}\label{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface}\index{ProfilerStorageInterface@{ProfilerStorageInterface}}
+Inheritance diagram for Profiler\+Storage\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_ae487c58fd65696095de7d9e8c89cc12d}{find}} (?string \$ip, ?string \$url, ?int \$limit, ?string \$method, ?int \$start=null, ?int \$end=null, ?string \$status\+Code=null, ?\textbackslash{}Closure \$filter=null)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_a74383e25e66411b32641b0d5c716609e}{read}} (string \$token)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_aea7881699586bacb79b542561f655a05}{write}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profile}{Profile}} \$profile)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_ac400be513972a68ea08ef845d5b16824}{purge}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Profiler\+Storage\+Interface.
+
+This interface exists for historical reasons. The only supported implementation is File\+Profiler\+Storage.
+
+As the profiler must only be used on non-\/production servers, the file storage is more than enough and no other implementations will ever be supported. 
+
+\label{doc-func-members}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_ae487c58fd65696095de7d9e8c89cc12d}\index{ProfilerStorageInterface@{ProfilerStorageInterface}!find@{find}}
+\index{find@{find}!ProfilerStorageInterface@{ProfilerStorageInterface}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_ae487c58fd65696095de7d9e8c89cc12d} 
+find (\begin{DoxyParamCaption}\item[{?string}]{\$ip}{, }\item[{?string}]{\$url}{, }\item[{?int}]{\$limit}{, }\item[{?string}]{\$method}{, }\item[{?int}]{\$start}{ = {\ttfamily null}, }\item[{?int}]{\$end}{ = {\ttfamily null}, }\item[{?string}]{\$status\+Code}{ = {\ttfamily null}, }\item[{?\textbackslash{}Closure}]{\$filter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Finds profiler tokens for the given criteria.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$limit} & The maximum number of tokens to return \\
+\hline
+int | null & {\em \$start} & The start date to search from \\
+\hline
+int | null & {\em \$end} & The end date to search to \\
+\hline
+string | null & {\em \$status\+Code} & The response status code \\
+\hline
+\textbackslash{}\+Closure | null & {\em \$filter} & A filter to apply on the list of tokens \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_file_profiler_storage_ae487c58fd65696095de7d9e8c89cc12d}{File\+Profiler\+Storage}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_ac400be513972a68ea08ef845d5b16824}\index{ProfilerStorageInterface@{ProfilerStorageInterface}!purge@{purge}}
+\index{purge@{purge}!ProfilerStorageInterface@{ProfilerStorageInterface}}
+\doxysubsubsection{\texorpdfstring{purge()}{purge()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_ac400be513972a68ea08ef845d5b16824} 
+purge (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Purges all data from the database. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_file_profiler_storage_ac400be513972a68ea08ef845d5b16824}{File\+Profiler\+Storage}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_a74383e25e66411b32641b0d5c716609e}\index{ProfilerStorageInterface@{ProfilerStorageInterface}!read@{read}}
+\index{read@{read}!ProfilerStorageInterface@{ProfilerStorageInterface}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_a74383e25e66411b32641b0d5c716609e} 
+read (\begin{DoxyParamCaption}\item[{string}]{\$token}{}\end{DoxyParamCaption})}
+
+Reads data associated with the given token.
+
+The method returns false if the token does not exist in the storage. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_file_profiler_storage_a74383e25e66411b32641b0d5c716609e}{File\+Profiler\+Storage}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_aea7881699586bacb79b542561f655a05}\index{ProfilerStorageInterface@{ProfilerStorageInterface}!write@{write}}
+\index{write@{write}!ProfilerStorageInterface@{ProfilerStorageInterface}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface_aea7881699586bacb79b542561f655a05} 
+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profile}{Profile}}}]{\$profile}{}\end{DoxyParamCaption})}
+
+Saves a Profile. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_file_profiler_storage_aea7881699586bacb79b542561f655a05}{File\+Profiler\+Storage}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/http-\/kernel/\+Profiler/\mbox{\hyperlink{_profiler_storage_interface_8php}{Profiler\+Storage\+Interface.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5/bin/entities.php File Reference}
+\hypertarget{bin_2entities_8php}{}\label{bin_2entities_8php}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/masterminds/html5/bin/entities.php@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/masterminds/html5/bin/entities.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bin_2entities_8php_aa1badefee871f1e321a5aa221df006ad}{\$\+ENTITIES\+\_\+\+URL}} = \textquotesingle{}http\+://www.\+w3.\+org/TR/2012/CR-\/html5-\/20121217/entities.\+json\textquotesingle{}
+\item 
+\mbox{\hyperlink{bin_2entities_8php_ab6c08f2335783abfa1bce5d22fb3466e}{\$payload}} = file\+\_\+get\+\_\+contents(\$ENTITIES\+\_\+\+URL)
+\item 
+\mbox{\hyperlink{bin_2entities_8php_acedd13b51401130848ce18f4d5c52605}{\$json}} = json\+\_\+decode(\$payload)
+\item 
+\mbox{\hyperlink{bin_2entities_8php_ae8876a14058f368335baccf35af4a22b}{\$table}} = array()
+\item 
+\mbox{\hyperlink{bin_2entities_8php_a97ef45bedec26e5711ce3f0d4b4a29eb}{foreach}} ( \$json as \$name=$>$ \$obj)
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{bin_2entities_8php_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{bin_2entities_8php_aa1badefee871f1e321a5aa221df006ad}\index{entities.php@{entities.php}!\$ENTITIES\_URL@{\$ENTITIES\_URL}}
+\index{\$ENTITIES\_URL@{\$ENTITIES\_URL}!entities.php@{entities.php}}
+\doxysubsubsection{\texorpdfstring{\$ENTITIES\_URL}{\$ENTITIES\_URL}}
+{\footnotesize\ttfamily \label{bin_2entities_8php_aa1badefee871f1e321a5aa221df006ad} 
+\$ENTITIES\+\_\+\+URL = \textquotesingle{}http\+://www.\+w3.\+org/TR/2012/CR-\/html5-\/20121217/entities.\+json\textquotesingle{}}
+
+Fetch the entities.\+json file and convert to PHP datastructure. \Hypertarget{bin_2entities_8php_acedd13b51401130848ce18f4d5c52605}\index{entities.php@{entities.php}!\$json@{\$json}}
+\index{\$json@{\$json}!entities.php@{entities.php}}
+\doxysubsubsection{\texorpdfstring{\$json}{\$json}}
+{\footnotesize\ttfamily \label{bin_2entities_8php_acedd13b51401130848ce18f4d5c52605} 
+\$json = json\+\_\+decode(\$payload)}
+
+\Hypertarget{bin_2entities_8php_ab6c08f2335783abfa1bce5d22fb3466e}\index{entities.php@{entities.php}!\$payload@{\$payload}}
+\index{\$payload@{\$payload}!entities.php@{entities.php}}
+\doxysubsubsection{\texorpdfstring{\$payload}{\$payload}}
+{\footnotesize\ttfamily \label{bin_2entities_8php_ab6c08f2335783abfa1bce5d22fb3466e} 
+\$payload = file\+\_\+get\+\_\+contents(\$ENTITIES\+\_\+\+URL)}
+
+\Hypertarget{bin_2entities_8php_ae8876a14058f368335baccf35af4a22b}\index{entities.php@{entities.php}!\$table@{\$table}}
+\index{\$table@{\$table}!entities.php@{entities.php}}
+\doxysubsubsection{\texorpdfstring{\$table}{\$table}}
+{\footnotesize\ttfamily \label{bin_2entities_8php_ae8876a14058f368335baccf35af4a22b} 
+\$table = array()}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2vendor_2filp_2whoops_2src_2_whoops_2_handler_2_pretty_page_handler_8php-example}{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/filp/whoops/src/\+Whoops/\+Handler/\+Pretty\+Page\+Handler.\+php}}.\end{Desc}
+\Hypertarget{bin_2entities_8php_a97ef45bedec26e5711ce3f0d4b4a29eb}\index{entities.php@{entities.php}!foreach@{foreach}}
+\index{foreach@{foreach}!entities.php@{entities.php}}
+\doxysubsubsection{\texorpdfstring{foreach}{foreach}}
+{\footnotesize\ttfamily \label{bin_2entities_8php_a97ef45bedec26e5711ce3f0d4b4a29eb} 
+foreach (\begin{DoxyParamCaption}\item[{}]{\$json as}{, }\item[{}]{\$obj}{}\end{DoxyParamCaption})}
+
+Methods commonly used in migrations
+
+@method Fluent after(string \$column) Add the after modifier @method Fluent charset(string \$charset) Add the character set modifier @method Fluent collation(string \$collation) Add the collation modifier @method Fluent comment(string \$comment) Add comment @method Fluent default(\$value) Add the default modifier @method Fluent first() Select first row @method Fluent index(string \$name = null) Add the in dex clause @method Fluent on(string \$table) {\ttfamily on} of a foreign key @method Fluent on\+Delete(string \$action) {\ttfamily on delete} of a foreign key @method Fluent on\+Update(string \$action) {\ttfamily on update} of a foreign key @method Fluent primary() Add the primary key modifier @method Fluent references(string \$column) {\ttfamily references} of a foreign key @method Fluent nullable(bool \$value = true) Add the nullable modifier @method Fluent unique(string \$name = null) Add unique index clause @method Fluent unsigned() Add the unsigned modifier @method Fluent use\+Current() Add the default timestamp value @method Fluent change() Add the change modifier
+
+@method \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$\vert$}{|}\texorpdfstring{$<$}{<}?=\$factory-\/\texorpdfstring{$>$}{>}get\+Short\+Name()?\texorpdfstring{$>$}{>}\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}\texorpdfstring{$<$}{<}?=\$factory-\/\texorpdfstring{$>$}{>}get\+Short\+Name()?\texorpdfstring{$>$}{>} create(\$attributes = \mbox{[}\mbox{]}) @method \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$\vert$}{|}\texorpdfstring{$<$}{<}?=\$factory-\/\texorpdfstring{$>$}{>}get\+Short\+Name()?\texorpdfstring{$>$}{>}\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}\texorpdfstring{$<$}{<}?=\$factory-\/\texorpdfstring{$>$}{>}get\+Short\+Name()?\texorpdfstring{$>$}{>} make(\$attributes = \mbox{[}\mbox{]})

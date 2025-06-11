@@ -1,0 +1,3149 @@
+\doxysection{Cpdf Class Reference}
+\hypertarget{class_dompdf_1_1_cpdf}{}\label{class_dompdf_1_1_cpdf}\index{Cpdf@{Cpdf}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a9339808b7fc3aef00800d4c1f2d39bbe}{\+\_\+\+\_\+construct}} (\$page\+Size=\mbox{[}0, 0, 612, 792\mbox{]}, \$is\+Unicode=false, \$fontcache=\textquotesingle{}\textquotesingle{}, \$tmp=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aec38a43d56086ef67b759c86049c257c}{enable\+Pdf\+ACompliance}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a1582eb40905135efb83a5ea5560cacef}{get\+Xmp\+Metadata}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a7f9759e45ec3fd2f47542de7d097d9b1}{parse\+Pdf\+Date}} (\$date)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a7c89968388709b624565f4cd0faaa167}{md5\+\_\+16}} (\$string)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a593c690c9c88459001b8fee0c1e02b60}{encrypt\+Init}} (\$id)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab9ace0c7741193acf9b665f2cac0139e}{ARC4\+\_\+init}} (\$key=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a1720331693e5f6fa093806517a79f0d6}{ARC4}} (\$text)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a1f48bf2f91aec0960acebcb01548dfb0}{add\+Link}} (\$url, \$x0, \$y0, \$x1, \$y1)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aa47771ad964538a2009e960582ef4439}{add\+Internal\+Link}} (\$label, \$x0, \$y0, \$x1, \$y1)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a6eee7efa56a30adfb8525f248e3d3426}{set\+Encryption}} (\$user\+Pass=\textquotesingle{}\textquotesingle{}, \$owner\+Pass=\textquotesingle{}\textquotesingle{}, \$pc=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a97cd4a04c03ffbf0f9f1dde0670f25c0}{check\+All\+Here}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a11912f60bf65a56caedcba07e395aa15}{output}} (\$debug=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a44e446ee5666ede8d7a3209454c4c11b}{select\+Font}} (\$font\+Name, \$encoding=\textquotesingle{}\textquotesingle{}, \$set=true, \$is\+Subsetting=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aacf9523fe9f5c860731020f7a49778a1}{get\+First\+Page\+Id}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a259abff283d284d3efd59aa538bcf125}{set\+Color}} (\$color, \$force=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a2afaddfc6102722a50d8fe56448390df}{set\+Fill\+Rule}} (\$fill\+Rule)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a64bf226cc571c104b0ac149c8e395b43}{set\+Stroke\+Color}} (\$color, \$force=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a5755959c6c62c64703354c936797807f}{set\+Graphics\+State}} (\$parameters)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a57e2d8f6f9947ff84889d8ff49a74018}{set\+Line\+Transparency}} (string \$mode, float \$opacity)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a4414d93166998b3586e0b4c7581f6944}{set\+Fill\+Transparency}} (string \$mode, float \$opacity)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a8879dbe3cfa172a288ee021aff39f835}{line}} (\$x1, \$y1, \$x2, \$y2, \$\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac87e5425c36348c797879ba1229d1590}{stroke}}=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a13c3a2e45741b553d81496482a6a9579}{curve}} (\$x0, \$y0, \$x1, \$y1, \$x2, \$y2, \$x3, \$y3)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a01283c9d18d281852c058bd6660d75a8}{part\+Ellipse}} (\$x0, \$y0, \$astart, \$afinish, \$r1, \$r2=0, \$angle=0, \$n\+Seg=8)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a7d14967703e2beb4591ea33187d71f83}{filled\+Ellipse}} (\$x0, \$y0, \$r1, \$r2=0, \$angle=0, \$n\+Seg=8, \$astart=0, \$afinish=360)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a2f2b58bb4485bf68296b7cc73993f857}{line\+To}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aa0363a3450ef2e1730acd5275ab9fab2}{move\+To}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a6539201e652b37b57b3fdcc9107c7876}{curve\+To}} (\$x1, \$y1, \$x2, \$y2, \$x3, \$y3)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab8e8e613d57a7c9739e0bfb01bff3d05}{quad\+To}} (\$cpx, \$cpy, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a6de1c6cb0c05bf8ec30edf2a8031a65f}{close\+Path}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a796b5dc3a5b1a9e260740e1b22a54da4}{end\+Path}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a81e6373bd9bf1fad040a3bac1df7c217}{ellipse}} ( \$x0, \$y0, \$r1, \$r2=0, \$angle=0, \$n\+Seg=8, \$astart=0, \$afinish=360, \$close=true, \$\mbox{\hyperlink{class_dompdf_1_1_cpdf_a3b7d92e90d5b153fbec937f0f8fab087}{fill}}=false, \$\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac87e5425c36348c797879ba1229d1590}{stroke}}=true, \$incomplete=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a8e3b86cfcb5e8d0ad44fa5196f40a6b1}{set\+Line\+Style}} (\$width=1, \$cap=\textquotesingle{}\textquotesingle{}, \$join=\textquotesingle{}\textquotesingle{}, \$dash=\textquotesingle{}\textquotesingle{}, \$phase=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a52085b72db32063ac532f423335b406b}{polygon}} (array \$p, bool \$\mbox{\hyperlink{class_dompdf_1_1_cpdf_a3b7d92e90d5b153fbec937f0f8fab087}{fill}}=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a519df1355cd54eb52caa42650c7fcc2e}{filled\+Rectangle}} (\$x1, \$y1, \$width, \$height)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_adc6135070daab0159a4c75d04ebbc8ac}{rectangle}} (\$x1, \$y1, \$width, \$height)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab896f509967f800c71c48eeb18b0ecb5}{rect}} (\$x1, \$y1, \$width, \$height)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac87e5425c36348c797879ba1229d1590}{stroke}} (bool \$close=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a3b7d92e90d5b153fbec937f0f8fab087}{fill}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a5edee7923bcacc3ec11bd5d9aaa2abaa}{fill\+Stroke}} (bool \$close=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ae1fd6bd6121907d56830e3c40ae97f94}{add\+XObject}} (\$subtype, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$w, \$h)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ad19b63e387f95354178db9416898d21d}{set\+XObject\+Resource}} (\$num\+XObject, \$type, \$options)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_acfaf491bf5026c80df8a2fc0bda25406}{add\+Signature}} (\$signcert, \$privkey, \$password=\textquotesingle{}\textquotesingle{}, \$name=null, \$location=null, \$reason=null, \$contactinfo=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a13aba6f22438b42d1a10b18a5c6c350f}{add\+Form\+Field}} (\$type, \$name, \$x0, \$y0, \$x1, \$y1, \$ff=0, \$size=10.\+0, \$color=\mbox{[}0, 0, 0\mbox{]})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a072a24e53f9a8248b828c2ddc3c4cdde}{set\+Form\+Field\+Value}} (\$num\+Field\+Obj, \$value)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a42e3cdc73ecefdc517a9c81e2f18649e}{set\+Form\+Field\+Ref\+Value}} (\$num\+Field\+Obj, \$num\+Obj)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ae79b0521307af1121094b6a1f305fd19}{set\+Form\+Field\+Appearance}} (\$num\+Field\+Obj, \$normal\+Num\+Obj, \$rollover\+Num\+Obj=null, \$down\+Num\+Obj=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ae48b7849e6af92f18a843661e6cfa764}{set\+Form\+Field\+Opt}} (\$num\+Field\+Obj, \$value)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a39b862bd70a3bc6d965d89feff7d1597}{add\+Form}} (\$sig\+Flags=0, \$need\+Appearances=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_afc8a3c62679cf00ade9f15fb2a6d6132}{save}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aa1371f22826cf8cde4454c9b467203d0}{restore}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_acaccc740b471225a74b5989691baf8ff}{clipping\+Rectangle}} (\$x1, \$y1, \$width, \$height)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab852e1b0de7dfb61b8df8df121247191}{clipping\+Rectangle\+Rounded}} (\$x1, \$y1, \$w, \$h, \$r\+TL, \$r\+TR, \$r\+BR, \$r\+BL)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab90e000c54fb6b6d6e30ecd4eca80f4c}{clipping\+Polygon}} (array \$p)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac0994e382e3f750be990baf16cb7323e}{clipping\+End}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a3f8146f76d174fe1a821b8c5b02b1d96}{scale}} (\$s\+\_\+x, \$s\+\_\+y, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ae22e669515581ac9c12f06a3e520176f}{translate}} (\$t\+\_\+x, \$t\+\_\+y)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a803a40b114205bdb06f5bbf8d9b782aa}{rotate}} (\$angle, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a6eb40b5734385e55c791a8f39ad4f4ae}{skew}} (\$angle\+\_\+x, \$angle\+\_\+y, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a369e1b8cc957db1dda751dcba04d1671}{transform}} (\$tm)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ae150a1dceeb483a42acaedbe73ccd692}{new\+Page}} (\$insert=0, \$id=0, \$pos=\textquotesingle{}after\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aab9cb3c97f4d2cfafb89a0d28d990ea4}{stream}} (\$filename="{}document.\+pdf"{}, \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac5bee4328e6e4561108912d8a8b61ad0}{get\+Font\+Height}} (float \$size)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a9832655979d33572f6d8aaf2a91ea737}{get\+Font\+XHeight}} (float \$size)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac97148227211b7e6999b5e6a4c801d8b}{get\+Font\+Descender}} (float \$size)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_adfe452ed54815eb26ce88be523a9b1af}{filter\+Text}} (\$text, \$bom=true, \$convert\+\_\+encoding=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a66c324491b9976c400f5b3657de21cd8}{utf8to\+Code\+Points\+Array}} (\&\$text)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a17da58551de89b7c2fe38121cb273d5a}{utf8to\+Utf16\+BE}} (\&\$text, \$bom=true)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a622349ca5b0a6671cf1fe89245f70765}{to\+Upper}} (\$matches)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a22e23853728adfb051927f0768eef8a1}{concat\+Matches}} (\$matches)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aea979091e712a6b75ccbac2c54178858}{register\+Text}} (\$font, \$text)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a1699f6622b7e80d7f2d29a2d1341fc65}{add\+Text}} (\$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$size, \$text, \$angle=0, \$word\+Space\+Adjust=0, \$char\+Space\+Adjust=0, \$small\+Caps=false)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a48df7893d719bc8eaffa0ff9a0d1c276}{get\+Text\+Width}} (float \$size, string \$text, float \$word\+Spacing=0.\+0, float \$char\+Spacing=0.\+0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a854f2a9d1250c69b6c2243d5175ddd83}{save\+State}} (\$page\+End=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a2f42f38b51682f8457ee605bb3029dc4}{restore\+State}} (\$page\+End=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aa4a5e13c4e4e38cab679bef2100f5a1b}{open\+Object}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a42c738c855a15be14e5fe6b07834a6c5}{reopen\+Object}} (\$id)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_afab1d53fba022d6a3cfa2c7ce3168106}{close\+Object}} ()
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ae592038df692dd6d0cfca2f781e6b0ae}{stop\+Object}} (\$id)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a61fb160b67eb6fae0fa444ba22ecb5e0}{add\+Object}} (\$id, \$options=\textquotesingle{}add\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab4ede6772ca20a1afbc3e8bbc154fdaa}{serialize\+Object}} (\$id)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aad9f863b38dc4ab4d36b4d273f1f8d15}{restore\+Serialized\+Object}} (\$obj)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a4fc65e005446264eb627648f69e8be17}{add\+Embedded\+File}} (string \$filepath, string \$embedded\+Filename, string \$description)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aa312764d5236be9b883717b3ba7f239e}{add\+Info}} (\$label, string \$value="{}"{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_abfa522165e81ef739cd49cf26ffab7ed}{set\+Preferences}} (\$label, \$value=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ae2ae4ed4517106863cf774e072c7e54a}{image\+\_\+iscached}} (\$imgname)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a18c0683280fb6964fb9d388e5b342fa3}{add\+Image\+Png}} (\&\$img, \$file, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$w=0.\+0, \$h=0.\+0, \$is\+\_\+mask=false, \$mask=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a14d94ee9d3ce15f6f24b0b8950acf26a}{add\+Png\+From\+File}} (\$file, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$w=0, \$h=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a25ff96c65df81cad8de6e71d9e636e06}{add\+Svg\+From\+File}} (\$file, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$w=0, \$h=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab15ded089585e66ad9c1af71174f2f28}{add\+Png\+From\+Buf}} (\&\$data, \$file, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$w=0.\+0, \$h=0.\+0, \$is\+\_\+mask=false, \$mask=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ad14d18b56e5418e5938c36e16aba551d}{add\+Jpeg\+From\+File}} (\$img, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$w=0, \$h=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_af01751de7cdbbc4b7a2eea6a20cd547b}{open\+Here}} (\$style, \$a=0, \$b=0, \$c=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a6d807bc023cc11d846b6c4eef1ddb057}{add\+Javascript}} (\$code)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aaaf728b2907f43d773302554f8b8448e}{add\+Destination}} (\$label, \$style, \$a=0, \$b=0, \$c=0)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a5ddaeab8f233dcdc13d1f3f13fa53367}{set\+Font\+Family}} (\$family, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a0fe60161c19f81f49f76a2dcb95d48e4}{add\+Message}} (\$message)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a2b030911f9e13bcb79cf4ec5c7fda100}{transaction}} (\$action)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a74d4e108b302699401c215c4c5079bcb}{PDF\+\_\+\+VERSION}} = \textquotesingle{}1.\+7\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a97a8f04b8a11cc4219184e4c3f90e62b}{ACROFORM\+\_\+\+SIG\+\_\+\+SIGNATURESEXISTS}} = 0x0001
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_ae37164a689c1ab7963f7a77103183c54}{ACROFORM\+\_\+\+SIG\+\_\+\+APPENDONLY}} = 0x0002
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a42f88f16ad8d5b78e7069a5a163ad87a}{ACROFORM\+\_\+\+FIELD\+\_\+\+BUTTON}} = \textquotesingle{}Btn\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_aba5d8c4f3eb5b211a6c6ad2aabc28aa8}{ACROFORM\+\_\+\+FIELD\+\_\+\+TEXT}} = \textquotesingle{}Tx\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_ae2aad07f2d11aa07168a40b4bb0a0ece}{ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE}} = \textquotesingle{}Ch\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_aea4b6210feae02a81e66a8b8d180c078}{ACROFORM\+\_\+\+FIELD\+\_\+\+SIG}} = \textquotesingle{}Sig\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a715654cd08ba072bf1fb99d22bce8eb1}{ACROFORM\+\_\+\+FIELD\+\_\+\+READONLY}} = 0x0001
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a0d4cc64075f7ec2fe124d517957c05fd}{ACROFORM\+\_\+\+FIELD\+\_\+\+REQUIRED}} = 0x0002
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a9ceed06bbb3346631b8981ca8d09dca8}{ACROFORM\+\_\+\+FIELD\+\_\+\+TEXT\+\_\+\+MULTILINE}} = 0x1000
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a33de145a5eb3f10d9d31fc74d93a724d}{ACROFORM\+\_\+\+FIELD\+\_\+\+TEXT\+\_\+\+PASSWORD}} = 0x2000
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a6c03fa60f3934dd3816ce0ac073e0330}{ACROFORM\+\_\+\+FIELD\+\_\+\+TEXT\+\_\+\+RICHTEXT}} = 0x10000
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_ae56b7c6490607af28bd2655f395fce54}{ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE\+\_\+\+COMBO}} = 0x20000
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a04e740e5bf5a6665475b34faeb8767af}{ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE\+\_\+\+EDIT}} = 0x40000
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a13cf7fcfc4c44bdf0b787d1773337d5b}{ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE\+\_\+\+SORT}} = 0x80000
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_a80be0e791d227bca9e7b22492069168f}{ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE\+\_\+\+MULTISELECT}} = 0x200000
+\item 
+const \mbox{\hyperlink{class_dompdf_1_1_cpdf_abc456ed14f00daf625708a14212bf200}{XOBJECT\+\_\+\+SUBTYPE\+\_\+\+FORM}} = \textquotesingle{}Form\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a46f3313956a33faef75586addfc256a3}{\$num\+Obj}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a255f6b6db4c45b1418e9c15cf4e2bcdd}{\$objects}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab73b03ba4d8210e1551ba6b4277c4735}{\$catalog\+Id}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a8093e35b63e573fa051c87b906b17969}{\$acro\+Form\+Id}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a48a43f46bf4bee8826e907215bba5101}{\$signature\+Max\+Len}} = 5000
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab493fa11366dcceac135cc746f1b5f52}{\$pdfa}} = false
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac330cfe6dbddd6c5d814439f97fbaf69}{\$fonts}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a61371c41b5e0d82e99560a335ed05b48}{\$default\+Font}} = \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/fonts/Helvetica.\+afm\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a2d5823c32698fc3761bb1254a0282b5e}{\$current\+Font}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_afe5d6644791e89099b37ce806592903a}{\$current\+Base\+Font}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a40d5e19fffea92115faffb8a58d5c6d6}{\$current\+Font\+Num}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a640e9f9a022022672baf0926e7b079ef}{\$current\+Node}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_af64cef3e8e7fe1dc79ff3293c12fb4cb}{\$current\+Page}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a39303dffdd053136f221e31bb18ccd6b}{\$current\+Contents}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a78cfbb4859f40b0d205596bf7542bc10}{\$num\+Fonts}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a77e2eb25014537a0f5d248d29f67bd5e}{\$current\+Color}} = null
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a170ef49333e0a3724d803d8713bd7c07}{\$current\+Stroke\+Color}} = null
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ad1a7daa1dc8698bae1dfe1378320974f}{\$fill\+Rule}} = "{}nonzero"{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a6e74a726b7c21bfd7d927955ae767188}{\$current\+Line\+Style}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a6916d9e0c8322fde29e1fe1d6f9f11e3}{\$current\+Line\+Transparency}} = \mbox{[}"{}mode"{} =$>$ "{}Normal"{}, "{}opacity"{} =$>$ 1.\+0\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac21b71478fb73338415a94ef3d0e6aaa}{\$current\+Fill\+Transparency}} = \mbox{[}"{}mode"{} =$>$ "{}Normal"{}, "{}opacity"{} =$>$ 1.\+0\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_af19bb712a3b92c4f0fbcdf1add3f0bdd}{\$state\+Stack}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a45de2d60d68c9dcdd4aff475303520f3}{\$n\+State\+Stack}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab340b7e706b6bd02b4f70ff942898102}{\$num\+Pages}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a6a0169b26b5301f906b1ec481b3f1eea}{\$stack}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a9de4b5d2209348f2e4479bdfbaa81c6a}{\$n\+Stack}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aedb3e9d19ff1ebfaa5added699a9671d}{\$loose\+Objects}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a8f094bbb6c6f5db373d4b4e3c4ed0595}{\$add\+Loose\+Objects}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ae60fb73fb55ea5cf46351c519f2e16fd}{\$info\+Object}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_afa03e46e7e7be49ab81a9a3599af2871}{\$num\+Images}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a011800c63ece4cbbfa77136a20607023}{\$options}} = \mbox{[}\textquotesingle{}compression\textquotesingle{} =$>$ true\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a6f59caca64a9cd3619591fde1bfd443f}{\$first\+Page\+Id}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a39e9c2190f8061439c35f7d2a8240318}{\$procset\+Object\+Id}}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a3632d1cfb98c70776f2bf64fefeb1292}{\$font\+Families}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a798ffce5b718eccf01f94b72cda78d61}{\$fontcache}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a7ee8cb181f1dadb306bf15c59ac66f17}{\$fontcache\+Version}} = 6
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a57024d47cf8348153f5fdda16f8fefa9}{\$tmp}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac7a9fec297babb986a440fa02032be15}{\$current\+Text\+State}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a21a183f927a6d243fe6b4ba3a6c4d4c8}{\$messages}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a8b0d646c9b1820820ea01f0db2c22339}{\$arc4}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a7da30b74291ccb1aa4f0368140a36018}{\$arc4\+\_\+objnum}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aaf05a37af8d9a97b51844158c9f04981}{\$file\+Identifier}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a4ac37790931818c0ac730fa8b4e58760}{\$encrypted}} = false
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a730bbd8ecf60f264748611532e4c6f01}{\$encryption\+Key}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_abc7c2ac0d93d22f71221e8b60512c860}{\$callback}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a894ee84a4cce4aed0afd68456ef6685d}{\$n\+Callback}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a122da4689a596dd289cea157977eb02c}{\$destinations}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aeb2b7ad87c29b9898f9f05782a5de508}{\$checkpoint}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a67f53d58afab936242ffccece3ab261d}{\$imagelist}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a51103a34cc7e66ed10403b3a0e3022f2}{\$is\+Unicode}} = false
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a687855b3cefd1fc1232e0f457ff7e41b}{\$javascript}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a2432dc753eab2f8786f3b6c97cfdca59}{o\+\_\+destination}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a37a4d12fd4fe6536921eabccfc55bae3}{o\+\_\+viewer\+Preferences}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ad5269fc1648ba039f9ab1d372b89aa55}{o\+\_\+catalog}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a81c56aa681c1462c1a2d29a4b164e1c9}{o\+\_\+pages}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a5e6a4d8146f8dc8424c01107deae2363}{o\+\_\+outlines}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a607aaa24e2d8b46f8c387d0d5144cd9a}{o\+\_\+font}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a68cfb8214ff680a7760b18e47ffb0782}{get\+Font\+Subsetting\+Tag}} (array \$font)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a54b57fd29336ebaf37fcca3fdbb77f92}{o\+\_\+to\+Unicode}} (\$id, \$action)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab2907958d0d7da9764c61510b32a3e76}{o\+\_\+font\+Descriptor}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aedda68b5afe6900c14375f2fe4c63bd5}{o\+\_\+font\+Encoding}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ad27b62a60a069b84b594aeff1da3e1e3}{o\+\_\+font\+Descendent\+CID}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a39f0173b287ab5bc85c8e6115e7994eb}{o\+\_\+cid\+System\+Info}} (\$id, \$action)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a238ca9e6d9d63c6dd7112f9a05ddc0a4}{o\+\_\+font\+GIDto\+CIDMap}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a8c957eb8366fe5b89727c7ec68700afc}{o\+\_\+procset}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a1b15589e09e12f423f87d8ba3b1b1be4}{o\+\_\+info}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab01e4e5dac06bdd7480879a215fe552d}{o\+\_\+action}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aef859651290d314f10fbb2aee0a3785b}{o\+\_\+annotation}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aa8f8c9faae6d2ef10e350675dde97f8d}{o\+\_\+page}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac8729d6b851615394c82bda391f37adb}{o\+\_\+contents}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aca31fe6be06c78168f5bc69eca0d8bbd}{o\+\_\+embedjs}} (\$id, \$action)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac22b4d92f62948ccdd11ab9dc703cd8e}{o\+\_\+javascript}} (\$id, \$action, \$code=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac2199fd5ae0ff08a49c57dc48cea87be}{o\+\_\+image}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_abb3f58247bbd6725b1cb5f08111557c2}{o\+\_\+ext\+GState}} (\$id, \$action, \$options="{}"{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac25c37e6f4649b70115ef689aecf7a52}{o\+\_\+xobject}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a4949167f91cfd39e5edb0cd69c522e40}{o\+\_\+acroform}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aa87cece0296432c4a89472bd2f74bba7}{o\+\_\+field}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a43eb975d14662a0b1757795f78b2487e}{o\+\_\+sig}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_af77067434721b4808184e6d7793fa85c}{o\+\_\+encryption}} (\$id, \$action, \$options=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_adef3820fc35901351de11937edcf7bbe}{o\+\_\+indirect\+\_\+references}} (\$id, \$action, \$options=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ac7da06677b8f1f2731975fb362f48f83}{o\+\_\+names}} (\$id, \$action, \$options=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_ab9dfebe838a344a5592f2d0e41532da0}{o\+\_\+embedded\+\_\+file\+\_\+dictionary}} (\$id, \$action, \$options=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aedd02043092a5a2eca55b654be0f9e9a}{o\+\_\+embedded\+\_\+file}} (\$id, \$action, \$options=null)
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a0232e3fa5ed25ae1b1beb2e2bf794ce6}{add\+Image\+Png\+Alpha}} (\$file, \$x, \$\mbox{\hyperlink{x002_8php_a7a2fd462299cb42cc704292b467fa1b4}{y}}, \$w, \$h, \$byte)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_adb052d1886fe2b84e86ce2f5abc9f950}{\$indirect\+Reference\+Id}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a816911560c29f630f9b00e4c4a76bab3}{\$embedded\+Files\+Id}} = 0
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a040e3998d7ae60322cc70bbd29309c39}{\$image\+Alpha\+List}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_aa8506f246e18dc1aaf5df3207f012480}{\$image\+Cache}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a1b53431babd4e0a5bcf8b0a804ebac66}{\$compression\+Ready}} = false
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a11075cb7427076a72b4c5e8cd4f0ced3}{\$current\+Page\+Size}} = \mbox{[}"{}width"{} =$>$ 0, "{}height"{} =$>$ 0\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_acd324dd0d2db81d0ca364b9d11420380}{\$string\+Subsets}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_dompdf_1_1_cpdf_a09d30d6f7abcb195fd52f32cef227fc5}{\$byte\+Range}} = array()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_cpdf_a2536fb78212dd93e166c5db69f3d74f9}{\$target\+Encoding}} = \textquotesingle{}Windows-\/1252\textquotesingle{}
+\item 
+static \mbox{\hyperlink{class_dompdf_1_1_cpdf_a4fc9636c1c1a8d288a2e65623851e603}{\$core\+Fonts}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_dompdf_1_1_cpdf_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dompdf_1_1_cpdf_a9339808b7fc3aef00800d4c1f2d39bbe}\index{Cpdf@{Cpdf}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a9339808b7fc3aef00800d4c1f2d39bbe} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$page\+Size}{ = {\ttfamily \mbox{[}0,~0,~612,~792\mbox{]}}, }\item[{}]{\$is\+Unicode}{ = {\ttfamily false}, }\item[{}]{\$fontcache}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$tmp}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Class constructor This will start a new document
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$page\+Size} & Array of 4 numbers, defining the bottom left and upper right corner of the page. first two are normally zero. \\
+\hline
+boolean & {\em \$is\+Unicode} & Whether text will be treated as Unicode or not. \\
+\hline
+string & {\em \$fontcache} & The font cache folder \\
+\hline
+string & {\em \$tmp} & The temporary folder \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a421831a265621325e1fdd19aace0c758}\index{Cpdf@{Cpdf}!\_\_destruct@{\_\_destruct}}
+\index{\_\_destruct@{\_\_destruct}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\_\_destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a421831a265621325e1fdd19aace0c758} 
+\+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_dompdf_1_1_cpdf_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dompdf_1_1_cpdf_aaaf728b2907f43d773302554f8b8448e}\index{Cpdf@{Cpdf}!addDestination@{addDestination}}
+\index{addDestination@{addDestination}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addDestination()}{addDestination()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aaaf728b2907f43d773302554f8b8448e} 
+add\+Destination (\begin{DoxyParamCaption}\item[{}]{\$label}{, }\item[{}]{\$style}{, }\item[{}]{\$a}{ = {\ttfamily 0}, }\item[{}]{\$b}{ = {\ttfamily 0}, }\item[{}]{\$c}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+create a labelled destination within the document
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$label} & \\
+\hline
+ & {\em \$style} & \\
+\hline
+int & {\em \$a} & \\
+\hline
+int & {\em \$b} & \\
+\hline
+int & {\em \$c} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a4fc65e005446264eb627648f69e8be17}\index{Cpdf@{Cpdf}!addEmbeddedFile@{addEmbeddedFile}}
+\index{addEmbeddedFile@{addEmbeddedFile}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addEmbeddedFile()}{addEmbeddedFile()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a4fc65e005446264eb627648f69e8be17} 
+add\+Embedded\+File (\begin{DoxyParamCaption}\item[{string}]{\$filepath}{, }\item[{string}]{\$embedded\+Filename}{, }\item[{string}]{\$description}{}\end{DoxyParamCaption})}
+
+Embeds a file inside the \doxylink{class_p_d_f}{PDF}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filepath} & path to the file to store inside the \doxylink{class_p_d_f}{PDF} \\
+\hline
+string & {\em \$embedded\+Filename} & the filename displayed in the list of embedded files \\
+\hline
+string & {\em \$description} & a description in the list of embedded files \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a39b862bd70a3bc6d965d89feff7d1597}\index{Cpdf@{Cpdf}!addForm@{addForm}}
+\index{addForm@{addForm}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addForm()}{addForm()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a39b862bd70a3bc6d965d89feff7d1597} 
+add\+Form (\begin{DoxyParamCaption}\item[{}]{\$sig\+Flags}{ = {\ttfamily 0}, }\item[{}]{\$need\+Appearances}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+add form to document
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$sig\+Flags} & \\
+\hline
+boolean & {\em \$need\+Appearances} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a13aba6f22438b42d1a10b18a5c6c350f}\index{Cpdf@{Cpdf}!addFormField@{addFormField}}
+\index{addFormField@{addFormField}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addFormField()}{addFormField()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a13aba6f22438b42d1a10b18a5c6c350f} 
+add\+Form\+Field (\begin{DoxyParamCaption}\item[{}]{\$type}{, }\item[{}]{\$name}{, }\item[{}]{\$x0}{, }\item[{}]{\$y0}{, }\item[{}]{\$x1}{, }\item[{}]{\$y1}{, }\item[{}]{\$ff}{ = {\ttfamily 0}, }\item[{}]{\$size}{ = {\ttfamily 10.0}, }\item[{}]{\$color}{ = {\ttfamily \mbox{[}0,~0,~0\mbox{]}}}\end{DoxyParamCaption})}
+
+add field to form
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & ACROFORM\+\_\+\+FIELD\+\_\+\texorpdfstring{$\ast$}{*} \\
+\hline
+string & {\em \$name} & \\
+\hline
+ & {\em \$x0} & \\
+\hline
+ & {\em \$y0} & \\
+\hline
+ & {\em \$x1} & \\
+\hline
+ & {\em \$y1} & \\
+\hline
+integer & {\em \$ff} & Field Flag ACROFORM\+\_\+\+FIELD\+\_\+\texorpdfstring{$\ast$}{*}\+\_\+\texorpdfstring{$\ast$}{*} \\
+\hline
+float & {\em \$size} & \\
+\hline
+array & {\em \$color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a18c0683280fb6964fb9d388e5b342fa3}\index{Cpdf@{Cpdf}!addImagePng@{addImagePng}}
+\index{addImagePng@{addImagePng}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addImagePng()}{addImagePng()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a18c0683280fb6964fb9d388e5b342fa3} 
+add\+Image\+Png (\begin{DoxyParamCaption}\item[{\&}]{\$img}{, }\item[{}]{\$file}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{, }\item[{}]{\$w}{ = {\ttfamily 0.0}, }\item[{}]{\$h}{ = {\ttfamily 0.0}, }\item[{}]{\$is\+\_\+mask}{ = {\ttfamily false}, }\item[{}]{\$mask}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+add a PNG image into the document, from a GD object this should work with remote files
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Gd\+Image | resource & {\em \$img} & A GD resource \\
+\hline
+string & {\em \$file} & The PNG file \\
+\hline
+float & {\em \$x} & X position \\
+\hline
+float & {\em \$y} & Y position \\
+\hline
+float & {\em \$w} & Width \\
+\hline
+float & {\em \$h} & Height \\
+\hline
+bool & {\em \$is\+\_\+mask} & true if the image is a mask \\
+\hline
+bool & {\em \$mask} & true if the image is masked \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\$is\+\_\+mask \&\& !\$mask\Hypertarget{class_dompdf_1_1_cpdf_a0232e3fa5ed25ae1b1beb2e2bf794ce6}\index{Cpdf@{Cpdf}!addImagePngAlpha@{addImagePngAlpha}}
+\index{addImagePngAlpha@{addImagePngAlpha}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addImagePngAlpha()}{addImagePngAlpha()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a0232e3fa5ed25ae1b1beb2e2bf794ce6} 
+add\+Image\+Png\+Alpha (\begin{DoxyParamCaption}\item[{}]{\$file}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{, }\item[{}]{\$w}{, }\item[{}]{\$h}{, }\item[{}]{\$byte}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$file} & \\
+\hline
+{\em \$x} & \\
+\hline
+{\em \$y} & \\
+\hline
+{\em \$w} & \\
+\hline
+{\em \$h} & \\
+\hline
+{\em \$byte} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_aa312764d5236be9b883717b3ba7f239e}\index{Cpdf@{Cpdf}!addInfo@{addInfo}}
+\index{addInfo@{addInfo}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addInfo()}{addInfo()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aa312764d5236be9b883717b3ba7f239e} 
+add\+Info (\begin{DoxyParamCaption}\item[{}]{\$label}{, }\item[{string}]{\$value}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+Add content to the documents info object
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$label} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_aa47771ad964538a2009e960582ef4439}\index{Cpdf@{Cpdf}!addInternalLink@{addInternalLink}}
+\index{addInternalLink@{addInternalLink}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addInternalLink()}{addInternalLink()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aa47771ad964538a2009e960582ef4439} 
+add\+Internal\+Link (\begin{DoxyParamCaption}\item[{}]{\$label}{, }\item[{}]{\$x0}{, }\item[{}]{\$y0}{, }\item[{}]{\$x1}{, }\item[{}]{\$y1}{}\end{DoxyParamCaption})}
+
+add a link in the document to an internal destination (ie. within the document)
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$label} & \\
+\hline
+{\em \$x0} & \\
+\hline
+{\em \$y0} & \\
+\hline
+{\em \$x1} & \\
+\hline
+{\em \$y1} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a6d807bc023cc11d846b6c4eef1ddb057}\index{Cpdf@{Cpdf}!addJavascript@{addJavascript}}
+\index{addJavascript@{addJavascript}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addJavascript()}{addJavascript()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6d807bc023cc11d846b6c4eef1ddb057} 
+add\+Javascript (\begin{DoxyParamCaption}\item[{}]{\$code}{}\end{DoxyParamCaption})}
+
+Add Java\+Script code to the \doxylink{class_p_d_f}{PDF} document
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ad14d18b56e5418e5938c36e16aba551d}\index{Cpdf@{Cpdf}!addJpegFromFile@{addJpegFromFile}}
+\index{addJpegFromFile@{addJpegFromFile}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addJpegFromFile()}{addJpegFromFile()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ad14d18b56e5418e5938c36e16aba551d} 
+add\+Jpeg\+From\+File (\begin{DoxyParamCaption}\item[{}]{\$img}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{, }\item[{}]{\$w}{ = {\ttfamily 0}, }\item[{}]{\$h}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+add a JPEG image into the document, from a file
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$img} & \\
+\hline
+ & {\em \$x} & \\
+\hline
+ & {\em \$y} & \\
+\hline
+int & {\em \$w} & \\
+\hline
+int & {\em \$h} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a1f48bf2f91aec0960acebcb01548dfb0}\index{Cpdf@{Cpdf}!addLink@{addLink}}
+\index{addLink@{addLink}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addLink()}{addLink()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a1f48bf2f91aec0960acebcb01548dfb0} 
+add\+Link (\begin{DoxyParamCaption}\item[{}]{\$url}{, }\item[{}]{\$x0}{, }\item[{}]{\$y0}{, }\item[{}]{\$x1}{, }\item[{}]{\$y1}{}\end{DoxyParamCaption})}
+
+functions which can be called to adjust or add to the document add a link in the document to an external \doxylink{class_u_r_l}{URL}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$url} & \\
+\hline
+{\em \$x0} & \\
+\hline
+{\em \$y0} & \\
+\hline
+{\em \$x1} & \\
+\hline
+{\em \$y1} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a0fe60161c19f81f49f76a2dcb95d48e4}\index{Cpdf@{Cpdf}!addMessage@{addMessage}}
+\index{addMessage@{addMessage}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addMessage()}{addMessage()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a0fe60161c19f81f49f76a2dcb95d48e4} 
+add\+Message (\begin{DoxyParamCaption}\item[{}]{\$message}{}\end{DoxyParamCaption})}
+
+used to add messages for use in debugging
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$message} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a61fb160b67eb6fae0fa444ba22ecb5e0}\index{Cpdf@{Cpdf}!addObject@{addObject}}
+\index{addObject@{addObject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addObject()}{addObject()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a61fb160b67eb6fae0fa444ba22ecb5e0} 
+add\+Object (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}add\textquotesingle{}}}\end{DoxyParamCaption})}
+
+after an object has been created, it wil only show if it has been added, using this function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ab15ded089585e66ad9c1af71174f2f28}\index{Cpdf@{Cpdf}!addPngFromBuf@{addPngFromBuf}}
+\index{addPngFromBuf@{addPngFromBuf}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addPngFromBuf()}{addPngFromBuf()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab15ded089585e66ad9c1af71174f2f28} 
+add\+Png\+From\+Buf (\begin{DoxyParamCaption}\item[{\&}]{\$data}{, }\item[{}]{\$file}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{, }\item[{}]{\$w}{ = {\ttfamily 0.0}, }\item[{}]{\$h}{ = {\ttfamily 0.0}, }\item[{}]{\$is\+\_\+mask}{ = {\ttfamily false}, }\item[{}]{\$mask}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+add a PNG image into the document, from a memory buffer of the file
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$data} & \\
+\hline
+ & {\em \$file} & \\
+\hline
+ & {\em \$x} & \\
+\hline
+ & {\em \$y} & \\
+\hline
+float & {\em \$w} & \\
+\hline
+float & {\em \$h} & \\
+\hline
+bool & {\em \$is\+\_\+mask} & \\
+\hline
+null & {\em \$mask} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a14d94ee9d3ce15f6f24b0b8950acf26a}\index{Cpdf@{Cpdf}!addPngFromFile@{addPngFromFile}}
+\index{addPngFromFile@{addPngFromFile}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addPngFromFile()}{addPngFromFile()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a14d94ee9d3ce15f6f24b0b8950acf26a} 
+add\+Png\+From\+File (\begin{DoxyParamCaption}\item[{}]{\$file}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{, }\item[{}]{\$w}{ = {\ttfamily 0}, }\item[{}]{\$h}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+add a PNG image into the document, from a file this should work with remote files
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$file} & \\
+\hline
+ & {\em \$x} & \\
+\hline
+ & {\em \$y} & \\
+\hline
+int & {\em \$w} & \\
+\hline
+int & {\em \$h} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_dompdf_1_1_cpdf_acfaf491bf5026c80df8a2fc0bda25406}\index{Cpdf@{Cpdf}!addSignature@{addSignature}}
+\index{addSignature@{addSignature}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addSignature()}{addSignature()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_acfaf491bf5026c80df8a2fc0bda25406} 
+add\+Signature (\begin{DoxyParamCaption}\item[{}]{\$signcert}{, }\item[{}]{\$privkey}{, }\item[{}]{\$password}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$name}{ = {\ttfamily null}, }\item[{}]{\$location}{ = {\ttfamily null}, }\item[{}]{\$reason}{ = {\ttfamily null}, }\item[{}]{\$contactinfo}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+add signature
+
+\$field\+Sig\+Id = \$cpdf-\/\texorpdfstring{$>$}{>}add\+Form\+Field(Cpdf\+::\+ACROFORM\+\_\+\+FIELD\+\_\+\+SIG, \textquotesingle{}Signature1\textquotesingle{}, 0, 0, 0, 0, 0);
+
+\$signature\+Id = \$cpdf-\/\texorpdfstring{$>$}{>}add\+Signature(\mbox{[} \textquotesingle{}signcert\textquotesingle{} =\texorpdfstring{$>$}{>} file\+\_\+get\+\_\+contents(\textquotesingle{}dompdf.\+crt\textquotesingle{}), \textquotesingle{}privkey\textquotesingle{} =\texorpdfstring{$>$}{>} file\+\_\+get\+\_\+contents(\textquotesingle{}dompdf.\+key\textquotesingle{}), \textquotesingle{}password\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}password\textquotesingle{}, \textquotesingle{}name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}Dom\+PDF DEMO\textquotesingle{}, \textquotesingle{}location\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}Home\textquotesingle{}, \textquotesingle{}reason\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}First Form\textquotesingle{}, \textquotesingle{}contactinfo\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}info\textquotesingle{} \mbox{]}); \$cpdf-\/\texorpdfstring{$>$}{>}set\+Form\+Field\+Value(\$field\+Sig\+Id, "{}\$signature\+Id 0 R"{});
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$signcert} & \\
+\hline
+string & {\em \$privkey} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+string | null & {\em \$location} & \\
+\hline
+string | null & {\em \$reason} & \\
+\hline
+string | null & {\em \$contactinfo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a25ff96c65df81cad8de6e71d9e636e06}\index{Cpdf@{Cpdf}!addSvgFromFile@{addSvgFromFile}}
+\index{addSvgFromFile@{addSvgFromFile}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addSvgFromFile()}{addSvgFromFile()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a25ff96c65df81cad8de6e71d9e636e06} 
+add\+Svg\+From\+File (\begin{DoxyParamCaption}\item[{}]{\$file}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{, }\item[{}]{\$w}{ = {\ttfamily 0}, }\item[{}]{\$h}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+add an SVG image into the document from a file
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$file} & \\
+\hline
+ & {\em \$x} & \\
+\hline
+ & {\em \$y} & \\
+\hline
+int & {\em \$w} & \\
+\hline
+int & {\em \$h} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a1699f6622b7e80d7f2d29a2d1341fc65}\index{Cpdf@{Cpdf}!addText@{addText}}
+\index{addText@{addText}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addText()}{addText()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a1699f6622b7e80d7f2d29a2d1341fc65} 
+add\+Text (\begin{DoxyParamCaption}\item[{}]{\$x}{, }\item[{}]{\$y}{, }\item[{}]{\$size}{, }\item[{}]{\$text}{, }\item[{}]{\$angle}{ = {\ttfamily 0}, }\item[{}]{\$word\+Space\+Adjust}{ = {\ttfamily 0}, }\item[{}]{\$char\+Space\+Adjust}{ = {\ttfamily 0}, }\item[{}]{\$small\+Caps}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+add text to the document, at a specified location, size and angle on the page
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x} & \\
+\hline
+float & {\em \$y} & \\
+\hline
+float & {\em \$size} & \\
+\hline
+string & {\em \$text} & \\
+\hline
+float & {\em \$angle} & \\
+\hline
+float & {\em \$word\+Space\+Adjust} & \\
+\hline
+float & {\em \$char\+Space\+Adjust} & \\
+\hline
+bool & {\em \$small\+Caps} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ae1fd6bd6121907d56830e3c40ae97f94}\index{Cpdf@{Cpdf}!addXObject@{addXObject}}
+\index{addXObject@{addXObject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{addXObject()}{addXObject()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae1fd6bd6121907d56830e3c40ae97f94} 
+add\+XObject (\begin{DoxyParamCaption}\item[{}]{\$subtype}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{, }\item[{}]{\$w}{, }\item[{}]{\$h}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$subtype} & \\
+\hline
+integer & {\em \$x} & \\
+\hline
+integer & {\em \$y} & \\
+\hline
+integer & {\em \$w} & \\
+\hline
+integer & {\em \$h} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a1720331693e5f6fa093806517a79f0d6}\index{Cpdf@{Cpdf}!ARC4@{ARC4}}
+\index{ARC4@{ARC4}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ARC4()}{ARC4()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a1720331693e5f6fa093806517a79f0d6} 
+ARC4 (\begin{DoxyParamCaption}\item[{}]{\$text}{}\end{DoxyParamCaption})}
+
+ARC4 encrypt a text string
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ab9ace0c7741193acf9b665f2cac0139e}\index{Cpdf@{Cpdf}!ARC4\_init@{ARC4\_init}}
+\index{ARC4\_init@{ARC4\_init}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ARC4\_init()}{ARC4\_init()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab9ace0c7741193acf9b665f2cac0139e} 
+ARC4\+\_\+init (\begin{DoxyParamCaption}\item[{}]{\$key}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+initialize the ARC4 encryption
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a97cd4a04c03ffbf0f9f1dde0670f25c0}\index{Cpdf@{Cpdf}!checkAllHere@{checkAllHere}}
+\index{checkAllHere@{checkAllHere}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{checkAllHere()}{checkAllHere()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a97cd4a04c03ffbf0f9f1dde0670f25c0} 
+check\+All\+Here (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+should be used for internal checks, not implemented as yet \Hypertarget{class_dompdf_1_1_cpdf_ac0994e382e3f750be990baf16cb7323e}\index{Cpdf@{Cpdf}!clippingEnd@{clippingEnd}}
+\index{clippingEnd@{clippingEnd}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{clippingEnd()}{clippingEnd()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac0994e382e3f750be990baf16cb7323e} 
+clipping\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+ends the last clipping shape \Hypertarget{class_dompdf_1_1_cpdf_ab90e000c54fb6b6d6e30ecd4eca80f4c}\index{Cpdf@{Cpdf}!clippingPolygon@{clippingPolygon}}
+\index{clippingPolygon@{clippingPolygon}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{clippingPolygon()}{clippingPolygon()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab90e000c54fb6b6d6e30ecd4eca80f4c} 
+clipping\+Polygon (\begin{DoxyParamCaption}\item[{array}]{\$p}{}\end{DoxyParamCaption})}
+
+draw a clipping polygon, the syntax for this is similar to the GD polygon command
+
+
+\begin{DoxyParams}[1]{Parameters}
+float\mbox{[}$\,$\mbox{]} & {\em \$p} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_acaccc740b471225a74b5989691baf8ff}\index{Cpdf@{Cpdf}!clippingRectangle@{clippingRectangle}}
+\index{clippingRectangle@{clippingRectangle}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{clippingRectangle()}{clippingRectangle()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_acaccc740b471225a74b5989691baf8ff} 
+clipping\+Rectangle (\begin{DoxyParamCaption}\item[{}]{\$x1}{, }\item[{}]{\$y1}{, }\item[{}]{\$width}{, }\item[{}]{\$height}{}\end{DoxyParamCaption})}
+
+draw a clipping rectangle, all the elements added after this will be clipped
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x1} & \\
+\hline
+float & {\em \$y1} & \\
+\hline
+float & {\em \$width} & \\
+\hline
+float & {\em \$height} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ab852e1b0de7dfb61b8df8df121247191}\index{Cpdf@{Cpdf}!clippingRectangleRounded@{clippingRectangleRounded}}
+\index{clippingRectangleRounded@{clippingRectangleRounded}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{clippingRectangleRounded()}{clippingRectangleRounded()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab852e1b0de7dfb61b8df8df121247191} 
+clipping\+Rectangle\+Rounded (\begin{DoxyParamCaption}\item[{}]{\$x1}{, }\item[{}]{\$y1}{, }\item[{}]{\$w}{, }\item[{}]{\$h}{, }\item[{}]{\$r\+TL}{, }\item[{}]{\$r\+TR}{, }\item[{}]{\$r\+BR}{, }\item[{}]{\$r\+BL}{}\end{DoxyParamCaption})}
+
+draw a clipping rounded rectangle, all the elements added after this will be clipped
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x1} & \\
+\hline
+float & {\em \$y1} & \\
+\hline
+float & {\em \$w} & \\
+\hline
+float & {\em \$h} & \\
+\hline
+float & {\em \$r\+TL} & \\
+\hline
+float & {\em \$r\+TR} & \\
+\hline
+float & {\em \$r\+BR} & \\
+\hline
+float & {\em \$r\+BL} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_afab1d53fba022d6a3cfa2c7ce3168106}\index{Cpdf@{Cpdf}!closeObject@{closeObject}}
+\index{closeObject@{closeObject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{closeObject()}{closeObject()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_afab1d53fba022d6a3cfa2c7ce3168106} 
+close\+Object (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+close an object \Hypertarget{class_dompdf_1_1_cpdf_a6de1c6cb0c05bf8ec30edf2a8031a65f}\index{Cpdf@{Cpdf}!closePath@{closePath}}
+\index{closePath@{closePath}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{closePath()}{closePath()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6de1c6cb0c05bf8ec30edf2a8031a65f} 
+close\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a22e23853728adfb051927f0768eef8a1}\index{Cpdf@{Cpdf}!concatMatches@{concatMatches}}
+\index{concatMatches@{concatMatches}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{concatMatches()}{concatMatches()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a22e23853728adfb051927f0768eef8a1} 
+concat\+Matches (\begin{DoxyParamCaption}\item[{}]{\$matches}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a13c3a2e45741b553d81496482a6a9579}\index{Cpdf@{Cpdf}!curve@{curve}}
+\index{curve@{curve}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{curve()}{curve()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a13c3a2e45741b553d81496482a6a9579} 
+curve (\begin{DoxyParamCaption}\item[{}]{\$x0}{, }\item[{}]{\$y0}{, }\item[{}]{\$x1}{, }\item[{}]{\$y1}{, }\item[{}]{\$x2}{, }\item[{}]{\$y2}{, }\item[{}]{\$x3}{, }\item[{}]{\$y3}{}\end{DoxyParamCaption})}
+
+draw a bezier curve based on 4 control points
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x0} & \\
+\hline
+float & {\em \$y0} & \\
+\hline
+float & {\em \$x1} & \\
+\hline
+float & {\em \$y1} & \\
+\hline
+float & {\em \$x2} & \\
+\hline
+float & {\em \$y2} & \\
+\hline
+float & {\em \$x3} & \\
+\hline
+float & {\em \$y3} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a6539201e652b37b57b3fdcc9107c7876}\index{Cpdf@{Cpdf}!curveTo@{curveTo}}
+\index{curveTo@{curveTo}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{curveTo()}{curveTo()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6539201e652b37b57b3fdcc9107c7876} 
+curve\+To (\begin{DoxyParamCaption}\item[{}]{\$x1}{, }\item[{}]{\$y1}{, }\item[{}]{\$x2}{, }\item[{}]{\$y2}{, }\item[{}]{\$x3}{, }\item[{}]{\$y3}{}\end{DoxyParamCaption})}
+
+draw a bezier curve based on 4 control points
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x1} & \\
+\hline
+float & {\em \$y1} & \\
+\hline
+float & {\em \$x2} & \\
+\hline
+float & {\em \$y2} & \\
+\hline
+float & {\em \$x3} & \\
+\hline
+float & {\em \$y3} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a81e6373bd9bf1fad040a3bac1df7c217}\index{Cpdf@{Cpdf}!ellipse@{ellipse}}
+\index{ellipse@{ellipse}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ellipse()}{ellipse()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a81e6373bd9bf1fad040a3bac1df7c217} 
+ellipse (\begin{DoxyParamCaption}\item[{}]{\$x0}{, }\item[{}]{\$y0}{, }\item[{}]{\$r1}{, }\item[{}]{\$r2}{ = {\ttfamily 0}, }\item[{}]{\$angle}{ = {\ttfamily 0}, }\item[{}]{\$n\+Seg}{ = {\ttfamily 8}, }\item[{}]{\$astart}{ = {\ttfamily 0}, }\item[{}]{\$afinish}{ = {\ttfamily 360}, }\item[{}]{\$close}{ = {\ttfamily true}, }\item[{}]{\$fill}{ = {\ttfamily false}, }\item[{}]{\$stroke}{ = {\ttfamily true}, }\item[{}]{\$incomplete}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+draw an ellipse note that the part and filled ellipse are just special cases of this function
+
+draws an ellipse in the current line style centered at \$x0,\$y0, radii \$r1,\$r2 if \$r2 is not set, then a circle is drawn from \$astart to \$afinish, measured in degrees, running anti-\/clockwise from the right hand side of the ellipse. n\+Seg is not allowed to be less than 2, as this will simply draw a line (and will even draw a pretty crappy shape at 2, as we are approximating with bezier curves.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x0} & \\
+\hline
+float & {\em \$y0} & \\
+\hline
+float & {\em \$r1} & \\
+\hline
+float & {\em \$r2} & \\
+\hline
+float & {\em \$angle} & \\
+\hline
+int & {\em \$n\+Seg} & \\
+\hline
+float & {\em \$astart} & \\
+\hline
+float & {\em \$afinish} & \\
+\hline
+bool & {\em \$close} & \\
+\hline
+bool & {\em \$fill} & \\
+\hline
+bool & {\em \$stroke} & \\
+\hline
+bool & {\em \$incomplete} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_aec38a43d56086ef67b759c86049c257c}\index{Cpdf@{Cpdf}!enablePdfACompliance@{enablePdfACompliance}}
+\index{enablePdfACompliance@{enablePdfACompliance}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{enablePdfACompliance()}{enablePdfACompliance()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aec38a43d56086ef67b759c86049c257c} 
+enable\+Pdf\+ACompliance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Enable PDF/A compliance mode \Hypertarget{class_dompdf_1_1_cpdf_a593c690c9c88459001b8fee0c1e02b60}\index{Cpdf@{Cpdf}!encryptInit@{encryptInit}}
+\index{encryptInit@{encryptInit}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{encryptInit()}{encryptInit()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a593c690c9c88459001b8fee0c1e02b60} 
+encrypt\+Init (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+initialize the encryption for processing a particular object
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a796b5dc3a5b1a9e260740e1b22a54da4}\index{Cpdf@{Cpdf}!endPath@{endPath}}
+\index{endPath@{endPath}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{endPath()}{endPath()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a796b5dc3a5b1a9e260740e1b22a54da4} 
+end\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a3b7d92e90d5b153fbec937f0f8fab087}\index{Cpdf@{Cpdf}!fill@{fill}}
+\index{fill@{fill}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a3b7d92e90d5b153fbec937f0f8fab087} 
+fill (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a7d14967703e2beb4591ea33187d71f83}\index{Cpdf@{Cpdf}!filledEllipse@{filledEllipse}}
+\index{filledEllipse@{filledEllipse}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{filledEllipse()}{filledEllipse()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a7d14967703e2beb4591ea33187d71f83} 
+filled\+Ellipse (\begin{DoxyParamCaption}\item[{}]{\$x0}{, }\item[{}]{\$y0}{, }\item[{}]{\$r1}{, }\item[{}]{\$r2}{ = {\ttfamily 0}, }\item[{}]{\$angle}{ = {\ttfamily 0}, }\item[{}]{\$n\+Seg}{ = {\ttfamily 8}, }\item[{}]{\$astart}{ = {\ttfamily 0}, }\item[{}]{\$afinish}{ = {\ttfamily 360}}\end{DoxyParamCaption})}
+
+draw a filled ellipse
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x0} & \\
+\hline
+float & {\em \$y0} & \\
+\hline
+float & {\em \$r1} & \\
+\hline
+float & {\em \$r2} & \\
+\hline
+float & {\em \$angle} & \\
+\hline
+int & {\em \$n\+Seg} & \\
+\hline
+float & {\em \$astart} & \\
+\hline
+float & {\em \$afinish} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a519df1355cd54eb52caa42650c7fcc2e}\index{Cpdf@{Cpdf}!filledRectangle@{filledRectangle}}
+\index{filledRectangle@{filledRectangle}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{filledRectangle()}{filledRectangle()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a519df1355cd54eb52caa42650c7fcc2e} 
+filled\+Rectangle (\begin{DoxyParamCaption}\item[{}]{\$x1}{, }\item[{}]{\$y1}{, }\item[{}]{\$width}{, }\item[{}]{\$height}{}\end{DoxyParamCaption})}
+
+a filled rectangle, note that it is the width and height of the rectangle which are the secondary parameters, not the coordinates of the upper-\/right corner
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x1} & \\
+\hline
+float & {\em \$y1} & \\
+\hline
+float & {\em \$width} & \\
+\hline
+float & {\em \$height} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a5edee7923bcacc3ec11bd5d9aaa2abaa}\index{Cpdf@{Cpdf}!fillStroke@{fillStroke}}
+\index{fillStroke@{fillStroke}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{fillStroke()}{fillStroke()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a5edee7923bcacc3ec11bd5d9aaa2abaa} 
+fill\+Stroke (\begin{DoxyParamCaption}\item[{bool}]{\$close}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_dompdf_1_1_cpdf_adfe452ed54815eb26ce88be523a9b1af}\index{Cpdf@{Cpdf}!filterText@{filterText}}
+\index{filterText@{filterText}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{filterText()}{filterText()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_adfe452ed54815eb26ce88be523a9b1af} 
+filter\+Text (\begin{DoxyParamCaption}\item[{}]{\$text}{, }\item[{}]{\$bom}{ = {\ttfamily true}, }\item[{}]{\$convert\+\_\+encoding}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+filter the text, this is applied to all text just before being inserted into the pdf document it escapes the various things that need to be escaped, and so on
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$text} & \\
+\hline
+bool & {\em \$bom} & \\
+\hline
+bool & {\em \$convert\+\_\+encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_aacf9523fe9f5c860731020f7a49778a1}\index{Cpdf@{Cpdf}!getFirstPageId@{getFirstPageId}}
+\index{getFirstPageId@{getFirstPageId}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{getFirstPageId()}{getFirstPageId()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aacf9523fe9f5c860731020f7a49778a1} 
+get\+First\+Page\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+function for the user to find out what the ID is of the first page that was created during startup -\/ useful if they wish to add something to it later.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ac97148227211b7e6999b5e6a4c801d8b}\index{Cpdf@{Cpdf}!getFontDescender@{getFontDescender}}
+\index{getFontDescender@{getFontDescender}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{getFontDescender()}{getFontDescender()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac97148227211b7e6999b5e6a4c801d8b} 
+get\+Font\+Descender (\begin{DoxyParamCaption}\item[{float}]{\$size}{}\end{DoxyParamCaption})}
+
+return the font descender, this will normally return a negative number if you add this number to the baseline, you get the level of the bottom of the font it is in the pdf user units
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ac5bee4328e6e4561108912d8a8b61ad0}\index{Cpdf@{Cpdf}!getFontHeight@{getFontHeight}}
+\index{getFontHeight@{getFontHeight}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{getFontHeight()}{getFontHeight()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac5bee4328e6e4561108912d8a8b61ad0} 
+get\+Font\+Height (\begin{DoxyParamCaption}\item[{float}]{\$size}{}\end{DoxyParamCaption})}
+
+return the height in units of the current font in the given size
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a68cfb8214ff680a7760b18e47ffb0782}\index{Cpdf@{Cpdf}!getFontSubsettingTag@{getFontSubsettingTag}}
+\index{getFontSubsettingTag@{getFontSubsettingTag}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{getFontSubsettingTag()}{getFontSubsettingTag()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a68cfb8214ff680a7760b18e47ffb0782} 
+get\+Font\+Subsetting\+Tag (\begin{DoxyParamCaption}\item[{array}]{\$font}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a9832655979d33572f6d8aaf2a91ea737}\index{Cpdf@{Cpdf}!getFontXHeight@{getFontXHeight}}
+\index{getFontXHeight@{getFontXHeight}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{getFontXHeight()}{getFontXHeight()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a9832655979d33572f6d8aaf2a91ea737} 
+get\+Font\+XHeight (\begin{DoxyParamCaption}\item[{float}]{\$size}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a48df7893d719bc8eaffa0ff9a0d1c276}\index{Cpdf@{Cpdf}!getTextWidth@{getTextWidth}}
+\index{getTextWidth@{getTextWidth}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{getTextWidth()}{getTextWidth()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a48df7893d719bc8eaffa0ff9a0d1c276} 
+get\+Text\+Width (\begin{DoxyParamCaption}\item[{float}]{\$size}{, }\item[{string}]{\$text}{, }\item[{float}]{\$word\+Spacing}{ = {\ttfamily 0.0}, }\item[{float}]{\$char\+Spacing}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})}
+
+calculate how wide a given text string will be on a page, at a given size. this can be called externally, but is also used by the other class functions
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$size} & \\
+\hline
+string & {\em \$text} & \\
+\hline
+float & {\em \$word\+Spacing} & \\
+\hline
+float & {\em \$char\+Spacing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a1582eb40905135efb83a5ea5560cacef}\index{Cpdf@{Cpdf}!getXmpMetadata@{getXmpMetadata}}
+\index{getXmpMetadata@{getXmpMetadata}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{getXmpMetadata()}{getXmpMetadata()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a1582eb40905135efb83a5ea5560cacef} 
+get\+Xmp\+Metadata (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Generate the Metadata XMP XML for PDF/A
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ae2ae4ed4517106863cf774e072c7e54a}\index{Cpdf@{Cpdf}!image\_iscached@{image\_iscached}}
+\index{image\_iscached@{image\_iscached}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{image\_iscached()}{image\_iscached()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae2ae4ed4517106863cf774e072c7e54a} 
+image\+\_\+iscached (\begin{DoxyParamCaption}\item[{}]{\$imgname}{}\end{DoxyParamCaption})}
+
+Check if image already added to pdf image directory. If yes, need not to create again (pass empty data)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$imgname} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a8879dbe3cfa172a288ee021aff39f835}\index{Cpdf@{Cpdf}!line@{line}}
+\index{line@{line}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{line()}{line()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a8879dbe3cfa172a288ee021aff39f835} 
+line (\begin{DoxyParamCaption}\item[{}]{\$x1}{, }\item[{}]{\$y1}{, }\item[{}]{\$x2}{, }\item[{}]{\$y2}{, }\item[{}]{\$stroke}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+draw a line from one set of coordinates to another
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x1} & \\
+\hline
+float & {\em \$y1} & \\
+\hline
+float & {\em \$x2} & \\
+\hline
+float & {\em \$y2} & \\
+\hline
+bool & {\em \$stroke} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a2f2b58bb4485bf68296b7cc73993f857}\index{Cpdf@{Cpdf}!lineTo@{lineTo}}
+\index{lineTo@{lineTo}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{lineTo()}{lineTo()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a2f2b58bb4485bf68296b7cc73993f857} 
+line\+To (\begin{DoxyParamCaption}\item[{}]{\$x}{, }\item[{}]{\$y}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x} & \\
+\hline
+float & {\em \$y} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a7c89968388709b624565f4cd0faaa167}\index{Cpdf@{Cpdf}!md5\_16@{md5\_16}}
+\index{md5\_16@{md5\_16}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{md5\_16()}{md5\_16()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a7c89968388709b624565f4cd0faaa167} 
+md5\+\_\+16 (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})}
+
+ARC4 functions A series of function to implement ARC4 encoding in PHP calculate the 16 byte version of the 128 bit md5 digest of the string
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_aa0363a3450ef2e1730acd5275ab9fab2}\index{Cpdf@{Cpdf}!moveTo@{moveTo}}
+\index{moveTo@{moveTo}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{moveTo()}{moveTo()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aa0363a3450ef2e1730acd5275ab9fab2} 
+move\+To (\begin{DoxyParamCaption}\item[{}]{\$x}{, }\item[{}]{\$y}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x} & \\
+\hline
+float & {\em \$y} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ae150a1dceeb483a42acaedbe73ccd692}\index{Cpdf@{Cpdf}!newPage@{newPage}}
+\index{newPage@{newPage}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{newPage()}{newPage()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae150a1dceeb483a42acaedbe73ccd692} 
+new\+Page (\begin{DoxyParamCaption}\item[{}]{\$insert}{ = {\ttfamily 0}, }\item[{}]{\$id}{ = {\ttfamily 0}, }\item[{}]{\$pos}{ = {\ttfamily \textquotesingle{}after\textquotesingle{}}}\end{DoxyParamCaption})}
+
+add a new page to the document this also makes the new page the current active object
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$insert} & \\
+\hline
+int & {\em \$id} & \\
+\hline
+string & {\em \$pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a4949167f91cfd39e5edb0cd69c522e40}\index{Cpdf@{Cpdf}!o\_acroform@{o\_acroform}}
+\index{o\_acroform@{o\_acroform}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_acroform()}{o\_acroform()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a4949167f91cfd39e5edb0cd69c522e40} 
+o\+\_\+acroform (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ab01e4e5dac06bdd7480879a215fe552d}\index{Cpdf@{Cpdf}!o\_action@{o\_action}}
+\index{o\_action@{o\_action}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_action()}{o\_action()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab01e4e5dac06bdd7480879a215fe552d} 
+o\+\_\+action (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+an action object, used to link to URLS initially
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_aef859651290d314f10fbb2aee0a3785b}\index{Cpdf@{Cpdf}!o\_annotation@{o\_annotation}}
+\index{o\_annotation@{o\_annotation}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_annotation()}{o\_annotation()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aef859651290d314f10fbb2aee0a3785b} 
+o\+\_\+annotation (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+an annotation object, this will add an annotation to the current page. initially will support just link annotations
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ad5269fc1648ba039f9ab1d372b89aa55}\index{Cpdf@{Cpdf}!o\_catalog@{o\_catalog}}
+\index{o\_catalog@{o\_catalog}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_catalog()}{o\_catalog()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ad5269fc1648ba039f9ab1d372b89aa55} 
+o\+\_\+catalog (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+define the document catalog, the overall controller for the document
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string | array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a39f0173b287ab5bc85c8e6115e7994eb}\index{Cpdf@{Cpdf}!o\_cidSystemInfo@{o\_cidSystemInfo}}
+\index{o\_cidSystemInfo@{o\_cidSystemInfo}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_cidSystemInfo()}{o\_cidSystemInfo()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a39f0173b287ab5bc85c8e6115e7994eb} 
+o\+\_\+cid\+System\+Info (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+CID system info section, needed for unicode fonts
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+{\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ac8729d6b851615394c82bda391f37adb}\index{Cpdf@{Cpdf}!o\_contents@{o\_contents}}
+\index{o\_contents@{o\_contents}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_contents()}{o\_contents()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac8729d6b851615394c82bda391f37adb} 
+o\+\_\+contents (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+the contents objects hold all of the content which appears on pages
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string | array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a2432dc753eab2f8786f3b6c97cfdca59}\index{Cpdf@{Cpdf}!o\_destination@{o\_destination}}
+\index{o\_destination@{o\_destination}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_destination()}{o\_destination()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a2432dc753eab2f8786f3b6c97cfdca59} 
+o\+\_\+destination (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Document object methods (internal use only)
+
+There is about one object method for each type of object in the pdf document Each function has the same call list (\$id,\$action,\$options). \$id = the object ID of the object, or what it is to be if it is being created \$action = a string specifying the action to be performed, though ALL must support\+: \textquotesingle{}new\textquotesingle{} -\/ create the object with the id \$id \textquotesingle{}out\textquotesingle{} -\/ produce the output for the pdf object \$options = optional, a string or array containing the various parameters for the object
+
+These, in conjunction with the output function are the ONLY way for output to be produced within the pdf \textquotesingle{}file\textquotesingle{}. Destination object, used to specify the location for the user to jump to, presently on opening
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+@noinspection Php\+Missing\+Break\+Statement\+Inspection
+
+@noinspection Php\+Missing\+Break\+Statement\+Inspection\Hypertarget{class_dompdf_1_1_cpdf_aedd02043092a5a2eca55b654be0f9e9a}\index{Cpdf@{Cpdf}!o\_embedded\_file@{o\_embedded\_file}}
+\index{o\_embedded\_file@{o\_embedded\_file}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_embedded\_file()}{o\_embedded\_file()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aedd02043092a5a2eca55b654be0f9e9a} 
+o\+\_\+embedded\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ab9dfebe838a344a5592f2d0e41532da0}\index{Cpdf@{Cpdf}!o\_embedded\_file\_dictionary@{o\_embedded\_file\_dictionary}}
+\index{o\_embedded\_file\_dictionary@{o\_embedded\_file\_dictionary}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_embedded\_file\_dictionary()}{o\_embedded\_file\_dictionary()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab9dfebe838a344a5592f2d0e41532da0} 
+o\+\_\+embedded\+\_\+file\+\_\+dictionary (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_aca31fe6be06c78168f5bc69eca0d8bbd}\index{Cpdf@{Cpdf}!o\_embedjs@{o\_embedjs}}
+\index{o\_embedjs@{o\_embedjs}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_embedjs()}{o\_embedjs()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aca31fe6be06c78168f5bc69eca0d8bbd} 
+o\+\_\+embedjs (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+{\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_af77067434721b4808184e6d7793fa85c}\index{Cpdf@{Cpdf}!o\_encryption@{o\_encryption}}
+\index{o\_encryption@{o\_encryption}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_encryption()}{o\_encryption()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_af77067434721b4808184e6d7793fa85c} 
+o\+\_\+encryption (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+encryption object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_abb3f58247bbd6725b1cb5f08111557c2}\index{Cpdf@{Cpdf}!o\_extGState@{o\_extGState}}
+\index{o\_extGState@{o\_extGState}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_extGState()}{o\_extGState()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_abb3f58247bbd6725b1cb5f08111557c2} 
+o\+\_\+ext\+GState (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+graphics state object
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_aa87cece0296432c4a89472bd2f74bba7}\index{Cpdf@{Cpdf}!o\_field@{o\_field}}
+\index{o\_field@{o\_field}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_field()}{o\_field()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aa87cece0296432c4a89472bd2f74bba7} 
+o\+\_\+field (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+mixed & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a607aaa24e2d8b46f8c387d0d5144cd9a}\index{Cpdf@{Cpdf}!o\_font@{o\_font}}
+\index{o\_font@{o\_font}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_font()}{o\_font()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a607aaa24e2d8b46f8c387d0d5144cd9a} 
+o\+\_\+font (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+an object to hold the font description
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string | array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Font\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_dompdf_1_1_cpdf_ad27b62a60a069b84b594aeff1da3e1e3}\index{Cpdf@{Cpdf}!o\_fontDescendentCID@{o\_fontDescendentCID}}
+\index{o\_fontDescendentCID@{o\_fontDescendentCID}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_fontDescendentCID()}{o\_fontDescendentCID()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ad27b62a60a069b84b594aeff1da3e1e3} 
+o\+\_\+font\+Descendent\+CID (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+a descendent cid font, needed for unicode fonts
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string | array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ab2907958d0d7da9764c61510b32a3e76}\index{Cpdf@{Cpdf}!o\_fontDescriptor@{o\_fontDescriptor}}
+\index{o\_fontDescriptor@{o\_fontDescriptor}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_fontDescriptor()}{o\_fontDescriptor()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab2907958d0d7da9764c61510b32a3e76} 
+o\+\_\+font\+Descriptor (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+a font descriptor, needed for including additional fonts
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_aedda68b5afe6900c14375f2fe4c63bd5}\index{Cpdf@{Cpdf}!o\_fontEncoding@{o\_fontEncoding}}
+\index{o\_fontEncoding@{o\_fontEncoding}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_fontEncoding()}{o\_fontEncoding()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aedda68b5afe6900c14375f2fe4c63bd5} 
+o\+\_\+font\+Encoding (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+the font encoding
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a238ca9e6d9d63c6dd7112f9a05ddc0a4}\index{Cpdf@{Cpdf}!o\_fontGIDtoCIDMap@{o\_fontGIDtoCIDMap}}
+\index{o\_fontGIDtoCIDMap@{o\_fontGIDtoCIDMap}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_fontGIDtoCIDMap()}{o\_fontGIDtoCIDMap()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a238ca9e6d9d63c6dd7112f9a05ddc0a4} 
+o\+\_\+font\+GIDto\+CIDMap (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+a font glyph to character map, needed for unicode fonts
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ac2199fd5ae0ff08a49c57dc48cea87be}\index{Cpdf@{Cpdf}!o\_image@{o\_image}}
+\index{o\_image@{o\_image}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_image()}{o\_image()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac2199fd5ae0ff08a49c57dc48cea87be} 
+o\+\_\+image (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+an image object, will be an XObject in the document, includes description and data
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+Allows to merge identical images \Hypertarget{class_dompdf_1_1_cpdf_adef3820fc35901351de11937edcf7bbe}\index{Cpdf@{Cpdf}!o\_indirect\_references@{o\_indirect\_references}}
+\index{o\_indirect\_references@{o\_indirect\_references}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_indirect\_references()}{o\_indirect\_references()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_adef3820fc35901351de11937edcf7bbe} 
+o\+\_\+indirect\+\_\+references (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a1b15589e09e12f423f87d8ba3b1b1be4}\index{Cpdf@{Cpdf}!o\_info@{o\_info}}
+\index{o\_info@{o\_info}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_info()}{o\_info()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a1b15589e09e12f423f87d8ba3b1b1be4} 
+o\+\_\+info (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+define the document information
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ac22b4d92f62948ccdd11ab9dc703cd8e}\index{Cpdf@{Cpdf}!o\_javascript@{o\_javascript}}
+\index{o\_javascript@{o\_javascript}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_javascript()}{o\_javascript()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac22b4d92f62948ccdd11ab9dc703cd8e} 
+o\+\_\+javascript (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$code}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ac7da06677b8f1f2731975fb362f48f83}\index{Cpdf@{Cpdf}!o\_names@{o\_names}}
+\index{o\_names@{o\_names}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_names()}{o\_names()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac7da06677b8f1f2731975fb362f48f83} 
+o\+\_\+names (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a5e6a4d8146f8dc8424c01107deae2363}\index{Cpdf@{Cpdf}!o\_outlines@{o\_outlines}}
+\index{o\_outlines@{o\_outlines}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_outlines()}{o\_outlines()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a5e6a4d8146f8dc8424c01107deae2363} 
+o\+\_\+outlines (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+define the outlines in the doc, empty for now
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_aa8f8c9faae6d2ef10e350675dde97f8d}\index{Cpdf@{Cpdf}!o\_page@{o\_page}}
+\index{o\_page@{o\_page}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_page()}{o\_page()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aa8f8c9faae6d2ef10e350675dde97f8d} 
+o\+\_\+page (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+a page object, it also creates a contents object to hold its contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a81c56aa681c1462c1a2d29a4b164e1c9}\index{Cpdf@{Cpdf}!o\_pages@{o\_pages}}
+\index{o\_pages@{o\_pages}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_pages()}{o\_pages()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a81c56aa681c1462c1a2d29a4b164e1c9} 
+o\+\_\+pages (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+object which is a parent to the pages in the document
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a8c957eb8366fe5b89727c7ec68700afc}\index{Cpdf@{Cpdf}!o\_procset@{o\_procset}}
+\index{o\_procset@{o\_procset}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_procset()}{o\_procset()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a8c957eb8366fe5b89727c7ec68700afc} 
+o\+\_\+procset (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+the document procset, solves some problems with printing to old PS printers
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a43eb975d14662a0b1757795f78b2487e}\index{Cpdf@{Cpdf}!o\_sig@{o\_sig}}
+\index{o\_sig@{o\_sig}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_sig()}{o\_sig()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a43eb975d14662a0b1757795f78b2487e} 
+o\+\_\+sig (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a54b57fd29336ebaf37fcca3fdbb77f92}\index{Cpdf@{Cpdf}!o\_toUnicode@{o\_toUnicode}}
+\index{o\_toUnicode@{o\_toUnicode}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_toUnicode()}{o\_toUnicode()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a54b57fd29336ebaf37fcca3fdbb77f92} 
+o\+\_\+to\+Unicode (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A to\+Unicode section, needed for unicode fonts
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+{\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a37a4d12fd4fe6536921eabccfc55bae3}\index{Cpdf@{Cpdf}!o\_viewerPreferences@{o\_viewerPreferences}}
+\index{o\_viewerPreferences@{o\_viewerPreferences}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_viewerPreferences()}{o\_viewerPreferences()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a37a4d12fd4fe6536921eabccfc55bae3} 
+o\+\_\+viewer\+Preferences (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+set the viewer preferences
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$id} & \\
+\hline
+ & {\em \$action} & \\
+\hline
+string | array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_ac25c37e6f4649b70115ef689aecf7a52}\index{Cpdf@{Cpdf}!o\_xobject@{o\_xobject}}
+\index{o\_xobject@{o\_xobject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{o\_xobject()}{o\_xobject()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac25c37e6f4649b70115ef689aecf7a52} 
+o\+\_\+xobject (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$action}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$id} & \\
+\hline
+string & {\em \$action} & \\
+\hline
+mixed & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_af01751de7cdbbc4b7a2eea6a20cd547b}\index{Cpdf@{Cpdf}!openHere@{openHere}}
+\index{openHere@{openHere}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{openHere()}{openHere()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_af01751de7cdbbc4b7a2eea6a20cd547b} 
+open\+Here (\begin{DoxyParamCaption}\item[{}]{\$style}{, }\item[{}]{\$a}{ = {\ttfamily 0}, }\item[{}]{\$b}{ = {\ttfamily 0}, }\item[{}]{\$c}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+specify where the document should open when it first starts
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$style} & \\
+\hline
+int & {\em \$a} & \\
+\hline
+int & {\em \$b} & \\
+\hline
+int & {\em \$c} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_aa4a5e13c4e4e38cab679bef2100f5a1b}\index{Cpdf@{Cpdf}!openObject@{openObject}}
+\index{openObject@{openObject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{openObject()}{openObject()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aa4a5e13c4e4e38cab679bef2100f5a1b} 
+open\+Object (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+make a loose object, the output will go into this object, until it is closed, then will revert to the current one. this object will not appear until it is included within a page. the function will return the object number
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a11912f60bf65a56caedcba07e395aa15}\index{Cpdf@{Cpdf}!output@{output}}
+\index{output@{output}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a11912f60bf65a56caedcba07e395aa15} 
+output (\begin{DoxyParamCaption}\item[{}]{\$debug}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+return the pdf stream as a string returned from the function
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$debug} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a7f9759e45ec3fd2f47542de7d097d9b1}\index{Cpdf@{Cpdf}!parsePdfDate@{parsePdfDate}}
+\index{parsePdfDate@{parsePdfDate}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{parsePdfDate()}{parsePdfDate()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a7f9759e45ec3fd2f47542de7d097d9b1} 
+parse\+Pdf\+Date (\begin{DoxyParamCaption}\item[{}]{\$date}{}\end{DoxyParamCaption})}
+
+Parse a \doxylink{class_p_d_f}{PDF} formatted date
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a01283c9d18d281852c058bd6660d75a8}\index{Cpdf@{Cpdf}!partEllipse@{partEllipse}}
+\index{partEllipse@{partEllipse}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{partEllipse()}{partEllipse()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a01283c9d18d281852c058bd6660d75a8} 
+part\+Ellipse (\begin{DoxyParamCaption}\item[{}]{\$x0}{, }\item[{}]{\$y0}{, }\item[{}]{\$astart}{, }\item[{}]{\$afinish}{, }\item[{}]{\$r1}{, }\item[{}]{\$r2}{ = {\ttfamily 0}, }\item[{}]{\$angle}{ = {\ttfamily 0}, }\item[{}]{\$n\+Seg}{ = {\ttfamily 8}}\end{DoxyParamCaption})}
+
+draw a part of an ellipse
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x0} & \\
+\hline
+float & {\em \$y0} & \\
+\hline
+float & {\em \$astart} & \\
+\hline
+float & {\em \$afinish} & \\
+\hline
+float & {\em \$r1} & \\
+\hline
+float & {\em \$r2} & \\
+\hline
+float & {\em \$angle} & \\
+\hline
+int & {\em \$n\+Seg} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a52085b72db32063ac532f423335b406b}\index{Cpdf@{Cpdf}!polygon@{polygon}}
+\index{polygon@{polygon}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{polygon()}{polygon()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a52085b72db32063ac532f423335b406b} 
+polygon (\begin{DoxyParamCaption}\item[{array}]{\$p}{, }\item[{bool}]{\$fill}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+draw a polygon, the syntax for this is similar to the GD polygon command
+
+
+\begin{DoxyParams}[1]{Parameters}
+float\mbox{[}$\,$\mbox{]} & {\em \$p} & \\
+\hline
+bool & {\em \$fill} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ab8e8e613d57a7c9739e0bfb01bff3d05}\index{Cpdf@{Cpdf}!quadTo@{quadTo}}
+\index{quadTo@{quadTo}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{quadTo()}{quadTo()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab8e8e613d57a7c9739e0bfb01bff3d05} 
+quad\+To (\begin{DoxyParamCaption}\item[{}]{\$cpx}{, }\item[{}]{\$cpy}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{}\end{DoxyParamCaption})}
+
+draw a bezier curve based on 4 control points
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$cpx} & \\
+\hline
+float & {\em \$cpy} & \\
+\hline
+float & {\em \$x} & \\
+\hline
+float & {\em \$y} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ab896f509967f800c71c48eeb18b0ecb5}\index{Cpdf@{Cpdf}!rect@{rect}}
+\index{rect@{rect}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{rect()}{rect()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab896f509967f800c71c48eeb18b0ecb5} 
+rect (\begin{DoxyParamCaption}\item[{}]{\$x1}{, }\item[{}]{\$y1}{, }\item[{}]{\$width}{, }\item[{}]{\$height}{}\end{DoxyParamCaption})}
+
+draw a rectangle, note that it is the width and height of the rectangle which are the secondary parameters, not the coordinates of the upper-\/right corner
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x1} & \\
+\hline
+float & {\em \$y1} & \\
+\hline
+float & {\em \$width} & \\
+\hline
+float & {\em \$height} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_adc6135070daab0159a4c75d04ebbc8ac}\index{Cpdf@{Cpdf}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{rectangle()}{rectangle()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_adc6135070daab0159a4c75d04ebbc8ac} 
+rectangle (\begin{DoxyParamCaption}\item[{}]{\$x1}{, }\item[{}]{\$y1}{, }\item[{}]{\$width}{, }\item[{}]{\$height}{}\end{DoxyParamCaption})}
+
+draw a rectangle, note that it is the width and height of the rectangle which are the secondary parameters, not the coordinates of the upper-\/right corner
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$x1} & \\
+\hline
+float & {\em \$y1} & \\
+\hline
+float & {\em \$width} & \\
+\hline
+float & {\em \$height} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_aea979091e712a6b75ccbac2c54178858}\index{Cpdf@{Cpdf}!registerText@{registerText}}
+\index{registerText@{registerText}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{registerText()}{registerText()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aea979091e712a6b75ccbac2c54178858} 
+register\+Text (\begin{DoxyParamCaption}\item[{}]{\$font}{, }\item[{}]{\$text}{}\end{DoxyParamCaption})}
+
+register text for font subsetting
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$font} & \\
+\hline
+string & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a42c738c855a15be14e5fe6b07834a6c5}\index{Cpdf@{Cpdf}!reopenObject@{reopenObject}}
+\index{reopenObject@{reopenObject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{reopenObject()}{reopenObject()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a42c738c855a15be14e5fe6b07834a6c5} 
+reopen\+Object (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+open an existing object for editing
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_aa1371f22826cf8cde4454c9b467203d0}\index{Cpdf@{Cpdf}!restore@{restore}}
+\index{restore@{restore}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{restore()}{restore()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aa1371f22826cf8cde4454c9b467203d0} 
+restore (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+restore the last graphic state \Hypertarget{class_dompdf_1_1_cpdf_aad9f863b38dc4ab4d36b4d273f1f8d15}\index{Cpdf@{Cpdf}!restoreSerializedObject@{restoreSerializedObject}}
+\index{restoreSerializedObject@{restoreSerializedObject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{restoreSerializedObject()}{restoreSerializedObject()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aad9f863b38dc4ab4d36b4d273f1f8d15} 
+restore\+Serialized\+Object (\begin{DoxyParamCaption}\item[{}]{\$obj}{}\end{DoxyParamCaption})}
+
+restore an object from its stored representation. Returns its new object id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a2f42f38b51682f8457ee605bb3029dc4}\index{Cpdf@{Cpdf}!restoreState@{restoreState}}
+\index{restoreState@{restoreState}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{restoreState()}{restoreState()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a2f42f38b51682f8457ee605bb3029dc4} 
+restore\+State (\begin{DoxyParamCaption}\item[{}]{\$page\+End}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+restore a previously saved state
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$page\+End} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a803a40b114205bdb06f5bbf8d9b782aa}\index{Cpdf@{Cpdf}!rotate@{rotate}}
+\index{rotate@{rotate}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a803a40b114205bdb06f5bbf8d9b782aa} 
+rotate (\begin{DoxyParamCaption}\item[{}]{\$angle}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{}\end{DoxyParamCaption})}
+
+rotate
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$angle} & angle in degrees for counter-\/clockwise rotation \\
+\hline
+float & {\em \$x} & Origin abscissa \\
+\hline
+float & {\em \$y} & Origin ordinate \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_afc8a3c62679cf00ade9f15fb2a6d6132}\index{Cpdf@{Cpdf}!save@{save}}
+\index{save@{save}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_afc8a3c62679cf00ade9f15fb2a6d6132} 
+save (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+save the current graphic state \Hypertarget{class_dompdf_1_1_cpdf_a854f2a9d1250c69b6c2243d5175ddd83}\index{Cpdf@{Cpdf}!saveState@{saveState}}
+\index{saveState@{saveState}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{saveState()}{saveState()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a854f2a9d1250c69b6c2243d5175ddd83} 
+save\+State (\begin{DoxyParamCaption}\item[{}]{\$page\+End}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+this will be called at a new page to return the state to what it was on the end of the previous page, before the stack was closed down This is to get around not being able to have open \textquotesingle{}q\textquotesingle{} across pages
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$page\+End} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a3f8146f76d174fe1a821b8c5b02b1d96}\index{Cpdf@{Cpdf}!scale@{scale}}
+\index{scale@{scale}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a3f8146f76d174fe1a821b8c5b02b1d96} 
+scale (\begin{DoxyParamCaption}\item[{}]{\$s\+\_\+x}{, }\item[{}]{\$s\+\_\+y}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{}\end{DoxyParamCaption})}
+
+scale
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$s\+\_\+x} & scaling factor for width as percent \\
+\hline
+float & {\em \$s\+\_\+y} & scaling factor for height as percent \\
+\hline
+float & {\em \$x} & Origin abscissa \\
+\hline
+float & {\em \$y} & Origin ordinate \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a44e446ee5666ede8d7a3209454c4c11b}\index{Cpdf@{Cpdf}!selectFont@{selectFont}}
+\index{selectFont@{selectFont}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{selectFont()}{selectFont()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a44e446ee5666ede8d7a3209454c4c11b} 
+select\+Font (\begin{DoxyParamCaption}\item[{}]{\$font\+Name}{, }\item[{}]{\$encoding}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$set}{ = {\ttfamily true}, }\item[{}]{\$is\+Subsetting}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+if the font is not loaded then load it and make the required object else just make it the current font the encoding array can contain \textquotesingle{}encoding\textquotesingle{}=\texorpdfstring{$>$}{>} \textquotesingle{}none\textquotesingle{},\textquotesingle{}Win\+Ansi\+Encoding\textquotesingle{},\textquotesingle{}Mac\+Roman\+Encoding\textquotesingle{} or \textquotesingle{}Mac\+Expert\+Encoding\textquotesingle{} note that encoding=\textquotesingle{}none\textquotesingle{} will need to be used for symbolic fonts and \textquotesingle{}differences\textquotesingle{} =\texorpdfstring{$>$}{>} an array of mappings between numbers 0-\/\texorpdfstring{$>$}{>}255 and character names.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$font\+Name} & \\
+\hline
+string & {\em \$encoding} & \\
+\hline
+bool & {\em \$set} & \\
+\hline
+bool & {\em \$is\+Subsetting} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Font\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_dompdf_1_1_cpdf_ab4ede6772ca20a1afbc3e8bbc154fdaa}\index{Cpdf@{Cpdf}!serializeObject@{serializeObject}}
+\index{serializeObject@{serializeObject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{serializeObject()}{serializeObject()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab4ede6772ca20a1afbc3e8bbc154fdaa} 
+serialize\+Object (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+return a storable representation of a specific object
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a259abff283d284d3efd59aa538bcf125}\index{Cpdf@{Cpdf}!setColor@{setColor}}
+\index{setColor@{setColor}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a259abff283d284d3efd59aa538bcf125} 
+set\+Color (\begin{DoxyParamCaption}\item[{}]{\$color}{, }\item[{}]{\$force}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+sets the color for fill operations
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$color} & \\
+\hline
+bool & {\em \$force} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_dompdf_1_1_cpdf_a6eee7efa56a30adfb8525f248e3d3426}\index{Cpdf@{Cpdf}!setEncryption@{setEncryption}}
+\index{setEncryption@{setEncryption}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setEncryption()}{setEncryption()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6eee7efa56a30adfb8525f248e3d3426} 
+set\+Encryption (\begin{DoxyParamCaption}\item[{}]{\$user\+Pass}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$owner\+Pass}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$pc}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+set the encryption of the document can be used to turn it on and/or set the passwords which it will have. also the functions that the user will have are set here, such as print, modify, add
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$user\+Pass} & \\
+\hline
+string & {\em \$owner\+Pass} & \\
+\hline
+array & {\em \$pc} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a2afaddfc6102722a50d8fe56448390df}\index{Cpdf@{Cpdf}!setFillRule@{setFillRule}}
+\index{setFillRule@{setFillRule}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setFillRule()}{setFillRule()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a2afaddfc6102722a50d8fe56448390df} 
+set\+Fill\+Rule (\begin{DoxyParamCaption}\item[{}]{\$fill\+Rule}{}\end{DoxyParamCaption})}
+
+sets the color for fill operations
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$fill\+Rule} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a4414d93166998b3586e0b4c7581f6944}\index{Cpdf@{Cpdf}!setFillTransparency@{setFillTransparency}}
+\index{setFillTransparency@{setFillTransparency}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setFillTransparency()}{setFillTransparency()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a4414d93166998b3586e0b4c7581f6944} 
+set\+Fill\+Transparency (\begin{DoxyParamCaption}\item[{string}]{\$mode}{, }\item[{float}]{\$opacity}{}\end{DoxyParamCaption})}
+
+Set current blend mode \& opacity for filled objects.
+
+Valid blend modes are\+:
+
+Normal, Multiply, Screen, Overlay, Darken, Lighten, Color\+Dogde, Color\+Burn, Hard\+Light, Soft\+Light, Difference, Exclusion
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mode} & The blend mode to use \\
+\hline
+float & {\em \$opacity} & 0.\+0 fully transparent, 1.\+0 fully opaque \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a5ddaeab8f233dcdc13d1f3f13fa53367}\index{Cpdf@{Cpdf}!setFontFamily@{setFontFamily}}
+\index{setFontFamily@{setFontFamily}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setFontFamily()}{setFontFamily()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a5ddaeab8f233dcdc13d1f3f13fa53367} 
+set\+Font\+Family (\begin{DoxyParamCaption}\item[{}]{\$family}{, }\item[{}]{\$options}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+define font families, this is used to initialize the font families for the default fonts and for the user to add new ones for their fonts. The default bahavious can be overridden should that be desired.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$family} & \\
+\hline
+string & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ae79b0521307af1121094b6a1f305fd19}\index{Cpdf@{Cpdf}!setFormFieldAppearance@{setFormFieldAppearance}}
+\index{setFormFieldAppearance@{setFormFieldAppearance}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setFormFieldAppearance()}{setFormFieldAppearance()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae79b0521307af1121094b6a1f305fd19} 
+set\+Form\+Field\+Appearance (\begin{DoxyParamCaption}\item[{}]{\$num\+Field\+Obj}{, }\item[{}]{\$normal\+Num\+Obj}{, }\item[{}]{\$rollover\+Num\+Obj}{ = {\ttfamily null}, }\item[{}]{\$down\+Num\+Obj}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+set Field Appearanc (reference)
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$num\+Field\+Obj} & \\
+\hline
+integer & {\em \$normal\+Num\+Obj} & \\
+\hline
+integer | null & {\em \$rollover\+Num\+Obj} & \\
+\hline
+integer | null & {\em \$down\+Num\+Obj} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ae48b7849e6af92f18a843661e6cfa764}\index{Cpdf@{Cpdf}!setFormFieldOpt@{setFormFieldOpt}}
+\index{setFormFieldOpt@{setFormFieldOpt}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setFormFieldOpt()}{setFormFieldOpt()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae48b7849e6af92f18a843661e6cfa764} 
+set\+Form\+Field\+Opt (\begin{DoxyParamCaption}\item[{}]{\$num\+Field\+Obj}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+set Choice Field option values
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$num\+Field\+Obj} & \\
+\hline
+array & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a42e3cdc73ecefdc517a9c81e2f18649e}\index{Cpdf@{Cpdf}!setFormFieldRefValue@{setFormFieldRefValue}}
+\index{setFormFieldRefValue@{setFormFieldRefValue}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setFormFieldRefValue()}{setFormFieldRefValue()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a42e3cdc73ecefdc517a9c81e2f18649e} 
+set\+Form\+Field\+Ref\+Value (\begin{DoxyParamCaption}\item[{}]{\$num\+Field\+Obj}{, }\item[{}]{\$num\+Obj}{}\end{DoxyParamCaption})}
+
+set Field value (reference)
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$num\+Field\+Obj} & \\
+\hline
+integer & {\em \$num\+Obj} & Object number \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a072a24e53f9a8248b828c2ddc3c4cdde}\index{Cpdf@{Cpdf}!setFormFieldValue@{setFormFieldValue}}
+\index{setFormFieldValue@{setFormFieldValue}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setFormFieldValue()}{setFormFieldValue()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a072a24e53f9a8248b828c2ddc3c4cdde} 
+set\+Form\+Field\+Value (\begin{DoxyParamCaption}\item[{}]{\$num\+Field\+Obj}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+set Field value
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$num\+Field\+Obj} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a5755959c6c62c64703354c936797807f}\index{Cpdf@{Cpdf}!setGraphicsState@{setGraphicsState}}
+\index{setGraphicsState@{setGraphicsState}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setGraphicsState()}{setGraphicsState()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a5755959c6c62c64703354c936797807f} 
+set\+Graphics\+State (\begin{DoxyParamCaption}\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Set the graphics state for compositions
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a8e3b86cfcb5e8d0ad44fa5196f40a6b1}\index{Cpdf@{Cpdf}!setLineStyle@{setLineStyle}}
+\index{setLineStyle@{setLineStyle}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setLineStyle()}{setLineStyle()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a8e3b86cfcb5e8d0ad44fa5196f40a6b1} 
+set\+Line\+Style (\begin{DoxyParamCaption}\item[{}]{\$width}{ = {\ttfamily 1}, }\item[{}]{\$cap}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$join}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$dash}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$phase}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+this sets the line drawing style. width, is the thickness of the line in user units cap is the type of cap to put on the line, values can be \textquotesingle{}butt\textquotesingle{},\textquotesingle{}round\textquotesingle{},\textquotesingle{}square\textquotesingle{} where the diffference between \textquotesingle{}square\textquotesingle{} and \textquotesingle{}butt\textquotesingle{} is that \textquotesingle{}square\textquotesingle{} projects a flat end past the end of the line. join can be \textquotesingle{}miter\textquotesingle{}, \textquotesingle{}round\textquotesingle{}, \textquotesingle{}bevel\textquotesingle{} dash is an array which sets the dash pattern, is a series of length values, which are the lengths of the on and off dashes. (2) represents 2 on, 2 off, 2 on , 2 off ... (2,1) is 2 on, 1 off, 2 on, 1 off.. etc phase is a modifier on the dash pattern which is used to shift the point at which the pattern starts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$width} & \\
+\hline
+string & {\em \$cap} & \\
+\hline
+string & {\em \$join} & \\
+\hline
+array & {\em \$dash} & \\
+\hline
+int & {\em \$phase} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a57e2d8f6f9947ff84889d8ff49a74018}\index{Cpdf@{Cpdf}!setLineTransparency@{setLineTransparency}}
+\index{setLineTransparency@{setLineTransparency}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setLineTransparency()}{setLineTransparency()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a57e2d8f6f9947ff84889d8ff49a74018} 
+set\+Line\+Transparency (\begin{DoxyParamCaption}\item[{string}]{\$mode}{, }\item[{float}]{\$opacity}{}\end{DoxyParamCaption})}
+
+Set current blend mode \& opacity for lines.
+
+Valid blend modes are\+:
+
+Normal, Multiply, Screen, Overlay, Darken, Lighten, Color\+Dogde, Color\+Burn, Hard\+Light, Soft\+Light, Difference, Exclusion
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mode} & The blend mode to use \\
+\hline
+float & {\em \$opacity} & 0.\+0 fully transparent, 1.\+0 fully opaque \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_abfa522165e81ef739cd49cf26ffab7ed}\index{Cpdf@{Cpdf}!setPreferences@{setPreferences}}
+\index{setPreferences@{setPreferences}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setPreferences()}{setPreferences()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_abfa522165e81ef739cd49cf26ffab7ed} 
+set\+Preferences (\begin{DoxyParamCaption}\item[{}]{\$label}{, }\item[{}]{\$value}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+set the viewer preferences of the document, it is up to the browser to obey these.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$label} & \\
+\hline
+int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a64bf226cc571c104b0ac149c8e395b43}\index{Cpdf@{Cpdf}!setStrokeColor@{setStrokeColor}}
+\index{setStrokeColor@{setStrokeColor}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setStrokeColor()}{setStrokeColor()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a64bf226cc571c104b0ac149c8e395b43} 
+set\+Stroke\+Color (\begin{DoxyParamCaption}\item[{}]{\$color}{, }\item[{}]{\$force}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+sets the color for stroke operations
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$color} & \\
+\hline
+bool & {\em \$force} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_dompdf_1_1_cpdf_ad19b63e387f95354178db9416898d21d}\index{Cpdf@{Cpdf}!setXObjectResource@{setXObjectResource}}
+\index{setXObjectResource@{setXObjectResource}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{setXObjectResource()}{setXObjectResource()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ad19b63e387f95354178db9416898d21d} 
+set\+XObject\+Resource (\begin{DoxyParamCaption}\item[{}]{\$num\+XObject}{, }\item[{}]{\$type}{, }\item[{}]{\$options}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$num\+XObject} & \\
+\hline
+string & {\em \$type} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a6eb40b5734385e55c791a8f39ad4f4ae}\index{Cpdf@{Cpdf}!skew@{skew}}
+\index{skew@{skew}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{skew()}{skew()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6eb40b5734385e55c791a8f39ad4f4ae} 
+skew (\begin{DoxyParamCaption}\item[{}]{\$angle\+\_\+x}{, }\item[{}]{\$angle\+\_\+y}{, }\item[{}]{\$x}{, }\item[{}]{\$y}{}\end{DoxyParamCaption})}
+
+skew
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$angle\+\_\+x} & \\
+\hline
+float & {\em \$angle\+\_\+y} & \\
+\hline
+float & {\em \$x} & Origin abscissa \\
+\hline
+float & {\em \$y} & Origin ordinate \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ae592038df692dd6d0cfca2f781e6b0ae}\index{Cpdf@{Cpdf}!stopObject@{stopObject}}
+\index{stopObject@{stopObject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{stopObject()}{stopObject()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae592038df692dd6d0cfca2f781e6b0ae} 
+stop\+Object (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+stop an object from appearing on pages from this point on
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_aab9cb3c97f4d2cfafb89a0d28d990ea4}\index{Cpdf@{Cpdf}!stream@{stream}}
+\index{stream@{stream}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aab9cb3c97f4d2cfafb89a0d28d990ea4} 
+stream (\begin{DoxyParamCaption}\item[{}]{\$filename}{ = {\ttfamily "{}document.pdf"{}}, }\item[{}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Streams the \doxylink{class_p_d_f}{PDF} to the client.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & The filename to present to the client. \\
+\hline
+array & {\em \$options} & Associative array\+: \textquotesingle{}compress\textquotesingle{} =\texorpdfstring{$>$}{>} 1 or 0 (default 1); \textquotesingle{}Attachment\textquotesingle{} =\texorpdfstring{$>$}{>} 1 or 0 (default 1). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ac87e5425c36348c797879ba1229d1590}\index{Cpdf@{Cpdf}!stroke@{stroke}}
+\index{stroke@{stroke}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{stroke()}{stroke()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac87e5425c36348c797879ba1229d1590} 
+stroke (\begin{DoxyParamCaption}\item[{bool}]{\$close}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a622349ca5b0a6671cf1fe89245f70765}\index{Cpdf@{Cpdf}!toUpper@{toUpper}}
+\index{toUpper@{toUpper}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{toUpper()}{toUpper()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a622349ca5b0a6671cf1fe89245f70765} 
+to\+Upper (\begin{DoxyParamCaption}\item[{}]{\$matches}{}\end{DoxyParamCaption})}
+
+Callback method used by small\+Caps
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$matches} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a2b030911f9e13bcb79cf4ec5c7fda100}\index{Cpdf@{Cpdf}!transaction@{transaction}}
+\index{transaction@{transaction}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{transaction()}{transaction()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a2b030911f9e13bcb79cf4ec5c7fda100} 
+transaction (\begin{DoxyParamCaption}\item[{}]{\$action}{}\end{DoxyParamCaption})}
+
+a few functions which should allow the document to be treated transactionally.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$action} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a369e1b8cc957db1dda751dcba04d1671}\index{Cpdf@{Cpdf}!transform@{transform}}
+\index{transform@{transform}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a369e1b8cc957db1dda751dcba04d1671} 
+transform (\begin{DoxyParamCaption}\item[{}]{\$tm}{}\end{DoxyParamCaption})}
+
+apply graphic transformations
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tm} & transformation matrix \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_ae22e669515581ac9c12f06a3e520176f}\index{Cpdf@{Cpdf}!translate@{translate}}
+\index{translate@{translate}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae22e669515581ac9c12f06a3e520176f} 
+translate (\begin{DoxyParamCaption}\item[{}]{\$t\+\_\+x}{, }\item[{}]{\$t\+\_\+y}{}\end{DoxyParamCaption})}
+
+translate
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$t\+\_\+x} & movement to the right \\
+\hline
+float & {\em \$t\+\_\+y} & movement to the bottom \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dompdf_1_1_cpdf_a66c324491b9976c400f5b3657de21cd8}\index{Cpdf@{Cpdf}!utf8toCodePointsArray@{utf8toCodePointsArray}}
+\index{utf8toCodePointsArray@{utf8toCodePointsArray}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{utf8toCodePointsArray()}{utf8toCodePointsArray()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a66c324491b9976c400f5b3657de21cd8} 
+utf8to\+Code\+Points\+Array (\begin{DoxyParamCaption}\item[{\&}]{\$text}{}\end{DoxyParamCaption})}
+
+return array containing codepoints (UTF-\/8 character values) for the string passed in.
+
+based on the excellent TCPDF code by Nicola Asuni and the RFC for UTF-\/8 at \href{http://www.faqs.org/rfcs/rfc3629.html}{\texttt{http\+://www.\+faqs.\+org/rfcs/rfc3629.\+html}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & UTF-\/8 string to process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array UTF-\/8 codepoints array for the string 
+\end{DoxyReturn}
+\Hypertarget{class_dompdf_1_1_cpdf_a17da58551de89b7c2fe38121cb273d5a}\index{Cpdf@{Cpdf}!utf8toUtf16BE@{utf8toUtf16BE}}
+\index{utf8toUtf16BE@{utf8toUtf16BE}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{utf8toUtf16BE()}{utf8toUtf16BE()}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a17da58551de89b7c2fe38121cb273d5a} 
+utf8to\+Utf16\+BE (\begin{DoxyParamCaption}\item[{\&}]{\$text}{, }\item[{}]{\$bom}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+convert UTF-\/8 to UTF-\/16 with an additional byte order marker at the front if required.
+
+based on the excellent TCPDF code by Nicola Asuni and the RFC for UTF-\/8 at \href{http://www.faqs.org/rfcs/rfc3629.html}{\texttt{http\+://www.\+faqs.\+org/rfcs/rfc3629.\+html}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & UTF-\/8 string to process \\
+\hline
+boolean & {\em \$bom} & whether to add the byte order marker \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string UTF-\/16 result string 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_dompdf_1_1_cpdf_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_dompdf_1_1_cpdf_a8093e35b63e573fa051c87b906b17969}\index{Cpdf@{Cpdf}!\$acroFormId@{\$acroFormId}}
+\index{\$acroFormId@{\$acroFormId}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$acroFormId}{\$acroFormId}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a8093e35b63e573fa051c87b906b17969} 
+\$acro\+Form\+Id}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a8f094bbb6c6f5db373d4b4e3c4ed0595}\index{Cpdf@{Cpdf}!\$addLooseObjects@{\$addLooseObjects}}
+\index{\$addLooseObjects@{\$addLooseObjects}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$addLooseObjects}{\$addLooseObjects}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a8f094bbb6c6f5db373d4b4e3c4ed0595} 
+\$add\+Loose\+Objects = \mbox{[}$\,$\mbox{]}}
+
+array contains information about how the loose objects are to be added to the document \Hypertarget{class_dompdf_1_1_cpdf_a8b0d646c9b1820820ea01f0db2c22339}\index{Cpdf@{Cpdf}!\$arc4@{\$arc4}}
+\index{\$arc4@{\$arc4}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$arc4}{\$arc4}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a8b0d646c9b1820820ea01f0db2c22339} 
+\$arc4 = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a7da30b74291ccb1aa4f0368140a36018}\index{Cpdf@{Cpdf}!\$arc4\_objnum@{\$arc4\_objnum}}
+\index{\$arc4\_objnum@{\$arc4\_objnum}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$arc4\_objnum}{\$arc4\_objnum}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a7da30b74291ccb1aa4f0368140a36018} 
+\$arc4\+\_\+objnum = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a09d30d6f7abcb195fd52f32cef227fc5}\index{Cpdf@{Cpdf}!\$byteRange@{\$byteRange}}
+\index{\$byteRange@{\$byteRange}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$byteRange}{\$byteRange}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a09d30d6f7abcb195fd52f32cef227fc5} 
+\$byte\+Range = array()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_abc7c2ac0d93d22f71221e8b60512c860}\index{Cpdf@{Cpdf}!\$callback@{\$callback}}
+\index{\$callback@{\$callback}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$callback}{\$callback}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_abc7c2ac0d93d22f71221e8b60512c860} 
+\$callback = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ab73b03ba4d8210e1551ba6b4277c4735}\index{Cpdf@{Cpdf}!\$catalogId@{\$catalogId}}
+\index{\$catalogId@{\$catalogId}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$catalogId}{\$catalogId}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab73b03ba4d8210e1551ba6b4277c4735} 
+\$catalog\+Id}
+
+\Hypertarget{class_dompdf_1_1_cpdf_aeb2b7ad87c29b9898f9f05782a5de508}\index{Cpdf@{Cpdf}!\$checkpoint@{\$checkpoint}}
+\index{\$checkpoint@{\$checkpoint}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$checkpoint}{\$checkpoint}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aeb2b7ad87c29b9898f9f05782a5de508} 
+\$checkpoint = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a1b53431babd4e0a5bcf8b0a804ebac66}\index{Cpdf@{Cpdf}!\$compressionReady@{\$compressionReady}}
+\index{\$compressionReady@{\$compressionReady}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$compressionReady}{\$compressionReady}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a1b53431babd4e0a5bcf8b0a804ebac66} 
+\$compression\+Ready = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a4fc9636c1c1a8d288a2e65623851e603}\index{Cpdf@{Cpdf}!\$coreFonts@{\$coreFonts}}
+\index{\$coreFonts@{\$coreFonts}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$coreFonts}{\$coreFonts}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a4fc9636c1c1a8d288a2e65623851e603} 
+\$core\+Fonts\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+\Hypertarget{class_dompdf_1_1_cpdf_afe5d6644791e89099b37ce806592903a}\index{Cpdf@{Cpdf}!\$currentBaseFont@{\$currentBaseFont}}
+\index{\$currentBaseFont@{\$currentBaseFont}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentBaseFont}{\$currentBaseFont}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_afe5d6644791e89099b37ce806592903a} 
+\$current\+Base\+Font = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a77e2eb25014537a0f5d248d29f67bd5e}\index{Cpdf@{Cpdf}!\$currentColor@{\$currentColor}}
+\index{\$currentColor@{\$currentColor}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentColor}{\$currentColor}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a77e2eb25014537a0f5d248d29f67bd5e} 
+\$current\+Color = null}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a39303dffdd053136f221e31bb18ccd6b}\index{Cpdf@{Cpdf}!\$currentContents@{\$currentContents}}
+\index{\$currentContents@{\$currentContents}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentContents}{\$currentContents}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a39303dffdd053136f221e31bb18ccd6b} 
+\$current\+Contents}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ac21b71478fb73338415a94ef3d0e6aaa}\index{Cpdf@{Cpdf}!\$currentFillTransparency@{\$currentFillTransparency}}
+\index{\$currentFillTransparency@{\$currentFillTransparency}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentFillTransparency}{\$currentFillTransparency}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac21b71478fb73338415a94ef3d0e6aaa} 
+\$current\+Fill\+Transparency = \mbox{[}"{}mode"{} =$>$ "{}Normal"{}, "{}opacity"{} =$>$ 1.\+0\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a2d5823c32698fc3761bb1254a0282b5e}\index{Cpdf@{Cpdf}!\$currentFont@{\$currentFont}}
+\index{\$currentFont@{\$currentFont}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentFont}{\$currentFont}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a2d5823c32698fc3761bb1254a0282b5e} 
+\$current\+Font = \textquotesingle{}\textquotesingle{}}
+
+@string A record of the current font \Hypertarget{class_dompdf_1_1_cpdf_a40d5e19fffea92115faffb8a58d5c6d6}\index{Cpdf@{Cpdf}!\$currentFontNum@{\$currentFontNum}}
+\index{\$currentFontNum@{\$currentFontNum}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentFontNum}{\$currentFontNum}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a40d5e19fffea92115faffb8a58d5c6d6} 
+\$current\+Font\+Num = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a6e74a726b7c21bfd7d927955ae767188}\index{Cpdf@{Cpdf}!\$currentLineStyle@{\$currentLineStyle}}
+\index{\$currentLineStyle@{\$currentLineStyle}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentLineStyle}{\$currentLineStyle}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6e74a726b7c21bfd7d927955ae767188} 
+\$current\+Line\+Style = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a6916d9e0c8322fde29e1fe1d6f9f11e3}\index{Cpdf@{Cpdf}!\$currentLineTransparency@{\$currentLineTransparency}}
+\index{\$currentLineTransparency@{\$currentLineTransparency}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentLineTransparency}{\$currentLineTransparency}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6916d9e0c8322fde29e1fe1d6f9f11e3} 
+\$current\+Line\+Transparency = \mbox{[}"{}mode"{} =$>$ "{}Normal"{}, "{}opacity"{} =$>$ 1.\+0\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a640e9f9a022022672baf0926e7b079ef}\index{Cpdf@{Cpdf}!\$currentNode@{\$currentNode}}
+\index{\$currentNode@{\$currentNode}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentNode}{\$currentNode}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a640e9f9a022022672baf0926e7b079ef} 
+\$current\+Node}
+
+\Hypertarget{class_dompdf_1_1_cpdf_af64cef3e8e7fe1dc79ff3293c12fb4cb}\index{Cpdf@{Cpdf}!\$currentPage@{\$currentPage}}
+\index{\$currentPage@{\$currentPage}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentPage}{\$currentPage}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_af64cef3e8e7fe1dc79ff3293c12fb4cb} 
+\$current\+Page}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a11075cb7427076a72b4c5e8cd4f0ced3}\index{Cpdf@{Cpdf}!\$currentPageSize@{\$currentPageSize}}
+\index{\$currentPageSize@{\$currentPageSize}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentPageSize}{\$currentPageSize}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a11075cb7427076a72b4c5e8cd4f0ced3} 
+\$current\+Page\+Size = \mbox{[}"{}width"{} =$>$ 0, "{}height"{} =$>$ 0\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a170ef49333e0a3724d803d8713bd7c07}\index{Cpdf@{Cpdf}!\$currentStrokeColor@{\$currentStrokeColor}}
+\index{\$currentStrokeColor@{\$currentStrokeColor}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentStrokeColor}{\$currentStrokeColor}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a170ef49333e0a3724d803d8713bd7c07} 
+\$current\+Stroke\+Color = null}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ac7a9fec297babb986a440fa02032be15}\index{Cpdf@{Cpdf}!\$currentTextState@{\$currentTextState}}
+\index{\$currentTextState@{\$currentTextState}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$currentTextState}{\$currentTextState}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac7a9fec297babb986a440fa02032be15} 
+\$current\+Text\+State = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a61371c41b5e0d82e99560a335ed05b48}\index{Cpdf@{Cpdf}!\$defaultFont@{\$defaultFont}}
+\index{\$defaultFont@{\$defaultFont}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$defaultFont}{\$defaultFont}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a61371c41b5e0d82e99560a335ed05b48} 
+\$default\+Font = \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/fonts/Helvetica.\+afm\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a122da4689a596dd289cea157977eb02c}\index{Cpdf@{Cpdf}!\$destinations@{\$destinations}}
+\index{\$destinations@{\$destinations}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$destinations}{\$destinations}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a122da4689a596dd289cea157977eb02c} 
+\$destinations = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a816911560c29f630f9b00e4c4a76bab3}\index{Cpdf@{Cpdf}!\$embeddedFilesId@{\$embeddedFilesId}}
+\index{\$embeddedFilesId@{\$embeddedFilesId}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$embeddedFilesId}{\$embeddedFilesId}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a816911560c29f630f9b00e4c4a76bab3} 
+\$embedded\+Files\+Id = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a4ac37790931818c0ac730fa8b4e58760}\index{Cpdf@{Cpdf}!\$encrypted@{\$encrypted}}
+\index{\$encrypted@{\$encrypted}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$encrypted}{\$encrypted}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a4ac37790931818c0ac730fa8b4e58760} 
+\$encrypted = false}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a730bbd8ecf60f264748611532e4c6f01}\index{Cpdf@{Cpdf}!\$encryptionKey@{\$encryptionKey}}
+\index{\$encryptionKey@{\$encryptionKey}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$encryptionKey}{\$encryptionKey}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a730bbd8ecf60f264748611532e4c6f01} 
+\$encryption\+Key = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_aaf05a37af8d9a97b51844158c9f04981}\index{Cpdf@{Cpdf}!\$fileIdentifier@{\$fileIdentifier}}
+\index{\$fileIdentifier@{\$fileIdentifier}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$fileIdentifier}{\$fileIdentifier}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aaf05a37af8d9a97b51844158c9f04981} 
+\$file\+Identifier = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ad1a7daa1dc8698bae1dfe1378320974f}\index{Cpdf@{Cpdf}!\$fillRule@{\$fillRule}}
+\index{\$fillRule@{\$fillRule}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$fillRule}{\$fillRule}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ad1a7daa1dc8698bae1dfe1378320974f} 
+\$fill\+Rule = "{}nonzero"{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a6f59caca64a9cd3619591fde1bfd443f}\index{Cpdf@{Cpdf}!\$firstPageId@{\$firstPageId}}
+\index{\$firstPageId@{\$firstPageId}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$firstPageId}{\$firstPageId}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6f59caca64a9cd3619591fde1bfd443f} 
+\$first\+Page\+Id}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a798ffce5b718eccf01f94b72cda78d61}\index{Cpdf@{Cpdf}!\$fontcache@{\$fontcache}}
+\index{\$fontcache@{\$fontcache}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$fontcache}{\$fontcache}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a798ffce5b718eccf01f94b72cda78d61} 
+\$fontcache = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a7ee8cb181f1dadb306bf15c59ac66f17}\index{Cpdf@{Cpdf}!\$fontcacheVersion@{\$fontcacheVersion}}
+\index{\$fontcacheVersion@{\$fontcacheVersion}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$fontcacheVersion}{\$fontcacheVersion}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a7ee8cb181f1dadb306bf15c59ac66f17} 
+\$fontcache\+Version = 6}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a3632d1cfb98c70776f2bf64fefeb1292}\index{Cpdf@{Cpdf}!\$fontFamilies@{\$fontFamilies}}
+\index{\$fontFamilies@{\$fontFamilies}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$fontFamilies}{\$fontFamilies}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a3632d1cfb98c70776f2bf64fefeb1292} 
+\$font\+Families = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ac330cfe6dbddd6c5d814439f97fbaf69}\index{Cpdf@{Cpdf}!\$fonts@{\$fonts}}
+\index{\$fonts@{\$fonts}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$fonts}{\$fonts}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ac330cfe6dbddd6c5d814439f97fbaf69} 
+\$fonts = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a040e3998d7ae60322cc70bbd29309c39}\index{Cpdf@{Cpdf}!\$imageAlphaList@{\$imageAlphaList}}
+\index{\$imageAlphaList@{\$imageAlphaList}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$imageAlphaList}{\$imageAlphaList}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a040e3998d7ae60322cc70bbd29309c39} 
+\$image\+Alpha\+List = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_aa8506f246e18dc1aaf5df3207f012480}\index{Cpdf@{Cpdf}!\$imageCache@{\$imageCache}}
+\index{\$imageCache@{\$imageCache}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$imageCache}{\$imageCache}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aa8506f246e18dc1aaf5df3207f012480} 
+\$image\+Cache = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a67f53d58afab936242ffccece3ab261d}\index{Cpdf@{Cpdf}!\$imagelist@{\$imagelist}}
+\index{\$imagelist@{\$imagelist}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$imagelist}{\$imagelist}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a67f53d58afab936242ffccece3ab261d} 
+\$imagelist = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_adb052d1886fe2b84e86ce2f5abc9f950}\index{Cpdf@{Cpdf}!\$indirectReferenceId@{\$indirectReferenceId}}
+\index{\$indirectReferenceId@{\$indirectReferenceId}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$indirectReferenceId}{\$indirectReferenceId}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_adb052d1886fe2b84e86ce2f5abc9f950} 
+\$indirect\+Reference\+Id = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ae60fb73fb55ea5cf46351c519f2e16fd}\index{Cpdf@{Cpdf}!\$infoObject@{\$infoObject}}
+\index{\$infoObject@{\$infoObject}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$infoObject}{\$infoObject}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae60fb73fb55ea5cf46351c519f2e16fd} 
+\$info\+Object = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a51103a34cc7e66ed10403b3a0e3022f2}\index{Cpdf@{Cpdf}!\$isUnicode@{\$isUnicode}}
+\index{\$isUnicode@{\$isUnicode}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$isUnicode}{\$isUnicode}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a51103a34cc7e66ed10403b3a0e3022f2} 
+\$is\+Unicode = false}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a687855b3cefd1fc1232e0f457ff7e41b}\index{Cpdf@{Cpdf}!\$javascript@{\$javascript}}
+\index{\$javascript@{\$javascript}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$javascript}{\$javascript}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a687855b3cefd1fc1232e0f457ff7e41b} 
+\$javascript = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_aedb3e9d19ff1ebfaa5added699a9671d}\index{Cpdf@{Cpdf}!\$looseObjects@{\$looseObjects}}
+\index{\$looseObjects@{\$looseObjects}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$looseObjects}{\$looseObjects}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aedb3e9d19ff1ebfaa5added699a9671d} 
+\$loose\+Objects = \mbox{[}$\,$\mbox{]}}
+
+an array which contains information about the objects which are not firmly attached to pages these have been added with the add\+Object function \Hypertarget{class_dompdf_1_1_cpdf_a21a183f927a6d243fe6b4ba3a6c4d4c8}\index{Cpdf@{Cpdf}!\$messages@{\$messages}}
+\index{\$messages@{\$messages}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$messages}{\$messages}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a21a183f927a6d243fe6b4ba3a6c4d4c8} 
+\$messages = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a894ee84a4cce4aed0afd68456ef6685d}\index{Cpdf@{Cpdf}!\$nCallback@{\$nCallback}}
+\index{\$nCallback@{\$nCallback}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$nCallback}{\$nCallback}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a894ee84a4cce4aed0afd68456ef6685d} 
+\$n\+Callback = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a9de4b5d2209348f2e4479bdfbaa81c6a}\index{Cpdf@{Cpdf}!\$nStack@{\$nStack}}
+\index{\$nStack@{\$nStack}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$nStack}{\$nStack}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a9de4b5d2209348f2e4479bdfbaa81c6a} 
+\$n\+Stack = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a45de2d60d68c9dcdd4aff475303520f3}\index{Cpdf@{Cpdf}!\$nStateStack@{\$nStateStack}}
+\index{\$nStateStack@{\$nStateStack}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$nStateStack}{\$nStateStack}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a45de2d60d68c9dcdd4aff475303520f3} 
+\$n\+State\+Stack = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a78cfbb4859f40b0d205596bf7542bc10}\index{Cpdf@{Cpdf}!\$numFonts@{\$numFonts}}
+\index{\$numFonts@{\$numFonts}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$numFonts}{\$numFonts}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a78cfbb4859f40b0d205596bf7542bc10} 
+\$num\+Fonts = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_afa03e46e7e7be49ab81a9a3599af2871}\index{Cpdf@{Cpdf}!\$numImages@{\$numImages}}
+\index{\$numImages@{\$numImages}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$numImages}{\$numImages}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_afa03e46e7e7be49ab81a9a3599af2871} 
+\$num\+Images = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a46f3313956a33faef75586addfc256a3}\index{Cpdf@{Cpdf}!\$numObj@{\$numObj}}
+\index{\$numObj@{\$numObj}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$numObj}{\$numObj}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a46f3313956a33faef75586addfc256a3} 
+\$num\+Obj = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ab340b7e706b6bd02b4f70ff942898102}\index{Cpdf@{Cpdf}!\$numPages@{\$numPages}}
+\index{\$numPages@{\$numPages}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$numPages}{\$numPages}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab340b7e706b6bd02b4f70ff942898102} 
+\$num\+Pages = 0}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a255f6b6db4c45b1418e9c15cf4e2bcdd}\index{Cpdf@{Cpdf}!\$objects@{\$objects}}
+\index{\$objects@{\$objects}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$objects}{\$objects}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a255f6b6db4c45b1418e9c15cf4e2bcdd} 
+\$objects = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a011800c63ece4cbbfa77136a20607023}\index{Cpdf@{Cpdf}!\$options@{\$options}}
+\index{\$options@{\$options}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$options}{\$options}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a011800c63ece4cbbfa77136a20607023} 
+\$options = \mbox{[}\textquotesingle{}compression\textquotesingle{} =$>$ true\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ab493fa11366dcceac135cc746f1b5f52}\index{Cpdf@{Cpdf}!\$pdfa@{\$pdfa}}
+\index{\$pdfa@{\$pdfa}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$pdfa}{\$pdfa}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ab493fa11366dcceac135cc746f1b5f52} 
+\$pdfa = false}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a39e9c2190f8061439c35f7d2a8240318}\index{Cpdf@{Cpdf}!\$procsetObjectId@{\$procsetObjectId}}
+\index{\$procsetObjectId@{\$procsetObjectId}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$procsetObjectId}{\$procsetObjectId}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a39e9c2190f8061439c35f7d2a8240318} 
+\$procset\+Object\+Id}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a48a43f46bf4bee8826e907215bba5101}\index{Cpdf@{Cpdf}!\$signatureMaxLen@{\$signatureMaxLen}}
+\index{\$signatureMaxLen@{\$signatureMaxLen}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$signatureMaxLen}{\$signatureMaxLen}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a48a43f46bf4bee8826e907215bba5101} 
+\$signature\+Max\+Len = 5000}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a6a0169b26b5301f906b1ec481b3f1eea}\index{Cpdf@{Cpdf}!\$stack@{\$stack}}
+\index{\$stack@{\$stack}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$stack}{\$stack}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6a0169b26b5301f906b1ec481b3f1eea} 
+\$stack = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_af19bb712a3b92c4f0fbcdf1add3f0bdd}\index{Cpdf@{Cpdf}!\$stateStack@{\$stateStack}}
+\index{\$stateStack@{\$stateStack}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$stateStack}{\$stateStack}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_af19bb712a3b92c4f0fbcdf1add3f0bdd} 
+\$state\+Stack = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_acd324dd0d2db81d0ca364b9d11420380}\index{Cpdf@{Cpdf}!\$stringSubsets@{\$stringSubsets}}
+\index{\$stringSubsets@{\$stringSubsets}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$stringSubsets}{\$stringSubsets}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_acd324dd0d2db81d0ca364b9d11420380} 
+\$string\+Subsets = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a2536fb78212dd93e166c5db69f3d74f9}\index{Cpdf@{Cpdf}!\$targetEncoding@{\$targetEncoding}}
+\index{\$targetEncoding@{\$targetEncoding}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$targetEncoding}{\$targetEncoding}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a2536fb78212dd93e166c5db69f3d74f9} 
+\$target\+Encoding = \textquotesingle{}Windows-\/1252\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a57024d47cf8348153f5fdda16f8fefa9}\index{Cpdf@{Cpdf}!\$tmp@{\$tmp}}
+\index{\$tmp@{\$tmp}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{\$tmp}{\$tmp}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a57024d47cf8348153f5fdda16f8fefa9} 
+\$tmp = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a42f88f16ad8d5b78e7069a5a163ad87a}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_BUTTON@{ACROFORM\_FIELD\_BUTTON}}
+\index{ACROFORM\_FIELD\_BUTTON@{ACROFORM\_FIELD\_BUTTON}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_BUTTON}{ACROFORM\_FIELD\_BUTTON}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a42f88f16ad8d5b78e7069a5a163ad87a} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+BUTTON = \textquotesingle{}Btn\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ae2aad07f2d11aa07168a40b4bb0a0ece}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_CHOICE@{ACROFORM\_FIELD\_CHOICE}}
+\index{ACROFORM\_FIELD\_CHOICE@{ACROFORM\_FIELD\_CHOICE}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_CHOICE}{ACROFORM\_FIELD\_CHOICE}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae2aad07f2d11aa07168a40b4bb0a0ece} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE = \textquotesingle{}Ch\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ae56b7c6490607af28bd2655f395fce54}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_CHOICE\_COMBO@{ACROFORM\_FIELD\_CHOICE\_COMBO}}
+\index{ACROFORM\_FIELD\_CHOICE\_COMBO@{ACROFORM\_FIELD\_CHOICE\_COMBO}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_CHOICE\_COMBO}{ACROFORM\_FIELD\_CHOICE\_COMBO}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae56b7c6490607af28bd2655f395fce54} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE\+\_\+\+COMBO = 0x20000}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a04e740e5bf5a6665475b34faeb8767af}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_CHOICE\_EDIT@{ACROFORM\_FIELD\_CHOICE\_EDIT}}
+\index{ACROFORM\_FIELD\_CHOICE\_EDIT@{ACROFORM\_FIELD\_CHOICE\_EDIT}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_CHOICE\_EDIT}{ACROFORM\_FIELD\_CHOICE\_EDIT}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a04e740e5bf5a6665475b34faeb8767af} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE\+\_\+\+EDIT = 0x40000}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a80be0e791d227bca9e7b22492069168f}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_CHOICE\_MULTISELECT@{ACROFORM\_FIELD\_CHOICE\_MULTISELECT}}
+\index{ACROFORM\_FIELD\_CHOICE\_MULTISELECT@{ACROFORM\_FIELD\_CHOICE\_MULTISELECT}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_CHOICE\_MULTISELECT}{ACROFORM\_FIELD\_CHOICE\_MULTISELECT}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a80be0e791d227bca9e7b22492069168f} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE\+\_\+\+MULTISELECT = 0x200000}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a13cf7fcfc4c44bdf0b787d1773337d5b}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_CHOICE\_SORT@{ACROFORM\_FIELD\_CHOICE\_SORT}}
+\index{ACROFORM\_FIELD\_CHOICE\_SORT@{ACROFORM\_FIELD\_CHOICE\_SORT}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_CHOICE\_SORT}{ACROFORM\_FIELD\_CHOICE\_SORT}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a13cf7fcfc4c44bdf0b787d1773337d5b} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+CHOICE\+\_\+\+SORT = 0x80000}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a715654cd08ba072bf1fb99d22bce8eb1}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_READONLY@{ACROFORM\_FIELD\_READONLY}}
+\index{ACROFORM\_FIELD\_READONLY@{ACROFORM\_FIELD\_READONLY}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_READONLY}{ACROFORM\_FIELD\_READONLY}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a715654cd08ba072bf1fb99d22bce8eb1} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+READONLY = 0x0001}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a0d4cc64075f7ec2fe124d517957c05fd}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_REQUIRED@{ACROFORM\_FIELD\_REQUIRED}}
+\index{ACROFORM\_FIELD\_REQUIRED@{ACROFORM\_FIELD\_REQUIRED}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_REQUIRED}{ACROFORM\_FIELD\_REQUIRED}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a0d4cc64075f7ec2fe124d517957c05fd} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+REQUIRED = 0x0002}
+
+\Hypertarget{class_dompdf_1_1_cpdf_aea4b6210feae02a81e66a8b8d180c078}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_SIG@{ACROFORM\_FIELD\_SIG}}
+\index{ACROFORM\_FIELD\_SIG@{ACROFORM\_FIELD\_SIG}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_SIG}{ACROFORM\_FIELD\_SIG}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aea4b6210feae02a81e66a8b8d180c078} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+SIG = \textquotesingle{}Sig\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_aba5d8c4f3eb5b211a6c6ad2aabc28aa8}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_TEXT@{ACROFORM\_FIELD\_TEXT}}
+\index{ACROFORM\_FIELD\_TEXT@{ACROFORM\_FIELD\_TEXT}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_TEXT}{ACROFORM\_FIELD\_TEXT}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_aba5d8c4f3eb5b211a6c6ad2aabc28aa8} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+TEXT = \textquotesingle{}Tx\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a9ceed06bbb3346631b8981ca8d09dca8}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_TEXT\_MULTILINE@{ACROFORM\_FIELD\_TEXT\_MULTILINE}}
+\index{ACROFORM\_FIELD\_TEXT\_MULTILINE@{ACROFORM\_FIELD\_TEXT\_MULTILINE}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_TEXT\_MULTILINE}{ACROFORM\_FIELD\_TEXT\_MULTILINE}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a9ceed06bbb3346631b8981ca8d09dca8} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+TEXT\+\_\+\+MULTILINE = 0x1000}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a33de145a5eb3f10d9d31fc74d93a724d}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_TEXT\_PASSWORD@{ACROFORM\_FIELD\_TEXT\_PASSWORD}}
+\index{ACROFORM\_FIELD\_TEXT\_PASSWORD@{ACROFORM\_FIELD\_TEXT\_PASSWORD}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_TEXT\_PASSWORD}{ACROFORM\_FIELD\_TEXT\_PASSWORD}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a33de145a5eb3f10d9d31fc74d93a724d} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+TEXT\+\_\+\+PASSWORD = 0x2000}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a6c03fa60f3934dd3816ce0ac073e0330}\index{Cpdf@{Cpdf}!ACROFORM\_FIELD\_TEXT\_RICHTEXT@{ACROFORM\_FIELD\_TEXT\_RICHTEXT}}
+\index{ACROFORM\_FIELD\_TEXT\_RICHTEXT@{ACROFORM\_FIELD\_TEXT\_RICHTEXT}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_FIELD\_TEXT\_RICHTEXT}{ACROFORM\_FIELD\_TEXT\_RICHTEXT}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a6c03fa60f3934dd3816ce0ac073e0330} 
+const ACROFORM\+\_\+\+FIELD\+\_\+\+TEXT\+\_\+\+RICHTEXT = 0x10000}
+
+\Hypertarget{class_dompdf_1_1_cpdf_ae37164a689c1ab7963f7a77103183c54}\index{Cpdf@{Cpdf}!ACROFORM\_SIG\_APPENDONLY@{ACROFORM\_SIG\_APPENDONLY}}
+\index{ACROFORM\_SIG\_APPENDONLY@{ACROFORM\_SIG\_APPENDONLY}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_SIG\_APPENDONLY}{ACROFORM\_SIG\_APPENDONLY}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_ae37164a689c1ab7963f7a77103183c54} 
+const ACROFORM\+\_\+\+SIG\+\_\+\+APPENDONLY = 0x0002}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a97a8f04b8a11cc4219184e4c3f90e62b}\index{Cpdf@{Cpdf}!ACROFORM\_SIG\_SIGNATURESEXISTS@{ACROFORM\_SIG\_SIGNATURESEXISTS}}
+\index{ACROFORM\_SIG\_SIGNATURESEXISTS@{ACROFORM\_SIG\_SIGNATURESEXISTS}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{ACROFORM\_SIG\_SIGNATURESEXISTS}{ACROFORM\_SIG\_SIGNATURESEXISTS}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a97a8f04b8a11cc4219184e4c3f90e62b} 
+const ACROFORM\+\_\+\+SIG\+\_\+\+SIGNATURESEXISTS = 0x0001}
+
+\Hypertarget{class_dompdf_1_1_cpdf_a74d4e108b302699401c215c4c5079bcb}\index{Cpdf@{Cpdf}!PDF\_VERSION@{PDF\_VERSION}}
+\index{PDF\_VERSION@{PDF\_VERSION}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{PDF\_VERSION}{PDF\_VERSION}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_a74d4e108b302699401c215c4c5079bcb} 
+const PDF\+\_\+\+VERSION = \textquotesingle{}1.\+7\textquotesingle{}}
+
+\Hypertarget{class_dompdf_1_1_cpdf_abc456ed14f00daf625708a14212bf200}\index{Cpdf@{Cpdf}!XOBJECT\_SUBTYPE\_FORM@{XOBJECT\_SUBTYPE\_FORM}}
+\index{XOBJECT\_SUBTYPE\_FORM@{XOBJECT\_SUBTYPE\_FORM}!Cpdf@{Cpdf}}
+\doxysubsubsection{\texorpdfstring{XOBJECT\_SUBTYPE\_FORM}{XOBJECT\_SUBTYPE\_FORM}}
+{\footnotesize\ttfamily \label{class_dompdf_1_1_cpdf_abc456ed14f00daf625708a14212bf200} 
+const XOBJECT\+\_\+\+SUBTYPE\+\_\+\+FORM = \textquotesingle{}Form\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/dompdf/dompdf/lib/\mbox{\hyperlink{dompdf_2lib_2_cpdf_8php}{Cpdf.\+php}}\end{DoxyCompactItemize}

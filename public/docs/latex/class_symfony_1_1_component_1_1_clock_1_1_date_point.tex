@@ -1,0 +1,180 @@
+\doxysection{Date\+Point Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point}{}\label{class_symfony_1_1_component_1_1_clock_1_1_date_point}\index{DatePoint@{DatePoint}}
+Inheritance diagram for Date\+Point\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_clock_1_1_date_point}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a94311e0e35f52b09b17103bb894adb39}{\+\_\+\+\_\+construct}} (string \$datetime=\textquotesingle{}\mbox{\hyperlink{namespace_symfony_1_1_component_1_1_clock_a80593ccdc0339775ddd5d82c37ca4f6b}{now}}\textquotesingle{}, ?\textbackslash{}Date\+Time\+Zone \$timezone=null, ?parent \$reference=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_addab56b05a3090eff2502c3ff5013bac}{add}} (\textbackslash{}Date\+Interval \$interval)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_ab960b196b72a6fc82658e0411095c86c}{sub}} (\textbackslash{}Date\+Interval \$interval)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a91325f023f6bb252c21675499ca1075e}{modify}} (string \$modifier)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a2cf986fb8ed1b9e7cdab0ab03556f128}{set\+Timestamp}} (int \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a5c82e1bd4bec76016579a5911992c7fe}{set\+Date}} (int \$year, int \$month, int \$day)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_ae2a9f343d8c491757cd789edd042b697}{set\+ISODate}} (int \$year, int \$week, int \$day=1)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a3e42525607c7d8d827db8fdf6412395c}{set\+Time}} (int \$hour, int \$minute, int \$second=0, int \$microsecond=0)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a7e6e8fe9a348a3288eb39cfe03962b71}{set\+Timezone}} (\textbackslash{}Date\+Time\+Zone \$timezone)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a23e87a365ef1aea5bc5fdad51d8925ae}{get\+Timezone}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_abfd955eb01df911a5989293da366dd0c}{set\+Microsecond}} (int \$microsecond)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a0caf5cd630cbc903dc4f3037e0b2bcb7}{get\+Microsecond}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_ad02bda5fe17a74f3a84afa992d01eb60}{create\+From\+Format}} (string \$format, string \$datetime, ?\textbackslash{}Date\+Time\+Zone \$timezone=null)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a082795575e02101d418a6077590121f4}{create\+From\+Interface}} (\textbackslash{}Date\+Time\+Interface \$object)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_afff1dcd23e81c61e8123146a1a0424fc}{create\+From\+Mutable}} (\textbackslash{}Date\+Time \$object)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_date_point_a49e0ed57dc8845c85c06dfc3b4f4560c}{create\+From\+Timestamp}} (int\texorpdfstring{$\vert$}{|}float \$timestamp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An immmutable Date\+Time with stricter error handling and return types than the native one.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\label{doc-constructors}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a94311e0e35f52b09b17103bb894adb39}\index{DatePoint@{DatePoint}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a94311e0e35f52b09b17103bb894adb39} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$datetime}{ = {\ttfamily \textquotesingle{}\mbox{\hyperlink{namespace_symfony_1_1_component_1_1_clock_a80593ccdc0339775ddd5d82c37ca4f6b}{now}}\textquotesingle{}}, }\item[{?\textbackslash{}Date\+Time\+Zone}]{\$timezone}{ = {\ttfamily null}, }\item[{?parent}]{\$reference}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Malformed\+String\+Exception When \$datetime is invalid 
+
+\label{doc-func-members}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_addab56b05a3090eff2502c3ff5013bac}\index{DatePoint@{DatePoint}!add@{add}}
+\index{add@{add}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_addab56b05a3090eff2502c3ff5013bac} 
+add (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Interval}]{\$interval}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_ad02bda5fe17a74f3a84afa992d01eb60}\index{DatePoint@{DatePoint}!createFromFormat@{createFromFormat}}
+\index{createFromFormat@{createFromFormat}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{createFromFormat()}{createFromFormat()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_ad02bda5fe17a74f3a84afa992d01eb60} 
+create\+From\+Format (\begin{DoxyParamCaption}\item[{string}]{\$format}{, }\item[{string}]{\$datetime}{, }\item[{?\textbackslash{}Date\+Time\+Zone}]{\$timezone}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Malformed\+String\+Exception When \$format or \$datetime are invalid \Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a082795575e02101d418a6077590121f4}\index{DatePoint@{DatePoint}!createFromInterface@{createFromInterface}}
+\index{createFromInterface@{createFromInterface}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{createFromInterface()}{createFromInterface()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a082795575e02101d418a6077590121f4} 
+create\+From\+Interface (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Time\+Interface}]{\$object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_afff1dcd23e81c61e8123146a1a0424fc}\index{DatePoint@{DatePoint}!createFromMutable@{createFromMutable}}
+\index{createFromMutable@{createFromMutable}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{createFromMutable()}{createFromMutable()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_afff1dcd23e81c61e8123146a1a0424fc} 
+create\+From\+Mutable (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Time}]{\$object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a49e0ed57dc8845c85c06dfc3b4f4560c}\index{DatePoint@{DatePoint}!createFromTimestamp@{createFromTimestamp}}
+\index{createFromTimestamp@{createFromTimestamp}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{createFromTimestamp()}{createFromTimestamp()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a49e0ed57dc8845c85c06dfc3b4f4560c} 
+create\+From\+Timestamp (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}float}]{\$timestamp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a0caf5cd630cbc903dc4f3037e0b2bcb7}\index{DatePoint@{DatePoint}!getMicrosecond@{getMicrosecond}}
+\index{getMicrosecond@{getMicrosecond}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{getMicrosecond()}{getMicrosecond()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a0caf5cd630cbc903dc4f3037e0b2bcb7} 
+get\+Microsecond (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a23e87a365ef1aea5bc5fdad51d8925ae}\index{DatePoint@{DatePoint}!getTimezone@{getTimezone}}
+\index{getTimezone@{getTimezone}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{getTimezone()}{getTimezone()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a23e87a365ef1aea5bc5fdad51d8925ae} 
+get\+Timezone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a91325f023f6bb252c21675499ca1075e}\index{DatePoint@{DatePoint}!modify@{modify}}
+\index{modify@{modify}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{modify()}{modify()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a91325f023f6bb252c21675499ca1075e} 
+modify (\begin{DoxyParamCaption}\item[{string}]{\$modifier}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Malformed\+String\+Exception When \$modifier is invalid \Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a5c82e1bd4bec76016579a5911992c7fe}\index{DatePoint@{DatePoint}!setDate@{setDate}}
+\index{setDate@{setDate}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a5c82e1bd4bec76016579a5911992c7fe} 
+set\+Date (\begin{DoxyParamCaption}\item[{int}]{\$year}{, }\item[{int}]{\$month}{, }\item[{int}]{\$day}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_ae2a9f343d8c491757cd789edd042b697}\index{DatePoint@{DatePoint}!setISODate@{setISODate}}
+\index{setISODate@{setISODate}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{setISODate()}{setISODate()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_ae2a9f343d8c491757cd789edd042b697} 
+set\+ISODate (\begin{DoxyParamCaption}\item[{int}]{\$year}{, }\item[{int}]{\$week}{, }\item[{int}]{\$day}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_abfd955eb01df911a5989293da366dd0c}\index{DatePoint@{DatePoint}!setMicrosecond@{setMicrosecond}}
+\index{setMicrosecond@{setMicrosecond}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{setMicrosecond()}{setMicrosecond()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_abfd955eb01df911a5989293da366dd0c} 
+set\+Microsecond (\begin{DoxyParamCaption}\item[{int}]{\$microsecond}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a3e42525607c7d8d827db8fdf6412395c}\index{DatePoint@{DatePoint}!setTime@{setTime}}
+\index{setTime@{setTime}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a3e42525607c7d8d827db8fdf6412395c} 
+set\+Time (\begin{DoxyParamCaption}\item[{int}]{\$hour}{, }\item[{int}]{\$minute}{, }\item[{int}]{\$second}{ = {\ttfamily 0}, }\item[{int}]{\$microsecond}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a2cf986fb8ed1b9e7cdab0ab03556f128}\index{DatePoint@{DatePoint}!setTimestamp@{setTimestamp}}
+\index{setTimestamp@{setTimestamp}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{setTimestamp()}{setTimestamp()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a2cf986fb8ed1b9e7cdab0ab03556f128} 
+set\+Timestamp (\begin{DoxyParamCaption}\item[{int}]{\$value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_a7e6e8fe9a348a3288eb39cfe03962b71}\index{DatePoint@{DatePoint}!setTimezone@{setTimezone}}
+\index{setTimezone@{setTimezone}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{setTimezone()}{setTimezone()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_a7e6e8fe9a348a3288eb39cfe03962b71} 
+set\+Timezone (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Time\+Zone}]{\$timezone}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_date_point_ab960b196b72a6fc82658e0411095c86c}\index{DatePoint@{DatePoint}!sub@{sub}}
+\index{sub@{sub}!DatePoint@{DatePoint}}
+\doxysubsubsection{\texorpdfstring{sub()}{sub()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_date_point_ab960b196b72a6fc82658e0411095c86c} 
+sub (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Interval}]{\$interval}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/symfony/clock/\mbox{\hyperlink{_date_point_8php}{Date\+Point.\+php}}\end{DoxyCompactItemize}

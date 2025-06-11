@@ -1,0 +1,60 @@
+\doxysection{Matcher\+Assert Class Reference}
+\hypertarget{class_hamcrest_1_1_matcher_assert}{}\label{class_hamcrest_1_1_matcher_assert}\index{MatcherAssert@{MatcherAssert}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_matcher_assert_a8b9f23ef1b040650b290a3631f63105e}{assert\+That}} ()
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_matcher_assert_a9f70d3865f00e8c356111d4e246bb50d}{get\+Count}} ()
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_matcher_assert_a56100b6464827054cd04d4004eae393c}{reset\+Count}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_hamcrest_1_1_matcher_assert_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_matcher_assert_a8b9f23ef1b040650b290a3631f63105e}\index{MatcherAssert@{MatcherAssert}!assertThat@{assertThat}}
+\index{assertThat@{assertThat}!MatcherAssert@{MatcherAssert}}
+\doxysubsubsection{\texorpdfstring{assertThat()}{assertThat()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_matcher_assert_a8b9f23ef1b040650b290a3631f63105e} 
+assert\+That (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Make an assertion and throw {\ttfamily \doxylink{}{Hamcrest\textbackslash{}\+Assertion\+Error}} if it fails.
+
+The first parameter may optionally be a string identifying the assertion to be included in the failure message.
+
+If the third parameter is not a matcher it is passed to {\ttfamily \doxylink{}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Equal\#equal\+To}} to create one.
+
+Example\+: 
+\begin{DoxyPre}
+// With an identifier
+assertThat("{}apple flavour"{}, \$apple-\/>flavour(), equalTo("{}tasty"{}));
+// Without an identifier
+assertThat(\$apple-\/>flavour(), equalTo("{}tasty"{}));
+// Evaluating a boolean expression
+assertThat("{}some error"{}, \$a > \$b);
+assertThat(\$a > \$b);
+\end{DoxyPre}
+ \Hypertarget{class_hamcrest_1_1_matcher_assert_a9f70d3865f00e8c356111d4e246bb50d}\index{MatcherAssert@{MatcherAssert}!getCount@{getCount}}
+\index{getCount@{getCount}!MatcherAssert@{MatcherAssert}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_matcher_assert_a9f70d3865f00e8c356111d4e246bb50d} 
+get\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the number of assertions performed.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_hamcrest_1_1_matcher_assert_a56100b6464827054cd04d4004eae393c}\index{MatcherAssert@{MatcherAssert}!resetCount@{resetCount}}
+\index{resetCount@{resetCount}!MatcherAssert@{MatcherAssert}}
+\doxysubsubsection{\texorpdfstring{resetCount()}{resetCount()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_matcher_assert_a56100b6464827054cd04d4004eae393c} 
+reset\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Resets the number of assertions performed to zero. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/\mbox{\hyperlink{_matcher_assert_8php}{Matcher\+Assert.\+php}}\end{DoxyCompactItemize}

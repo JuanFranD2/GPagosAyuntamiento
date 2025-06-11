@@ -1,0 +1,4 @@
+var _fix_orphaned_footnotes_and_refs_listener_8php =
+[
+    [ "FixOrphanedFootnotesAndRefsListener", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_event_1_1_fix_orphaned_footnotes_and_refs_listener.html", "class_league_1_1_common_mark_1_1_extension_1_1_footnote_1_1_event_1_1_fix_orphaned_footnotes_and_refs_listener" ]
+];

@@ -1,0 +1,30 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/read-\/cache Directory Reference}
+\hypertarget{dir_710e48e01b43708415ca2324e7b48b1d}{}\label{dir_710e48e01b43708415ca2324e7b48b1d}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/read-\/cache Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/read-\/cache Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md5963}{}\doxysubsection{\texorpdfstring{read-\/cache \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/TrySound/read-cache.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/\+Try\+Sound/read-\/cache.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/TrySound/read-cache}{\texttt{https\+://travis-\/ci.\+org/\+Try\+Sound/read-\/cache}})}{read-\/cache \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/TrySound/read-cache.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/\+Try\+Sound/read-\/cache.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/TrySound/read-cache}{\texttt{https\+://travis-\/ci.\+org/\+Try\+Sound/read-\/cache}})}}\label{README.md_autotoc_md5963}
+Reads and caches the entire contents of a file until it is modified.\hypertarget{README.md_autotoc_md5964}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{README.md_autotoc_md5964}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ i\ read-\/cache}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md5965}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md5965}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{//\ foo.js}
+\DoxyCodeLine{var\ readCache\ =\ require('read-\/cache');}
+\DoxyCodeLine{}
+\DoxyCodeLine{readCache('foo.js').then(function\ (contents)\ \{}
+\DoxyCodeLine{\ \ \ \ console.log(contents);}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md5966}{}\doxysubsection{\texorpdfstring{API}{API}}\label{README.md_autotoc_md5966}
+\hypertarget{README.md_autotoc_md5967}{}\doxysubsubsection{\texorpdfstring{read\+Cache(path\mbox{[}, encoding\mbox{]})}{read\+Cache(path\mbox{[}, encoding\mbox{]})}}\label{README.md_autotoc_md5967}
+Returns a promise that resolves with the file\textquotesingle{}s contents.\hypertarget{README.md_autotoc_md5968}{}\doxysubsubsection{\texorpdfstring{read\+Cache.\+sync(path\mbox{[}, encoding\mbox{]})}{read\+Cache.\+sync(path\mbox{[}, encoding\mbox{]})}}\label{README.md_autotoc_md5968}
+Returns the content of the file.\hypertarget{README.md_autotoc_md5969}{}\doxysubsubsection{\texorpdfstring{read\+Cache.\+get(path\mbox{[}, encoding\mbox{]})}{read\+Cache.\+get(path\mbox{[}, encoding\mbox{]})}}\label{README.md_autotoc_md5969}
+Returns the content of cached file or null.\hypertarget{README.md_autotoc_md5970}{}\doxysubsubsection{\texorpdfstring{read\+Cache.\+clear()}{read\+Cache.\+clear()}}\label{README.md_autotoc_md5970}
+Clears the contents of the cache.\hypertarget{README.md_autotoc_md5971}{}\doxysubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md5971}
+MIT © \href{mailto:trysound@yandex.ru}{\texttt{Bogdan Chadkin}} 

@@ -1,0 +1,235 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/masterminds/html5 Directory Reference}
+\hypertarget{dir_c20ece92bc61580a02fe44e07c09c914}{}\label{dir_c20ece92bc61580a02fe44e07c09c914}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/masterminds/html5 Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/masterminds/html5 Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_21ed452c9c98ab0d8070048b0b76c6ef}{bin}}
+\item 
+directory \mbox{\hyperlink{dir_1add61025cb45ae5aab8b4133ed010b2}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{quote}
+\# UKRAINE NEEDS YOUR HELP NOW!
+
+On 24 February 2022, Russian \href{https://www.bbc.com/news/world-europe-60504334}{\texttt{President Vladimir Putin ordered an invasion of Ukraine by Russian Armed Forces}}.
+
+Your support is urgently needed.
+
+
+\begin{DoxyItemize}
+\item Donate to the volunteers. Here is the volunteer fund helping the Ukrainian army to provide all the necessary equipment\+: \href{https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi}{\texttt{https\+://bank.\+gov.\+ua/en/news/all/natsionalniy-\/bank-\/vidkriv-\/spetsrahunok-\/dlya-\/zboru-\/koshtiv-\/na-\/potrebi-\/armiyi}} or \href{https://savelife.in.ua/en/donate/}{\texttt{https\+://savelife.\+in.\+ua/en/donate/}}
+\item Triple-\/check social media sources. Russian disinformation is attempting to coverup and distort the reality in Ukraine.
+\item Help Ukrainian refugees who are fleeing Russian attacks and shellings\+: \href{https://www.globalcitizen.org/en/content/ways-to-help-ukraine-conflict/}{\texttt{https\+://www.\+globalcitizen.\+org/en/content/ways-\/to-\/help-\/ukraine-\/conflict/}}
+\item Put pressure on your political representatives to provide help to Ukraine.
+\item Believe in the Ukrainian people, they will not surrender, they don\textquotesingle{}t have another Ukraine.
+\end{DoxyItemize}
+
+\end{quote}
+\hypertarget{README.md_autotoc_md9802}{}\doxysubsubsection{\texorpdfstring{THANK YOU!}{THANK YOU!}}\label{README.md_autotoc_md9802}
+\hypertarget{README.md_autotoc_md9803}{}\doxysubsection{\texorpdfstring{HTML5-\/\+PHP}{HTML5-\/\+PHP}}\label{README.md_autotoc_md9803}
+HTML5 is a standards-\/compliant HTML5 parser and writer written entirely in PHP. It is stable and used in many production websites, and has well over \href{https://packagist.org/packages/masterminds/html5}{\texttt{five million downloads}}.
+
+HTML5 provides the following features.
+
+
+\begin{DoxyItemize}
+\item An HTML5 serializer
+\item Support for PHP namespaces
+\item \doxylink{namespace_composer}{Composer} support
+\item Event-\/based (SAX-\/like) parser
+\item A DOM tree builder
+\item Interoperability with \href{https://github.com/technosophos/querypath}{\texttt{Query\+Path}}
+\item Runs on {\bfseries{PHP}} 5.\+3.\+0 or newer
+\end{DoxyItemize}
+
+\href{https://github.com/Masterminds/html5-php/actions/workflows/ci.yaml}{\texttt{}} \href{https://packagist.org/packages/masterminds/html5}{\texttt{}} \href{https://scrutinizer-ci.com/g/Masterminds/html5-php/?branch=master}{\texttt{}} \href{https://scrutinizer-ci.com/g/Masterminds/html5-php/?branch=master}{\texttt{}} \href{https://masterminds.github.io/stability/sustained.html}{\texttt{}}\hypertarget{README.md_autotoc_md9804}{}\doxysubsubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md9804}
+Install HTML5-\/\+PHP using \href{http://getcomposer.org/}{\texttt{composer}}.
+
+By adding the {\ttfamily masterminds/html5} dependency to your {\ttfamily composer.\+json} file\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ "{}require"{}\ :\ \{}
+\DoxyCodeLine{\ \ \ \ "{}masterminds/html5"{}:\ "{}\string^2.0"{}}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+By invoking require command via composer executable\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ masterminds/html5}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md9805}{}\doxysubsubsection{\texorpdfstring{Basic Usage}{Basic Usage}}\label{README.md_autotoc_md9805}
+HTML5-\/\+PHP has a high-\/level API and a low-\/level API.
+
+Here is how you use the high-\/level {\ttfamily HTML5} library API\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{namespacephp}{php}}}
+\DoxyCodeLine{\textcolor{comment}{//\ Assuming\ you\ installed\ from\ Composer:}}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{"{}vendor/autoload.php"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{namespace_masterminds_1_1_h_t_m_l5}{Masterminds\(\backslash\)HTML5}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ An\ example\ HTML\ document:}}
+\DoxyCodeLine{\$html\ =\ <<<\ \textcolor{stringliteral}{'HERE'}}
+\DoxyCodeLine{\ \ <html>}
+\DoxyCodeLine{\ \ <\mbox{\hyperlink{namespace_guzzle_http_a71d0216d094225273e5da75a248311e2}{head}}>}
+\DoxyCodeLine{\ \ \ \ <\mbox{\hyperlink{namespace_livewire_1_1_volt_a608865f2d7880c5674d91b91472a9663}{title}}>TEST</\mbox{\hyperlink{namespace_livewire_1_1_volt_a608865f2d7880c5674d91b91472a9663}{title}}>}
+\DoxyCodeLine{\ \ </\mbox{\hyperlink{namespace_guzzle_http_a71d0216d094225273e5da75a248311e2}{head}}>}
+\DoxyCodeLine{\ \ <body\ \textcolor{keywordtype}{id}=\textcolor{stringliteral}{'foo'}>}
+\DoxyCodeLine{\ \ \ \ <h1>Hello\ World</h1>}
+\DoxyCodeLine{\ \ \ \ <p>This\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a9989d7787f582dbe5c068a73dc55ebb3}{is}}\ a\ test\ \mbox{\hyperlink{namespace_livewire_a06fb9dcb8313fd2c32b16606f427aa1f}{of}}\ the\ HTML5\ parser.</p>}
+\DoxyCodeLine{\ \ </body>}
+\DoxyCodeLine{\ \ </html>}
+\DoxyCodeLine{HERE;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Parse\ the\ document.\ \$dom\ is\ a\ DOMDocument.}}
+\DoxyCodeLine{\$html5\ =\ \textcolor{keyword}{new}\ HTML5();}
+\DoxyCodeLine{\$dom\ =\ \$html5-\/>loadHTML(\$html);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Render\ it\ as\ HTML5:}}
+\DoxyCodeLine{print\ \$html5-\/>saveHTML(\$dom);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Or\ save\ it\ to\ a\ file:}}
+\DoxyCodeLine{\$html5-\/>save(\$dom,\ \textcolor{stringliteral}{'out.html'});}
+
+\end{DoxyCode}
+
+
+The {\ttfamily \$dom} created by the parser is a full {\ttfamily DOMDocument} object. And the {\ttfamily save()} and {\ttfamily save\+HTML()} methods will take any DOMDocument.\hypertarget{README.md_autotoc_md9806}{}\doxysubsubsubsection{\texorpdfstring{Options}{Options}}\label{README.md_autotoc_md9806}
+It is possible to pass in an array of configuration options when loading an HTML5 document.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ An\ associative\ array\ of\ options}}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_illuminate_1_1_testing_1_1_concerns_a011800c63ece4cbbfa77136a20607023}{\$options}}\ =\ array(}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'option\_name'}\ =>\ \textcolor{stringliteral}{'option\_value'},}
+\DoxyCodeLine{);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Provide\ the\ options\ to\ the\ constructor}}
+\DoxyCodeLine{\$html5\ =\ \textcolor{keyword}{new}\ HTML5(\$options);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dom\ =\ \$html5-\/>loadHTML(\$html);}
+
+\end{DoxyCode}
+
+
+The following options are supported\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily encode\+\_\+entities} (boolean)\+: Indicates that the serializer should aggressively encode characters as entities. Without this, it only encodes the bare minimum.
+\item {\ttfamily disable\+\_\+html\+\_\+ns} (boolean)\+: Prevents the parser from automatically assigning the HTML5 namespace to the DOM document. This is for non-\/namespace aware DOM tools.
+\item {\ttfamily target\+\_\+document} (\textbackslash{}\+DOMDocument)\+: A DOM document that will be used as the destination for the parsed nodes.
+\item {\ttfamily implicit\+\_\+namespaces} (array)\+: An assoc array of namespaces that should be used by the parser. Name is tag prefix, value is NS URI.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md9807}{}\doxysubsubsection{\texorpdfstring{The Low-\/\+Level API}{The Low-\/\+Level API}}\label{README.md_autotoc_md9807}
+This library provides the following low-\/level APIs that you can use to create more customized HTML5 tools\+:
+
+
+\begin{DoxyItemize}
+\item A SAX-\/like event-\/based parser that you can hook into for special kinds of parsing.
+\item A flexible error-\/reporting mechanism that can be tuned to document syntax checking.
+\item A DOM implementation that uses PHP\textquotesingle{}s built-\/in DOM library.
+\end{DoxyItemize}
+
+The unit tests exercise each piece of the API, and every public function is well-\/documented.\hypertarget{README.md_autotoc_md9808}{}\doxysubsubsubsection{\texorpdfstring{Parser Design}{Parser Design}}\label{README.md_autotoc_md9808}
+The parser is designed as follows\+:
+
+
+\begin{DoxyItemize}
+\item The {\ttfamily Scanner} handles scanning on behalf of the parser.
+\item The {\ttfamily Tokenizer} requests data off of the scanner, parses it, clasifies it, and sends it to an {\ttfamily Event\+Handler}. It is a {\itshape recursive descent parser.}
+\item The {\ttfamily Event\+Handler} receives notifications and data for each specific semantic event that occurs during tokenization.
+\item The {\ttfamily DOMBuilder} is an {\ttfamily Event\+Handler} that listens for tokenizing events and builds a document tree ({\ttfamily DOMDocument}) based on the events.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md9809}{}\doxysubsubsubsection{\texorpdfstring{Serializer Design}{Serializer Design}}\label{README.md_autotoc_md9809}
+The serializer takes a data structure (the {\ttfamily DOMDocument}) and transforms it into a character representation -- an HTML5 document.
+
+The serializer is broken into three parts\+:
+
+
+\begin{DoxyItemize}
+\item The {\ttfamily Output\+Rules} contain the rules to turn DOM elements into strings. The rules are an implementation of the interface {\ttfamily Rules\+Interface} allowing for different rule sets to be used.
+\item The {\ttfamily Traverser}, which is a special-\/purpose tree walker. It visits each node node in the tree and uses the {\ttfamily Output\+Rules} to transform the node into a string.
+\item {\ttfamily HTML5} manages the {\ttfamily Traverser} and stores the resultant data in the correct place.
+\end{DoxyItemize}
+
+The serializer ({\ttfamily save()}, {\ttfamily save\+HTML()}) follows the \href{http://www.w3.org/TR/2012/CR-html5-20121217/syntax.html\#serializing-html-fragments}{\texttt{section 8.\+9 of the HTML 5.\+0 spec}}. So tags are serialized according to these rules\+:
+
+
+\begin{DoxyItemize}
+\item A tag with children\+: \texorpdfstring{$<$}{<}foo\texorpdfstring{$>$}{>}CHILDREN\texorpdfstring{$<$}{<}/foo\texorpdfstring{$>$}{>}
+\item A tag that cannot have content\+: \texorpdfstring{$<$}{<}foo\texorpdfstring{$>$}{>} (no closing tag)
+\item A tag that could have content, but doesn\textquotesingle{}t\+: \texorpdfstring{$<$}{<}foo\texorpdfstring{$>$}{>}\texorpdfstring{$<$}{<}/foo\texorpdfstring{$>$}{>}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md9810}{}\doxysubsubsection{\texorpdfstring{Known Issues (Or, Things We Designed Against the Spec)}{Known Issues (Or, Things We Designed Against the Spec)}}\label{README.md_autotoc_md9810}
+Please check the issue queue for a full list, but the following are issues known issues that are not presently on the roadmap\+:
+
+
+\begin{DoxyItemize}
+\item Namespaces\+: HTML5 only \href{http://www.w3.org/TR/html5/infrastructure.html\#namespaces}{\texttt{supports a selected list of namespaces}} and they do not operate in the same way as XML namespaces. A {\ttfamily \+:} has no special meaning. By default the parser does not support XML style namespaces via {\ttfamily \+:}; to enable the XML namespaces see the XML Namespaces section
+\item Scripts\+: This parser does not contain a Java\+Script or a CSS interpreter. While one may be supplied, not all features will be supported.
+\item Reentrance\+: The current parser is not re-\/entrant. (Thus you can\textquotesingle{}t pause the parser to modify the HTML string mid-\/parse.)
+\item Validation\+: The current tree builder is {\bfseries{not}} a validating parser. While it will correct some HTML, it does not check that the HTML conforms to the standard. (Should you wish, you can build a validating parser by extending DOMTree or building your own Event\+Handler implementation.)
+\begin{DoxyItemize}
+\item There is limited support for insertion modes.
+\item Some autocorrection is done automatically.
+\item Per the spec, many legacy tags are admitted and correctly handled, even though they are technically not part of HTML5.
+\end{DoxyItemize}
+\item \doxylink{class_attribute}{Attribute} names and values\+: Due to the implementation details of the PHP implementation of DOM, attribute names that do not follow the XML 1.\+0 standard are not inserted into the DOM. (Effectively, they are ignored.) If you\textquotesingle{}ve got a clever fix for this, jump in!
+\item Processor Instructions\+: The HTML5 spec does not allow processor instructions. We do. Since this is a server-\/side library, we think this is useful. And that means, dear reader, that in some cases you can parse the HTML from a mixed PHP/\+HTML document. This, however, is an incidental feature, not a core feature.
+\item HTML manifests\+: Unsupported.
+\item PLAINTEXT\+: Unsupported.
+\item Adoption Agency Algorithm\+: Not yet implemented. (8.\+2.\+5.\+4.\+7)
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md9811}{}\doxysubsubsection{\texorpdfstring{XML Namespaces}{XML Namespaces}}\label{README.md_autotoc_md9811}
+To use XML style namespaces you have to configure well the main {\ttfamily HTML5} instance.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{namespace_masterminds_1_1_h_t_m_l5}{Masterminds\(\backslash\)HTML5}};}
+\DoxyCodeLine{\$html\ =\ \textcolor{keyword}{new}\ HTML5(array(}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}xmlNamespaces"{}}\ =>\ \textcolor{keyword}{true}}
+\DoxyCodeLine{));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dom\ =\ \$html-\/>loadHTML(\textcolor{stringliteral}{'<t:tag\ xmlns:t="{}http://www.example.com"{}/>'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dom-\/>documentElement-\/>namespaceURI;\ \textcolor{comment}{//\ http://www.example.com}}
+
+\end{DoxyCode}
+
+
+You can also add some default prefixes that will not require the namespace declaration, but its elements will be namespaced.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{namespace_masterminds_1_1_h_t_m_l5}{Masterminds\(\backslash\)HTML5}};}
+\DoxyCodeLine{\$html\ =\ \textcolor{keyword}{new}\ HTML5(array(}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}implicitNamespaces"{}}=>array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}t"{}}=>\textcolor{stringliteral}{"{}http://www.example.com"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+\DoxyCodeLine{));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dom\ =\ \$html-\/>loadHTML(\textcolor{stringliteral}{'<t:tag/>'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dom-\/>documentElement-\/>namespaceURI;\ \textcolor{comment}{//\ http://www.example.com}}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md9812}{}\doxysubsubsection{\texorpdfstring{Thanks to...}{Thanks to...}}\label{README.md_autotoc_md9812}
+The dedicated (and patient) contributors of patches small and large, who have already made this library better.\+See the CREDITS file for a list of contributors.
+
+We owe a huge debt of gratitude to the original authors of html5lib.
+
+While not much of the original parser remains, we learned a lot from reading the html5lib library. And some pieces remain here. In particular, much of the UTF-\/8 and Unicode handling is derived from the html5lib project.\hypertarget{README.md_autotoc_md9813}{}\doxysubsubsection{\texorpdfstring{License}{License}}\label{README.md_autotoc_md9813}
+This software is released under the MIT license. The original html5lib library was also released under the MIT license.
+
+See LICENSE.\+txt
+
+Certain files contain copyright assertions by specific individuals involved with html5lib. Those have been retained where appropriate. 

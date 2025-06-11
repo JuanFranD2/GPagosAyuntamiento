@@ -1,0 +1,25 @@
+var class_barryvdh_1_1_laravel_ide_helper_1_1_generator =
+[
+    [ "__construct", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#ad132eecfdb040ee39340f771fa5a552c", null ],
+    [ "addMacroableClasses", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a91ce208111258bbe253ab3d0b710505d", null ],
+    [ "detectDrivers", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a7b19bd44524a37249aa3edc249207641", null ],
+    [ "detectHelpers", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#af7202b40cdc31f0b66e42eea3ec4b606", null ],
+    [ "error", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#aa20c6da2977b63e1d26d8925670d9dc2", null ],
+    [ "generate", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a913873cf89f388d70a28de0b77d68884", null ],
+    [ "generateEloquent", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a7e94308934b6f8972a6e6ad1f6748be2", null ],
+    [ "getAliases", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a1e9e143d493aedb855d3c5edadb17bb2", null ],
+    [ "getAliasesByAliasNamespace", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a631cdda5767e3df64889b3268c2338e7", null ],
+    [ "getAliasesByExtendsNamespace", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#aa764822cee02e2575978430c1fc75c26", null ],
+    [ "getFullyQualifiedClassNameInFile", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#ac75f11c579820364a7037f8c894666ad", null ],
+    [ "getMacroableClasses", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a951bdf98970feb1d285704864bf53bd2", null ],
+    [ "getRealTimeFacades", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a3dc16a0977c78d7ba82e1c1a48cdad89", null ],
+    [ "getValidAliases", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#ab5e301c025665009176f0f02aa1788de", null ],
+    [ "$config", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a49c7011be9c979d9174c52a8b83e5d8e", null ],
+    [ "$extra", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a6bcaf0e2f3a66b7da57696c4e02eac7d", null ],
+    [ "$helpers", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#aeeccfcd4e2765b8469c41f93ec023ee9", null ],
+    [ "$interfaces", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a995aac803a8860a27f5eda9af6c4870a", null ],
+    [ "$macroableTraits", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#ae4d5566ad6b01b89de33f31d83bd0ecc", null ],
+    [ "$magic", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#afc5425167b7959cb97975d3e8aed83a4", null ],
+    [ "$output", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#a73004ce9cd673c1bfafd1dc351134797", null ],
+    [ "$view", "class_barryvdh_1_1_laravel_ide_helper_1_1_generator.html#acccf2eac8663e0cebe8101e90fbab089", null ]
+];

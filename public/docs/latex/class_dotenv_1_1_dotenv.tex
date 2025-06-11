@@ -1,0 +1,296 @@
+\doxysection{Dotenv Class Reference}
+\hypertarget{class_dotenv_1_1_dotenv}{}\label{class_dotenv_1_1_dotenv}\index{Dotenv@{Dotenv}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_dotenv_a867288955052b31fe68f66c55c5a7761}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_dotenv_1_1_store_1_1_store_interface}{Store\+Interface}} \$store, \mbox{\hyperlink{interface_dotenv_1_1_parser_1_1_parser_interface}{Parser\+Interface}} \$parser, \mbox{\hyperlink{interface_dotenv_1_1_loader_1_1_loader_interface}{Loader\+Interface}} \$loader, \mbox{\hyperlink{interface_dotenv_1_1_repository_1_1_repository_interface}{Repository\+Interface}} \$repository)
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_dotenv_a4dcaa8f72c8423d4de25a9e87fa6f3e4}{load}} ()
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_dotenv_a720a2d976f57a2a64d00c69984bb0aed}{safe\+Load}} ()
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_dotenv_a7c757f450fbbf6252129c66b5a990258}{required}} (\$variables)
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_dotenv_aa529eee6fbe1af8afec5e9382d8ca012}{if\+Present}} (\$variables)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_dotenv_a6594ecc10cb7cc73fd40795aaf66634f}{create}} (\mbox{\hyperlink{interface_dotenv_1_1_repository_1_1_repository_interface}{Repository\+Interface}} \$repository, \$paths, \$names=null, bool \$short\+Circuit=true, ?string \$file\+Encoding=null)
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_dotenv_a2a1ba7ed827a3082c83c07e2403363f1}{create\+Mutable}} (\$paths, \$names=null, bool \$short\+Circuit=true, ?string \$file\+Encoding=null)
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_dotenv_ad0ec552425b24c0d371760d794d196ce}{create\+Unsafe\+Mutable}} (\$paths, \$names=null, bool \$short\+Circuit=true, ?string \$file\+Encoding=null)
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_dotenv_a15f0867a67cfb1e9caf29b970775bb01}{create\+Immutable}} (\$paths, \$names=null, bool \$short\+Circuit=true, ?string \$file\+Encoding=null)
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_dotenv_a301adad5ce731883b5004f6ecf47f880}{create\+Unsafe\+Immutable}} (\$paths, \$names=null, bool \$short\+Circuit=true, ?string \$file\+Encoding=null)
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_dotenv_a7e74a1af843103a0890af6c6b74cf966}{create\+Array\+Backed}} (\$paths, \$names=null, bool \$short\+Circuit=true, ?string \$file\+Encoding=null)
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_dotenv_a370dd6ae65190f1216719ce87aba9746}{parse}} (string \$content)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_dotenv_1_1_dotenv_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dotenv_1_1_dotenv_a867288955052b31fe68f66c55c5a7761}\index{Dotenv@{Dotenv}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a867288955052b31fe68f66c55c5a7761} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_dotenv_1_1_store_1_1_store_interface}{Store\+Interface}}}]{\$store}{, }\item[{\mbox{\hyperlink{interface_dotenv_1_1_parser_1_1_parser_interface}{Parser\+Interface}}}]{\$parser}{, }\item[{\mbox{\hyperlink{interface_dotenv_1_1_loader_1_1_loader_interface}{Loader\+Interface}}}]{\$loader}{, }\item[{\mbox{\hyperlink{interface_dotenv_1_1_repository_1_1_repository_interface}{Repository\+Interface}}}]{\$repository}{}\end{DoxyParamCaption})}
+
+Create a new dotenv instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Dotenv\textbackslash{}\+Store\textbackslash{}\+Store\+Interface & {\em \$store} & \\
+\hline
+\textbackslash{}\+Dotenv\textbackslash{}\+Parser\textbackslash{}\+Parser\+Interface & {\em \$parser} & \\
+\hline
+\textbackslash{}\+Dotenv\textbackslash{}\+Loader\textbackslash{}\+Loader\+Interface & {\em \$loader} & \\
+\hline
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Interface & {\em \$repository} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dotenv_1_1_dotenv_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dotenv_1_1_dotenv_a6594ecc10cb7cc73fd40795aaf66634f}\index{Dotenv@{Dotenv}!create@{create}}
+\index{create@{create}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a6594ecc10cb7cc73fd40795aaf66634f} 
+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_dotenv_1_1_repository_1_1_repository_interface}{Repository\+Interface}}}]{\$repository}{, }\item[{}]{\$paths}{, }\item[{}]{\$names}{ = {\ttfamily null}, }\item[{bool}]{\$short\+Circuit}{ = {\ttfamily true}, }\item[{?string}]{\$file\+Encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new dotenv instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Interface & {\em \$repository} & \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} & {\em \$paths} & \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$names} & \\
+\hline
+bool & {\em \$short\+Circuit} & \\
+\hline
+string | null & {\em \$file\+Encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Dotenv 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_a7e74a1af843103a0890af6c6b74cf966}\index{Dotenv@{Dotenv}!createArrayBacked@{createArrayBacked}}
+\index{createArrayBacked@{createArrayBacked}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{createArrayBacked()}{createArrayBacked()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a7e74a1af843103a0890af6c6b74cf966} 
+create\+Array\+Backed (\begin{DoxyParamCaption}\item[{}]{\$paths}{, }\item[{}]{\$names}{ = {\ttfamily null}, }\item[{bool}]{\$short\+Circuit}{ = {\ttfamily true}, }\item[{?string}]{\$file\+Encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new dotenv instance with an array backed repository.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$paths} & \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$names} & \\
+\hline
+bool & {\em \$short\+Circuit} & \\
+\hline
+string | null & {\em \$file\+Encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Dotenv 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_a15f0867a67cfb1e9caf29b970775bb01}\index{Dotenv@{Dotenv}!createImmutable@{createImmutable}}
+\index{createImmutable@{createImmutable}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{createImmutable()}{createImmutable()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a15f0867a67cfb1e9caf29b970775bb01} 
+create\+Immutable (\begin{DoxyParamCaption}\item[{}]{\$paths}{, }\item[{}]{\$names}{ = {\ttfamily null}, }\item[{bool}]{\$short\+Circuit}{ = {\ttfamily true}, }\item[{?string}]{\$file\+Encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new immutable dotenv instance with default repository.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$paths} & \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$names} & \\
+\hline
+bool & {\em \$short\+Circuit} & \\
+\hline
+string | null & {\em \$file\+Encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Dotenv 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_a2a1ba7ed827a3082c83c07e2403363f1}\index{Dotenv@{Dotenv}!createMutable@{createMutable}}
+\index{createMutable@{createMutable}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{createMutable()}{createMutable()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a2a1ba7ed827a3082c83c07e2403363f1} 
+create\+Mutable (\begin{DoxyParamCaption}\item[{}]{\$paths}{, }\item[{}]{\$names}{ = {\ttfamily null}, }\item[{bool}]{\$short\+Circuit}{ = {\ttfamily true}, }\item[{?string}]{\$file\+Encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new mutable dotenv instance with default repository.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$paths} & \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$names} & \\
+\hline
+bool & {\em \$short\+Circuit} & \\
+\hline
+string | null & {\em \$file\+Encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Dotenv 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_a301adad5ce731883b5004f6ecf47f880}\index{Dotenv@{Dotenv}!createUnsafeImmutable@{createUnsafeImmutable}}
+\index{createUnsafeImmutable@{createUnsafeImmutable}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{createUnsafeImmutable()}{createUnsafeImmutable()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a301adad5ce731883b5004f6ecf47f880} 
+create\+Unsafe\+Immutable (\begin{DoxyParamCaption}\item[{}]{\$paths}{, }\item[{}]{\$names}{ = {\ttfamily null}, }\item[{bool}]{\$short\+Circuit}{ = {\ttfamily true}, }\item[{?string}]{\$file\+Encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new immutable dotenv instance with default repository with the putenv adapter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$paths} & \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$names} & \\
+\hline
+bool & {\em \$short\+Circuit} & \\
+\hline
+string | null & {\em \$file\+Encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Dotenv 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_ad0ec552425b24c0d371760d794d196ce}\index{Dotenv@{Dotenv}!createUnsafeMutable@{createUnsafeMutable}}
+\index{createUnsafeMutable@{createUnsafeMutable}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{createUnsafeMutable()}{createUnsafeMutable()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_ad0ec552425b24c0d371760d794d196ce} 
+create\+Unsafe\+Mutable (\begin{DoxyParamCaption}\item[{}]{\$paths}{, }\item[{}]{\$names}{ = {\ttfamily null}, }\item[{bool}]{\$short\+Circuit}{ = {\ttfamily true}, }\item[{?string}]{\$file\+Encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new mutable dotenv instance with default repository with the putenv adapter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$paths} & \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} | null & {\em \$names} & \\
+\hline
+bool & {\em \$short\+Circuit} & \\
+\hline
+string | null & {\em \$file\+Encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Dotenv 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_aa529eee6fbe1af8afec5e9382d8ca012}\index{Dotenv@{Dotenv}!ifPresent@{ifPresent}}
+\index{ifPresent@{ifPresent}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{ifPresent()}{ifPresent()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_aa529eee6fbe1af8afec5e9382d8ca012} 
+if\+Present (\begin{DoxyParamCaption}\item[{}]{\$variables}{}\end{DoxyParamCaption})}
+
+Returns a new validator object that won\textquotesingle{}t check if the specified variables exist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$variables} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Validator 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_a4dcaa8f72c8423d4de25a9e87fa6f3e4}\index{Dotenv@{Dotenv}!load@{load}}
+\index{load@{load}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a4dcaa8f72c8423d4de25a9e87fa6f3e4} 
+load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Read and load environment file(s).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{namespace_dotenv}{Dotenv}\textbackslash{}\+Exception\textbackslash{}\+Invalid\+Path\+Exception\texorpdfstring{$\vert$}{|}\textbackslash{}\+Dotenv\textbackslash{}\+Exception\textbackslash{}\+Invalid\+Encoding\+Exception\texorpdfstring{$\vert$}{|}\textbackslash{}\+Dotenv\textbackslash{}\+Exception\textbackslash{}\+Invalid\+File\+Exception
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string,string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_a370dd6ae65190f1216719ce87aba9746}\index{Dotenv@{Dotenv}!parse@{parse}}
+\index{parse@{parse}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a370dd6ae65190f1216719ce87aba9746} 
+parse (\begin{DoxyParamCaption}\item[{string}]{\$content}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parse the given content and resolve nested variables.
+
+This method behaves just like load(), only without mutating your actual environment. We do this by using an array backed repository.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{namespace_dotenv}{Dotenv}\textbackslash{}\+Exception\textbackslash{}\+Invalid\+File\+Exception
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string,string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_a7c757f450fbbf6252129c66b5a990258}\index{Dotenv@{Dotenv}!required@{required}}
+\index{required@{required}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{required()}{required()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a7c757f450fbbf6252129c66b5a990258} 
+required (\begin{DoxyParamCaption}\item[{}]{\$variables}{}\end{DoxyParamCaption})}
+
+Required ensures that the specified variables exist, and returns a new validator object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$variables} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Validator 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_dotenv_a720a2d976f57a2a64d00c69984bb0aed}\index{Dotenv@{Dotenv}!safeLoad@{safeLoad}}
+\index{safeLoad@{safeLoad}!Dotenv@{Dotenv}}
+\doxysubsubsection{\texorpdfstring{safeLoad()}{safeLoad()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_dotenv_a720a2d976f57a2a64d00c69984bb0aed} 
+safe\+Load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Read and load environment file(s), silently failing if no files can be read.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{namespace_dotenv}{Dotenv}\textbackslash{}\+Exception\textbackslash{}\+Invalid\+Encoding\+Exception\texorpdfstring{$\vert$}{|}\textbackslash{}\+Dotenv\textbackslash{}\+Exception\textbackslash{}\+Invalid\+File\+Exception
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string,string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/vlucas/phpdotenv/src/\mbox{\hyperlink{_dotenv_8php}{Dotenv.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var _metadata_2_disable_return_value_generation_for_test_doubles_8php =
+[
+    [ "DisableReturnValueGenerationForTestDoubles", "class_p_h_p_unit_1_1_metadata_1_1_disable_return_value_generation_for_test_doubles.html", "class_p_h_p_unit_1_1_metadata_1_1_disable_return_value_generation_for_test_doubles" ]
+];

@@ -1,0 +1,4 @@
+var _string_equals_string_ignoring_line_endings_8php =
+[
+    [ "StringEqualsStringIgnoringLineEndings", "class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_string_equals_string_ignoring_line_endings.html", "class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_string_equals_string_ignoring_line_endings" ]
+];

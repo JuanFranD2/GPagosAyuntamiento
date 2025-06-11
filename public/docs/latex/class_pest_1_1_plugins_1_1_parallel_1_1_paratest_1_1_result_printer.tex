@@ -1,0 +1,88 @@
+\doxysection{Result\+Printer Class Reference}
+\hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer}{}\label{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer}\index{ResultPrinter@{ResultPrinter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_aba414852af420c3864c6b713c56a86a0}{\+\_\+\+\_\+construct}} (private readonly \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output, private readonly \mbox{\hyperlink{class_para_test_1_1_options}{Options}} \$options)
+\item 
+\mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_abc2fedd8e76ccb4bafa0f40efe3a821f}{print\+Feedback}} (Spl\+File\+Info \$progress\+File, Spl\+File\+Info \$output\+File, array \$teamcity\+Files)
+\item 
+\mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_aba5be334c5bded62513e2fccbc81748f}{print\+Results}} (\mbox{\hyperlink{class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result}{Test\+Result}} \$test\+Result, array \$teamcity\+Files, array \$testdox\+Files, \mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_duration}{Duration}} \$duration)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_a5ea4dcc7500bdee4e8e739f9e20bb2ca}{\$last\+Was\+Todo}} = false
+\item 
+readonly \mbox{\hyperlink{interface_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_printer}{Printer}} \mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_a4366ed920df887b483769f598f53c677}{\$printer}}
+\item 
+int \mbox{\hyperlink{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_a6393d9d97c11c42029827caf28e05b6d}{\$passed\+Tests}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_aba414852af420c3864c6b713c56a86a0}\index{ResultPrinter@{ResultPrinter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_aba414852af420c3864c6b713c56a86a0} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}}}]{\$output}{, }\item[{private readonly \mbox{\hyperlink{class_para_test_1_1_options}{Options}}}]{\$options}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_abc2fedd8e76ccb4bafa0f40efe3a821f}\index{ResultPrinter@{ResultPrinter}!printFeedback@{printFeedback}}
+\index{printFeedback@{printFeedback}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{printFeedback()}{printFeedback()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_abc2fedd8e76ccb4bafa0f40efe3a821f} 
+print\+Feedback (\begin{DoxyParamCaption}\item[{Spl\+File\+Info}]{\$progress\+File}{, }\item[{Spl\+File\+Info}]{\$output\+File}{, }\item[{array}]{\$teamcity\+Files}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$\+Spl\+File\+Info$>$} & \$teamcity\+Files \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_aba5be334c5bded62513e2fccbc81748f}\index{ResultPrinter@{ResultPrinter}!printResults@{printResults}}
+\index{printResults@{printResults}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{printResults()}{printResults()}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_aba5be334c5bded62513e2fccbc81748f} 
+print\+Results (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result}{Test\+Result}}}]{\$test\+Result}{, }\item[{array}]{\$teamcity\+Files}{, }\item[{array}]{\$testdox\+Files}{, }\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_duration}{Duration}}}]{\$duration}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$\+Spl\+File\+Info$>$} & \$teamcity\+Files \\
+\hline
+{\em list$<$\+Spl\+File\+Info$>$} & \$testdox\+Files \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_doc-variable-members}
+\doxysubsection{Field Documentation}
+\Hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_a5ea4dcc7500bdee4e8e739f9e20bb2ca}\index{ResultPrinter@{ResultPrinter}!\$lastWasTodo@{\$lastWasTodo}}
+\index{\$lastWasTodo@{\$lastWasTodo}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{\$lastWasTodo}{\$lastWasTodo}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_a5ea4dcc7500bdee4e8e739f9e20bb2ca} 
+bool \$last\+Was\+Todo = false}
+
+If the test should be marked as todo. \Hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_a6393d9d97c11c42029827caf28e05b6d}\index{ResultPrinter@{ResultPrinter}!\$passedTests@{\$passedTests}}
+\index{\$passedTests@{\$passedTests}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{\$passedTests}{\$passedTests}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_a6393d9d97c11c42029827caf28e05b6d} 
+int \$passed\+Tests = 0}
+
+The state. \Hypertarget{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_a4366ed920df887b483769f598f53c677}\index{ResultPrinter@{ResultPrinter}!\$printer@{\$printer}}
+\index{\$printer@{\$printer}!ResultPrinter@{ResultPrinter}}
+\doxysubsubsection{\texorpdfstring{\$printer}{\$printer}}
+{\footnotesize\ttfamily \label{class_pest_1_1_plugins_1_1_parallel_1_1_paratest_1_1_result_printer_a4366ed920df887b483769f598f53c677} 
+readonly \mbox{\hyperlink{interface_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_printer}{Printer}} \$printer}
+
+The "{}native"{} printer. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/pestphp/pest/src/\+Plugins/\+Parallel/\+Paratest/\mbox{\hyperlink{pestphp_2pest_2src_2_plugins_2_parallel_2_paratest_2_result_printer_8php}{Result\+Printer.\+php}}\end{DoxyCompactItemize}

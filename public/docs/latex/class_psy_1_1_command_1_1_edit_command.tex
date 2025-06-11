@@ -1,0 +1,124 @@
+\doxysection{Edit\+Command Class Reference}
+\hypertarget{class_psy_1_1_command_1_1_edit_command}{}\label{class_psy_1_1_command_1_1_edit_command}\index{EditCommand@{EditCommand}}
+Inheritance diagram for Edit\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_psy_1_1_command_1_1_edit_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_edit_command_a63ccf3073ff7200c448ffcf3fdbc9f78}{\+\_\+\+\_\+construct}} (\$runtime\+Dir, \$name=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_edit_command_a1042f5cf2b50d9c582ce9feb2d612c2d}{set\+Context}} (\mbox{\hyperlink{class_psy_1_1_context}{Context}} \$context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_command_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a6a8c0713c7a08fc69dccc42db0ce1083}{set\+Application}} (?\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application}{Application}} \$application=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a84818e2c0f3af87f9b3c7a0818fe0425}{as\+Text}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_edit_command_a9be5e0bdb5720efed6ddb6426c5c16ee}{configure}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_edit_command_ab31c72b72ddaf7116db5d84c055d3c0b}{execute}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_command_1_1_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a2ce03a964d7ee21e925aad1e532705e0}{get\+Shell}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a47985cf7aefe1029f334a7ef37e82d49}{get\+Hidden\+Arguments}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a7f453b105f66dc9336d5ab252b1cb43f}{get\+Hidden\+Options}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a689a06579832d518070f86af8dfbad20}{get\+Table}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_psy_1_1_command_1_1_edit_command_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_psy_1_1_command_1_1_edit_command_a63ccf3073ff7200c448ffcf3fdbc9f78}\index{EditCommand@{EditCommand}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!EditCommand@{EditCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_edit_command_a63ccf3073ff7200c448ffcf3fdbc9f78} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$runtime\+Dir}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$runtime\+Dir} & The directory to use for temporary files \\
+\hline
+string | null & {\em \$name} & The name of the command; passing null means it must be set in configure()\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Exception\textbackslash{}\+Logic\+Exception When the command name is empty 
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_command_1_1_edit_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_command_1_1_edit_command_a9be5e0bdb5720efed6ddb6426c5c16ee}\index{EditCommand@{EditCommand}!configure@{configure}}
+\index{configure@{configure}!EditCommand@{EditCommand}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_edit_command_a9be5e0bdb5720efed6ddb6426c5c16ee} 
+configure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_psy_1_1_command_1_1_edit_command_ab31c72b72ddaf7116db5d84c055d3c0b}\index{EditCommand@{EditCommand}!execute@{execute}}
+\index{execute@{execute}!EditCommand@{EditCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_edit_command_ab31c72b72ddaf7116db5d84c055d3c0b} 
+execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}}}]{\$input}{, }\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}}}]{\$output}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Input\+Interface & {\em \$input} & \\
+\hline
+Output\+Interface & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 if everything went fine, or an exit code
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception when both exec and no-\/exec flags are given or if a given variable is not found in the current context 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Unexpected\+Value\+Exception if file\+\_\+get\+\_\+contents on the edited file returns false instead of a string \Hypertarget{class_psy_1_1_command_1_1_edit_command_a1042f5cf2b50d9c582ce9feb2d612c2d}\index{EditCommand@{EditCommand}!setContext@{setContext}}
+\index{setContext@{setContext}!EditCommand@{EditCommand}}
+\doxysubsubsection{\texorpdfstring{setContext()}{setContext()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_edit_command_a1042f5cf2b50d9c582ce9feb2d612c2d} 
+set\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_context}{Context}}}]{\$context}{}\end{DoxyParamCaption})}
+
+Set the \doxylink{class_context}{Context} reference.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_context}{Context} & {\em \$context} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_psy_1_1_context_aware_a1042f5cf2b50d9c582ce9feb2d612c2d}{Context\+Aware}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Command/\mbox{\hyperlink{_edit_command_8php}{Edit\+Command.\+php}}\end{DoxyCompactItemize}

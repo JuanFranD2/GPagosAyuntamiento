@@ -1,0 +1,97 @@
+\doxysection{Command Class Reference}
+\hypertarget{class_psy_1_1_command_1_1_command}{}\label{class_psy_1_1_command_1_1_command}\index{Command@{Command}}
+Inheritance diagram for Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_psy_1_1_command_1_1_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a6a8c0713c7a08fc69dccc42db0ce1083}{set\+Application}} (?\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application}{Application}} \$application=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a84818e2c0f3af87f9b3c7a0818fe0425}{as\+Text}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a2ce03a964d7ee21e925aad1e532705e0}{get\+Shell}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a47985cf7aefe1029f334a7ef37e82d49}{get\+Hidden\+Arguments}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a7f453b105f66dc9336d5ab252b1cb43f}{get\+Hidden\+Options}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_command_a689a06579832d518070f86af8dfbad20}{get\+Table}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{namespace_psy}{Psy} Shell base command. 
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_command_1_1_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_command_1_1_command_a84818e2c0f3af87f9b3c7a0818fe0425}\index{Command@{Command}!asText@{asText}}
+\index{asText@{asText}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{asText()}{asText()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_command_a84818e2c0f3af87f9b3c7a0818fe0425} 
+as\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{\} \Hypertarget{class_psy_1_1_command_1_1_command_a47985cf7aefe1029f334a7ef37e82d49}\index{Command@{Command}!getHiddenArguments@{getHiddenArguments}}
+\index{getHiddenArguments@{getHiddenArguments}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{getHiddenArguments()}{getHiddenArguments()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_command_a47985cf7aefe1029f334a7ef37e82d49} 
+get\+Hidden\+Arguments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+These arguments will be excluded from help output.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_command_1_1_command_a7f453b105f66dc9336d5ab252b1cb43f}\index{Command@{Command}!getHiddenOptions@{getHiddenOptions}}
+\index{getHiddenOptions@{getHiddenOptions}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{getHiddenOptions()}{getHiddenOptions()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_command_a7f453b105f66dc9336d5ab252b1cb43f} 
+get\+Hidden\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+These options will be excluded from help output.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_command_1_1_command_a2ce03a964d7ee21e925aad1e532705e0}\index{Command@{Command}!getShell@{getShell}}
+\index{getShell@{getShell}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{getShell()}{getShell()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_command_a2ce03a964d7ee21e925aad1e532705e0} 
+get\+Shell (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+get\+Application, but is guaranteed to return a Shell instance. \Hypertarget{class_psy_1_1_command_1_1_command_a689a06579832d518070f86af8dfbad20}\index{Command@{Command}!getTable@{getTable}}
+\index{getTable@{getTable}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{getTable()}{getTable()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_command_a689a06579832d518070f86af8dfbad20} 
+get\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}}}]{\$output}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a Table instance.
+
+\begin{DoxyReturn}{Returns}
+Table 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_command_1_1_command_a6a8c0713c7a08fc69dccc42db0ce1083}\index{Command@{Command}!setApplication@{setApplication}}
+\index{setApplication@{setApplication}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{setApplication()}{setApplication()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_command_a6a8c0713c7a08fc69dccc42db0ce1083} 
+set\+Application (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application}{Application}}}]{\$application}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets the application instance for this command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Application | null & {\em \$application} & An Application instance\\
+\hline
+\end{DoxyParams}
+@api 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\+Command/\mbox{\hyperlink{psy_2psysh_2src_2_command_2_command_8php}{Command.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+var class_php_parser_1_1_builder_1_1_property =
+[
+    [ "__construct", "class_php_parser_1_1_builder_1_1_property.html#a196b3403dd3fe36fd9617ada22960ff1", null ],
+    [ "addAttribute", "class_php_parser_1_1_builder_1_1_property.html#ace927af3c97e66624a7b251c59f2ece2", null ],
+    [ "addHook", "class_php_parser_1_1_builder_1_1_property.html#a1f37c62ea82984e020aff8913b505a73", null ],
+    [ "getNode", "class_php_parser_1_1_builder_1_1_property.html#a3a0d17930cbcc57bef84064afcc1a837", null ],
+    [ "makeAbstract", "class_php_parser_1_1_builder_1_1_property.html#a2039840a6179829a7eb7aacca3957d3c", null ],
+    [ "makeFinal", "class_php_parser_1_1_builder_1_1_property.html#a196c1fd61671c7b0f571d867c47d2be2", null ],
+    [ "makePrivate", "class_php_parser_1_1_builder_1_1_property.html#a99aa3141cb057030f2aadfb9649aab8e", null ],
+    [ "makePrivateSet", "class_php_parser_1_1_builder_1_1_property.html#a2370c8ac9ef922a760f13c0c257271b4", null ],
+    [ "makeProtected", "class_php_parser_1_1_builder_1_1_property.html#aef351d1dc94a77a9e4851fbd274b30a0", null ],
+    [ "makeProtectedSet", "class_php_parser_1_1_builder_1_1_property.html#a5ad977721ebf292dcf5d2c325915a4bf", null ],
+    [ "makePublic", "class_php_parser_1_1_builder_1_1_property.html#a41ed4b9d914f6b2eac84909a9f3d4fe4", null ],
+    [ "makeReadonly", "class_php_parser_1_1_builder_1_1_property.html#a006e47d2bb328e5516fef129bca4e8da", null ],
+    [ "makeStatic", "class_php_parser_1_1_builder_1_1_property.html#acf8284c9ad05947c5b02b162495388d9", null ],
+    [ "setDefault", "class_php_parser_1_1_builder_1_1_property.html#adb5631821b6300bd3dae6de59fe75231", null ],
+    [ "setDocComment", "class_php_parser_1_1_builder_1_1_property.html#a7331d24646c54f9d8f98ecf7bc5827bd", null ],
+    [ "setType", "class_php_parser_1_1_builder_1_1_property.html#ade096bf521b5d05dcaff2ba1a42e9f71", null ],
+    [ "$attributeGroups", "class_php_parser_1_1_builder_1_1_property.html#a6545e4b9fa532870993841cc05875124", null ],
+    [ "$attributes", "class_php_parser_1_1_builder_1_1_property.html#ac89f2733f3f084f1e693e13afbb67739", null ],
+    [ "$default", "class_php_parser_1_1_builder_1_1_property.html#a54df4d35a8db076422f4829ca3750c7f", null ],
+    [ "$flags", "class_php_parser_1_1_builder_1_1_property.html#a374c616ba2ed6edabbecbec4c1a8a24f", null ],
+    [ "$hooks", "class_php_parser_1_1_builder_1_1_property.html#a03bbee89804ac932967e3d48b7d33f77", null ],
+    [ "$name", "class_php_parser_1_1_builder_1_1_property.html#a58551b63ba97fb35b928f11f36b1fac6", null ],
+    [ "$type", "class_php_parser_1_1_builder_1_1_property.html#a4ad4ba9bc3f81fabf69f790e1e801f3a", null ]
+];

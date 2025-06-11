@@ -1,0 +1,4 @@
+var _add_live_modifier_to_wire_model_directives_8php =
+[
+    [ "AddLiveModifierToWireModelDirectives", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_add_live_m7030d842cfb57007c13b19aa06720e2c.html", "class_livewire_1_1_features_1_1_support_console_commands_1_1_commands_1_1_upgrade_1_1_add_live_m7030d842cfb57007c13b19aa06720e2c" ]
+];

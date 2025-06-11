@@ -1,0 +1,4 @@
+var ta_tikoma_2phpunit_architecture_test_2src_2_elements_2_object_description_base_8php =
+[
+    [ "ObjectDescriptionBase", "class_p_h_p_unit_1_1_architecture_1_1_elements_1_1_object_description_base.html", "class_p_h_p_unit_1_1_architecture_1_1_elements_1_1_object_description_base" ]
+];

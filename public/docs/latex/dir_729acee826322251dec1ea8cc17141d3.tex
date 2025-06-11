@@ -1,0 +1,122 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/phpunit/php-\/timer Directory Reference}
+\hypertarget{dir_729acee826322251dec1ea8cc17141d3}{}\label{dir_729acee826322251dec1ea8cc17141d3}\index{C:/xampp/htdocs/GPagosAyuntamiento/vendor/phpunit/php-\/timer Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/vendor/phpunit/php-\/timer Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_a8e5fb06b58cfb7656db2aa180c9a53a}{src}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md10313}{}\doxysubsection{\texorpdfstring{phpunit/php-\/timer}{phpunit/php-\/timer}}\label{README.md_autotoc_md10313}
+\href{https://packagist.org/packages/phpunit/php-timer}{\texttt{}} \href{https://github.com/sebastianbergmann/php-timer/actions}{\texttt{}} \href{https://codecov.io/gh/sebastianbergmann/php-timer}{\texttt{}}
+
+Utility class for timing things, factored out of \doxylink{namespace_p_h_p_unit}{PHPUnit} into a stand-\/alone component.\hypertarget{README.md_autotoc_md10314}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{README.md_autotoc_md10314}
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\texttt{Composer}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ phpunit/php-\/timer}
+
+\end{DoxyCode}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ -\/-\/dev\ phpunit/php-\/timer}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10315}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{README.md_autotoc_md10315}
+\hypertarget{README.md_autotoc_md10316}{}\doxysubsubsection{\texorpdfstring{Basic Timing}{Basic Timing}}\label{README.md_autotoc_md10316}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \_\_DIR\_\_\ .\ \textcolor{stringliteral}{'/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_timer}{SebastianBergmann\(\backslash\)Timer\(\backslash\)Timer}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$timer\ =\ \textcolor{keyword}{new}\ Timer;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$timer-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_timer_af8fa59992209e36dccb3eefb0f75531f}{start}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{foreach}\ (\(\backslash\)range(0,\ 100000)\ as\ \$i)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$duration\ =\ \$timer-\/>stop();}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\_dump(get\_class(\$duration));}
+\DoxyCodeLine{var\_dump(\$duration-\/>asString());}
+\DoxyCodeLine{var\_dump(\$duration-\/>asSeconds());}
+\DoxyCodeLine{var\_dump(\$duration-\/>asMilliseconds());}
+\DoxyCodeLine{var\_dump(\$duration-\/>asMicroseconds());}
+\DoxyCodeLine{var\_dump(\$duration-\/>asNanoseconds());}
+
+\end{DoxyCode}
+
+
+The code above yields the output below\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{string(32)\ "{}SebastianBergmann\(\backslash\)Timer\(\backslash\)Duration"{}}
+\DoxyCodeLine{string(9)\ "{}00:00.002"{}}
+\DoxyCodeLine{float(0.002851062)}
+\DoxyCodeLine{float(2.851062)}
+\DoxyCodeLine{float(2851.062)}
+\DoxyCodeLine{int(2851062)}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10317}{}\doxysubsubsection{\texorpdfstring{Resource Consumption}{Resource Consumption}}\label{README.md_autotoc_md10317}
+\hypertarget{README.md_autotoc_md10318}{}\doxysubsubsubsection{\texorpdfstring{Explicit duration}{Explicit duration}}\label{README.md_autotoc_md10318}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \_\_DIR\_\_\ .\ \textcolor{stringliteral}{'/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter}{SebastianBergmann\(\backslash\)Timer\(\backslash\)ResourceUsageFormatter}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_timer}{SebastianBergmann\(\backslash\)Timer\(\backslash\)Timer}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$timer\ =\ \textcolor{keyword}{new}\ Timer;}
+\DoxyCodeLine{\$timer-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_timer_af8fa59992209e36dccb3eefb0f75531f}{start}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{foreach}\ (\(\backslash\)range(0,\ 100000)\ as\ \$i)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{print\ (\textcolor{keyword}{new}\ ResourceUsageFormatter)-\/>resourceUsage(\$timer-\/>stop());}
+
+\end{DoxyCode}
+
+
+The code above yields the output below\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Time:\ 00:00.002,\ Memory:\ 6.00\ MB}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md10319}{}\doxysubsubsubsection{\texorpdfstring{Duration since PHP Startup (using unreliable `\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REQUEST\+\_\+\+TIME\+\_\+\+FLOAT'\mbox{]}\`{})}{Duration since PHP Startup (using unreliable `\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REQUEST\+\_\+\+TIME\+\_\+\+FLOAT'\mbox{]}\`{})}}\label{README.md_autotoc_md10319}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \_\_DIR\_\_\ .\ \textcolor{stringliteral}{'/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter}{SebastianBergmann\(\backslash\)Timer\(\backslash\)ResourceUsageFormatter}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{foreach}\ (\(\backslash\)range(0,\ 100000)\ as\ \$i)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{print\ (\textcolor{keyword}{new}\ ResourceUsageFormatter)-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter_a7bfef3809b17a522c10783d3d54b7da6}{resourceUsageSinceStartOfRequest}}();}
+
+\end{DoxyCode}
+
+
+The code above yields the output below\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Time:\ 00:00.002,\ Memory:\ 6.00\ MB}
+
+\end{DoxyCode}
+ 

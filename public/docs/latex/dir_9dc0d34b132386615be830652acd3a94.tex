@@ -1,0 +1,55 @@
+\doxysection{C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/node\+\_\+modules/mimic-\/fn Directory Reference}
+\hypertarget{dir_9dc0d34b132386615be830652acd3a94}{}\label{dir_9dc0d34b132386615be830652acd3a94}\index{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/mimic-\/fn Directory Reference@{C:/xampp/htdocs/GPagosAyuntamiento/node\_modules/mimic-\/fn Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{readme.md_autotoc_md5133}{}\doxysubsection{\texorpdfstring{mimic-\/fn \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/mimic-fn.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/mimic-\/fn.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/mimic-fn}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/mimic-\/fn}})}{mimic-\/fn \mbox{[}!\mbox{[}Build Status\mbox{]}(\href{https://travis-ci.org/sindresorhus/mimic-fn.svg?branch=master}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/mimic-\/fn.\+svg?branch=master}})\mbox{]}(\href{https://travis-ci.org/sindresorhus/mimic-fn}{\texttt{https\+://travis-\/ci.\+org/sindresorhus/mimic-\/fn}})}}\label{readme.md_autotoc_md5133}
+\begin{quote}
+Make a function mimic another one \end{quote}
+
+
+Useful when you wrap a function in another function and like to preserve the original name and other properties.\hypertarget{readme.md_autotoc_md5134}{}\doxysubsection{\texorpdfstring{Install}{Install}}\label{readme.md_autotoc_md5134}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ npm\ install\ mimic-\/fn}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md5135}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{readme.md_autotoc_md5135}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{const\ mimicFn\ =\ require('mimic-\/fn');}
+\DoxyCodeLine{}
+\DoxyCodeLine{function\ foo()\ \{\}}
+\DoxyCodeLine{foo.unicorn\ =\ '🦄';}
+\DoxyCodeLine{}
+\DoxyCodeLine{function\ wrapper()\ \{}
+\DoxyCodeLine{\ \ \ \ return\ foo();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(wrapper.name);}
+\DoxyCodeLine{//=>\ 'wrapper'}
+\DoxyCodeLine{}
+\DoxyCodeLine{mimicFn(wrapper,\ foo);}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(wrapper.name);}
+\DoxyCodeLine{//=>\ 'foo'}
+\DoxyCodeLine{}
+\DoxyCodeLine{console.log(wrapper.unicorn);}
+\DoxyCodeLine{//=>\ '🦄'}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md5136}{}\doxysubsection{\texorpdfstring{API}{API}}\label{readme.md_autotoc_md5136}
+It will copy over the properties {\ttfamily name}, {\ttfamily length}, {\ttfamily display\+Name}, and any custom properties you may have set.\hypertarget{readme.md_autotoc_md5137}{}\doxysubsubsection{\texorpdfstring{mimic\+Fn(to, from)}{mimic\+Fn(to, from)}}\label{readme.md_autotoc_md5137}
+Modifies the {\ttfamily to} function and returns it.\hypertarget{readme.md_autotoc_md5138}{}\doxysubsubsubsection{\texorpdfstring{to}{to}}\label{readme.md_autotoc_md5138}
+Type\+: {\ttfamily Function}
+
+Mimicking function.\hypertarget{readme.md_autotoc_md5139}{}\doxysubsubsubsection{\texorpdfstring{from}{from}}\label{readme.md_autotoc_md5139}
+Type\+: {\ttfamily Function}
+
+Function to mimic.\hypertarget{readme.md_autotoc_md5140}{}\doxysubsection{\texorpdfstring{Related}{Related}}\label{readme.md_autotoc_md5140}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sindresorhus/rename-fn}{\texttt{rename-\/fn}} -\/ Rename a function
+\item \href{https://github.com/ehmicky/keep-func-props}{\texttt{keep-\/func-\/props}} -\/ Wrap a function without changing its name, length and other properties
+\end{DoxyItemize}\hypertarget{readme.md_autotoc_md5141}{}\doxysubsection{\texorpdfstring{License}{License}}\label{readme.md_autotoc_md5141}
+MIT © \href{https://sindresorhus.com}{\texttt{Sindre Sorhus}} 

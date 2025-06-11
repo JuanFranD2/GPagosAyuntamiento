@@ -1,0 +1,4 @@
+var _heading_permalink_renderer_8php =
+[
+    [ "HeadingPermalinkRenderer", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_renderer.html", "class_league_1_1_common_mark_1_1_extension_1_1_heading_permalink_1_1_heading_permalink_renderer" ]
+];

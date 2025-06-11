@@ -1,0 +1,39 @@
+\chapter{Output Control }
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control}{}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control}\index{Output Control@{Output Control}}
+\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control_autotoc_md2240}%
+\Hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control_autotoc_md2240}%
+
+
+concurrently offers a few ways to control a command\textquotesingle{}s output.\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control_autotoc_md2241}{}\doxysection{\texorpdfstring{Hiding}{Hiding}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control_autotoc_md2241}
+A command\textquotesingle{}s outputs (and all its events) can be hidden by using the {\ttfamily -\/-\/hide} flag.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/hide\ 0\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+\DoxyCodeLine{[1]\ General\ Kenobi!}
+\DoxyCodeLine{[1]\ echo\ 'General\ Kenobi!'\ exited\ with\ code\ 0}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control_autotoc_md2242}{}\doxysection{\texorpdfstring{Grouping}{Grouping}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control_autotoc_md2242}
+It might be useful at times to make sure that the commands outputs are grouped together, while running them in parallel.~\newline
+ This can be done with the {\ttfamily -\/-\/group} flag.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/-\/group\ "{}echo\ Hello\ there\ \&\&\ sleep\ 2\ \&\&\ echo\ 'General\ Kenobi!'"{}\ "{}echo\ hi\ Star\ Wars\ fans"{}}
+\DoxyCodeLine{[0]\ Hello\ there}
+\DoxyCodeLine{[0]\ General\ Kenobi!}
+\DoxyCodeLine{[0]\ echo\ Hello\ there\ \&\&\ sleep\ 2\ \&\&\ echo\ 'General\ Kenobi!'\ exited\ with\ code\ 0}
+\DoxyCodeLine{[1]\ hi\ Star\ Wars\ fans}
+\DoxyCodeLine{[1]\ echo\ hi\ Star\ Wars\ fans\ exited\ with\ code\ 0}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control_autotoc_md2243}{}\doxysection{\texorpdfstring{No Colors}{No Colors}}\label{md__c_1_2xampp_2htdocs_2_g_pagos_ayuntamiento_2node__modules_2concurrently_2docs_2cli_2output-control_autotoc_md2243}
+When piping concurrently\textquotesingle{}s outputs to another command or file, you might want to force it to not use colors, as these can break the other command\textquotesingle{}s parsing, or reduce the legibility of the output in non-\/terminal environments.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ concurrently\ -\/c\ red,blue\ -\/-\/no-\/color\ "{}echo\ Hello\ there"{}\ "{}echo\ 'General\ Kenobi!'"{}}
+
+\end{DoxyCode}
+ 

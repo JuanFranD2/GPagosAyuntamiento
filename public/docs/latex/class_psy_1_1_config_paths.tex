@@ -1,0 +1,242 @@
+\doxysection{Config\+Paths Class Reference}
+\hypertarget{class_psy_1_1_config_paths}{}\label{class_psy_1_1_config_paths}\index{ConfigPaths@{ConfigPaths}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_acd8f061b07cfbeda24a9bd10bff24b24}{\+\_\+\+\_\+construct}} (array \$overrides=\mbox{[}$\,$\mbox{]}, ?\mbox{\hyperlink{interface_psy_1_1_env_interface}{Env\+Interface}} \$env=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_a470d08e0b7783e617007637a1471ba72}{override\+Dirs}} (array \$overrides)
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_a445e142cba4941d6535e101b04e13601}{home\+Dir}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_aac23c4c68f80894bf2ec90d4e8890665}{config\+Dirs}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_a4d22fc87a14f0a42b0e928c76f55bd09}{current\+Config\+Dir}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_a1450d1161df7dc66fb70172487b327d8}{config\+Files}} (array \$names)
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_a5da62db783c92caa3e0a5319d7f7f7a9}{data\+Dirs}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_a5b66ae078d50c43bfbdb3f4128b52b0f}{data\+Files}} (array \$names)
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_ae8562b6e1b566b93ae4d13dc4400fb2e}{runtime\+Dir}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_a7d1629b0d7b0b12ad20f2c58d0bd9819}{path\+Dirs}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_config_paths_af20bdef82a4ee9d6729dd88c40209a68}{which}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_config_paths_a04b89fb214c8f5faae400b2a551eb503}{ensure\+Dir}} (string \$dir)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_config_paths_afd4dfe3c9fd8b04ac9fa292317d1afd9}{touch\+File\+With\+Mkdir}} (string \$file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \doxylink{namespace_psy}{Psy} Shell configuration path helper. 
+
+\label{doc-constructors}
+\Hypertarget{class_psy_1_1_config_paths_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_psy_1_1_config_paths_acd8f061b07cfbeda24a9bd10bff24b24}\index{ConfigPaths@{ConfigPaths}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_acd8f061b07cfbeda24a9bd10bff24b24} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$overrides}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?\mbox{\hyperlink{interface_psy_1_1_env_interface}{Env\+Interface}}}]{\$env}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Config\+Paths constructor.
+
+Optionally provide {\ttfamily config\+Dir}, {\ttfamily data\+Dir} and {\ttfamily runtime\+Dir} overrides.
+
+\begin{DoxySeeAlso}{See also}
+self\+::override\+Dirs
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$overrides} & Directory overrides \\
+\hline
+Env\+Interface & {\em \$env} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_psy_1_1_config_paths_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_config_paths_aac23c4c68f80894bf2ec90d4e8890665}\index{ConfigPaths@{ConfigPaths}!configDirs@{configDirs}}
+\index{configDirs@{configDirs}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{configDirs()}{configDirs()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_aac23c4c68f80894bf2ec90d4e8890665} 
+config\+Dirs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get potential config directory paths.
+
+Returns {\ttfamily \texorpdfstring{$\sim$}{\string~}/.psysh}, {\ttfamily APPDATA\%/\+Psy\+SH} (when on Windows), and all XDG Base Directory config directories\+: \begin{DoxyVerb}http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+\end{DoxyVerb}
+
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_config_paths_a1450d1161df7dc66fb70172487b327d8}\index{ConfigPaths@{ConfigPaths}!configFiles@{configFiles}}
+\index{configFiles@{configFiles}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{configFiles()}{configFiles()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_a1450d1161df7dc66fb70172487b327d8} 
+config\+Files (\begin{DoxyParamCaption}\item[{array}]{\$names}{}\end{DoxyParamCaption})}
+
+Find real config files in config directories.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$names} & \doxylink{class_config}{Config} file names\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_config_paths_a4d22fc87a14f0a42b0e928c76f55bd09}\index{ConfigPaths@{ConfigPaths}!currentConfigDir@{currentConfigDir}}
+\index{currentConfigDir@{currentConfigDir}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{currentConfigDir()}{currentConfigDir()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_a4d22fc87a14f0a42b0e928c76f55bd09} 
+current\+Config\+Dir (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current home config directory.
+
+Returns the highest precedence home config directory which actually exists. If none of them exists, returns the highest precedence home config directory ({\ttfamily APPDATA\%/\+Psy\+SH} on Windows, {\ttfamily \texorpdfstring{$\sim$}{\string~}/.config/psysh} everywhere else).
+
+\begin{DoxySeeAlso}{See also}
+self\+::home\+Config\+Dir 
+\end{DoxySeeAlso}
+\Hypertarget{class_psy_1_1_config_paths_a5da62db783c92caa3e0a5319d7f7f7a9}\index{ConfigPaths@{ConfigPaths}!dataDirs@{dataDirs}}
+\index{dataDirs@{dataDirs}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{dataDirs()}{dataDirs()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_a5da62db783c92caa3e0a5319d7f7f7a9} 
+data\+Dirs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get potential data directory paths.
+
+If a {\ttfamily data\+Dir} option was explicitly set, returns an array containing just that directory.
+
+Otherwise, it returns {\ttfamily \texorpdfstring{$\sim$}{\string~}/.psysh} and all XDG Base Directory data directories\+: \begin{DoxyVerb}http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+\end{DoxyVerb}
+
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_config_paths_a5b66ae078d50c43bfbdb3f4128b52b0f}\index{ConfigPaths@{ConfigPaths}!dataFiles@{dataFiles}}
+\index{dataFiles@{dataFiles}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{dataFiles()}{dataFiles()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_a5b66ae078d50c43bfbdb3f4128b52b0f} 
+data\+Files (\begin{DoxyParamCaption}\item[{array}]{\$names}{}\end{DoxyParamCaption})}
+
+Find real data files in config directories.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$names} & \doxylink{class_config}{Config} file names\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_config_paths_a04b89fb214c8f5faae400b2a551eb503}\index{ConfigPaths@{ConfigPaths}!ensureDir@{ensureDir}}
+\index{ensureDir@{ensureDir}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{ensureDir()}{ensureDir()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_a04b89fb214c8f5faae400b2a551eb503} 
+ensure\+Dir (\begin{DoxyParamCaption}\item[{string}]{\$dir}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Ensure that \$dir exists and is writable.
+
+Generates E\+\_\+\+USER\+\_\+\+NOTICE error if the directory is not writable or creatable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool False if directory exists but is not writeable, or cannot be created 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_config_paths_a445e142cba4941d6535e101b04e13601}\index{ConfigPaths@{ConfigPaths}!homeDir@{homeDir}}
+\index{homeDir@{homeDir}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{homeDir()}{homeDir()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_a445e142cba4941d6535e101b04e13601} 
+home\+Dir (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current home directory. \Hypertarget{class_psy_1_1_config_paths_a470d08e0b7783e617007637a1471ba72}\index{ConfigPaths@{ConfigPaths}!overrideDirs@{overrideDirs}}
+\index{overrideDirs@{overrideDirs}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{overrideDirs()}{overrideDirs()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_a470d08e0b7783e617007637a1471ba72} 
+override\+Dirs (\begin{DoxyParamCaption}\item[{array}]{\$overrides}{}\end{DoxyParamCaption})}
+
+Provide {\ttfamily config\+Dir}, {\ttfamily data\+Dir} and {\ttfamily runtime\+Dir} overrides.
+
+If a key is set but empty, the override will be removed. If it is not set at all, any existing override will persist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$overrides} & Directory overrides \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_config_paths_a7d1629b0d7b0b12ad20f2c58d0bd9819}\index{ConfigPaths@{ConfigPaths}!pathDirs@{pathDirs}}
+\index{pathDirs@{pathDirs}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{pathDirs()}{pathDirs()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_a7d1629b0d7b0b12ad20f2c58d0bd9819} 
+path\+Dirs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a list of directories in PATH.
+
+If \$\+PATH is unset/empty it defaults to \textquotesingle{}/usr/sbin\+:/usr/bin\+:/sbin\+:/bin\textquotesingle{}.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_config_paths_ae8562b6e1b566b93ae4d13dc4400fb2e}\index{ConfigPaths@{ConfigPaths}!runtimeDir@{runtimeDir}}
+\index{runtimeDir@{runtimeDir}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{runtimeDir()}{runtimeDir()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_ae8562b6e1b566b93ae4d13dc4400fb2e} 
+runtime\+Dir (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a runtime directory.
+
+Defaults to {\ttfamily /psysh} inside the system\textquotesingle{}s temp dir. \Hypertarget{class_psy_1_1_config_paths_afd4dfe3c9fd8b04ac9fa292317d1afd9}\index{ConfigPaths@{ConfigPaths}!touchFileWithMkdir@{touchFileWithMkdir}}
+\index{touchFileWithMkdir@{touchFileWithMkdir}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{touchFileWithMkdir()}{touchFileWithMkdir()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_afd4dfe3c9fd8b04ac9fa292317d1afd9} 
+touch\+File\+With\+Mkdir (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Ensure that \$file exists and is writable, make the parent directory if necessary.
+
+Generates E\+\_\+\+USER\+\_\+\+NOTICE error if either \$file or its directory is not writable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false Full path to \$file, or false if file is not writable 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_config_paths_af20bdef82a4ee9d6729dd88c40209a68}\index{ConfigPaths@{ConfigPaths}!which@{which}}
+\index{which@{which}!ConfigPaths@{ConfigPaths}}
+\doxysubsubsection{\texorpdfstring{which()}{which()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_config_paths_af20bdef82a4ee9d6729dd88c40209a68} 
+which (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Locate a command (an executable) in \$\+PATH.
+
+Behaves like \textquotesingle{}command -\/v COMMAND\textquotesingle{} or \textquotesingle{}which COMMAND\textquotesingle{}. If \$\+PATH is unset/empty it defaults to \textquotesingle{}/usr/sbin\+:/usr/bin\+:/sbin\+:/bin\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & the executable to locate \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/xampp/htdocs/\+GPagos\+Ayuntamiento/vendor/psy/psysh/src/\mbox{\hyperlink{_config_paths_8php}{Config\+Paths.\+php}}\end{DoxyCompactItemize}

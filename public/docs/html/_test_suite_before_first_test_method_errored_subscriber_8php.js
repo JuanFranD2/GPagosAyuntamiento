@@ -1,0 +1,4 @@
+var _test_suite_before_first_test_method_errored_subscriber_8php =
+[
+    [ "TestSuiteBeforeFirstTestMethodErroredSubscriber", "class_p_h_p_unit_1_1_logging_1_1_team_city_1_1_test_suite_before_first_test_method_errored_subscriber.html", "class_p_h_p_unit_1_1_logging_1_1_team_city_1_1_test_suite_before_first_test_method_errored_subscriber" ]
+];
